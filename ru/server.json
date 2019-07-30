@@ -191,7 +191,7 @@
     "ErrSoapRPCPartRefersToElement": "Неподдерживаемая комбинация параметров: часть \"%s\", определенная ссылкой на элемент XSD-схемы, назначается сообщению SOAP в стиле RPC",
     "ErrSoapTransportNotSupported": "SOAP транспорты, кроме HTTP, в настоящее время не поддерживаются",
     "ErrUrlReplacementMustUseGET": "Ошибка в определении input-сообщения операции \"%s\" связывания \"%s\": сообщение типа \"%s\" должно использовать метод запроса \"%s\"",
-    "ErrWsdlExtractedSchemaParseError": "Ошибка XML при разборе схемы, вложенной в WSDL-файл (строка %d, позиция %d):\r\nКод ошибки: %d\r\nПричина: %s",
+    "ErrWsdlExtractedSchemaParseError": "Ошибка XML при разборе схемы, вложенной в WSDL-файл (строка %d, позиция %d):\nКод ошибки: %d\nПричина: %s",
     "ErrWsdlImportNoAccess": "Нет доступа к импортируемому документу %s"
   },
   "Common/XML/Processor/XMLExportImpl": {
@@ -215,8 +215,8 @@
     "ErrNoParentElement": "У элемента \"%s\" отсутствует родительский элемент",
     "ErrSiblingAttributionFailed": "Для элемента \"%s\" невозможно определить соответствующий схеме сиблинг \"%s{%s}\"",
     "ErrSubElementAttributionFailed": "Для элемента \"%s\" невозможно определить соответствующий схеме подэлемент \"%s{%s}\"",
-    "ErrXMLParse": "Ошибка при разборе XML:\r\n\tСтрока: %d\r\n\tПозиция: %d\r\n\tКод ошибки: %d\r\n\tСообщение:\r\n\t%s",
-    "ErrXMLValidate": "Ошибка валидации XML:\r\n\tСтрока: %d\r\n\tПозиция: %d\r\n\tКод ошибки: %d\r\n\tСообщение:\r\n\t%s"
+    "ErrXMLParse": "Ошибка при разборе XML:\n\tСтрока: %d\n\tПозиция: %d\n\tКод ошибки: %d\n\tСообщение:\n\t%s",
+    "ErrXMLValidate": "Ошибка валидации XML:\n\tСтрока: %d\n\tПозиция: %d\n\tКод ошибки: %d\n\tСообщение:\n\t%s"
   },
   "Common/XML/Processor/XMLRequestProcessor": {
     "ErrXMLExportNoContext": "Не задан контекст экспорта",
@@ -256,15 +256,15 @@
     "ErrParserIsActive": "Нельзя изменять свойства парсера в процессе разбора"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
-    "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n\r\t%s",
-    "ErrParseFileUnhandledException": "Необработанное исключение при разборе файла '%s':\n\r%s",
-    "ErrParseStream": "Ошибка при разборе потока в строке %d, позиция %d:\n\r\t%s",
+    "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n\n\t%s",
+    "ErrParseFileUnhandledException": "Необработанное исключение при разборе файла '%s':\n\n%s",
+    "ErrParseStream": "Ошибка при разборе потока в строке %d, позиция %d:\n\n\t%s",
     "ErrParseStreamNoXML": "Ошибка при разборе потока в строке %d, позиция %d: источник не является XML-файлом или имеет некорректный синтаксис",
-    "ErrParseStreamUnhandledException": "Необработанное исключение при разборе потока:\n\r\t%s",
+    "ErrParseStreamUnhandledException": "Необработанное исключение при разборе потока:\n\n\t%s",
     "ErrParseStreamUnrecognizedEncoding": "Ошибка при разборе потока: неизвестная кодировка %s",
-    "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n\r\t%s",
+    "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n\n\t%s",
     "ErrParseURLNoXML": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s': ответ сервера не является XML-файлом",
-    "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n\r\t%s",
+    "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n\n\t%s",
     "ErrParseURLUnrecognizedContentType": "Ошибка при выполнении запроса к URL '%s': ответ сервера не обработан, так как Content-type: %s не зарегистрирован",
     "ErrSaxDocumentHasNoRootElements": "В документе отсутствует корневой элемент",
     "ErrSaxParserFeatureInvalidArg": "Неправильный тип аргумента при установке опции '%s' SAX-парсера MSXML",
@@ -456,7 +456,7 @@
     "VendorDesc": "Пользовательское квантование данных"
   },
   "components/calcdata/CalcData": {
-    "ErrExceededRecursiveCalls": "Превышено максимальное количество рекурсивных вызовов (%d) функции Data в выражении \"%s\".\r\nДля решения этой проблемы необходимо включить Кэширование.",
+    "ErrExceededRecursiveCalls": "Превышено максимальное количество рекурсивных вызовов (%d) функции Data в выражении \"%s\".\nДля решения этой проблемы необходимо включить Кэширование.",
     "ErrExprIsStringType": "Выражение \"%s\" имеет строковый тип",
     "InputVariables": "Входные переменные",
     "NameNotExists": "Поля, переменной или выражения с именем \"%s\" не существует"
@@ -718,7 +718,7 @@
     "ErrNoXSDInput": "На входе компонента отсутствует XSD-схема",
     "ErrRootNodeNotSelected": "Не выбран корневой элемент XML",
     "ErrUnmappedNodeNotOwnedByExportTree": "Узел %s, для которого запрошен сброс связи, не входит в дерево XML",
-    "ErrXMLExport": "Ошибка при выполнении формирования XML:\r\n\tКод ошибки: %d\r\n\t%s",
+    "ErrXMLExport": "Ошибка при выполнении формирования XML:\n\tКод ошибки: %d\n\t%s",
     "ExportDataSetProcessCaption": "Обработка набора данных",
     "IDName": "ID",
     "WriteXMLFileProcessCaption": "Формирование XML-документа",
@@ -797,8 +797,8 @@
   "components/extractxml/ExtractXML": {
     "DocIDColumn": "Идентификатор документа",
     "ErrCharsetForCodePageNotFound": "Не найден поддерживаемый набор символов XML для кодовой страницы %d",
-    "ErrExtractXML": "Ошибка при извлечении XML из строки %d входного набора:\r\n\tКод ошибки: %d\r\n\tСообщение: %s",
-    "ErrExtractXMLInitError": "Ошибка инициализации обработчика Извлечение XML:\r\n\t%s",
+    "ErrExtractXML": "Ошибка при извлечении XML из строки %d входного набора:\n\tКод ошибки: %d\n\tСообщение: %s",
+    "ErrExtractXMLInitError": "Ошибка инициализации обработчика Извлечение XML:\n\t%s",
     "ErrImportNotConfigured": "Дерево импорта не настроено",
     "ErrInputFieldNotSelected": "Необходимо задать поле, содержащее XML",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика!",
@@ -1415,8 +1415,8 @@
     "RequestIDOutputColumn": "Идентификатор запроса",
     "ResponseColumn": "Ответ сервера",
     "RESTClientConnection": "Подключение к REST-сервису",
-    "RESTClientErrorNoID": "Ошибка при выполнении запроса:\r\n%s",
-    "RESTClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки №%d входного набора:\r\n%s"
+    "RESTClientErrorNoID": "Ошибка при выполнении запроса:\n%s",
+    "RESTClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки №%d входного набора:\n%s"
   },
   "components/restclient/RESTClientVendor": {
     "VendorCaption": "Вызов REST-сервиса",
@@ -1598,9 +1598,9 @@
     "RawOutputColumn": "Сырой ответ",
     "RequestIDOutputColumn": "Идентификатор запроса",
     "WSDLClientConnection": "Подключение к веб-сервису",
-    "WSDLClientError": "Ошибка при выполнении запроса с идентификатором %s:\r\n%s",
-    "WSDLClientErrorNoID": "Ошибка при выполнении запроса:\r\n%s",
-    "WSDLClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки №%d входного набора:\r\n%s"
+    "WSDLClientError": "Ошибка при выполнении запроса с идентификатором %s:\n%s",
+    "WSDLClientErrorNoID": "Ошибка при выполнении запроса:\n%s",
+    "WSDLClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки №%d входного набора:\n%s"
   },
   "components/wsdlclient/WSDLClientBase": {
     "AdditionalDataSet": "Дополнительные данные",
@@ -1690,7 +1690,7 @@
     "ErrNoXSDInput": "На входе компонента отсутствует XSD-схема",
     "ErrRootNodeNotSelected": "Не выбран корневой элемент для экспорта",
     "ErrUnmappedNodeNotOwnedByExportTree": "Узел %s, для которого запрошен сброс связи, не входит в дерево экспорта",
-    "ErrXMLExport": "Ошибка при выполнении экспорта XML:\r\n\tКод ошибки: %d\r\n\t%s",
+    "ErrXMLExport": "Ошибка при выполнении экспорта XML:\n\tКод ошибки: %d\n\t%s",
     "ExportDataSetProcessCaption": "Экспорт набора данных",
     "FileConnection": "Подключение к файловому хранилищу",
     "WriteXMLFileProcessCaption": "Запись XML-файла",
@@ -1822,7 +1822,7 @@
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика!",
     "ErrNothingSelected": "Не выбрано ни одного узла для импорта",
     "ErrNoXSDInput": "На входе компонента отсутствует XSD-схема",
-    "ErrXMLImport": "Ошибка при выполнении импорта XML:\r\n\tКод ошибки: %d\r\n\t%s",
+    "ErrXMLImport": "Ошибка при выполнении импорта XML:\n\tКод ошибки: %d\n\t%s",
     "FileConnection": "Подключение к файловому хранилищу",
     "XSDConnection": "Подключение к источнику XSD-схемы"
   },
@@ -1849,16 +1849,16 @@
     "ErrConnectionString": "Не указана строка подключения",
     "ErrDBPath": "Не удалось получить путь к БД",
     "ErrExecuteProcedure": "Ошибка выполнения хранимой процедуры \"%s\"",
-    "ErrExecuteQuery": "Ошибка выполнения SQL:\r\n%s",
+    "ErrExecuteQuery": "Ошибка выполнения SQL:\n%s",
     "ErrIndexColumnsNotSelect": "Не указаны столбцы по котором необходимо сделать индекс",
     "ErrLocalDBForbidden": "Подключения к локальным БД сервера запрещены",
-    "ErrOpenQuery": "Ошибка открытия SQL:\r\n%s",
+    "ErrOpenQuery": "Ошибка открытия SQL:\n%s",
     "ErrParameterTypesDoNotMatch": "Типы параметров не совпадают",
     "ErrPrepareProcedure": "Ошибка подготовки хранимой процедуры \"%s\"",
-    "ErrPrepareQuery": "Ошибка подготовки SQL:\r\n%s",
+    "ErrPrepareQuery": "Ошибка подготовки SQL:\n%s",
     "ErrSetSequence": "Ошибка установки Sequence для DB. Старый Sequence = %d",
     "ErrTableNameNotSelect": "Не указано имя таблицы",
-    "ErrTestConnection": "Ошибка проверки подключения:\r\n%s",
+    "ErrTestConnection": "Ошибка проверки подключения:\n%s",
     "ErrUnPrepareQuery": "Ошибка очистки подготовленного запроса"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
@@ -2060,7 +2060,7 @@
     "InnerExceptionTitle": "ВНУТРЕННИЕ ИСКЛЮЧЕНИЯ:",
     "MessageFmt": "СООБЩЕНИЕ: %s",
     "SenderNameFmt": "ОТПРАВИТЕЛЬ: %s",
-    "StackTraceFmt": "ТРАССА:\r\n%s"
+    "StackTraceFmt": "ТРАССА:\n%s"
   },
   "Libraries/bgrtl/ExceptUtils": {
     "ErrAbstract": "Вызов абстрактного метода %s",
@@ -2118,7 +2118,7 @@
     "ExtLoadErrVendorNotFound": "Расширение не загружено, т.к. вендор расширения %s не найден",
     "Guid": "Guid вендора расширения",
     "Item": "Элемент",
-    "SynchronizeExtensionsQuery": "Следующие настраиваемые расширения отличаются от исходных:\r\n%s.\r\n\r\nВы хотите синхронизировать все расширения?"
+    "SynchronizeExtensionsQuery": "Следующие настраиваемые расширения отличаются от исходных:\n%s.\n\nВы хотите синхронизировать все расширения?"
   },
   "Libraries/bgrtl/ExtensionsStd": {
     "DisplayFormatExtensionCaption": "Формат отображения"
@@ -2188,7 +2188,7 @@
     "ErrNoMountedDirectories": "Не смонтировано ни одной директории",
     "ErrOpenFile": "Невозможно открыть файл: %s",
     "ErrParentFileStorageNotConnected": "Корневое хранилище файлов не подключено",
-    "ErrTestConnection": "Ошибка проверки подключения:\r\n%s"
+    "ErrTestConnection": "Ошибка проверки подключения:\n%s"
   },
   "Libraries/bgrtl/FormatHook": {
     "Args": "Параметры",
@@ -3475,7 +3475,7 @@
     "UserAbort": "Вызов SuperLU остановлен с ошибкой: '%s'"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
-    "ErrWSDLLoad": "Ошибка загрузки WSDL: \r\nИмя файла: %s",
+    "ErrWSDLLoad": "Ошибка загрузки WSDL: \nИмя файла: %s",
     "WarnMainWSDLNotLoaded": "Основной источник WSDL (%s) не загружен (%s). Пытаемся загрузить резервный источник."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
@@ -3490,7 +3490,7 @@
     "XSDFilesConnectionVendorDesc": "Подключение к набору XSD-схем, расположенных в файловом хранилище"
   },
   "Studio/ApplicationManager": {
-    "ErrBootupOptions": "Ошибка в параметрах запуска.\r\nОдновременно указаны оба параметра пакетной обработки \"Выполнить\" и \"Переобучить\".",
+    "ErrBootupOptions": "Ошибка в параметрах запуска.\nОдновременно указаны оба параметра пакетной обработки \"Выполнить\" и \"Переобучить\".",
     "ErrNoPackageFileName": "Не указан файл пакета."
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
@@ -3501,10 +3501,10 @@
     "ErrTuneNormInvalidUsageTypeVendor": "Назначение поля \"Выходное\" у столбца \"%s\" производного компонента \"%s\" было сброшено в \"Не задано\""
   },
   "Studio/Converters/Converter_20180828194301_LogRegression_DerivedAtomic": {
-    "WarnCannotConvert": "Невозможно сконвертировать пакет, созданный в предыдущей версии программы.\r\nНастройки узлов \"Логистическая регрессия\", ссылающихся на узлы в других пакетах, могли быть сброшены.\r\nТребуется одно из следующих действий:\r\n  - заново настройте и переобучите узлы \"Логистическая регрессия\", конвертация которых невозможна\r\n  - восстановите конфигурацию указанных узлов до первоначальной (базовой)\r\n  - обратитесь за помощью в службу поддержки Loginom"
+    "WarnCannotConvert": "Невозможно сконвертировать пакет, созданный в предыдущей версии программы.\nНастройки узлов \"Логистическая регрессия\", ссылающихся на узлы в других пакетах, могли быть сброшены.\nТребуется одно из следующих действий:\n  - заново настройте и переобучите узлы \"Логистическая регрессия\", конвертация которых невозможна\n  - восстановите конфигурацию указанных узлов до первоначальной (базовой)\n  - обратитесь за помощью в службу поддержки Loginom"
   },
   "Studio/Converters/Converter_201809181721_LogRegression_RelativeTerms": {
-    "WarnCannotConvert": "Невозможно сконвертировать пакет, созданный в предыдущей версии программы.\r\nНастройки узлов \"Логистическая регрессия\" могли быть сброшены.\r\nТребуется заново настроить и переобучить узлы \"Логистическая регрессия\", конвертация которых невозможна"
+    "WarnCannotConvert": "Невозможно сконвертировать пакет, созданный в предыдущей версии программы.\nНастройки узлов \"Логистическая регрессия\" могли быть сброшены.\nТребуется заново настроить и переобучить узлы \"Логистическая регрессия\", конвертация которых невозможна"
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Пакеты Loginom"
@@ -3598,7 +3598,7 @@
     "OptionTeachDesc": "Режим переобучения",
     "OptionUserNameDesc": "Имя пользователя",
     "Switches": "<Ключи>",
-    "VariableSwitchesInfo": "Любые другие ключи интерпретируются как имена переменных.\r\nФормат: <Имя_переменной>=<Значение_переменной>"
+    "VariableSwitchesInfo": "Любые другие ключи интерпретируются как имена переменных.\nФормат: <Имя_переменной>=<Значение_переменной>"
   },
   "Studio/Server/ServiceConsts": {
     "ServiceDisplayName": "LoginomServer"
@@ -3927,16 +3927,16 @@
     "VendorDesc": "Отображение статистических показателей"
   },
   "Warehouse2/DataWarehouseConnection": {
-    "ErrTestConnection": "Ошибка проверки подключения:\r\n%s",
+    "ErrTestConnection": "Ошибка проверки подключения:\n%s",
     "MDDatabase": "База данных с метаданными"
   },
   "Warehouse2/DBMDEngine": {
-    "ErrDimensionFKIsNull": "Ссылка на измерение \"%s\" не найдена.\r\nНе указано значение внешнего ключа.",
-    "ErrDimensionFKNotFound": "Ссылка на измерение \"%s\" не найдена.\r\nИзмерение с первичным ключом \"%s\" в списке измерений не найдено.",
-    "ErrNotFoundVersionInfo": "Не удалось считать информацию о версии Deductor Warehouse.\r\n%s",
-    "ErrProcessFKIsNull": "Ссылка на процесс \"%s\" не найдена.\r\nНе указано значение внешнего ключа.",
-    "ErrProcessFKNotFound": "Ссылка на процесс \"%s\" не найдена.\r\nПроцесс с первичным ключом \"%s\" в списке процессов не найден.",
-    "ErrSetMDItem": "Ошибка при чтении метаданных из БД.\r\nДля объекта с ID=%s, Имя=\"%s\".\r\nОшибка: %s"
+    "ErrDimensionFKIsNull": "Ссылка на измерение \"%s\" не найдена.\nНе указано значение внешнего ключа.",
+    "ErrDimensionFKNotFound": "Ссылка на измерение \"%s\" не найдена.\nИзмерение с первичным ключом \"%s\" в списке измерений не найдено.",
+    "ErrNotFoundVersionInfo": "Не удалось считать информацию о версии Deductor Warehouse.\n%s",
+    "ErrProcessFKIsNull": "Ссылка на процесс \"%s\" не найдена.\nНе указано значение внешнего ключа.",
+    "ErrProcessFKNotFound": "Ссылка на процесс \"%s\" не найдена.\nПроцесс с первичным ключом \"%s\" в списке процессов не найден.",
+    "ErrSetMDItem": "Ошибка при чтении метаданных из БД.\nДля объекта с ID=%s, Имя=\"%s\".\nОшибка: %s"
   },
   "Warehouse2/Deductor/DDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse",
@@ -3945,8 +3945,8 @@
   "Warehouse2/Deductor/DDWEngine": {
     "ErrDimensionValueIsNull": "В строке \"%d\" значение измерения \"%s\" пустое.",
     "ErrDimensionValueNotFound": "Значение \"%s\" измерения \"%s\" не найдено в ХД (строке \"%d\").",
-    "ErrDropTable": "В процессе выполнения удаления таблицы связанной с объектом [%s] \"%s\" возникла ошибка.\r\n%s",
-    "ErrEmptyData": "В процессе выполнения очистки данных объекта [%s] \"%s\" возникла ошибка.\r\n%s",
+    "ErrDropTable": "В процессе выполнения удаления таблицы связанной с объектом [%s] \"%s\" возникла ошибка.\n%s",
+    "ErrEmptyData": "В процессе выполнения очистки данных объекта [%s] \"%s\" возникла ошибка.\n%s",
     "ErrError": "Ошибка:",
     "MsgDeleteDataProcess": "Удаление по измерению данных Процесса из Хранилища данных",
     "MsgEnableConstraint": "Восстановить индексы и ограничения.",
@@ -3963,14 +3963,14 @@
     "CommentForFieldChangeID": "Ссылка на журнал изменений",
     "CommentForFieldID": "Первичный ключ",
     "ErrCheckProcess": "Процесс [%s] \"%s\" должен состоять хотя бы из двух измерений.",
-    "ErrDataCube": "Не удалось считать информацию о Кубе [%s] \"%s\" .\r\n%s",
-    "ErrDataNotLoad": "Данные в ХД не загружены.\r\nВозможные причины:\r\nFirebird - пробелы в конце строковых измерений;\r\nMS SQL - не учитывает регистр букв строковых измерений.\r\nЕсли было выставлено удаление данных по измерению - эти данные удалены из ХД.\r\nВозникла ошибка при восстановлении ограничений и индексов:\r\n%s",
-    "ErrRebuildCube": "В процессе выполнения обновления Куба [%s] \"%s\" возникла ошибка.\r\n%s",
-    "MsgMoreLengthName": "Слишком длинное имя поля \"%s\".\r\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД.",
-    "MsgMoreLengthPrefix": "Слишком длинное значение префикса \"%s\".\r\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД.",
+    "ErrDataCube": "Не удалось считать информацию о Кубе [%s] \"%s\" .\n%s",
+    "ErrDataNotLoad": "Данные в ХД не загружены.\nВозможные причины:\nFirebird - пробелы в конце строковых измерений;\nMS SQL - не учитывает регистр букв строковых измерений.\nЕсли было выставлено удаление данных по измерению - эти данные удалены из ХД.\nВозникла ошибка при восстановлении ограничений и индексов:\n%s",
+    "ErrRebuildCube": "В процессе выполнения обновления Куба [%s] \"%s\" возникла ошибка.\n%s",
+    "MsgMoreLengthName": "Слишком длинное имя поля \"%s\".\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД.",
+    "MsgMoreLengthPrefix": "Слишком длинное значение префикса \"%s\".\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД.",
     "MsgRebuildCube": "Обновить Кубы в Хранилище данных",
-    "MsgRelationTableList": "Есть связанные таблицы:\r\n%s",
-    "MsgReservedName": "Имя поля \"%s\" совпадает с зарезервированными словами.\r\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД."
+    "MsgRelationTableList": "Есть связанные таблицы:\n%s",
+    "MsgReservedName": "Имя поля \"%s\" совпадает с зарезервированными словами.\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД."
   },
   "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse [Firebird]",
@@ -3989,7 +3989,7 @@
     "DWConnectionVendorDesc": "Подключение к Хранилищу данных"
   },
   "Warehouse2/DWDataEngine": {
-    "ErrExecSQL": "Ошибка при выполнении запроса к БД.\r\n%s"
+    "ErrExecSQL": "Ошибка при выполнении запроса к БД.\n%s"
   },
   "Warehouse2/DWExtract": {
     "DWObjectName": "Объект",
@@ -4041,7 +4041,7 @@
   },
   "Warehouse2/MDTree": {
     "ErrColumnCantBeContinuous": "Объект \"%s\" типа \"%s\" не может быть непрерывным",
-    "ErrMismatchVersionInfo": "Версии Deductor Warehouse не совпадают.\r\n  Компонент: \"%s\" \r\n  БД ХД: \"%s\"",
+    "ErrMismatchVersionInfo": "Версии Deductor Warehouse не совпадают.\n  Компонент: \"%s\" \n  БД ХД: \"%s\"",
     "ErrNodeTypeExist": "Уже есть подузел указанного типа \"%s\""
   }
 }

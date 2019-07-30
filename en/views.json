@@ -1,0 +1,64 @@
+{
+  "homepage/HomePage": {
+    "btnCreatePackage": {
+      "text": "Create New Package ..."
+    },
+    "btnCreateUnsavedPackage": {
+      "text": "Create Unsaved Package "
+    },
+    "btnOpenPackage": {
+      "text": "Open Package ..."
+    },
+    "colFilePath": {
+      "text": "File Path"
+    },
+    "colOpenDate": {
+      "text": "Package Opening Date"
+    },
+    "colPackageName": {
+      "text": "Package Name"
+    },
+    "lblLastPackages": {
+      "text": "Last Opened Packages"
+    },
+    "pnlHomePage": {
+      "title": "Home Page"
+    }
+  },
+  "welcome/WelcomePage": {
+    "btnHelp": {
+      "text": "Help"
+    },
+    "btnLogin": {
+      "text": "Login"
+    },
+    "chkRememberUser": {
+      "boxLabel": "Remember User",
+      "fieldLabel": " "
+    },
+    "edtPassword": {
+      "fieldLabel": "Password"
+    },
+    "edtUsername": {
+      "fieldLabel": "Username"
+    },
+    "lblInfoItem1": {
+      "text": "● All analysis technologies - one platform"
+    },
+    "lblInfoItem2": {
+      "text": "● From simple methods to machine learning"
+    },
+    "lblInfoItem3": {
+      "text": "● Integration of heterogeneous data"
+    },
+    "lblInfoItem4": {
+      "text": "● Low cost of ownership"
+    },
+    "lblInfoTitle": {
+      "text": "Advanced analytics without programming"
+    },
+    "lblNews": {
+      "text": "News"
+    }
+  }
+}

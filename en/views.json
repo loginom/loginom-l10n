@@ -1,13 +1,63 @@
 {
+  "app/MainMenuForm": {
+    "btnCreateUnsavedPackage": {
+      "text": "New Draft"
+    }
+  },
+  "app/PackagesListForm": {
+    "mniCreateUnsaved": {
+      "text": "Draft",
+      "tooltip": "Create draft"
+    },
+    "pmiCreateUnsaved": {
+      "text": "Draft",
+      "tooltip": "Create draft"
+    }
+  },
+  "filedialog/OpenDialogForm": {
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "btnOpen": {
+      "text": "Open"
+    },
+    "cbxFileType": {
+      "fieldLabel": "File Type"
+    },
+    "colFileDate": {
+      "text": "Changed"
+    },
+    "colFilePath": {
+      "text": "Path"
+    },
+    "colFileSize": {
+      "text": "Size"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colType": {
+      "text": "Type"
+    },
+    "edtFileName": {
+      "fieldLabel": "File Name"
+    },
+    "frmOpenDialogForm": {
+      "title": "Open File"
+    },
+    "pnlDirectoriesTree": {
+      "title": "Folders"
+    }
+  },
   "homepage/HomePage": {
     "btnCreatePackage": {
-      "text": "Create New Package ..."
+      "text": "Create New Package..."
     },
     "btnCreateUnsavedPackage": {
-      "text": "Create Unsaved Package "
+      "text": "New Draft"
     },
     "btnOpenPackage": {
-      "text": "Open Package ..."
+      "text": "Open Package..."
     },
     "colFilePath": {
       "text": "File Path"
@@ -22,7 +72,7 @@
       "text": "Last Opened Packages"
     },
     "pnlHomePage": {
-      "title": "Home Page"
+      "title": "Home "
     }
   },
   "welcome/WelcomePage": {
@@ -34,7 +84,7 @@
     },
     "chkRememberUser": {
       "boxLabel": "Remember User",
-      "fieldLabel": " "
+      "fieldLabel": " "
     },
     "edtPassword": {
       "fieldLabel": "Password"

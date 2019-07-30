@@ -1,7 +1,13 @@
 {
   "app/MainMenuForm": {
+    "btnCreatePackage": {
+      "text": "New..."
+    },
     "btnCreateUnsavedPackage": {
       "text": "New Draft"
+    },
+    "btnOpenPackage": {
+      "text": "Open..."
     }
   },
   "app/PackagesListForm": {

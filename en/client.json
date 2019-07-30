@@ -116,6 +116,7 @@
     "CardTitle_FeedBack": "Feedback",
     "CardTitle_Forum": "Forum: Questions and Answers",
     "CardTitle_WebSite": "Company Website",
+    "LinkWebSite": "https://basegroup.ru",
     "LoginWebSite": "https://loginom.ru",
     "NoNewsLog": "No news downloaded"
   }

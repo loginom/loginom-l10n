@@ -1,0 +1,2179 @@
+{
+  "admin/ServerSettingsForm": {
+    "Bind": "Прослушиваемые адреса",
+    "ComponentSettings": "Параметры компонента",
+    "ConnectionSettings": "Параметры подключения",
+    "DirectorySettings": "Папки",
+    "Disabled": "Выполнение запрещено",
+    "LogFileMaxIndex": "Количество резервных файлов",
+    "LogFileMaxSize": "Максимальный размер файла",
+    "LogFileName": "Имя файла",
+    "LogFileRewrite": "Перезапись файла",
+    "LoggerSettings": "Параметры логирования",
+    "MinLogLevel": "Уровень логирования",
+    "PackagePoolSize": "Размер пула пакетов",
+    "PingPeriod": "Период проверки соединения (сек.)",
+    "Port": "TCP порт",
+    "ServerSettings": "Параметры сервера",
+    "SessionBackupDirectory": "Резервные копии сессии",
+    "SSLCertificateFile": "Имя файла сертификата",
+    "SSLPrivateKeyFile": "Имя файла закрытого ключа",
+    "StopTimeout": "Таймаут остановки сервера (сек.)",
+    "UserStorageDirectory": "Личные данные пользователя",
+    "WSPort": "WebSocket порт",
+    "WSSPort": "WebSocket SSL/TLS порт"
+  },
+  "admin/SharedDirectoriesForm": {
+    "DeleteUserConfirm": "Удалить папку из файловой системы?"
+  },
+  "admin/SharedDirectoryForm": {
+    "AddBtnText": "Добавить",
+    "EditSharedDirectory": "Настройка общей папки",
+    "NewSharedDirectory": "Добавить общую папку",
+    "SaveBtnText": "Сохранить"
+  },
+  "admin/UserForm": {
+    "AddBtnText": "Добавить",
+    "EditName": "Редактирование пользователя",
+    "NewUser": "Новый пользователь",
+    "SaveBtnText": "Сохранить"
+  },
+  "admin/UserListForm": {
+    "Admin": "Администрирование",
+    "Blocked": "Заблокирован",
+    "DeleteUserConfirm": "Удалить папку пользователя из файловой системы?",
+    "Designer": "Проектирование сценариев",
+    "DisplayName": "Полное имя",
+    "GlobalFileStorage": "Доступ ко всем файлам",
+    "Interactive": "Интерактивный режим",
+    "Name": "Логин",
+    "Service": "Режим службы",
+    "Update": "Обновить",
+    "Viewer": "Просмотр отчетов"
+  },
+  "app/AddPackageLinkForm": {
+    "ErrPathNotSpecified": "Не указан пакет (путь к файлу пакета).",
+    "PackageNotSaved": "Пакет не сохранен",
+    "ReadOnlyPackageNamePostfix": " (только чтение)"
+  },
+  "app/Application": {
+    "ErrVersionFailure": "Ошибка при запросе последней вышедшей версии",
+    "LoginomLastVersionDownloadUrl": "https://loginom.ru/downloads",
+    "MsgAppClose": "Приложение закрывается. Текущий сеанс работы и все несохраненные данные будут потеряны.",
+    "VersionErrorResponseStatus": "Ошибка при запросе последней вышедшей версии. Код ответа: \"{0}\". Сообщение: \"{1}\"",
+    "VersionWrongServiceResponse": "Неверный ответ сервиса с информацией о последней версии Loginom"
+  },
+  "app/AppUtils": {
+    "ConfirmRemovingUnit": "Вы действительно хотите удалить модуль?",
+    "ErrCannotDeleteUnit": "Невозможно удалить модуль \"{0}\". Некоторые из узлов в данный момент используются",
+    "ErrSelectedVendorLocked": "Выбранный компонент \"{0}\" удалить нельзя. Некоторые из производных узлов в данный момент используются.",
+    "RemoveSelectedVendorConfirmLinked": "Вы действительно хотите удалить выбранный компонент \"{0}\"? Узлы, созданные по нему, будут недоступны.",
+    "RemoveVendorConfirm": "Удалить компонент?"
+  },
+  "app/ConfigurePublishedPackagesForm": {
+    "DisNamespace": "http://schemas.loginom.ru/integration",
+    "ErrPathNotSpecified": "Не указан путь к файлу пакета"
+  },
+  "app/ListViewForm": {
+    "NotObjects": "",
+    "NumberObjects": "{0} объектов"
+  },
+  "app/LoginomMenuForm": {
+    "CheckFailed": "Проверка не удалась. Пожалуйста, проверьте новую версию на сайте",
+    "GoToDownload": "Перейти на сайт",
+    "Menu": "Меню",
+    "QstQuit": "Есть не сохранённые пакеты. Выйти без сохранения?",
+    "YourVersionIsActual": "Вы используете актуальную версию"
+  },
+  "app/MainForm": {
+    "AskIfOpenPackageByLink": "Открытый пакет будет заблокирован вами до момента его закрытия. Открыть?",
+    "CantCreateShareLinks": "Не удалось сгенерировать адрес для текущей страницы",
+    "CantFindPackage": "Не удалось найти пакет",
+    "CantGetAbsolutePath": "Не удалось получить абсолютный путь для файла \"{0}\"",
+    "ErrOpenUrlPath": "Не удается открыть URL \"{0}\".\nОшибка: \"{1}\".",
+    "ErrPackageDontExists": "Пакет с именем \"{0}\" не найден",
+    "ErrPackageNotSaved": "Текущий пакет не сохранен",
+    "ErrUrlPathNotFound": "Ветка с именем \"{0}\" не найдена.",
+    "FavoritesTitle": "Избранное",
+    "MsgNodeNotFound": "Указанный узел не найден. Переход невозможен.",
+    "MsgTransportError": "Соединение с сервером разорвано",
+    "PackageCloseFormat": "Закрыть также пакет \"{0}\"?",
+    "PackageCopyOpened": "Изменения в открытом по ссылке пакете \"{0}\" будут отражены в текущем пакете после его перезагрузки",
+    "QstCannotCloseModel": "Невозможно закрыть модуль \"{0}\" в пакете \"{1}\".\nНекоторые из узлов в данный момент используются.\nЗакрыть пакет принудительно без сохранения?",
+    "QstQuitSave": "Сохранить изменения в пакете \"{0}\"?",
+    "ServerDisplayName": "Сервер"
+  },
+  "app/MainMenuForm": {
+    "EmptyPackageName": "Пакет не выбран",
+    "ErrCannotSaveReadOnlyPackage": "Нельзя сохранить пакет с именем \"{0}\", открытый только на чтение.",
+    "ErrLoadPackageErrors": "В процессе загрузки пакета \"{0}\" возникли ошибки",
+    "ErrNoPackageToClose": "Не найден пакет, который можно закрыть.",
+    "ErrNoPackageToSave": "Нет пакета для сохранения.",
+    "ErrOpenReadOnlyPackage": "Пакет \"{0}\" открыт только на чтение, потому что он уже открыт другим пользователем. Сохранение возможно только под другим именем.",
+    "ErrSaveReadOnlyPackage": "Нельзя сохранить пакет \"{0}\" открытый только на чтение, без изменения имени"
+  },
+  "app/MapTree": {
+    "AdminArea": "Администрирование",
+    "ConnectionDisplayNameDefault": "Подключение",
+    "Connections": "Подключения",
+    "ErrInstanceAlreadyExist": "Идентификатору уже сопоставлен визуальный узел",
+    "ErrInstanceNotFound": "Для идентификатора не существует сопоставленного визуального узла",
+    "FileStorage": "Файлы",
+    "HomePage": "Начало",
+    "InputPorts": "Входные порты",
+    "ModelViews": "Визуализаторы",
+    "OutputPorts": "Выходные порты",
+    "PackagesParent": "Пакеты",
+    "Properties": "Параметры",
+    "QstCloseAllPackages": "Закрыть все пакеты?",
+    "QstCloseOtherPackages": "Закрыть другие пакеты?",
+    "ReadOnlyPackageNamePostfix": " (только чтение)",
+    "References": "Ссылки",
+    "Reports": "Отчеты",
+    "ServiceInputPorts": "Служебные входные порты",
+    "ServiceOutputPorts": "Служебные выходные порты",
+    "SharedDirectories": "Общие папки",
+    "UnitDisplayNameDefault": "Модуль",
+    "Users": "Пользователи",
+    "Vendors": "Компоненты",
+    "Wizard": "Настройка",
+    "WorkFlow": "Сценарий"
+  },
+  "app/MapTreeForm": {
+    "ErrNodeNotInitialized": "У узла \"{0}\" не задан компонент",
+    "ErrVendorMalfunction": "Компонент узла \"{0}\" неисправен",
+    "mnuPortsShowAll": "Отображать все порты",
+    "ModelUnitLabel": "Название модуля",
+    "VendorLabel": "Название компонента"
+  },
+  "app/ModelForm": {
+    "ActivateCurrent": "Выполнить узел",
+    "ActivateFrom": "Активировать последующие узлы",
+    "AddComment": "Добавить комментарий",
+    "AddNewConnectionInheritedNode": "Добавить узел подключения в Сценарий",
+    "AddNewConnectionReferenceNode": "Добавить ссылку на подключение в Сценарий",
+    "AddNewNode": "Добавить узел в сценарий",
+    "CantFindGenericModelNode": "Узел подмодели не найден",
+    "CantFindSourceNode": "Невозможно найти исходный узел",
+    "CloneNode": "Клонировать узел",
+    "ComposeExplodeNode": "Свернуть узлы в подмодель / Развернуть подмодель",
+    "ComposeNode": "Свернуть узлы в подмодель",
+    "ConfigurePort": "Настроить порт...",
+    "ConfirmRemovingDerivedVendor": "Вы действительно хотите удалить производный компонент?",
+    "CopyNode": "Копировать узел",
+    "DeactivateCurrent": "Деактивировать узел",
+    "DeleteDerivedVendor": "Удалить...",
+    "DeleteLink": "Удалить связь...",
+    "DeleteNode": "Удалить узел...",
+    "DeletePort": "Удалить порт",
+    "DeriveNode": "Создать производный компонент...",
+    "EditPortDisplayName": "Редактирование метки порта...",
+    "EditPortDisplayNameWindowTitle": "Редактирование",
+    "EditPortFieldLabel": "Метка порта",
+    "ErrNodeNotInitialized": "У узла \"{0}\" не задан поставщик информации о компоненте",
+    "Error": "Ошибка",
+    "ErrPortNotCreated": "Не удалось создать новый порт",
+    "ErrRunQueueFunctions": "Ошибки при выполнении отложенного обновления объектов Сценария",
+    "ErrVendorMalfunction": "Компонент узла \"{0}\" неисправен",
+    "ExpandGenericModel": "Развернуть подмодель",
+    "ExplodeNode": "Развернуть подмодель",
+    "GoToConnection": "Перейти к подключению",
+    "GoToConnections": "Перейти к подключениям",
+    "HideControlVariablesPorts": "Скрыть порт управляющих переменных",
+    "LockedIconTooltip": "Узел блокируется во время выполнения или настройки",
+    "NodeBatchMode": "Настроить режим активации узла...",
+    "NodeVisibility": "Настроить модификатор доступа...",
+    "NodeVisibilityByDefault": "по умолчанию",
+    "NodeVisibilityInternal": "видимость внутри текущего пакета",
+    "NodeVisibilityPrivate": "видимость внутри текущего сценария",
+    "NodeVisibilityProtected": "видимость внутри текущего сценария и подмоделей",
+    "NodeVisibilityPublic": "видимость во всех пакетах",
+    "NodeVisibilityPublished": "видимость во всех пакетах и в виде веб-сервиса",
+    "NodeVisibilityTitle": "Видимость узла",
+    "PortSubTypeUndefined": "Подтип порта не удалось определить",
+    "RecreateBaseNodeForDerivedVendor": "Пересоздать базовый узел",
+    "RemoveComment": "Удалить комментарий",
+    "RemoveSelectedConfirm": "Вы действительно хотите удалить выделенные узлы и связи?",
+    "RenameNode": "Переименовать...",
+    "ResetConfiguration": "Восстановить исходную конфигурацию узла",
+    "SelectOneNode": "Выберите только один узел",
+    "SelectSomething": "Сперва выделите объект на сценарии",
+    "SetNodeDerivedVendor": "Задать производный компонент узла...",
+    "SetupConnection": "Настроить подключение...",
+    "SetupNode": "Настроить узел...",
+    "ShowControlVariablesPort": "Показать порт управляющих переменных",
+    "ShowDataPreview": "Быстрый просмотр...",
+    "TeachNode": "Переобучить узел",
+    "TuneDerivedVendor": "Настроить...",
+    "UndoableDeleteNode": "Удаление (принудительно)...",
+    "UpdateConfiguration": "Обновить конфигурацию узла",
+    "VendorIsUndefined": "Компонент узла не определен",
+    "ZoomFitTooltip": "Подобрать оптимальный масштаб",
+    "ZoomInTooltip": "Увеличить масштаб",
+    "ZoomOutTooltip": "Уменьшить масштаб"
+  },
+  "app/ModelNodeTreeNodeProxy": {
+    "ErrNoRefModelNodeTreeNode": "Не задана ссылка на IBGModelNodeTreeNode"
+  },
+  "app/PackageForm": {
+    "ErrIncorrectVersionFormat": "Некорректный формат версии",
+    "ErrInvalidPackageName": "\"{0}\" - не является допустимым именем пакета"
+  },
+  "app/PackageLinkForm": {
+    "ErrIncorrectVersionFormat": "Некорректный формат версии"
+  },
+  "app/PackageListForm": {
+    "AddUnit": "Добавить модуль",
+    "AddUnitTooltip": "Добавить модуль",
+    "Delete": "Удалить",
+    "DeleteTooltip": "Удалить...",
+    "EditDisplayName": "Редактировать",
+    "EditDisplayNameMsgTitle": "Редактирование метки",
+    "EditDisplayNameTooltip": "Редактировать...",
+    "Links": "Ссылки",
+    "Reports": "Отчеты",
+    "Update": "Обновить",
+    "Visibility": "Область видимости",
+    "VisibilityHeader": "Область видимости",
+    "VisibilityTooltip": "Настроить область видимости..."
+  },
+  "app/PackagesListForm": {
+    "ErrOpenPath": "Не удается открыть путь \"{0}\".\nОшибка: \"{1}\".",
+    "ErrPathNotFound": "Указанный путь не найден \"{0}\".",
+    "ReadOnlyPackageNamePostfix": " (только чтение)"
+  },
+  "app/ReferencesListForm": {
+    "AddLink": "Добавить",
+    "AddLinkTooltip": "Добавить...",
+    "Delete": "Удалить",
+    "DeleteLinkConfirm": "Удалить ссылку?",
+    "DeleteTooltip": "Удалить...",
+    "HintPath": "Путь",
+    "HintPathTooltip": "Путь до пакета",
+    "Name": "Имя",
+    "Setup": "Настроить",
+    "SetupToolstip": "Настроить...",
+    "Update": "Обновить",
+    "VersionMask": "Версия"
+  },
+  "app/SelectBaseVendorForm": {
+    "CantChangeVendor": "Не удалось установить компонент",
+    "ThereIsNodeVendors": "Список компонентов пуст. Создайте производный компонент от подходящего узла"
+  },
+  "app/ServerConnection": {
+    "ErrSyncSocketPluginNotInstalledOrDisabled": "Плагин SyncSocket не установлен или отключен."
+  },
+  "app/ShareForm": {
+    "CopiedHint": "Скопировано"
+  },
+  "app/TabForm": {
+    "ErrNodeNotInitialized": "У узла \"{0}\" не задан компонент",
+    "ErrPrepareContainer": "При переходе на \"{0}.{1}\" возникла ошибка.\n{2}",
+    "ErrVendorMalfunction": "Компонент узла \"{0}\" неисправен",
+    "MsgNodeConfigurationChanged": "Конфигурация узла изменилась",
+    "MsgNodeLoading": "Узел временно недоступен для редактирования. Попробуйте повторить это действие позже.",
+    "MsgNodeLocked": "Узел \"{0}\" заблокирован",
+    "MsgNodeNotExists": "Узел \"{0}\" не существует",
+    "MsgNotFoundContainer": "Нет способа отобразить \"{0}.{1}\"",
+    "OperationAborted": "Действие не поддерживается"
+  },
+  "app/VendorsListForm": {
+    "BaseNodeHeader": "Базовый узел",
+    "BaseNodeTooltip": "Ссылка на базовый узел",
+    "Delete": "Удалить",
+    "DeleteTooltip": "Удалить...",
+    "DescriptionHeader": "Описание",
+    "DisplayNameHeader": "Название",
+    "GoToBaseNode": "Перейти к базовому узлу",
+    "Setup": "Настроить",
+    "SetupTooltip": "Настроить...",
+    "Update": "Обновить",
+    "VisibilityHeader": "Область видимости"
+  },
+  "app/Version": {
+    "CompanyWebsite": "https://loginom.ru",
+    "LegalCopyright": "© ООО Аналитические технологии 2017"
+  },
+  "app/WindowTitle": {
+    "Close": "Закрыть",
+    "Help": "Справка",
+    "Minimize": "Минимизировать",
+    "Restore": "Восстановить"
+  },
+  "codemirror/CodeMirrorTernController": {
+    "ErrWrongFuncDescFormat": "Неверный формат описания функции Калькулятора \"{0}\"",
+    "RE_AZaz": "[А-Яа-яЁё]"
+  },
+  "components/binning/LabelTemplateToolTip": {
+    "ContextMenuInsertAllFmt": "Вставить шаблон: {0}",
+    "ContextMenuInsertFormateFmt": "Вставить формат: {0}",
+    "ContextMenuInsertKeyFmt": "Вставить ключ: {0}",
+    "Desc": "Номер интервала",
+    "DescAVE": "Среднее арифметическое границ диапазона",
+    "DescCP": "Закрывающаяся скобка \")\" или \"]\"",
+    "DescFD": "Метка квантуемого поля (%FD[3-7] - с 3-го по 7-й символ включительно)",
+    "DescFN": "Имя квантуемого поля (%FN[5] - первые 5 символов имени)",
+    "DescMAX": "Максимум интервала",
+    "DescMIN": "Минимум интервала",
+    "DescOP": "Открывающаяся скобка \"(\" или \"[\"",
+    "SamplesDesc_3": "только 3 значимых разряда",
+    "SamplesDesc_r3": "округлить до 50"
+  },
+  "components/binning/MethodSettingFrame": {
+    "Loading": "Ожидайте",
+    "SDBinCountTemplate": "Количество интервалов - {0}"
+  },
+  "components/binning/MethodSettingsWizard": {
+    "AllExcluded": "<  x <",
+    "AllInclusive": "<= x <=",
+    "CalculatingBinsProcess": "Расчет интервалов",
+    "ContextMenuCalculateAllBins": "Рассчитать все интервалы",
+    "ContextMenuCalculateCurrentBins": "Рассчитать текущий",
+    "ContextMenuEdit": "Редактировать",
+    "DescriptionA1Dat": "Автоматически 1",
+    "DescriptionA1Num": "Автоматически 1",
+    "DescriptionA2Dat": "Автоматически 2",
+    "DescriptionA2Num": "Автоматически 2",
+    "DescriptionA3Dat": "Автоматически 3",
+    "DescriptionA3Num": "Автоматически 3",
+    "DescriptionAve": "Среднее арифметическое",
+    "DescriptionExampleDat": "Пример метки",
+    "DescriptionExampleNum": "Пример метки",
+    "DescriptionMax": "Максимум",
+    "DescriptionMin": "Минимум",
+    "DescriptionN": "Номер",
+    "DescriptionTestNum": "Тест",
+    "InputPortsNotActived": "Активировать входные порты?",
+    "LabelTamplateA1Dat": "%MIN[от d.m.yy h:mm]%MAX[ до d.m.yy h:mm]",
+    "LabelTamplateA1Num": "%MIN[от #,0.####]%MAX[ до #,0.####]",
+    "LabelTamplateA2Dat": "%OP%MIN..%MAX%CP",
+    "LabelTamplateA2Num": "%OP%MIN[4]..%MAX[4]%CP",
+    "LabelTamplateA3Dat": "%FD[5] %OP%MIN..%MAX%CP",
+    "LabelTamplateA3Num": "%FD[5] %OP%MIN[4]..%MAX[4]%CP",
+    "LabelTamplateAve": "%AVE",
+    "LabelTamplateExampleDat": "%FN (%FD[5]) %OP%MIN[d-mmm-yy h:mm]..%MAX[d-mmm-yy h:mm]%CP",
+    "LabelTamplateExampleNum": "%FN (%FD[5]) %OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, среднее - #.####]",
+    "LabelTamplateMax": "%MAX",
+    "LabelTamplateMin": "%MIN",
+    "LabelTamplateN": "%N",
+    "LabelTamplateTestNum": "%OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, среднее - #.####]",
+    "LowerInclusive": "<= x <",
+    "MsgBoxTitle": "Внимание",
+    "ProcessInfo": "Для выбранных колонок уже запущен процесс обработки.",
+    "SelectMethodType": "Выберите метод",
+    "UpperInclusive": "<  x <="
+  },
+  "components/calcdata/CalcDataFields": {
+    "Fields": "Поля",
+    "Vars": "Переменные"
+  },
+  "components/calcdata/CalcExpressionsAbstract": {
+    "AddFirstExpressionToEdit": "Добавьте выражение, чтобы можно было редактировать",
+    "DeleteAllConfirm": "Вы действительно хотите удалить все выражения?",
+    "DeleteAllMsgTitle": "Удаление всех выражений"
+  },
+  "components/calcdata/CalcFieldsAbstract": {
+    "SearchDef": "Фильтрация"
+  },
+  "components/calcdata/CalcFunctions": {
+    "All": "Все",
+    "Categories": "Категории",
+    "Parameters": "Параметры",
+    "RE_AZaz": "[А-Яа-яЁё]",
+    "SearchDef": "Фильтрация"
+  },
+  "components/calcdata/CodeMirrorController": {
+    "ExprPlaceholder": "Введите код выражения"
+  },
+  "components/calcvariables/CalcVariablesFields": {
+    "Vars": "Переменные"
+  },
+  "components/coarseclasses/CalculateInformationValues": {
+    "ChartTitle": "Зависимость IV от количества классов",
+    "XAxisTitle": "Количество классов",
+    "YAxisTitle": "Инф.индекс"
+  },
+  "components/coarseclasses/ClassesChartWrapper": {
+    "FineClassTooltip": "Значение",
+    "FineClassXaxisTitle": "Начальный класс"
+  },
+  "components/coarseclasses/CoarseClassesEditor": {
+    "AcceptCurrentBinning": "Принять текущее разбиение?",
+    "CalculateInformationValuesApplyText": "Рассчитать",
+    "CalculateInformationValuesTitle": "Рассчитать",
+    "ChangeColumnPurposeToInput": "Поле '{0}' заблокировано, т.к. использует внешнее или замороженное разбиение. Снять блокировку и продолжить?",
+    "CurrentBinningNotSaved": "Текущее разбиение содержит несохраненные изменения",
+    "LockAll": "Заморозить все",
+    "LockSelected": "Заморозить выбранные",
+    "SplitClass": "Разбить по границе",
+    "UnlockAll": "Разморозить все",
+    "UnlockSelected": "Разморозить выбранные"
+  },
+  "components/coarseclasses/CoarseClassesViewer": {
+    "HideSideBar": "Скрыть боковую панель",
+    "Locked": "Заморожено",
+    "ShowSideBar": "Показать боковую панель",
+    "Total": "Всего",
+    "Unlocked": "Разморожено"
+  },
+  "components/coarseclasses/CoarseClassesWizard": {
+    "ErrNoStatistics": "Не удалось получить статистику",
+    "InputPortsNotActived": "Активировать входные порты?"
+  },
+  "components/columnflipping/ColumnFlippingWizard": {
+    "ColumnFlippingTitle": "Свертка столбцов",
+    "UsageInfo": "Информационные",
+    "UsageTransposition": "Транспонируемые"
+  },
+  "components/coluniondata/ColUnionDataWizard": {
+    "NoDataSourceTooltip": "Отсутствует выбранный источник данных"
+  },
+  "components/condition/ConditionParamsWizard": {
+    "DebugAll": "Все ветви",
+    "DebugElse": "Иначе"
+  },
+  "components/condition/ConditionSocketsWizard": {
+    "DuplicateSocketsError": "Элементы \"{0}\" и \"{1}\" имеют одинаковые идентификаторы",
+    "EmptySocketName": "<Уникальное имя>",
+    "EmptyVendor": "Не задан"
+  },
+  "components/corranalysis/CorrAnalysisWizard": {
+    "CorrTypeExtremum": "Будет вычислен максимальный по модулю из коэффициентов корреляции двух процессов, рассчитанных при всевозможных временных сдвигах. Следует применять, если необходимо узнать линейную зависимость между двумя процессами или частями процессов, происходящими с некоторым временным лагом.",
+    "CorrTypeKendall": "Коэффициент ранговой корреляции Tay-b Кендалла применяется для выявления количественной взаимосвязи между переменными, если их можно ранжировать. Рекомендуется использовать для категориальных данных.",
+    "CorrTypePearson": "При помощи коэффициента корреляции Пирсона можно определить силу и направление линейной зависимости между двумя процессами, происходящими одновременно.",
+    "CorrTypeSpearman": "Коэффициент ранговой корреляции Спирмена - еще один вариант ранговой корреляции. Для числовых полей для оценки силы связи используются не численные значения, а соответствующие им ранги. Поэтому для любых монотонных последовательностей коэффициент Спирмена будет равен 1 или -1."
+  },
+  "components/crosstab/CrossTabWizard": {
+    "CaseDesc": "Факты",
+    "ColumnGroupTip": "Измерение в колонках для",
+    "CrossTabTitle": "Кросс-таблица",
+    "DimColDesc": "Колонки",
+    "DimRowDesc": "Строки",
+    "MinUniqueValuesCountTip": "Минимальное количество уникальных значений",
+    "NullGroupColumn": "Пропущенные",
+    "OtherGroupColumn": "Прочие",
+    "SpaceSeparator": "Пробел",
+    "UniqueValuesGroupTip": "Группа уникальных значений: "
+  },
+  "components/datarecovery/DataRecoveryWizard": {
+    "NotUsedAction": "Не выбран"
+  },
+  "components/datatovariables/DataToVariablesWizard": {
+    "DataToVariablesTitle": "Таблица в переменные",
+    "GroupDataFactor": "Переменные"
+  },
+  "components/datatoxml/DataToXmlRequestWizard": {
+    "DataToXmlRequestTitle": "Сопоставление полей для формирования XML"
+  },
+  "components/datereform/DateReformWizard": {
+    "CommonGroup": "Обычный",
+    "IsoGroup": "ISO"
+  },
+  "components/elimoutlier/ElimOutlierWizard": {
+    "OutExtrError": "Значение для выброса должно быть меньше, чем для экстремального значения"
+  },
+  "components/em/EMClusterizationWizard": {
+    "frmClusterizationTitle": "ЕМ Кластеризация"
+  },
+  "components/enrichdata/EnrichDataWizard": {
+    "MissingMainColumn": "Нельзя отобразить связь, не связанную с главной таблицей",
+    "NotAssignedColumn": "Не выбрано"
+  },
+  "components/execcmd/ExecCmdCodeMirrorController": {
+    "CmdPlaceholder": "Введите текст команды"
+  },
+  "components/execnode/ExecNodeComponentWizard": {
+    "ExecNodeWizardTitle": "Выполнение узла"
+  },
+  "components/filterdata/FilterColumnItem": {
+    "bdtCurrent": "текущей даты",
+    "bdtData": "имеющихся данных",
+    "EndingWith": "заканчивается на",
+    "Equal": "=",
+    "fld0and5to20DayPeriodName": "дней",
+    "fld0and5to20MonthPeriodName": "месяцев",
+    "fld0and5to20QuarterPeriodName": "кварталов",
+    "fld0and5to20WeekPeriodName": "недель",
+    "fld0and5to20WrongPeriodName": "периодов",
+    "fld0and5to20YearPeriodName": "лет",
+    "fld2to4DayPeriodName": "дня",
+    "fld2to4MonthPeriodName": "месяца",
+    "fld2to4QuarterPeriodName": "квартала",
+    "fld2to4WeekPeriodName": "недели",
+    "fld2to4WrongPeriodName": "периода",
+    "fld2to4YearPeriodName": "года",
+    "fldAfter": "от",
+    "fldBefore": "до",
+    "fldDayFirstPostfix": "первый",
+    "fldDayLastPostfix": "последний",
+    "fldManyFirstPostfix": "первые",
+    "fldManyLastPostfix": "последние",
+    "fldMonthFirstPostfix": "первый",
+    "fldMonthLastPostfix": "последний",
+    "fldNegative": "не",
+    "fldOneDayPeriodName": "день",
+    "fldOneMonthPeriodName": "месяц",
+    "fldOneQuarterPeriodName": "квартал",
+    "fldOneWeekPeriodName": "неделя",
+    "fldOneWrongPeriodName": "период",
+    "fldOneYearPeriodName": "год",
+    "fldOtherFirstPostfix": "первое",
+    "fldOtherLastPostfix": "последнее",
+    "fldQuarterFirstPostfix": "первый",
+    "fldQuarterLastPostfix": "последний",
+    "fldWeekFirstPostfix": "первая",
+    "fldWeekLastPostfix": "последняя",
+    "fldYearFirstPostfix": "первый",
+    "fldYearLastPostfix": "последний",
+    "GetValueList": "Получить список",
+    "Greater": ">",
+    "GreaterOrEqual": ">=",
+    "In": "в списке",
+    "InvalidFilter": "Не настроен",
+    "IsFalse": "ЛОЖЬ",
+    "IsNotNull": "не пустое",
+    "IsNull": "пустое",
+    "IsTrue": "ИСТИНА",
+    "Less": "<",
+    "LessOrEqual": "<=",
+    "Like": "содержит",
+    "NotEndingWith": "не заканчивается на",
+    "NotEqual": "<>",
+    "NotIn": "не в списке",
+    "NotLike": "не содержит",
+    "NotSelectedValieItem": "Нет значений",
+    "NotStartingWith": "не начинается с",
+    "SetLabel": "Список",
+    "StartingWith": "начинается с",
+    "ValueListIsEmpty": "Нет значений"
+  },
+  "components/filterdata/FilterDataWizard": {
+    "Activation": "Активация входа",
+    "ActivationCanceled": "Отменено пользователем",
+    "FilterApply": "Применить фильтр",
+    "FilterPreview": "Фильтрация"
+  },
+  "components/groupdata/GroupDataWizard": {
+    "FactorsEditTooltip": "Редактировать",
+    "FactorTooltip": "Методы агрегации для {0}:",
+    "FactorTooltipError": "Не заданы методы агрегации",
+    "FunctionsUndefined": "Не определен",
+    "GroupDataDimension": "Группа",
+    "GroupDataDimensionTooltipName": "Группу",
+    "GroupDataFactor": "Показатели",
+    "GroupDataTitle": "Группировка"
+  },
+  "components/javascript/CodeOutputPreviewForm": {
+    "CodeExec": "Выполнение скрипта"
+  },
+  "components/javascript/JavaScriptCodeMirrorController": {
+    "CodePlaceholder": "Введите код"
+  },
+  "components/javascript/JavaScriptCodeWizard": {
+    "ConsoleMessagesMissed": " пропущено"
+  },
+  "components/javascript/JavaScriptColumnsWizard": {
+    "frmJavaScriptOutputTableTitle": "Настройка столбцов выходной таблицы JavaScript"
+  },
+  "components/joindata/JoinDataWizard": {
+    "DifferenceJoinDataDesc": "Разность включает в результат все строки из главного набора данных, за исключением строк, для которых ключевые поля главного (левого) и вычитаемого (правого) набора данных совпадают.",
+    "FullJoinDataDesc": "Полное внешнее соединение включает в результат все строки из главного и присоединяемого наборов данных. Если ключевые поля совпадают, то строки заполняются реальными значениями. В несовпадающих строках столбцы заполняются значениями null.",
+    "GroupField_MissingFields": "Отсутствующие столбцы",
+    "InnerJoinDataDesc": "Внутреннее соединение включает в результат все строки, для которых найдено совпадение ключевых полей главного и присоединяемого наборов данных.",
+    "JoinDataWizardTitle": "Настройка слияния данных",
+    "JoinedColumns": "Столбцы присоединяемого набора данных",
+    "LeftJoinDataDesc": "Внешнее левое соединение включает в результат все строки из главного набора данных, дополненные значениями столбцов из присоединяемого набора данных, которые совпадают по ключевым полям.",
+    "MainColumns": "Столбцы основного набора данных",
+    "RightJoinDataDesc": "Внешнее правое соединение включает в результат все строки из присоединяемого набора данных, дополненные значениями столбцов из главного набора данных, которые совпадают по ключевым полям."
+  },
+  "components/linregression/LinRegressionWizard": {
+    "RegressionDetailPage": "Детальная настройка линейной регрессии",
+    "RegressionParamsPage": "Настройка линейной регрессии"
+  },
+  "components/logregression/LogRegressionWizard": {
+    "GetValueList": "Получить список",
+    "RegressionDetailPage": "Детальная настройка логистической регрессии",
+    "RegressionParamsPage": "Настройка логистической регрессии"
+  },
+  "components/loop/LoopMappingWizard": {
+    "InvalidLinkFormat": "Отсутствует переменные в связи входной переменной \"{0}\" с выходной \"{1}\"",
+    "LoopMappingWizardTitle": "Сопоставление переменных",
+    "SourceTitle": "Выходные переменные",
+    "TargetTitle": "Входные переменные"
+  },
+  "components/loop/LoopNodeWizard": {
+    "LoopNodeWizardTitle": "Выбор узла цикла"
+  },
+  "components/loop/LoopParamsWizard": {
+    "AutodetectMaxThreadCount": "Определять автоматически",
+    "GroupColumnMissingFormat": "Отсутствует назначенная для группировки колонка \"{0}\"",
+    "MaxThreadCountMinPrefix": "Значение не может быть меньше",
+    "NoSocketError": "Отсутствует входной порт источника данных для групповой обработки",
+    "NullReferenceNode": "Не задан",
+    "NullReferenceNodeError": "Отсутствует исходный узел",
+    "VariableNotFoundErrorFormat": "Отсутствует переменная \"{0}\""
+  },
+  "components/neuralnet/NeuralNetParamsWizard": {
+    "DecayAvg": "Средняя",
+    "DecayNone": "Отсутствует",
+    "DecayStrong": "Сильная",
+    "DecayVeryStrong": "Очень сильная",
+    "DecayVeryWeak": "Очень слабая",
+    "DecayWeak": "Слабая"
+  },
+  "components/reformcolumns/EditReformColumnDefForm": {
+    "CachingMethod": "Кэширование"
+  },
+  "components/reformcolumns/ReformColumnsWizard": {
+    "ColumnCachingMethodText": "Кэширование",
+    "ColumnDisplayNameText": "Метка",
+    "ReformColumnsWizardTitle": "Настройка параметров полей"
+  },
+  "components/replace/ReplaceVariablesWizard": {
+    "VariablesTitle": "Переменные"
+  },
+  "components/replace/ReplaceWizard": {
+    "DeleteAllPrompt": "Вы действительно хотите удалить все варианты замен?",
+    "DeleteAllPromptTitle": "Удалить таблицу замен",
+    "EditorDisabled": "Включите замену для редактирования",
+    "EditorNotChoosed": "Выберите замену для редактирования",
+    "ErrFileFieldMiss": "Элемент не является полем для загрузки файла",
+    "ErrFileNotChoosed": "Не выбран файл",
+    "ErrTypeCastError": "Невозможно привести значение {0} к типу данных {1}",
+    "OutputDataTypeError": "Тип выходных значений не может быть однозначным без замены других",
+    "ReplaceGroupCommon": "Точное совпадение",
+    "ReplaceGroupRegex": "Регулярные выражения",
+    "ReplaceItemTypeError": "Значение не соответствует используемому типу",
+    "ReplacementsSourceError": "Ошибка источника замен",
+    "ReplacementsSourceErrorTip": "Отсутствует источник замен с Guid {0}",
+    "ReplaceOtherByEmpty": "На пропущенное",
+    "ReplaceOtherByNone": "Не заменять",
+    "ReplaceOtherByRegExp": "На регулярное выражение",
+    "ReplaceOtherByValue": "На значение",
+    "SourceFieldInfo": "Информационное",
+    "SourceFieldInput": "Значение",
+    "SourceFieldOutput": "Замена",
+    "SourceFieldUnused": "Не используемое",
+    "UniqueValuesLimitErr": "Невозможно отобразить уникальные значения в количестве больше {0}"
+  },
+  "components/sampling/SamplingComponentWizard": {
+    "SampleSetName": "Сэмплированное"
+  },
+  "components/slidingwindow/SlidingWindowWizard": {
+    "NoForecast": "Не выбран",
+    "NoHistory": "Не выбрана"
+  },
+  "components/sorting/SortingColumnCollection": {
+    "CaseSensitiveActionDesc": "Учитывать регистр",
+    "ColumnIsUsed": "Поле уже используется",
+    "DeleteAllConfirm": "Отменить сортировку всех полей?",
+    "DeleteConfirmFmt": "Отменить сортировку поля \"{0}\"?",
+    "DeleteTitle": "Отмена сортировки",
+    "HintForSortDirectionAsc": "По возрастанию",
+    "HintForSortDirectionDesc": "По убыванию",
+    "InvalidRowDescFmt": "Входное поле \"{0}\" не найдено",
+    "MultiDeleteConfirm": "Отменить сортировку для выбранных полей?",
+    "NotCaseSensitiveActionDesc": "Не учитывать регистр"
+  },
+  "components/ungroupdata/UngroupDataWizard": {
+    "ErrDataTypeTimeAxisFields": "Типы данных полей для определения порядка следования данных должны совпадать",
+    "ErrInSelectGroupFields": "Не задано разгруппируемое поле",
+    "ErrInSelectOutputFields": "Не задано поле для разыменования разгруппированных значений",
+    "ErrInSelectQuotaCalcFields": "Не задано поле для расчета долей",
+    "ErrInSelectQuotaFields": "Не задано поле с долями",
+    "ErrInSelectTimeAxisFields": "Не заданы поля для определения порядка следования данных",
+    "ErrNoLinksDefined": "Не определено ни одной связи",
+    "MissingColumnFmt": "Отсутствует связанная колонка с именем \"{0}\"",
+    "NoTimeAxisColumn": "Колонка не выбрана",
+    "OutputColumnUsageType": "Поле с наименованиями",
+    "QuotaColumnUsageType": "Поле с долями",
+    "RoundDecimalParamLabel": "Точность после запятой",
+    "RoundMultipleParamLabel": "Кратность",
+    "RoundParamLabel": "Параметр округления",
+    "TimeAxisColumnUsageType": "Порядковое поле",
+    "UngroupedColumnUsageType": "Разгруппируемое"
+  },
+  "components/uniondata/UnionDataWizard": {
+    "MissingMainColumn": "Нельзя отобразить связь, не связанную с главной таблицей",
+    "NotAssignedColumn": "Не выбрано"
+  },
+  "components/variablestodata/VariablesToDataWizard": {
+    "VarToColumnsDescribe": "Каждой переменной будет соответствовать отдельное поле таблицы.",
+    "VarToRowsDescribe": "Каждой переменной будет соответствовать отдельная запись таблицы."
+  },
+  "components/wsdlclient/AbstractOutputWizard": {
+    "PartMessagePrefix": "Часть: "
+  },
+  "components/wsdlclient/CommonRequestController": {
+    "AutoMapPromtTitle": "Автоматическое связывание",
+    "ConfirmAutoMap": "Будет выполнена автоматическая расстановка связей по метке поля и типу данных. Уже настроенные связи будут удалены.",
+    "ConfirmDeleteAll": "Удалить все связи?",
+    "DeletePromtTitle": "Удаление",
+    "ErrInvalidLinkFound": "Обнаружена невалидная связь поля \"{0}\" с запросом \"{1}\"",
+    "ErrMultilinkFound": "Обнаружена множественная связь запроса \"{0}\" с полем \"{1}\", которая будет удалена",
+    "NotLink": "не связано"
+  },
+  "components/wsdlclient/DebugParamsController": {
+    "ErrDumpRequestDirectoryDoesNotExist": "Папка {0}, указанная в качестве расположения для сохранения запросов, не существует",
+    "ErrResponseFileDoesNotExist": "Файл {0}, указанный в качестве источника ответа, не существует"
+  },
+  "components/wsdlclient/OperationFaultsWizard": {
+    "FaultsMessagePrefix": "Обрабатываемое исключение: ",
+    "OperationFaultsTitle": "Настройка обрабатываемых исключений"
+  },
+  "components/wsdlclient/OperationOutputWizard": {
+    "OperationOutputTitle": "Настройка ответа сервиса",
+    "OutputMessagePrefix": "Сообщение: "
+  },
+  "components/wsdlclient/RequestMethodWizard": {
+    "ErrNotConnected": "Подключение к Web-сервису не активно",
+    "HttpBindingExtensionInfoPfx": "Метод запроса: ",
+    "HttpOperationExtensionInfoPfx": "Локальная часть адреса: ",
+    "PortExtensionInfoFmt": "Тип расширения: {0}; адрес запроса: {1}",
+    "SoapBindingExtensionInfoFmt": "Версия SOAP: {0}; стиль запроса: {1}; транспорт: {2}",
+    "SoapOperationExtensionInfoFmt": "Стиль запроса: {0}; действие: {1}",
+    "WSDLBindingPfx": "Связывание: ",
+    "WSDLOperationFtm": "Операция: {0} ({1})",
+    "WSDLPortPfx": "Порт: ",
+    "WSDLServicePfx": "Служба: "
+  },
+  "components/wsdlclient/WSDLRequestWizard": {
+    "MessagePrefix": "Сообщение: ",
+    "PartPrefix": "Часть: "
+  },
+  "connections/restservice/ConnectionWizard": {
+    "DeleteAllParamsPrompt": "Вы действительно хотите удалить все параметры?",
+    "DublicateGetMethodParamNameFmt": "Параметр с именем \"{0}\" уже существует",
+    "TestConnectionSuccess": "Тестирование соединения прошло успешно",
+    "TestConnectionTitle": "Тестирование соединения"
+  },
+  "connections/webservice/AuthorizationForm": {
+    "ExpireCertDateError": "Истек срок годности сертификата"
+  },
+  "connections/webservice/ConnectionWizard": {
+    "TestConnectionSuccess": "Тестирование соединения прошло успешно",
+    "TestConnectionTitle": "Тестирование соединения"
+  },
+  "connections/xsdfiles/XSDFilesConnectionWizard": {
+    "ErrFileNameAdd": "Файл с именем {0} не может быть добавлен в список, возможно он уже есть в списке"
+  },
+  "exports/dbexport/DBCreateTableDialog": {
+    "DublicateFieldName": "Поле с таким именем уже существует",
+    "ErrCreateTable": "При создании таблицы возникла ошибка",
+    "ErrFieldSize": "Поле {0} должно быть с размером больше 0",
+    "ErrTableName": "Неправильное имя таблицы",
+    "InvalidFieldNameChar": "Недопустимый символ в имени поля"
+  },
+  "exports/dbexport/DBExportMappingWizard": {
+    "colDisplayNameTitle": "Поля таблицы базы данных",
+    "colSourceNameTitle": "Исходные столбцы",
+    "ErrAbsentDataSourceSourceDetails": "Список отсутствующих исходных столбцов, используемых ранее:",
+    "ErrAbsentFieldsDetails": "Список отсутствующих столбцов таблицы, используемых ранее:",
+    "ErrUpdateFieldsDetails": "Список столбцов таблицы, в которых произошли изменения:",
+    "KeyColumnText": "Ключ",
+    "SyncThroughColumnsToolTip": "Обновить поля таблицы",
+    "Title": "Укажите соответствие исходных столбцов полям таблицы"
+  },
+  "exports/dbexport/DBExportParamsWizard": {
+    "ErrTableNameNotSelected": "Не указано имя таблицы",
+    "NoConnection": "Нет подключения"
+  },
+  "exports/excelfile/ExportExcelFilePreviewWizard": {
+    "DefaultSheetName": "Лист1"
+  },
+  "exports/xml/BaseXmlRequestWizard": {
+    "EmptyNamespace": "пространство имен не указано",
+    "ExportXmlRequestTitle": "Сопоставление полей для экспорта"
+  },
+  "ext/colorfield/Field": {
+    "UndefinedHexFormat": "Неверный шестнадцатеричный формат числа"
+  },
+  "ext/colorfield/Pallete": {
+    "EmptyPalleteText": "Стандартная",
+    "Pallete": "Палитра"
+  },
+  "ext/CustomRowBody": {
+    "ToggleRowNotFoundRow": "Не найдена строка для раскрытия/закрытия"
+  },
+  "ext/ExportUtils": {
+    "BytesSuffix": "байт",
+    "CantSaveDownLoadedFile": "Не удалось сохранить скачанный файл",
+    "ErrUTF8ToUCS2Conversion": "Ошибка преобразования строки из UTF-8 в UCS-2",
+    "ExcelMenuText": "XLS (html)",
+    "ExecutionStarted": "Экспорт уже начался",
+    "ExportPrefix": "Экспорт в ",
+    "GigaBytesSuffix": "ГБ",
+    "KiloBytesSuffix": "КБ",
+    "MegaBytesSuffix": "МБ",
+    "XHRError": "Ошибка XMLHttpRequest, статус: {0}"
+  },
+  "ext/ExtJS": {
+    "ErrEnumMenuItemNotFound": "Элемент меню не найден",
+    "ErrUnsupportedToggleComponent": "Компонент не поддерживается действием toggle",
+    "LongProcessingMessage": "Подождите, идёт обработка данных"
+  },
+  "ext/FieldUtils": {
+    "ErrRadioGroupNotPrepared": "Радио группа не подготовлена",
+    "InvalidBooleanValue": "Недопустимое логическое значение",
+    "InvalidDateTimeValue": "Недопустимое значение даты времени",
+    "InvalidFloatNumber": "Недопустимое число",
+    "InvalidIntegerNumber": "Недопустимое целое число",
+    "InvalidValueIsNull": "Пустое значение не допускается",
+    "MinMaxError": "Минимальное значение не может быть больше максимального.",
+    "ValidateEditorsError": "Ошибка в редакторах"
+  },
+  "ext/FilterField": {
+    "EmptyTextFilter": "Фильтрация",
+    "EmptyTextSearch": "Поиск",
+    "FilterAction": "Фильтровать",
+    "LabelOr": "или",
+    "SearchAction": "Искать"
+  },
+  "ext/GridMenu": {
+    "AllColumns": "Везде",
+    "FilterApplyText": "Фильтровать",
+    "SearchApplyText": "Найти"
+  },
+  "ext/GridUtils": {
+    "AddActionText": "Добавить",
+    "AddIconToolTip": "Добавить",
+    "AddIconToolTipHtml": "Добавить",
+    "DeleteAllPrompt": "Вы действительно хотите удалить все?",
+    "DeleteAllPromptActCol": "Вы действительно хотите удалить все?",
+    "DeleteAllPromptTitle": "Удаление",
+    "DeleteAllPromptTitleActCol": "Удаление",
+    "DeleteAllText": "Удалить все...",
+    "DeleteText": "Удалить",
+    "ErrStoreType": "Для контроллера действий хранилище должно быть типа Ext.data.Store или Ext.data.ChainedStore",
+    "GridViewDragDropNotFound": "Невозможно подготовить таблицу к перетаскиванию строк, не найден плагин gridviewdragdrop",
+    "LinkIsMissing": "Отсутствует",
+    "MoveDownActionText": "Переместить вниз",
+    "MoveUpActionText": "Переместить вверх"
+  },
+  "ext/LinkGrid": {
+    "btnAutoLinkCaption": "Установить связи автоматически",
+    "btnClearCaption": "Очистить связи",
+    "btnResortCaption": "Пересортировать связи",
+    "DragText": "Тащите на элемент с которым нужно связать",
+    "ErrGetActionUndefined": "Функция bg.ext.GetAction не определена",
+    "ErrMultiSelection": "Множественный выбор строк должен быть включен для обеих связанных таблиц",
+    "ErrMultiSelectRequired": "Допускается связывание одной строки с множеством других строк, необходимо разрешить множественное выделение строк связываемым таблицам",
+    "ErrNotSupportedBufferedStore": "LinkGrid не поддерживает BufferedStore"
+  },
+  "ext/Lock": {
+    "Loading": "Загрузка"
+  },
+  "ext/MultiDragDropController": {
+    "BadDDTagConfig": "DDTag должен содержать хотя бы одну строку",
+    "DDTagIntersect": "Пересечение DDTag у разных ресиверов в пределах одной dd зоны",
+    "DDZoneIsNotContainer": "dd зона должна быть контейнером",
+    "DDZoneReciever": "dd зона не может быть ресивером",
+    "NestedDDZone": "Вложенные dd зоны запрещены",
+    "NestedReciever": "Вложенные ресиверы запрещены",
+    "NonContainerRecieverBadConfig": "Ресивер может быть не контейнером, только если NoAddOnDrop == NoPlaceholder == true"
+  },
+  "ext/TotalLabel": {
+    "HeaderFormat": "# |{0}|",
+    "RowCountSymbol": "#"
+  },
+  "ext/TriStateSortColumn": {
+    "SortClearText": "Сбросить сортировку"
+  },
+  "ext/TypedTag": {
+    "EmptyStringDesc": "Пустая строка"
+  },
+  "ext/UniversalColumn": {
+    "ColumnUndefined": "Не определена колонка"
+  },
+  "ext/VariantEditor": {
+    "EmptyStringText": "<Пустая строка>",
+    "NullText": "<NULL>"
+  },
+  "ext/VendorTreeStore": {
+    "VendorsTitle": "Компоненты"
+  },
+  "ext/VTypes": {
+    "AlphaNumUnicodeIncorrect": "Это поле должно содержать только буквы, цифры и _.",
+    "ErrInvalidIdentifier": "Введенное значение не является правильным идентификатором.",
+    "VersionIncorrect": "Некорректный формат версии.",
+    "VersionMaskIncorrect": "Некорректный формат маски версии."
+  },
+  "filedialog/Dialogs": {
+    "UseBaseFileStorageToolTip": "Используются относительные пути базового пакета"
+  },
+  "filedialog/FileMask": {
+    "ACCDBFileDesc": "База данных MS Access 2007",
+    "ACCDBFilesDesc": "Базы данных MS Access 2007",
+    "AllFilesDesc": "Все файлы",
+    "ArchiveFileDesc": "Архив",
+    "ArchiveFilesDesc": "Архивы",
+    "AudioFileDesc": "Аудио файл",
+    "AudioFilesDesc": "Аудио файлы",
+    "BMPFileDesc": "Точечный рисунок",
+    "BMPFilesDesc": "Точечные рисунки",
+    "CsvFileDesc": "CSV файл",
+    "CsvFilesDesc": "CSV файлы",
+    "DbfFileDesc": "Файл dBase",
+    "DbfFilesDesc": "Файлы dBase",
+    "DDFFileDesc": "DDF файл",
+    "DDFFilesDesc": "DDF файлы",
+    "DocFileDesc": "Документ MS Word",
+    "DocFilesDesc": "Документы MS Word",
+    "ExcelFileAllDesc": "Файл Excel",
+    "ExcelFilesAllDesc": "Файлы Excel",
+    "ExcelFilesSupportedDesc": "Файлы Excel",
+    "FdbFileDesc": "База данных Firebird",
+    "FdbFilesDesc": "Базы данных Firebird",
+    "GdbFdbFileDesc": "База данных IB\\FB",
+    "GdbFdbFilesDesc": "Базы данных IB\\FB",
+    "GdbFileDesc": "База данных InterBase",
+    "GdbFilesDesc": "Базы данных InterBase",
+    "GIFFileDesc": "Изображение GIF",
+    "GIFFilesDesc": "Изображения GIF",
+    "HtmFileDesc": "Веб-страница",
+    "HtmFilesDesc": "Веб-страницы",
+    "ICOFileDesc": "Иконка",
+    "ICOFilesDesc": "Иконки",
+    "IMGAllFileDesc": "Изображение",
+    "IMGAllFilesDesc": "Изображения",
+    "JPGFileDesc": "Изображение JPEG",
+    "JPGFilesDesc": "Изображения JPEG",
+    "LckFileDesc": "Файл блокирования",
+    "LckFilesDesc": "Файлы блокирования",
+    "LGDFileDesc": "Loginom Data файл",
+    "LGDFilesDesc": "Loginom Data файлы",
+    "LGPFileDesc": "Пакет Loginom",
+    "LGPFileReservedCopyDesc": "Резервная копия пакета Loginom",
+    "LGPFilesDesc": "Пакеты Loginom",
+    "LGPFilesReservedCopyDesc": "Резервные копии пакетов Loginom",
+    "LogFileDesc": "Файл журналы регистрации",
+    "LogFilesDesc": "Файлы журналов регистрации",
+    "MdbFileDesc": "База данных MS Access",
+    "MdbFilesDesc": "Базы данных MS Access",
+    "MhtFileDesc": "Веб-архив, один файл",
+    "MhtFilesDesc": "Веб-архивы, один файл",
+    "ODSFileDesc": "Электронная таблица OpenDocument",
+    "ODSFilesDesc": "Электронные таблицы OpenDocument",
+    "PDFFileDesc": "PDF документ",
+    "PDFFilesDesc": "PDF документы",
+    "PNGFileDesc": "Изображение PNG",
+    "PNGFilesDesc": "Изображения PNG",
+    "RtfFileDesc": "RTF файл",
+    "RtfFilesDesc": "RTF файлы",
+    "SHPFileDesc": "Файл Shape",
+    "SHPFilesDesc": "Файлы Shape",
+    "SQLFileDesc": "SQL файл",
+    "SQLFilesDesc": "SQL файлы",
+    "SQLiteFileAllDesc": "База данных SQLite",
+    "SQLiteFilesAllDesc": "Базы данных SQLite",
+    "SVGFileDesc": "Изображение SVG",
+    "SVGFilesDesc": "Изображения SVG",
+    "SysFileDesc": "Файл конфигурации",
+    "SysFilesDesc": "Файлы конфигураций",
+    "TxtFileDesc": "Текстовый файл",
+    "TxtFilesDesc": "Текстовые файлы",
+    "VideoFileDesc": "Видео файл",
+    "VideoFilesDesc": "Видео файлы",
+    "WSDLFileDesc": "Файл описания веб-сервиса",
+    "WSDLFilesDesc": "Файлы описания веб-сервиса",
+    "XlsbFileDesc": "Двоичная книга Excel 2007",
+    "XlsbFilesDesc": "Двоичные книги Excel 2007",
+    "XlsFileDesc": "Файл MS Excel",
+    "XlsFilesDesc": "Файлы MS Excel",
+    "XlsmFileDesc": "Двоичная книга Excel 2007 с поддержкой макросов",
+    "XlsmFilesDesc": "Двоичные книги Excel 2007 с поддержкой макросов",
+    "XlsxFileDesc": "Книга Excel 2007",
+    "XlsxFilesDesc": "Книги Excel 2007",
+    "XMLFileDesc": "XML файл",
+    "XMLFilesDesc": "XML файлы",
+    "XSDFileDesc": "Файл XML схемы",
+    "XSDFilesDesc": "Файлы XML схемы",
+    "XslXsltFileDesc": "Файл трансформации XML",
+    "XslXsltFilesDesc": "Файлы трансформации XML"
+  },
+  "filedialog/FileStorageUtils": {
+    "Folder": "Папка"
+  },
+  "filedialog/OpenDialogForm": {
+    "AbsolutePathCaption": "Абсолютный",
+    "BtnOpen": "Открыть",
+    "PathNotExists": "Путь \"{0}\" не существует",
+    "RelativePathCaption": "Относительный"
+  },
+  "filedialog/SaveDialogForm": {
+    "BtnSave": "Сохранить",
+    "OverwritePromptMsgFmt": "\"{0}\" уже существует. Вы хотите заменить его?",
+    "OverwritePromptTitle": "Подтвердить сохранение в виде",
+    "TitleSave": "Сохранить файл"
+  },
+  "filestorage/CopyPasteManager": {
+    "CantCopyInTheSameDirectory": "Нельзя скопировать в тот же самый каталог",
+    "CantDeleteFileAfterPasting": "Не удалось удалить исходный файл {0} после вставки",
+    "CantDeleteFolderAfterPasting": "Не удалось удалить исходный каталог {0} после вставки",
+    "CantPasteFile": "Не удалось вставить файл",
+    "CantPasteFolder": "Не удалось вставить каталог",
+    "Copied": "Скопировано",
+    "Cuted": "Вырезано",
+    "HasNotStorageItems": "Нет файлов для копирования/вырезания",
+    "ItemsAreSimilar": "Имена файлов/каталогов: {0} идентичны. При вставке они будут перезаписаны. Продолжить?",
+    "NoItemsInBuffer": "Буфер обмена пуст. Нужно сначала скопировать файлы или папки",
+    "ServerPasteException": "Сообщение сервера об ошибке: "
+  },
+  "filestorage/DragAndDropHandler": {
+    "DropText": "Бросьте, чтобы начать загрузку",
+    "EmptyDirectoryText": "Папка пуста. Перетащите файлы в эту область, чтобы загрузить их"
+  },
+  "filestorage/FileDownloader": {
+    "CantSaveDownLoadedFile": "Не удалось сохранить скачанный файл"
+  },
+  "filestorage/FileSenderManager": {
+    "FileAlreayLoading": "Файл {0} уже загружается. Дождитесь окончания или отмените процесс загрузки."
+  },
+  "filestorage/FileStorageForm": {
+    "CantCreateFolder": "Не удалось создать каталог",
+    "CantDeleteFile": "Не удалось удалить файл",
+    "CantDeleteFolder": "Не удалось удалить каталог",
+    "CantDownloadFolder": "Пока что нельзя скачивать каталоги",
+    "ConfirmDeleteAll": "Вы действительно хотите удалить все?",
+    "ConfirmDeleting": "Вы действительно хотите удалить выделенное?",
+    "ConfirmStopLoaders": "Активные загрузки будут отменены. Продолжить?",
+    "CreateDirectoryTitle": "Создание каталога",
+    "DeleteAllTitle": "Удаление всех файлов каталога",
+    "DirectoryAlreadyExists": "Каталог с таким именем уже существует",
+    "FileAlreadyExists": "Файл с таким именем уже существует",
+    "FileStorageNotConnected": "Нет соединения с файловым хранилищем",
+    "NeedNotEmptyFolderName": "Необходимо задать непустое имя каталога",
+    "RenamingStorageItem": "Переименование",
+    "SetNewDirectoryName": "Имя нового каталога:",
+    "SetNewName": "Новое имя:"
+  },
+  "filestorage/FileUploader": {
+    "ErrFileMayBeDeleted": "Ошибка загрузки файла. Возможно, файл был удален с диска",
+    "ErrFileUpload": "Ошибка загрузки файла"
+  },
+  "filestorage/LoaderViewController": {
+    "DownloadWindowTitle": "Скачивание файлов",
+    "ErrCancelLoaders": "Ошибка отмены операций",
+    "UploadWindowTitle": "Загрузка файлов на сервер"
+  },
+  "filestorage/LoadView": {
+    "CancelAllConfirm": "Вы действительно хотите остановить все загрузки?",
+    "CancelAllLoadersBtn": "Отменить все",
+    "ErrCancelAllLoaders": "Ошибка отмены операций"
+  },
+  "filtersview/FilterItem": {
+    "bdtCurrent": "текущей даты",
+    "bdtData": "имеющихся данных",
+    "EndingWith": "заканчивается на",
+    "Equal": "=",
+    "fld0and5to20DayPeriodName": "дней",
+    "fld0and5to20MonthPeriodName": "месяцев",
+    "fld0and5to20QuarterPeriodName": "кварталов",
+    "fld0and5to20WeekPeriodName": "недель",
+    "fld0and5to20WrongPeriodName": "периодов",
+    "fld0and5to20YearPeriodName": "лет",
+    "fld2to4DayPeriodName": "дня",
+    "fld2to4MonthPeriodName": "месяца",
+    "fld2to4QuarterPeriodName": "квартала",
+    "fld2to4WeekPeriodName": "недели",
+    "fld2to4WrongPeriodName": "периода",
+    "fld2to4YearPeriodName": "года",
+    "fldAfter": "от",
+    "fldBefore": "до",
+    "fldDayFirstPostfix": "первый",
+    "fldDayLastPostfix": "последний",
+    "fldManyFirstPostfix": "первые",
+    "fldManyLastPostfix": "последние",
+    "fldMonthFirstPostfix": "первый",
+    "fldMonthLastPostfix": "последний",
+    "fldNegative": "не",
+    "fldOneDayPeriodName": "день",
+    "fldOneMonthPeriodName": "месяц",
+    "fldOneQuarterPeriodName": "квартал",
+    "fldOneWeekPeriodName": "неделя",
+    "fldOneWrongPeriodName": "период",
+    "fldOneYearPeriodName": "год",
+    "fldOtherFirstPostfix": "первое",
+    "fldOtherLastPostfix": "последнее",
+    "fldQuarterFirstPostfix": "первый",
+    "fldQuarterLastPostfix": "последний",
+    "fldWeekFirstPostfix": "первая",
+    "fldWeekLastPostfix": "последняя",
+    "fldYearFirstPostfix": "первый",
+    "fldYearLastPostfix": "последний",
+    "GetValueList": "Получить список",
+    "Greater": ">",
+    "GreaterOrEqual": ">=",
+    "In": "в списке",
+    "InvalidFilter": "Не настроен",
+    "IsFalse": "ЛОЖЬ",
+    "IsNotNull": "не пустое",
+    "IsNull": "пустое",
+    "IsTrue": "ИСТИНА",
+    "Less": "<",
+    "LessOrEqual": "<=",
+    "Like": "содержит",
+    "NotEndingWith": "не заканчивается на",
+    "NotEqual": "<>",
+    "NotIn": "не в списке",
+    "NotLike": "не содержит",
+    "NotStartingWith": "не начинается с",
+    "SetLabel": "Список",
+    "StartingWith": "начинается с",
+    "ValueListIsEmpty": "Нет значений"
+  },
+  "filtersview/FiltersView": {
+    "DeleteAllPrompt": "Вы действительно хотите удалить все условия из списка?",
+    "DeleteAllTitle": "Удаление всех условий"
+  },
+  "highcharts/Extensions": {
+    "HighchartsAreNotLoaded": "Для подключения расширений необходимо сначала загрузить Highchats"
+  },
+  "highcharts/Localization": {
+    "Loading": "Загрузка..."
+  },
+  "homepage/HomePage": {
+    "RemoveFromHistoryFmt": "Не удалось найти файл \"{0}\". Возможно, он переименован, перемещён или удалён. Вы хотите удалить этот пакет из списка недавних пакетов?",
+    "RemoveFromHistoryTitle": "Не удалось найти файл"
+  },
+  "imports/dbimport/DBImportTable": {
+    "FieldsFilter": "Фильтрация полей"
+  },
+  "imports/dbimport/DBImportWizard": {
+    "FieldsNotSelected": "Сначала выберите поля для предпросмотра",
+    "NoConnection": "Нет подключения",
+    "NotConnectedError": "Соединение с базой данных не установлено"
+  },
+  "imports/dbimport/DBObjects": {
+    "DBObjectsFilterField": "Фильтрация таблиц",
+    "DBObjTypeNone": "Другие",
+    "DBObjTypeSchema": "Схемы",
+    "DBObjTypeTable": "Таблицы",
+    "DBObjTypeView": "Представления"
+  },
+  "imports/dwh/DateValuesDialog": {
+    "ValidateEditorsErr": "Ошибка в настройках параметров фильтрации"
+  },
+  "imports/dwh/DWImportWizard": {
+    "CompareTipFmt": "[{0}..{1}]",
+    "ConfirmDeleteAllFields": "Вы действительно хотите удалить все выбранные столбцы?",
+    "FuncAggregatesUndefined": "Не определены",
+    "GetValueList": "Получить список",
+    "MetaDataNodeTypeAttr": "Атрибут",
+    "MetaDataNodeTypeCube": "Куб",
+    "MetaDataNodeTypeDim": "Измерение",
+    "MetaDataNodeTypeFact": "Факт",
+    "MetaDataNodeTypeItem": "Элемент",
+    "MetaDataNodeTypeLevel": "Уровень",
+    "MetaDataNodeTypeProc": "Процесс"
+  },
+  "imports/dwh/DWObjectWizard": {
+    "ErrNoSelectedObject": "Укажите объект Хранилища данных",
+    "ErrObjectNotFound": "Объект Хранилища данных с именем \"{0}\" не найден",
+    "NoConnection": "Нет подключения"
+  },
+  "imports/excelfile/ImportExcelFilePreviewWizard": {
+    "ComboItemNoData": "<Нет данных>",
+    "ErrInvalidRange": "Не корректный диапазон"
+  },
+  "imports/excelfile/SpreadsheetsPreviewFrame": {
+    "FileNotLoaded": "Файл не открыт",
+    "NullSheetID": "Лист не определен",
+    "SheetNotFoundByNameFmt": "Лист \"{0}\" не найден в книге Excel",
+    "SheetNotFoundByNumberFmt": "Лист №{0} не найден в книге Excel"
+  },
+  "imports/onec8query/CodeMirrorOneCv8Controller": {
+    "QueryPlaceholder": "Введите текст запроса"
+  },
+  "imports/onec8query/OneC8QueryImportWizard": {
+    "NoConnection": "Нет подключения",
+    "NotConnectedError": "Соединение с базой данных не установлено"
+  },
+  "imports/textfile/DateSeparatorStore": {
+    "BackSlash": "Обратный слэш (\\)",
+    "Default": "По умолчанию",
+    "Point": "Точка (.)",
+    "Slash": "Слэш (/)"
+  },
+  "imports/textfile/DecimalSeparatorStore": {
+    "Comma": "Запятая (,)",
+    "Default": "По умолчанию",
+    "Point": "Точка (.)"
+  },
+  "imports/textfile/DelimiterStore": {
+    "Comma": "Запятая",
+    "Point": "Точка",
+    "Semicolon": "Точка с запятой",
+    "Space": "Пробел",
+    "TabCharacter": "Символ табуляции"
+  },
+  "imports/textfile/EncodingStore": {
+    "Encoding1": "Кириллическая (1251)",
+    "Encoding2": "Западноевропейская (1252)"
+  },
+  "imports/textfile/ImportTextFileParamsWizard": {
+    "FormatTypeChangedInfo": "При сохранении изменили формат данных на формат с разделителями"
+  },
+  "imports/textfile/TextQualifierStore": {
+    "BackQuote": "Обратная кавычка (`)",
+    "Default": "По умолчанию",
+    "DoubleQuote": "Двойная кавычка (\")",
+    "Quote": "Одинарная кавычка (')"
+  },
+  "imports/textfile/TimeSeparatorStore": {
+    "Colon": "Двоеточие (:)",
+    "Default": "По умолчанию",
+    "Point": "Точка (.)"
+  },
+  "imports/textfile/ValueFalseStore": {
+    "False1": "False",
+    "False2": "Ложь",
+    "False3": "Нет"
+  },
+  "imports/textfile/ValueTrueStore": {
+    "True1": "True",
+    "True2": "Истина",
+    "True3": "Да"
+  },
+  "imports/xml/CommonImport": {
+    "ExpandLimitWarning": "Не все узлы были раскрыты, так как число раскрытых узлов превысило допустимый лимит."
+  },
+  "imports/xml/ImportXmlFieldsWizard": {
+    "EmptyNamespace": "Пространство имен не указано"
+  },
+  "imports/xml/ImportXmlPreviewWizard": {
+    "ErrNoFile": "Задано имя несуществующего XML-файла"
+  },
+  "lib/Classes": {
+    "ErrInvalidIndex": "Значение индекса {0} параметра \"{1}\" вне диапазона [{2}; {3}]"
+  },
+  "lib/DateUtils": {
+    "bdtCurrent": "текущей даты",
+    "bdtData": "имеющихся данных",
+    "FirstLastDateFmt": "{0} {1} от {2}",
+    "fld0and5to20DayPeriodName": "дней",
+    "fld0and5to20MonthPeriodName": "месяцев",
+    "fld0and5to20QuarterPeriodName": "кварталов",
+    "fld0and5to20WeekPeriodName": "недель",
+    "fld0and5to20YearPeriodName": "лет",
+    "fld2to4DayPeriodName": "дня",
+    "fld2to4MonthPeriodName": "месяца",
+    "fld2to4QuarterPeriodName": "квартала",
+    "fld2to4WeekPeriodName": "недели",
+    "fld2to4YearPeriodName": "года",
+    "fldOneDayPeriodName": "день",
+    "fldOneMonthPeriodName": "месяц",
+    "fldOneQuarterPeriodName": "квартал",
+    "fldOneWeekPeriodName": "неделя",
+    "fldOneYearPeriodName": "год"
+  },
+  "lib/Exceptions": {
+    "Error": "В процессе работы программы возникла ошибка.\n{0}",
+    "ErrWindowFull": "В процессе работы программы возникла ошибка.\nОшибка: \"{0}\"\nUrl: \"{1}\"\nСтрока: {2}  Символ: {3}",
+    "ErrWindowUrl": "В процессе работы программы возникла ошибка.\nUrl: \"{1}\"\nСтрока: {2}  Символ: {3}"
+  },
+  "lib/Loader": {
+    "ErrClassName": "Имя класса \"{0}\" задано не верно.",
+    "ErrReaddScriptToLoad": "Повторное добавление скрипта \"{0}\" для загрузки",
+    "ErrScriptLoadFailed": "Не удалось загрузить скрипт \"{0}\". Статус: {1}, Ошибка: {2}",
+    "ErrScriptLoadingAsync": "Скрипт \"{0}\" уже загружается асинхронно"
+  },
+  "lib/Message": {
+    "ErrorTitle": "Ошибка",
+    "GoToNotifySource": "Перейти",
+    "InfoTitle": "Информация",
+    "WarningTitle": "Предупреждение"
+  },
+  "lib/StrUtils": {
+    "ErrInvalidDigitsValue": "Цифры в других языках не поддерживаются",
+    "ErrInvalidFormatValue": "Строка {0} не совместима с форматом {1}",
+    "FalseText": "ложь",
+    "TrueText": "истина"
+  },
+  "lib/ViewController": {
+    "ErrViewClassName": "Имя класса отображения \"{0}\" задано не верно"
+  },
+  "listview/ListView": {
+    "Delete": "Удалить",
+    "Description": "Комментарий",
+    "Group": "Группа",
+    "Title": "Метка"
+  },
+  "mxgraph/graph/Graph": {
+    "ImplementThisInModelForm": "У этой функции должна быть реализация в ModelForm",
+    "LeaveSubmodel": "Выйти из подмодели"
+  },
+  "mxgraph/handler/PortConnectionAbstract": {
+    "CycleLinksForbiden": "Циклические связи запрещены"
+  },
+  "mxgraph/node/comment/Comment": {
+    "CommentBtn": "Показать/скрыть комментарий"
+  },
+  "mxgraph/node/comment/Note": {
+    "ErrCommentNotSaved": "Не удалось сохранить комментарий",
+    "NodeIsLocked": "Узел заблокирован, изменить комментарий нельзя",
+    "WrongCommentValue": "Неверное значение комментария"
+  },
+  "mxgraph/node/controls/ControlsAbstract": {
+    "ActionsBtn": "Другие действия",
+    "ControlStopBtn": "Остановка обработки",
+    "DeactivateNodeBtn": "Деактивировать узел",
+    "LaunchBtn": "Запуск обработки",
+    "SettingBtn": "Настройка",
+    "SetupViewersBtn": "Настройка визуализаторов"
+  },
+  "mxgraph/node/informer/InfoMagicButton": {
+    "IheritanceSourceBtn": "Показать базовый узел",
+    "ReferenceSourceBtn": "Показать источник ссылки"
+  },
+  "mxgraph/node/informer/Visualizer": {
+    "Visualizer": "Визуализатор"
+  },
+  "mxgraph/node/InheritedNode": {
+    "VendorModified": "Базовый узел изменился и теперь этот рассинхронизирован с ним. Нужно обновить или сбросить до исходной конфигурацию производного узла"
+  },
+  "mxgraph/node/label/GenericEnterLabel": {
+    "GenericEnterLabel": "Войти"
+  },
+  "mxgraph/node/label/Label": {
+    "ErrLabelNotSaved": "Не удалось сохранить метку",
+    "NodeIsLocked": "Узел заблокирован, изменить метку нельзя",
+    "NodeLabel": "Метка узла",
+    "WrongLabelValue": "Неверное значение метки"
+  },
+  "mxgraph/node/NodeAbstract": {
+    "StatusError": "Ошибка компонента узла",
+    "StatusNotInitialized": "Узел не проинициализирован",
+    "StatusPristine": "Узел неактивен",
+    "StatusSuccess": "Узел успешно выполнен",
+    "StatusWarning": "Warning"
+  },
+  "mxgraph/port/AddPort": {
+    "AddPortDescription": "\nDrag'n'Drop исходящего порта другого узла \n автоматически создаст нужный порт, если есть совместимый кандидат.",
+    "AddPortDisplayName": "Добавить еще один порт."
+  },
+  "mxgraph/port/Port": {
+    "CONNECTION": "Подключение",
+    "DATASOURCE": "Набор данных",
+    "INHERITANCE": "Наследование",
+    "MODEL": "Модель",
+    "OptionalPortParam": "Необязательный порт",
+    "ORDER": "Порядок выполнения",
+    "REFERENCE": "Ссылка",
+    "RequiredPortParam": "Обязательный порт (требуется связь для выполнения узла)",
+    "TYPE_UNDEFINED": "Тип порта не известен",
+    "VARIABLES": "Переменные"
+  },
+  "mxgraph/port/PortAbstract": {
+    "PortActive": "Порт активен, данные есть",
+    "PortConfigured": "Порт сконфигурирован",
+    "PortInActive": "Порт не сконфигурирован",
+    "PortPartlyConfigured": "Порт частично сконфигурирован"
+  },
+  "navigation/NavigationPanel": {
+    "PathBeforeText": "Путь:",
+    "PathEditTooltip": "Нажмите, чтобы изменить",
+    "PathLabel": "Путь"
+  },
+  "navigation/NavigationToolbar": {
+    "TextGoBack": "Назад",
+    "TextGoForward": "Вперед",
+    "TextGoUp": "Вверх",
+    "TextRefresh": "Обновить",
+    "TextShare": "Поделиться..."
+  },
+  "packages/deductor-theme/const/Palletes": {
+    "Composite": "Составная",
+    "Elegant": "Изящная",
+    "Quiet": "Спокойная",
+    "QuietContrast": "Спокойная контрастная",
+    "Spectrum": "Спектр",
+    "Warm": "Теплая",
+    "WarmContrast": "Теплая контрастная"
+  },
+  "progress/ProgressForm": {
+    "ErrorInfoText": "{0} {1}: {2}.",
+    "MsgClearText": "Очистить описания завершенных процессов?",
+    "MsgProcessingAborted": "Обработка прервана",
+    "MsgStoplText": "Отменить выполнение всех процессов?",
+    "ProcessActionDeleteTip": "Удалить процесс",
+    "ProcessActionStopTip": "Отменить процесс",
+    "TimeSpanDay": "д ",
+    "TimeSpanFormat": "s\\с u\\мс",
+    "TimeSpanHour": "ч ",
+    "TimeSpanMinutesFormat": "i\\м "
+  },
+  "propedit/CustomPropEdit": {
+    "ErrDataType": "Тип данных свойства несовместим с компонентом",
+    "ErrInputParameters": "Неверные входные параметры",
+    "ErrPropertyFind": "Не найдена информация по данной интерфейсной ссылке",
+    "ErrSelectVariable": "Необходимо указать переменную",
+    "ErrSetValue": "Невозможно задать значение"
+  },
+  "propedit/PropEditUtils": {
+    "ErrControlIsNil": "Не задан редактор",
+    "ErrPropertyOwnerIsNil": "Не задан интерфейс",
+    "ErrPropertyPathIsNil": "На задано имя свойства"
+  },
+  "ts/CustomClient": {
+    "ErrConnectToServerEx": "Подключиться к серверу не удалось.\nОшибка: {0}.",
+    "ErrSocketNotPrepared": "Сокет не подготовлен."
+  },
+  "ts/EnumTypeInfoService": {
+    "ErrEnumTypeInfoServiceManagerNotInstalled": "Менеджер сервиса метаданных перечислений не проинициализирован",
+    "ErrEnumTypeInfoServiceNotInit": "Сервис метаданных перечислений не проинициализирован",
+    "ErrEnumTypeNotFound": "На клиенте не зарегистрировано перечисление: \"{0}\"",
+    "ErrQualifiedNameNotFound": "Не удалось получить идентификатор перечисления"
+  },
+  "ts/Exceptions": {
+    "ErrAbstractFunction": "Вызван абстрактный метод \"{0}\"",
+    "ExceptionClassFmt": "КЛАСС ИСКЛЮЧЕНИЯ: {0}",
+    "InnerExceptionTitle": "ВНУТРЕННИЕ ИСКЛЮЧЕНИЯ:",
+    "MessageFmt": "СООБЩЕНИЕ: {0}",
+    "OperationAborted": "Операция прервана",
+    "SenderNameFmt": "ОТПРАВИТЕЛЬ: {0}",
+    "StackTraceFmt": "ТРАССА:\n{0}"
+  },
+  "ts/ExecutionContext": {
+    "ErrExecutionContextNotInstalled": "Ссылка на контекст выполнения не установлена",
+    "ErrExternalExecutionContextManagerNotInstalled": "Менеджер внешнего контекста выполнения не установлен"
+  },
+  "ts/Int64": {
+    "ErrInvalidInt64": "\"{0}\" is not valid long integer value",
+    "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value",
+    "ErrOutOfRangeInt64": "Number is outside long integer value range",
+    "ErrOutOfRangeUInt64": "Number is outside unsigned long integer value range"
+  },
+  "ts/Interfaces": {
+    "ErrObjectIsNil": "Пустая ссылка на объект",
+    "ErrUpdatableNotSupported": "Интерфейс IBGUpdatable не поддерживается объектом"
+  },
+  "ts/QueueException": {
+    "ErrQueueExceptionEndUnexpected": "Попытка завершить блок отложенной обработки исключений, предварительно не начав его",
+    "ErrUnknownInnerExceptionIsIgnored": "Внутреннее исключение неизвестного типа {0} проигнорировано"
+  },
+  "ts/rtl.imp": {
+    "ErrInvalidEnumValue": "\"{0}\" is not valid enum value",
+    "ErrInvalidFloat": "\"{0}\" is not valid floating point value",
+    "ErrInvalidInt32": "\"{0}\" is not valid integer value",
+    "ErrInvalidInt64": "\"{0}\" is not valid long integer value",
+    "ErrInvalidUInt32": "\"{0}\" is not valid unsigned integer value",
+    "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value"
+  },
+  "viewers/BaseView": {
+    "ErrViewIsPanel": "Визуализатор должен быть наследником Ext.panel.Panel",
+    "WarnViewerObjectDeleted": "Обработка события изменения статуса визуализатора \"{0}\" отменена, так как визуализатор был асинхронно удалён"
+  },
+  "viewers/browse/BrowseFormat": {
+    "ActColInAllInvisibleTip": "Скрыта",
+    "ActColInAllVisibleTip": "Отображается",
+    "ActHideAll": "Скрыть все поля",
+    "ActShowAll": "Отобразить все поля",
+    "EmptyFormatText": "Не задан",
+    "EmptyWidthText": "Не задана",
+    "NoExampleFormats": "Нет примеров"
+  },
+  "viewers/browse/BrowseGoToLine": {
+    "ErrRowNoLessLower": "Номер строки должен быть больше или равен 1",
+    "ErrRowNoMoreUpper": "Номер строки больше, чем количество строк в наборе",
+    "RowNoInfoFmt": "Номер строки (1 - {0}):"
+  },
+  "viewers/browse/BrowseSearchParams": {
+    "ByCollsDesc": "по столбцам",
+    "ByRowsDesc": "по строкам",
+    "SingleColDesc": "в столбце"
+  },
+  "viewers/browse/BrowseUtils": {
+    "ErrColumnNotRenderedFmt": "Не удалось добавить HTML элемент, в заголовок колонки \"{0}\"|\"{1}\". Колонка ещё не отрисована"
+  },
+  "viewers/browse/BrowseView": {
+    "ErrExportFailed": "Не удалось экспортировать Таблицу:\n{0}",
+    "ErrExportFormFailed": "Не удалось экспортировать Форму:\n{0}",
+    "ErrMaxPage": "Нельзя задать страницу больше последней",
+    "ErrMinPage": "Нельзя задать страницу меньше первой",
+    "ErrOverRowLimitFmt": "Невозможно задать индекс строки больше чем {0}",
+    "ErrPageIndexOutOfRangeFmt": "Недопустимый индекс страницы {0}",
+    "ErrRowIndexOutOfRangeFmt": "Недопустимый индекс строки {0}",
+    "ExportFileTitle": "Таблица",
+    "ExportFormFileTitle": "Форма",
+    "ExportFormToastTitle": "Экспорт из Формы",
+    "ExportToastTitle": "Экспорт из Таблицы",
+    "FilterButtonText": "Фильтр",
+    "FilterTitle": "Фильтр",
+    "FindAgainCellFmt": "Искать далее [{0}]",
+    "FindCellFmt": "Искать с начала [{0}]",
+    "FirstTableRowAction": "Первая строка",
+    "FormatButtonText": "Формат",
+    "FormatTitle": "Формат",
+    "GoToLineApplyActionText": "Перейти",
+    "GoToLineTitle": "Перейти к строке",
+    "LastTableRowAction": "Последняя строка",
+    "NameRecNoField": "RecNo",
+    "NameRowNoField": "RowNo",
+    "PageDescFmt": "[{0} .. {1}]",
+    "PageInfoFmt": "Страница {0} из {1}",
+    "PageInfoNotActive": "Не активирован",
+    "PageInfoViewDataInvalid": "Данные не готовы",
+    "RecNoField": "№",
+    "RowNoField": "#",
+    "RunFilterButtonText": "Фильтровать",
+    "RunSortButtonText": "Сортировать",
+    "SearchInfoTitle": "Поиск",
+    "SearchNoFound": "Совпадений не найдено",
+    "SetSelectedPage": "Выбранная станица",
+    "SortingButtonText": "Сортировка",
+    "SortingTitle": "Сортировка",
+    "UndefinedCellValue": "",
+    "WarnExportTableSizeWarning": "Текущий размер Таблицы составляет {0} ячеек.\nРазмер экспортируемого файла оценивается в не менее {1} Mb.\nВы действительно хотите начать экспорт?"
+  },
+  "viewers/browse/FastPreviewForm": {
+    "NodeIsNotActive": "Узел не активирован",
+    "PreviewAllowedSocketTypes": "Пока что показать данные можно только для таблицы или переменных",
+    "WindowTitleEnd": "Быстрый просмотр данных"
+  },
+  "viewers/chart/ChartEditor": {
+    "ExportTo": "Экспорт в "
+  },
+  "viewers/chart/ChartUtils": {
+    "ApplyDefaultColor": "Вернуть цвет по умолчанию",
+    "DefaultColor": "По умолчанию",
+    "From": "из",
+    "Index": "Индекс"
+  },
+  "viewers/chart/Color": {
+    "AliceBlue": "Блекло-голубой",
+    "AntiqueWhite": "Античный белый",
+    "Aqua": "Морской волны",
+    "Aquamarine": "Аквамарин",
+    "Azure": "Лазурь",
+    "Beige": "Бежевый",
+    "Bisque": "Бисквитный",
+    "Black": "Черный",
+    "BlanchedAlmond": "Светло-кремовый",
+    "Blue": "Синий",
+    "BlueViolet": "Светло-фиолетовый",
+    "Brown": "Коричневый",
+    "BurlyWood": "Старого дерева",
+    "CadetBlue": "Блеклый серо-голубой",
+    "Chartreuse": "Фисташковый",
+    "Chocolate": "Шоколадный",
+    "Coral": "Коралловый",
+    "CornflowerBlue": "Васильковый",
+    "Cornsilk": "Темно-зеленый",
+    "Crimson": "Малиновый",
+    "DarkBlue": "Темно-голубой",
+    "DarkCyan": "Темный циан",
+    "DarkGoldenRod": "Темный красно-золотой",
+    "DarkGray": "Темно-серый",
+    "DarkGreen": "Темно-зеленый",
+    "DarkKhaki": "Темный хаки",
+    "DarkMagenta": "Темный фуксин",
+    "DarkOliveGreen": "Темно-оливковый",
+    "DarkOrange": "Темно-оранжевый",
+    "DarkOrchid": "Темно-орхидейный",
+    "DarkRed": "Темно-красный",
+    "DarkSalmon": "Темный оранжево-розовый",
+    "DarkSeaGreen": "Темный морской волны",
+    "DarkSlateBlue": "Темный серовато-синий",
+    "DarkSlateGray": "Темный синевато-серый",
+    "DarkTurquoise": "Темно-бирюзовый",
+    "DarkViolet": "Темно-фиолетовый",
+    "DeepPink": "Темно-розовый",
+    "DeepSkyBlue": "Темный небесно-синий",
+    "DimGray": "Тускло-серый",
+    "DodgerBlue": "Тускло-васильковый",
+    "FireBrick": "Огнеупорного кирпича",
+    "FloralWhite": "Цветочно-белый",
+    "ForestGreen": "Лесной зеленый",
+    "Fuchsia": "Фуксия",
+    "Gainsboro": "Светлый серо-фиолетовый",
+    "GhostWhite": "Туманно-белый",
+    "Gold": "Золотой",
+    "GoldenRod": "Красного золота",
+    "Gray": "Серый",
+    "Green": "Зеленый",
+    "GreenYellow": "Желто-зеленый",
+    "HoneyDew": "Свежего меда",
+    "HotPink": "Ярко-розовый",
+    "IndianRed": "Ярко-красный",
+    "Indigo": "Индиго",
+    "Ivory": "Слоновой кости",
+    "Khaki": "Хаки",
+    "Lavender": "Бледно-лиловый",
+    "LavenderBlush": "Бледный розово-лиловый",
+    "LawnGreen": "Зеленой травы",
+    "LemonChiffon": "Лимонный",
+    "LightBlue": "Светло-голубой",
+    "LightCoral": "Светло-коралловый",
+    "LightCyan": "Светлый циан",
+    "LightGray": "Светло-серый",
+    "LightGreen": "Светло-зеленый",
+    "LightPink": "Светло-розовый",
+    "LightSalmon": "Светлый оранжево-розовый",
+    "LightSeaGreen": "Светлой морской волны",
+    "LightSkyBlue": "Светлый небесно-синий",
+    "LightSlateGray": "Светлый синевато-серый",
+    "LightSteelBlue": "Светло-стальной",
+    "LightYellow": "Светло-желтый",
+    "Lime": "Известковый",
+    "LimeGreen": "Зеленовато-известковый",
+    "Linen": "Льняной",
+    "Maroon": "Оранжево-розовый",
+    "MediumAquaMarine": "Умеренно-аквамариновый",
+    "MediumBlue": "Умеренно-голубой",
+    "MediumOrchid": "Умеренно-орхидейный",
+    "MediumPurple": "Умеренно-пурпурный",
+    "MediumSeaGreen": "Умеренной морской волны",
+    "MediumSlateBlue": "Умеренный серовато-синий",
+    "MediumSpringGreen": "Умеренный синевато-серый",
+    "MediumTurquoise": "Умеренно-бирюзовый",
+    "MediumVioletRed": "Умеренный красно-фиолетовый",
+    "MidnightBlue": "Ночной синий",
+    "MintCream": "Мятно-кремовый",
+    "MistyRose": "Туманно-розовый",
+    "Moccasin": "Болотный",
+    "NavajoWhite": "Грязно-серый",
+    "Navy": "Темно-синий",
+    "OldLace": "Старого коньяка",
+    "Olive": "Оливковый",
+    "OliveDrab": "Тускло-коричневый",
+    "Orange": "Оранжевый",
+    "OrangeRed": "Красно-оранжевый",
+    "Orchid": "Орхидейный",
+    "PaleGoldenRod": "Бледно-золотой",
+    "PaleGreen": "Бледно-зеленый",
+    "PaleTurquoise": "Бледно-бирюзовый",
+    "PaleVioletRed": "Бледный красно-фиолетовый",
+    "PapayaWhip": "Дыни",
+    "PeachPuff": "Персиковый",
+    "Peru": "Коричневый",
+    "Pink": "Розовый",
+    "Plum": "Сливовый",
+    "PowderBlue": "Туманно-голубой",
+    "Purple": "Пурпурный",
+    "Red": "Красный",
+    "RosyBrown": "Розово-коричневый",
+    "RoyalBlue": "Королевский голубой",
+    "SaddleBrown": "Старой кожи",
+    "Salmon": "Оранжево-розовый",
+    "SandyBrown": "Рыже-коричневый",
+    "SeaGreen": "Морской зеленый",
+    "SeaShell": "Морской пены",
+    "Sienna": "Охра",
+    "Silver": "Серебристый",
+    "SkyBlue": "Небесно-голубой",
+    "SlateBlue": "Серовато-синий",
+    "SlateGray": "Синевато-серый",
+    "Snow": "Снежный",
+    "SpringGreen": "Весенний зеленый",
+    "SteelBlue": "Голубовато-стальной",
+    "Tan": "Желтовато-коричневый",
+    "Teal": "Чайный",
+    "Thistle": "Чертополоха",
+    "Tomato": "Томатный",
+    "Transparent": "Прозрачный",
+    "Turquoise": "Бирюзовый",
+    "Violet": "Фиолетовый",
+    "Wheat": "Пшеничный",
+    "White": "Белый",
+    "WhiteSmoke": "Белый дымчатый",
+    "Yellow": "Желтый",
+    "YellowGreen": "Желто-зеленый"
+  },
+  "viewers/chart/Config": {
+    "NoData": "Перетащите поле"
+  },
+  "viewers/chart/ModalWindow": {
+    "Apply": "Применить",
+    "Cancel": "Отмена",
+    "CancelChangesTitle": "Откатить изменения?"
+  },
+  "viewers/chart/SeriesCreator": {
+    "AddBtnText": "Добавить"
+  },
+  "viewers/chart/SeriesEditor": {
+    "EmptyComboBox": "Добавьте поле",
+    "FieldWasRemoved": "Поле с именем {0} было удалено или имеет неверный тип данных",
+    "OnBackGround": "На задний план",
+    "OnTop": "На передний план",
+    "Options": "Настройки: {0}..."
+  },
+  "viewers/common/ViewerCard": {
+    "AddVisualizer": "Добавить визуализатор"
+  },
+  "viewers/common/ViewsForm": {
+    "CantAddGenericInputViewToReport": "Добавление визуализаторов входного узла подмодели в Отчеты не поддерживается",
+    "CreateGroupTitle": "Создание группы",
+    "DeleteAllViews": "Удалить все визуализаторы?",
+    "DeleteSelected": "Удалить выделенное?",
+    "DeleteView": "Удалить \"{0}\"?",
+    "Enter": "Войти",
+    "ErrAddingViewToReports": "Ошибка добавления визуализатора в отчеты",
+    "GroupAlreadyExists": "Группа с таким именем уже существует",
+    "NeedNotEmptyGroupName": "Необходимо задать непустое имя группы",
+    "SetNewGroupName": "Имя новой группы:",
+    "ShowInReports": "Показать в Отчетах",
+    "TitleUndefined": "визуализатор",
+    "TuneViews": "Настройка визуализаторов",
+    "VendorNotValid": "Выбран несовместимый с портом визуализатор",
+    "VendorTreeViewers": "Визуализаторы",
+    "VendorUndefined": "На панели визуализаторов не выбран визуализатор",
+    "ViewAlreadyInReports": "Визуализатор '{0}' уже добавлен",
+    "ViewsAddedToReports": "Добавлено",
+    "WithoutGroup": "Без группы"
+  },
+  "viewers/cube/CasesAddPanel": {
+    "ErrEmptyCubeFunctions": "Не выбрана функция агрегации"
+  },
+  "viewers/cube/CasesCalcGrid": {
+    "CaseNodeCaption": "Факты",
+    "DimNodeCaption": "Измерения",
+    "SearchDef": "Фильтрация",
+    "TotalNodeCaption": "Итог"
+  },
+  "viewers/cube/CasesCalcPanel": {
+    "ErrCaseAlreadyExist": "Факт с именем \"{0}\" уже существует",
+    "ErrDimAlreadyExist": "Измерение с именем \"{0}\" уже существует",
+    "ErrWhitespaceExpression": "Выражение не может быть пустой строкой"
+  },
+  "viewers/cube/CasesFilterPanel": {
+    "ErrBounds": "Минимум больше максимума",
+    "FilterDisabled": "(Не фильтровать)"
+  },
+  "viewers/cube/CasesTunePanel": {
+    "WarnDependencyCalcCase": "• станет неактивным зависимый от него другой вычисляемый факт",
+    "WarnDependencyCaseFilter": "• будет удален фильтр по факту, в котором используется этот факт",
+    "WarnDependencyPrefix": "При удалении вычисляемого факта произойдут следующие изменения состояния Куба:",
+    "WarnDependencySuffix": "Продолжить действие?"
+  },
+  "viewers/cube/CubeDetailingController": {
+    "ErrNullEngine": "Ошибка инициализации визуализатора",
+    "Loading": "Загрузка"
+  },
+  "viewers/cube/CubeDragDropController": {
+    "Ascending": "По возрастанию",
+    "Collapse": "Свернуть",
+    "DeleteItem": "Удалить",
+    "Descending": "По убыванию",
+    "EmptyFilteredDimTooltip": "{0} • Нет значений",
+    "Expand": "Развернуть",
+    "MultipleFilteredDimTooltip": "{0} [{1} из {2}]",
+    "Original": "В исходном порядке",
+    "SingleFilteredDimTooltip": "{0} • {1} [{2} из {3}]",
+    "WarnDependencyCaseCalcCase": "• станет неактивным зависимый от поля вычисляемый факт (сейчас поле связано с неиспользуемым фактом)",
+    "WarnDependencyCaseCaseFilter": "• будет удален фильтр по факту, с которым связано это поле",
+    "WarnDependencyDimCalcCase": "• может стать неактивным зависимый от измерения вычисляемый факт",
+    "WarnDependencyDimCaseFilter": "• будет удален фильтр по факту, в котором используется это измерение",
+    "WarnDependencyPrefix": "При выполнении действия произойдут следующие изменения состояния Куба:",
+    "WarnDependencySuffix": "Продолжить действие?"
+  },
+  "viewers/cube/CubeView": {
+    "ChartCaseEmptyText": "Список пуст",
+    "DotsOutOfBoundsMsg": "Превышение ограничений диаграммы.\nТекущее кол-во точек: {0}.\nМаксимальное кол-во точек: {1}",
+    "ErrExportFailed": "Не удалось экспортировать кросс-таблицу Куба:\n{0}",
+    "ExportToastTitle": "Экспорт из Куба",
+    "HideSingleCase": "Скрыть единственный факт",
+    "SeriesOutOfBoundsMsg": "Превышение ограничений диаграммы.\nТекущее кол-во серий: {0}.\nМаксимальное кол-во серий: {1}",
+    "WarnExportTableSizeWarning": "Текущий размер кросс-таблицы составляет {0} ячеек.\nРазмер экспортируемого файла оценивается в не менее {1} Mb.\nВы действительно хотите начать экспорт?"
+  },
+  "viewers/cube/DimensionFilterSelectionPanel": {
+    "DimensionFilterSelectionPanelTitle": "Отметить по маске",
+    "EndingWith": "заканчивается на",
+    "Equal": "=",
+    "Like": "содержит",
+    "NotEndingWith": "не заканчивается на",
+    "NotEqual": "<>",
+    "NotLike": "не содержит",
+    "NotStartingWith": "не начинается с",
+    "StartingWith": "начинается с"
+  },
+  "viewers/cube/DimensionsFilterPanel": {
+    "CheckAllTooltip": "Отметить все",
+    "TooManyValuesMsg": "Невозможно отобразить список значений\nТекущее кол-во значений: {0}\nМаксимальное кол-во значений: {1}",
+    "UncheckAllTooltip": "Снять все"
+  },
+  "viewers/cube/EmbeddedBrowseForm": {
+    "SelectFirst": "Первая запись",
+    "SelectLast": "Последняя запись",
+    "SelectNext": "Следующая запись",
+    "SelectPrev": "Предыдущая запись"
+  },
+  "viewers/cube/PivotDataSource": {
+    "CaseDisplayName": "Факт",
+    "CaseFilterDesc": "Установлен фильтр по факту",
+    "ErrInvalidRange": "Индекс находится вне допустимого диапазона",
+    "FilterCountDesc": "Измерений с установленным фильтром",
+    "FunctionDisplayName": "Агрегация",
+    "No": "Нет",
+    "NoDimensionValueDisplayName": "Значение",
+    "RecordCountDesc": "Строк после фильтрации",
+    "SourceRecordCountDesc": "Исходное количество строк",
+    "SubFunctionCountDesc": "Количество отображаемых фактов",
+    "SubFunctionDisplayName": "Отображение",
+    "Yes": "Да"
+  },
+  "viewers/cube/PivotGrid": {
+    "CaseInvite": "Перенесите измерения в область строк, столбцов и фильтров, перетащив из левого списка доступных полей или нажав кнопку \"+\""
+  },
+  "viewers/LockableView": {
+    "LockMaskText": "Узел заблокирован"
+  },
+  "viewers/regression/LinRegressReportView": {
+    "TStatInfoParam": "Т-статистика"
+  },
+  "viewers/regression/LogRegressReportView": {
+    "IsEvent": "Событие",
+    "IsNotEvent": "Не-событие"
+  },
+  "viewers/regression/RegressionReportView": {
+    "ModelInfoAIC": "AIC",
+    "ModelInfoAICc": "AICc",
+    "ModelInfoBIC": "BIC",
+    "ModelInfoConstant": "Константа",
+    "ModelInfoDFE": "Число степеней свободы",
+    "ModelInfoHQC": "HQC",
+    "ModelInfoLogLikelihood": "-2 Log Likelihood",
+    "ModelInfoPValue": "Значимость",
+    "ModelInfoR2": "R2",
+    "ModelInfoR2adj": "R2 корр.",
+    "ModelInfoXi2": "Хи-квадрат"
+  },
+  "viewers/reports/ReportsForm": {
+    "CantDeactivateBefore": "Ошибка: не удалось деактивировать цепочку предыдущих узлов для обновления данных",
+    "CantShowSourceModelView": "Ошибка: не удалось найти исходный визуализатор",
+    "ConfirmDeleteAll": "Вы действительно хотите удалить все?",
+    "ConfirmDeleteSelected": "Вы действительно хотите удалить выделенное?",
+    "ConfirmDeletingGroup": "Вы действительно хотите удалить группу отчетов?",
+    "ConfirmDeletingReportView": "Вы действительно хотите удалить визуализатор из отчетов?",
+    "ConfirmLongReload": "Перевыполнение расчетов может занять продолжительное время. Продолжить?",
+    "CreateGroupTitle": "Создание группы",
+    "Enter": "Войти",
+    "ErrDeleting": "Ошибка при удалении",
+    "ErrDeletingGroup": "Ошибка при удалении группы",
+    "ErrDeletingReport": "Ошибка при удалении визуализатора",
+    "GroupAlreadyExists": "Группа с таким именем уже существует",
+    "NeedNotEmptyGroupName": "Необходимо задать непустое имя группы",
+    "SetNewGroupName": "Имя новой группы:",
+    "ShowSourceModelView": "Перейти к исходному визуализатору",
+    "SourceNodeDoesntExists": "Исходный узел визуализатора для этого отчета не существует"
+  },
+  "viewers/reports/ReportsView": {
+    "CantDeactivateBefore": "Ошибка: не удалось деактивировать цепочку предыдущих узлов для обновления данных",
+    "ConfirmLongRefresh": "Перевыполнение расчетов может занять продолжительное время. Продолжить?",
+    "NotInitializedError": "Узел не проинициализирован",
+    "SourceNodeDoesntExists": "Исходный узел визуализатора для этого отчета не существует",
+    "VendorMalfunctionError": "Ошибка компонента узла",
+    "VendorNotDefined": "У визуализатора не задан поставщик информации"
+  },
+  "viewers/roc/ConfusionMatrix": {
+    "Event": "Событие",
+    "NonEvent": "Не-событие"
+  },
+  "viewers/roc/ROCView": {
+    "AUC_PR": "AUC PR",
+    "AUC_PR_Tooltip": "Площадь под PR-кривой",
+    "AUC_ROC": "AUC ROC",
+    "AUC_ROC_Tooltip": "Площадь под ROC-кривой",
+    "Cutoff": "Порог отсечения",
+    "CutoffFPR": "FPR (1-Специфичность)",
+    "CutoffFScore": "F1 Score",
+    "CutoffMCC": "MCC",
+    "CutoffMCC_Tooltip": "Коэффициент корреляции Мэтьюса",
+    "CutoffPPV": "PPV",
+    "CutoffPPV_Tooltip": "Точность положительного прогноза",
+    "CutoffTNR": "TNR (Специфичность)",
+    "CutoffTPR": "TPR (Чувствительность)",
+    "CutoffValue": "Значение",
+    "FPRShort": "FPR",
+    "GeneralRatings": "Оценки классификатора",
+    "Gini": "Коэффициент Джини",
+    "KS": "KS",
+    "KS_Tooltip": "Статистика критерия Колмогорова-Смирнова",
+    "PPVShort": "PPV",
+    "TPRShort": "TPR"
+  },
+  "viewers/statistics/StatView": {
+    "CountOfStrings": "Кол-во строк данных: ",
+    "ErrBounds": "Минимум больше максимума",
+    "LeftOutlier": "Наименьший выброс",
+    "LeftWhisker": "Наблюдаемый минимум",
+    "LowerQuartile": "Нижний квартиль",
+    "Median": "Медиана",
+    "NotAvailable": "Недоступно",
+    "NotDefined": "Не задан",
+    "RightOutlier": "Наибольший выброс",
+    "RightWhisker": "Наблюдаемый максимум",
+    "SliderTipFmt": "{0}: {1}",
+    "SliderTipMax": "макс.",
+    "SliderTipMin": "мин.",
+    "TuneColumnsLabelTitle": "Метка поля",
+    "TuneColumnsTitle": "Настройка полей",
+    "TuneStatisticsLabelTitle": "Показатель статистики",
+    "TuneStatisticsTitle": "Настройка показателей",
+    "UniqueValuesCount": "Число значений - ",
+    "UpperQuartile": "Верхний квартиль"
+  },
+  "welcome/WelcomePage": {
+    "CardTitle_Campus": "Кампус - сообщество аналитиков",
+    "CardTitle_FeedBack": "Обратная связь",
+    "CardTitle_Forum": "Форум: вопросы и ответы",
+    "CardTitle_WebSite": "Сайт компании",
+    "LinkWebSite": "https://basegroup.ru",
+    "LoginWebSite": "https://loginom.ru",
+    "NoNewsLog": "Не удалось получить новости"
+  },
+  "wizards/BaseWizard": {
+    "ErrAbortCaption": "Настройка прервана",
+    "ErrExitExcepitonsCaption": "Ошибки"
+  },
+  "wizards/columndefs/ColumnDefsTuning": {
+    "UsableDesc": "Использовать"
+  },
+  "wizards/columns/ColumnDefsMappingWizard": {
+    "colDisplayNameTuneText": "Метка",
+    "CreateMappingToAllConfirm": "Вы действительно хотите создать выходные столбцы для всех входных?",
+    "EmptyListText": "Нет подходящих столбцов",
+    "GroupField_MissingFields": "Отсутствующие столбцы",
+    "MsgAddedColumnCanNotSelected": "Столбец добавлен, но не отображается, т.к. не соответствует фильтру",
+    "RemoveAllMappingColumnDefsConfirm": "Вы действительно хотите удалить все выходные столбцы?"
+  },
+  "wizards/columns/ColumnsMappingWizard": {
+    "RemoveInvalidRelationsConfirm": "Обнаружены связи с несуществующими объектами. Вы хотите удалить все потерянные связи и продолжить?"
+  },
+  "wizards/columns/DataSetOutputSocketWizard": {
+    "frmColumnsMappingTitle": "Настройка выходных столбцов"
+  },
+  "wizards/columns/DataSourceOutputSocketWizard": {
+    "frmColumnsMappingTitle": "Настройка выходных столбцов"
+  },
+  "wizards/columns/DerivedDataSourceMappingEngineOutputPortWizard": {
+    "ProduceTypeDisplayName": "Тип создания производных столбцов"
+  },
+  "wizards/columns/DerivedDataSourceOutputSocketWizard": {
+    "frmColumnsMappingTitle": "Настройка выходных столбцов"
+  },
+  "wizards/columns/EditColumnDefForm": {
+    "AddBtnText": "Добавить",
+    "AddColumnDefTitle": "Добавить столбец",
+    "DefaultUsageType": "Назначение по умолчанию",
+    "ErrColumnEmptyName": "Имя столбца не может быть пустым",
+    "ErrColumnInvalidIdentifier": "Введенное имя столбца \"{0}\" не является правильным идентификатором",
+    "ErrColumnNameAlreadyExists": "Столбец с именем \"{0}\" уже существует",
+    "GroupEditingTitle": "Групповое редактирование",
+    "ModifyBtnText": "Применить",
+    "ModifyColumnDefTitle": "Настроить столбец"
+  },
+  "wizards/columns/EditTuneColumnDefForm": {
+    "UsageType": "Назначение"
+  },
+  "wizards/columns/TuneDataSourceInputPortWizard": {
+    "frmColumnsMappingTitle": "Настройка входных столбцов"
+  },
+  "wizards/columns/TuneDataSourceMappingWizard": {
+    "RemoveRequiredMappingColumnDefConfirm": "Столбец \"{0}\" используется обработчиком. Вы действительно хотите его удалить?"
+  },
+  "wizards/columnsdisposition/ColumnsDispositionWizard": {
+    "AvailableField": "Доступные",
+    "MoveButtonTooltip": "Переместить в {0}"
+  },
+  "wizards/connection/ConnectionConfigWizard": {
+    "TestConnectionSuccess": "Тестирование соединения прошло успешно",
+    "TestConnectionTitle": "Тестирование соединения",
+    "WizardTitle": "параметры подключения"
+  },
+  "wizards/connection/ConnectionReferenceComponentWizard": {
+    "ConnectionReferenceTitle": "Подключение-ссылка",
+    "ConnectionsColumnTitle": "Подключения"
+  },
+  "wizards/connection/ConnectionsViewWizard": {
+    "AccessModification": "Настроить модификатор доступа...",
+    "BtnShowVendorsEdit": "Показать/скрыть дерево классов подключений",
+    "BtnTextTest": "Проверить",
+    "BtnTooltipConnect": "Активировать подключение",
+    "BtnTooltipDelete": "Удалить подключение...",
+    "BtnTooltipEdit": "Настроить подключение...",
+    "BtnTooltipFilter": "Фильтровать список",
+    "BtnTooltipFind": "Искать по списку",
+    "BtnTooltipGroup": "Группировать список",
+    "BtnTooltipRename": "Переименовать подключение...",
+    "BtnTooltipSort": "Сортировать список",
+    "BtnTooltipTest": "Тестировать подключение",
+    "ClearSort": "Сброс сортировки",
+    "ConnectionPath": "Путь подключения",
+    "ConnectionStatus": "Состояние подключения",
+    "DeleteConnectionPrompt": "Действительно удалить подключение {0}?",
+    "DeleteConnectionPromptTitle": "Удаление подключения",
+    "InsertConnection": "Добавить подключение",
+    "LabelConnectionPath": "Адрес",
+    "LabelTitle": "Метка",
+    "MultioperationError": "Ошибка при выполнении множественных операций",
+    "NoConnections": "Подключения доступны в расширенных версиях",
+    "TestConnectionsError": "Ошибка тестирования нескольких подключений",
+    "TestConnectionSuccess": "Тестирование соединения прошло успешно",
+    "VendorTreeCaption": "Подключения",
+    "VendorTreeConnections": "Источники данных"
+  },
+  "wizards/datapartition/BiasedMethodForm": {
+    "UniqueValuesLimitError": "Поле {0} нельзя использовать для выборки со смещением из-за превышения количества уникальных значений (больше {1})"
+  },
+  "wizards/datapartition/PartitionWizard": {
+    "PartitionTitle": "Разбиение на множества"
+  },
+  "wizards/datapartition/RandomUniformMethodForm": {
+    "GroupAbsoluteSize": "Размер группы в строках",
+    "GroupRelativeSize": "Размер группы в процентах"
+  },
+  "wizards/datapartition/SamplingWizard": {
+    "UnknownValue": "Не определено"
+  },
+  "wizards/datapartition/SequenceMethodForm": {
+    "UnknownValue": "Не определено",
+    "UnusedSetName": "Неиспользуемое"
+  },
+  "wizards/datapartition/SizeGridForm": {
+    "SizeTypePercentTooltip": "Переключить на размер в строках",
+    "SizeTypeRowTooltip": "Переключить на размер в процентах",
+    "SummaryAbsOverflowErr": "Общее количество строк превышает число строк во входном наборе",
+    "SummaryRelOverflowErr": "Общий процент не должен быть больше 100%",
+    "SummarySetName": "Итого:",
+    "UnknownValue": "Не определено"
+  },
+  "wizards/genericmodelcomponent/GenericModelComponentWizard": {
+    "ActionAdd": "Добавить",
+    "ActionDelete": "Удалить",
+    "ActionDeleteAll": "Удалить все...",
+    "ActionInsert": "Вставить",
+    "DefaultSocketCaption": "Сокет",
+    "DeleteAllConfirm": "Удалить все входы/выходы?",
+    "EmptyName": "<Уникальное>",
+    "ErrCompareIndex": "Количество сокетов на сервере не совпадает с количеством сокетов на клиенте.",
+    "ErrGetAvalibleSocketDefFmt": "Не удалось получить описание описание сокета для вендора {0}.",
+    "ErrGetAvalibleSocketDefs": "Не удалось получить описание описание сокетов",
+    "ErrMoveDerivedSocket": "Нельзя перемещать наследованный сокет.",
+    "SocketLabelFmt": "{0} {1}",
+    "SocketTypeInputDesc": "Входы",
+    "SocketTypeOutputDesc": "Выходы"
+  },
+  "wizards/InputConnectionWizard": {
+    "ConnectCaption": "Подключить",
+    "ConnectedCaption": "Подключено",
+    "ConnectingCaption": "Подключение...",
+    "ExceptionTitle": "Ошибка",
+    "LocalConnection": "Локальное",
+    "NotConnectedText": "Не подключено"
+  },
+  "wizards/InputFileConnectionWizard": {
+    "MsgFileAlreadyExist": "Файл с именем {0} существует. Записать поверх?",
+    "MsgNotConnected": "Подключение не активно. Активизировать его сейчас?"
+  },
+  "wizards/normalization/ControlRangeSettings": {
+    "ValidateEditorsErr": "Ошибка в настройках контроля диапазона значений"
+  },
+  "wizards/normalization/DiscreteNormParamsForm": {
+    "UserTunedOrder": "Ошибка синхронизации нормализатора из-за явно заданного порядка значений",
+    "UserTunedRefId": "Ошибка синхронизации нормализатора из-за явно заданной опорной категории"
+  },
+  "wizards/normalization/NormParamsForm": {
+    "ValidateEditorsErr": "Ошибка в настройках параметров нормализатора"
+  },
+  "wizards/normalization/NormTuneWizard": {
+    "ErrNormaliserSync": "Не удалось автоматически синхронизировать настройки нормализатора с данными поля",
+    "InputColumnGroup": "Входные",
+    "OutputColumnGroup": "Выходные"
+  },
+  "wizards/previewpanel/PreviewPanel": {
+    "DefaultActivationMaskText": "Активация",
+    "DefaultPreparePreviewMaskText": "Подготовка предпросмотра"
+  },
+  "wizards/referencenode/ReferenceNodeComponentWizard": {
+    "ErrNodeDeleted": "Целевой узел удален.",
+    "ErrNodeDeletedFmt": "Целевой узел \"{0}\" удален.",
+    "ErrNodeNotFound": "Целевой узел не найден, возможно, он был удален или стал недоступен.",
+    "ErrNodeNotFoundFmt": "Целевой узел \"{0}\" не найден, возможно, он был удален или стал недоступен.",
+    "NotifyNodeNotSelected": "Не выбран целевой узел.",
+    "ReferenceNodeWizardTitle": "Узел-ссылка",
+    "WarnNodeLoadLimitExceeded": "Целевой узел \"{0}\" не выделен.\n Превышен предел {1} загружаемых уровней узлов."
+  },
+  "wizards/regression/RegressionWizard": {
+    "AboveAccuracy": "Повышенная точность",
+    "AbovePrecision": "Повышенная точность",
+    "AboveSpeed": "Повышенная скорость",
+    "LessFacts": "Меньше факторов",
+    "LowerAccuracy": "Пониженная точность",
+    "MaxAccuracy": "Точные данные",
+    "MaxFacts": "Максимум факторов",
+    "MaxPrecision": "Максимальная точность",
+    "MaxSpeed": "Максимальная скорость",
+    "MiddleAccuracy": "Средняя точность",
+    "MiddleFacts": "Среднее число факторов",
+    "MiddleSpeed": "Средняя скорость",
+    "MinAccuracy": "Недостоверные данные",
+    "MinFacts": "Минимум факторов",
+    "MoreFacts": "Больше факторов"
+  },
+  "wizards/variables/DerivedVariablesMappingEngineOutputPortWizard": {
+    "ProduceTypeDisplayName": "Тип создания производных переменных"
+  },
+  "wizards/variables/DerivedVariablesOutputSocketWizard": {
+    "frmColumnsMappingTitle": "Настройка выходных переменных"
+  },
+  "wizards/variables/EditVariableForm": {
+    "AddBtnText": "Добавить",
+    "AddVariableTitle": "Добавить переменную",
+    "DefaultUsageType": "Назначение по умолчанию",
+    "ErrVariableEmptyName": "Имя переменной не может быть пустым",
+    "ErrVariableInvalidIdentifier": "Введенное имя переменной \"{0}\" не является правильным идентификатором",
+    "ErrVariableNameAlreadyExists": "Переменная с именем \"{0}\" уже существует",
+    "GroupEditingTitle": "Групповое редактирование",
+    "ModifyBtnText": "Применить",
+    "ModifyVariableTitle": "Настроить переменную"
+  },
+  "wizards/variables/VariablesEditValuesWizard": {
+    "frmColumnsMappingTitle": "Настройка значений переменных"
+  },
+  "wizards/variables/VariablesEditWizard": {
+    "colTargetNameTitle": "Метка",
+    "frmColumnsMappingTitle": "Настройка выходных переменных",
+    "MsgAddedVariableCanNotSelected": "Переменная добавлена, но не отображается, т.к. не соответствует фильтру",
+    "RemoveAllMappingVariablesConfirm": "Вы действительно хотите удалить все переменные?"
+  },
+  "wizards/variables/VariablesMappingWizard": {
+    "btnAutoSyncThroughColumnsTooltip": "Автоматическая синхронизация переменных",
+    "btnSyncThroughColumnsTooltip": "Синхронизировать переменные",
+    "CreateMappingToAllConfirm": "Вы действительно хотите создать выходные переменные для всех входных?",
+    "EmptyListText": "Нет подходящих переменных",
+    "frmColumnsMappingTitle": "Настройка соответствия между переменными",
+    "GroupField_MissingFields": "Отсутствующие переменные",
+    "MsgAddedVariableCanNotSelected": "Переменная добавлена, но не отображается, т.к. не соответствует фильтру",
+    "RemoveAllMappingVariablesConfirm": "Вы действительно хотите удалить все переменные?",
+    "RemoveRequiredMappingVariableConfirm": "Переменная \"{0}\" является обязательной. Вы действительно хотите ее удалить?"
+  },
+  "wizards/WizardActivateInputPorts": {
+    "ActivateCaption": "Активировать",
+    "ActivatedCaption": "Активировано",
+    "ActivatedText": "Вход активирован",
+    "ActivatingCaption": "Активизация...",
+    "ExceptionTitle": "Ошибка",
+    "NotActivatedText": "Не активировано",
+    "NotFoundSocket": "Узел не содержит запрашиваемого сокета"
+  },
+  "wizards/WizardForm": {
+    "BtnNextCaption": "Далее",
+    "BtnPrevCaption": "Назад",
+    "BtnResizeMaximize": "Развернуть",
+    "BtnResizeMinimize": "Свернуть",
+    "BtnSaveCaption": "Сохранить",
+    "BtnSaveWhateverCaption": "Все равно сохранить",
+    "BtnWhateverCaption": "Все равно далее",
+    "ConfirmCloseWizard": "Вы действительно хотите закрыть мастер настройки?",
+    "ErrJumpToUndefinedPage": "Переход на несуществующую страницу",
+    "MsgBoxTitle": "Внимание",
+    "MsgCantJumpToPage": "Переход запрещен"
+  },
+  "wizards/WizardModelComponentForm": {
+    "ErrUnknownObject": "Попытка получить мастер настройки для неизвестного объекта"
+  },
+  "wizards/WizardModelConnectionForm": {
+    "BtnConnectCaption": "Подключить"
+  }
+}

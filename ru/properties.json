@@ -1,0 +1,2182 @@
+{
+  "Common/CertList/CertList": {
+    "CertificateStore": {
+      "DisplayName": "Отображаемое имя",
+      "Name": "Системное имя",
+      "StoreCollection": "Коллекция хранилищ"
+    },
+    "HTTPClientCertificateList": {
+      "Selected": "Индекс выбранного сертификата",
+      "Store": "Хранилище сертификатов"
+    }
+  },
+  "Common/CodeExec/CodeModelComponentEngine": {
+    "CodeModelComponentEngine": {
+      "Code": "Исполняемый код",
+      "OutputColumnDefs": "Описание столбцов выходного набора",
+      "Variables": "Входные переменные"
+    }
+  },
+  "Common/WSDL/HTTPHeaders": {
+    "CustomHeadersConfigurator": {
+      "CustomHeaders": "Коллекция заголовков HTTP"
+    },
+    "HTTPHeaderItem": {
+      "HeaderValue": "Значение",
+      "Name": "Имя"
+    }
+  },
+  "Common/WSDL/WSDL": {
+    "WSDL": {
+      "ServicesCount": "Количество определенных WSDL-описанием служб"
+    },
+    "WSDLBinding": {
+      "Extension": "Расширение",
+      "OperationsCount": "Количество операций"
+    },
+    "WSDLElement": {
+      "Documentation": "Документация",
+      "Name": "Имя"
+    },
+    "WSDLExtension": {
+      "ExtensionType": "Тип расширения"
+    },
+    "WSDLHttpBindingExtension": {
+      "Verb": "Метод HTTP-запроса"
+    },
+    "WSDLHttpOperationExtension": {
+      "Location": "Локальная часть адреса вызова операции"
+    },
+    "WSDLHttpPortExtension": {
+      "AddressLocation": "Адрес запроса"
+    },
+    "WSDLMessage": {
+      "Extension": "Расширение"
+    },
+    "WSDLMimeContent": {
+      "Part": "Часть сообщения"
+    },
+    "WSDLMimeContentExtensionElement": {
+      "Content": "Элемент mime:content или mime:mimeXml"
+    },
+    "WSDLMimeExtensionElement": {
+      "ExtElementType": "Тип элемента расширения"
+    },
+    "WSDLMimeMessageExtension": {
+      "ExtElementCount": "Элемент расширения по индексу"
+    },
+    "WSDLOperation": {
+      "Extension": "Расширение",
+      "FaultsCount": "Количество описанных исключений",
+      "Input": "Входящее сообщение сервиса",
+      "Output": "Исходящее сообщение сервиса",
+      "Primitive": "Примитив обмена",
+      "Signature": "Сигнатура операции"
+    },
+    "WSDLPart": {
+      "Name": "Имя части"
+    },
+    "WSDLPort": {
+      "Binding": "Используемое связывание",
+      "Extension": "Расширение"
+    },
+    "WSDLService": {
+      "PortsCount": "Количество определенных службой конечных точек (портов)"
+    },
+    "WSDLSoapBindingExtension": {
+      "Style": "Стиль SOAP",
+      "Transport": "Транспортный протокол",
+      "Version": "Версия SOAP"
+    },
+    "WSDLSoapOperationExtension": {
+      "Action": "SOAP action",
+      "Style": "Стиль SOAP",
+      "Version": "Версия SOAP"
+    },
+    "WSDLSoapPortExtension": {
+      "AddressLocation": "Адрес запроса"
+    }
+  },
+  "Common/WSDL/WSDLClientAuth": {
+    "WSDLAuthorization": {
+      "CertCredentials": "Реквизиты авторизации пользовательским сертификатом",
+      "Mode": "Тип авторизации",
+      "NamePassCredentials": "Реквизиты авторизации по имени пользователя и паролю",
+      "OAuthCredentials": "Реквизиты авторизации по токену OAuth"
+    },
+    "WSDLCertAuthCredentials": {
+      "Certificates": "Список сертификатов"
+    },
+    "WSDLNamePassAuthCredentials": {
+      "Password": "Пароль",
+      "UserName": "Имя пользователя"
+    },
+    "WSDLOAuthCredentials": {
+      "Token": "Токен OAuth"
+    }
+  },
+  "Common/WSDL/WSDLRequestDebug": {
+    "WSDLRequestDebug": {
+      "DumpRequest": "Сохранять текст запроса на диск",
+      "DumpRequestFolder": "Папка на диске для сохранения запросов",
+      "ResponseStub": "Имя файла, подставляемого в качестве ответа",
+      "RootFileStorage": "Корневое файловое хранилище",
+      "UseResponseStub": "Имитировать запрос с ответом в файле"
+    }
+  },
+  "Common/XML/XMLSchemaToDataSourceMapping": {
+    "XMLSchemaToColumnMapping": {
+      "Column": "Столбец набора данных",
+      "Node": "Узел дерева"
+    }
+  },
+  "Common/XML/XMLSchemaTree": {
+    "XMLSchemaTree": {
+      "NamespacesCount": "Количество используемых пространств имен",
+      "RootNodesCount": "Количество корневых элементов",
+      "SelectedRoot": "Выбранный корневой узел"
+    },
+    "XMLSchemaTreeNode": {
+      "CanExpand": "Возможно ли развертывание структуры узла",
+      "Comment": "Комментарий",
+      "DefaultValue": "Значение по умолчанию",
+      "DisplayName": "Локальное имя узла",
+      "FixedValue": "Фиксированное значение",
+      "HasSubstitutes": "Элемент, для которого существуют замены",
+      "IsAbstract": "Является ли узел определением абстрактного элемента",
+      "NamespaceURI": "URI пространства имен",
+      "NodeType": "Тип узла",
+      "ParentNode": "Родительский узел",
+      "Selectable": "Можно выбирать",
+      "Selected": "Выбран пользователем для импорта",
+      "SubNodes": "Подузлы",
+      "SubstitutionHead": "Элемент, заменяемый через substitutionGroup",
+      "ValueRequired": "Значение обязательно",
+      "ValueType": "Тип значения"
+    },
+    "XMLSchemaTreeNodes": {
+      "Count": "Количество узлов"
+    }
+  },
+  "components/assnrules": {
+    "AssnRulesDefExtension": {
+      "Selected": "Флаг выбора колонки"
+    },
+    "AssnRulesEngine": {
+      "Params": "Параметры алгоритма"
+    },
+    "AssnRulesParams": {
+      "ExcludeLargeSupportItems": "Исключать элементы с поддержкой, больше максимальной",
+      "ExcludeSingleItems": "Исключить одиночные наборы",
+      "MaxSupport": "Максимальная поддержка, %",
+      "MinConfidence": "Минимальная достоверность правила, %",
+      "MinLift": "Минимальный лифт правила",
+      "MinSupport": "Минимальная поддержка, %",
+      "NAntecedentMax": "Максимальное число условий",
+      "NConsequentMax": "Максимальное число следствий",
+      "NItemsMax": "Максимальное число элементов",
+      "SelectColumn": "Содержащие выбранные элементы"
+    }
+  },
+  "components/autocorrelation": {
+    "AutoCorrelationEngine": {
+      "CalcPacf": "Рассчитывать ЧАКФ",
+      "DomainCalc": "Область расчета АКФ",
+      "LagCount": "Количество отсчетов"
+    }
+  },
+  "components/binning": {
+    "BinningBinsDefExtension": {
+      "KindForBins": "Назначение колонки для интервалов"
+    },
+    "BinningContinuousBinItem": {
+      "LowerBound": {
+        "#text": "Нижняя граница диапазона",
+        "attr": {
+          "child": "AsVariant|Value"
+        }
+      },
+      "UpperBound": {
+        "#text": "Верхняя граница диапазона",
+        "attr": {
+          "child": "AsVariant|Value"
+        }
+      }
+    },
+    "BinningCountLinContMethodSettings": {
+      "BinsCount": "Количество"
+    },
+    "BinningCustomBinItem": {
+      "BinLabel": "Метка интервала",
+      "BinNumber": "Номер интервала",
+      "BoundModes": "Режим границ интервала",
+      "RelativeVolume": "Относительный объем интервалов"
+    },
+    "BinningCustomBins": {
+      "DataType": "Тип данных интервалов"
+    },
+    "BinningCustomMethodSettings": {
+      "MethodType": "Тип метода для которого нужны эти настройки",
+      "RoundingLevel": "Округление границ"
+    },
+    "BinningDefExtension": {
+      "AlwaysDefaultSettings": "Всегда использовать настройки метода по умолчанию",
+      "Bins": "Интервалы квантования",
+      "BinsType": "Тип интервалов",
+      "LabelTemplate": "Шаблон меток",
+      "MethodSettings": "Настройки метода получения интервалов",
+      "MethodType": "Тип метода получения интервалов"
+    },
+    "BinningEngine": {
+      "BinningPreview": "Вспомогательный класс для визуальной настройки методов квантования",
+      "ExternalBinsColumns": "Колонки внешних интервалов квантования",
+      "TuneColumns": "Квантуемые колонки"
+    },
+    "BinningExtermalBinsMethodSettings": {
+      "ExternalBinsID": "Идентификатор"
+    },
+    "BinningLinearBins": {
+      "LowerLimitOpen": "Нижняя граница диапазонов открыта",
+      "UpperLimitOpen": "Верхняя граница диапазонов открыта"
+    },
+    "BinningLinearContinuousMethodSettings": {
+      "LowerLimit": {
+        "#text": "Нижняя граница",
+        "attr": {
+          "child": "AsVariant|Value"
+        }
+      },
+      "StrictDefineLowerLimit": "Явно задана",
+      "StrictDefineUpperLimit": "Явно задана",
+      "UpperLimit": {
+        "#text": "Верхняя граница",
+        "attr": {
+          "child": "AsVariant|Value"
+        }
+      }
+    },
+    "BinningSDMethodSettings": {
+      "SDMode": "От среднего"
+    },
+    "BinningTileDateTimeMethodSettings": {
+      "MatchingObservationsMode": "Совпадающие наблюдения",
+      "TileCount": "Количество"
+    },
+    "BinningTileNumericMethodSettings": {
+      "SumValues": "Из сумм значений"
+    },
+    "BinningWidthLinDateTimeMethodSettings": {
+      "DateTimeSpanCount": "Ширина",
+      "DateTimeSpanType": "Тип интервала"
+    },
+    "BinningWidthLinNumMethodSettings": {
+      "BinWidth": "Ширина"
+    }
+  },
+  "components/calcdata": {
+    "CalcData": {
+      "CalcMode": "Режим",
+      "ExprColumns": "Выражения"
+    },
+    "CalcExprColumnItem": {
+      "Cached": "Кэшировать значения"
+    },
+    "ExprColumnItem": {
+      "DataType": "Тип данных",
+      "Description": "Описание",
+      "DisplayName": "Метка",
+      "Expression": "Выражение",
+      "Index": "Индекс",
+      "Intermediate": "Промежуточное выражение",
+      "Name": "Имя"
+    }
+  },
+  "components/clope": {
+    "ClopeEngine": {
+      "Params": "Параметры алгоритма"
+    },
+    "ClopeParams": {
+      "LimitNClusters": "Ограничить число кластеров",
+      "LimitNIters": "Ограничить число итераций",
+      "NClustersMax": "Максимальное число кластеров",
+      "NItersMax": "Число итераций",
+      "Repulsion": "Коэффициент отталкивания"
+    }
+  },
+  "components/clusterization": {
+    "ClusterizationEngine": {
+      "Params": "Параметры алгоритма"
+    },
+    "ClusterizationParams": {
+      "NClusters": "Число кластеров",
+      "NClustersAutoSelect": "Автоопределение числа кластеров",
+      "NClustersMax": "Максимальное число кластеров",
+      "NClustersMin": "Минимальное число кластеров",
+      "StatTestThreshold": "Порог разделения кластеров"
+    }
+  },
+  "components/coarseclasses": {
+    "ClassParamsTuneColumnDefExtension": {
+      "AllowedColumnKinds": "Возможные варианты назначения поля во внешнем разбиении",
+      "ClassParamsColumnKind": "Назначение поля во внешнем разбиении"
+    },
+    "CoarseClass": {
+      "HighBorder": "Верхняя граница",
+      "HighFineIndex": "Верхняя граница",
+      "LowBorder": "Нижняя граница",
+      "LowFineIndex": "Нижняя граница",
+      "Mark": "Метка класса",
+      "Weight": "Вес класса"
+    },
+    "CoarseClassesBuilder": {
+      "ColumnPurpose": "Назначение поля",
+      "IsEdited": "Разбиение редактировалось",
+      "IsLocked": "Разбиение заблокировано"
+    },
+    "CoarseClassesEngine": {
+      "CoarseClassesViewers": "Read-only вьюверы конечных классов"
+    },
+    "CoarseClassesInputContinuousParams": {
+      "FineIntervalsCount": "Количество интервалов",
+      "IncludeHighBounds": "Включить верхние границы интервала",
+      "UsePrequanting": "Предварительное квантование"
+    },
+    "CoarseClassesInputDiscreteParams": {
+      "UseFineClassesBinning": "Начальные классы в качестве разбиения"
+    },
+    "CoarseClassesInputExternalParams": {
+      "BinningId": "Идентификатор внешнего разбиения"
+    },
+    "CoarseClassesInputParams": {
+      "MaxClassCount": "Максимальное количество классов",
+      "MinClassPercentage": "Минимальный вес класса, %",
+      "UniformityCoef": "Равномерность"
+    },
+    "CoarseClassesManager": {
+      "CoarseClassesBuilders": "Билдеры конечных классов",
+      "HasExcludeBinningDataSource": "Имеет дополнительный вход внешнего разбиения"
+    },
+    "CoarseClassesTargetParams": {
+      "TuneEventValue": "Настраиваемое значение \"события\""
+    },
+    "CoarseClassesTuneColumnDefExtension": {
+      "AvailablePurposes": "Доступные значения для параметра \"Назначение поля\"",
+      "ColumnPurpose": "Назначение поля при получении конечных классов",
+      "IsUsed": "Используется ли поле в обработчике",
+      "Params": "Конфигурационная информация"
+    },
+    "CoarseClassesViewer": {
+      "IsLocked": "Разбиение заблокировано"
+    },
+    "FineClass": {
+      "EventCount": "Число событий в классе",
+      "IV": "Информационный индекс класса",
+      "Mark": "Метка класса",
+      "NoEventCount": "Число не-событий в классе",
+      "Total": "Общее число событий и не-событий в классе",
+      "WoE": "Вес доказательства класса"
+    },
+    "FineClassesViewer": {
+      "Count": "Количество начальных классов",
+      "DataType": "Тип данных",
+      "TotalEvent": "Общее число событий",
+      "TotalNoEvent": "Общее число не-событий"
+    }
+  },
+  "components/columnflipping": {
+    "ColumnFlippingColumnDefExtension": {
+      "Order": "Порядковый номер"
+    },
+    "ColumnFlippingEngine": {
+      "SkipNullCases": "Игнорировать пустые значения"
+    }
+  },
+  "components/coluniondata": {
+    "ColUnionDataEngine": {
+      "JoinedCount": "Количество присоединяемых наборов данных",
+      "MainDisplayName": "Отображаемое имя основного набора данных",
+      "RowsPaddingType": "Дополнение до наибольшего набора",
+      "TailsAlignToDataSource": "Идентификатор набора данных, задающего выравнивание",
+      "TailsAlignType": "Количество строк соответствует"
+    }
+  },
+  "components/condition": {
+    "Condition": {
+      "DebugMode": "Режим отладки"
+    },
+    "ConditionItem": {
+      "CaseSensitive": "Учитывать регистр",
+      "CompareValue": "Сравниваемое значение",
+      "FieldLink": {
+        "#text": "Сравниваемое поле",
+        "attr": {
+          "child": "Name"
+        }
+      }
+    }
+  },
+  "components/corranalysis": {
+    "CorrAnalysisColumnDefExtension": {
+      "Selection": "Принадлежность выборкам"
+    },
+    "CorrAnalysisEngine": {
+      "CorrTypes": "Набор типов коэффициента корреляции"
+    }
+  },
+  "components/crosstab": {
+    "CrossTabColumnDefExtension": {
+      "AggregationTypes": "Заданные варианты агрегации"
+    },
+    "CrossTabEngine": {
+      "AllowInvalidName": "Разрешить невалидные имена",
+      "CrossTabColumnInfos": "Настраиваемые столбцы",
+      "DisplayNameSeparator": "Разделитель частей меток полей",
+      "SlidingUniqueValues": "Скользящие уникальные значения",
+      "SlidingUniqueValuesLimit": "Ограничение количества значений",
+      "UniqueValueNames": "Уникальные значения как имена полей"
+    }
+  },
+  "components/datatoxml": {
+    "DataToXMLEngine": {
+      "Configurator": "Настройки экспорта",
+      "DocIDColumn": [
+        "Идентификатор документа",
+        "Столбец входного набора, содержащий идентификатор документа"
+      ],
+      "EscapeQuotes": "Экранировать одинарные и двойные кавычки",
+      "EscapeTabCRLFInAttr": "Экранировать табуляции и переводы строк в атрибутах",
+      "Prettify": "Добавлять отступы и переводы строк",
+      "RootElement": "Выбранный корневой элемент",
+      "RowsDocIdenti": "Идентификация документа"
+    }
+  },
+  "components/datereform": {
+    "DateReformColumnDefExtension": {
+      "Functions": "Ссылка на коллекцию преобразований, назначенных данной колонке"
+    }
+  },
+  "components/em": {
+    "EMEngine": {
+      "Params": "Параметры алгоритма"
+    },
+    "EMParams": {
+      "IndependentVariables": "Переменные независимы",
+      "MedianModification": "Медианная модификация"
+    }
+  },
+  "components/execcmd": {
+    "ExecCmdEngine": {
+      "CmdLine": "Командная строка",
+      "TerminateByTimeout": "Завершить программу по тайм-ауту",
+      "Timeout": "Тайм-аут выполнения узла (мсек.)",
+      "Variables": "Переменные"
+    }
+  },
+  "components/extractxml": {
+    "ExtractXMLEngine": {
+      "HaltOnParseErrors": "Останавливаться при ошибках",
+      "IDColumn": "Столбец, идентифицирующий XML-документ",
+      "ImportXMLSettings": "Настройки импорта XML",
+      "InputColumn": "Столбец, содержащий XML",
+      "InputDataSource": "Входной набор данных",
+      "NeedUnescape": "Разэкранировать сущности XML",
+      "ProduceErrorDescs": "Выдавать описание кодов завершения",
+      "UseID": "Использовать идентификатор"
+    }
+  },
+  "components/factoranalysis": {
+    "FactorAnalysisEngine": {
+      "CumDispersion": "Порог дисперсии, %",
+      "EigenValuesThreshold": "Порог собственного значения",
+      "NFactors": "Число факторов",
+      "NOutFactorsMax": "Число факторов",
+      "PruneOutFactors": "Ограничить число выходных факторов",
+      "RotationType": "Метод вращения",
+      "SignificanceCriterion": "Критерий значимости"
+    }
+  },
+  "components/filterdata": {
+    "FilterColumnCollection": {
+      "UseGlobalCaseSensitive": "Использовать общий флаг чувствительности к регистру букв"
+    },
+    "FilterColumnItem": {
+      "CaseSensitive": "Учитывать регистр",
+      "CompareValue": "Значение для сравнения",
+      "CompareValueList": "Список значений",
+      "CompareValueLowerBound": "Нижняя граница",
+      "CompareValuePeriodBaseDate": "Базовая дата интервала",
+      "CompareValuePeriodCount": "Значение временного промежутка",
+      "CompareValuePeriodDateSourceType": "Тип источника дат",
+      "CompareValuePeriodType": "Тип временного промежутка",
+      "CompareValueUpperBound": "Верхняя граница",
+      "ConcatenationType": "Тип логической связи",
+      "DataType": "Тип данных",
+      "Name": "Имя",
+      "RelationType": "Тип отношения",
+      "RowNumberer": "Нумератор строк"
+    },
+    "FilterDataEngine": {
+      "Filter": "Список условий",
+      "PrepareUniqueValues": "Подготовить уникальные значения"
+    }
+  },
+  "components/filtration": {
+    "DataRecoveryColumnDefExtension": {
+      "ActionNull": "Метод обработки отсутствующих данных"
+    },
+    "DataRecoveryEngine": {
+      "MaxNullsPercent": "Допустимый процент пропусков",
+      "OrderedSample": "Исходные данные упорядочены"
+    },
+    "ElimOutlierColumnDefExtension": {
+      "ActionExtr": "Метод обработки экстремальных",
+      "ActionOut": "Метод обработки выбросов",
+      "DetectEKvartil": "Для экстремального",
+      "DetectESko": "Для экстремального",
+      "DetectOKvartil": "Для выброса",
+      "DetectOSko": "Для выброса",
+      "ModeOE": "Метод выявления",
+      "SettedValueExtr": "Заменять на",
+      "SettedValueOut": "Заменять на"
+    },
+    "ElimOutlierEngine": {
+      "OrderedSample": "Исходные данные упорядочены"
+    }
+  },
+  "components/forecast": {
+    "ARIMAXParams": {
+      "AutoStructure": "Определить структуру автоматически",
+      "CalcConfidenceInterval": "Рассчитать доверительный интервал",
+      "CalcResiduals": "Рассчитать ошибку аппроксимации",
+      "ConfidenceInterval": "Доверительный интервал прогноза в %",
+      "D": "Порядок интегрирования",
+      "DS": "Порядок сезонного интегрирования",
+      "ForecastHorizon": "Горизонт прогноза",
+      "IncludeIntercept": "Включить константу в модель",
+      "IncludeSeasonality": "Включить расчет сезонности",
+      "P": "Порядок AR части",
+      "PS": "Порядок сезонной AR части",
+      "Q": "Порядок MA части",
+      "QS": "Порядок сезонной MA части",
+      "SeasonalPeriod": "Период сезонной составляющей"
+    },
+    "ForecastEngine": {
+      "ARIMAXParams": "Настройки ARIMAX"
+    }
+  },
+  "components/groupdata": {
+    "GroupDataColumnDefExtension": {
+      "GroupFunctions": "Функции агрегации",
+      "Order": "Порядковый номер"
+    },
+    "GroupDataEngine": {
+      "DimValuesCached": "Кэшировать значения групп",
+      "SortedResult": "Сортировать результирующие данные"
+    }
+  },
+  "components/javascript": {
+    "JavaScriptEngine": {
+      "CalcAPI": "Описание API функций Калькулятора",
+      "DataAPI": "Описание API доступа к данным",
+      "Preview": "Предпросмотр"
+    },
+    "JavaScriptPreview": {
+      "Console": "Консоль",
+      "OnNewRowsReady": "Событие добавления строк"
+    },
+    "JavaScriptPreviewConsole": {
+      "OnClear": "Событие очистки консоли",
+      "OnNewMessages": "Событие добавления записей в консоль"
+    }
+  },
+  "components/joindata": {
+    "JoinDataEngine": {
+      "IncludeJoinedKeyFields": "Добавлять присоединяемые ключевые поля",
+      "JoinType": "Тип операции",
+      "Links": "Связи между столбцами"
+    }
+  },
+  "components/linregression": {
+    "LinRegressionEngine": {
+      "LinRegressionParams": "Настройки линейной регрессии"
+    },
+    "LinRegressionParams": {
+      "LinRegressionMethod": "Отбор факторов и защита от переобучения",
+      "LinRegSelQuality": "Критерий отбора факторов"
+    }
+  },
+  "components/logregression": {
+    "LogRegressionEngine": {
+      "LogRegressionParams": "Настройки логистической регрессии"
+    },
+    "LogRegressionParams": {
+      "LogRegressionMethod": "Отбор факторов и защита от переобучения",
+      "LogRegSelQuality": "Критерий отбора факторов",
+      "SetupCalibration": "Калибровка",
+      "UseScoring": "Скоринг"
+    }
+  },
+  "components/loop": {
+    "LoopComponent": {
+      "AppendIterationIdentifiers": "Добавлять идентификаторы итераций",
+      "CompareValue": "Значение",
+      "ConditionVariableLink": {
+        "#text": "Переменная условия завершения",
+        "attr": {
+          "child": "Name"
+        }
+      },
+      "GroupColumns": "Столбцы, определяющие группы",
+      "GroupCount": "Количество групп",
+      "GroupDataSourceSocket": "Сокет, содержащий столбцы для группировки",
+      "GroupProcessingKind": "Вид групповой обработки",
+      "GroupSize": "Количество строк в группе",
+      "IgnoreErrors": "Игнорировать ошибки",
+      "InternalOutputSockets": "Выходные сокеты внутреннего компонента",
+      "IterationCount": "Количество итераций",
+      "LoopKind": "Вид цикла",
+      "LoopVariableLink": {
+        "#text": "Переменная цикла",
+        "attr": {
+          "child": "Name"
+        }
+      },
+      "MappedVariables": "Переменные, передаваемые с выхода на вход",
+      "MaxThreadCount": "Максимальное количество потоков",
+      "ParallelProcessing": "Параллельная обработка",
+      "TerminateCondition": "Условие завершения"
+    }
+  },
+  "components/neuralnet": {
+    "NeuralNetEngine": {
+      "NetworkParams": "Настройки нейросети"
+    },
+    "NeuralNetworkAutofitParams": {
+      "DecayAutofit": "Подобрать степень регуляризации",
+      "MaxAutofitSeconds": "Время автоподбора не более (сек.)",
+      "MaxAutofitStages": "Шагов автоподбора не более",
+      "StopAtZeroClsError": "Останов при нулевой ошибке классификации",
+      "StructureAutofit": "Подобрать структуру",
+      "SubSampleMaxSize": "Максимальный размер выборки",
+      "SubSamplePercent": "Размер выборки в процентах",
+      "UseInitialDecay": "Начать с указанной степени регуляризации",
+      "UseInitialStructure": "Начать с указанной структуры",
+      "UseSubSampling": "Использовать подмножество обучающего набора"
+    },
+    "NeuralNetworkParams": {
+      "AutofitParams": "Параметры автоматического подбора",
+      "StoppingCriteria": "Критерии останова алгоритма обучения",
+      "StructureParams": "Параметры структуры нейросети",
+      "Task": "Тип задачи",
+      "TrainingParams": "Параметры алгоритма обучения"
+    },
+    "NeuralNetworkStoppingCriteria": {
+      "MaxEpochs": "Максимальное количество эпох",
+      "WStep": "Порог минимального изменения весов"
+    },
+    "NeuralNetworkStructureParams": {
+      "HiddenLayers": "Количество скрытых слоев",
+      "HiddenNeurons1": "Количество нейронов в первом скрытом слое",
+      "HiddenNeurons2": "Количество нейронов во втором скрытом слое",
+      "RegNNOutputInf": "Нижняя граница",
+      "RegNNOutputLayer": "Ограничение на значение выходов",
+      "RegNNOutputSup": "Верхняя граница"
+    },
+    "NeuralNetworkTrainingParams": {
+      "ContinueTraining": "Продолжить обучение",
+      "Decay": "Степень регуляризации",
+      "NRestarts": "Количество рестартов"
+    }
+  },
+  "components/partition": {
+    "PartitionEngine": {
+      "Partition": "Разбиение на множества"
+    }
+  },
+  "components/reformcolumns": {
+    "ReformColumnDefExtension": {
+      "CachingMethod": "Кэширование",
+      "DataKind": "Измененный вид данных столбца",
+      "DataType": "Измененный тип данных столбца",
+      "DefaultUsageType": "Измененное назначение столбца по умолчанию",
+      "DisplayName": "Измененная метка столбца",
+      "Name": "Измененное имя столбца"
+    },
+    "ReformColumnsEngine": {
+      "CachingMethod": "Кэширование"
+    }
+  },
+  "components/replace": {
+    "ReplaceTable": {
+      "CaseSensivity": "Учитывать регистр для строк",
+      "IsEmpty": "Пустая таблица замен",
+      "Items": "Варианты замены",
+      "OutputDataType": "Тип выходных данных",
+      "Precision": "Точность поиска подходящей замены",
+      "RegularExpressions": "Регулярные выражения",
+      "ReplacementForOther": {
+        "#text": "Замена для других значений",
+        "attr": {
+          "child": "Value"
+        }
+      },
+      "ReplaceMode": "Флаг использования замены",
+      "ReplaceOther": "Заменять другие значения",
+      "ReplaceOtherRegex": "Замена других через регулярное выражение",
+      "ReplaceSourceID": "GUID входной таблицы замен"
+    },
+    "ReplaceTableItem": {
+      "DataValue": {
+        "#text": "Заменяемое значение",
+        "attr": {
+          "child": "Value"
+        }
+      },
+      "ReplaceBy": {
+        "#text": "Замещающее значение",
+        "attr": {
+          "child": "Value"
+        }
+      }
+    }
+  },
+  "components/restclient": {
+    "RESTClient": {
+      "CustomHeadersConfigurator": "Настройки пользовательских заголовков",
+      "ProduceErrorDescs": "Выдавать описание кодов завершения",
+      "RequestConfigurator": "Настройки экспорта данных запроса",
+      "RequestDebug": "Настройки отладки запроса",
+      "RESTClientConnection": "Подключение к REST-сервису",
+      "SelectedOperation": "Настроенная операция"
+    }
+  },
+  "components/sampling": {
+    "SamplingEngine": {
+      "Sampling": "Сэмплинг"
+    }
+  },
+  "components/slidingwindow": {
+    "SlidingWindowColumnDefExtension": {
+      "Forecast": "Горизонт прогноза",
+      "History": "Глубина истории"
+    },
+    "SlidingWindowEngine": {
+      "IncompleteRecordsProcessing": "Способ обработки неполных записей"
+    }
+  },
+  "components/smoothing": {
+    "SmoothingDefExtension": {
+      "Algorithm": "Алгоритм сглаживания",
+      "DecompositionLevel": "Глубина разложения",
+      "EdgeExtension": "Продолжение границ",
+      "Lambda": "Параметр Lambda",
+      "LambdaAsPeriod": "Параметр Lambda задается периодом",
+      "Period": "Период сглаживания",
+      "WaveletOrder": "Порядок вейвлета",
+      "WaveletType": "Тип вейвлета"
+    }
+  },
+  "components/sonn": {
+    "SONNEngine": {
+      "Params": "Параметры алгоритма"
+    },
+    "SONNParams": {
+      "CellTopology": "Топология сети",
+      "NX": "Размер сети по X",
+      "NY": "Размер сети по Y",
+      "NZ": "Размер сети по Z",
+      "SONNType": "Тип самоорганизующейся сети"
+    }
+  },
+  "components/sorting": {
+    "SortingColumnItem": {
+      "CaseSensitive": "Чувствительность к регистру.",
+      "DisplayName": "Метка поля",
+      "Index": "Индекс поля",
+      "Name": "Имя поля",
+      "SortDirection": "Порядок сортировки."
+    },
+    "SortingEngine": {
+      "SortingColumns": "Список сортируемых полей"
+    }
+  },
+  "components/ungroupdata": {
+    "UngroupDataEngine": {
+      "AbsentDataPoints": "Точек отсутствия для прекращения позиции",
+      "AbsentPeriodFraction": "Периодов отсутствия для прекращения позиции",
+      "BalanceMethod": "Метод балансировки",
+      "Links": "Связи",
+      "MaxDepthDataPoints": "Максимальное число точек каждого ряда",
+      "MaxDepthPeriodFraction": "Максимальное число периодов сезонности",
+      "MaxRareDensity": "Плотность точек редких товаров",
+      "NoveltyPeriodFraction": "Периодов присутствия для новой позиции",
+      "NumSeasonalIndexes": "Количество рассчитываемых сезонных индексов",
+      "RoundFormat": "Формат округления",
+      "RoundParam": "Параметр округления",
+      "SeasonalityMultiplier": "Заданный период сезонности",
+      "SeasonalityPeriod": "Период сезонности",
+      "TimeAxisLink": "Связь между столбцами, определяющими порядок следования данных",
+      "UngroupMethod": "Метод разгруппировки"
+    }
+  },
+  "components/uniondata": {
+    "CustomUnionDataEngine": {
+      "ColumnDisplayNamePrefix": "Префикс метки",
+      "ColumnNamePrefix": "Префикс имени",
+      "JoinedCount": "Количество присоединяемых наборов данных",
+      "Links": "Связи между столбцами",
+      "MainColumnsInfo": "Поля основного набора данных",
+      "UsePrefixes": "Использовать префиксы"
+    }
+  },
+  "components/variablestodata": {
+    "VariablesToDataEngine": {
+      "ResultTableKind": "Записать переменные"
+    }
+  },
+  "components/wsdlclient": {
+    "WSDLClient": {
+      "CompositeColumnNames": "Генерировать составные метки полей",
+      "CustomHeadersConfigurator": "Настройки пользовательских заголовков",
+      "IgnoreAbsentValues": "Разрешить пропуск обязательных полей",
+      "OperationSignature": "Сигнатура выбранной операции",
+      "PortName": "Имя выбранной конечной точки",
+      "ProduceErrorDescs": "Выдавать описание кодов завершения",
+      "ProduceRawOutput": "Выдавать \"сырой\" ответ сервера",
+      "RepeatUniqueValues": "Дублировать единичные значения",
+      "RequestConfigurator": "Настройки экспорта данных запроса",
+      "RequestDataSource": "Источник данных запроса",
+      "RequestDebug": "Настройки отладки запроса",
+      "RequestIDInputColumn": "Столбец входного набора, содержащий идентификатор запроса",
+      "ResponseTree": "Дерево схемы ответа",
+      "SelectedOperation": "WSDL-определение выбранной операции",
+      "ServiceName": "Имя выбранной службы",
+      "StrictValidation": "Проверять на строгое соответствие XSD",
+      "TimeZone": "Временная зона по умолчанию",
+      "TimeZoneList": "Список временных зон",
+      "WSDLClientConnection": "Подключение к веб-сервису"
+    }
+  },
+  "exports/database": {
+    "DBExport": {
+      "AutoSyncColumns": "Автоматическая синхронизация полей",
+      "ExportColumns": "Настройки колонок экспорта",
+      "ExportType": "Тип экспорта",
+      "RecordCountForCommit": "Периодичность фиксации транзакции (строк.)",
+      "TableName": "Имя таблицы"
+    }
+  },
+  "exports/excelfile": {
+    "ExportExcelFile": {
+      "ExportExcelFilePreview": "Предварительный просмотр",
+      "FileType": "Тип файла Excel",
+      "SheetName": "Имя листа для экспорта",
+      "WebSetting": "Настройки для web клиента"
+    },
+    "ExportExcelWebSetting": {
+      "HeadersRow": "Строка заголовков"
+    }
+  },
+  "exports/native": {
+    "ExportNative": {
+      "ColumnInfos": "Колонки входного источника данных",
+      "Compression": "Сжатие",
+      "System": "Платформа DDF-файла"
+    }
+  },
+  "exports/textfile": {
+    "ExportTextFile": {
+      "CaptionType": "Строка заголовка",
+      "CodePage": "Кодовая страница",
+      "DateFormat": "Формат даты",
+      "DateSeparator": "Разделитель даты",
+      "DecimalSeparator": "Десятичный разделитель",
+      "DelimiterChar": "Разделитель столбцов",
+      "FormatType": "Формат данных",
+      "TextQualifier": "Ограничитель строк",
+      "TimeFormat": "Формат времени",
+      "TimeSeparator": "Разделитель времени",
+      "ValueFalse": "Ложь",
+      "ValueNull": "Пусто",
+      "ValueTrue": "Истина"
+    }
+  },
+  "exports/xml": {
+    "ExportXML": {
+      "Configurator": "Настройки экспорта",
+      "EscapeQuotes": "Экранировать одинарные и двойные кавычки",
+      "EscapeTabCRLFInAttr": "Экранировать табуляции и переводы строк в атрибутах",
+      "Prettify": "Добавлять отступы и переводы строк",
+      "RootElement": "Выбранный корневой элемент",
+      "WriteBOM": "Записывать Byte Order Mark"
+    }
+  },
+  "imports/1cv8": {
+    "1Cv8QueryImport": {
+      "Connection": "Подключение",
+      "QueryText": "Текст запроса"
+    }
+  },
+  "imports/database": {
+    "DBImport": {
+      "CommandText": "Строка запроса данных.",
+      "CommandType": "Вид строки запроса данных."
+    }
+  },
+  "imports/excelfile": {
+    "ImportExcelFileEngine": {
+      "AllRows": "До последней строки",
+      "BlankRowAction": "Пустые строки",
+      "ExplicitRange": "Диапазон",
+      "ImportExcelFilePreview": "Свойство для просмотра содержимого файла Excel",
+      "ReferenceStyle": "Стиль ссылок",
+      "TableName": "Имя объекта",
+      "TableNamingMethod": "Выбор объекта",
+      "TitleRowCount": "Количество строк заголовка",
+      "UsedRange": "Весь лист"
+    }
+  },
+  "imports/native": {
+    "ImportNative": {
+      "ColumnInfos": "Информация о колонках DDF-файла"
+    }
+  },
+  "imports/textfile": {
+    "ImportTextFile": {
+      "CodePage": "Кодовая страница",
+      "DateFormat": "Формат даты",
+      "DateSeparator": "Разделитель даты",
+      "DecimalSeparator": "Десятичный разделитель",
+      "DelimiterChar": "Разделитель столбцов",
+      "FirstLineAsTitle": "Заголовок в первой строке",
+      "FormatType": "Формат данных",
+      "MultipleDelimiters": "Принимать несколько подряд разделителей за один",
+      "RowsToSkip": "Пропустить строк",
+      "TextQualifier": "Ограничитель строк",
+      "TimeSeparator": "Разделитель времени",
+      "ValueFalse": "Ложь",
+      "ValueNull": "Пусто",
+      "ValueTrue": "Истина"
+    }
+  },
+  "imports/xml": {
+    "ImportXML": {
+      "Configurator": "Настройки импорта XML"
+    }
+  },
+  "Libraries/1CConnection/1CConnection": {
+    "1CConnection": {
+      "ConnectionString": "Строка подключения"
+    },
+    "1CConnectionConfigurator": {
+      "ConnectionString": "Строка подключения",
+      "DatabaseNames": "Список имен баз данных",
+      "Password": "Пароль",
+      "SavePassword": "Сохранить пароль",
+      "UserName": "Имя пользователя"
+    }
+  },
+  "Libraries/1CConnection/1Cv8Connection": {
+    "1Cv8ConnectionConfigurator": {
+      "PlatformVersion": "Версия платформы"
+    }
+  },
+  "Libraries/bgdbrtl/DB": {
+    "ConnPoolConfigurable": {
+      "PoolingOptions": "Настройки пула"
+    },
+    "ConnPoolConfigurator": {
+      "ClearPoolOnDeactivate": "Очищать пул при деактивации"
+    },
+    "Database": {
+      "Connected": "Наличие подключения",
+      "DatabasePath": "Строка подключения",
+      "ObjectLeftQuote": "Левая кавычка",
+      "ObjectRightQuote": "Правая кавычка",
+      "ServerType": "Тип сервера базы данных"
+    },
+    "DatabaseConfigurator": {
+      "CharacterSet": "Значение кодировки",
+      "ConfigurableOptions": "Конфигурируемые опции",
+      "DatabasePath": "Строка подключения",
+      "DatabasePathType": "Способ настройки строки подключения",
+      "DefinedCharacterSets": "Список доступных кодировок",
+      "Direct": "Не использовать клиент СУБД",
+      "FileExts": "Расширения файлов базы данных",
+      "ObjectQuotes": "Настройка кавычек",
+      "Password": "Пароль",
+      "QuotedObjectNames": "Обрамлять имена кавычками",
+      "SavePassword": "Сохранить пароль",
+      "SystemTables": "Показывать системные таблицы",
+      "UserName": "Логин"
+    }
+  },
+  "Libraries/bgdbrtl/MyUniDACDB": {
+    "MyUniDACDatabaseConfigurator": {
+      "WaitTimeoutTransaction": "Время жизни на время транзакции при неактивности"
+    }
+  },
+  "Libraries/bgdbrtl/SQLiteUniDACDB": {
+    "SQLiteFunctionDefs": {
+      "CaseChangeUnicode": "lower, upper для UNICODE",
+      "LikeMode": "Режим работы LIKE",
+      "NoCaseUnicode": "Трактовать NOCASE как UNICODE"
+    },
+    "SQLitePragmas": {
+      "CacheSize": "Размер кэша",
+      "JournalMode": "Режим журнала транзакций",
+      "Synchronous": "Режим синхронизации"
+    },
+    "SQLiteUniDACDatabaseConfigurator": {
+      "CreateDBIfNotExists": "Создавать БД, если не существует",
+      "Encrypted": "Зашифрованная БД",
+      "Functions": "Переопределяемые функции SQLite",
+      "Pragmas": "Параметры подключения SQLite"
+    }
+  },
+  "Libraries/bgrtl/ColumnInfoLinks": {
+    "ColumnInfoLink": {
+      "Column": "Ссылка на столбец",
+      "Name": "Имя столбца"
+    },
+    "ColumnInfoLinkDef": {
+      "Column": "Ссылка на столбец",
+      "Name": "Имя столбца"
+    }
+  },
+  "Libraries/bgrtl/ColumnsMultiLinks": {
+    "ColumnsPairLink": {
+      "Left": "Левый",
+      "Right": "Правый"
+    }
+  },
+  "Libraries/bgrtl/CommonPropBinder": {
+    "PropBind": {
+      "Variable": "Заданная свойству переменная"
+    },
+    "PropBindInfo": {
+      "BindPath": "Полный путь к узлу",
+      "PropertyInfo": "Информация о свойстве",
+      "Tuned": "Задана ли свойству переменная",
+      "Variable": "Заданная свойству переменная"
+    }
+  },
+  "Libraries/bgrtl/ComponentPropBinder": {
+    "ComponentPropBinder": {
+      "Variables": "Переменные, которые можно задавать свойствам"
+    }
+  },
+  "Libraries/bgrtl/DataSet": {
+    "Column": {
+      "Collection": "Ссылка на коллекцию, содержащую данный столбец"
+    },
+    "ColumnDef": {
+      "Collection": "Ссылка на коллекцию, в которую входит данное описание столбца",
+      "DataKind": "Вид данных столбца",
+      "DataType": "Тип данных столбца",
+      "DefaultUsageType": "Назначение столбца по умолчанию",
+      "DisplayName": "Метка",
+      "Index": "Индекс",
+      "Name": "Имя",
+      "OriginType": "Происхождение",
+      "Size": "Максимальная длина (кол-во символов) строковых значений столбца",
+      "Usable": "Признак использования столбца (суррогат UsageType)",
+      "UsageType": "Назначение столбца"
+    },
+    "ColumnDefs": {
+      "Vendor": "Ссылка на Vendor описаний полей"
+    },
+    "ColumnDefsVendor": {
+      "ValidUsageTypes": "Разрешенные назначения столбцов"
+    },
+    "ColumnInfo": {
+      "Collection": "Ссылка на коллекцию, содержащую данное описание одного столбца",
+      "DataKind": "Вид данных столбца",
+      "DataType": "Тип данных столбца",
+      "DefaultUsageType": "Назначение столбца по умолчанию",
+      "Extensions": "Расширения",
+      "OriginType": "Происхождение",
+      "Size": "Максимальная длина (кол-во символов) строковых значений столбца",
+      "Usable": "Признак использования столбца (суррогат UsageType)",
+      "UsageType": "Назначение столбца"
+    },
+    "ColumnInfos": {
+      "Vendor": "Ссылка на Vendor описаний полей"
+    },
+    "CustomDataSet": {
+      "Columns": "Столбцы набора данных"
+    },
+    "DataColumn": {
+      "Collection": "Ссылка на коллекцию, содержащую данный столбец"
+    },
+    "DataSource": {
+      "Active": "Признак активности источника данных",
+      "ColumnDefs": "Описания столбцов источника данных",
+      "Columns": "Столбцы источника данных",
+      "RowCount": "Количество строк множества данных"
+    },
+    "OutputColumnDefsVendor": {
+      "DefaultUsageTypeConfigurable": "Можно ли изменять назначения по умолчанию"
+    },
+    "TuneColumnDef": {
+      "Collection": "Ссылка на коллекцию, содержащую данное описание одного столбца",
+      "Extension": "Расширение настраиваемого описания столбца",
+      "Extensions": "Расширения",
+      "Required": "Признак обязательности настраиваемого столбца"
+    },
+    "TuneColumnDefs": {
+      "Vendor": "Ссылка на Vendor настраиваемых описаний полей"
+    },
+    "TuneDataSource": {
+      "ColumnDefs": "Описания столбцов источника данных",
+      "InputDataSource": "Ссылка на исходный источник данных",
+      "SyncThroughColumns": "Автоматическая синхронизация сквозных полей"
+    }
+  },
+  "Libraries/bgrtl/DerivedDataSet": {
+    "CustomDerivedDataSource": {
+      "SyncThroughColumns": "Автоматическая синхронизация сквозных полей"
+    },
+    "DeriveProxyColumnDef": {
+      "DataKind": "Вид данных столбца",
+      "DataType": "Тип данных столбца",
+      "DefaultUsageType": "Назначение столбца по умолчанию",
+      "DisplayName": "Метка столбца",
+      "Index": "Индекс столбца",
+      "Name": "Имя столбца",
+      "Size": "Максимальная длина (кол-во символов) строковых значений столбца",
+      "UsageType": "Назначение столбца"
+    },
+    "ProxyColumnDef": {
+      "DataKind": "Вид данных столбца",
+      "DataType": "Тип данных столбца",
+      "DefaultUsageType": "Назначение столбца по умолчанию",
+      "DisplayName": "Метка столбца",
+      "Index": "Индекс столбца",
+      "Name": "Имя столбца",
+      "Size": "Максимальная длина (кол-во символов) строковых значений столбца",
+      "UsageType": "Назначение столбца"
+    },
+    "ProxyColumnInfo": {
+      "DeriveType": "Тип порождения",
+      "Name": "Базовая часть имени"
+    }
+  },
+  "Libraries/bgrtl/DerivedVariables": {
+    "DerivedVariables": {
+      "SyncThroughVariables": "Автоматическая синхронизация сквозных переменных"
+    },
+    "DeriveProxyVariableDef": {
+      "DataType": "Тип данных переменной",
+      "DisplayName": "Метка элемента коллекции",
+      "Index": "Индекс элемента коллекции",
+      "Name": "Имя элемента коллекции"
+    },
+    "ProxyVariableDef": {
+      "DataType": "Тип данных переменной",
+      "DisplayName": "Метка элемента коллекции",
+      "Index": "Индекс элемента коллекции",
+      "Name": "Имя элемента коллекции"
+    },
+    "ProxyVariableInfo": {
+      "Name": "Базовая часть имени"
+    }
+  },
+  "Libraries/bgrtl/FieldInfoLinks": {
+    "FieldInfoLink": {
+      "Field": "Ссылка на столбец или переменную"
+    },
+    "FieldInfoLinkDef": {
+      "Field": "Ссылка на столбец или переменную"
+    }
+  },
+  "Libraries/bgrtl/FileStorage": {
+    "DerivedFileStorage": {
+      "UseBaseFileStorage": "Использовать относительные пути базового пакета"
+    },
+    "FileStorage": {
+      "IsOwnCurrentDirectory": "Имеет ли хранилище личную текущую директорию",
+      "RootPath": "Путь к корневой директории FileStorage"
+    }
+  },
+  "Libraries/bgrtl/InterfacePropManager": {
+    "InterfaceInfoDef": {
+      "Parent": "Метаданные родительского интерфейса"
+    },
+    "InterfacePropInfoDef": {
+      "DataKind": "Расширенный вид свойства",
+      "FullTypeName": "'NameSpace.Name'"
+    },
+    "InterfacePropInvoker": {
+      "VariantType": "Тип варианта"
+    }
+  },
+  "Libraries/bgrtl/Interfaces": {
+    "CaptionDef": {
+      "Caption": "Название"
+    },
+    "CaptionInfo": {
+      "Caption": "Название"
+    },
+    "ClassVendorObject": {
+      "Vendor": "Ссылка на ClassVendor, посредством которого был создан объект"
+    },
+    "CollectionItem": {
+      "Collection": "Ссылка на коллекцию",
+      "DisplayName": "Метка",
+      "ID": "Идентификатор",
+      "Index": "Индекс",
+      "Name": "Имя"
+    },
+    "CustomCollectionItem": {
+      "DisplayName": "Метка элемента коллекции"
+    },
+    "CustomCollectionItemDef": {
+      "DisplayName": "Метка элемента коллекции",
+      "Index": "Индекс элемента в коллекции"
+    },
+    "CustomItemDef": {
+      "Index": "Индекс элемента в списке"
+    },
+    "DescriptionDef": {
+      "Caption": "Название",
+      "Description": "Описание"
+    },
+    "DescriptionInfo": {
+      "Description": "Описание"
+    },
+    "GuidedCollectionItem": {
+      "Guid": "Guid элемента коллекции"
+    },
+    "InterfaceInfo": {
+      "Guid": "Идентификатор интерфейса",
+      "Parent": "Ссылка на метаданные родительского интерфейса"
+    },
+    "Item": {
+      "Parent": "Ссылка на список, в который входит данный элемент"
+    },
+    "List": {
+      "Count": "Количество элементов в списке"
+    },
+    "ListItem": {
+      "Index": "Индекс элемента в списке"
+    },
+    "NamedGuidedCollectionItem": {
+      "Name": "Имя элемента в коллекции"
+    },
+    "NamedItem": {
+      "Name": "Имя элемента",
+      "Parent": "Ссылка на список, в который входит данный элемент"
+    },
+    "PriorityInfo": {
+      "Priority": "Приоритет"
+    },
+    "ProgressTrackerProcessInfo": {
+      "Target": "Объект, к которому относится данный процесс"
+    },
+    "TypeInfo": {
+      "Name": "Имя"
+    },
+    "UniqueValues": {
+      "Extensions": "Расширения"
+    },
+    "UniqueValuesData": {
+      "Count": "Количество уникальных значений"
+    },
+    "Values": {
+      "Count": "Количество значений",
+      "DataType": "Тип данных значений"
+    }
+  },
+  "Libraries/bgrtl/Logger": {
+    "LoggerConfigurator": {
+      "LogFileMaxIndex": "Количество резервных файлов",
+      "LogFileMaxSize": "Максимальный размер файла",
+      "LogFileName": "Имя файла",
+      "LogFileRewrite": "Перезапись файла",
+      "MinLogLevel": "Уровень логирования"
+    }
+  },
+  "Libraries/bgrtl/Statistics": {
+    "RefOrderedStatUniqueValues": {
+      "OrderedReferenceId": "Индекс опорного уникального значения с учётом упорядоченности",
+      "ReferenceType": "Тип опорного уникального значения"
+    },
+    "StatInfo": {
+      "Avg": "Среднее",
+      "Computed": "Множество рассчитанных параметров статистической информации",
+      "DataType": "Тип данных значений",
+      "Max": "Максимум",
+      "Min": "Минимум",
+      "UniqueValues": "Список уникальных значений"
+    },
+    "StatInfoItem": {
+      "Name": "Имя элемента"
+    },
+    "Statistics": {
+      "Count": "Количество элементов в списке"
+    }
+  },
+  "Libraries/bgrtl/SyncObjs": {
+    "WorkItem": {
+      "Result": "Результат асинхронной операции"
+    }
+  },
+  "Libraries/bgrtl/TimeZones": {
+    "TimeZoneList": {
+      "Count": "Количество временных зон в списке"
+    }
+  },
+  "Libraries/bgrtl/VariableInfoLinks": {
+    "VariableInfoLink": {
+      "Assigned": "Ссылка назначена",
+      "Name": "Имя переменной",
+      "Variable": "Ссылка на переменную"
+    },
+    "VariableInfoLinkDef": {
+      "Name": "Имя переменной",
+      "Variable": "Ссылка на переменную"
+    }
+  },
+  "Libraries/bgrtl/Variables": {
+    "EditableVariable": {
+      "DataType": "Тип данных",
+      "DisplayName": "Метка",
+      "Index": "Индекс",
+      "Name": "Имя",
+      "OriginType": "Происхождение",
+      "Value": {
+        "#text": "Значение",
+        "attr": {
+          "child": "AsVariant|Value"
+        }
+      }
+    },
+    "EditableVariables": {
+      "Elements": "Список переменных"
+    },
+    "TuneVariable": {
+      "Collection": "Ссылка на коллекцию, содержащую данную переменную",
+      "Extension": "Расширение настраиваемой переменной",
+      "Extensions": "Расширения",
+      "Required": "Признак обязательности настраиваемой переменной"
+    },
+    "TuneVariableItems": {
+      "Vendor": "Ссылка на вендор"
+    },
+    "TuneVariables": {
+      "Elements": "Список переменных",
+      "SourceVariables": "Ссылка на исходный набор переменных",
+      "SyncThroughVariables": "Автоматическая синхронизации сквозных переменных"
+    },
+    "Variable": {
+      "Collection": "Ссылка на коллекцию, в которую входит данная переменная"
+    },
+    "VariableInfo": {
+      "Collection": "Ссылка на коллекцию, содержащую данное описание одного столбца",
+      "DataType": "Тип данных",
+      "Extensions": "Расширения",
+      "OriginType": "Происхождение"
+    },
+    "VariableInfos": {
+      "Vendor": "Ссылка на Vendor описаний переменных"
+    },
+    "VariableItems": {
+      "Vendor": "Ссылка на Vendor переменных"
+    },
+    "VariablesVendor": {
+      "ValidUsageTypes": "Разрешенные назначения переменных"
+    }
+  },
+  "Libraries/DataPartition/LearnPartition": {
+    "LearnPartition": {
+      "Folds": "Колод кросс-валидации",
+      "Iterations": "Итераций ресемплинга",
+      "KFoldsSamplingMethod": "Метод сэмплинга",
+      "LearnPartitionMethod": "Метод разбиения",
+      "LearnValidationMethod": "Метод валидации",
+      "PartitionMethod": "Метод сэмплинга",
+      "PRowsCount": "Число исключаемых строк",
+      "TestPriority": "Приоритет тестового множества",
+      "TestPriorityPosition": "Положение приоритетного тестового множества",
+      "TrainDataSetSize": "Размер обучающего множества",
+      "ValidationColumnIndex": "Поле заданного разбиения",
+      "ValidationDataSetSize": "Размер валидационного множества"
+    },
+    "LearnPartitionContainer": {
+      "LearnPartition": "Интерфейс разбиения набора данных компонента с обучением"
+    }
+  },
+  "Libraries/DataPartition/Partition": {
+    "Partition": {
+      "CompleteUniqueValues": "Полнота списка уникальных значений",
+      "DataSourceTypeSize": "Число групп в разбиении",
+      "PartitionMethod": "Метод сэмплинга",
+      "PartitionOrder": "Порядок следования множеств",
+      "RowCount": "Количество строк в наборе",
+      "TeachDataSetSize": "Размер обучающей выборки",
+      "TeachGroupSize": "Размер обучающей группы",
+      "TestDataSetSize": "Размер тестовой выборки",
+      "TestGroupSize": "Размер тестовой группы",
+      "TestPriority": "Приоритет тестового множества",
+      "TestPriorityPosition": "Положение приоритетного тестового множества"
+    }
+  },
+  "Libraries/DataSampling/Sampling": {
+    "Sampling": {
+      "CompleteUniqueValues": "Полнота списка уникальных значений",
+      "GroupSamplingType": "Тип выборки в группе",
+      "GroupSize": "Размер группы",
+      "RowCount": "Количество строк в наборе",
+      "SamplingMethod": "Метод сэмплинга",
+      "SamplingPlace": "Место выборки данных",
+      "SamplingRecordCount": "Число записей в выходной выборке",
+      "SamplingType": "Тип выборки"
+    }
+  },
+  "Libraries/DBConnection/DBConnection": {
+    "DBConnectionConfigurator": {
+      "DatabaseConfigurator": "Настройки подключения к БД"
+    }
+  },
+  "Libraries/ExportXMLConfigurator/ExportXMLConfigurator": {
+    "ExportXMLConfigurator": {
+      "ExportDataSource": "Экспортируемый набор данных",
+      "ExportTree": "Дерево схемы экспорта",
+      "MappedColumns": "Нумератор связей столбцов входного набора и дерева схемы запроса",
+      "SpecifyTimeZone": "Наличие временной зоны",
+      "XSDConnection": "Подключение к XSD-схеме"
+    }
+  },
+  "Libraries/FileConnection/ExportFileModelComponentEngine": {
+    "ExportFileModelComponentEngine": {
+      "FileName": "Имя файла"
+    }
+  },
+  "Libraries/FileConnection/ImportFileModelComponentEngine": {
+    "ImportFileModelComponentEngine": {
+      "FileName": "Имя файла"
+    }
+  },
+  "Libraries/ImportXMLConfigurator/ImportXMLConfigurator": {
+    "ImportXMLConfigurator": {
+      "CompositeColumnNames": "Генерировать составные метки полей",
+      "IgnoreAbsentValues": "Разрешить пропуск обязательных полей",
+      "ImportTree": "Дерево схемы импорта",
+      "RepeatUniqueValues": "Дублировать единичные значения",
+      "StrictValidation": "Проверять на строгое соответствие XSD",
+      "TimeZone": "Временная зона по умолчанию",
+      "TimeZoneList": "Список временных зон",
+      "XSDConnection": "Подключение к XSD-схеме"
+    }
+  },
+  "Libraries/Model/ComponentSettings": {
+    "ComponentSettings": {
+      "Disabled": "Отключен"
+    }
+  },
+  "Libraries/Model/ComponentSettingsItems": {
+    "ComponentSettingsItem": {
+      "Settings": "Настройки компонента"
+    }
+  },
+  "Libraries/Model/DataSourceModelComponentEngine": {
+    "DataSourceModelComponentEngine": {
+      "ColumnDefs": "Коллекция входных колонок",
+      "TuneDataSource": "Входной набор данных"
+    }
+  },
+  "Libraries/Model/DataSourceMultiInputDataSetOutputModelComponentEngine": {
+    "DataSourceMultiInputDataSetOutputModelComponentEngine": {
+      "InputDataSourceCount": "Число входных наборов данных"
+    }
+  },
+  "Libraries/Model/DataSourceMultiOutputModelComponentEngine": {
+    "DataSourceMultiOutputModelComponentEngine": {
+      "ColumnDefs": "Коллекция входных колонок"
+    }
+  },
+  "Libraries/Model/DataToVariablesModelComponentEngine": {
+    "DataToVariablesModelComponentEngine": {
+      "ColumnDefs": "Коллекция входных колонок"
+    }
+  },
+  "Libraries/Model/DeductorServer": {
+    "BaseDeductorServerSession": {
+      "Settings": "Настройки"
+    }
+  },
+  "Libraries/Model/DeductorServerSettings": {
+    "DeductorServerSettings": {
+      "ComponentSettings": "Настройки компонентов",
+      "LoggerConfigurator": "Настройки логирования",
+      "PackagePoolSize": "Размер пула пакетов",
+      "SessionBackupDirectory": "Директория, содержащая резервные копии сессий",
+      "StopTimeout": "Таймаут остановки сервера",
+      "UserStorageDirectory": "Директория, содержащая личные папки пользователей"
+    },
+    "SocketDeductorServerSettings": {
+      "Bind": "Прослушиваемые адреса",
+      "PingPeriod": "Период проверки соединения с клиентом",
+      "Port": "TCP порт",
+      "SSLCertificateFile": "Имя файла сертификата",
+      "SSLPrivateKeyFile": "Имя файла закрытого ключа",
+      "WSPort": "WebSocket порт",
+      "WSSPort": "WebSocket SSL/TLS порт"
+    }
+  },
+  "Libraries/Model/DerivedDataSourceOutputSocketDef": {
+    "DerivedDataSourceOutputSocket": {
+      "DefaultProduceType": "Тип создания производных столбцов",
+      "DefaultProduceTypeSpecified": "Тип создания производных столбцов указан"
+    }
+  },
+  "Libraries/Model/DerivedVariablesOutputSocketDef": {
+    "DerivedVariablesOutputSocket": {
+      "DefaultProduceType": "Тип создания производных переменных",
+      "DefaultProduceTypeSpecified": "Тип создания производных переменных указан"
+    }
+  },
+  "Libraries/Model/ModelComponent": {
+    "ModelComponent": {
+      "Engine": "Движок компонента",
+      "InputSockets": "Входные сокеты",
+      "OutputSockets": "Выходные сокеты"
+    },
+    "ModelSocketItem": {
+      "Socket": "Сокет"
+    }
+  },
+  "Libraries/Model/ModelConnectionComponentEngine": {
+    "ModelConnectionComponentEngine": {
+      "Connection": "Подключение"
+    }
+  },
+  "Libraries/Model/ModelGenericComponent": {
+    "ModelGenericInputSocketItem": {
+      "DisplayName": "Метка элемента коллекции",
+      "Index": "Индекс элемента в коллекции",
+      "Name": "Имя элемента в коллекции"
+    },
+    "ModelGenericOutputSocketItem": {
+      "DisplayName": "Метка элемента коллекции",
+      "Index": "Индекс элемента в коллекции",
+      "Name": "Имя элемента в коллекции"
+    },
+    "ModelGenericSocketItem": {
+      "DisplayName": "Метка элемента коллекции",
+      "Index": "Индекс элемента в коллекции",
+      "Name": "Имя элемента в коллекции"
+    }
+  },
+  "Libraries/Model/ModelPackage": {
+    "ModelUnitItem": {
+      "DisplayName": "Метка элемента коллекции",
+      "Index": "Индекс элемента в коллекции",
+      "ModelUnit": "Модуль",
+      "Name": "Имя элемента в коллекции"
+    }
+  },
+  "Libraries/Model/ModelReports": {
+    "ModelReports": {
+      "ReportGroups": "Коллекция групп отчетов",
+      "ReportViewItems": "Коллекция отчетов первого уровня"
+    }
+  },
+  "Libraries/Model/ModelVariables": {
+    "ModelVariables": {
+      "Elements": "Список переменных"
+    }
+  },
+  "Libraries/Model/ModelViewDataSource": {
+    "ModelViewDataSourceEngine": {
+      "DataSource": "Входной набор данных",
+      "TuneDataSource": "Входной набор данных"
+    }
+  },
+  "Libraries/Model/ModelWorkFlow": {
+    "ModelNode": {
+      "Visibility": "Видимость"
+    }
+  },
+  "Libraries/Model/SocketFieldInfoLinks": {
+    "SocketFieldInfoLinkDef": {
+      "Field": "Ссылка на столбец или переменную"
+    }
+  },
+  "Libraries/Model/SocketVariableInfoLinks": {
+    "SocketVariableInfoLinkDef": {
+      "Name": "Имя переменной",
+      "Variable": "Ссылка на переменную"
+    }
+  },
+  "Libraries/Model/SocketVariablesMultiLinks": {
+    "SocketVariablesPairLink": {
+      "Left": "Левая",
+      "Right": "Правая"
+    }
+  },
+  "Libraries/Model/TuneDataSourceSocketDef": {
+    "TuneDataSourceSocket": {
+      "TuneDataSource": "Настраиваемый набор данных"
+    }
+  },
+  "Libraries/Model/VariablesInputSocketDef": {
+    "TuneVariablesSocket": {
+      "Variables": "Переменные"
+    }
+  },
+  "Libraries/Normalization/NormalDataSourceModelComponentEngine": {
+    "NormalDataSourceModelComponentEngine": {
+      "AllowMissingValues": "Разрешить пропущенные значения",
+      "LearnPartition": "Разбиение данных компонента с обучением",
+      "SetupLearnPartition": "Настройка разбиения данных пользователем",
+      "TuneNormDataSource": "Входной набор данных"
+    }
+  },
+  "Libraries/Normalization/NormalizerSettings": {
+    "ControlRangeInfo": {
+      "FactRangeMax": "Максимальное контролируемое значение диапазона входных значений",
+      "FactRangeMin": "Минимальное контролируемое значение диапазона входных значений",
+      "RangeMax": "Максимальное значение диапазона исходных данных",
+      "RangeMin": "Минимальное значение диапазона исходных данных",
+      "UserRange": "Пользовательский контролируемый диапазон входных значений"
+    },
+    "ControlRangeSettings": {
+      "ControlRangeType": "Тип контроля диапазона нормализируемых значений"
+    },
+    "NormMinMaxSettings": {
+      "Max": "Заданная верхняя граница нормализированного диапазона",
+      "Min": "Заданная нижняя граница нормализированного диапазона"
+    },
+    "NormQuotientSettings": {
+      "Divisor": "Заданный делитель",
+      "StatDivisor": "Делитель - статистический показатель",
+      "StatDivisorFlag": "Флаг использования статистического параметра в качестве делителя"
+    }
+  },
+  "Libraries/Normalization/TuneNormColumnDefs": {
+    "GenTunedNormParamsItem": {
+      "Collection": "Ссылка на коллекцию"
+    },
+    "TunedNormParams": {
+      "AvailableControlRange": "Доступные типы контроля диапазона нормализируемых значений",
+      "AvailableNormSet": "Перечень доступных типов нормализации",
+      "CanCheckRange": "Поддержка контроля диапазона нормализируемых",
+      "ControlRange": "Тип контроля диапазона нормализируемых значений",
+      "Importance": "Степень \"важности\" поля",
+      "Irremovable": "Флаг неудаляемого фактора",
+      "NormSettings": "Настройки нормализации",
+      "NormType": "Тип нормализатора"
+    },
+    "TunedNormParamsProvider": {
+      "OutCount": "Число нормализаторов входных колонок"
+    },
+    "TuneNormColumnDef": {
+      "Collection": "Ссылка на коллекцию, содержащую данное описание одного столбца",
+      "ColTunedNormParams": "Настройки нормализации"
+    },
+    "TuneNormColumnDefs": {
+      "Vendor": "Ссылка на Vendor настраиваемых описаний полей"
+    }
+  },
+  "Libraries/Normalization/TuneNormDataSource": {
+    "TuneNormDataSource": {
+      "NormParamsProvider": "Настраиваемые параметры нормализации",
+      "TuneNormColumnDefs": "Описания столбцов источника данных"
+    }
+  },
+  "Libraries/Regression/Regression": {
+    "FactorSelectionParams": {
+      "AddSignificance": "Порог значимости при добавлении фактора",
+      "Hierarchy": "Иерархия взаимодействий",
+      "RemoveSignificance": "Порог значимости при исключении фактора"
+    },
+    "RegressionClassificationParams": {
+      "EventId": "Индекс заданного события",
+      "EventType": "Тип события",
+      "Threshold": "Порог отсечения"
+    },
+    "RegressionParams": {
+      "AutoMethod": "Автоматическая настройка",
+      "AutoPriority": "Приоритет автоматической настройки",
+      "Denormalize": "Денормализировать коэффициенты модели",
+      "Epsilon": "Точность решения",
+      "FactorSelection": "Настройки пошагового отбора факторов",
+      "Intercept": "Включить в модель константу",
+      "Regularization": "Настройки регуляризации",
+      "SimpleParams": "Параметры упрощенной настройки регрессии",
+      "Statistics": "Настройки расчета статистики отбора факторов",
+      "UseDetailedSettings": "Использовать детальные настройки"
+    },
+    "RegressionSimpleParams": {
+      "ExactInexact": "Приоритет точные/недостоверные данные",
+      "FactLessMore": "Приоритет меньше/больше факторов",
+      "QualitySpeed": "Приоритет точность/скорость"
+    },
+    "RegressionStatisticsParams": {
+      "PredictionIntervalLevel": "% доверительного интервала",
+      "PredictionIntervalNeeded": "Рассчитать доверительный интервал",
+      "StatisticsMode": "Режим расчета статистики"
+    },
+    "RegularizationParams": {
+      "LambdaLasso": "Коэффициент L1-регуляризации",
+      "LambdaRidge": "Коэффициент L2-регуляризации",
+      "LassoSetupMethod": "Установка коэффициента L1-регуляризации",
+      "RidgeSetupMethod": "Установка коэффициента L2-регуляризации"
+    }
+  },
+  "Libraries/RESTClientConnection/RESTClientConnection": {
+    "GetRequestParamItem": {
+      "Index": "Индекс элемента в списке",
+      "Name": "Имя параметра"
+    },
+    "RESTClientConnectionConfigurator": {
+      "ClientAuth": "Авторизация для выполнения запроса",
+      "ExchangeTimeOut": "Таймаут обмена данными (мсек)",
+      "IgnoreCertificateErrors": "Игнорировать ошибки SSL сертификата",
+      "Params": "Параметры GET запроса",
+      "RequestContentType": "Тип Content-type запроса",
+      "ResponseContentType": "Тип Content-type ответа",
+      "TimeOut": "Таймаут подключения (мсек)",
+      "URL": "URL сервиса",
+      "Verb": "Метод"
+    }
+  },
+  "Libraries/WebServiceConnection/WebServiceConnection": {
+    "WebServiceConnection": {
+      "WSDL": "Ссылка на определение веб-сервиса"
+    }
+  },
+  "Libraries/WSDLClientConnection/WSDLClientConnection": {
+    "WSDLClientConnectionConfigurator": {
+      "ClientAuth": "Авторизация для выполнения запроса",
+      "ClientUsesWSDLAuth": "Авторизация та же, что и для получения WSDL",
+      "ExchangeTimeOut": "Таймаут обмена данными (мсек)",
+      "IgnoreCertificateErrors": "Игнорировать ошибки SSL сертификата",
+      "ReserveWSDLSource": "Резервный источник WSDL",
+      "ReserveWSDLSourceOn": "Включить резервный источник WSDL",
+      "RootFileStorage": "Ссылка на файловое хранилище",
+      "TimeOut": "Таймаут подключения (мсек)",
+      "WSDLAuth": "Авторизация для получения WSDL-файла",
+      "WSDLSource": "Источник WSDL",
+      "XSLT": "Расположение XSLT",
+      "XSLTOn": "Преобразовать WSDL-описание с помощью XSLT"
+    }
+  },
+  "Libraries/XSDFilesConnection/XSDFilesConnection": {
+    "XSDFilesConnectionConfigurator": {
+      "RootFileStorage": "Ссылка файловое хранилище",
+      "XSDFiles": "Список файлов"
+    }
+  },
+  "Viewers/Browse/BrowseColumns": {
+    "BrowseColumnItem": {
+      "Index": "Индекс поля"
+    }
+  },
+  "Viewers/Browse/BrowseView": {
+    "BrowseView": {
+      "Filtering": "Фильтрация",
+      "Options": "Параметры",
+      "Search": "Поиск",
+      "Sorting": "Сортировка",
+      "ViewColumns": "Поля",
+      "ViewDataInvalid": "Данные для просмотре неверны",
+      "ViewDataSource": "Набор отображаемых данных"
+    },
+    "BrowseViewOptions": {
+      "ShowDataDetail": "Отображать детализацию",
+      "ShowDataTypeIcons": "Отображать иконки типов",
+      "ShowDisplayNameInDetail": "Отображать метки полей в детализации",
+      "ShowNameInDetail": "Отображать имена полей в детализации",
+      "ShowNulls": "Отображать значения nil",
+      "ShowRecNo": "Отображать номера записей",
+      "ShowRowNo": "Отображать номера строк"
+    }
+  },
+  "Viewers/Browse/BrowseViewFilter": {
+    "BrowseViewFilter": {
+      "Enabled": "Включено",
+      "FilterColumns": "Список условий"
+    }
+  },
+  "Viewers/Browse/BrowseViewSearch": {
+    "BrowseViewSearch": {
+      "Params": "Параметры поиска"
+    },
+    "BrowseViewSearchData": {
+      "Params": "Параметры поиска",
+      "SearchColName": "Имя столбца",
+      "SearchRowIndex": "Индекс строки"
+    },
+    "BrowseViewSearchDataParams": {
+      "OrderColumnIndexes": "Порядок колонок, по которым следует искать",
+      "SearchMode": "Режим"
+    },
+    "BrowseViewSearchParams": {
+      "CaseSensitive": "Регистр",
+      "CompareType": "Сравнение",
+      "SearchText": "Найти"
+    }
+  },
+  "Viewers/Browse/BrowseViewSorting": {
+    "BrowseViewSorting": {
+      "Enabled": "Включено",
+      "SortingColumns": "Список сортируемых полей"
+    }
+  },
+  "Viewers/Chart/AxisParametres": {
+    "AxisParametres": {
+      "DisplayName": "Заголовок оси"
+    },
+    "AxisParametresLink": {
+      "Position": "Позиция оси"
+    }
+  },
+  "Viewers/Chart/ChartColumnInfo": {
+    "ChartColumnInfo": {
+      "DisplayName": "Отображаемое имя колонки",
+      "Name": "Имя колонки"
+    },
+    "ChartColumnLink": {
+      "Column": "Ссылка на столбец",
+      "LinkKind": "Тип колонки",
+      "Name": "Имя столбца",
+      "Valid": "Флаг корректности столбца"
+    }
+  },
+  "Viewers/Chart/ChartParametres": {
+    "ChartParametres": {
+      "Axes": [
+        "Параметры 3D отображения",
+        "Оси"
+      ],
+      "Links": "Ссылки на колонки",
+      "Series": "Параметры серий"
+    }
+  },
+  "Viewers/Chart/ChartView": {
+    "ChartView": {
+      "ChartCacheServer": "Обработчик данных",
+      "ChartColumnInfos": "Описание источников данных графика",
+      "ChartParametres": "Параметры диаграммы"
+    }
+  },
+  "Viewers/Chart/SeriesParametres": {
+    "SeriesParametres": {
+      "DisplayName": "Имя серии",
+      "Index": "Индекс",
+      "Links": "Ссылки на колонки",
+      "YAxisLink": "Позиция оси ординат, к которой привязана серия"
+    }
+  },
+  "Viewers/Cube/CubeCalcSummaries": {
+    "CalcCubeCase": {
+      "DataType": "Тип данных",
+      "Dimensions": "Ссылка на настройки измерений",
+      "DisplayName": "Метка",
+      "Expression": "Выражение представленное строкой",
+      "FunctionLabelType": "Название функции",
+      "Name": "Имя"
+    }
+  },
+  "Viewers/Cube/CubeChart": {
+    "CubeChart": {
+      "ChartCase": "Номер факта для построения диаграммы",
+      "ChartType": "Тип диаграммы",
+      "HideTotal": "Флаг сокрытия значений итогов в диаграмме",
+      "MaxDotsCount": "Максимальное количество точек",
+      "MaxSeriesCount": "Максимальное количество серий",
+      "SeriesPosition": "Расположение серий",
+      "Show": "Флаг отображения диаграммы"
+    }
+  },
+  "Viewers/Cube/CubeDetailing": {
+    "CubeDetailing": {
+      "DetailingType": "Способ детализации",
+      "OnDetailingViewStatusChange": "Событие, вызываемое при изменении статуса встроенного визуализатора",
+      "Show": "Флаг отображения детализации",
+      "Version": "Текущее значение счетчика обновлений выбранной ячейки"
+    }
+  },
+  "Viewers/Cube/CubeDimensions": {
+    "CubeDimension": {
+      "AcceptedCount": "Количество видимых уникальных значений измерения",
+      "CanMoveFilterBackward": "Можно ли выбрать предстоящее уникальное значение",
+      "CanMoveFilterForward": "Можно ли выбрать следующее уникальное значение",
+      "Count": "Количество уникальных значений измерения (в том числе пропущенное)",
+      "DataType": "Тип данных уникальных значений измерения",
+      "DimensionType": "Тип измерения",
+      "Filter": "Фильтр",
+      "FilterEnabled": "Признак активности фильтра",
+      "FilterItemOrder": "Порядковый номер выбранного значения в списке возможных значений",
+      "FilterUsable": "Признак используемости фильтра",
+      "SortOrder": "Сортировка уникальных значений измерения.",
+      "SourceName": "Имя связанной колонки",
+      "ValueList": "Список уникальных значений",
+      "Width": "Ширина измерения в списке секций"
+    },
+    "CubeDimensionFilter": {
+      "Exclusive": "Признак запрещающего фильтра",
+      "FilterType": "Тип выбора значений фильтра"
+    },
+    "CubeDimensionsSettings": {
+      "ColsDimensions": "Список измерений расположенных в колонках",
+      "Dimensions": "Список всех измерений",
+      "FilteredCount": "Количество измерений с включенной фильтрацией",
+      "FreeDimensions": "Список свободных измерений",
+      "RowsDimensions": "Список измерений расположенных в строках"
+    },
+    "CubeDimensionValueList": {
+      "Version": "Счетчик изменений (перестроек) списка"
+    }
+  },
+  "Viewers/Cube/CubeEngineMatrix": {
+    "CubeEngineMatrix": {
+      "Empty": "Признак отсутствия информации",
+      "MaxColsLevel": "Максимальный уровень расхлопнутых элементов сверху",
+      "MaxRowsLevel": "Максимальный уровень расхлопнутых элементов слева"
+    }
+  },
+  "Viewers/Cube/CubeFilter": {
+    "CubeCaseFilter": {
+      "CubeFunction": "Ссылка на функцию Факта, агрегация которой будет произведена",
+      "Dimension": "Ссылка измерение, по которому происходит группировка",
+      "Enabled": "Признак наличия фильтра по фактам",
+      "FilterRelation": "Условие сравнения",
+      "Max": "Максимальное значение",
+      "Min": "Минимальное значение",
+      "PartOfTotal": "Доля от общего",
+      "TopBottomN": "Количество первых/последних",
+      "Value": "Значение с которым сравнивают"
+    }
+  },
+  "Viewers/Cube/CubeHeaders": {
+    "CubeHeader": {
+      "Dimensions": "Ссылка на список измерений",
+      "RealCellCount": "Количество элементов"
+    },
+    "CubeHeaders": {
+      "ColHeaders": "Заголовки колонок",
+      "RowHeaders": "Заголовки строк"
+    }
+  },
+  "Viewers/Cube/CubeSummaries": {
+    "CubeCase": {
+      "CountCase": "Виртуальный факт - количество",
+      "DataType": "Тип данных",
+      "Functions": "Список функций",
+      "Index": "Индекс",
+      "IsCustomCase": "Нестандартный факт",
+      "SourceName": "Имя связанной колонки",
+      "Summaries": "Ссылка на настройки фактов",
+      "Usable": "Факт используется"
+    },
+    "CubeFunction": {
+      "CubeCase": "Ссылка на факт",
+      "DisplayFunctionType": "Тип агрегации",
+      "DisplayName": "Метка",
+      "FunctionType": "Тип функции",
+      "OrderNumber": "Порядковый номер",
+      "SubFunctions": "Подфункции",
+      "SummaryDataType": "Тип",
+      "Usable": "Функция используется"
+    },
+    "CubeSubFunction": {
+      "CubeCase": "Ссылка на факт",
+      "CubeFunction": "Ссылка на функцию",
+      "DataType": "Тип данных",
+      "DisplayName": "Метка",
+      "HAlignment": "Выравнивание текста значений по ширине",
+      "NegValuesRedColor": "Отображать отрицательные значения красным цветом",
+      "SubFunctionType": "Тип подфункции",
+      "Usable": "Флаг используемости",
+      "VAlignment": "Выравнивание значений измерения по вертикали",
+      "Width": "Ширина в кросс-диаграмме по умолчанию"
+    },
+    "CubeSummarySettings": {
+      "CaseFormatSamples": "Примеры форматов значений фактов на сервере",
+      "CasePosition": "Расположение фактов",
+      "ColumnWidthMode": "Режим изменения ширины колонок",
+      "CommonCaseWidth": "Ширина ячеек в режиме равной ширины колонок",
+      "HideSingleCaseHeader": "Скрывать единственный заголовок фактов",
+      "RowCaseWidth": "Ширина факта в заголовке строк",
+      "RowFunctionWidth": "Ширина функции в заголовке строк",
+      "RowSubFunctionWidth": "Ширина подфункции в заголовке строк"
+    }
+  },
+  "Viewers/Cube/CubeView": {
+    "CubeView": {
+      "Active": "Признак готовности",
+      "CaseFilter": "Фильтр по факту",
+      "Chart": "Диаграмма",
+      "ColumnWidthMode": "Режим изменения ширины куба",
+      "CubeSourceRecordCount": "Количество записей в наборе данных",
+      "Detailing": "Детализация",
+      "Dimensions": "Настройки измерений",
+      "Headers": "Заголовки",
+      "HideSingleCaseHeader": "Скрывать единственный заголовок фактов",
+      "Matrix": "Матрица",
+      "OnCubeChange": "Событие, вызываемое на изменение куба",
+      "RecordCount": "Количество строк, участвовавших при построении куба",
+      "ShowColsTotal": "Показывать итоги в колонках",
+      "ShowRowsTotal": "Показывать итоги в строках",
+      "Summaries": "Настройки агрегаций фактов",
+      "SuspendUpdate": "Признак приостановки обновления кросс-таблицы"
+    }
+  },
+  "Viewers/LinRegressReport/LinRegressReport": {
+    "LinRegressReport": {
+      "CoefficientCount": "Количество коэффициентов в выбранной модели",
+      "CurrentModel": "Индекс активной модели",
+      "FactorCount": "Количество используемых факторов",
+      "FinalModel": "Индекс финальной модели",
+      "ModelCount": "Количество моделей",
+      "NullModel": "Индекс нулевой модели (без факторов) или -1, если нулевой модели нет",
+      "ShowAsTree": "Показывать как дерево",
+      "ShowModelInfo": "Показывать характеристики модели",
+      "ShowModelSteps": "Показывать шаги модели",
+      "ShowZeroValues": "Показывать нулевые значения",
+      "SortDirection": "Направление сортировки",
+      "SortOrder": "Порядок сортировки",
+      "StatParam": "Показатель качества модели"
+    }
+  },
+  "Viewers/LogRegressReport/LogRegressReport": {
+    "LogRegressReport": {
+      "CoeffitientCount": "Количество коэффициентов в выбранной модели",
+      "CurrentModel": "Индекс активной модели",
+      "EventID": "Индекс события",
+      "FactorCount": "Количество используемых факторов",
+      "FinalModel": "Индекс финальной модели",
+      "ModelCount": "Количество моделей",
+      "NullModel": "Индекс нулевой модели (без факторов) или -1, если нулевой модели нет",
+      "PredictedFactor": "Индекс выходного фактора",
+      "PredictedRefCounts": "Количество соответствующих уникальных значений выходного фактора",
+      "PredictedUniqueValues": "Уникальные значения выходного фактора",
+      "PValueThreshold": "Порог значимости",
+      "ShowAsTree": "Показывать как дерево",
+      "ShowModelInfo": "Показывать характеристики модели",
+      "ShowModelSteps": "Показывать шаги модели",
+      "ShowZeroValues": "Показывать нулевые значения",
+      "SortDirection": "Направление сортировки",
+      "SortOrder": "Порядок сортировки",
+      "StatParam": "Показатель качества модели"
+    }
+  },
+  "Viewers/ROC/ROCView": {
+    "ROCView": {
+      "AprioriProb": "Источник истинной доли событий",
+      "Chart": "Диаграмма",
+      "ChartType": "Тип диаграммы ROC-анализа",
+      "Cumulative": "Кумулятивная диаграмма или нет",
+      "CutoffArray": "Пороги отсечения",
+      "CutoffPoint": "Порог отсечения",
+      "CutoffType": "Способ определения порога",
+      "DataSet": "Текущее множество данных",
+      "DataSets": "Множества данных",
+      "EventFieldName": "Имя поля с событием",
+      "EventValue": "Значение события",
+      "GeneralParams": "Общие параметры классификации",
+      "NBins": "Число диапазонов",
+      "UserCutoff": "Заданный порог отсечения",
+      "UserProb": "Заданная истинная доля событий",
+      "VisualOptions": "Опции отображения"
+    },
+    "ROCViewChart": {
+      "AllSeries": "Все серии графиков",
+      "AllSerieVisible": "Видимость всех серий графиков",
+      "BaseSerie": "Базовая серия",
+      "BaseSerieVisible": "Видимость идеальной серии",
+      "BestSerie": "Идеальная серия",
+      "BestSerieVisible": "Видимость идеальной серии",
+      "CutoffSerie": "Серия порога отсечения",
+      "CutoffSerieVisible": "Видимость серии порога отсечения",
+      "IsBaseSerieShared": "Является ли базовая кривая общей для множеств",
+      "IsBestSerieShared": "Является ли идеальная кривая общей для множеств",
+      "MaxX": "Максимальное значение по X",
+      "MaxY": "Максимальное значение по Y",
+      "MinX": "Минимальное значение по X",
+      "MinY": "Минимальное значение по Y",
+      "SerieCount": "Число серий",
+      "Title": "Заголовок",
+      "XLabel": "Метка по оси X",
+      "YLabel": "Метка по оси Y"
+    },
+    "ROCViewVisualOptions": {
+      "ConfusionValueKind": "Представление значений в матрице ошибок",
+      "RecognitionValueKind": "Представление числа распознанных корректно",
+      "ShowRatings": "Показывать панель с показателями классификации",
+      "ShowSettings": "Показывать панель с настройками"
+    }
+  },
+  "Viewers/Statistics/StatView": {
+    "StatView": {
+      "ColumnInfosConfig": "Конфиг отображения колонок свойств полей",
+      "HistogramColumnsConfig": "Конфиг отображения колонок гистограммы",
+      "ShowHistogram": "Отображать детализацию",
+      "StatIndicatorColumnConfig": "Конфиг колонки с названиями статистических показателей",
+      "StatIndicatorsConfig": "Конфиг отображения колонок статистических показателей",
+      "StatInfoCollection": "Коллекция статистических показателей",
+      "StatisticsInRows": "Статистические показатели отображать в строках",
+      "StatViewColumns": "Коллекция колонок статистики"
+    },
+    "StatViewColumnConfig": {
+      "SortDirection": "Направление сортировки",
+      "SortEnable": "Сортировка включена",
+      "Visible": "Отображаемая колонка",
+      "Width": "Ширина"
+    },
+    "StatViewColumnConfigItem": {
+      "Index": "Индекс"
+    },
+    "StatViewColumnItem": {
+      "Index": "Индекс поля"
+    }
+  },
+  "Viewers/Statistics/StatViewBuilder": {
+    "StatViewCollection": {
+      "RowCount": "Число записей в наборе данных"
+    }
+  },
+  "Warehouse2/Deductor/DW": {
+    "DWObject": {
+      "DWObjectName": "Имя выбранного Объекта Хранилища данных",
+      "DWObjectType": "Тип Объекта Хранилища данных"
+    }
+  },
+  "Warehouse2/Deductor/DWImport": {
+    "DWImport": {
+      "Connection": "Подключение"
+    }
+  },
+  "Warehouse2/DWConnection": {
+    "DWConnection": {
+      "Database": "БД метаданных"
+    }
+  },
+  "Warehouse2/DWImportTree": {
+    "DWImportTreeNode": {
+      "Checked": "Выбран/отмечен",
+      "FuncAggregates": "Способ агрегации фактов",
+      "Order": "Порядковый номер колонки в выходном наборе данных"
+    }
+  },
+  "Warehouse2/MDFilterParams": {
+    "MDCustomFilterParams": {
+      "FilterType": "Тип фильтра",
+      "ListValue": "Список значений",
+      "MaxValue": "Значение для интервалов (макс)",
+      "MinValue": "Значение для интервалов (мин)",
+      "TheValue": "Значение для простых сравнений"
+    },
+    "MDDateFilterParams": {
+      "CustomPointDate": "Пользовательская дата отсчета",
+      "IntervalType": "Вид интервала",
+      "PointType": "Вид точки отсчета",
+      "SkipIntervalCount": "Кол-во пропущенных интервалов",
+      "UseIntervalCount": "Кол-во используемых интервалов"
+    }
+  }
+}

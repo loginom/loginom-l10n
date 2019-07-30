@@ -1918,6 +1918,7 @@
     "CardTitle_FeedBack": "Обратная связь",
     "CardTitle_Forum": "Форум: вопросы и ответы",
     "CardTitle_WebSite": "Сайт компании",
+    "LinkWebSite": "https://basegroup.ru",
     "LoginWebSite": "https://loginom.ru",
     "NoNewsLog": "Не удалось получить новости"
   },

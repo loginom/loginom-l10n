@@ -190,18 +190,8 @@
       "KindForBins": "Назначение колонки для интервалов"
     },
     "BinningContinuousBinItem": {
-      "LowerBound": {
-        "#text": "Нижняя граница диапазона",
-        "attr": {
-          "child": "AsVariant|Value"
-        }
-      },
-      "UpperBound": {
-        "#text": "Верхняя граница диапазона",
-        "attr": {
-          "child": "AsVariant|Value"
-        }
-      }
+      "LowerBound": "Нижняя граница диапазона",
+      "UpperBound": "Верхняя граница диапазона"
     },
     "BinningCountLinContMethodSettings": {
       "BinsCount": "Количество"
@@ -240,20 +230,10 @@
       "UpperLimitOpen": "Верхняя граница диапазонов открыта"
     },
     "BinningLinearContinuousMethodSettings": {
-      "LowerLimit": {
-        "#text": "Нижняя граница",
-        "attr": {
-          "child": "AsVariant|Value"
-        }
-      },
+      "LowerLimit": "Нижняя граница",
       "StrictDefineLowerLimit": "Явно задана",
       "StrictDefineUpperLimit": "Явно задана",
-      "UpperLimit": {
-        "#text": "Верхняя граница",
-        "attr": {
-          "child": "AsVariant|Value"
-        }
-      }
+      "UpperLimit": "Верхняя граница"
     },
     "BinningSDMethodSettings": {
       "SDMode": "От среднего"
@@ -407,12 +387,7 @@
     "ConditionItem": {
       "CaseSensitive": "Учитывать регистр",
       "CompareValue": "Сравниваемое значение",
-      "FieldLink": {
-        "#text": "Сравниваемое поле",
-        "attr": {
-          "child": "Name"
-        }
-      }
+      "FieldLink": "Сравниваемое поле"
     }
   },
   "components/corranalysis": {
@@ -439,7 +414,7 @@
   "components/datatoxml": {
     "DataToXMLEngine": {
       "Configurator": "Настройки экспорта",
-      "DocIDColumn": ["Идентификатор документа", "Столбец входного набора, содержащий идентификатор документа"],
+      "DocIDColumn": "Идентификатор документа",
       "EscapeQuotes": "Экранировать одинарные и двойные кавычки",
       "EscapeTabCRLFInAttr": "Экранировать табуляции и переводы строк в атрибутах",
       "Prettify": "Добавлять отступы и переводы строк",
@@ -617,12 +592,7 @@
     "LoopComponent": {
       "AppendIterationIdentifiers": "Добавлять идентификаторы итераций",
       "CompareValue": "Значение",
-      "ConditionVariableLink": {
-        "#text": "Переменная условия завершения",
-        "attr": {
-          "child": "Name"
-        }
-      },
+      "ConditionVariableLink": "Переменная условия завершения",
       "GroupColumns": "Столбцы, определяющие группы",
       "GroupCount": "Количество групп",
       "GroupDataSourceSocket": "Сокет, содержащий столбцы для группировки",
@@ -632,12 +602,7 @@
       "InternalOutputSockets": "Выходные сокеты внутреннего компонента",
       "IterationCount": "Количество итераций",
       "LoopKind": "Вид цикла",
-      "LoopVariableLink": {
-        "#text": "Переменная цикла",
-        "attr": {
-          "child": "Name"
-        }
-      },
+      "LoopVariableLink": "Переменная цикла",
       "MappedVariables": "Переменные, передаваемые с выхода на вход",
       "MaxThreadCount": "Максимальное количество потоков",
       "ParallelProcessing": "Параллельная обработка",
@@ -711,30 +676,15 @@
       "OutputDataType": "Тип выходных данных",
       "Precision": "Точность поиска подходящей замены",
       "RegularExpressions": "Регулярные выражения",
-      "ReplacementForOther": {
-        "#text": "Замена для других значений",
-        "attr": {
-          "child": "Value"
-        }
-      },
+      "ReplacementForOther": "Замена для других значений",
       "ReplaceMode": "Флаг использования замены",
       "ReplaceOther": "Заменять другие значения",
       "ReplaceOtherRegex": "Замена других через регулярное выражение",
       "ReplaceSourceID": "GUID входной таблицы замен"
     },
     "ReplaceTableItem": {
-      "DataValue": {
-        "#text": "Заменяемое значение",
-        "attr": {
-          "child": "Value"
-        }
-      },
-      "ReplaceBy": {
-        "#text": "Замещающее значение",
-        "attr": {
-          "child": "Value"
-        }
-      }
+      "DataValue": "Заменяемое значение",
+      "ReplaceBy": "Замещающее значение"
     }
   },
   "components/restclient": {
@@ -1342,12 +1292,7 @@
       "Index": "Индекс",
       "Name": "Имя",
       "OriginType": "Происхождение",
-      "Value": {
-        "#text": "Значение",
-        "attr": {
-          "child": "AsVariant|Value"
-        }
-      }
+      "Value": "Значение"
     },
     "EditableVariables": {
       "Elements": "Список переменных"
@@ -1845,7 +1790,7 @@
   },
   "Viewers/Chart/ChartParametres": {
     "ChartParametres": {
-      "Axes": ["Параметры 3D отображения", "Оси"],
+      "Axes": "Оси",
       "Links": "Ссылки на колонки",
       "Series": "Параметры серий"
     }

@@ -110,7 +110,7 @@
     }
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
-    "_MSSaxHandlerType": {
+    "MSSaxHandlerType": {
       "$Caption": "Обработчики событий SAX-парсера MSXML",
       "Error": "Обработчик ошибок (ISAXErrorHandler)",
       "Content": "Обработчик контента (ISAXContentHandler)",
@@ -667,10 +667,10 @@
   "components/sonn": {
     "SOMTopology": {
       "$Caption": "Топология ячеек",
-      "t1D": "1D",
-      "t2DSquare": "2D прямоугольная",
-      "t2DHexagonal": "2D гексагональная",
-      "t3D": "3D"
+      "st1D": "1D",
+      "st2DSquare": "2D прямоугольная",
+      "st2DHexagonal": "2D гексагональная",
+      "st3D": "3D"
     },
     "SONNType": {
       "$Caption": "Тип самоорганизующейся сети",
@@ -1050,6 +1050,12 @@
       "Excel": "XLS",
       "HTML": "HTML"
     },
+    "HAlignment": {
+      "$Caption": "Выравнивание по горизонтали",
+      "LeftJustify": "По левому краю",
+      "RightJustify": "По правому краю",
+      "Center": "По центру"
+    },
     "PeriodKind": {
       "$Caption": "Виды периодов",
       "Relative": "Относительный",
@@ -1106,18 +1112,6 @@
       "DifStdDev": "Стандартное откл. разностей",
       "DifCount": "Кол-во разностей"
     },
-    "HAlignment": {
-      "$Caption": "Выравнивание по горизонтали",
-      "LeftJustify": "По левому краю",
-      "RightJustify": "По правому краю",
-      "Center": "По центру"
-    },
-    "VAlignment": {
-      "$Caption": "Выравнивание по вертикали",
-      "Top": "По верхнему краю",
-      "Bottom": "По нижнему краю",
-      "Center": "По центру"
-    },
     "UsageType": {
       "$Caption": "Назначение",
       "Unspecified": "Не задано",
@@ -1130,6 +1124,12 @@
       "Value": "Показатель",
       "Transaction": "Транзакция",
       "Item": "Элемент"
+    },
+    "VAlignment": {
+      "$Caption": "Выравнивание по вертикали",
+      "Top": "По верхнему краю",
+      "Bottom": "По нижнему краю",
+      "Center": "По центру"
     }
   },
   "Libraries/bgrtl/Logger": {
@@ -1733,9 +1733,9 @@
     },
     "ROCViewNBins": {
       "$Caption": "Число диапазонов",
-      "n10": "10 диапазонов",
-      "n20": "20 диапазонов",
-      "n50": "50 диапазонов"
+      "bn10": "10 диапазонов",
+      "bn20": "20 диапазонов",
+      "bn50": "50 диапазонов"
     }
   },
   "Viewers/Statistics/StatViewTypes": {

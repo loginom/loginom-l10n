@@ -256,15 +256,15 @@
     "ErrParserIsActive": "Нельзя изменять свойства парсера в процессе разбора"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
-    "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n\n\t%s",
-    "ErrParseFileUnhandledException": "Необработанное исключение при разборе файла '%s':\n\n%s",
-    "ErrParseStream": "Ошибка при разборе потока в строке %d, позиция %d:\n\n\t%s",
+    "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n\t%s",
+    "ErrParseFileUnhandledException": "Необработанное исключение при разборе файла '%s':\n%s",
+    "ErrParseStream": "Ошибка при разборе потока в строке %d, позиция %d:\n\t%s",
     "ErrParseStreamNoXML": "Ошибка при разборе потока в строке %d, позиция %d: источник не является XML-файлом или имеет некорректный синтаксис",
-    "ErrParseStreamUnhandledException": "Необработанное исключение при разборе потока:\n\n\t%s",
+    "ErrParseStreamUnhandledException": "Необработанное исключение при разборе потока:\n\t%s",
     "ErrParseStreamUnrecognizedEncoding": "Ошибка при разборе потока: неизвестная кодировка %s",
-    "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n\n\t%s",
+    "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n\t%s",
     "ErrParseURLNoXML": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s': ответ сервера не является XML-файлом",
-    "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n\n\t%s",
+    "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n\t%s",
     "ErrParseURLUnrecognizedContentType": "Ошибка при выполнении запроса к URL '%s': ответ сервера не обработан, так как Content-type: %s не зарегистрирован",
     "ErrSaxDocumentHasNoRootElements": "В документе отсутствует корневой элемент",
     "ErrSaxParserFeatureInvalidArg": "Неправильный тип аргумента при установке опции '%s' SAX-парсера MSXML",
@@ -290,6 +290,13 @@
     "ErrXMLCharsetByCodePageAlreadyInstalled": "Функция получения набора символов XML по номеру кодовой страницы уже установлена",
     "ErrXMLCharsetByCodePageUnassigned": "Функция получения набора символов XML по номеру кодовой страницы не установлена"
   },
+  "Common/XML/XML_MSXML": {
+    "ErrElementMustHaveAttribute": "Атрибут \"%s\" обязателен для элемента \"%s\"",
+    "ErrXMLLoadFailure": "Невозможно загрузить документ %s",
+    "ErrXMLLoadStringFailure": "Невозможно загрузить документ XML из строки",
+    "ErrXMLParseFailure": "Ошибка при обработке документа %s (строка %d, позиция %d): %s",
+    "ErrXMLParseStringFailure": "Ошибка при обработке XML (строка %d, позиция %d): %s"
+  },
   "Common/XML/XMLDocument": {
     "ErrAddNodeOperationNotAllowed": "Операция добавления узла типа '%s' не разрешена на узле типа '%s'",
     "ErrDocumentHasNoRootElement": "В XML-документе отсутствует корневой элемент",
@@ -299,13 +306,6 @@
     "ErrOnlyOneRootElementAllowed": "Корневой элемент документа уже существует",
     "ErrPITargetXMLIsReserved": "Имя инструкции парсера \"xml\" зарезервировано",
     "ErrSetSinkWrongNodeType": "Приемником XML может быть только узел типа 'документ' или 'элемент'"
-  },
-  "Common/XML/XML_MSXML": {
-    "ErrElementMustHaveAttribute": "Атрибут \"%s\" обязателен для элемента \"%s\"",
-    "ErrXMLLoadFailure": "Невозможно загрузить документ %s",
-    "ErrXMLLoadStringFailure": "Невозможно загрузить документ XML из строки",
-    "ErrXMLParseFailure": "Ошибка при обработке документа %s (строка %d, позиция %d): %s",
-    "ErrXMLParseStringFailure": "Ошибка при обработке XML (строка %d, позиция %d): %s"
   },
   "Common/XML/XSD_MSXML": {
     "Any": "Любой элемент",
@@ -1305,12 +1305,12 @@
     "ErrWrongModelInput": "Входные столбцы не соответствуют обученной ранее модели",
     "ErrWrongModelOutput": "Выходной столбец не соответствует обученной ранее модели",
     "GiniIndexColumn": "Индекс Джини",
+    "GTest_Multiple": "%s|%s|G-тест",
+    "GTest_Single": "%s|G-тест",
     "GTestDF_Multiple": "%s|%s|Число степеней свободы G-теста",
     "GTestDF_Single": "%s|Число степеней свободы G-теста",
     "GTestPValue_Multiple": "%s|%s|P-значение G-теста",
     "GTestPValue_Single": "%s|P-значение G-теста",
-    "GTest_Multiple": "%s|%s|G-тест",
-    "GTest_Single": "%s|G-тест",
     "MutualInf_Multiple": "%s|%s|Взаимная информация",
     "MutualInf_Single": "%s|Взаимная информация",
     "NeuralNetOutputDataSet": "Выход нейросети",

@@ -55,6 +55,68 @@
       "title": "Folders"
     }
   },
+  "filestorage/FileStorageForm": {
+    "btnCopy": {
+      "text": "Copy",
+      "tooltip": "Copy"
+    },
+    "btnCreateDirectory": {
+      "text": "Create Directory",
+      "tooltip": "Create directory..."
+    },
+    "btnCut": {
+      "text": "Cut",
+      "tooltip": "Cut"
+    },
+    "btnDelete": {
+      "text": "Delete",
+      "tooltip": "Delete..."
+    },
+    "btnDownload": {
+      "text": "Download",
+      "tooltip": "Download"
+    },
+    "btnPaste": {
+      "text": "Paste",
+      "tooltip": "Paste"
+    },
+    "btnRefresh": {
+      "tooltip": "Refresh List"
+    },
+    "btnRename": {
+      "text": "Rename",
+      "tooltip": "Rename..."
+    },
+    "btnUpload": {
+      "text": "Upload",
+      "tooltip": "Upload..."
+    },
+    "colDelete": {
+      "menuText": "Delete",
+      "tooltip": "Delete All"
+    },
+    "colDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colFilePath": {
+      "text": "Path"
+    },
+    "colFileType": {
+      "text": "Type"
+    },
+    "colLastChangeDate": {
+      "text": "Change Date"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colReadOnly": {
+      "text": "Read only"
+    },
+    "colSize": {
+      "text": "Size"
+    }
+  },
   "homepage/HomePage": {
     "btnCreatePackage": {
       "text": "Create New Package..."
@@ -75,7 +137,7 @@
       "text": "Package Name"
     },
     "lblLastPackages": {
-      "text": "Last Opened Packages"
+      "text": "Recent Opened Packages"
     },
     "pnlHomePage": {
       "title": "Home"

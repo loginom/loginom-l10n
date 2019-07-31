@@ -107,6 +107,61 @@
     "OverwritePromptTitle": "Confirm Save As",
     "TitleSave": "Save File"
   },
+  "filestorage/CopyPasteManager": {
+    "CantCopyInTheSameDirectory": "It is not possible to copy into the same directory",
+    "CantDeleteFileAfterPasting": "Failed to delete source file {0} after pasting",
+    "CantDeleteFolderAfterPasting": "Failed to delete source directory {0} after pasting",
+    "CantPasteFile": "Failed to paste file",
+    "CantPasteFolder": "Failed to paste directory",
+    "Copied": "Copied",
+    "Cuted": "Cut",
+    "HasNotStorageItems": "No files to be copied/cut",
+    "ItemsAreSimilar": "Names of {0} files/directories are similar. When pasted, they will be overwritten. Do you want to continue?",
+    "NoItemsInBuffer": "Clipboard is empty. You must first copy files or folders",
+    "ServerPasteException": "Server Error Message:"
+  },
+  "filestorage/DragAndDropHandler": {
+    "DropText": "Drag and drop to start the download",
+    "EmptyDirectoryText": "Folder is empty. Drag files to this area to download them"
+  },
+  "filestorage/FileDownloader": {
+    "CantSaveDownLoadedFile": "Failed to save the downloaded file"
+  },
+  "filestorage/FileSenderManager": {
+    "FileAlreayLoading": "{0} file has already been downloading. Wait until the end or cancel the download process."
+  },
+  "filestorage/FileStorageForm": {
+    "CantCreateFolder": "Failed to create directory",
+    "CantDeleteFile": "Failed to delete file",
+    "CantDeleteFolder": "Failed to delete directory",
+    "CantDownloadFolder": "It is not possible to download directories yet",
+    "ConfirmDeleteAll": "Do you really want to delete all?",
+    "ConfirmDeleting": "Do you really want to delete the selection?",
+    "ConfirmStopLoaders": "Active downloads will be canceled. Do you want to continue?",
+    "CreateDirectoryTitle": "Create Directory",
+    "DeleteAllTitle": "Delete All Directory Files",
+    "DirectoryAlreadyExists": "A directory with the same name already exists",
+    "FileAlreadyExists": "A file with the same name already exists",
+    "FileStorageNotConnected": "No connection to file storage",
+    "NeedNotEmptyFolderName": "You must specify a non-empty directory name",
+    "RenamingStorageItem": "Rename",
+    "SetNewDirectoryName": "New Directory Name:",
+    "SetNewName": "New Name:"
+  },
+  "filestorage/FileUploader": {
+    "ErrFileMayBeDeleted": "File loading error. The file may have been deleted from the disk",
+    "ErrFileUpload": "File Loading Error"
+  },
+  "filestorage/LoaderViewController": {
+    "DownloadWindowTitle": "File Download",
+    "ErrCancelLoaders": "Operation Cancel Error",
+    "UploadWindowTitle": "Upload Files to Server"
+  },
+  "filestorage/LoadView": {
+    "CancelAllConfirm": "Do you really want to cancel all downloads?",
+    "CancelAllLoadersBtn": "Cancel All",
+    "ErrCancelAllLoaders": "Operation Cancel Error"
+  },
   "homepage/HomePage": {
     "RemoveFromHistoryFmt": "No \"{0}\" file found. It may have been renamed, moved or deleted. Do you want to remove this package from the list of recent packages?",
     "RemoveFromHistoryTitle": "No file found"
@@ -116,7 +171,6 @@
     "CardTitle_FeedBack": "Feedback",
     "CardTitle_Forum": "Forum: Questions and Answers",
     "CardTitle_WebSite": "Company Website",
-    "LinkWebSite": "https://basegroup.ru",
     "LoginWebSite": "https://loginom.ru",
     "NoNewsLog": "No news downloaded"
   }

@@ -1,5 +1,222 @@
 {
+  "app/AddPackageLinkForm": {
+    "btnApply": {
+      "text": "Add"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "colPackage": {
+      "text": "Package"
+    },
+    "colPackagePath": {
+      "text": "Path"
+    },
+    "edtPath": {
+      "fieldLabel": "Package File Path"
+    },
+    "frmAddPackageLinkForm": {
+      "title": "Add Package Link"
+    }
+  },
+  "app/ConfigureBatchProcModesForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "chbRunBatchMode": {
+      "boxLabel": "To run a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes will be activated in the run mode. When the option is disabled, the specified node and all its sub nodes will not be activated for execution in the batch mode."
+    },
+    "chbTeachBatchMode": {
+      "boxLabel": "To retrain a node and all its sub nodes. <br>During the batch processing, this node and all its sub nodes, for which the model can be rebuilt, will be activated in the training mode. When the option is disabled, the specified node and all its sub nodes will not be activated for training in the batch mode."
+    },
+    "cntBatchProcModes": {
+      "title": "Valid Modes of Batch Processing"
+    },
+    "cntBatchProcOverrideMode": {
+      "title": "Specified Mode of Node Activation"
+    },
+    "frmConfigureBatchProcModesForm": {
+      "title": "Configure Node Activation Mode"
+    },
+    "rbAlwaysRun": {
+      "boxLabel": "Always Run"
+    },
+    "rbAlwaysTeach": {
+      "boxLabel": "Always Retrain"
+    },
+    "rbDefinesByCommandLine": {
+      "boxLabel": "Determined by the context of the current processing"
+    }
+  },
+  "app/ConfigureDerivedVendorForm": {
+    "btnApply": {
+      "text": "Save"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "fldDisplayName": {
+      "fieldLabel": "Caption"
+    },
+    "frmConfigureDerivedVendorForm": {
+      "title": "Derived Component Setting"
+    },
+    "fstVisibility": {
+      "title": "Visibility Area"
+    },
+    "txtDescription": {
+      "fieldLabel": "Description"
+    }
+  },
+  "app/ConfigurePublishedPackagesForm": {
+    "btnClose": {
+      "text": "Close"
+    },
+    "btnPublish": {
+      "text": "Publish"
+    },
+    "btnRemove": {
+      "text": "Delete"
+    },
+    "btnUpdate": {
+      "text": "Update"
+    },
+    "cbxPackage": {
+      "fieldLabel": "Package File Path"
+    },
+    "colPublishedPackages": {
+      "text": "Published Packages"
+    },
+    "frmConfigurePublishedPackagesForm": {
+      "title": "Publishing of Packages "
+    },
+    "fsNamespace": {
+      "title": "Namespace"
+    },
+    "rdoCustom": {
+      "boxLabel": "Custom"
+    },
+    "rdoGenerateForPackage": {
+      "boxLabel": "Unique Name for Package"
+    },
+    "rdoGenerateForPackageVersion": {
+      "boxLabel": "Unique Name for Each Package Version"
+    },
+    "rdoUseDisNamespace": {
+      "boxLabel": "Loginom Integrator Namespace"
+    }
+  },
+  "app/ConsoleForm": {
+    "tabError": {
+      "title": "Errors"
+    },
+    "tabProgress": {
+      "title": "Processes"
+    }
+  },
+  "app/EditDisplayNameForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "edtDisplayName": {
+      "fieldLabel": "Name"
+    },
+    "frmEditDisplayNameForm": {
+      "title": "Edit"
+    }
+  },
+  "app/ListViewForm": {
+    "btnAdd": {
+      "text": "Add",
+      "tooltip": "Add..."
+    },
+    "btnDelete": {
+      "text": "Delete",
+      "tooltip": "Delete..."
+    },
+    "btnEdit": {
+      "text": "Edit",
+      "tooltip": "Edit..."
+    },
+    "btnGroup": {
+      "tooltip": "Group"
+    },
+    "btnMedium": {
+      "tooltip": "Large tiles"
+    },
+    "btnSetup": {
+      "text": "Set up",
+      "tooltip": "Set up..."
+    },
+    "btnTable": {
+      "tooltip": "Table"
+    },
+    "btnTile": {
+      "tooltip": "Tile"
+    },
+    "btnVisibility": {
+      "tooltip": "Setting up the visibility area..."
+    },
+    "cntDescription": {
+      "title": "Description"
+    }
+  },
+  "app/LoginomMenuForm": {
+    "btnCheckNewVersion": {
+      "text": "Check for update"
+    },
+    "btnGoToNewVersion": {
+      "text": "New version available"
+    },
+    "btnHelp": {
+      "text": "Help"
+    },
+    "btnHomePage": {
+      "text": "Home"
+    },
+    "btnLogOut": {
+      "text": "Log Out"
+    },
+    "btnQuit": {
+      "text": "Close"
+    }
+  },
+  "app/MainForm": {
+    "btnAdmin": {
+      "tooltip": "Administration"
+    },
+    "btnAvatar": {
+      "tooltip": "Menu"
+    },
+    "btnFavorites": {
+      "tooltip": "Favorites"
+    },
+    "btnFilestorage": {
+      "tooltip": "Files"
+    },
+    "btnNavigator": {
+      "tooltip": "Navigation"
+    },
+    "btnPackagesMenu": {
+      "tooltip": "Packages"
+    },
+    "btnProgress": {
+      "tooltip": "Processes"
+    }
+  },
   "app/MainMenuForm": {
+    "btnCloseAllPackages": {
+      "text": "Close all"
+    },
+    "btnClosePackage": {
+      "text": "Close"
+    },
     "btnCreatePackage": {
       "text": "New..."
     },
@@ -8,6 +225,70 @@
     },
     "btnOpenPackage": {
       "text": "Open..."
+    },
+    "btnSaveAllPackages": {
+      "text": "Save all"
+    },
+    "btnSaveAsPackage": {
+      "text": "Save as..."
+    },
+    "btnSavePackage": {
+      "text": "Save"
+    },
+    "pnlMainMenuForm": {
+      "title": "Packages"
+    }
+  },
+  "app/MapTreeForm": {
+    "btnAddNode": {
+      "tooltip": "Add"
+    },
+    "btnClosePackage": {
+      "tooltip": "Close package"
+    },
+    "btnCollapse": {
+      "tooltip": "Collapse"
+    },
+    "btnConfigureModelNode": {
+      "tooltip": "Configure node"
+    },
+    "btnConfigurePublishedPackages": {
+      "tooltip": "Publishing of Packages..."
+    },
+    "btnEditProperties": {
+      "tooltip": "Properties..."
+    },
+    "btnEditVisibility": {
+      "tooltip": "Configure access modifier..."
+    },
+    "btnExpand": {
+      "tooltip": "Expand"
+    },
+    "btnExpandToNodes": {
+      "tooltip": "Expand/collapse to nodes"
+    },
+    "btnRemoveNode": {
+      "tooltip": "Delete node"
+    },
+    "btnSetNodeActive": {
+      "tooltip": "Open/close node"
+    },
+    "btnShowViews": {
+      "tooltip": "Show visualizers"
+    },
+    "pnlMapTree": {
+      "title": "Navigation"
+    }
+  },
+  "app/ModelForm": {
+    "btnActivateAll": {
+      "tooltip": "Run all"
+    },
+    "btnPaste": {
+      "tooltip": "Paste"
+    },
+    "btnRetrain": {
+      "tooltip": "Retrain node"
     }
   },
   "app/PackagesListForm": {

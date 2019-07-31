@@ -1,4 +1,102 @@
 {
+  "app/AddPackageLinkForm": {
+    "ErrPathNotSpecified": "Package not specified (path to package file).",
+    "PackageNotSaved": "Package Not Saved",
+    "ReadOnlyPackageNamePostfix": "(read-only)"
+  },
+  "app/Application": {
+    "ErrVersionFailure": "Error when requesting the latest version",
+    "LoginomLastVersionDownloadUrl": "https://loginom.com/downloads",
+    "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost.",
+    "VersionErrorResponseStatus": "Error when requesting the latest version. Response code: \"{0}\". Message: {1}",
+    "VersionWrongServiceResponse": "Wrong service response with the information on the latest Loginom version"
+  },
+  "app/AppUtils": {
+    "ConfirmRemovingUnit": "Do you really want to delete the modulel?",
+    "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently used.",
+    "ErrSelectedVendorLocked": "Failed to delete the selected \"{0}\" componet. Some of the derived nodes are currently used.",
+    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the selected \"{0}\" component? The nodes created on its basis will be unavailable.",
+    "RemoveVendorConfirm": "Do you want to remove the component?"
+  },
+  "app/ConfigurePublishedPackagesForm": {
+    "DisNamespace": "http://schemas.loginom.com/integration",
+    "ErrPathNotSpecified": "Path to the Package File is not Specified"
+  },
+  "app/ListViewForm": {
+    "NumberObjects": "{0} objects"
+  },
+  "app/LoginomMenuForm": {
+    "CheckFailed": "Check failed. Please check the new version on the website",
+    "GoToDownload": "Go to website",
+    "Menu": "Menu",
+    "QstQuit": "There are not saved packages. Do you want to exit without saving?",
+    "YourVersionIsActual": "You are using the current version"
+  },
+  "app/MainForm": {
+    "AskIfOpenPackageByLink": "The open package will be blocked by you until it is closed. Do you want to open it?",
+    "CantCreateShareLinks": "Failed to generate address for the current page",
+    "CantFindPackage": "Failed to find package",
+    "CantGetAbsolutePath": "Failed to get absolute path for \"{0}\" file",
+    "ErrOpenUrlPath": "Failed to open URL \"{0}\".\nError: \"{1}\".",
+    "ErrPackageDontExists": "\"{0}\" package not found",
+    "ErrPackageNotSaved": "Current package not saved",
+    "ErrUrlPathNotFound": "\"{0}\" path not found",
+    "FavoritesTitle": "Favorites",
+    "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
+    "MsgTransportError": "Сonnection to the server is broken",
+    "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
+    "PackageCopyOpened": "Changes in the open link  \"{0}\" package will be reflected in the current package upon its reload ",
+    "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
+    "QstQuitSave": "Do you want to save changes in \"{0}\" package?",
+    "ServerDisplayName": "Server"
+  },
+  "app/MainMenuForm": {
+    "EmptyPackageName": "Package not selected",
+    "ErrCannotSaveReadOnlyPackage": "You cannot save the read-only \"{0}\" package",
+    "ErrLoadPackageErrors": "Errors occurred while \"{0}\" package downloading",
+    "ErrNoPackageToClose": "No package to be closed was found.",
+    "ErrNoPackageToSave": "There is no package to save.",
+    "ErrOpenReadOnlyPackage": "\"{0}\" package is open only in the read-only mode as it has already been opened by another user. Saving is possible only under a different name.",
+    "ErrSaveReadOnlyPackage": "You cannot save the read-only \"{0}\" package without changing the name "
+  },
+  "app/MapTree": {
+    "AdminArea": "Administration",
+    "ConnectionDisplayNameDefault": "Connection",
+    "Connections": "Connections",
+    "ErrInstanceAlreadyExist": "ID already mapped to visual node",
+    "ErrInstanceNotFound": "There is no associated visual node for ID",
+    "FileStorage": "Files",
+    "HomePage": "Home",
+    "InputPorts": "Input Ports",
+    "ModelViews": "Visualizers",
+    "OutputPorts": "Output Ports",
+    "PackagesParent": "Packages",
+    "Properties": "Properties",
+    "QstCloseAllPackages": "Do you want to close all packages?",
+    "QstCloseOtherPackages": "Do you want to close other packages?",
+    "ReadOnlyPackageNamePostfix": "(read-only)",
+    "References": "References",
+    "Reports": "Reports",
+    "ServiceInputPorts": "Service Input Ports",
+    "ServiceOutputPorts": "Service Output Ports",
+    "SharedDirectories": "Shared Folders",
+    "UnitDisplayNameDefault": "Module",
+    "Users": "Users",
+    "Vendors": "Components",
+    "Wizard": "Wizard",
+    "WorkFlow": "Workflow"
+  },
+  "app/MapTreeForm": {
+    "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
+    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
+    "mnuPortsShowAll": "Show All Ports",
+    "ModelUnitLabel": "Module Name",
+    "VendorLabel": "Component Name"
+  },
+  "app/ModelForm": {
+    "ActivateCurrent": "Run Node",
+    "ActivateFrom": "Activate Subsequent Nodes"
+  },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "The relative paths of the base package are used."
   },
@@ -134,7 +232,7 @@
     "CantCreateFolder": "Failed to create directory",
     "CantDeleteFile": "Failed to delete file",
     "CantDeleteFolder": "Failed to delete directory",
-    "CantDownloadFolder": "It is not possible to download directories yet",
+    "CantDownloadFolder": "Directory downloads have not been implemented yet",
     "ConfirmDeleteAll": "Do you really want to delete all?",
     "ConfirmDeleting": "Do you really want to delete the selection?",
     "ConfirmStopLoaders": "Active downloads will be canceled. Do you want to continue?",

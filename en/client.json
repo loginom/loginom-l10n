@@ -1,7 +1,7 @@
 {
   "app/AddPackageLinkForm": {
     "ErrPathNotSpecified": "Package not specified (path to package file).",
-    "PackageNotSaved": "Package Not Saved",
+    "PackageNotSaved": "Package not saved",
     "ReadOnlyPackageNamePostfix": "(read-only)"
   },
   "app/Application": {
@@ -114,14 +114,68 @@
     "DeleteNode": "Delete Node...",
     "DeletePort": "Delete Port",
     "DeriveNode": "Create Derived Component ...",
-    "EditPortDisplayName": "Edit Port Caption ...",
+    "EditPortDisplayName": "Edit Port Caption...",
     "EditPortDisplayNameWindowTitle": "Edit",
     "EditPortFieldLabel": "Port Caption",
     "ErrNodeNotInitialized": "\"{0}\" node has no component information provider",
     "Error": "Error",
     "ErrPortNotCreated": "Failed to Create New Port",
     "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
-    "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned"
+    "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned",
+    "ExpandGenericModel": "Expand Submodel",
+    "ExplodeNode": "Expand Submodel",
+    "GoToConnection": "Go to Connection",
+    "GoToConnections": "Go to Connections",
+    "HideControlVariablesPorts": "Hide Control Variables Port",
+    "LockedIconTooltip": "Node locked during runtime or setup",
+    "NodeBatchMode": "Configure Node Activation Mode...",
+    "NodeVisibility": "Configure Access Modifier ...",
+    "NodeVisibilityByDefault": "By default",
+    "NodeVisibilityInternal": "Visibility Inside Current Package",
+    "NodeVisibilityPrivate": "Visibility Inside Current Workflow",
+    "NodeVisibilityProtected": "Visibility Inside Current Workflow and Submodels",
+    "NodeVisibilityPublic": "Visibility Inside All Packages",
+    "NodeVisibilityPublished": "Visibility Inside All Packages and as Web Service",
+    "NodeVisibilityTitle": "Node Visibility",
+    "PortSubTypeUndefined": "Failed to Define Port Subtype",
+    "RecreateBaseNodeForDerivedVendor": "Recreate Base Node",
+    "RemoveComment": "Delete Comment",
+    "RemoveSelectedConfirm": "Do you really want to delete the selected nodes and connections?",
+    "RenameNode": "Rename...",
+    "ResetConfiguration": "Reset Original Node Configuration",
+    "SelectOneNode": "Select Only One Node",
+    "SelectSomething": "First Select Object in Workflow",
+    "SetNodeDerivedVendor": "Set Derived Node Component...",
+    "SetupConnection": "Configure Connection...",
+    "SetupNode": "Configure Node...",
+    "ShowControlVariablesPort": "Show Control Variables Port",
+    "ShowDataPreview": "Quick Preview...",
+    "TeachNode": "Retrain Node",
+    "TuneDerivedVendor": "Configure...",
+    "UndoableDeleteNode": "Delete (forced)...",
+    "UpdateConfiguration": "Update Node Configuration",
+    "VendorIsUndefined": "Undefined Node Component",
+    "ZoomFitTooltip": "Zoom fit",
+    "ZoomInTooltip": "Zoom in",
+    "ZoomOutTooltip": "Zoom out"
+  },
+  "app/ModelNodeTreeNodeProxy": {
+    "ErrNoRefModelNodeTreeNode": "No reference to IBGModelNodeTreeNode"
+  },
+  "app/PackageForm": {
+    "ErrIncorrectVersionFormat": "Incorrect Version Format",
+    "ErrInvalidPackageName": "\"{0}\" is invalid package name"
+  },
+  "app/PackageLinkForm": {
+    "ErrIncorrectVersionFormat": "Incorrect Version Format"
+  },
+  "app/PackageListForm": {
+    "AddUnit": "Add Module",
+    "AddUnitTooltip": "Add module",
+    "Delete": "Delete",
+    "DeleteTooltip": "Delete...",
+    "EditDisplayName": "Edit",
+    "EditDisplayNameMsgTitle": "Edit Caption"
   },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "The relative paths of the base package are used."

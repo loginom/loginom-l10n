@@ -161,7 +161,7 @@
       "tooltip": "Tile"
     },
     "btnVisibility": {
-      "tooltip": "Setting up the visibility area..."
+      "tooltip": "Configure visibility area..."
     },
     "cntDescription": {
       "title": "Description"
@@ -368,16 +368,177 @@
     "mniHorizontalAlignCenter": {
       "text": "Align center",
       "tooltip": "Horizontal center alignment"
+    },
+    "mniHorizontalAlignTop": {
+      "text": "Align top",
+      "tooltip": "Horizontal top alignment"
+    },
+    "mniVerticalAlighCenter": {
+      "text": "Align middle",
+      "tooltip": "Vertical middle alignment"
+    },
+    "mniVerticalAlignLeft": {
+      "text": "Align left",
+      "tooltip": "Vertical left alignment"
+    },
+    "mniVerticalAlignRight": {
+      "text": "Align right",
+      "tooltip": "Vertical right alignment"
+    },
+    "pnlConnectionsContainer": {
+      "title": "Connections"
+    },
+    "pnlDerivedVendorsContainer": {
+      "title": "Derivative Components"
+    },
+    "pnlDescription": {
+      "title": "Description"
+    },
+    "pnlModelForm": {
+      "title": "Workflow"
+    },
+    "pnlVendorsContainer": {
+      "title": "Components"
+    }
+  },
+  "app/PackageForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "chbUseBasePackageFileStorage": {
+      "boxLabel": "Use relative paths of base package"
+    },
+    "edtName": {
+      "fieldLabel": "Name"
+    },
+    "edtVersion": {
+      "fieldLabel": "Version"
+    },
+    "frmPackageForm": {
+      "title": "Package"
+    }
+  },
+  "app/PackageLinkForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "edtName": {
+      "fieldLabel": "Name"
+    },
+    "edtPath": {
+      "fieldLabel": "Path"
+    },
+    "edtVersion": {
+      "fieldLabel": "Version"
+    },
+    "frmPackageLinkForm": {
+      "title": "Link to Package"
     }
   },
   "app/PackagesListForm": {
+    "btnClose": {
+      "text": "Close",
+      "tooltip": "Close package..."
+    },
+    "btnCloseAll": {
+      "text": "Close all",
+      "tooltip": "Close all packages..."
+    },
+    "btnCreate": {
+      "text": "Create",
+      "tooltip": "Create new package..."
+    },
+    "btnEdit": {
+      "text": "Properties",
+      "tooltip": "Edit properties..."
+    },
+    "btnOpen": {
+      "text": "Open",
+      "tooltip": "Open package..."
+    },
+    "btnPublish": {
+      "text": "Publish",
+      "tooltip": "Publish packages..."
+    },
+    "btnSave": {
+      "text": "Save",
+      "tooltip": "Save package"
+    },
+    "btnSaveAll": {
+      "text": "Save all",
+      "tooltip": "Save all packages"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colPath": {
+      "text": "Path"
+    },
+    "colPublished": {
+      "text": "Published"
+    },
+    "colVersion": {
+      "text": "Version"
+    },
     "mniCreateUnsaved": {
       "text": "Draft",
       "tooltip": "Create draft"
     },
+    "mniSaveAs": {
+      "text": "Save as...",
+      "tooltip": "Save package as..."
+    },
+    "pmiCloseOther": {
+      "text": "Close other",
+      "tooltip": "Close other packages..."
+    },
+    "pmiCreate": {
+      "text": "Create",
+      "tooltip": "Create new package..."
+    },
     "pmiCreateUnsaved": {
       "text": "Draft",
       "tooltip": "Create draft"
+    },
+    "pmiRefresh": {
+      "tooltip": "Update"
+    },
+    "pmiRevealInExplorer": {
+      "text": "Show in folder",
+      "tooltip": "Show in folder"
+    },
+    "pmiSave": {
+      "text": "Save",
+      "tooltip": "Save package"
+    },
+    "pmiSaveAs": {
+      "text": "Save as...",
+      "tooltip": "Save package as..."
+    }
+  },
+  "app/SelectBaseVendorForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "frmSelectBaseVendorForm": {
+      "title": "Select Base Component"
+    },
+    "pnlVendorTree": {
+      "title": "Component List"
+    }
+  },
+  "app/SelectVisibilityForm": {
+    "edtName": {
+      "fieldLabel": "Name"
     }
   },
   "filedialog/OpenDialogForm": {
@@ -505,8 +666,7 @@
   },
   "propedit/CommonPropEdit": {
     "PropContainer": {
-      "fieldLabel": "Property Name",
-      "_fieldLabel.comment": "Свойство отображается только в design time"
+      "fieldLabel": "Property Name"
     }
   },
   "welcome/WelcomePage": {

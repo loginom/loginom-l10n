@@ -30,7 +30,7 @@
       "boxLabel": "To run a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes will be activated in the run mode. When the option is disabled, the specified node and all its sub nodes will not be activated for execution in the batch mode."
     },
     "chbTeachBatchMode": {
-      "boxLabel": "To retrain a node and all its sub nodes. <br>During the batch processing, this node and all its sub nodes, for which the model can be rebuilt, will be activated in the training mode. When the option is disabled, the specified node and all its sub nodes will not be activated for training in the batch mode."
+      "boxLabel": "To retrain a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes, for which the model can be rebuilt, will be activated in the training mode. When the option is disabled, the specified node and all its sub nodes will not be activated for training in the batch mode."
     },
     "cntBatchProcModes": {
       "title": "Valid Modes of Batch Processing"
@@ -284,11 +284,90 @@
     "btnActivateAll": {
       "tooltip": "Run all"
     },
+    "btnBatchMode": {
+      "tooltip": "Configure node activation mode..."
+    },
+    "btnCellsAlign": {
+      "tooltip": "Vertical left alignment"
+    },
+    "btnClone": {
+      "tooltip": "Clone node"
+    },
+    "btnComposeGenericModel": {
+      "tooltip": "Collapse nodes into submodel/Expand submodel"
+    },
+    "btnCopy": {
+      "tooltip": "Copy"
+    },
+    "btnCursor": {
+      "tooltip": "Object selection mode"
+    },
+    "btnDeriveModelNode": {
+      "tooltip": "Create derived component ..."
+    },
+    "btnExecutionOrder": {
+      "tooltip": "Customize execution order"
+    },
+    "btnHand": {
+      "tooltip": "Workflow navigation mode"
+    },
+    "btnLayout": {
+      "tooltip": "Automatic ordering of nodes"
+    },
+    "btnOrderNodes": {
+      "tooltip": "Bring selected nodes to front"
+    },
+    "btnOrderNodesBack": {
+      "text": "Send to back",
+      "tooltip": "Send selected nodes to back"
+    },
+    "btnOrderNodesFront": {
+      "text": "Bring to front",
+      "tooltip": "Bring selected nodes to front"
+    },
     "btnPaste": {
       "tooltip": "Paste"
     },
+    "btnRemoveSelected": {
+      "tooltip": "Delete selected ..."
+    },
     "btnRetrain": {
       "tooltip": "Retrain node"
+    },
+    "btnSetup": {
+      "tooltip": "Configure node..."
+    },
+    "btnShowDerivedNodes": {
+      "tooltip": "Show parent nodes for derivatives"
+    },
+    "btnShowOutline": {
+      "tooltip": "Show workflow outline"
+    },
+    "btnShowReferenceNodes": {
+      "tooltip": "Show source nodes for reference nodes"
+    },
+    "btnShowVendors": {
+      "tooltip": "Show/hide component panel"
+    },
+    "btnTable": {
+      "tooltip": "Show as table"
+    },
+    "btnTile": {
+      "tooltip": "Show as tiles"
+    },
+    "btnToggleActivateCurrent": {
+      "tooltip": "Run node"
+    },
+    "btnWorkFlow": {
+      "tooltip": "Show as workflow"
+    },
+    "mniHorizontalAlignBottom": {
+      "text": "Align bottom",
+      "tooltip": "Horizontal bottom alignment"
+    },
+    "mniHorizontalAlignCenter": {
+      "text": "Align center",
+      "tooltip": "Horizontal center alignment"
     }
   },
   "app/PackagesListForm": {
@@ -422,6 +501,12 @@
     },
     "pnlHomePage": {
       "title": "Home"
+    }
+  },
+  "propedit/CommonPropEdit": {
+    "PropContainer": {
+      "fieldLabel": "Property Name",
+      "_fieldLabel.comment": "Свойство отображается только в design time"
     }
   },
   "welcome/WelcomePage": {

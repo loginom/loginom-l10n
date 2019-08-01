@@ -12,7 +12,7 @@
     "VersionWrongServiceResponse": "Wrong service response with the information on the latest Loginom version"
   },
   "app/AppUtils": {
-    "ConfirmRemovingUnit": "Do you really want to delete the modulel?",
+    "ConfirmRemovingUnit": "Do you really want to delete the module?",
     "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently used.",
     "ErrSelectedVendorLocked": "Failed to delete the selected \"{0}\" componet. Some of the derived nodes are currently used.",
     "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the selected \"{0}\" component? The nodes created on its basis will be unavailable.",
@@ -95,7 +95,33 @@
   },
   "app/ModelForm": {
     "ActivateCurrent": "Run Node",
-    "ActivateFrom": "Activate Subsequent Nodes"
+    "ActivateFrom": "Activate Subsequent Nodes",
+    "AddComment": "Add Comment",
+    "AddNewConnectionInheritedNode": "Add Connection Node to Workflow",
+    "AddNewConnectionReferenceNode": "Add Link to Connection to Workflow",
+    "AddNewNode": "Add Node to Workflow",
+    "CantFindGenericModelNode": "Submodel node not Found",
+    "CantFindSourceNode": "Failed to Find Source Node",
+    "CloneNode": "Clone Node",
+    "ComposeExplodeNode": "Collapse Nodes into Submodel/Expand Submodel",
+    "ComposeNode": "Collapse Nodes to Submodel",
+    "ConfigurePort": "Configure Port ...",
+    "ConfirmRemovingDerivedVendor": "Do you really want to delete the derived component?",
+    "CopyNode": "Copy Node",
+    "DeactivateCurrent": "Deactivate Node",
+    "DeleteDerivedVendor": "Delete...",
+    "DeleteLink": "Delete Link...",
+    "DeleteNode": "Delete Node...",
+    "DeletePort": "Delete Port",
+    "DeriveNode": "Create Derived Component ...",
+    "EditPortDisplayName": "Edit Port Caption ...",
+    "EditPortDisplayNameWindowTitle": "Edit",
+    "EditPortFieldLabel": "Port Caption",
+    "ErrNodeNotInitialized": "\"{0}\" node has no component information provider",
+    "Error": "Error",
+    "ErrPortNotCreated": "Failed to Create New Port",
+    "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
+    "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned"
   },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "The relative paths of the base package are used."

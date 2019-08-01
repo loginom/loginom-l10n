@@ -2907,7 +2907,8 @@
   },
   "propedit/CommonPropEdit": {
     "PropContainer": {
-      "fieldLabel": "Property Name"
+      "fieldLabel": "Property Name",
+      "_fieldLabel.comment": "Свойство отображается только в design time"
     }
   },
   "viewers/browse/BrowseFormat": {

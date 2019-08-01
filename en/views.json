@@ -306,7 +306,7 @@
       "tooltip": "Create derived component ..."
     },
     "btnExecutionOrder": {
-      "tooltip": "Customize execution order"
+      "tooltip": "Select customized execution order mode"
     },
     "btnHand": {
       "tooltip": "Workflow navigation mode"
@@ -577,6 +577,22 @@
     },
     "txtRelativeUrl": {
       "fieldLabel": "Relative <i>(for personal use) </i>"
+    }
+  },
+  "ext/colorfield/selector": {
+    "buttonCancel": {
+      "text": "Cancel"
+    },
+    "buttonOk": {
+      "text": "Apply"
+    }
+  },
+  "ext/ModalWindow": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
     }
   },
   "filedialog/OpenDialogForm": {

@@ -100,7 +100,7 @@
     "AddNewConnectionReferenceNode": "Add Reference to Connection into Workflow",
     "AddNewNode": "Add Node to Workflow",
     "CantFindGenericModelNode": "Submodel node not Found",
-    "CantFindSourceNode": "Failed to Find Source Node",
+    "CantFindSourceNode": "Failed to find source node",
     "CloneNode": "Clone Node",
     "ComposeExplodeNode": "Collapse Nodes into Submodel/Expand Submodel",
     "ComposeNode": "Collapse Nodes to Submodel",
@@ -116,9 +116,9 @@
     "EditPortDisplayName": "Edit Port Caption...",
     "EditPortDisplayNameWindowTitle": "Edit",
     "EditPortFieldLabel": "Port Caption",
-    "ErrNodeNotInitialized": "\"{0}\" node has no component information provider",
+    "ErrNodeNotInitialized": "No component vendor specified for \"{0}\" node ",
     "Error": "Error",
-    "ErrPortNotCreated": "Failed to Create New Port",
+    "ErrPortNotCreated": "Failed to create new port",
     "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
     "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned",
     "ExpandGenericModel": "Expand Submodel",
@@ -220,8 +220,7 @@
     "MsgNodeLoading": "The node is temporarily unavailable for editing. Try to repeat this action later.",
     "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
-    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
-    "OperationAborted": "Operation Aborted"
+    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\""
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Base Node",
@@ -245,6 +244,118 @@
     "Help": "Help",
     "Minimize": "Minimize",
     "Restore": "Restore"
+  },
+  "ext/colorfield/Field": {
+    "UndefinedHexFormat": "Incorrect hexadecimal number format"
+  },
+  "ext/colorfield/Pallete": {
+    "EmptyPalleteText": "Standard",
+    "Pallete": "Palette"
+  },
+  "ext/CustomRowBody": {
+    "ToggleRowNotFoundRow": "No row to open/close was found"
+  },
+  "ext/ExportUtils": {
+    "BytesSuffix": "byte",
+    "CantSaveDownLoadedFile": "Failed to save the downloaded file",
+    "ErrUTF8ToUCS2Conversion": "Error converting row from UTF-8 to UCS-2",
+    "ExcelMenuText": "XLS (html)",
+    "ExecutionStarted": "Export has already started",
+    "ExportPrefix": "Export to",
+    "GigaBytesSuffix": "GB",
+    "KiloBytesSuffix": "KB",
+    "MegaBytesSuffix": "MB",
+    "XHRError": "XMLHttpRequest error, status: {0}"
+  },
+  "ext/ExtJS": {
+    "ErrEnumMenuItemNotFound": "Menu item not found",
+    "ErrUnsupportedToggleComponent": "Unsupported toggle component ",
+    "LongProcessingMessage": "Wait, data processing is in progress"
+  },
+  "ext/FieldUtils": {
+    "ErrRadioGroupNotPrepared": "Radio group not prepared",
+    "InvalidBooleanValue": "Invalid Boolean value",
+    "InvalidDateTimeValue": "Invalid datetime value",
+    "InvalidFloatNumber": "Invalid number",
+    "InvalidIntegerNumber": "Invalid integer",
+    "InvalidValueIsNull": "Empty value not allowed",
+    "MinMaxError": "Minimum value cannot exceed maximum value.",
+    "ValidateEditorsError": "Editors error"
+  },
+  "ext/FilterField": {
+    "EmptyTextFilter": "Filter",
+    "EmptyTextSearch": "Search",
+    "FilterAction": "Filter",
+    "LabelOr": "or",
+    "SearchAction": "Search"
+  },
+  "ext/GridMenu": {
+    "AllColumns": "All columns",
+    "FilterApplyText": "Filter",
+    "SearchApplyText": "Find"
+  },
+  "ext/GridUtils": {
+    "AddActionText": "Add",
+    "AddIconToolTip": "Add",
+    "AddIconToolTipHtml": "Add",
+    "DeleteAllPrompt": "Do you really want to delete all?",
+    "DeleteAllPromptActCol": "Do you really want to delete all?",
+    "DeleteAllPromptTitle": "Delete",
+    "DeleteAllPromptTitleActCol": "Delete",
+    "DeleteAllText": "Delete All...",
+    "DeleteText": "Delete",
+    "ErrStoreType": "Ext.data.Store or Ext.data.ChainedStore repository is required for activity controller",
+    "GridViewDragDropNotFound": "Failed to prepare table for dragging rows, gridviewdragdrop plug-in not found",
+    "LinkIsMissing": "Missing",
+    "MoveDownActionText": "Move down",
+    "MoveUpActionText": "Move up"
+  },
+  "ext/LinkGrid": {
+    "btnAutoLinkCaption": "Establish Connections Automatically",
+    "btnClearCaption": "Clear Connections",
+    "btnResortCaption": "Resort Connections",
+    "DragText": "Drag to item to connect with",
+    "ErrGetActionUndefined": "Undefined bg.ext.GetAction function",
+    "ErrMultiSelection": "Multiple row selection must be enabled for both linked tables",
+    "ErrMultiSelectRequired": "It is allowed to link one row with many other rows, it is required to enable multiple selection of rows in linked tables",
+    "ErrNotSupportedBufferedStore": "LinkGrid does not support BufferedStore"
+  },
+  "ext/Lock": {
+    "Loading": "Loading"
+  },
+  "ext/MultiDragDropController": {
+    "BadDDTagConfig": "DDTag must contain at least one row",
+    "DDTagIntersect": "DDTag intersection of different receivers within the same dd zone",
+    "DDZoneIsNotContainer": "dd zone must be container",
+    "DDZoneReciever": "dd zone cannot be receiver",
+    "NestedDDZone": "Nested dd zones are prohibited",
+    "NestedReciever": "Nested receivers are prohibited",
+    "NonContainerRecieverBadConfig": "Receiver may not be container, only if NoAddOnDrop == NoPlaceholder == true"
+  },
+  "ext/TotalLabel": {
+    "HeaderFormat": "# | {0}|",
+    "RowCountSymbol": "#"
+  },
+  "ext/TriStateSortColumn": {
+    "SortClearText": "Clear sort"
+  },
+  "ext/TypedTag": {
+    "EmptyStringDesc": "Empty string"
+  },
+  "ext/UniversalColumn": {
+    "ColumnUndefined": "Column undefined"
+  },
+  "ext/VariantEditor": {
+    "NullText": "<NULL>"
+  },
+  "ext/VendorTreeStore": {
+    "VendorsTitle": "Components"
+  },
+  "ext/VTypes": {
+    "AlphaNumUnicodeIncorrect": "This field must contain only letters, numbers and _.",
+    "ErrInvalidIdentifier": "Entered value is invalid identifier.",
+    "VersionIncorrect": "Incorrect Version Format",
+    "VersionMaskIncorrect": "Incorrect format of version mask."
   },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "The relative paths of the base package are used."

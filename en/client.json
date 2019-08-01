@@ -19,7 +19,6 @@
     "RemoveVendorConfirm": "Do you want to remove the component?"
   },
   "app/ConfigurePublishedPackagesForm": {
-    "DisNamespace": "http://schemas.loginom.com/integration",
     "ErrPathNotSpecified": "Path to the Package File is not Specified"
   },
   "app/ListViewForm": {
@@ -98,7 +97,7 @@
     "ActivateFrom": "Activate Subsequent Nodes",
     "AddComment": "Add Comment",
     "AddNewConnectionInheritedNode": "Add Connection Node to Workflow",
-    "AddNewConnectionReferenceNode": "Add Link to Connection to Workflow",
+    "AddNewConnectionReferenceNode": "Add Reference to Connection into Workflow",
     "AddNewNode": "Add Node to Workflow",
     "CantFindGenericModelNode": "Submodel node not Found",
     "CantFindSourceNode": "Failed to Find Source Node",
@@ -129,8 +128,8 @@
     "HideControlVariablesPorts": "Hide Control Variables Port",
     "LockedIconTooltip": "Node locked during runtime or setup",
     "NodeBatchMode": "Configure Node Activation Mode...",
-    "NodeVisibility": "Configure Access Modifier ...",
-    "NodeVisibilityByDefault": "By default",
+    "NodeVisibility": "Configure visibility...",
+    "NodeVisibilityByDefault": "Default",
     "NodeVisibilityInternal": "Visibility Inside Current Package",
     "NodeVisibilityPrivate": "Visibility Inside Current Workflow",
     "NodeVisibilityProtected": "Visibility Inside Current Workflow and Submodels",
@@ -175,7 +174,77 @@
     "Delete": "Delete",
     "DeleteTooltip": "Delete...",
     "EditDisplayName": "Edit",
-    "EditDisplayNameMsgTitle": "Edit Caption"
+    "EditDisplayNameMsgTitle": "Edit Caption",
+    "EditDisplayNameTooltip": "Edit...",
+    "Links": "Links",
+    "Reports": "Reports",
+    "Update": "Update",
+    "Visibility": "Visibility",
+    "VisibilityHeader": "Visibility",
+    "VisibilityTooltip": "Configure visibility..."
+  },
+  "app/PackagesListForm": {
+    "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
+    "ErrPathNotFound": "The specified path was not found \"{0}\".",
+    "ReadOnlyPackageNamePostfix": "(read-only)"
+  },
+  "app/ReferencesListForm": {
+    "AddLink": "Add",
+    "AddLinkTooltip": "Add...",
+    "Delete": "Delete",
+    "DeleteLinkConfirm": "Do you want to delete reference?",
+    "DeleteTooltip": "Delete...",
+    "HintPath": "Path",
+    "HintPathTooltip": "Package path",
+    "Name": "Name",
+    "Setup": "Configure",
+    "SetupToolstip": "Configure...",
+    "Update": "Update",
+    "VersionMask": "Version"
+  },
+  "app/SelectBaseVendorForm": {
+    "CantChangeVendor": "Failed to Install Component",
+    "ThereIsNodeVendors": "The list of components is empty. Create a derived component from the appropriate node."
+  },
+  "app/ServerConnection": {
+    "ErrSyncSocketPluginNotInstalledOrDisabled": "SyncSocket plugin is not installed or disabled."
+  },
+  "app/ShareForm": {
+    "CopiedHint": "Copied"
+  },
+  "app/TabForm": {
+    "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
+    "ErrPrepareContainer": "When switching to \"{0}. {1}\" an error occurred.\n{2}",
+    "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned",
+    "MsgNodeConfigurationChanged": "Node Configuration Changed",
+    "MsgNodeLoading": "The node is temporarily unavailable for editing. Try to repeat this action later.",
+    "MsgNodeLocked": "\"{0}\" node is locked",
+    "MsgNodeNotExists": "\"{0}\" node does not exist",
+    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
+    "OperationAborted": "Operation Aborted"
+  },
+  "app/VendorsListForm": {
+    "BaseNodeHeader": "Base Node",
+    "BaseNodeTooltip": "Link to base node",
+    "Delete": "Delete",
+    "DeleteTooltip": "Delete...",
+    "DescriptionHeader": "Description",
+    "DisplayNameHeader": "Caption",
+    "GoToBaseNode": "Go to Base Node",
+    "Setup": "Configure",
+    "SetupTooltip": "Configure...",
+    "Update": "Update",
+    "VisibilityHeader": "Visibility "
+  },
+  "app/Version": {
+    "CompanyWebsite": "https://loginom.com",
+    "LegalCopyright": "© Analytical Technologies 2017"
+  },
+  "app/WindowTitle": {
+    "Close": "Close",
+    "Help": "Help",
+    "Minimize": "Minimize",
+    "Restore": "Restore"
   },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "The relative paths of the base package are used."
@@ -351,5 +420,8 @@
     "CardTitle_WebSite": "Company Website",
     "LoginWebSite": "https://loginom.ru",
     "NoNewsLog": "No news downloaded"
+  },
+  "wizards/connection/ConnectionsViewWizard": {
+    "AccessModification": "Configure visibility..."
   }
 }

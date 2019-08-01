@@ -16,7 +16,7 @@
       "fieldLabel": "Package File Path"
     },
     "frmAddPackageLinkForm": {
-      "title": "Add Package Link"
+      "title": "Add Link to Package"
     }
   },
   "app/ConfigureBatchProcModesForm": {
@@ -65,7 +65,7 @@
       "title": "Derived Component Setting"
     },
     "fstVisibility": {
-      "title": "Visibility Area"
+      "title": "Visibility"
     },
     "txtDescription": {
       "fieldLabel": "Description"
@@ -125,7 +125,7 @@
       "text": "Cancel"
     },
     "edtDisplayName": {
-      "fieldLabel": "Name"
+      "fieldLabel": "Caption"
     },
     "frmEditDisplayNameForm": {
       "title": "Edit"
@@ -161,7 +161,7 @@
       "tooltip": "Tile"
     },
     "btnVisibility": {
-      "tooltip": "Configure visibility area..."
+      "tooltip": "Configure visibility..."
     },
     "cntDescription": {
       "title": "Description"
@@ -259,7 +259,7 @@
       "tooltip": "Properties..."
     },
     "btnEditVisibility": {
-      "tooltip": "Configure access modifier..."
+      "tooltip": "Configure visibility..."
     },
     "btnExpand": {
       "tooltip": "Expand"
@@ -537,8 +537,46 @@
     }
   },
   "app/SelectVisibilityForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
     "edtName": {
       "fieldLabel": "Name"
+    },
+    "frmSelectVisibilityForm": {
+      "title": "Select Visibility"
+    },
+    "rdoInternal": {
+      "boxLabel": "Internal (available only within current package)"
+    },
+    "rdoPrivate": {
+      "boxLabel": "Private (available only within current module)"
+    },
+    "rdoPrivateEx": {
+      "boxLabel": "Protected (available only within current module and its submodels)"
+    },
+    "rdoPublic": {
+      "boxLabel": "Public (available in all packages)"
+    },
+    "rdoPublished": {
+      "boxLabel": "Published (available in all packages and as web service)"
+    }
+  },
+  "app/ShareForm": {
+    "btnCopyAbsoluteUrl": {
+      "tooltip": "Copy"
+    },
+    "btnCopyRelativeUrl": {
+      "tooltip": "Copy"
+    },
+    "txtAbsoluteUrl": {
+      "fieldLabel": "Absolute <i>(for shared use) </i>"
+    },
+    "txtRelativeUrl": {
+      "fieldLabel": "Relative <i>(for personal use) </i>"
     }
   },
   "filedialog/OpenDialogForm": {
@@ -632,7 +670,7 @@
       "text": "Name"
     },
     "colReadOnly": {
-      "text": "Read only"
+      "text": "Read-only"
     },
     "colSize": {
       "text": "Size"

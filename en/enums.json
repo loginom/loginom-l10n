@@ -1,1 +1,8 @@
-{ }
+{
+  "Libraries/Model/ModelWorkFlow": {
+    "MemberVisibility": {
+      "$Caption": "Model Item Visibility",
+      "Private": "Private"
+    }
+  }
+}

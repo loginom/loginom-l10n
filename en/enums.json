@@ -1,4 +1,10 @@
 {
+  "Common/CertList/CertList": {
+    "CertStoreCollection": {
+      "CurrentUser": "Current user",
+      "Services": "Service"
+    }
+  },
   "Libraries/Model/ModelWorkFlow": {
     "MemberVisibility": {
       "$Caption": "Model Item Visibility",

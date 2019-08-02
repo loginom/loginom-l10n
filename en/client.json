@@ -1,8 +1,12 @@
 {
+  "admin/ServerSettingsForm": {
+    "DirectorySettings": "Folders",
+    "LogFileName": "File Name"
+  },
   "app/AddPackageLinkForm": {
     "ErrPathNotSpecified": "Package not specified (path to package file).",
     "PackageNotSaved": "Package not saved",
-    "ReadOnlyPackageNamePostfix": "(read-only)"
+    "ReadOnlyPackageNamePostfix": " (read-only)"
   },
   "app/Application": {
     "ErrVersionFailure": "Error when requesting the latest version",
@@ -217,7 +221,7 @@
     "ErrPrepareContainer": "When switching to \"{0}. {1}\" an error occurred.\n{2}",
     "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned",
     "MsgNodeConfigurationChanged": "Node Configuration Changed",
-    "MsgNodeLoading": "The node is temporarily unavailable for editing. Try to repeat this action later.",
+    "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
     "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
     "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\""
@@ -258,7 +262,7 @@
   "ext/ExportUtils": {
     "BytesSuffix": "byte",
     "CantSaveDownLoadedFile": "Failed to save the downloaded file",
-    "ErrUTF8ToUCS2Conversion": "Error converting row from UTF-8 to UCS-2",
+    "ErrUTF8ToUCS2Conversion": "Error converting string from UTF-8 to UCS-2",
     "ExcelMenuText": "XLS (html)",
     "ExecutionStarted": "Export has already started",
     "ExportPrefix": "Export to",
@@ -523,6 +527,110 @@
   "homepage/HomePage": {
     "RemoveFromHistoryFmt": "No \"{0}\" file found. It may have been renamed, moved or deleted. Do you want to remove this package from the list of recent packages?",
     "RemoveFromHistoryTitle": "No file found"
+  },
+  "mxgraph/graph/Graph": {
+    "ImplementThisInModelForm": "This function must be implemented in ModelForm",
+    "LeaveSubmodel": "Leave submodel"
+  },
+  "mxgraph/handler/PortConnectionAbstract": {
+    "CycleLinksForbiden": "Cyclic links are forbidden"
+  },
+  "mxgraph/node/comment/Comment": {
+    "CommentBtn": "Show/Hide Comment"
+  },
+  "mxgraph/node/comment/Note": {
+    "ErrCommentNotSaved": "Failed to save comment",
+    "NodeIsLocked": "Node is locked, it is impossible to change comment",
+    "WrongCommentValue": "Invalid comment value"
+  },
+  "mxgraph/node/controls/ControlsAbstract": {
+    "ActionsBtn": "Other Actions",
+    "ControlStopBtn": "Processing Stop",
+    "DeactivateNodeBtn": "Deactivate Node",
+    "LaunchBtn": "Processing Launch",
+    "SettingBtn": "Setting",
+    "SetupViewersBtn": "Configure Visualizers"
+  },
+  "mxgraph/node/informer/InfoMagicButton": {
+    "IheritanceSourceBtn": "Show Base Node",
+    "ReferenceSourceBtn": "Show Reference Source"
+  },
+  "mxgraph/node/informer/Visualizer": {
+    "Visualizer": "Visualizer"
+  },
+  "mxgraph/node/InheritedNode": {
+    "VendorModified": "Base node has been changed and now it is out of sync with it. It is required to update or reset to the original configuration of derived node"
+  },
+  "mxgraph/node/label/GenericEnterLabel": {
+    "GenericEnterLabel": "Enter"
+  },
+  "mxgraph/node/label/Label": {
+    "ErrLabelNotSaved": "Failed to save caption",
+    "NodeIsLocked": "Node is locked, it is impossible to change caption",
+    "NodeLabel": "Node Caption",
+    "WrongLabelValue": "Invalid caption value"
+  },
+  "mxgraph/node/NodeAbstract": {
+    "StatusError": "Node component error",
+    "StatusNotInitialized": "Node not initialized",
+    "StatusPristine": "Inactive node",
+    "StatusSuccess": "Node successfully run",
+    "StatusWarning": "Warning"
+  },
+  "mxgraph/port/AddPort": {
+    "AddPortDescription": "Drag'n'Drop of outgoing port of another node\n will automatically create the required port if there is a compatible candidate.",
+    "AddPortDisplayName": "Add another port."
+  },
+  "mxgraph/port/Port": {
+    "CONNECTION": "Connection",
+    "DATASOURCE": "Data set",
+    "INHERITANCE": "Inheritance",
+    "MODEL": "Model",
+    "OptionalPortParam": "Optional port",
+    "ORDER": "Execution order",
+    "REFERENCE": "Reference",
+    "RequiredPortParam": "Required port (connection is required to run the node)",
+    "TYPE_UNDEFINED": "Undefined port type",
+    "VARIABLES": "Variables"
+  },
+  "mxgraph/port/PortAbstract": {
+    "PortActive": "Active port, data available",
+    "PortConfigured": "Port configured",
+    "PortInActive": "Port not configured",
+    "PortPartlyConfigured": "Port partially configured"
+  },
+  "navigation/NavigationPanel": {
+    "PathBeforeText": "Path:",
+    "PathEditTooltip": "Click to change",
+    "PathLabel": "Path"
+  },
+  "navigation/NavigationToolbar": {
+    "TextGoBack": "Go Back",
+    "TextGoForward": "Go Forward",
+    "TextGoUp": "Go Up",
+    "TextRefresh": "Update",
+    "TextShare": "Share..."
+  },
+  "progress/ProgressForm": {
+    "ErrorInfoText": "{0}{1}: {2}.",
+    "MsgClearText": "Do you want to clear descriptions of terminated processes?",
+    "MsgProcessingAborted": "Processing aborted",
+    "MsgStoplText": "Do you want to cancel all processes?",
+    "ProcessActionDeleteTip": "Delete process",
+    "ProcessActionStopTip": "Cancel process",
+    "TimeSpanHour": "h"
+  },
+  "propedit/CustomPropEdit": {
+    "ErrDataType": "Property data type is incompatible with component",
+    "ErrInputParameters": "Invalid input parameters",
+    "ErrPropertyFind": "No information found for this interface link",
+    "ErrSelectVariable": "Select variable",
+    "ErrSetValue": "Failed to set value"
+  },
+  "propedit/PropEditUtils": {
+    "ErrControlIsNil": "No editor specified",
+    "ErrPropertyOwnerIsNil": "No interface specified",
+    "ErrPropertyPathIsNil": "No property path specified"
   },
   "welcome/WelcomePage": {
     "CardTitle_Campus": "Campus - a community of analysts",

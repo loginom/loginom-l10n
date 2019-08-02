@@ -1,4 +1,20 @@
 {
+  "admin/ServerSettingsForm": {
+    "btnRefresh": {
+      "text": "Update",
+      "tooltip": "Update"
+    },
+    "btnSave": {
+      "text": "Save",
+      "tooltip": "Save"
+    },
+    "colCategory": {
+      "text": "Category"
+    },
+    "colValue": {
+      "text": "Value"
+    }
+  },
   "app/AddPackageLinkForm": {
     "btnApply": {
       "text": "Add"
@@ -306,7 +322,7 @@
       "tooltip": "Create derived component ..."
     },
     "btnExecutionOrder": {
-      "tooltip": "Select customized execution order mode"
+      "tooltip": "Select customized execution order mode "
     },
     "btnHand": {
       "tooltip": "Workflow navigation mode"
@@ -718,6 +734,59 @@
       "title": "Home"
     }
   },
+  "progress/ProgressForm": {
+    "colActionDelete": {
+      "tooltip": "Delete all terminated processes..."
+    },
+    "colActionStop": {
+      "tooltip": "Stop all processes..."
+    },
+    "colErrorDetails": {
+      "text": "Error"
+    },
+    "colId": {
+      "text": "No"
+    },
+    "colPercent": {
+      "text": "%"
+    },
+    "colProcess": {
+      "text": "Process"
+    },
+    "colProcessTime": {
+      "text": "Process time"
+    },
+    "colProgress": {
+      "text": "Processing"
+    },
+    "colProgressFinish": {
+      "text": "Finish"
+    },
+    "colProgressStart": {
+      "text": "Start"
+    },
+    "mniCancel": {
+      "text": "Cancel"
+    },
+    "mniCancelAllProcesses": {
+      "text": "Cancel all processes..."
+    },
+    "mniClearTerminatedProcesses": {
+      "text": "Delete all terminated processes..."
+    },
+    "mniDelete": {
+      "text": "Remove from list"
+    },
+    "mniShowCompletedProcesses": {
+      "text": "Show terminated processes"
+    },
+    "mniShowErrorDetails": {
+      "text": "Show details"
+    },
+    "mniShowNodeToProcess": {
+      "text": "Show node"
+    }
+  },
   "propedit/CommonPropEdit": {
     "PropContainer": {
       "fieldLabel": "Property Name"
@@ -757,6 +826,248 @@
     },
     "lblNews": {
       "text": "News"
+    }
+  },
+  "wizards/columndefs/ColumnDefsTuning": {
+    "btnRefreshAll": {
+      "text": "Update All"
+    },
+    "btnRefreshData": {
+      "text": "Update Data"
+    },
+    "colPropertiesNames": {
+      "text": "Fields"
+    },
+    "lblViewMode": {
+      "text": "Display"
+    },
+    "rbRAWView": {
+      "boxLabel": "Raw data"
+    },
+    "rbResultView": {
+      "boxLabel": "Result"
+    },
+    "seReadRowCount": {
+      "fieldLabel": "Row count for analysis"
+    }
+  },
+  "wizards/columndefs/ColumnDefsTuningWizard": {
+    "frmColumnDefsTuning": {
+      "title": "Configure Fields"
+    }
+  },
+  "wizards/columns/ColumnsMappingWizard": {
+    "btnAddExtension": {
+      "tooltip": "Add extension..."
+    },
+    "btnAddMappingColumn": {
+      "tooltip": "Add..."
+    },
+    "btnAutoLink": {
+      "text": "Auto link"
+    },
+    "btnAutoSyncThroughColumns": {
+      "tooltip": "Auto sync"
+    },
+    "btnClearLinks": {
+      "text": "Delete all links"
+    },
+    "btnEditMappingColumn": {
+      "tooltip": "Configure..."
+    },
+    "btnMoveMappingColumnDown": {
+      "tooltip": "Move down"
+    },
+    "btnMoveMappingColumnUp": {
+      "tooltip": "Move up"
+    },
+    "btnRemoveMappingColumnSelected": {
+      "tooltip": "Delete selected"
+    },
+    "btnRemoveSelectedLinks": {
+      "tooltip": "Delete selected links"
+    },
+    "btnResortLinks": {
+      "text": "Resort links"
+    },
+    "btnShowInvalidRelations": {
+      "text": "Show lost connections"
+    },
+    "btnSyncThroughColumns": {
+      "tooltip": "Sync"
+    },
+    "btnTargetAutoLink": {
+      "tooltip": "Auto link"
+    },
+    "btnTargetClearLinks": {
+      "tooltip": "Delete all links"
+    },
+    "btnTargetShowInvalidRelations": {
+      "tooltip": "Show lost connections"
+    },
+    "colDataKind": {
+      "text": "Sort of data"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colTargetDelete": {
+      "tooltip": "Delete all..."
+    },
+    "colTargetDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colTargetValue": {
+      "text": "Value"
+    },
+    "colUsageType": {
+      "text": "Designation"
+    },
+    "rbLinks": {
+      "boxLabel": "Links"
+    },
+    "rbTable": {
+      "boxLabel": "Table"
+    },
+    "SourceFilter": {
+      "emptyText": "Filter"
+    },
+    "TargetFilter": {
+      "emptyText": "Filter"
+    }
+  },
+  "wizards/columns/EditColumnDefForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbxDataKind": {
+      "fieldLabel": "Sort of data"
+    },
+    "cbxDataType": {
+      "fieldLabel": "Data type"
+    },
+    "cbxUsageType": {
+      "fieldLabel": "Designation"
+    },
+    "edtDisplayName": {
+      "fieldLabel": "Caption"
+    },
+    "edtName": {
+      "fieldLabel": "Name"
+    },
+    "frmEditColumnDefForm": {
+      "title": "Add Сolumn"
+    }
+  },
+  "wizards/columnsdisposition/ColumnsDispositionWizard": {
+    "btnDown": {
+      "tooltip": "Move down"
+    },
+    "btnUp": {
+      "tooltip": "Move up"
+    },
+    "colDisplayName": {
+      "text": "Available fields"
+    },
+    "colUsedFields": {
+      "text": "Selected fields"
+    },
+    "colUsedFieldsDelete": {
+      "tooltip": "Delete all..."
+    },
+    "colUsedFieldsDelete.0": {
+      "tooltip": "Delete"
+    },
+    "frmColumnsDispositionWizard": {
+      "title": "Disposition"
+    },
+    "mniDeleteSelected": {
+      "tooltip": "Delete selected"
+    },
+    "txtFilterField": {
+      "emptyText": "Filter/Search"
+    }
+  },
+  "wizards/connection/ConnectionConfigWizard": {
+    "fldDescription": {
+      "fieldLabel": "Description"
+    },
+    "fldLabel": {
+      "fieldLabel": "Caption"
+    },
+    "frmConnectionWizard": {
+      "title": "Connection Wizard"
+    }
+  },
+  "wizards/connection/DatabasePathForm": {
+    "btnApply": {
+      "text": "Save"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbxPathServer": {
+      "fieldLabel": "Server"
+    },
+    "txtPathTable": {
+      "fieldLabel": "Database"
+    }
+  },
+  "wizards/connection/DBConnectionParams": {
+    "btnTestConnection": {
+      "text": "Test connection"
+    },
+    "cntParams": {
+      "title": "Parameters"
+    }
+  },
+  "wizards/connection/InterbasePathForm": {
+    "btnApply": {
+      "text": "Save"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbxPathProtocol": {
+      "fieldLabel": "Protocol"
+    },
+    "rbLocal": {
+      "boxLabel": "Local"
+    },
+    "txtPathServer": {
+      "fieldLabel": "Server"
+    },
+    "txtPathTable": {
+      "fieldLabel": "Database"
+    }
+  },
+  "wizards/connection/MySQLConnectionParams": {
+    "cntMySQLConnectionParams": {
+      "title": "MySQL Parameters"
+    }
+  },
+  "wizards/datapartition/BiasedMethodForm": {
+    "colBiasedCount": {
+      "text": "Count"
+    },
+    "colBiasedValue": {
+      "text": "Value"
+    }
+  },
+  "wizards/datapartition/FactorEditDialog": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    }
+  },
+  "wizards/datapartition/SamplingWizard": {
+    "frmSamplingWizard": {
+      "title": "Data Sampling"
     }
   }
 }

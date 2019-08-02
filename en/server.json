@@ -1,1 +1,6 @@
-{ }
+{
+  "Common/WSDL/Processor/WSDLRequestProcessor": {
+    "FailedRequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz \"_failed\"",
+    "RequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz"
+  }
+}

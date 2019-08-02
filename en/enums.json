@@ -7,7 +7,7 @@
   },
   "Libraries/Model/ModelWorkFlow": {
     "MemberVisibility": {
-      "$Caption": "Model Item Visibility",
+      "$Caption": "Workflow Item Visibility",
       "Private": "Private"
     }
   }

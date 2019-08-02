@@ -4380,7 +4380,7 @@
   },
   "wizards/connection/ConnectionConfigWizard": {
     "fldDescription": {
-      "fieldLabel": "Описание"
+      "fieldLabel": "Комментарий"
     },
     "fldLabel": {
       "fieldLabel": "Метка"

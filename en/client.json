@@ -103,11 +103,11 @@
     "AddNewConnectionInheritedNode": "Add Connection Node to Workflow",
     "AddNewConnectionReferenceNode": "Add Reference to Connection into Workflow",
     "AddNewNode": "Add Node to Workflow",
-    "CantFindGenericModelNode": "Submodel node not Found",
+    "CantFindGenericModelNode": "Supernode node not found",
     "CantFindSourceNode": "Failed to find source node",
     "CloneNode": "Clone Node",
-    "ComposeExplodeNode": "Collapse Nodes into Submodel/Expand Submodel",
-    "ComposeNode": "Collapse Nodes to Submodel",
+    "ComposeExplodeNode": "Collapse Nodes into Supernode / Expand Supernode",
+    "ComposeNode": "Collapse Nodes to Supernode",
     "ConfigurePort": "Configure Port ...",
     "ConfirmRemovingDerivedVendor": "Do you really want to delete the derived component?",
     "CopyNode": "Copy Node",
@@ -125,8 +125,8 @@
     "ErrPortNotCreated": "Failed to create new port",
     "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
     "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned",
-    "ExpandGenericModel": "Expand Submodel",
-    "ExplodeNode": "Expand Submodel",
+    "ExpandGenericModel": "Expand Supernode",
+    "ExplodeNode": "Expand Supernode",
     "GoToConnection": "Go to Connection",
     "GoToConnections": "Go to Connections",
     "HideControlVariablesPorts": "Hide Control Variables Port",
@@ -282,7 +282,7 @@
     "InvalidDateTimeValue": "Invalid datetime value",
     "InvalidFloatNumber": "Invalid number",
     "InvalidIntegerNumber": "Invalid integer",
-    "InvalidValueIsNull": "Empty value not allowed",
+    "InvalidValueIsNull": "Invalid value is null",
     "MinMaxError": "Minimum value cannot exceed maximum value.",
     "ValidateEditorsError": "Editors error"
   },
@@ -315,10 +315,10 @@
     "MoveUpActionText": "Move up"
   },
   "ext/LinkGrid": {
-    "btnAutoLinkCaption": "Establish Connections Automatically",
-    "btnClearCaption": "Clear Connections",
-    "btnResortCaption": "Resort Connections",
-    "DragText": "Drag to item to connect with",
+    "btnAutoLinkCaption": "Establish Links Automatically",
+    "btnClearCaption": "Clear Links",
+    "btnResortCaption": "Resort Links",
+    "DragText": "Drag to item to link with",
     "ErrGetActionUndefined": "Undefined bg.ext.GetAction function",
     "ErrMultiSelection": "Multiple row selection must be enabled for both linked tables",
     "ErrMultiSelectRequired": "It is allowed to link one row with many other rows, it is required to enable multiple selection of rows in linked tables",
@@ -530,7 +530,7 @@
   },
   "mxgraph/graph/Graph": {
     "ImplementThisInModelForm": "This function must be implemented in ModelForm",
-    "LeaveSubmodel": "Leave submodel"
+    "LeaveSubmodel": "Leave supernode"
   },
   "mxgraph/handler/PortConnectionAbstract": {
     "CycleLinksForbiden": "Cyclic links are forbidden"
@@ -612,7 +612,7 @@
     "TextShare": "Share..."
   },
   "progress/ProgressForm": {
-    "ErrorInfoText": "{0}{1}: {2}.",
+    "ErrorInfoText": "{0} {1}: {2}.",
     "MsgClearText": "Do you want to clear descriptions of terminated processes?",
     "MsgProcessingAborted": "Processing aborted",
     "MsgStoplText": "Do you want to cancel all processes?",

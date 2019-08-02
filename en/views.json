@@ -11,6 +11,9 @@
     "colCategory": {
       "text": "Category"
     },
+    "colName": {
+      "text": "Parameter"
+    },
     "colValue": {
       "text": "Value"
     }
@@ -864,16 +867,22 @@
       "tooltip": "Add..."
     },
     "btnAutoLink": {
-      "text": "Auto link"
+      "text": "Auto Link"
     },
     "btnAutoSyncThroughColumns": {
       "tooltip": "Auto sync"
     },
     "btnClearLinks": {
-      "text": "Delete all links"
+      "text": "Delete All Links"
+    },
+    "btnEditAllowedValues": {
+      "tooltip": "Configure list of allowed variable values..."
     },
     "btnEditMappingColumn": {
       "tooltip": "Configure..."
+    },
+    "btnGetSourceColumns": {
+      "tooltip": "Extract list"
     },
     "btnMoveMappingColumnDown": {
       "tooltip": "Move down"
@@ -888,10 +897,10 @@
       "tooltip": "Delete selected links"
     },
     "btnResortLinks": {
-      "text": "Resort links"
+      "text": "Resort Links"
     },
     "btnShowInvalidRelations": {
-      "text": "Show lost connections"
+      "text": "Show Lost Connections"
     },
     "btnSyncThroughColumns": {
       "tooltip": "Sync"
@@ -908,6 +917,9 @@
     "colDataKind": {
       "text": "Sort of data"
     },
+    "colDefaultUsageType": {
+      "tooltip": "Default usage type"
+    },
     "colName": {
       "text": "Name"
     },
@@ -921,7 +933,10 @@
       "text": "Value"
     },
     "colUsageType": {
-      "text": "Designation"
+      "text": "Usage type"
+    },
+    "frmColumnsMapping": {
+      "title": "Adjustment of Columns Compliance"
     },
     "rbLinks": {
       "boxLabel": "Links"
@@ -950,7 +965,7 @@
       "fieldLabel": "Data type"
     },
     "cbxUsageType": {
-      "fieldLabel": "Designation"
+      "fieldLabel": "Usage type"
     },
     "edtDisplayName": {
       "fieldLabel": "Caption"
@@ -965,6 +980,9 @@
   "wizards/columnsdisposition/ColumnsDispositionWizard": {
     "btnDown": {
       "tooltip": "Move down"
+    },
+    "btnMove": {
+      "tooltip": "Move field to measurement area"
     },
     "btnUp": {
       "tooltip": "Move up"
@@ -1012,13 +1030,16 @@
     "cbxPathServer": {
       "fieldLabel": "Server"
     },
+    "frmDatabasePathForm": {
+      "title": "Connection String"
+    },
     "txtPathTable": {
       "fieldLabel": "Database"
     }
   },
   "wizards/connection/DBConnectionParams": {
     "btnTestConnection": {
-      "text": "Test connection"
+      "text": "Test Connection"
     },
     "cntParams": {
       "title": "Parameters"
@@ -1034,8 +1055,14 @@
     "cbxPathProtocol": {
       "fieldLabel": "Protocol"
     },
+    "frmInterbasePathForm": {
+      "title": "Firebird, Interbase Connection String"
+    },
     "rbLocal": {
       "boxLabel": "Local"
+    },
+    "rbRemote": {
+      "boxLabel": "Remote"
     },
     "txtPathServer": {
       "fieldLabel": "Server"
@@ -1049,12 +1076,31 @@
       "title": "MySQL Parameters"
     }
   },
+  "wizards/connection/SQLiteConnectionParams": {
+    "cntSQLiteConnectionParams": {
+      "title": "SQLite Parameters"
+    }
+  },
   "wizards/datapartition/BiasedMethodForm": {
+    "btnBiasedEdit": {
+      "text": "Edit Factor",
+      "tooltip": "Edit factor in selected records"
+    },
+    "btnGetUniqueValues": {
+      "text": "Get Values",
+      "tooltip": "Get Unique Values"
+    },
     "colBiasedCount": {
       "text": "Count"
     },
+    "colBiasedFactor": {
+      "text": "Factor"
+    },
     "colBiasedValue": {
       "text": "Value"
+    },
+    "colDisplayName": {
+      "text": "Used field"
     }
   },
   "wizards/datapartition/FactorEditDialog": {
@@ -1063,11 +1109,376 @@
     },
     "btnCancel": {
       "text": "Cancel"
+    },
+    "fldFactor": {
+      "fieldLabel": "Factor"
+    },
+    "frmFactorEditDialog": {
+      "title": "Assign Value to Group of Factors"
     }
   },
   "wizards/datapartition/SamplingWizard": {
+    "btnActivationPort": {
+      "text": "Activate Login"
+    },
+    "cntMethodType": {
+      "title": "Method Parameters"
+    },
     "frmSamplingWizard": {
       "title": "Data Sampling"
+    },
+    "lblEmptyMethod": {
+      "text": "No custom settings"
+    },
+    "txtActivationPortStatus": {
+      "fieldLabel": "Login status"
+    },
+    "txtTotalRecords": {
+      "fieldLabel": "Total records"
+    }
+  },
+  "wizards/datapartition/SequenceMethodForm": {
+    "btnGroupPositionDown": {
+      "text": "Position Down",
+      "tooltip": "Position down"
+    },
+    "btnGroupPositionReset": {
+      "text": "Restore Default",
+      "tooltip": "Restore default order"
+    },
+    "btnGroupPositionUp": {
+      "text": "Position Up",
+      "tooltip": "Position up"
+    },
+    "colSequenceAbs": {
+      "text": "Absolute (rows)"
+    },
+    "colSequenceName": {
+      "text": "Set"
+    },
+    "colSequencePosition": {
+      "text": "No"
+    },
+    "colSequenceRel": {
+      "text": "Relative (percent)"
+    }
+  },
+  "wizards/datapartition/SizeGridForm": {
+    "colAbsoluteSize": {
+      "text": "Absolute (rows)"
+    },
+    "colName": {
+      "text": "Set"
+    },
+    "colRelativeSize": {
+      "text": "Relative (percent)"
+    },
+    "colSizeType": {
+      "text": "Method"
+    }
+  },
+  "wizards/datapartition/StratifiedMethodForm": {
+    "colDisplayName": {
+      "text": "Strata defining fields"
+    }
+  },
+  "wizards/datapartition/ValidationSettings": {
+    "cntValidationSettings": {
+      "title": "Validation Settings"
+    },
+    "lblNoParams": {
+      "text": "No custom settings"
+    }
+  },
+  "wizards/done/DoneWizard": {
+    "btnDisplayNameDefault": {
+      "text": "Default"
+    },
+    "btnNameDefault": {
+      "text": "Default"
+    },
+    "edtDisplayName": {
+      "fieldLabel": "Caption"
+    },
+    "edtName": {
+      "fieldLabel": "Name"
+    },
+    "frmDonePage": {
+      "title": "Node Description"
+    },
+    "txtDesc": {
+      "fieldLabel": "Comment"
+    }
+  },
+  "wizards/genericmodelcomponent/GenericModelComponentWizard": {
+    "btnMoveDown": {
+      "text": "Move Down",
+      "tooltip": "Move down"
+    },
+    "btnMoveUp": {
+      "text": "Move Up",
+      "tooltip": "Move up"
+    },
+    "colActionDelete": {
+      "tooltip": "Delete all..."
+    },
+    "colActionDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colDisplayName": {
+      "text": "Caption"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colType": {
+      "text": "Type"
+    },
+    "frmGenericModelComponent": {
+      "title": "Submodel"
+    }
+  },
+  "wizards/normalization/ColumnsEditForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbxNormType": {
+      "fieldLabel": "Normalizer"
+    },
+    "chbIrremovable": {
+      "fieldLabel": "Irremovable"
+    },
+    "edImportance": {
+      "fieldLabel": "Multiplier"
+    },
+    "frmColumnsEditForm": {
+      "title": "Group Editing"
+    }
+  },
+  "wizards/normalization/ControlRangeSettings": {
+    "btnTakeSourceRange": {
+      "tooltip": "Take source range"
+    },
+    "cbxControlRangeType": {
+      "fieldLabel": "Control method"
+    },
+    "chbUserRange": {
+      "fieldLabel": "Manual setting"
+    },
+    "cntControlRangeSettings": {
+      "title": "Range Control"
+    },
+    "cntFactRange": {
+      "title": "Controlled Range"
+    },
+    "cntRange": {
+      "title": "Source Range"
+    },
+    "edtFactRangeMax": {
+      "fieldLabel": "Maximum"
+    },
+    "edtFactRangeMin": {
+      "fieldLabel": "Minimum"
+    },
+    "edtRangeMax": {
+      "fieldLabel": "Maximum"
+    },
+    "edtRangeMin": {
+      "fieldLabel": "Minimum"
+    }
+  },
+  "wizards/normalization/DiscreteNormParamsForm": {
+    "btnMoveDown": {
+      "text": "Move Down",
+      "tooltip": "Move down"
+    },
+    "btnMoveUp": {
+      "text": "Move Up",
+      "tooltip": "Move up"
+    },
+    "btnSortAsc": {
+      "text": "Sort Ascending",
+      "tooltip": "Sort ascending"
+    },
+    "btnSortDesc": {
+      "text": "Sort Descending",
+      "tooltip": "Sort descending"
+    },
+    "cbxReferenceType": {
+      "fieldLabel": "Reference value"
+    },
+    "colRefCount": {
+      "text": "Count"
+    },
+    "colUniqueValue": {
+      "text": "Value"
+    },
+    "lblCountLimit": {
+      "text": "Reference value selection is not available for many unique values"
+    }
+  },
+  "wizards/normalization/MinMaxNormParamsForm": {
+    "edtMax": {
+      "fieldLabel": "Maximum"
+    },
+    "edtMin": {
+      "fieldLabel": "Minimum"
+    }
+  },
+  "wizards/normalization/NormSettingsForm": {
+    "fldNormParams": {
+      "title": "Normalization Parameters"
+    },
+    "lblEmptyNormParams": {
+      "text": "No settings for this type of normalization"
+    },
+    "lblMultiNormParams": {
+      "text": "Unavailable configuration for multiple columns"
+    },
+    "lblNoneNormParams": {
+      "text": "No normalizer selected"
+    }
+  },
+  "wizards/normalization/NormTuneWizard": {
+    "btnActivationPort": {
+      "text": "Activate Login"
+    },
+    "btnEdit": {
+      "text": "Edit",
+      "tooltip": "Edit..."
+    },
+    "btnResetConflicted": {
+      "tooltip": "Reset conflicting normalizers"
+    },
+    "colDisplayName": {
+      "text": "Field"
+    },
+    "colImportance": {
+      "text": "Multiplier"
+    },
+    "colIrremovable": {
+      "text": "Irremovable"
+    },
+    "colNormType": {
+      "text": "Normalizer"
+    },
+    "frmNormTuneWizard": {
+      "title": "Normalization Settings"
+    },
+    "txtActivationPortStatus": {
+      "fieldLabel": "Login status"
+    },
+    "txtColumnsFilter": {
+      "emptyText": "Filter"
+    }
+  },
+  "wizards/normalization/QuotientNormParamsForm": {
+    "rbManually": {
+      "boxLabel": "Set value"
+    },
+    "rbStat": {
+      "boxLabel": "Stat. indicator"
+    },
+    "rgQuotient": {
+      "fieldLabel": "Divider"
+    }
+  },
+  "wizards/previewpanel/PreviewPanel": {
+    "btnActivateAndView": {
+      "text": "Activate and View"
+    },
+    "lblEmpty": {
+      "text": "No data to view"
+    }
+  },
+  "wizards/referencenode/ReferenceNodeComponentWizard": {
+    "colDescription": {
+      "text": "Comment"
+    },
+    "colText": {
+      "text": "Nodes"
+    },
+    "frmReferenceNode": {
+      "title": "Reference Node"
+    }
+  },
+  "wizards/regression/RegressionWizard": {
+    "cntFactorSelectionParams": {
+      "title": "Factor Selection Settings"
+    },
+    "cntPriorityParams": {
+      "title": "Priorities Settings"
+    },
+    "cntRegressionParams": {
+      "title": "Method Settings"
+    },
+    "cntRegressionStatisticsParams": {
+      "title": "Statistics Calculation Settings"
+    },
+    "cntRegularizationParams": {
+      "title": "Regularization Settings"
+    }
+  },
+  "wizards/variables/EditVariableForm": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbxDataType": {
+      "fieldLabel": "Data type"
+    },
+    "cbxNullValue": {
+      "boxLabel": "Missing value",
+      "fieldLabel": "Value"
+    },
+    "cbxUsageType": {
+      "fieldLabel": "Usage type"
+    },
+    "edtDisplayName": {
+      "fieldLabel": "Caption"
+    },
+    "edtName": {
+      "fieldLabel": "Name"
+    },
+    "frmEditVariableForm": {
+      "title": "Edit Variable"
+    }
+  },
+  "wizards/WizardForm": {
+    "btnCancel": {
+      "tooltip": "Close"
+    },
+    "btnError": {
+      "text": "Show Details..."
+    },
+    "btnExecute": {
+      "text": "Run"
+    },
+    "btnNext": {
+      "text": "Next"
+    },
+    "btnPrev": {
+      "text": "Previous"
+    },
+    "btnResize": {
+      "tooltip": "Expand"
+    },
+    "btnSave": {
+      "text": "Save"
+    },
+    "btnView": {
+      "text": "View"
+    },
+    "cardWizardPanel": {
+      "title": "Stage"
+    },
+    "pnlWizardForm": {
+      "title": "Wizard"
     }
   }
 }

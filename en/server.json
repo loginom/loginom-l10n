@@ -9,8 +9,11 @@
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantLoadBackup": "Failed to restore binning"
   },
+  "components/partition/PartitionVendor": {
+    "VendorCaption": "Partition into Sets"
+  },
   "imports/native/ImportNative": {
-    "ErrSystemUnsupported": "Bitness not supported"
+    "ErrSystemUnsupported": "Decimal not supported"
   },
   "Libraries/bgrtl/FileStorageEngine": {
     "ErrFileStorageNotConnected": "File storage not connected",

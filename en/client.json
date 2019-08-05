@@ -633,6 +633,62 @@
     "ErrPropertyOwnerIsNil": "No interface specified",
     "ErrPropertyPathIsNil": "No property path specified"
   },
+  "viewers/cube/CubeDragDropController": {
+    "Collapse": "Collapse",
+    "DeleteItem": "Delete",
+    "Descending": "Descending",
+    "EmptyFilteredDimTooltip": "{0}• No values",
+    "Expand": "Expand",
+    "MultipleFilteredDimTooltip": "{0}[{1}of {2}]",
+    "Original": "In original order",
+    "SingleFilteredDimTooltip": "{0} • {1} [{2} of {3}]"
+  },
+  "viewers/cube/DimensionsFilterPanel": {
+    "UncheckAllTooltip": "Deselect all"
+  },
+  "viewers/cube/PivotDataSource": {
+    "CaseDisplayName": "Fact",
+    "FunctionDisplayName": "Aggregation",
+    "No": "No",
+    "NoDimensionValueDisplayName": "Value",
+    "SubFunctionDisplayName": "Display",
+    "Yes": "Yes"
+  },
+  "viewers/roc/ROCView": {
+    "CutoffPPV": "PPV",
+    "CutoffPPV_Tooltip": "Accuracy of positive forecast",
+    "CutoffTNR": "TNR (specificity)",
+    "CutoffTPR": "TPR (sensitivity)",
+    "CutoffValue": "Value",
+    "FPRShort": "FPR",
+    "GeneralRatings": "Classifier ratings",
+    "Gini": "Gini coefficient",
+    "KS": "KS",
+    "KS_Tooltip": "Kolmogorov-Smirnov criterion statistics",
+    "PPVShort": "PPV",
+    "TPRShort": "TPR"
+  },
+  "viewers/statistics/StatView": {
+    "CountOfStrings": "Data strings count:",
+    "ErrBounds": "Minimum more than maximum",
+    "LeftOutlier": "Minimum outlier",
+    "LeftWhisker": "Minimum observed",
+    "LowerQuartile": "Lower quartile",
+    "Median": "Median",
+    "NotAvailable": "Not available",
+    "NotDefined": "Not defined",
+    "RightOutlier": "Maximum outlier",
+    "RightWhisker": "Maximum observed",
+    "SliderTipFmt": "{0}: {1}",
+    "SliderTipMax": "max.",
+    "SliderTipMin": "min",
+    "TuneColumnsLabelTitle": "Field Caption",
+    "TuneColumnsTitle": "Configure Fields",
+    "TuneStatisticsLabelTitle": "Statistics Parameter",
+    "TuneStatisticsTitle": "Configure Parameters",
+    "UniqueValuesCount": "Values count",
+    "UpperQuartile": "Upper quartile"
+  },
   "welcome/WelcomePage": {
     "CardTitle_Campus": "Campus - a community of analysts",
     "CardTitle_FeedBack": "Feedback",
@@ -656,11 +712,17 @@
     "MsgAddedColumnCanNotSelected": "Column has been added but it is not selected because it does not match the filter",
     "RemoveAllMappingColumnDefsConfirm": "Do you really want to delete all output columns?"
   },
+  "wizards/columns/ColumnsMappingWizard": {
+    "RemoveInvalidRelationsConfirm": "Connections with non-existent objects were found. Do you want to delete all lost connections and continue?"
+  },
   "wizards/columns/DataSetOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"
   },
   "wizards/columns/DataSourceOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"
+  },
+  "wizards/columns/DerivedDataSourceMappingEngineOutputPortWizard": {
+    "ProduceTypeDisplayName": "Creation type of derived columns"
   },
   "wizards/columns/DerivedDataSourceOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"
@@ -670,6 +732,7 @@
     "AddColumnDefTitle": "Add Сolumn",
     "DefaultUsageType": "Default usage type",
     "ErrColumnEmptyName": "Column name cannot be empty",
+    "ErrColumnInvalidIdentifier": "Entered \"{0}\" column name is not valid identifier",
     "ErrColumnNameAlreadyExists": "\"{0}\" column already exists",
     "GroupEditingTitle": "Group Editing",
     "ModifyBtnText": "Apply",
@@ -681,11 +744,15 @@
   "wizards/columns/TuneDataSourceInputPortWizard": {
     "frmColumnsMappingTitle": "Configure Input Columns"
   },
+  "wizards/columns/TuneDataSourceMappingWizard": {
+    "RemoveRequiredMappingColumnDefConfirm": "\"{0}\" column is used by handler. Do you really want to delete it?"
+  },
   "wizards/columnsdisposition/ColumnsDispositionWizard": {
     "AvailableField": "Available",
     "MoveButtonTooltip": "Move to {0}"
   },
   "wizards/connection/ConnectionConfigWizard": {
+    "TestConnectionSuccess": "Successful connection test",
     "TestConnectionTitle": "Test Connection",
     "WizardTitle": "Connection Wizard"
   },
@@ -695,6 +762,7 @@
   },
   "wizards/connection/ConnectionsViewWizard": {
     "AccessModification": "Configure visibility...",
+    "BtnShowVendorsEdit": "Show/Hide Connection Class Tree",
     "BtnTextTest": "Test",
     "BtnTooltipConnect": "Activate connection",
     "BtnTooltipDelete": "Delete connection...",
@@ -713,8 +781,22 @@
     "InsertConnection": "Add connection",
     "LabelConnectionPath": "Connection path",
     "LabelTitle": "Caption",
+    "MultioperationError": "Multioperation error",
+    "NoConnections": "Available extended connections",
+    "TestConnectionsError": "Multiple connections test error",
+    "TestConnectionSuccess": "Successful connection test",
     "VendorTreeCaption": "Connections",
     "VendorTreeConnections": "Data sources"
+  },
+  "wizards/datapartition/BiasedMethodForm": {
+    "UniqueValuesLimitError": "{0} field cannot be used for biased sampling due to excess  of the unique values number (over {1})"
+  },
+  "wizards/datapartition/PartitionWizard": {
+    "PartitionTitle": "Partition into Sets"
+  },
+  "wizards/datapartition/RandomUniformMethodForm": {
+    "GroupAbsoluteSize": "Group size in rows",
+    "GroupRelativeSize": "Group size in percent"
   },
   "wizards/datapartition/SamplingWizard": {
     "UnknownValue": "Unknown value"
@@ -724,6 +806,9 @@
     "UnusedSetName": "Unused"
   },
   "wizards/datapartition/SizeGridForm": {
+    "SizeTypePercentTooltip": "Switch to size in rows",
+    "SizeTypeRowTooltip": "Switch to size in percent",
+    "SummaryAbsOverflowErr": "The total row count exceeds the input set row count.",
     "SummaryRelOverflowErr": "Total percentage must not exceed 100%",
     "SummarySetName": "Total:",
     "UnknownValue": "Unknown value"
@@ -736,8 +821,10 @@
     "DefaultSocketCaption": "Socket",
     "DeleteAllConfirm": "Do you want to delete all inputs/outputs?",
     "EmptyName": "<Unique0>",
+    "ErrCompareIndex": "The server amount of sockets does not comply with the client amount of sockets.",
     "ErrGetAvalibleSocketDefFmt": "Failed to get description of socket for {0} vendor.",
     "ErrGetAvalibleSocketDefs": "Failed to get description of sockets",
+    "ErrMoveDerivedSocket": "It is prohibited to move derived socket.",
     "SocketLabelFmt": "{0}{1}",
     "SocketTypeInputDesc": "Inputs",
     "SocketTypeOutputDesc": "Outputs"
@@ -749,6 +836,17 @@
     "ExceptionTitle": "Error",
     "LocalConnection": "Local",
     "NotConnectedText": "Not connected"
+  },
+  "wizards/InputFileConnectionWizard": {
+    "MsgFileAlreadyExist": "{0} file exists. Do you want to write over?",
+    "MsgNotConnected": "Connection is not active. Do you want o activate it now?"
+  },
+  "wizards/normalization/ControlRangeSettings": {
+    "ValidateEditorsErr": "Error in value range control settings"
+  },
+  "wizards/normalization/DiscreteNormParamsForm": {
+    "UserTunedOrder": "Normalizer synchronization error due to explicit order of values",
+    "UserTunedRefId": "Normalizer synchronization error due to explicitly defined reference category"
   },
   "wizards/normalization/NormParamsForm": {
     "ValidateEditorsErr": "Error in settings of normalizer parameters"

@@ -3,5 +3,10 @@
     "HTTPClientCertificateList": {
       "Store": "Certificate store"
     }
+  },
+  "components/partition": {
+    "PartitionEngine": {
+      "Partition": "Partition into Sets"
+    }
   }
 }

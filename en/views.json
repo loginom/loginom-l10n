@@ -804,13 +804,13 @@
       "tooltip": "Calculate histogram"
     },
     "btnDecDecimalPlacesCount": {
-      "tooltip": "Reduce bitness"
+      "tooltip": "Decrease decimal"
     },
     "btnEditMethodSettings": {
       "text": "Edit"
     },
     "btnIncDecimalPlacesCount": {
-      "tooltip": "Increase bitness"
+      "tooltip": "Increase Decimal"
     },
     "btnLabelTemplateGetHelp": {
       "text": "Sample"
@@ -2266,7 +2266,7 @@
       "fieldLabel": "File storage"
     },
     "edtDDFSystem": {
-      "fieldLabel": "Bitness"
+      "fieldLabel": "Decimal"
     },
     "frmExportSettings": {
       "title": "Export to Loginom Data File"
@@ -2748,7 +2748,7 @@
       "fieldLabel": "Compression"
     },
     "edtDDFSystem": {
-      "fieldLabel": "Bitness"
+      "fieldLabel": "Decimal"
     },
     "frmImportFromFile": {
       "title": "Import from Loginom Data File"

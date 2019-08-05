@@ -1,8 +1,53 @@
 {
   "admin/ServerSettingsForm": {
+    "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection Wizard",
     "DirectorySettings": "Folders",
-    "LogFileName": "File Name"
+    "LogFileMaxIndex": "Number of backup files",
+    "LogFileMaxSize": "Maximum file size",
+    "LogFileName": "File Name",
+    "LogFileRewrite": "Rewrite file",
+    "LoggerSettings": "Logging parameters",
+    "MinLogLevel": "Logging level",
+    "PackagePoolSize": "Package pool size",
+    "PingPeriod": "Connection check period (s)",
+    "Port": "TCP port",
+    "ServerSettings": "Server parameters",
+    "SessionBackupDirectory": "Session backups",
+    "SSLCertificateFile": "Certificate file name",
+    "SSLPrivateKeyFile": "Private key file name",
+    "StopTimeout": "Server stop timeout (s)",
+    "UserStorageDirectory": "Personal data of user",
+    "WSPort": "Websocket port",
+    "WSSPort": "WebSocket SSL/TLS port"
+  },
+  "admin/SharedDirectoriesForm": {
+    "DeleteUserConfirm": "Do you want to delete folder from file system?"
+  },
+  "admin/SharedDirectoryForm": {
+    "AddBtnText": "Add",
+    "EditSharedDirectory": "Configure shared folder",
+    "NewSharedDirectory": "Add shared folder",
+    "SaveBtnText": "Save"
+  },
+  "admin/UserForm": {
+    "AddBtnText": "Add",
+    "EditName": "Edit user",
+    "NewUser": "New user",
+    "SaveBtnText": "Save"
+  },
+  "admin/UserListForm": {
+    "Admin": "Administration",
+    "Blocked": "Blocked",
+    "DeleteUserConfirm": "Do you want to delete user folder from file system?",
+    "Designer": "Workflows design",
+    "DisplayName": "Full caption",
+    "GlobalFileStorage": "Access to all files",
+    "Interactive": "Interactive mode",
+    "Name": "Login",
+    "Service": "Service mode",
+    "Update": "Update",
+    "Viewer": "View reports"
   },
   "app/AddPackageLinkForm": {
     "ErrPathNotSpecified": "Package not specified (path to package file).",
@@ -225,7 +270,8 @@
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
     "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
-    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\""
+    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
+    "OperationAborted": "Operation not supported"
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Base Node",
@@ -241,7 +287,7 @@
     "VisibilityHeader": "Visibility "
   },
   "app/Version": {
-    "CompanyWebsite": "https://loginom.com",
+    "CompanyWebsite": "https://loginom.ru",
     "LegalCopyright": "© Analytical Technologies 2017"
   },
   "app/WindowTitle": {
@@ -249,6 +295,229 @@
     "Help": "Help",
     "Minimize": "Minimize",
     "Restore": "Restore"
+  },
+  "codemirror/CodeMirrorTernController": {
+    "ErrWrongFuncDescFormat": "Invalid Calculator function description format \"{0}\"",
+    "RE_AZaz": "[А-Яа-яЁё]"
+  },
+  "components/binning/LabelTemplateToolTip": {
+    "ContextMenuInsertAllFmt": "Insert template: {0}",
+    "ContextMenuInsertFormateFmt": "Insert format: {0}",
+    "ContextMenuInsertKeyFmt": "Insert key: {0}",
+    "Desc": "Bin number",
+    "DescAVE": "Arithmetic average of range boundaries",
+    "DescCP": "Closing \")\" or \"]\" bracket",
+    "DescFD": "Caption of quantized field (%FD[3-7] - from the 3rd to the 7th character inclusively)",
+    "DescFN": "Name of quantized field (%FN[5] - the first 5 name characters)",
+    "DescMAX": "Bin maximum",
+    "DescMIN": "Bin minimum",
+    "DescOP": "Opening \"(\" or \"[\" bracket",
+    "SamplesDesc_r3": "round to 50"
+  },
+  "components/binning/MethodSettingFrame": {
+    "Loading": "Wait",
+    "SDBinCountTemplate": "Bin number - {0}"
+  },
+  "components/binning/MethodSettingsWizard": {
+    "AllExcluded": "<  x <",
+    "AllInclusive": "<= x <=",
+    "CalculatingBinsProcess": "Calculate bins",
+    "ContextMenuCalculateAllBins": "Calculate all bins",
+    "ContextMenuCalculateCurrentBins": "Calculate current",
+    "ContextMenuEdit": "Edit",
+    "DescriptionA1Dat": "Auto 1",
+    "DescriptionA1Num": "Auto 1",
+    "DescriptionA2Dat": "Auto 2",
+    "DescriptionA2Num": "Auto 2",
+    "DescriptionA3Dat": "Auto 3",
+    "DescriptionA3Num": "Auto 3",
+    "DescriptionAve": "Arithmetic average",
+    "DescriptionExampleDat": "Caption example",
+    "DescriptionExampleNum": "Caption example",
+    "DescriptionMax": "Maximum",
+    "DescriptionMin": "Minimum",
+    "DescriptionN": "Number",
+    "DescriptionTestNum": "Test",
+    "InputPortsNotActived": "Do you want to activate input ports?",
+    "LabelTamplateA1Dat": "%MIN[from d.m.yy h:mm]%MAX[ to d.m.yy h:mm]",
+    "LabelTamplateA1Num": "%MIN[from #,0.####]%MAX[ to #,0.####]",
+    "LabelTamplateA2Dat": "%OP%MIN..%MAX%CP",
+    "LabelTamplateA2Num": "%OP%MIN[4]..%MAX[4]%CP",
+    "LabelTamplateA3Dat": "%FD[5] %OP%MIN..%MAX%CP",
+    "LabelTamplateA3Num": "%FD[5] %OP%MIN[4]..%MAX[4]%CP",
+    "LabelTamplateAve": "%AVE",
+    "LabelTamplateExampleDat": "%FN (%FD[5]) %OP%MIN[d-mmm-yy h:mm]..%MAX[d-mmm-yy h:mm]%CP",
+    "LabelTamplateExampleNum": "%FN (%FD[5]) %OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, average - #.####]",
+    "LabelTamplateMax": "%MAX",
+    "LabelTamplateMin": "%MIN",
+    "LabelTamplateN": "%N",
+    "LabelTamplateTestNum": "%OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, среднее - #.####]",
+    "LowerInclusive": "<= x <",
+    "MsgBoxTitle": "Attention",
+    "ProcessInfo": "Processing has been already started for selected columns.",
+    "SelectMethodType": "Select method",
+    "UpperInclusive": "<  x <="
+  },
+  "components/calcdata/CalcDataFields": {
+    "Fields": "Fields",
+    "Vars": "Variables"
+  },
+  "components/calcdata/CalcExpressionsAbstract": {
+    "AddFirstExpressionToEdit": "Add expression to edit",
+    "DeleteAllConfirm": "Do you really want to delete all expressions?",
+    "DeleteAllMsgTitle": "Delete All Expressions"
+  },
+  "components/calcdata/CalcFieldsAbstract": {
+    "SearchDef": "Filter"
+  },
+  "components/calcdata/CalcFunctions": {
+    "All": "All",
+    "Categories": "Categories",
+    "Parameters": "Parameters",
+    "RE_AZaz": "[А-Яа-яЁё]",
+    "SearchDef": "Filter"
+  },
+  "components/calcdata/CodeMirrorController": {
+    "ExprPlaceholder": "Enter expression code"
+  },
+  "components/calcvariables/CalcVariablesFields": {
+    "Vars": "Variables"
+  },
+  "components/coarseclasses/CalculateInformationValues": {
+    "ChartTitle": "Dependence IV on Number of Classes",
+    "XAxisTitle": "Number of Classes",
+    "YAxisTitle": "Inf. Index"
+  },
+  "components/coarseclasses/ClassesChartWrapper": {
+    "FineClassTooltip": "Value",
+    "FineClassXaxisTitle": "Fine Class"
+  },
+  "components/coarseclasses/CoarseClassesEditor": {
+    "AcceptCurrentBinning": "Do you want to accept current binning?",
+    "CalculateInformationValuesApplyText": "Calculate",
+    "CalculateInformationValuesTitle": "Calculate",
+    "ChangeColumnPurposeToInput": "'{0}' field is blocked due to usage of external or locked binning. Do you want to unlock and continue?",
+    "CurrentBinningNotSaved": "Current binning contains unsaved changes",
+    "LockAll": "Lock all",
+    "LockSelected": "Lock selected"
+  },
+  "components/coarseclasses/CoarseClassesViewer": {
+    "HideSideBar": "Hide side bar",
+    "ShowSideBar": "Show side bar",
+    "Total": "Total"
+  },
+  "components/coarseclasses/CoarseClassesWizard": {
+    "InputPortsNotActived": "Do you want to activate input ports?"
+  },
+  "components/columnflipping/ColumnFlippingWizard": {
+    "UsageInfo": "Info",
+    "UsageTransposition": "Transposed"
+  },
+  "components/coluniondata/ColUnionDataWizard": {
+    "NoDataSourceTooltip": "No selected data source"
+  },
+  "components/condition/ConditionParamsWizard": {
+    "DebugAll": "All branches"
+  },
+  "components/crosstab/CrossTabWizard": {
+    "CaseDesc": "Facts",
+    "CrossTabTitle": "Cross Table",
+    "DimColDesc": "Columns",
+    "DimRowDesc": "Rows",
+    "MinUniqueValuesCountTip": "Minimum number of unique values",
+    "NullGroupColumn": "Null",
+    "OtherGroupColumn": "Other",
+    "SpaceSeparator": "Space",
+    "UniqueValuesGroupTip": "Group of unique values:"
+  },
+  "components/datarecovery/DataRecoveryWizard": {
+    "NotUsedAction": "Not selected"
+  },
+  "components/datatovariables/DataToVariablesWizard": {
+    "DataToVariablesTitle": "Table into Variables",
+    "GroupDataFactor": "Variables"
+  },
+  "components/datereform/DateReformWizard": {
+    "CommonGroup": "Common",
+    "IsoGroup": "ISO"
+  },
+  "components/em/EMClusterizationWizard": {
+    "frmClusterizationTitle": "EM Clustering"
+  },
+  "components/filterdata/FilterDataWizard": {
+    "Activation": "Login activation",
+    "ActivationCanceled": "Canceled by user",
+    "FilterApply": "Apply filter",
+    "FilterPreview": "Filter"
+  },
+  "components/groupdata/GroupDataWizard": {
+    "FactorsEditTooltip": "Edit",
+    "FactorTooltip": "Aggregation methods for {0}:",
+    "GroupDataDimension": "Group",
+    "GroupDataDimensionTooltipName": "Group",
+    "GroupDataTitle": "Grouping"
+  },
+  "components/javascript/JavaScriptCodeMirrorController": {
+    "CodePlaceholder": "Enter code"
+  },
+  "components/logregression/LogRegressionWizard": {
+    "GetValueList": "Get list"
+  },
+  "components/loop/LoopMappingWizard": {
+    "TargetTitle": "Input Variables"
+  },
+  "components/loop/LoopParamsWizard": {
+    "AutodetectMaxThreadCount": "Auto detect"
+  },
+  "components/neuralnet/NeuralNetParamsWizard": {
+    "DecayAvg": "Average",
+    "DecayNone": "None",
+    "DecayStrong": "Strong",
+    "DecayVeryStrong": "Very strong",
+    "DecayVeryWeak": "Very weak",
+    "DecayWeak": "Weak"
+  },
+  "components/reformcolumns/EditReformColumnDefForm": {
+    "CachingMethod": "Caching"
+  },
+  "components/reformcolumns/ReformColumnsWizard": {
+    "ColumnCachingMethodText": "Caching",
+    "ColumnDisplayNameText": "Caption",
+    "ReformColumnsWizardTitle": "Configure fields parameters"
+  },
+  "components/replace/ReplaceVariablesWizard": {
+    "VariablesTitle": "Variables"
+  },
+  "components/replace/ReplaceWizard": {
+    "DeleteAllPrompt": "Do you really want to remove all replacement options?",
+    "ErrFileNotChoosed": "No file selected",
+    "SourceFieldInfo": "Info",
+    "SourceFieldInput": "Value",
+    "SourceFieldOutput": "Replace",
+    "SourceFieldUnused": "Not used"
+  },
+  "components/sorting/SortingColumnCollection": {
+    "CaseSensitiveActionDesc": "Case sensitive",
+    "ColumnIsUsed": "Field already used",
+    "DeleteAllConfirm": "Do you want to cancel all fields sorting?",
+    "DeleteTitle": "Cancel Sort",
+    "HintForSortDirectionAsc": "Ascending",
+    "HintForSortDirectionDesc": "Descending",
+    "MultiDeleteConfirm": "Do you want to cancel sorting for selected fields?"
+  },
+  "components/wsdlclient/WSDLRequestWizard": {
+    "MessagePrefix": "Message:",
+    "PartPrefix": "Part:"
+  },
+  "connections/restservice/ConnectionWizard": {
+    "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
+    "TestConnectionTitle": "Test Connection"
+  },
+  "connections/webservice/ConnectionWizard": {
+    "TestConnectionTitle": "Test Connection"
+  },
+  "exports/dbexport/DBExportMappingWizard": {
+    "colSourceNameTitle": "Source columns"
   },
   "ext/colorfield/Field": {
     "UndefinedHexFormat": "Incorrect hexadecimal number format"
@@ -529,6 +798,21 @@
     "RemoveFromHistoryFmt": "No \"{0}\" file found. It may have been renamed, moved or deleted. Do you want to remove this package from the list of recent packages?",
     "RemoveFromHistoryTitle": "No file found"
   },
+  "lib/Message": {
+    "ErrorTitle": "Error",
+    "GoToNotifySource": "Go to",
+    "InfoTitle": "Info",
+    "WarningTitle": "Warning"
+  },
+  "lib/StrUtils": {
+    "FalseText": "false"
+  },
+  "listview/ListView": {
+    "Delete": "Delete",
+    "Description": "Comment",
+    "Group": "Group",
+    "Title": "Caption"
+  },
   "mxgraph/graph/Graph": {
     "ImplementThisInModelForm": "This function must be implemented in ModelForm",
     "LeaveSubmodel": "Leave supernode"
@@ -612,6 +896,15 @@
     "TextRefresh": "Update",
     "TextShare": "Share..."
   },
+  "packages/deductor-theme/const/Palletes": {
+    "Composite": "Composite",
+    "Elegant": "Elegant",
+    "Quiet": "Quiet",
+    "QuietContrast": "Quiet contrast",
+    "Spectrum": "Spectrum",
+    "Warm": "Warm",
+    "WarmContrast": "Warm contrast"
+  },
   "progress/ProgressForm": {
     "ErrorInfoText": "{0} {1}: {2}.",
     "MsgClearText": "Do you want to clear descriptions of terminated processes?",
@@ -632,6 +925,87 @@
     "ErrControlIsNil": "No editor specified",
     "ErrPropertyOwnerIsNil": "No interface specified",
     "ErrPropertyPathIsNil": "No property path specified"
+  },
+  "ts/CustomClient": {
+    "ErrConnectToServerEx": "Failed to connect to server.\nError: {0}.",
+    "ErrSocketNotPrepared": "Socket is not prepared."
+  },
+  "viewers/browse/BrowseView": {
+    "RecNoField": "No",
+    "RowNoField": "#",
+    "RunFilterButtonText": "Filter",
+    "RunSortButtonText": "Sort",
+    "SearchInfoTitle": "Search",
+    "SearchNoFound": "No matches found",
+    "SetSelectedPage": "Selected page",
+    "SortingButtonText": "Sort",
+    "SortingTitle": "Sort"
+  },
+  "viewers/browse/FastPreviewForm": {
+    "NodeIsNotActive": "Node not activated"
+  },
+  "viewers/chart/ChartEditor": {
+    "ExportTo": "Export to"
+  },
+  "viewers/chart/ChartUtils": {
+    "ApplyDefaultColor": "Apply default colour",
+    "DefaultColor": "Default",
+    "From": "from",
+    "Index": "Index"
+  },
+  "viewers/chart/Color": {
+    "AliceBlue": "Alice blue",
+    "AntiqueWhite": "Antique white",
+    "Crimson": "Crimson",
+    "DarkBlue": "Dark blue",
+    "DarkCyan": "Dark cyan",
+    "DarkGoldenRod": "Dark golden rod",
+    "DarkGray": "Dark gray",
+    "DarkGreen": "Dark green",
+    "DarkKhaki": "Dark khaki",
+    "DarkMagenta": "Dark magenta",
+    "DarkOliveGreen": "Dark olive green",
+    "DarkOrange": "Dark orange",
+    "DarkOrchid": "Dark orchid",
+    "DarkRed": "Dark red",
+    "DarkSalmon": "Dark salmon",
+    "DarkSeaGreen": "Dark sea green",
+    "DarkSlateBlue": "Dark slate blue",
+    "DarkSlateGray": "Dark slate gray",
+    "DarkTurquoise": "Dark turquoise",
+    "DarkViolet": "Dark violet",
+    "DeepPink": "Deep pink",
+    "DeepSkyBlue": "Deep sky blue",
+    "DimGray": "Dim gray",
+    "DodgerBlue": "Dodger blue",
+    "FireBrick": "Fire brick",
+    "FloralWhite": "Floral white",
+    "ForestGreen": "Forest green",
+    "Fuchsia": "Fuchsia",
+    "Gainsboro": "Gainsboro",
+    "GhostWhite": "Ghost white",
+    "Gold": "Gold",
+    "GoldenRod": "Golden rod",
+    "Gray": "Gray",
+    "Green": "Green",
+    "GreenYellow": "Green yellow",
+    "HoneyDew": "Honey dew",
+    "HotPink": "Hot pink",
+    "IndianRed": "Indian red",
+    "Indigo": "Indigo",
+    "Ivory": "Ivory",
+    "Khaki": "Khaki",
+    "Lavender": "Lavender",
+    "LavenderBlush": "Lavender blush",
+    "LawnGreen": "Lawn green",
+    "LemonChiffon": "Lemon chiffon",
+    "LightBlue": "Light blue",
+    "LightCoral": "Light coral",
+    "LightCyan": "Light cyan",
+    "LightGray": "Light gray",
+    "LightGreen": "Light green",
+    "LightPink": "Light pink",
+    "LightSalmon": "Light salmon"
   },
   "viewers/cube/CubeDragDropController": {
     "Collapse": "Collapse",

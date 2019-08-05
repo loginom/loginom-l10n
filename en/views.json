@@ -42,7 +42,7 @@
       "text": "Path"
     },
     "colUserDisplayName": {
-      "text": "Full name"
+      "text": "Full caption"
     },
     "colUserName": {
       "text": "User"
@@ -62,7 +62,7 @@
       "text": "Cancel"
     },
     "colDisplayName": {
-      "text": "Full Caption"
+      "text": "Full caption"
     },
     "colName": {
       "text": "User"

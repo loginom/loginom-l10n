@@ -4,6 +4,16 @@
       "Store": "Certificate store"
     }
   },
+  "components/condition": {
+    "ConditionItem": {
+      "CaseSensitive": "Case sensitive"
+    }
+  },
+  "components/filterdata": {
+    "FilterColumnItem": {
+      "CaseSensitive": "Учитывать регистр"
+    }
+  },
   "components/partition": {
     "PartitionEngine": {
       "Partition": "Partition into Sets"

@@ -271,7 +271,7 @@
     "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
     "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
-    "OperationAborted": "Operation not supported"
+    "OperationAborted": "Action not supported"
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Base Node",
@@ -444,6 +444,50 @@
   "components/em/EMClusterizationWizard": {
     "frmClusterizationTitle": "EM Clustering"
   },
+  "components/enrichdata/EnrichDataWizard": {
+    "NotAssignedColumn": "Not selected"
+  },
+  "components/execcmd/ExecCmdCodeMirrorController": {
+    "CmdPlaceholder": "Enter command text"
+  },
+  "components/execnode/ExecNodeComponentWizard": {
+    "ExecNodeWizardTitle": "Node Execution"
+  },
+  "components/filterdata/FilterColumnItem": {
+    "bdtCurrent": "current date",
+    "bdtData": "available data",
+    "EndingWith": "ending with",
+    "Equal": "=",
+    "fld0and5to20DayPeriodName": "days",
+    "fld0and5to20MonthPeriodName": "months",
+    "fld0and5to20QuarterPeriodName": "quarters",
+    "fld0and5to20WeekPeriodName": "weeks",
+    "fld0and5to20WrongPeriodName": "periods",
+    "fld0and5to20YearPeriodName": "years",
+    "fld2to4DayPeriodName": "day",
+    "fld2to4MonthPeriodName": "month",
+    "fld2to4QuarterPeriodName": "quarter",
+    "fld2to4WeekPeriodName": "week",
+    "fld2to4WrongPeriodName": "period",
+    "fld2to4YearPeriodName": "year",
+    "fldAfter": "from",
+    "fldBefore": "to",
+    "fldDayFirstPostfix": "first",
+    "fldDayLastPostfix": "last",
+    "fldManyFirstPostfix": "first",
+    "fldManyLastPostfix": "last",
+    "fldMonthFirstPostfix": "first",
+    "fldMonthLastPostfix": "last",
+    "fldNegative": "not",
+    "NotEqual": "<>",
+    "NotIn": "not listed",
+    "NotLike": "does not contain",
+    "NotSelectedValieItem": "No values",
+    "NotStartingWith": "not starting with",
+    "SetLabel": "List",
+    "StartingWith": "starting with",
+    "ValueListIsEmpty": "No values"
+  },
   "components/filterdata/FilterDataWizard": {
     "Activation": "Login activation",
     "ActivationCanceled": "Canceled by user",
@@ -453,17 +497,27 @@
   "components/groupdata/GroupDataWizard": {
     "FactorsEditTooltip": "Edit",
     "FactorTooltip": "Aggregation methods for {0}:",
+    "FactorTooltipError": "No aggregation methods specified",
     "GroupDataDimension": "Group",
     "GroupDataDimensionTooltipName": "Group",
+    "GroupDataFactor": "Parameters",
     "GroupDataTitle": "Grouping"
   },
   "components/javascript/JavaScriptCodeMirrorController": {
     "CodePlaceholder": "Enter code"
   },
+  "components/javascript/JavaScriptCodeWizard": {
+    "ConsoleMessagesMissed": "missed"
+  },
+  "components/joindata/JoinDataWizard": {
+    "MainColumns": "Main dataset columns"
+  },
   "components/logregression/LogRegressionWizard": {
     "GetValueList": "Get list"
   },
   "components/loop/LoopMappingWizard": {
+    "LoopMappingWizardTitle": "Mapping Variables",
+    "SourceTitle": "Output Variables",
     "TargetTitle": "Input Variables"
   },
   "components/loop/LoopParamsWizard": {
@@ -491,6 +545,9 @@
   "components/replace/ReplaceWizard": {
     "DeleteAllPrompt": "Do you really want to remove all replacement options?",
     "ErrFileNotChoosed": "No file selected",
+    "ReplaceGroupCommon": "Exact match",
+    "ReplaceGroupRegex": "Regular expressions",
+    "ReplaceItemTypeError": "Value does not comply with used type",
     "SourceFieldInfo": "Info",
     "SourceFieldInput": "Value",
     "SourceFieldOutput": "Replace",
@@ -505,6 +562,9 @@
     "HintForSortDirectionDesc": "Descending",
     "MultiDeleteConfirm": "Do you want to cancel sorting for selected fields?"
   },
+  "components/wsdlclient/RequestMethodWizard": {
+    "SoapOperationExtensionInfoFmt": "Request style: {0}; action: {1}"
+  },
   "components/wsdlclient/WSDLRequestWizard": {
     "MessagePrefix": "Message:",
     "PartPrefix": "Part:"
@@ -516,8 +576,17 @@
   "connections/webservice/ConnectionWizard": {
     "TestConnectionTitle": "Test Connection"
   },
+  "exports/dbexport/DBCreateTableDialog": {
+    "ErrTableName": "Invalid table name",
+    "InvalidFieldNameChar": "Invalid character in field name"
+  },
   "exports/dbexport/DBExportMappingWizard": {
-    "colSourceNameTitle": "Source columns"
+    "colDisplayNameTitle": "Database table fields",
+    "colSourceNameTitle": "Source columns",
+    "ErrAbsentDataSourceSourceDetails": "List of absent source columns used previously:",
+    "ErrAbsentFieldsDetails": "List of absent table columns used previously:",
+    "ErrUpdateFieldsDetails": "List of table columns in which changes occurred:",
+    "KeyColumnText": "Key"
   },
   "ext/colorfield/Field": {
     "UndefinedHexFormat": "Incorrect hexadecimal number format"
@@ -794,9 +863,201 @@
     "CancelAllLoadersBtn": "Cancel All",
     "ErrCancelAllLoaders": "Operation Cancel Error"
   },
+  "filtersview/FilterItem": {
+    "bdtCurrent": "current date",
+    "bdtData": "available data",
+    "EndingWith": "ending with",
+    "Equal": "=",
+    "fld0and5to20DayPeriodName": "days",
+    "fld0and5to20MonthPeriodName": "months",
+    "fld0and5to20QuarterPeriodName": "quarters",
+    "fld0and5to20WeekPeriodName": "weeks",
+    "fld0and5to20WrongPeriodName": "periods",
+    "fld0and5to20YearPeriodName": "years",
+    "fld2to4DayPeriodName": "day",
+    "fld2to4MonthPeriodName": "month",
+    "fld2to4QuarterPeriodName": "quarter",
+    "fld2to4WeekPeriodName": "week",
+    "fld2to4WrongPeriodName": "period",
+    "fld2to4YearPeriodName": "year",
+    "fldAfter": "from",
+    "fldBefore": "to",
+    "fldDayFirstPostfix": "first",
+    "fldDayLastPostfix": "last",
+    "fldManyFirstPostfix": "first",
+    "fldManyLastPostfix": "last",
+    "fldMonthFirstPostfix": "first",
+    "fldMonthLastPostfix": "last",
+    "fldNegative": "not",
+    "fldOneDayPeriodName": "day",
+    "fldOneMonthPeriodName": "month",
+    "fldOneQuarterPeriodName": "quarter",
+    "fldOneWeekPeriodName": "week",
+    "fldOneWrongPeriodName": "period",
+    "fldOneYearPeriodName": "year",
+    "fldOtherFirstPostfix": "first",
+    "fldOtherLastPostfix": "last",
+    "fldQuarterFirstPostfix": "first",
+    "fldQuarterLastPostfix": "last",
+    "fldWeekFirstPostfix": "first",
+    "fldWeekLastPostfix": "last",
+    "fldYearFirstPostfix": "first",
+    "fldYearLastPostfix": "last",
+    "GetValueList": "Get list",
+    "Greater": ">",
+    "GreaterOrEqual": ">=",
+    "In": "on the list",
+    "InvalidFilter": "Not configured",
+    "IsFalse": "FALSE",
+    "IsNotNull": "Not null",
+    "IsNull": "null",
+    "IsTrue": "TRUE",
+    "Less": "<",
+    "LessOrEqual": "<=",
+    "Like": "contains",
+    "NotEndingWith": "not ending with",
+    "NotEqual": "<>",
+    "NotIn": "not listed",
+    "NotLike": "does not contain",
+    "NotStartingWith": "not starting with",
+    "SetLabel": "List",
+    "StartingWith": "starting with",
+    "ValueListIsEmpty": "No values"
+  },
+  "filtersview/FiltersView": {
+    "DeleteAllPrompt": "Do you really want to delete all conditions from list?",
+    "DeleteAllTitle": "Delete all conditions"
+  },
+  "highcharts/Localization": {
+    "Loading": "Loading..."
+  },
   "homepage/HomePage": {
     "RemoveFromHistoryFmt": "No \"{0}\" file found. It may have been renamed, moved or deleted. Do you want to remove this package from the list of recent packages?",
     "RemoveFromHistoryTitle": "No file found"
+  },
+  "imports/dbimport/DBImportTable": {
+    "FieldsFilter": "Fields filter"
+  },
+  "imports/dbimport/DBImportWizard": {
+    "FieldsNotSelected": "First select fields to preview",
+    "NoConnection": "No connection",
+    "NotConnectedError": "No connection with database"
+  },
+  "imports/dbimport/DBObjects": {
+    "DBObjectsFilterField": "Filter tables",
+    "DBObjTypeNone": "Other",
+    "DBObjTypeSchema": "Schemas",
+    "DBObjTypeTable": "Tables",
+    "DBObjTypeView": "Views"
+  },
+  "imports/dwh/DateValuesDialog": {
+    "ValidateEditorsErr": "Error in filter parameters configuration"
+  },
+  "imports/dwh/DWImportWizard": {
+    "CompareTipFmt": "[{0}..{1}]",
+    "ConfirmDeleteAllFields": "Do you really want to delete all selected columns?",
+    "GetValueList": "Get list",
+    "MetaDataNodeTypeAttr": "Attribute",
+    "MetaDataNodeTypeCube": "Cube",
+    "MetaDataNodeTypeDim": "Dimension",
+    "MetaDataNodeTypeFact": "Fact",
+    "MetaDataNodeTypeItem": "Item",
+    "MetaDataNodeTypeLevel": "Level",
+    "MetaDataNodeTypeProc": "Process"
+  },
+  "imports/dwh/DWObjectWizard": {
+    "ErrNoSelectedObject": "Specify data Warehouse object",
+    "NoConnection": "No connection"
+  },
+  "imports/onec8query/CodeMirrorOneCv8Controller": {
+    "QueryPlaceholder": "Enter request text"
+  },
+  "imports/onec8query/OneC8QueryImportWizard": {
+    "NoConnection": "No connection",
+    "NotConnectedError": "No connection with database"
+  },
+  "imports/textfile/DateSeparatorStore": {
+    "BackSlash": "Backslash (\\)",
+    "Default": "Default",
+    "Point": "Point (.)",
+    "Slash": "Slash (/)"
+  },
+  "imports/textfile/DecimalSeparatorStore": {
+    "Comma": "Comma (,)",
+    "Default": "Default",
+    "Point": "Point (.)"
+  },
+  "imports/textfile/DelimiterStore": {
+    "Comma": "Comma",
+    "Point": "Point",
+    "Semicolon": "Semicolon",
+    "Space": "Space",
+    "TabCharacter": "Tab character"
+  },
+  "imports/textfile/EncodingStore": {
+    "Encoding1": "Cyrillic (1251)",
+    "Encoding2": "West European (1252)"
+  },
+  "imports/textfile/ImportTextFileParamsWizard": {
+    "FormatTypeChangedInfo": "When saving, data format was changed to separator format"
+  },
+  "imports/textfile/TextQualifierStore": {
+    "BackQuote": "Back quote (`)",
+    "Default": "Default",
+    "DoubleQuote": "Double quote (\")",
+    "Quote": "Single quote (')"
+  },
+  "imports/textfile/TimeSeparatorStore": {
+    "Colon": "Colon (:)",
+    "Default": "Default",
+    "Point": "Point (.)"
+  },
+  "imports/textfile/ValueFalseStore": {
+    "False1": "False",
+    "False2": "False",
+    "False3": "No"
+  },
+  "imports/textfile/ValueTrueStore": {
+    "True1": "True",
+    "True2": "True",
+    "True3": "Yes"
+  },
+  "imports/xml/CommonImport": {
+    "ExpandLimitWarning": "Not all nodes were opened because the number of opened nodes exceeded the allowable limit."
+  },
+  "imports/xml/ImportXmlFieldsWizard": {
+    "EmptyNamespace": "Namespace not specified"
+  },
+  "imports/xml/ImportXmlPreviewWizard": {
+    "ErrNoFile": "Nonexistent XML file name specified"
+  },
+  "lib/Classes": {
+    "ErrInvalidIndex": "{0} index value of {1} parameter is out of range [{2}; {3}]"
+  },
+  "lib/DateUtils": {
+    "bdtCurrent": "current date",
+    "bdtData": "available data",
+    "FirstLastDateFmt": "{0} {1} from {2}",
+    "fld0and5to20DayPeriodName": "days",
+    "fld0and5to20MonthPeriodName": "months",
+    "fld0and5to20QuarterPeriodName": "quarters",
+    "fld0and5to20WeekPeriodName": "weeks",
+    "fld0and5to20YearPeriodName": "years",
+    "fld2to4DayPeriodName": "day",
+    "fld2to4MonthPeriodName": "month",
+    "fld2to4QuarterPeriodName": "quarter",
+    "fld2to4WeekPeriodName": "week",
+    "fld2to4YearPeriodName": "year",
+    "fldOneDayPeriodName": "day",
+    "fldOneMonthPeriodName": "month",
+    "fldOneQuarterPeriodName": "quarter",
+    "fldOneWeekPeriodName": "week",
+    "fldOneYearPeriodName": "year"
+  },
+  "lib/Exceptions": {
+    "Error": "Error occurred while the program was running.\n{0}",
+    "ErrWindowFull": "Error occurred while the program was running.\nError: \"{0}\"\nUrl: \"{1}\"\nString: {2} Symbol: {3}",
+    "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2}  Symbol: {3}"
   },
   "lib/Message": {
     "ErrorTitle": "Error",
@@ -805,7 +1066,8 @@
     "WarningTitle": "Warning"
   },
   "lib/StrUtils": {
-    "FalseText": "false"
+    "FalseText": "false",
+    "TrueText": "true"
   },
   "listview/ListView": {
     "Delete": "Delete",
@@ -930,7 +1192,30 @@
     "ErrConnectToServerEx": "Failed to connect to server.\nError: {0}.",
     "ErrSocketNotPrepared": "Socket is not prepared."
   },
+  "ts/Exceptions": {
+    "MessageFmt": "MESSAGE: {0}",
+    "OperationAborted": "Operation aborted",
+    "SenderNameFmt": "SENDER: {0}"
+  },
   "viewers/browse/BrowseView": {
+    "ExportFileTitle": "Table",
+    "ExportFormFileTitle": "Form",
+    "ExportFormToastTitle": "Export from Form",
+    "ExportToastTitle": "Export from Table",
+    "FilterButtonText": "Filter",
+    "FilterTitle": "Filter",
+    "FirstTableRowAction": "First row",
+    "FormatButtonText": "Format",
+    "FormatTitle": "Format",
+    "GoToLineApplyActionText": "Go to",
+    "GoToLineTitle": "Go to Line",
+    "LastTableRowAction": "Last row",
+    "NameRecNoField": "RecNo",
+    "NameRowNoField": "RowNo",
+    "PageDescFmt": "[{0} .. {1}]",
+    "PageInfoFmt": "Page {0} of {1}",
+    "PageInfoNotActive": "Not activated",
+    "PageInfoViewDataInvalid": "Data not ready",
     "RecNoField": "No",
     "RowNoField": "#",
     "RunFilterButtonText": "Filter",
@@ -942,7 +1227,8 @@
     "SortingTitle": "Sort"
   },
   "viewers/browse/FastPreviewForm": {
-    "NodeIsNotActive": "Node not activated"
+    "NodeIsNotActive": "Node not activated",
+    "WindowTitleEnd": "Quick View"
   },
   "viewers/chart/ChartEditor": {
     "ExportTo": "Export to"
@@ -956,6 +1242,19 @@
   "viewers/chart/Color": {
     "AliceBlue": "Alice blue",
     "AntiqueWhite": "Antique white",
+    "Aqua": "Aqua",
+    "Aquamarine": "Aquamarine",
+    "Azure": "Azure",
+    "Beige": "Beige",
+    "Bisque": "Bisque",
+    "Black": "Black",
+    "BlanchedAlmond": "Blanched almond",
+    "Blue": "Blue",
+    "BlueViolet": "Blue violet",
+    "Brown": "Brown",
+    "BurlyWood": "Burly wood",
+    "CadetBlue": "Cadet blue",
+    "Chartreuse": "Chartreuse",
     "Crimson": "Crimson",
     "DarkBlue": "Dark blue",
     "DarkCyan": "Dark cyan",
@@ -1005,9 +1304,120 @@
     "LightGray": "Light gray",
     "LightGreen": "Light green",
     "LightPink": "Light pink",
-    "LightSalmon": "Light salmon"
+    "LightSalmon": "Light salmon",
+    "OrangeRed": "Orange red",
+    "Orchid": "Orchid",
+    "PaleGoldenRod": "Pale golden rod",
+    "PaleGreen": "Pale green",
+    "PaleTurquoise": "Pale turquoise",
+    "PaleVioletRed": "Pale violet red",
+    "PapayaWhip": "Papaya whip",
+    "PeachPuff": "Peach puff",
+    "Peru": "Peru",
+    "Pink": "Pink",
+    "Plum": "Plum",
+    "PowderBlue": "Powder blue",
+    "Purple": "Purple",
+    "Red": "Red",
+    "RosyBrown": "Rosy brown",
+    "RoyalBlue": "Royal blue",
+    "SaddleBrown": "Saddle brown",
+    "Salmon": "Salmon",
+    "SandyBrown": "Sandy brown",
+    "SeaGreen": "Sea green",
+    "SeaShell": "Sea shell",
+    "Sienna": "Sienna",
+    "Silver": "Silver",
+    "SkyBlue": "Sky blue",
+    "SlateBlue": "Slate blue",
+    "SlateGray": "Slate gray",
+    "Snow": "Snow",
+    "SpringGreen": "Spring green",
+    "SteelBlue": "Steel blue",
+    "Tan": "Tan",
+    "Teal": "Teal",
+    "Thistle": "Thistle",
+    "Tomato": "Tomato",
+    "Transparent": "Transparent",
+    "Turquoise": "Turquoise",
+    "Violet": "Violet",
+    "Wheat": "Wheat",
+    "White": "White",
+    "WhiteSmoke": "White smoke",
+    "Yellow": "Yellow",
+    "YellowGreen": "Yellow green"
+  },
+  "viewers/chart/Config": {
+    "NoData": "Drag field"
+  },
+  "viewers/chart/ModalWindow": {
+    "Apply": "Apply",
+    "Cancel": "Cancel",
+    "CancelChangesTitle": "Do you want to cancel changes?"
+  },
+  "viewers/chart/SeriesCreator": {
+    "AddBtnText": "Add"
+  },
+  "viewers/chart/SeriesEditor": {
+    "EmptyComboBox": "Add field",
+    "FieldWasRemoved": "{0} field has been deleted or has invalid data type",
+    "OnBackGround": "Send to back",
+    "OnTop": "Bring to front",
+    "Options": "Settings: {0}..."
+  },
+  "viewers/common/ViewerCard": {
+    "AddVisualizer": "Add visualizer"
+  },
+  "viewers/common/ViewsForm": {
+    "CantAddGenericInputViewToReport": "Addition of supernode input node visualizers to Reports is not supported",
+    "CreateGroupTitle": "Create Group",
+    "DeleteAllViews": "Do you want to delete all visualizers?",
+    "DeleteSelected": "Do you want to delete selected?",
+    "DeleteView": "Do you want to delete \"{0}\"?",
+    "Enter": "Enter",
+    "ErrAddingViewToReports": "Error adding visualizer to reports",
+    "GroupAlreadyExists": "Group with the same name already exists",
+    "NeedNotEmptyGroupName": "It is required to set non-empty group name",
+    "SetNewGroupName": "New group name:",
+    "ShowInReports": "Show in Reports",
+    "TitleUndefined": "visualizer",
+    "TuneViews": "Configure visualizers",
+    "VendorNotValid": "Visualizer incompatible with port selected",
+    "VendorTreeViewers": "Visualizers",
+    "VendorUndefined": "No visualizer selected on visualizer panel",
+    "ViewAlreadyInReports": "'{0}' visualizer has already been added",
+    "ViewsAddedToReports": "Added",
+    "WithoutGroup": "Without group"
+  },
+  "viewers/cube/CasesAddPanel": {
+    "ErrEmptyCubeFunctions": "Aggregation function was not selected"
+  },
+  "viewers/cube/CasesCalcGrid": {
+    "CaseNodeCaption": "Facts",
+    "DimNodeCaption": "Dimensions",
+    "SearchDef": "Filter",
+    "TotalNodeCaption": "Total"
+  },
+  "viewers/cube/CasesCalcPanel": {
+    "ErrCaseAlreadyExist": "\"{0}\" fact already exists",
+    "ErrDimAlreadyExist": "\"{0}\" dimension already exists",
+    "ErrWhitespaceExpression": "Expression cannot be empty string"
+  },
+  "viewers/cube/CasesFilterPanel": {
+    "ErrBounds": "Minimum more than maximum",
+    "FilterDisabled": "Filter disabled"
+  },
+  "viewers/cube/CasesTunePanel": {
+    "WarnDependencyCalcCase": "• another calculated fact dependent on it will become inactive",
+    "WarnDependencyCaseFilter": "• fact filter in which this fact is used will be deleted",
+    "WarnDependencyPrefix": "When deleting calculated fact, the following changes in the Cube state will occur:",
+    "WarnDependencySuffix": "Do you want to continue action?"
+  },
+  "viewers/cube/CubeDetailingController": {
+    "Loading": "Loading"
   },
   "viewers/cube/CubeDragDropController": {
+    "Ascending": "Ascending",
     "Collapse": "Collapse",
     "DeleteItem": "Delete",
     "Descending": "Descending",
@@ -1015,7 +1425,12 @@
     "Expand": "Expand",
     "MultipleFilteredDimTooltip": "{0}[{1}of {2}]",
     "Original": "In original order",
-    "SingleFilteredDimTooltip": "{0} • {1} [{2} of {3}]"
+    "SingleFilteredDimTooltip": "{0} • {1} [{2} of {3}]",
+    "WarnDependencySuffix": "Do you want to continue action?"
+  },
+  "viewers/cube/DimensionFilterSelectionPanel": {
+    "NotStartingWith": "not starting with",
+    "StartingWith": "starting with"
   },
   "viewers/cube/DimensionsFilterPanel": {
     "UncheckAllTooltip": "Deselect all"

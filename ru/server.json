@@ -2995,10 +2995,6 @@
     "ErrBasePackageNotFound": "Базовый пакет не найден",
     "ErrExecNodeBaseComponentNotFound": "Не найден базовый компонент для узла \"%s\""
   },
-  "Libraries/Model/ModelPackageIndex": {
-    "BinFile": "Бинарный файл",
-    "XMLFile": "XML файл"
-  },
   "Libraries/Model/ModelPackageManager": {
     "BackupRestored": "При сохранении пакета \"%s\" возникла ошибка. Файл восстановлен из резервной копии.",
     "CompatConvertRequired": "При загрузке пакета \"%s\" версии %s будет произведено конвертирование.",

@@ -3371,7 +3371,7 @@
       "tooltip": "Create group and add visualizer in it "
     },
     "mniAddWithoutGroup": {
-      "text": "No group",
+      "text": "Without group",
       "tooltip": "Add visualizer to general list of reports"
     },
     "pnlVendors": {

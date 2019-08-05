@@ -5,6 +5,17 @@
       "Services": "Service"
     }
   },
+  "components/filterdata": {
+    "FilterRelationType": {
+      "StartingWith": "starting with",
+      "NotStartingWith": "not starting with"
+    }
+  },
+  "imports/excelfile": {
+    "ExcelBlankRowAction": {
+      "$Caption": "Blank Row Action"
+    }
+  },
   "Libraries/Model/ModelWorkFlow": {
     "MemberVisibility": {
       "$Caption": "Workflow Item Visibility",

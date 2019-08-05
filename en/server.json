@@ -9,6 +9,9 @@
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantLoadBackup": "Failed to restore binning"
   },
+  "components/execnode/ExecNodeComponentVendor": {
+    "VendorCaption": "Node Execution"
+  },
   "components/partition/PartitionVendor": {
     "VendorCaption": "Partition into Sets"
   },
@@ -18,6 +21,10 @@
   "Libraries/bgrtl/FileStorageEngine": {
     "ErrFileStorageNotConnected": "File storage not connected",
     "ErrParentFileStorageNotConnected": "Root file storage not connected"
+  },
+  "Libraries/bgrtl/OperationBracketsAssist": {
+    "ErrActionAlreadyBeginning": "Action has already been started",
+    "ErrActionNotBeginning": "Action hasn't been started"
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"

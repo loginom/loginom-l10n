@@ -1,1 +1,7 @@
-{ }
+{
+  "Common/CertList/CertList": {
+    "HTTPClientCertificateList": {
+      "Store": "Certificate store"
+    }
+  }
+}

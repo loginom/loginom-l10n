@@ -1,5 +1,6 @@
 {
   "admin/ServerSettingsForm": {
+    "ConnectionSettings": "Connection Wizard",
     "DirectorySettings": "Folders",
     "LogFileName": "File Name"
   },
@@ -145,7 +146,7 @@
     "RemoveComment": "Delete Comment",
     "RemoveSelectedConfirm": "Do you really want to delete the selected nodes and connections?",
     "RenameNode": "Rename...",
-    "ResetConfiguration": "Reset Original Node Configuration",
+    "ResetConfiguration": "Restore Original Node Configuration",
     "SelectOneNode": "Select Only One Node",
     "SelectSomething": "First Select Object in Workflow",
     "SetNodeDerivedVendor": "Set Derived Node Component...",
@@ -315,7 +316,7 @@
     "MoveUpActionText": "Move up"
   },
   "ext/LinkGrid": {
-    "btnAutoLinkCaption": "Establish Links Automatically",
+    "btnAutoLinkCaption": "Auto Link",
     "btnClearCaption": "Clear Links",
     "btnResortCaption": "Resort Links",
     "DragText": "Drag to item to link with",
@@ -640,7 +641,216 @@
     "LoginWebSite": "https://loginom.ru",
     "NoNewsLog": "No news downloaded"
   },
+  "wizards/BaseWizard": {
+    "ErrAbortCaption": "Setup Aborted",
+    "ErrExitExcepitonsCaption": "Errors"
+  },
+  "wizards/columndefs/ColumnDefsTuning": {
+    "UsableDesc": "Use"
+  },
+  "wizards/columns/ColumnDefsMappingWizard": {
+    "colDisplayNameTuneText": "Caption",
+    "CreateMappingToAllConfirm": "Do you really want to create output columns for all inputs?",
+    "EmptyListText": "No matching columns",
+    "GroupField_MissingFields": "Missing columns",
+    "MsgAddedColumnCanNotSelected": "Column has been added but it is not selected because it does not match the filter",
+    "RemoveAllMappingColumnDefsConfirm": "Do you really want to delete all output columns?"
+  },
+  "wizards/columns/DataSetOutputSocketWizard": {
+    "frmColumnsMappingTitle": "Configure Output Columns"
+  },
+  "wizards/columns/DataSourceOutputSocketWizard": {
+    "frmColumnsMappingTitle": "Configure Output Columns"
+  },
+  "wizards/columns/DerivedDataSourceOutputSocketWizard": {
+    "frmColumnsMappingTitle": "Configure Output Columns"
+  },
+  "wizards/columns/EditColumnDefForm": {
+    "AddBtnText": "Add",
+    "AddColumnDefTitle": "Add Сolumn",
+    "DefaultUsageType": "Default usage type",
+    "ErrColumnEmptyName": "Column name cannot be empty",
+    "ErrColumnNameAlreadyExists": "\"{0}\" column already exists",
+    "GroupEditingTitle": "Group Editing",
+    "ModifyBtnText": "Apply",
+    "ModifyColumnDefTitle": "Configure Column"
+  },
+  "wizards/columns/EditTuneColumnDefForm": {
+    "UsageType": "Usage type"
+  },
+  "wizards/columns/TuneDataSourceInputPortWizard": {
+    "frmColumnsMappingTitle": "Configure Input Columns"
+  },
+  "wizards/columnsdisposition/ColumnsDispositionWizard": {
+    "AvailableField": "Available",
+    "MoveButtonTooltip": "Move to {0}"
+  },
+  "wizards/connection/ConnectionConfigWizard": {
+    "TestConnectionTitle": "Test Connection",
+    "WizardTitle": "Connection Wizard"
+  },
+  "wizards/connection/ConnectionReferenceComponentWizard": {
+    "ConnectionReferenceTitle": "Connection Reference",
+    "ConnectionsColumnTitle": "Connections"
+  },
   "wizards/connection/ConnectionsViewWizard": {
-    "AccessModification": "Configure visibility..."
+    "AccessModification": "Configure visibility...",
+    "BtnTextTest": "Test",
+    "BtnTooltipConnect": "Activate connection",
+    "BtnTooltipDelete": "Delete connection...",
+    "BtnTooltipEdit": "Configure connection...",
+    "BtnTooltipFilter": "Filter list",
+    "BtnTooltipFind": "Search list",
+    "BtnTooltipGroup": "Group list",
+    "BtnTooltipRename": "Rename connection...",
+    "BtnTooltipSort": "Sort list",
+    "BtnTooltipTest": "Test connection",
+    "ClearSort": "Clear sort",
+    "ConnectionPath": "Connection path",
+    "ConnectionStatus": "Connection status",
+    "DeleteConnectionPrompt": "Do you really want to delete {0} connection?",
+    "DeleteConnectionPromptTitle": "Delete Connection",
+    "InsertConnection": "Add connection",
+    "LabelConnectionPath": "Connection path",
+    "LabelTitle": "Caption",
+    "VendorTreeCaption": "Connections",
+    "VendorTreeConnections": "Data sources"
+  },
+  "wizards/datapartition/SamplingWizard": {
+    "UnknownValue": "Unknown value"
+  },
+  "wizards/datapartition/SequenceMethodForm": {
+    "UnknownValue": "Unknown value",
+    "UnusedSetName": "Unused"
+  },
+  "wizards/datapartition/SizeGridForm": {
+    "SummaryRelOverflowErr": "Total percentage must not exceed 100%",
+    "SummarySetName": "Total:",
+    "UnknownValue": "Unknown value"
+  },
+  "wizards/genericmodelcomponent/GenericModelComponentWizard": {
+    "ActionAdd": "Add",
+    "ActionDelete": "Delete",
+    "ActionDeleteAll": "Delete all...",
+    "ActionInsert": "Paste",
+    "DefaultSocketCaption": "Socket",
+    "DeleteAllConfirm": "Do you want to delete all inputs/outputs?",
+    "EmptyName": "<Unique0>",
+    "ErrGetAvalibleSocketDefFmt": "Failed to get description of socket for {0} vendor.",
+    "ErrGetAvalibleSocketDefs": "Failed to get description of sockets",
+    "SocketLabelFmt": "{0}{1}",
+    "SocketTypeInputDesc": "Inputs",
+    "SocketTypeOutputDesc": "Outputs"
+  },
+  "wizards/InputConnectionWizard": {
+    "ConnectCaption": "Connect",
+    "ConnectedCaption": "Connected",
+    "ConnectingCaption": "Connection...",
+    "ExceptionTitle": "Error",
+    "LocalConnection": "Local",
+    "NotConnectedText": "Not connected"
+  },
+  "wizards/normalization/NormParamsForm": {
+    "ValidateEditorsErr": "Error in settings of normalizer parameters"
+  },
+  "wizards/normalization/NormTuneWizard": {
+    "ErrNormaliserSync": "Failed to auto sync normalizer settings with field data",
+    "InputColumnGroup": "Inputs",
+    "OutputColumnGroup": "Outputs"
+  },
+  "wizards/previewpanel/PreviewPanel": {
+    "DefaultActivationMaskText": "Activation",
+    "DefaultPreparePreviewMaskText": "Prepare preview"
+  },
+  "wizards/referencenode/ReferenceNodeComponentWizard": {
+    "ErrNodeDeleted": "Target node has been deleted.",
+    "ErrNodeDeletedFmt": "\"{0}\" target node has been deleted.",
+    "ErrNodeNotFound": "Target node was not found, it may have been deleted or became unavailable.",
+    "ErrNodeNotFoundFmt": "\"{0}\" target node was not found, it may have been deleted or became unavailable.",
+    "NotifyNodeNotSelected": "No target node selected",
+    "ReferenceNodeWizardTitle": "Reference Node",
+    "WarnNodeLoadLimitExceeded": "\"{0}\" target node is not selected.\n{1} limit of loaded node levels has been exceeded."
+  },
+  "wizards/regression/RegressionWizard": {
+    "AboveAccuracy": "Increased accuracy",
+    "AbovePrecision": "Increased accuracy",
+    "AboveSpeed": "Increased speed",
+    "LessFacts": "Less facts",
+    "LowerAccuracy": "Reduced accuracy",
+    "MaxAccuracy": "Accurate data",
+    "MaxFacts": "Maximum factors",
+    "MaxPrecision": "Maximum accuracy",
+    "MaxSpeed": "Maximum speed",
+    "MiddleAccuracy": "Average accuracy",
+    "MiddleFacts": "Average number of factors",
+    "MiddleSpeed": "Average speed",
+    "MinAccuracy": "Unreliable data",
+    "MinFacts": "Minimum factors",
+    "MoreFacts": "More factors"
+  },
+  "wizards/variables/DerivedVariablesMappingEngineOutputPortWizard": {
+    "ProduceTypeDisplayName": "Derived variables creation type"
+  },
+  "wizards/variables/DerivedVariablesOutputSocketWizard": {
+    "frmColumnsMappingTitle": "Configure Output Variables"
+  },
+  "wizards/variables/EditVariableForm": {
+    "AddBtnText": "Add",
+    "AddVariableTitle": "Add Variable",
+    "DefaultUsageType": "Default usage type",
+    "ErrVariableEmptyName": "Variable name cannot be empty",
+    "ErrVariableInvalidIdentifier": "Entered \"{0}\" variable name is not valid identifier",
+    "ErrVariableNameAlreadyExists": "\"{0}\" variable already exists",
+    "GroupEditingTitle": "Group Editing",
+    "ModifyBtnText": "Apply",
+    "ModifyVariableTitle": "Configure Variable"
+  },
+  "wizards/variables/VariablesEditValuesWizard": {
+    "frmColumnsMappingTitle": "Configure Variables Values"
+  },
+  "wizards/variables/VariablesEditWizard": {
+    "colTargetNameTitle": "Caption",
+    "frmColumnsMappingTitle": "Configure Output Variables",
+    "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
+    "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?"
+  },
+  "wizards/variables/VariablesMappingWizard": {
+    "btnAutoSyncThroughColumnsTooltip": "Auto sync of variables",
+    "btnSyncThroughColumnsTooltip": "Sync variables",
+    "CreateMappingToAllConfirm": "Do you really want to create output variables for all inputs?",
+    "EmptyListText": "No matching variables",
+    "frmColumnsMappingTitle": "Adjustment of Variables Compliance",
+    "GroupField_MissingFields": "Missing variables",
+    "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
+    "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?",
+    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is obligatory. Do you really want to delete it?"
+  },
+  "wizards/WizardActivateInputPorts": {
+    "ActivateCaption": "Activate",
+    "ActivatedCaption": "Activated",
+    "ActivatedText": "Login activated",
+    "ActivatingCaption": "Activating...",
+    "ExceptionTitle": "Error",
+    "NotActivatedText": "Not activated",
+    "NotFoundSocket": "Node does not contain the requested socket"
+  },
+  "wizards/WizardForm": {
+    "BtnNextCaption": "Next",
+    "BtnPrevCaption": "Previous",
+    "BtnResizeMaximize": "Expand",
+    "BtnResizeMinimize": "Collapse",
+    "BtnSaveCaption": "Save",
+    "BtnSaveWhateverCaption": "Save Whatever",
+    "BtnWhateverCaption": "Next Whatever ",
+    "ConfirmCloseWizard": "Do you really want to close wizard?",
+    "ErrJumpToUndefinedPage": "Jump to undefined page",
+    "MsgBoxTitle": "Attention",
+    "MsgCantJumpToPage": "No jump to page"
+  },
+  "wizards/WizardModelComponentForm": {
+    "ErrUnknownObject": "Attempt to get wizard for unknown object"
+  },
+  "wizards/WizardModelConnectionForm": {
+    "BtnConnectCaption": "Connect"
   }
 }

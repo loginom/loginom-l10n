@@ -772,7 +772,7 @@
       "fieldLabel": "Round limits"
     },
     "chkStrictLowerLimit": {
-      "fieldLabel": "Set low limit"
+      "fieldLabel": "Set lower bound"
     },
     "chkStrictUpperLimit": {
       "fieldLabel": "Set upper limit"
@@ -822,7 +822,7 @@
       "boxLabel": "Lower limit open"
     },
     "chkUpperLimitOpen": {
-      "boxLabel": "Upper limit open"
+      "boxLabel": "Upper bound open"
     },
     "colAlwaysDefaultSettings": {
       "text": "Auto",
@@ -941,12 +941,15 @@
       "tooltip": "Less or equal"
     },
     "btnLessMore": {
+      "text": "<>",
       "tooltip": "Not equal"
     },
     "btnMore": {
+      "text": ">",
       "tooltip": "More"
     },
     "btnMoreEqual": {
+      "text": ">=",
       "tooltip": "More or equal"
     },
     "btnNot": {
@@ -1050,9 +1053,146 @@
     },
     "cntDiscreteSettings": {
       "title": "Input Discrete Field Settings"
+    },
+    "cntExternalSettings": {
+      "title": "Configure External Binning"
+    },
+    "cntTargetSettings": {
+      "title": "Configure Output Field"
+    },
+    "colUniqueValues": {
+      "text": "Unique values"
+    },
+    "colValueNumberer": {
+      "text": "No"
+    }
+  },
+  "components/coarseclasses/CoarseClassesViewer": {
+    "btnAllowClassModifying": {
+      "tooltip": "Edit binning"
+    },
+    "btnCalculateIV": {
+      "text": "Calculate"
+    },
+    "btnHideSideBar": {
+      "tooltip": "Hide side bar"
+    },
+    "btnMergeWithLeft": {
+      "tooltip": "Combine with left"
+    },
+    "btnMergeWithRight": {
+      "tooltip": "Combine with right"
+    },
+    "btnModifyCancel": {
+      "text": "Cancel"
+    },
+    "btnModifyCancelFineClassesChart": {
+      "text": "Cancel"
+    },
+    "btnModifyOk": {
+      "text": "Apply"
+    },
+    "btnModifyOkFineClassesChart": {
+      "text": "Apply"
+    },
+    "btnShowClassParamsCharts": {
+      "tooltip": "Show coarse class charts"
+    },
+    "btnShowClassParamsGrid": {
+      "tooltip": "Show coarse class table"
+    },
+    "cntClassParams": {
+      "title": "Coarse Class Parameters"
+    },
+    "colCoarseClassEventCount": {
+      "text": "Events"
+    },
+    "colCoarseClassHighBorder": {
+      "text": "Upper"
+    },
+    "colCoarseClassIndex": {
+      "text": "No"
+    },
+    "colCoarseClassIV": {
+      "text": "Inf.index"
+    },
+    "colCoarseClassLowBorder": {
+      "text": "Lower"
+    },
+    "colCoarseClassMark": {
+      "text": "Caption"
+    },
+    "colCoarseClassNoEventCount": {
+      "text": "Non-events"
+    },
+    "colCoarseClassTotalCount": {
+      "text": "Total"
+    },
+    "colCoarseClassWeight": {
+      "text": "Share"
+    },
+    "colCoarseClassWoE": {
+      "text": "Evidence percentage"
+    },
+    "colColumnIV": {
+      "text": "Index"
+    },
+    "colColumnName": {
+      "text": "Column"
+    },
+    "fldCoarseClassCount": {
+      "fieldLabel": "Maximum count"
+    },
+    "fldMinClassPercentage": {
+      "fieldLabel": "Minimum percentage, %"
+    },
+    "fldUniformityCoef": {
+      "fieldLabel": "Uniformity,%"
+    },
+    "lblCoarseClass": {
+      "text": "Coarse classes"
+    },
+    "lblStatus": {
+      "text": "Coarse classes node not ready"
+    },
+    "lblUniformityCoef": {
+      "text": "Optimization"
     }
   },
   "components/coarseclasses/CoarseClassesWizard": {
+    "btnActivationPort": {
+      "text": "Activate"
+    },
+    "btnActivationPortVisualizer": {
+      "text": "Activate"
+    },
+    "cntActivationPort": {
+      "fieldLabel": "Login status"
+    },
+    "cntActivationPortVisualizer": {
+      "fieldLabel": "Login status"
+    },
+    "colAutoMappingColumnKind": {
+      "tooltip": "Auto link"
+    },
+    "colAutoMappingColumnKind.0": {
+      "tooltip": "Auto link"
+    },
+    "colAutoSettings": {
+      "tooltip": "Calculate binning parameters for all selected fields"
+    },
+    "colAutoSettings.0": {
+      "tooltip": "Calculate binning parameters"
+    },
+    "colColumnDisplayName": {
+      "text": "Input fields"
+    },
+    "colColumnPurpose": {
+      "text": "Usage type"
+    },
+    "colDataKind": {
+      "text": "Sort of data"
+    },
     "colIndex": {
       "text": "No",
       "tooltip": "Table field index"
@@ -1213,6 +1353,9 @@
     "colMethod": {
       "text": "Processing method"
     },
+    "colName": {
+      "text": "Input fields"
+    },
     "frmDataRecovery": {
       "title": "Fill Gaps"
     }
@@ -1245,7 +1388,7 @@
       "text": "String"
     },
     "colFunc": {
-      "text": "Splitting"
+      "text": "Binning"
     },
     "frmDateReform": {
       "title": "Reform Date/Time"
@@ -1526,7 +1669,7 @@
       "boxLabel": "Case-sensitive strings"
     },
     "colDisplayName": {
-      "text": "Field name"
+      "text": "Field"
     },
     "colInputData": {
       "text": "Fields"
@@ -1571,10 +1714,10 @@
       "text": "Date/Time"
     },
     "itmTypeChangeFloat": {
-      "text": "Real-valued"
+      "text": "Real"
     },
     "itmTypeChangeInt": {
-      "text": "Whole"
+      "text": "Integer"
     },
     "itmTypeChangeStr": {
       "text": "String"
@@ -1652,7 +1795,26 @@
       "tooltip": "Delete"
     },
     "colCaseSensitive": {
-      "altText": "Сase-sensitive"
+      "altText": "Сase-sensitive",
+      "menuText": "Сase-sensitive",
+      "text": "Сase-sensitive"
+    },
+    "colCaseSensitive.0": {
+      "tooltip": "Case sensitive"
+    },
+    "colFieldDisplayName": {
+      "text": "Available fields"
+    },
+    "colSortDirection": {
+      "altText": "Order",
+      "menuText": "Order",
+      "text": "Order"
+    },
+    "colSortDisplayName": {
+      "text": "Sort fields"
+    },
+    "grdFields": {
+      "title": "Fields"
     },
     "grdSorting": {
       "title": "Sort"
@@ -1813,11 +1975,165 @@
     },
     "edtConnection": {
       "fieldLabel": "Connection"
+    },
+    "frmRequestMethod": {
+      "title": "Selecting Request Method"
+    }
+  },
+  "components/wsdlclient/RequestWizard": {
+    "btnAutoLink": {
+      "text": "Auto Link All",
+      "tooltip": "Auto link all..."
+    },
+    "btnLinksDel": {
+      "text": "Delete All Links",
+      "tooltip": "Delete all links"
+    },
+    "colColumnName": {
+      "text": "Field"
+    },
+    "colDemandState": {
+      "text": "*"
+    },
+    "colRequestLink": {
+      "text": "Related fields"
+    },
+    "colTreeNode": {
+      "text": "Object"
+    },
+    "frmRequest": {
+      "title": "Configure Request"
+    },
+    "mniAutoLink": {
+      "text": "Auto link"
+    },
+    "mniExpandDeep": {
+      "text": "Expand links"
+    },
+    "mniRemoveLink": {
+      "text": "Delete link"
+    },
+    "mniSelectHead": {
+      "text": "Select replacement source"
+    }
+  },
+  "connections/onec8/OneC8ConnectionParams": {
+    "btnTestConnection": {
+      "text": "Test Connection"
+    }
+  },
+  "connections/onec8/OneC8ConnectionStringForm": {
+    "btnApply": {
+      "text": "Save"
+    },
+    "btnCancel": {
+      "text": "Close"
+    },
+    "cbxConfiguredName": {
+      "fieldLabel": "Name"
+    },
+    "frmOneC8ConnectionString": {
+      "title": "Select Information Base"
+    },
+    "rbCatalog": {
+      "boxLabel": "In file storage or local network"
+    },
+    "rbConfigured": {
+      "boxLabel": "Configured information base"
+    },
+    "rbServer": {
+      "boxLabel": "On 1C: Enterprise  server"
+    },
+    "txtDBCatalog": {
+      "fieldLabel": "Database directory"
+    },
+    "txtServerDBName": {
+      "emptyText": "InfoBase",
+      "fieldLabel": "Base name"
+    },
+    "txtServerName": {
+      "emptyText": "Server",
+      "fieldLabel": "Server cluster"
+    }
+  },
+  "connections/restservice/AuthorizationWizard": {
+    "frmAuthorization": {
+      "title": "Authorization to Execute Request"
+    }
+  },
+  "connections/restservice/ConnectionWizard": {
+    "btnAdd": {
+      "tooltip": "Add"
+    },
+    "btnDelete": {
+      "tooltip": "Delete selected"
+    },
+    "btnDeleteAll": {
+      "tooltip": "Delete all..."
+    },
+    "btnMoveDown": {
+      "tooltip": "Move down"
+    },
+    "btnMoveUp": {
+      "tooltip": "Move up"
+    },
+    "btnURLTest": {
+      "text": "Test"
+    },
+    "colDataType": {
+      "text": "Data type"
+    },
+    "colDelete": {
+      "tooltip": "Delete all..."
+    },
+    "colDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "frmConnection": {
+      "title": "Connection Wizard"
+    },
+    "grdParams": {
+      "title": "GET Request Parameters"
+    },
+    "pedRequestContentType.valueConfig": {
+      "regexText": "Invalid Content-type value format"
+    },
+    "pedResponseContentType.valueConfig": {
+      "regexText": "Invalid Content-type value format"
+    },
+    "pedURL.valueConfig": {
+      "emptyText": "http://example.com/operation-path"
+    }
+  },
+  "connections/webservice/AuthorizationForm": {
+    "cbxStore": {
+      "fieldLabel": "Certificate store"
+    },
+    "colExpiry": {
+      "text": "Expiration date"
+    },
+    "colIssuer": {
+      "text": "Issued by"
+    },
+    "colSerialNumber": {
+      "text": "Serial number"
+    },
+    "colStart": {
+      "text": "Validity start date"
+    },
+    "colSubject": {
+      "text": "Issued to"
+    },
+    "colSubjectName": {
+      "text": "Name"
     }
   },
   "connections/webservice/AuthorizationWizard": {
     "frmAuthorization": {
-      "title": "Authorization to Fulfill Request"
+      "title": "Authorization to Execute Request"
     }
   },
   "connections/webservice/ConnectionWizard": {
@@ -1950,7 +2266,7 @@
       "fieldLabel": "File storage"
     },
     "edtDDFSystem": {
-      "fieldLabel": "Digit"
+      "fieldLabel": "Bitness"
     },
     "frmExportSettings": {
       "title": "Export to Loginom Data File"
@@ -1965,6 +2281,57 @@
     },
     "cntFormat": {
       "title": "Formats"
+    },
+    "cntSeparators": {
+      "title": "Separators"
+    },
+    "cntValue": {
+      "title": "Values View"
+    },
+    "frmExportSettings": {
+      "title": "Export to Text File"
+    }
+  },
+  "exports/textfile/ExportTextFilePreviewWizard": {
+    "btnActivationPortButton": {
+      "text": "Activate Login"
+    },
+    "cntConnection": {
+      "fieldLabel": "Login status"
+    },
+    "cntFieldParam": {
+      "title": "Columns View"
+    },
+    "edtCodePage.valueConfig": {
+      "regexText": "Invalid codepage"
+    },
+    "frmExportFromFile": {
+      "title": "Export Parameters"
+    },
+    "lblPreview": {
+      "text": "Preview:"
+    }
+  },
+  "exports/xml/ExportXmlParamsWizard": {
+    "cntFormat": {
+      "title": "Configure Formatting"
+    },
+    "edtConnection": {
+      "fieldLabel": "File storage"
+    },
+    "frmExportXmlParams": {
+      "title": "Export to XML File"
+    }
+  },
+  "exports/xml/RequestConnectionForm": {
+    "btnConnect": {
+      "text": "Not Connected"
+    },
+    "cbxRootElement": {
+      "fieldLabel": "Root element"
+    },
+    "edtConnection": {
+      "fieldLabel": "Connection"
     }
   },
   "ext/colorfield/selector": {
@@ -2080,6 +2447,46 @@
       "text": "Size"
     }
   },
+  "filtersview/FilterItem": {
+    "btnApplyItemSettings": {
+      "text": "Apply"
+    },
+    "btnCancelEdit": {
+      "text": "Cancel"
+    },
+    "btnConcatenation": {
+      "text": "OR"
+    },
+    "cbbAggregation": {
+      "fieldLabel": "Aggregation"
+    },
+    "cbbField": {
+      "fieldLabel": "Field"
+    },
+    "cbbRelationType": {
+      "fieldLabel": "Condition"
+    },
+    "pnlBaseDate": {
+      "title": "Base Date"
+    },
+    "rbCurrent": {
+      "boxLabel": "Current date"
+    },
+    "rbCustom": {
+      "boxLabel": "From date"
+    },
+    "rbData": {
+      "boxLabel": "Available data"
+    },
+    "tagValueList": {
+      "fieldLabel": "List"
+    }
+  },
+  "filtersview/FiltersView": {
+    "btnDeleteAll": {
+      "text": "Delete All Conditions"
+    }
+  },
   "homepage/HomePage": {
     "btnCreatePackage": {
       "text": "Create New Package..."
@@ -2106,7 +2513,82 @@
       "title": "Home"
     }
   },
+  "imports/dbimport/DBImportWizard": {
+    "btnConnect": {
+      "text": "Connect"
+    },
+    "btnFieldsFilter": {
+      "tooltip": "Fields filter"
+    },
+    "btnObjectsFilter": {
+      "tooltip": "Filter database objects"
+    },
+    "btnPreview": {
+      "text": "Preview..."
+    },
+    "chbFieldsStar": {
+      "boxLabel": "Extract all <b>(*) </b> fields"
+    },
+    "cntConnection": {
+      "fieldLabel": "Connection"
+    },
+    "colName": {
+      "text": "Fields"
+    },
+    "frmSqlImport": {
+      "title": "Import from Database"
+    },
+    "lblObjectsTree": {
+      "text": "Tables/views"
+    },
+    "pnlExtractBySQL": {
+      "title": "SQL Query"
+    },
+    "pnlExtractByTable": {
+      "title": "Table/View"
+    }
+  },
+  "imports/dbimport/SQLPreviewForm": {
+    "btnClose": {
+      "text": "Close"
+    },
+    "frmSQLPreviewForm": {
+      "title": "Preview"
+    }
+  },
+  "imports/dwh/BetweenValuesDialog": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "edtMaxValue": {
+      "fieldLabel": "Upper bound"
+    },
+    "edtMinValue": {
+      "fieldLabel": "Lower bound"
+    },
+    "frmBetweenValuesDialog": {
+      "title": "Interval Boundaries"
+    }
+  },
   "imports/dwh/DateValuesDialog": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbxPeriodType": {
+      "fieldLabel": "Period type"
+    },
+    "frmDateValuesDialog": {
+      "title": "Select Period"
+    },
+    "pnlBaseDate": {
+      "title": "Base Date"
+    },
     "rbCurrent": {
       "boxLabel": "Current date"
     },
@@ -2162,10 +2644,10 @@
       "title": "Import from Data Warehouse"
     },
     "grdFields": {
-      "title": "Selected DW Items"
+      "title": "Selected DWH Items"
     },
     "grdMDFields": {
-      "title": "Available DW Items"
+      "title": "Available DWH Items"
     },
     "mniChecked": {
       "text": "Display"
@@ -2258,6 +2740,116 @@
   "imports/native/ImportNativePreviewWizard": {
     "btnConnect": {
       "text": "Connect"
+    },
+    "cntConnection": {
+      "fieldLabel": "File storage"
+    },
+    "edtCompression": {
+      "fieldLabel": "Compression"
+    },
+    "edtDDFSystem": {
+      "fieldLabel": "Bitness"
+    },
+    "frmImportFromFile": {
+      "title": "Import from Loginom Data File"
+    }
+  },
+  "imports/onec8query/OneC8QueryImportWizard": {
+    "btnConnect": {
+      "text": "Not Connected"
+    },
+    "btnPreview": {
+      "text": "Preview..."
+    },
+    "edtConnection": {
+      "fieldLabel": "Connection"
+    },
+    "frmOneC8QueryImport": {
+      "title": "Data Request from 1C: Enterprise 8"
+    }
+  },
+  "imports/textfile/ImportTextFileParamsWizard": {
+    "cntFormat": {
+      "title": "Formats"
+    },
+    "cntSeparators": {
+      "title": "Separators"
+    },
+    "cntValue": {
+      "title": "Values View"
+    },
+    "frmFixedColumns": {
+      "title": "Import Parameters with Fixed-Width Columns"
+    },
+    "frmImportSettings": {
+      "title": "Configure Import Formats"
+    },
+    "frmSeparators": {
+      "title": "Import Parameters with Separators"
+    }
+  },
+  "imports/textfile/ImportTextFilePreviewWizard": {
+    "btnConnect": {
+      "text": "Connect"
+    },
+    "cntConnection": {
+      "fieldLabel": "File storage"
+    },
+    "edtCodePage.valueConfig": {
+      "regexText": "Invalid codepage"
+    },
+    "frmImportFromFile": {
+      "title": "Import from Text File"
+    }
+  },
+  "imports/xml/CommonImport": {
+    "frmCommonImport": {
+      "title": "Imported Fields"
+    }
+  },
+  "imports/xml/ImportXmlFieldsWizard": {
+    "btnConnect": {
+      "text": "Not Connected"
+    },
+    "cbxNamespace": {
+      "fieldLabel": "Namespace"
+    },
+    "cbxRoot": {
+      "fieldLabel": "Root element"
+    },
+    "edtConnection": {
+      "fieldLabel": "Connection"
+    },
+    "frmCommonImport": {
+      "title": "Imported Fields"
+    }
+  },
+  "imports/xml/ImportXmlPreviewWizard": {
+    "btnConnect": {
+      "text": "Not Connected"
+    },
+    "edtConnection": {
+      "fieldLabel": "File storage"
+    },
+    "frmImportXmlFile": {
+      "title": "Import from XML File"
+    },
+    "taFilePreview": {
+      "fieldLabel": "View selected file"
+    }
+  },
+  "imports/xml/XmlTreeView": {
+    "colComment": {
+      "text": "Description"
+    },
+    "colTreeNode": {
+      "text": "Object"
+    },
+    "mniExpandDeep": {
+      "text": "Expand links"
+    },
+    "mniSelectHead": {
+      "text": "Select replacement source"
     }
   },
   "progress/ProgressForm": {
@@ -2316,6 +2908,39 @@
   "propedit/CommonPropEdit": {
     "PropContainer": {
       "fieldLabel": "Property Name"
+    }
+  },
+  "viewers/browse/BrowseFormat": {
+    "colDisplayName": {
+      "text": "Available fields"
+    },
+    "colFormatOnFormatGrid": {
+      "text": "Format"
+    },
+    "colSourceColumnIndex": {
+      "text": "No"
+    },
+    "colWidth": {
+      "text": "Width"
+    },
+    "grdFieldsGrid": {
+      "title": "Fields"
+    },
+    "mniResetFormat": {
+      "text": "Restore format of all fields"
+    },
+    "mniResetWidth": {
+      "text": "Restore width of all fields",
+      "tooltip": "Restore width of all fields"
+    },
+    "mniRestoreFieldOrder": {
+      "text": "Restore fields order",
+      "tooltip": "When restoring, all fields will be unlocked"
+    }
+  },
+  "viewers/browse/BrowseGoToLine": {
+    "lblRowsRange": {
+      "text": "Row number"
     }
   },
   "viewers/browse/BrowseSearchParams": {
@@ -2458,9 +3083,154 @@
     },
     "mniRefreshData": {
       "tooltip": "Refresh data"
+    },
+    "mniShowDisplayNameInDetail": {
+      "tooltip": "Show field captions"
+    },
+    "mniShowNameInDetail": {
+      "tooltip": "Show field names"
+    }
+  },
+  "viewers/browse/FastPreviewForm": {
+    "btnClose": {
+      "text": "Close"
+    },
+    "colDisplayName": {
+      "text": "Caption"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colNumber": {
+      "text": "No"
+    },
+    "colValue": {
+      "text": "Value"
+    },
+    "frmFastPreviewForm": {
+      "title": "Quick View"
+    }
+  },
+  "viewers/chart/AxesEditor": {
+    "cbxAlignAxes": {
+      "fieldLabel": "Align axes"
+    },
+    "frmAxesEditor": {
+      "title": "Configure Axes"
+    }
+  },
+  "viewers/chart/AxisEditor": {
+    "cbxAxisType": {
+      "fieldLabel": "Axis type"
+    },
+    "cbxDynamicData": {
+      "fieldLabel": "Dynamics"
+    },
+    "chbShowGrid": {
+      "fieldLabel": "Show grid"
+    },
+    "chbUserMax": {
+      "fieldLabel": "Set maximum value"
+    },
+    "chbUserMin": {
+      "fieldLabel": "Set minimum value"
+    },
+    "edtAxisTitle": {
+      "fieldLabel": "Title"
+    }
+  },
+  "viewers/chart/ChartEditor": {
+    "cbxDecimation": {
+      "fieldLabel": "Decimation type"
+    },
+    "cbxLabelsStyle": {
+      "fieldLabel": "Caption type"
+    },
+    "cbxLegendAlign": {
+      "fieldLabel": "Legend"
+    },
+    "cbxScheme": {
+      "fieldLabel": "Colour scheme"
+    },
+    "cbxStacking": {
+      "fieldLabel": "Stacking type"
+    },
+    "cbxToolTipStyle": {
+      "fieldLabel": "Tooltip style"
+    },
+    "chbAnimation": {
+      "boxLabel": "Animation"
+    },
+    "chbGrouping": {
+      "boxLabel": "Group columns"
+    },
+    "chbInverted": {
+      "boxLabel": "Rotate 90°"
+    },
+    "chbNavigator": {
+      "boxLabel": "Navigator"
+    },
+    "chbRationing": {
+      "boxLabel": "Rationing"
+    },
+    "chbSelector": {
+      "boxLabel": "Select intervals"
+    },
+    "chbTooltipShared": {
+      "fieldLabel": "Combine tooltips"
+    },
+    "clrChart": {
+      "emptyText": "Default",
+      "fieldLabel": "Background colour"
+    },
+    "edtChartTitle": {
+      "fieldLabel": "Title"
+    },
+    "nmbrDuration": {
+      "fieldLabel": "Delay (ms)"
+    },
+    "panelPlotOptions": {
+      "title": "General Settings"
+    }
+  },
+  "viewers/chart/ChartLinks": {
+    "grdLinks": {
+      "title": "My Grid Panel"
+    }
+  },
+  "viewers/chart/ChartView": {
+    "colAddSerie": {
+      "tooltip": "Add series"
+    },
+    "colFieldName": {
+      "text": "Fields"
+    },
+    "colLabelField": {
+      "menuText": "Use as caption field",
+      "tooltip": "Use as caption field"
+    },
+    "colXField": {
+      "menuText": "Use as X field",
+      "tooltip": "Use as abscissa field"
+    },
+    "grdFields": {
+      "title": "Fields",
+      "tooltip": "Add series"
+    },
+    "pnlChartView": {
+      "title": "Chart"
     }
   },
   "viewers/chart/SerieEditor": {
+    "cbxSerieAxis": {
+      "fieldLabel": "Axis"
+    },
+    "cbxSerieLabelsStyle": {
+      "fieldLabel": "Caption type"
+    },
+    "cbxSerieTooltipStyle": {
+      "fieldLabel": "Tooltip style"
+    },
     "cbxSerieType": {
       "fieldLabel": "Type"
     },
@@ -2606,10 +3376,169 @@
     },
     "pnlVendors": {
       "title": "Visualizers"
+    },
+    "pnlViewsForm": {
+      "title": "Visualizers"
+    },
+    "TuneViewsTab": {
+      "title": "Configure Visualizers"
+    }
+  },
+  "viewers/cube/CasesAddPanel": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "btnCheckAll": {
+      "tooltip": "Check all"
+    },
+    "btnCollapse": {
+      "tooltip": "Collapse tree"
+    },
+    "btnDown": {
+      "tooltip": "Move down"
+    },
+    "btnExpand": {
+      "tooltip": "Expand tree"
+    },
+    "btnUncheckAll": {
+      "tooltip": "Uncheck all"
+    },
+    "btnUp": {
+      "tooltip": "Move up"
+    },
+    "frmCasesAddPanel": {
+      "title": "Add Fact"
+    }
+  },
+  "viewers/cube/CasesCalcGrid": {
+    "btnFilter": {
+      "tooltip": "Filter"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colText": {
+      "text": "Caption"
+    },
+    "edtFilter": {
+      "emptyText": "Filter"
+    },
+    "lblTitle": {
+      "text": "Filter"
+    }
+  },
+  "viewers/cube/CasesCalcPanel": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbbDataType": {
+      "fieldLabel": "Data type"
+    },
+    "cbbFunctionType": {
+      "fieldLabel": "Function caption"
+    },
+    "edtDisplayName": {
+      "fieldLabel": "Caption"
+    },
+    "edtName": {
+      "fieldLabel": "Name"
+    },
+    "frmCasesCalcPanel": {
+      "title": "Calculated Fact"
+    }
+  },
+  "viewers/cube/CasesFilterPanel": {
+    "btnApply": {
+      "text": "Filter"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbbRelation": {
+      "fieldLabel": "Condition"
+    },
+    "colDimDisplayName": {
+      "text": "Dimensions"
+    },
+    "colDisplayFunctionType": {
+      "text": "Aggregation"
+    },
+    "colFunctionDataType": {
+      "text": "Type"
+    },
+    "edtPartOfTotal": {
+      "fieldLabel": "Value"
+    },
+    "edtTopBottom": {
+      "fieldLabel": "Value"
+    },
+    "fcMax": {
+      "fieldLabel": "Maximum"
+    },
+    "fcMin": {
+      "fieldLabel": "Minimum"
+    },
+    "fcValue": {
+      "fieldLabel": "Value"
+    },
+    "frmCasesFilterPanel": {
+      "title": "Filter Facts"
     }
   },
   "viewers/cube/CasesFormatPanel": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbbHAlignment": {
+      "fieldLabel": "Horizontal alignment"
+    },
+    "cbbVAlignment": {
+      "fieldLabel": "Vertical  alignment"
+    },
+    "cbFormatStr": {
+      "boxLabel": "Special format"
+    },
+    "cbNegValuesRedColor": {
+      "boxLabel": "Negative in red"
+    },
+    "cbScientific": {
+      "fieldLabel": "Exponential form"
+    },
+    "cbThousand": {
+      "fieldLabel": "Numeric separator"
+    },
+    "cntAlignment": {
+      "title": "Alignment"
+    },
+    "cntFormat": {
+      "title": "Formatting"
+    },
+    "colDateFormat": {
+      "text": "Format"
+    },
+    "colFunctionType": {
+      "text": "Aggregation"
+    },
+    "colSubFunctionDataType": {
+      "text": "Type"
+    },
+    "colSubFunctionType": {
+      "text": "Display"
+    },
+    "edtCurrency": {
+      "fieldLabel": "Currency"
+    },
     "edtDecimalDigit": {
+      "fieldLabel": "Decimal digit",
       "maxText": "No more than {0} decimal places",
       "negativeText": "Only non-negative values are allowed"
     },
@@ -2756,10 +3685,149 @@
     },
     "mniAddCalcCase": {
       "text": "Add calculated fact..."
+    },
+    "mniChartShowTotalAll": {
+      "text": "Show"
+    },
+    "mniChartShowTotalNone": {
+      "text": "Hide"
+    },
+    "mniCollapseAll": {
+      "text": "Collapse all"
+    },
+    "mniCollapseAllCols": {
+      "text": "Collapse columns"
+    },
+    "mniCollapseAllRows": {
+      "text": "Collapse rows"
+    },
+    "mniExpandAll": {
+      "text": "Expand all"
+    },
+    "mniExpandAllCols": {
+      "text": "Expand columns"
+    },
+    "mniExpandAllRows": {
+      "text": "Expand rows"
+    },
+    "mniExportChartJPEG": {
+      "text": "Export to JPEG"
+    },
+    "mniExportChartPDF": {
+      "text": "Export to PDF"
+    },
+    "mniExportChartPNG": {
+      "text": "Export to PNG"
+    },
+    "mniExportChartSVG": {
+      "text": "Export to SVG"
+    },
+    "mniFilterCase": {
+      "text": "Filter facts..."
+    },
+    "mniFormatCase": {
+      "text": "Format facts..."
+    },
+    "mniShowTotalAll": {
+      "text": "All"
+    },
+    "mniShowTotalCols": {
+      "text": "In columns"
+    },
+    "mniShowTotalNone": {
+      "text": "Nowhere"
+    },
+    "mniShowTotalRows": {
+      "text": "In rows"
+    },
+    "mniTuneCase": {
+      "text": "Configure facts"
+    }
+  },
+  "viewers/cube/DimensionFilterSelectionPanel": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbRegister": {
+      "boxLabel": "Case sensitive"
+    },
+    "edtValue": {
+      "value": "Example"
+    },
+    "rbAdd": {
+      "boxLabel": "Add to checked"
+    },
+    "rbDeselect": {
+      "boxLabel": "Deselect"
+    },
+    "rbRemove": {
+      "boxLabel": "Remove from checked"
+    },
+    "rbSelect": {
+      "boxLabel": "Select"
+    }
+  },
+  "viewers/cube/DimensionsFilterPanel": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "btnCheckAll": {
+      "tooltip": "Check all"
+    },
+    "btnExclusive": {
+      "tooltip": "Included/excluded values mode"
+    },
+    "btnFilterType": {
+      "tooltip": "Filter selection mode"
+    },
+    "btnGroupCheck": {
+      "tooltip": "Group check"
+    },
+    "btnReverseCheck": {
+      "tooltip": "Invert selection"
+    },
+    "btnRollable": {
+      "tooltip": "Loop values while flipping"
+    },
+    "colRadio": {
+      "text": "MyCheck1"
+    }
+  },
+  "viewers/cube/EmbeddedBrowseForm": {
+    "mniGoToLine": {
+      "text": "Menu Item",
+      "tooltip": "Go to row..."
     }
   },
   "viewers/regression/RegressionReportView": {
+    "btnFormat": {
+      "text": "Format",
+      "tooltip": "Format"
+    },
+    "btnShowModelInfo": {
+      "text": "Model Info",
+      "tooltip": "Show model info"
+    },
+    "btnShowModelSteps": {
+      "text": "Model Steps",
+      "tooltip": "Show model steps"
+    },
+    "btnShowZeroValues": {
+      "text": "Zero Values",
+      "tooltip": "Show zero values"
+    },
+    "btnTableView": {
+      "text": "Table",
+      "tooltip": "Table"
+    },
     "btnTreeView": {
+      "text": "Tree",
       "tooltip": "Tree"
     },
     "cbxSelectedModel": {
@@ -2908,9 +3976,139 @@
     },
     "colTestParamValue": {
       "text": "Test"
+    },
+    "colTrainParamValue": {
+      "text": "Train"
+    },
+    "fldAprioriEventPercent": {
+      "fieldLabel": "Events, %"
+    },
+    "fldUserCutoff": {
+      "fieldLabel": "Threshold value"
+    },
+    "lblAprioriEvent": {
+      "text": "Apriori event"
+    },
+    "lblChartType": {
+      "text": "Chart type"
+    },
+    "lblCutoff": {
+      "text": "Cuttoff threshold"
+    },
+    "lblParams": {
+      "text": "Classification ratings"
+    },
+    "lblSets": {
+      "text": "Sets"
+    },
+    "rbBreakEven": {
+      "boxLabel": "Balance chart"
+    },
+    "rbEvent": {
+      "boxLabel": "Recognized events, %"
+    },
+    "rbGain": {
+      "boxLabel": "Gain chart"
+    },
+    "rbLift": {
+      "boxLabel": "Lift chart"
+    },
+    "rbPrecisionRecall": {
+      "boxLabel": "PR curve"
+    },
+    "rbResponse": {
+      "boxLabel": "Response chart"
+    },
+    "rbRoc": {
+      "boxLabel": "ROC curve"
+    },
+    "txtChartTitle": {
+      "html": "Title"
+    }
+  },
+  "viewers/statistics/RecordsSelector": {
+    "colLabel": {
+      "text": "Caption"
+    },
+    "mnSelectHighlighted": {
+      "text": "Select highlighted"
+    },
+    "mnUnselectHighlighted": {
+      "text": "Unselect highlighted"
+    },
+    "txtFilterField": {
+      "emptyText": "Filter"
     }
   },
   "viewers/statistics/StatView": {
+    "btnCalculateOrderStatistics": {
+      "text": "Order Statistics",
+      "tooltip": "Count order statistics"
+    },
+    "btnCancelProcess": {
+      "text": "Cancel"
+    },
+    "btnExtractUniqueValues": {
+      "text": "Unique Values",
+      "tooltip": "Extract unique values"
+    },
+    "btnModifyCancel": {
+      "text": "Cancel"
+    },
+    "btnModifyOk": {
+      "text": "Apply"
+    },
+    "btnShowHistogram": {
+      "text": "Histogram"
+    },
+    "btnShowTuneColumns": {
+      "tooltip": "Configure fields..."
+    },
+    "btnShowTuneStatistics": {
+      "tooltip": "Configure parameters..."
+    },
+    "btnStatisticsInRows": {
+      "tooltip": "Transpose"
+    },
+    "chkIncludeNullValue": {
+      "boxLabel": "Include null value into histogram"
+    },
+    "chkRound": {
+      "fieldLabel": "Round"
+    },
+    "colBoxPlot": {
+      "text": "Box plot"
+    },
+    "colDataKind": {
+      "text": "Type"
+    },
+    "colDisplayName": {
+      "text": "Caption"
+    },
+    "colHistogram": {
+      "text": "Histogram"
+    },
+    "colHistogramCount": {
+      "text": "Count"
+    },
+    "colHistogramIndex": {
+      "text": "No"
+    },
+    "colHistogramMark": {
+      "text": "Interval"
+    },
+    "colHistogramPercentage": {
+      "text": "%"
+    },
+    "colHistogramWeight": {
+      "text": "Share"
+    },
+    "colIndex": {
+      "text": "No"
+    },
+    "colIndicators": {
+      "text": "Parameters"
+    },
     "fcBottomBound": {
       "fieldLabel": "Minimum"
     },
@@ -3541,7 +4739,7 @@
       "boxLabel": "Set value"
     },
     "rbStat": {
-      "boxLabel": "Stat. indicator"
+      "boxLabel": "Stat. parameter"
     },
     "rgQuotient": {
       "fieldLabel": "Divider"

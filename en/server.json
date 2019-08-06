@@ -1,6 +1,12 @@
 {
+  "Common/1Cv8/1Cv8Query": {
+    "ErrQueryNotActive": "Request is not active"
+  },
   "Common/WSDL/Processor/MIMECommon": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"
+  },
+  "Common/WSDL/Processor/MIMEImportImpl": {
+    "ErrCodePageNotSupported": "\"%s\" codepage not supported"
   },
   "Common/WSDL/Processor/WSDLRequestProcessor": {
     "ErrXMLExportNoContext": "No export context specified",
@@ -42,13 +48,120 @@
   "exports/database/DBExport": {
     "ErrFieldForUpdateNotSelected": "No fields to update selected"
   },
+  "imports/1cv8/1Cv8QueryImport": {
+    "ErrInterpretValue": "Failed to convert value from request result to standard type",
+    "FillDataSetProcess": "Fill data set",
+    "NotConnected": "Not connected to infobase",
+    "OpenResultSetProcess": "Open request",
+    "PrepareFieldDefsProcess": "Execute request and get field list ",
+    "PreviewProcess": "Data preview"
+  },
+  "imports/1cv8/1Cv8QueryImportVendor": {
+    "VendorCaption": "1C Request",
+    "VendorDesc": "1C: Enterprise 8 - Request"
+  },
+  "imports/database/DBImport": {
+    "ErrExecQuery": "Error in querying database.",
+    "ErrNotConnectedToDatabase": "No connection with database",
+    "ErrTableNotSpecified": "Database table not specified",
+    "ExecQueryProcess": "Request execution",
+    "ImportDataProcess": "Import data",
+    "OpenTableProcess": "Open table",
+    "PrepareFieldList": "Prepare field list",
+    "PreviewProcess": "Data preview"
+  },
+  "imports/database/DBImportVendor": {
+    "VendorCaption": "Database",
+    "VendorDesc": "Import from database by configured connection"
+  },
+  "imports/excelfile/ExcelCustomPreview": {
+    "ErrLoadSheetData": "Failed to get Excel worksheet data"
+  },
   "imports/excelfile/ImportExcelFile": {
+    "ErrBooleanTypeCast": "Failed to convert \"%s\" value in \"%s\" field to logical value.",
     "ErrColumnExcistFmt": "\"%s\" field already exists",
+    "ErrColumnInvalidIdentFmt": "\"%s\" cannot be an identifier",
+    "ErrExcelNotOpen": "Operation failed, Excel file not open",
+    "ErrGetRealRange": "Excel file is not open. According to the current settings it is impossible to determine the range for data import",
     "ErrInvalidExplicitRange": "Invalid range",
-    "ErrPropInvalidNamedRange": "Invalid named range"
+    "ErrNoUsedRange": "Excel workbook error, incorrect sheet range",
+    "ErrOpenExcelBook": "Failed to open %s Excel file",
+    "ErrParseFmt": "Error occurred while parsing line: %s",
+    "ErrPropInvalidNamedRange": "Invalid named range",
+    "ErrPropInvalidSheetName": "The excel sheet name cannot contain the following characters: ? * / [ ]",
+    "ErrPropNamedRange": "Named range not specified",
+    "ErrPropNamedRangeNotFound": "\"%s\" named range not found in \"%s\" file",
+    "ErrPropSheetName": "Excel sheet name not specified",
+    "ErrPropSheetNumber": "Incorrect Excel worksheet index",
+    "ErrSheet": "Failed to find Excel sheet",
+    "ErrSuggestRange": "Excel file is not open. According to the current settings it is impossible to determine the column count for import",
+    "ProcessCaptionOpenExcelFile": "Open %s file",
+    "ProcessCaptionReadData": "Read Data"
+  },
+  "imports/excelfile/ImportExcelFileVendor": {
+    "VendorCaption": "Excel File",
+    "VendorDesc": "Import data from Excel file"
+  },
+  "imports/native/DDFCommonReader": {
+    "ErrHeaderReadError": "Header reading error"
+  },
+  "imports/native/DDFStreamReader": {
+    "BadNativeStringData": "Incorrect string data",
+    "OutOfMaximumRows": "File contains too many rows"
+  },
+  "imports/native/DDFTupleCompatibilityReader": {
+    "BadNativeStringData": "Incorrect string data",
+    "BadNativeVariantData": "Incorrect Variant data type",
+    "CanNotConvert": "Failed to convert data to 32-bit format"
+  },
+  "imports/native/DDFTupleOldRowCachedConverter": {
+    "BadNativeStringData": "Incorrect string data",
+    "UnknownOperation": "Unknown string converter operation"
+  },
+  "imports/native/DDFTupleOldRowConverter": {
+    "BadNativeStringData": "Incorrect string data",
+    "UnknownOperation": "Unknown string converter operation"
+  },
+  "imports/native/DDFTupleReader": {
+    "BadNativeStringData": "Incorrect string data",
+    "BadNativeVariantData": "Incorrect Variant data type",
+    "OutOfMaximumRows": "File contains too many rows"
+  },
+  "imports/native/DDFTupleRowConverter": {
+    "BadNativeStringData": "Incorrect string data",
+    "CanNotConvert": "Failed to convert data to 32-bit format",
+    "UnknownOperation": "Unknown string converter operation"
   },
   "imports/native/ImportNative": {
-    "ErrSystemUnsupported": "Decimal not supported"
+    "ErrSystemUnsupported": "Decimal not supported",
+    "ErrVersion": "Incorrect version",
+    "WarnCompatibilityMode": "File was opened in compatibility mode"
+  },
+  "imports/native/ImportNativeVendor": {
+    "VendorCaption": "Loginom Data File",
+    "VendorDesc": "Import data from Loginom Data file"
+  },
+  "imports/textfile/ImportTextFile": {
+    "ErrNoData": "Error parsing text file",
+    "ErrParseFmt": "While parsing line %d error occurred: %s ",
+    "ErrUnsupportedCodePage": "%d codepage not supported",
+    "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
+    "PrimaryKeyDisplayName": "<Key0>"
+  },
+  "imports/textfile/ImportTextFileVendor": {
+    "VendorCaption": "Text File",
+    "VendorDesc": "Import data from text file"
+  },
+  "imports/xml/ImportXML": {
+    "ErrFileNotSelected": "XML file for import not selected",
+    "ErrImportNotConfigured": "Import tree not configured",
+    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
+    "ErrNothingSelected": "No nodes selected for import",
+    "ErrNoXSDInput": "There is no XSD schema at the component input"
+  },
+  "imports/xml/ImportXMLVendor": {
+    "VendorCaption": "XML File",
+    "VendorDesc": "Import data from XML file according to the specified XSD schema"
   },
   "Libraries/bgrtl/Classes": {
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
@@ -63,6 +176,12 @@
   "Libraries/bgrtl/OperationBracketsAssist": {
     "ErrActionAlreadyBeginning": "Action has already been started",
     "ErrActionNotBeginning": "Action hasn't been started"
+  },
+  "Libraries/bgrtl/StrUtils": {
+    "ErrCodePageNotExist": "Codepage under %d does not exist"
+  },
+  "Libraries/bgrtl/TupleVarUtils": {
+    "BadVariantData": "Incorrect Variant data type"
   },
   "Libraries/bgrtl/Vendors": {
     "VendorMetaDesc": "vendor"
@@ -106,5 +225,8 @@
   },
   "Viewers/Cube/CubeHeaders": {
     "CubeTotalValue": "Total:"
+  },
+  "Warehouse2/DWImport": {
+    "ExecQueryProcess": "Execute request to Data Warehouse"
   }
 }

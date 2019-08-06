@@ -5,6 +5,11 @@
       "Services": "Service"
     }
   },
+  "Common/WSDL/WSDL": {
+    "WSDLTransmissionPrimitive": {
+      "RequestResponse": "Request-response"
+    }
+  },
   "components/filterdata": {
     "FilterRelationType": {
       "StartingWith": "starting with",
@@ -27,9 +32,54 @@
       "Update": "Update existing table records"
     }
   },
+  "imports/database": {
+    "BDCommandType": {
+      "$Caption": "Data Request Command String Value",
+      "Table": "Database table/view",
+      "Text": "SQL query to database"
+    }
+  },
   "imports/excelfile": {
     "ExcelBlankRowAction": {
-      "$Caption": "Blank Row Action"
+      "$Caption": "Blank Row Action",
+      "IncludeBlankRow": "Import",
+      "ExcludeBlankRow": "Exclude",
+      "Stop": "To first blank row"
+    },
+    "ExcelFileType": {
+      "$Caption": "Excel File Type",
+      "XLS": "Excel 2003",
+      "XLSX": "Excel 2007"
+    },
+    "ExcelReferenceStyle": {
+      "$Caption": "Excel Link Type",
+      "R1C1": "R1C1",
+      "A1": "A1"
+    },
+    "ExcelTableNamingMethod": {
+      "$Caption": "Sheet Naming Method",
+      "Number": "By number",
+      "Name": "By name",
+      "NamedRange": "Named range"
+    },
+    "ExcelUsedRangeType": {
+      "$Caption": "Range Selection Type",
+      "UsedRange": "Auto",
+      "ExplicitRange": "Set"
+    }
+  },
+  "imports/native": {
+    "DDFCompression": {
+      "$Caption": "Compression Algorithm",
+      "None": "Without compression",
+      "LZO": "LZO",
+      "LZ4": "LZ4"
+    },
+    "DDFSystem": {
+      "$Caption": "DDF File Platform",
+      "Undefined": "Not defined",
+      "X32": "32-bit system",
+      "X64": "64-bit system"
     }
   },
   "Libraries/Model/ModelWorkFlow": {

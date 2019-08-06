@@ -18,5 +18,63 @@
     "PartitionEngine": {
       "Partition": "Partition into Sets"
     }
+  },
+  "exports/textfile": {
+    "ExportTextFile": {
+      "CodePage": "Codepage"
+    }
+  },
+  "imports/1cv8": {
+    "1Cv8QueryImport": {
+      "Connection": "Connection",
+      "QueryText": "Request text"
+    }
+  },
+  "imports/database": {
+    "DBImport": {
+      "CommandText": "Data request string.",
+      "CommandType": "Type of data request string."
+    }
+  },
+  "imports/excelfile": {
+    "ImportExcelFileEngine": {
+      "AllRows": "All rows",
+      "BlankRowAction": "Blank rows",
+      "ExplicitRange": "Range",
+      "ImportExcelFilePreview": "Property to view Excel file contents",
+      "ReferenceStyle": "Reference style",
+      "TableName": "Object name",
+      "TableNamingMethod": "Object selection",
+      "TitleRowCount": "Title row count",
+      "UsedRange": "Whole sheet"
+    }
+  },
+  "imports/native": {
+    "ImportNative": {
+      "ColumnInfos": "DDF file columns info"
+    }
+  },
+  "imports/textfile": {
+    "ImportTextFile": {
+      "CodePage": "Codepage",
+      "DateFormat": "Date format",
+      "DateSeparator": "Date separator",
+      "DecimalSeparator": "Decimal separator",
+      "DelimiterChar": "Column separator",
+      "FirstLineAsTitle": "First line title",
+      "FormatType": "Data format",
+      "MultipleDelimiters": "Accept multiple separators in succession for one",
+      "RowsToSkip": "Skip rows",
+      "TextQualifier": "Line terminator",
+      "TimeSeparator": "Time separator",
+      "ValueFalse": "False",
+      "ValueNull": "Null",
+      "ValueTrue": "True"
+    }
+  },
+  "imports/xml": {
+    "ImportXML": {
+      "Configurator": "Configure XML import"
+    }
   }
 }

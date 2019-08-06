@@ -266,7 +266,7 @@
   },
   "app/TabForm": {
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
-    "ErrPrepareContainer": "When switching to \"{0}. {1}\" an error occurred.\n{2}",
+    "ErrPrepareContainer": "When switching to \"{0}. {1}\" error occurred.\n{2}",
     "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned",
     "MsgNodeConfigurationChanged": "Node Configuration Changed",
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
@@ -577,7 +577,7 @@
     "JoinDataWizardTitle": "Join Data Wizard",
     "JoinedColumns": "Columns of joining data set",
     "LeftJoinDataDesc": "The outer left join includes into result all rows from the main data set supplemented by the column values from the joining data set that coincide in the key fields.",
-    "MainColumns": "Main dataset columns",
+    "MainColumns": "Main data set columns",
     "RightJoinDataDesc": "The outer right join includes into result all rows from the joining data set supplemented by the column values from the main data set that coincide in the key fields."
   },
   "components/linregression/LinRegressionWizard": {
@@ -1146,6 +1146,7 @@
   "imports/dwh/DWImportWizard": {
     "CompareTipFmt": "[{0}..{1}]",
     "ConfirmDeleteAllFields": "Do you really want to delete all selected columns?",
+    "FuncAggregatesUndefined": "Not defined",
     "GetValueList": "Get list",
     "MetaDataNodeTypeAttr": "Attribute",
     "MetaDataNodeTypeCube": "Cube",
@@ -1157,7 +1158,18 @@
   },
   "imports/dwh/DWObjectWizard": {
     "ErrNoSelectedObject": "Specify data Warehouse object",
+    "ErrObjectNotFound": "\"{0}\" Data Warehouse object not found",
     "NoConnection": "No connection"
+  },
+  "imports/excelfile/ImportExcelFilePreviewWizard": {
+    "ComboItemNoData": "<No0>",
+    "ErrInvalidRange": "Invalid range"
+  },
+  "imports/excelfile/SpreadsheetsPreviewFrame": {
+    "FileNotLoaded": "File not open",
+    "NullSheetID": "Null sheet",
+    "SheetNotFoundByNameFmt": "\"{0}\" sheet not found in Excel workbook",
+    "SheetNotFoundByNumberFmt": "Sheet No \"{0}\" not found in Excel workbook"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Enter request text"

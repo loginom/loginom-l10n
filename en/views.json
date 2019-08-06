@@ -1357,7 +1357,7 @@
       "text": "Input fields"
     },
     "frmDataRecovery": {
-      "title": "Fill Gaps"
+      "title": "Remove Nulls"
     }
   },
   "components/datatoxml/DataToXmlParamsWizard": {
@@ -1388,7 +1388,7 @@
       "text": "String"
     },
     "colFunc": {
-      "text": "Binning"
+      "text": "Time frames"
     },
     "frmDateReform": {
       "title": "Reform Date/Time"
@@ -1753,7 +1753,7 @@
       "text": "Depth period"
     },
     "frmSlidingWindow": {
-      "title": "Sliding Window"
+      "title": "Lag"
     }
   },
   "components/smoothing/SmoothingWizard": {
@@ -2266,7 +2266,7 @@
       "fieldLabel": "File storage"
     },
     "edtDDFSystem": {
-      "fieldLabel": "Decimal"
+      "fieldLabel": "Bitness"
     },
     "frmExportSettings": {
       "title": "Export to Loginom Data File"

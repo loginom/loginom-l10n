@@ -11,6 +11,22 @@
       "NotStartingWith": "not starting with"
     }
   },
+  "components/quality": {
+    "ActionExtr": {
+      "NoDefine": "Not defined"
+    },
+    "ActionNull": {
+      "NoDefine": "Not defined"
+    },
+    "ActionOut": {
+      "NoDefine": "Not defined"
+    }
+  },
+  "exports/database": {
+    "DBExportType": {
+      "Update": "Update existing table records"
+    }
+  },
   "imports/excelfile": {
     "ExcelBlankRowAction": {
       "$Caption": "Blank Row Action"

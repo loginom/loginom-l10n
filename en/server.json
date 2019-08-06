@@ -3,20 +3,58 @@
     "ErrInvalidContentType": "Invalid Content-type value format: %s"
   },
   "Common/WSDL/Processor/WSDLRequestProcessor": {
+    "ErrXMLExportNoContext": "No export context specified",
     "FailedRequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz \"_failed\"",
     "RequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz"
+  },
+  "Common/XML/Processor/XMLRequestProcessor": {
+    "ErrXMLExportNoContext": "No export context specified"
+  },
+  "Common/XML/Processor/XMLRequests": {
+    "ErrExportContextNotSet": "No export context specified",
+    "ErrExportStubNotSet": "Export destination not specified"
+  },
+  "Common/XML/XMLDocument": {
+    "ErrOnlyOneRootElementAllowed": "Document root element already exists"
   },
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantLoadBackup": "Failed to restore binning"
   },
+  "components/execnode/ExecNodeComponent": {
+    "ErrReferencedNodeNotAvailable": "Reference node not available",
+    "ErrReferencedNodeNotFound": "Reference node not found"
+  },
   "components/execnode/ExecNodeComponentVendor": {
     "VendorCaption": "Node Execution"
+  },
+  "components/forecast/ARIMAXParams": {
+    "ErrNoStructuralElements": "No structural model element specified"
+  },
+  "components/loop/LoopComponent": {
+    "ErrGroupDataSourceSocketNotSpecified": "No socket containing columns to group specified"
   },
   "components/partition/PartitionVendor": {
     "VendorCaption": "Partition into Sets"
   },
+  "components/slidingwindow/SlidingWindowVendor": {
+    "VendorCaption": "Lag"
+  },
+  "exports/database/DBExport": {
+    "ErrFieldForUpdateNotSelected": "No fields to update selected"
+  },
+  "imports/excelfile/ImportExcelFile": {
+    "ErrColumnExcistFmt": "\"%s\" field already exists",
+    "ErrInvalidExplicitRange": "Invalid range",
+    "ErrPropInvalidNamedRange": "Invalid named range"
+  },
   "imports/native/ImportNative": {
     "ErrSystemUnsupported": "Decimal not supported"
+  },
+  "Libraries/bgrtl/Classes": {
+    "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
+    "ErrItemWithGuidAlreadyExist": "%s with identifier %s already exists",
+    "ErrItemWithIDAlreadyExist": "%s with identifier %d already exists",
+    "ErrVendorAlreadyRegistered": "'% s' vendor has already been registered"
   },
   "Libraries/bgrtl/FileStorageEngine": {
     "ErrFileStorageNotConnected": "File storage not connected",
@@ -25,6 +63,43 @@
   "Libraries/bgrtl/OperationBracketsAssist": {
     "ErrActionAlreadyBeginning": "Action has already been started",
     "ErrActionNotBeginning": "Action hasn't been started"
+  },
+  "Libraries/bgrtl/Vendors": {
+    "VendorMetaDesc": "vendor"
+  },
+  "Libraries/Config/ConfigBackupManagers": {
+    "ErrNodeIsNil": "No node specified"
+  },
+  "Libraries/DataPartition/Partition": {
+    "ErrPartitionMethod": "No sampling method specified"
+  },
+  "Libraries/DataPartition/PartitionIndexGenerator": {
+    "ErrExternalColumnNotReady": "No external partition column specified"
+  },
+  "Libraries/DataSampling/Sampling": {
+    "ErrSamplingMethod": "No sampling method specified"
+  },
+  "Libraries/Model/DerivedModelComponentVendor": {
+    "ErrBaseComponentAlreadyExists": "Base component already exists",
+    "ErrBaseComponentVendorNotSpecified": "No vendor defined for "
+  },
+  "Libraries/Model/ModelNodesCopyUtils": {
+    "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" reference node is not available at the required destination.",
+    "ErrNoNodesSpecified": "No node set specified"
+  },
+  "Libraries/Model/ModelWorkFlow": {
+    "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
+    "ErrPortMismatch": "Incompatible component vendor: node port list does not match"
+  },
+  "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
+    "ErrReferencedNodeNotAvailable": "Reference node not available",
+    "ErrReferencedNodeNotFound": "Reference node not found"
+  },
+  "Libraries/Optimization/Optimizer": {
+    "ErrStepIsNull": "Another strategy step not specified"
+  },
+  "Libraries/PropManager/CommonPropBinder": {
+    "ErrMainInterfaceIsNil": "Root element interface not set or removed"
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"

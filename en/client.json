@@ -1,8 +1,10 @@
 {
   "admin/ServerSettingsForm": {
+    "Bind": "Tapped addresses",
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection Wizard",
     "DirectorySettings": "Folders",
+    "Disabled": "Execution prohibited",
     "LogFileMaxIndex": "Number of backup files",
     "LogFileMaxSize": "Maximum file size",
     "LogFileName": "File Name",
@@ -150,7 +152,7 @@
     "AddNewConnectionReferenceNode": "Add Reference to Connection into Workflow",
     "AddNewNode": "Add Node to Workflow",
     "CantFindGenericModelNode": "Supernode node not found",
-    "CantFindSourceNode": "Failed to find source node",
+    "CantFindSourceNode": "Failed to find reference node",
     "CloneNode": "Clone Node",
     "ComposeExplodeNode": "Collapse Nodes into Supernode / Expand Supernode",
     "ComposeNode": "Collapse Nodes to Supernode",
@@ -297,8 +299,7 @@
     "Restore": "Restore"
   },
   "codemirror/CodeMirrorTernController": {
-    "ErrWrongFuncDescFormat": "Invalid Calculator function description format \"{0}\"",
-    "RE_AZaz": "[А-Яа-яЁё]"
+    "ErrWrongFuncDescFormat": "Invalid Calculator function description format \"{0}\""
   },
   "components/binning/LabelTemplateToolTip": {
     "ContextMenuInsertAllFmt": "Insert template: {0}",
@@ -312,6 +313,7 @@
     "DescMAX": "Bin maximum",
     "DescMIN": "Bin minimum",
     "DescOP": "Opening \"(\" or \"[\" bracket",
+    "SamplesDesc_3": "only 3 significant digits",
     "SamplesDesc_r3": "round to 50"
   },
   "components/binning/MethodSettingFrame": {
@@ -345,8 +347,6 @@
     "LabelTamplateA2Num": "%OP%MIN[4]..%MAX[4]%CP",
     "LabelTamplateA3Dat": "%FD[5] %OP%MIN..%MAX%CP",
     "LabelTamplateA3Num": "%FD[5] %OP%MIN[4]..%MAX[4]%CP",
-    "LabelTamplateAve": "%AVE",
-    "LabelTamplateExampleDat": "%FN (%FD[5]) %OP%MIN[d-mmm-yy h:mm]..%MAX[d-mmm-yy h:mm]%CP",
     "LabelTamplateExampleNum": "%FN (%FD[5]) %OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, average - #.####]",
     "LabelTamplateMax": "%MAX",
     "LabelTamplateMin": "%MIN",
@@ -374,7 +374,6 @@
     "All": "All",
     "Categories": "Categories",
     "Parameters": "Parameters",
-    "RE_AZaz": "[А-Яа-яЁё]",
     "SearchDef": "Filter"
   },
   "components/calcdata/CodeMirrorController": {
@@ -399,17 +398,24 @@
     "ChangeColumnPurposeToInput": "'{0}' field is blocked due to usage of external or locked binning. Do you want to unlock and continue?",
     "CurrentBinningNotSaved": "Current binning contains unsaved changes",
     "LockAll": "Lock all",
-    "LockSelected": "Lock selected"
+    "LockSelected": "Lock selected",
+    "SplitClass": "Bound split",
+    "UnlockAll": "Unlock all",
+    "UnlockSelected": "Unlock selected"
   },
   "components/coarseclasses/CoarseClassesViewer": {
     "HideSideBar": "Hide side bar",
+    "Locked": "Locked",
     "ShowSideBar": "Show side bar",
-    "Total": "Total"
+    "Total": "Total",
+    "Unlocked": "Unlocked"
   },
   "components/coarseclasses/CoarseClassesWizard": {
+    "ErrNoStatistics": "Failed to get statistics",
     "InputPortsNotActived": "Do you want to activate input ports?"
   },
   "components/columnflipping/ColumnFlippingWizard": {
+    "ColumnFlippingTitle": "Column Сonvolution",
     "UsageInfo": "Info",
     "UsageTransposition": "Transposed"
   },
@@ -417,10 +423,23 @@
     "NoDataSourceTooltip": "No selected data source"
   },
   "components/condition/ConditionParamsWizard": {
-    "DebugAll": "All branches"
+    "DebugAll": "All branches",
+    "DebugElse": "Otherwise"
+  },
+  "components/condition/ConditionSocketsWizard": {
+    "DuplicateSocketsError": "{0} and {1} elements have the same identifiers",
+    "EmptySocketName": "<Unique0>",
+    "EmptyVendor": "Not defined"
+  },
+  "components/corranalysis/CorrAnalysisWizard": {
+    "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if you want to determine the linear relationship between two processes or parts of the processes that occur with a certain time lag.",
+    "CorrTypeKendall": "The Tay-b Kendall rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. It is recommended to use it for categorical data.",
+    "CorrTypePearson": "Using the Pearson correlation coefficient it is possible to determine the strength and direction of the linear relationship between two processes that occur simultaneously.",
+    "CorrTypeSpearman": "The Spearman's rank correlation coefficient is another version of the rank correlation. Not the numerical values but corresponding ranks are used for numerical fields to estimate the connection strength. Therefore, the Spearman coefficient will be 1 or -1 for any monotone sequences."
   },
   "components/crosstab/CrossTabWizard": {
     "CaseDesc": "Facts",
+    "ColumnGroupTip": "Measurement in columns for",
     "CrossTabTitle": "Cross Table",
     "DimColDesc": "Columns",
     "DimRowDesc": "Rows",
@@ -437,14 +456,21 @@
     "DataToVariablesTitle": "Table into Variables",
     "GroupDataFactor": "Variables"
   },
+  "components/datatoxml/DataToXmlRequestWizard": {
+    "DataToXmlRequestTitle": "Mapping Fields to Form XML"
+  },
   "components/datereform/DateReformWizard": {
     "CommonGroup": "Common",
     "IsoGroup": "ISO"
+  },
+  "components/elimoutlier/ElimOutlierWizard": {
+    "OutExtrError": "The outlier value must be less than the one for the extreme value"
   },
   "components/em/EMClusterizationWizard": {
     "frmClusterizationTitle": "EM Clustering"
   },
   "components/enrichdata/EnrichDataWizard": {
+    "MissingMainColumn": "Failed to show link not connected with the main table",
     "NotAssignedColumn": "Not selected"
   },
   "components/execcmd/ExecCmdCodeMirrorController": {
@@ -479,6 +505,33 @@
     "fldMonthFirstPostfix": "first",
     "fldMonthLastPostfix": "last",
     "fldNegative": "not",
+    "fldOneDayPeriodName": "day",
+    "fldOneMonthPeriodName": "month",
+    "fldOneQuarterPeriodName": "quarter",
+    "fldOneWeekPeriodName": "week",
+    "fldOneWrongPeriodName": "period",
+    "fldOneYearPeriodName": "year",
+    "fldOtherFirstPostfix": "first",
+    "fldOtherLastPostfix": "last",
+    "fldQuarterFirstPostfix": "first",
+    "fldQuarterLastPostfix": "last",
+    "fldWeekFirstPostfix": "first",
+    "fldWeekLastPostfix": "last",
+    "fldYearFirstPostfix": "first",
+    "fldYearLastPostfix": "last",
+    "GetValueList": "Get list",
+    "Greater": ">",
+    "GreaterOrEqual": ">=",
+    "In": "on the list",
+    "InvalidFilter": "Not configured",
+    "IsFalse": "FALSE",
+    "IsNotNull": "Not null",
+    "IsNull": "null",
+    "IsTrue": "TRUE",
+    "Less": "<",
+    "LessOrEqual": "<=",
+    "Like": "contains",
+    "NotEndingWith": "not ending with",
     "NotEqual": "<>",
     "NotIn": "not listed",
     "NotLike": "does not contain",
@@ -498,10 +551,14 @@
     "FactorsEditTooltip": "Edit",
     "FactorTooltip": "Aggregation methods for {0}:",
     "FactorTooltipError": "No aggregation methods specified",
+    "FunctionsUndefined": "Not defined",
     "GroupDataDimension": "Group",
     "GroupDataDimensionTooltipName": "Group",
     "GroupDataFactor": "Parameters",
     "GroupDataTitle": "Grouping"
+  },
+  "components/javascript/CodeOutputPreviewForm": {
+    "CodeExec": "Script execution"
   },
   "components/javascript/JavaScriptCodeMirrorController": {
     "CodePlaceholder": "Enter code"
@@ -509,19 +566,46 @@
   "components/javascript/JavaScriptCodeWizard": {
     "ConsoleMessagesMissed": "missed"
   },
+  "components/javascript/JavaScriptColumnsWizard": {
+    "frmJavaScriptOutputTableTitle": "Configure JavaScript Output Table Columns"
+  },
   "components/joindata/JoinDataWizard": {
-    "MainColumns": "Main dataset columns"
+    "DifferenceJoinDataDesc": "The difference includes all rows from the main data set into result, with the exception of the rows for which the key fields of the main (left) and subtracted (right) data sets coincide.",
+    "FullJoinDataDesc": "Full outer join includes all rows from the main and joining data sets into result. If the key fields match then the rows are filled in with real values. Columns are filled in with the null values in mismatched rows.",
+    "GroupField_MissingFields": "Missing columns",
+    "InnerJoinDataDesc": "The inner join includes into result all rows for which a match has been found for the key fields of the main and joining datasets.",
+    "JoinDataWizardTitle": "Join Data Wizard",
+    "JoinedColumns": "Columns of joining data set",
+    "LeftJoinDataDesc": "The outer left join includes into result all rows from the main data set supplemented by the column values from the joining data set that coincide in the key fields.",
+    "MainColumns": "Main dataset columns",
+    "RightJoinDataDesc": "The outer right join includes into result all rows from the joining data set supplemented by the column values from the main data set that coincide in the key fields."
+  },
+  "components/linregression/LinRegressionWizard": {
+    "RegressionDetailPage": "Detailed linear regression wizard",
+    "RegressionParamsPage": "Linear regression wizard"
   },
   "components/logregression/LogRegressionWizard": {
-    "GetValueList": "Get list"
+    "GetValueList": "Get list",
+    "RegressionDetailPage": "Detailed logistic regression wizard",
+    "RegressionParamsPage": "Logistic regression wizard"
   },
   "components/loop/LoopMappingWizard": {
+    "InvalidLinkFormat": "No variables in connection of \"{0}\" input variable with \"{1}\" output variable",
     "LoopMappingWizardTitle": "Mapping Variables",
     "SourceTitle": "Output Variables",
     "TargetTitle": "Input Variables"
   },
+  "components/loop/LoopNodeWizard": {
+    "LoopNodeWizardTitle": "Loop Node Wizard"
+  },
   "components/loop/LoopParamsWizard": {
-    "AutodetectMaxThreadCount": "Auto detect"
+    "AutodetectMaxThreadCount": "Auto detect",
+    "GroupColumnMissingFormat": "No \"{0}\" column assigned for grouping",
+    "MaxThreadCountMinPrefix": "Value cannot be lower",
+    "NoSocketError": "No data source input port for batch processing",
+    "NullReferenceNode": "Not defined",
+    "NullReferenceNodeError": "No reference node",
+    "VariableNotFoundErrorFormat": "No \"{0}\" variable "
   },
   "components/neuralnet/NeuralNetParamsWizard": {
     "DecayAvg": "Average",
@@ -544,26 +628,108 @@
   },
   "components/replace/ReplaceWizard": {
     "DeleteAllPrompt": "Do you really want to remove all replacement options?",
+    "DeleteAllPromptTitle": "Delete substitution table",
+    "EditorDisabled": "Include replacement to edit",
+    "EditorNotChoosed": "Select replacement to edit.",
+    "ErrFileFieldMiss": "Item is not file upload field",
     "ErrFileNotChoosed": "No file selected",
+    "ErrTypeCastError": "Impossible to cast {0} value to {1} data type",
+    "OutputDataTypeError": "The output values type cannot be unambiguous without replacement of others",
     "ReplaceGroupCommon": "Exact match",
     "ReplaceGroupRegex": "Regular expressions",
     "ReplaceItemTypeError": "Value does not comply with used type",
+    "ReplacementsSourceError": "Replacements source error",
+    "ReplacementsSourceErrorTip": "No replacement source with Guid {0}",
+    "ReplaceOtherByEmpty": "With empty",
+    "ReplaceOtherByNone": "No to replace",
+    "ReplaceOtherByRegExp": "With regular expression",
+    "ReplaceOtherByValue": "With value",
     "SourceFieldInfo": "Info",
     "SourceFieldInput": "Value",
     "SourceFieldOutput": "Replace",
-    "SourceFieldUnused": "Not used"
+    "SourceFieldUnused": "Not used",
+    "UniqueValuesLimitErr": "It is impossible to show unique values number of which exceeds {0}"
+  },
+  "components/sampling/SamplingComponentWizard": {
+    "SampleSetName": "Sampled"
+  },
+  "components/slidingwindow/SlidingWindowWizard": {
+    "NoForecast": "Not selected",
+    "NoHistory": "Not selected"
   },
   "components/sorting/SortingColumnCollection": {
     "CaseSensitiveActionDesc": "Case sensitive",
     "ColumnIsUsed": "Field already used",
     "DeleteAllConfirm": "Do you want to cancel all fields sorting?",
+    "DeleteConfirmFmt": "Do you want to cancel \"{0}\" field sorting?",
     "DeleteTitle": "Cancel Sort",
     "HintForSortDirectionAsc": "Ascending",
     "HintForSortDirectionDesc": "Descending",
-    "MultiDeleteConfirm": "Do you want to cancel sorting for selected fields?"
+    "InvalidRowDescFmt": "\"{0}\" input field not found",
+    "MultiDeleteConfirm": "Do you want to cancel sorting for selected fields?",
+    "NotCaseSensitiveActionDesc": "Not case sensitive"
+  },
+  "components/ungroupdata/UngroupDataWizard": {
+    "ErrDataTypeTimeAxisFields": "Field data types for data sequentializing must match",
+    "ErrInSelectGroupFields": "Ungroupable field not selected",
+    "ErrInSelectOutputFields": "No field for ungrouped values dereference selected",
+    "ErrInSelectQuotaCalcFields": "No field for shares calculation selected",
+    "ErrInSelectQuotaFields": "No field with shares selected",
+    "ErrInSelectTimeAxisFields": "No fields for data sequentializing selected",
+    "ErrNoLinksDefined": "No links defined",
+    "MissingColumnFmt": "No linked \"{0}\" column",
+    "NoTimeAxisColumn": "No column selected",
+    "OutputColumnUsageType": "Field usage type",
+    "QuotaColumnUsageType": "Field with shares",
+    "RoundDecimalParamLabel": "Decimal place accuracy",
+    "RoundMultipleParamLabel": "Multiplicity",
+    "RoundParamLabel": "Rounding parameter",
+    "TimeAxisColumnUsageType": "Ordinal field",
+    "UngroupedColumnUsageType": "Ungrouped"
+  },
+  "components/uniondata/UnionDataWizard": {
+    "MissingMainColumn": "Failed to show link not connected with the main table",
+    "NotAssignedColumn": "Not selected"
+  },
+  "components/variablestodata/VariablesToDataWizard": {
+    "VarToColumnsDescribe": "Each variable will correspond to a separate table field.",
+    "VarToRowsDescribe": "Each variable will correspond to a separate table entry."
+  },
+  "components/wsdlclient/AbstractOutputWizard": {
+    "PartMessagePrefix": "Part:"
+  },
+  "components/wsdlclient/CommonRequestController": {
+    "AutoMapPromtTitle": "Auto Link",
+    "ConfirmAutoMap": "Links will be automatically arranged by field caption and data type. Already configured links will be deleted.",
+    "ConfirmDeleteAll": "Do you want to delete all links?",
+    "DeletePromtTitle": "Delete",
+    "ErrInvalidLinkFound": "Invalid link of {0} field with {1} request has been found ",
+    "ErrMultilinkFound": "Multiple link of  \"{0}\" request with \"{1}\" field has been found and it willl be deleted",
+    "NotLink": "not linked"
+  },
+  "components/wsdlclient/DebugParamsController": {
+    "ErrDumpRequestDirectoryDoesNotExist": "{0} folder selected to save requests does not exist",
+    "ErrResponseFileDoesNotExist": "{0} file selected as response source does not exist"
+  },
+  "components/wsdlclient/OperationFaultsWizard": {
+    "FaultsMessagePrefix": "Handled exception:",
+    "OperationFaultsTitle": "Configure Exception Handled"
+  },
+  "components/wsdlclient/OperationOutputWizard": {
+    "OperationOutputTitle": "Configure Service Response",
+    "OutputMessagePrefix": "Message:"
   },
   "components/wsdlclient/RequestMethodWizard": {
-    "SoapOperationExtensionInfoFmt": "Request style: {0}; action: {1}"
+    "ErrNotConnected": "Connection to the web service is not active",
+    "HttpBindingExtensionInfoPfx": "Request method:",
+    "HttpOperationExtensionInfoPfx": "Local part of address:",
+    "PortExtensionInfoFmt": "Extension type: {0}; request address: {1}",
+    "SoapBindingExtensionInfoFmt": "SOAP version: {0}; request style: {1}; transport: {2}",
+    "SoapOperationExtensionInfoFmt": "Request style: {0}; action: {1}",
+    "WSDLBindingPfx": "Binding:",
+    "WSDLOperationFtm": "Operation: {0} ({1})",
+    "WSDLPortPfx": "Port:",
+    "WSDLServicePfx": "Service:"
   },
   "components/wsdlclient/WSDLRequestWizard": {
     "MessagePrefix": "Message:",
@@ -571,12 +737,24 @@
   },
   "connections/restservice/ConnectionWizard": {
     "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
+    "DublicateGetMethodParamNameFmt": "\"{0}\" parameter already exists",
+    "TestConnectionSuccess": "Successful connection test",
     "TestConnectionTitle": "Test Connection"
+  },
+  "connections/webservice/AuthorizationForm": {
+    "ExpireCertDateError": "Expired certificate expiration date"
   },
   "connections/webservice/ConnectionWizard": {
+    "TestConnectionSuccess": "Successful connection test",
     "TestConnectionTitle": "Test Connection"
   },
+  "connections/xsdfiles/XSDFilesConnectionWizard": {
+    "ErrFileNameAdd": "{0} file cannot be added to the list, perhaps, it has aready been added"
+  },
   "exports/dbexport/DBCreateTableDialog": {
+    "DublicateFieldName": "A field with the same name already exists",
+    "ErrCreateTable": "Error occurred while creating the table",
+    "ErrFieldSize": " {0} field must be larger than 0",
     "ErrTableName": "Invalid table name",
     "InvalidFieldNameChar": "Invalid character in field name"
   },
@@ -586,7 +764,19 @@
     "ErrAbsentDataSourceSourceDetails": "List of absent source columns used previously:",
     "ErrAbsentFieldsDetails": "List of absent table columns used previously:",
     "ErrUpdateFieldsDetails": "List of table columns in which changes occurred:",
-    "KeyColumnText": "Key"
+    "KeyColumnText": "Key",
+    "SyncThroughColumnsToolTip": "Refresh table fields",
+    "Title": "Match Source Columns to Table Fields"
+  },
+  "exports/dbexport/DBExportParamsWizard": {
+    "ErrTableNameNotSelected": "No table name selected",
+    "NoConnection": "No connection"
+  },
+  "exports/excelfile/ExportExcelFilePreviewWizard": {
+    "DefaultSheetName": "Sheet1"
+  },
+  "exports/xml/BaseXmlRequestWizard": {
+    "EmptyNamespace": "empty namespace"
   },
   "ext/colorfield/Field": {
     "UndefinedHexFormat": "Incorrect hexadecimal number format"
@@ -1026,7 +1216,7 @@
     "ExpandLimitWarning": "Not all nodes were opened because the number of opened nodes exceeded the allowable limit."
   },
   "imports/xml/ImportXmlFieldsWizard": {
-    "EmptyNamespace": "Namespace not specified"
+    "EmptyNamespace": "Empty namespace"
   },
   "imports/xml/ImportXmlPreviewWizard": {
     "ErrNoFile": "Nonexistent XML file name specified"
@@ -1155,7 +1345,7 @@
     "TextGoBack": "Go Back",
     "TextGoForward": "Go Forward",
     "TextGoUp": "Go Up",
-    "TextRefresh": "Update",
+    "TextRefresh": "Refresh",
     "TextShare": "Share..."
   },
   "packages/deductor-theme/const/Palletes": {
@@ -1196,6 +1386,9 @@
     "MessageFmt": "MESSAGE: {0}",
     "OperationAborted": "Operation aborted",
     "SenderNameFmt": "SENDER: {0}"
+  },
+  "viewers/browse/BrowseFormat": {
+    "EmptyFormatText": "Not defined"
   },
   "viewers/browse/BrowseView": {
     "ExportFileTitle": "Table",
@@ -1376,7 +1569,7 @@
     "DeleteView": "Do you want to delete \"{0}\"?",
     "Enter": "Enter",
     "ErrAddingViewToReports": "Error adding visualizer to reports",
-    "GroupAlreadyExists": "Group with the same name already exists",
+    "GroupAlreadyExists": "A group with the same name already exists",
     "NeedNotEmptyGroupName": "It is required to set non-empty group name",
     "SetNewGroupName": "New group name:",
     "ShowInReports": "Show in Reports",
@@ -1442,6 +1635,14 @@
     "NoDimensionValueDisplayName": "Value",
     "SubFunctionDisplayName": "Display",
     "Yes": "Yes"
+  },
+  "viewers/reports/ReportsForm": {
+    "GroupAlreadyExists": "A group with the same name already exists",
+    "SourceNodeDoesntExists": "The visualizer reference node does not exist for this report"
+  },
+  "viewers/reports/ReportsView": {
+    "SourceNodeDoesntExists": "The visualizer reference node does not exist for this report",
+    "VendorNotDefined": "No vendor specified for visualizer"
   },
   "viewers/roc/ROCView": {
     "CutoffPPV": "PPV",

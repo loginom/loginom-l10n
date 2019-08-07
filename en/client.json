@@ -2,12 +2,12 @@
   "admin/ServerSettingsForm": {
     "Bind": "Tapped addresses",
     "ComponentSettings": "Component parameters",
-    "ConnectionSettings": "Connection Wizard",
+    "ConnectionSettings": "Connection wizard",
     "DirectorySettings": "Folders",
     "Disabled": "Execution prohibited",
     "LogFileMaxIndex": "Number of backup files",
     "LogFileMaxSize": "Maximum file size",
-    "LogFileName": "File Name",
+    "LogFileName": "File name",
     "LogFileRewrite": "Rewrite file",
     "LoggerSettings": "Logging parameters",
     "MinLogLevel": "Logging level",
@@ -58,7 +58,6 @@
   },
   "app/Application": {
     "ErrVersionFailure": "Error when requesting the latest version",
-    "LoginomLastVersionDownloadUrl": "https://loginom.com/downloads",
     "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost.",
     "VersionErrorResponseStatus": "Error when requesting the latest version. Response code: \"{0}\". Message: {1}",
     "VersionWrongServiceResponse": "Wrong service response with the information on the latest Loginom version"
@@ -71,7 +70,7 @@
     "RemoveVendorConfirm": "Do you want to remove the component?"
   },
   "app/ConfigurePublishedPackagesForm": {
-    "ErrPathNotSpecified": "Path to the Package File is not Specified"
+    "ErrPathNotSpecified": "Path to the package file is not specified"
   },
   "app/ListViewForm": {
     "NumberObjects": "{0} objects"
@@ -94,7 +93,7 @@
     "ErrUrlPathNotFound": "\"{0}\" path not found",
     "FavoritesTitle": "Favorites",
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
-    "MsgTransportError": "Сonnection to the server is broken",
+    "MsgTransportError": "The connection to the server is broken",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
     "PackageCopyOpened": "Changes in the open link  \"{0}\" package will be reflected in the current package upon its reload ",
     "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
@@ -118,9 +117,9 @@
     "ErrInstanceNotFound": "There is no associated visual node for ID",
     "FileStorage": "Files",
     "HomePage": "Home",
-    "InputPorts": "Input Ports",
+    "InputPorts": "Input ports",
     "ModelViews": "Visualizers",
-    "OutputPorts": "Output Ports",
+    "OutputPorts": "Output ports",
     "PackagesParent": "Packages",
     "Properties": "Properties",
     "QstCloseAllPackages": "Do you want to close all packages?",
@@ -128,9 +127,9 @@
     "ReadOnlyPackageNamePostfix": "(read-only)",
     "References": "References",
     "Reports": "Reports",
-    "ServiceInputPorts": "Service Input Ports",
-    "ServiceOutputPorts": "Service Output Ports",
-    "SharedDirectories": "Shared Folders",
+    "ServiceInputPorts": "Service input ports",
+    "ServiceOutputPorts": "Service output ports",
+    "SharedDirectories": "Shared folders",
     "UnitDisplayNameDefault": "Module",
     "Users": "Users",
     "Vendors": "Components",
@@ -140,72 +139,72 @@
   "app/MapTreeForm": {
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
-    "mnuPortsShowAll": "Show All Ports",
-    "ModelUnitLabel": "Module Name",
-    "VendorLabel": "Component Name"
+    "mnuPortsShowAll": "Show all ports",
+    "ModelUnitLabel": "Module name",
+    "VendorLabel": "Component name"
   },
   "app/ModelForm": {
-    "ActivateCurrent": "Run Node",
-    "ActivateFrom": "Activate Subsequent Nodes",
-    "AddComment": "Add Comment",
-    "AddNewConnectionInheritedNode": "Add Connection Node to Workflow",
-    "AddNewConnectionReferenceNode": "Add Reference to Connection into Workflow",
-    "AddNewNode": "Add Node to Workflow",
+    "ActivateCurrent": "Run node",
+    "ActivateFrom": "Activate subsequent nodes",
+    "AddComment": "Add comment",
+    "AddNewConnectionInheritedNode": "Add connection node to workflow",
+    "AddNewConnectionReferenceNode": "Add reference to connection into workflow",
+    "AddNewNode": "Add node to workflow",
     "CantFindGenericModelNode": "Supernode node not found",
     "CantFindSourceNode": "Failed to find reference node",
-    "CloneNode": "Clone Node",
-    "ComposeExplodeNode": "Collapse Nodes into Supernode / Expand Supernode",
-    "ComposeNode": "Collapse Nodes to Supernode",
-    "ConfigurePort": "Configure Port ...",
+    "CloneNode": "Clone node",
+    "ComposeExplodeNode": "Collapse nodes into supernode / expand supernode",
+    "ComposeNode": "Collapse nodes to supernode",
+    "ConfigurePort": "Configure port...",
     "ConfirmRemovingDerivedVendor": "Do you really want to delete the derived component?",
-    "CopyNode": "Copy Node",
-    "DeactivateCurrent": "Deactivate Node",
+    "CopyNode": "Copy node",
+    "DeactivateCurrent": "Deactivate node",
     "DeleteDerivedVendor": "Delete...",
-    "DeleteLink": "Delete Link...",
-    "DeleteNode": "Delete Node...",
-    "DeletePort": "Delete Port",
-    "DeriveNode": "Create Derived Component ...",
-    "EditPortDisplayName": "Edit Port Caption...",
+    "DeleteLink": "Delete link...",
+    "DeleteNode": "Delete node...",
+    "DeletePort": "Delete port",
+    "DeriveNode": "Create derived component ...",
+    "EditPortDisplayName": "Edit port caption...",
     "EditPortDisplayNameWindowTitle": "Edit",
-    "EditPortFieldLabel": "Port Caption",
+    "EditPortFieldLabel": "Port caption",
     "ErrNodeNotInitialized": "No component vendor specified for \"{0}\" node ",
     "Error": "Error",
     "ErrPortNotCreated": "Failed to create new port",
     "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
-    "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned",
-    "ExpandGenericModel": "Expand Supernode",
-    "ExplodeNode": "Expand Supernode",
-    "GoToConnection": "Go to Connection",
-    "GoToConnections": "Go to Connections",
-    "HideControlVariablesPorts": "Hide Control Variables Port",
+    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
+    "ExpandGenericModel": "Expand supernode",
+    "ExplodeNode": "Expand supernode",
+    "GoToConnection": "Go to connection",
+    "GoToConnections": "Go to connections",
+    "HideControlVariablesPorts": "Hide control variables port",
     "LockedIconTooltip": "Node locked during runtime or setup",
-    "NodeBatchMode": "Configure Node Activation Mode...",
+    "NodeBatchMode": "Configure node activation mode...",
     "NodeVisibility": "Configure visibility...",
     "NodeVisibilityByDefault": "Default",
-    "NodeVisibilityInternal": "Visibility Inside Current Package",
-    "NodeVisibilityPrivate": "Visibility Inside Current Workflow",
-    "NodeVisibilityProtected": "Visibility Inside Current Workflow and Submodels",
-    "NodeVisibilityPublic": "Visibility Inside All Packages",
-    "NodeVisibilityPublished": "Visibility Inside All Packages and as Web Service",
+    "NodeVisibilityInternal": "Visibility inside current package",
+    "NodeVisibilityPrivate": "Visibility inside current workflow",
+    "NodeVisibilityProtected": "Visibility inside current workflow and supernodes",
+    "NodeVisibilityPublic": "Visibility inside all packages",
+    "NodeVisibilityPublished": "Visibility inside all packages and as web service",
     "NodeVisibilityTitle": "Node Visibility",
-    "PortSubTypeUndefined": "Failed to Define Port Subtype",
-    "RecreateBaseNodeForDerivedVendor": "Recreate Base Node",
-    "RemoveComment": "Delete Comment",
+    "PortSubTypeUndefined": "Failed to define the port subtype",
+    "RecreateBaseNodeForDerivedVendor": "Recreate base node",
+    "RemoveComment": "Delete comment",
     "RemoveSelectedConfirm": "Do you really want to delete the selected nodes and connections?",
     "RenameNode": "Rename...",
-    "ResetConfiguration": "Restore Original Node Configuration",
-    "SelectOneNode": "Select Only One Node",
-    "SelectSomething": "First Select Object in Workflow",
-    "SetNodeDerivedVendor": "Set Derived Node Component...",
-    "SetupConnection": "Configure Connection...",
-    "SetupNode": "Configure Node...",
-    "ShowControlVariablesPort": "Show Control Variables Port",
-    "ShowDataPreview": "Quick Preview...",
-    "TeachNode": "Retrain Node",
+    "ResetConfiguration": "Restore original node configuration",
+    "SelectOneNode": "Select only one node",
+    "SelectSomething": "First select object in workflow",
+    "SetNodeDerivedVendor": "Set derived node component...",
+    "SetupConnection": "Configure connection...",
+    "SetupNode": "Configure node...",
+    "ShowControlVariablesPort": "Show control variables port",
+    "ShowDataPreview": "Quick preview...",
+    "TeachNode": "Retrain node",
     "TuneDerivedVendor": "Configure...",
     "UndoableDeleteNode": "Delete (forced)...",
-    "UpdateConfiguration": "Update Node Configuration",
-    "VendorIsUndefined": "Undefined Node Component",
+    "UpdateConfiguration": "Update node configuration",
+    "VendorIsUndefined": "Undefined node component",
     "ZoomFitTooltip": "Zoom fit",
     "ZoomInTooltip": "Zoom in",
     "ZoomOutTooltip": "Zoom out"
@@ -214,14 +213,14 @@
     "ErrNoRefModelNodeTreeNode": "No reference to IBGModelNodeTreeNode"
   },
   "app/PackageForm": {
-    "ErrIncorrectVersionFormat": "Incorrect Version Format",
+    "ErrIncorrectVersionFormat": "Incorrect version format",
     "ErrInvalidPackageName": "\"{0}\" is invalid package name"
   },
   "app/PackageLinkForm": {
-    "ErrIncorrectVersionFormat": "Incorrect Version Format"
+    "ErrIncorrectVersionFormat": "Incorrect version format"
   },
   "app/PackageListForm": {
-    "AddUnit": "Add Module",
+    "AddUnit": "Add module",
     "AddUnitTooltip": "Add module",
     "Delete": "Delete",
     "DeleteTooltip": "Delete...",
@@ -255,7 +254,7 @@
     "VersionMask": "Version"
   },
   "app/SelectBaseVendorForm": {
-    "CantChangeVendor": "Failed to Install Component",
+    "CantChangeVendor": "Failed to install component",
     "ThereIsNodeVendors": "The list of components is empty. Create a derived component from the appropriate node."
   },
   "app/ServerConnection": {
@@ -267,10 +266,10 @@
   "app/TabForm": {
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrPrepareContainer": "When switching to \"{0}. {1}\" error occurred.\n{2}",
-    "ErrVendorMalfunction": "\"{0}\" Node Component is Malfunctioned",
-    "MsgNodeConfigurationChanged": "Node Configuration Changed",
+    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
+    "MsgNodeConfigurationChanged": "Node configuration changed",
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
-    "MsgNodeLocked": "\"{0}\" node is locked",
+    "MsgNodeLocked": "\"{0}\" node is blocked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
     "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
     "OperationAborted": "Action not supported"
@@ -282,14 +281,13 @@
     "DeleteTooltip": "Delete...",
     "DescriptionHeader": "Description",
     "DisplayNameHeader": "Caption",
-    "GoToBaseNode": "Go to Base Node",
+    "GoToBaseNode": "Go to base node",
     "Setup": "Configure",
     "SetupTooltip": "Configure...",
     "Update": "Update",
     "VisibilityHeader": "Visibility "
   },
   "app/Version": {
-    "CompanyWebsite": "https://loginom.ru",
     "LegalCopyright": "© Analytical Technologies 2017"
   },
   "app/WindowTitle": {
@@ -341,17 +339,6 @@
     "DescriptionN": "Number",
     "DescriptionTestNum": "Test",
     "InputPortsNotActived": "Do you want to activate input ports?",
-    "LabelTamplateA1Dat": "%MIN[from d.m.yy h:mm]%MAX[ to d.m.yy h:mm]",
-    "LabelTamplateA1Num": "%MIN[from #,0.####]%MAX[ to #,0.####]",
-    "LabelTamplateA2Dat": "%OP%MIN..%MAX%CP",
-    "LabelTamplateA2Num": "%OP%MIN[4]..%MAX[4]%CP",
-    "LabelTamplateA3Dat": "%FD[5] %OP%MIN..%MAX%CP",
-    "LabelTamplateA3Num": "%FD[5] %OP%MIN[4]..%MAX[4]%CP",
-    "LabelTamplateExampleNum": "%FN (%FD[5]) %OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, average - #.####]",
-    "LabelTamplateMax": "%MAX",
-    "LabelTamplateMin": "%MIN",
-    "LabelTamplateN": "%N",
-    "LabelTamplateTestNum": "%OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, среднее - #.####]",
     "LowerInclusive": "<= x <",
     "MsgBoxTitle": "Attention",
     "ProcessInfo": "Processing has been already started for selected columns.",
@@ -439,7 +426,7 @@
   },
   "components/crosstab/CrossTabWizard": {
     "CaseDesc": "Facts",
-    "ColumnGroupTip": "Measurement in columns for",
+    "ColumnGroupTip": "Dimension in columns for",
     "CrossTabTitle": "Cross Table",
     "DimColDesc": "Columns",
     "DimRowDesc": "Rows",
@@ -679,7 +666,7 @@
     "ErrNoLinksDefined": "No links defined",
     "MissingColumnFmt": "No linked \"{0}\" column",
     "NoTimeAxisColumn": "No column selected",
-    "OutputColumnUsageType": "Field usage type",
+    "OutputColumnUsageType": "Field with names",
     "QuotaColumnUsageType": "Field with shares",
     "RoundDecimalParamLabel": "Decimal place accuracy",
     "RoundMultipleParamLabel": "Multiplicity",
@@ -776,7 +763,8 @@
     "DefaultSheetName": "Sheet1"
   },
   "exports/xml/BaseXmlRequestWizard": {
-    "EmptyNamespace": "empty namespace"
+    "EmptyNamespace": "empty namespace",
+    "ExportXmlRequestTitle": "Field Mapping for Export"
   },
   "ext/colorfield/Field": {
     "UndefinedHexFormat": "Incorrect hexadecimal number format"
@@ -835,7 +823,7 @@
     "DeleteAllPromptActCol": "Do you really want to delete all?",
     "DeleteAllPromptTitle": "Delete",
     "DeleteAllPromptTitleActCol": "Delete",
-    "DeleteAllText": "Delete All...",
+    "DeleteAllText": "Delete all...",
     "DeleteText": "Delete",
     "ErrStoreType": "Ext.data.Store or Ext.data.ChainedStore repository is required for activity controller",
     "GridViewDragDropNotFound": "Failed to prepare table for dragging rows, gridviewdragdrop plug-in not found",
@@ -879,6 +867,7 @@
     "ColumnUndefined": "Column undefined"
   },
   "ext/VariantEditor": {
+    "EmptyStringText": "<Empty0>",
     "NullText": "<NULL>"
   },
   "ext/VendorTreeStore": {
@@ -900,88 +889,88 @@
     "ArchiveFileDesc": "Archive",
     "ArchiveFilesDesc": "Archives",
     "AudioFileDesc": "Audio File",
-    "AudioFilesDesc": "Audio Files",
+    "AudioFilesDesc": "Audio files",
     "BMPFileDesc": "Bitmap",
     "BMPFilesDesc": "Bitmaps",
-    "CsvFileDesc": "CSV File",
-    "CsvFilesDesc": "CSV Files",
-    "DbfFileDesc": "dBase File",
-    "DbfFilesDesc": "dBase Files",
-    "DDFFileDesc": "DDF File",
-    "DDFFilesDesc": "DDF Files",
-    "DocFileDesc": "MS Word Document",
-    "DocFilesDesc": "MS Word Documents",
-    "ExcelFileAllDesc": "Excel File",
-    "ExcelFilesAllDesc": "Excel Files",
-    "ExcelFilesSupportedDesc": "Excel Files",
-    "FdbFileDesc": "Firebird Database",
-    "FdbFilesDesc": "Firebird Databases",
-    "GdbFdbFileDesc": "IB\\FB Database",
-    "GdbFdbFilesDesc": "IB\\FB Databases",
-    "GdbFileDesc": "InterBase Database",
-    "GdbFilesDesc": "InterBase Databases",
-    "GIFFileDesc": "GIF Image",
-    "GIFFilesDesc": "GIF Images",
+    "CsvFileDesc": "CSV file",
+    "CsvFilesDesc": "CSV files",
+    "DbfFileDesc": "dBase file",
+    "DbfFilesDesc": "dBase files",
+    "DDFFileDesc": "DDF file",
+    "DDFFilesDesc": "DDF files",
+    "DocFileDesc": "MS Word document",
+    "DocFilesDesc": "MS Word documents",
+    "ExcelFileAllDesc": "Excel file",
+    "ExcelFilesAllDesc": "Excel files",
+    "ExcelFilesSupportedDesc": "Excel files",
+    "FdbFileDesc": "Firebird database",
+    "FdbFilesDesc": "Firebird databases",
+    "GdbFdbFileDesc": "IB\\FB database",
+    "GdbFdbFilesDesc": "IB\\FB databases",
+    "GdbFileDesc": "InterBase database",
+    "GdbFilesDesc": "InterBase databases",
+    "GIFFileDesc": "GIF image",
+    "GIFFilesDesc": "GIF images",
     "HtmFileDesc": "Webpage",
     "HtmFilesDesc": "Webpages",
     "ICOFileDesc": "Icon",
     "ICOFilesDesc": "Icons",
     "IMGAllFileDesc": "Image",
     "IMGAllFilesDesc": "Images",
-    "JPGFileDesc": "JPEG Image",
-    "JPGFilesDesc": "JPEG Images",
-    "LckFileDesc": "Lock File",
-    "LckFilesDesc": "Lock Files",
-    "LGDFileDesc": "Loginom Data File",
-    "LGDFilesDesc": "Loginom Data Files",
+    "JPGFileDesc": "JPEG image",
+    "JPGFilesDesc": "JPEG images",
+    "LckFileDesc": "Lock file",
+    "LckFilesDesc": "Lock files",
+    "LGDFileDesc": "Loginom Data file",
+    "LGDFilesDesc": "Loginom Data files",
     "LGPFileDesc": "Loginom Package",
-    "LGPFileReservedCopyDesc": "Backup Loginom Package",
-    "LGPFilesDesc": "Loginom Packages",
-    "LGPFilesReservedCopyDesc": "Backup Loginom Packages",
-    "LogFileDesc": "Registration Log File",
-    "LogFilesDesc": "Registration Log Files",
-    "MdbFileDesc": "MS Access Database",
-    "MdbFilesDesc": "MS Access Databases",
-    "MhtFileDesc": "Web Archive, One File",
-    "MhtFilesDesc": "Web Archives, One File",
-    "ODSFileDesc": "OpenDocument Spreadsheet",
-    "ODSFilesDesc": "OpenDocument Spreadsheets",
-    "PDFFileDesc": "PDF Document",
-    "PDFFilesDesc": "PDF Documents",
-    "PNGFileDesc": "PNG Image",
-    "PNGFilesDesc": "PNG Images",
-    "RtfFileDesc": "RTF File",
-    "RtfFilesDesc": "RTF Files",
-    "SHPFileDesc": "Shape File",
-    "SHPFilesDesc": "Shape Files",
-    "SQLFileDesc": "SQL File",
-    "SQLFilesDesc": "SQL Files",
-    "SQLiteFileAllDesc": "SQLite Database",
-    "SQLiteFilesAllDesc": "SQLite Databases",
-    "SVGFileDesc": "SVG Image",
-    "SVGFilesDesc": "SVG Images",
-    "SysFileDesc": "Configuration File",
-    "SysFilesDesc": "Configuration Files",
-    "TxtFileDesc": "Text File",
-    "TxtFilesDesc": "Text Files",
-    "VideoFileDesc": "Video File",
-    "VideoFilesDesc": "Video Files",
-    "WSDLFileDesc": "Web Service Description File",
-    "WSDLFilesDesc": "Web Service Description Files",
-    "XlsbFileDesc": "Excel 2007 Binary Workbook",
-    "XlsbFilesDesc": "Excel 2007 Binary Workbooks",
-    "XlsFileDesc": "MS Excel File",
-    "XlsFilesDesc": "MS Excel Files",
-    "XlsmFileDesc": "Excel 2007 Binary Macro-Enabled Workbook",
-    "XlsmFilesDesc": "Excel 2007 Binary Macro-Enabled Workbooks",
-    "XlsxFileDesc": "Excel 2007 Workbook",
-    "XlsxFilesDesc": "Excel 2007 Workbooks",
-    "XMLFileDesc": "XML File",
-    "XMLFilesDesc": "XML Files",
-    "XSDFileDesc": "XML Schema File",
-    "XSDFilesDesc": "XML Schema Files",
-    "XslXsltFileDesc": "XML Transformation File",
-    "XslXsltFilesDesc": "XML Transformation Files"
+    "LGPFileReservedCopyDesc": "Backup Loginom package",
+    "LGPFilesDesc": "Loginom packages",
+    "LGPFilesReservedCopyDesc": "Backup Loginom packages",
+    "LogFileDesc": "Registration Log file",
+    "LogFilesDesc": "Registration Log files",
+    "MdbFileDesc": "MS Access database",
+    "MdbFilesDesc": "MS Access databases",
+    "MhtFileDesc": "Web archive, one file",
+    "MhtFilesDesc": "Web archives, one file",
+    "ODSFileDesc": "OpenDocument spreadsheet",
+    "ODSFilesDesc": "OpenDocument spreadsheets",
+    "PDFFileDesc": "PDF document",
+    "PDFFilesDesc": "PDF documents",
+    "PNGFileDesc": "PNG image",
+    "PNGFilesDesc": "PNG images",
+    "RtfFileDesc": "RTF file",
+    "RtfFilesDesc": "RTF files",
+    "SHPFileDesc": "Shape file",
+    "SHPFilesDesc": "Shape files",
+    "SQLFileDesc": "SQL file",
+    "SQLFilesDesc": "SQL files",
+    "SQLiteFileAllDesc": "SQLite database",
+    "SQLiteFilesAllDesc": "SQLite databases",
+    "SVGFileDesc": "SVG image",
+    "SVGFilesDesc": "SVG images",
+    "SysFileDesc": "Configuration file",
+    "SysFilesDesc": "Configuration files",
+    "TxtFileDesc": "Text file",
+    "TxtFilesDesc": "Text files",
+    "VideoFileDesc": "Video file",
+    "VideoFilesDesc": "Video files",
+    "WSDLFileDesc": "Web Service description file",
+    "WSDLFilesDesc": "Web Service description files",
+    "XlsbFileDesc": "Excel 2007 binary workbook",
+    "XlsbFilesDesc": "Excel 2007 binary workbooks",
+    "XlsFileDesc": "MS Excel file",
+    "XlsFilesDesc": "MS Excel files",
+    "XlsmFileDesc": "Excel 2007 binary macro-enabled workbook",
+    "XlsmFilesDesc": "Excel 2007 binary macro-enabled workbooks",
+    "XlsxFileDesc": "Excel 2007 workbook",
+    "XlsxFilesDesc": "Excel 2007 workbooks",
+    "XMLFileDesc": "XML file",
+    "XMLFilesDesc": "XML files",
+    "XSDFileDesc": "XML schema file",
+    "XSDFilesDesc": "XML schema files",
+    "XslXsltFileDesc": "XML transformation file",
+    "XslXsltFilesDesc": "XML transformation files"
   },
   "filedialog/FileStorageUtils": {
     "Folder": "Folder"
@@ -999,7 +988,7 @@
     "TitleSave": "Save File"
   },
   "filestorage/CopyPasteManager": {
-    "CantCopyInTheSameDirectory": "It is not possible to copy into the same directory",
+    "CantCopyInTheSameDirectory": "You cannot copy into the same directory",
     "CantDeleteFileAfterPasting": "Failed to delete source file {0} after pasting",
     "CantDeleteFolderAfterPasting": "Failed to delete source directory {0} after pasting",
     "CantPasteFile": "Failed to paste file",
@@ -1009,7 +998,7 @@
     "HasNotStorageItems": "No files to be copied/cut",
     "ItemsAreSimilar": "Names of {0} files/directories are similar. When pasted, they will be overwritten. Do you want to continue?",
     "NoItemsInBuffer": "Clipboard is empty. You must first copy files or folders",
-    "ServerPasteException": "Server Error Message:"
+    "ServerPasteException": "Server error message:"
   },
   "filestorage/DragAndDropHandler": {
     "DropText": "Drag and drop to start the download",
@@ -1036,22 +1025,22 @@
     "FileStorageNotConnected": "No connection to file storage",
     "NeedNotEmptyFolderName": "You must specify a non-empty directory name",
     "RenamingStorageItem": "Rename",
-    "SetNewDirectoryName": "New Directory Name:",
-    "SetNewName": "New Name:"
+    "SetNewDirectoryName": "New directory name:",
+    "SetNewName": "New name:"
   },
   "filestorage/FileUploader": {
     "ErrFileMayBeDeleted": "File loading error. The file may have been deleted from the disk",
-    "ErrFileUpload": "File Loading Error"
+    "ErrFileUpload": "File loading error"
   },
   "filestorage/LoaderViewController": {
     "DownloadWindowTitle": "File Download",
-    "ErrCancelLoaders": "Operation Cancel Error",
+    "ErrCancelLoaders": "Operation cancel error",
     "UploadWindowTitle": "Upload Files to Server"
   },
   "filestorage/LoadView": {
     "CancelAllConfirm": "Do you really want to cancel all downloads?",
     "CancelAllLoadersBtn": "Cancel All",
-    "ErrCancelAllLoaders": "Operation Cancel Error"
+    "ErrCancelAllLoaders": "Operation cancel error"
   },
   "filtersview/FilterItem": {
     "bdtCurrent": "current date",
@@ -1117,6 +1106,9 @@
   "filtersview/FiltersView": {
     "DeleteAllPrompt": "Do you really want to delete all conditions from list?",
     "DeleteAllTitle": "Delete all conditions"
+  },
+  "highcharts/Extensions": {
+    "HighchartsAreNotLoaded": "To connect extensions you must first download Highchats"
   },
   "highcharts/Localization": {
     "Loading": "Loading..."
@@ -1261,6 +1253,12 @@
     "ErrWindowFull": "Error occurred while the program was running.\nError: \"{0}\"\nUrl: \"{1}\"\nString: {2} Symbol: {3}",
     "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2}  Symbol: {3}"
   },
+  "lib/Loader": {
+    "ErrClassName": "Incorrect \"{0}\" class name.",
+    "ErrReaddScriptToLoad": "Re-add \"{0}\" script to load",
+    "ErrScriptLoadFailed": "Failed to load \"{0}\" script. Status: {1}, Error: {2}",
+    "ErrScriptLoadingAsync": "Asynchronous load of \"{0}\" script "
+  },
   "lib/Message": {
     "ErrorTitle": "Error",
     "GoToNotifySource": "Go to",
@@ -1268,8 +1266,13 @@
     "WarningTitle": "Warning"
   },
   "lib/StrUtils": {
+    "ErrInvalidDigitsValue": "Numbers in other languages are not supported",
+    "ErrInvalidFormatValue": "{0} string is not compatible with {1} format",
     "FalseText": "false",
     "TrueText": "true"
+  },
+  "lib/ViewController": {
+    "ErrViewClassName": "Incorrect \"{0}\" view class name"
   },
   "listview/ListView": {
     "Delete": "Delete",
@@ -1279,7 +1282,7 @@
   },
   "mxgraph/graph/Graph": {
     "ImplementThisInModelForm": "This function must be implemented in ModelForm",
-    "LeaveSubmodel": "Leave supernode"
+    "LeaveSubmodel": "Move up from supernode"
   },
   "mxgraph/handler/PortConnectionAbstract": {
     "CycleLinksForbiden": "Cyclic links are forbidden"
@@ -1289,7 +1292,7 @@
   },
   "mxgraph/node/comment/Note": {
     "ErrCommentNotSaved": "Failed to save comment",
-    "NodeIsLocked": "Node is locked, it is impossible to change comment",
+    "NodeIsLocked": "Node is blocked, it is impossible to change comment",
     "WrongCommentValue": "Invalid comment value"
   },
   "mxgraph/node/controls/ControlsAbstract": {
@@ -1308,15 +1311,15 @@
     "Visualizer": "Visualizer"
   },
   "mxgraph/node/InheritedNode": {
-    "VendorModified": "Base node has been changed and now it is out of sync with it. It is required to update or reset to the original configuration of derived node"
+    "VendorModified": "The base node has been changed and now it is out of sync with it. It is required to update or reset to the original configuration of derived node"
   },
   "mxgraph/node/label/GenericEnterLabel": {
     "GenericEnterLabel": "Enter"
   },
   "mxgraph/node/label/Label": {
     "ErrLabelNotSaved": "Failed to save caption",
-    "NodeIsLocked": "Node is locked, it is impossible to change caption",
-    "NodeLabel": "Node Caption",
+    "NodeIsLocked": "Node is blocked, it is impossible to change caption",
+    "NodeLabel": "Node caption",
     "WrongLabelValue": "Invalid caption value"
   },
   "mxgraph/node/NodeAbstract": {
@@ -1354,9 +1357,9 @@
     "PathLabel": "Path"
   },
   "navigation/NavigationToolbar": {
-    "TextGoBack": "Go Back",
-    "TextGoForward": "Go Forward",
-    "TextGoUp": "Go Up",
+    "TextGoBack": "Go back",
+    "TextGoForward": "Go forward",
+    "TextGoUp": "Go up",
     "TextRefresh": "Refresh",
     "TextShare": "Share..."
   },
@@ -1376,6 +1379,8 @@
     "MsgStoplText": "Do you want to cancel all processes?",
     "ProcessActionDeleteTip": "Delete process",
     "ProcessActionStopTip": "Cancel process",
+    "TimeSpanDay": "d",
+    "TimeSpanFormat": "s and ms",
     "TimeSpanHour": "h"
   },
   "propedit/CustomPropEdit": {
@@ -1394,21 +1399,89 @@
     "ErrConnectToServerEx": "Failed to connect to server.\nError: {0}.",
     "ErrSocketNotPrepared": "Socket is not prepared."
   },
+  "ts/EnumTypeInfoService": {
+    "ErrEnumTypeInfoServiceManagerNotInstalled": "Enumeration metadata service manager not initialized",
+    "ErrEnumTypeInfoServiceNotInit": "Enumeration metadata service not initialized",
+    "ErrEnumTypeNotFound": "Enumeration not found in client: \"{0}\"",
+    "ErrQualifiedNameNotFound": "Failed to get enumeration identifier"
+  },
   "ts/Exceptions": {
+    "ErrAbstractFunction": "Abstract method \"{0}\" was selected  ",
+    "ExceptionClassFmt": "EXCEPTION CLASS: {0}",
+    "InnerExceptionTitle": "INTERNAL EXCEPTIONS:",
     "MessageFmt": "MESSAGE: {0}",
     "OperationAborted": "Operation aborted",
-    "SenderNameFmt": "SENDER: {0}"
+    "SenderNameFmt": "SENDER: {0}",
+    "StackTraceFmt": "TRACE:\n{0}"
+  },
+  "ts/ExecutionContext": {
+    "ErrExecutionContextNotInstalled": "No link to execution context",
+    "ErrExternalExecutionContextManagerNotInstalled": "External execution context manager not installed"
+  },
+  "ts/Int64": {
+    "ErrInvalidInt64": "\"{0}\" is not valid long integer value",
+    "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value",
+    "ErrOutOfRangeInt64": "Number is outside long integer value range",
+    "ErrOutOfRangeUInt64": "Number is outside unsigned long integer value range"
+  },
+  "ts/Interfaces": {
+    "ErrObjectIsNil": "Null object reference",
+    "ErrUpdatableNotSupported": "IBGUpdatable interface is not supported by object"
+  },
+  "ts/QueueException": {
+    "ErrQueueExceptionEndUnexpected": "Attempt to complete the delayed exception block handling without its start",
+    "ErrUnknownInnerExceptionIsIgnored": "Internal exception of unknown {0} type ignored"
+  },
+  "ts/rtl.imp": {
+    "ErrInvalidEnumValue": "\"{0}\" is not valid enum value",
+    "ErrInvalidFloat": "\"{0}\" is not valid floating point value",
+    "ErrInvalidInt32": "\"{0}\" is not valid integer value",
+    "ErrInvalidInt64": "\"{0}\" is not valid long integer value",
+    "ErrInvalidUInt32": "\"{0}\" is not valid unsigned integer value",
+    "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value"
+  },
+  "viewers/BaseView": {
+    "ErrViewIsPanel": "Visualizer must be Ext.panel.Panel descendant",
+    "WarnViewerObjectDeleted": "Processing of \"{0}\" visualizer status change event was canceled because the visualizer was asynchronously deleted"
   },
   "viewers/browse/BrowseFormat": {
-    "EmptyFormatText": "Not defined"
+    "ActColInAllInvisibleTip": "Invisible",
+    "ActColInAllVisibleTip": "Visible",
+    "ActHideAll": "Hide all fields",
+    "ActShowAll": "Show all fields",
+    "EmptyFormatText": "Not defined",
+    "EmptyWidthText": "Not defined",
+    "NoExampleFormats": "No examples"
+  },
+  "viewers/browse/BrowseGoToLine": {
+    "ErrRowNoLessLower": "Row number must be greater than or equal to 1",
+    "ErrRowNoMoreUpper": "Row number is greater than number of rows in set",
+    "RowNoInfoFmt": "Row number (1 - {0}):"
+  },
+  "viewers/browse/BrowseSearchParams": {
+    "ByCollsDesc": "by columns",
+    "ByRowsDesc": "by rows",
+    "SingleColDesc": "in column"
+  },
+  "viewers/browse/BrowseUtils": {
+    "ErrColumnNotRenderedFmt": "Failed to add HTML element to \"{0}\"|\"{1}\" column header. Column not rendered yet"
   },
   "viewers/browse/BrowseView": {
+    "ErrExportFailed": "Failed to export Table:\n{0}",
+    "ErrExportFormFailed": "Failed to export Form:\n{0}",
+    "ErrMaxPage": "You cannot set page larger than the last one",
+    "ErrMinPage": "You cannot set page smaller than the first one",
+    "ErrOverRowLimitFmt": "You cannot set row index greater than {0}",
+    "ErrPageIndexOutOfRangeFmt": "Invalid {0} page index",
+    "ErrRowIndexOutOfRangeFmt": "Invalid {0} row index",
     "ExportFileTitle": "Table",
     "ExportFormFileTitle": "Form",
     "ExportFormToastTitle": "Export from Form",
     "ExportToastTitle": "Export from Table",
     "FilterButtonText": "Filter",
     "FilterTitle": "Filter",
+    "FindAgainCellFmt": "Find next [{0}] ",
+    "FindCellFmt": "Find again [{0}] ",
     "FirstTableRowAction": "First row",
     "FormatButtonText": "Format",
     "FormatTitle": "Format",
@@ -1429,10 +1502,12 @@
     "SearchNoFound": "No matches found",
     "SetSelectedPage": "Selected page",
     "SortingButtonText": "Sort",
-    "SortingTitle": "Sort"
+    "SortingTitle": "Sort",
+    "WarnExportTableSizeWarning": "The current Table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
   "viewers/browse/FastPreviewForm": {
     "NodeIsNotActive": "Node not activated",
+    "PreviewAllowedSocketTypes": "For now, you can only show data for a table or variables",
     "WindowTitleEnd": "Quick View"
   },
   "viewers/chart/ChartEditor": {
@@ -1460,6 +1535,10 @@
     "BurlyWood": "Burly wood",
     "CadetBlue": "Cadet blue",
     "Chartreuse": "Chartreuse",
+    "Chocolate": "Chocolate",
+    "Coral": "Coral",
+    "CornflowerBlue": "Cornflower blue",
+    "Cornsilk": "Cornsilk",
     "Crimson": "Crimson",
     "DarkBlue": "Dark blue",
     "DarkCyan": "Dark cyan",
@@ -1510,6 +1589,34 @@
     "LightGreen": "Light green",
     "LightPink": "Light pink",
     "LightSalmon": "Light salmon",
+    "LightSeaGreen": "Light sea green",
+    "LightSkyBlue": "Light sky blue",
+    "LightSlateGray": "Light slate gray",
+    "LightSteelBlue": "Light steel blue",
+    "LightYellow": "Light yellow",
+    "Lime": "Lime",
+    "LimeGreen": "Lime green",
+    "Linen": "Linen",
+    "Maroon": "Maroon",
+    "MediumAquaMarine": "Medium aquamarine",
+    "MediumBlue": "Medium blue",
+    "MediumOrchid": "Medium orchid",
+    "MediumPurple": "Medium purple",
+    "MediumSeaGreen": "Medium sea green",
+    "MediumSlateBlue": "Medium slate blue",
+    "MediumSpringGreen": "Medium spring green",
+    "MediumTurquoise": "Medium turquoise",
+    "MediumVioletRed": "Medium violet red",
+    "MidnightBlue": "Midnight blue",
+    "MintCream": "Mint cream",
+    "MistyRose": "Misty rose",
+    "Moccasin": "Moccasin",
+    "NavajoWhite": "Navajo white",
+    "Navy": "Navy",
+    "OldLace": "Old lace",
+    "Olive": "Olive",
+    "OliveDrab": "Olive drab",
+    "Orange": "Orange",
     "OrangeRed": "Orange red",
     "Orchid": "Orchid",
     "PaleGoldenRod": "Pale golden rod",
@@ -1584,7 +1691,7 @@
     "GroupAlreadyExists": "A group with the same name already exists",
     "NeedNotEmptyGroupName": "It is required to set non-empty group name",
     "SetNewGroupName": "New group name:",
-    "ShowInReports": "Show in Reports",
+    "ShowInReports": "Show in reports",
     "TitleUndefined": "visualizer",
     "TuneViews": "Configure visualizers",
     "VendorNotValid": "Visualizer incompatible with port selected",
@@ -1619,6 +1726,7 @@
     "WarnDependencySuffix": "Do you want to continue action?"
   },
   "viewers/cube/CubeDetailingController": {
+    "ErrNullEngine": "Visualizer initialization error",
     "Loading": "Loading"
   },
   "viewers/cube/CubeDragDropController": {
@@ -1631,32 +1739,125 @@
     "MultipleFilteredDimTooltip": "{0}[{1}of {2}]",
     "Original": "In original order",
     "SingleFilteredDimTooltip": "{0} • {1} [{2} of {3}]",
+    "WarnDependencyCaseCalcCase": "• the calculated fact dependent on the field will become inactive (now the field is connected with the unused fact)",
+    "WarnDependencyCaseCaseFilter": "• the filter will be deleted for the fact with which the field is connected ",
+    "WarnDependencyDimCalcCase": "• the dimension dependent calculated fact can become inactive",
+    "WarnDependencyDimCaseFilter": "• the filter will be deleted for the fact in which this dimension is used",
+    "WarnDependencyPrefix": "When executing this action, the following changes in the Cube state will occur:",
     "WarnDependencySuffix": "Do you want to continue action?"
   },
+  "viewers/cube/CubeView": {
+    "ChartCaseEmptyText": "Empty list",
+    "DotsOutOfBoundsMsg": "Exceeding chart bounds.\nCurrent number of dots: {0}.\nMaximum number of dots: {1}",
+    "ErrExportFailed": "Failed to export the Cube crosstab:\n{0}",
+    "ExportToastTitle": "Export from the Cube",
+    "HideSingleCase": "Hide single fact",
+    "SeriesOutOfBoundsMsg": "Chart limits exceeded.\nCurrent number of series: {0}.\nMaximum number of series: {1}",
+    "WarnExportTableSizeWarning": "The current crosstab size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
+  },
   "viewers/cube/DimensionFilterSelectionPanel": {
+    "DimensionFilterSelectionPanelTitle": "Check by pattern",
+    "EndingWith": "ending with",
+    "Equal": "=",
+    "Like": "contains",
+    "NotEndingWith": "not ending with",
+    "NotEqual": "<>",
+    "NotLike": "does not contain",
     "NotStartingWith": "not starting with",
     "StartingWith": "starting with"
   },
   "viewers/cube/DimensionsFilterPanel": {
+    "CheckAllTooltip": "Check all",
+    "TooManyValuesMsg": "Failed to show list of values\nCurrent number of values: {0}\nMaximum number of values: {1}",
     "UncheckAllTooltip": "Deselect all"
+  },
+  "viewers/cube/EmbeddedBrowseForm": {
+    "SelectFirst": "First record",
+    "SelectLast": "Last record",
+    "SelectNext": "Next record",
+    "SelectPrev": "Previous record"
   },
   "viewers/cube/PivotDataSource": {
     "CaseDisplayName": "Fact",
+    "CaseFilterDesc": "Fact filter enabled",
+    "ErrInvalidRange": "Index is out of allowable range",
+    "FilterCountDesc": "Dimensions with enabled filter",
     "FunctionDisplayName": "Aggregation",
     "No": "No",
     "NoDimensionValueDisplayName": "Value",
+    "RecordCountDesc": "Filtered row count",
+    "SourceRecordCountDesc": "Source row count",
+    "SubFunctionCountDesc": "Number of displayed facts",
     "SubFunctionDisplayName": "Display",
     "Yes": "Yes"
   },
+  "viewers/cube/PivotGrid": {
+    "CaseInvite": "Drag the dimensions to the rows, columns and filters area by dragging from the left list of the available fields or by pressing the \"+\" button"
+  },
+  "viewers/LockableView": {
+    "LockMaskText": "Node is blocked"
+  },
+  "viewers/regression/LinRegressReportView": {
+    "TStatInfoParam": "T-statistics"
+  },
+  "viewers/regression/LogRegressReportView": {
+    "IsEvent": "Event",
+    "IsNotEvent": "Non-event"
+  },
+  "viewers/regression/RegressionReportView": {
+    "ModelInfoAIC": "AIC",
+    "ModelInfoAICc": "AICc",
+    "ModelInfoBIC": "BIC",
+    "ModelInfoConstant": "Constant",
+    "ModelInfoDFE": "Number of degrees of freedom",
+    "ModelInfoHQC": "HQC",
+    "ModelInfoLogLikelihood": "-2 Log Likelihood",
+    "ModelInfoPValue": "Significance",
+    "ModelInfoR2": "R2",
+    "ModelInfoR2adj": "R2 corr.",
+    "ModelInfoXi2": "Xi-square"
+  },
   "viewers/reports/ReportsForm": {
+    "CantDeactivateBefore": "Error: Failed to deactivate the chain of previous nodes to update data",
+    "CantShowSourceModelView": "Error: failed to find source visualizer",
+    "ConfirmDeleteAll": "Do you really want to delete all?",
+    "ConfirmDeleteSelected": "Do you really want to delete the selection?",
+    "ConfirmDeletingGroup": "Do you really want to delete the reports group?",
+    "ConfirmDeletingReportView": "Do you really want to delete the visualizer from the reports?",
+    "ConfirmLongReload": "Recalculation may take a long time. Do you want to continue?",
+    "CreateGroupTitle": "Create group",
+    "Enter": "Enter",
+    "ErrDeleting": "Error while deleting",
+    "ErrDeletingGroup": "Error while group deleting",
+    "ErrDeletingReport": "Error while visualizer uninstalling",
     "GroupAlreadyExists": "A group with the same name already exists",
+    "NeedNotEmptyGroupName": "It is required to set non-empty group name",
+    "SetNewGroupName": "New group name:",
+    "ShowSourceModelView": "Go to source visualizer",
     "SourceNodeDoesntExists": "The visualizer reference node does not exist for this report"
   },
   "viewers/reports/ReportsView": {
+    "CantDeactivateBefore": "Error: failed to deactivate the chain of previous nodes to update data",
+    "ConfirmLongRefresh": "Recalculation may take a long time. Do you want to continue?",
+    "NotInitializedError": "Node not initialized",
     "SourceNodeDoesntExists": "The visualizer reference node does not exist for this report",
+    "VendorMalfunctionError": "Node component error",
     "VendorNotDefined": "No vendor specified for visualizer"
   },
+  "viewers/roc/ConfusionMatrix": {
+    "Event": "Event",
+    "NonEvent": "Non-event"
+  },
   "viewers/roc/ROCView": {
+    "AUC_PR": "AUC PR",
+    "AUC_PR_Tooltip": "Area under the PR curve",
+    "AUC_ROC": "AUC ROC",
+    "AUC_ROC_Tooltip": "Area under the ROC curve",
+    "Cutoff": "Cuttoff threshold",
+    "CutoffFPR": "FPR (1-Specificity)",
+    "CutoffFScore": "F1 Score",
+    "CutoffMCC": "MCC",
+    "CutoffMCC_Tooltip": "Matthews correlation coefficient",
     "CutoffPPV": "PPV",
     "CutoffPPV_Tooltip": "Accuracy of positive forecast",
     "CutoffTNR": "TNR (specificity)",
@@ -1696,7 +1897,6 @@
     "CardTitle_FeedBack": "Feedback",
     "CardTitle_Forum": "Forum: Questions and Answers",
     "CardTitle_WebSite": "Company Website",
-    "LoginWebSite": "https://loginom.ru",
     "NoNewsLog": "No news downloaded"
   },
   "wizards/BaseWizard": {
@@ -1747,7 +1947,7 @@
     "frmColumnsMappingTitle": "Configure Input Columns"
   },
   "wizards/columns/TuneDataSourceMappingWizard": {
-    "RemoveRequiredMappingColumnDefConfirm": "\"{0}\" column is used by handler. Do you really want to delete it?"
+    "RemoveRequiredMappingColumnDefConfirm": "\"{0}\" column is used. Do you really want to delete it?"
   },
   "wizards/columnsdisposition/ColumnsDispositionWizard": {
     "AvailableField": "Available",
@@ -1923,7 +2123,7 @@
     "GroupField_MissingFields": "Missing variables",
     "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?",
-    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is obligatory. Do you really want to delete it?"
+    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is required. Do you really want to delete it?"
   },
   "wizards/WizardActivateInputPorts": {
     "ActivateCaption": "Activate",

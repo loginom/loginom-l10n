@@ -1325,7 +1325,7 @@
       "boxLabel": "Other"
     },
     "cntColumnEditDialog": {
-      "title": "Measurement in Columns"
+      "title": "Dimension in Columns"
     },
     "fldSlidingUniqueValuesMinCount": {
       "fieldLabel": "Minimum number of values"
@@ -1357,7 +1357,7 @@
       "text": "Input fields"
     },
     "frmDataRecovery": {
-      "title": "Remove Nulls"
+      "title": "Imputation"
     }
   },
   "components/datatoxml/DataToXmlParamsWizard": {
@@ -2181,7 +2181,7 @@
       "tooltip": "Delete"
     },
     "frmXSDFilesConnection": {
-      "title": "Configure XSD Schemes Set"
+      "title": "Configure XSD Schema Set"
     }
   },
   "exports/dbexport/DBCreateTableDialog": {
@@ -3767,7 +3767,7 @@
       "boxLabel": "Remove from checked"
     },
     "rbSelect": {
-      "boxLabel": "Select"
+      "boxLabel": "Check"
     }
   },
   "viewers/cube/DimensionsFilterPanel": {
@@ -3787,7 +3787,7 @@
       "tooltip": "Filter selection mode"
     },
     "btnGroupCheck": {
-      "tooltip": "Group check"
+      "tooltip": "Check by pattern..."
     },
     "btnReverseCheck": {
       "tooltip": "Invert selection"
@@ -3873,7 +3873,7 @@
       "text": " СI upper bound"
     },
     "colRepPValue": {
-      "text": "Value"
+      "text": "Significance"
     },
     "colRepScore": {
       "text": "Score"

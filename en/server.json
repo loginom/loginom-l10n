@@ -27,6 +27,7 @@
     "ErrCantLoadBackup": "Failed to restore binning"
   },
   "components/execnode/ExecNodeComponent": {
+    "ErrNodeLocked": "\"%s\" node is blocked",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Reference node not found"
   },
@@ -47,6 +48,10 @@
   },
   "exports/database/DBExport": {
     "ErrFieldForUpdateNotSelected": "No fields to update selected"
+  },
+  "exports/native/ExportNativeVendor": {
+    "VendorCaption": "Loginom Data File",
+    "VendorDesc": "Export data to Loginom Data file"
   },
   "imports/1cv8/1Cv8QueryImport": {
     "ErrInterpretValue": "Failed to convert value from request result to standard type",
@@ -125,14 +130,22 @@
   "imports/native/DDFTupleReader": {
     "BadNativeStringData": "Incorrect string data",
     "BadNativeVariantData": "Incorrect Variant data type",
+    "DifferentMetaData": "Metadata does not comply with the previously declared metadata",
+    "NegativeRowsCount": "Invalid %d rows count is specified in the file header",
     "OutOfMaximumRows": "File contains too many rows"
   },
   "imports/native/DDFTupleRowConverter": {
     "BadNativeStringData": "Incorrect string data",
+    "BadVariantType": "Unsupported Variant variable type",
     "CanNotConvert": "Failed to convert data to 32-bit format",
-    "UnknownOperation": "Unknown string converter operation"
+    "UnknownOperation": "Unknown string converter operation",
+    "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
+    "VariantByRefNotSupported": "Unsupported Variant byRef variables",
+    "VariantTypeNotSupported": "Variant variables of this type are not supported"
   },
   "imports/native/ImportNative": {
+    "ErrFileFormat": "Not Loginom Data file",
+    "ErrSignature": "Signature mismatch",
     "ErrSystemUnsupported": "Decimal not supported",
     "ErrVersion": "Incorrect version",
     "WarnCompatibilityMode": "File was opened in compatibility mode"
@@ -142,6 +155,10 @@
     "VendorDesc": "Import data from Loginom Data file"
   },
   "imports/textfile/ImportTextFile": {
+    "ErrBooleanTypeCast": "Failed to convert \"%s\" value in \"%s\" column to logical value.",
+    "ErrDateTimeTypeCast": "Failed to convert \"%s\" value in \"%s\" column to date/time.",
+    "ErrFloatTypeCast": "Failed to convert \"%s\" value in \"%s\" column to real number.",
+    "ErrIntegerTypeCast": "Failed to convert \"%s\" value in \"%s\" column to integer.",
     "ErrNoData": "Error parsing text file",
     "ErrParseFmt": "While parsing line %d error occurred: %s ",
     "ErrUnsupportedCodePage": "%d codepage not supported",
@@ -157,7 +174,10 @@
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
     "ErrNothingSelected": "No nodes selected for import",
-    "ErrNoXSDInput": "There is no XSD schema at the component input"
+    "ErrNoXSDInput": "There is no XSD schema at the component input",
+    "ErrXMLImport": "Error importing XML:\n Error code: %d\n %s",
+    "FileConnection": "Connect to file storage",
+    "XSDConnection": "Connect to XSD schema source"
   },
   "imports/xml/ImportXMLVendor": {
     "VendorCaption": "XML File",
@@ -168,6 +188,10 @@
     "ErrItemWithGuidAlreadyExist": "%s with identifier %s already exists",
     "ErrItemWithIDAlreadyExist": "%s with identifier %d already exists",
     "ErrVendorAlreadyRegistered": "'% s' vendor has already been registered"
+  },
+  "Libraries/bgrtl/FileMask": {
+    "LgdFilesDesc": "Loginom Data file",
+    "SupportedLgdFilesDesc": "Loginom Data files"
   },
   "Libraries/bgrtl/FileStorageEngine": {
     "ErrFileStorageNotConnected": "File storage not connected",
@@ -187,6 +211,7 @@
     "VendorMetaDesc": "vendor"
   },
   "Libraries/Config/ConfigBackupManagers": {
+    "ErrNodeBlocked": "\"%s\" node is blocked",
     "ErrNodeIsNil": "No node specified"
   },
   "Libraries/DataPartition/Partition": {
@@ -207,10 +232,12 @@
     "ErrNoNodesSpecified": "No node set specified"
   },
   "Libraries/Model/ModelWorkFlow": {
+    "ErrNodeLocked": "\"%s\" node is blocked",
     "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
     "ErrPortMismatch": "Incompatible component vendor: node port list does not match"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
+    "ErrNodeLocked": "\"%s\" node is blocked",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Reference node not found"
   },

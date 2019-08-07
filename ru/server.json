@@ -1792,7 +1792,7 @@
   },
   "imports/native/ImportNative": {
     "ErrFileFormat": "Файл не является Loginom Data файлом",
-    "ErrSignature": "Не соответствие сигнатуры",
+    "ErrSignature": "Несоответствие сигнатуры",
     "ErrSystemUnsupported": "Разрядность не поддерживается",
     "ErrVersion": "Не корректная версия",
     "WarnCompatibilityMode": "Файл был открыт в режиме совместимости"
@@ -1822,7 +1822,7 @@
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика!",
     "ErrNothingSelected": "Не выбрано ни одного узла для импорта",
     "ErrNoXSDInput": "На входе компонента отсутствует XSD-схема",
-    "ErrXMLImport": "Ошибка при выполнении импорта XML:\n\tКод ошибки: %d\n\t%s",
+    "ErrXMLImport": "Ошибка при выполнении импорта XML:\n Код ошибки: %d\n %s",
     "FileConnection": "Подключение к файловому хранилищу",
     "XSDConnection": "Подключение к источнику XSD-схемы"
   },

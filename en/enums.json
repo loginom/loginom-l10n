@@ -13,7 +13,9 @@
   "components/filterdata": {
     "FilterRelationType": {
       "StartingWith": "starting with",
-      "NotStartingWith": "not starting with"
+      "NotStartingWith": "not starting with",
+      "EndingWith": "ending with",
+      "NotEndingWith": "not ending with"
     }
   },
   "components/quality": {
@@ -82,10 +84,25 @@
       "X64": "64-bit system"
     }
   },
+  "Libraries/bgrtl/Consts": {
+    "ContextUsageType": {
+      "DimCol": "Dimension in columns",
+      "DimRow": "Dimension in rows"
+    },
+    "DataStatus": {
+      "Dimension": "Dimension"
+    }
+  },
   "Libraries/Model/ModelWorkFlow": {
     "MemberVisibility": {
       "$Caption": "Workflow Item Visibility",
       "Private": "Private"
+    }
+  },
+  "Warehouse2/MDConsts": {
+    "MDFilterConditionType": {
+      "EndingWith": "ending with",
+      "NotEndingWith": "not ending with"
     }
   }
 }

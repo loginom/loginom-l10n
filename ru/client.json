@@ -1501,7 +1501,7 @@
     "FilterButtonText": "Фильтр",
     "FilterTitle": "Фильтр",
     "FindAgainCellFmt": "Искать далее [{0}]",
-    "FindCellFmt": "Искать с начала [{0}]",
+    "FindCellFmt": "Искать сначала [{0}]",
     "FirstTableRowAction": "Первая строка",
     "FormatButtonText": "Формат",
     "FormatTitle": "Формат",
@@ -1970,7 +1970,7 @@
     "frmColumnsMappingTitle": "Настройка входных столбцов"
   },
   "wizards/columns/TuneDataSourceMappingWizard": {
-    "RemoveRequiredMappingColumnDefConfirm": "Столбец \"{0}\" используется обработчиком. Вы действительно хотите его удалить?"
+    "RemoveRequiredMappingColumnDefConfirm": "Столбец \"{0}\" используется. Вы действительно хотите его удалить?"
   },
   "wizards/columnsdisposition/ColumnsDispositionWizard": {
     "AvailableField": "Доступные",

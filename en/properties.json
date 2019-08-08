@@ -120,10 +120,38 @@
       "DumpRequest": "Save Request Text to Disk"
     }
   },
+  "Common/XML/XMLSchemaToDataSourceMapping": {
+    "XMLSchemaToColumnMapping": {
+      "Column": "Data set column",
+      "Node": "Tree node"
+    }
+  },
+  "Common/XML/XMLSchemaTree": {
+    "XMLSchemaTree": {
+      "NamespacesCount": "Count of namespaces used",
+      "RootNodesCount": "Root elements count",
+      "SelectedRoot": "Selected root node"
+    },
+    "XMLSchemaTreeNode": {
+      "Comment": "Comment",
+      "DefaultValue": "Default value",
+      "DisplayName": "Local node name",
+      "FixedValue": "Fixed value",
+      "ValueType": "Value type"
+    },
+    "XMLSchemaTreeNodes": {
+      "Count": "Nodes count"
+    }
+  },
   "components/binning": {
     "BinningLinearBins": {
       "LowerLimitOpen": "Lower range bound open",
       "UpperLimitOpen": "Upper range bound open"
+    }
+  },
+  "components/coarseclasses": {
+    "CoarseClassesBuilder": {
+      "ColumnPurpose": "Field usage type"
     }
   },
   "components/condition": {
@@ -134,6 +162,16 @@
   "components/filterdata": {
     "FilterColumnItem": {
       "CaseSensitive": "Учитывать регистр"
+    }
+  },
+  "components/linregression": {
+    "LinRegressionParams": {
+      "LinRegressionMethod": "Factor selection and protection against retraining"
+    }
+  },
+  "components/logregression": {
+    "LogRegressionParams": {
+      "LogRegressionMethod": "Factor selection and protection against retraining"
     }
   },
   "components/partition": {
@@ -197,6 +235,26 @@
   "imports/xml": {
     "ImportXML": {
       "Configurator": "Configure XML import"
+    }
+  },
+  "Libraries/bgrtl/DataSet": {
+    "ColumnDef": {
+      "DefaultUsageType": "Default usage type",
+      "UsageType": "Column usage type"
+    },
+    "ColumnInfo": {
+      "DefaultUsageType": "Default column usage type",
+      "UsageType": "Column usage type"
+    }
+  },
+  "Libraries/bgrtl/DerivedDataSet": {
+    "DeriveProxyColumnDef": {
+      "DefaultUsageType": "Default column usage type",
+      "UsageType": "Column usage type"
+    },
+    "ProxyColumnDef": {
+      "DefaultUsageType": "Default column usage type",
+      "UsageType": "Column usage type"
     }
   }
 }

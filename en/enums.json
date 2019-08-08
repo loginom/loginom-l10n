@@ -79,11 +79,79 @@
       "$Caption": "Authorization Type",
       "Absent": "Not required",
       "NamePass": "Username and password",
-      "OAuth": "OAuth token"
+      "OAuth": "OAuth token",
+      "Cert": "Provide client certificate",
+      "Oasis": "OASIS WS-Security"
+    }
+  },
+  "Common/XML/Processor/XMLRequestProcessor": {
+    "ExportErrorCode": {
+      "$Caption": "XML Export Request Processing Result",
+      "NoError": "No errors",
+      "Cancelled": "Canceled by user",
+      "DataSourceIsEmpty": "The input data source contains no records",
+      "InitError": "Error initializing export procedure: %s",
+      "ExportError": "Error executing export procedure: %s"
+    },
+    "XMLRequestErrorCode": {
+      "$Caption": "XML Request Processing Result",
+      "NoError": "No errors",
+      "Cancelled": "Canceled by user",
+      "InitError": "%s",
+      "XMLExportError": "Error while exporting to XML: %s",
+      "WSDLClientError": "Error executing request to web service: %s",
+      "WSDLFault": "Server sent error message",
+      "HTTPClientError": "HTTP client error: %s",
+      "SaxParserError": "Error parsing XML document: %s",
+      "MIMEParserError": "Error processing server response: %s",
+      "UnsupportedRequestType": "Unsupported request type",
+      "BadRequestParam": "Incorrect request parameter",
+      "UnknownError": "Unknown error"
+    }
+  },
+  "Common/XML/SAX/XMLSAX_MSXML": {
+    "MSSaxHandlerType": {
+      "$Caption": "MSXML SAX Parser Event Handlers",
+      "Error": "Error handler (ISAXErrorHandler)",
+      "Content": "Content handler (ISAXContentHandler)",
+      "Lexical": "Lexical handler (ISAXLexicalHandler)",
+      "Decl": "Declaration handler (ISAXXMLDeclHandler)",
+      "SchemaDecl": "XSD schema declaration handler (IMXSchemaDeclHandler)"
+    }
+  },
+  "Common/XML/XML": {
+    "XMLNodeType": {
+      "$Caption": "XML Node Types",
+      "Document": "Document",
+      "Element": "Element",
+      "Attribute": "Attribute",
+      "Text": "Text",
+      "CData": "CDATA",
+      "ProcessingInstruction": "Xml parser instruction",
+      "Comment": "Comment"
+    },
+    "XMLStrTransformResult": {
+      "$Caption": "Xml String to BG Types and Vice Versa Transformation Result",
+      "Ok": "Transformed without errors",
+      "Range": "Value out of range",
+      "Format": "Value format does not comply with data type"
     }
   },
   "Common/XML/XSD": {
+    "XSDAggregateType": {
+      "$Caption": "Content Model (Aggregation Type)",
+      "Sequence": "Sequence",
+      "Choice": "Choice",
+      "All": "All"
+    },
     "XSDDataTypeRefinement": {
+      "$Caption": "XML Data Type Refinement",
+      "Any": "Any type",
+      "AnySimple": "Any simple type",
+      "None": "Unknown",
+      "Date": "Date",
+      "Time": "Time",
+      "DateTime": "Date and time",
       "Float": "With floating point (single precision)",
       "Double": "With floating point (double precision)",
       "Decimal": "Decimal number",
@@ -149,11 +217,30 @@
       "None": "<Not0>",
       "ExtermalBins": "External ranges",
       "Width": "Width",
-      "Count": "Count"
+      "Count": "Count",
+      "Tile": "Tile"
     },
     "BinningOutputColumnKind": {
+      "$Caption": "Usage Type of Resultant Quantization Fields",
+      "BinsID": "Bins identifier",
+      "BinNumber": "Bin number",
+      "BinLabel": "Caption",
+      "LowerBound": "Lower bound",
+      "UpperBound": "Upper bound",
+      "LowerBoundQuota": "Lower bound quota",
+      "UpperBoundQuota": "Upper bound quota",
+      "BinQuota": "Bin quota",
+      "LowerDeviation": "Deviation from the lower range bound",
+      "UpperDeviation": "Deviation from the upper range bound",
       "LowerLimitOpen": "Lower range bound open",
-      "UpperLimitOpen": "Upper range bound open"
+      "UpperLimitOpen": "Upper range bound open",
+      "OutOfBins": "Out of range value"
+    },
+    "BinningRoundingLevel": {
+      "Normal": "Normal rounding"
+    },
+    "BinningSDMode": {
+      "$Caption": "Bin Create Mode"
     }
   },
   "components/coarseclasses": {
@@ -161,6 +248,7 @@
       "UpperBoundIsOpen": "Upper range bound open"
     },
     "ColumnPurpose": {
+      "$Caption": "Field usage type",
       "Unused": "Not selected",
       "Input": "Input",
       "InputExternal": "Input (external binning)",
@@ -204,7 +292,7 @@
     "ColUnionRowsPaddingType": {
       "$Caption": "Supplement to the Largest Set",
       "None": "No to supplement",
-      "Repeat": "Repeat dataset",
+      "Repeat": "Repeat data set",
       "LastRow": "Supplement with the last row"
     }
   },
@@ -296,6 +384,7 @@
     },
     "FactorSignificanceCriterion": {
       "$Caption": "Significance Criterion",
+      "EigenValueThreshold": "By own value",
       "CumDispersion": "By dispersion",
       "NFactor": "Set the factor number"
     }
@@ -311,14 +400,70 @@
       "NotEqual": "<>",
       "IsNull": "Null",
       "IsNotNull": "Not null",
+      "Between": "within the range",
+      "NotBetween": "out of the range",
+      "In": "on the list",
+      "NotIn": "not listed",
+      "NotLike": "does not contain",
       "StartingWith": "starting with",
       "NotStartingWith": "not starting with",
       "EndingWith": "ending with",
-      "NotEndingWith": "not ending with"
+      "NotEndingWith": "not ending with",
+      "FirstPeriod": "First",
+      "NotFirstPeriod": "not first",
+      "LastPeriod": "last",
+      "NotLastPeriod": "not last",
+      "IsTrue": "true",
+      "IsFalse": "false"
+    }
+  },
+  "components/groupdata": {
+    "GroupDataFunction": {
+      "$Caption": "Aggregation",
+      "Sum": "Sum",
+      "Count": "Count",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "Avg": "Average",
+      "Median": "Median",
+      "StdDev": "Standard deviation",
+      "UniqueCount": "Unique count",
+      "First": "First",
+      "Last": "Last"
+    }
+  },
+  "components/joindata": {
+    "JoinTableType": {
+      "$Caption": "Data Source Type",
+      "Main": "Main table",
+      "Joined": "Joined table"
+    },
+    "JoinType": {
+      "$Caption": "Operation Type",
+      "Join": "Inner join",
+      "LeftJoin": "Left join",
+      "RightJoin": "Right join",
+      "FullJoin": "Full join",
+      "Difference": "Difference"
     }
   },
   "components/linregression": {
+    "LinRegressionMethod": {
+      "$Caption": "Factor Selection and Protection against Retraining",
+      "Enter": "Forced selection",
+      "Forward": "Stepwise selection",
+      "Stepwise": "Stepwise selection/elimination",
+      "L2": "Ridge",
+      "L1": "LASSO",
+      "L1L2": "Elastic-net"
+    },
     "LinRegSelQuality": {
+      "$Caption": "Factor Selection Criterion",
+      "Fprob": "F-test",
+      "R2": "Determination coefficient",
+      "R2adj": "Adjusted determination coefficient",
+      "AIC": "Akaike information criterion",
+      "AICc": "Akaike information criterion corrected",
       "BIC": "Bayesian information criterion",
       "HQC": "Hannan-Quinn information criterion"
     }
@@ -326,7 +471,10 @@
   "components/logregression": {
     "LogRegressionMethod": {
       "$Caption": "Factor Selection and Protection against Retraining",
+      "Enter": "Forced selection",
+      "Forward": "Stepwise selection",
       "Backward": "Backward selection",
+      "Stepwise": "Stepwise selection/elimination",
       "L2": "Ridge",
       "L1": "LASSO",
       "L1L2": "Elastic-Net"
@@ -341,6 +489,10 @@
     }
   },
   "components/loop": {
+    "GroupProcessingKind": {
+      "FixedGroupSize": "Fixed group size",
+      "FixedGroupCount": "Fixed group count"
+    },
     "LoopKind": {
       "GroupProcessing": "Group processing"
     }
@@ -386,14 +538,26 @@
       "NoDefine": "Not defined"
     }
   },
+  "components/slidingwindow": {
+    "SlidingWindowIncompleteRecordsProcessing": {
+      "CutAll": "Delete all incomplete records"
+    }
+  },
   "components/smoothing": {
+    "SmoothingAlgorithm": {
+      "$Caption": "Smoothing Algorithm",
+      "HPF": "Hodrick-Prescott filter",
+      "Wavelets": "Wavelet smoothing"
+    },
     "WTEdgeExtension": {
       "$Caption": "Bounds Padding",
       "Symmetric": "Symmetric",
       "AntiSymmetric": "Antisymmetric",
       "ZeroPadding": "Zero padding",
       "ConstantPadding": "Constant",
-      "Periodic": "Periodic"
+      "Periodic": "Periodic",
+      "SymmetricHalfPoint": "Symmetric without extreme point",
+      "AntiSymmetricHalfPoint": "Antisymmetric without extreme point"
     },
     "WTWaveletType": {
       "$Caption": "Wavelet Type",
@@ -459,7 +623,48 @@
   },
   "exports/database": {
     "DBExportType": {
+      "$Caption": "Export Mode",
+      "Append": "Supplement table with data",
+      "Overload": "Clear table and fill with data",
+      "Delete": "Delete records by key fields",
+      "Refresh": "Delete records by key fields and supplement table with data",
       "Update": "Update existing table records"
+    }
+  },
+  "exports/excelfile": {
+    "ExcelCaptionType": {
+      "$Caption": "Type for Column Header",
+      "AsName": "Header as name",
+      "AsDisplayName": "Header as caption"
+    },
+    "ExcelHeadersRow": {
+      "$Caption": "Column Headers",
+      "IncludeHeadersRow": "The first row is the header",
+      "NoHeadersRow": "No header row",
+      "NoHeadersRowAfterData": "No header row if data is added below"
+    },
+    "ExcelHeadersRowWebSet": {
+      "$Caption": "Column Headers",
+      "NoHeadersRow": "No header row",
+      "HeadersRowAsName": "Field names",
+      "HeadersRowAsDisplayName": "Fields captions"
+    },
+    "ExcelLimitRowType": {
+      "$Caption": "Row Limit Type",
+      "NoLimit": "No limit",
+      "LastRow": "Last row",
+      "RowsCount": "Row count"
+    },
+    "ExcelUpdateFileMode": {
+      "$Caption": "Update Excel File",
+      "ForceCreateFile": "Replace existing file",
+      "Update": "Introduce changes into existing file"
+    },
+    "ExcelUpdateSheetMode": {
+      "$Caption": "Excel Sheet Update",
+      "ForceCreateSheet": "Replace existing sheet",
+      "AddBelow": "Add data below",
+      "Merge": "Do not delete existing data in the worksheet"
     }
   },
   "imports/database": {
@@ -581,13 +786,43 @@
       "Last": "Last"
     },
     "ContextUsageType": {
+      "$Caption": "Usage Type",
       "DimCol": "Dimension in columns",
       "DimRow": "Dimension in rows"
     },
+    "DataKind": {
+      "$Caption": "Sort of Data",
+      "Undefined": "Undefined",
+      "Continuous": "Continuous",
+      "Discrete": "Discrete"
+    },
+    "DataSourceType": {
+      "$Caption": "Data Set Type",
+      "Teach": "Train",
+      "Test": "Test"
+    },
+    "DataSourceTypeEx": {
+      "$Caption": "Extended Data Set Type",
+      "All": "All"
+    },
     "DataStatus": {
-      "Dimension": "Dimension"
+      "$Caption": "Usage Type",
+      "UnUsable": "Unused",
+      "Usable": "Used",
+      "Useless": "Useless",
+      "Key": "Key",
+      "Input": "Input",
+      "Output": "Output",
+      "Info": "Info",
+      "Dimension": "Dimension",
+      "Property": "Attribute",
+      "Case": "Fact",
+      "TransactionID": "Transaction",
+      "ItemID": "Item"
     },
     "DataType": {
+      "$Caption": "Data Type",
+      "None": "Undefined",
       "Boolean": "Logical",
       "DateTime": "Date/Time",
       "Float": "Real",
@@ -650,7 +885,43 @@
       "DataType": "Data type",
       "DataKind": "Sort of data",
       "Size": "Data size",
-      "DefaultUsageType": "Default usage type"
+      "DefaultUsageType": "Default usage type",
+      "UsageType": "Usage type",
+      "Index": "No",
+      "ID": "ID",
+      "Data": "Data"
+    },
+    "GridExportFormat": {
+      "$Caption": "Tabular Data Export Format",
+      "Excel": "XLS",
+      "HTML": "HTML"
+    },
+    "HAlignment": {
+      "$Caption": "Horizontal Alignment",
+      "LeftJustify": "Align left",
+      "RightJustify": "Align right",
+      "Center": "Align center"
+    },
+    "PeriodKind": {
+      "$Caption": "Types of Periods",
+      "Relative": "Relative",
+      "Absolute": "Absolute"
+    },
+    "RelationType": {
+      "$Caption": "Relation Type",
+      "IsTrue": "true",
+      "IsFalse": "false",
+      "Less": "<",
+      "LessOrEqual": "<=",
+      "Greater": ">",
+      "GreaterOrEqual": ">=",
+      "Equal": "=",
+      "NotEqual": "<>",
+      "IsNull": "Null",
+      "IsNotNull": "Not null"
+    },
+    "RoundMode": {
+      "$Caption": "Rounding Mode"
     },
     "StatIndicatorType": {
       "DifMax": "Differences maximum",
@@ -723,19 +994,367 @@
       "All": "Specify always"
     }
   },
+  "Libraries/DataPartition/Partition": {
+    "PartitionType": {
+      "Other": "Unused"
+    },
+    "TestPriorityPosition": {
+      "$Caption": "Test Set Priority",
+      "Default": "Defined by algorithm"
+    }
+  },
+  "Libraries/DataSampling/Sampling": {
+    "SamplingMethod": {
+      "$Caption": "Sampling Method",
+      "Random": "Random",
+      "RandomUniform": "Random uniform",
+      "Stratified": "Stratified",
+      "Sequence": "Sequence",
+      "Biased": "Biased sampling"
+    },
+    "SamplingPlace": {
+      "$Caption": "Data Sampling Location",
+      "Begin": "Data set start",
+      "End": "Data set end"
+    },
+    "SamplingType": {
+      "$Caption": "Sampling Type",
+      "Absolute": "Absolute",
+      "Relative": "Relative"
+    }
+  },
+  "Libraries/FileConnection/TextFileTypes": {
+    "TextFileCaptionType": {
+      "$Caption": "Type for Column Header",
+      "NoCaption": "No header row",
+      "UseColumnNames": "Column (field) names",
+      "UseColumnDisplayNames": "Column (field) captions"
+    },
+    "TextFileFormatType": {
+      "$Caption": "Type for Data Format",
+      "Delimited": "With separators",
+      "Fixed": "Fixed width"
+    }
+  },
+  "Libraries/Model/DataSet/ImportModelComponentEngine": {
+    "CacheStringsMode": {
+      "$Caption": "Cache Strings Mode",
+      "Off": "Do not use cache",
+      "Auto": "Auto define "
+    }
+  },
   "Libraries/Model/ModelWorkFlow": {
     "MemberVisibility": {
       "$Caption": "Workflow Item Visibility",
-      "Private": "Private"
+      "Private": "Private",
+      "Protected": "Protected",
+      "Internal": "Internal",
+      "Public": "Open",
+      "Published": "Published"
+    }
+  },
+  "Libraries/Model/Variables/ModelVariables": {
+    "ModelVariablesKind": {
+      "$Caption": "Type of Workflow Variables",
+      "System": "System variables",
+      "Session": "Session variables",
+      "Package": "Package variables",
+      "User": "User variables",
+      "Combined": "All variables"
+    }
+  },
+  "Libraries/Normalization/NormalizerSettings": {
+    "ControlRangeType": {
+      "$Caption": "Control Type of Normalized Values Range",
+      "None": "No",
+      "Error": "Error",
+      "Winsorizing": "Winsorization"
+    },
+    "DefaultInteractionType": {
+      "$Caption": "Interaction Type",
+      "None": "No interaction"
+    },
+    "NormMultType": {
+      "$Caption": "Multiplication Normalization Type",
+      "C": "Multiplication of 2 continuous",
+      "D": "Multiplication of 2 discrete",
+      "CD": "Continuous to discrete multiplication",
+      "CG": "Multiplication of several continuous",
+      "DG": "Multiplication of several discrete",
+      "CDG": "Multiplication of several continuous and discrete",
+      "A": "Multiplication with special factors"
+    },
+    "NormSettingsType": {
+      "$Caption": "Normalization Type",
+      "None": "No",
+      "ScalingMinMax": "Scaling [min; max]",
+      "Scaling11": "Scaling [-1; 1]",
+      "Scaling01": "Scaling [0; 1]",
+      "AbsScaling": "Absolute scaling",
+      "Stand": "Standardization",
+      "Quotient": "Quotient",
+      "Indicator": "Indicator",
+      "IndicatorNoRef": "Indicator (without reference category)",
+      "Deviation": "Deviation",
+      "Simple": "Simple",
+      "ForwardDifference": "Difference",
+      "BackwardDifference": "Backward difference",
+      "Helmert": "Helmert",
+      "ReverseHelmert": "Reverse Helmert",
+      "Constant": "Constant",
+      "Mult": "Multiplication",
+      "Index": "Unique value index"
+    },
+    "RemovableType": {
+      "$Caption": "Field Delete Option",
+      "Removable": "Removable",
+      "Irremovable": "Irremovable",
+      "StrictIrremovable": "Fixed irremovable"
+    },
+    "SpecInterFactor": {
+      "$Caption": "Special Interaction Factor",
+      "Any": "ANY",
+      "AnyOther": "ANY OTHER",
+      "AnyContinuous": "ANY CONTINUOUS",
+      "AnyDiscrete": "ANY DISCRETE",
+      "AnyOtherContinuous": "ANY CONTINUOUS",
+      "AnyOtherDiscrete": "ANY DISCRETE",
+      "Same": "SAME"
     }
   },
   "Libraries/Optimization/Optimization": {
+    "OptimizationMethod": {
+      "$Caption": "Optimization Method",
+      "Exhaustive": "Exhaustive search",
+      "GoldenSection": "Golden section search",
+      "None": "No optimization"
+    },
     "TargetFunctionReturnType": {
+      "Float": "Real number",
+      "Integer": "Integer",
       "FloatVector": "Real vector"
+    }
+  },
+  "Libraries/Regression/RegressionTypes": {
+    "HierarchyType": {
+      "$Caption": "Hierarchy of Interactions",
+      "All": "For all"
+    }
+  },
+  "Viewers/Chart/ChartTypes": {
+    "AxesAlign": {
+      "Scale": "Combine scale"
+    },
+    "AxisLabelsStyle": {
+      "$Caption": "Axis Caption Type",
+      "None": "No",
+      "Value": "Values",
+      "Percent": "Percent"
+    },
+    "AxisPosition": {
+      "$Caption": "Axis Position",
+      "Abscissa": "Lower",
+      "LeftOrdinate": "Left",
+      "RightOrdinate": "Right"
+    },
+    "AxisType": {
+      "$Caption": "Axis Type",
+      "Linear": "Linear",
+      "Logarithmic": "Logarithmic",
+      "Datetime": "Date-time",
+      "Category": "Categories"
+    },
+    "ChartError": {
+      "$Caption": "Chart Error",
+      "DateTimeWarning": "Time data on the real axis",
+      "NoData": "No data to display",
+      "InValidColumn": "Field type does not match",
+      "InValidAxis": "Series type and axis do not match"
+    },
+    "ChartExportFormat": {
+      "$Caption": "Export Format",
+      "SVG": "SVG",
+      "PNG": "PNG",
+      "JPG": "JPG",
+      "PDF": "PDF"
+    },
+    "ChartLinkKind": {
+      "$Caption": "Field Type",
+      "None": "No",
+      "XData": "X field",
+      "YData": "Y field",
+      "YHighData": "Y field max",
+      "YColorData": "Color field",
+      "BubbleData": "Bubble size",
+      "Labels": "Caption field",
+      "Open": "Open",
+      "Close": "Close"
+    },
+    "ChartMode": {
+      "Hand": "Hand",
+      "Ruler": "Ruler",
+      "Pointer": "Pointer",
+      "Zoom": "Zoom",
+      "Marker": "Marker"
+    },
+    "ChartStacking": {
+      "$Caption": "Stacking Type",
+      "None": "No",
+      "Normal": "Normal",
+      "Percent": "Percent"
+    },
+    "ChartTheme": {
+      "$Caption": "Color Scheme",
+      "Default": "Standard",
+      "DarkBlue": "Dark blue",
+      "DarkGreen": "Dark green",
+      "Dark": "Dark"
+    },
+    "SeriesLabelsStyle": {
+      "LabelPercentTotal": "Caption, percentage, total",
+      "XValue": "X value"
+    },
+    "SeriesMarksAngle": {
+      "$Caption": "Caption Angle",
+      "LeftRight": "Top down",
+      "TopDown": "From right to left"
+    }
+  },
+  "Viewers/Cube/CubeCalcSummaries": {
+    "CalcCubeDimFunction": {
+      "$Caption": "Value View Type",
+      "Value": "Value",
+      "Count": "Count",
+      "IsTotal": "Total",
+      "IsNull": "Null"
+    }
+  },
+  "Viewers/Cube/CubeChart": {
+    "CubeChartSeriesPosition": {
+      "$Caption": "Series Position",
+      "Cols": "In columns",
+      "Rows": "In rows"
+    }
+  },
+  "Viewers/Cube/CubeDetailing": {
+    "CubeDetailingType": {
+      "$Caption": "Detailing Type",
+      "Browse": "Table",
+      "Form": "Form",
+      "Statistics": "Statistics"
+    }
+  },
+  "Viewers/Cube/CubeDimensions": {
+    "CubeDimensionFilterType": {
+      "$Caption": "Filter Selection Mode",
+      "MultipleSelect": "Multiple selection",
+      "SingleSelect": "Single selection",
+      "CombinedSelect": "Combined selection"
+    },
+    "CubeDimensionSortOrder": {
+      "$Caption": "Dimension Values Sort Order",
+      "Asc": "Ascending",
+      "Desc": "Descending",
+      "Source": "In original order",
+      "Custom": "Random order"
+    },
+    "CubeDimensionTotalPosition": {
+      "$Caption": "Total Position",
+      "Bottom": "At the bottom",
+      "None": "Do not show"
+    },
+    "CubeDimensionType": {
+      "$Caption": "Dimension Type",
+      "Cols": "Columns",
+      "Rows": "Rows",
+      "Free": "Available"
+    }
+  },
+  "Viewers/Cube/CubeFilter": {
+    "CubeCaseFilterRelation": {
+      "$Caption": "Filter Condition",
+      "TopN": "first N",
+      "BottomN": "last N",
+      "PartOfTotal": "part of total",
+      "Less": "<",
+      "LessOrEqual": "<=",
+      "Above": ">",
+      "AboveOrEqual": ">=",
+      "Equal": "=",
+      "NotEqual": "<>",
+      "IsNull": "Null",
+      "IsNotNull": "Not null",
+      "IsTrue": "true"
+    }
+  },
+  "Viewers/LogRegressReport/LogRegressReportCommon": {
+    "RegressReportStatParam": {
+      "HQC": "HQC"
+    }
+  },
+  "Viewers/ROC/ROCViewTypes": {
+    "ROCValueRepresentation": {
+      "$Caption": "Cuttoff Threshold",
+      "Absolute": "Absolute",
+      "Percent": "Percent"
+    },
+    "ROCViewAprioriProb": {
+      "$Caption": "True Share of Events Source",
+      "None": "Do not correct",
+      "Model": "From handler",
+      "Train": "From the training set",
+      "Test": "From the test set",
+      "User": "Set"
+    },
+    "ROCViewChartType": {
+      "$Caption": "Chart Type",
+      "ROC": "ROC curve",
+      "PrecisionRecall": "PR curve",
+      "Precision": "Precision chart",
+      "BreakEven": "Equilibrium chart",
+      "Event": "Recognized events, %",
+      "Lift": "Lift chart",
+      "Response": "Response chart",
+      "Gain": "Gain chart"
+    },
+    "ROCViewCutoffType": {
+      "$Caption": "Cuttoff Threshold",
+      "Current": "From handler",
+      "User": "Set",
+      "Balance": "Balance (TPR = TNR)",
+      "Maximum": "Maximum (TPR + TNR)",
+      "BreakEven": "Equilibrium point (TPR = PPV)",
+      "FScore": "Maximum F1 Score",
+      "Matthews": "Matthews coefficient (MCC)"
+    },
+    "ROCViewNBins": {
+      "$Caption": "Number of Ranges"
+    }
+  },
+  "Viewers/Statistics/StatViewTypes": {
+    "StatViewHistogramPropertyType": {
+      "$Caption": "Histogram Property",
+      "Number": "Number",
+      "Value": "Value",
+      "Mark": "Caption",
+      "BarChart": "Histogram bars",
+      "Count": "Count",
+      "NormalizedQuota": "%"
+    },
+    "StatViewIndicatorType": {
+      "$Caption": "Statistical Indicator",
+      "Histogram": "Histogram",
+      "BoxPlot": "Box plot",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "Mean": "Average",
+      "StdDev": "Standard deviation",
+      "LowerQuartile": "Lower quartile"
     }
   },
   "Warehouse2/MDConsts": {
     "MDFilterConditionType": {
+      "In": "on the list",
       "EndingWith": "ending with",
       "NotEndingWith": "not ending with"
     }

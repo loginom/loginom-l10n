@@ -2,6 +2,27 @@
   "Common/1Cv8/1Cv8Query": {
     "ErrQueryNotActive": "Request is not active"
   },
+  "Common/CertList/CertList_Win": {
+    "AddressBook": "Other users",
+    "My": "Personal",
+    "TrustedDevices": "Trusted devices",
+    "TrustedPeople": "Trusted people",
+    "TrustedPublisher": "Trusted publishers",
+    "UserDS": "Active Directory user object"
+  },
+  "Common/CodeExec/CodeAPI": {
+    "ArgColumn": "Column Index or name",
+    "ArgRow": "Row index",
+    "ArgValue": "Value",
+    "ColumnCount": "Column count",
+    "Columns": "Columns",
+    "Count": "Count",
+    "DataKind": "Sort of data",
+    "DataType": "Data type",
+    "DefaultUsageType": "Default usage type",
+    "DisplayName": "Caption",
+    "Index": "Index"
+  },
   "Common/WSDL/Processor/MIMECommon": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"
   },
@@ -91,7 +112,7 @@
     "ErrInvalidExplicitRange": "Invalid range",
     "ErrNoUsedRange": "Excel workbook error, incorrect sheet range",
     "ErrOpenExcelBook": "Failed to open %s Excel file",
-    "ErrParseFmt": "Error occurred while parsing line: %s",
+    "ErrParseFmt": "Error occurred while parsing %d line: %s",
     "ErrPropInvalidNamedRange": "Invalid named range",
     "ErrPropInvalidSheetName": "The excel sheet name cannot contain the following characters: ? * / [ ]",
     "ErrPropNamedRange": "Named range not specified",
@@ -187,7 +208,7 @@
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
     "ErrItemWithGuidAlreadyExist": "%s with identifier %s already exists",
     "ErrItemWithIDAlreadyExist": "%s with identifier %d already exists",
-    "ErrVendorAlreadyRegistered": "'% s' vendor has already been registered"
+    "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered"
   },
   "Libraries/bgrtl/FileMask": {
     "LgdFilesDesc": "Loginom Data file",
@@ -215,6 +236,7 @@
     "ErrNodeIsNil": "No node specified"
   },
   "Libraries/DataPartition/Partition": {
+    "BiasedSamplingDesc": "Biased sampling",
     "ErrPartitionMethod": "No sampling method specified"
   },
   "Libraries/DataPartition/PartitionIndexGenerator": {

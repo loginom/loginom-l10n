@@ -1068,20 +1068,17 @@
     }
   },
   "components/coarseclasses/CoarseClassesViewer": {
-    "btnAllowClassModifying": {
-      "tooltip": "Edit binning"
-    },
     "btnCalculateIV": {
-      "text": "Calculate"
+      "text": "Install..."
     },
     "btnHideSideBar": {
       "tooltip": "Hide side bar"
     },
     "btnMergeWithLeft": {
-      "tooltip": "Combine with left"
+      "tooltip": "Merge with previous"
     },
     "btnMergeWithRight": {
-      "tooltip": "Combine with right"
+      "tooltip": "Merge with next"
     },
     "btnModifyCancel": {
       "text": "Cancel"
@@ -1130,9 +1127,6 @@
     },
     "colCoarseClassWeight": {
       "text": "Share"
-    },
-    "colCoarseClassWoE": {
-      "text": "Evidence percentage"
     },
     "colColumnIV": {
       "text": "Index"
@@ -3150,7 +3144,7 @@
       "fieldLabel": "Legend"
     },
     "cbxScheme": {
-      "fieldLabel": "Colour scheme"
+      "fieldLabel": "Color scheme"
     },
     "cbxStacking": {
       "fieldLabel": "Stacking type"
@@ -3181,7 +3175,7 @@
     },
     "clrChart": {
       "emptyText": "Default",
-      "fieldLabel": "Background colour"
+      "fieldLabel": "Background color"
     },
     "edtChartTitle": {
       "fieldLabel": "Title"
@@ -3236,7 +3230,7 @@
     },
     "clrSerie": {
       "emptyText": "Default",
-      "fieldLabel": "Colour"
+      "fieldLabel": "Color"
     },
     "edtSerieTitle": {
       "fieldLabel": "Title"

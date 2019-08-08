@@ -59,7 +59,7 @@
   "app/Application": {
     "ErrVersionFailure": "Error when requesting the latest version",
     "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost.",
-    "VersionErrorResponseStatus": "Error when requesting the latest version. Response code: \"{0}\". Message: {1}",
+    "VersionErrorResponseStatus": "Error when requesting the latest version. Response code: \"{0}\". Message: \"{1}\"",
     "VersionWrongServiceResponse": "Wrong service response with the information on the latest Loginom version"
   },
   "app/AppUtils": {
@@ -93,7 +93,7 @@
     "ErrUrlPathNotFound": "\"{0}\" path not found",
     "FavoritesTitle": "Favorites",
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
-    "MsgTransportError": "The connection to the server is broken",
+    "MsgTransportError": "Server connection lost",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
     "PackageCopyOpened": "Changes in the open link  \"{0}\" package will be reflected in the current package upon its reload ",
     "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
@@ -1515,7 +1515,7 @@
     "ExportTo": "Export to"
   },
   "viewers/chart/ChartUtils": {
-    "ApplyDefaultColor": "Apply default colour",
+    "ApplyDefaultColor": "Apply default color",
     "DefaultColor": "Default",
     "From": "from",
     "Index": "Index"
@@ -1816,7 +1816,7 @@
     "ModelInfoPValue": "Significance",
     "ModelInfoR2": "R2",
     "ModelInfoR2adj": "R2 corr.",
-    "ModelInfoXi2": "Xi-square"
+    "ModelInfoXi2": "Chi-square"
   },
   "viewers/reports/ReportsForm": {
     "CantDeactivateBefore": "Error: Failed to deactivate the chain of previous nodes to update data",

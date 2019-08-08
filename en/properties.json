@@ -152,6 +152,10 @@
   "components/coarseclasses": {
     "CoarseClassesBuilder": {
       "ColumnPurpose": "Field usage type"
+    },
+    "FineClass": {
+      "IV": "Information class index",
+      "WoE": "Weight of class evidence"
     }
   },
   "components/condition": {

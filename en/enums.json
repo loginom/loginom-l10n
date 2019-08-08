@@ -258,7 +258,24 @@
       "Group": "Group",
       "ColumnName": "Identifier",
       "ColumnDisplayName": "Column caption",
+      "ClassNumber": "Class number",
+      "UniqueValue": "Unique value",
+      "ClassMark": "Class caption",
+      "EventsCount": "Events count",
+      "NonEventsCount": "Non-events count",
+      "LowerBound": "Lower bound",
+      "UpperBound": "Upper bound",
+      "WoE": "Weight of evidence",
+      "IV": "Information index",
       "UpperBoundIsOpen": "Upper range bound open"
+    },
+    "CoarseClassChartType": {
+      "WoE": "WoE",
+      "IV": "IV",
+      "Weight": "Share",
+      "Count": "Count",
+      "EventCount": "Events",
+      "NoEventCount": "Non-events"
     },
     "ColumnPurpose": {
       "$Caption": "Field usage type",
@@ -417,6 +434,7 @@
       "NotBetween": "out of the range",
       "In": "on the list",
       "NotIn": "not listed",
+      "Like": "contains",
       "NotLike": "does not contain",
       "StartingWith": "starting with",
       "NotStartingWith": "not starting with",
@@ -507,6 +525,7 @@
       "FixedGroupCount": "Fixed group count"
     },
     "LoopKind": {
+      "$Caption": "Loop Type",
       "GroupProcessing": "Group processing"
     }
   },
@@ -548,7 +567,22 @@
       "MostFreq": "Replace with most frequent"
     },
     "ActionOut": {
-      "NoDefine": "Not defined"
+      "NoDefine": "Not defined",
+      "None": "Leave unchanged",
+      "Delete": "Delete records",
+      "Mean": "Replace with average",
+      "Median": "Replace with median",
+      "MostFreq": "Replace with most frequent",
+      "SetValue": "Replace with set value",
+      "Limitation": "Limit"
+    },
+    "QualityDetectOE": {
+      "SKO": "Standard deviation"
+    }
+  },
+  "components/reformcolumns": {
+    "ColumnCachingMethod": {
+      "$Caption": "Field Caching"
     }
   },
   "components/slidingwindow": {
@@ -631,7 +665,8 @@
   },
   "components/variablestodata": {
     "VariablesToDataResultTableKind": {
-      "Columns": "To columns"
+      "Columns": "To columns",
+      "Rows": "To rows"
     }
   },
   "exports/database": {
@@ -730,8 +765,25 @@
       "X64": "64-bit system"
     }
   },
+  "Libraries/1CConnection/1Cv8Connection": {
+    "1Cv8Version": {
+      "$Caption": "Platform Versions",
+      "_1Cv8_0": "1С:Enterprise 8.0",
+      "_1Cv8_1": "1С:Enterprise 8.1",
+      "_1Cv8_2": "1С:Enterprise 8.2",
+      "_1Cv8_3": "1С:Enterprise 8.3"
+    }
+  },
   "Libraries/bgdbrtl/DB": {
     "DBServerType": {
+      "$Caption": "Database Type",
+      "Other": "Unknown",
+      "Oracle": "Oracle",
+      "MSSQL": "MS SQL",
+      "Sybase": "Sybase",
+      "DB2": "DB2",
+      "Interbase": "Interbase",
+      "Firebird": "Firebird",
       "MySQL": "MySQL",
       "PostgreSQL": "PostgreSQL",
       "SQLite": "SQLite"
@@ -798,10 +850,31 @@
       "First": "First",
       "Last": "Last"
     },
+    "BoundMode": {
+      "LowerInclusive": "Lower bound inclusive",
+      "UpperInclusive": "Upper bound inclusive"
+    },
+    "ConcatenationType": {
+      "$Caption": "Logical Connection Type",
+      "And": "AND",
+      "Or": "OR"
+    },
     "ContextUsageType": {
       "$Caption": "Usage Type",
+      "Unspecified": "Not defined",
+      "Useless": "Useless",
+      "Excluded": "Excluded",
+      "Info": "Info",
+      "Used": "Used",
+      "Input": "Input",
+      "Output": "Output",
+      "Group": "Group",
+      "Value": "Parameter",
+      "Transaction": "Transaction",
+      "Item": "Item",
       "DimCol": "Dimension in columns",
-      "DimRow": "Dimension in rows"
+      "DimRow": "Dimension in rows",
+      "Forecast": "Forecast"
     },
     "DataKind": {
       "$Caption": "Sort of Data",
@@ -1007,8 +1080,24 @@
       "All": "Specify always"
     }
   },
+  "Libraries/DataPartition/LearnPartition": {
+    "LearnPartitionType": {
+      "Validation": "Validation"
+    },
+    "LearnValidationMethod": {
+      "None": "No validation",
+      "KFold": "K-fold cross validation",
+      "LeaveOneOut": "Leave One Out cross validation",
+      "LeavePOut": "Leave P Out Cross Validation",
+      "ShuffleSplit": "Monte Carlo",
+      "Bootstrap": "Bootstrap"
+    }
+  },
   "Libraries/DataPartition/Partition": {
     "PartitionType": {
+      "$Caption": "Set Type",
+      "Teach": "Train",
+      "Test": "Test",
       "Other": "Unused"
     },
     "TestPriorityPosition": {
@@ -1053,6 +1142,7 @@
     "CacheStringsMode": {
       "$Caption": "Cache Strings Mode",
       "Off": "Do not use cache",
+      "Manual": "Custom cache size",
       "Auto": "Auto define "
     }
   },
@@ -1151,7 +1241,33 @@
   "Libraries/Regression/RegressionTypes": {
     "HierarchyType": {
       "$Caption": "Hierarchy of Interactions",
-      "All": "For all"
+      "All": "For all",
+      "Discrete": "For discrete"
+    },
+    "RegressionStatType": {
+      "R2": "Determination coefficient",
+      "R2adj": "Adjusted determination coefficient",
+      "CovMatrix": "Covariance matrix",
+      "AIC": "Akaike information criterion",
+      "AICc": "Akaike information criterion corrected",
+      "BIC": "Bayesian information criterion",
+      "HQC": "Hannan-Quinn information criterion",
+      "ErrStat": "Regression error statistics",
+      "MSE": "MSE",
+      "RMSE": "RMSE",
+      "F": "F-criterion ",
+      "FPvalue": "F-criterion significance",
+      "StdErr": "Standard deviation",
+      "CIDeviation": "Confidence interval delta",
+      "T": "T-statistics",
+      "TPValue": "T-statistics significance",
+      "Z": "Z-statistics",
+      "ZPValue": "Z-statistics significance"
+    },
+    "RegularizationSetupMethod": {
+      "$Caption": "Regularization Coefficient Setup Method",
+      "Manually": "Custom",
+      "Grid": "Auto"
     }
   },
   "Viewers/Chart/ChartTypes": {

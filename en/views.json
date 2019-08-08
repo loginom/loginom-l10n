@@ -1128,6 +1128,9 @@
     "colCoarseClassWeight": {
       "text": "Share"
     },
+    "colCoarseClassWoE": {
+      "text": "Weight of evidence"
+    },
     "colColumnIV": {
       "text": "Index"
     },

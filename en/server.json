@@ -58,6 +58,14 @@
   "components/forecast/ARIMAXParams": {
     "ErrNoStructuralElements": "No structural model element specified"
   },
+  "components/forecast/ForecastEngine": {
+    "AdjustedR2": "Adjusted determination coefficient",
+    "R2": "Determination coefficient",
+    "TStatColumn": "T-statistics"
+  },
+  "components/linregression/LinRegressionEngine": {
+    "RegressionTStatNamePostfix": "|T-statistics"
+  },
   "components/loop/LoopComponent": {
     "ErrGroupDataSourceSocketNotSpecified": "No socket containing columns to group specified"
   },
@@ -210,6 +218,9 @@
     "ErrItemWithIDAlreadyExist": "%s with identifier %d already exists",
     "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered"
   },
+  "Libraries/bgrtl/DataSet": {
+    "Statistics": "Statistics"
+  },
   "Libraries/bgrtl/FileMask": {
     "LgdFilesDesc": "Loginom Data file",
     "SupportedLgdFilesDesc": "Loginom Data files"
@@ -272,12 +283,21 @@
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"
   },
+  "Viewers/Cube/CubeDetailing": {
+    "ManagerStatistics": "Statistics"
+  },
   "Viewers/Cube/CubeHeaders": {
     "CubeTotalValue": "Total:"
   },
   "Viewers/ROC/ROCViewCharts": {
     "EventsChartXLabel": "Range",
     "LiftChartXLabel": "Range"
+  },
+  "Viewers/Statistics/StatView": {
+    "PrepareViewData": "Statistics"
+  },
+  "Viewers/Statistics/StatViewVendor": {
+    "VendorCaption": "Statistics"
   },
   "Warehouse2/DWImport": {
     "ExecQueryProcess": "Execute request to Data Warehouse"

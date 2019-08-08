@@ -1268,10 +1268,28 @@
       "$Caption": "Regularization Coefficient Setup Method",
       "Manually": "Custom",
       "Grid": "Auto"
+    },
+    "StatisticsModeType": {
+      "$Caption": "Statistics Calculation Mode",
+      "All": "For all models",
+      "FinalOnly": "For the final model"
+    }
+  },
+  "Viewers/Browse/BrowseViewSearch": {
+    "SearchCompareType": {
+      "$Caption": "Comparison Type",
+      "Inside": "substring"
+    },
+    "SearchMode": {
+      "$Caption": "Search Mode",
+      "ByRows": "by rows",
+      "ByColls": "by columns"
     }
   },
   "Viewers/Chart/ChartTypes": {
     "AxesAlign": {
+      "$Caption": "Align Axes",
+      "None": "No",
       "Scale": "Combine scale"
     },
     "AxisLabelsStyle": {
@@ -1337,9 +1355,27 @@
       "Default": "Standard",
       "DarkBlue": "Dark blue",
       "DarkGreen": "Dark green",
-      "Dark": "Dark"
+      "Dark": "Dark",
+      "Gray": "Gray",
+      "Grid": "Table",
+      "GridLight": "Light table",
+      "SandSignica": "Sand"
+    },
+    "ChartType": {
+      "$Caption": "Chart Type",
+      "Lines": "Lines",
+      "Area": "Areas",
+      "Spline": "Splines",
+      "Columns": "Columns",
+      "Bubble": "Bubble",
+      "Scatter": "Scatter",
+      "Waterfall": "Waterfall",
+      "ErrorBar": "Errors",
+      "Polygon": "Polygon"
     },
     "SeriesLabelsStyle": {
+      "None": "No",
+      "Value": "Value",
       "LabelPercentTotal": "Caption, percentage, total",
       "XValue": "X value"
     },

@@ -736,9 +736,6 @@
     "colDateTimeResult": {
       "text": "Result"
     },
-    "colDesc": {
-      "text": "MyColumn8"
-    },
     "colIntDesc": {
       "text": "Note"
     },
@@ -747,9 +744,6 @@
     },
     "colIntResult": {
       "text": "Result"
-    },
-    "colKey": {
-      "text": "String"
     },
     "colNumDesc": {
       "text": "Note"
@@ -787,9 +781,6 @@
   "components/binning/MethodSettingsWizard": {
     "ActivationPortContainer": {
       "fieldLabel": "Login status"
-    },
-    "ActivationPortStatusField": {
-      "fieldLabel": "Label"
     },
     "btnActivationPort": {
       "text": "Activate"
@@ -1528,9 +1519,6 @@
   "components/filterdata/FilterDataWizard": {
     "ActivationPortContainer": {
       "fieldLabel": "Login status"
-    },
-    "ActivationPortStatusField": {
-      "fieldLabel": "Label"
     },
     "btnActivationPort": {
       "text": "Activate"
@@ -2992,9 +2980,6 @@
       "text": "Format...",
       "tooltip": "Format..."
     },
-    "btnDataGridPrint": {
-      "text": "Print"
-    },
     "btnDataGridShowNulls": {
       "tooltip": "Show null values"
     },
@@ -3188,11 +3173,6 @@
     },
     "panelPlotOptions": {
       "title": "General Settings"
-    }
-  },
-  "viewers/chart/ChartLinks": {
-    "grdLinks": {
-      "title": "My Grid Panel"
     }
   },
   "viewers/chart/ChartView": {
@@ -3751,9 +3731,6 @@
     "cbRegister": {
       "boxLabel": "Case sensitive"
     },
-    "edtValue": {
-      "value": "Example"
-    },
     "rbAdd": {
       "boxLabel": "Add to checked"
     },
@@ -3791,14 +3768,10 @@
     },
     "btnRollable": {
       "tooltip": "Loop values while flipping"
-    },
-    "colRadio": {
-      "text": "MyCheck1"
     }
   },
   "viewers/cube/EmbeddedBrowseForm": {
     "mniGoToLine": {
-      "text": "Menu Item",
       "tooltip": "Go to row..."
     }
   },

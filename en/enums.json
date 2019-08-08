@@ -1,32 +1,460 @@
 {
   "Common/CertList/CertList": {
     "CertStoreCollection": {
+      "$Caption": "Certificate Store Collections",
       "CurrentUser": "Current user",
+      "LocalMachine": "Local machine",
       "Services": "Service"
     }
   },
+  "Common/WSDL/Processor/WSDLRequestProcessor": {
+    "MIMEResponseStatus": {
+      "$Caption": "MIME Response Processing Result",
+      "Ok": "No errors",
+      "Cancelled": "Canceled by user",
+      "InitError": "Initialization error: %s",
+      "InvalidMultipartBoundary": "Invalid multipart/related boundary",
+      "HeaderTooLong": "HTTP header too long",
+      "UnexpectedMessageEnd": "Unexpected message end",
+      "UnknownMessageStructure": "Unrecognized message structure",
+      "XMLImportError": "XML import error: %s ",
+      "UnhandledError": "Unhandled error: %s"
+    },
+    "WSDLPrepareRequestStatus": {
+      "$Caption": "WSDL Request Formation Result",
+      "NoError": "No errors",
+      "Cancelled": "Canceled by user",
+      "InitError": "Error initializing WSDL request: %s",
+      "ConnectionUndefined": "WSDL connection not specified",
+      "OperationUndefined": "The operation used is not defined",
+      "NoContextForInputMessage": "No context for formation of the incoming service message",
+      "UnsupportedSoapTransport": "Unsupported SOAP transport",
+      "PrepareError": "Error preparing data request: %s",
+      "UnimplementedRequestType": "The requests with %s extensions are not currently supported"
+    }
+  },
   "Common/WSDL/WSDL": {
+    "HttpVerb": {
+      "$Caption": "HTTP Method",
+      "GET": "GET",
+      "POST": "POST"
+    },
+    "SoapStyle": {
+      "$Caption": "SOAP Request Style",
+      "RPC": "RPC",
+      "Document": "Document"
+    },
+    "SoapTransport": {
+      "$Caption": "SOAP Request Transport",
+      "Unknown": "Unknown",
+      "HTTP": "HTTP"
+    },
+    "SoapVersion": {
+      "$Caption": "SOAP Version",
+      "SOAP_1_1": "1.1",
+      "SOAP_1_2": "1.2"
+    },
+    "WSDLExtensionType": {
+      "$Caption": "WSDL Extension Type",
+      "SOAP": "SOAP",
+      "HTTP": "HTTP",
+      "MIME": "MIME"
+    },
+    "WSDLHttpMessageType": {
+      "$Caption": "HTTP Message Type",
+      "URLEncoded": "URL encoded",
+      "URLReplacement": "URL replacement"
+    },
     "WSDLTransmissionPrimitive": {
-      "RequestResponse": "Request-response"
+      "$Caption": "Data Exchange Primitive",
+      "Unknown": "Unknown",
+      "OneWay": "One way",
+      "RequestResponse": "Request-response",
+      "SolicitResponse": "Request-response",
+      "Notification": "Notification"
+    }
+  },
+  "Common/WSDL/WSDLClientAuth": {
+    "WSDLAuthorizationMode": {
+      "$Caption": "Authorization Type",
+      "Absent": "Not required",
+      "NamePass": "Username and password",
+      "OAuth": "OAuth token"
+    }
+  },
+  "Common/XML/XSD": {
+    "XSDDataTypeRefinement": {
+      "Float": "With floating point (single precision)",
+      "Double": "With floating point (double precision)",
+      "Decimal": "Decimal number",
+      "Integer": "Integer",
+      "PosInteger": "Positive integer",
+      "NegInteger": "Negative integer",
+      "NonPosInteger": "Non-positive integer",
+      "NonNegInteger": "Non-negative integer",
+      "Long": "Signed integer, 64 bits",
+      "Int": "Signed integer, 32 bits",
+      "Short": "Signed integer, 16 bits",
+      "Byte": "Signed integer, 8 bits",
+      "ULong": "Unsigned integer, 64 bits",
+      "UInt": "Unsigned integer, 32 bits",
+      "UShort": "Unsigned integer, 16 bit",
+      "UByte": "Unsigned integer, 8 bits"
+    }
+  },
+  "components/assnrules": {
+    "FrequentItemsetType": {
+      "$Caption": "Frequent Itemset Type",
+      "All": "All",
+      "Maximal": "Maximum",
+      "Closed": "Closed"
+    }
+  },
+  "components/autocorrelation": {
+    "AutoCorrelationDomainCalc": {
+      "$Caption": "Autocorrelation Function Domain Calculation",
+      "Time": "Time",
+      "Frequency": "Frequency",
+      "Auto": "Auto"
+    }
+  },
+  "components/binning": {
+    "BinningBinsColumnKind": {
+      "$Caption": "Range Table Field Usage Type",
+      "None": "Not defined",
+      "BinsID": "Bins identifier",
+      "BoundsDataType": "Range bounds data type",
+      "BinNumber": "Bin number",
+      "LowerBound": "Lower bound",
+      "UpperBound": "Upper bound",
+      "BinLabel": "Caption",
+      "LowerBoundQuota": "Lower bound quota",
+      "UpperBoundQuota": "Upper bound quota",
+      "BinQuota": "Bin quota",
+      "LowerDeviation": "Deviation from the lower range bound",
+      "UpperDeviation": "Deviation from the upper range bound",
+      "LowerLimitOpen": "Lower range bound open",
+      "UpperLimitOpen": "Upper range bound open"
+    },
+    "BinningMatchingObservationsMode": {
+      "$Caption": "Matching Observations Processing Mode",
+      "AddToNextBin": "Add to next",
+      "AddCurrent": "Save in current",
+      "Random": "Set randomly",
+      "AsIs": "Leave as is",
+      "OptimalTile": "Similar tiles"
+    },
+    "BinningMethodType": {
+      "$Caption": "Ranging Method",
+      "None": "<Not0>",
+      "ExtermalBins": "External ranges",
+      "Width": "Width",
+      "Count": "Count"
+    },
+    "BinningOutputColumnKind": {
+      "LowerLimitOpen": "Lower range bound open",
+      "UpperLimitOpen": "Upper range bound open"
+    }
+  },
+  "components/coarseclasses": {
+    "ClassParamsColumnKind": {
+      "UpperBoundIsOpen": "Upper range bound open"
+    },
+    "ColumnPurpose": {
+      "Unused": "Not selected",
+      "Input": "Input",
+      "InputExternal": "Input (external binning)",
+      "InputFrozen": "Input (locked)",
+      "Target": "Output"
+    },
+    "ColumnSignificance": {
+      "$Caption": "Column Significance",
+      "Void": "Void",
+      "Low": "Low",
+      "Medium": "Average",
+      "High": "High"
+    },
+    "ColumnSignificancesColumnKind": {
+      "$Caption": "Usage Type of Column Significance Field",
+      "ColumnName": "Column name",
+      "ColumnDisplayName": "Column caption",
+      "EventsCount": "Events count",
+      "NonEventsCount": "Non-events count",
+      "TotalEventsCount": "Total",
+      "IV": "Information index",
+      "Significance": "Column significance"
+    },
+    "InputBinningColumnKind": {
+      "$Caption": "Field Usage Type in the External Binning",
+      "None": "Not selected",
+      "Identifier": "Identifier",
+      "ClassNumber": "Class number",
+      "UniqueValue": "Unique value",
+      "UpperBound": "Upper bound",
+      "UpperBoundIsOpen": "Upper bound open"
+    }
+  },
+  "components/coluniondata": {
+    "ColUnionDataTailsAlignType": {
+      "$Caption": "Compliance of Output Set Row Count",
+      "CutToShortest": "With minimum set",
+      "ExtendToLongest": "With maximum set",
+      "UserSpecified": "Set defined"
+    },
+    "ColUnionRowsPaddingType": {
+      "$Caption": "Supplement to the Largest Set",
+      "None": "No to supplement",
+      "Repeat": "Repeat dataset",
+      "LastRow": "Supplement with the last row"
+    }
+  },
+  "components/corranalysis": {
+    "CorrAnalysisSelectionType": {
+      "InFirstSet": "In the first set",
+      "InSecondSet": "In the second set"
+    },
+    "CorrType": {
+      "$Caption": "Correlation Coefficient Type",
+      "Pirson": "Pearson",
+      "CorrFuncExtr": "Сorrection function extremum",
+      "TauBKendall": "Kendall Tau-b",
+      "Spearman": "Spearman"
+    }
+  },
+  "components/crosstab": {
+    "CrossTabAggregationType": {
+      "$Caption": "Aggregation Options",
+      "Sum": "Sum",
+      "Count": "Count",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "Avg": "Average",
+      "StdDev": "Standard deviation",
+      "SumSq": "Sum of squares",
+      "UniqueCount": "Unique count",
+      "First": "First",
+      "Last": "Last"
+    }
+  },
+  "components/datatoxml": {
+    "RowsDocIdenti": {
+      "$Caption": "Document Identification",
+      "Full": "One request for all data set",
+      "SingleRow": "One request in each input set row",
+      "ByID": "Request identifier - input set field"
+    }
+  },
+  "components/datereform": {
+    "DateReformAlignment": {
+      "$Caption": "Date Alignment in the Specified Period",
+      "FirstDate": "First day",
+      "LastDate": "Last day"
+    },
+    "DateReformFormat": {
+      "$Caption": "Output Column Data Type",
+      "DateTime": "Date/Time",
+      "Number": "Number",
+      "String": "String"
+    },
+    "DateReformFunction": {
+      "$Caption": "Date/Time Conversion Method",
+      "YearAndQuarter": "Year + quarter",
+      "YearAndMonth": "Year + month",
+      "YearAndWeek": "Year + week",
+      "YearAndDay": "Year + day",
+      "Year": "Year",
+      "Quarter": "Quarter",
+      "Month": "Month",
+      "WeekOfYear": "Week",
+      "DayOfYear": "Day of year",
+      "DayOfQuarter": "Day of quarter",
+      "DayOfMonth": "Day of month",
+      "DayOfWeek": "Day of week",
+      "Hours": "Hours",
+      "Minutes": "Minutes",
+      "Seconds": "Seconds",
+      "Milliseconds": "Milliseconds",
+      "Date": "Date",
+      "Time": "Time",
+      "User": "User format"
+    }
+  },
+  "components/em": {
+    "EMModification": {
+      "$Caption": "Algorithm Type",
+      "Standard": "Standard",
+      "Stochastic": "Stochastic",
+      "Classification": "Classification"
+    }
+  },
+  "components/factoranalysis": {
+    "FactorRotationType": {
+      "$Caption": "Rotation Type",
+      "NoRotation": "No rotation",
+      "Varimax": "Varimax",
+      "Quartimax": "Quartimax"
+    },
+    "FactorSignificanceCriterion": {
+      "$Caption": "Significance Criterion",
+      "CumDispersion": "By dispersion",
+      "NFactor": "Set the factor number"
     }
   },
   "components/filterdata": {
     "FilterRelationType": {
+      "$Caption": "Relationship Type",
+      "Less": "<",
+      "LessOrEqual": "<=",
+      "Greater": ">",
+      "GreaterOrEqual": ">=",
+      "Equal": "=",
+      "NotEqual": "<>",
+      "IsNull": "Null",
+      "IsNotNull": "Not null",
       "StartingWith": "starting with",
       "NotStartingWith": "not starting with",
       "EndingWith": "ending with",
       "NotEndingWith": "not ending with"
     }
   },
+  "components/linregression": {
+    "LinRegSelQuality": {
+      "BIC": "Bayesian information criterion",
+      "HQC": "Hannan-Quinn information criterion"
+    }
+  },
+  "components/logregression": {
+    "LogRegressionMethod": {
+      "$Caption": "Factor Selection and Protection against Retraining",
+      "Backward": "Backward selection",
+      "L2": "Ridge",
+      "L1": "LASSO",
+      "L1L2": "Elastic-Net"
+    },
+    "LogRegSelQuality": {
+      "$Caption": "Factor Selection Criterion",
+      "LR": "Likelihood ratio",
+      "AIC": "Akaike information criterion",
+      "AICc": "Akaike information criterion corrected",
+      "BIC": "Bayesian information criterion",
+      "HQC": "Hannan-Quinn information criterion"
+    }
+  },
+  "components/loop": {
+    "LoopKind": {
+      "GroupProcessing": "Group processing"
+    }
+  },
+  "components/neuralnet": {
+    "NeuralNetHiddenLayers": {
+      "$Caption": "Neural Net Hidden Layers Number",
+      "NoHiddenLayers": "No hidden layers",
+      "SingleHiddenLayer": "One hidden layer",
+      "TwoHiddenLayers": "Two hidden layers"
+    },
+    "NeuralNetTask": {
+      "$Caption": "Neural Net Task Type",
+      "Regression": "Regression",
+      "Classification": "Classification"
+    },
+    "RegNNOutputLayer": {
+      "$Caption": "Output Value Limit",
+      "Linear": "No"
+    }
+  },
   "components/quality": {
     "ActionExtr": {
-      "NoDefine": "Not defined"
+      "NoDefine": "Not defined",
+      "None": "Leave unchanged",
+      "Delete": "Delete records",
+      "Mean": "Replace with average",
+      "Median": "Replace with median",
+      "MostFreq": "Replace with most frequent",
+      "SetValue": "Replace with set value",
+      "Limitation": "Limit"
     },
     "ActionNull": {
-      "NoDefine": "Not defined"
+      "$Caption": "Missing Data Processing Method",
+      "NoDefine": "Not defined",
+      "None": "Leave unchanged",
+      "Delete": "Delete records",
+      "Mean": "Replace with average",
+      "Median": "Replace with median",
+      "MostFreq": "Replace with most frequent"
     },
     "ActionOut": {
       "NoDefine": "Not defined"
+    }
+  },
+  "components/smoothing": {
+    "WTEdgeExtension": {
+      "$Caption": "Bounds Padding",
+      "Symmetric": "Symmetric",
+      "AntiSymmetric": "Antisymmetric",
+      "ZeroPadding": "Zero padding",
+      "ConstantPadding": "Constant",
+      "Periodic": "Periodic"
+    },
+    "WTWaveletType": {
+      "$Caption": "Wavelet Type",
+      "Daubechies": "Daubechies",
+      "Coiflet": "Coiflet",
+      "CDF97": "CDF 9/7"
+    }
+  },
+  "components/sonn": {
+    "SOMTopology": {
+      "$Caption": "Cell Topology",
+      "st1D": "1D",
+      "st2DSquare": "2D rectangular",
+      "st2DHexagonal": "2D hexagonal",
+      "st3D": "3D"
+    },
+    "SONNType": {
+      "$Caption": "Self-Organizing Network Type",
+      "Kohonen": "Kohonen network",
+      "GNG": "Neural gas",
+      "ESOINN": "ESOINN"
+    }
+  },
+  "components/sorting": {
+    "SortingBufferingType": {
+      "$Caption": "Data Buffer Type",
+      "AutoSelect": "Auto",
+      "Whole": "All data",
+      "Minimal": "Minimum",
+      "UserDefined": "Set"
+    }
+  },
+  "components/ungroupdata": {
+    "SeasonalityPeriod": {
+      "$Caption": "Seasonality Period",
+      "Year": "Year",
+      "Quarter": "Quarter",
+      "Month": "Month",
+      "Week": "Week",
+      "Day": "Day",
+      "Hour": "Hour",
+      "UserDefined": "Set",
+      "None": "No seasonality"
+    },
+    "UngroupBalanceMethod": {
+      "$Caption": "Balance Method",
+      "NotBalance": "Not balance",
+      "Proportionally": "Proportionally",
+      "Evenly": "Evenly"
+    },
+    "UngroupMethod": {
+      "$Caption": "Ungrouping Method"
+    },
+    "UngroupRoundFormat": {
+      "$Caption": "Rounding Format",
+      "NotRound": "Not round"
+    }
+  },
+  "components/variablestodata": {
+    "VariablesToDataResultTableKind": {
+      "Columns": "To columns"
     }
   },
   "exports/database": {
@@ -84,19 +512,226 @@
       "X64": "64-bit system"
     }
   },
+  "Libraries/bgdbrtl/DB": {
+    "DBServerType": {
+      "MySQL": "MySQL",
+      "PostgreSQL": "PostgreSQL",
+      "SQLite": "SQLite"
+    },
+    "ObjectQuotesType": {
+      "$Caption": "Type of Quotation Marks",
+      "SquareBrackets": "Square brackets []",
+      "DoubleQuotes": "Double quotes \"\"",
+      "Apostrophes": "Apostrophes ``"
+    },
+    "TransactionIsolationLevel": {
+      "$Caption": "Transaction Isolation Level",
+      "ReadUnCommitted": "Read uncommitted",
+      "ReadCommitted": "Read committed",
+      "RepeatableRead": "Repeatable Read",
+      "Snapshot": "Snapshot",
+      "Serializable": "Serializable"
+    }
+  },
+  "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
+    "SQLiteClientLibrary": {
+      "Sqlite3": "sqlite3",
+      "Sqlcipher": "sqlcipher"
+    },
+    "SQLiteEncryptionAlgorithm": {
+      "$Caption": "Encryption Algorithm",
+      "CryptNone": "-",
+      "CryptAES256CBC": "AES-256"
+    },
+    "SQLiteJournalMode": {
+      "$Caption": "Transaction Log Mode",
+      "JournalDefault": "Default",
+      "JournalDelete": "Delete file"
+    },
+    "SQLiteLikeMode": {
+      "$Caption": "LIKE Operation Mode",
+      "LikeNoCase": "Case insensitive ASCII characters",
+      "LikeCase": "Case sensitive",
+      "LikeUnicode": "Case insensitive"
+    },
+    "SQLiteLockingMode": {
+      "$Caption": "Database Locking Mode",
+      "LockDefault": "Default",
+      "LockNormal": "Normal",
+      "LockExclusive": "Exclusive"
+    },
+    "SQLiteSync": {
+      "$Caption": "Sync Mode",
+      "SyncDefault": "Default",
+      "SyncOff": "Off",
+      "SyncNormal": "Normal",
+      "SyncFull": "Full",
+      "SyncExtra": "Extra"
+    }
+  },
   "Libraries/bgrtl/Consts": {
+    "AggregationType": {
+      "$Caption": "Aggregation Function Type",
+      "Sum": "Sum",
+      "Count": "Count",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "Avg": "Average",
+      "First": "First",
+      "Last": "Last"
+    },
     "ContextUsageType": {
       "DimCol": "Dimension in columns",
       "DimRow": "Dimension in rows"
     },
     "DataStatus": {
       "Dimension": "Dimension"
+    },
+    "DataType": {
+      "Boolean": "Logical",
+      "DateTime": "Date/Time",
+      "Float": "Real",
+      "Integer": "Integer",
+      "String": "String",
+      "Variant": "Variant"
+    },
+    "DatePeriodType": {
+      "$Caption": "Types of Date Periods",
+      "Day": "Day",
+      "Week": "Week",
+      "Month": "Month",
+      "Quarter": "Quarter",
+      "Year": "Year"
+    },
+    "DateSourceType": {
+      "$Caption": "Date Source",
+      "Current": "Current date",
+      "Data": "Available data",
+      "Custom": "Absolute date"
+    },
+    "DateTimePart": {
+      "$Caption": "Date Time Part",
+      "MiliSeconds": "Millisecond",
+      "Seconds": "Second",
+      "Minute": "Minute",
+      "Hour": "Hour",
+      "Day": "Day",
+      "Month": "Month",
+      "Year": "Year"
+    },
+    "DateTimeSpanType": {
+      "DateTimeSpan": "Arbitrary value",
+      "Millisecond": "Millisecond",
+      "Seconds": "Second",
+      "Minute": "Minute",
+      "Hour": "Hour",
+      "Day": "Day",
+      "Week": "Week",
+      "Month": "Month",
+      "Year": "Year",
+      "Century": "Century"
+    },
+    "DerivedProxyProduceType": {
+      "$Caption": "Creation Type of Derived Elements",
+      "Default": "Default",
+      "Supplement": "Supplement",
+      "Replace": "Replace"
+    },
+    "ExceptionType": {
+      "$Caption": "Exception Type",
+      "Error": "Error",
+      "Warning": "Warning",
+      "Hint": "Hint"
+    },
+    "FieldProperty": {
+      "$Caption": "Column Properties",
+      "Name": "Name",
+      "DisplayName": "Caption",
+      "DataType": "Data type",
+      "DataKind": "Sort of data",
+      "Size": "Data size",
+      "DefaultUsageType": "Default usage type"
+    },
+    "StatIndicatorType": {
+      "DifMax": "Differences maximum",
+      "DifAvg": "Differences average",
+      "DifSum": "Differences sum",
+      "DifSumSq": "Sum of squared differences",
+      "DifStdDev": "Standard deviation of differences",
+      "DifCount": "Differences count"
+    },
+    "UsageType": {
+      "$Caption": "Usage Type",
+      "Unspecified": "Not defined",
+      "Excluded": "Excluded",
+      "Useless": "Useless",
+      "Active": "Active",
+      "Predicted": "Output",
+      "Key": "Key",
+      "Group": "Group",
+      "Transaction": "Transaction",
+      "Item": "Item"
+    },
+    "VAlignment": {
+      "$Caption": "Vertical  Alignment",
+      "Top": "Align top",
+      "Bottom": "Align bottom",
+      "Center": "Align center"
+    }
+  },
+  "Libraries/bgrtl/Logger": {
+    "LogLevel": {
+      "$Caption": "Logging Level",
+      "Trace": "Trace",
+      "Debug": "Debug",
+      "Info": "Info",
+      "Hint": "Event:",
+      "Warn": "Warning",
+      "Error": "Error",
+      "Fatal": "Fatal"
+    },
+    "LogType": {
+      "$Caption": "Logging Options",
+      "File": "Logging to file"
+    }
+  },
+  "Libraries/bgrtl/ProgressTracker": {
+    "ProgressTrackerProcessStatus": {
+      "$Caption": "Process Status",
+      "NotStarted": "Not started",
+      "NotResponding": "Not responding",
+      "Completed": "Completed",
+      "ExplicitCanceled": "Canceled",
+      "Error": "Error",
+      "ParentCanceled": "Parent process canceled",
+      "ParentError": "Error in parent process"
+    }
+  },
+  "Libraries/bgrtl/Statistics": {
+    "EventType": {
+      "$Caption": "Event Type",
+      "First": "First on the list",
+      "Last": "Last on the list",
+      "Frequent": "More frequent",
+      "Exact": "Explicitly set"
+    }
+  },
+  "Libraries/bgrtl/TimeZones": {
+    "ExportXMLSpecifyTimeZone": {
+      "None": "Do not specify",
+      "AllButDate": "Do not specify for Date",
+      "All": "Specify always"
     }
   },
   "Libraries/Model/ModelWorkFlow": {
     "MemberVisibility": {
       "$Caption": "Workflow Item Visibility",
       "Private": "Private"
+    }
+  },
+  "Libraries/Optimization/Optimization": {
+    "TargetFunctionReturnType": {
+      "FloatVector": "Real vector"
     }
   },
   "Warehouse2/MDConsts": {

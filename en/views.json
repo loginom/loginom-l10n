@@ -141,7 +141,7 @@
       "text": "Path"
     },
     "edtPath": {
-      "fieldLabel": "Package File Path"
+      "fieldLabel": "Package file path"
     },
     "frmAddPackageLinkForm": {
       "title": "Add Link to Package"
@@ -170,10 +170,10 @@
       "title": "Configure Node Activation Mode"
     },
     "rbAlwaysRun": {
-      "boxLabel": "Always Run"
+      "boxLabel": "Always run"
     },
     "rbAlwaysTeach": {
-      "boxLabel": "Always Retrain"
+      "boxLabel": "Always retrain"
     },
     "rbDefinesByCommandLine": {
       "boxLabel": "Determined by the context of the current processing"
@@ -213,10 +213,10 @@
       "text": "Refresh"
     },
     "cbxPackage": {
-      "fieldLabel": "Package File Path"
+      "fieldLabel": "Package file path"
     },
     "colPublishedPackages": {
-      "text": "Published Packages"
+      "text": "Published packages"
     },
     "frmConfigurePublishedPackagesForm": {
       "title": "Publishing of Packages "
@@ -228,13 +228,13 @@
       "boxLabel": "Custom"
     },
     "rdoGenerateForPackage": {
-      "boxLabel": "Unique Name for Package"
+      "boxLabel": "Unique name for package"
     },
     "rdoGenerateForPackageVersion": {
-      "boxLabel": "Unique Name for Each Package Version"
+      "boxLabel": "Unique name for each package version"
     },
     "rdoUseDisNamespace": {
-      "boxLabel": "Loginom Integrator Namespace"
+      "boxLabel": "Loginom integrator namespace"
     }
   },
   "app/ConsoleForm": {
@@ -381,7 +381,7 @@
       "tooltip": "Configure node"
     },
     "btnConfigurePublishedPackages": {
-      "tooltip": "Publishing of Packages..."
+      "tooltip": "Publishing of packages..."
     },
     "btnEditProperties": {
       "tooltip": "Properties..."
@@ -457,7 +457,7 @@
       "tooltip": "Paste"
     },
     "btnRemoveSelected": {
-      "tooltip": "Delete selected ..."
+      "tooltip": "Delete selected..."
     },
     "btnRetrain": {
       "tooltip": "Retrain node"
@@ -810,7 +810,7 @@
       "text": "Edit"
     },
     "btnIncDecimalPlacesCount": {
-      "tooltip": "Increase Decimal"
+      "tooltip": "Increase decimal"
     },
     "btnLabelTemplateGetHelp": {
       "text": "Sample"
@@ -819,7 +819,7 @@
       "fieldLabel": "Template"
     },
     "chkLowerLimitOpen": {
-      "boxLabel": "Lower limit open"
+      "boxLabel": "Lower bound open"
     },
     "chkUpperLimitOpen": {
       "boxLabel": "Upper bound open"
@@ -1453,10 +1453,10 @@
       "boxLabel": "One request for all data set"
     },
     "rbIDColumn": {
-      "boxLabel": "Request ID - input set field"
+      "boxLabel": "Request identifier - input set field"
     },
     "rbIDColumnNull": {
-      "boxLabel": "One request in each input set line"
+      "boxLabel": "One request in each input set row"
     }
   },
   "components/factoranalysis/FactorAnalysisWizard": {
@@ -1930,10 +1930,10 @@
       "title": "Additional Parameters"
     },
     "rbComplex": {
-      "boxLabel": "Request ID - input set field:"
+      "boxLabel": "Request identifier - input set field:"
     },
     "rbSimple": {
-      "boxLabel": "One request in each input set line"
+      "boxLabel": "One request in each input set row"
     }
   },
   "components/wsdlclient/CustomHeadersWizard": {
@@ -2358,7 +2358,7 @@
       "text": "Open"
     },
     "cbxFileType": {
-      "fieldLabel": "File Type"
+      "fieldLabel": "File type"
     },
     "colFileDate": {
       "text": "Changed"
@@ -2376,7 +2376,7 @@
       "text": "Type"
     },
     "edtFileName": {
-      "fieldLabel": "File Name"
+      "fieldLabel": "File name"
     },
     "frmOpenDialogForm": {
       "title": "Open File"
@@ -2498,16 +2498,16 @@
       "text": "Open Package..."
     },
     "colFilePath": {
-      "text": "File Path"
+      "text": "File path"
     },
     "colOpenDate": {
-      "text": "Package Opening Date"
+      "text": "Package opening date"
     },
     "colPackageName": {
       "text": "Package Name"
     },
     "lblLastPackages": {
-      "text": "Recent Opened Packages"
+      "text": "Recent opened packages"
     },
     "pnlHomePage": {
       "title": "Home"
@@ -2679,13 +2679,13 @@
       "text": "Description"
     },
     "colTree": {
-      "text": "Data Warehouse Object"
+      "text": "Data warehouse object"
     },
     "frmDWObjects": {
       "title": "Select Data Warehouse Object"
     },
     "lblObjectsTree": {
-      "text": "Data Warehouse Objects"
+      "text": "Data warehouse objects"
     }
   },
   "imports/dwh/ListValueDialog": {
@@ -3905,7 +3905,7 @@
     },
     "btnDeleteAll": {
       "text": "Delete All",
-      "tooltip": "Delete all ..."
+      "tooltip": "Delete all..."
     },
     "btnReloadViewData": {
       "text": "Reload Data"
@@ -4447,7 +4447,7 @@
     },
     "btnGetUniqueValues": {
       "text": "Get Values",
-      "tooltip": "Get Unique Values"
+      "tooltip": "Get unique values"
     },
     "colBiasedCount": {
       "text": "Count"

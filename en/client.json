@@ -266,7 +266,7 @@
   "app/TabForm": {
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrPrepareContainer": "When switching to \"{0}. {1}\" error occurred.\n{2}",
-    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
+    "ErrVendorMalfunction": "\"{0}\" node component malfunctioned",
     "MsgNodeConfigurationChanged": "Node configuration changed",
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
     "MsgNodeLocked": "\"{0}\" node is blocked",
@@ -1318,7 +1318,7 @@
   },
   "mxgraph/node/label/Label": {
     "ErrLabelNotSaved": "Failed to save caption",
-    "NodeIsLocked": "Node is blocked, it is impossible to change caption",
+    "NodeIsLocked": "Caption edit forbidden: node is blocked",
     "NodeLabel": "Node caption",
     "WrongLabelValue": "Invalid caption value"
   },
@@ -1380,8 +1380,9 @@
     "ProcessActionDeleteTip": "Delete process",
     "ProcessActionStopTip": "Cancel process",
     "TimeSpanDay": "d",
-    "TimeSpanFormat": "s and ms",
-    "TimeSpanHour": "h"
+    "TimeSpanFormat": "s\\s u\\ms",
+    "TimeSpanHour": "h",
+    "TimeSpanMinutesFormat": "i\\m"
   },
   "propedit/CustomPropEdit": {
     "ErrDataType": "Property data type is incompatible with component",
@@ -1740,9 +1741,9 @@
     "Original": "In original order",
     "SingleFilteredDimTooltip": "{0} • {1} [{2} of {3}]",
     "WarnDependencyCaseCalcCase": "• the calculated fact dependent on the field will become inactive (now the field is connected with the unused fact)",
-    "WarnDependencyCaseCaseFilter": "• the filter will be deleted for the fact with which the field is connected ",
-    "WarnDependencyDimCalcCase": "• the dimension dependent calculated fact can become inactive",
-    "WarnDependencyDimCaseFilter": "• the filter will be deleted for the fact in which this dimension is used",
+    "WarnDependencyCaseCaseFilter": "• the fact filter will be disabled as its fact is based on this field",
+    "WarnDependencyDimCalcCase": "• the dimension dependent calculated fact may become inactive",
+    "WarnDependencyDimCaseFilter": "• the fact filter will be disabled as its fact depends on this dimension",
     "WarnDependencyPrefix": "When executing this action, the following changes in the Cube state will occur:",
     "WarnDependencySuffix": "Do you want to continue action?"
   },
@@ -1792,7 +1793,7 @@
     "Yes": "Yes"
   },
   "viewers/cube/PivotGrid": {
-    "CaseInvite": "Drag the dimensions to the rows, columns and filters area by dragging from the left list of the available fields or by pressing the \"+\" button"
+    "CaseInvite": "Drag the field to the rows, columns and filters area by dragging from the left list of the available fields or by pressing the \"+\" button"
   },
   "viewers/LockableView": {
     "LockMaskText": "Node is blocked"
@@ -1897,6 +1898,7 @@
     "CardTitle_FeedBack": "Feedback",
     "CardTitle_Forum": "Forum: Questions and Answers",
     "CardTitle_WebSite": "Company Website",
+    "LoginWebSite": "https://loginom.com",
     "NoNewsLog": "No news downloaded"
   },
   "wizards/BaseWizard": {

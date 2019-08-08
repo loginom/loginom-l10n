@@ -1,7 +1,129 @@
 {
   "Common/CertList/CertList": {
+    "CertificateStore": {
+      "DisplayName": "Display Name",
+      "Name": "System Name",
+      "StoreCollection": "Storage Collection"
+    },
     "HTTPClientCertificateList": {
+      "Selected": "Selected Certificate Index",
       "Store": "Certificate store"
+    }
+  },
+  "Common/CodeExec/CodeModelComponentEngine": {
+    "CodeModelComponentEngine": {
+      "Code": "Executable Code",
+      "OutputColumnDefs": "Description of Output Set Columns",
+      "Variables": "Input Variables"
+    }
+  },
+  "Common/WSDL/HTTPHeaders": {
+    "CustomHeadersConfigurator": {
+      "CustomHeaders": "HTTP Headers Collection"
+    },
+    "HTTPHeaderItem": {
+      "HeaderValue": "Value",
+      "Name": "Name"
+    }
+  },
+  "Common/WSDL/WSDL": {
+    "WSDL": {
+      "ServicesCount": "Count of the WSDL Description Defined Services"
+    },
+    "WSDLBinding": {
+      "Extension": "Extension",
+      "OperationsCount": "Operations Count"
+    },
+    "WSDLElement": {
+      "Documentation": "Documentation",
+      "Name": "Name"
+    },
+    "WSDLExtension": {
+      "ExtensionType": "Extension Type"
+    },
+    "WSDLHttpBindingExtension": {
+      "Verb": "HTTP Request Method"
+    },
+    "WSDLHttpOperationExtension": {
+      "Location": "Local Part of the Operation Call Address"
+    },
+    "WSDLHttpPortExtension": {
+      "AddressLocation": "Request Address"
+    },
+    "WSDLMessage": {
+      "Extension": "Extension"
+    },
+    "WSDLMimeContent": {
+      "Part": "Message Part"
+    },
+    "WSDLMimeContentExtensionElement": {
+      "Content": "Mime: content or mime: mimeXml element"
+    },
+    "WSDLMimeExtensionElement": {
+      "ExtElementType": "Extension Element Type"
+    },
+    "WSDLMimeMessageExtension": {
+      "ExtElementCount": "Index Extension Element"
+    },
+    "WSDLOperation": {
+      "Extension": "Extension",
+      "FaultsCount": "Described Exceptions Count",
+      "Input": "Incoming Service Message",
+      "Output": "Outgoing Service Message",
+      "Primitive": "Exchange Primitive",
+      "Signature": "Operation Signature"
+    },
+    "WSDLPart": {
+      "Name": "Part Name"
+    },
+    "WSDLPort": {
+      "Binding": "Used Binding",
+      "Extension": "Extension"
+    },
+    "WSDLService": {
+      "PortsCount": "Count of Service-Defined Endpoints (Ports)"
+    },
+    "WSDLSoapBindingExtension": {
+      "Style": "SOAP Style",
+      "Transport": "Transport Protocol",
+      "Version": "SOAP Version"
+    },
+    "WSDLSoapOperationExtension": {
+      "Action": "SOAP Action",
+      "Style": "SOAP Style",
+      "Version": "SOAP Version"
+    },
+    "WSDLSoapPortExtension": {
+      "AddressLocation": "Request Address"
+    }
+  },
+  "Common/WSDL/WSDLClientAuth": {
+    "WSDLAuthorization": {
+      "CertCredentials": "User Certificate Authorization Credentials",
+      "Mode": "Authorization Type",
+      "NamePassCredentials": "Username and Password Authorization Credentials",
+      "OAuthCredentials": "OAuth Token Authorization Credentials"
+    },
+    "WSDLCertAuthCredentials": {
+      "Certificates": "Certificate List"
+    },
+    "WSDLNamePassAuthCredentials": {
+      "Password": "Password",
+      "UserName": "Username"
+    },
+    "WSDLOAuthCredentials": {
+      "Token": "OAuth Token"
+    }
+  },
+  "Common/WSDL/WSDLRequestDebug": {
+    "WSDLRequestDebug": {
+      "DumpRequest": "Save Request Text to Disk"
+    }
+  },
+  "components/binning": {
+    "BinningLinearBins": {
+      "LowerLimitOpen": "Lower range bound open",
+      "UpperLimitOpen": "Upper range bound open"
     }
   },
   "components/condition": {

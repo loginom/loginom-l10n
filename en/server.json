@@ -253,6 +253,10 @@
   "Viewers/Cube/CubeHeaders": {
     "CubeTotalValue": "Total:"
   },
+  "Viewers/ROC/ROCViewCharts": {
+    "EventsChartXLabel": "Range",
+    "LiftChartXLabel": "Range"
+  },
   "Warehouse2/DWImport": {
     "ExecQueryProcess": "Execute request to Data Warehouse"
   }

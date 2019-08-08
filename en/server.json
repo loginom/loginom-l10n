@@ -230,6 +230,10 @@
     "VendorCaption": "XML File",
     "VendorDesc": "Import data from XML file according to the specified XSD schema"
   },
+  "Libraries/bgdbrtl/UniDAC/UniDACDB": {
+    "Direct": "Do not use DBMS client",
+    "ServerListInaccessible": "List of DBMS servers unavailable"
+  },
   "Libraries/bgrtl/Classes": {
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
     "ErrItemWithGuidAlreadyExist": "%s with identifier %s already exists",
@@ -274,6 +278,27 @@
   "Libraries/DataSampling/Sampling": {
     "ErrSamplingMethod": "No sampling method specified"
   },
+  "Libraries/DBConnection/UniDAC/AccessODBCUniDACDBConnectionVendor": {
+    "VendorDesc": "MS Access (ODBC) DBMS "
+  },
+  "Libraries/DBConnection/UniDAC/FBUniDACDBConnectionVendor": {
+    "VendorDesc": "Firebird DBMS "
+  },
+  "Libraries/DBConnection/UniDAC/IBUniDACDBConnectionVendor": {
+    "VendorDesc": "Interbase DBMS"
+  },
+  "Libraries/DBConnection/UniDAC/MsSQLOleDbUniDACDBConnectionVendor": {
+    "VendorDesc": "MS SQL (OLE DB) DBMS"
+  },
+  "Libraries/DBConnection/UniDAC/MyUniDACDBConnectionVendor": {
+    "VendorDesc": "MySQL DBMS"
+  },
+  "Libraries/DBConnection/UniDAC/OracleUniDACDBConnectionVendor": {
+    "VendorDesc": "Oracle DBMS"
+  },
+  "Libraries/DBConnection/UniDAC/PostgresUniDACDBConnectionVendor": {
+    "VendorDesc": "PostgreSQL DBMS"
+  },
   "Libraries/Model/DerivedModelComponentVendor": {
     "ErrBaseComponentAlreadyExists": "Base component already exists",
     "ErrBaseComponentVendorNotSpecified": "No vendor defined for"
@@ -317,6 +342,15 @@
   },
   "Viewers/Statistics/StatViewVendor": {
     "VendorCaption": "Statistics"
+  },
+  "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {
+    "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on Firebird DBMS"
+  },
+  "Warehouse2/Deductor/Ver6/MSSQLDDWConnectionVendor": {
+    "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on MS SQL DBMS"
+  },
+  "Warehouse2/Deductor/Ver6/OraDDWConnectionVendor": {
+    "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on Oracle DBMS"
   },
   "Warehouse2/DWImport": {
     "ExecQueryProcess": "Execute request to Data Warehouse"

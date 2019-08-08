@@ -360,6 +360,7 @@
       "StdDev": "Standard deviation",
       "SumSq": "Sum of squares",
       "UniqueCount": "Unique count",
+      "NullCount": "Null count",
       "First": "First",
       "Last": "Last"
     }
@@ -469,6 +470,7 @@
       "Median": "Median",
       "StdDev": "Standard deviation",
       "UniqueCount": "Unique count",
+      "NullCount": "Null count",
       "First": "First",
       "Last": "Last"
     }
@@ -698,6 +700,7 @@
     "UngroupBalanceMethod": {
       "$Caption": "Balance Method",
       "NotBalance": "Not balance",
+      "AllLatest": "All latest",
       "Proportionally": "Proportionally",
       "Evenly": "Evenly"
     },
@@ -708,7 +711,9 @@
     },
     "UngroupRoundFormat": {
       "$Caption": "Rounding Format",
-      "NotRound": "Not round"
+      "NotRound": "Not round",
+      "IntMultiple": "Round to a multiple of a whole",
+      "DecimalPlaces": "Round to the required accuracy"
     }
   },
   "components/variablestodata": {
@@ -854,6 +859,7 @@
   },
   "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
     "SQLiteClientLibrary": {
+      "$Caption": "DBMS Client Library",
       "Sqlite3": "sqlite3",
       "Sqlcipher": "sqlcipher"
     },
@@ -900,7 +906,8 @@
       "Max": "Maximum",
       "Avg": "Average",
       "First": "First",
-      "Last": "Last"
+      "Last": "Last",
+      "NullCount": "Null count"
     },
     "BoundMode": {
       "LowerInclusive": "Lower bound inclusive",
@@ -1060,7 +1067,11 @@
       "IsNotNull": "Not null"
     },
     "RoundMode": {
-      "$Caption": "Rounding Mode"
+      "$Caption": "Rounding Mode",
+      "NearestEven": "Round to the nearest even number",
+      "Down": "Round down",
+      "Up": "Round up",
+      "NearestMath": "Round to the nearest number"
     },
     "RowNumberer": {
       "$Caption": "Row Numberer",
@@ -1146,6 +1157,7 @@
       "$Caption": "Event Type",
       "First": "First on the list",
       "Last": "Last on the list",
+      "Rare": "More rare",
       "Frequent": "More frequent",
       "Exact": "Explicitly set"
     }
@@ -1192,7 +1204,9 @@
     },
     "TestPriorityPosition": {
       "$Caption": "Test Set Priority",
-      "Default": "Defined by algorithm"
+      "Default": "Defined by algorithm",
+      "Begin": "At the set beginning",
+      "End": "At the set end"
     }
   },
   "Libraries/DataSampling/Sampling": {
@@ -1322,9 +1336,11 @@
       "$Caption": "Optimization Method",
       "Exhaustive": "Exhaustive search",
       "GoldenSection": "Golden section search",
+      "HillClimbing": "Hill climbing search",
       "None": "No optimization"
     },
     "TargetFunctionReturnType": {
+      "$Caption": "Target Function Return Value Type",
       "Float": "Real number",
       "Integer": "Integer",
       "FloatVector": "Real vector",
@@ -1334,11 +1350,15 @@
   "Libraries/Regression/RegressionTypes": {
     "HierarchyType": {
       "$Caption": "Hierarchy of Interactions",
+      "None": "Disregard",
       "All": "For all",
       "Discrete": "For discrete"
     },
     "RegressionStatType": {
+      "$Caption": "Statistical Parameters of the Regression Model",
       "SSE": "Sum squared error",
+      "ESS": "Sum of regression square",
+      "LL": "-2 Logarithm of the likelihood function",
       "R2": "Determination coefficient",
       "R2adj": "Adjusted determination coefficient",
       "CovMatrix": "Covariance matrix",
@@ -1365,6 +1385,7 @@
     },
     "StatisticsModeType": {
       "$Caption": "Statistics Calculation Mode",
+      "None": "Do not calculate",
       "All": "For all models",
       "FinalOnly": "For the final model"
     }
@@ -1373,6 +1394,7 @@
     "SearchCompareType": {
       "$Caption": "Comparison Type",
       "Inside": "substring",
+      "AtFirst": "from the start",
       "Equality": "full"
     },
     "SearchMode": {
@@ -1464,11 +1486,17 @@
       "Area": "Areas",
       "Spline": "Splines",
       "Columns": "Columns",
+      "AreaRange": "Interval areas",
+      "AreaSpline": "Smoothed areas",
+      "AreaSplineRange": "Smoothed areas with intervals",
       "Bubble": "Bubble",
       "Scatter": "Scatter",
       "Waterfall": "Waterfall",
       "ErrorBar": "Errors",
       "Polygon": "Polygon",
+      "ColumnRange": "Columnar with intervals",
+      "HeatMap": "Heatmap",
+      "CandleStick": "Candlestick",
       "OHLC": "OHLC"
     },
     "DecimationType": {
@@ -1606,6 +1634,7 @@
       "StdDev": "Standard deviation",
       "SumSq": "Sum of squares",
       "UniqueCount": "Unique count",
+      "NullCount": "Null count",
       "First": "First",
       "Last": "Last",
       "CustomValue": "Value"
@@ -1718,6 +1747,7 @@
       "MedianAbsDev": "Median absolute deviation",
       "Sum": "Sum",
       "Range": "Range",
+      "NullCount": "Null count",
       "NotNullCount": "Values",
       "UniqueCount": "Unique",
       "MinLength": "Minimum string length",
@@ -1747,6 +1777,7 @@
       "Count": "Count"
     },
     "MDFilterConditionType": {
+      "$Caption": "Names of Comparison Operators",
       "None": " Filter disabled ",
       "Equal": " = ",
       "NotEqual": " <> ",

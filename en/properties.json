@@ -257,6 +257,11 @@
       "Configurator": "Configure XML import"
     }
   },
+  "Libraries/bgdbrtl/DB": {
+    "DatabaseConfigurator": {
+      "Direct": "Do not use DBMS client"
+    }
+  },
   "Libraries/bgrtl/DataSet": {
     "ColumnDef": {
       "DefaultUsageType": "Default usage type",

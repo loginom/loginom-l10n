@@ -265,7 +265,7 @@
   },
   "app/TabForm": {
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
-    "ErrPrepareContainer": "When switching to \"{0}. {1}\" error occurred.\n{2}",
+    "ErrPrepareContainer": "When switching to \"{0}.{1}\" error occurred.\n{2}",
     "ErrVendorMalfunction": "\"{0}\" node component malfunctioned",
     "MsgNodeConfigurationChanged": "Node configuration changed",
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
@@ -414,7 +414,7 @@
     "DebugElse": "Otherwise"
   },
   "components/condition/ConditionSocketsWizard": {
-    "DuplicateSocketsError": "{0} and {1} elements have the same identifiers",
+    "DuplicateSocketsError": "\"{0}\" and \"{1}\" elements have the same identifiers",
     "EmptySocketName": "<Unique0>",
     "EmptyVendor": "Not defined"
   },
@@ -690,7 +690,7 @@
     "ConfirmAutoMap": "Links will be automatically arranged by field caption and data type. Already configured links will be deleted.",
     "ConfirmDeleteAll": "Do you want to delete all links?",
     "DeletePromtTitle": "Delete",
-    "ErrInvalidLinkFound": "Invalid link of {0} field with {1} request has been found ",
+    "ErrInvalidLinkFound": "Invalid link of \"{0}\" field with \"{1}\" request has been found ",
     "ErrMultilinkFound": "Multiple link of  \"{0}\" request with \"{1}\" field has been found and it willl be deleted",
     "NotLink": "not linked"
   },
@@ -854,7 +854,7 @@
     "NonContainerRecieverBadConfig": "Receiver may not be container, only if NoAddOnDrop == NoPlaceholder == true"
   },
   "ext/TotalLabel": {
-    "HeaderFormat": "# | {0}|",
+    "HeaderFormat": "# |{0}|",
     "RowCountSymbol": "#"
   },
   "ext/TriStateSortColumn": {
@@ -1161,7 +1161,7 @@
     "FileNotLoaded": "File not open",
     "NullSheetID": "Null sheet",
     "SheetNotFoundByNameFmt": "\"{0}\" sheet not found in Excel workbook",
-    "SheetNotFoundByNumberFmt": "Sheet No \"{0}\" not found in Excel workbook"
+    "SheetNotFoundByNumberFmt": "Sheet No {0} not found in Excel workbook"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Enter request text"
@@ -1226,7 +1226,7 @@
     "ErrNoFile": "Nonexistent XML file name specified"
   },
   "lib/Classes": {
-    "ErrInvalidIndex": "{0} index value of {1} parameter is out of range [{2}; {3}]"
+    "ErrInvalidIndex": "{0} index value of \"{1}\" parameter is out of range [{2}; {3}]"
   },
   "lib/DateUtils": {
     "bdtCurrent": "current date",
@@ -1250,7 +1250,7 @@
   },
   "lib/Exceptions": {
     "Error": "Error occurred while the program was running.\n{0}",
-    "ErrWindowFull": "Error occurred while the program was running.\nError: \"{0}\"\nUrl: \"{1}\"\nString: {2} Symbol: {3}",
+    "ErrWindowFull": "Error occurred while the program was running.\nError: \"{0}\"\nUrl: \"{1}\"\nString: {2}  Symbol: {3}",
     "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2}  Symbol: {3}"
   },
   "lib/Loader": {
@@ -1735,9 +1735,9 @@
     "Collapse": "Collapse",
     "DeleteItem": "Delete",
     "Descending": "Descending",
-    "EmptyFilteredDimTooltip": "{0}• No values",
+    "EmptyFilteredDimTooltip": "{0} • No values",
     "Expand": "Expand",
-    "MultipleFilteredDimTooltip": "{0}[{1}of {2}]",
+    "MultipleFilteredDimTooltip": "{0} [{1} of {2}]",
     "Original": "In original order",
     "SingleFilteredDimTooltip": "{0} • {1} [{2} of {3}]",
     "WarnDependencyCaseCalcCase": "• the calculated fact dependent on the field will become inactive (now the field is connected with the unused fact)",
@@ -2029,7 +2029,7 @@
     "ErrGetAvalibleSocketDefFmt": "Failed to get description of socket for {0} vendor.",
     "ErrGetAvalibleSocketDefs": "Failed to get description of sockets",
     "ErrMoveDerivedSocket": "It is prohibited to move derived socket.",
-    "SocketLabelFmt": "{0}{1}",
+    "SocketLabelFmt": "{0} {1}",
     "SocketTypeInputDesc": "Inputs",
     "SocketTypeOutputDesc": "Outputs"
   },

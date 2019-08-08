@@ -218,7 +218,8 @@
       "ExtermalBins": "External ranges",
       "Width": "Width",
       "Count": "Count",
-      "Tile": "Tile"
+      "Tile": "Tile",
+      "SD": "SD coefficients"
     },
     "BinningOutputColumnKind": {
       "$Caption": "Usage Type of Resultant Quantization Fields",
@@ -227,6 +228,8 @@
       "BinLabel": "Caption",
       "LowerBound": "Lower bound",
       "UpperBound": "Upper bound",
+      "LowerBoundInclusive": "Lower bin bound inclusive",
+      "UpperBoundInclusive": "Upper bin bound inclusive",
       "LowerBoundQuota": "Lower bound quota",
       "UpperBoundQuota": "Upper bound quota",
       "BinQuota": "Bin quota",
@@ -237,11 +240,15 @@
       "OutOfBins": "Out of range value"
     },
     "BinningRoundingLevel": {
+      "$Caption": "Binning Rounding Level",
       "NoRound": "No rounding",
       "Normal": "Normal rounding"
     },
     "BinningSDMode": {
-      "$Caption": "Bin Create Mode"
+      "$Caption": "Bin Create Mode",
+      "sdm1": "+/- 1 SD",
+      "sdm2": "+/- 2 SD",
+      "sdm3": "+/- 3 SD"
     }
   },
   "components/calcdata": {
@@ -484,9 +491,10 @@
   "components/linregression": {
     "LinRegressionMethod": {
       "$Caption": "Factor Selection and Protection against Retraining",
-      "Enter": "Forced selection",
-      "Forward": "Stepwise selection",
-      "Stepwise": "Stepwise selection/elimination",
+      "Enter": "Enter",
+      "Forward": "Forward",
+      "Backward": "Backward",
+      "Stepwise": "Stepwise",
       "L2": "Ridge",
       "L1": "LASSO",
       "L1L2": "Elastic-net"
@@ -505,10 +513,10 @@
   "components/logregression": {
     "LogRegressionMethod": {
       "$Caption": "Factor Selection and Protection against Retraining",
-      "Enter": "Forced selection",
-      "Forward": "Stepwise selection",
-      "Backward": "Backward selection",
-      "Stepwise": "Stepwise selection/elimination",
+      "Enter": "Enter",
+      "Forward": "Forward",
+      "Backward": "Backward",
+      "Stepwise": "Stepwise",
       "L2": "Ridge",
       "L1": "LASSO",
       "L1L2": "Elastic-Net"
@@ -549,12 +557,14 @@
     "RegNNOutputLayer": {
       "$Caption": "Output Value Limit",
       "Linear": "No",
+      "Bounded": "Interval",
       "LowerBounded": "Bottom only",
       "UpperBounded": "Top only"
     }
   },
   "components/quality": {
     "ActionExtr": {
+      "$Caption": "Extreme Processing Method",
       "NoDefine": "Not defined",
       "None": "Leave unchanged",
       "Delete": "Delete records",
@@ -572,12 +582,14 @@
       "Mean": "Replace with average",
       "Median": "Replace with median",
       "MostFreq": "Replace with most frequent",
+      "SetValue": "Replace with \"Not defined\"",
       "RandomValue": "Replace with random values",
       "LinearInterp": "Linear interpolation",
       "CubicInterp": "Cubic interpolation",
       "SplineInterp": "Spline interpolation"
     },
     "ActionOut": {
+      "$Caption": "Outliers Elimination Method",
       "NoDefine": "Not defined",
       "None": "Leave unchanged",
       "Delete": "Delete records",
@@ -588,6 +600,7 @@
       "Limitation": "Limit"
     },
     "QualityDetectOE": {
+      "$Caption": "Outliers and Extremes Identification Methods",
       "SKO": "Standard deviation",
       "Kvartil": "Interquartile width"
     }
@@ -595,11 +608,15 @@
   "components/reformcolumns": {
     "ColumnCachingMethod": {
       "$Caption": "Field Caching",
-      "None": "Off"
+      "None": "Off",
+      "Complete": "While activation",
+      "Deferred": "While handling"
     },
     "DataSourceCachingMethod": {
       "$Caption": "Dataset Caching",
       "None": "Off",
+      "Complete": "While activation",
+      "Deferred": "While handling",
       "CustomColumns": "Selected fields"
     }
   },
@@ -613,6 +630,9 @@
   },
   "components/slidingwindow": {
     "SlidingWindowIncompleteRecordsProcessing": {
+      "$Caption": "Incomplete Records Processing Method",
+      "Leave": "Leave incomplete records",
+      "CutPadded": "Delete added incomplete records",
       "CutAll": "Delete all incomplete records"
     }
   },
@@ -682,7 +702,9 @@
       "Evenly": "Evenly"
     },
     "UngroupMethod": {
-      "$Caption": "Ungrouping Method"
+      "$Caption": "Ungrouping Method",
+      "QuotaIsGiven": "By given shares",
+      "QuotaCalcSpline": "Given temporal variations and seasonality of the reference data"
     },
     "UngroupRoundFormat": {
       "$Caption": "Rounding Format",
@@ -691,6 +713,7 @@
   },
   "components/variablestodata": {
     "VariablesToDataResultTableKind": {
+      "$Caption": "Type of Variables Conversion to Table",
       "Columns": "To columns",
       "Rows": "To rows"
     }
@@ -842,7 +865,10 @@
     "SQLiteJournalMode": {
       "$Caption": "Transaction Log Mode",
       "JournalDefault": "Default",
-      "JournalDelete": "Delete file"
+      "JournalDelete": "Delete file",
+      "JournalTruncate": "Clear content",
+      "JournalPersist": "Header zeroing",
+      "JournalWAL": "Write-ahead logging"
     },
     "SQLiteLikeMode": {
       "$Caption": "LIKE Operation Mode",
@@ -967,6 +993,7 @@
       "Year": "Year"
     },
     "DateTimeSpanType": {
+      "$Caption": "Units of Date Time Spans",
       "DateTimeSpan": "Arbitrary value",
       "Millisecond": "Millisecond",
       "Seconds": "Second",
@@ -1037,9 +1064,11 @@
     },
     "RowNumberer": {
       "$Caption": "Row Numberer",
-      "None": "-"
+      "None": "-",
+      "RowNumber": "Row number"
     },
     "SortDirection": {
+      "$Caption": "Sort Direction",
       "Asc": "Ascending",
       "Desc": "Descending"
     },
@@ -1123,6 +1152,7 @@
   },
   "Libraries/bgrtl/TimeZones": {
     "ExportXMLSpecifyTimeZone": {
+      "$Caption": "Presence of the Time Zone in the Date/Time Values",
       "None": "Do not specify",
       "AllButDate": "Do not specify for Date",
       "All": "Specify always"
@@ -1130,6 +1160,7 @@
   },
   "Libraries/DataPartition/LearnPartition": {
     "KFoldsSamplingMethod": {
+      "$Caption": "Validation Partition Method",
       "Random": "Random",
       "Sequence": "Sequence"
     },
@@ -1138,10 +1169,12 @@
       "Sequence": "Sequence"
     },
     "LearnPartitionType": {
+      "$Caption": "Type of the Training Component Data Set",
       "Train": "Train",
       "Validation": "Validation"
     },
     "LearnValidationMethod": {
+      "$Caption": "Validation Partition Method",
       "None": "No validation",
       "KFold": "K-fold cross validation",
       "LeaveOneOut": "Leave One Out cross validation",
@@ -1232,7 +1265,9 @@
     },
     "DefaultInteractionType": {
       "$Caption": "Interaction Type",
-      "None": "No interaction"
+      "None": "No interaction",
+      "TwoWay": "All twoway",
+      "ThreeWay": "All threeway"
     },
     "NormMultType": {
       "$Caption": "Multiplication Normalization Type",
@@ -1292,7 +1327,8 @@
     "TargetFunctionReturnType": {
       "Float": "Real number",
       "Integer": "Integer",
-      "FloatVector": "Real vector"
+      "FloatVector": "Real vector",
+      "IntegerVector": "Integer vector"
     }
   },
   "Libraries/Regression/RegressionTypes": {
@@ -1432,17 +1468,36 @@
       "Scatter": "Scatter",
       "Waterfall": "Waterfall",
       "ErrorBar": "Errors",
-      "Polygon": "Polygon"
+      "Polygon": "Polygon",
+      "OHLC": "OHLC"
+    },
+    "DecimationType": {
+      "$Caption": "Point Filter",
+      "Simple": "Quick",
+      "Extremes": "Extremes",
+      "LTTB": "LTTB"
     },
     "LegendAlign": {
+      "$Caption": "Legend Position",
       "LeftTop": "Top left",
       "Top": "Top",
       "RightTop": "Top right",
+      "Left": "Left",
+      "Disabled": "Disabled",
+      "Right": "Right",
       "LeftBottom": "Bottom left",
       "Bottom": "Bottom",
       "RightBottom": "Bottom right"
     },
+    "SeriesCompareMode": {
+      "$Caption": "Growth Dynamics",
+      "None": "No",
+      "Value": "By value",
+      "Percent": "In percents"
+    },
     "SeriesLabelsStyle": {
+      "$Caption": "Series Captions Type",
+      "Default": "Default",
       "None": "No",
       "Value": "Value",
       "Percent": "Percent",
@@ -1567,6 +1622,9 @@
       "PercentByCol": "Percent by column",
       "RankByRow": "Rank by row",
       "RankByCol": "Rank by column",
+      "CompareWithPrevByRow": "Diference from previous by row",
+      "CompareWithPrevByCol": "Diference from previous by column",
+      "CumulativeSumByRow": "Cumulative sum by row",
       "CumulativeSumByCol": "Cumulative sum by column"
     }
   },
@@ -1608,6 +1666,7 @@
       "$Caption": "Chart Type",
       "ROC": "ROC curve",
       "PrecisionRecall": "PR curve",
+      "OverallRates": "Basic indicators",
       "Precision": "Precision chart",
       "BreakEven": "Equilibrium chart",
       "Event": "Recognized events, %",
@@ -1622,11 +1681,15 @@
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
       "BreakEven": "Equilibrium point (TPR = PPV)",
+      "Accuracy": "Maximum overall accuracy",
       "FScore": "Maximum F1 Score",
       "Matthews": "Matthews coefficient (MCC)"
     },
     "ROCViewNBins": {
-      "$Caption": "Number of Ranges"
+      "$Caption": "Number of Ranges",
+      "bn10": "10 ranges",
+      "bn20": "20 ranges",
+      "bn50": "50 ranges"
     }
   },
   "Viewers/Statistics/StatViewTypes": {
@@ -1647,6 +1710,7 @@
       "Max": "Maximum",
       "Mean": "Average",
       "StdDev": "Standard deviation",
+      "Disp": "Unbiased dispersion",
       "LowerQuartile": "Lower quartile",
       "Median": "Median",
       "UpperQuartile": "Upper quartile",
@@ -1657,11 +1721,39 @@
       "NotNullCount": "Values",
       "UniqueCount": "Unique",
       "MinLength": "Minimum string length",
-      "MaxLength": "Maximum line length"
+      "MaxLength": "Maximum string length",
+      "MeanLength": "Average string length"
+    },
+    "StatViewQuartileNumber": {
+      "$Caption": "Quartile Number",
+      "Lower": "Lower quartile",
+      "Median": "Median",
+      "Upper": "Upper quartile"
     }
   },
   "Warehouse2/MDConsts": {
+    "DWExtractExtendedFilterType": {
+      "$Caption": "Extended Filter Type",
+      "None": "Static filter",
+      "UserCustom": "Use custom filter",
+      "Variables": "Filter with variables used"
+    },
+    "MDAggregateType": {
+      "$Caption": "Fact Aggregation Functions List",
+      "Sum": "Sum",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "AVG": "Average",
+      "Count": "Count"
+    },
     "MDFilterConditionType": {
+      "None": "Filter disabled",
+      "Equal": " =",
+      "NotEqual": " <>",
+      "Less": " <",
+      "LessOrEqual": " < =",
+      "More": " >",
+      "MoreOrEqual": " > =",
       "IsNull": "null",
       "IsNotNull": "not null",
       "Between": "within the range",

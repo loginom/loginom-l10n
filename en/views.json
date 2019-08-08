@@ -434,7 +434,7 @@
       "tooltip": "Create derived component ..."
     },
     "btnExecutionOrder": {
-      "tooltip": "Select customized execution order mode "
+      "tooltip": "Customize execution order"
     },
     "btnHand": {
       "tooltip": "Workflow navigation mode"

@@ -168,6 +168,17 @@
       "CaseSensitive": "Учитывать регистр"
     }
   },
+  "components/filtration": {
+    "ElimOutlierColumnDefExtension": {
+      "ActionOut": "Outliers eimination method"
+    }
+  },
+  "components/forecast": {
+    "ARIMAXParams": {
+      "CalcConfidenceInterval": "Calculate confidence interval",
+      "ConfidenceInterval": "Confidence forecast interval in %"
+    }
+  },
   "components/linregression": {
     "LinRegressionParams": {
       "LinRegressionMethod": "Factor selection and protection against retraining"
@@ -264,6 +275,11 @@
     "ProxyColumnDef": {
       "DefaultUsageType": "Default column usage type",
       "UsageType": "Column usage type"
+    }
+  },
+  "Libraries/Regression/Regression": {
+    "RegressionStatisticsParams": {
+      "PredictionIntervalNeeded": "Calculate confidence interval"
     }
   }
 }

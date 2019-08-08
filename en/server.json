@@ -44,6 +44,14 @@
   "Common/XML/XMLDocument": {
     "ErrOnlyOneRootElementAllowed": "Document root element already exists"
   },
+  "components/binning/Binning": {
+    "PostfixSDBins": "SD"
+  },
+  "components/binning/BinningMethodsImplementations": {
+    "ErrInvalidBinRowFmt": "Failed to get bin for %s field from %d row",
+    "ErrSkoAvgFmt": "Failed to get SD/average for %s field",
+    "ErrZeroDivForIntervalsFmt": "%s field with zero variance, only 1 bin will be created"
+  },
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantLoadBackup": "Failed to restore binning"
   },
@@ -55,7 +63,14 @@
   "components/execnode/ExecNodeComponentVendor": {
     "VendorCaption": "Node Execution"
   },
+  "components/filtration/DataRecovery": {
+    "DataRecovery": "Imputation"
+  },
+  "components/filtration/DataRecoveryVendor": {
+    "VendorCaption": "Imputation"
+  },
   "components/forecast/ARIMAXParams": {
+    "ConfidenceInterval": "Confidence interval",
     "ErrNoStructuralElements": "No structural model element specified"
   },
   "components/forecast/ForecastEngine": {

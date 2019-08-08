@@ -736,9 +736,6 @@
     "colDateTimeResult": {
       "text": "Результат"
     },
-    "colDesc": {
-      "text": "MyColumn8"
-    },
     "colIntDesc": {
       "text": "Примечание"
     },
@@ -747,9 +744,6 @@
     },
     "colIntResult": {
       "text": "Результат"
-    },
-    "colKey": {
-      "text": "String"
     },
     "colNumDesc": {
       "text": "Примечание"
@@ -787,9 +781,6 @@
   "components/binning/MethodSettingsWizard": {
     "ActivationPortContainer": {
       "fieldLabel": "Состояние входа"
-    },
-    "ActivationPortStatusField": {
-      "fieldLabel": "Label"
     },
     "btnActivationPort": {
       "text": "Активировать"
@@ -1531,9 +1522,6 @@
   "components/filterdata/FilterDataWizard": {
     "ActivationPortContainer": {
       "fieldLabel": "Состояние входа"
-    },
-    "ActivationPortStatusField": {
-      "fieldLabel": "Label"
     },
     "btnActivationPort": {
       "text": "Активировать"
@@ -2907,8 +2895,7 @@
   },
   "propedit/CommonPropEdit": {
     "PropContainer": {
-      "fieldLabel": "Property Name",
-      "_fieldLabel.comment": "Свойство отображается только в design time"
+      "fieldLabel": "Property Name"
     }
   },
   "viewers/browse/BrowseFormat": {
@@ -2998,9 +2985,6 @@
     "btnDataGridFormat": {
       "text": "Формат...",
       "tooltip": "Формат..."
-    },
-    "btnDataGridPrint": {
-      "text": "Print"
     },
     "btnDataGridShowNulls": {
       "tooltip": "Показать значения null"
@@ -3195,11 +3179,6 @@
     },
     "panelPlotOptions": {
       "title": "Общие настройки"
-    }
-  },
-  "viewers/chart/ChartLinks": {
-    "grdLinks": {
-      "title": "My Grid Panel"
     }
   },
   "viewers/chart/ChartView": {
@@ -3758,9 +3737,6 @@
     "cbRegister": {
       "boxLabel": "Учитывать регистр"
     },
-    "edtValue": {
-      "value": "Example"
-    },
     "rbAdd": {
       "boxLabel": "Добавить к отмеченным"
     },
@@ -3798,14 +3774,10 @@
     },
     "btnRollable": {
       "tooltip": "Зациклить значения при перелистывании"
-    },
-    "colRadio": {
-      "text": "MyCheck1"
     }
   },
   "viewers/cube/EmbeddedBrowseForm": {
     "mniGoToLine": {
-      "text": "Menu Item",
       "tooltip": "Перейти к строке..."
     }
   },

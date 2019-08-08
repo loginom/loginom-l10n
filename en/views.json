@@ -219,7 +219,7 @@
       "text": "Published packages"
     },
     "frmConfigurePublishedPackagesForm": {
-      "title": "Publishing of Packages "
+      "title": "Publishing of Packages"
     },
     "fsNamespace": {
       "title": "Namespace"
@@ -526,7 +526,7 @@
       "title": "Workflow"
     },
     "pnlVendorsContainer": {
-      "title": "Components"
+      "title": "Components "
     }
   },
   "app/PackageForm": {
@@ -3345,7 +3345,7 @@
     },
     "mniAddToNewGroup": {
       "text": "Сreate group...",
-      "tooltip": "Create group and add visualizer in it "
+      "tooltip": "Create group and add visualizer in it"
     },
     "mniAddWithoutGroup": {
       "text": "Without group",
@@ -3840,7 +3840,7 @@
       "text": "Odds ratio"
     },
     "colRepOddsUpperBound": {
-      "text": " СI upper bound"
+      "text": "СI upper bound"
     },
     "colRepPValue": {
       "text": "Significance"
@@ -4155,7 +4155,7 @@
       "text": "Fields"
     },
     "lblViewMode": {
-      "text": "Display"
+      "text": "Display "
     },
     "rbRAWView": {
       "boxLabel": "Raw data"
@@ -4725,7 +4725,7 @@
   },
   "wizards/referencenode/ReferenceNodeComponentWizard": {
     "colDescription": {
-      "text": "Comment "
+      "text": "Comment"
     },
     "colText": {
       "text": "Nodes"

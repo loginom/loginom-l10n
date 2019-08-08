@@ -105,7 +105,7 @@
     "FillDataSetProcess": "Fill data set",
     "NotConnected": "Not connected to infobase",
     "OpenResultSetProcess": "Open request",
-    "PrepareFieldDefsProcess": "Execute request and get field list ",
+    "PrepareFieldDefsProcess": "Execute request and get field list",
     "PreviewProcess": "Data preview"
   },
   "imports/1cv8/1Cv8QueryImportVendor": {
@@ -207,7 +207,7 @@
     "ErrFloatTypeCast": "Failed to convert \"%s\" value in \"%s\" column to real number.",
     "ErrIntegerTypeCast": "Failed to convert \"%s\" value in \"%s\" column to integer.",
     "ErrNoData": "Error parsing text file",
-    "ErrParseFmt": "While parsing line %d error occurred: %s ",
+    "ErrParseFmt": "While parsing line %d error occurred: %s",
     "ErrUnsupportedCodePage": "%d codepage not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
     "PrimaryKeyDisplayName": "<Key0>"
@@ -276,7 +276,7 @@
   },
   "Libraries/Model/DerivedModelComponentVendor": {
     "ErrBaseComponentAlreadyExists": "Base component already exists",
-    "ErrBaseComponentVendorNotSpecified": "No vendor defined for "
+    "ErrBaseComponentVendorNotSpecified": "No vendor defined for"
   },
   "Libraries/Model/ModelNodesCopyUtils": {
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" reference node is not available at the required destination.",

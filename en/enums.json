@@ -267,9 +267,12 @@
       "UpperBound": "Upper bound",
       "WoE": "Weight of evidence",
       "IV": "Information index",
-      "UpperBoundIsOpen": "Upper range bound open"
+      "Weight": "Class share",
+      "UpperBoundIsOpen": "Upper range bound open",
+      "PreQuantingApplied": "Prequantization"
     },
     "CoarseClassChartType": {
+      "$Caption": "Displayed Data Type",
       "WoE": "WoE",
       "IV": "IV",
       "Weight": "Share",
@@ -526,6 +529,8 @@
     },
     "LoopKind": {
       "$Caption": "Loop Type",
+      "For": "Defined iterations",
+      "Repeat": "Postcondition loop",
       "GroupProcessing": "Group processing"
     }
   },
@@ -543,7 +548,9 @@
     },
     "RegNNOutputLayer": {
       "$Caption": "Output Value Limit",
-      "Linear": "No"
+      "Linear": "No",
+      "LowerBounded": "Bottom only",
+      "UpperBounded": "Top only"
     }
   },
   "components/quality": {
@@ -564,7 +571,11 @@
       "Delete": "Delete records",
       "Mean": "Replace with average",
       "Median": "Replace with median",
-      "MostFreq": "Replace with most frequent"
+      "MostFreq": "Replace with most frequent",
+      "RandomValue": "Replace with random values",
+      "LinearInterp": "Linear interpolation",
+      "CubicInterp": "Cubic interpolation",
+      "SplineInterp": "Spline interpolation"
     },
     "ActionOut": {
       "NoDefine": "Not defined",
@@ -577,12 +588,27 @@
       "Limitation": "Limit"
     },
     "QualityDetectOE": {
-      "SKO": "Standard deviation"
+      "SKO": "Standard deviation",
+      "Kvartil": "Interquartile width"
     }
   },
   "components/reformcolumns": {
     "ColumnCachingMethod": {
-      "$Caption": "Field Caching"
+      "$Caption": "Field Caching",
+      "None": "Off"
+    },
+    "DataSourceCachingMethod": {
+      "$Caption": "Dataset Caching",
+      "None": "Off",
+      "CustomColumns": "Selected fields"
+    }
+  },
+  "components/replace": {
+    "ReplaceMode": {
+      "$Caption": "Replacement Method",
+      "None": "No to replace",
+      "Table": "Manual input",
+      "Source": "Substitution table"
     }
   },
   "components/slidingwindow": {
@@ -1009,7 +1035,27 @@
     "RoundMode": {
       "$Caption": "Rounding Mode"
     },
+    "RowNumberer": {
+      "$Caption": "Row Numberer",
+      "None": "-"
+    },
+    "SortDirection": {
+      "Asc": "Ascending",
+      "Desc": "Descending"
+    },
     "StatIndicatorType": {
+      "$Caption": "Statistical Indicators",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "Avg": "Average",
+      "Sum": "Sum",
+      "SumSq": "Sum of squares",
+      "StdDev": "Standard deviation",
+      "NullCount": "Missing Values Count",
+      "UniqueValues": "Unique values",
+      "UniqueValuesCount": "Unique values count",
+      "TotalCount": "Values count",
+      "DifMin": "Differences minimum",
       "DifMax": "Differences maximum",
       "DifAvg": "Differences average",
       "DifSum": "Differences sum",
@@ -1026,6 +1072,7 @@
       "Predicted": "Output",
       "Key": "Key",
       "Group": "Group",
+      "Value": "Parameter",
       "Transaction": "Transaction",
       "Item": "Item"
     },
@@ -1056,6 +1103,7 @@
     "ProgressTrackerProcessStatus": {
       "$Caption": "Process Status",
       "NotStarted": "Not started",
+      "Processing": "Processing",
       "NotResponding": "Not responding",
       "Completed": "Completed",
       "ExplicitCanceled": "Canceled",
@@ -1081,7 +1129,16 @@
     }
   },
   "Libraries/DataPartition/LearnPartition": {
+    "KFoldsSamplingMethod": {
+      "Random": "Random",
+      "Sequence": "Sequence"
+    },
+    "LearnPartitionMethod": {
+      "Random": "Random",
+      "Sequence": "Sequence"
+    },
     "LearnPartitionType": {
+      "Train": "Train",
       "Validation": "Validation"
     },
     "LearnValidationMethod": {
@@ -1245,6 +1302,7 @@
       "Discrete": "For discrete"
     },
     "RegressionStatType": {
+      "SSE": "Sum squared error",
       "R2": "Determination coefficient",
       "R2adj": "Adjusted determination coefficient",
       "CovMatrix": "Covariance matrix",
@@ -1278,7 +1336,8 @@
   "Viewers/Browse/BrowseViewSearch": {
     "SearchCompareType": {
       "$Caption": "Comparison Type",
-      "Inside": "substring"
+      "Inside": "substring",
+      "Equality": "full"
     },
     "SearchMode": {
       "$Caption": "Search Mode",
@@ -1290,6 +1349,8 @@
     "AxesAlign": {
       "$Caption": "Align Axes",
       "None": "No",
+      "Threshold": "Origin",
+      "GridLines": "Match grid",
       "Scale": "Combine scale"
     },
     "AxisLabelsStyle": {
@@ -1373,9 +1434,22 @@
       "ErrorBar": "Errors",
       "Polygon": "Polygon"
     },
+    "LegendAlign": {
+      "LeftTop": "Top left",
+      "Top": "Top",
+      "RightTop": "Top right",
+      "LeftBottom": "Bottom left",
+      "Bottom": "Bottom",
+      "RightBottom": "Bottom right"
+    },
     "SeriesLabelsStyle": {
       "None": "No",
       "Value": "Value",
+      "Percent": "Percent",
+      "Label": "Caption",
+      "LabelPercent": "Caption, percent",
+      "LabelValue": "Caption, value",
+      "PercentTotal": "Percent, total",
       "LabelPercentTotal": "Caption, percentage, total",
       "XValue": "X value"
     },
@@ -1449,11 +1523,70 @@
       "NotEqual": "<>",
       "IsNull": "Null",
       "IsNotNull": "Not null",
-      "IsTrue": "true"
+      "Interval": "within the range",
+      "OutOfInterval": "out of the range",
+      "IsTrue": "true",
+      "IsFalse": "false"
+    }
+  },
+  "Viewers/Cube/CubeSummaries": {
+    "CubeCaseCellViewType": {
+      "$Caption": "Value View Type",
+      "Text": "Text only",
+      "ImageText": "Text and image",
+      "Image": "Image only"
+    },
+    "CubeColumnWidthMode": {
+      "$Caption": "Column Width Change Mode",
+      "EqualCases": "Equal fact width",
+      "EqualAll": "Equal column width"
+    },
+    "CubeFunctionType": {
+      "$Caption": "Aggregation Function Type",
+      "Sum": "Sum",
+      "Count": "Count",
+      "Avg": "Average",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "StdDev": "Standard deviation",
+      "SumSq": "Sum of squares",
+      "UniqueCount": "Unique count",
+      "First": "First",
+      "Last": "Last",
+      "CustomValue": "Value"
+    },
+    "CubeGridCasePosition": {
+      "$Caption": "Position of Facts",
+      "Cols": "In columns",
+      "Rows": "In rows"
+    },
+    "CubeSubFunctionType": {
+      "$Caption": "Value View Type",
+      "Value": "Value",
+      "PercentByRow": "Percent by row",
+      "PercentByCol": "Percent by column",
+      "RankByRow": "Rank by row",
+      "RankByCol": "Rank by column",
+      "CumulativeSumByCol": "Cumulative sum by column"
+    }
+  },
+  "Viewers/LinRegressReport/LinRegressReportCommon": {
+    "LinRegressReportStatParam": {
+      "$Caption": "Statistical Criterion",
+      "LogLikelihood": "-2 Log Likelihood",
+      "AIC": "AIC",
+      "AICc": "AICc",
+      "BIC": "BIC",
+      "HQC": "HQC"
     }
   },
   "Viewers/LogRegressReport/LogRegressReportCommon": {
     "RegressReportStatParam": {
+      "$Caption": "Statistical Criterion",
+      "LogLikelihood": "-2 Log Likelihood",
+      "AIC": "AIC",
+      "AICc": "AICc",
+      "BIC": "BIC",
       "HQC": "HQC"
     }
   },
@@ -1514,14 +1647,53 @@
       "Max": "Maximum",
       "Mean": "Average",
       "StdDev": "Standard deviation",
-      "LowerQuartile": "Lower quartile"
+      "LowerQuartile": "Lower quartile",
+      "Median": "Median",
+      "UpperQuartile": "Upper quartile",
+      "IQR": "Interquartile range",
+      "MedianAbsDev": "Median absolute deviation",
+      "Sum": "Sum",
+      "Range": "Range",
+      "NotNullCount": "Values",
+      "UniqueCount": "Unique",
+      "MinLength": "Minimum string length",
+      "MaxLength": "Maximum line length"
     }
   },
   "Warehouse2/MDConsts": {
     "MDFilterConditionType": {
+      "IsNull": "null",
+      "IsNotNull": "not null",
+      "Between": "within the range",
+      "NotBetween": "out of the range",
       "In": "on the list",
+      "NotIn": "not listed",
+      "Like": "contains",
+      "NotLike": "does not contain",
+      "StartingWith": "starting with",
+      "NotStartingWith": "not starting with",
       "EndingWith": "ending with",
-      "NotEndingWith": "not ending with"
+      "NotEndingWith": "not ending with",
+      "FirstPeriod": "first",
+      "NotFirstPeriod": "not first",
+      "LastPeriod": "last",
+      "NotLastPeriod": "not last",
+      "IsTrue": "true",
+      "IsFalse": "false",
+      "FuzzyLogicEqual": " ~ "
+    },
+    "MetaDataNodeType": {
+      "$Caption": "Metadata Type Names",
+      "Item": "Item",
+      "ComDimList": "Dimensions",
+      "ProcList": "Processes",
+      "AttrList": "Attributes",
+      "DimList": "Dimensions",
+      "FactList": "Facts",
+      "DimAttrList": "Attributes",
+      "HierList": "Dimensions",
+      "LevelList": "Levels",
+      "CubeList": "Cubes"
     }
   }
 }

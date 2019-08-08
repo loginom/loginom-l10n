@@ -72,6 +72,9 @@
   "components/partition/PartitionVendor": {
     "VendorCaption": "Partition into Sets"
   },
+  "components/replace/ReplaceColumns": {
+    "InputReplaceDataSource": "Substitution table"
+  },
   "components/slidingwindow/SlidingWindowVendor": {
     "VendorCaption": "Lag"
   },
@@ -267,7 +270,8 @@
   "Libraries/Model/ModelWorkFlow": {
     "ErrNodeLocked": "\"%s\" node is blocked",
     "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
-    "ErrPortMismatch": "Incompatible component vendor: node port list does not match"
+    "ErrPortMismatch": "Incompatible component vendor: node port list does not match",
+    "Top": "Top"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "\"%s\" node is blocked",

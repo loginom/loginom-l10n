@@ -183,6 +183,11 @@
       "Partition": "Partition into Sets"
     }
   },
+  "components/replace": {
+    "ReplaceTable": {
+      "IsEmpty": "Empty substitution table"
+    }
+  },
   "exports/textfile": {
     "ExportTextFile": {
       "CodePage": "Codepage"

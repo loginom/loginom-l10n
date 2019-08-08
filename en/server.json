@@ -21,7 +21,8 @@
     "DataType": "Data type",
     "DefaultUsageType": "Default usage type",
     "DisplayName": "Caption",
-    "Index": "Index"
+    "Index": "Index",
+    "Value": "Value"
   },
   "Common/WSDL/Processor/MIMECommon": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"

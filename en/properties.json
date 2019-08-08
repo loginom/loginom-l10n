@@ -143,15 +143,83 @@
       "Count": "Nodes count"
     }
   },
+  "components/assnrules": {
+    "AssnRulesEngine": {
+      "Params": "Algorithm parameters"
+    }
+  },
   "components/binning": {
     "BinningLinearBins": {
       "LowerLimitOpen": "Lower range bound open",
       "UpperLimitOpen": "Upper range bound open"
+    },
+    "BinningLinearContinuousMethodSettings": {
+      "UpperLimit": "Upper bound"
+    },
+    "BinningTileDateTimeMethodSettings": {
+      "TileCount": "Count"
+    },
+    "BinningWidthLinDateTimeMethodSettings": {
+      "DateTimeSpanCount": "Width"
+    },
+    "BinningWidthLinNumMethodSettings": {
+      "BinWidth": "Width"
+    }
+  },
+  "components/calcdata": {
+    "CalcData": {
+      "CalcMode": "Mode",
+      "ExprColumns": "Expressions"
+    },
+    "CalcExprColumnItem": {
+      "Cached": "Cache values"
+    },
+    "ExprColumnItem": {
+      "DataType": "Data type",
+      "Description": "Description",
+      "DisplayName": "Caption",
+      "Expression": "Expression",
+      "Index": "Index",
+      "Intermediate": "Intermediate expression",
+      "Name": "Name"
+    }
+  },
+  "components/clope": {
+    "ClopeEngine": {
+      "Params": "Algorithm parameters"
+    },
+    "ClopeParams": {
+      "LimitNClusters": "Limit the number of clusters",
+      "LimitNIters": "Limit the number of iterations",
+      "NClustersMax": "Maximum number of clusters",
+      "NItersMax": "Number of iterations",
+      "Repulsion": "Repulsion coefficient"
+    }
+  },
+  "components/clusterization": {
+    "ClusterizationEngine": {
+      "Params": "Algorithm parameters"
+    },
+    "ClusterizationParams": {
+      "NClusters": "Number of clusters",
+      "NClustersMax": "Maximum number of clusters",
+      "NClustersMin": "Minimum number of clusters"
     }
   },
   "components/coarseclasses": {
+    "CoarseClass": {
+      "HighBorder": "Upper bound",
+      "HighFineIndex": "Upper bound",
+      "LowBorder": "Lower bound",
+      "LowFineIndex": "Lower bound",
+      "Mark": "Class caption",
+      "Weight": "Class weight"
+    },
     "CoarseClassesBuilder": {
       "ColumnPurpose": "Field usage type"
+    },
+    "CoarseClassesInputContinuousParams": {
+      "FineIntervalsCount": "Interval count"
     },
     "FineClass": {
       "IV": "Information class index",
@@ -161,6 +229,11 @@
   "components/condition": {
     "ConditionItem": {
       "CaseSensitive": "Case sensitive"
+    }
+  },
+  "components/em": {
+    "EMEngine": {
+      "Params": "Algorithm parameters"
     }
   },
   "components/filterdata": {
@@ -189,6 +262,11 @@
       "LogRegressionMethod": "Factor selection and protection against retraining"
     }
   },
+  "components/neuralnet": {
+    "NeuralNetworkParams": {
+      "TrainingParams": "Training algorithm parameters"
+    }
+  },
   "components/partition": {
     "PartitionEngine": {
       "Partition": "Partition into Sets"
@@ -197,6 +275,11 @@
   "components/replace": {
     "ReplaceTable": {
       "IsEmpty": "Empty substitution table"
+    }
+  },
+  "components/sonn": {
+    "SONNEngine": {
+      "Params": "Algorithm parameters"
     }
   },
   "exports/textfile": {
@@ -285,6 +368,11 @@
   "Libraries/Regression/Regression": {
     "RegressionStatisticsParams": {
       "PredictionIntervalNeeded": "Calculate confidence interval"
+    }
+  },
+  "Viewers/Statistics/StatView": {
+    "StatViewColumnConfig": {
+      "Width": "Width"
     }
   }
 }

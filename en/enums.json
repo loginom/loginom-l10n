@@ -237,14 +237,27 @@
       "OutOfBins": "Out of range value"
     },
     "BinningRoundingLevel": {
+      "NoRound": "No rounding",
       "Normal": "Normal rounding"
     },
     "BinningSDMode": {
       "$Caption": "Bin Create Mode"
     }
   },
+  "components/calcdata": {
+    "CalcMode": {
+      "$Caption": "Operation Mode",
+      "Expression": "Expression",
+      "JavaScript": "JavaScript"
+    }
+  },
   "components/coarseclasses": {
     "ClassParamsColumnKind": {
+      "$Caption": "Range Table Field Usage Type",
+      "None": "None",
+      "Group": "Group",
+      "ColumnName": "Identifier",
+      "ColumnDisplayName": "Column caption",
       "UpperBoundIsOpen": "Upper range bound open"
     },
     "ColumnPurpose": {

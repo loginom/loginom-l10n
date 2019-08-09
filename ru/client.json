@@ -1501,7 +1501,7 @@
     "FilterButtonText": "Фильтр",
     "FilterTitle": "Фильтр",
     "FindAgainCellFmt": "Искать далее [{0}]",
-    "FindCellFmt": "Искать сначала [{0}]",
+    "FindCellFmt": "Искать с начала [{0}]",
     "FirstTableRowAction": "Первая строка",
     "FormatButtonText": "Формат",
     "FormatTitle": "Формат",

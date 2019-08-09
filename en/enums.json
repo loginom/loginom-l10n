@@ -282,7 +282,7 @@
       "$Caption": "Displayed Data Type",
       "WoE": "WoE",
       "IV": "IV",
-      "Weight": "Share",
+      "Weight": "Weight",
       "Count": "Count",
       "EventCount": "Events",
       "NoEventCount": "Non-events"
@@ -625,7 +625,7 @@
   "components/replace": {
     "ReplaceMode": {
       "$Caption": "Replacement Method",
-      "None": "No to replace",
+      "None": "Leave unchanged",
       "Table": "Manual input",
       "Source": "Substitution table"
     }
@@ -1529,9 +1529,9 @@
       "None": "No",
       "Value": "Value",
       "Percent": "Percent",
-      "Label": "Caption",
-      "LabelPercent": "Caption, percent",
-      "LabelValue": "Caption, value",
+      "Label": "Label",
+      "LabelPercent": "Label, percent",
+      "LabelValue": "Label, value",
       "PercentTotal": "Percent, total",
       "LabelPercentTotal": "Caption, percentage, total",
       "XValue": "X value"
@@ -1684,7 +1684,7 @@
       "Percent": "Percent"
     },
     "ROCViewAprioriProb": {
-      "$Caption": "True Share of Events Source",
+      "$Caption": "Events Probability Source",
       "None": "Do not correct",
       "Model": "From handler",
       "Train": "From the training set",
@@ -1782,9 +1782,9 @@
       "Equal": " = ",
       "NotEqual": " <> ",
       "Less": " < ",
-      "LessOrEqual": " < = ",
+      "LessOrEqual": " <= ",
       "More": " > ",
-      "MoreOrEqual": " > = ",
+      "MoreOrEqual": " >= ",
       "IsNull": " null ",
       "IsNotNull": " not null ",
       "Between": " within the range ",

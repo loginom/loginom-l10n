@@ -62,7 +62,7 @@
   },
   "Common/CodeExec/CodeAPIDataSetExceptions": {
     "ColumnByNameNotFound": "\"%s\" named column not found",
-    "ErrColOutOfRange": "%d column numbe is out of [% d; % d] range",
+    "ErrColOutOfRange": "%d column number is out of [%d; %d] range",
     "ErrNoRowForEditing": "Failed to change value because there is no editable row"
   },
   "Common/WSDL/Processor/MIMECommon": {
@@ -466,6 +466,7 @@
     "FillDataSetProcess": "Fill data set",
     "NotConnected": "Not connected to infobase",
     "OpenResultSetProcess": "Open request",
+    "PrepareFieldDefsProcess": "Execute request and get field list",
     "PreviewProcess": "Data preview"
   },
   "imports/1cv8/1Cv8QueryImportVendor": {
@@ -567,6 +568,7 @@
     "ErrFloatTypeCast": "Failed to convert \"%s\" value in \"%s\" column to real number.",
     "ErrIntegerTypeCast": "Failed to convert \"%s\" value in \"%s\" column to integer.",
     "ErrNoData": "Error parsing text file",
+    "ErrParseFmt": "While parsing line %d error occurred: %s",
     "ErrUnsupportedCodePage": "%d codepage not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
     "PrimaryKeyDisplayName": "<Key0>"
@@ -679,7 +681,8 @@
     "VendorDesc": "SQLite DB"
   },
   "Libraries/Model/DerivedModelComponentVendor": {
-    "ErrBaseComponentAlreadyExists": "Base component already exists"
+    "ErrBaseComponentAlreadyExists": "Base component already exists",
+    "ErrBaseComponentVendorNotSpecified": "No vendor defined for"
   },
   "Libraries/Model/Generic/ModelInputComponentVendor": {
     "VendorCaption": "Input Node"

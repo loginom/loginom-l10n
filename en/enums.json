@@ -17,6 +17,7 @@
       "HeaderTooLong": "HTTP header too long",
       "UnexpectedMessageEnd": "Unexpected message end",
       "UnknownMessageStructure": "Unrecognized message structure",
+      "XMLImportError": "XML import error: %s",
       "UnhandledError": "Unhandled error: %s"
     },
     "WSDLPrepareRequestStatus": {
@@ -273,6 +274,7 @@
       "UpperBound": "Upper bound",
       "WoE": "Weight of evidence",
       "IV": "Information index",
+      "Weight": "Class weight",
       "UpperBoundIsOpen": "Upper range bound open",
       "PreQuantingApplied": "Prequantization"
     },
@@ -537,6 +539,7 @@
     },
     "LoopKind": {
       "$Caption": "Loop Type",
+      "For": "Target iterations",
       "Repeat": "Postcondition loop",
       "GroupProcessing": "Group processing"
     }
@@ -614,6 +617,8 @@
     "DataSourceCachingMethod": {
       "$Caption": "Data Set Caching",
       "None": "Off",
+      "Complete": "While activation",
+      "Deferred": "While reference to cell ",
       "CustomColumns": "Selected fields"
     }
   },
@@ -868,6 +873,7 @@
       "$Caption": "Transaction Log Mode",
       "JournalDefault": "Default",
       "JournalDelete": "Delete file",
+      "JournalTruncate": "Truncate",
       "JournalPersist": "Header zeroing",
       "JournalWAL": "Write-ahead logging"
     },
@@ -943,8 +949,6 @@
     },
     "DataSourceTypeEx": {
       "$Caption": "Extended Data Set Type",
-      "Teach": "",
-      "Test": "",
       "All": "All"
     },
     "DataStatus": {
@@ -1201,7 +1205,9 @@
     },
     "TestPriorityPosition": {
       "$Caption": "Test Set Priority",
-      "Default": "Defined by algorithm"
+      "Default": "Defined by algorithm",
+      "Begin": "At the set beginning",
+      "End": "At the set end"
     }
   },
   "Libraries/DataSampling/Sampling": {
@@ -1241,7 +1247,8 @@
     "CacheStringsMode": {
       "$Caption": "Cache Strings Mode",
       "Off": "Do not use cache",
-      "Manual": "Custom cache size"
+      "Manual": "Custom cache size",
+      "Auto": "Auto define"
     }
   },
   "Libraries/Model/ModelWorkFlow": {
@@ -1363,6 +1370,7 @@
       "ErrStat": "Regression error statistics",
       "MSE": "MSE",
       "RMSE": "RMSE",
+      "F": "F-criterion",
       "FPvalue": "F-criterion significance",
       "StdErr": "Standard deviation",
       "CIDeviation": "Confidence interval delta",
@@ -1425,7 +1433,6 @@
     },
     "ChartError": {
       "$Caption": "Chart Error",
-      "Valid": "",
       "DateTimeWarning": "Time data on the real axis",
       "NoData": "No data to display",
       "InValidColumn": "Field type does not match",
@@ -1680,6 +1687,7 @@
     "ROCViewAprioriProb": {
       "$Caption": "Source of Apriori Probability Events",
       "None": "Do not correct",
+      "Model": "From handler",
       "Train": "From the training set",
       "Test": "From the test set",
       "User": "Set"
@@ -1690,6 +1698,7 @@
       "PrecisionRecall": "PR curve",
       "OverallRates": "Basic rates",
       "Precision": "Precision chart",
+      "BreakEven": "Equilibrium chart",
       "Event": "% captured response",
       "Lift": "Lift chart",
       "Response": "Response chart",
@@ -1697,8 +1706,11 @@
     },
     "ROCViewCutoffType": {
       "$Caption": "Cutoff Point",
+      "Current": "From handler",
+      "User": "Set",
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
+      "BreakEven": "Equilibrium point (TPR = PPV)",
       "Accuracy": "Highest overall accuracy",
       "FScore": "Maximum F1 Score",
       "Matthews": "Matthews coefficient (MCC)"
@@ -1767,7 +1779,31 @@
     },
     "MDFilterConditionType": {
       "$Caption": "Names of Comparison Operators",
+      "None": " Filter disabled ",
+      "Equal": " = ",
+      "NotEqual": " <> ",
+      "Less": " < ",
+      "LessOrEqual": " <= ",
+      "More": " > ",
+      "MoreOrEqual": " >= ",
+      "IsNull": " null ",
+      "IsNotNull": " not null ",
+      "Between": " within the range ",
+      "NotBetween": " out of the range ",
       "In": " listed ",
+      "NotIn": " not listed ",
+      "Like": " contains ",
+      "NotLike": " does not contain ",
+      "StartingWith": " starting with ",
+      "NotStartingWith": " not starting with ",
+      "EndingWith": " ending with ",
+      "NotEndingWith": " not ending with ",
+      "FirstPeriod": " first ",
+      "NotFirstPeriod": " not first ",
+      "LastPeriod": " last ",
+      "NotLastPeriod": " not last ",
+      "IsTrue": " true",
+      "IsFalse": " false",
       "FuzzyLogicEqual": " ~ "
     },
     "MetaDataNodeType": {

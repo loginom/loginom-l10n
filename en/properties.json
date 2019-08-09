@@ -118,7 +118,7 @@
   "Common/WSDL/WSDLRequestDebug": {
     "WSDLRequestDebug": {
       "DumpRequest": "Save Request Text to Disk",
-      "DumpRequestFolder": "Disc folder to save requests",
+      "DumpRequestFolder": "Folder to save requests",
       "ResponseStub": "File name applied as response",
       "RootFileStorage": "Root file storage"
     }
@@ -344,6 +344,7 @@
   },
   "imports/excelfile": {
     "ImportExcelFileEngine": {
+      "AllRows": "All rows",
       "BlankRowAction": "Blank rows",
       "ExplicitRange": "Range",
       "ImportExcelFilePreview": "Property to view Excel file contents",
@@ -370,6 +371,7 @@
       "FormatType": "Data format",
       "MultipleDelimiters": "Accept multiple separators in succession for one",
       "RowsToSkip": "Skip rows",
+      "TextQualifier": "Line terminator",
       "TimeSeparator": "Time separator",
       "ValueFalse": "False",
       "ValueNull": "Null",

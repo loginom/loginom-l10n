@@ -1,5 +1,6 @@
 {
   "admin/ServerSettingsForm": {
+    "Bind": "Address binding",
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection wizard",
     "DirectorySettings": "Folders",
@@ -94,6 +95,7 @@
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
     "MsgTransportError": "Server connection lost",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
+    "PackageCopyOpened": "Changes in the open link  \"{0}\" package will be reflected in the current package upon its reload",
     "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
     "QstQuitSave": "Do you want to save changes in \"{0}\" package?",
     "ServerDisplayName": "Server"
@@ -104,7 +106,8 @@
     "ErrLoadPackageErrors": "Errors occurred while \"{0}\" package downloading",
     "ErrNoPackageToClose": "No package to be closed was found.",
     "ErrNoPackageToSave": "There is no package to save.",
-    "ErrOpenReadOnlyPackage": "\"{0}\" package is open only in the read-only mode as it has already been opened by another user. Saving is possible only under a different name."
+    "ErrOpenReadOnlyPackage": "\"{0}\" package is open only in the read-only mode as it has already been opened by another user. Saving is possible only under a different name.",
+    "ErrSaveReadOnlyPackage": "You cannot save the read-only \"{0}\" package without changing the name"
   },
   "app/MapTree": {
     "AdminArea": "Administration",
@@ -121,6 +124,7 @@
     "Properties": "Properties",
     "QstCloseAllPackages": "Do you want to close all packages?",
     "QstCloseOtherPackages": "Do you want to close other packages?",
+    "ReadOnlyPackageNamePostfix": " (read-only)",
     "References": "References",
     "Reports": "Reports",
     "ServiceInputPorts": "Service input ports",
@@ -163,6 +167,7 @@
     "EditPortDisplayName": "Edit port caption...",
     "EditPortDisplayNameWindowTitle": "Edit",
     "EditPortFieldLabel": "Port caption",
+    "ErrNodeNotInitialized": "No component vendor specified for \"{0}\" node",
     "Error": "Error",
     "ErrPortNotCreated": "Failed to create new port",
     "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
@@ -231,7 +236,8 @@
   },
   "app/PackagesListForm": {
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
-    "ErrPathNotFound": "The specified path was not found \"{0}\"."
+    "ErrPathNotFound": "The specified path was not found \"{0}\".",
+    "ReadOnlyPackageNamePostfix": " (read-only)"
   },
   "app/ReferencesListForm": {
     "AddLink": "Add",
@@ -278,7 +284,8 @@
     "GoToBaseNode": "Go to base node",
     "Setup": "Configure",
     "SetupTooltip": "Configure...",
-    "Update": "Update"
+    "Update": "Update",
+    "VisibilityHeader": "Visibility"
   },
   "app/Version": {
     "LegalCopyright": "© Analytical Technologies 2017"
@@ -290,7 +297,8 @@
     "Restore": "Restore"
   },
   "codemirror/CodeMirrorTernController": {
-    "ErrWrongFuncDescFormat": "Invalid Calculator function description format \"{0}\""
+    "ErrWrongFuncDescFormat": "Invalid Calculator function description format \"{0}\"",
+    "RE_AZaz": "[]"
   },
   "components/binning/LabelTemplateToolTip": {
     "ContextMenuInsertAllFmt": "Insert template: {0}",
@@ -332,6 +340,19 @@
     "DescriptionN": "Number",
     "DescriptionTestNum": "Test",
     "InputPortsNotActived": "Do you want to activate input ports?",
+    "LabelTamplateA1Dat": "%MIN[от d.m.yy h:mm]%MAX[ до d.m.yy h:mm]",
+    "LabelTamplateA1Num": "%MIN[от #,0.####]%MAX[ до #,0.####]",
+    "LabelTamplateA2Dat": "%OP%MIN..%MAX%CP",
+    "LabelTamplateA2Num": "%OP%MIN[4]..%MAX[4]%CP",
+    "LabelTamplateA3Dat": "%FD[5] %OP%MIN..%MAX%CP",
+    "LabelTamplateA3Num": "%FD[5] %OP%MIN[4]..%MAX[4]%CP",
+    "LabelTamplateAve": "%AVE",
+    "LabelTamplateExampleDat": "%FN (%FD[5]) %OP%MIN[d-mmm-yy h:mm]..%MAX[d-mmm-yy h:mm]%CP",
+    "LabelTamplateExampleNum": "%FN (%FD[5]) %OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, average - #. ####]",
+    "LabelTamplateMax": "%MAX",
+    "LabelTamplateMin": "%MIN",
+    "LabelTamplateN": "%N",
+    "LabelTamplateTestNum": "%OP%MIN[4][r5]..%MAX[4][r5]%CP%AVE[, average - #. ####]",
     "LowerInclusive": "<= x <",
     "MsgBoxTitle": "Attention",
     "ProcessInfo": "Processing has been already started for selected columns.",
@@ -354,6 +375,7 @@
     "All": "All",
     "Categories": "Categories",
     "Parameters": "Parameters",
+    "RE_AZaz": "[]",
     "SearchDef": "Filter"
   },
   "components/calcdata/CodeMirrorController": {
@@ -426,7 +448,8 @@
     "MinUniqueValuesCountTip": "Minimum number of unique values",
     "NullGroupColumn": "Null",
     "OtherGroupColumn": "Other",
-    "SpaceSeparator": "Space"
+    "SpaceSeparator": "Space",
+    "UniqueValuesGroupTip": "Group of unique values: "
   },
   "components/datarecovery/DataRecoveryWizard": {
     "NotUsedAction": "Not selected"
@@ -542,6 +565,9 @@
   "components/javascript/JavaScriptCodeMirrorController": {
     "CodePlaceholder": "Enter code"
   },
+  "components/javascript/JavaScriptCodeWizard": {
+    "ConsoleMessagesMissed": " missed"
+  },
   "components/javascript/JavaScriptColumnsWizard": {
     "frmJavaScriptOutputTableTitle": "Configure JavaScript Output Table Columns"
   },
@@ -580,7 +606,8 @@
     "MaxThreadCountMinPrefix": "Value cannot be lower",
     "NoSocketError": "No data source input port for batch processing",
     "NullReferenceNode": "Not defined",
-    "NullReferenceNodeError": "No reference node"
+    "NullReferenceNodeError": "No reference node",
+    "VariableNotFoundErrorFormat": "No \"{0}\" variable"
   },
   "components/neuralnet/NeuralNetParamsWizard": {
     "DecayAvg": "Average",
@@ -654,6 +681,7 @@
     "ErrNoLinksDefined": "No links defined",
     "MissingColumnFmt": "No linked \"{0}\" column",
     "NoTimeAxisColumn": "No column selected",
+    "OutputColumnUsageType": "Field with names",
     "QuotaColumnUsageType": "Field with shares",
     "RoundDecimalParamLabel": "Decimal place accuracy",
     "RoundMultipleParamLabel": "Multiplicity",
@@ -669,11 +697,15 @@
     "VarToColumnsDescribe": "Each variable will correspond to a separate table field.",
     "VarToRowsDescribe": "Each variable will correspond to a separate table entry."
   },
+  "components/wsdlclient/AbstractOutputWizard": {
+    "PartMessagePrefix": "Part: "
+  },
   "components/wsdlclient/CommonRequestController": {
     "AutoMapPromtTitle": "Auto Link",
     "ConfirmAutoMap": "Links will be automatically arranged by field caption and data type. Already configured links will be deleted.",
     "ConfirmDeleteAll": "Do you want to delete all links?",
     "DeletePromtTitle": "Delete",
+    "ErrInvalidLinkFound": "Invalid link of \"{0}\" field with \"{1}\" request has been found",
     "ErrMultilinkFound": "Multiple link of  \"{0}\" request with \"{1}\" field has been found and it willl be deleted",
     "NotLink": "not linked"
   },
@@ -682,17 +714,28 @@
     "ErrResponseFileDoesNotExist": "{0} file selected as response source does not exist"
   },
   "components/wsdlclient/OperationFaultsWizard": {
+    "FaultsMessagePrefix": "Handled exception: ",
     "OperationFaultsTitle": "Configure Exception Handled"
   },
   "components/wsdlclient/OperationOutputWizard": {
-    "OperationOutputTitle": "Configure Service Response"
+    "OperationOutputTitle": "Configure Service Response",
+    "OutputMessagePrefix": "Message: "
   },
   "components/wsdlclient/RequestMethodWizard": {
     "ErrNotConnected": "Connection to the web service is not active",
+    "HttpBindingExtensionInfoPfx": "Request method: ",
+    "HttpOperationExtensionInfoPfx": "Local part of address: ",
     "PortExtensionInfoFmt": "Extension type: {0}; request address: {1}",
     "SoapBindingExtensionInfoFmt": "SOAP version: {0}; request style: {1}; transport: {2}",
     "SoapOperationExtensionInfoFmt": "Request style: {0}; action: {1}",
-    "WSDLOperationFtm": "Operation: {0} ({1})"
+    "WSDLBindingPfx": "Binding: ",
+    "WSDLOperationFtm": "Operation: {0} ({1})",
+    "WSDLPortPfx": "Port: ",
+    "WSDLServicePfx": "Service: "
+  },
+  "components/wsdlclient/WSDLRequestWizard": {
+    "MessagePrefix": "Message: ",
+    "PartPrefix": "Part: "
   },
   "connections/restservice/ConnectionWizard": {
     "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
@@ -713,6 +756,7 @@
   "exports/dbexport/DBCreateTableDialog": {
     "DublicateFieldName": "A field with the same name already exists",
     "ErrCreateTable": "Error occurred while creating the table",
+    "ErrFieldSize": "{0} field size must exceed 0",
     "ErrTableName": "Invalid table name",
     "InvalidFieldNameChar": "Invalid character in field name"
   },
@@ -753,6 +797,7 @@
     "ErrUTF8ToUCS2Conversion": "Error converting string from UTF-8 to UCS-2",
     "ExcelMenuText": "XLS (html)",
     "ExecutionStarted": "Export has already started",
+    "ExportPrefix": "Export to ",
     "GigaBytesSuffix": "GB",
     "KiloBytesSuffix": "KB",
     "MegaBytesSuffix": "MB",
@@ -760,6 +805,7 @@
   },
   "ext/ExtJS": {
     "ErrEnumMenuItemNotFound": "Menu item not found",
+    "ErrUnsupportedToggleComponent": "Unsupported toggle component",
     "LongProcessingMessage": "Wait, data processing is in progress"
   },
   "ext/FieldUtils": {
@@ -966,7 +1012,8 @@
     "Cuted": "Cut",
     "HasNotStorageItems": "No files to be copied/cut",
     "ItemsAreSimilar": "Names of {0} files/directories are similar. When pasted, they will be overwritten. Do you want to continue?",
-    "NoItemsInBuffer": "Clipboard is empty. You must first copy files or folders"
+    "NoItemsInBuffer": "Clipboard is empty. You must first copy files or folders",
+    "ServerPasteException": "Server error message: "
   },
   "filestorage/DragAndDropHandler": {
     "DropText": "Drag and drop to start the download",
@@ -1218,12 +1265,14 @@
   },
   "lib/Exceptions": {
     "Error": "Error occurred while the program was running.\n{0}",
+    "ErrWindowFull": "Error occurred while the program was running.\nError: \"{0}\"\nUrl: \"{1}\"\nString: {2}  Symbol: {3}",
     "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2}  Symbol: {3}"
   },
   "lib/Loader": {
     "ErrClassName": "Incorrect \"{0}\" class name.",
     "ErrReaddScriptToLoad": "Re-add \"{0}\" script to load",
-    "ErrScriptLoadFailed": "Failed to load \"{0}\" script. Status: {1}, Error: {2}"
+    "ErrScriptLoadFailed": "Failed to load \"{0}\" script. Status: {1}, Error: {2}",
+    "ErrScriptLoadingAsync": "\"{0}\" script has already been asynchronously loading "
   },
   "lib/Message": {
     "ErrorTitle": "Error",
@@ -1296,6 +1345,7 @@
     "StatusWarning": "Warning"
   },
   "mxgraph/port/AddPort": {
+    "AddPortDescription": "\nDrag'n'Drop of outgoing port of another node\n will automatically create the required port if there is a compatible candidate.",
     "AddPortDisplayName": "Add another port."
   },
   "mxgraph/port/Port": {
@@ -1344,7 +1394,10 @@
     "MsgStoplText": "Do you want to cancel all processes?",
     "ProcessActionDeleteTip": "Delete process",
     "ProcessActionStopTip": "Cancel process",
-    "TimeSpanFormat": "s\\s u\\ms"
+    "TimeSpanDay": "d ",
+    "TimeSpanFormat": "s\\s u\\ms",
+    "TimeSpanHour": "h ",
+    "TimeSpanMinutesFormat": "i\\m "
   },
   "propedit/CustomPropEdit": {
     "ErrDataType": "Property data type is incompatible with component",
@@ -1432,6 +1485,8 @@
   "viewers/browse/BrowseView": {
     "ErrExportFailed": "Failed to export Table:\n{0}",
     "ErrExportFormFailed": "Failed to export Form:\n{0}",
+    "ErrMaxPage": "You cannot set page larger than the last one",
+    "ErrMinPage": "You cannot set page smaller than the first one",
     "ErrOverRowLimitFmt": "You cannot set row index greater than {0}",
     "ErrPageIndexOutOfRangeFmt": "Invalid {0} page index",
     "ErrRowIndexOutOfRangeFmt": "Invalid {0} row index",
@@ -1441,6 +1496,8 @@
     "ExportToastTitle": "Export from Table",
     "FilterButtonText": "Filter",
     "FilterTitle": "Filter",
+    "FindAgainCellFmt": "Find next [{0}]",
+    "FindCellFmt": "Find again [{0}]",
     "FirstTableRowAction": "First row",
     "FormatButtonText": "Format",
     "FormatTitle": "Format",
@@ -1468,6 +1525,9 @@
     "NodeIsNotActive": "Node not activated",
     "PreviewAllowedSocketTypes": "For now, you can only show data for a table or variables",
     "WindowTitleEnd": "Quick View"
+  },
+  "viewers/chart/ChartEditor": {
+    "ExportTo": "Export to "
   },
   "viewers/chart/ChartUtils": {
     "ApplyDefaultColor": "Apply default color",
@@ -1768,6 +1828,7 @@
     "ModelInfoDFE": "Number of degrees of freedom",
     "ModelInfoHQC": "HQC",
     "ModelInfoLogLikelihood": "-2 Log Likelihood",
+    "ModelInfoPValue": "Significance",
     "ModelInfoR2": "R2",
     "ModelInfoR2adj": "R2 corr.",
     "ModelInfoXi2": "Chi-square"
@@ -1827,6 +1888,7 @@
     "TPRShort": "TPR"
   },
   "viewers/statistics/StatView": {
+    "CountOfStrings": "Data strings count: ",
     "ErrBounds": "Minimum more than maximum",
     "LeftOutlier": "Minimum outlier",
     "LeftWhisker": "Minimum observed",
@@ -1843,6 +1905,7 @@
     "TuneColumnsTitle": "Configure Fields",
     "TuneStatisticsLabelTitle": "Statistics Parameter",
     "TuneStatisticsTitle": "Configure Parameters",
+    "UniqueValuesCount": "Values count - ",
     "UpperQuartile": "Upper quartile"
   },
   "welcome/WelcomePage": {
@@ -1935,7 +1998,7 @@
     "DeleteConnectionPrompt": "Do you really want to delete {0} connection?",
     "DeleteConnectionPromptTitle": "Delete Connection",
     "InsertConnection": "Add connection",
-    "LabelConnectionPath": "Connection String",
+    "LabelConnectionPath": "Path",
     "LabelTitle": "Caption",
     "MultioperationError": "Multioperation error",
     "NoConnections": "Available extended connections",
@@ -2095,9 +2158,11 @@
     "BtnResizeMinimize": "Collapse",
     "BtnSaveCaption": "Save",
     "BtnSaveWhateverCaption": "Save Whatever",
+    "BtnWhateverCaption": "Next Whatever",
     "ConfirmCloseWizard": "Do you really want to close wizard?",
     "ErrJumpToUndefinedPage": "Jump to undefined page",
-    "MsgBoxTitle": "Attention"
+    "MsgBoxTitle": "Attention",
+    "MsgCantJumpToPage": "No jump to page"
   },
   "wizards/WizardModelComponentForm": {
     "ErrUnknownObject": "Attempt to get wizard for unknown object"

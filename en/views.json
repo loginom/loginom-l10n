@@ -218,9 +218,6 @@
     "colPublishedPackages": {
       "text": "Published packages"
     },
-    "frmConfigurePublishedPackagesForm": {
-      "title": "Publishing of Packages"
-    },
     "fsNamespace": {
       "title": "Namespace"
     },
@@ -440,7 +437,7 @@
       "tooltip": "Workflow navigation mode"
     },
     "btnLayout": {
-      "tooltip": "Automatic ordering of nodes"
+      "tooltip": "Auto node alignment"
     },
     "btnOrderNodes": {
       "tooltip": "Bring selected nodes to front"
@@ -524,9 +521,6 @@
     },
     "pnlModelForm": {
       "title": "Workflow"
-    },
-    "pnlVendorsContainer": {
-      "title": "Components "
     }
   },
   "app/PackageForm": {
@@ -1060,7 +1054,7 @@
   },
   "components/coarseclasses/CoarseClassesViewer": {
     "btnCalculateIV": {
-      "text": "Install..."
+      "text": "Set..."
     },
     "btnHideSideBar": {
       "tooltip": "Hide side bar"
@@ -1102,7 +1096,7 @@
       "text": "No"
     },
     "colCoarseClassIV": {
-      "text": "Inf.index"
+      "text": "IV"
     },
     "colCoarseClassLowBorder": {
       "text": "Lower"
@@ -1115,9 +1109,6 @@
     },
     "colCoarseClassTotalCount": {
       "text": "Total"
-    },
-    "colCoarseClassWeight": {
-      "text": "Share"
     },
     "colCoarseClassWoE": {
       "text": "Weight of evidence"
@@ -1731,12 +1722,6 @@
     "colDisplayName": {
       "text": "Column"
     },
-    "colForecast": {
-      "text": "Forecast horizon"
-    },
-    "colHistory": {
-      "text": "Depth period"
-    },
     "frmSlidingWindow": {
       "title": "Lag"
     }
@@ -1841,9 +1826,6 @@
     }
   },
   "components/ungroupdata/UngroupDataWizard": {
-    "cntDepthPeriod": {
-      "title": "Depth Period"
-    },
     "cntSeasonality": {
       "title": "Seasonality"
     },
@@ -2041,11 +2023,6 @@
       "fieldLabel": "Server cluster"
     }
   },
-  "connections/restservice/AuthorizationWizard": {
-    "frmAuthorization": {
-      "title": "Authorization to Execute Request"
-    }
-  },
   "connections/restservice/ConnectionWizard": {
     "btnAdd": {
       "tooltip": "Add"
@@ -2105,9 +2082,6 @@
     },
     "colSerialNumber": {
       "text": "Serial number"
-    },
-    "colStart": {
-      "text": "Validity start date"
     },
     "colSubject": {
       "text": "Issued to"
@@ -2270,9 +2244,6 @@
     "cntSeparators": {
       "title": "Separators"
     },
-    "cntValue": {
-      "title": "Values View"
-    },
     "frmExportSettings": {
       "title": "Export to Text File"
     }
@@ -2283,9 +2254,6 @@
     },
     "cntConnection": {
       "fieldLabel": "Login status"
-    },
-    "cntFieldParam": {
-      "title": "Columns View"
     },
     "edtCodePage.valueConfig": {
       "regexText": "Invalid codepage"
@@ -2457,9 +2425,6 @@
     "rbCurrent": {
       "boxLabel": "Current date"
     },
-    "rbCustom": {
-      "boxLabel": "From date"
-    },
     "rbData": {
       "boxLabel": "Available data"
     },
@@ -2474,7 +2439,7 @@
   },
   "homepage/HomePage": {
     "btnCreatePackage": {
-      "text": "Create New Package..."
+      "text": "New Package..."
     },
     "btnCreateUnsavedPackage": {
       "text": "New Draft"
@@ -2486,10 +2451,10 @@
       "text": "File path"
     },
     "colOpenDate": {
-      "text": "Package opening date"
+      "text": "Open time"
     },
     "colPackageName": {
-      "text": "Package Name"
+      "text": "Name"
     },
     "lblLastPackages": {
       "text": "Recent opened packages"
@@ -2594,11 +2559,6 @@
     "btnUp": {
       "tooltip": "Move up"
     },
-    "colActionChecked": {
-      "altText": "Display",
-      "menuText": "Display",
-      "text": "Display"
-    },
     "colActionDelete": {
       "tooltip": "Delete all..."
     },
@@ -2633,9 +2593,6 @@
     },
     "grdMDFields": {
       "title": "Available DWH Items"
-    },
-    "mniChecked": {
-      "text": "Display"
     },
     "mniDelete": {
       "text": "Delete"
@@ -2890,11 +2847,6 @@
       "text": "Show node"
     }
   },
-  "propedit/CommonPropEdit": {
-    "PropContainer": {
-      "fieldLabel": "Property Name"
-    }
-  },
   "viewers/browse/BrowseFormat": {
     "colDisplayName": {
       "text": "Available fields"
@@ -2987,9 +2939,6 @@
       "text": "Sort...",
       "tooltip": "Sort..."
     },
-    "btnFind": {
-      "text": "Search from Beginning"
-    },
     "btnFindAgain": {
       "text": "Search"
     },
@@ -3041,9 +2990,6 @@
     },
     "lblPage": {
       "text": "Page"
-    },
-    "mniFind": {
-      "tooltip": "Search from beginning"
     },
     "mniFindAgain": {
       "tooltip": "Search"
@@ -3111,12 +3057,6 @@
     "chbShowGrid": {
       "fieldLabel": "Show grid"
     },
-    "chbUserMax": {
-      "fieldLabel": "Set maximum value"
-    },
-    "chbUserMin": {
-      "fieldLabel": "Set minimum value"
-    },
     "edtAxisTitle": {
       "fieldLabel": "Title"
     }
@@ -3154,9 +3094,6 @@
     },
     "chbRationing": {
       "boxLabel": "Rationing"
-    },
-    "chbSelector": {
-      "boxLabel": "Select intervals"
     },
     "chbTooltipShared": {
       "fieldLabel": "Combine tooltips"
@@ -3345,7 +3282,7 @@
     },
     "mniAddToNewGroup": {
       "text": "Сreate group...",
-      "tooltip": "Create group and add visualizer in it"
+      "tooltip": "Create group and add visualizer into it"
     },
     "mniAddWithoutGroup": {
       "text": "Without group",
@@ -3440,9 +3377,6 @@
     "cbbRelation": {
       "fieldLabel": "Condition"
     },
-    "colDimDisplayName": {
-      "text": "Dimensions"
-    },
     "colDisplayFunctionType": {
       "text": "Aggregation"
     },
@@ -3516,8 +3450,7 @@
     },
     "edtDecimalDigit": {
       "fieldLabel": "Decimal digit",
-      "maxText": "No more than {0} decimal places",
-      "negativeText": "Only non-negative values are allowed"
+      "maxText": "No more than {0} decimal places"
     },
     "edtSampleResult": {
       "emptyText": "Calculate...",
@@ -3711,12 +3644,6 @@
     "mniShowTotalCols": {
       "text": "In columns"
     },
-    "mniShowTotalNone": {
-      "text": "Nowhere"
-    },
-    "mniShowTotalRows": {
-      "text": "In rows"
-    },
     "mniTuneCase": {
       "text": "Configure facts"
     }
@@ -3784,10 +3711,6 @@
       "text": "Model Info",
       "tooltip": "Show model info"
     },
-    "btnShowModelSteps": {
-      "text": "Model Steps",
-      "tooltip": "Show model steps"
-    },
     "btnShowZeroValues": {
       "text": "Zero Values",
       "tooltip": "Show zero values"
@@ -3839,12 +3762,6 @@
     "colRepOddsRatio": {
       "text": "Odds ratio"
     },
-    "colRepOddsUpperBound": {
-      "text": "СI upper bound"
-    },
-    "colRepPValue": {
-      "text": "Significance"
-    },
     "colRepScore": {
       "text": "Score"
     },
@@ -3856,9 +3773,6 @@
     },
     "colStatParam": {
       "text": "Parameter"
-    },
-    "lblPValueThreshold": {
-      "text": "Value threshold"
     },
     "pnlRegressionReportView": {
       "title": "Regression Report"
@@ -3876,9 +3790,6 @@
     "btnDeleteAll": {
       "text": "Delete All",
       "tooltip": "Delete all..."
-    },
-    "btnReloadViewData": {
-      "text": "Reload Data"
     },
     "btnRename": {
       "text": "Rename",
@@ -3903,9 +3814,6 @@
     },
     "colEventClass": {
       "text": "Classified"
-    },
-    "colEvents": {
-      "text": "Actually"
     },
     "lblConfusionMatrix": {
       "text": "Confusion matrices"
@@ -3965,14 +3873,8 @@
     "lblCutoff": {
       "text": "Cuttoff threshold"
     },
-    "lblParams": {
-      "text": "Classification ratings"
-    },
     "lblSets": {
       "text": "Sets"
-    },
-    "rbBreakEven": {
-      "boxLabel": "Balance chart"
     },
     "rbEvent": {
       "boxLabel": "Recognized events, %"
@@ -4070,9 +3972,6 @@
     "colHistogramPercentage": {
       "text": "%"
     },
-    "colHistogramWeight": {
-      "text": "Share"
-    },
     "colIndex": {
       "text": "No"
     },
@@ -4154,9 +4053,6 @@
     "colPropertiesNames": {
       "text": "Fields"
     },
-    "lblViewMode": {
-      "text": "Display "
-    },
     "rbRAWView": {
       "boxLabel": "Raw data"
     },
@@ -4187,12 +4083,6 @@
     },
     "btnClearLinks": {
       "text": "Delete All Links"
-    },
-    "btnCreateMapping": {
-      "tooltip": "Create output..."
-    },
-    "btnCreateMappingToAll": {
-      "tooltip": "Create outputs for all inputs..."
     },
     "btnEditAllowedValues": {
       "tooltip": "Configure list of allowed variable values..."
@@ -4240,17 +4130,8 @@
       "text": "Usage type",
       "tooltip": "Default usage type"
     },
-    "colDisplayName": {
-      "text": "Outputs"
-    },
     "colName": {
       "text": "Name"
-    },
-    "colSourceDisplayName": {
-      "text": "Inputs"
-    },
-    "colSourceName": {
-      "text": "Inputs"
     },
     "colTargetDelete": {
       "tooltip": "Delete all..."
@@ -4479,9 +4360,6 @@
       "text": "Move Up",
       "tooltip": "Move up"
     },
-    "colSequenceAbs": {
-      "text": "Absolute (rows)"
-    },
     "colSequenceName": {
       "text": "Set"
     },
@@ -4493,9 +4371,6 @@
     }
   },
   "wizards/datapartition/SizeGridForm": {
-    "colAbsoluteSize": {
-      "text": "Absolute (rows)"
-    },
     "colName": {
       "text": "Set"
     },
@@ -4710,9 +4585,6 @@
     },
     "rbStat": {
       "boxLabel": "Stat. parameter"
-    },
-    "rgQuotient": {
-      "fieldLabel": "Divider"
     }
   },
   "wizards/previewpanel/PreviewPanel": {
@@ -4724,9 +4596,6 @@
     }
   },
   "wizards/referencenode/ReferenceNodeComponentWizard": {
-    "colDescription": {
-      "text": "Comment"
-    },
     "colText": {
       "text": "Nodes"
     },
@@ -4781,9 +4650,6 @@
   "wizards/WizardForm": {
     "btnCancel": {
       "tooltip": "Close"
-    },
-    "btnError": {
-      "text": "Show Details..."
     },
     "btnExecute": {
       "text": "Run"

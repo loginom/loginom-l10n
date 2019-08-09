@@ -1,6 +1,20 @@
 {
   "Common/1Cv8/1Cv8Query": {
+    "ErrEofArrived": "Data set end reached",
     "ErrQueryNotActive": "Request is not active"
+  },
+  "Common/1Cv8/1Cv8SessionManager": {
+    "ErrEmptyConnectionString": "Empty connection string"
+  },
+  "Common/CalcFunctions/CalcFunctions": {
+    "ErrCreateGuid": "System error creating GUID",
+    "ErrGuidFormat": "Incorrect GUID format: %s ([\"N\", \"D\", \"B\", \"P\"] supported)"
+  },
+  "Common/CalcFunctions/FuncDesc": {
+    "ErrFuncDescNotFound": "Description of \"%s\" function not found"
+  },
+  "Common/CalcFunctions/FunctionCollection": {
+    "ErrDuplicateFunction": "%s named function has already been registered"
   },
   "Common/CertList/CertList_Win": {
     "AddressBook": "Other users",
@@ -22,6 +36,12 @@
     "DefaultUsageType": "Default usage type",
     "DisplayName": "Caption",
     "Index": "Index",
+    "InputVariables": "Input variables",
+    "Items": "Items",
+    "Name": "Name",
+    "OutputTable": "Output table",
+    "RowCount": "Row count",
+    "TableAppend": "Add row",
     "Value": "Value"
   },
   "Common/WSDL/Processor/MIMECommon": {
@@ -35,6 +55,9 @@
     "FailedRequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz \"_failed\"",
     "RequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz"
   },
+  "Common/XML/Processor/XMLExportImpl": {
+    "NodePath": "Tree node path"
+  },
   "Common/XML/Processor/XMLRequestProcessor": {
     "ErrXMLExportNoContext": "No export context specified"
   },
@@ -45,16 +68,115 @@
   "Common/XML/XMLDocument": {
     "ErrOnlyOneRootElementAllowed": "Document root element already exists"
   },
+  "components/assnrules/AssnRulesEngine": {
+    "InputDataSourceSuppl": "Auxiliary data",
+    "OutDataSetApply": "Rules application",
+    "OutDataSetItemsets": "Frequent sets",
+    "OutDataSetRules": "Association rules"
+  },
+  "components/assnrules/AssnRulesVendor": {
+    "VendorCaption": "Association Rules",
+    "VendorDesc": "Association rules search"
+  },
+  "components/assnrules/FPTree": {
+    "Support": "Support"
+  },
+  "components/autocorrelation/AutoCorrelationEngine": {
+    "ACFDisplayName": "ACF"
+  },
+  "components/autocorrelation/AutoCorrelationVendor": {
+    "VendorCaption": "Autocorrelation",
+    "VendorDesc": "Calculate autocorrelation function values "
+  },
   "components/binning/Binning": {
     "PostfixSDBins": "SD"
   },
   "components/binning/BinningMethodsImplementations": {
     "ErrInvalidBinRowFmt": "Failed to get bin for %s field from %d row",
-    "ErrSkoAvgFmt": "Failed to get SD/average for %s field",
+    "ErrSkoAvgFmt": "Failed to get SD/mean for %s field",
     "ErrZeroDivForIntervalsFmt": "%s field with zero variance, only 1 bin will be created"
+  },
+  "components/binning/BinningVendor": {
+    "VendorCaption": "Quantization",
+    "VendorDesc": "User data quantization"
+  },
+  "components/calcdata/CalcDataVendor": {
+    "VendorCaption": "Calculator",
+    "VendorDesc": "Create calculated fields"
+  },
+  "components/calcvariables/CalcVariablesVendor": {
+    "VendorCaption": "Calculator (Variables)",
+    "VendorDesc": "Creating calculated variables"
+  },
+  "components/clope/ClopeEngine": {
+    "ClopeTrainNotify": "Cluster search"
+  },
+  "components/clope/CLOPEVendor": {
+    "VendorCaption": "Transaction Clustering",
+    "VendorDesc": "CLOPE algorithm transaction clustering"
+  },
+  "components/clusterization/ClusterizationEngine": {
+    "ClusterizationTrainNotify": "Cluster search",
+    "PrepareDataNotify": "Prepare data"
+  },
+  "components/clusterization/ClusterizationVendor": {
+    "VendorCaption": "Clustering",
+    "VendorDesc": "Data clustering"
   },
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantLoadBackup": "Failed to restore binning"
+  },
+  "components/coarseclasses/CoarseClassesVendor": {
+    "VendorCaption": "Coarse Classes",
+    "VendorDescription": "Minimize input values diversity"
+  },
+  "components/columnflipping/ColumnFlippingVendor": {
+    "VendorCaption": "Column Сonvolution",
+    "VendorDesc": "Create flat table from pivot table"
+  },
+  "components/coluniondata/ColUnionDataVendor": {
+    "VendorCaption": "Connection",
+    "VendorDescription": "Join several data sets by vertical gluing"
+  },
+  "components/condition/ConditionComponentVendor": {
+    "VendorCaption": "Condition",
+    "VendorDesc": "Conditional execution of model branch"
+  },
+  "components/corranalysis/CorrAnalysisVendor": {
+    "VendorCaption": "Correlation Analysis",
+    "VendorDesc": "Calculation of correlation coefficients"
+  },
+  "components/crosstab/CrossTabVendor": {
+    "VendorCaption": "Cross Table",
+    "VendorDesc": "Create flat table from pivot table"
+  },
+  "components/datatovariables/DataToVariablesVendor": {
+    "VendorCaption": "Table into Variables",
+    "VendorDesc": "Aggregate data into variables"
+  },
+  "components/datatoxml/DataToXMLVendor": {
+    "VendorCaption": "XML Formation",
+    "VendorDesc": "XML document formation according to given XSD schema"
+  },
+  "components/datereform/DateReformVendor": {
+    "VendorCaption": "Date and Time",
+    "VendorDescription": "Reform date/time"
+  },
+  "components/em/EMEngine": {
+    "PrepareDataNotify": "Prepare data",
+    "TrainNotify": "Cluster search"
+  },
+  "components/em/EMVendor": {
+    "VendorCaption": "EM Clustering",
+    "VendorDesc": "EM algorithm data clustering"
+  },
+  "components/enrichdata/EnrichDataVendor": {
+    "VendorCaption": "Enrich Data",
+    "VendorDescription": "Enrich data using guides"
+  },
+  "components/execcmd/ExecCmdVendor": {
+    "VendorCaption": "Сommand Execution",
+    "VendorDesc": "External command execution"
   },
   "components/execnode/ExecNodeComponent": {
     "ErrNodeLocked": "\"%s\" node is blocked",
@@ -62,51 +184,240 @@
     "ErrReferencedNodeNotFound": "Reference node not found"
   },
   "components/execnode/ExecNodeComponentVendor": {
-    "VendorCaption": "Node Execution"
+    "VendorCaption": "Node Execution",
+    "VendorDesc": "Apply model to new data"
+  },
+  "components/extractxml/ExtractXMLVendor": {
+    "VendorCaption": "XML Extraction",
+    "VendorDescription": "Extracts XML document from the string field of the data set and imports it into the output data set according to the specified schema"
+  },
+  "components/factoranalysis/FactorAnalysisVendor": {
+    "VendorCaption": "Factor Analysis",
+    "VendorDesc": "Identification of significant factors"
+  },
+  "components/filterdata/FilterColumns": {
+    "fld0and5to20DayPeriodName": "days",
+    "fld0and5to20MonthPeriodName": "months",
+    "fld0and5to20QuarterPeriodName": "quarters",
+    "fld0and5to20WeekPeriodName": "weeks",
+    "fld0and5to20WrongPeriodName": "periods",
+    "fld0and5to20YearPeriodName": "years",
+    "fld2to4DayPeriodName": "day",
+    "fld2to4MonthPeriodName": "month",
+    "fld2to4QuarterPeriodName": "quarter",
+    "fld2to4WeekPeriodName": "week",
+    "fld2to4WrongPeriodName": "period",
+    "fld2to4YearPeriodName": "year",
+    "fldDayFirstPostfix": "first",
+    "fldDayLastPostfix": "last",
+    "fldManyFirstPostfix": "first",
+    "fldManyLastPostfix": "last",
+    "fldMonthFirstPostfix": "first",
+    "fldMonthLastPostfix": "last",
+    "fldOneDayPeriodName": "day",
+    "fldOneMonthPeriodName": "month",
+    "fldOneQuarterPeriodName": "quarter",
+    "fldOneWeekPeriodName": "week",
+    "fldOneWrongPeriodName": "period",
+    "fldOneYearPeriodName": "year",
+    "fldOtherFirstPostfix": "first",
+    "fldOtherLastPostfix": "last",
+    "fldQuarterFirstPostfix": "First",
+    "fldQuarterLastPostfix": "last",
+    "fldWeekFirstPostfix": "first",
+    "fldWeekLastPostfix": "last",
+    "fldYearFirstPostfix": "first",
+    "fldYearLastPostfix": "last"
+  },
+  "components/filterdata/FilterData": {
+    "ErrPreviewDataSourceNotActive": "Failed to apply filter, input not activated"
+  },
+  "components/filterdata/FilterDataVendor": {
+    "VendorCaption": "Row Filters",
+    "VendorDesc": "Row selection by condition"
   },
   "components/filtration/DataRecovery": {
-    "DataRecovery": "Imputation"
+    "DataRecovery": "Imputation",
+    "QualityEngine": "Data quality",
+    "ScanningInputData": "Input data scanning"
   },
   "components/filtration/DataRecoveryVendor": {
-    "VendorCaption": "Imputation"
+    "VendorCaption": "Imputation",
+    "VendorDesc": "Fill in missing data"
+  },
+  "components/filtration/ELimOutlier": {
+    "ErrOutDataSetIndexOutOfRange": "The output set index %d is out of range [%d; %d]"
+  },
+  "components/filtration/ElimOutlierVendor": {
+    "VendorCaption": "Eliminate Outliers",
+    "VendorDesc": "Eliminate outliers and extremes"
   },
   "components/forecast/ARIMAXParams": {
     "ConfidenceInterval": "Confidence interval",
     "ErrNoStructuralElements": "No structural model element specified"
   },
+  "components/forecast/ARIMAXTrainingResults": {
+    "ErrParentNodeNotLoaded": "Parent node #%d not found in configuration",
+    "ErrSetTrainedWithoutModel": "Attempt to set the \"trained\" status not specifying the selected model",
+    "TotalSamples": "Total samples",
+    "TotalSelectedSamples": "Total selected samples"
+  },
   "components/forecast/ForecastEngine": {
     "AdjustedR2": "Adjusted determination coefficient",
+    "AIC": "Akaike information criterion",
+    "AICc": "Akaike information criterion corrected",
+    "BIC": "Bayesian information criterion",
+    "CoefficientColumn": "Coefficient",
+    "CoefficientTypeColumn": "Type",
+    "ColumnName": "Input field name",
+    "ColumnUniqueValue": "Unique value",
+    "ForecastModelCoefficients": "Model coefficients",
+    "ForecastOutputDataSet": "Model output",
+    "LagColumn": "Lag",
     "R2": "Determination coefficient",
     "TStatColumn": "T-statistics"
+  },
+  "components/forecast/ForecastVendor": {
+    "VendorCaption": "ARIMAX",
+    "VendorDesc": "Time series forecast using ARIMA Model able to include external factors (ARIMAX)"
+  },
+  "components/groupdata/GroupDataVendor": {
+    "VendorCaption": "Grouping",
+    "VendorDesc": "Group data"
+  },
+  "components/javascript/JavaScriptVendor": {
+    "VendorCaption": "JavaScript",
+    "VendorDesc": "JavaScript code execution"
+  },
+  "components/joindata/JoinDataVendor": {
+    "VendorCaption": "Join",
+    "VendorDescription": "Join two data sets"
   },
   "components/linregression/LinRegressionEngine": {
     "RegressionTStatNamePostfix": "|T-statistics"
   },
+  "components/linregression/LinRegressionTasks": {
+    "RegPrepareData": "Preparing data before training"
+  },
+  "components/linregression/LinRegressionVendor": {
+    "VendorCaption": "Linear Regression",
+    "VendorDesc": "Linear regression"
+  },
+  "components/logregression/LogRegressionTasks": {
+    "RegPrepareData": "Preparing data before training"
+  },
+  "components/logregression/LogRegressionVendor": {
+    "VendorCaption": "Logistic Regression",
+    "VendorDesc": "Logistic regression"
+  },
   "components/loop/LoopComponent": {
     "ErrGroupDataSourceSocketNotSpecified": "No socket containing columns to group specified"
   },
+  "components/loop/LoopComponentVendor": {
+    "VendorCaption": "Loop",
+    "VendorDesc": "Multiple model execution based on new data"
+  },
+  "components/neuralnet/NeuralNet": {
+    "PrepareProcessCaption": "Prepare Data"
+  },
   "components/partition/PartitionVendor": {
-    "VendorCaption": "Partition into Sets"
+    "VendorCaption": "Partition into Sets",
+    "VendorDesc": "Formation of test and training sets"
+  },
+  "components/quality/QualityVendor": {
+    "VendorCaption": "Data Quality",
+    "VendorDesc": "Data quality assessment"
+  },
+  "components/reformcolumns/ReformColumnsVendor": {
+    "VendorCaption": "Field parameters",
+    "VendorDesc": "Change field parameters"
   },
   "components/replace/ReplaceColumns": {
     "InputReplaceDataSource": "Substitution table"
   },
+  "components/replace/ReplaceColumnsVendor": {
+    "VendorCaption": "Replace",
+    "VendorDesc": "Replace field values"
+  },
+  "components/replacevariables/ReplaceVariablesVendor": {
+    "VendorCaption": "Replace (Variables)",
+    "VendorDesc": "Replace variable values"
+  },
+  "components/restclient/RESTClientVendor": {
+    "VendorCaption": "REST Service Call",
+    "VendorDesc": "Request execution through REST service connection"
+  },
+  "components/sampling/SamplingVendor": {
+    "VendorCaption": "Sampling",
+    "VendorDesc": "Formation of representative subset"
+  },
   "components/slidingwindow/SlidingWindowVendor": {
-    "VendorCaption": "Lag"
+    "VendorCaption": "Lag",
+    "VendorDescription": "Transpose one or several data columns using lag"
+  },
+  "components/smoothing/SmoothingVendor": {
+    "VendorCaption": "Smoothing",
+    "VendorDesc": "Data smoothing with wavelets"
+  },
+  "components/sonn/SONNEngine": {
+    "PrepareDataNotify": "Prepare data"
+  },
+  "components/sonn/SONNVendor": {
+    "VendorCaption": "Self-Organizing Networks",
+    "VendorDesc": "Data clustering by self-organizing neural networks"
+  },
+  "components/sorting/SortingVendor": {
+    "VendorCaption": "Sort",
+    "VendorDesc": "Data sorting"
+  },
+  "components/ungroupdata/UngroupDataVendor": {
+    "VendorCaption": "Ungroup",
+    "VendorDesc": "Ungroup data"
+  },
+  "components/uniondata/UnionDataVendor": {
+    "VendorCaption": "Union",
+    "VendorDescription": "Union of several data sets"
+  },
+  "components/unionvariables/UnionVariablesVendor": {
+    "VendorCaption": "Union (Variables)",
+    "VendorDesc": "Combine several sets of variables into one"
+  },
+  "components/variablestodata/VariablesToDataVendor": {
+    "VendorCaption": "Variables to Table",
+    "VendorDesc": "Create data table from variables set"
+  },
+  "components/wsdlclient/WSDLClientVendor": {
+    "VendorCaption": "Web Service Call",
+    "VendorDesc": "Request execution through connection to the WSDL described web service and conversion of the received response into a data set"
   },
   "exports/database/DBExport": {
     "ErrFieldForUpdateNotSelected": "No fields to update selected"
   },
+  "exports/database/DBExportVendor": {
+    "VendorCaption": "Database",
+    "VendorDesc": "Export to database through configured connection"
+  },
+  "exports/excelfile/ExportExcelFileVendor": {
+    "VendorCaption": "Excel File",
+    "VendorDesc": "Export data to Excel file"
+  },
   "exports/native/ExportNativeVendor": {
     "VendorCaption": "Loginom Data File",
     "VendorDesc": "Export data to Loginom Data file"
+  },
+  "exports/textfile/ExportTextFileVendor": {
+    "VendorCaption": "Text File",
+    "VendorDesc": "Export data to text file"
+  },
+  "exports/xml/ExportXMLVendor": {
+    "VendorCaption": "XML File",
+    "VendorDesc": "Export data to XML file according to the specified XSD schema"
   },
   "imports/1cv8/1Cv8QueryImport": {
     "ErrInterpretValue": "Failed to convert value from request result to standard type",
     "FillDataSetProcess": "Fill data set",
     "NotConnected": "Not connected to infobase",
     "OpenResultSetProcess": "Open request",
-    "PrepareFieldDefsProcess": "Execute request and get field list",
     "PreviewProcess": "Data preview"
   },
   "imports/1cv8/1Cv8QueryImportVendor": {
@@ -208,7 +519,6 @@
     "ErrFloatTypeCast": "Failed to convert \"%s\" value in \"%s\" column to real number.",
     "ErrIntegerTypeCast": "Failed to convert \"%s\" value in \"%s\" column to integer.",
     "ErrNoData": "Error parsing text file",
-    "ErrParseFmt": "While parsing line %d error occurred: %s",
     "ErrUnsupportedCodePage": "%d codepage not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
     "PrimaryKeyDisplayName": "<Key0>"
@@ -263,6 +573,7 @@
     "BadVariantData": "Incorrect Variant data type"
   },
   "Libraries/bgrtl/Vendors": {
+    "VendorGroupMetaDesc": "vendor group",
     "VendorMetaDesc": "vendor"
   },
   "Libraries/Config/ConfigBackupManagers": {
@@ -280,29 +591,53 @@
     "ErrSamplingMethod": "No sampling method specified"
   },
   "Libraries/DBConnection/UniDAC/AccessODBCUniDACDBConnectionVendor": {
+    "VendorCaption": "MS Access",
     "VendorDesc": "MS Access (ODBC) DBMS"
   },
+  "Libraries/DBConnection/UniDAC/ExcelODBCUniDACDBConnectionVendor": {
+    "VendorCaption": "MS Excel",
+    "VendorDesc": "MS Excel File (ODBC)"
+  },
   "Libraries/DBConnection/UniDAC/FBUniDACDBConnectionVendor": {
+    "VendorCaption": "Firebird",
     "VendorDesc": "Firebird DBMS"
   },
   "Libraries/DBConnection/UniDAC/IBUniDACDBConnectionVendor": {
+    "VendorCaption": "Interbase",
     "VendorDesc": "Interbase DBMS"
   },
   "Libraries/DBConnection/UniDAC/MsSQLOleDbUniDACDBConnectionVendor": {
+    "VendorCaption": "MS SQL",
     "VendorDesc": "MS SQL (OLE DB) DBMS"
   },
   "Libraries/DBConnection/UniDAC/MyUniDACDBConnectionVendor": {
+    "VendorCaption": "MySQL",
     "VendorDesc": "MySQL DBMS"
   },
+  "Libraries/DBConnection/UniDAC/ODBCUniDACDBConnectionVendor": {
+    "VendorCaption": "ODBC",
+    "VendorDesc": "ODBC data access driver"
+  },
   "Libraries/DBConnection/UniDAC/OracleUniDACDBConnectionVendor": {
+    "VendorCaption": "Oracle",
     "VendorDesc": "Oracle DBMS"
   },
   "Libraries/DBConnection/UniDAC/PostgresUniDACDBConnectionVendor": {
+    "VendorCaption": "PostgreSQL",
     "VendorDesc": "PostgreSQL DBMS"
   },
+  "Libraries/DBConnection/UniDAC/SQLiteUniDACDBConnectionVendor": {
+    "VendorCaption": "SQLite",
+    "VendorDesc": "SQLite DB"
+  },
   "Libraries/Model/DerivedModelComponentVendor": {
-    "ErrBaseComponentAlreadyExists": "Base component already exists",
-    "ErrBaseComponentVendorNotSpecified": "No vendor defined for"
+    "ErrBaseComponentAlreadyExists": "Base component already exists"
+  },
+  "Libraries/Model/Generic/ModelInputComponentVendor": {
+    "VendorCaption": "Input Node"
+  },
+  "Libraries/Model/Generic/ModelOutputComponentVendor": {
+    "VendorCaption": "Output Node"
   },
   "Libraries/Model/ModelNodesCopyUtils": {
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" reference node is not available at the required destination.",
@@ -319,6 +654,18 @@
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Reference node not found"
   },
+  "Libraries/Model/ReferenceNode/ReferenceNodeComponentVendor": {
+    "VendorCaption": "Reference Node",
+    "VendorDesc": "Reference to node"
+  },
+  "Libraries/Model/Variables/ModelVariablesComponentVendor": {
+    "VendorCaption": "Workflow Variables",
+    "VendorDesc": "Configure variables used in the current workflow"
+  },
+  "Libraries/Normalization/TuneNormDataSource": {
+    "CreateInDataProcessCaption": "Prepare input data set",
+    "CreateOutDataProcessCaption": "Preparing output data set"
+  },
   "Libraries/Optimization/Optimizer": {
     "ErrStepIsNull": "Another strategy step not specified"
   },
@@ -328,21 +675,69 @@
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"
   },
+  "Libraries/SuperLU/SuperLU_h": {
+    "ErrExceptionOccurred": "SuperLU exception in function '%s' when calling '%s'",
+    "InputError": "Invalid parameter %d when calling '%s'",
+    "UserAbort": "SuperLU call stopped with error: '%s'"
+  },
+  "Studio/SolutionTree": {
+    "Vendors": "Components"
+  },
+  "Viewers/Browse/BrowseViewVendor": {
+    "VendorCaption": "Table",
+    "VendorDesc": "Table data display"
+  },
+  "Viewers/Chart/ChartViewVendor": {
+    "VendorCaption": "Chart",
+    "VendorDesc": "Chart data display"
+  },
+  "Viewers/Chart/Server/ChartColumnInfo": {
+    "ChartSortingProgress": "Data sorting"
+  },
+  "Viewers/CoarseClasses/CoarseClassesViewVendor": {
+    "VendorCaption": "Coarse Classes",
+    "VendorDesc": "Coarse classes visualizer"
+  },
   "Viewers/Cube/CubeDetailing": {
     "ManagerStatistics": "Statistics"
   },
   "Viewers/Cube/CubeHeaders": {
     "CubeTotalValue": "Total:"
   },
+  "Viewers/Cube/CubeSource": {
+    "LoadNotify": "Prepare input data"
+  },
+  "Viewers/Cube/CubeViewVendor": {
+    "VendorCaption": "Cube",
+    "VendorDesc": "Multidimensional display (crosstab and cross chart)"
+  },
+  "Viewers/LinRegressReport/LinRegressReportViewVendor": {
+    "VendorCaption": "Regression Report",
+    "VendorDesc": "Analysis of linear regression model"
+  },
+  "Viewers/LogRegressReport/LogRegressReportViewVendor": {
+    "VendorCaption": "Regression Report",
+    "VendorDesc": "Analysis of logistic regression model"
+  },
   "Viewers/ROC/ROCViewCharts": {
     "EventsChartXLabel": "Range",
-    "LiftChartXLabel": "Range"
+    "LiftChartXLabel": "Range",
+    "OverallRatesTitle": "Basic Rates"
+  },
+  "Viewers/ROC/ROCViewVendor": {
+    "VendorCaption": "Binary Classification Quality",
+    "VendorDesc": "Binary classification quality"
   },
   "Viewers/Statistics/StatView": {
     "PrepareViewData": "Statistics"
   },
   "Viewers/Statistics/StatViewVendor": {
-    "VendorCaption": "Statistics"
+    "VendorCaption": "Statistics",
+    "VendorDesc": "Show statistical indicators"
+  },
+  "Warehouse2/Deductor/DDWImportVendor": {
+    "VendorCaption": "Deductor Warehouse",
+    "VendorDesc": "Retrieve data from a Deductor data warehouse"
   },
   "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {
     "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on Firebird DBMS"

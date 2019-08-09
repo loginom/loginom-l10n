@@ -17,7 +17,6 @@
       "HeaderTooLong": "HTTP header too long",
       "UnexpectedMessageEnd": "Unexpected message end",
       "UnknownMessageStructure": "Unrecognized message structure",
-      "XMLImportError": "XML import error: %s",
       "UnhandledError": "Unhandled error: %s"
     },
     "WSDLPrepareRequestStatus": {
@@ -274,7 +273,6 @@
       "UpperBound": "Upper bound",
       "WoE": "Weight of evidence",
       "IV": "Information index",
-      "Weight": "Class share",
       "UpperBoundIsOpen": "Upper range bound open",
       "PreQuantingApplied": "Prequantization"
     },
@@ -426,7 +424,7 @@
     "FactorSignificanceCriterion": {
       "$Caption": "Significance Criterion",
       "EigenValueThreshold": "By own value",
-      "CumDispersion": "By dispersion",
+      "CumDispersion": "By variance",
       "NFactor": "Set the factor number"
     }
   },
@@ -443,7 +441,7 @@
       "IsNotNull": "Not null",
       "Between": "within the range",
       "NotBetween": "out of the range",
-      "In": "on the list",
+      "In": "listed",
       "NotIn": "not listed",
       "Like": "contains",
       "NotLike": "does not contain",
@@ -539,7 +537,7 @@
     },
     "LoopKind": {
       "$Caption": "Loop Type",
-      "For": "Defined iterations",
+      "For": "Target iterations",
       "Repeat": "Postcondition loop",
       "GroupProcessing": "Group processing"
     }
@@ -615,10 +613,8 @@
       "Deferred": "While handling"
     },
     "DataSourceCachingMethod": {
-      "$Caption": "Dataset Caching",
+      "$Caption": "Data Set Caching",
       "None": "Off",
-      "Complete": "While activation",
-      "Deferred": "While handling",
       "CustomColumns": "Selected fields"
     }
   },
@@ -706,14 +702,15 @@
     },
     "UngroupMethod": {
       "$Caption": "Ungrouping Method",
-      "QuotaIsGiven": "By given shares",
-      "QuotaCalcSpline": "Given temporal variations and seasonality of the reference data"
+      "QuotaIsGiven": "By given quotas",
+      "QuotaCalcTotalSample": "With calculation of quotas for total sample",
+      "QuotaCalcSpline": "Given time variations and seasonality of the reference data"
     },
     "UngroupRoundFormat": {
       "$Caption": "Rounding Format",
       "NotRound": "Not round",
       "IntMultiple": "Round to a multiple of a whole",
-      "DecimalPlaces": "Round to the required accuracy"
+      "DecimalPlaces": "Round to the required decimal precision"
     }
   },
   "components/variablestodata": {
@@ -872,7 +869,6 @@
       "$Caption": "Transaction Log Mode",
       "JournalDefault": "Default",
       "JournalDelete": "Delete file",
-      "JournalTruncate": "Clear content",
       "JournalPersist": "Header zeroing",
       "JournalWAL": "Write-ahead logging"
     },
@@ -920,7 +916,7 @@
     },
     "ContextUsageType": {
       "$Caption": "Usage Type",
-      "Unspecified": "Not defined",
+      "Unspecified": "Unspecified",
       "Useless": "Useless",
       "Excluded": "Excluded",
       "Info": "Info",
@@ -928,7 +924,7 @@
       "Input": "Input",
       "Output": "Output",
       "Group": "Group",
-      "Value": "Parameter",
+      "Value": "Value",
       "Transaction": "Transaction",
       "Item": "Item",
       "DimCol": "Dimension in columns",
@@ -948,6 +944,8 @@
     },
     "DataSourceTypeEx": {
       "$Caption": "Extended Data Set Type",
+      "Teach": "",
+      "Test": "",
       "All": "All"
     },
     "DataStatus": {
@@ -1155,8 +1153,8 @@
   "Libraries/bgrtl/Statistics": {
     "EventType": {
       "$Caption": "Event Type",
-      "First": "First on the list",
-      "Last": "Last on the list",
+      "First": "First listed",
+      "Last": "Last listed",
       "Rare": "More rare",
       "Frequent": "More frequent",
       "Exact": "Explicitly set"
@@ -1204,9 +1202,7 @@
     },
     "TestPriorityPosition": {
       "$Caption": "Test Set Priority",
-      "Default": "Defined by algorithm",
-      "Begin": "At the set beginning",
-      "End": "At the set end"
+      "Default": "Defined by algorithm"
     }
   },
   "Libraries/DataSampling/Sampling": {
@@ -1246,8 +1242,7 @@
     "CacheStringsMode": {
       "$Caption": "Cache Strings Mode",
       "Off": "Do not use cache",
-      "Manual": "Custom cache size",
-      "Auto": "Auto define"
+      "Manual": "Custom cache size"
     }
   },
   "Libraries/Model/ModelWorkFlow": {
@@ -1369,7 +1364,6 @@
       "ErrStat": "Regression error statistics",
       "MSE": "MSE",
       "RMSE": "RMSE",
-      "F": "F-criterion",
       "FPvalue": "F-criterion significance",
       "StdErr": "Standard deviation",
       "CIDeviation": "Confidence interval delta",
@@ -1432,6 +1426,7 @@
     },
     "ChartError": {
       "$Caption": "Chart Error",
+      "Valid": "",
       "DateTimeWarning": "Time data on the real axis",
       "NoData": "No data to display",
       "InValidColumn": "Field type does not match",
@@ -1494,7 +1489,7 @@
       "Waterfall": "Waterfall",
       "ErrorBar": "Errors",
       "Polygon": "Polygon",
-      "ColumnRange": "Columnar with intervals",
+      "ColumnRange": "Columns with ranges",
       "HeatMap": "Heatmap",
       "CandleStick": "Candlestick",
       "OHLC": "OHLC"
@@ -1684,9 +1679,8 @@
       "Percent": "Percent"
     },
     "ROCViewAprioriProb": {
-      "$Caption": "Events Probability Source",
+      "$Caption": "Source of Apriori Probability Events",
       "None": "Do not correct",
-      "Model": "From handler",
       "Train": "From the training set",
       "Test": "From the test set",
       "User": "Set"
@@ -1695,30 +1689,26 @@
       "$Caption": "Chart Type",
       "ROC": "ROC curve",
       "PrecisionRecall": "PR curve",
-      "OverallRates": "Basic indicators",
+      "OverallRates": "Basic rates",
       "Precision": "Precision chart",
-      "BreakEven": "Equilibrium chart",
       "Event": "Recognized events, %",
       "Lift": "Lift chart",
       "Response": "Response chart",
       "Gain": "Gain chart"
     },
     "ROCViewCutoffType": {
-      "$Caption": "Cuttoff Threshold",
-      "Current": "From handler",
-      "User": "Set",
+      "$Caption": "Cutoff Point",
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
-      "BreakEven": "Equilibrium point (TPR = PPV)",
-      "Accuracy": "Maximum overall accuracy",
+      "Accuracy": "Highest overall accuracy",
       "FScore": "Maximum F1 Score",
       "Matthews": "Matthews coefficient (MCC)"
     },
     "ROCViewNBins": {
-      "$Caption": "Number of Ranges",
-      "bn10": "10 ranges",
-      "bn20": "20 ranges",
-      "bn50": "50 ranges"
+      "$Caption": "Number of Bins",
+      "bn10": "10 bins",
+      "bn20": "20 bins",
+      "bn50": "50 bins"
     }
   },
   "Viewers/Statistics/StatViewTypes": {
@@ -1739,7 +1729,7 @@
       "Max": "Maximum",
       "Mean": "Average",
       "StdDev": "Standard deviation",
-      "Disp": "Unbiased dispersion",
+      "Disp": "Unbiased variance",
       "LowerQuartile": "Lower quartile",
       "Median": "Median",
       "UpperQuartile": "Upper quartile",
@@ -1778,31 +1768,7 @@
     },
     "MDFilterConditionType": {
       "$Caption": "Names of Comparison Operators",
-      "None": " Filter disabled ",
-      "Equal": " = ",
-      "NotEqual": " <> ",
-      "Less": " < ",
-      "LessOrEqual": " <= ",
-      "More": " > ",
-      "MoreOrEqual": " >= ",
-      "IsNull": " null ",
-      "IsNotNull": " not null ",
-      "Between": " within the range ",
-      "NotBetween": " out of the range ",
-      "In": " on the list ",
-      "NotIn": " not listed ",
-      "Like": " contains ",
-      "NotLike": " does not contain ",
-      "StartingWith": " starting with ",
-      "NotStartingWith": " not starting with ",
-      "EndingWith": " ending with ",
-      "NotEndingWith": " not ending with ",
-      "FirstPeriod": " first ",
-      "NotFirstPeriod": " not first ",
-      "LastPeriod": " last ",
-      "NotLastPeriod": " not last ",
-      "IsTrue": " true",
-      "IsFalse": " false",
+      "In": "listed",
       "FuzzyLogicEqual": " ~ "
     },
     "MetaDataNodeType": {

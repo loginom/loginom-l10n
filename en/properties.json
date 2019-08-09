@@ -262,6 +262,11 @@
       "LogRegressionMethod": "Factor selection and protection against retraining"
     }
   },
+  "components/loop": {
+    "LoopComponent": {
+      "LoopKind": "Loop Type"
+    }
+  },
   "components/neuralnet": {
     "NeuralNetworkParams": {
       "TrainingParams": "Training algorithm parameters"
@@ -301,7 +306,6 @@
   },
   "imports/excelfile": {
     "ImportExcelFileEngine": {
-      "AllRows": "All rows",
       "BlankRowAction": "Blank rows",
       "ExplicitRange": "Range",
       "ImportExcelFilePreview": "Property to view Excel file contents",
@@ -328,7 +332,6 @@
       "FormatType": "Data format",
       "MultipleDelimiters": "Accept multiple separators in succession for one",
       "RowsToSkip": "Skip rows",
-      "TextQualifier": "Line terminator",
       "TimeSeparator": "Time separator",
       "ValueFalse": "False",
       "ValueNull": "Null",
@@ -350,9 +353,18 @@
       "DefaultUsageType": "Default usage type",
       "UsageType": "Column usage type"
     },
+    "ColumnDefs": {
+      "Vendor": "Link to Vendor field descriptions"
+    },
     "ColumnInfo": {
       "DefaultUsageType": "Default column usage type",
       "UsageType": "Column usage type"
+    },
+    "ColumnInfos": {
+      "Vendor": "Link to Vendor field descriptions"
+    },
+    "TuneColumnDefs": {
+      "Vendor": "Link to Vendor custom field descriptions"
     }
   },
   "Libraries/bgrtl/DerivedDataSet": {
@@ -365,9 +377,49 @@
       "UsageType": "Column usage type"
     }
   },
+  "Libraries/bgrtl/Interfaces": {
+    "ClassVendorObject": {
+      "Vendor": "Link to ClassVendor used for object creation"
+    },
+    "CustomItemDef": {
+      "Index": "Element index listed"
+    },
+    "List": {
+      "Count": "Element count listed"
+    },
+    "ListItem": {
+      "Index": "Element index listed"
+    }
+  },
+  "Libraries/bgrtl/Statistics": {
+    "Statistics": {
+      "Count": "Element count listed"
+    }
+  },
+  "Libraries/bgrtl/Variables": {
+    "TuneVariableItems": {
+      "Vendor": "Link to vendor"
+    },
+    "VariableInfos": {
+      "Vendor": "Link to Vendor variable descriptions"
+    },
+    "VariableItems": {
+      "Vendor": "Link to Vendor variables"
+    }
+  },
+  "Libraries/Normalization/TuneNormColumnDefs": {
+    "TuneNormColumnDefs": {
+      "Vendor": "Link to Vendor custom field descriptions"
+    }
+  },
   "Libraries/Regression/Regression": {
     "RegressionStatisticsParams": {
       "PredictionIntervalNeeded": "Calculate confidence interval"
+    }
+  },
+  "Viewers/ROC/ROCView": {
+    "ROCView": {
+      "NBins": "Number of bins"
     }
   },
   "Viewers/Statistics/StatView": {

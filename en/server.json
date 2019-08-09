@@ -280,10 +280,10 @@
     "ErrSamplingMethod": "No sampling method specified"
   },
   "Libraries/DBConnection/UniDAC/AccessODBCUniDACDBConnectionVendor": {
-    "VendorDesc": "MS Access (ODBC) DBMS "
+    "VendorDesc": "MS Access (ODBC) DBMS"
   },
   "Libraries/DBConnection/UniDAC/FBUniDACDBConnectionVendor": {
-    "VendorDesc": "Firebird DBMS "
+    "VendorDesc": "Firebird DBMS"
   },
   "Libraries/DBConnection/UniDAC/IBUniDACDBConnectionVendor": {
     "VendorDesc": "Interbase DBMS"

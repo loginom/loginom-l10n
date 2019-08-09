@@ -16,7 +16,7 @@
   "Common/CalcFunctions/FunctionCollection": {
     "ErrDuplicateFunction": "%s named function has already been registered",
     "ErrEvenArgs": "%s function can accept only even number of arguments",
-    "ErrInvalidFunctionName": "Invalid %s function name ",
+    "ErrInvalidFunctionName": "Invalid %s function name",
     "ErrNoFunc": "No reference to function",
     "ErrOddArgs": "%s function can accept only odd number of arguments",
     "ErrTooFewArgs": "Too few arguments transferred to %s function (%d whereas %d is minimum value)",
@@ -117,7 +117,7 @@
   },
   "components/autocorrelation/AutoCorrelationVendor": {
     "VendorCaption": "Autocorrelation",
-    "VendorDesc": "Calculate autocorrelation function values "
+    "VendorDesc": "Calculate autocorrelation function values"
   },
   "components/binning/Binning": {
     "PostfixSDBins": "SD"
@@ -167,8 +167,8 @@
     "MinimalClassQuota": "Minimum class quota"
   },
   "components/coarseclasses/CoarseClassesEngine": {
-    "ClassMarkPostfix": "Caption",
-    "ClassNumPostfix": "Class number",
+    "ClassMarkPostfix": " Caption",
+    "ClassNumPostfix": " Class number",
     "InputRangesDataSource": "External quantization ranges"
   },
   "components/coarseclasses/CoarseClassesMapper": {

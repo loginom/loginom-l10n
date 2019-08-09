@@ -1767,7 +1767,7 @@
     },
     "MDFilterConditionType": {
       "$Caption": "Names of Comparison Operators",
-      "In": "listed",
+      "In": " listed ",
       "FuzzyLogicEqual": " ~ "
     },
     "MetaDataNodeType": {

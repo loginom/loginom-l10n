@@ -537,7 +537,6 @@
     },
     "LoopKind": {
       "$Caption": "Loop Type",
-      "For": "Target iterations",
       "Repeat": "Postcondition loop",
       "GroupProcessing": "Group processing"
     }
@@ -1691,7 +1690,7 @@
       "PrecisionRecall": "PR curve",
       "OverallRates": "Basic rates",
       "Precision": "Precision chart",
-      "Event": "Recognized events, %",
+      "Event": "% captured response",
       "Lift": "Lift chart",
       "Response": "Response chart",
       "Gain": "Gain chart"

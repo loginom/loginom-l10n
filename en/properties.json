@@ -117,7 +117,10 @@
   },
   "Common/WSDL/WSDLRequestDebug": {
     "WSDLRequestDebug": {
-      "DumpRequest": "Save Request Text to Disk"
+      "DumpRequest": "Save Request Text to Disk",
+      "DumpRequestFolder": "Disc folder to save requests",
+      "ResponseStub": "File name applied as response",
+      "RootFileStorage": "Root file storage"
     }
   },
   "Common/XML/XMLSchemaToDataSourceMapping": {
@@ -137,6 +140,14 @@
       "DefaultValue": "Default value",
       "DisplayName": "Local node name",
       "FixedValue": "Fixed value",
+      "NamespaceURI": "URI namespaces",
+      "NodeType": "Node type",
+      "ParentNode": "Parent node",
+      "Selectable": "Selectable",
+      "Selected": "Selected by user to import",
+      "SubNodes": "Subnodes",
+      "SubstitutionHead": "SubstitutionGroup replaced element",
+      "ValueRequired": "Value required",
       "ValueType": "Value type"
     },
     "XMLSchemaTreeNodes": {
@@ -144,16 +155,32 @@
     }
   },
   "components/assnrules": {
+    "AssnRulesDefExtension": {
+      "Selected": "Column selection flag"
+    },
     "AssnRulesEngine": {
       "Params": "Algorithm parameters"
+    },
+    "AssnRulesParams": {
+      "ExcludeLargeSupportItems": "Exclude the items with the support exceeding the maximum one",
+      "ExcludeSingleItems": "Exclude single sets",
+      "MaxSupport": "Maximum support, %",
+      "MinSupport": "Minimum support, %"
     }
   },
   "components/binning": {
+    "BinningEngine": {
+      "BinningPreview": "Helper class for visual alignment of quantization methods"
+    },
+    "BinningExtermalBinsMethodSettings": {
+      "ExternalBinsID": "Identifier"
+    },
     "BinningLinearBins": {
       "LowerLimitOpen": "Lower range bound open",
       "UpperLimitOpen": "Upper range bound open"
     },
     "BinningLinearContinuousMethodSettings": {
+      "LowerLimit": "Lower bound",
       "UpperLimit": "Upper bound"
     },
     "BinningTileDateTimeMethodSettings": {
@@ -234,6 +261,10 @@
   "components/em": {
     "EMEngine": {
       "Params": "Algorithm parameters"
+    },
+    "EMParams": {
+      "IndependentVariables": "Independent variables",
+      "MedianModification": "Median modification"
     }
   },
   "components/filterdata": {
@@ -285,6 +316,13 @@
   "components/sonn": {
     "SONNEngine": {
       "Params": "Algorithm parameters"
+    }
+  },
+  "components/ungroupdata": {
+    "UngroupDataEngine": {
+      "Links": "Links",
+      "SeasonalityPeriod": "Seasonality period",
+      "UngroupMethod": "Ungrouping method"
     }
   },
   "exports/textfile": {
@@ -344,8 +382,27 @@
     }
   },
   "Libraries/bgdbrtl/DB": {
+    "Database": {
+      "DatabasePath": "Connection string",
+      "ObjectLeftQuote": "Left quote",
+      "ObjectRightQuote": "Right quote",
+      "ServerType": "Type of database server"
+    },
     "DatabaseConfigurator": {
-      "Direct": "Do not use DBMS client"
+      "ConfigurableOptions": "Configurable options",
+      "DatabasePath": "Connection string",
+      "Direct": "Do not use DBMS client",
+      "ObjectQuotes": "Configure quotes",
+      "Password": "Password",
+      "SavePassword": "Save password",
+      "SystemTables": "Show system tables",
+      "UserName": "Username"
+    }
+  },
+  "Libraries/bgdbrtl/SQLiteUniDACDB": {
+    "SQLiteFunctionDefs": {
+      "CaseChangeUnicode": "lower, upper for UNICODE",
+      "LikeMode": "LIKE operation mode"
     }
   },
   "Libraries/bgrtl/DataSet": {

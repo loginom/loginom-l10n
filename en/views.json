@@ -218,6 +218,9 @@
     "colPublishedPackages": {
       "text": "Published packages"
     },
+    "frmConfigurePublishedPackagesForm": {
+      "title": "Publish Packages"
+    },
     "fsNamespace": {
       "title": "Namespace"
     },
@@ -3877,7 +3880,7 @@
       "text": "Sets"
     },
     "rbEvent": {
-      "boxLabel": "Recognized events, %"
+      "boxLabel": "% captured response"
     },
     "rbGain": {
       "boxLabel": "Gain chart"

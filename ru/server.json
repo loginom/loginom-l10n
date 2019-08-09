@@ -215,7 +215,7 @@
     "ErrNoParentElement": "У элемента \"%s\" отсутствует родительский элемент",
     "ErrSiblingAttributionFailed": "Для элемента \"%s\" невозможно определить соответствующий схеме сиблинг \"%s{%s}\"",
     "ErrSubElementAttributionFailed": "Для элемента \"%s\" невозможно определить соответствующий схеме подэлемент \"%s{%s}\"",
-    "ErrXMLParse": "Ошибка при разборе XML:\n\tСтрока: %d\n\tПозиция: %d\n\tКод ошибки: %d\n\tСообщение:\n\t%s",
+    "ErrXMLParse": "Ошибка при разборе XML:\n Строка: %d\n Позиция: %d\n Код ошибки: %d\n Сообщение:\n %s",
     "ErrXMLValidate": "Ошибка валидации XML:\n\tСтрока: %d\n\tПозиция: %d\n\tКод ошибки: %d\n\tСообщение:\n\t%s"
   },
   "Common/XML/Processor/XMLRequestProcessor": {

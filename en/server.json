@@ -14,11 +14,20 @@
     "ErrFuncDescNotFound": "Description of \"%s\" function not found"
   },
   "Common/CalcFunctions/FunctionCollection": {
-    "ErrDuplicateFunction": "%s named function has already been registered"
+    "ErrDuplicateFunction": "%s named function has already been registered",
+    "ErrEvenArgs": "%s function can accept only even number of arguments",
+    "ErrInvalidFunctionName": "Invalid %s function name ",
+    "ErrNoFunc": "No reference to function",
+    "ErrOddArgs": "%s function can accept only odd number of arguments",
+    "ErrTooFewArgs": "Too few arguments transferred to %s function (%d whereas %d is minimum value)",
+    "ErrTooManyArgs": "Many arguments transferred to %s function (%d whereas %d is maximum value)"
   },
   "Common/CertList/CertList_Win": {
     "AddressBook": "Other users",
+    "CA": "Intermediate certification centers",
     "My": "Personal",
+    "Root": "Trusted root certification centers",
+    "SmartCardRoot": "Trusted smart card root certificates",
     "TrustedDevices": "Trusted devices",
     "TrustedPeople": "Trusted people",
     "TrustedPublisher": "Trusted publishers",
@@ -29,6 +38,8 @@
     "ArgRow": "Row index",
     "ArgValue": "Value",
     "ColumnCount": "Column count",
+    "ColumnGet": "Get column cell value",
+    "ColumnIsNull": "Check if the value is set in the column cell",
     "Columns": "Columns",
     "Count": "Count",
     "DataKind": "Sort of data",
@@ -36,13 +47,23 @@
     "DefaultUsageType": "Default usage type",
     "DisplayName": "Caption",
     "Index": "Index",
+    "InputTable": "Input data source",
+    "InputTables": "Array of input data sources",
     "InputVariables": "Input variables",
     "Items": "Items",
     "Name": "Name",
     "OutputTable": "Output table",
     "RowCount": "Row count",
     "TableAppend": "Add row",
+    "TableGet": "Get table cell value",
+    "TableIsNull": "Check if the value is set in the table cell",
+    "TableSet": "Set value to the added row cell",
     "Value": "Value"
+  },
+  "Common/CodeExec/CodeAPIDataSetExceptions": {
+    "ColumnByNameNotFound": "\"%s\" named column not found",
+    "ErrColOutOfRange": "%d column numbe is out of [% d; % d] range",
+    "ErrNoRowForEditing": "Failed to change value because there is no editable row"
   },
   "Common/WSDL/Processor/MIMECommon": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"
@@ -55,8 +76,18 @@
     "FailedRequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz \"_failed\"",
     "RequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz"
   },
+  "Common/WSDL/WSDL_MSXML": {
+    "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema attached to the WSDL file (%d row, %d position):\nError code: %d\nReason: %s",
+    "ErrWsdlImportNoAccess": "No access to the imported %s document"
+  },
   "Common/XML/Processor/XMLExportImpl": {
+    "ColumnName": "Data column name",
+    "ErrColumnMappedToNonExistentNode": "\"%s\" input set column has been assigned for nonexistent \"%s\" XSD schema node",
     "NodePath": "Tree node path"
+  },
+  "Common/XML/Processor/XMLImportImpl": {
+    "ErrXMLParse": "Error parsing XML:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s",
+    "ErrXMLValidate": "XML validation error:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s"
   },
   "Common/XML/Processor/XMLRequestProcessor": {
     "ErrXMLExportNoContext": "No export context specified"
@@ -96,6 +127,9 @@
     "ErrSkoAvgFmt": "Failed to get SD/mean for %s field",
     "ErrZeroDivForIntervalsFmt": "%s field with zero variance, only 1 bin will be created"
   },
+  "components/binning/BinningValue": {
+    "ErrContinuousType": "Data type does not relate to continuous values"
+  },
   "components/binning/BinningVendor": {
     "VendorCaption": "Quantization",
     "VendorDesc": "User data quantization"
@@ -125,6 +159,20 @@
   },
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantLoadBackup": "Failed to restore binning"
+  },
+  "components/coarseclasses/CoarseClassesConfig": {
+    "ErrNotAllowedInputBinningKind": "The input field does not support the new assignment in the external partition (data type restriction)",
+    "ErrRequiredContinuousOrDiscrete": "Continuous or discrete data type is required",
+    "MaxClassCount": "Required classes count",
+    "MinimalClassQuota": "Minimum class quota"
+  },
+  "components/coarseclasses/CoarseClassesEngine": {
+    "ClassMarkPostfix": "Caption",
+    "ClassNumPostfix": "Class number",
+    "InputRangesDataSource": "External quantization ranges"
+  },
+  "components/coarseclasses/CoarseClassesMapper": {
+    "ErrNotAllowedDataType": "Column data type %s not supported"
   },
   "components/coarseclasses/CoarseClassesVendor": {
     "VendorCaption": "Coarse Classes",
@@ -720,7 +768,11 @@
     "VendorDesc": "Analysis of logistic regression model"
   },
   "Viewers/ROC/ROCViewCharts": {
+    "EventsChartTitle": "% captured response chart",
     "EventsChartXLabel": "Range",
+    "EventsChartYLabel": "Captured response, %",
+    "EventsCumChartTitle": "% captured response chart (cumulative)",
+    "EventsCumChartYLabel": "Captured response, %",
     "LiftChartXLabel": "Range",
     "OverallRatesTitle": "Basic Rates"
   },

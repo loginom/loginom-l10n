@@ -1680,7 +1680,7 @@
   },
   "Viewers/ROC/ROCViewTypes": {
     "ROCValueRepresentation": {
-      "$Caption": "Cuttoff Threshold",
+      "$Caption": "Cuttoff",
       "Absolute": "Absolute",
       "Percent": "Percent"
     },
@@ -1705,7 +1705,7 @@
       "Gain": "Gain chart"
     },
     "ROCViewCutoffType": {
-      "$Caption": "Cutoff Point",
+      "$Caption": "Cutoff",
       "Current": "From handler",
       "User": "Set",
       "Balance": "Balance (TPR = TNR)",

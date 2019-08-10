@@ -22,12 +22,19 @@
     "ErrTooFewArgs": "Too few arguments transferred to %s function (%d whereas %d is minimum value)",
     "ErrTooManyArgs": "Many arguments transferred to %s function (%d whereas %d is maximum value)"
   },
+  "Common/CertList/CertList": {
+    "ErrCertListImplementationNotRegistered": "Certificate list implementation with %s identifier not registered",
+    "ErrCertListImplementationsNotRegistered": "Certificate list implementation not registered"
+  },
   "Common/CertList/CertList_Win": {
     "AddressBook": "Other users",
-    "CA": "Intermediate certification centers",
+    "AuthRoot": "External root certification authorities",
+    "CA": "Intermediate certification authorities",
+    "Disallowed": "Disallowed certificates",
     "My": "Personal",
-    "Root": "Trusted root certification centers",
+    "Root": "Trusted root certification authorities",
     "SmartCardRoot": "Trusted smart card root certificates",
+    "Trust": "Trust relationship in the enterprise",
     "TrustedDevices": "Trusted devices",
     "TrustedPeople": "Trusted people",
     "TrustedPublisher": "Trusted publishers",
@@ -63,10 +70,36 @@
   "Common/CodeExec/CodeAPIDataSetExceptions": {
     "ColumnByNameNotFound": "\"%s\" named column not found",
     "ErrColOutOfRange": "%d column number is out of [%d; %d] range",
-    "ErrNoRowForEditing": "Failed to change value because there is no editable row"
+    "ErrNoRowForEditing": "Failed to change value because there is no editable row",
+    "ErrRowOutOfRange": "%d row number is out of [%d; %d] range"
+  },
+  "Common/CodeExec/CodeAPIDataSetProxies": {
+    "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of [%d; %d] range",
+    "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table ",
+    "ErrInvalidDataSourceColumnIndex": "The input table column index %d is out of [%d; %d] range",
+    "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table №%d "
+  },
+  "Common/HTTP/CachedHttpStream": {
+    "ErrCachedHttpStreamClassAlreadyAssigned": "Cached HTTP stream class already registered",
+    "ErrCachedHttpStreamClassUnassigned": "Cached HTTP stream class not registered"
+  },
+  "Common/HTTP/CachedHttpStream_Win": {
+    "ErrHttpResponseExRequired": "To create %s class instance support by IHTTPResponseEx interface HTTP client response is required",
+    "ErrHttpResponseWriteDisallowed": "Writing to HTTP response stream disallowed",
+    "ErrInconsistentContentLength": "Actual received %d data size inconsistent with Content-Length %d header value",
+    "ErrReadStreamBufferLength": "The provided %d buffer size is insufficient to read %d bytes"
+  },
+  "Common/HTTP/HTTPNetRequest": {
+    "ErrHTTPNetRequest": "Request to \"%s\" URL failed"
+  },
+  "Common/WSDL/HTTPHeaders": {
+    "ErrInvalidHeaderName": "Invalid %s header name"
   },
   "Common/WSDL/Processor/MIMECommon": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s"
+  },
+  "Common/WSDL/Processor/MIMEExportImpl": {
+    "ErrCantExportPart": "Failed to export MIME %s content as an alternative has already been exported"
   },
   "Common/WSDL/Processor/MIMEImportImpl": {
     "ErrCodePageNotSupported": "\"%s\" codepage not supported"
@@ -74,7 +107,13 @@
   "Common/WSDL/Processor/WSDLRequestProcessor": {
     "ErrXMLExportNoContext": "No export context specified",
     "FailedRequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz \"_failed\"",
-    "RequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz"
+    "RequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz",
+    "RequestFileNameFormatEx": "%s_%d",
+    "RequestFileNameFormatFull": "%s.%s"
+  },
+  "Common/WSDL/SOAP": {
+    "ErrMessageHasNoBody": "Message has no body",
+    "ErrNonSOAPMessage": "Non SOAP message"
   },
   "Common/WSDL/WSDL_MSXML": {
     "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema attached to the WSDL file (%d row, %d position):\nError code: %d\nReason: %s",
@@ -95,6 +134,29 @@
   "Common/XML/Processor/XMLRequests": {
     "ErrExportContextNotSet": "No export context specified",
     "ErrExportStubNotSet": "Export destination not specified"
+  },
+  "Common/XML/Processor/XMLSchemaTree": {
+    "Enclosed_All": "All #",
+    "Enclosed_Choice": "Choice #",
+    "Enclosed_Sequence": "Sequence #",
+    "ErrAttributeNoRequiredValue": "No required value for %s attribute ",
+    "ErrElementNoRequiredValue": "No required value for %s element",
+    "ErrEmptyNodeName": "Tree node name cannot be empty",
+    "ErrInvalidPath": "Invalid node path: %s",
+    "ErrNodeLimitExceeded": "Maximum allowable number of (%d) tree nodes exceeded",
+    "ErrNodeSelectionRegisteringAlreadyOn": "Node selection registering already on",
+    "ErrNodeSelectionRegisteringIsOff": "Node selection registering off",
+    "ErrNoneValueAttempt": "Attempt to set or get a value for the node with dtNone data type",
+    "ErrParentPathOnTreeRoot": "Attempt to get the parent node path for the tree root node",
+    "ErrRootElementPathOnTreeRoot": "Attempt to get the schema root element path for the tree root node",
+    "ErrSetAsStringDatetimeAttempt": "Attempt to set the SetAsString based value for the \"Date/time\" data type node",
+    "ErrSetAsStringVariantAttempt": "Attempt to set the SetAsString based value for the \"Variable\" data type node",
+    "ErrSetDateTimeAsStringTypeMismatch": "Attempt to set the SetDateTimeAsString based value for the node with the data type different from the \"Date/time\" one",
+    "ErrSetVariantAsStringTypeMismatch": "Attempt to set the SetDateTimeAsString based value for the node with the data type different from the \"Variable\" one",
+    "ErrTreeSelectionUpdate": "EndUpdateSelection method called without BeginUpdateSelection method",
+    "ErrValueConversionImpossible": "Failed to convert \"%s\" string to \"%s\" value",
+    "ErrValueIntConversionImpossible": "Failed to convert \"%s\" string to \"%s\" number: %s",
+    "Group_Idx": "(%s) index"
   },
   "Common/XML/XMLDocument": {
     "ErrOnlyOneRootElementAllowed": "Document root element already exists"
@@ -120,6 +182,7 @@
     "VendorDesc": "Calculate autocorrelation function values"
   },
   "components/binning/Binning": {
+    "ErrNoColumnsForProcessing": "No columns for processing specified",
     "PostfixSDBins": "SD"
   },
   "components/binning/BinningMethodsImplementations": {
@@ -127,30 +190,85 @@
     "ErrSkoAvgFmt": "Failed to get SD/mean for %s field",
     "ErrZeroDivForIntervalsFmt": "%s field with zero variance, only 1 bin will be created"
   },
+  "components/binning/BinningMethodsImplementationTile": {
+    "SortProcessFmt": "Sort %s field "
+  },
+  "components/binning/BinningUtils": {
+    "ErrInvalidTypecast": "Invalid typecasts"
+  },
   "components/binning/BinningValue": {
     "ErrContinuousType": "Data type does not relate to continuous values"
   },
   "components/binning/BinningVendor": {
+    "OutputRanges": "Quantization ranges",
     "VendorCaption": "Quantization",
     "VendorDesc": "User data quantization"
+  },
+  "components/calcdata/CalcData": {
+    "ErrExceededRecursiveCalls": "Maximum number of (%d) recursive calls of Data function in \"%s\" expression exceeded.\nTo solve this problem you must enable Caching.",
+    "ErrExprIsStringType": "\"%s\" expression of string type",
+    "InputVariables": "Input variables"
   },
   "components/calcdata/CalcDataVendor": {
     "VendorCaption": "Calculator",
     "VendorDesc": "Create calculated fields"
+  },
+  "components/calcdata/ExprColumns": {
+    "ColumnMetaDesc": "Column",
+    "DataTypeDesc": "Data type",
+    "DefaultExprDisplayName": "Expression",
+    "DescriptionDesc": "Description",
+    "ExpressionDesc": "Expression",
+    "IntermediateDesc": "Intermediate expression",
+    "ItemDisplayNamePrefix": "Expression"
+  },
+  "components/calcdata/FloatCLineParser": {
+    "ErrInvalidExpression": "Invalid expression: \"%s\"",
+    "ErrQuote": "Unclosed string intercept in %d string "
+  },
+  "components/calcvariables/CalcVariables": {
+    "ErrExprIsStringType": "\"%s\" expression of string type"
   },
   "components/calcvariables/CalcVariablesVendor": {
     "VendorCaption": "Calculator (Variables)",
     "VendorDesc": "Creating calculated variables"
   },
   "components/clope/ClopeEngine": {
-    "ClopeTrainNotify": "Cluster search"
+    "ClopeApplyNotify": "Model application",
+    "ClopeTrainNotify": "Cluster search",
+    "ColumnNameCluster": "Cluster number",
+    "ColumnNameN": "N",
+    "ColumnNameS": "S",
+    "ColumnNameTransaction": "Transaction identifier",
+    "ColumnNameW": "W",
+    "ErrNonDiscreteItemColumn": "Transaction items must relate to the discrete type",
+    "ErrNoTransactionColumn": "No transaction identifier column in the input data",
+    "ErrTransactionTypeNotMatched": "Transaction identifier types do not match",
+    "OutDataSetClusters": "Clustering",
+    "OutDataSetParameters": "Cluster parameters"
   },
   "components/clope/CLOPEVendor": {
     "VendorCaption": "Transaction Clustering",
     "VendorDesc": "CLOPE algorithm transaction clustering"
   },
+  "components/clope/TransactionDataSourceSet": {
+    "DataSourceSupplColumnName": "Field name",
+    "DataSourceSupplItem": "Supplementary data source field",
+    "ElementValuesSuppl": "Unique values suppl.",
+    "EncodeArray": "Item index"
+  },
+  "components/clusterization/Clusterization": {
+    "ErrNoTrainData": "No train data"
+  },
   "components/clusterization/ClusterizationEngine": {
     "ClusterizationTrainNotify": "Cluster search",
+    "ColumnNameCluster": "Cluster number",
+    "ColumnNameUniqueCoordSuffix": "|Coordinate",
+    "ColumnNameUniqueValueSuffix": "|Value",
+    "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
+    "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "OutDataSetCenters": "Cluster centers",
+    "OutDataSetClusters": "Clustering",
     "PrepareDataNotify": "Prepare data"
   },
   "components/clusterization/ClusterizationVendor": {
@@ -182,35 +300,78 @@
     "VendorCaption": "Column Сonvolution",
     "VendorDesc": "Create flat table from pivot table"
   },
+  "components/coluniondata/ColUnionData": {
+    "MainDataSource": "Main table"
+  },
   "components/coluniondata/ColUnionDataVendor": {
     "VendorCaption": "Connection",
     "VendorDescription": "Join several data sets by vertical gluing"
+  },
+  "components/condition/Condition": {
+    "AggregateCountColumnDisplayName": "*",
+    "ConditionBranchMetaDesc": "Branch"
+  },
+  "components/condition/ConditionComponent": {
+    "ElseBranchDesc": "Otherwise",
+    "OutputSocketDisplayNameTemplate": "%s - %s"
   },
   "components/condition/ConditionComponentVendor": {
     "VendorCaption": "Condition",
     "VendorDesc": "Conditional execution of model branch"
   },
+  "components/corranalysis/CorrAnalysis": {
+    "ColumnSet1": "Field 1",
+    "ColumnSet2": "Field 2",
+    "DisplayName": "Caption",
+    "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "Name": "Name"
+  },
   "components/corranalysis/CorrAnalysisVendor": {
     "VendorCaption": "Correlation Analysis",
     "VendorDesc": "Calculation of correlation coefficients"
+  },
+  "components/crosstab/CrossTab": {
+    "CountCaseDisplayName": "Count",
+    "CrossTabProcess": "Build crosstab"
   },
   "components/crosstab/CrossTabVendor": {
     "VendorCaption": "Cross Table",
     "VendorDesc": "Create flat table from pivot table"
   },
+  "components/datatovariables/DataToVariablesEngine": {
+    "ErrNoColumnsForProcessing": "No columns for processing specified"
+  },
   "components/datatovariables/DataToVariablesVendor": {
     "VendorCaption": "Table into Variables",
     "VendorDesc": "Aggregate data into variables"
   },
+  "components/datatoxml/DataToXML": {
+    "ErrXMLExport": "Error generating XML:\n Error code: %d\n %s",
+    "IDName": "ID",
+    "WriteXMLFileProcessCaption": "XML document formation",
+    "XMLName": "XML",
+    "XSDConnection": "Connect to XSD schema source"
+  },
   "components/datatoxml/DataToXMLVendor": {
     "VendorCaption": "XML Formation",
     "VendorDesc": "XML document formation according to given XSD schema"
+  },
+  "components/datereform/DateReform": {
+    "ISO8601": "ISO8601"
   },
   "components/datereform/DateReformVendor": {
     "VendorCaption": "Date and Time",
     "VendorDescription": "Reform date/time"
   },
   "components/em/EMEngine": {
+    "ColumnNameCluster": "Cluster number",
+    "ColumnNameProbability": "Ownership probability",
+    "ColumnNameUniqueCoordSuffix": "|Coordinate",
+    "ColumnNameUniqueValueSuffix": "|Value",
+    "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
+    "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "OutDataSetCenters": "Cluster centers",
+    "OutDataSetClusters": "Clustering",
     "PrepareDataNotify": "Prepare data",
     "TrainNotify": "Cluster search"
   },
@@ -222,28 +383,47 @@
     "VendorCaption": "Enrich Data",
     "VendorDescription": "Enrich data using guides"
   },
+  "components/execcmd/ExecCmd": {
+    "ErrMsgDisplayName": "Error message",
+    "ResultDisplayName": "Execution result"
+  },
   "components/execcmd/ExecCmdVendor": {
     "VendorCaption": "Сommand Execution",
     "VendorDesc": "External command execution"
   },
   "components/execnode/ExecNodeComponent": {
     "ErrNodeLocked": "\"%s\" node is blocked",
+    "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
-    "ErrReferencedNodeNotFound": "Reference node not found"
+    "ErrReferencedNodeNotFound": "Reference node not found",
+    "ErrReferencedNodeNotSpecified": "No reference to node specified"
   },
   "components/execnode/ExecNodeComponentVendor": {
+    "InputBaseNode": "Base node",
     "VendorCaption": "Node Execution",
     "VendorDesc": "Apply model to new data"
+  },
+  "components/extractxml/ExtractXML": {
+    "DocIDColumn": "Document ID",
+    "ErrExtractXML": "Error extracting XML from %d row of the input set:\n Error code: %d\n Message: %s",
+    "ErrNoInputDataSource": "No input data source connected",
+    "ErrorCodeColumn": "Completion code",
+    "InputDataSource": "Input data source"
   },
   "components/extractxml/ExtractXMLVendor": {
     "VendorCaption": "XML Extraction",
     "VendorDescription": "Extracts XML document from the string field of the data set and imports it into the output data set according to the specified schema"
+  },
+  "components/factoranalysis/FactorAnalysis": {
+    "ErrNoColumnsForProcessing": "No columns for processing specified"
   },
   "components/factoranalysis/FactorAnalysisVendor": {
     "VendorCaption": "Factor Analysis",
     "VendorDesc": "Identification of significant factors"
   },
   "components/filterdata/FilterColumns": {
+    "ErrUnknownDataType": "No data type specified",
+    "FirstLastDateFmt": "%s %s %s from %s",
     "fld0and5to20DayPeriodName": "days",
     "fld0and5to20MonthPeriodName": "months",
     "fld0and5to20QuarterPeriodName": "quarters",
@@ -294,15 +474,25 @@
     "VendorDesc": "Fill in missing data"
   },
   "components/filtration/ELimOutlier": {
-    "ErrOutDataSetIndexOutOfRange": "The output set index %d is out of range [%d; %d]"
+    "ErrOutDataSetIndexOutOfRange": "The output set index %d is out of [%d; %d] range",
+    "OutData": "Output set",
+    "OutDataExtr": "Extremes",
+    "OutDataOut": "Outliers",
+    "QualityEngine": "Data quality"
   },
   "components/filtration/ElimOutlierVendor": {
     "VendorCaption": "Eliminate Outliers",
     "VendorDesc": "Eliminate outliers and extremes"
   },
+  "components/forecast/ARIMAXModel": {
+    "InterceptDisplayName": "Intercept"
+  },
   "components/forecast/ARIMAXParams": {
     "ConfidenceInterval": "Confidence interval",
     "ErrNoStructuralElements": "No structural model element specified"
+  },
+  "components/forecast/ARIMAXTeacher": {
+    "ErrNoTrainData": "No train data"
   },
   "components/forecast/ARIMAXTrainingResults": {
     "ErrParentNodeNotLoaded": "Parent node #%d not found in configuration",
@@ -322,6 +512,8 @@
     "ForecastModelCoefficients": "Model coefficients",
     "ForecastOutputDataSet": "Model output",
     "LagColumn": "Lag",
+    "ParameterNameColumn": "Parameter",
+    "PValueColumn": "P-value",
     "R2": "Determination coefficient",
     "TStatColumn": "T-statistics"
   },
@@ -329,9 +521,20 @@
     "VendorCaption": "ARIMAX",
     "VendorDesc": "Time series forecast using ARIMA Model able to include external factors (ARIMAX)"
   },
+  "components/groupdata/GroupData": {
+    "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "FindMedianNotify": "Median calculation",
+    "GroupDataNotify": "Group data",
+    "SortNotify": "Sort result"
+  },
   "components/groupdata/GroupDataVendor": {
     "VendorCaption": "Grouping",
     "VendorDesc": "Group data"
+  },
+  "components/javascript/JavaScriptEngine": {
+    "ErrModuleFileTooBig": "%s module file cannot be loaded: the permissible file size limit is exceeded (%d > %d bytes)",
+    "InputDataSource": "Input data source",
+    "OutputDataSet": "Output data set"
   },
   "components/javascript/JavaScriptVendor": {
     "VendorCaption": "JavaScript",
@@ -342,35 +545,77 @@
     "VendorDescription": "Join two data sets"
   },
   "components/linregression/LinRegressionEngine": {
+    "ColumnUniqueValues": "Unique values",
+    "Intercept": "<Intercept0>",
+    "ModelPValue": "Model P value",
     "RegressionTStatNamePostfix": "|T-statistics"
   },
   "components/linregression/LinRegressionTasks": {
-    "RegPrepareData": "Preparing data before training"
+    "RegPrepareData": "Preparing data before training",
+    "ValidationProcess": "Model validation"
   },
   "components/linregression/LinRegressionVendor": {
     "VendorCaption": "Linear Regression",
     "VendorDesc": "Linear regression"
   },
+  "components/logregression/LogRegressionEngine": {
+    "ActualEvent": "Event|Fact",
+    "ColumnUniqueValues": "Unique values",
+    "ErrNotImplemented": "Functionality not implemented",
+    "Intercept": "<Intercept0>",
+    "ModelPValue": "Model P value",
+    "OutputUniqueValuesNotCalculated": "Unique values of \"%s\" output column not calculated",
+    "TrainThreshold": "Model train cuttoff"
+  },
   "components/logregression/LogRegressionTasks": {
-    "RegPrepareData": "Preparing data before training"
+    "RegPrepareData": "Preparing data before training",
+    "ValidationProcess": "Model validation"
   },
   "components/logregression/LogRegressionVendor": {
     "VendorCaption": "Logistic Regression",
     "VendorDesc": "Logistic regression"
   },
   "components/loop/LoopComponent": {
-    "ErrGroupDataSourceSocketNotSpecified": "No socket containing columns to group specified"
+    "ErrGroupDataSourceSocketNotSpecified": "No socket containing columns to group specified",
+    "ErrIterationCountOverflow": "Maximum allowable number of iterations exceeded: %d",
+    "ErrSocketNotConfigured": "Socket not configured",
+    "IterationErrorMessageFieldDisplayName": "Error message"
   },
   "components/loop/LoopComponentVendor": {
     "VendorCaption": "Loop",
     "VendorDesc": "Multiple model execution based on new data"
   },
   "components/neuralnet/NeuralNet": {
+    "ErrInvalidNeuronKind": "Invalid neuron kind: %d",
+    "ErrNoTrainData": "No train data",
     "PrepareProcessCaption": "Prepare Data"
+  },
+  "components/neuralnet/NeuralNetEngine": {
+    "GiniIndexColumn": "Gini index",
+    "GTest_Multiple": "%s|%s|G-test",
+    "GTest_Single": "%s|G-test"
+  },
+  "components/neuralnet/NeuralNetVendor": {
+    "RegressionVendorCaption": "Neural Network (Regression)"
+  },
+  "components/partition/PartitionEngine": {
+    "OutDataSetCommon": "Common data set",
+    "OutDataSetTeach": "Train output set",
+    "OutDataSetTest": "Test output set",
+    "PartitionDisplayName": "Test set"
   },
   "components/partition/PartitionVendor": {
     "VendorCaption": "Partition into Sets",
     "VendorDesc": "Formation of test and training sets"
+  },
+  "components/quality/Quality": {
+    "ErrOutDataSetIndexOutOfRange": "The output set index %d is out of [%d; %d] range",
+    "GenerationOutputSets": "Output sets generation",
+    "OutData": "Output set",
+    "OutDataExtr": "Extremes",
+    "OutDataNull": "Null data",
+    "OutDataOut": "Outliers",
+    "SummaryTable": "Summary table"
   },
   "components/quality/QualityVendor": {
     "VendorCaption": "Data Quality",
@@ -381,15 +626,25 @@
     "VendorDesc": "Change field parameters"
   },
   "components/replace/ReplaceColumns": {
-    "InputReplaceDataSource": "Substitution table"
+    "InputReplaceDataSource": "Substitution table",
+    "PrecisionPostfix": "Deviation",
+    "ReplacedPostfix": " Replaced",
+    "ReplacePostfix": "Replace"
   },
   "components/replace/ReplaceColumnsVendor": {
     "VendorCaption": "Replace",
     "VendorDesc": "Replace field values"
   },
+  "components/replace/ReplaceTable": {
+    "ErrRegExValue": "Invalid regular expression specified"
+  },
   "components/replacevariables/ReplaceVariablesVendor": {
     "VendorCaption": "Replace (Variables)",
     "VendorDesc": "Replace variable values"
+  },
+  "components/restclient/RESTClient": {
+    "ErrorCodeColumn": "Completion code",
+    "RequestIDOutputColumn": "Request identifier"
   },
   "components/restclient/RESTClientVendor": {
     "VendorCaption": "REST Service Call",
@@ -403,11 +658,19 @@
     "VendorCaption": "Lag",
     "VendorDescription": "Transpose one or several data columns using lag"
   },
+  "components/smoothing/SmoothingEngine": {
+    "ErrNoColumnsForProcessing": "No columns for processing specified"
+  },
   "components/smoothing/SmoothingVendor": {
     "VendorCaption": "Smoothing",
     "VendorDesc": "Data smoothing with wavelets"
   },
   "components/sonn/SONNEngine": {
+    "ColumnNameCluster": "Cluster number",
+    "ColumnNameUniqueValueSuffix": "|Value",
+    "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
+    "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "OutDataSetClusters": "Clustering",
     "PrepareDataNotify": "Prepare data"
   },
   "components/sonn/SONNVendor": {
@@ -418,9 +681,19 @@
     "VendorCaption": "Sort",
     "VendorDesc": "Data sorting"
   },
+  "components/ungroupdata/UngroupData": {
+    "GroupColumnAVLTreeBuilding": "Group initial data",
+    "OutputSIDisplayName": "Seasonal index value",
+    "OutputTrendDisplayName": "Trend value",
+    "OutputValueDisplayName": "Ungrouped value",
+    "QuotaAVLTreeBuilding": "Group reference data for quota calculation"
+  },
   "components/ungroupdata/UngroupDataVendor": {
     "VendorCaption": "Ungroup",
     "VendorDesc": "Ungroup data"
+  },
+  "components/uniondata/UnionData": {
+    "MainDataSource": "Main table"
   },
   "components/uniondata/UnionDataVendor": {
     "VendorCaption": "Union",
@@ -430,16 +703,25 @@
     "VendorCaption": "Union (Variables)",
     "VendorDesc": "Combine several sets of variables into one"
   },
+  "components/variablestodata/VariablesToDataModelComponentEngine": {
+    "InputVariables": "Input variables",
+    "OutputDataSource": "Output data set"
+  },
   "components/variablestodata/VariablesToDataVendor": {
     "VendorCaption": "Variables to Table",
     "VendorDesc": "Create data table from variables set"
+  },
+  "components/wsdlclient/WSDLClient": {
+    "ErrorCodeColumn": "Completion code",
+    "RequestIDOutputColumn": "Request identifier"
   },
   "components/wsdlclient/WSDLClientVendor": {
     "VendorCaption": "Web Service Call",
     "VendorDesc": "Request execution through connection to the WSDL described web service and conversion of the received response into a data set"
   },
   "exports/database/DBExport": {
-    "ErrFieldForUpdateNotSelected": "No fields to update selected"
+    "ErrFieldForUpdateNotSelected": "No fields to update selected",
+    "GroupDataNotify": "Group data"
   },
   "exports/database/DBExportVendor": {
     "VendorCaption": "Database",
@@ -456,6 +738,9 @@
   "exports/textfile/ExportTextFileVendor": {
     "VendorCaption": "Text File",
     "VendorDesc": "Export data to text file"
+  },
+  "exports/xml/ExportXML": {
+    "ErrXMLExport": "Error exporting XML:\n Error code: %d\n %s"
   },
   "exports/xml/ExportXMLVendor": {
     "VendorCaption": "XML File",
@@ -595,14 +880,66 @@
     "Direct": "Do not use DBMS client",
     "ServerListInaccessible": "List of DBMS servers unavailable"
   },
+  "Libraries/bgrtl/BigSet": {
+    "ErrBitsIndex": "Bit index is out of range"
+  },
   "Libraries/bgrtl/Classes": {
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
     "ErrItemWithGuidAlreadyExist": "%s with identifier %s already exists",
     "ErrItemWithIDAlreadyExist": "%s with identifier %d already exists",
     "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered"
   },
+  "Libraries/bgrtl/ColumnsMultiLinks": {
+    "Link": "Link"
+  },
+  "Libraries/bgrtl/Consts": {
+    "bdtCurrent": "current date",
+    "bdtData": "available data",
+    "FirstLastDateFmt": "%s %s %s from %s",
+    "fld0and5to20DayPeriodName": "days",
+    "fld0and5to20MonthPeriodName": "months",
+    "fld0and5to20QuarterPeriodName": "quarters",
+    "fld0and5to20WeekPeriodName": "weeks",
+    "fld0and5to20WrongPeriodName": "periods",
+    "fld0and5to20YearPeriodName": "years",
+    "fld2to4DayPeriodName": "day",
+    "fld2to4MonthPeriodName": "month",
+    "fld2to4QuarterPeriodName": "quarter",
+    "fld2to4WeekPeriodName": "week",
+    "fld2to4WrongPeriodName": "period",
+    "fld2to4YearPeriodName": "year",
+    "fldOneDayPeriodName": "Day",
+    "fldOneMonthPeriodName": "month",
+    "fldOneQuarterPeriodName": "quarter",
+    "fldOneWeekPeriodName": "week",
+    "fldOneWrongPeriodName": "period",
+    "fldOneYearPeriodName": "year",
+    "VersionSerialNumber": "Serial number"
+  },
   "Libraries/bgrtl/DataSet": {
+    "ColumnDefs": "Column descriptions",
+    "ContainedStatisticsCompute": "Calculate statistics",
+    "ErrColOutOfRange": "%d column number is out of [%d; %d] range",
+    "ErrDataSourceNotConfigured": "Data set not configured",
+    "ErrRowOutOfRange": "%d row number is out of [%d; %d] range",
     "Statistics": "Statistics"
+  },
+  "Libraries/bgrtl/DataSetColumns": {
+    "ErrDataSoureNotAssigned": "No data set reference"
+  },
+  "Libraries/bgrtl/ExceptUtils": {
+    "ErrInvalidIndex": "%d index value of \"%s\" parameter is out of [%d; %d] range",
+    "ErrOutOfRange": "%g value of \"%s\" parameter is out of [%g; %g] range",
+    "ErrOutOfRangeInt": "%d value of \"%s\" parameter is out of [%d; %d] range"
+  },
+  "Libraries/bgrtl/ExportHTMLTable": {
+    "ExcelSheetDefaultName": "Sheet1"
+  },
+  "Libraries/bgrtl/Extensions": {
+    "Extension": "Extension",
+    "ExtensionVendorMetaDesc": "extension vendor",
+    "Guid": "Guid extension vendor",
+    "Item": "Item"
   },
   "Libraries/bgrtl/FileMask": {
     "LgdFilesDesc": "Loginom Data file",
@@ -610,34 +947,76 @@
   },
   "Libraries/bgrtl/FileStorageEngine": {
     "ErrFileStorageNotConnected": "File storage not connected",
+    "ErrInvalidBackupFileName": "Invalid backup file name: %s",
+    "ErrInvalidMountedDirectoryName": "Invalid mounted directory name: %s",
     "ErrParentFileStorageNotConnected": "Root file storage not connected"
   },
   "Libraries/bgrtl/OperationBracketsAssist": {
     "ErrActionAlreadyBeginning": "Action has already been started",
     "ErrActionNotBeginning": "Action hasn't been started"
   },
+  "Libraries/bgrtl/Statistics": {
+    "ErrDataSourceNotAssigned": "No data set reference"
+  },
+  "Libraries/bgrtl/StatUniqueValues": {
+    "ErrNotImplemented": "This functionality not implemented"
+  },
   "Libraries/bgrtl/StrUtils": {
     "ErrCodePageNotExist": "Codepage under %d does not exist"
   },
+  "Libraries/bgrtl/TimeZones": {
+    "ErrCantOpenKey": "Error attempting to read %s registry key: %s (%d error code)"
+  },
+  "Libraries/bgrtl/Trees": {
+    "NodeIndexDesc": "Node index",
+    "NodeMetaDesc": "Node",
+    "RootDesc": "Root node",
+    "RootDisplayName": "Root",
+    "SubNodesDesc": "Subnodes"
+  },
+  "Libraries/bgrtl/Tuple": {
+    "BadNativeData": "Incorrect data"
+  },
+  "Libraries/bgrtl/TupleStrUtils": {
+    "BadNativeStringData": "Incorrect string data"
+  },
   "Libraries/bgrtl/TupleVarUtils": {
+    "BadNativeArrayStringData": "Incorrect Variant array string data",
     "BadVariantData": "Incorrect Variant data type"
+  },
+  "Libraries/bgrtl/Variables": {
+    "ErrVariablesNotActive": "Variables not active",
+    "ErrVariablesNotConfigured": "Variables not configured",
+    "ErrVariablesNotEditing": "Variables not editable",
+    "VariableElements": "Variables list"
   },
   "Libraries/bgrtl/Vendors": {
     "VendorGroupMetaDesc": "vendor group",
     "VendorMetaDesc": "vendor"
   },
   "Libraries/Config/ConfigBackupManagers": {
+    "ConfigureNodeCaption": "Configured \"%s\" Node",
+    "ConfigureNodeCaptionDef": "Node Configured",
+    "ConfigureNodePortCaption": "Configured \"%s\" port of \"%s\" node",
+    "ConfigureNodePortCaptionDef": "Node Port Configured",
     "ErrNodeBlocked": "\"%s\" node is blocked",
     "ErrNodeIsNil": "No node specified"
   },
+  "Libraries/Config/ConfigScheme": {
+    "ValueDesc": "Value"
+  },
   "Libraries/DataPartition/Partition": {
+    "AVLTreeBuilding": "Group data",
     "BiasedSamplingDesc": "Biased sampling",
-    "ErrPartitionMethod": "No sampling method specified"
+    "ErrPartitionMethod": "No sampling method specified",
+    "ErrSamplingRecordCount": "The selected %d row count is out of [%d; %d] range",
+    "ErrSamplingRecordPercent": "The selected %d row percentage is out of [%d; %d] range"
   },
   "Libraries/DataPartition/PartitionIndexGenerator": {
     "ErrExternalColumnNotReady": "No external partition column specified"
   },
   "Libraries/DataSampling/Sampling": {
+    "AVLTreeBuilding": "Group data",
     "ErrSamplingMethod": "No sampling method specified"
   },
   "Libraries/DBConnection/UniDAC/AccessODBCUniDACDBConnectionVendor": {
@@ -680,9 +1059,70 @@
     "VendorCaption": "SQLite",
     "VendorDesc": "SQLite DB"
   },
+  "Libraries/FileConnection/ExportFileModelComponentEngine": {
+    "ErrFileNameEmpty": "File name cannot be empty"
+  },
+  "Libraries/FileConnection/ImportFileModelComponentEngine": {
+    "ErrFileNameEmpty": "File name cannot be empty"
+  },
+  "Libraries/Math/StatDistributions": {
+    "ErrNotImplemented": "Functionality not implemented"
+  },
+  "Libraries/Math/StatUtils": {
+    "ErrInvalidProbabilityValue": "%f probability value is out of [0;1] range",
+    "ErrNotImplemented": "Functionality not implemented"
+  },
+  "Libraries/Model/Connections/ConnectionVendorGroups": {
+    "DBConnectionVendorGroupCaption": "Data Sources"
+  },
+  "Libraries/Model/Connections/ConnectionVendorGroupsCommon": {
+    "BusinessAppVendorGroupCaption": "Business Applications",
+    "DatabaseVendorGroupCaption": "Databases",
+    "FileDataBaseVendorGroupCaption": "File Databases",
+    "UniDBIntfVendorGroupCaption": "Universal Drivers",
+    "WareHouseVendorGroupCaption": "Data Warehouses",
+    "WebServerVendorGroupCaption": "Web Services"
+  },
+  "Libraries/Model/Connections/ModelConnectionComponentEngine": {
+    "Connection": "Connection"
+  },
+  "Libraries/Model/DataSet/DataSourceModelComponentEngine": {
+    "InputDataSource": "Input data source",
+    "OutputDataSource": "Output data set"
+  },
+  "Libraries/Model/DataSet/DataSourceMultiInputDataSetOutputModelComponentEngine": {
+    "InputDataSource": "Input data source",
+    "OutputDataSet": "Output data set"
+  },
+  "Libraries/Model/DataSet/DataSourceMultiInputModelComponentEngine": {
+    "InputDataSource": "Input data source",
+    "OutputDataSource": "Output data set"
+  },
+  "Libraries/Model/DataSet/DataSourceMultiOutputModelComponentEngine": {
+    "InputDataSource": "Input data source",
+    "OutputDataSource": "Output data set"
+  },
+  "Libraries/Model/DataSet/DataSourceOutputSocket": {
+    "DataSource": "Data set"
+  },
+  "Libraries/Model/DataSet/DataSourceVariablesMultiInputDataSetOutputModelComponentEngine": {
+    "InputVariables": "Input variables"
+  },
+  "Libraries/Model/DataSet/DataSourceVariablesMultiInputModelComponentEngine": {
+    "InputVariables": "Input variables"
+  },
+  "Libraries/Model/DataSet/DataToVariablesModelComponentEngine": {
+    "InputDataSource": "Input data source",
+    "OutputVariables": "Output variables"
+  },
+  "Libraries/Model/DataSet/ImportModelComponentEngine": {
+    "OutputDataSet": "Data set"
+  },
   "Libraries/Model/DerivedModelComponentVendor": {
+    "BaseNode": "Base node",
     "ErrBaseComponentAlreadyExists": "Base component already exists",
-    "ErrBaseComponentVendorNotSpecified": "No vendor defined for"
+    "ErrBaseComponentVendorNotSpecified": "No vendor defined for",
+    "ErrBaseNodeNotFound": "Base node not found"
   },
   "Libraries/Model/Generic/ModelInputComponentVendor": {
     "VendorCaption": "Input Node"
@@ -694,16 +1134,24 @@
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" reference node is not available at the required destination.",
     "ErrNoNodesSpecified": "No node set specified"
   },
+  "Libraries/Model/ModelPackage": {
+    "ErrPackageNameCannotBeEmpty": "Package name cannot be empty"
+  },
+  "Libraries/Model/ModelSockets": {
+    "ErrModelSocketNotConfigured": "Socket not configured"
+  },
   "Libraries/Model/ModelWorkFlow": {
     "ErrNodeLocked": "\"%s\" node is blocked",
     "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
     "ErrPortMismatch": "Incompatible component vendor: node port list does not match",
+    "ErrSocketNotConfigured": "Socket not configured",
     "Top": "Top"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "\"%s\" node is blocked",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
-    "ErrReferencedNodeNotFound": "Reference node not found"
+    "ErrReferencedNodeNotFound": "Reference node not found",
+    "ErrReferencedNodeNotSpecified": "No reference to node specified"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentVendor": {
     "VendorCaption": "Reference Node",
@@ -713,9 +1161,60 @@
     "VendorCaption": "Workflow Variables",
     "VendorDesc": "Configure variables used in the current workflow"
   },
+  "Libraries/Model/Variables/VariablesModelComponentEngine": {
+    "InputVariables": "Input variables",
+    "OutputVariables": "Output variables"
+  },
+  "Libraries/Model/Variables/VariablesMultiInputModelComponentEngine": {
+    "InputVariables": "Input variables",
+    "OutputVariables": "Output variables"
+  },
+  "Libraries/Model/Variables/VariablesOutputSocket": {
+    "Variables": "Variables"
+  },
+  "Libraries/Model/Views/ModelViewDataSource": {
+    "InputDataSource": "Data set"
+  },
+  "Libraries/Model/Views/ModelViewDataSourceEngine": {
+    "ErrNotDefinedInputDataSource": "No input data set defined"
+  },
+  "Libraries/Model/Views/ModelViewVendorGroupsCommon": {
+    "DefaultVendorGroupCaption": "Common",
+    "DiagramVendorGroupCaption": "Charts",
+    "TableDataVendorGroupCaption": "Table View"
+  },
+  "Libraries/Normalization/DataSourceMultiOutputNormModelComponentEngine": {
+    "InputDataSource": "Input data source",
+    "OutputDataSource": "Output data set"
+  },
+  "Libraries/Normalization/NormalColumnsManager": {
+    "ErrNotImplemented": "This functionality not implemented"
+  },
+  "Libraries/Normalization/NormalColumnsRange": {
+    "ErrNotImplemented": "This functionality not implemented"
+  },
+  "Libraries/Normalization/NormalData": {
+    "InterceptDisplayName": "Intercept"
+  },
+  "Libraries/Normalization/Normalizers": {
+    "ErrNotImplemented": "This functionality not implemented",
+    "ErrWrongDiscreteIndexRange": "Prenormalized index: %d is out of allowable [%d ; %d] range"
+  },
+  "Libraries/Normalization/TunedNormParams": {
+    "FACT_ANY": "ANY",
+    "FACT_ANY_COUNTINUOUS": "ANY CONTINUOUS",
+    "FACT_ANY_DISCRETE": "ANY DISCRETE",
+    "FACT_ANY_OTHER_CONTINUOUS": "ANY OTHER CONTINUOUS"
+  },
+  "Libraries/Normalization/TunedNormParamsProvider": {
+    "ErrNotImplemented": "This functionality not implemented"
+  },
   "Libraries/Normalization/TuneNormDataSource": {
     "CreateInDataProcessCaption": "Prepare input data set",
     "CreateOutDataProcessCaption": "Preparing output data set"
+  },
+  "Libraries/Normalization/TuneNormDataSourceSocketDef": {
+    "ErrNotImplemented": "This functionality not implemented"
   },
   "Libraries/Optimization/Optimizer": {
     "ErrStepIsNull": "Another strategy step not specified"
@@ -724,15 +1223,45 @@
     "ErrMainInterfaceIsNil": "Root element interface not set or removed"
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
-    "ErrInvalidContentType": "Invalid Content-type value format: %s"
+    "ErrInvalidContentType": "Invalid Content-type value format: %s",
+    "ErrInvalidParamName": "Invalid %s GET request parameter name"
+  },
+  "Libraries/rpc/RemoteMessageData": {
+    "ErrUnknownInterfaceID": "Unknown interface identifier: %d",
+    "ErrUnknownInterfaceName": "%s interface not registered",
+    "ErrUnknownMethodID": "Unknown method identifier: %d",
+    "ErrUnsupportedParameterType": "Unsupported parameter type"
   },
   "Libraries/SuperLU/SuperLU_h": {
     "ErrExceptionOccurred": "SuperLU exception in function '%s' when calling '%s'",
     "InputError": "Invalid parameter %d when calling '%s'",
     "UserAbort": "SuperLU call stopped with error: '%s'"
   },
+  "Studio/DeductorServer": {
+    "ErrModelNodeNotFound": "Node %s not found",
+    "ErrModelNodeNotPublished": "Node %s published"
+  },
+  "Studio/Server/BatchLauncher/BatchLauncher": {
+    "ExampleTitle": "Example:",
+    "OptionAddressDesc": "IP address or hostname (default: %s)",
+    "OptionNodeNameDesc": "Node name or GUID"
+  },
   "Studio/SolutionTree": {
     "Vendors": "Components"
+  },
+  "Viewers/Browse/BrowseView": {
+    "PrepareViewData": "Table"
+  },
+  "Viewers/Browse/BrowseViewExport": {
+    "DisplayNameColumnDisplayName": "Caption",
+    "Form": "Form",
+    "NameColumnDisplayName": "Caption",
+    "NullValue": "<null>",
+    "RecNoColumnDisplayName": "No",
+    "RecNoColumnName": "RecNo",
+    "RowNoColumnDisplayName": "#",
+    "RowNoColumnName": "RowNo",
+    "Table": "Table"
   },
   "Viewers/Browse/BrowseViewVendor": {
     "VendorCaption": "Table",
@@ -758,25 +1287,49 @@
   "Viewers/Cube/CubeSource": {
     "LoadNotify": "Prepare input data"
   },
+  "Viewers/Cube/CubeSummaries": {
+    "CountCaseDisplayName": "Count",
+    "DefExprDisplayName": "Expression"
+  },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
     "VendorDesc": "Multidimensional display (crosstab and cross chart)"
   },
+  "Viewers/LinRegressReport/LinRegressReport": {
+    "ConstFactor": "<Intercept0>"
+  },
   "Viewers/LinRegressReport/LinRegressReportViewVendor": {
     "VendorCaption": "Regression Report",
     "VendorDesc": "Analysis of linear regression model"
+  },
+  "Viewers/LogRegressReport/LogRegressReport": {
+    "ConstFactor": "<Intercept0>"
   },
   "Viewers/LogRegressReport/LogRegressReportViewVendor": {
     "VendorCaption": "Regression Report",
     "VendorDesc": "Analysis of logistic regression model"
   },
   "Viewers/ROC/ROCViewCharts": {
+    "AllPrecisionRatesChartXLabel": "Cuttoff",
+    "BreakEvenChartXLabel": "Cuttoff",
+    "BreakEvenChartYLabel": "TPR, PPV",
+    "Cutoff": "Cuttoff",
     "EventsChartTitle": "% captured response chart",
     "EventsChartXLabel": "Range",
     "EventsChartYLabel": "Captured response, %",
     "EventsCumChartTitle": "% captured response chart (cumulative)",
     "EventsCumChartYLabel": "Captured response, %",
+    "FNR": "FNR (1-Sensitivity)",
+    "FPR": "FPR (1-Specificity)",
+    "GainChartTitle": "Gain Chart",
+    "GainChartYLabel": "Gain",
+    "LiftChartTitle": "Lift Chart",
     "LiftChartXLabel": "Range",
+    "LiftChartYLabel": "Lift",
+    "LiftCumChartYLabel": "Lift",
+    "NPV": "NPV (Negative Prediction Value)",
+    "OCR": "OCR (Overall Classification Rate)",
+    "OverallRatesChartXLabel": "Cuttoff",
     "OverallRatesTitle": "Basic Rates"
   },
   "Viewers/ROC/ROCViewVendor": {
@@ -785,6 +1338,15 @@
   },
   "Viewers/Statistics/StatView": {
     "PrepareViewData": "Statistics"
+  },
+  "Viewers/Statistics/StatViewBuilder": {
+    "ErrRequiredColumnNotFound": "No column with the specified number in the input data source"
+  },
+  "Viewers/Statistics/StatViewCalculation": {
+    "ErrRequiredColumnNotFound": "No columns with the specified numbers in the input data source"
+  },
+  "Viewers/Statistics/StatViewUniqueValues": {
+    "ErrRequiredColumnNotFound": "No columns with the specified numbers in the input data source"
   },
   "Viewers/Statistics/StatViewVendor": {
     "VendorCaption": "Statistics",
@@ -805,5 +1367,16 @@
   },
   "Warehouse2/DWImport": {
     "ExecQueryProcess": "Execute request to Data Warehouse"
+  },
+  "Warehouse2/MDFilterParams": {
+    "ErrCustomPointDate": "Data value cannot be empty",
+    "ErrListEmpty": "List cannot be empty",
+    "ErrStringEmpty": "Value cannot be empty",
+    "FilterType": "Filter type",
+    "IntervalType": "Interval type",
+    "ListVal": "List of values",
+    "MaxVal": "Max value",
+    "MinVal": "Min value",
+    "TheVal": "Value"
   }
 }

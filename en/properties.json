@@ -472,13 +472,18 @@
     }
   },
   "Libraries/Regression/Regression": {
+    "RegressionClassificationParams": {
+      "Threshold": "Cuttoff"
+    },
     "RegressionStatisticsParams": {
       "PredictionIntervalNeeded": "Calculate confidence interval"
     }
   },
   "Viewers/ROC/ROCView": {
     "ROCView": {
-      "NBins": "Number of bins"
+      "CutoffPoint": "Cuttoff",
+      "NBins": "Number of bins",
+      "UserCutoff": "User cuttoff"
     }
   },
   "Viewers/Statistics/StatView": {

@@ -426,7 +426,7 @@
     "ErrZeroBinsWidth": "Ширина интервала должна быть больше 0",
     "ErrZeroBinsWidthFmt": "Для поля %s ширина интервала должна быть больше 0",
     "ErrZeroDivForIntervalsFmt": "Поле %s с нулевой дисперсией, будет создан только 1 интервал",
-    "ErrZeroDivForSDFmt": "Поле %s с нулевой дисперсией, будет создан только 3 интервала"
+    "ErrZeroDivForSDFmt": "Поле %s с нулевой дисперсией, будут созданы только 3 интервала"
   },
   "components/binning/BinningMethodsImplementationTile": {
     "AlignTile": "Выравнивание плиток",
@@ -1911,7 +1911,7 @@
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Индекс бита вне диапазона",
     "ErrStringIsNotSet": "Строка \"%s\" не является представлением множества",
-    "ErrSubSetPowerIsZerro": "Попытка извлечение всех подмножеств с мощностью меньше 0 или больше мощности самого множества",
+    "ErrSubSetPowerIsZerro": "Попытка извлечения всех подмножеств с мощностью меньше 0 или больше мощности самого множества",
     "IndexesDesc": "Массив индексов",
     "SizeDesc": "Мощность множества"
   },

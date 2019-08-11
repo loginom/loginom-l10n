@@ -1690,7 +1690,7 @@
       "Model": "From handler",
       "Train": "From the training set",
       "Test": "From the test set",
-      "User": "Set"
+      "User": "Configure"
     },
     "ROCViewChartType": {
       "$Caption": "Chart Type",
@@ -1707,7 +1707,7 @@
     "ROCViewCutoffType": {
       "$Caption": "Cutoff",
       "Current": "From handler",
-      "User": "Set",
+      "User": "Сonfigurable",
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
       "BreakEven": "Equilibrium point (TPR = PPV)",

@@ -119,7 +119,7 @@
     "WSDLRequestDebug": {
       "DumpRequest": "Save Request Text to Disk",
       "DumpRequestFolder": "Folder to save requests",
-      "ResponseStub": "File name applied as response",
+      "ResponseStub": "File applied as response",
       "RootFileStorage": "Root file storage"
     }
   },
@@ -140,7 +140,7 @@
       "DefaultValue": "Default value",
       "DisplayName": "Local node name",
       "FixedValue": "Fixed value",
-      "NamespaceURI": "URI namespaces",
+      "NamespaceURI": "URI namespace",
       "NodeType": "Node type",
       "ParentNode": "Parent node",
       "Selectable": "Selectable",
@@ -253,6 +253,11 @@
       "WoE": "Weight of class evidence"
     }
   },
+  "components/columnflipping": {
+    "ColumnFlippingColumnDefExtension": {
+      "Order": "Order number"
+    }
+  },
   "components/condition": {
     "ConditionItem": {
       "CaseSensitive": "Case sensitive"
@@ -263,7 +268,7 @@
       "Params": "Algorithm parameters"
     },
     "EMParams": {
-      "IndependentVariables": "Independent variables",
+      "IndependentVariables": "Independent attributes",
       "MedianModification": "Median modification"
     }
   },
@@ -281,6 +286,11 @@
     "ARIMAXParams": {
       "CalcConfidenceInterval": "Calculate confidence interval",
       "ConfidenceInterval": "Confidence forecast interval in %"
+    }
+  },
+  "components/groupdata": {
+    "GroupDataColumnDefExtension": {
+      "Order": "Order number"
     }
   },
   "components/linregression": {
@@ -443,6 +453,12 @@
     "CustomItemDef": {
       "Index": "Element index listed"
     },
+    "DescriptionDef": {
+      "Description": "Description"
+    },
+    "DescriptionInfo": {
+      "Description": "Description"
+    },
     "List": {
       "Count": "Element count listed"
     },
@@ -479,6 +495,11 @@
       "PredictionIntervalNeeded": "Calculate confidence interval"
     }
   },
+  "Viewers/Cube/CubeSummaries": {
+    "CubeFunction": {
+      "OrderNumber": "Order number"
+    }
+  },
   "Viewers/ROC/ROCView": {
     "ROCView": {
       "CutoffPoint": "Cuttoff",
@@ -489,6 +510,11 @@
   "Viewers/Statistics/StatView": {
     "StatViewColumnConfig": {
       "Width": "Width"
+    }
+  },
+  "Warehouse2/Deductor/DW": {
+    "DWObject": {
+      "DWObjectType": "Type of Data Warehouse object"
     }
   }
 }

@@ -317,7 +317,7 @@
   },
   "components/binning/MethodSettingFrame": {
     "Loading": "Wait",
-    "SDBinCountTemplate": "Bin number - {0}"
+    "SDBinCountTemplate": "Bin count - {0}"
   },
   "components/binning/MethodSettingsWizard": {
     "AllExcluded": "<  x <",
@@ -650,7 +650,7 @@
     "SourceFieldInput": "Value",
     "SourceFieldOutput": "Replace",
     "SourceFieldUnused": "Not used",
-    "UniqueValuesLimitErr": "It is impossible to show unique values number of which exceeds {0}"
+    "UniqueValuesLimitErr": "Failed to show the unique values number of which exceeds {0}"
   },
   "components/sampling/SamplingComponentWizard": {
     "SampleSetName": "Sampled"
@@ -676,7 +676,7 @@
     "ErrInSelectGroupFields": "Ungroupable field not selected",
     "ErrInSelectOutputFields": "No field for ungrouped values dereference selected",
     "ErrInSelectQuotaCalcFields": "No field for shares calculation selected",
-    "ErrInSelectQuotaFields": "No field with shares selected",
+    "ErrInSelectQuotaFields": "No field with quotas selected",
     "ErrInSelectTimeAxisFields": "No fields for data sequentializing selected",
     "ErrNoLinksDefined": "No links defined",
     "MissingColumnFmt": "No linked \"{0}\" column",
@@ -1431,7 +1431,7 @@
     "StackTraceFmt": "TRACE:\n{0}"
   },
   "ts/ExecutionContext": {
-    "ErrExecutionContextNotInstalled": "No link to execution context",
+    "ErrExecutionContextNotInstalled": "No reference to execution context provided",
     "ErrExternalExecutionContextManagerNotInstalled": "External execution context manager not installed"
   },
   "ts/Int64": {
@@ -1445,7 +1445,7 @@
     "ErrUpdatableNotSupported": "IBGUpdatable interface is not supported by object"
   },
   "ts/QueueException": {
-    "ErrQueueExceptionEndUnexpected": "Attempt to complete the delayed exception block handling without its start",
+    "ErrQueueExceptionEndUnexpected": "Attempt to end the queued exception block handling without its start",
     "ErrUnknownInnerExceptionIsIgnored": "Internal exception of unknown {0} type ignored"
   },
   "ts/rtl.imp": {
@@ -1487,7 +1487,7 @@
     "ErrExportFormFailed": "Failed to export Form:\n{0}",
     "ErrMaxPage": "You cannot set page larger than the last one",
     "ErrMinPage": "You cannot set page smaller than the first one",
-    "ErrOverRowLimitFmt": "You cannot set row index greater than {0}",
+    "ErrOverRowLimitFmt": "You cannot set row index more than {0}",
     "ErrPageIndexOutOfRangeFmt": "Invalid {0} page index",
     "ErrRowIndexOutOfRangeFmt": "Invalid {0} row index",
     "ExportFileTitle": "Table",
@@ -1875,12 +1875,12 @@
     "CutoffMCC": "MCC",
     "CutoffMCC_Tooltip": "Matthews correlation coefficient",
     "CutoffPPV": "PPV",
-    "CutoffPPV_Tooltip": "Accuracy of positive forecast",
+    "CutoffPPV_Tooltip": "Positive predictive value",
     "CutoffTNR": "TNR (specificity)",
     "CutoffTPR": "TPR (sensitivity)",
     "CutoffValue": "Value",
     "FPRShort": "FPR",
-    "GeneralRatings": "Classifier ratings",
+    "GeneralRatings": "Classifier scores",
     "Gini": "Gini coefficient",
     "KS": "KS",
     "KS_Tooltip": "Kolmogorov-Smirnov criterion statistics",

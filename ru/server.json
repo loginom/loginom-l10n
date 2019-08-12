@@ -561,7 +561,7 @@
     "ErrContDataKindExpected": "Ожидается непрерывный вид данных у столбца %s",
     "ErrDiscreteDataKindExpected": "Ожидается дискретный вид данных у столбца %s",
     "ErrIncorrectEventValue": "Выходное поле не содержит значение \"%s\"",
-    "ErrInputBinningIsNotCorrected": "Внешнее разбиение для столбца \"%s\" задан некорректно",
+    "ErrInputBinningIsNotCorrected": "Внешнее разбиение для столбца \"%s\" задано некорректно",
     "ErrOutColumnNotDefined": "Не определено выходное поле",
     "ErrOutColumnNotValid": "Выходное поле должно быть дискретным с 2 уникальными значениями",
     "ErrOverflow": "Число операций для разбиения входного источника данных превышает допустимое значение",
@@ -767,7 +767,7 @@
     "VendorDescription": "Дополнение данных по справочникам"
   },
   "components/execcmd/ExecCmd": {
-    "ErrBadCmdLine": "Не возможно выделить имя исполняемого файла.",
+    "ErrBadCmdLine": "Невозможно выделить имя исполняемого файла.",
     "ErrCmdLineIsEmpty": "Командная строка пустая.",
     "ErrCurrentDirectory": "Не удалось определить текущую директорию",
     "ErrDisallowedExecution": "Выполнение узла запрещено параметрами безопасности",
@@ -798,7 +798,7 @@
     "DocIDColumn": "Идентификатор документа",
     "ErrCharsetForCodePageNotFound": "Не найден поддерживаемый набор символов XML для кодовой страницы %d",
     "ErrExtractXML": "Ошибка при извлечении XML из строки %d входного набора:\n Код ошибки: %d\n Сообщение: %s",
-    "ErrExtractXMLInitError": "Ошибка инициализации обработчика Извлечение XML:\n\t%s",
+    "ErrExtractXMLInitError": "Ошибка инициализации обработчика Извлечение XML:\n %s",
     "ErrImportNotConfigured": "Дерево импорта не настроено",
     "ErrInputFieldNotSelected": "Необходимо задать поле, содержащее XML",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика!",

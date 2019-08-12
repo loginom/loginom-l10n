@@ -1059,6 +1059,9 @@
     }
   },
   "components/coarseclasses/CoarseClassesViewer": {
+    "btnAllowClassModifying": {
+      "tooltip": "Edit binning"
+    },
     "btnCalculateIV": {
       "text": "Set..."
     },

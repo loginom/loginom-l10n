@@ -243,10 +243,24 @@
       "Weight": "Class weight"
     },
     "CoarseClassesBuilder": {
-      "ColumnPurpose": "Field usage type"
+      "ColumnPurpose": "Field usage type",
+      "IsEdited": "Binning edited",
+      "IsLocked": "Binning locked"
     },
     "CoarseClassesInputContinuousParams": {
       "FineIntervalsCount": "Interval count"
+    },
+    "CoarseClassesInputDiscreteParams": {
+      "UseFineClassesBinning": "Fine classes as binning"
+    },
+    "CoarseClassesInputExternalParams": {
+      "BinningId": "External binning identifier"
+    },
+    "CoarseClassesManager": {
+      "HasExcludeBinningDataSource": "Supplementary input of the external binning provided"
+    },
+    "CoarseClassesViewer": {
+      "IsLocked": "Binning locked"
     },
     "FineClass": {
       "IV": "Information class index",
@@ -480,6 +494,21 @@
     },
     "VariableItems": {
       "Vendor": "Link to Vendor variables"
+    }
+  },
+  "Libraries/DataPartition/LearnPartition": {
+    "LearnPartition": {
+      "LearnPartitionMethod": "Partition method",
+      "ValidationColumnIndex": "Given partition field"
+    },
+    "LearnPartitionContainer": {
+      "LearnPartition": "The component data set binning interface with training"
+    }
+  },
+  "Libraries/Normalization/NormalDataSourceModelComponentEngine": {
+    "NormalDataSourceModelComponentEngine": {
+      "LearnPartition": "Component data partition with training",
+      "SetupLearnPartition": "Configure user data partition"
     }
   },
   "Libraries/Normalization/TuneNormColumnDefs": {

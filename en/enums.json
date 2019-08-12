@@ -534,8 +534,10 @@
   },
   "components/loop": {
     "GroupProcessingKind": {
+      "$Caption": "Method of Data Set Partition into Groups",
       "FixedGroupSize": "Fixed group size",
-      "FixedGroupCount": "Fixed group count"
+      "FixedGroupCount": "Fixed group count",
+      "GroupByUniqueValues": "Group by the unique values fields"
     },
     "LoopKind": {
       "$Caption": "Loop Type",
@@ -1178,8 +1180,10 @@
       "Sequence": "Sequence"
     },
     "LearnPartitionMethod": {
+      "$Caption": "Method of Training/Test Component Partition with Training",
       "Random": "Random",
-      "Sequence": "Sequence"
+      "Sequence": "Sequence",
+      "Flag": "Partition specified"
     },
     "LearnPartitionType": {
       "$Caption": "Type of the Training Component Data Set",

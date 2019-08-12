@@ -168,6 +168,7 @@
     "ErrMimeContentReferencesComplexElement": "mime:content extension element in \"%s\" message (\"%s\" operation) is associated with \"%s\" part that refers to %s{%s} XSD schema element related to the complex type",
     "ErrMimeContentReferencesComplexType": "mime:content extension element in \"%s\" message (\"%s\" operation) is associated with \"%s\" part that refers to the complex type of %s{%s} XSD schema",
     "ErrNoDefinitionsElement": "<definitions/> element of WSDL description is missing or does not belong to the WSDL namespace",
+    "ErrNotArrayType": "\"%s\" not an array type description",
     "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema inserted into the WSDL file (%d row, %d position):\nError code: %d\nReason: %s",
     "ErrWsdlImportNoAccess": "No access to the imported %s document"
   },
@@ -451,11 +452,14 @@
     "ErrCantApplyExternalBinning": "You cannot apply binning for %s column.",
     "ErrCantApplyFineClassesBinning": "You cannot apply fine classes for binning for %s column. There are too many unique values",
     "ErrCantLoadBackup": "Failed to restore binning",
+    "ErrCantSaveBackup": "Failed to save current binning",
     "ErrContDataKindExpected": "Continuous data type of %s column expected ",
     "ErrDiscreteDataKindExpected": "Discrete data type of %s column expected ",
     "ErrIncorrectEventValue": "The output field does not contain \"%s\" value",
+    "ErrInputBinningIsNotCorrected": "External binning for \"%s\" column incorrectly specified ",
     "ErrOutColumnNotDefined": "Undefined output field",
     "ErrOutColumnNotValid": "The output field must be discrete with 2 unique values",
+    "ErrOverflow": "The number of the input data source binning operations exceeds the allowable value",
     "ErrVoidDataKind": "Data type of the processed column not defined"
   },
   "components/coarseclasses/CoarseClassesConfig": {
@@ -473,11 +477,22 @@
     "ClassNumPostfix": " Class number",
     "ClassSignificantPostfix": "Significance",
     "CoarseClassesProcessDesc": "Build coarse classes",
+    "ErrClassStorageNotDefined": "The fine classes storage of one of the columns not defined",
+    "ErrCoarseClassBuilderNotValid": "The fine classes storage does not comply with the customized settings",
+    "ErrExternalBinningOverFlow": "The external binning size for \"%s\" column exceeds the allowable value ",
+    "ErrInputBinningIsNotCorrected": "External binning for \"%s\" column incorrectly specified ",
+    "ErrInputBinningIsNotExist": "No external binning for \"%s\" column or port not activated",
+    "ErrInputBinningIsNotFull": "External binning for \"%s\" column does not contain all required data",
+    "ErrInputBinningMissValue": "External binning for \"%s\" column does not contain unique \"%s\" value",
+    "ErrInputBinningMissValues": "External binning contains not all unique values of \"%s\" column ",
+    "ErrInputRangeDataSourceIsNotExist": "No external binning data source",
     "ErrNoModel": "Model is not configured. It is required to train the node before its application",
     "InputRangesDataSource": "External quantization ranges"
   },
   "components/coarseclasses/CoarseClassesMapper": {
-    "ErrNotAllowedDataType": "Column data type %s not supported"
+    "ErrNotAllowedDataType": "Column data type %s not supported",
+    "ErrNoUniqueValues": "Failed to get unique values for \"%s\" column",
+    "ErrPrevBinningDoesNotExist": "No previous binning for \"%s\" column"
   },
   "components/coarseclasses/CoarseClassesVendor": {
     "OutputBinningParams": "Column significance",
@@ -493,6 +508,7 @@
   "components/coarseclasses/FineClassesStorage": {
     "BlanksClass": "[blank]",
     "ErrColumnIsNotDifenied": "Failed to define the column to process",
+    "ErrDataTypesNotMatch": "The specified column data type does not match the data type of the coarse classes",
     "ErrNotPositiveIntervalsCount": "Interval count must be more than 0",
     "From": "from",
     "NullClass": "Null class",
@@ -523,10 +539,21 @@
   },
   "components/condition/Condition": {
     "AggregateCountColumnDisplayName": "*",
-    "ConditionBranchMetaDesc": "Branch"
+    "ConditionBranchMetaDesc": "Branch",
+    "ErrAggregateCountColumnNotFound": "No row count aggregation column found for the specified data set",
+    "ErrCannotAccessLinkedFieldInfos": "Invalid operation: GetLinkedFieldInfos method calling",
+    "ErrDebugConditionNotSpecified": "No condition branches are specified for execution in the debug mode",
+    "ErrFieldNotSpecified": "No comparison field specified",
+    "ErrIncorrectConditionConfiguration": "The condition list contains errors",
+    "ErrInvalidAggregationType": "\"%s\" aggregation function does not apply to the specified field",
+    "ErrInvalidCompareValue": "\"%s\" value  is not compatible with \"%s\" data type",
+    "ErrInvalidRelationType": "\"%s\" relationship type is not applicable to the specified field and aggregation function",
+    "ErrNoConditionBranchItems": "No condition branches specified",
+    "ErrNoConditionItems": "Condition branch cannot be empty"
   },
   "components/condition/ConditionComponent": {
     "ElseBranchDesc": "Otherwise",
+    "ErrInputSocketDefIsEmtpy": "The following input types are not specified:",
     "OutputSocketDisplayNameTemplate": "%s - %s"
   },
   "components/condition/ConditionComponentVendor": {
@@ -536,8 +563,10 @@
   "components/corranalysis/CorrAnalysis": {
     "ColumnSet1": "Field 1",
     "ColumnSet2": "Field 2",
+    "CorrAnalysisExtremumCFNotify": "Calculation of cross-correlation functions extremes",
     "CorrAnalysisNotify": "Calculation of correlation coefficients",
     "CorrAnalysisPirsonNotify": "Calculation of Pearson correlation coefficients",
+    "CorrAnalysisRankedStatNotify": "Statistics calculation for rank variables",
     "CorrAnalysisSpearmanNotify": "Calculation of Spearman's correlation coefficients",
     "CorrAnalysisTauBKendallNotify": "Calculation of Kendall's Tau-b correlation coefficients",
     "DisplayName": "Caption",
@@ -576,9 +605,14 @@
     "ErrExportNotConfigured": "XML tree not configured",
     "ErrIncorrectExportConfiguration": "Errors in configuration",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
+    "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
+    "ErrMappedNodeNotOwnedByExportTree": "%s node for which input set column selection is requested is not included into XML tree",
+    "ErrNodeDoesNotDescendFromSelectedRoot": "%s node is not a descendant of the selected %s root element",
     "ErrNodeDoesNotExist": "\"%s\" node not found in XSD schema",
+    "ErrNotRootElement": "\"%s\" node is not the XSD schema root element",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrRootNodeNotSelected": "No root XML element selected",
+    "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into XML tree",
     "ErrXMLExport": "Error generating XML:\n Error code: %d\n %s",
     "ExportDataSetProcessCaption": "Data Set Processing",
     "IDName": "ID",
@@ -591,6 +625,7 @@
     "VendorDesc": "XML document formation according to given XSD schema"
   },
   "components/datereform/DateReform": {
+    "ErrFormatingString": "Error converting date/time to string with %s format",
     "ISO8601": "ISO8601"
   },
   "components/datereform/DateReformVendor": {
@@ -616,17 +651,24 @@
     "VendorDesc": "EM algorithm data clustering"
   },
   "components/enrichdata/EnrichData": {
-    "ProgessOutputBuild": "Build result set"
+    "DisplayNamePrefix": "Addition",
+    "ErrLinkMustContainColumnOfMainTable": "Link must contain a field from the main table",
+    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded %d maximum value",
+    "ProgessOutputBuild": "Build result set",
+    "ProgressJoinedTableIndex": "Joined %d table indexing"
   },
   "components/enrichdata/EnrichDataVendor": {
     "VendorCaption": "Enrich Data",
     "VendorDescription": "Enrich data using guides"
   },
   "components/execcmd/ExecCmd": {
+    "ErrBadCmdLine": "Failed to select executable file name",
     "ErrCmdLineIsEmpty": "Empty command line",
     "ErrCurrentDirectory": "Failed to define the current directory",
+    "ErrDisallowedExecution": "Node execution prohibited by security settings",
     "ErrMsgDisplayName": "Error message",
     "ErrResultCmdLineIsEmpty": "Empty result command line.",
+    "ExecTimeoutExpired": "Execution time expired",
     "ResultDisplayName": "Execution result"
   },
   "components/execcmd/ExecCmdVendor": {
@@ -638,7 +680,8 @@
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Reference node not found",
-    "ErrReferencedNodeNotSpecified": "No reference to node specified"
+    "ErrReferencedNodeNotSpecified": "No reference to node specified",
+    "ErrUnableToLoadComponentConfig": "Failed to load the internal component configuration"
   },
   "components/execnode/ExecNodeComponentVendor": {
     "InputBaseNode": "Base node",
@@ -647,10 +690,14 @@
   },
   "components/extractxml/ExtractXML": {
     "DocIDColumn": "Document ID",
+    "ErrCharsetForCodePageNotFound": "No supported XML character set found for %d code page",
     "ErrExtractXML": "Error extracting XML from %d row of the input set:\n Error code: %d\n Message: %s",
+    "ErrExtractXMLInitError": "Handler initialization error Extract\nXML:\n %s",
     "ErrImportNotConfigured": "Import tree not configured",
+    "ErrInputFieldNotSelected": "You must specify containing XML field",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
     "ErrNoInputDataSource": "No input data source connected",
+    "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrorCodeColumn": "Completion code",
     "ErrorDataSet": "Errors and exit codes",
@@ -663,6 +710,7 @@
     "VendorDescription": "Extracts XML document from the string field of the data set and imports it into the output data set according to the specified schema"
   },
   "components/factoranalysis/FactorAnalysis": {
+    "ErrFactorMatrixBadSize": "Incorrect factor mapping matrix size",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "ErrNoModel": "Model is not configured. It is required to train the node before its application",
     "ErrWrongModel": "Input data does not match previously trained model",
@@ -685,7 +733,15 @@
     "bdtData": "available data",
     "CompareTipFmt": "%s and %s",
     "ErrColumnNotFound": "Field is specified incorrectly",
+    "ErrCompareValueIsNull": "The compared value not defined",
     "ErrEmptyCompareValueList": "No list of values specified",
+    "ErrIncorrectCompareLowerBound": "The entered lower bound value does not match the filtered column type",
+    "ErrIncorrectCompareUpperBound": "The entered upper bound value does not match the filtered column type",
+    "ErrIncorrectCompareValue": "The entered value does not match the filtered column type",
+    "ErrIncorrectCompareValueList": "List values do not match the filtered column type",
+    "ErrIncorrectRelationType": "Relationship type does not match the filtered column type",
+    "ErrNoConditions": "No filtering conditions",
+    "ErrRowNumberNotSupported": "Row numerators not supported",
     "ErrUnknownDataType": "No data type specified",
     "FirstLastDateFmt": "%s %s %s from %s",
     "fld0and5to20DayPeriodName": "days",
@@ -722,7 +778,10 @@
     "fldYearLastPostfix": "last"
   },
   "components/filterdata/FilterData": {
-    "ErrPreviewDataSourceNotActive": "Failed to apply filter, input not activated"
+    "ErrPreviewDataSourceNotActive": "Failed to apply filter, input not activated",
+    "FilterDataNotify": "Filter operation",
+    "FilterPreviewProcess": "Filter operation preview",
+    "WarnReachedLimitScanRow": "Maximum scanned row count reached: %d"
   },
   "components/filterdata/FilterDataVendor": {
     "VendorCaption": "Row Filters",
@@ -730,6 +789,7 @@
   },
   "components/filtration/DataRecovery": {
     "DataRecovery": "Imputation",
+    "PaymentAdditionalFeatures": "Calculation of the additional features",
     "QualityEngine": "Data quality",
     "ScanningInputData": "Input data scanning"
   },
@@ -739,21 +799,28 @@
   },
   "components/filtration/ELimOutlier": {
     "ErrOutDataSetIndexOutOfRange": "The output set index %d is out of [%d; %d] range",
+    "GenerationOutputSets": "Output sets generation",
     "OutData": "Output set",
     "OutDataExtr": "Extremes",
     "OutDataOut": "Outliers",
-    "QualityEngine": "Data quality"
+    "PaymentAdditionalFeatures": "Calculation of the additional features",
+    "QualityEngine": "Data quality",
+    "ScanningInputData": "Input data scanning"
   },
   "components/filtration/ElimOutlierVendor": {
     "VendorCaption": "Eliminate Outliers",
     "VendorDesc": "Eliminate outliers and extremes"
   },
   "components/forecast/ARIMAXBuilder": {
+    "ErrIncorrectData": "Incorrect data passed to %s procedure",
+    "ErrOptimGradientVerificationFailed": "Analytical gradient verification failed",
     "TrainARIMAXProcessCaption": "Model Training"
   },
   "components/forecast/ARIMAXModel": {
     "ARDisplayName": "AR[%d]",
     "ARIMAForecastProcessCaption": "Forecast Calculation",
+    "ErrModelHasNoIntercept": "The current model has no intercept",
+    "ErrUnknownCoefficients": "Model contains unknown coefficients",
     "InterceptDisplayName": "Intercept",
     "MADisplayName": "MA[%d]",
     "SARDisplayName": "Seasonal AR[%d]",
@@ -761,9 +828,25 @@
   },
   "components/forecast/ARIMAXParams": {
     "ConfidenceInterval": "Confidence interval",
-    "ErrNoStructuralElements": "No structural model element specified"
+    "D": "Integration order",
+    "DS": "Seasonal integration order",
+    "ErrNoStructuralElements": "No structural model element specified",
+    "ForecastHorizon": "Forecast horizon",
+    "P": "AR part order",
+    "PS": "Seasonal AR part order",
+    "Q": "MA part order",
+    "QS": "Seasonal MA part order",
+    "SeasonalPeriod": "Period of the seasonal component"
+  },
+  "components/forecast/ARIMAXTasks": {
+    "ARIMAXProcessCaption": "%s Model Training",
+    "ErrNotARIMAXTaskContext": "Internal error: context is not the training context for ARIMAX model",
+    "MessageCurrentModel": "ARIMAX: AIC of the current selected %s model: %.8f",
+    "MessageNewModel": "ARIMAX: AIC of %s model: %.8f",
+    "MessageSelectedModel": "ARIMAX: %s model selected, number of degrees of freedom: %d"
   },
   "components/forecast/ARIMAXTeacher": {
+    "ErrInvalidTrainData": "The model cannot be built on the basis of the specified data",
     "ErrNoTrainData": "No train data"
   },
   "components/forecast/ARIMAXTrainingResults": {
@@ -783,11 +866,14 @@
     "ColumnName": "Input field name",
     "ColumnUniqueValue": "Unique value",
     "ErrInvalidFieldsSettings": "Invalid input set field settings",
+    "ErrModelWithNoParams": "Invalid model settings: no matched parameters",
     "ErrNoOutputFieldsSelected": "No output data field specified",
     "ErrNotTrained": "Model not trained",
+    "ErrWrongModelInput": "Input columns do not match previously trained model",
     "ForecastModelCoefficients": "Model coefficients",
     "ForecastOutputDataSet": "Model output",
     "LagColumn": "Lag",
+    "ModelDF": "Number of the model degrees of freedom",
     "ParameterNameColumn": "Parameter",
     "PValueColumn": "P-value",
     "R2": "Determination coefficient",
@@ -845,6 +931,7 @@
     "ErrTeachNoOutputField": "No output data field specified",
     "Intercept": "<Intercept0>",
     "LinRegTrainProcessName": "Build model",
+    "ModelDF": "Number of the model degrees of freedom",
     "ModelPValue": "Model P value",
     "RegressionCoefsNamePostfix": "|Coefficients",
     "RegressionColumn": "%s|Regression",
@@ -859,6 +946,7 @@
   },
   "components/linregression/LinRegressionTasks": {
     "ErrWrongValidationPartitionCount": "Validation partition count must be more than 0 (given partition count = %d) ",
+    "RegFoldSet": "Validation partition %d ",
     "RegPrepareData": "Preparing data before training",
     "RegTrainProcessName": "%s method - model training",
     "ValidationProcess": "Model validation"
@@ -866,6 +954,9 @@
   "components/linregression/LinRegressionVendor": {
     "VendorCaption": "Linear Regression",
     "VendorDesc": "Linear regression"
+  },
+  "components/logregression/LogRegressionBuilder": {
+    "ErrWrongLogRegModel": "The trained model is not a log. regression model"
   },
   "components/logregression/LogRegressionEngine": {
     "ActualEvent": "Event|Fact",
@@ -879,17 +970,27 @@
     "Intercept": "<Intercept0>",
     "LogRegStoreStatProcessName": "Calculation of quality indicators",
     "LogRegTrainProcessName": "Build model",
+    "ModelDF": "Number of the model degrees of freedom",
     "ModelPValue": "Model P value",
     "OutputUniqueValuesNotCalculated": "Unique values of \"%s\" output column not calculated",
+    "PredictedValue": "%s|Predicted value",
+    "PredictionEvent": "Event|Prediction",
+    "PredictionProbability": "Event probabillity|Prediction",
+    "PredictionScore": "Score|Prediction",
+    "RegressionCoefsNamePostfix": "|Coefficients",
+    "RegressionScoreNamePostfix": "|Score",
+    "RegressionStdErrorNamePostfix": "|Sd. dev.",
     "TestSamples": "Samples in the test set",
     "TotalSamples": "Total samples",
     "TotalSelectedSamples": "Total selected samples",
     "TrainSamples": "Samples in the training set",
     "TrainThreshold": "Model train cuttoff",
+    "ValidationPartitions": "Number of validation partitions",
     "ValidationSamples": "Samples in the validation set"
   },
   "components/logregression/LogRegressionTasks": {
     "ErrWrongValidationPartitionCount": "Validation partition count must be more than 0 (given partition count = %d)",
+    "RegFoldSet": "Validation partition %d ",
     "RegPrepareData": "Preparing data before training",
     "RegTrainProcessName": "%s method - model training",
     "ValidationProcess": "Model validation"
@@ -899,18 +1000,25 @@
     "VendorDesc": "Logistic regression"
   },
   "components/loop/LoopComponent": {
+    "ErrGroupCountMustBePositive": "Group count must be positive",
     "ErrGroupDataSourceSocketNotSpecified": "No socket containing columns to group specified",
+    "ErrGroupSizeMustBePositive": "Group row count must be positive",
     "ErrIterationCountOverflow": "Maximum allowable number of iterations exceeded: %d",
+    "ErrSocketIsNotInputDataSourceSocket": "\"%s\" socket is not input socket containing data set",
     "ErrSocketNotConfigured": "Socket not configured",
+    "ErrUnsupportedInputSocketType": "Unsupported \"%s\" socket type",
     "IterationCaption": "Iteration №%d",
     "IterationConfiguration": "Saved configuration",
     "IterationConfigurationCount": "Configuration count",
+    "IterationConfigurationItem": "Configuration collection item",
     "IterationErrorDetailsFieldDisplayName": "Detailed error information",
     "IterationErrorMessageFieldDisplayName": "Error message",
     "IterationIdentifierDataType": "Configuration ID data type",
     "IterationIdentifiers": "Identifier values",
     "IterationIdFieldDisplayName": "Iteration identifier",
     "IterationIndex": "Iteration index",
+    "IterationStatusSocketName": "Iterations execution status",
+    "IterationSuccessFlagFieldDisplayName": "Success flag field",
     "ProcessActivate": "Activating \"%s\" node",
     "ProcessGroupProcessing": "Group processing"
   },
@@ -926,6 +1034,10 @@
     "ErrInvalidNeuronKind": "Invalid neuron kind: %d",
     "ErrNoOutputColumns": "Neural network output columns not set",
     "ErrNoTrainData": "No train data",
+    "FitH1ProcessCaption": "Training: one hidden = %d layer of neurons",
+    "HLSize": "The number of neurons in the hidden layers (same)",
+    "Nh1": "The number of neurons in the first hidden layer",
+    "Nh2": "The number of neurons in the second hidden layer",
     "NHL": "Number of hidden layers",
     "PrepareProcessCaption": "Prepare Data",
     "TrainProcessCaption": "Neural Network Training"
@@ -936,12 +1048,16 @@
     "ErrMultipleOutputs": "Only one output data field allowed",
     "ErrNetworkUntrained": "Neural network is untrained",
     "ErrNoInputFields": "No input data fields specified",
+    "ErrTeachNoOutputFields": "No output data fields specified In the training mode",
     "ErrUnbalancedEndUpdateNeuralNetParameters": "Call of EndUpdateNeuralNetParameters without corresponding BeginUpdateNeuralNetParameters",
     "ErrWrongModelInput": "Input columns do not match previously trained model",
+    "ErrWrongModelOutput": "Output column does not match previously trained model",
     "GiniIndexColumn": "Gini index",
     "GTest_Multiple": "%s|%s|G-test",
     "GTest_Single": "%s|G-test",
     "NeuralNetOutputDataSet": "Neural network output",
+    "PredictedClsIDColumn": "Class ID|Prediction",
+    "PredictedColumn": "%s|Prediction",
     "TestSamples": "Samples in the test set",
     "TotalSamples": "Total samples",
     "TotalSelectedSamples": "Total selected samples",
@@ -1073,7 +1189,13 @@
     "VendorDesc": "Data sorting"
   },
   "components/ungroupdata/UngroupData": {
+    "ErrInSelectQuotaCalcFields": "No field for quotas calculation selected",
     "ErrInSelectQuotaFields": "No field with quotas selected",
+    "ErrInSelectTimeAxisFields": "No fields for data sequentializing selected",
+    "ErrInSelectUngroupField": "Ungroupable values field not defined",
+    "ErrNoLinksDefined": "No links defined for group identifiers",
+    "ErrNoLinksFields": "No related fields to build AVL tree",
+    "ErrPostProcessingTerminated": "Error in the algorithm ungrouping! The process has been terminated.",
     "GenerationOutputSets": "Output sets generation",
     "GroupColumnAVLTreeBuilding": "Group initial data",
     "OutputSIDisplayName": "Seasonal index value",
@@ -1358,6 +1480,7 @@
   },
   "Libraries/bgrtl/Classes": {
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
+    "ErrItemByNameNotFound": "%s with \"%s\" name not found",
     "ErrItemWithGuidAlreadyExist": "%s with identifier %s already exists",
     "ErrItemWithIDAlreadyExist": "%s with identifier %d already exists",
     "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered",
@@ -1523,6 +1646,9 @@
   },
   "Libraries/Config/ConfigScheme": {
     "ValueDesc": "Value"
+  },
+  "Libraries/DataPartition/LearnPartition": {
+    "ErrNotReadyYet": "Partition method not implemented"
   },
   "Libraries/DataPartition/Partition": {
     "AVLTreeBuilding": "Group data",
@@ -1799,7 +1925,7 @@
   },
   "Viewers/CoarseClasses/CoarseClassesViewVendor": {
     "VendorCaption": "Coarse Classes",
-    "VendorDesc": "Coarse classes visualizer"
+    "VendorDesc": "\"Coarse classes\" visualizer"
   },
   "Viewers/Cube/CubeDetailing": {
     "ManagerStatistics": "Statistics"

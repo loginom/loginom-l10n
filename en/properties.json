@@ -334,7 +334,8 @@
   },
   "components/replace": {
     "ReplaceTable": {
-      "IsEmpty": "Empty substitution table"
+      "IsEmpty": "Empty substitution table",
+      "ReplaceSourceID": "Input replacement table GUID"
     }
   },
   "components/sonn": {
@@ -472,6 +473,9 @@
     },
     "DescriptionInfo": {
       "Description": "Description"
+    },
+    "GuidedCollectionItem": {
+      "Guid": "Collection item Guid"
     },
     "List": {
       "Count": "Element count listed"

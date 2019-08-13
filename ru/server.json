@@ -264,7 +264,7 @@
     "ErrParseStreamUnrecognizedEncoding": "Ошибка при разборе потока: неизвестная кодировка %s",
     "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n\t%s",
     "ErrParseURLNoXML": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s': ответ сервера не является XML-файлом",
-    "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n\t%s",
+    "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n %s",
     "ErrParseURLUnrecognizedContentType": "Ошибка при выполнении запроса к URL '%s': ответ сервера не обработан, так как Content-type: %s не зарегистрирован",
     "ErrSaxDocumentHasNoRootElements": "В документе отсутствует корневой элемент",
     "ErrSaxParserFeatureInvalidArg": "Неправильный тип аргумента при установке опции '%s' SAX-парсера MSXML",

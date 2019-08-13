@@ -1,6 +1,6 @@
 {
   "admin/ServerSettingsForm": {
-    "Bind": "Address binding",
+    "Bind": "IP address",
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection wizard",
     "DirectorySettings": "Folders",
@@ -1881,7 +1881,7 @@
     "CutoffValue": "Value",
     "FPRShort": "FPR",
     "GeneralRatings": "Classifier scores",
-    "Gini": "Gini coefficient",
+    "Gini": "Gini index",
     "KS": "KS",
     "KS_Tooltip": "Kolmogorov-Smirnov statistics",
     "PPVShort": "PPV",

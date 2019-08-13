@@ -1,8 +1,41 @@
 {
+  "Net/BaseSocketMessageTransport": {
+    "ErrIncorrectMessageSize": "Incorrect message size: {0}",
+    "ErrIncorrectServerResponse": "Incorrect server response received"
+  },
+  "Net/MessageTransport": {
+    "ErrConnectionFailure": "Remote computer connection lost"
+  },
+  "Net/MessageTransportAsync": {
+    "ErrConnectionFailure": "Remote computer connection lost"
+  },
   "Net/RemoteMessageData": {
-    "ErrUnknownMethodID": "Unknown method identifier {0}"
+    "ErrMessageSizeIncrementCannotBeNegative": "Message size increment cannot be negative",
+    "ErrMessageSizeOverflow": "Maximum message size exceeded",
+    "ErrUnknownInterfaceGUID": "Interface with {0} identifier not registered",
+    "ErrUnknownInterfaceID": "Unknown interface identifier: {0}",
+    "ErrUnknownInterfaceName": " {0} interface not registered",
+    "ErrUnknownMethodID": "Unknown method identifier {0}",
+    "ErrUnsupportedParameterType": "Unsupported parameter type"
   },
   "Net/ServerRemoteObjects": {
     "ErrUnknownMethodID": "Unknown method identifier {0}"
+  },
+  "Net/Session": {
+    "ErrDisconnectedSession": "Connection lost",
+    "ErrDisconnectedSessionClientOnly": "Server connection lost",
+    "ErrInvalidObjectID": "Invalid object identifier: {0}",
+    "ErrInvalidResponseMessageType": "Invalid response message type: {0}",
+    "ErrMainServerObjectNotRegistered": "The main server object is not registered",
+    "ErrMaxObjectIdReached": "Limit in {0} values of object identifiers reached",
+    "ErrUnknownInterfaceID": "Unknown interface identifier: {0}"
+  },
+  "Net/SessionThreaded": {
+    "ErrInvalidMessageSignature": "Unsupported parameter type",
+    "ErrUnknownInterfaceID": "Unknown interface identifier: {0}"
+  },
+  "Net/WebSocketMessageTransport": {
+    "ErrConnectionClosed": "Connection with remote computer closed",
+    "ErrFailedToConnectWebSocket": "Failed to connect to the web socket at the following address {0}"
   }
 }

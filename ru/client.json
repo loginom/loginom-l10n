@@ -1,6 +1,6 @@
 {
   "admin/ServerSettingsForm": {
-    "Bind": "Прослушиваемые адреса",
+    "Bind": "IP адрес",
     "ComponentSettings": "Параметры компонента",
     "ConnectionSettings": "Параметры подключения",
     "DirectorySettings": "Папки",

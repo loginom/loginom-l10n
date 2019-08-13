@@ -19,7 +19,7 @@
     "ErrInvalidFunctionName": "Invalid %s function name",
     "ErrNoFunc": "No reference to function",
     "ErrOddArgs": "%s function can accept only odd number of arguments",
-    "ErrTooFewArgs": "Too few arguments transferred to %s function (%d whereas %d is minimum value)",
+    "ErrTooFewArgs": "Too few arguments were called to %s function (%d whereas %d is minimum value)",
     "ErrTooManyArgs": "Many arguments were called to %s function (%d whereas %d is maximum value)"
   },
   "Common/CertList/CertList": {
@@ -169,20 +169,35 @@
     "ErrMimeContentReferencesComplexType": "mime:content extension element in \"%s\" message (\"%s\" operation) is associated with \"%s\" part that refers to the complex type of %s{%s} XSD schema",
     "ErrNoDefinitionsElement": "<definitions/> element of WSDL description is missing or does not belong to the WSDL namespace",
     "ErrNotArrayType": "\"%s\" not an array type description",
-    "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema inserted into the WSDL file (%d row, %d position):\nError code: %d\nReason: %s",
+    "ErrOpDefNotFoundInPortType": "\"%s\" operation referenced by \"%s\" binding of not found in \"%s\" port type definition",
+    "ErrOperationMustSpecifyExtension": "\"%s\" operation extension of \"%s\" port binding not specified or not supported",
+    "ErrPartIsReferencedByElement": "\"%s\" part defined by element not by XSD schema type",
+    "ErrPartIsReferencedByType": "\"%s\" part defined by type not by XSD schema element",
+    "ErrPortTypeNotFound": "\"%s\" port type for \"%s\" binding not found",
+    "ErrSoapDocumentEncoded": "\"Document\" style SOAP messages with \"encoded\" usage type are not supported",
+    "ErrSoapOperationVersionConflict": "SOAP version of %s operation conflicts with %s binding version",
+    "ErrSoapTransportNotSupported": "SOAP transports with the exception of HTTP are not currently supported",
+    "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema included into the WSDL file (%d row, %d position):\nError code: %d\nReason: %s",
     "ErrWsdlImportNoAccess": "No access to the imported %s document"
   },
   "Common/XML/Processor/XMLExportImpl": {
     "ColumnName": "Data column name",
     "ErrColumnMappedToNonExistentNode": "\"%s\" input set column has been assigned for nonexistent \"%s\" XSD schema node",
+    "ErrValueIntExportImpossible": "Failed to export %d value to XML document node with \"%s\" type: %s",
+    "ErrXMLExportContextNoDataSource": "Attempt to create XML export context not specifying data source",
+    "ErrXMLExportRootElementAttributeRepeats": "You cannot re-add %s attribute to %s XML document root element",
+    "ErrXMLExportRootElementSubElementRepeats": "Failed to re-add %s element to root element of %s XML document",
+    "ErrXMLExportSchemaDoesNotAllowElement": "XSD schema does not allow to export %s element to current XML document",
     "NodePath": "Tree node path"
   },
   "Common/XML/Processor/XMLImportImpl": {
+    "ErrNoParentElement": "No parent element in \"%s\" element",
     "ErrXMLParse": "Error parsing XML:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s",
     "ErrXMLValidate": "XML validation error:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s"
   },
   "Common/XML/Processor/XMLRequestProcessor": {
-    "ErrXMLExportNoContext": "No export context specified"
+    "ErrXMLExportNoContext": "No export context specified",
+    "ErrXMLExportNoSinks": "No elements were specified in XML document for export"
   },
   "Common/XML/Processor/XMLRequests": {
     "ErrExportContextNotSet": "No export context specified",
@@ -211,7 +226,12 @@
     "ErrValueIntConversionImpossible": "Failed to convert \"%s\" string to \"%s\" number: %s",
     "Group_Idx": "(%s) index"
   },
+  "Common/XML/SAX/XMLSAX": {
+    "ErrParserIsActive": "You cannot change parser properties during parsing"
+  },
   "Common/XML/SAX/XMLSAX_MSXML": {
+    "ErrParseURLUnhandledException": "Unhandled exception parsing request to URL '%s':\n %s",
+    "ErrSaxDocumentHasNoRootElements": "No root element in the document",
     "HTTPClientInitFailed": "Error creating HTTP client",
     "HTTPClientRetrieveDataFailed": "Error retrieving data by HTTP client: %s",
     "UnbalancedPop": "Unbalanced extraction operation"
@@ -257,7 +277,7 @@
     "ErrModelExcludeItems": "Elements with maximum support added or excluded, it is required to rebuild the model",
     "ErrMoreThanOneItemColumn": "More than one transaction item column in the input data",
     "ErrMoreThanOneTransactionColumn": "More than one transaction identifier column in the input data",
-    "ErrNConsequentMaxWrongValue": "Invalid maximum number of items in the rules antecedent or consequence",
+    "ErrNConsequentMaxWrongValue": "Invalid maximum item count in the rules antecedent or consequence",
     "ErrNItemsMaxWrongValue": "Invalid maximum number of items in the set",
     "ErrNoItemColumn": "No transaction item column in the input data",
     "ErrNoModel": "Model is not configured. It is required to train the node before its application",
@@ -332,7 +352,7 @@
     "ErrInvalidBinRowFmt": "Failed to generate bin for %s field from %d row",
     "ErrInvalidRangeWidthFmt": "The initial bin boundary exceeds the final boundary for %s field",
     "ErrLogBinsCountLimitFmt": ", for % field.",
-    "ErrLowerLimit": "No lower range bound specified",
+    "ErrLowerLimit": "No lower bins bound specified",
     "ErrNoDefineExternalBins": "No external bins found",
     "ErrNoDefineExternalBound": "No bounds for external bins found",
     "ErrSkoAvgFmt": "Failed to get SD/mean for %s field",
@@ -825,9 +845,9 @@
     "VendorDesc": "Fill in missing data"
   },
   "components/filtration/ELimOutlier": {
-    "ErrOutDataSetIndexOutOfRange": "The output set index %d is out of [%d; %d] range",
+    "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
     "GenerationOutputSets": "Output sets generation",
-    "OutData": "Output set",
+    "OutData": "Output data set",
     "OutDataExtr": "Extremes",
     "OutDataOut": "Outliers",
     "PaymentAdditionalFeatures": "Calculation of the additional features",
@@ -961,7 +981,7 @@
     "ErrInvalidColNamePrefix": "\"%s\" name prefix is not a valid identifier",
     "ErrRowCountExceedMaxValue": "Row count of the result set exceeded %d maximum value",
     "ProgressCompareIndexes": "Index mapping",
-    "ProgressFormResult": "Output set formation",
+    "ProgressFormResult": "Output data set formation",
     "ProgressJoinedTableIndex": "Joined table indexing",
     "ProgressMainTableIndex": "Main table indexing"
   },
@@ -1268,8 +1288,8 @@
   },
   "components/partition/PartitionEngine": {
     "OutDataSetCommon": "Common data set",
-    "OutDataSetTeach": "Training output set",
-    "OutDataSetTest": "Test output set",
+    "OutDataSetTeach": "Training output data set",
+    "OutDataSetTest": "Test output data set",
     "PartitionDisplayName": "Test set"
   },
   "components/partition/PartitionVendor": {
@@ -1277,9 +1297,9 @@
     "VendorDesc": "Formation of test and training sets"
   },
   "components/quality/Quality": {
-    "ErrOutDataSetIndexOutOfRange": "The output set index %d is out of [%d; %d] range",
+    "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
     "GenerationOutputSets": "Output sets generation",
-    "OutData": "Output set",
+    "OutData": "Output data set",
     "OutDataExtr": "Extremes",
     "OutDataNull": "Null data",
     "OutDataOut": "Outliers",
@@ -1748,9 +1768,13 @@
     "VendorCaption": "XML File",
     "VendorDesc": "Import data from XML file according to the specified XSD schema"
   },
+  "Libraries/1CConnection/1CConnection": {
+    "ErrDBPath": "Failed to get path to DB"
+  },
   "Libraries/1CConnection/1Cv8Connection": {
     "ErrConnectionString": "Error in connection string",
-    "ErrTestConnection": "Connection test error"
+    "ErrTestConnection": "Connection test error",
+    "NotConnected": "Not connected to infobase"
   },
   "Libraries/1CConnection/1Cv8ConnectionVendor": {
     "1Cv8ConnectionVendorCaption": "1C:Enterprise 8",
@@ -1758,16 +1782,31 @@
   },
   "Libraries/bgdbrtl/DB": {
     "ComponentTip": "%s [%s]",
+    "ErrCommandTypeNotYetSupported": "%s type of SQL command not supported yet",
     "ErrConnectionString": "Empty connection string",
+    "ErrDBPath": "Failed to get path to DB",
+    "ErrExecuteProcedure": "Error executing stored procedure \"%s\"",
+    "ErrExecuteQuery": "Error while SQL executing:\n%s",
+    "ErrLocalDBForbidden": "Connections to local server databases are forbidden",
+    "ErrOpenQuery": "Error while SQL opening :\n%s",
+    "ErrParameterTypesDoNotMatch": "Parameter types do not match",
+    "ErrPrepareProcedure": "Error preparing stored procedure \"%s\"",
     "ErrPrepareQuery": "SQL preparation error:\n%s",
     "ErrTableNameNotSelect": "No table name specified",
-    "ErrTestConnection": "Connection test error:\n%s"
+    "ErrTestConnection": "Connection test error:\n%s",
+    "ErrUnPrepareQuery": "Error clearing prepared query"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
     "DatabaseTypeName": "MS Access (OLEDB)"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
     "DatabaseTypeName": "MS Excel (ODBC) [UniDAC]"
+  },
+  "Libraries/bgdbrtl/UniDAC/FBUniDACDB": {
+    "DatabaseTypeName": "Firebird"
+  },
+  "Libraries/bgdbrtl/UniDAC/IBUniDACDB": {
+    "DatabaseTypeName": "Interbase"
   },
   "Libraries/bgdbrtl/UniDAC/MsSQLOleDbUniDACDB": {
     "DatabaseTypeName": "MS SQL (OLE DB)"
@@ -1781,18 +1820,31 @@
   "Libraries/bgdbrtl/UniDAC/OracleUniDACDB": {
     "DatabaseTypeName": "Oracle"
   },
+  "Libraries/bgdbrtl/UniDAC/PostgresUniDACDB": {
+    "DatabaseTypeName": "PostgreSQL"
+  },
   "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
-    "ErrBlankConnectionString": "Empty connection string"
+    "DatabaseTypeName": "SQLite",
+    "ErrBlankConnectionString": "Empty connection string",
+    "SQLiteError": "SQLite error:"
   },
   "Libraries/bgdbrtl/UniDAC/UniDACDB": {
     "Direct": "Do not use DBMS client",
+    "ErrNotOwnSession": "Session does not belong to the database",
     "ServerListInaccessible": "List of DBMS servers unavailable"
   },
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Bit index is out of range",
-    "ErrSubSetPowerIsZerro": "Attempt to extract all subsets with the power less than 0 or more than the set power as such"
+    "ErrSubSetPowerIsZerro": "Attempt to extract all subsets with the power less than 0 or more than the set power as such",
+    "IndexesDesc": "Array of indexes",
+    "SizeDesc": "Set power"
+  },
+  "Libraries/bgrtl/CachedDataSet": {
+    "ErrRowCountLimitReached": "Maximum row count limit reached"
   },
   "Libraries/bgrtl/Classes": {
+    "CountDesc": "Count",
+    "ErrConfigApplyModeNotSupported": "This method of the configuration loading not supported",
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
     "ErrItemByNameNotFound": "%s with \"%s\" name not found",
     "ErrItemWithGuidAlreadyExist": "%s with identifier %s already exists",
@@ -1809,10 +1861,19 @@
   "Libraries/bgrtl/ColumnDefs": {
     "ColumnMetaDesc": "Column"
   },
+  "Libraries/bgrtl/ColumnDefsVendor": {
+    "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type"
+  },
   "Libraries/bgrtl/ColumnInfoLinks": {
-    "ErrLinkedColumnInfoNotFound": "\"%s\" named column not found"
+    "ErrLinkedColumnInfoNotFound": "\"%s\" named column not found",
+    "ErrLinkedColumnInfoNotSpecified": "No column link set",
+    "ErrLinkedColumnInfoTypesMismatch": "%s column type is not compatible with the source column type"
   },
   "Libraries/bgrtl/ColumnsMultiLinks": {
+    "ErrAlienLinkedColumn": "\"%s\" field does not belong to any of the used field lists",
+    "ErrCannotDeleteNotDynamicLink": "You cannot delete non-dynamic link",
+    "ErrLinkedColumnTypesMismatch": "\"%s\" and \"%s\" types of linked columns mismatch",
+    "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
     "Link": "Link"
   },
   "Libraries/bgrtl/Consts": {
@@ -1839,6 +1900,9 @@
     "fldOneYearPeriodName": "year",
     "VersionSerialNumber": "Serial number"
   },
+  "Libraries/bgrtl/Couplers": {
+    "ErrModelSocketCouplerDefAlreadyCoupled": "Connection already established"
+  },
   "Libraries/bgrtl/DataSet": {
     "ColumnDefs": "Column descriptions",
     "ContainedStatisticsCompute": "Calculate statistics",
@@ -1853,6 +1917,9 @@
   "Libraries/bgrtl/DerivedDataSet": {
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
     "ErrSourceColumnNotFound": "Failed to find source %s column for output %s column"
+  },
+  "Libraries/bgrtl/DerivedVariables": {
+    "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
   },
   "Libraries/bgrtl/EnumTypInfo": {
     "ErrEnumNotRegistered": "\"%s\" enumeration not registered"
@@ -1871,6 +1938,11 @@
     "ErrInvalidIndex": "%d index value of \"%s\" parameter is out of [%d; %d] range",
     "ErrOutOfRange": "%g value of \"%s\" parameter is out of [%g; %g] range",
     "ErrOutOfRangeInt": "%d value of \"%s\" parameter is out of [%d; %d] range"
+  },
+  "Libraries/bgrtl/ExecutionContext": {
+    "ErrExecutionContextAlreadyExists": "Failed to install the external execution context: context already exists",
+    "ErrExistingExecutionContextIsLocal": "The execution context used is not external",
+    "ErrExternalExecutionContextNotInstalled": "External execution context not installed"
   },
   "Libraries/bgrtl/ExportHTMLTable": {
     "ExcelSheetDefaultName": "Sheet1"
@@ -1893,6 +1965,9 @@
   },
   "Libraries/bgrtl/ExtensionsStd": {
     "DisplayFormatExtensionCaption": "Display Format"
+  },
+  "Libraries/bgrtl/FieldInfoLinks": {
+    "ErrLinkedFieldInfoNotFound": "Field under %s name not found"
   },
   "Libraries/bgrtl/FileMask": {
     "ACCDBFilesDesc": "MS Access 2007 Database",
@@ -1959,6 +2034,7 @@
     "Message": "Error"
   },
   "Libraries/bgrtl/HTML": {
+    "ErrItemByNameNotFound": "CSS element under \"%s\" name not found",
     "ExcelSheetDefaultName": "Sheet1"
   },
   "Libraries/bgrtl/OperationBracketsAssist": {
@@ -1967,6 +2043,12 @@
   },
   "Libraries/bgrtl/Random": {
     "ErrMSequenceCountOutOfBounds": "The required M-sequence length must be more than 0"
+  },
+  "Libraries/bgrtl/SemverUtils": {
+    "PreReleaseVersion": "prerelease version"
+  },
+  "Libraries/bgrtl/ServiceVariables": {
+    "ErrServiceVariablesAlreadyInitialized": "Service variables have already been initialized"
   },
   "Libraries/bgrtl/SparseArray": {
     "ErrItemNotExist": "Item with %d index does not exist"
@@ -1982,7 +2064,11 @@
     "ErrNotImplemented": "This functionality not implemented"
   },
   "Libraries/bgrtl/StrUtils": {
-    "ErrCodePageNotExist": "Codepage under %d does not exist"
+    "ErrCodePageNotExist": "Codepage under %d does not exist",
+    "NullValue": "<Null>"
+  },
+  "Libraries/bgrtl/SyncObjs": {
+    "ErrSlimReadWriteLockDebugFinalized": "%p sinchronizer finalized"
   },
   "Libraries/bgrtl/System": {
     "ErrInvalidGUID": "Failed to convert \"%s\" row to GUID",
@@ -2059,20 +2145,56 @@
     "ErrDataSourceNotActive": "%s data source is not active"
   },
   "Libraries/bgrtl/VariableDefs": {
+    "ErrVariableByUsageNotFound": "Variable with \"%s\" usage type not found",
     "VariableMetaDesc": "Variable"
   },
+  "Libraries/bgrtl/VariableInfoLinks": {
+    "ErrLinkedVariableInfoNotFound": "Variable under %s name not found",
+    "ErrLinkedVariableInfoNotSpecified": "No reference to variable specified",
+    "ErrLinkedVariableInfoTypesMismatch": "%s variable type is not compatible with the source variable type"
+  },
   "Libraries/bgrtl/Variables": {
+    "ErrVariablesAlreadyEditing": "Variables already in the editing process",
     "ErrVariablesNotActive": "Variables not active",
     "ErrVariablesNotConfigured": "Variables not configured",
     "ErrVariablesNotEditing": "Variables not editable",
     "VariableElements": "Variables list"
+  },
+  "Libraries/bgrtl/VariablesMultiLinks": {
+    "ErrAlienLinkedVariable": "\"%s\" variable does not belong to any variable list being used",
+    "ErrCannotDeleteNotDynamicLink": "You cannot delete non-dynamic link",
+    "ErrCannotLinkVariablesFromSameTable": "You cannot link \"%s\" and \"%s\" variables from the same table",
+    "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch",
+    "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
+    "Link": "Link"
+  },
+  "Libraries/bgrtl/VariablesVendor": {
+    "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type",
+    "VariableInfosVendorMetaDesc": "variable description vendor"
   },
   "Libraries/bgrtl/Vendors": {
     "VendorGroupMetaDesc": "vendor group",
     "VendorMetaDesc": "vendor"
   },
   "Libraries/bgrtl/ZipArchive": {
+    "ErrArchiveFormat": "Archive damaged, failed to open",
+    "ErrArchiveNotOpen": "Archive not open",
+    "ErrCompressErr": "Data compression error",
+    "ErrCompressStream": "Compressed data stream error",
+    "ErrCreateReadStream": "You cannot create a read stream until the write stream is finished",
+    "ErrCreateWriteStream": "Failed to create the write stream",
+    "ErrDeleteFilr": "Failed to update file headers",
+    "ErrDirectoryEndRecordx64": "Failed to find directories in archive",
+    "ErrFileExists": "%s file already exists in the archive",
+    "ErrIdentName": "%s file under %s name already exists in the archive",
+    "ErrIndexOutOfRange": "Out of range index",
+    "ErrReWriteLocalFileHeader": "Error updating local file header",
+    "ErrWrongHMAC": "Data encryption error",
     "ErrWrongPassword": "Wrong password"
+  },
+  "Libraries/ChakraCore/ChakraClasses": {
+    "ErrDefineProperty": "Failed to set \"%s\" property",
+    "ErrUnhandledPromiseRejected": "Unhandled error in Promise"
   },
   "Libraries/Config/Config": {
     "ErrUnsupportedPropertyType": "Unsupported property type",
@@ -2090,10 +2212,13 @@
     "AddVendorCaptionDef": "Component Added",
     "AddViewCaption": "\"%s\" Visualizer Added",
     "AddViewCaptionDef": "Visualizer Added",
+    "ComposeGenericCaption": "Nodes Composed in \"%s\" Supernode",
+    "ComposeGenericCaptionDef": "Nodes Composed in Supernode",
     "ConfigureNodeCaption": "Configured \"%s\" Node",
     "ConfigureNodeCaptionDef": "Node Configured",
     "ConfigureNodePortCaption": "Configured \"%s\" port of \"%s\" node",
     "ConfigureNodePortCaptionDef": "Node Port Configured",
+    "DeleteConnectionCaption": "Delete \"%s\" Connection",
     "DeleteConnectionCaptionDef": "Delete Connection",
     "DeleteLinkCaption": "\"%s.%s\" - \"%s.%s\" Link Deleted",
     "DeleteLinkCaptionDef": "Delete Link",
@@ -2105,12 +2230,32 @@
     "DeleteViewCaptionDef": "Visualizer Deleted",
     "ErrGenericViewsNotLoaded": "Failed to load visualizers of \"%s\" supernode",
     "ErrGenericViewsNotSaved": "Failed to save visualizers of \"%s\" supernode",
+    "ErrLinkIsNil": "No link set",
     "ErrModelNodeNotRestored": "Failed to restore \"%s\" node",
     "ErrNodeBlocked": "\"%s\" node is blocked",
-    "ErrNodeIsNil": "No node specified"
+    "ErrNodeIsNil": "No node specified",
+    "MoveLinkCaptionDef": "Link Moved"
+  },
+  "Libraries/Config/ConfigBackupService": {
+    "ErrBackupPointRollBack": "Failed to restore point: \"%s\"",
+    "ErrBackupPointUpdate": "Failed to update point: \"%s\"",
+    "ErrRollBackAggregateMesage": "Errors occurred during recovery",
+    "ErrRootBackupContainerFinish": "Attempt to close root recovery point"
+  },
+  "Libraries/Config/ConfigBinary": {
+    "ErrUnsupportedConfigBinaryStreamVersion": "Unsupported version of %d configuration data stream",
+    "ErrUnsupportedDataType": "Unsupported configuration attribute data type"
   },
   "Libraries/Config/ConfigScheme": {
-    "ValueDesc": "Value"
+    "CountDesc": "Count",
+    "ErrTypeByNameNotFound": "\"%s\" named type not found",
+    "ItemDesc": "Item",
+    "ValueDesc": "Value",
+    "VarDataDesc": "Data",
+    "VarTypeDesc": "Type"
+  },
+  "Libraries/Config/ConfigXML": {
+    "ErrUnsupportedDataType": "Unsupported configuration attribute data type"
   },
   "Libraries/DataPartition/LearnPartition": {
     "ErrNotReadyYet": "Partition method not implemented"
@@ -2198,6 +2343,7 @@
     "ErrNullData": "Data contains null values"
   },
   "Libraries/Math/SparseSolvers": {
+    "ErrNoMatrixOrRhs": "Matrix or right side not set",
     "ErrNonSquareSuperMatrixNotSupportedYet": "Solver SuperLU does not support non-square matrices yet",
     "ErrSuperLUSolver": "SuperLU Solver procedure failed",
     "ErrWrongArrayType": "Unsupported array type: %s",
@@ -2316,6 +2462,7 @@
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
+    "ErrUnknownCouplerDefType": "Unknown coupler type",
     "IsSealedVendor": "Sealed",
     "ModelComponent": "Node component",
     "OriginalComponentVendorGuidDesc": "Original component GUID"
@@ -2354,7 +2501,8 @@
   },
   "Libraries/Model/ModelComponent": {
     "ErrInvalidComponentEngineImplementation": "Invalid component engine implementation",
-    "ErrModelComponentAlreadyInitialized": "The node component already initialized"
+    "ErrModelComponentAlreadyInitialized": "The node component already initialized",
+    "ErrUnknownCouplerDefType": "Unknown coupler type"
   },
   "Libraries/Model/ModelComponentCouplerDefItems": {
     "CouplerDefMetaDesc": "Connection"
@@ -2384,14 +2532,32 @@
   "Libraries/Model/ModelComponentVendorGroupsCommon": {
     "AnalyticVendorGroupCaption": "Data Mining",
     "ExploratoryVendorGroupCaption": "Exploration",
-    "ExportVendorGroupCaption": "Export"
+    "ExportVendorGroupCaption": "Export",
+    "FlowControlVendorGroupCaption": "Control",
+    "ImportVendorGroupCaption": "Import",
+    "IntegrationVendorGroupCaption": "Integration",
+    "PreprocessingVendorGroupCaption": "Preprocessing",
+    "ReformVendorGroupCaption": "Transformation",
+    "VariableVendorGroupCaption": "Variables"
+  },
+  "Libraries/Model/ModelEnginePortItems": {
+    "PortMetaDesc": "Port"
+  },
+  "Libraries/Model/ModelEnginePorts": {
+    "ErrModelEngineInputPortAlreadyInitialized": "The input port already initialized",
+    "ErrModelEngineOutputPortAlreadyInitialized": "The output port already initialized"
   },
   "Libraries/Model/ModelNodesCopyUtils": {
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" reference node is not available at the required destination.",
     "ErrNodeNotConfigurable": "Failed to create the node copy with the following name: \"%s\" and GUID: %s",
-    "ErrNoNodesSpecified": "No node set specified"
+    "ErrNoNodesSpecified": "No node set specified",
+    "ErrNoSourceModelUnit": "Source module not found",
+    "ErrNoTargetModelUnit": "Target module not found",
+    "ErrSomeNodeDisposed": "One or several source nodes have been deleted or moved"
   },
   "Libraries/Model/ModelPackage": {
+    "ErrAlienModelUnit": "Node does not belong to the current package",
+    "ErrPackageLinkAlreadyExists": "Link to \"%s\" package already exists",
     "ErrPackageNameCannotBeEmpty": "Package name cannot be empty",
     "ModelUnitDisplayNameDefault": "Module"
   },
@@ -2409,8 +2575,14 @@
   "Libraries/Model/ModelSocketConstraintDefItems": {
     "SocketConstraintMetaDesc": "Socket constraint"
   },
+  "Libraries/Model/ModelSocketConstraintDefs": {
+    "ErrSocketIsNil": "No reference to socket specified"
+  },
   "Libraries/Model/ModelSocketConstraintItems": {
     "SocketConstraintMetaDesc": "Socket constraint"
+  },
+  "Libraries/Model/ModelSocketConstraints": {
+    "ErrSocketIsNil": "No reference to socket specified"
   },
   "Libraries/Model/ModelSocketDefItems": {
     "SocketMetaDesc": "Socket"
@@ -2448,21 +2620,30 @@
     "ErrActivateModelNodes": "Error occurred while activating nodes",
     "ErrAllNodesLocked": "All workflow nodes locked",
     "ErrComponentNotInitialized": "Base component not initialized",
+    "ErrModelNodeAlreadyInitialized": "Node already initialized",
+    "ErrNodeConfigNotInitialized": "Node configuration not initialized",
+    "ErrNodeIsNoMemberOfModel": "Node does not belong to the workflow",
     "ErrNodeLocked": "\"%s\" node is blocked",
     "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
     "ErrPortMismatch": "Incompatible component vendor: node port list does not match",
     "ErrSocketNotConfigured": "Socket not configured",
+    "ErrVariableNotFound": "Variable under \"%s\" name not found",
+    "ExplodeGenericModel": "Expanded \"%s\" supernode",
     "Left": "Left",
     "LogActivateNodeStart": "Activating \"%s\" node",
     "LogActivateNodeSuccess": "Successfully activated \"%s\" node",
+    "LogDeactivateNode": "\"%s\" node deactivated",
     "LogNodeActivationError": "Error activating \"%s\" node",
+    "RestoreBackupProcessCaption": "Restore Backup Configuration",
     "SynchronizationInputPort": "Execution order",
     "SynchronizationOutputPort": "Execution order",
     "Top": "Top"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
+    "ErrMsgNoAllVendorsCollected": "Failed to get all required types of vendors",
     "ErrMsgNoSubModel": "Supernode component not created",
     "ErrSubModelVendorNotCreated": "You cannot create the supernode component In the current context",
+    "WarnModelNotSupportInPort": "Failed to create input port for \"%s\" port",
     "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
@@ -2570,6 +2751,8 @@
     "VS_MEAN_SUBS": "to mean from subsequent"
   },
   "Libraries/Normalization/TunedNormParams": {
+    "ErrAvailableNormTypeNotFound": "No valid normalization type found",
+    "ErrWrongNormParamsConstructor": "Invalid normalization parameter constructor used",
     "FACT_ANY": "ANY",
     "FACT_ANY_COUNTINUOUS": "ANY CONTINUOUS",
     "FACT_ANY_DISCRETE": "ANY DISCRETE",
@@ -2581,6 +2764,7 @@
     "GenName": "Generated"
   },
   "Libraries/Normalization/TunedNormParamsProvider": {
+    "ErrInvalidColumn": "No available normalization types for \"%s\" column",
     "ErrNotImplemented": "This functionality not implemented"
   },
   "Libraries/Normalization/TuneNormDataSource": {
@@ -2621,6 +2805,7 @@
     "RegressionTrainingResults": "Training results"
   },
   "Libraries/Regression/RegressionModel": {
+    "ApplyModelProcessCaption": "Model Application",
     "RegressionStatistics": "Regression statistics"
   },
   "Libraries/Regression/RegressionStatistics": {
@@ -2675,10 +2860,30 @@
     "ErrQueryInterfaceNotAllowed": "You cannot query interface with %s identifier via QueryInterface",
     "ErrUnknownMethodID": "Unknown method identifier: %d"
   },
+  "Libraries/rpc/Session": {
+    "ErrDisconnectedSession": "Connection lost",
+    "ErrMaxObjectIdReached": "Limit in %d values of object identifiers reached",
+    "ErrUnknownInterfaceID": "Unknown interface identifier: %d"
+  },
   "Libraries/SuperLU/SuperLU_h": {
     "ErrExceptionOccurred": "SuperLU exception in function '%s' when calling '%s'",
     "InputError": "Invalid parameter %d when calling '%s'",
     "UserAbort": "SuperLU call stopped with error: '%s'"
+  },
+  "Libraries/WSDLClientConnection/WSDLClientConnection": {
+    "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s"
+  },
+  "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
+    "WSDLClientConnectionVendorCaption": "Web Service"
+  },
+  "Libraries/XSDFilesConnection/XSDFilesConnection": {
+    "ErrLoadXSD": "Error loading XSD files"
+  },
+  "Libraries/XSDFilesConnection/XSDFilesConnectionVendor": {
+    "XSDFilesConnectionVendorCaption": "Set of XSD Schemas"
+  },
+  "Studio/ApplicationManager": {
+    "ErrNoPackageFileName": "No package file specified."
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Summary"
@@ -2700,7 +2905,13 @@
     "ErrInvalidPath": "Invalid file path: \"%s\"",
     "ErrModelNodeNotFound": "Node %s not found",
     "ErrModelNodeNotPublished": "Node %s published",
+    "ErrNoPublishedNodes": "The package contains no published nodes",
+    "ErrPackageDoesNotBelongToCurrentSession": " %s package does not belong to the current session",
+    "ErrPackageNotFound": "Failed to find package with %s name and %s version ",
     "ErrPackageNotFoundByFileName": "Failed to find %s package",
+    "ErrPackageRestoreErrors": "Errors occurred while restoring %s package",
+    "ErrPublishedModelNodeNotFound": "Failed to find published node with %s identifier",
+    "ErrSessionAlreadyContainsPackage": "%s package already open in the current session",
     "FileNames": "File names",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s started",
@@ -2723,6 +2934,7 @@
     "ErrApplicationModeNotAllowed": "Connection in \"%s\" mode not allowed",
     "ErrInvalidPasswordHashInConfig": "Configuration file contains invalid password hash",
     "ErrInvalidUserNameOrPassword": "Invalid username or password",
+    "ErrLeadingOrTrailingWhitespaceInPassword": "Password must not begin or end with a space",
     "ErrUserAlreadyDeleted": "User already deleted",
     "ErrUserHasActiveSessions": "%s user has active sessions",
     "ErrUserNameConflictsWithSharedDirectory": "Username conflicts with %s shared directory name"
@@ -2730,10 +2942,22 @@
   "Studio/Server/BatchLauncher/BatchLauncher": {
     "ExampleTitle": "Example:",
     "OptionAddressDesc": "IP address or hostname (default: %s)",
-    "OptionNodeNameDesc": "Node name or GUID"
+    "OptionNodeNameDesc": "Node name or GUID",
+    "OptionPackageFileNameDesc": "Package path and file name (required parameter)",
+    "OptionPasswordDesc": "Password",
+    "OptionPortDesc": "Port (default: %s)",
+    "OptionSavePackageDesc": "Save package after execution",
+    "OptionTeachDesc": "Retraining mode",
+    "OptionUserNameDesc": "Username",
+    "Switches": "<Keys0>"
+  },
+  "Studio/Server/ServiceConsts": {
+    "ServiceDisplayName": "LoginomServer"
   },
   "Studio/SharedDirectories": {
+    "ErrSharedDirectoryAlreadyDeleted": "Shared directory already deleted",
     "ErrSharedDirectoryNameConflictsWithUser": "Username conflicts with %s shared directory name",
+    "ErrSharedDirectoryNameMustBeValidIdentifier": "The shared directory name must be a valid identifier",
     "LogAddDirectory": "%s shared directory created",
     "LogDeleteDirectory": "%s shared directory deleted",
     "SharedDirectoryMetaDesc": "Shared directory"
@@ -2809,6 +3033,7 @@
   },
   "Viewers/Chart/Component/BindedRadioGroup": {
     "ErrRadioGroupBadDescriptions": "Incorrect array of RadioGroup names",
+    "ErrRadioGroupBadField": "Invalid field binded to RadioGroup",
     "ErrRadioGroupBadObject": "Object has been deleted",
     "ErrRadioGroupBadType": "Invalid RadioGroup element type",
     "ErrRadioGroupBadTypeAccess": "Invalid field access"
@@ -2824,7 +3049,8 @@
   },
   "Viewers/Chart/Server/ChartColumnInfo": {
     "ChartExtremesProgress": "Search for extremes",
-    "ChartSortingProgress": "Data sorting"
+    "ChartSortingProgress": "Data sorting",
+    "ChartTotalsProgress": "Addition of series"
   },
   "Viewers/Chart/Server/ChartParametres": {
     "Alpha": "Transparency",
@@ -2835,6 +3061,9 @@
     "ErrLinkedColumnDataType": "Invalid data type",
     "ErrLinkedColumnInfoNotFound": "Column not found"
   },
+  "Viewers/Chart/Server/ChartViewCacheServer": {
+    "DataSourceIsInActive": "Data source is inactive"
+  },
   "Viewers/CoarseClasses/CoarseClassesView": {
     "Component": "Component",
     "ErrNotDefinedComponent": "Undefined component"
@@ -2843,24 +3072,47 @@
     "VendorCaption": "Coarse Classes",
     "VendorDesc": "\"Coarse classes\" visualizer"
   },
+  "Viewers/Cube/CubeCalcSummaries": {
+    "ErrCalculationExpression": "Error occurred while calculating the expression corresponding to calculated fact \"%s\"",
+    "ErrExprResultIsString": "The expression result relates to the string type",
+    "ErrParseExpression": "Error occurred while parsing the expression corresponding to calculated fact \"%s\"",
+    "ErrRecursiveCall": "Circular reference between calculated facts detected: %s"
+  },
   "Viewers/Cube/CubeChart": {
     "MaxDotsCountDesc": "Maximum dots count",
     "MaxSeriesCountDesc": "Maximum series count"
   },
   "Viewers/Cube/CubeDetailing": {
+    "DetailingProcessCaption": "\"%s\" detailing by [%d, %d] cell",
+    "ErrCubeScopeMissing": "Failed to get Cube context when creating detailing visualizer",
+    "ErrDetailingViewDataSource": "Failed to prepare data source for Cube detailing visualizer \"%s\"",
+    "ErrDetailingViewExecution": "Error while executing \"%s\" Cube detailing visualizer",
+    "ErrDetailingViewInitialization": "Error while initialization of \"%s\" Cube detailing visualizer",
     "ManagerBrowse": "Table",
-    "ManagerStatistics": "Statistics"
+    "ManagerStatistics": "Statistics",
+    "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" visualizer configuration of the Cube detailing"
   },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
+    "ErrOrderNumberDim": "Incorrect dimension order numbers",
+    "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
+    "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"
+  },
+  "Viewers/Cube/CubeEngineMatrix": {
+    "ErrTooManyCells": "Too many cells requested",
+    "ErrTooManyDimensions": "Too many dimensions selected"
   },
   "Viewers/Cube/CubeExport": {
     "DummyHeader": "Value",
     "HTMLTitle": "Cross Table"
   },
+  "Viewers/Cube/CubeFilter": {
+    "ErrBadRelation": "Condition not supported by aggregation"
+  },
   "Viewers/Cube/CubeHeaders": {
-    "CubeTotalValue": "Total:"
+    "CubeTotalValue": "Total:",
+    "ErrTooManyDimensions": "Too many dimensions selected"
   },
   "Viewers/Cube/CubeSource": {
     "LoadNotify": "Prepare input data"
@@ -2868,48 +3120,119 @@
   "Viewers/Cube/CubeSummaries": {
     "CountCaseDisplayName": "Count",
     "DefExprDisplayName": "Expression",
-    "ErrCaseClassNotDynamic": "Fact is not dynamic"
+    "ErrCaseClassNotDynamic": "Fact is not dynamic",
+    "ErrCaseFuncNotExist": "No \"%s\" aggregation for \"%s\" fact ",
+    "ErrCaseSubFuncNotExist": "\"%s\" fact with \"%s\" aggregation does not display \"%s\"",
+    "ErrIIDNotRegistered": "\"%s\" identifier not registered",
+    "MsgMissingCase": "\"%s\" field matching \"%s\" fact not found in the data set."
+  },
+  "Viewers/Cube/CubeView": {
+    "CubeViewProcess": "Cube",
+    "ErrAlreadyExporting": "You cannot export a crosstab until the current export is finished",
+    "ErrExportCubeClosed": "You cannot export a crosstab when the Cube is inactive",
+    "ErrExportDeactivate": "Export deactivated due to node deactivation",
+    "ErrPhantomCaseBracketsOpened": "You cannot start creating time fact until you delete the existing time fact",
+    "IncLoadMatrixNotify": "Increment fact calculation",
+    "LoadMatrixNotify": "Fact calculation"
   },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
     "VendorDesc": "Multidimensional display (crosstab and cross chart)"
   },
   "Viewers/LinRegressReport/LinRegressReport": {
-    "ConstFactor": "<Intercept0>"
+    "Component": "Component",
+    "ConstFactor": "<Intercept0>",
+    "ErrNotDefinedComponent": "Undefined component",
+    "FinalModel": "Final model",
+    "NullModel": "Null model",
+    "SelectedModel": "Selected model",
+    "SelectedModelPath": "Model name",
+    "ShowAsTree": "Tree",
+    "ShowModelInfo": "Model info",
+    "ShowModelSteps": "Model steps",
+    "ShowZeroValues": "Zero values",
+    "SortDirection": "Sort direction",
+    "SortOrder": "Sort order",
+    "StatParam": "Quality criterion"
   },
   "Viewers/LinRegressReport/LinRegressReportViewVendor": {
     "VendorCaption": "Regression Report",
     "VendorDesc": "Analysis of linear regression model"
   },
   "Viewers/LogRegressReport/LogRegressReport": {
-    "ConstFactor": "<Intercept0>"
+    "Component": "Component",
+    "ConstFactor": "<Intercept0>",
+    "ErrNotDefinedComponent": "Undefined component",
+    "FinalModel": "Final model",
+    "NullModel": "Null model",
+    "PValueThreshold": "Significance threshold",
+    "SelectedModel": "Selected model",
+    "SelectedModelName": "Model name",
+    "ShowAsTree": "Tree",
+    "ShowModelInfo": "Model info",
+    "ShowModelSteps": "Model steps",
+    "ShowZeroValues": "Zero values",
+    "SortDirection": "Sort direction",
+    "SortOrder": "Sort order",
+    "StatParam": "Quality criterion"
   },
   "Viewers/LogRegressReport/LogRegressReportViewVendor": {
     "VendorCaption": "Regression Report",
     "VendorDesc": "Analysis of logistic regression model"
   },
+  "Viewers/ROC/ROCView": {
+    "Component": "Component",
+    "ErrNotDefinedComponent": "Undefined component"
+  },
   "Viewers/ROC/ROCViewCharts": {
+    "AllPrecisionRatesChartTitle": "Precision Chart",
     "AllPrecisionRatesChartXLabel": "Cuttoff",
+    "AllPrecisionRatesChartYLabel": "PPV, NPV, OPR, OCR",
+    "Base": "Base",
+    "Best": "Best",
+    "BreakEvenChartTitle": "Break Even Chart",
     "BreakEvenChartXLabel": "Cuttoff",
     "BreakEvenChartYLabel": "TPR, PPV",
     "Cutoff": "Cuttoff",
+    "ErrSerieCountConfigLoadError": "Incorrect series count in configuration",
     "EventsChartTitle": "% captured response chart",
     "EventsChartXLabel": "Bin",
     "EventsChartYLabel": "Captured response, %",
     "EventsCumChartTitle": "% captured response chart (cumulative)",
+    "EventsCumChartXLabel": "Sampling ratio, %",
     "EventsCumChartYLabel": "Captured response, %",
     "FNR": "FNR (1-Sensitivity)",
     "FPR": "FPR (1-Specificity)",
     "GainChartTitle": "Gain Chart",
+    "GainChartXLabel": "Sampling ratio, %",
     "GainChartYLabel": "Gain",
     "LiftChartTitle": "Lift Chart",
     "LiftChartXLabel": "Bin",
     "LiftChartYLabel": "Lift",
+    "LiftCumChartTitle": "Lift Chart (Cumulative)",
+    "LiftCumChartXLabel": "Sampling ratio, %",
     "LiftCumChartYLabel": "Lift",
     "NPV": "NPV (Negative Prediction Value)",
     "OCR": "OCR (Overall Classification Rate)",
+    "OPR": "OPR (Overall Precision Rate)",
     "OverallRatesChartXLabel": "Cuttoff",
-    "OverallRatesTitle": "Basic Rates"
+    "OverallRatesChartYLabel": "TPR, TNR, FPR, FNR",
+    "OverallRatesTitle": "Basic Rates",
+    "PPV": "PPV (Positive Predictive Value)",
+    "PrecisionRecallChartTitle": "Precision-Recall Curve",
+    "PrecisionRecallChartXLabel": "TPR (Recall)",
+    "PrecisionRecallChartYLabel": "PPV (Precision)",
+    "ResponseChartTitle": "Response Chart",
+    "ResponseCumChartTitle": "Response Chart (Cumulative)",
+    "ResponseCumChartXLabel": "Sampling ratio, %",
+    "ResponseCumChartYLabel": "Response, %",
+    "ROCChartTitle": "ROC Curve",
+    "ROCChartXLabel": "FPR (1-Specificity)",
+    "ROCChartYLabel": "TPR (sensitivity)",
+    "TeachDataSource": "Training set",
+    "TestDataSource": "Test set",
+    "TNR": "TNR (specificity)",
+    "TPR": "TPR (sensitivity)"
   },
   "Viewers/ROC/ROCViewVendor": {
     "VendorCaption": "Binary Classification Quality",
@@ -2944,6 +3267,9 @@
   "Viewers/Statistics/StatViewUniqueValues": {
     "ErrRequiredColumnNotFound": "No columns with the specified numbers in the input data source"
   },
+  "Viewers/Statistics/StatViewValuesRange": {
+    "OwnerIsDisposed": "The main collection of histogram values has been disposed"
+  },
   "Viewers/Statistics/StatViewVendor": {
     "VendorCaption": "Statistics",
     "VendorDesc": "Show statistical indicators"
@@ -2962,18 +3288,25 @@
   },
   "Warehouse2/Deductor/DDWEngine": {
     "ErrError": "Error:",
+    "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
+    "MsgRecordSkipDimValueIsNull": "\"%d\" string data was not added to DW. \"%s\" dimension value is null.",
     "MsgStatisticsGathering": "Statistics gathering"
   },
   "Warehouse2/Deductor/DDWImportVendor": {
     "VendorCaption": "Deductor Warehouse",
     "VendorDesc": "Retrieve data from a Deductor data warehouse"
   },
+  "Warehouse2/Deductor/Ver6/DW6Engine": {
+    "MsgRelationTableList": "Related tables available:\n%s"
+  },
   "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {
+    "DWConnectionVendorCaption": "Deductor Warehouse [Firebird]",
     "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on Firebird DBMS"
   },
   "Warehouse2/Deductor/Ver6/MSSQLDDWConnectionVendor": {
+    "DWConnectionVendorCaption": "Deductor Warehouse [MS SQL]",
     "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on MS SQL DBMS"
   },
   "Warehouse2/Deductor/Ver6/OraDDWConnectionVendor": {

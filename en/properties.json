@@ -169,6 +169,13 @@
     }
   },
   "components/binning": {
+    "BinningCountLinContMethodSettings": {
+      "BinsCount": "Count"
+    },
+    "BinningDefExtension": {
+      "MethodSettings": "Binning method settings",
+      "MethodType": "Binning method type"
+    },
     "BinningEngine": {
       "BinningPreview": "Helper class for visual alignment of quantization methods"
     },
@@ -181,13 +188,17 @@
     },
     "BinningLinearContinuousMethodSettings": {
       "LowerLimit": "Lower bound",
+      "StrictDefineLowerLimit": "Strictly defined",
+      "StrictDefineUpperLimit": "Strictly defined",
       "UpperLimit": "Upper bound"
     },
     "BinningTileDateTimeMethodSettings": {
+      "MatchingObservationsMode": "Matching observations",
       "TileCount": "Count"
     },
     "BinningWidthLinDateTimeMethodSettings": {
-      "DateTimeSpanCount": "Width"
+      "DateTimeSpanCount": "Width",
+      "DateTimeSpanType": "Bin type"
     },
     "BinningWidthLinNumMethodSettings": {
       "BinWidth": "Width"
@@ -229,8 +240,10 @@
     },
     "ClusterizationParams": {
       "NClusters": "Number of clusters",
+      "NClustersAutoSelect": "Auto selection of clusters",
       "NClustersMax": "Maximum number of clusters",
-      "NClustersMin": "Minimum number of clusters"
+      "NClustersMin": "Minimum number of clusters",
+      "StatTestThreshold": "Cluster separation threshold"
     }
   },
   "components/coarseclasses": {
@@ -247,8 +260,12 @@
       "IsEdited": "Binning edited",
       "IsLocked": "Binning locked"
     },
+    "CoarseClassesEngine": {
+      "CoarseClassesViewers": "Read-only viewers of coarse classes"
+    },
     "CoarseClassesInputContinuousParams": {
-      "FineIntervalsCount": "Interval count"
+      "FineIntervalsCount": "Interval count",
+      "UsePrequanting": "Prequanting"
     },
     "CoarseClassesInputDiscreteParams": {
       "UseFineClassesBinning": "Fine classes as binning"
@@ -257,25 +274,39 @@
       "BinningId": "External binning identifier"
     },
     "CoarseClassesInputParams": {
-      "MaxClassCount": "Maximum class count"
+      "MaxClassCount": "Maximum class count",
+      "MinClassPercentage": "Minimum class percentage, %",
+      "UniformityCoef": "Uniformity"
     },
     "CoarseClassesManager": {
+      "CoarseClassesBuilders": "Coarse classes builders",
       "HasExcludeBinningDataSource": "Supplementary input of the external binning provided"
+    },
+    "CoarseClassesTuneColumnDefExtension": {
+      "Params": "Configuration information"
     },
     "CoarseClassesViewer": {
       "IsLocked": "Binning locked"
     },
     "FineClass": {
       "IV": "Information class index",
+      "Mark": "Class caption",
+      "NoEventCount": "Non-events count in the class",
       "WoE": "Weight of class evidence"
     },
     "FineClassesViewer": {
-      "Count": "Fine class count"
+      "Count": "Fine class count",
+      "DataType": "Data type",
+      "TotalEvent": "Total event count",
+      "TotalNoEvent": "Total non-event count"
     }
   },
   "components/columnflipping": {
     "ColumnFlippingColumnDefExtension": {
       "Order": "Order number"
+    },
+    "ColumnFlippingEngine": {
+      "SkipNullCases": "Skip null values"
     }
   },
   "components/condition": {
@@ -292,20 +323,73 @@
       "MedianModification": "Median modification"
     }
   },
+  "components/extractxml": {
+    "ExtractXMLEngine": {
+      "ImportXMLSettings": "Configure XML import"
+    }
+  },
+  "components/factoranalysis": {
+    "FactorAnalysisEngine": {
+      "NFactors": "Number of factors",
+      "NOutFactorsMax": "Number of factors",
+      "RotationType": "Rotation type",
+      "SignificanceCriterion": "Significance criterion"
+    }
+  },
   "components/filterdata": {
     "FilterColumnItem": {
-      "CaseSensitive": "Учитывать регистр"
+      "CaseSensitive": "Учитывать регистр",
+      "CompareValue": "Compare values",
+      "CompareValueList": "List of values",
+      "DataType": "Data type",
+      "Name": "Name",
+      "RelationType": "Relation type",
+      "RowNumberer": "Row numberer"
+    },
+    "FilterDataEngine": {
+      "PrepareUniqueValues": "Prepare unique values"
     }
   },
   "components/filtration": {
+    "DataRecoveryColumnDefExtension": {
+      "ActionNull": "Missing data processing method"
+    },
+    "DataRecoveryEngine": {
+      "OrderedSample": "Source data ordered"
+    },
     "ElimOutlierColumnDefExtension": {
-      "ActionOut": "Outliers eimination method"
+      "ActionExtr": "Extreme processing method",
+      "ActionOut": "Outliers eimination method",
+      "DetectEKvartil": "For extreme",
+      "DetectESko": "For extreme",
+      "DetectOKvartil": "For outlier",
+      "DetectOSko": "For outlier",
+      "ModeOE": "Detection method",
+      "SettedValueExtr": "Replace with",
+      "SettedValueOut": "Replace with"
+    },
+    "ElimOutlierEngine": {
+      "OrderedSample": "Source data ordered"
     }
   },
   "components/forecast": {
     "ARIMAXParams": {
+      "AutoStructure": "Auto detect structure",
       "CalcConfidenceInterval": "Calculate confidence interval",
-      "ConfidenceInterval": "Confidence forecast interval in %"
+      "CalcResiduals": "Calculate the approximation error",
+      "ConfidenceInterval": "Confidence forecast interval in %",
+      "D": "Integration order",
+      "DS": "Seasonal integration order",
+      "ForecastHorizon": "Forecast horizon",
+      "IncludeIntercept": "Include intercept into the model",
+      "P": "AR part order",
+      "PS": "Seasonal AR part order",
+      "Q": "MA part order",
+      "QS": "Seasonal MA part order",
+      "SeasonalPeriod": "Period of the seasonal component"
+    },
+    "ForecastEngine": {
+      "ARIMAXParams": "ARIMAX Settings"
     }
   },
   "components/groupdata": {
@@ -325,10 +409,17 @@
   },
   "components/loop": {
     "LoopComponent": {
-      "LoopKind": "Loop Type"
+      "IterationCount": "Iteration count",
+      "LoopKind": "Loop Type",
+      "LoopVariableLink": "Loop variable",
+      "MaxThreadCount": "Maximum thread count",
+      "ParallelProcessing": "Parallel processing"
     }
   },
   "components/neuralnet": {
+    "NeuralNetEngine": {
+      "NetworkParams": "Neural network parameters"
+    },
     "NeuralNetworkParams": {
       "TrainingParams": "Training algorithm parameters"
     }
@@ -338,15 +429,56 @@
       "Partition": "Partition into Sets"
     }
   },
+  "components/reformcolumns": {
+    "ReformColumnDefExtension": {
+      "CachingMethod": "Caching",
+      "Name": "Changed column name"
+    },
+    "ReformColumnsEngine": {
+      "CachingMethod": "Caching"
+    }
+  },
   "components/replace": {
     "ReplaceTable": {
       "IsEmpty": "Empty substitution table",
+      "OutputDataType": "Output data type",
+      "RegularExpressions": "Regular expressions",
       "ReplaceSourceID": "Input replacement table GUID"
+    }
+  },
+  "components/restclient": {
+    "RESTClient": {
+      "RequestConfigurator": "Configure request data export",
+      "RESTClientConnection": "Connect to REST service",
+      "SelectedOperation": "Configured operation"
+    }
+  },
+  "components/sampling": {
+    "SamplingEngine": {
+      "Sampling": "Sampling"
+    }
+  },
+  "components/slidingwindow": {
+    "SlidingWindowColumnDefExtension": {
+      "Forecast": "Forecast horizon"
+    }
+  },
+  "components/smoothing": {
+    "SmoothingDefExtension": {
+      "Algorithm": "Smoothing algorithm",
+      "Lambda": "Lambda parameter",
+      "Period": "Smoothing period",
+      "WaveletOrder": "Wavelet order"
     }
   },
   "components/sonn": {
     "SONNEngine": {
       "Params": "Algorithm parameters"
+    }
+  },
+  "components/sorting": {
+    "SortingColumnItem": {
+      "SortDirection": "Sort order."
     }
   },
   "components/ungroupdata": {
@@ -544,6 +676,24 @@
       "OrderNumber": "Order number"
     }
   },
+  "Viewers/LinRegressReport/LinRegressReport": {
+    "LinRegressReport": {
+      "ShowModelInfo": "Show model info",
+      "ShowModelSteps": "Show model steps",
+      "ShowZeroValues": "Show zero values",
+      "SortDirection": "Sort direction",
+      "SortOrder": "Sort order"
+    }
+  },
+  "Viewers/LogRegressReport/LogRegressReport": {
+    "LogRegressReport": {
+      "ShowModelInfo": "Show model info",
+      "ShowModelSteps": "Show model steps",
+      "ShowZeroValues": "Show zero values",
+      "SortDirection": "Sort direction",
+      "SortOrder": "Sort order"
+    }
+  },
   "Viewers/ROC/ROCView": {
     "ROCView": {
       "CutoffPoint": "Cuttoff",
@@ -553,6 +703,7 @@
   },
   "Viewers/Statistics/StatView": {
     "StatViewColumnConfig": {
+      "SortDirection": "Sort direction",
       "Width": "Width"
     }
   },

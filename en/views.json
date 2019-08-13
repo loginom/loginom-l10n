@@ -3908,7 +3908,7 @@
       "text": "Classified"
     },
     "colEvents": {
-      "text": "Actually"
+      "text": "Correct"
     },
     "lblConfusionMatrix": {
       "text": "Confusion matrices"
@@ -3942,7 +3942,7 @@
       "html": "Event:"
     },
     "colParamName": {
-      "text": "Score"
+      "text": "Value"
     },
     "colSets": {
       "text": "Sets"
@@ -3957,7 +3957,7 @@
       "fieldLabel": "Events, %"
     },
     "fldUserCutoff": {
-      "fieldLabel": "Threshold value"
+      "fieldLabel": "Cutoff"
     },
     "lblAprioriEvent": {
       "text": "Apriori event"

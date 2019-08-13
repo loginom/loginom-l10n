@@ -541,7 +541,7 @@
     },
     "LoopKind": {
       "$Caption": "Loop Type",
-      "For": "Target iterations",
+      "For": "Given iterations",
       "Repeat": "Postcondition loop",
       "GroupProcessing": "Group processing"
     }
@@ -1702,7 +1702,7 @@
       "PrecisionRecall": "PR curve",
       "OverallRates": "Basic rates",
       "Precision": "Precision chart",
-      "BreakEven": "Equilibrium chart",
+      "BreakEven": "Break even chart",
       "Event": "% captured response",
       "Lift": "Lift chart",
       "Response": "Response chart",
@@ -1714,7 +1714,7 @@
       "User": "Сonfigurable",
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
-      "BreakEven": "Equilibrium point (TPR = PPV)",
+      "BreakEven": "Break even point (TPR = PPV)",
       "Accuracy": "Highest overall accuracy",
       "FScore": "Maximum F1 Score",
       "Matthews": "Matthews coefficient (MCC)"

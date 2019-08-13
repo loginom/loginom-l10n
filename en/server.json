@@ -111,7 +111,7 @@
     "ErrColumnIndexOutOfRange": "HTTP messages encoder is configured to export the column with #%d index, however the data source contains only %d values",
     "ErrDuplicateSearchPattern": "\"%s\" search string occurring more than once",
     "ErrEncoderNotInitialized": "HTTP messages encoder not initialized",
-    "ErrInfNaNNotAllowed": "Infinities and NaN are not valid floating point numbers to be passed in GET/POST requests URL Encoded/URL Replacement ",
+    "ErrInfNaNNotAllowed": "Infinities and NaN are not valid floating point numbers to be passed in GET/POST requests URL Encoded/URL Replacement",
     "ErrNoInputMessage": "\"%s\" operation does not contain the incoming message description",
     "ErrNonHttpBinding": "\"%s\" is not HTTP binding",
     "ErrNonHttpMessage": "\"%s\" message of \"%s\" operation is not HTTP message",
@@ -213,7 +213,8 @@
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
     "HTTPClientInitFailed": "Error creating HTTP client",
-    "HTTPClientRetrieveDataFailed": "Error retrieving data by HTTP client: %s"
+    "HTTPClientRetrieveDataFailed": "Error retrieving data by HTTP client: %s",
+    "UnbalancedPop": "Unbalanced extraction operation"
   },
   "Common/XML/XML_MSXML": {
     "ErrXMLLoadFailure": "Failed to load %s document",
@@ -490,7 +491,7 @@
     "ErrIncorrectColumnPurpose": "Incorrect \"%s\" field usage type",
     "ErrNotAllowedInputBinningKind": "The input field does not support the new assignment in the external partition (data type restriction)",
     "ErrRequiredContinuousOrDiscrete": "Continuous or discrete data type is required",
-    "MaxClassCount": "Required classes count",
+    "MaxClassCount": "Required class count",
     "MinimalClassQuota": "Minimum class quota"
   },
   "components/coarseclasses/CoarseClassesEngine": {
@@ -1162,7 +1163,8 @@
     "VendorDesc": "Multiple model execution based on new data"
   },
   "components/neuralnet/ClassificationReport": {
-    "ErrActualPredictedSizeMismatch": "Actual and predicted array sizes mismatch"
+    "ErrActualPredictedSizeMismatch": "Actual and predicted array sizes mismatch",
+    "ErrBetasArraySizeMismatch": "The coefficient array size for F-measure calculation mismatches the class count"
   },
   "components/neuralnet/NeuralNet": {
     "AutofitProcessCaption": "Neural Network Parameters Selection",
@@ -1172,14 +1174,22 @@
     "DecayDegree": "Decay degree",
     "ErrCannotContinueTraining": "You cannot continue training since the structure of the trained neural network does not correspond to the new training parameters",
     "ErrClassifierUnknownClass": "Unknown class is present in the output classifier column",
+    "ErrDataSourceNumInputsMismatch": "%d input data dimension mismatches the number of %d neural network inputs",
     "ErrInvalidNeuronKind": "Invalid neuron kind: %d",
+    "ErrLayerNeuronCountMismatch": "The layer neuron count mismatches the required %d value",
     "ErrMissingOrInfiniteValue": "Only non-empty final values are allowed in the data",
+    "ErrMustSetEqualLayerSizes": "Before requesting the coarse size of the neural network, it is required to set the same number of neurons in the hidden layers",
     "ErrNetworkUntrained": "You cannot perform the requested operation using the untrained neural network",
+    "ErrNeuronWeightsCountMismatch": "The specified count of input %d neuron weights mismatches the required %d value",
     "ErrNoInputColumns": "Neural network input data columns not set",
     "ErrNoOutputColumns": "Neural network output data columns not set",
+    "ErrNotEnoughClasses": "Representatives of at least 2 classes (currently %d) must be present in the training set",
     "ErrNoTrainData": "No train data",
     "ErrNoValidCasesSpecifiedForTraining": "No valid examples in the training set",
+    "ErrRowLengthMismatch": "%d row length does not match the column count in %d matrix",
     "ErrTrainNetworkError": "Neural network training failed",
+    "ErrWrongNeuronCounts": "One or several invalid neuron count values specified",
+    "ExecuteProcessCaption": "Input Data Process",
     "FitDecayProcessCaption": "Training: Regularization Degree = %.1f",
     "FitH0DecayProcessCaption": "Training: without Hidden Layers; Regularization Degree = %.1f",
     "FitH0ProcessCaption": "Training: without Hidden Layers",
@@ -1243,16 +1253,22 @@
   },
   "components/neuralnet/NeuralNetParams": {
     "Decay": "Regularization parameter",
+    "ErrFloatValuesRelation": "\"%s\": (%f) parameter value must not exceed \"%s\" (%f) parameter value",
     "MaxEpochs": "The maximum number of epochs",
-    "NRestarts": "Number of restarts"
+    "NRestarts": "Number of restarts",
+    "RegNNOutputInf": "Output layer activation function infimum",
+    "RegNNOutputSup": "Output layer activation function supremum",
+    "WStep": "Minimum weight change threshold"
   },
   "components/neuralnet/NeuralNetVendor": {
     "ClassifierVendorCaption": "Neural Network (Classification)",
-    "RegressionVendorCaption": "Neural Network (Regression)"
+    "ClassifierVendorDesc": "Trains multilayer perceptron to complete the classification tasks",
+    "RegressionVendorCaption": "Neural Network (Regression)",
+    "RegressionVendorDesc": "Trains multilayer perceptron to complete the regression tasks"
   },
   "components/partition/PartitionEngine": {
     "OutDataSetCommon": "Common data set",
-    "OutDataSetTeach": "Train output set",
+    "OutDataSetTeach": "Training output set",
     "OutDataSetTest": "Test output set",
     "PartitionDisplayName": "Test set"
   },
@@ -1295,6 +1311,8 @@
     "VendorDesc": "Replace field values"
   },
   "components/replace/ReplaceTable": {
+    "ErrColumnsCount": "The field number in the input replacement table is less than 2",
+    "ErrDataType": "The input replacement table data type does not match the replaced field data type",
     "ErrDuplicateValue": "Value is duplicated in the replacement table",
     "ErrInputDataType": "Error getting input data type for \"%s\"",
     "ErrRegExValue": "Invalid regular expression specified",
@@ -1316,7 +1334,7 @@
     "ResponseColumn": "Server response",
     "RESTClientConnection": "Connect to REST service",
     "RESTClientErrorNoID": "Error executing request:\n%s",
-    "RESTClientErrorRowID": "Error occurred while request executing generated from row No %d of the input set:\n%s"
+    "RESTClientErrorRowID": "Error executing request generated from row No %d of the input set:\n%s"
   },
   "components/restclient/RESTClientVendor": {
     "VendorCaption": "REST Service Call",
@@ -1389,6 +1407,7 @@
   "components/ungroupdata/UngroupData": {
     "ConfidenceBandLowerDisplayName": "Lower bound 95% CI",
     "ConfidenceBandUpperDisplayName": "Upper bound 95% CI",
+    "ErrInSelectOutputFields": "No field with the ungrouped values names specified",
     "ErrInSelectQuotaCalcFields": "No field for quotas calculation selected",
     "ErrInSelectQuotaFields": "No field with quotas selected",
     "ErrInSelectTimeAxisFields": "No fields for data sequentializing selected",
@@ -1421,17 +1440,29 @@
     "UngroupStatsDataSource": "Model quality indicators and seasonal indexes"
   },
   "components/ungroupdata/UngroupDataAVLTrees": {
+    "ErrDatasetTooSparse": "Set points are too sparse for the given seasonality period",
+    "ErrDuplicateGroup": "Each group in the ungroupable set must match a single line",
+    "ErrEmptyGroup": "No data belonging to this group in the reference set",
     "ErrNoError": "No errors",
+    "ErrNoGroupData": "Group time series is empty",
+    "ErrNoSupportData": "No data suitable for ungrouping in the reference set",
     "ErrTrivialGroup": "The group consists of one element"
   },
   "components/ungroupdata/UngroupDataTimeseries": {
+    "ErrOutputValueTypeOutOfRange": "Type code out of allowable ranges",
     "ErrWrongTimeseriesKeyDatatype": "Invalid time series key type"
   },
   "components/ungroupdata/UngroupDataTimeseriesModel": {
+    "ErrBadlyConditionedMatrix": "(%d x %d) matrix is singular or ill-conditioned: U[%d;%d] = 0 in %d iteration",
     "ErrDFNotConsistent": "Failed to provide the required number of degrees of freedom",
     "ErrEngineUnassigned": "Engine not installed for the ungroup model",
     "ErrOptimGradientVerificationFailed": "Analytical gradient verification failed",
     "ErrOptimIntegrityFailed": "The infinite value of the optimized function or its gradient was detected",
+    "ErrSingularMatrixCol": "(%d x %d) matrix contains zero column No %d in %d iteration",
+    "ErrSingularMatrixRow": "(%d x %d) matrix contains zero row No %d in %d iteration",
+    "ErrSLECalcPrepare": "Error while preparing the equations system",
+    "ErrSLEStructPrepare": "Error while preparing data structures of the equations system",
+    "ErrSolver": "%d error when solving the equation system at %d iteration",
     "ErrUnknownTimeAxisDataType": "Unknown time field data type"
   },
   "components/ungroupdata/UngroupDataVendor": {
@@ -1440,10 +1471,13 @@
   },
   "components/uniondata/UnionData": {
     "DisplayNamePrefix": "Union",
+    "DisplayNamePrefixName": "Result column caption prefix",
+    "ErrInvalidColNamePrefix": "\"%s\" name prefix is not a valid identifier",
     "ErrNoActiveInputs": "No active inputs",
     "ErrRowCountExceedMaxValue": "Row count of the result set exceeded %d maximum value",
     "JoinedDataSource": "Joined table",
-    "MainDataSource": "Main table"
+    "MainDataSource": "Main table",
+    "NamePrefixName": "Result column name prefix"
   },
   "components/uniondata/UnionDataVendor": {
     "VendorCaption": "Union",
@@ -1451,7 +1485,9 @@
   },
   "components/unionvariables/UnionVariables": {
     "ErrNoActiveInputs": "No active inputs",
-    "InputJoinedVariables": "Added variables"
+    "InputJoinedVariables": "Added variables",
+    "InputPortsOverFlow": "Number of the input ports exceeded = %d maximum value",
+    "InputVariablesOverFlow": "Number of the input variables exceeded = %d maximum value"
   },
   "components/unionvariables/UnionVariablesVendor": {
     "VendorCaption": "Union (Variables)",
@@ -1480,16 +1516,24 @@
     "RawOutputColumn": "Raw response",
     "RequestIDOutputColumn": "Request identifier",
     "WSDLClientConnection": "Connection to the web service",
-    "WSDLClientErrorNoID": "Error executing request:\n%s"
+    "WSDLClientError": "Error executing request with %s identifier:\n%s",
+    "WSDLClientErrorNoID": "Error executing request:\n%s",
+    "WSDLClientErrorRowID": "Error executing request generated from row No %d of the input set:\n%s"
   },
   "components/wsdlclient/WSDLClientBase": {
     "AdditionalDataSet": "Additional data",
     "ErrIncorrectWSDLClientRequestConfiguration": "Web service request configuration contains errors",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
     "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
+    "ErrMappedNodeNotOwnedByRequestTree": "%s node for which input set column selection is requested is not included into the request tree",
     "ErrNothingSelected": "No nodes selected for service response import",
+    "ErrOperationNotFound": "\"%s\" operation not found in \"%s\" endpoint description of \"%s\" service",
     "ErrOperationNotSelected": "No WSDL operation selected for request execution",
+    "ErrPartElementNotFound": "\"%s\" element referenced in \"%s\" message part of \"%s operation not found in XSD schema",
+    "ErrPortNotSelected": "No WSDL service endpoint for the request execution selected",
     "ErrResponseNotConfigured": "Service response not configured",
+    "ErrTransmissionPrimitiveNotSupported": "Operations with \"%s\" exchange primitive are not supported",
+    "ErrUnmappedNodeNotOwnedByRequestTree": "%s node for which link reset is requested is not included into the request tree",
     "RequestDataSource": "Request data source"
   },
   "components/wsdlclient/WSDLClientVendor": {
@@ -1501,10 +1545,20 @@
     "UnknownException": "Unknown Exception"
   },
   "exports/database/DBExport": {
-    "DeleteFromTableNotify": "Add records to table",
+    "AddToTableNotify": "Add records to table",
+    "DeleteFromTableNotify": "Delete data from table",
     "ErrColumnNotFound": "\"%s\" column not found in the data source",
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
-    "ErrFieldForUpdateNotSelected": "No fields to update selected",
+    "ErrDataSourceSelect": "No match to data source specified",
+    "ErrDuringExportError": "Error while exporting to DB",
+    "ErrFieldForDeleteNotSelected": "No fields for which data should be deleted specified",
+    "ErrFieldForUpdateNotSelected": "No fields to update specified",
+    "ErrFillTable": "Failed to fill \"%s\" table",
+    "ErrKeyFieldForUpdateNotSelected": "No key field for which data should be updated specified",
+    "ErrNotConnectedToDatabase": "No connection with database",
+    "ErrSyncKeyDeletedDest": "Synchronization error: \"%s\" key field not found in the table",
+    "ErrSyncKeyDeletedSource": "Synchronization error: source field not found for \"%s\" key field",
+    "ErrSyncKeyTypesMismatch": "Synchronization error: \"%s\" key field type is not compatible with \"%s\" source field type",
     "ErrTableNameNotSelected": "No table name selected",
     "ErrUnknownExportType": "Unknown export type",
     "GroupDataNotify": "Group data",
@@ -1516,31 +1570,49 @@
   },
   "exports/excelfile/ExportExcelFile": {
     "PropErrErrSheetName": "The excel sheet name cannot contain the following characters: ? * / [ ]",
+    "PropErrLongSheetName": "Excel sheet name cannot be longer than 31 characters",
     "PropErrNoSheetName": "No sheet name specified",
-    "SaveExcelBookProcess": "Save to file"
+    "SaveExcelBookProcess": "Save to file",
+    "WriteDataProcess": "Write data to Excel workbook"
   },
   "exports/excelfile/ExportExcelFileVendor": {
     "VendorCaption": "Excel File",
     "VendorDesc": "Export data to Excel file"
+  },
+  "exports/native/ExportNative": {
+    "ErrLZ4NotAvailable": "LZ4 compression not available",
+    "ErrLZONotAvailable": "LZO compression not available"
   },
   "exports/native/ExportNativeVendor": {
     "VendorCaption": "Loginom Data File",
     "VendorDesc": "Export data to Loginom Data file"
   },
   "exports/textfile/ExportTextFile": {
-    "CalculateColumnSizeProcess": "Column width calculation"
+    "CalculateColumnSizeProcess": "Column width calculation",
+    "WriteDataProcess": "Writing data to file"
   },
   "exports/textfile/ExportTextFileVendor": {
     "VendorCaption": "Text File",
     "VendorDesc": "Export data to text file"
   },
   "exports/xml/ExportXML": {
+    "ErrCannotProceedWithoutRootElement": "To perform the operation you must first select the root XML element for export",
+    "ErrExportNotConfigured": "Export tree not configured",
+    "ErrIncorrectExportConfiguration": "Errors in configuration",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
+    "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
+    "ErrMappedNodeNotOwnedByExportTree": "%s node for which input set column selection is requested is not included into the export tree",
+    "ErrNodeDoesNotDescendFromSelectedRoot": "%s node is not a descendant of the selected %s root element",
+    "ErrNodeDoesNotExist": "\"%s\" node not found in XSD schema",
+    "ErrNotRootElement": "\"%s\" node is not the XSD schema root element",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
+    "ErrRootNodeNotSelected": "No root element selected for export",
+    "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into the export tree",
     "ErrXMLExport": "Error exporting XML:\n Error code: %d\n %s",
     "ExportDataSetProcessCaption": "Data Set Export",
     "FileConnection": "Connect to file storage",
-    "WriteXMLFileProcessCaption": "XML File Record"
+    "WriteXMLFileProcessCaption": "XML File Record",
+    "XSDConnection": "Connect to XSD schema source"
   },
   "exports/xml/ExportXMLVendor": {
     "VendorCaption": "XML File",
@@ -1653,7 +1725,7 @@
     "ErrFloatTypeCast": "Failed to convert \"%s\" value in \"%s\" column to real number.",
     "ErrIntegerTypeCast": "Failed to convert \"%s\" value in \"%s\" column to integer.",
     "ErrNoData": "Error parsing text file",
-    "ErrParseFmt": "While parsing line %d error occurred: %s",
+    "ErrParseFmt": "Error occurred while parsing %d line: %s",
     "ErrUnsupportedCodePage": "%d codepage not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
     "PrimaryKeyDisplayName": "<Key0>"
@@ -1688,7 +1760,7 @@
     "ComponentTip": "%s [%s]",
     "ErrConnectionString": "Empty connection string",
     "ErrPrepareQuery": "SQL preparation error:\n%s",
-    "ErrTableNameNotSelect": "No table name selected",
+    "ErrTableNameNotSelect": "No table name specified",
     "ErrTestConnection": "Connection test error:\n%s"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
@@ -1913,22 +1985,50 @@
     "ErrCodePageNotExist": "Codepage under %d does not exist"
   },
   "Libraries/bgrtl/System": {
-    "ErrInvalidGUID": "Failed to convert \"%s\" row to GUID"
+    "ErrInvalidGUID": "Failed to convert \"%s\" row to GUID",
+    "ErrObjectIsNil": "Null object reference"
+  },
+  "Libraries/bgrtl/SysUtils": {
+    "ErrCopyPasteRecursive": "\"%s\" folder cannot be copied into itself",
+    "ErrFileMapping": "\"%s\" file mapping error"
+  },
+  "Libraries/bgrtl/TextStream": {
+    "ErrBadUnicodeStream": "Source data stream has invalid Unicode format",
+    "ErrReadAfterEnd": "Attempted to read outside the file",
+    "ErrStreamNotAssigned": "Source data stream not initialized"
+  },
+  "Libraries/bgrtl/ThreadPool": {
+    "ErrCannotChangeParams": "You cannot change the thread pool parameters upon its application start"
   },
   "Libraries/bgrtl/TimeZones": {
     "ErrCantOpenKey": "Error attempting to read %s registry key: %s (%d error code)"
   },
   "Libraries/bgrtl/Trees": {
+    "ErrTreeWalk": "This tree walk implementation is missing",
+    "ErrUnableToRecreateNamesIndex": "You Ccannot recreate node name index",
     "NodeIndexDesc": "Node index",
     "NodeMetaDesc": "Node",
     "RootDesc": "Root node",
     "RootDisplayName": "Root",
     "SubNodesDesc": "Subnodes"
   },
+  "Libraries/bgrtl/TuneDataSource": {
+    "ErrInputColumnInfoNotFound": "Failed to find source %s column for configurable %s column",
+    "ErrInputColumnInfoTypesMismatch": "%s column type is not compatible with %s source column type"
+  },
+  "Libraries/bgrtl/TuneVariables": {
+    "ErrSourceVariableAssigned": "You cannot edit the custom variable value for which the source variable is set",
+    "ErrSourceVariableNotFound": "Failed to find source %s varianble for configurable %s variable",
+    "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
+  },
   "Libraries/bgrtl/Tuple": {
+    "BadArrayVariantType": "Unsupported Variant array variable type",
+    "BadNativeArrayStringData": "Invalid relative string reference format",
     "BadNativeData": "Incorrect data",
     "BadNativeStringData": "Incorrect string data",
+    "BadVariantStringData": "Incorrect format of Variant variable string data",
     "BadVariantType": "Incorrect format of Variant variable",
+    "IncompatibleTuples": "Tuple structures are incompatible",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
     "VariantByRefNotSupported": "Unsupported Variant byRef variables",
     "VariantTypeNotSupported": "Variant variables of this type are not supported"
@@ -1938,11 +2038,17 @@
   },
   "Libraries/bgrtl/TupleVarUtils": {
     "BadNativeArrayStringData": "Incorrect Variant array string data",
+    "BadVariantArrayData": "Incorrect Variant array data",
     "BadVariantData": "Incorrect Variant data type",
+    "BadVariantType": "Unsupported Variant variable type",
     "CanNotConvert": "Failed to convert data to 32-bit format"
   },
   "Libraries/bgrtl/TypedLists": {
     "Item": "Item"
+  },
+  "Libraries/bgrtl/TypInfo": {
+    "ErrEnumVendorInfoManagerNotRegistered": "Enumeration description manager not registered",
+    "ErrTypeInfoVariableManagerNotRegistered": "Variable manager for %s type not registered"
   },
   "Libraries/bgrtl/UniqueValuesData": {
     "Data": "Data",
@@ -2092,17 +2198,39 @@
     "ErrNullData": "Data contains null values"
   },
   "Libraries/Math/SparseSolvers": {
+    "ErrNonSquareSuperMatrixNotSupportedYet": "Solver SuperLU does not support non-square matrices yet",
+    "ErrSuperLUSolver": "SuperLU Solver procedure failed",
     "ErrWrongArrayType": "Unsupported array type: %s",
     "ErrWrongMatrixType": "Unsupported matrix type: %s"
+  },
+  "Libraries/Math/Splines": {
+    "ErrUnknownSparseSolver": "Unknown sparse solver type: %s",
+    "ErrWrongSplineType": "Invalid spline type for %s: %s algorithm"
+  },
+  "Libraries/Math/SplineTrend": {
+    "ErrBuildSeasonalIndexesSolver": "%d solver error when calculating seasonal indices"
   },
   "Libraries/Math/StatDistributions": {
     "ErrNotImplemented": "Functionality not implemented"
   },
   "Libraries/Math/StatUtils": {
+    "ErrArraysDifferentLength": "Arrays have different lengths: %d and %d",
+    "ErrInvalidBinsCount": "The specified %d bin count is less than 2",
     "ErrInvalidProbabilityValue": "%f probability value is out of [0;1] range",
     "ErrNotImplemented": "Functionality not implemented"
   },
+  "Libraries/Model/ComponentInputSocketConstraintDef": {
+    "ErrInterfaceNotSupported": "Input and output sockets are incompatible",
+    "ErrInterfaceNotSupportedEx": "%s interface not supported"
+  },
+  "Libraries/Model/ComponentSettings": {
+    "ErrSettingsAlreadyInitialized": "Settings  already initialized"
+  },
+  "Libraries/Model/Connections/ConnectionVendor": {
+    "ConnectionVendorMetaDesc": "connection vendor"
+  },
   "Libraries/Model/Connections/ConnectionVendorGroups": {
+    "ConnectionVendorGroupMetaDesc": "connection vendor group",
     "DBConnectionVendorGroupCaption": "Data Sources"
   },
   "Libraries/Model/Connections/ConnectionVendorGroupsCommon": {
@@ -2116,7 +2244,13 @@
   "Libraries/Model/Connections/ModelConnectionComponentEngine": {
     "Connection": "Connection"
   },
+  "Libraries/Model/Connections/ModelConnectionComponentEngineVendor": {
+    "ErrConnectionVendorMustBelongToGroup": "Connection vendor must belong to at least one group"
+  },
   "Libraries/Model/Connections/ModelConnectionWorkFlow": {
+    "ErrAlienConnectionNode": "\"%s\" connection  does not belong to the current connection list",
+    "ErrDerivedConnectionVendorNotFound": "No derived connection node component found",
+    "ErrNodeIsNotConnectionReference": "\"%s\" node  is not a connection reference",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrNoReferencedConnection": "\"%s\" node does not refer to any connections",
     "ReplaceReferenceWithDerivedCaption": "\"%s\" Connection Node Replaced by Derived Node"
@@ -2192,11 +2326,65 @@
     "ErrCannotDeleteDerivedSocket": "You cannot delete derived sockets",
     "ErrCannotDeleteDerivedVendors": "You cannot delete derived components"
   },
+  "Libraries/Model/Generic/ModelGenericComponent": {
+    "ErrInputSocketDefIsEmtpy": "The following input types are not specified:",
+    "ErrOutputSocketDefIsEmtpy": "The following output types are not specified:"
+  },
+  "Libraries/Model/Generic/ModelGenericComponentEngine": {
+    "ActivateOuterData": "External data",
+    "ErrInvalidModelLockContext": "Invalid workflow node lock context"
+  },
+  "Libraries/Model/Generic/ModelGenericComponentVendor": {
+    "GenericVendorCaption": "Supernode"
+  },
+  "Libraries/Model/Generic/ModelInnerComponent": {
+    "ErrAlreadyConfiguringInnerSocket": "The external component socket has already been configuring"
+  },
+  "Libraries/Model/Generic/ModelInputComponent": {
+    "ErrInnerOutputSocketDefIsEmtpy": "The following input types are not specified:"
+  },
   "Libraries/Model/Generic/ModelInputComponentVendor": {
     "VendorCaption": "Input Node"
   },
+  "Libraries/Model/Generic/ModelOutputComponent": {
+    "ErrInnerInputSocketDefIsEmtpy": "The following output types are not specified:"
+  },
   "Libraries/Model/Generic/ModelOutputComponentVendor": {
     "VendorCaption": "Output Node"
+  },
+  "Libraries/Model/ModelComponent": {
+    "ErrInvalidComponentEngineImplementation": "Invalid component engine implementation",
+    "ErrModelComponentAlreadyInitialized": "The node component already initialized"
+  },
+  "Libraries/Model/ModelComponentCouplerDefItems": {
+    "CouplerDefMetaDesc": "Connection"
+  },
+  "Libraries/Model/ModelComponentCouplerItems": {
+    "CouplerMetaDesc": "Connection"
+  },
+  "Libraries/Model/ModelComponentCouplers": {
+    "ErrModelElementAlreadyInitialized": "Connection already initialized"
+  },
+  "Libraries/Model/ModelComponentEngineVendor": {
+    "ModelComponentEngineVendorMetaDesc": "component engine vendor"
+  },
+  "Libraries/Model/ModelComponentMultiplePortsEngine": {
+    "ErrModelComponentEngineAlreadyInitialized": "The component engine already initialized"
+  },
+  "Libraries/Model/ModelComponentVendor": {
+    "ModelComponentVendorMetaDesc": "component"
+  },
+  "Libraries/Model/ModelComponentVendorGroups": {
+    "ConnectionVendorGroupCaption": "Connections",
+    "DefaultVendorGroupCaption": "Other",
+    "ModelComponentVendorGroupMetaDesc": "component group",
+    "ServiceVendorGroupCaption": "Service Nodes",
+    "ViewerVendorGroupCaption": "Visualizers"
+  },
+  "Libraries/Model/ModelComponentVendorGroupsCommon": {
+    "AnalyticVendorGroupCaption": "Data Mining",
+    "ExploratoryVendorGroupCaption": "Exploration",
+    "ExportVendorGroupCaption": "Export"
   },
   "Libraries/Model/ModelNodesCopyUtils": {
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" reference node is not available at the required destination.",
@@ -2264,20 +2452,53 @@
     "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
     "ErrPortMismatch": "Incompatible component vendor: node port list does not match",
     "ErrSocketNotConfigured": "Socket not configured",
+    "Left": "Left",
+    "LogActivateNodeStart": "Activating \"%s\" node",
+    "LogActivateNodeSuccess": "Successfully activated \"%s\" node",
+    "LogNodeActivationError": "Error activating \"%s\" node",
+    "SynchronizationInputPort": "Execution order",
+    "SynchronizationOutputPort": "Execution order",
     "Top": "Top"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
+    "ErrMsgNoSubModel": "Supernode component not created",
+    "ErrSubModelVendorNotCreated": "You cannot create the supernode component In the current context",
     "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "\"%s\" node is blocked",
+    "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Reference node not found",
     "ErrReferencedNodeNotSpecified": "No reference to node specified"
   },
+  "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngineVendor": {
+    "NodeReference": "Reference to node"
+  },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentVendor": {
     "VendorCaption": "Reference Node",
     "VendorDesc": "Reference to node"
+  },
+  "Libraries/Model/Variables/ControlVariablesInputSocketDef": {
+    "ControlVariablesInputSocketDefVendorCaption": "Control Variables"
+  },
+  "Libraries/Model/Variables/ControlVariablesModelComponentEngine": {
+    "InputControlVariables": "Control variables"
+  },
+  "Libraries/Model/Variables/InputVariablesSocketDef": {
+    "InputVariablesSocketDefVendorCaption": "Variables"
+  },
+  "Libraries/Model/Variables/ModelVariables": {
+    "ErrCannotEditServiceVariable": "Service variable editing is prohibited",
+    "ErrFailedToPrepareVariables": "Failed to initialize %s variables",
+    "ErrInvalidVariablesKind": "Invalid variable type: %s"
+  },
+  "Libraries/Model/Variables/ModelVariablesComponentEngine": {
+    "CombinedVariables": "Variables",
+    "PackageVariables": "Package variables",
+    "SessionVariables": "Session variables",
+    "SystemVariables": "System variables",
+    "UserVariables": "User variables"
   },
   "Libraries/Model/Variables/ModelVariablesComponentVendor": {
     "VendorCaption": "Workflow Variables",
@@ -2364,12 +2585,22 @@
   },
   "Libraries/Normalization/TuneNormDataSource": {
     "CreateInDataProcessCaption": "Prepare input data set",
+    "CreateNormalDataProcessCaption": "Create Normalized Data Set",
     "CreateOutDataProcessCaption": "Preparing output data set"
   },
   "Libraries/Normalization/TuneNormDataSourceSocketDef": {
     "ErrNotImplemented": "This functionality not implemented"
   },
+  "Libraries/Optimization/Optimization": {
+    "ErrAbsentSubstitution": "Parameter with %d index is not listed",
+    "ErrForeignParameter": "Parameter does not belong to the current collection",
+    "ErrOrphanValue": "Parameter not associated with collection",
+    "ErrParameterInaccessible": "Parameter value inaccessible",
+    "ErrParameterWrongDataType": "Invalid parameter data type"
+  },
   "Libraries/Optimization/Optimizer": {
+    "ErrMethodAlreadyRegistered": "%s method implementation already registered",
+    "ErrMethodNotImplemented": "%s method not implemented",
     "ErrStepIsNull": "Another strategy step not specified"
   },
   "Libraries/PropManager/CommonPropBinder": {
@@ -2389,15 +2620,60 @@
     "RegressionParams": "Regression parameters",
     "RegressionTrainingResults": "Training results"
   },
+  "Libraries/Regression/RegressionModel": {
+    "RegressionStatistics": "Regression statistics"
+  },
+  "Libraries/Regression/RegressionStatistics": {
+    "CoefficientsStats": "Model coefficient statistics",
+    "ErrWrongClassType": "Source class does not match"
+  },
+  "Libraries/Regression/RegressionTrainingResults": {
+    "RegressionModel": "Regression model"
+  },
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "ErrInvalidContentType": "Invalid Content-type value format: %s",
-    "ErrInvalidParamName": "Invalid %s GET request parameter name"
+    "ErrInvalidParamDataType": "Invalid %s GET request parameter data type",
+    "ErrInvalidParamName": "Invalid %s GET request parameter name",
+    "ErrInvalidURL": "Invalid URL service format",
+    "ErrMustExplicitRequestContentType": "Content-type of the request data must be explicitly set",
+    "ErrNoServiceURL": "Service URL not specified",
+    "ErrWSDLGenerate": "Error while generating WSDL description"
+  },
+  "Libraries/RESTClientConnection/RESTClientConnectionVendor": {
+    "RESTClientConnectionVendorCaption": "REST Service",
+    "RESTClientConnectionVendorDesc": "Connection to GET/POST web service"
+  },
+  "Libraries/rpc/BaseTCPBlockSocketMessageTransport": {
+    "ErrCouldNotConnectToServer": "Failed to establish connection: %s",
+    "ErrIncorrectServerResponse": "Incorrect server response received"
+  },
+  "Libraries/rpc/ClientObjectProxy": {
+    "ErrDisconnectedProxy": "Client proxy object disconnected",
+    "ErrInterfaceIdentifierMustNotBeNull": "Interface identifier must not be null"
+  },
+  "Libraries/rpc/InterceptSendMessageTransport": {
+    "ErrNotImplemented": "This method implementation is not provided"
+  },
+  "Libraries/rpc/MessageTransport": {
+    "ErrConnectionFailure": "Remote computer connection lost"
   },
   "Libraries/rpc/RemoteMessageData": {
+    "ErrInvalidMessageSignature": "Invalid message signature",
+    "ErrMessageSizeCannotBeNegative": "Message size cannot be negative",
+    "ErrMessageSizeIncrementCannotBeNegative": "Message size increment cannot be negative",
+    "ErrMessageSizeOverflow": "Maximum message size exceeded",
+    "ErrUnknownInterfaceGUID": "Interface with %s identifier not registered",
     "ErrUnknownInterfaceID": "Unknown interface identifier: %d",
     "ErrUnknownInterfaceName": "%s interface not registered",
     "ErrUnknownMethodID": "Unknown method identifier: %d",
     "ErrUnsupportedParameterType": "Unsupported parameter type"
+  },
+  "Libraries/rpc/RemotingConvertUtils": {
+    "ErrValueOutOfRange": "%d value is not in the range of allowable %s values"
+  },
+  "Libraries/rpc/ServerRemoteObjects": {
+    "ErrQueryInterfaceNotAllowed": "You cannot query interface with %s identifier via QueryInterface",
+    "ErrUnknownMethodID": "Unknown method identifier: %d"
   },
   "Libraries/SuperLU/SuperLU_h": {
     "ErrExceptionOccurred": "SuperLU exception in function '%s' when calling '%s'",
@@ -2407,19 +2683,92 @@
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Summary"
   },
+  "Studio/DeductorConsts": {
+    "LgpFilesDesc": "Loginom packages"
+  },
   "Studio/DeductorServer": {
+    "ErrAccessDenied": "Access denied",
+    "ErrCannotCreateDirectory": "Failed to create \"%s\" directory",
+    "ErrCannotDeleteBasePackage": "You cannot delete %s base package without deleting %s dependent package that references it",
+    "ErrCannotGetPackageLinkRef": "Failed to get the object reference to the package link under %s name",
+    "ErrCannotGetPackageRef": "Failed to get the object reference to the package under %s name",
+    "ErrCannotSaveReadOnlyPackage": "You cannot save %s read-only package",
+    "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
+    "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
+    "ErrFailedToRestorePackage": "Failed to restore %s package",
+    "ErrFileNameNotSpecified": "No file name specified",
+    "ErrInvalidPath": "Invalid file path: \"%s\"",
     "ErrModelNodeNotFound": "Node %s not found",
-    "ErrModelNodeNotPublished": "Node %s published"
+    "ErrModelNodeNotPublished": "Node %s published",
+    "ErrPackageNotFoundByFileName": "Failed to find %s package",
+    "FileNames": "File names",
+    "ProcessCaptionFormat": "%s. %s",
+    "ServerStartLogMsg": "%s started",
+    "Session": "Session",
+    "SessionCloseLogMsg": "Closed session for %s user",
+    "SessionInitializedLogMsg": "Initialized session for %s user",
+    "User": "User",
+    "UserName": "Username",
+    "WarnSessionStopTimeout": "Failed to stop %s user session for %d milliseconds. Number of processes not completed: %d. List of active subprocesses: %s. List of not started subprocesses: %s."
+  },
+  "Studio/DeductorServerConnector": {
+    "ErrCannotConfigureActiveConnection": "You cannot change active connection settings"
+  },
+  "Studio/DeductorServerSettings": {
+    "SessionBackupDirectory": "Session backups",
+    "UserStorageDirectory": "User disk space"
+  },
+  "Studio/DeductorUsers": {
+    "ErrAccessDenied": "Access denied",
+    "ErrApplicationModeNotAllowed": "Connection in \"%s\" mode not allowed",
+    "ErrInvalidPasswordHashInConfig": "Configuration file contains invalid password hash",
+    "ErrInvalidUserNameOrPassword": "Invalid username or password",
+    "ErrUserAlreadyDeleted": "User already deleted",
+    "ErrUserHasActiveSessions": "%s user has active sessions",
+    "ErrUserNameConflictsWithSharedDirectory": "Username conflicts with %s shared directory name"
   },
   "Studio/Server/BatchLauncher/BatchLauncher": {
     "ExampleTitle": "Example:",
     "OptionAddressDesc": "IP address or hostname (default: %s)",
     "OptionNodeNameDesc": "Node name or GUID"
   },
+  "Studio/SharedDirectories": {
+    "ErrSharedDirectoryNameConflictsWithUser": "Username conflicts with %s shared directory name",
+    "LogAddDirectory": "%s shared directory created",
+    "LogDeleteDirectory": "%s shared directory deleted",
+    "SharedDirectoryMetaDesc": "Shared directory"
+  },
+  "Studio/SocketDeductorServerSettings": {
+    "Bind": "Address binding",
+    "Port": "TCP port",
+    "SSLCertificateFile": "Certificate file name",
+    "SSLPrivateKeyFile": "Private key file name",
+    "WSPort": "Websocket port",
+    "WSSPort": "WebSocket SSL/TLS порт"
+  },
   "Studio/SolutionTree": {
-    "Vendors": "Components"
+    "Connection": "Connection",
+    "Connections": "Connections",
+    "ErrInstanceAlreadyExist": "ID already mapped to visual node",
+    "ErrInstanceNotFound": "There is no associated visual node for ID",
+    "InputPorts": "Input ports",
+    "ModelNodes": "Nodes",
+    "ModelUnit": "Module",
+    "ModelViews": "Visualizers",
+    "OutputPorts": "Output ports",
+    "References": "References",
+    "Reports": "Reports",
+    "ServiceInputPorts": "Service input ports",
+    "ServiceOutputPorts": "Service output ports",
+    "Vendors": "Components",
+    "WorkFlow": "Workflow"
   },
   "Viewers/Browse/BrowseView": {
+    "ErrExportBusy": "You cannot export table in the process of data modification",
+    "ErrExportDataInvalid": "You cannot export table with unprepared data",
+    "ErrExportDeactivate": "Export deactivated due to node deactivation",
+    "LogColumnNotFoundFmt": "No %s field found in the input data set. The field has been deleted from the displayed fields.",
+    "LogNewColumnFmt": "New %s field appeared in the input data set. The field has been added to the displayed fields.",
     "PrepareViewData": "Table"
   },
   "Viewers/Browse/BrowseViewExport": {
@@ -2431,7 +2780,14 @@
     "RecNoColumnName": "RecNo",
     "RowNoColumnDisplayName": "#",
     "RowNoColumnName": "RowNo",
-    "Table": "Table"
+    "Table": "Table",
+    "ValueColumnDislpayName": "Value"
+  },
+  "Viewers/Browse/BrowseViewFilterEngine": {
+    "FilterDataNotify": "Data filter"
+  },
+  "Viewers/Browse/BrowseViewSortingEngine": {
+    "SortingNotify": "Sort"
   },
   "Viewers/Browse/BrowseViewVendor": {
     "VendorCaption": "Table",
@@ -2441,15 +2797,67 @@
     "VendorCaption": "Chart",
     "VendorDesc": "Chart data display"
   },
+  "Viewers/Chart/Component/BindedCheckBox": {
+    "CheckBoxBadObject": "Object has been deleted",
+    "CheckBoxBadTypeAccess": "Invalid field access",
+    "CheckBoxBindingField": "CheckBox binding error: invalid field"
+  },
+  "Viewers/Chart/Component/BindedEdit": {
+    "EditBadObject": "Object has been deleted",
+    "EditBadTypeAccess": "Invalid field access",
+    "EditBindingField": "Edit binding error: invalid field"
+  },
+  "Viewers/Chart/Component/BindedRadioGroup": {
+    "ErrRadioGroupBadDescriptions": "Incorrect array of RadioGroup names",
+    "ErrRadioGroupBadObject": "Object has been deleted",
+    "ErrRadioGroupBadType": "Invalid RadioGroup element type",
+    "ErrRadioGroupBadTypeAccess": "Invalid field access"
+  },
+  "Viewers/Chart/Component/BindedSpinEdit": {
+    "SpinEditBadObject": "Object has been deleted",
+    "SpinEditBadTypeAccess": "Invalid field access",
+    "SpinEditBindingField": "SpinEdit binding error: invalid field"
+  },
+  "Viewers/Chart/Component/Series": {
+    "Err_Chart_Type": "Invalid chart type",
+    "Err_Series_Type": "Invalid series type"
+  },
   "Viewers/Chart/Server/ChartColumnInfo": {
+    "ChartExtremesProgress": "Search for extremes",
     "ChartSortingProgress": "Data sorting"
+  },
+  "Viewers/Chart/Server/ChartParametres": {
+    "Alpha": "Transparency",
+    "Color": "Color",
+    "DefaultSerieName": "Series",
+    "ErrAxisNotFound": "No axis with this position found",
+    "ErrAxisPositionNotTrue": "Invalid axis position",
+    "ErrLinkedColumnDataType": "Invalid data type",
+    "ErrLinkedColumnInfoNotFound": "Column not found"
+  },
+  "Viewers/CoarseClasses/CoarseClassesView": {
+    "Component": "Component",
+    "ErrNotDefinedComponent": "Undefined component"
   },
   "Viewers/CoarseClasses/CoarseClassesViewVendor": {
     "VendorCaption": "Coarse Classes",
     "VendorDesc": "\"Coarse classes\" visualizer"
   },
+  "Viewers/Cube/CubeChart": {
+    "MaxDotsCountDesc": "Maximum dots count",
+    "MaxSeriesCountDesc": "Maximum series count"
+  },
   "Viewers/Cube/CubeDetailing": {
+    "ManagerBrowse": "Table",
     "ManagerStatistics": "Statistics"
+  },
+  "Viewers/Cube/CubeDimensions": {
+    "CubeEmptyDimValue": "<...>",
+    "MsgNoValues": "No values"
+  },
+  "Viewers/Cube/CubeExport": {
+    "DummyHeader": "Value",
+    "HTMLTitle": "Cross Table"
   },
   "Viewers/Cube/CubeHeaders": {
     "CubeTotalValue": "Total:"
@@ -2459,7 +2867,8 @@
   },
   "Viewers/Cube/CubeSummaries": {
     "CountCaseDisplayName": "Count",
-    "DefExprDisplayName": "Expression"
+    "DefExprDisplayName": "Expression",
+    "ErrCaseClassNotDynamic": "Fact is not dynamic"
   },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",

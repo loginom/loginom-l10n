@@ -256,6 +256,9 @@
     "CoarseClassesInputExternalParams": {
       "BinningId": "External binning identifier"
     },
+    "CoarseClassesInputParams": {
+      "MaxClassCount": "Maximum class count"
+    },
     "CoarseClassesManager": {
       "HasExcludeBinningDataSource": "Supplementary input of the external binning provided"
     },
@@ -265,6 +268,9 @@
     "FineClass": {
       "IV": "Information class index",
       "WoE": "Weight of class evidence"
+    },
+    "FineClassesViewer": {
+      "Count": "Fine class count"
     }
   },
   "components/columnflipping": {
@@ -507,6 +513,11 @@
     },
     "LearnPartitionContainer": {
       "LearnPartition": "The component data set binning interface with training"
+    }
+  },
+  "Libraries/Model/DeductorServerSettings": {
+    "SocketDeductorServerSettings": {
+      "Bind": "Address binding"
     }
   },
   "Libraries/Normalization/NormalDataSourceModelComponentEngine": {

@@ -102,12 +102,12 @@
   },
   "app/MainMenuForm": {
     "EmptyPackageName": "Package not selected",
-    "ErrCannotSaveReadOnlyPackage": "You cannot save the read-only \"{0}\" package",
+    "ErrCannotSaveReadOnlyPackage": "You cannot save \"{0}\" read-only package",
     "ErrLoadPackageErrors": "Errors occurred while \"{0}\" package downloading",
     "ErrNoPackageToClose": "No package to be closed was found.",
     "ErrNoPackageToSave": "There is no package to save.",
     "ErrOpenReadOnlyPackage": "\"{0}\" package is open only in the read-only mode as it has already been opened by another user. Saving is possible only under a different name.",
-    "ErrSaveReadOnlyPackage": "You cannot save the read-only \"{0}\" package without changing the name"
+    "ErrSaveReadOnlyPackage": "You cannot save \"{0}\" read-only package without changing the name"
   },
   "app/MapTree": {
     "AdminArea": "Administration",
@@ -386,7 +386,7 @@
   },
   "components/coarseclasses/CalculateInformationValues": {
     "ChartTitle": "Dependence IV on Number of Classes",
-    "XAxisTitle": "Number of Classes",
+    "XAxisTitle": "Class Count",
     "YAxisTitle": "Inf. Index"
   },
   "components/coarseclasses/ClassesChartWrapper": {
@@ -1883,7 +1883,7 @@
     "GeneralRatings": "Classifier scores",
     "Gini": "Gini coefficient",
     "KS": "KS",
-    "KS_Tooltip": "Kolmogorov-Smirnov criterion statistics",
+    "KS_Tooltip": "Kolmogorov-Smirnov statistics",
     "PPVShort": "PPV",
     "TPRShort": "TPR"
   },

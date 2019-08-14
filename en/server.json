@@ -301,12 +301,15 @@
     "ErrInvalidNodeID": "Unknown node ID: %d",
     "ErrInvalidXMLNameChar": "XML ID cannot contain \"%s\" character",
     "ErrInvalidXMLNameStartChar": "XML identifier cannot start with \"%s\" character",
-    "ErrOnlyOneRootElementAllowed": "Document root element already exists"
+    "ErrOnlyOneRootElementAllowed": "Document root element already exists",
+    "ErrPITargetXMLIsReserved": "\"xml\" parser instruction name reserved",
+    "ErrSetSinkWrongNodeType": "XML recipient can only be the 'document' or 'element' node type"
   },
   "Common/XML/XSD_MSXML": {
     "Any": "Any item",
     "ErrCantCreateXMLDOMDocument60": "Error creating COM object of XML document; possible reason - not installed MSXML 6.0",
     "ErrXSDElementExistsWithAnotherType": "%s item to be added from %s  namespace already exists in the schema and has a different type",
+    "ErrXSDIncludeNamespaceMismatch": "\"%s\" schema is trying to include \"%s\" schema but the target namespace \"%s\" of the included schema does not match \"%s\"",
     "ErrXSDNoAccess": "No access to %s document",
     "ErrXSDNoSchemaElement": "%s document does not contain 'schema' root element 'schema'",
     "WarnXSDElementRemoved": "%s:%s element was removed from %s document because it could not be verified using the file storage"
@@ -1823,7 +1826,8 @@
     "VendorDesc": "Import data from XML file according to the specified XSD schema"
   },
   "Libraries/1CConnection/1CConnection": {
-    "ErrDBPath": "Failed to get path to DB"
+    "ErrDBPath": "Failed to get path to DB",
+    "ErrLocalDBForbidden": "Connections to local server databases are forbidden"
   },
   "Libraries/1CConnection/1Cv8Connection": {
     "ErrConnectionString": "Error in connection string",
@@ -1841,11 +1845,13 @@
     "ErrDBPath": "Failed to get path to DB",
     "ErrExecuteProcedure": "Error executing stored procedure \"%s\"",
     "ErrExecuteQuery": "Error while SQL executing:\n%s",
+    "ErrIndexColumnsNotSelect": "No columns to make an index for are specified",
     "ErrLocalDBForbidden": "Connections to local server databases are forbidden",
     "ErrOpenQuery": "Error while SQL opening :\n%s",
     "ErrParameterTypesDoNotMatch": "Parameter types do not match",
     "ErrPrepareProcedure": "Error preparing stored procedure \"%s\"",
     "ErrPrepareQuery": "SQL preparation error:\n%s",
+    "ErrSetSequence": "Sequence installation error for DB. Old Sequence = %d",
     "ErrTableNameNotSelect": "No table name specified",
     "ErrTestConnection": "Connection test error:\n%s",
     "ErrUnPrepareQuery": "Error clearing prepared query"
@@ -1854,7 +1860,8 @@
     "DatabaseTypeName": "MS Access (OLEDB)"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
-    "DatabaseTypeName": "MS Excel (ODBC) [UniDAC]"
+    "DatabaseTypeName": "MS Excel (ODBC) [UniDAC]",
+    "ErrODBCExcelNotExists": "ODBC driver for connecting to Excel files is not installed"
   },
   "Libraries/bgdbrtl/UniDAC/FBUniDACDB": {
     "DatabaseTypeName": "Firebird"

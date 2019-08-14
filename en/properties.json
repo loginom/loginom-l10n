@@ -1,22 +1,4 @@
 {
-  "Common/CertList/CertList": {
-    "CertificateStore": {
-      "DisplayName": "Display Name",
-      "Name": "System Name",
-      "StoreCollection": "Storage Collection"
-    },
-    "HTTPClientCertificateList": {
-      "Selected": "Selected Certificate Index",
-      "Store": "Certificate store"
-    }
-  },
-  "Common/CodeExec/CodeModelComponentEngine": {
-    "CodeModelComponentEngine": {
-      "Code": "Executable Code",
-      "OutputColumnDefs": "Description of Output Set Columns",
-      "Variables": "Input Variables"
-    }
-  },
   "Common/WSDL/HTTPHeaders": {
     "CustomHeadersConfigurator": {
       "CustomHeaders": "HTTP Headers Collection"
@@ -26,86 +8,11 @@
       "Name": "Name"
     }
   },
-  "Common/WSDL/WSDL": {
-    "WSDL": {
-      "ServicesCount": "Count of WSDL Description Defined Services"
-    },
-    "WSDLBinding": {
-      "Extension": "Extension",
-      "OperationsCount": "Operations Count"
-    },
-    "WSDLElement": {
-      "Documentation": "Documentation",
-      "Name": "Name"
-    },
-    "WSDLExtension": {
-      "ExtensionType": "Extension Type"
-    },
-    "WSDLHttpBindingExtension": {
-      "Verb": "HTTP Request Method"
-    },
-    "WSDLHttpOperationExtension": {
-      "Location": "Local Part of the Operation Call Address"
-    },
-    "WSDLHttpPortExtension": {
-      "AddressLocation": "Request Address"
-    },
-    "WSDLMessage": {
-      "Extension": "Extension"
-    },
-    "WSDLMimeContent": {
-      "Part": "Message Part"
-    },
-    "WSDLMimeContentExtensionElement": {
-      "Content": "Mime: content or mime: mimeXml element"
-    },
-    "WSDLMimeExtensionElement": {
-      "ExtElementType": "Extension Element Type"
-    },
-    "WSDLMimeMessageExtension": {
-      "ExtElementCount": "Index Extension Element"
-    },
-    "WSDLOperation": {
-      "Extension": "Extension",
-      "FaultsCount": "Described Exceptions Count",
-      "Input": "Incoming Service Message",
-      "Output": "Outgoing Service Message",
-      "Primitive": "Exchange Primitive",
-      "Signature": "Operation Signature"
-    },
-    "WSDLPart": {
-      "Name": "Part Name"
-    },
-    "WSDLPort": {
-      "Binding": "Used Binding",
-      "Extension": "Extension"
-    },
-    "WSDLService": {
-      "PortsCount": "Count of Service-Defined Endpoints (Ports)"
-    },
-    "WSDLSoapBindingExtension": {
-      "Style": "SOAP Style",
-      "Transport": "Transport Protocol",
-      "Version": "SOAP Version"
-    },
-    "WSDLSoapOperationExtension": {
-      "Action": "SOAP Action",
-      "Style": "SOAP Style",
-      "Version": "SOAP Version"
-    },
-    "WSDLSoapPortExtension": {
-      "AddressLocation": "Request Address"
-    }
-  },
   "Common/WSDL/WSDLClientAuth": {
     "WSDLAuthorization": {
-      "CertCredentials": "User Certificate Authorization Credentials",
       "Mode": "Authorization Type",
       "NamePassCredentials": "Username and Password Authorization Credentials",
       "OAuthCredentials": "OAuth Token Authorization Credentials"
-    },
-    "WSDLCertAuthCredentials": {
-      "Certificates": "Certificate List"
     },
     "WSDLNamePassAuthCredentials": {
       "Password": "Password",
@@ -119,45 +26,10 @@
     "WSDLRequestDebug": {
       "DumpRequest": "Save Request Text to Disk",
       "DumpRequestFolder": "Folder to save requests",
-      "ResponseStub": "File applied as response",
-      "RootFileStorage": "Root file storage"
-    }
-  },
-  "Common/XML/XMLSchemaToDataSourceMapping": {
-    "XMLSchemaToColumnMapping": {
-      "Column": "Data set column",
-      "Node": "Tree node"
-    }
-  },
-  "Common/XML/XMLSchemaTree": {
-    "XMLSchemaTree": {
-      "NamespacesCount": "Count of namespaces used",
-      "RootNodesCount": "Root elements count",
-      "SelectedRoot": "Selected root node"
-    },
-    "XMLSchemaTreeNode": {
-      "Comment": "Comment",
-      "DefaultValue": "Default value",
-      "DisplayName": "Local node name",
-      "FixedValue": "Fixed value",
-      "NamespaceURI": "URI namespace",
-      "NodeType": "Node type",
-      "ParentNode": "Parent node",
-      "Selectable": "Selectable",
-      "Selected": "Selected by user to import",
-      "SubNodes": "Subnodes",
-      "SubstitutionHead": "SubstitutionGroup replaced element",
-      "ValueRequired": "Value required",
-      "ValueType": "Value type"
-    },
-    "XMLSchemaTreeNodes": {
-      "Count": "Nodes count"
+      "ResponseStub": "File applied as response"
     }
   },
   "components/assnrules": {
-    "AssnRulesDefExtension": {
-      "Selected": "Column selection flag"
-    },
     "AssnRulesEngine": {
       "Params": "Algorithm parameters"
     },
@@ -173,23 +45,10 @@
       "BinsCount": "Count"
     },
     "BinningDefExtension": {
-      "MethodSettings": "Binning method settings",
       "MethodType": "Binning method type"
-    },
-    "BinningEngine": {
-      "BinningPreview": "Helper class for visual alignment of quantization methods"
-    },
-    "BinningExtermalBinsMethodSettings": {
-      "ExternalBinsID": "Identifier"
-    },
-    "BinningLinearBins": {
-      "LowerLimitOpen": "Lower range bound open",
-      "UpperLimitOpen": "Upper range bound open"
     },
     "BinningLinearContinuousMethodSettings": {
       "LowerLimit": "Lower bound",
-      "StrictDefineLowerLimit": "Strictly defined",
-      "StrictDefineUpperLimit": "Strictly defined",
       "UpperLimit": "Upper bound"
     },
     "BinningTileDateTimeMethodSettings": {
@@ -205,10 +64,6 @@
     }
   },
   "components/calcdata": {
-    "CalcData": {
-      "CalcMode": "Mode",
-      "ExprColumns": "Expressions"
-    },
     "CalcExprColumnItem": {
       "Cached": "Cache values"
     },
@@ -217,9 +72,7 @@
       "Description": "Description",
       "DisplayName": "Caption",
       "Expression": "Expression",
-      "Index": "Index",
-      "Intermediate": "Intermediate expression",
-      "Name": "Name"
+      "Intermediate": "Intermediate expression"
     }
   },
   "components/clope": {
@@ -247,22 +100,6 @@
     }
   },
   "components/coarseclasses": {
-    "CoarseClass": {
-      "HighBorder": "Upper bound",
-      "HighFineIndex": "Upper bound",
-      "LowBorder": "Lower bound",
-      "LowFineIndex": "Lower bound",
-      "Mark": "Class caption",
-      "Weight": "Class weight"
-    },
-    "CoarseClassesBuilder": {
-      "ColumnPurpose": "Field usage type",
-      "IsEdited": "Binning edited",
-      "IsLocked": "Binning locked"
-    },
-    "CoarseClassesEngine": {
-      "CoarseClassesViewers": "Read-only viewers of coarse classes"
-    },
     "CoarseClassesInputContinuousParams": {
       "FineIntervalsCount": "Interval count",
       "UsePrequanting": "Prequanting"
@@ -277,34 +114,9 @@
       "MaxClassCount": "Maximum class count",
       "MinClassPercentage": "Minimum class percentage, %",
       "UniformityCoef": "Uniformity"
-    },
-    "CoarseClassesManager": {
-      "CoarseClassesBuilders": "Coarse classes builders",
-      "HasExcludeBinningDataSource": "Supplementary input of the external binning provided"
-    },
-    "CoarseClassesTuneColumnDefExtension": {
-      "Params": "Configuration information"
-    },
-    "CoarseClassesViewer": {
-      "IsLocked": "Binning locked"
-    },
-    "FineClass": {
-      "IV": "Information class index",
-      "Mark": "Class caption",
-      "NoEventCount": "Non-events count in the class",
-      "WoE": "Weight of class evidence"
-    },
-    "FineClassesViewer": {
-      "Count": "Fine class count",
-      "DataType": "Data type",
-      "TotalEvent": "Total event count",
-      "TotalNoEvent": "Total non-event count"
     }
   },
   "components/columnflipping": {
-    "ColumnFlippingColumnDefExtension": {
-      "Order": "Order number"
-    },
     "ColumnFlippingEngine": {
       "SkipNullCases": "Skip null values"
     }
@@ -343,17 +155,10 @@
       "CompareValueList": "List of values",
       "DataType": "Data type",
       "Name": "Name",
-      "RelationType": "Relation type",
-      "RowNumberer": "Row numberer"
-    },
-    "FilterDataEngine": {
-      "PrepareUniqueValues": "Prepare unique values"
+      "RelationType": "Relation type"
     }
   },
   "components/filtration": {
-    "DataRecoveryColumnDefExtension": {
-      "ActionNull": "Missing data processing method"
-    },
     "DataRecoveryEngine": {
       "OrderedSample": "Source data ordered"
     },
@@ -392,11 +197,6 @@
       "ARIMAXParams": "ARIMAX Settings"
     }
   },
-  "components/groupdata": {
-    "GroupDataColumnDefExtension": {
-      "Order": "Order number"
-    }
-  },
   "components/linregression": {
     "LinRegressionParams": {
       "LinRegressionMethod": "Factor selection and protection against retraining"
@@ -430,37 +230,18 @@
     }
   },
   "components/reformcolumns": {
-    "ReformColumnDefExtension": {
-      "CachingMethod": "Caching",
-      "Name": "Changed column name"
-    },
     "ReformColumnsEngine": {
       "CachingMethod": "Caching"
     }
   },
-  "components/replace": {
-    "ReplaceTable": {
-      "IsEmpty": "Empty substitution table",
-      "OutputDataType": "Output data type",
-      "RegularExpressions": "Regular expressions",
-      "ReplaceSourceID": "Input replacement table GUID"
-    }
-  },
   "components/restclient": {
     "RESTClient": {
-      "RequestConfigurator": "Configure request data export",
-      "RESTClientConnection": "Connect to REST service",
-      "SelectedOperation": "Configured operation"
+      "RequestConfigurator": "Configure request data export"
     }
   },
   "components/sampling": {
     "SamplingEngine": {
       "Sampling": "Sampling"
-    }
-  },
-  "components/slidingwindow": {
-    "SlidingWindowColumnDefExtension": {
-      "Forecast": "Forecast horizon"
     }
   },
   "components/smoothing": {
@@ -483,7 +264,6 @@
   },
   "components/ungroupdata": {
     "UngroupDataEngine": {
-      "Links": "Links",
       "SeasonalityPeriod": "Seasonality period",
       "UngroupMethod": "Ungrouping method"
     }
@@ -493,34 +273,16 @@
       "CodePage": "Codepage"
     }
   },
-  "imports/1cv8": {
-    "1Cv8QueryImport": {
-      "Connection": "Connection",
-      "QueryText": "Request text"
-    }
-  },
-  "imports/database": {
-    "DBImport": {
-      "CommandText": "Data request string.",
-      "CommandType": "Type of data request string."
-    }
-  },
   "imports/excelfile": {
     "ImportExcelFileEngine": {
       "AllRows": "All rows",
       "BlankRowAction": "Blank rows",
       "ExplicitRange": "Range",
-      "ImportExcelFilePreview": "Property to view Excel file contents",
       "ReferenceStyle": "Reference style",
       "TableName": "Object name",
       "TableNamingMethod": "Object selection",
       "TitleRowCount": "Title row count",
       "UsedRange": "Whole sheet"
-    }
-  },
-  "imports/native": {
-    "ImportNative": {
-      "ColumnInfos": "DDF file columns info"
     }
   },
   "imports/textfile": {
@@ -531,7 +293,6 @@
       "DecimalSeparator": "Decimal separator",
       "DelimiterChar": "Column separator",
       "FirstLineAsTitle": "First line title",
-      "FormatType": "Data format",
       "MultipleDelimiters": "Accept multiple separators in succession for one",
       "RowsToSkip": "Skip rows",
       "TextQualifier": "Line terminator",
@@ -547,14 +308,7 @@
     }
   },
   "Libraries/bgdbrtl/DB": {
-    "Database": {
-      "DatabasePath": "Connection string",
-      "ObjectLeftQuote": "Left quote",
-      "ObjectRightQuote": "Right quote",
-      "ServerType": "Type of database server"
-    },
     "DatabaseConfigurator": {
-      "ConfigurableOptions": "Configurable options",
       "DatabasePath": "Connection string",
       "Direct": "Do not use DBMS client",
       "ObjectQuotes": "Configure quotes",
@@ -574,77 +328,12 @@
     "ColumnDef": {
       "DefaultUsageType": "Default usage type",
       "UsageType": "Column usage type"
-    },
-    "ColumnDefs": {
-      "Vendor": "Link to Vendor field descriptions"
-    },
-    "ColumnInfo": {
-      "DefaultUsageType": "Default column usage type",
-      "UsageType": "Column usage type"
-    },
-    "ColumnInfos": {
-      "Vendor": "Link to Vendor field descriptions"
-    },
-    "TuneColumnDefs": {
-      "Vendor": "Link to Vendor custom field descriptions"
-    }
-  },
-  "Libraries/bgrtl/DerivedDataSet": {
-    "DeriveProxyColumnDef": {
-      "DefaultUsageType": "Default column usage type",
-      "UsageType": "Column usage type"
-    },
-    "ProxyColumnDef": {
-      "DefaultUsageType": "Default column usage type",
-      "UsageType": "Column usage type"
-    }
-  },
-  "Libraries/bgrtl/Interfaces": {
-    "ClassVendorObject": {
-      "Vendor": "Link to ClassVendor used for object creation"
-    },
-    "CustomItemDef": {
-      "Index": "Element index listed"
-    },
-    "DescriptionDef": {
-      "Description": "Description"
-    },
-    "DescriptionInfo": {
-      "Description": "Description"
-    },
-    "GuidedCollectionItem": {
-      "Guid": "Collection item Guid"
-    },
-    "List": {
-      "Count": "Element count listed"
-    },
-    "ListItem": {
-      "Index": "Element index listed"
-    }
-  },
-  "Libraries/bgrtl/Statistics": {
-    "Statistics": {
-      "Count": "Element count listed"
-    }
-  },
-  "Libraries/bgrtl/Variables": {
-    "TuneVariableItems": {
-      "Vendor": "Link to vendor"
-    },
-    "VariableInfos": {
-      "Vendor": "Link to Vendor variable descriptions"
-    },
-    "VariableItems": {
-      "Vendor": "Link to Vendor variables"
     }
   },
   "Libraries/DataPartition/LearnPartition": {
     "LearnPartition": {
       "LearnPartitionMethod": "Partition method",
       "ValidationColumnIndex": "Given partition field"
-    },
-    "LearnPartitionContainer": {
-      "LearnPartition": "The component data set binning interface with training"
     }
   },
   "Libraries/Model/DeductorServerSettings": {
@@ -654,62 +343,12 @@
   },
   "Libraries/Normalization/NormalDataSourceModelComponentEngine": {
     "NormalDataSourceModelComponentEngine": {
-      "LearnPartition": "Component data partition with training",
-      "SetupLearnPartition": "Configure user data partition"
-    }
-  },
-  "Libraries/Normalization/TuneNormColumnDefs": {
-    "TuneNormColumnDefs": {
-      "Vendor": "Link to Vendor custom field descriptions"
+      "LearnPartition": "Component data partition with training"
     }
   },
   "Libraries/Regression/Regression": {
-    "RegressionClassificationParams": {
-      "Threshold": "Cuttoff"
-    },
     "RegressionStatisticsParams": {
       "PredictionIntervalNeeded": "Calculate confidence interval"
-    }
-  },
-  "Viewers/Cube/CubeSummaries": {
-    "CubeFunction": {
-      "OrderNumber": "Order number"
-    }
-  },
-  "Viewers/LinRegressReport/LinRegressReport": {
-    "LinRegressReport": {
-      "ShowModelInfo": "Show model info",
-      "ShowModelSteps": "Show model steps",
-      "ShowZeroValues": "Show zero values",
-      "SortDirection": "Sort direction",
-      "SortOrder": "Sort order"
-    }
-  },
-  "Viewers/LogRegressReport/LogRegressReport": {
-    "LogRegressReport": {
-      "ShowModelInfo": "Show model info",
-      "ShowModelSteps": "Show model steps",
-      "ShowZeroValues": "Show zero values",
-      "SortDirection": "Sort direction",
-      "SortOrder": "Sort order"
-    }
-  },
-  "Viewers/ROC/ROCView": {
-    "ROCView": {
-      "CutoffPoint": "Cuttoff",
-      "NBins": "Number of bins",
-      "UserCutoff": "User cuttoff"
-    }
-  },
-  "Viewers/Statistics/StatView": {
-    "StatViewColumnConfig": {
-      "SortDirection": "Sort direction",
-      "Width": "Width"
-    }
-  },
-  "Warehouse2/Deductor/DW": {
-    "DWObject": {
-      "DWObjectType": "Type of Data Warehouse object"
     }
   }
 }

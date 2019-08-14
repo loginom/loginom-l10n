@@ -75,9 +75,9 @@
   },
   "Common/CodeExec/CodeAPIDataSetProxies": {
     "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of [%d; %d] range",
-    "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table ",
+    "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table",
     "ErrInvalidDataSourceColumnIndex": "The input table column index %d is out of [%d; %d] range",
-    "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table №%d "
+    "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table №%d"
   },
   "Common/HTTP/CachedHttpStream": {
     "ErrCachedHttpStreamClassAlreadyAssigned": "Cached HTTP stream class already registered",
@@ -101,7 +101,7 @@
   "Common/WSDL/Processor/MIMEExportImpl": {
     "ErrCantExportPart": "Failed to export MIME %s content as an alternative has already been exported",
     "ErrExportConflictingPart": "Attempt to export \"%s\" part of WSDL message conflicting with the previously exported data",
-    "ErrValueIntExportImpossible": "Failed to export %d value to the message associated with \"%s\" schema element: %s "
+    "ErrValueIntExportImpossible": "Failed to export %d value to the message associated with \"%s\" schema element: %s"
   },
   "Common/WSDL/Processor/MIMEImportImpl": {
     "ErrCodePageNotSupported": "\"%s\" codepage not supported",
@@ -153,7 +153,7 @@
     "ErrBindingOperationExtensionCollision": "Types of \"%s\" binding extensions and \"%s\" operations do not match",
     "ErrCantDefineTransmissionPrimitive": "Failed to define data exchange primitive for %s operation, %s port type",
     "ErrFaultMustHaveExactlyOnePart": "Error defining %s operation, %s port type: fault message must contain exactly one part",
-    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation0/>\" in \"%s\" binding HTTP declaration for \"%s\" operation  ",
+    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation0/>\" in \"%s\" binding HTTP declaration for \"%s\" operation ",
     "ErrHttpPartReferencesComplexElement": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to %s{%s} XSD schema element related to the complex type",
     "ErrHttpPartReferencesComplexType": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to the complex type of %s{%s} XSD schema",
     "ErrInputMimeTypeContainsWildcard": "The incoming service message content must relate to the specific MIME type (actually - %s)",
@@ -174,7 +174,7 @@
     "ErrPartContentsNotDefined": "\"%s\" part does not reference schema definitions",
     "ErrPartIsReferencedByElement": "\"%s\" part defined by element not by XSD schema type",
     "ErrPartIsReferencedByType": "\"%s\" part defined by type not by XSD schema element",
-    "ErrPortBindingExtensionCollision": "\"%s port and \"%s\" binding extensions do not match ",
+    "ErrPortBindingExtensionCollision": "\"%s port and \"%s\" binding extensions do not match",
     "ErrPortMustSpecifyExtension": "\"%s\" endpoint (port) extension not specified or not supported",
     "ErrPortTypeNotFound": "\"%s\" port type for \"%s\" binding not found",
     "ErrSchemaDoesNotContainPartElement": "\"%s\" part references \"%s\"{\"%s\"} element not found in XSD schema",
@@ -230,7 +230,7 @@
     "Enclosed_All": "All #",
     "Enclosed_Choice": "Choice #",
     "Enclosed_Sequence": "Sequence #",
-    "ErrAttributeNoRequiredValue": "No required value for %s attribute ",
+    "ErrAttributeNoRequiredValue": "No required value for %s attribute",
     "ErrElementNoRequiredValue": "No required value for %s element",
     "ErrEmptyNodeName": "Tree node name cannot be empty",
     "ErrInvalidPath": "Invalid node path: %s",
@@ -250,11 +250,11 @@
     "Group_Idx": "(%s) index"
   },
   "Common/XML/SAX/XMLSAX": {
-    "ErrImplementationIntfNotSupported": "%s interface not supported by %s implementation ",
+    "ErrImplementationIntfNotSupported": "%s interface not supported by %s implementation",
     "ErrParserIsActive": "You cannot change parser properties during parsing"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
-    "ErrParseFile": "Error in %d row, %d position while parsing '%s' file: \n %s\n\n",
+    "ErrParseFile": "Error in %d row, %d position while parsing '%s' file: \n %s",
     "ErrParseFileUnhandledException": "Unhandled exception parsing '%s' file:\n%s",
     "ErrParseStream": "Error parsing stream in %d row, %d position:\n %s",
     "ErrParseStreamNoXML": "Error parsing stream in %d row, %d position: the source is not XML file or has incorrect syntax",
@@ -402,7 +402,7 @@
   "components/binning/BinningMethodsImplementations": {
     "ErrBadLimits": "The lower bound cannot exceed the upper one",
     "ErrBinsCount": "Bin count must be more than 0",
-    "ErrBinsCountLimitFmt": "Bin count must not exceed %d ",
+    "ErrBinsCountLimitFmt": "Bin count must not exceed %d",
     "ErrBinWidthFmt": "Failed to define bin width for %s field",
     "ErrGenerateBins": "Failed to generate quantization bins",
     "ErrInfinityFmt": "Quantization bins for %s field were not created. The field contains the \"infinity\" value.",
@@ -426,13 +426,13 @@
   "components/binning/BinningMethodsImplementationTile": {
     "AlignTile": "Align tiles",
     "ErrBinsCountLimitFmt": "Tiles number must not exceed %d",
-    "ErrContextNotReadyFmt": "Context not ready for %s field and %s method  ",
+    "ErrContextNotReadyFmt": "Context not ready for %s field and %s method",
     "ErrNoMethod": "Failed to get tiled quantization settings",
     "ErrNoValuesFmt": "%s field contains no data, it is impossible to generate bins",
     "ErrSumFmt": "Failed to get sum of values for %s field",
     "ErrZeroTileCount": "Bin (tile) count must be > 0",
     "NegativValueForTileSumm": "Negative values are not allowed when creating bins by sum of characteristic",
-    "SortProcessFmt": "Sort %s field ",
+    "SortProcessFmt": "Sort %s field",
     "WarnNoRound": "In case of optimal tile quantization bin bounds are not rounded"
   },
   "components/binning/BinningQuantizers": {
@@ -466,7 +466,7 @@
   },
   "components/calcdata/CalcItemChakra": {
     "ErrExprParse": "Error parsing \"%s\" expression: %s",
-    "ErrExprUsesUndefinedVariable": "%s undefined variable used in \"%s\" expression ",
+    "ErrExprUsesUndefinedVariable": "%s undefined variable used in \"%s\" expression",
     "ExprCalculateError": "Error calculating \"%s\" expression, %d row of the input set"
   },
   "components/calcdata/ExprColumns": {
@@ -482,7 +482,7 @@
     "ErrBracket": "Incorrect brackets",
     "ErrIllegalCharacter": "Invalid \"%s\" character",
     "ErrInvalidExpression": "Invalid expression: \"%s\"",
-    "ErrQuote": "Unclosed string intercept in %d string ",
+    "ErrQuote": "Unclosed string intercept in %d string",
     "ErrUnknownFunction": "Unknown function: %s"
   },
   "components/calcvariables/CalcVariables": {
@@ -553,10 +553,10 @@
     "ErrCantApplyFineClassesBinning": "You cannot apply fine classes for binning for %s column. There are too many unique values",
     "ErrCantLoadBackup": "Failed to restore binning",
     "ErrCantSaveBackup": "Failed to save current binning",
-    "ErrContDataKindExpected": "Continuous data type of %s column expected ",
-    "ErrDiscreteDataKindExpected": "Discrete data type of %s column expected ",
+    "ErrContDataKindExpected": "Continuous data type of %s column expected",
+    "ErrDiscreteDataKindExpected": "Discrete data type of %s column expected",
     "ErrIncorrectEventValue": "The output field does not contain \"%s\" value",
-    "ErrInputBinningIsNotCorrected": "External binning for \"%s\" column incorrectly specified ",
+    "ErrInputBinningIsNotCorrected": "External binning for \"%s\" column incorrectly specified",
     "ErrOutColumnNotDefined": "Undefined output field",
     "ErrOutColumnNotValid": "The output field must be discrete with 2 unique values",
     "ErrOverflow": "Number of the input data source binning operations exceeds the allowable value",
@@ -575,16 +575,16 @@
     "ActiveInputPortRequired": "It is required to activate the input port to build the coarse classes",
     "ClassMarkPostfix": " Caption",
     "ClassNumPostfix": " Class number",
-    "ClassSignificantPostfix": "Significance",
+    "ClassSignificantPostfix": " Significance",
     "CoarseClassesProcessDesc": "Build coarse classes",
     "ErrClassStorageNotDefined": "The fine classes storage of one of the columns not defined",
     "ErrCoarseClassBuilderNotValid": "The fine classes storage does not comply with the customized settings",
-    "ErrExternalBinningOverFlow": "The external binning size for \"%s\" column exceeds the allowable value ",
-    "ErrInputBinningIsNotCorrected": "External binning for \"%s\" column incorrectly specified ",
+    "ErrExternalBinningOverFlow": "The external binning size for \"%s\" column exceeds the allowable value",
+    "ErrInputBinningIsNotCorrected": "External binning for \"%s\" column incorrectly specified",
     "ErrInputBinningIsNotExist": "No external binning for \"%s\" column or port not activated",
     "ErrInputBinningIsNotFull": "External binning for \"%s\" column does not contain all required data",
     "ErrInputBinningMissValue": "External binning for \"%s\" column does not contain unique \"%s\" value",
-    "ErrInputBinningMissValues": "External binning contains not all unique values of \"%s\" column ",
+    "ErrInputBinningMissValues": "External binning contains not all unique values of \"%s\" column",
     "ErrInputRangeDataSourceIsNotExist": "No external binning data source",
     "ErrNoModel": "Model is not configured. It is required to train the node before its application",
     "InputRangesDataSource": "External quantization ranges"
@@ -610,9 +610,9 @@
     "ErrColumnIsNotDifenied": "Failed to define the column to process",
     "ErrDataTypesNotMatch": "The specified column data type does not match the data type of the coarse classes",
     "ErrNotPositiveIntervalsCount": "Interval count must be more than 0",
-    "From": "from",
+    "From": "from ",
     "NullClass": "Null class",
-    "To": "to"
+    "To": "to "
   },
   "components/columnflipping/ColumnFlipping": {
     "ColumnFlippingProcess": "Column convolution",
@@ -653,7 +653,7 @@
   },
   "components/condition/ConditionComponent": {
     "ElseBranchDesc": "Otherwise",
-    "ErrInputSocketDefIsEmtpy": "The following input types are not specified:",
+    "ErrInputSocketDefIsEmtpy": "The following input types are not specified: ",
     "OutputSocketDisplayNameTemplate": "%s - %s"
   },
   "components/condition/ConditionComponentVendor": {
@@ -1091,10 +1091,10 @@
   },
   "components/linregression/LinRegressionTasks": {
     "ErrNotLinRegTaskContext": "Internal error: context is not the training context for the linear regression model",
-    "ErrWrongValidationPartitionCount": "Validation partition count must be more than 0 (given partition count = %d) ",
+    "ErrWrongValidationPartitionCount": "Validation partition count must be more than 0 (given partition count = %d)",
     "RegBackwardAssignProcessName": "Excluding %s factor from the final model",
     "RegBackwardStepProcessName": "Stepwise selection - %s factor exclusion",
-    "RegFoldSet": "Validation partition %d ",
+    "RegFoldSet": "Validation partition %d",
     "RegForwardAssignProcessName": "%s factor addition to the final model",
     "RegForwardStepProcessName": "Stepwise selection - %s factor addition",
     "RegPrepareData": "Preparing data before training",
@@ -1178,7 +1178,7 @@
     "ErrWrongValidationPartitionCount": "Validation partition count must be more than 0 (given partition count = %d)",
     "RegBackwardAssignProcessName": "Excluding %s factor from the final model",
     "RegBackwardStepProcessName": "Stepwise selection - %s factor exclusion",
-    "RegFoldSet": "Validation partition %d ",
+    "RegFoldSet": "Validation partition %d",
     "RegForwardAssignProcessName": "%s factor addition to the final model",
     "RegForwardStepProcessName": "Stepwise selection - %s factor addition",
     "RegPrepareData": "Preparing data before training",
@@ -1379,9 +1379,9 @@
   "components/replace/ReplaceColumns": {
     "ErrSourceGuidNotFound": "No input replacement table with GUID = %s",
     "InputReplaceDataSource": "Substitution table",
-    "PrecisionPostfix": "Deviation",
+    "PrecisionPostfix": " Deviation",
     "ReplacedPostfix": " Replaced",
-    "ReplacePostfix": "Replace"
+    "ReplacePostfix": " Replace"
   },
   "components/replace/ReplaceColumnsVendor": {
     "VendorCaption": "Replace",
@@ -1397,7 +1397,7 @@
     "ErrUsageType": "No fields in the input replacement table specified"
   },
   "components/replacevariables/ReplaceVariables": {
-    "ReplacePostfix": "Replace"
+    "ReplacePostfix": " Replace"
   },
   "components/replacevariables/ReplaceVariablesVendor": {
     "VendorCaption": "Replace (Variables)",
@@ -1895,7 +1895,7 @@
     "DatabaseTypeName": "SQLite",
     "ErrBlankConnectionString": "Empty connection string",
     "ErrNotCursor": "The last command in SQL script does not return the cursor",
-    "SQLiteError": "SQLite error:",
+    "SQLiteError": "SQLite error: ",
     "SQLiteFuncOverridingNotSupported": "Function override for SQLite versions below 3.7.3 not supported"
   },
   "Libraries/bgdbrtl/UniDAC/UniDACDB": {
@@ -2053,13 +2053,13 @@
     "StackTraceFmt": "STACK TRACE:\n%s"
   },
   "Libraries/bgrtl/ExceptUtils": {
-    "ErrAbstract": "Abstract method calling %s ",
+    "ErrAbstract": "Abstract method calling %s",
     "ErrAbstractMethod": "Abstract method calling %s.%s",
     "ErrAssign": "You cannot assign property values of %s object  to the object values of the unsupported class %s",
     "ErrAssignIntf": "You cannot assign property values of %s object  to the object values of the unsupported interface",
     "ErrFloatParamIsNan": "\"%s\" parameter value equal to NaN is not allowed",
     "ErrInvalidIndex": "%d index value of \"%s\" parameter is out of [%d; %d] range",
-    "ErrMethodParamIsNull": " %s parameter of %s method must be initialized",
+    "ErrMethodParamIsNull": "%s parameter of %s method must be initialized",
     "ErrMustGreaterOrEqualThan": "%g value of \"%s\" parameter must be more than or equal to %g",
     "ErrMustGreaterOrEqualThanInt": "%d value of \"%s\" parameter must be more than or equal to %d",
     "ErrMustGreaterThan": "%g value of \"%s\" parameter must be more than %g",
@@ -2070,7 +2070,7 @@
     "ErrMustLessThanInt": "%d value of \"%s\" parameter must be less than %d",
     "ErrOutOfRange": "%g value of \"%s\" parameter is out of [%g; %g] range",
     "ErrOutOfRangeInt": "%d value of \"%s\" parameter is out of [%d; %d] range",
-    "ErrParamIsNull": " %s parameter must be initialized"
+    "ErrParamIsNull": "%s parameter must be initialized"
   },
   "Libraries/bgrtl/ExecutionContext": {
     "ErrExecutionContextAlreadyExists": "Failed to install the external execution context: context already exists",
@@ -2083,7 +2083,7 @@
   "Libraries/bgrtl/Extensions": {
     "ErrBaseExtensionMultipleFound": "There are several extensions for %s base identifier",
     "ErrBaseExtensionNotFound": "No extension for %s base identifier found",
-    "ErrDeleteExtension": "You cannot delete extension with %d index ",
+    "ErrDeleteExtension": "You cannot delete extension with %d index",
     "ErrExtensionAlreadyExists": "\"%s\" extension already exists",
     "ErrExtensionAlreadyInitialized": "Extension already initialized",
     "ErrExtensionsInstanceDestroyForbidden": "Explicit deletion of the extension list instance is prohibited",
@@ -2342,7 +2342,7 @@
     "AddConnectionCaptionDef": "Connection Added",
     "AddLinkCaption": "\"%s.%s\" - \"%s.%s\" Link Added",
     "AddLinkCaptionDef": "Link Added",
-    "AddNodeCaption": " \"%s\" Node Added",
+    "AddNodeCaption": "\"%s\" Node Added",
     "AddNodeCaptionDef": "Node Added",
     "AddVendorCaption": "\"%s\" Component Added",
     "AddVendorCaptionDef": "Component Added",
@@ -2610,8 +2610,8 @@
     "ErrCannotDeleteDerivedVendors": "You cannot delete derived components"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
-    "ErrInputSocketDefIsEmtpy": "The following input types are not specified:",
-    "ErrOutputSocketDefIsEmtpy": "The following output types are not specified:"
+    "ErrInputSocketDefIsEmtpy": "The following input types are not specified: ",
+    "ErrOutputSocketDefIsEmtpy": "The following output types are not specified: "
   },
   "Libraries/Model/Generic/ModelGenericComponentEngine": {
     "ActivateOuterData": "External data",
@@ -2624,13 +2624,13 @@
     "ErrAlreadyConfiguringInnerSocket": "The external component socket has already been configuring"
   },
   "Libraries/Model/Generic/ModelInputComponent": {
-    "ErrInnerOutputSocketDefIsEmtpy": "The following input types are not specified:"
+    "ErrInnerOutputSocketDefIsEmtpy": "The following input types are not specified: "
   },
   "Libraries/Model/Generic/ModelInputComponentVendor": {
     "VendorCaption": "Input Node"
   },
   "Libraries/Model/Generic/ModelOutputComponent": {
-    "ErrInnerInputSocketDefIsEmtpy": "The following output types are not specified:"
+    "ErrInnerInputSocketDefIsEmtpy": "The following output types are not specified: "
   },
   "Libraries/Model/Generic/ModelOutputComponentVendor": {
     "VendorCaption": "Output Node"
@@ -2739,7 +2739,7 @@
   },
   "Libraries/Model/ModelUnit": {
     "CurrentModel": "Current module",
-    "DeleteReferringVendorCaption": "Delete \"%s\" Derived Component ",
+    "DeleteReferringVendorCaption": "Delete \"%s\" Derived Component",
     "ErrAlienExcludedNode": "\"%s\" node does not belong to the current module",
     "LocalModelComponentVendorMetaDesc": "local component",
     "ModelComponentVendorMetaDesc": "component"
@@ -2884,10 +2884,10 @@
     "ErrNotImplemented": "This functionality not implemented",
     "ErrRefIdRequired": "The reference category used in the normalizer is not defined",
     "ErrWrongDiscreteIndexRange": "Prenormalized index: %d is out of allowable [%d ; %d] range",
-    "VS": " to",
+    "VS": " to ",
     "VS_MEAN": " to mean",
     "VS_MEAN_PREV": " to mean from previous",
-    "VS_MEAN_SUBS": "to mean from subsequent"
+    "VS_MEAN_SUBS": " to mean from subsequent"
   },
   "Libraries/Normalization/TunedNormParams": {
     "ErrAvailableNormTypeNotFound": "No valid normalization type found",
@@ -2949,7 +2949,7 @@
   },
   "Libraries/Regression/RegressionStatistics": {
     "CoefficientsStats": "Model coefficient statistics",
-    "ErrWrongClassType": "Source class does not match"
+    "ErrWrongClassType": "Source class does not match "
   },
   "Libraries/Regression/RegressionTrainingResults": {
     "RegressionModel": "Regression model"
@@ -3049,8 +3049,8 @@
     "ErrModelNodeNotFound": "Node %s not found",
     "ErrModelNodeNotPublished": "Node %s published",
     "ErrNoPublishedNodes": "The package contains no published nodes",
-    "ErrPackageDoesNotBelongToCurrentSession": " %s package does not belong to the current session",
-    "ErrPackageNotFound": "Failed to find package with %s name and %s version ",
+    "ErrPackageDoesNotBelongToCurrentSession": "%s package does not belong to the current session",
+    "ErrPackageNotFound": "Failed to find package with %s name and %s version",
     "ErrPackageNotFoundByFileName": "Failed to find %s package",
     "ErrPackageRestoreErrors": "Errors occurred while restoring %s package",
     "ErrPublishedModelNodeNotFound": "Failed to find published node with %s identifier",
@@ -3264,7 +3264,7 @@
     "CountCaseDisplayName": "Count",
     "DefExprDisplayName": "Expression",
     "ErrCaseClassNotDynamic": "Fact is not dynamic",
-    "ErrCaseFuncNotExist": "No \"%s\" aggregation for \"%s\" fact ",
+    "ErrCaseFuncNotExist": "No \"%s\" aggregation for \"%s\" fact",
     "ErrCaseSubFuncNotExist": "\"%s\" fact with \"%s\" aggregation does not display \"%s\"",
     "ErrIIDNotRegistered": "\"%s\" identifier not registered",
     "MsgMissingCase": "\"%s\" field matching \"%s\" fact not found in the data set."
@@ -3401,11 +3401,11 @@
   },
   "Viewers/Statistics/StatViewHistogram": {
     "DefaultSeparator": ": ",
-    "From": "from",
+    "From": "from ",
     "LeftCloseBracket": "[",
     "RightCloseBracket": "]",
     "RightOpenBracket": ")",
-    "To": "to"
+    "To": "to "
   },
   "Viewers/Statistics/StatViewUniqueValues": {
     "ErrRequiredColumnNotFound": "No columns with the specified numbers in the input data source"

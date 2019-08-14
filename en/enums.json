@@ -620,7 +620,7 @@
       "$Caption": "Data Set Caching",
       "None": "Off",
       "Complete": "While activation",
-      "Deferred": "While reference to cell ",
+      "Deferred": "While reference to cell",
       "CustomColumns": "Selected fields"
     }
   },

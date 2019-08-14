@@ -1272,7 +1272,7 @@
     "ErrClassName": "Incorrect \"{0}\" class name.",
     "ErrReaddScriptToLoad": "Re-add \"{0}\" script to load",
     "ErrScriptLoadFailed": "Failed to load \"{0}\" script. Status: {1}, Error: {2}",
-    "ErrScriptLoadingAsync": "\"{0}\" script has already been asynchronously loading "
+    "ErrScriptLoadingAsync": "\"{0}\" script has already been asynchronously loading"
   },
   "lib/Message": {
     "ErrorTitle": "Error",

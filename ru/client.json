@@ -1415,17 +1415,17 @@
     "ErrPropertyOwnerIsNil": "Не задан интерфейс",
     "ErrPropertyPathIsNil": "На задано имя свойства"
   },
-  "ts/CustomClient": {
+  "rpc/CustomClient": {
     "ErrConnectToServerEx": "Подключиться к серверу не удалось.\nОшибка: {0}.",
     "ErrSocketNotPrepared": "Сокет не подготовлен."
   },
-  "ts/EnumTypeInfoService": {
+  "rpc/EnumTypeInfoService": {
     "ErrEnumTypeInfoServiceManagerNotInstalled": "Менеджер сервиса метаданных перечислений не проинициализирован",
     "ErrEnumTypeInfoServiceNotInit": "Сервис метаданных перечислений не проинициализирован",
     "ErrEnumTypeNotFound": "На клиенте не зарегистрировано перечисление: \"{0}\"",
     "ErrQualifiedNameNotFound": "Не удалось получить идентификатор перечисления"
   },
-  "ts/Exceptions": {
+  "rpc/Exceptions": {
     "ErrAbstractFunction": "Вызван абстрактный метод \"{0}\"",
     "ExceptionClassFmt": "КЛАСС ИСКЛЮЧЕНИЯ: {0}",
     "InnerExceptionTitle": "ВНУТРЕННИЕ ИСКЛЮЧЕНИЯ:",
@@ -1434,25 +1434,25 @@
     "SenderNameFmt": "ОТПРАВИТЕЛЬ: {0}",
     "StackTraceFmt": "ТРАССА:\n{0}"
   },
-  "ts/ExecutionContext": {
+  "rpc/ExecutionContext": {
     "ErrExecutionContextNotInstalled": "Ссылка на контекст выполнения не установлена",
     "ErrExternalExecutionContextManagerNotInstalled": "Менеджер внешнего контекста выполнения не установлен"
   },
-  "ts/Int64": {
+  "rpc/Interfaces": {
+    "ErrObjectIsNil": "Пустая ссылка на объект",
+    "ErrUpdatableNotSupported": "Интерфейс IBGUpdatable не поддерживается объектом"
+  },
+  "rpc/QueueException": {
+    "ErrQueueExceptionEndUnexpected": "Попытка завершить блок отложенной обработки исключений, предварительно не начав его",
+    "ErrUnknownInnerExceptionIsIgnored": "Внутреннее исключение неизвестного типа {0} проигнорировано"
+  },
+  "rpc/rtl/Int64": {
     "ErrInvalidInt64": "\"{0}\" is not valid long integer value",
     "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value",
     "ErrOutOfRangeInt64": "Number is outside long integer value range",
     "ErrOutOfRangeUInt64": "Number is outside unsigned long integer value range"
   },
-  "ts/Interfaces": {
-    "ErrObjectIsNil": "Пустая ссылка на объект",
-    "ErrUpdatableNotSupported": "Интерфейс IBGUpdatable не поддерживается объектом"
-  },
-  "ts/QueueException": {
-    "ErrQueueExceptionEndUnexpected": "Попытка завершить блок отложенной обработки исключений, предварительно не начав его",
-    "ErrUnknownInnerExceptionIsIgnored": "Внутреннее исключение неизвестного типа {0} проигнорировано"
-  },
-  "ts/rtl.imp": {
+  "rpc/rtl/rtl.imp": {
     "ErrInvalidEnumValue": "\"{0}\" is not valid enum value",
     "ErrInvalidFloat": "\"{0}\" is not valid floating point value",
     "ErrInvalidInt32": "\"{0}\" is not valid integer value",

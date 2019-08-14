@@ -213,8 +213,8 @@
     "ErrNoParentElement": "No parent element in \"%s\" element",
     "ErrSiblingAttributionFailed": "It is not possible to define \"%s{%s}\" sibling corresponding the schema for \"%s\" element",
     "ErrSubElementAttributionFailed": "It is not possible to define \"%s{%s}\" subelement corresponding the schema for \"%s\" element",
-    "ErrXMLParse": "Error parsing XML:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s",
-    "ErrXMLValidate": "XML validation error:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s"
+    "ErrXMLParse": "Error parsing XML:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s",
+    "ErrXMLValidate": "XML validation error:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s"
   },
   "Common/XML/Processor/XMLRequestProcessor": {
     "ErrXMLExportNoContext": "No export context specified",
@@ -254,15 +254,15 @@
     "ErrParserIsActive": "You cannot change parser properties during parsing"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
-    "ErrParseFile": "Error in %d row, %d position while parsing '%s' file: \n %s\n\n",
+    "ErrParseFile": "Error in %d row, %d position while parsing '%s' file: \n %s\n\n",
     "ErrParseFileUnhandledException": "Unhandled exception parsing '%s' file:\n%s",
-    "ErrParseStream": "Error parsing stream in %d row, %d position:\n %s",
+    "ErrParseStream": "Error parsing stream in %d row, %d position:\n %s",
     "ErrParseStreamNoXML": "Error parsing stream in %d row, %d position: the source is not XML file or has incorrect syntax",
     "ErrParseStreamUnhandledException": "Unhandled exception parsing stream:\n%s",
     "ErrParseStreamUnrecognizedEncoding": "Stream parsing error: unrecognized %s encoding",
-    "ErrParseURL": "Error in %d row, %d position when executing request to URL '%s':\n %s",
+    "ErrParseURL": "Error in %d row, %d position when executing request to URL '%s':\n %s",
     "ErrParseURLNoXML": "Error in %d row, %d position when executing request to URL '%s': server response is not XML file",
-    "ErrParseURLUnhandledException": "Unhandled exception parsing request to URL '%s':\n %s",
+    "ErrParseURLUnhandledException": "Unhandled exception parsing request to URL '%s':\n %s",
     "ErrParseURLUnrecognizedContentType": "Error executing request to URL '%s': server response was not processed because Content-type: %s had not been registered",
     "ErrSaxDocumentHasNoRootElements": "No root element in the document",
     "ErrSaxParserFeatureInvalidArg": "Invalid argument type when setting '%s' feature of MSXML SAX parser",
@@ -713,7 +713,7 @@
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrRootNodeNotSelected": "No root XML element selected",
     "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into XML tree",
-    "ErrXMLExport": "Error generating XML:\n Error code: %d\n %s",
+    "ErrXMLExport": "Error generating XML:\n Error code: %d\n %s",
     "ExportDataSetProcessCaption": "Data Set Processing",
     "IDName": "ID",
     "WriteXMLFileProcessCaption": "XML document formation",
@@ -792,8 +792,8 @@
   "components/extractxml/ExtractXML": {
     "DocIDColumn": "Document ID",
     "ErrCharsetForCodePageNotFound": "No supported XML character set found for %d code page",
-    "ErrExtractXML": "Error extracting XML from %d row of the input set:\n Error code: %d\n Message: %s",
-    "ErrExtractXMLInitError": "Handler initialization error Extract\nXML:\n %s",
+    "ErrExtractXML": "Error extracting XML from %d row of the input set:\n Error code: %d\n Message: %s",
+    "ErrExtractXMLInitError": "Handler initialization error Extract\nXML:\n %s",
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputFieldNotSelected": "You must specify containing XML field",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
@@ -1685,7 +1685,7 @@
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrRootNodeNotSelected": "No root element selected for export",
     "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into the export tree",
-    "ErrXMLExport": "Error exporting XML:\n Error code: %d\n %s",
+    "ErrXMLExport": "Error exporting XML:\n Error code: %d\n %s",
     "ExportDataSetProcessCaption": "Data Set Export",
     "FileConnection": "Connect to file storage",
     "WriteXMLFileProcessCaption": "XML File Record",
@@ -1817,7 +1817,7 @@
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
     "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
-    "ErrXMLImport": "Error importing XML:\n Error code: %d\n %s",
+    "ErrXMLImport": "Error importing XML:\n Error code: %d\n %s",
     "FileConnection": "Connect to file storage",
     "XSDConnection": "Connect to XSD schema source"
   },

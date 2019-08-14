@@ -41,6 +41,9 @@
     }
   },
   "components/binning": {
+    "BinningBinsDefExtension": {
+      "KindForBins": "Usage type of bin column"
+    },
     "BinningCountLinContMethodSettings": {
       "BinsCount": "Count"
     },

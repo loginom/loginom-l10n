@@ -296,7 +296,7 @@
     "ErrXMLParseStringFailure": "Error processing XML (%d row, %d position): %s"
   },
   "Common/XML/XMLDocument": {
-    "ErrAddNodeOperationNotAllowed": "The operation of node addition of '%s' type is not allowed on a node of type '% s'",
+    "ErrAddNodeOperationNotAllowed": "The operation of node addition of '%s' type is not allowed on the node of '% s' type",
     "ErrDocumentHasNoRootElement": "No root element in XML document",
     "ErrInvalidNodeID": "Unknown node ID: %d",
     "ErrInvalidXMLNameChar": "XML ID cannot contain \"%s\" character",
@@ -566,7 +566,7 @@
     "EquabilityCoefficient": "Equability coefficient",
     "ErrDoNotFitAsTargetColumn": "The output column must have the discrete data type and contain exactly 2 unique values",
     "ErrIncorrectColumnPurpose": "Incorrect \"%s\" field usage type",
-    "ErrNotAllowedInputBinningKind": "The input field does not support the new assignment in the external partition (data type restriction)",
+    "ErrNotAllowedInputBinningKind": "The input field does not support the new usage type in the external partition (data type restriction)",
     "ErrRequiredContinuousOrDiscrete": "Continuous or discrete data type is required",
     "MaxClassCount": "Required class count",
     "MinimalClassQuota": "Minimum class quota"
@@ -709,7 +709,7 @@
     "ErrMappedNodeNotOwnedByExportTree": "%s node for which input set column selection is requested is not included into XML tree",
     "ErrNodeDoesNotDescendFromSelectedRoot": "%s node is not a descendant of the selected %s root element",
     "ErrNodeDoesNotExist": "\"%s\" node not found in XSD schema",
-    "ErrNotRootElement": "\"%s\" node is not the XSD schema root element",
+    "ErrNotRootElement": "\"%s\" node is not XSD schema root element",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrRootNodeNotSelected": "No root XML element selected",
     "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into XML tree",
@@ -1051,7 +1051,7 @@
   },
   "components/linregression/LinRegressionBuilder": {
     "ErrWrongLinRegContext": "Invalid linear regression model builder context",
-    "ErrWrongLinRegModel": "The trained model is not the linear regression model"
+    "ErrWrongLinRegModel": "The trained model is not linear regression model"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "The linear regression model builder context cannot be created for empty data set"
@@ -1113,7 +1113,7 @@
   },
   "components/logregression/LogRegressionBuilder": {
     "ErrWrongLogRegContext": "Incorrect context of the log. regression model builder",
-    "ErrWrongLogRegModel": "The trained model is not a log. regression model"
+    "ErrWrongLogRegModel": "The trained model is not log. regression model"
   },
   "components/logregression/LogRegressionBuilderContext": {
     "ErrContextCreateNoRows": "The log. regression model builder context cannot be created for empty data set"
@@ -1681,7 +1681,7 @@
     "ErrMappedNodeNotOwnedByExportTree": "%s node for which input set column selection is requested is not included into the export tree",
     "ErrNodeDoesNotDescendFromSelectedRoot": "%s node is not a descendant of the selected %s root element",
     "ErrNodeDoesNotExist": "\"%s\" node not found in XSD schema",
-    "ErrNotRootElement": "\"%s\" node is not the XSD schema root element",
+    "ErrNotRootElement": "\"%s\" node is not XSD schema root element",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrRootNodeNotSelected": "No root element selected for export",
     "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into the export tree",
@@ -1861,7 +1861,7 @@
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
     "DatabaseTypeName": "MS Excel (ODBC) [UniDAC]",
-    "ErrODBCExcelNotExists": "ODBC driver for connecting to Excel files is not installed"
+    "ErrODBCExcelNotExists": "ODBC driver to connect with Excel files not installed"
   },
   "Libraries/bgdbrtl/UniDAC/FBUniDACDB": {
     "DatabaseTypeName": "Firebird"
@@ -1875,8 +1875,15 @@
   "Libraries/bgdbrtl/UniDAC/MyUniDACDB": {
     "DatabaseTypeName": "MySQL"
   },
+  "Libraries/bgdbrtl/UniDAC/ODBCDriverDescs": {
+    "ErrIncorrectRegEx": "Error parsing driver name template: %s"
+  },
+  "Libraries/bgdbrtl/UniDAC/ODBCStringBuilder": {
+    "InvalidODBCDriverName": "\"%s\" driver not registered"
+  },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
-    "DatabaseTypeName": "ODBC"
+    "DatabaseTypeName": "ODBC",
+    "ErrFileDSNForbidden": "Connections through file DSN are forbidden"
   },
   "Libraries/bgdbrtl/UniDAC/OracleUniDACDB": {
     "DatabaseTypeName": "Oracle"
@@ -1887,7 +1894,9 @@
   "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
     "DatabaseTypeName": "SQLite",
     "ErrBlankConnectionString": "Empty connection string",
-    "SQLiteError": "SQLite error:"
+    "ErrNotCursor": "The last command in SQL script does not return the cursor",
+    "SQLiteError": "SQLite error:",
+    "SQLiteFuncOverridingNotSupported": "Function override for SQLite versions below 3.7.3 not supported"
   },
   "Libraries/bgdbrtl/UniDAC/UniDACDB": {
     "Direct": "Do not use DBMS client",
@@ -1896,6 +1905,7 @@
   },
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Bit index is out of range",
+    "ErrStringIsNotSet": "\"%s\" string is not a set representation",
     "ErrSubSetPowerIsZerro": "Attempt to extract all subsets with the power less than 0 or more than the set power as such",
     "IndexesDesc": "Array of indexes",
     "SizeDesc": "Set power"
@@ -1906,24 +1916,44 @@
   "Libraries/bgrtl/Classes": {
     "CountDesc": "Count",
     "ErrConfigApplyModeNotSupported": "This method of the configuration loading not supported",
+    "ErrInvalidName": "\"%s\" is not a valid identifier",
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
+    "ErrItemByGuidNotFound": "%s with %s identifier not found",
+    "ErrItemByIDNotFound": "%s with %d identifier not found",
     "ErrItemByNameNotFound": "%s with \"%s\" name not found",
     "ErrItemWithGuidAlreadyExist": "%s with identifier %s already exists",
     "ErrItemWithIDAlreadyExist": "%s with identifier %d already exists",
+    "ErrLoadCollectionItemConfig": "Error loading collection item",
+    "ErrSameItemsGuid": "\"%s\" and \"%s\" items have the same \"%s\" identifiers",
+    "ErrSameItemsID": "\"%s\" and \"%s\" items have the same \"%d\" identifiers",
+    "ErrSameItemsName": "\"%s\" and \"%s\" items have the same \"%s\" names",
+    "ErrUnableToRecreateNamesIndex": "You cannot recreate node name index",
     "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered",
+    "ErrVendorNameConverterAlreadyRegistered": "Name converter from \"%s\" to\"%s\" vendors already registered",
     "GuidDesc": "Item Guid",
     "IDDesc": "Identifier",
     "Item": "Item",
     "ItemMetaDesc": "Item"
   },
+  "Libraries/bgrtl/ClassFactory": {
+    "ClassFactoryMetaDesc": "factory of objects"
+  },
   "Libraries/bgrtl/ClassObjectsLocator": {
+    "ErrInitChildScope": "Error initializing the context of the added object %p",
+    "ErrObjectAlreadyExist": "%s %s already exists in the identifier list",
+    "ErrObjectNotFound": "%s %s does not exist in the identifier list",
     "ObjMetaDesc": "object"
   },
   "Libraries/bgrtl/ColumnDefs": {
-    "ColumnMetaDesc": "Column"
+    "ColumnMetaDesc": "Column",
+    "ErrColumnByUsageNotFound": "Usage type column \"%s\" not found",
+    "ErrColumnCantBeContinuous": "\"%s\" column of \"%s\" type cannot be continuous",
+    "ErrSize": "Data size must be more than or equal to zero"
   },
   "Libraries/bgrtl/ColumnDefsVendor": {
-    "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type"
+    "ColumnInfosVendorMetaDesc": "column description vendor",
+    "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
+    "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable column \"%s\""
   },
   "Libraries/bgrtl/ColumnInfoLinks": {
     "ErrLinkedColumnInfoNotFound": "\"%s\" named column not found",
@@ -1933,6 +1963,8 @@
   "Libraries/bgrtl/ColumnsMultiLinks": {
     "ErrAlienLinkedColumn": "\"%s\" field does not belong to any of the used field lists",
     "ErrCannotDeleteNotDynamicLink": "You cannot delete non-dynamic link",
+    "ErrCannotLinkColumnsFromSameTable": "You cannot link \"%s\" and \"%s\" columns from the same table",
+    "ErrColumnCanBeIncludedInOnlyOneLink": "\"%s\" column of %d table can only be part of a \"single\" link",
     "ErrLinkedColumnTypesMismatch": "\"%s\" and \"%s\" types of linked columns mismatch",
     "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
     "Link": "Link"
@@ -2192,7 +2224,7 @@
   },
   "Libraries/bgrtl/Trees": {
     "ErrTreeWalk": "This tree walk implementation is missing",
-    "ErrUnableToRecreateNamesIndex": "You Ccannot recreate node name index",
+    "ErrUnableToRecreateNamesIndex": "You cannot recreate node name index",
     "NodeIndexDesc": "Node index",
     "NodeMetaDesc": "Node",
     "RootDesc": "Root node",
@@ -2201,9 +2233,11 @@
   },
   "Libraries/bgrtl/TuneDataSource": {
     "ErrInputColumnInfoNotFound": "Failed to find source %s column for configurable %s column",
-    "ErrInputColumnInfoTypesMismatch": "%s column type is not compatible with %s source column type"
+    "ErrInputColumnInfoTypesMismatch": "%s column type is not compatible with %s source column type",
+    "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable column \"%s\""
   },
   "Libraries/bgrtl/TuneVariables": {
+    "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable variable \"%s\"",
     "ErrSourceVariableAssigned": "You cannot edit the custom variable value for which the source variable is set",
     "ErrSourceVariableNotFound": "Failed to find the source variable %s for the configurable variable %s",
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
@@ -2270,6 +2304,7 @@
     "Link": "Link"
   },
   "Libraries/bgrtl/VariablesVendor": {
+    "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable variable \"%s\"",
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type",
     "VariableInfosVendorMetaDesc": "variable description vendor"
   },
@@ -2988,6 +3023,10 @@
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Summary"
+  },
+  "Studio/Converters/Converter_201806051619_TuneNorm_InvalidUsageType": {
+    "ErrTuneNormInvalidUsageTypeNode": "Usage type of the \"Output\" field near \"%s\" column of \"%s\" node was moved to the \"Not defined\" field",
+    "ErrTuneNormInvalidUsageTypeVendor": "Usage type of the \"Output\" field near \"%s\" column of derived component \"%s\" was moved to the \"Not defined\" field"
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"

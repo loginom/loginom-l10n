@@ -429,7 +429,7 @@
     "DebugElse": "Otherwise"
   },
   "components/condition/ConditionSocketsWizard": {
-    "DuplicateSocketsError": "\"{0}\" and \"{1}\" elements have the same identifiers",
+    "DuplicateSocketsError": "\"{0}\" and \"{1}\" items have the same identifiers",
     "EmptySocketName": "<Unique0>",
     "EmptyVendor": "Not defined"
   },
@@ -1470,8 +1470,8 @@
     "NoExampleFormats": "No examples"
   },
   "viewers/browse/BrowseGoToLine": {
-    "ErrRowNoLessLower": "Row number must be greater than or equal to 1",
-    "ErrRowNoMoreUpper": "Row number is greater than number of rows in set",
+    "ErrRowNoLessLower": "Row number must be more than or equal to 1",
+    "ErrRowNoMoreUpper": "Row number exceeds the row count in the set",
     "RowNoInfoFmt": "Row number (1 - {0}):"
   },
   "viewers/browse/BrowseSearchParams": {
@@ -1951,7 +1951,7 @@
     "AddColumnDefTitle": "Add Сolumn",
     "DefaultUsageType": "Default usage type",
     "ErrColumnEmptyName": "Column name cannot be empty",
-    "ErrColumnInvalidIdentifier": "Entered \"{0}\" column name is not valid identifier",
+    "ErrColumnInvalidIdentifier": "Entered \"{0}\" column name is not a valid identifier",
     "ErrColumnNameAlreadyExists": "\"{0}\" column already exists",
     "GroupEditingTitle": "Group Editing",
     "ModifyBtnText": "Apply",
@@ -2116,7 +2116,7 @@
     "AddVariableTitle": "Add Variable",
     "DefaultUsageType": "Default usage type",
     "ErrVariableEmptyName": "Variable name cannot be empty",
-    "ErrVariableInvalidIdentifier": "Entered \"{0}\" variable name is not valid identifier",
+    "ErrVariableInvalidIdentifier": "Entered \"{0}\" variable name is not a valid identifier",
     "ErrVariableNameAlreadyExists": "\"{0}\" variable already exists",
     "GroupEditingTitle": "Group Editing",
     "ModifyBtnText": "Apply",

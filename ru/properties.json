@@ -201,7 +201,7 @@
   "components/execcmd": {
     "ExecCmdEngine": {
       "TerminateByTimeout": "Завершить программу по тайм-ауту",
-      "Timeout": "Тайм-аут выполнения узла (мсек.)"
+      "Timeout": "Тайм-аут выполнения узла (мс)"
     }
   },
   "components/extractxml": {
@@ -337,7 +337,7 @@
     },
     "NeuralNetworkAutofitParams": {
       "DecayAutofit": "Подобрать степень регуляризации",
-      "MaxAutofitSeconds": "Время автоподбора не более (сек.)",
+      "MaxAutofitSeconds": "Время автоподбора не более (сек)",
       "MaxAutofitStages": "Шагов автоподбора не более",
       "StopAtZeroClsError": "Останов при нулевой ошибке классификации",
       "StructureAutofit": "Подобрать структуру",
@@ -721,11 +721,11 @@
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "RESTClientConnectionConfigurator": {
       "ClientAuth": "Авторизация для выполнения запроса",
-      "ExchangeTimeOut": "Таймаут обмена данными (мсек)",
+      "ExchangeTimeOut": "Таймаут обмена данными (мс)",
       "IgnoreCertificateErrors": "Игнорировать ошибки SSL сертификата",
       "RequestContentType": "Тип Content-type запроса",
       "ResponseContentType": "Тип Content-type ответа",
-      "TimeOut": "Таймаут подключения (мсек)",
+      "TimeOut": "Таймаут подключения (мс)",
       "URL": "URL сервиса",
       "Verb": "Метод"
     }
@@ -734,11 +734,11 @@
     "WSDLClientConnectionConfigurator": {
       "ClientAuth": "Авторизация для выполнения запроса",
       "ClientUsesWSDLAuth": "Авторизация та же, что и для получения WSDL",
-      "ExchangeTimeOut": "Таймаут обмена данными (мсек)",
+      "ExchangeTimeOut": "Таймаут обмена данными (мс)",
       "IgnoreCertificateErrors": "Игнорировать ошибки SSL сертификата",
       "ReserveWSDLSource": "Резервный источник WSDL",
       "ReserveWSDLSourceOn": "Включить резервный источник WSDL",
-      "TimeOut": "Таймаут подключения (мсек)",
+      "TimeOut": "Таймаут подключения (мс)",
       "WSDLAuth": "Авторизация для получения WSDL-файла",
       "WSDLSource": "Источник WSDL",
       "XSLT": "Расположение XSLT",

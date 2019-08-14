@@ -3175,7 +3175,7 @@
       "fieldLabel": "Заголовок"
     },
     "nmbrDuration": {
-      "fieldLabel": "Задержка(мс)"
+      "fieldLabel": "Задержка (мс)"
     },
     "panelPlotOptions": {
       "title": "Общие настройки"

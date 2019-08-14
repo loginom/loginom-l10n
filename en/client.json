@@ -20,7 +20,7 @@
     "SSLPrivateKeyFile": "Private key file name",
     "StopTimeout": "Server stop timeout (s)",
     "UserStorageDirectory": "Personal data of user",
-    "WSPort": "Websocket port",
+    "WSPort": "WebSocket port",
     "WSSPort": "WebSocket SSL/TLS port"
   },
   "admin/SharedDirectoriesForm": {

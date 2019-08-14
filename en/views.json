@@ -3861,7 +3861,7 @@
       "text": "Parameter"
     },
     "lblPValueThreshold": {
-      "text": "Value threshold"
+      "text": "Significance threshold"
     },
     "pnlRegressionReportView": {
       "title": "Regression Report"

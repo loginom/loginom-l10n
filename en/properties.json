@@ -161,8 +161,32 @@
     }
   },
   "components/condition": {
+    "Condition": {
+      "DebugMode": "Debug mode"
+    },
     "ConditionItem": {
-      "CaseSensitive": "Case sensitive"
+      "CaseSensitive": "Case sensitive",
+      "CompareValue": "Compared value",
+      "FieldLink": "Compared field"
+    }
+  },
+  "components/crosstab": {
+    "CrossTabEngine": {
+      "AllowInvalidName": "Allow invalid names",
+      "DisplayNameSeparator": "Field caption parts separator",
+      "SlidingUniqueValues": "Sliding unique values",
+      "SlidingUniqueValuesLimit": "Value number limit",
+      "UniqueValueNames": "Unique values as field names"
+    }
+  },
+  "components/datatoxml": {
+    "DataToXMLEngine": {
+      "Configurator": "Configure export",
+      "DocIDColumn": "Document ID",
+      "EscapeQuotes": "Escape single and double quotes",
+      "EscapeTabCRLFInAttr": "Escape tabs and line breaks in attributes",
+      "Prettify": "Add indents and line breaks",
+      "RowsDocIdenti": "Document Identification"
     }
   },
   "components/em": {
@@ -174,15 +198,29 @@
       "MedianModification": "Median modification"
     }
   },
+  "components/execcmd": {
+    "ExecCmdEngine": {
+      "TerminateByTimeout": "Terminate program by timeout",
+      "Timeout": "Node execution timeout (ms)"
+    }
+  },
   "components/extractxml": {
     "ExtractXMLEngine": {
-      "ImportXMLSettings": "Configure XML import"
+      "HaltOnParseErrors": "Halt in case of errors",
+      "IDColumn": "Column identifying XML document",
+      "ImportXMLSettings": "Configure XML import",
+      "InputColumn": "XML column",
+      "NeedUnescape": "Unescape XML entities",
+      "ProduceErrorDescs": "Provide description of completion codes"
     }
   },
   "components/factoranalysis": {
     "FactorAnalysisEngine": {
+      "CumDispersion": "Variance threshold, %",
+      "EigenValuesThreshold": "Eigenvalue threshold",
       "NFactors": "Number of factors",
       "NOutFactorsMax": "Number of factors",
+      "PruneOutFactors": "Limit output factors number",
       "RotationType": "Rotation type",
       "SignificanceCriterion": "Significance criterion"
     }
@@ -192,6 +230,11 @@
       "CaseSensitive": "Учитывать регистр",
       "CompareValue": "Compare values",
       "CompareValueList": "List of values",
+      "CompareValueLowerBound": "Lower bound",
+      "CompareValuePeriodBaseDate": "Base interval date",
+      "CompareValuePeriodCount": "Time period value",
+      "CompareValuePeriodType": "Time period type",
+      "CompareValueUpperBound": "Upper bound",
       "DataType": "Data type",
       "Name": "Name",
       "RelationType": "Relation type"
@@ -199,6 +242,7 @@
   },
   "components/filtration": {
     "DataRecoveryEngine": {
+      "MaxNullsPercent": "Allowable percentage of nulls",
       "OrderedSample": "Source data ordered"
     },
     "ElimOutlierColumnDefExtension": {
@@ -226,6 +270,7 @@
       "DS": "Seasonal integration order",
       "ForecastHorizon": "Forecast horizon",
       "IncludeIntercept": "Include intercept into the model",
+      "IncludeSeasonality": "Enable seasonality calculation",
       "P": "AR part order",
       "PS": "Seasonal AR part order",
       "Q": "MA part order",
@@ -236,32 +281,94 @@
       "ARIMAXParams": "ARIMAX Settings"
     }
   },
+  "components/groupdata": {
+    "GroupDataEngine": {
+      "DimValuesCached": "Cache group values",
+      "SortedResult": "Sort result data"
+    }
+  },
+  "components/joindata": {
+    "JoinDataEngine": {
+      "IncludeJoinedKeyFields": "Add joined key fields",
+      "JoinType": "Operation type"
+    }
+  },
   "components/linregression": {
+    "LinRegressionEngine": {
+      "LinRegressionParams": "Linear regression settings"
+    },
     "LinRegressionParams": {
-      "LinRegressionMethod": "Factor selection and protection against retraining"
+      "LinRegressionMethod": "Factor selection and protection against retraining",
+      "LinRegSelQuality": "Factor selection criterion"
     }
   },
   "components/logregression": {
+    "LogRegressionEngine": {
+      "LogRegressionParams": "Logistic regression settings"
+    },
     "LogRegressionParams": {
-      "LogRegressionMethod": "Factor selection and protection against retraining"
+      "LogRegressionMethod": "Factor selection and protection against retraining",
+      "LogRegSelQuality": "Factor selection criterion",
+      "SetupCalibration": "Calibration",
+      "UseScoring": "Scoring"
     }
   },
   "components/loop": {
     "LoopComponent": {
+      "AppendIterationIdentifiers": "Add iteration identifiers",
+      "CompareValue": "Value",
+      "ConditionVariableLink": "Termination condition variable",
+      "GroupCount": "Group count",
+      "GroupDataSourceSocket": "Socket containing columns to group",
+      "GroupProcessingKind": "Type of batch processing",
       "GroupSize": "Group row count",
+      "IgnoreErrors": "Ignore errors",
       "IterationCount": "Iteration count",
       "LoopKind": "Loop Type",
       "LoopVariableLink": "Loop variable",
       "MaxThreadCount": "Maximum thread count",
-      "ParallelProcessing": "Parallel processing"
+      "ParallelProcessing": "Parallel processing",
+      "TerminateCondition": "Termination condition"
     }
   },
   "components/neuralnet": {
     "NeuralNetEngine": {
       "NetworkParams": "Neural network parameters"
     },
+    "NeuralNetworkAutofitParams": {
+      "DecayAutofit": "Decay degree autofit",
+      "MaxAutofitSeconds": "Autofit time not more (s)",
+      "MaxAutofitStages": "Autofit stages not more",
+      "StopAtZeroClsError": "Stop at zero classification error",
+      "StructureAutofit": "Structure autofit",
+      "SubSampleMaxSize": "Maximum sample size",
+      "SubSamplePercent": "Percent sample size",
+      "UseInitialDecay": "Start with the specified decay degree",
+      "UseInitialStructure": "Start with the specified structure",
+      "UseSubSampling": "Use a subset of the training set"
+    },
     "NeuralNetworkParams": {
+      "AutofitParams": "Autofit parameters",
+      "StoppingCriteria": "Stopping criteria of training algorithm",
+      "StructureParams": "Neural network structure parameters",
       "TrainingParams": "Training algorithm parameters"
+    },
+    "NeuralNetworkStoppingCriteria": {
+      "MaxEpochs": "Maximum number of epochs",
+      "WStep": "Minimum weight change threshold"
+    },
+    "NeuralNetworkStructureParams": {
+      "HiddenLayers": "Number of hidden layers",
+      "HiddenNeurons1": "Number of neurons in the first hidden layer",
+      "HiddenNeurons2": "Number of neurons in the second hidden layer",
+      "RegNNOutputInf": "Lower bound",
+      "RegNNOutputLayer": "Output value limit",
+      "RegNNOutputSup": "Upper bound"
+    },
+    "NeuralNetworkTrainingParams": {
+      "ContinueTraining": "Continue training",
+      "Decay": "Decay degree",
+      "NRestarts": "Number of restarts"
     }
   },
   "components/partition": {
@@ -276,7 +383,10 @@
   },
   "components/restclient": {
     "RESTClient": {
-      "RequestConfigurator": "Configure request data export"
+      "CustomHeadersConfigurator": "Custom header settings",
+      "ProduceErrorDescs": "Provide description of completion codes",
+      "RequestConfigurator": "Configure request data export",
+      "RequestDebug": "Request debug settings"
     }
   },
   "components/sampling": {
@@ -284,33 +394,118 @@
       "Sampling": "Sampling"
     }
   },
+  "components/slidingwindow": {
+    "SlidingWindowEngine": {
+      "IncompleteRecordsProcessing": "Incomplete records processing method"
+    }
+  },
   "components/smoothing": {
     "SmoothingDefExtension": {
       "Algorithm": "Smoothing algorithm",
+      "DecompositionLevel": "Decomposition level",
+      "EdgeExtension": "Bounds extension",
       "Lambda": "Lambda parameter",
+      "LambdaAsPeriod": "Lambda parameter set by period",
       "Period": "Smoothing period",
-      "WaveletOrder": "Wavelet order"
+      "WaveletOrder": "Wavelet order",
+      "WaveletType": "Wavelet type"
     }
   },
   "components/sonn": {
     "SONNEngine": {
       "Params": "Algorithm parameters"
+    },
+    "SONNParams": {
+      "CellTopology": "Network topology",
+      "NX": "Network size X",
+      "NY": "Network size Y",
+      "NZ": "Network size Z",
+      "SONNType": "Self-organizing network type"
     }
   },
   "components/sorting": {
     "SortingColumnItem": {
+      "CaseSensitive": "Case sensitive.",
       "SortDirection": "Sort order."
     }
   },
   "components/ungroupdata": {
     "UngroupDataEngine": {
+      "AbsentDataPoints": "Absent data points for position termination",
+      "AbsentPeriodFraction": "Absent periods for position termination",
+      "BalanceMethod": "Balance method",
+      "MaxDepthDataPoints": "Maximum number of points in each row",
+      "MaxDepthPeriodFraction": "Maximum number of seasonality periods",
+      "MaxRareDensity": "Point density of rare goods",
+      "NoveltyPeriodFraction": "Presence periods for the new position",
+      "NumSeasonalIndexes": "Number of calculated seasonal indexes",
+      "RoundFormat": "Rounding format",
+      "RoundParam": "Rounding parameter",
+      "SeasonalityMultiplier": "Given seasonality period",
       "SeasonalityPeriod": "Seasonality period",
       "UngroupMethod": "Ungrouping method"
     }
   },
+  "components/wsdlclient": {
+    "WSDLClient": {
+      "CompositeColumnNames": "Generate composite field captions",
+      "CustomHeadersConfigurator": "Custom header settings",
+      "IgnoreAbsentValues": "Allow required fields skipping",
+      "ProduceErrorDescs": "Provide description of completion codes",
+      "ProduceRawOutput": "Produce \"raw\" server response",
+      "RepeatUniqueValues": "Repeat unit values",
+      "RequestConfigurator": "Configure request data export",
+      "RequestDebug": "Request debug settings",
+      "StrictValidation": "Check for strict XSD compliance",
+      "TimeZone": "Default time zone"
+    }
+  },
+  "exports/database": {
+    "DBExport": {
+      "ExportType": "Export type",
+      "RecordCountForCommit": "Transaction commit frequency (rows)",
+      "TableName": "Table name"
+    }
+  },
+  "exports/excelfile": {
+    "ExportExcelFile": {
+      "FileType": "Excel file type",
+      "SheetName": "Name of the sheet to export",
+      "WebSetting": "Settings for web client"
+    },
+    "ExportExcelWebSetting": {
+      "HeadersRow": "Headers row"
+    }
+  },
+  "exports/native": {
+    "ExportNative": {
+      "Compression": "Compression"
+    }
+  },
   "exports/textfile": {
     "ExportTextFile": {
-      "CodePage": "Codepage"
+      "CaptionType": "Header Row",
+      "CodePage": "Codepage",
+      "DateFormat": "Date format",
+      "DateSeparator": "Date separator",
+      "DecimalSeparator": "Decimal separator",
+      "DelimiterChar": "Column separator",
+      "FormatType": "Data format",
+      "TextQualifier": "Line terminator",
+      "TimeFormat": "Time format",
+      "TimeSeparator": "Time separator",
+      "ValueFalse": "False",
+      "ValueNull": "Null",
+      "ValueTrue": "True"
+    }
+  },
+  "exports/xml": {
+    "ExportXML": {
+      "Configurator": "Configure export",
+      "EscapeQuotes": "Escape single and double quotes",
+      "EscapeTabCRLFInAttr": "Escape tabs and line breaks in attributes",
+      "Prettify": "Add indents and line breaks",
+      "WriteBOM": "Write Byte Order Mark"
     }
   },
   "imports/excelfile": {
@@ -347,48 +542,216 @@
       "Configurator": "Configure XML import"
     }
   },
+  "Libraries/1CConnection/1Cv8Connection": {
+    "1Cv8ConnectionConfigurator": {
+      "PlatformVersion": "Platform version"
+    }
+  },
   "Libraries/bgdbrtl/DB": {
+    "ConnPoolConfigurable": {
+      "PoolingOptions": "Pool settings"
+    },
+    "ConnPoolConfigurator": {
+      "ClearPoolOnDeactivate": "Clear pool when deactivated"
+    },
     "DatabaseConfigurator": {
+      "CharacterSet": "Encoding value",
       "DatabasePath": "Connection string",
       "Direct": "Do not use DBMS client",
       "ObjectQuotes": "Configure quotes",
       "Password": "Password",
+      "QuotedObjectNames": "Quote names",
       "SavePassword": "Save password",
       "SystemTables": "Show system tables",
       "UserName": "Username"
     }
   },
+  "Libraries/bgdbrtl/MyUniDACDB": {
+    "MyUniDACDatabaseConfigurator": {
+      "WaitTimeoutTransaction": "Lifetime for transaction time when inactive"
+    }
+  },
   "Libraries/bgdbrtl/SQLiteUniDACDB": {
     "SQLiteFunctionDefs": {
       "CaseChangeUnicode": "lower, upper for UNICODE",
-      "LikeMode": "LIKE operation mode"
+      "LikeMode": "LIKE operation mode",
+      "NoCaseUnicode": "Regard NOCASE as UNICODE"
+    },
+    "SQLitePragmas": {
+      "CacheSize": "Cache size",
+      "JournalMode": "Transaction log mode",
+      "Synchronous": "Sync mode"
+    },
+    "SQLiteUniDACDatabaseConfigurator": {
+      "Encrypted": "Encrypted DB"
+    }
+  },
+  "Libraries/bgrtl/ColumnInfoLinks": {
+    "ColumnInfoLinkDef": {
+      "Name": "Column name"
     }
   },
   "Libraries/bgrtl/DataSet": {
     "ColumnDef": {
+      "DataKind": "Column data kind",
+      "DataType": "Column data type",
       "DefaultUsageType": "Default usage type",
+      "DisplayName": "Caption",
+      "Index": "Index",
+      "Name": "Name",
+      "Size": "Maximum length (number of characters) of string column values",
+      "Usable": "Indicator of column usage (UsageType surrogate)",
       "UsageType": "Column usage type"
+    },
+    "TuneColumnDef": {
+      "Extension": "Custom column description extension"
+    }
+  },
+  "Libraries/bgrtl/Logger": {
+    "LoggerConfigurator": {
+      "LogFileMaxIndex": "Number of backup files",
+      "LogFileMaxSize": "Maximum file size",
+      "LogFileName": "File name",
+      "LogFileRewrite": "Rewrite file",
+      "MinLogLevel": "Logging level"
     }
   },
   "Libraries/DataPartition/LearnPartition": {
     "LearnPartition": {
+      "Folds": "Cross validation deck",
+      "Iterations": "Resampling iterations",
+      "KFoldsSamplingMethod": "Sampling method",
       "LearnPartitionMethod": "Partition method",
-      "ValidationColumnIndex": "Given partition field"
+      "LearnValidationMethod": "Validation method",
+      "PRowsCount": "Count of rows to be excluded",
+      "TrainDataSetSize": "Training set size",
+      "ValidationColumnIndex": "Given partition field",
+      "ValidationDataSetSize": "Validation set size"
+    }
+  },
+  "Libraries/DataPartition/Partition": {
+    "Partition": {
+      "CompleteUniqueValues": "Complete list of unique values",
+      "PartitionMethod": "Sampling method",
+      "TeachDataSetSize": "Training sample size",
+      "TeachGroupSize": "Training group size",
+      "TestDataSetSize": "Test sample size",
+      "TestGroupSize": "Test group size",
+      "TestPriority": "Test set priority",
+      "TestPriorityPosition": "Priority test set position"
+    }
+  },
+  "Libraries/DataSampling/Sampling": {
+    "Sampling": {
+      "CompleteUniqueValues": "Complete list of unique values",
+      "GroupSize": "Group size",
+      "SamplingMethod": "Sampling method",
+      "SamplingRecordCount": "Record count in the output sample"
+    }
+  },
+  "Libraries/DBConnection/DBConnection": {
+    "DBConnectionConfigurator": {
+      "DatabaseConfigurator": "DB connection settings"
+    }
+  },
+  "Libraries/ExportXMLConfigurator/ExportXMLConfigurator": {
+    "ExportXMLConfigurator": {
+      "SpecifyTimeZone": "Specify time zone"
+    }
+  },
+  "Libraries/ImportXMLConfigurator/ImportXMLConfigurator": {
+    "ImportXMLConfigurator": {
+      "CompositeColumnNames": "Generate composite field captions",
+      "IgnoreAbsentValues": "Allow required fields skipping",
+      "RepeatUniqueValues": "Repeat unit values",
+      "StrictValidation": "Check for strict XSD compliance",
+      "TimeZone": "Default time zone"
+    }
+  },
+  "Libraries/Model/ComponentSettings": {
+    "ComponentSettings": {
+      "Disabled": "Disabled"
     }
   },
   "Libraries/Model/DeductorServerSettings": {
     "SocketDeductorServerSettings": {
-      "Bind": "Address binding"
+      "Bind": "Address binding",
+      "PingPeriod": "Client connection check period",
+      "Port": "TCP port",
+      "SSLCertificateFile": "Certificate file name",
+      "SSLPrivateKeyFile": "Private key file name",
+      "WSPort": "WebSocket port",
+      "WSSPort": "WebSocket SSL/TLS port"
+    }
+  },
+  "Libraries/Model/ModelConnectionComponentEngine": {
+    "ModelConnectionComponentEngine": {
+      "Connection": "Connection"
     }
   },
   "Libraries/Normalization/NormalDataSourceModelComponentEngine": {
     "NormalDataSourceModelComponentEngine": {
+      "AllowMissingValues": "Allow missing values",
       "LearnPartition": "Component data partition with training"
     }
   },
   "Libraries/Regression/Regression": {
+    "FactorSelectionParams": {
+      "AddSignificance": "Significance threshold in case of factor addition",
+      "Hierarchy": "Hierarchy of interactions",
+      "RemoveSignificance": "Significance threshold in case of factor exception"
+    },
+    "RegressionSimpleParams": {
+      "ExactInexact": "Exact/inexact data priority",
+      "FactLessMore": "Less/more factors priority",
+      "QualitySpeed": "Accuracy/speed priority"
+    },
     "RegressionStatisticsParams": {
-      "PredictionIntervalNeeded": "Calculate confidence interval"
+      "PredictionIntervalLevel": "% confidence interval",
+      "PredictionIntervalNeeded": "Calculate confidence interval",
+      "StatisticsMode": "Statistics calculation mode"
+    },
+    "RegularizationParams": {
+      "LambdaLasso": "L1-regularization coefficient",
+      "LambdaRidge": "L2-regularization coefficient",
+      "LassoSetupMethod": "L1-regularization coefficient setup",
+      "RidgeSetupMethod": "L2-regularization coefficient setup"
+    }
+  },
+  "Libraries/RESTClientConnection/RESTClientConnection": {
+    "RESTClientConnectionConfigurator": {
+      "ClientAuth": "Authorization to execute request",
+      "ExchangeTimeOut": "Data exchange timeout (ms)",
+      "IgnoreCertificateErrors": "Ignore SSL certificate errors",
+      "RequestContentType": "Content-type request type",
+      "ResponseContentType": "Content-type response type",
+      "TimeOut": "Connection timeout (ms)",
+      "URL": "Service URL",
+      "Verb": "Method"
+    }
+  },
+  "Libraries/WSDLClientConnection/WSDLClientConnection": {
+    "WSDLClientConnectionConfigurator": {
+      "ClientAuth": "Authorization to execute request",
+      "ClientUsesWSDLAuth": "Authorization is the same as for WSDL",
+      "ExchangeTimeOut": "Data exchange timeout (ms)",
+      "IgnoreCertificateErrors": "Ignore SSL certificate errors",
+      "ReserveWSDLSource": "Reserve WSDL source",
+      "ReserveWSDLSourceOn": "Enable reserve WSDL source",
+      "TimeOut": "Connection timeout (ms)",
+      "WSDLAuth": "Authorization to get WSDL file",
+      "WSDLSource": "WSDL source",
+      "XSLT": "XSLT location",
+      "XSLTOn": "Convert WSDL description using XSLT"
+    }
+  },
+  "Viewers/Chart/ChartColumnInfo": {
+    "ChartColumnInfo": {
+      "DisplayName": "Column display name",
+      "Name": "Column name"
+    },
+    "ChartColumnLink": {
+      "LinkKind": "Column type"
     }
   }
 }

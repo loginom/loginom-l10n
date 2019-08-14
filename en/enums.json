@@ -647,7 +647,7 @@
       "Wavelets": "Wavelet smoothing"
     },
     "WTEdgeExtension": {
-      "$Caption": "Bounds Padding",
+      "$Caption": "Bounds Extension",
       "Symmetric": "Symmetric",
       "AntiSymmetric": "Antisymmetric",
       "ZeroPadding": "Zero padding",
@@ -1689,7 +1689,7 @@
       "Percent": "Percent"
     },
     "ROCViewAprioriProb": {
-      "$Caption": "Source of Apriori Probability Events",
+      "$Caption": "Prior Probability Event Source",
       "None": "Do not correct",
       "Model": "From handler",
       "Train": "From the training set",

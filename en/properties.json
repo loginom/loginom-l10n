@@ -26,7 +26,8 @@
     "WSDLRequestDebug": {
       "DumpRequest": "Save Request Text to Disk",
       "DumpRequestFolder": "Folder to save requests",
-      "ResponseStub": "File applied as response"
+      "ResponseStub": "File applied as response",
+      "UseResponseStub": "Simulate request with response in a file"
     }
   },
   "components/assnrules": {
@@ -37,26 +38,51 @@
       "ExcludeLargeSupportItems": "Exclude the items with the support exceeding the maximum one",
       "ExcludeSingleItems": "Exclude single sets",
       "MaxSupport": "Maximum support, %",
-      "MinSupport": "Minimum support, %"
+      "MinConfidence": "Minimum rule confidence, %",
+      "MinLift": "Minimum rule lift",
+      "MinSupport": "Minimum support, %",
+      "NConsequentMax": "Maximum number of consequences",
+      "NItemsMax": "Maximum item count",
+      "SelectColumn": "Containing selected items"
+    }
+  },
+  "components/autocorrelation": {
+    "AutoCorrelationEngine": {
+      "CalcPacf": "Calculate PACF",
+      "DomainCalc": "ACF calculation domain",
+      "LagCount": "Lag count"
     }
   },
   "components/binning": {
     "BinningBinsDefExtension": {
       "KindForBins": "Usage type of bin column"
     },
+    "BinningContinuousBinItem": {
+      "LowerBound": "Lower range bound",
+      "UpperBound": "Upper range bound"
+    },
     "BinningCountLinContMethodSettings": {
       "BinsCount": "Count"
     },
     "BinningDefExtension": {
+      "AlwaysDefaultSettings": "Always use default method settings",
+      "BinsType": "Bins type",
+      "LabelTemplate": "Caption template",
       "MethodType": "Binning method type"
     },
     "BinningLinearContinuousMethodSettings": {
       "LowerLimit": "Lower bound",
       "UpperLimit": "Upper bound"
     },
+    "BinningSDMethodSettings": {
+      "SDMode": "From average"
+    },
     "BinningTileDateTimeMethodSettings": {
       "MatchingObservationsMode": "Matching observations",
       "TileCount": "Count"
+    },
+    "BinningTileNumericMethodSettings": {
+      "SumValues": "From sums of values"
     },
     "BinningWidthLinDateTimeMethodSettings": {
       "DateTimeSpanCount": "Width",
@@ -105,6 +131,7 @@
   "components/coarseclasses": {
     "CoarseClassesInputContinuousParams": {
       "FineIntervalsCount": "Interval count",
+      "IncludeHighBounds": "Include upper interval bounds",
       "UsePrequanting": "Prequanting"
     },
     "CoarseClassesInputDiscreteParams": {
@@ -117,11 +144,20 @@
       "MaxClassCount": "Maximum class count",
       "MinClassPercentage": "Minimum class percentage, %",
       "UniformityCoef": "Uniformity"
+    },
+    "CoarseClassesTargetParams": {
+      "TuneEventValue": "Custom \"event\" value"
     }
   },
   "components/columnflipping": {
     "ColumnFlippingEngine": {
       "SkipNullCases": "Skip null values"
+    }
+  },
+  "components/coluniondata": {
+    "ColUnionDataEngine": {
+      "RowsPaddingType": "Supplement to the largest set",
+      "TailsAlignType": "Row count complies"
     }
   },
   "components/condition": {
@@ -212,6 +248,7 @@
   },
   "components/loop": {
     "LoopComponent": {
+      "GroupSize": "Group row count",
       "IterationCount": "Iteration count",
       "LoopKind": "Loop Type",
       "LoopVariableLink": "Loop variable",

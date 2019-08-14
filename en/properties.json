@@ -28,7 +28,7 @@
   },
   "Common/WSDL/WSDL": {
     "WSDL": {
-      "ServicesCount": "Count of the WSDL Description Defined Services"
+      "ServicesCount": "Count of WSDL Description Defined Services"
     },
     "WSDLBinding": {
       "Extension": "Extension",

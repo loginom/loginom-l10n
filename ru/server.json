@@ -256,13 +256,13 @@
     "ErrParserIsActive": "Нельзя изменять свойства парсера в процессе разбора"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
-    "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n\t%s",
+    "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n %s",
     "ErrParseFileUnhandledException": "Необработанное исключение при разборе файла '%s':\n%s",
-    "ErrParseStream": "Ошибка при разборе потока в строке %d, позиция %d:\n\t%s",
+    "ErrParseStream": "Ошибка при разборе потока в строке %d, позиция %d:\n %s",
     "ErrParseStreamNoXML": "Ошибка при разборе потока в строке %d, позиция %d: источник не является XML-файлом или имеет некорректный синтаксис",
     "ErrParseStreamUnhandledException": "Необработанное исключение при разборе потока:\n\t%s",
     "ErrParseStreamUnrecognizedEncoding": "Ошибка при разборе потока: неизвестная кодировка %s",
-    "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n\t%s",
+    "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n %s",
     "ErrParseURLNoXML": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s': ответ сервера не является XML-файлом",
     "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n %s",
     "ErrParseURLUnrecognizedContentType": "Ошибка при выполнении запроса к URL '%s': ответ сервера не обработан, так как Content-type: %s не зарегистрирован",

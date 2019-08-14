@@ -155,10 +155,10 @@
       "text": "Cancel"
     },
     "chbRunBatchMode": {
-      "boxLabel": "To run a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes will be activated in the run mode. When the option is disabled, the specified node and all its sub nodes will not be activated for execution in the batch mode."
+      "boxLabel": "To run a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes will be activated in the run mode. When the feature is disabled, the specified node and all its sub nodes will not be activated for execution in the batch mode."
     },
     "chbTeachBatchMode": {
-      "boxLabel": "To retrain a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes, for which the model can be rebuilt, will be activated in the training mode. When the option is disabled, the specified node and all its sub nodes will not be activated for training in the batch mode."
+      "boxLabel": "To retrain a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes, for which the model can be rebuilt, will be activated in the training mode. When the feature is disabled, the specified node and all its sub nodes will not be activated for training in the batch mode."
     },
     "cntBatchProcModes": {
       "title": "Valid Modes of Batch Processing"

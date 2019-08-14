@@ -1320,7 +1320,7 @@
       "Index": "Unique value index"
     },
     "RemovableType": {
-      "$Caption": "Field Delete Option",
+      "$Caption": "Field Delete Feature",
       "Removable": "Removable",
       "Irremovable": "Irremovable",
       "StrictIrremovable": "Fixed irremovable"

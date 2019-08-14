@@ -140,7 +140,7 @@
     "ErrNonSOAPMessage": "Non SOAP message",
     "ErrSoapBodyStyleNotRPC": "SOAP body in RPC operation does not support RPC style",
     "ErrSOAPEncodingNotSupported": "\"%s\" encoding style for %s SOAP version not supported",
-    "WarnBOMNotRecommended": "BOM (Byte order mark) addition to the SOAP envelope top may cause failure of some servers (for example, Apache Xerces or Java services) to process the request"
+    "WarnBOMNotRecommended": "BOM (Byte order mark) addition to SOAP envelope top may cause failure of some servers (for example, Apache Xerces or Java services) to process the request"
   },
   "Common/WSDL/WSDL": {
     "ErrHttpVerbNotSupported": "\"%s\" HTTP method not currently supported",
@@ -171,18 +171,35 @@
     "ErrNotArrayType": "\"%s\" not an array type description",
     "ErrOpDefNotFoundInPortType": "\"%s\" operation referenced by \"%s\" binding of not found in \"%s\" port type definition",
     "ErrOperationMustSpecifyExtension": "\"%s\" operation extension of \"%s\" port binding not specified or not supported",
+    "ErrPartContentsNotDefined": "\"%s\" part does not reference schema definitions",
     "ErrPartIsReferencedByElement": "\"%s\" part defined by element not by XSD schema type",
     "ErrPartIsReferencedByType": "\"%s\" part defined by type not by XSD schema element",
+    "ErrPortBindingExtensionCollision": "\"%s port and \"%s\" binding extensions do not match ",
+    "ErrPortMustSpecifyExtension": "\"%s\" endpoint (port) extension not specified or not supported",
     "ErrPortTypeNotFound": "\"%s\" port type for \"%s\" binding not found",
+    "ErrSchemaDoesNotContainPartElement": "\"%s\" part references \"%s\"{\"%s\"} element not found in XSD schema",
+    "ErrSchemaDoesNotContainPartType": "\"%s\" part references \"%s\"{\"%s\"} type not found in XSD schema",
+    "ErrSeveralElementsNotAllowed": "More than one <%s/> element not allowed in WSDL description",
+    "ErrSoapActionRequiredForHTTP": "It is required to specify \"<soap:operation0/>\" extension element with soapAction attribute for SOAP HTTP transport operations",
+    "ErrSoapBodyInNonSoapMessage": "\"%s\" message referenced by \"%s\" operation of \"%s\" binding is not SOAP message but it contains SOAP body",
     "ErrSoapDocumentEncoded": "\"Document\" style SOAP messages with \"encoded\" usage type are not supported",
+    "ErrSoapDocumentLiteralPartRefersToType": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema type is assigned to document style SOAP message with literal usage type",
+    "ErrSoapMessageMultipleExtensions": "For \"%s\" SOAP message referenced by \"%s\" operation of \"%s\" binding, more than one extension type is specified",
     "ErrSoapOperationVersionConflict": "SOAP version of %s operation conflicts with %s binding version",
+    "ErrSoapRPCPartRefersToElement": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema element is assigned to RPC style SOAP message",
     "ErrSoapTransportNotSupported": "SOAP transports with the exception of HTTP are not currently supported",
-    "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema included into the WSDL file (%d row, %d position):\nError code: %d\nReason: %s",
+    "ErrUrlReplacementMustUseGET": "Error defining input message of \"%s\" operation of \"%s\" binding: message of \"%s\" type must use \"%s\" request method",
+    "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema included into WSDL file (%d row, %d position):\nError code: %d\nReason: %s",
     "ErrWsdlImportNoAccess": "No access to the imported %s document"
   },
   "Common/XML/Processor/XMLExportImpl": {
     "ColumnName": "Data column name",
     "ErrColumnMappedToNonExistentNode": "\"%s\" input set column has been assigned for nonexistent \"%s\" XSD schema node",
+    "ErrNodeAndColumnDontExist": "The matching settings of the input set and XSD schema refer to nonexistent \"%s\" node of XSD schema and \"%s\" column of the input set",
+    "ErrNodeCantMapColumnType": "\"%s\" column of the input set has \"%s\" data type that cannot be converted to \"%s\" type of \"%s\" node of XSD  schema",
+    "ErrNodeMappedToNonExistentColumn": "\"%s\" node of XSD schema has been assigned for nonexistent \"%s\" input set column",
+    "ErrNodeMustBeMapped": "For %s schema node with required value, no association with the input set data field has been assigned",
+    "ErrOneOfSubNodesMustBeSelected": "%s schema node must have at least one subnode selected for export",
     "ErrValueIntExportImpossible": "Failed to export %d value to XML document node with \"%s\" type: %s",
     "ErrXMLExportContextNoDataSource": "Attempt to create XML export context not specifying data source",
     "ErrXMLExportRootElementAttributeRepeats": "You cannot re-add %s attribute to %s XML document root element",
@@ -191,15 +208,21 @@
     "NodePath": "Tree node path"
   },
   "Common/XML/Processor/XMLImportImpl": {
+    "ErrCDATAInNonStringType": "%s element from %s namespace cannot contain <CDATA/> section because it relates to '%s' type",
+    "ErrMaxOccExceeded": "The maximum number of \"%s\" element occurrences exceeded (%d allowed)",
     "ErrNoParentElement": "No parent element in \"%s\" element",
+    "ErrSiblingAttributionFailed": "It is not possible to define \"%s{%s}\" sibling corresponding the schema for \"%s\" element",
+    "ErrSubElementAttributionFailed": "It is not possible to define \"%s{%s}\" subelement corresponding the schema for \"%s\" element",
     "ErrXMLParse": "Error parsing XML:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s",
     "ErrXMLValidate": "XML validation error:\n Row: %d\n Position: %d\n Error code: %d\n Message:\n %s"
   },
   "Common/XML/Processor/XMLRequestProcessor": {
     "ErrXMLExportNoContext": "No export context specified",
-    "ErrXMLExportNoSinks": "No elements were specified in XML document for export"
+    "ErrXMLExportNoSinks": "No elements were specified in XML document for export",
+    "ErrXMLExportRow": "Error exporting #%d row of the input set: %s"
   },
   "Common/XML/Processor/XMLRequests": {
+    "ErrContextStubCouplerNotAssigned": "No context binding procedure and export recipient specified",
     "ErrExportContextNotSet": "No export context specified",
     "ErrExportStubNotSet": "Export destination not specified"
   },
@@ -227,22 +250,53 @@
     "Group_Idx": "(%s) index"
   },
   "Common/XML/SAX/XMLSAX": {
+    "ErrImplementationIntfNotSupported": "%s interface not supported by %s implementation ",
     "ErrParserIsActive": "You cannot change parser properties during parsing"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
+    "ErrParseFile": "Error in %d row, %d position while parsing '%s' file: \n %s\n\n",
+    "ErrParseFileUnhandledException": "Unhandled exception parsing '%s' file:\n%s",
+    "ErrParseStream": "Error parsing stream in %d row, %d position:\n %s",
+    "ErrParseStreamNoXML": "Error parsing stream in %d row, %d position: the source is not XML file or has incorrect syntax",
+    "ErrParseStreamUnhandledException": "Unhandled exception parsing stream:\n%s",
+    "ErrParseStreamUnrecognizedEncoding": "Stream parsing error: unrecognized %s encoding",
+    "ErrParseURL": "Error in %d row, %d position when executing request to URL '%s':\n %s",
+    "ErrParseURLNoXML": "Error in %d row, %d position when executing request to URL '%s': server response is not XML file",
     "ErrParseURLUnhandledException": "Unhandled exception parsing request to URL '%s':\n %s",
+    "ErrParseURLUnrecognizedContentType": "Error executing request to URL '%s': server response was not processed because Content-type: %s had not been registered",
     "ErrSaxDocumentHasNoRootElements": "No root element in the document",
+    "ErrSaxParserFeatureInvalidArg": "Invalid argument type when setting '%s' feature of MSXML SAX parser",
+    "ErrSaxParserFeatureUnknownError": "Unknown error setting '%s' feature of MSXML SAX parser",
+    "ErrSaxParserHandlerInvalidArg": "Invalid argument type when setting handler of MSXML SAX parser: %s",
+    "ErrSaxParserHandlerUnknownError": "Unknown error setting when setting handler of MSXML SAX parser: %s",
+    "ErrSaxParserNotCreated": "MSXML SAX parser COM object not created",
+    "ErrSaxParserPropertyInvalidArg": "Invalid argument type when setting '%s' property of MSXML SAX parser",
+    "ErrSaxParserPropertyUnknownError": "Unknown error setting '%s' property of MSXML SAX parser",
+    "ErrSaxParserPutFeature": "Error setting '%s' feature of MSXML SAX parser",
+    "ErrSaxParserPutHandler": "Error setting when setting handler of MSXML SAX parser: %s",
+    "ErrSaxParserPutProperty": "Error setting '%s' property of MSXML SAX parser",
+    "ErrUnsupportedXSDImplementation": "This implementation of IBGXSD interface is not supported",
     "HTTPClientInitFailed": "Error creating HTTP client",
     "HTTPClientRetrieveDataFailed": "Error retrieving data by HTTP client: %s",
     "UnbalancedPop": "Unbalanced extraction operation"
   },
+  "Common/XML/XML": {
+    "ErrCodePageByXMLCharsetAlreadyInstalled": "The function required to get the code page number based on XML character set has already been installed",
+    "ErrCodePageByXMLCharsetUnassigned": "The function required to get the code page number based on XML character set has not been installed",
+    "ErrGenerateNamespacePrefixOverflow": "Counter overflow during namespace prefix generation",
+    "ErrStrToValueIntBadTypeRefinement": "\"%s\" type of refinement is not allowed when converting from string to integer",
+    "ErrXMLCharsetByCodePageAlreadyInstalled": "The function required to get XML character set based on the code page number has already been installed",
+    "ErrXMLCharsetByCodePageUnassigned": "The function required to get XML character set based on the code page number has not been installed"
+  },
   "Common/XML/XML_MSXML": {
+    "ErrElementMustHaveAttribute": "\"%s\" attribute required for \"%s\" element",
     "ErrXMLLoadFailure": "Failed to load %s document",
     "ErrXMLLoadStringFailure": "Failed to load XML document from string",
     "ErrXMLParseFailure": "Error processing %s document (%d row, %d position): %s",
     "ErrXMLParseStringFailure": "Error processing XML (%d row, %d position): %s"
   },
   "Common/XML/XMLDocument": {
+    "ErrAddNodeOperationNotAllowed": "The operation of node addition of '%s' type is not allowed on a node of type '% s'",
     "ErrDocumentHasNoRootElement": "No root element in XML document",
     "ErrInvalidNodeID": "Unknown node ID: %d",
     "ErrInvalidXMLNameChar": "XML ID cannot contain \"%s\" character",
@@ -1558,7 +1612,7 @@
   },
   "components/wsdlclient/WSDLClientVendor": {
     "VendorCaption": "Web Service Call",
-    "VendorDesc": "Request execution through connection to the WSDL described web service and conversion of the received response into a data set"
+    "VendorDesc": "Request execution through connection to WSDL described web service and conversion of the received response into a data set"
   },
   "Embedded/EmbeddedMain": {
     "ErrOpenURL": "Failed to go to the following address: %s",
@@ -1909,17 +1963,44 @@
     "ErrColOutOfRange": "%d column number is out of [%d; %d] range",
     "ErrDataSourceNotConfigured": "Data set not configured",
     "ErrRowOutOfRange": "%d row number is out of [%d; %d] range",
+    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first",
     "Statistics": "Statistics"
   },
   "Libraries/bgrtl/DataSetColumns": {
     "ErrDataSoureNotAssigned": "No data set reference"
   },
+  "Libraries/bgrtl/DelayLoadHook": {
+    "ErrInvalidDelayedProc": "No delayed loaded procedure found"
+  },
+  "Libraries/bgrtl/DelegateHelpers": {
+    "ErrWeakDelegateTargetIsDisposed": "Event handler object disposed"
+  },
+  "Libraries/bgrtl/Delegates": {
+    "ErrSingleConnectionPointAdvise": "Connection point supports only one connection",
+    "ErrSingleConnectionPointSinkIsNil": "Connection point has no connection"
+  },
+  "Libraries/bgrtl/DerivedCollectionItemAspects": {
+    "ErrCannotChangeDerivedCollectionItemName": "You cannot change the derived collection item name",
+    "ErrCannotChangeDerivedFieldDataType": "You cannot change the derived fields data type",
+    "ErrCannotDeleteDerivedCollectionItem": "You cannot delete the derived collection item name",
+    "ErrCannotMoveDerivedCollectionItem": "You cannot change position of the derived collection items"
+  },
   "Libraries/bgrtl/DerivedDataSet": {
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
-    "ErrSourceColumnNotFound": "Failed to find source %s column for output %s column"
+    "ErrNoMappingForRequiredColumn": "The required input column %s has not been mapped to the output column",
+    "ErrSourceColumnNotFound": "Failed to find source %s column for output %s column",
+    "ErrTargetColumnWithoutSource": "The required output column %s has not been mapped to the input column"
   },
   "Libraries/bgrtl/DerivedVariables": {
+    "ErrNoMappingForRequiredVariable": "The required input variable %s has not been mapped to the output variable",
+    "ErrSourceVariableNotFound": "Failed to find the source variable %s for the configurable variable %s",
+    "ErrTargetVariablesWithoutSource": "The input variable %s has not been mapped to the output variable",
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
+  },
+  "Libraries/bgrtl/Encoding": {
+    "ErrConvertToASCII": "\"%s\" string cannot be converted to ASCII encoded string",
+    "ErrUTF8ToWideCharOverflow": "Code unit %.2x is not start of UTF8 character that consists of not more than 3 code units",
+    "ErrUTF8ToWideCharWrongOffset": "Code unit %.2x is not start of UTF8 character"
   },
   "Libraries/bgrtl/EnumTypInfo": {
     "ErrEnumNotRegistered": "\"%s\" enumeration not registered"
@@ -1935,9 +2016,22 @@
   "Libraries/bgrtl/ExceptUtils": {
     "ErrAbstract": "Abstract method calling %s ",
     "ErrAbstractMethod": "Abstract method calling %s.%s",
+    "ErrAssign": "You cannot assign property values of %s object  to the object values of the unsupported class %s",
+    "ErrAssignIntf": "You cannot assign property values of %s object  to the object values of the unsupported interface",
+    "ErrFloatParamIsNan": "\"%s\" parameter value equal to NaN is not allowed",
     "ErrInvalidIndex": "%d index value of \"%s\" parameter is out of [%d; %d] range",
+    "ErrMethodParamIsNull": " %s parameter of %s method must be initialized",
+    "ErrMustGreaterOrEqualThan": "%g value of \"%s\" parameter must be more than or equal to %g",
+    "ErrMustGreaterOrEqualThanInt": "%d value of \"%s\" parameter must be more than or equal to %d",
+    "ErrMustGreaterThan": "%g value of \"%s\" parameter must be more than %g",
+    "ErrMustGreaterThanInt": "%d value of \"%s\" parameter must be more than %d",
+    "ErrMustLessOrEqualThan": "%g value of \"%s\" parameter must be less than or equal to %g",
+    "ErrMustLessOrEqualThanInt": "%d value of \"%s\" parameter must be less than or equal to %d",
+    "ErrMustLessThan": "%g value of \"%s\" parameter must be less than %g",
+    "ErrMustLessThanInt": "%d value of \"%s\" parameter must be less than %d",
     "ErrOutOfRange": "%g value of \"%s\" parameter is out of [%g; %g] range",
-    "ErrOutOfRangeInt": "%d value of \"%s\" parameter is out of [%d; %d] range"
+    "ErrOutOfRangeInt": "%d value of \"%s\" parameter is out of [%d; %d] range",
+    "ErrParamIsNull": " %s parameter must be initialized"
   },
   "Libraries/bgrtl/ExecutionContext": {
     "ErrExecutionContextAlreadyExists": "Failed to install the external execution context: context already exists",
@@ -2104,7 +2198,7 @@
   },
   "Libraries/bgrtl/TuneVariables": {
     "ErrSourceVariableAssigned": "You cannot edit the custom variable value for which the source variable is set",
-    "ErrSourceVariableNotFound": "Failed to find source %s varianble for configurable %s variable",
+    "ErrSourceVariableNotFound": "Failed to find the source variable %s for the configurable variable %s",
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
   },
   "Libraries/bgrtl/Tuple": {

@@ -2602,7 +2602,7 @@
     "ErrBackupPointUpdate": "Не удалось обновить точку: \"%s\"",
     "ErrCookieInvalidOwner": "Cookie блокируемого объекта принадлежит другому объекту",
     "ErrCookieIsNil": "Попытка выполнить операцию с пустой ссылкой на Cookie блокируемого объекта",
-    "ErrRollBackAggregateMesage": "В процессе восстановления возникли ошибки",
+    "ErrRollBackAggregateMessage": "В процессе восстановления возникли ошибки",
     "ErrRootBackupContainerFinish": "Попытка выполнить закрытие корневой точки восстановления"
   },
   "Libraries/Config/ConfigBinary": {
@@ -3464,11 +3464,6 @@
   },
   "Libraries/rpc/WebSocketRemoteServer": {
     "ErrSSLChangeAfterStart": "Параметры SSL не могут быть изменены после запуска сервера"
-  },
-  "Libraries/SuperLU/SuperLU_h": {
-    "ErrExceptionOccurred": "Исключение в SuperLU в функции '%s' при вызове '%s'",
-    "InputError": "Недопустимое значение параметра №%d при вызове '%s'",
-    "UserAbort": "Вызов SuperLU остановлен с ошибкой: '%s'"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Ошибка загрузки WSDL: \nИмя файла: %s",

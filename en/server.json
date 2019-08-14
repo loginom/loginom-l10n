@@ -296,7 +296,7 @@
     "ErrXMLParseStringFailure": "Error processing XML (%d row, %d position): %s"
   },
   "Common/XML/XMLDocument": {
-    "ErrAddNodeOperationNotAllowed": "The operation of node addition of '%s' type is not allowed on the node of '% s' type",
+    "ErrAddNodeOperationNotAllowed": "The operation of node addition of '%s' type is not allowed on the node of '%s' type",
     "ErrDocumentHasNoRootElement": "No root element in XML document",
     "ErrInvalidNodeID": "Unknown node ID: %d",
     "ErrInvalidXMLNameChar": "XML ID cannot contain \"%s\" character",

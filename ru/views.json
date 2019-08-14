@@ -2949,7 +2949,7 @@
       "boxLabel": "целиком"
     },
     "rbtSearchCompareTypeStart": {
-      "boxLabel": "сначала"
+      "boxLabel": "с начала"
     },
     "rbtSearchCompareTypeSubstring": {
       "boxLabel": "подстрока"
@@ -2994,7 +2994,7 @@
       "tooltip": "Сортировка..."
     },
     "btnFind": {
-      "text": "Искать сначала"
+      "text": "Искать с начала"
     },
     "btnFindAgain": {
       "text": "Поиск"
@@ -3049,7 +3049,7 @@
       "text": "Страница"
     },
     "mniFind": {
-      "tooltip": "Искать сначала"
+      "tooltip": "Искать с начала"
     },
     "mniFindAgain": {
       "tooltip": "Поиск"

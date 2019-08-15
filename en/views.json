@@ -1444,10 +1444,10 @@
       "boxLabel": "One request for all data set"
     },
     "rbIDColumn": {
-      "boxLabel": "Request identifier - input set field"
+      "boxLabel": "Request identifier - input data set field"
     },
     "rbIDColumnNull": {
-      "boxLabel": "One request in each input set row"
+      "boxLabel": "One request in each input data set row"
     }
   },
   "components/factoranalysis/FactorAnalysisWizard": {
@@ -1481,7 +1481,7 @@
       "fieldLabel": "Condition"
     },
     "chkCaseSensitiveSimple": {
-      "fieldLabel": "Case sensitive"
+      "fieldLabel": "Case-sensitive"
     },
     "dtCompareValuePeriodBaseDateSimple": {
       "fieldLabel": "Base interval date"
@@ -1788,7 +1788,7 @@
       "text": "Сase-sensitive"
     },
     "colCaseSensitive.0": {
-      "tooltip": "Case sensitive"
+      "tooltip": "Case-sensitive"
     },
     "colFieldDisplayName": {
       "text": "Available fields"
@@ -1808,7 +1808,7 @@
       "title": "Sort"
     },
     "mniCaseSensitive": {
-      "text": "Case sensitive"
+      "text": "Case-sensitive"
     },
     "mniMoveDown": {
       "text": "Move down"
@@ -1918,10 +1918,10 @@
       "title": "Additional Parameters"
     },
     "rbComplex": {
-      "boxLabel": "Request identifier - input set field:"
+      "boxLabel": "Request identifier - input data set field:"
     },
     "rbSimple": {
-      "boxLabel": "One request in each input set row"
+      "boxLabel": "One request in each input data set row"
     }
   },
   "components/wsdlclient/CustomHeadersWizard": {
@@ -2991,7 +2991,7 @@
       "tooltip": "Sort..."
     },
     "btnFind": {
-      "text": "Search from Beginning"
+      "text": "Find first"
     },
     "btnFindAgain": {
       "text": "Search"
@@ -3024,7 +3024,7 @@
       "emptyText": "Find"
     },
     "colDetailName": {
-      "text": "Name"
+      "text": "Caption"
     },
     "colDetailValue": {
       "text": "Value"
@@ -3046,7 +3046,7 @@
       "text": "Page"
     },
     "mniFind": {
-      "tooltip": "Search from beginning"
+      "tooltip": "Find first"
     },
     "mniFindAgain": {
       "tooltip": "Search"
@@ -3390,7 +3390,7 @@
       "tooltip": "Move up"
     },
     "frmCasesAddPanel": {
-      "title": "Add Fact"
+      "title": "Add Measure"
     }
   },
   "viewers/cube/CasesCalcGrid": {
@@ -3421,7 +3421,7 @@
       "fieldLabel": "Data type"
     },
     "cbbFunctionType": {
-      "fieldLabel": "Function caption"
+      "fieldLabel": "Aggregation caption"
     },
     "edtDisplayName": {
       "fieldLabel": "Caption"
@@ -3430,7 +3430,7 @@
       "fieldLabel": "Name"
     },
     "frmCasesCalcPanel": {
-      "title": "Calculated Fact"
+      "title": "Calculated Measure"
     }
   },
   "viewers/cube/CasesFilterPanel": {
@@ -3468,7 +3468,7 @@
       "fieldLabel": "Value"
     },
     "frmCasesFilterPanel": {
-      "title": "Filter Facts"
+      "title": "Filter Measures"
     }
   },
   "viewers/cube/CasesFormatPanel": {
@@ -3485,7 +3485,7 @@
       "fieldLabel": "Vertical  alignment"
     },
     "cbFormatStr": {
-      "boxLabel": "Special format"
+      "boxLabel": "Custom format"
     },
     "cbNegValuesRedColor": {
       "boxLabel": "Negative in red"
@@ -3518,7 +3518,7 @@
       "fieldLabel": "Currency"
     },
     "edtDecimalDigit": {
-      "fieldLabel": "Decimal digit",
+      "fieldLabel": "Decimal place limit",
       "maxText": "No more than {0} decimal places",
       "negativeText": "Only non-negative values are allowed"
     },
@@ -3530,12 +3530,12 @@
       "fieldLabel": "Example"
     },
     "frmCasesFormatPanel": {
-      "title": "Format Facts"
+      "title": "Format Measures"
     }
   },
   "viewers/cube/CasesTunePanel": {
     "btnAddCalc": {
-      "tooltip": "Add calculated fact..."
+      "tooltip": "Add calculated measure..."
     },
     "btnApply": {
       "text": "Apply"
@@ -3550,13 +3550,13 @@
       "tooltip": "Collapse tree"
     },
     "btnDeleteCalc": {
-      "tooltip": "Delete calculated fact"
+      "tooltip": "Delete calculated measure"
     },
     "btnDown": {
       "tooltip": "Move down"
     },
     "btnEditCalc": {
-      "tooltip": "Edit calculated fact..."
+      "tooltip": "Edit calculated measure..."
     },
     "btnExpand": {
       "tooltip": "Expand tree"
@@ -3568,10 +3568,10 @@
       "tooltip": "Move up"
     },
     "frmCasesTunePanel": {
-      "title": "Configure Facts"
+      "title": "Configure Measures"
     },
     "pnlCases": {
-      "title": "Available Facts"
+      "title": "Available Measures"
     }
   },
   "viewers/cube/ChartRestrictionsPanel": {
@@ -3593,7 +3593,7 @@
   },
   "viewers/cube/CubeView": {
     "btnAddCalcCase": {
-      "tooltip": "Add calculated fact..."
+      "tooltip": "Add calculated measure..."
     },
     "btnCaseCaption": {
       "text": "Facts"
@@ -3603,10 +3603,10 @@
     },
     "btnChartCase": {
       "text": "Fact",
-      "tooltip": "Displayed fact"
+      "tooltip": "Displayed measure"
     },
     "btnChartRestrictions": {
-      "tooltip": "Restrictions"
+      "tooltip": "Restrictions..."
     },
     "btnChartShowTotal": {
       "tooltip": "Show total"
@@ -3637,25 +3637,25 @@
       "tooltip": "Fields"
     },
     "btnFilterCase": {
-      "tooltip": "Filter facts..."
+      "tooltip": "Filter measures..."
     },
     "btnFormatCase": {
-      "tooltip": "Format facts..."
+      "tooltip": "Format measures..."
     },
     "btnSeriesPosition": {
       "tooltip": "Series position"
     },
     "btnShowTotal": {
-      "tooltip": "Show total"
+      "tooltip": "Show totals"
     },
     "btnSuspendAutoCalculate": {
-      "tooltip": "Suspend auto calculate"
+      "tooltip": "Defer layout update"
     },
     "btnTranspose": {
       "tooltip": "Transpose"
     },
     "btnTuneCase": {
-      "tooltip": "Configure facts"
+      "tooltip": "Configure measures..."
     },
     "colDisplayName": {
       "text": "Fields"
@@ -3664,7 +3664,7 @@
       "text": "Select cell to visualize its data"
     },
     "mniAddCalcCase": {
-      "text": "Add calculated fact..."
+      "text": "Add calculated measure..."
     },
     "mniChartShowTotalAll": {
       "text": "Show"
@@ -3703,25 +3703,25 @@
       "text": "Export to SVG"
     },
     "mniFilterCase": {
-      "text": "Filter facts..."
+      "text": "Filter measures..."
     },
     "mniFormatCase": {
-      "text": "Format facts..."
+      "text": "Format measures..."
     },
     "mniShowTotalAll": {
-      "text": "All"
+      "text": "In rows and columns"
     },
     "mniShowTotalCols": {
       "text": "In columns"
     },
     "mniShowTotalNone": {
-      "text": "Nowhere"
+      "text": "No totals"
     },
     "mniShowTotalRows": {
       "text": "In rows"
     },
     "mniTuneCase": {
-      "text": "Configure facts"
+      "text": "Configure measures..."
     }
   },
   "viewers/cube/DimensionFilterSelectionPanel": {
@@ -3732,13 +3732,13 @@
       "text": "Cancel"
     },
     "cbRegister": {
-      "boxLabel": "Case sensitive"
+      "boxLabel": "Case-sensitive"
     },
     "rbAdd": {
       "boxLabel": "Add to checked"
     },
     "rbDeselect": {
-      "boxLabel": "Deselect"
+      "boxLabel": "Uncheck"
     },
     "rbRemove": {
       "boxLabel": "Remove from checked"
@@ -3758,10 +3758,10 @@
       "tooltip": "Check all"
     },
     "btnExclusive": {
-      "tooltip": "Included/excluded values mode"
+      "tooltip": "Inclusive/exclusive filter"
     },
     "btnFilterType": {
-      "tooltip": "Filter selection mode"
+      "tooltip": "Filter mode"
     },
     "btnGroupCheck": {
       "tooltip": "Check by pattern..."
@@ -3770,7 +3770,7 @@
       "tooltip": "Invert selection"
     },
     "btnRollable": {
-      "tooltip": "Loop values while flipping"
+      "tooltip": "Loop values"
     }
   },
   "viewers/cube/EmbeddedBrowseForm": {

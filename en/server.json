@@ -76,7 +76,7 @@
   "Common/CodeExec/CodeAPIDataSetProxies": {
     "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of [%d; %d] range",
     "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table",
-    "ErrInvalidDataSourceColumnIndex": "The input table column index %d is out of [%d; %d] range",
+    "ErrInvalidDataSourceColumnIndex": "%d index of input table column №%d is out of [%d; %d] range",
     "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table №%d"
   },
   "Common/HTTP/CachedHttpStream": {
@@ -122,7 +122,7 @@
     "ErrValueIntExportImpossible": "Failed to convert %d integer to \"%s\" type: %s"
   },
   "Common/WSDL/Processor/WSDLRequestProcessor": {
-    "ErrExportWSDLHttpRequestData": "Error occurred while HTTP request generating from #%d row of the input set: %s",
+    "ErrExportWSDLHttpRequestData": "Error occurred while HTTP request generating from #%d row of the input data set: %s",
     "ErrGetElementByMessagePartUnassigned": "When processing WSDL request, the following property has not been configured: TBGWSDLRequestProcessor.GetElementByMessagePart",
     "ErrHTTPHeaderRedefined": "\"%s: %s\" header already defined in the request",
     "ErrHTTPHeaders": "Error while generating HTTP headers",
@@ -194,11 +194,11 @@
   },
   "Common/XML/Processor/XMLExportImpl": {
     "ColumnName": "Data column name",
-    "ErrColumnMappedToNonExistentNode": "\"%s\" input set column has been assigned for nonexistent \"%s\" XSD schema node",
-    "ErrNodeAndColumnDontExist": "The matching settings of the input set and XSD schema refer to nonexistent \"%s\" node of XSD schema and \"%s\" column of the input set",
-    "ErrNodeCantMapColumnType": "\"%s\" column of the input set has \"%s\" data type that cannot be converted to \"%s\" type of \"%s\" node of XSD  schema",
-    "ErrNodeMappedToNonExistentColumn": "\"%s\" node of XSD schema has been assigned for nonexistent \"%s\" input set column",
-    "ErrNodeMustBeMapped": "For %s schema node with required value, no association with the input set data field has been assigned",
+    "ErrColumnMappedToNonExistentNode": "\"%s\" input data set column has been assigned for nonexistent \"%s\" XSD schema node",
+    "ErrNodeAndColumnDontExist": "The matching settings of the input data set and XSD schema refer to nonexistent \"%s\" node of XSD schema and \"%s\" column of the input set",
+    "ErrNodeCantMapColumnType": "\"%s\" column of the input data set has \"%s\" data type that cannot be converted to \"%s\" type of \"%s\" node of XSD  schema",
+    "ErrNodeMappedToNonExistentColumn": "\"%s\" node of XSD schema has been assigned for nonexistent \"%s\" input data set column",
+    "ErrNodeMustBeMapped": "For %s schema node with required value, no association with the input data set field has been assigned",
     "ErrOneOfSubNodesMustBeSelected": "%s schema node must have at least one subnode selected for export",
     "ErrValueIntExportImpossible": "Failed to export %d value to XML document node with \"%s\" type: %s",
     "ErrXMLExportContextNoDataSource": "Attempt to create XML export context not specifying data source",
@@ -219,7 +219,7 @@
   "Common/XML/Processor/XMLRequestProcessor": {
     "ErrXMLExportNoContext": "No export context specified",
     "ErrXMLExportNoSinks": "No elements were specified in XML document for export",
-    "ErrXMLExportRow": "Error exporting #%d row of the input set: %s"
+    "ErrXMLExportRow": "Error exporting #%d row of the input data set: %s"
   },
   "Common/XML/Processor/XMLRequests": {
     "ErrContextStubCouplerNotAssigned": "No context binding procedure and export recipient specified",
@@ -408,7 +408,7 @@
     "ErrInfinityFmt": "Quantization bins for %s field were not created. The field contains the \"infinity\" value.",
     "ErrInvalidBinRowFmt": "Failed to generate bin for %s field from %d row",
     "ErrInvalidRangeWidthFmt": "The initial bin boundary exceeds the final boundary for %s field",
-    "ErrLogBinsCountLimitFmt": ", for % field.",
+    "ErrLogBinsCountLimitFmt": ", for %s field.",
     "ErrLowerLimit": "No lower bins bound specified",
     "ErrNoDefineExternalBins": "No external bins found",
     "ErrNoDefineExternalBound": "No bounds for external bins found",
@@ -462,12 +462,12 @@
   },
   "components/calcdata/CalcItem": {
     "ErrExprParse": "Error parsing \"%s\" expression: %s",
-    "ExprCalculateError": "Error calculating \"%s\" expression, %d row of the input set"
+    "ExprCalculateError": "Error calculating \"%s\" expression, %d row of the input data set"
   },
   "components/calcdata/CalcItemChakra": {
     "ErrExprParse": "Error parsing \"%s\" expression: %s",
     "ErrExprUsesUndefinedVariable": "%s undefined variable used in \"%s\" expression",
-    "ExprCalculateError": "Error calculating \"%s\" expression, %d row of the input set"
+    "ExprCalculateError": "Error calculating \"%s\" expression, %d row of the input data set"
   },
   "components/calcdata/ExprColumns": {
     "ColumnMetaDesc": "Column",
@@ -683,7 +683,7 @@
     "ErrTooManyDimensionsInColumns": "Too many column dimensions selected",
     "InvalidColumnNameFmt": "Failed to generate column name from \"%s\" unique value",
     "NullGroupCaption": "<...>",
-    "OtherGroupCaption": "<Other0>"
+    "OtherGroupCaption": "<Other>"
   },
   "components/crosstab/CrossTabVendor": {
     "VendorCaption": "Cross Table",
@@ -706,7 +706,7 @@
     "ErrIncorrectExportConfiguration": "Errors in configuration",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
     "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
-    "ErrMappedNodeNotOwnedByExportTree": "%s node for which input set column selection is requested is not included into XML tree",
+    "ErrMappedNodeNotOwnedByExportTree": "%s node for which input data set column selection is requested is not included into XML tree",
     "ErrNodeDoesNotDescendFromSelectedRoot": "%s node is not a descendant of the selected %s root element",
     "ErrNodeDoesNotExist": "\"%s\" node not found in XSD schema",
     "ErrNotRootElement": "\"%s\" node is not XSD schema root element",
@@ -754,7 +754,7 @@
     "DisplayNamePrefix": "Addition",
     "ErrLinkMustContainColumnOfMainTable": "Link must contain a field from the main table",
     "ErrRowCountExceedMaxValue": "Row count of the result set exceeded %d maximum value",
-    "ProgessOutputBuild": "Build result set",
+    "ProgessOutputBuild": "Build result data set",
     "ProgressJoinedTableIndex": "Joined %d table indexing"
   },
   "components/enrichdata/EnrichDataVendor": {
@@ -792,7 +792,7 @@
   "components/extractxml/ExtractXML": {
     "DocIDColumn": "Document ID",
     "ErrCharsetForCodePageNotFound": "No supported XML character set found for %d code page",
-    "ErrExtractXML": "Error extracting XML from %d row of the input set:\n  Error code: %d\n  Message: %s",
+    "ErrExtractXML": "Error extracting XML from %d row of the input data set:\n  Error code: %d\n  Message: %s",
     "ErrExtractXMLInitError": "Handler initialization error Extract\nXML:\n  %s",
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputFieldNotSelected": "You must specify containing XML field",
@@ -903,7 +903,7 @@
   },
   "components/filtration/ELimOutlier": {
     "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
-    "GenerationOutputSets": "Output sets generation",
+    "GenerationOutputSets": "Output data sets generation",
     "OutData": "Output data set",
     "OutDataExtr": "Extremes",
     "OutDataOut": "Outliers",
@@ -973,7 +973,7 @@
     "CoefficientTypeColumn": "Type",
     "ColumnName": "Input field name",
     "ColumnUniqueValue": "Unique value",
-    "ErrInvalidFieldsSettings": "Invalid input set field settings",
+    "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrModelWithNoParams": "Invalid model settings: no matched parameters",
     "ErrMultipleOutputsNotSupported": "%s model allows only one output field",
     "ErrNoOutputFieldsSelected": "No output data field specified",
@@ -1036,7 +1036,7 @@
   "components/joindata/JoinData": {
     "DisplayNamePrefix": "Join",
     "ErrInvalidColNamePrefix": "\"%s\" name prefix is not a valid identifier",
-    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded %d maximum value",
+    "ErrRowCountExceedMaxValue": "Row count of the result data set exceeded %d maximum value",
     "ProgressCompareIndexes": "Index mapping",
     "ProgressFormResult": "Output data set formation",
     "ProgressJoinedTableIndex": "Joined table indexing",
@@ -1060,7 +1060,7 @@
     "ColumnDisplayName": "Input field captions",
     "ColumnName": "Input field names",
     "ColumnUniqueValues": "Unique values",
-    "ErrInvalidFieldsSettings": "Invalid input set field settings",
+    "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrMultipleOutputFields": "Only one output data field allowed",
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrOutputColumnNotValid": "Invalid specified output column",
@@ -1068,7 +1068,7 @@
     "ErrWrongInputField": "Invalid %s input field properties, %s data sort, %s data type",
     "ErrWrongOutputColumnsCount": "Exactly 1 output column must be defined, %d output columns are currently defined",
     "ErrWrongOutputField": "Invalid %s output field properties, %s data sort, %s data type",
-    "Intercept": "<Intercept0>",
+    "Intercept": "<Intercept>",
     "LinRegTrainProcessName": "Build model",
     "ModelDF": "Number of the model degrees of freedom",
     "ModelPValue": "Model P-value",
@@ -1128,7 +1128,7 @@
     "CVClsErrorPercentage": "Cross validation error percentage",
     "CVRMSError": "Root-mean-square error in cross validation",
     "ErrClassifierMultipleOutputs": "Only one output field is allowed for the classification task, %d is currently specified",
-    "ErrInvalidFieldsSettings": "Invalid input set field settings",
+    "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrNotImplemented": "Functionality not implemented",
     "ErrOutputColumnNotValid": "Invalid specified output column",
@@ -1138,7 +1138,7 @@
     "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data sort, \"%s\" data type",
     "ErrWrongOutputFieldNotDiscrete": "Invalid \"%s\" output field properties, \"%s\" data sort, whereas \"%s\" is only valid",
     "ErrWrongOutputUniqueCount": "Number of \"%s\"output column unique values is %d (exactly 2 required)",
-    "Intercept": "<Intercept0>",
+    "Intercept": "<Intercept>",
     "LogRegStoreStatProcessName": "Calculation of quality indicators",
     "LogRegTrainProcessName": "Build model",
     "ModelDF": "Number of the model degrees of freedom",
@@ -1291,7 +1291,7 @@
     "CVClsErrorPercentage": "Cross validation error percentage",
     "CVRMSError": "Root-mean-square error in cross validation",
     "ErrInvalidClassifierResult": "Invalid classification result in %d row",
-    "ErrInvalidFieldsSettings": "Invalid input set field settings",
+    "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrMultipleOutputs": "Only one output data field allowed",
     "ErrNetworkUntrained": "Neural network is untrained",
     "ErrNoInputFields": "No input data fields specified",
@@ -1355,7 +1355,7 @@
   },
   "components/quality/Quality": {
     "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
-    "GenerationOutputSets": "Output sets generation",
+    "GenerationOutputSets": "Output data sets generation",
     "OutData": "Output data set",
     "OutDataExtr": "Extremes",
     "OutDataNull": "Null data",
@@ -1411,7 +1411,7 @@
     "ResponseColumn": "Server response",
     "RESTClientConnection": "Connect to REST service",
     "RESTClientErrorNoID": "Error executing request:\n%s",
-    "RESTClientErrorRowID": "Error executing request generated from row No %d of the input set:\n%s"
+    "RESTClientErrorRowID": "Error executing request generated from row No %d of the input data set:\n%s"
   },
   "components/restclient/RESTClientVendor": {
     "VendorCaption": "REST Service Call",
@@ -1492,7 +1492,7 @@
     "ErrNoLinksDefined": "No links defined for group identifiers",
     "ErrNoLinksFields": "No related fields to build AVL tree",
     "ErrPostProcessingTerminated": "Error in the algorithm ungrouping! The process has been terminated.",
-    "GenerationOutputSets": "Output sets generation",
+    "GenerationOutputSets": "Output data sets generation",
     "GroupColumnAVLTreeBuilding": "Group initial data",
     "OutputSIDisplayName": "Seasonal index value",
     "OutputTrendDisplayName": "Trend value",
@@ -1581,7 +1581,7 @@
   },
   "components/variablestodata/VariablesToDataVendor": {
     "VendorCaption": "Variables to Table",
-    "VendorDesc": "Create data table from variables set"
+    "VendorDesc": "Create data set from variables set"
   },
   "components/wsdlclient/WSDLClient": {
     "ErrorCodeColumn": "Completion code",
@@ -1595,7 +1595,7 @@
     "WSDLClientConnection": "Connection to the web service",
     "WSDLClientError": "Error executing request with %s identifier:\n%s",
     "WSDLClientErrorNoID": "Error executing request:\n%s",
-    "WSDLClientErrorRowID": "Error executing request generated from row No %d of the input set:\n%s"
+    "WSDLClientErrorRowID": "Error executing request generated from row No %d of the input data set:\n%s"
   },
   "components/wsdlclient/WSDLClientBase": {
     "AdditionalDataSet": "Additional data",
@@ -1606,7 +1606,7 @@
     "ErrNothingSelected": "No nodes selected for service response import",
     "ErrOperationNotFound": "\"%s\" operation not found in \"%s\" endpoint description of \"%s\" service",
     "ErrOperationNotSelected": "No WSDL operation selected for request execution",
-    "ErrPartElementNotFound": "\"%s\" element referenced in \"%s\" message part of \"%s operation not found in XSD schema",
+    "ErrPartElementNotFound": "\"%s\" element referenced in \"%s\" part of \"%s\" message of \"%s\" operation not found in XSD schema",
     "ErrPortNotSelected": "No WSDL service endpoint for the request execution selected",
     "ErrResponseNotConfigured": "Service response not configured",
     "ErrTransmissionPrimitiveNotSupported": "Operations with \"%s\" exchange primitive are not supported",
@@ -1696,16 +1696,16 @@
     "VendorDesc": "Export data to XML file according to the specified XSD schema"
   },
   "imports/1cv8/1Cv8QueryImport": {
-    "ErrInterpretValue": "Failed to convert value from request result to standard type",
+    "ErrInterpretValue": "Failed to convert value from query result to standard type",
     "FillDataSetProcess": "Fill data set",
     "NotConnected": "Not connected to infobase",
-    "OpenResultSetProcess": "Open request",
-    "PrepareFieldDefsProcess": "Execute request and get field list",
+    "OpenResultSetProcess": "Open query",
+    "PrepareFieldDefsProcess": "Execute query and get field list",
     "PreviewProcess": "Data preview"
   },
   "imports/1cv8/1Cv8QueryImportVendor": {
-    "VendorCaption": "1C Request",
-    "VendorDesc": "1C: Enterprise 8 - Request"
+    "VendorCaption": "1C Query",
+    "VendorDesc": "1C: Enterprise 8 - Query"
   },
   "imports/database/DBImport": {
     "ErrExecQuery": "Error in querying database.",
@@ -1805,7 +1805,7 @@
     "ErrParseFmt": "Error occurred while parsing %d line: %s",
     "ErrUnsupportedCodePage": "%d codepage not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
-    "PrimaryKeyDisplayName": "<Key0>"
+    "PrimaryKeyDisplayName": "<Key>"
   },
   "imports/textfile/ImportTextFileVendor": {
     "VendorCaption": "Text File",
@@ -1831,7 +1831,7 @@
   },
   "Libraries/1CConnection/1Cv8Connection": {
     "ErrConnectionString": "Error in connection string",
-    "ErrTestConnection": "Connection test error",
+    "ErrTestConnection": "Сonnection test failed",
     "NotConnected": "Not connected to infobase"
   },
   "Libraries/1CConnection/1Cv8ConnectionVendor": {
@@ -2322,7 +2322,7 @@
     "ErrDeleteFilr": "Failed to update file headers",
     "ErrDirectoryEndRecordx64": "Failed to find directories in archive",
     "ErrFileExists": "%s file already exists in the archive",
-    "ErrIdentName": "%s file under %s name already exists in the archive",
+    "ErrIdentName": "File under %s name already exists in the archive",
     "ErrIndexOutOfRange": "Out of range index",
     "ErrReWriteLocalFileHeader": "Error updating local file header",
     "ErrWrongHMAC": "Data encryption error",
@@ -2587,7 +2587,7 @@
     "BaseComponentVendorGuidDesc": "Base component GUID",
     "BaseNode": "Base node",
     "BaseNodeGuid": "Base node Guid",
-    "Caption": "Name",
+    "Caption": "Caption",
     "DerivedComponentVendorGuidDesc": "Derived component GUID",
     "Description": "Description",
     "ErrBaseComponentAlreadyExists": "Base component already exists",
@@ -3087,7 +3087,7 @@
     "OptionSavePackageDesc": "Save package after execution",
     "OptionTeachDesc": "Retraining mode",
     "OptionUserNameDesc": "Username",
-    "Switches": "<Keys0>"
+    "Switches": "<Keys>"
   },
   "Studio/Server/ServiceConsts": {
     "ServiceDisplayName": "LoginomServer"
@@ -3211,10 +3211,10 @@
     "VendorDesc": "\"Coarse classes\" visualizer"
   },
   "Viewers/Cube/CubeCalcSummaries": {
-    "ErrCalculationExpression": "Error occurred while calculating the expression corresponding to calculated fact \"%s\"",
+    "ErrCalculationExpression": "Error occurred while calculating the expression corresponding to calculated measure \"%s\"",
     "ErrExprResultIsString": "The expression result relates to the string type",
-    "ErrParseExpression": "Error occurred while parsing the expression corresponding to calculated fact \"%s\"",
-    "ErrRecursiveCall": "Circular reference between calculated facts detected: %s"
+    "ErrParseExpression": "Error occurred while parsing the expression corresponding to calculated measure \"%s\"",
+    "ErrRecursiveCall": "Circular reference between calculated measures detected: %s"
   },
   "Viewers/Cube/CubeChart": {
     "MaxDotsCountDesc": "Maximum dots count",
@@ -3259,19 +3259,19 @@
     "CountCaseDisplayName": "Count",
     "DefExprDisplayName": "Expression",
     "ErrCaseClassNotDynamic": "Fact is not dynamic",
-    "ErrCaseFuncNotExist": "No \"%s\" aggregation for \"%s\" fact",
-    "ErrCaseSubFuncNotExist": "\"%s\" fact with \"%s\" aggregation does not display \"%s\"",
+    "ErrCaseFuncNotExist": "No \"%s\" aggregation for \"%s\" measure",
+    "ErrCaseSubFuncNotExist": "\"%s\" measure with \"%s\" aggregation does not display \"%s\"",
     "ErrIIDNotRegistered": "\"%s\" identifier not registered",
-    "MsgMissingCase": "\"%s\" field matching \"%s\" fact not found in the data set."
+    "MsgMissingCase": "\"%s\" field matching \"%s\" measure not found in the data set."
   },
   "Viewers/Cube/CubeView": {
     "CubeViewProcess": "Cube",
     "ErrAlreadyExporting": "You cannot export a crosstab until the current export is finished",
     "ErrExportCubeClosed": "You cannot export a crosstab when the Cube is inactive",
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
-    "ErrPhantomCaseBracketsOpened": "You cannot start creating time fact until you delete the existing time fact",
-    "IncLoadMatrixNotify": "Increment fact calculation",
-    "LoadMatrixNotify": "Fact calculation"
+    "ErrPhantomCaseBracketsOpened": "You cannot start creating time measure until you delete the existing time fact",
+    "IncLoadMatrixNotify": "Increment measure calculation",
+    "LoadMatrixNotify": "Measure calculation"
   },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
@@ -3279,7 +3279,7 @@
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Component",
-    "ConstFactor": "<Intercept0>",
+    "ConstFactor": "<Intercept>",
     "ErrNotDefinedComponent": "Undefined component",
     "FinalModel": "Final model",
     "NullModel": "Null model",
@@ -3299,7 +3299,7 @@
   },
   "Viewers/LogRegressReport/LogRegressReport": {
     "Component": "Component",
-    "ConstFactor": "<Intercept0>",
+    "ConstFactor": "<Intercept>",
     "ErrNotDefinedComponent": "Undefined component",
     "FinalModel": "Final model",
     "NullModel": "Null model",
@@ -3363,9 +3363,9 @@
     "ResponseChartTitle": "Response Chart",
     "ResponseCumChartTitle": "Response Chart (Cumulative)",
     "ResponseCumChartXLabel": "Sampling ratio, %",
-    "ResponseCumChartYLabel": "Response, %",
+    "ResponseCumChartYLabel": "% events",
     "ROCChartTitle": "ROC Curve",
-    "ROCChartXLabel": "FPR (1-Specificity)",
+    "ROCChartXLabel": "FPR (1-specificity)",
     "ROCChartYLabel": "TPR (sensitivity)",
     "TeachDataSource": "Training set",
     "TestDataSource": "Test set",
@@ -3373,8 +3373,8 @@
     "TPR": "TPR (sensitivity)"
   },
   "Viewers/ROC/ROCViewVendor": {
-    "VendorCaption": "Binary Classification Quality",
-    "VendorDesc": "Binary classification quality"
+    "VendorCaption": "Binary Classification Assessment",
+    "VendorDesc": "Binary classification assessment"
   },
   "Viewers/Statistics/StatView": {
     "HistogramBuild": "Build histogram",

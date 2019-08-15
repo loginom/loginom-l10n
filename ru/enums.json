@@ -1823,7 +1823,7 @@
       "FuzzyLogicEqual": " ~ "
     },
     "MetaDataNodeType": {
-      "$Caption": "Названия типов метаданных",
+      "$Caption": "Типы метаданных хранилища",
       "Item": "Элемент",
       "ComDimList": "Измерения",
       "ProcList": "Процессы",

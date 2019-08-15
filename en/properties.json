@@ -165,7 +165,7 @@
       "DebugMode": "Debug mode"
     },
     "ConditionItem": {
-      "CaseSensitive": "Case sensitive",
+      "CaseSensitive": "Case-sensitive",
       "CompareValue": "Compared value",
       "FieldLink": "Compared field"
     }
@@ -317,7 +317,7 @@
     "LoopComponent": {
       "AppendIterationIdentifiers": "Add iteration identifiers",
       "CompareValue": "Value",
-      "ConditionVariableLink": "Termination condition variable",
+      "ConditionVariableLink": "Completion condition variable",
       "GroupCount": "Group count",
       "GroupDataSourceSocket": "Socket containing columns to group",
       "GroupProcessingKind": "Type of batch processing",
@@ -428,7 +428,7 @@
       "AbsentDataPoints": "Absent data points for position termination",
       "AbsentPeriodFraction": "Absent periods for position termination",
       "BalanceMethod": "Balance method",
-      "MaxDepthDataPoints": "Maximum number of points in each row",
+      "MaxDepthDataPoints": "Maximum number of points in each series",
       "MaxDepthPeriodFraction": "Maximum number of seasonality periods",
       "MaxRareDensity": "Point density of rare goods",
       "NoveltyPeriodFraction": "Presence periods for the new position",
@@ -485,7 +485,7 @@
       "DecimalSeparator": "Decimal separator",
       "DelimiterChar": "Column separator",
       "FormatType": "Data format",
-      "TextQualifier": "Line terminator",
+      "TextQualifier": "Text qualifier",
       "TimeFormat": "Time format",
       "TimeSeparator": "Time separator",
       "ValueFalse": "False",
@@ -549,7 +549,7 @@
       "ClearPoolOnDeactivate": "Clear pool when deactivated"
     },
     "DatabaseConfigurator": {
-      "CharacterSet": "Encoding value",
+      "CharacterSet": "Code page",
       "DatabasePath": "Connection string",
       "Direct": "Do not use DBMS client",
       "ObjectQuotes": "Configure quotes",
@@ -573,7 +573,7 @@
     },
     "SQLitePragmas": {
       "CacheSize": "Cache size",
-      "JournalMode": "Transaction log mode",
+      "JournalMode": "Transaction journal mode",
       "Synchronous": "Sync mode"
     },
     "SQLiteUniDACDatabaseConfigurator": {
@@ -598,7 +598,7 @@
       "UsageType": "Column usage type"
     },
     "TuneColumnDef": {
-      "Extension": "Custom column description extension"
+      "Extension": "Сolumn description extension"
     }
   },
   "Libraries/bgrtl/Logger": {
@@ -612,7 +612,7 @@
   },
   "Libraries/DataPartition/LearnPartition": {
     "LearnPartition": {
-      "Folds": "Cross validation deck",
+      "Folds": "Cross validation fold",
       "Iterations": "Resampling iterations",
       "KFoldsSamplingMethod": "Sampling method",
       "LearnPartitionMethod": "Partition method",
@@ -657,8 +657,8 @@
     "ImportXMLConfigurator": {
       "CompositeColumnNames": "Generate composite field captions",
       "IgnoreAbsentValues": "Allow required fields skipping",
-      "RepeatUniqueValues": "Repeat unit values",
-      "StrictValidation": "Check for strict XSD compliance",
+      "RepeatUniqueValues": "Repeat single values",
+      "StrictValidation": "Check for strict XSD validation",
       "TimeZone": "Default time zone"
     }
   },
@@ -717,8 +717,8 @@
       "ClientAuth": "Authorization to execute request",
       "ExchangeTimeOut": "Data exchange timeout (ms)",
       "IgnoreCertificateErrors": "Ignore SSL certificate errors",
-      "RequestContentType": "Content-type request type",
-      "ResponseContentType": "Content-type response type",
+      "RequestContentType": "Content-type request",
+      "ResponseContentType": "Content-type response",
       "TimeOut": "Connection timeout (ms)",
       "URL": "Service URL",
       "Verb": "Method"

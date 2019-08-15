@@ -3027,7 +3027,7 @@
       "emptyText": "Найти"
     },
     "colDetailName": {
-      "text": "Название"
+      "text": "Метка"
     },
     "colDetailValue": {
       "text": "Значение"
@@ -3424,7 +3424,7 @@
       "fieldLabel": "Тип данных"
     },
     "cbbFunctionType": {
-      "fieldLabel": "Метка функции"
+      "fieldLabel": "Метка агрегации"
     },
     "edtDisplayName": {
       "fieldLabel": "Метка"
@@ -4077,7 +4077,7 @@
       "text": "№"
     },
     "colHistogramMark": {
-      "text": "Интервал"
+      "text": "Метка"
     },
     "colHistogramPercentage": {
       "text": "%"

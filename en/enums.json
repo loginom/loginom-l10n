@@ -214,7 +214,7 @@
     },
     "BinningMethodType": {
       "$Caption": "Ranging Method",
-      "None": "<Not0>",
+      "None": "<Not defined>",
       "ExtermalBins": "External ranges",
       "Width": "Width",
       "Count": "Count",
@@ -324,13 +324,13 @@
   },
   "components/coluniondata": {
     "ColUnionDataTailsAlignType": {
-      "$Caption": "Compliance of Output Set Row Count",
+      "$Caption": "Compliance of Output Data Set Row Count",
       "CutToShortest": "With minimum set",
       "ExtendToLongest": "With maximum set",
       "UserSpecified": "Set defined"
     },
     "ColUnionRowsPaddingType": {
-      "$Caption": "Supplement to the Largest Set",
+      "$Caption": "Supplement to the Largest Data Set",
       "None": "No to supplement",
       "Repeat": "Repeat data set",
       "LastRow": "Supplement with the last row"
@@ -369,8 +369,8 @@
     "RowsDocIdenti": {
       "$Caption": "Document Identification",
       "Full": "One request for all data set",
-      "SingleRow": "One request in each input set row",
-      "ByID": "Request identifier - input set field"
+      "SingleRow": "One request in each input data set row",
+      "ByID": "Request identifier - input data set field"
     }
   },
   "components/datereform": {
@@ -846,7 +846,7 @@
       "SQLite": "SQLite"
     },
     "ObjectQuotesType": {
-      "$Caption": "Type of Quotation Marks",
+      "$Caption": "Identifier Quotes",
       "SquareBrackets": "Square brackets []",
       "DoubleQuotes": "Double quotes \"\"",
       "Apostrophes": "Apostrophes ``"
@@ -880,10 +880,10 @@
       "JournalWAL": "Write-ahead logging"
     },
     "SQLiteLikeMode": {
-      "$Caption": "LIKE Operation Mode",
-      "LikeNoCase": "Case insensitive ASCII characters",
-      "LikeCase": "Case sensitive",
-      "LikeUnicode": "Case insensitive"
+      "$Caption": "LIKE Mode",
+      "LikeNoCase": "Case-insensitive ASCII characters",
+      "LikeCase": "Case-sensitive",
+      "LikeUnicode": "Case-insensitive"
     },
     "SQLiteLockingMode": {
       "$Caption": "Database Locking Mode",
@@ -1108,14 +1108,14 @@
     },
     "UsageType": {
       "$Caption": "Usage Type",
-      "Unspecified": "Not defined",
+      "Unspecified": "Unspecified",
       "Excluded": "Excluded",
       "Useless": "Useless",
       "Active": "Active",
       "Predicted": "Output",
       "Key": "Key",
       "Group": "Group",
-      "Value": "Parameter",
+      "Value": "Value",
       "Transaction": "Transaction",
       "Item": "Item"
     },
@@ -1197,7 +1197,8 @@
       "LeaveOneOut": "Leave One Out cross validation",
       "LeavePOut": "Leave P Out Cross Validation",
       "ShuffleSplit": "Monte Carlo",
-      "Bootstrap": "Bootstrap"
+      "Bootstrap": "Bootstrap",
+      "ExternalFolds": "Folds specified for K-fold"
     }
   },
   "Libraries/DataPartition/Partition": {
@@ -1210,8 +1211,8 @@
     "TestPriorityPosition": {
       "$Caption": "Test Set Priority",
       "Default": "Defined by algorithm",
-      "Begin": "At the set beginning",
-      "End": "At the set end"
+      "Begin": "Set start",
+      "End": "Set end"
     }
   },
   "Libraries/DataSampling/Sampling": {
@@ -1626,7 +1627,7 @@
     },
     "CubeColumnWidthMode": {
       "$Caption": "Column Width Change Mode",
-      "EqualCases": "Equal fact width",
+      "EqualCases": "Equal measure width",
       "EqualAll": "Equal column width"
     },
     "CubeFunctionType": {
@@ -1645,7 +1646,7 @@
       "CustomValue": "Value"
     },
     "CubeGridCasePosition": {
-      "$Caption": "Position of Facts",
+      "$Caption": "Position of Measures",
       "Cols": "In columns",
       "Rows": "In rows"
     },
@@ -1811,7 +1812,7 @@
       "FuzzyLogicEqual": " ~ "
     },
     "MetaDataNodeType": {
-      "$Caption": "Metadata Type Names",
+      "$Caption": "Metadata Types",
       "Item": "Item",
       "ComDimList": "Dimensions",
       "ProcList": "Processes",

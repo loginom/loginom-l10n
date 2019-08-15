@@ -1813,7 +1813,7 @@
     "Yes": "Да"
   },
   "viewers/cube/PivotGrid": {
-    "CaseInvite": "Перенесите поля в область строк, столбцов и фильтров, перетащив из левого списка доступных полей или нажав кнопку \"+\""
+    "CaseInvite": "Перенесите поля в область строк, столбцов или фильтров, перетащив из левого списка доступных полей или нажав кнопку \"+\""
   },
   "viewers/LockableView": {
     "LockMaskText": "Узел заблокирован"
@@ -1904,8 +1904,8 @@
     "RightOutlier": "Наибольший выброс",
     "RightWhisker": "Наблюдаемый максимум",
     "SliderTipFmt": "{0}: {1}",
-    "SliderTipMax": "макс.",
-    "SliderTipMin": "мин.",
+    "SliderTipMax": "макс",
+    "SliderTipMin": "мин",
     "TuneColumnsLabelTitle": "Метка поля",
     "TuneColumnsTitle": "Настройка полей",
     "TuneStatisticsLabelTitle": "Показатель статистики",

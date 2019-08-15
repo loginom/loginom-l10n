@@ -153,7 +153,7 @@
     "ErrBindingOperationExtensionCollision": "Types of \"%s\" binding extensions and \"%s\" operations do not match",
     "ErrCantDefineTransmissionPrimitive": "Failed to define data exchange primitive for %s operation, %s port type",
     "ErrFaultMustHaveExactlyOnePart": "Error defining %s operation, %s port type: fault message must contain exactly one part",
-    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation0/>\" in \"%s\" binding HTTP declaration for \"%s\" operation ",
+    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation/>\" in \"%s\" binding HTTP declaration for \"%s\" operation ",
     "ErrHttpPartReferencesComplexElement": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to %s{%s} XSD schema element related to the complex type",
     "ErrHttpPartReferencesComplexType": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to the complex type of %s{%s} XSD schema",
     "ErrInputMimeTypeContainsWildcard": "The incoming service message content must relate to the specific MIME type (actually - %s)",
@@ -180,7 +180,7 @@
     "ErrSchemaDoesNotContainPartElement": "\"%s\" part references \"%s\"{\"%s\"} element not found in XSD schema",
     "ErrSchemaDoesNotContainPartType": "\"%s\" part references \"%s\"{\"%s\"} type not found in XSD schema",
     "ErrSeveralElementsNotAllowed": "More than one <%s/> element not allowed in WSDL description",
-    "ErrSoapActionRequiredForHTTP": "It is required to specify \"<soap:operation0/>\" extension element with soapAction attribute for SOAP HTTP transport operations",
+    "ErrSoapActionRequiredForHTTP": "It is required to specify \"<soap:operation/>\" extension element with soapAction attribute for SOAP HTTP transport operations",
     "ErrSoapBodyInNonSoapMessage": "\"%s\" message referenced by \"%s\" operation of \"%s\" binding is not SOAP message but it contains SOAP body",
     "ErrSoapDocumentEncoded": "\"Document\" style SOAP messages with \"encoded\" usage type are not supported",
     "ErrSoapDocumentLiteralPartRefersToType": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema type is assigned to document style SOAP message with literal usage type",
@@ -1272,7 +1272,7 @@
     "FitH0ProcessCaption": "Training: without Hidden Layers",
     "FitH1DecayProcessCaption": "Training: One Hidden Layer = %d Neurons; Decay Degree = %.1f",
     "FitH1ProcessCaption": "Training: one hidden = %d layer of neurons",
-    "FitH2DecayProcessCaption": "Training: First Hidden Layyer = %d Neurons; Second Hidden Layer = %d Neurons; Decay Degree = %.1f",
+    "FitH2DecayProcessCaption": "Training: First Hidden Layer = %d Neurons; Second Hidden Layer = %d Neurons; Decay Degree = %.1f",
     "FitH2ProcessCaption": "Training: First Hidden Layyer = %d Neurons; Second Hidden Layer = %d Neurons",
     "HLSize": "Number of neurons in the hidden layers (same)",
     "Nh1": "Number of neurons in the first hidden layer",
@@ -2354,7 +2354,7 @@
     "ConfigureNodeCaptionDef": "Node Configured",
     "ConfigureNodePortCaption": "Configured \"%s\" port of \"%s\" node",
     "ConfigureNodePortCaptionDef": "Node Port Configured",
-    "DeleteConnectionCaption": "Delete \"%s\" Connection",
+    "DeleteConnectionCaption": "Delete \"%s\" connection",
     "DeleteConnectionCaptionDef": "Delete Connection",
     "DeleteLinkCaption": "\"%s.%s\" - \"%s.%s\" Link Deleted",
     "DeleteLinkCaptionDef": "Delete Link",
@@ -2375,7 +2375,7 @@
   "Libraries/Config/ConfigBackupService": {
     "ErrBackupPointRollBack": "Failed to restore point: \"%s\"",
     "ErrBackupPointUpdate": "Failed to update point: \"%s\"",
-    "ErrRollBackAggregateMesage": "Errors occurred during recovery",
+    "ErrRollBackAggregateMessage": "Errors occurred during recovery",
     "ErrRootBackupContainerFinish": "Attempt to close root recovery point"
   },
   "Libraries/Config/ConfigBinary": {
@@ -3003,11 +3003,6 @@
     "ErrDisconnectedSession": "Connection lost",
     "ErrMaxObjectIdReached": "Limit in %d values of object identifiers reached",
     "ErrUnknownInterfaceID": "Unknown interface identifier: %d"
-  },
-  "Libraries/SuperLU/SuperLU_h": {
-    "ErrExceptionOccurred": "SuperLU exception in function '%s' when calling '%s'",
-    "InputError": "Invalid parameter %d when calling '%s'",
-    "UserAbort": "SuperLU call stopped with error: '%s'"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s"

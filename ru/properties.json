@@ -463,7 +463,7 @@
   "exports/database": {
     "DBExport": {
       "ExportType": "Тип экспорта",
-      "RecordCountForCommit": "Периодичность фиксации транзакции (строк.)",
+      "RecordCountForCommit": "Периодичность фиксации транзакции (строк)",
       "TableName": "Имя таблицы"
     }
   },
@@ -555,7 +555,7 @@
       "ClearPoolOnDeactivate": "Очищать пул при деактивации"
     },
     "DatabaseConfigurator": {
-      "CharacterSet": "Значение кодировки",
+      "CharacterSet": "Кодовая страница",
       "DatabasePath": "Строка подключения",
       "Direct": "Не использовать клиент СУБД",
       "ObjectQuotes": "Настройка кавычек",

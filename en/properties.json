@@ -747,7 +747,7 @@
   },
   "Viewers/Chart/ChartColumnInfo": {
     "ChartColumnInfo": {
-      "DisplayName": "Column display name",
+      "DisplayName": "Column caption",
       "Name": "Column name"
     },
     "ChartColumnLink": {

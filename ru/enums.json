@@ -1408,7 +1408,7 @@
     "SearchCompareType": {
       "$Caption": "Тип сравнения",
       "Inside": "подстрока",
-      "AtFirst": "с начала",
+      "AtFirst": "сначала",
       "Equality": "целиком"
     },
     "SearchMode": {

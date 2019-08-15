@@ -1411,17 +1411,17 @@
     "ErrPropertyOwnerIsNil": "No interface specified",
     "ErrPropertyPathIsNil": "No property path specified"
   },
-  "ts/CustomClient": {
+  "rpc/CustomClient": {
     "ErrConnectToServerEx": "Failed to connect to server.\nError: {0}.",
     "ErrSocketNotPrepared": "Socket is not prepared."
   },
-  "ts/EnumTypeInfoService": {
+  "rpc/EnumTypeInfoService": {
     "ErrEnumTypeInfoServiceManagerNotInstalled": "Enumeration metadata service manager not initialized",
     "ErrEnumTypeInfoServiceNotInit": "Enumeration metadata service not initialized",
     "ErrEnumTypeNotFound": "Enumeration not found in client: \"{0}\"",
     "ErrQualifiedNameNotFound": "Failed to get enumeration identifier"
   },
-  "ts/Exceptions": {
+  "rpc/Exceptions": {
     "ErrAbstractFunction": "Abstract method \"{0}\" was called",
     "ExceptionClassFmt": "EXCEPTION CLASS: {0}",
     "InnerExceptionTitle": "INTERNAL EXCEPTIONS:",
@@ -1430,25 +1430,25 @@
     "SenderNameFmt": "SENDER: {0}",
     "StackTraceFmt": "TRACE:\n{0}"
   },
-  "ts/ExecutionContext": {
+  "rpc/ExecutionContext": {
     "ErrExecutionContextNotInstalled": "No reference to execution context provided",
     "ErrExternalExecutionContextManagerNotInstalled": "External execution context manager not installed"
   },
-  "ts/Int64": {
+  "rpc/Interfaces": {
+    "ErrObjectIsNil": "Null object reference",
+    "ErrUpdatableNotSupported": "IBGUpdatable interface is not supported by object"
+  },
+  "rpc/QueueException": {
+    "ErrQueueExceptionEndUnexpected": "Attempt to end the queued exception block handling without its start",
+    "ErrUnknownInnerExceptionIsIgnored": "Internal exception of unknown {0} type ignored"
+  },
+  "rpc/rtl/Int64": {
     "ErrInvalidInt64": "\"{0}\" is not valid long integer value",
     "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value",
     "ErrOutOfRangeInt64": "Number is outside long integer value range",
     "ErrOutOfRangeUInt64": "Number is outside unsigned long integer value range"
   },
-  "ts/Interfaces": {
-    "ErrObjectIsNil": "Null object reference",
-    "ErrUpdatableNotSupported": "IBGUpdatable interface is not supported by object"
-  },
-  "ts/QueueException": {
-    "ErrQueueExceptionEndUnexpected": "Attempt to end the queued exception block handling without its start",
-    "ErrUnknownInnerExceptionIsIgnored": "Internal exception of unknown {0} type ignored"
-  },
-  "ts/rtl.imp": {
+  "rpc/rtl/rtl.imp": {
     "ErrInvalidEnumValue": "\"{0}\" is not valid enum value",
     "ErrInvalidFloat": "\"{0}\" is not valid floating point value",
     "ErrInvalidInt32": "\"{0}\" is not valid integer value",

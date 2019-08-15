@@ -562,13 +562,13 @@
   },
   "Libraries/bgdbrtl/MyUniDACDB": {
     "MyUniDACDatabaseConfigurator": {
-      "WaitTimeoutTransaction": "Lifetime for transaction time when inactive"
+      "WaitTimeoutTransaction": "Idle-in-transaction timeout"
     }
   },
   "Libraries/bgdbrtl/SQLiteUniDACDB": {
     "SQLiteFunctionDefs": {
       "CaseChangeUnicode": "lower, upper for UNICODE",
-      "LikeMode": "LIKE operation mode",
+      "LikeMode": "LIKE mode",
       "NoCaseUnicode": "Regard NOCASE as UNICODE"
     },
     "SQLitePragmas": {

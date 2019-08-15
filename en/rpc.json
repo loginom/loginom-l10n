@@ -1,7 +1,14 @@
 {
+  "JS/JsDictionaryExtensions": {
+    "ErrKeyAlreadyExists": "An item with this key already exists in the dictionary"
+  },
   "Net/BaseSocketMessageTransport": {
     "ErrIncorrectMessageSize": "Incorrect message size: {0}",
     "ErrIncorrectServerResponse": "Incorrect server response received"
+  },
+  "Net/Extended80Rec": {
+    "ErrOverflow": "Overflow while attempting to cast value to the double type",
+    "ErrWrongByteCount": "The byte array length for TBGExtended80Rec must be exactly 10 bytes"
   },
   "Net/MessageTransport": {
     "ErrConnectionFailure": "Remote computer connection lost"
@@ -9,7 +16,15 @@
   "Net/MessageTransportAsync": {
     "ErrConnectionFailure": "Remote computer connection lost"
   },
+  "Net/PropertySelector": {
+    "ErrInvalidCountSelector": "countSelector must be of collection type => collection.Count",
+    "ErrInvalidItemSelector": "itemSelector must be of (collection, i) type => collection[i]",
+    "ErrInvalidSelector": "selector must be of source type => new { source.Prop1, source.Prop2 ... }",
+    "ErrNoPropertyAttribute": "{0} property does not contain RemotePropertyAttribute",
+    "ErrPropertySelectorValueTypeNotSupported": "{0} type of properties not supported"
+  },
   "Net/RemoteMessageData": {
+    "ErrArrayLevelNotSupported": "Arrays nesting level above {0} is not supported",
     "ErrMessageSizeIncrementCannotBeNegative": "Message size increment cannot be negative",
     "ErrMessageSizeOverflow": "Maximum message size exceeded",
     "ErrUnknownInterfaceGUID": "Interface with {0} identifier not registered",
@@ -19,20 +34,37 @@
     "ErrUnsupportedParameterType": "Unsupported parameter type"
   },
   "Net/ServerRemoteObjects": {
+    "ErrQueryInterfaceNotAllowed": "You cannot query interface with {0} identifier via QueryInterface",
     "ErrUnknownMethodID": "Unknown method identifier {0}"
   },
   "Net/Session": {
+    "ErrCannotAddSessionToClosingSessionHost": "You cannot add a new session while SessionHost closing",
+    "ErrDifferentRpcExceptionDelegateAlreadyRegistered": "Another Rpc exception handler already registered",
+    "ErrDifferentRpcVerionAlreadyRegistered": "Another RPC version number already registered",
     "ErrDisconnectedSession": "Connection lost",
     "ErrDisconnectedSessionClientOnly": "Server connection lost",
+    "ErrIncorrectMainServerObjectInterfaceID": "Invalid interface identifier of the main server object received",
     "ErrInvalidObjectID": "Invalid object identifier: {0}",
     "ErrInvalidResponseMessageType": "Invalid response message type: {0}",
     "ErrMainServerObjectNotRegistered": "The main server object is not registered",
     "ErrMaxObjectIdReached": "Limit in {0} values of object identifiers reached",
+    "ErrRpcVersionMismatch": "Client of {0} version cannot get connected to the server of {1} version",
     "ErrUnknownInterfaceID": "Unknown interface identifier: {0}"
   },
   "Net/SessionThreaded": {
+    "ErrIncorrectMainServerObjectInterfaceID": "Invalid interface identifier of the main server object received",
     "ErrInvalidMessageSignature": "Unsupported parameter type",
     "ErrUnknownInterfaceID": "Unknown interface identifier: {0}"
+  },
+  "Net/SparseArray": {
+    "ErrCannotAddDefaultValue": "You cannot add a default type value to the sparse array",
+    "ErrItemNotExist": "Item with {0} index does not exist"
+  },
+  "Net/System": {
+    "ErrGetProxyObjectIdCachedDelegateAlreadyAssigned": "GetProxyObjectIdCached delegate already initialized",
+    "ErrGetProxyObjectIdDelegateAlreadyAssigned": "GetProxyObjectId delegate already initialized",
+    "ErrIsDisposedProxyObjectDelegateAlreadyAssigned": "IsDisposedProxyObject delegate already initialized",
+    "ErrIsProxyObjectIdCachedDelegateAlreadyAssigned": "IsProxyObjectIdCached delegate already initialized"
   },
   "Net/WebSocketMessageTransport": {
     "ErrConnectionClosed": "Connection with remote computer closed",

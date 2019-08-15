@@ -756,7 +756,7 @@
   "exports/dbexport/DBCreateTableDialog": {
     "DublicateFieldName": "A field with the same name already exists",
     "ErrCreateTable": "Error occurred while creating the table",
-    "ErrFieldSize": "{0} field size must exceed 0",
+    "ErrFieldSize": "Size of {0} field must be more than 0",
     "ErrTableName": "Invalid table name",
     "InvalidFieldNameChar": "Invalid character in field name"
   },
@@ -1179,7 +1179,7 @@
     "SheetNotFoundByNumberFmt": "Sheet No {0} not found in Excel workbook"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
-    "QueryPlaceholder": "Enter request text"
+    "QueryPlaceholder": "Enter query text"
   },
   "imports/onec8query/OneC8QueryImportWizard": {
     "NoConnection": "No connection",
@@ -1461,7 +1461,7 @@
     "WarnViewerObjectDeleted": "Processing of \"{0}\" visualizer status change event was canceled because the visualizer was asynchronously deleted"
   },
   "viewers/browse/BrowseFormat": {
-    "ActColInAllInvisibleTip": "Invisible",
+    "ActColInAllInvisibleTip": "Hidden",
     "ActColInAllVisibleTip": "Visible",
     "ActHideAll": "Hide all fields",
     "ActShowAll": "Show all fields",
@@ -1485,8 +1485,8 @@
   "viewers/browse/BrowseView": {
     "ErrExportFailed": "Failed to export Table:\n{0}",
     "ErrExportFormFailed": "Failed to export Form:\n{0}",
-    "ErrMaxPage": "You cannot set page larger than the last one",
-    "ErrMinPage": "You cannot set page smaller than the first one",
+    "ErrMaxPage": "There is no page with the index larger than the last index",
+    "ErrMinPage": "There is no page with index smaller than the starting index",
     "ErrOverRowLimitFmt": "You cannot set row index more than {0}",
     "ErrPageIndexOutOfRangeFmt": "Invalid {0} page index",
     "ErrRowIndexOutOfRangeFmt": "Invalid {0} row index",
@@ -1502,7 +1502,7 @@
     "FormatButtonText": "Format",
     "FormatTitle": "Format",
     "GoToLineApplyActionText": "Go to",
-    "GoToLineTitle": "Go to Line",
+    "GoToLineTitle": "Go to Row",
     "LastTableRowAction": "Last row",
     "NameRecNoField": "RecNo",
     "NameRowNoField": "RowNo",
@@ -1736,9 +1736,9 @@
     "FilterDisabled": "Filter disabled"
   },
   "viewers/cube/CasesTunePanel": {
-    "WarnDependencyCalcCase": "• another calculated measure dependent on it will become inactive",
+    "WarnDependencyCalcCase": "• the calculated measure dependent on the measure will become inactive",
     "WarnDependencyCaseFilter": "• the measure filter will be disabled as it uses this measure",
-    "WarnDependencyPrefix": "On calculated fact delete, the following changes in the Cube state will occur:",
+    "WarnDependencyPrefix": "On calculated measure delete, the following changes in the Cube state will occur:",
     "WarnDependencySuffix": "Do you want to continue action?"
   },
   "viewers/cube/CubeDetailingController": {
@@ -1888,16 +1888,16 @@
     "TPRShort": "TPR"
   },
   "viewers/statistics/StatView": {
-    "CountOfStrings": "Data strings count: ",
+    "CountOfStrings": "Row count: ",
     "ErrBounds": "Minimum more than maximum",
     "LeftOutlier": "Minimum outlier",
-    "LeftWhisker": "Minimum observed",
+    "LeftWhisker": "Sample minimum",
     "LowerQuartile": "Lower quartile",
     "Median": "Median",
     "NotAvailable": "Not available",
     "NotDefined": "Not defined",
     "RightOutlier": "Maximum outlier",
-    "RightWhisker": "Maximum observed",
+    "RightWhisker": "Sample maximum",
     "SliderTipFmt": "{0}: {1}",
     "SliderTipMax": "max",
     "SliderTipMin": "min",

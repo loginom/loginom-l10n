@@ -2753,7 +2753,7 @@
       "fieldLabel": "Connection"
     },
     "frmOneC8QueryImport": {
-      "title": "Data Request from 1C: Enterprise 8"
+      "title": "Data Query from 1C: Enterprise 8"
     }
   },
   "imports/textfile/ImportTextFileParamsWizard": {
@@ -4004,10 +4004,10 @@
       "text": "Caption"
     },
     "mnSelectHighlighted": {
-      "text": "Select highlighted"
+      "text": "Check selected"
     },
     "mnUnselectHighlighted": {
-      "text": "Unselect highlighted"
+      "text": "Uncheck selected"
     },
     "txtFilterField": {
       "emptyText": "Filter"
@@ -4044,7 +4044,7 @@
       "tooltip": "Transpose"
     },
     "chkIncludeNullValue": {
-      "boxLabel": "Include null value into histogram"
+      "boxLabel": "Show null value in histogram"
     },
     "chkRound": {
       "fieldLabel": "Round"

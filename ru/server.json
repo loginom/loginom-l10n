@@ -3763,7 +3763,7 @@
   "Viewers/Cube/CubeSummaries": {
     "CountCaseDisplayName": "Количество",
     "DefExprDisplayName": "Выражение",
-    "ErrCaseClassNotDynamic": "Факт не является динамическим",
+    "ErrCaseClassNotDynamic": "Факт не является вычисляемым",
     "ErrCaseFuncNotExist": "У факта \"%s\" отсутствует агрегация \"%s\"",
     "ErrCaseSubFuncNotExist": "У факта \"%s\" с агрегацией \"%s\" отсутствует отображение \"%s\"",
     "ErrIIDNotRegistered": "Идентификатор \"%s\" не зарегистрирован",

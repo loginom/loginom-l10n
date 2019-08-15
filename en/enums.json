@@ -338,6 +338,7 @@
   },
   "components/corranalysis": {
     "CorrAnalysisSelectionType": {
+      "$Caption": "Selection Ownership",
       "InFirstSet": "In the first set",
       "InSecondSet": "In the second set"
     },
@@ -619,8 +620,8 @@
     "DataSourceCachingMethod": {
       "$Caption": "Data Set Caching",
       "None": "Off",
-      "Complete": "While activation",
-      "Deferred": "While reference to cell",
+      "Complete": "On activation",
+      "Deferred": "On cell access",
       "CustomColumns": "Selected fields"
     }
   },
@@ -729,10 +730,10 @@
   "exports/database": {
     "DBExportType": {
       "$Caption": "Export Mode",
-      "Append": "Supplement table with data",
+      "Append": "Insert data into table",
       "Overload": "Clear table and fill with data",
       "Delete": "Delete records by key fields",
-      "Refresh": "Delete records by key fields and supplement table with data",
+      "Refresh": "Delete records by key fields and insert data into table",
       "Update": "Update existing table records"
     }
   },
@@ -877,6 +878,7 @@
       "JournalDelete": "Delete file",
       "JournalTruncate": "Truncate",
       "JournalPersist": "Header zeroing",
+      "JournalMemory": "Journal memory",
       "JournalWAL": "Write-ahead logging"
     },
     "SQLiteLikeMode": {
@@ -913,6 +915,7 @@
       "NullCount": "Null count"
     },
     "BoundMode": {
+      "$Caption": "Bound Ownership",
       "LowerInclusive": "Lower bound inclusive",
       "UpperInclusive": "Upper bound inclusive"
     },
@@ -1074,6 +1077,7 @@
       "NearestEven": "Round to the nearest even number",
       "Down": "Round down",
       "Up": "Round up",
+      "Truncate": "Truncation of fractional parts",
       "NearestMath": "Round to the nearest number"
     },
     "RowNumberer": {
@@ -1198,6 +1202,7 @@
       "LeavePOut": "Leave P Out Cross Validation",
       "ShuffleSplit": "Monte Carlo",
       "Bootstrap": "Bootstrap",
+      "ExternalShuffleSplit": "Initial partition set for bootstrap",
       "ExternalFolds": "Folds specified for K-fold"
     }
   },
@@ -1364,6 +1369,7 @@
       "$Caption": "Statistical Parameters of the Regression Model",
       "SSE": "Sum squared error",
       "ESS": "Sum of regression square",
+      "TSS": "Total sum of squares regression and squares error",
       "LL": "-2 Logarithm of the likelihood function",
       "R2": "Determination coefficient",
       "R2adj": "Adjusted determination coefficient",
@@ -1463,6 +1469,7 @@
       "Close": "Close"
     },
     "ChartMode": {
+      "$Caption": "Index type",
       "Hand": "Hand",
       "Ruler": "Ruler",
       "Pointer": "Pointer",

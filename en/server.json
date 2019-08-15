@@ -1,7 +1,7 @@
 {
   "Common/1Cv8/1Cv8Query": {
     "ErrEofArrived": "Data set end reached",
-    "ErrQueryNotActive": "Request is not active"
+    "ErrQueryNotActive": "Query is not active"
   },
   "Common/1Cv8/1Cv8SessionManager": {
     "ErrEmptyConnectionString": "Empty connection string"
@@ -1626,12 +1626,12 @@
     "DeleteFromTableNotify": "Delete data from table",
     "ErrColumnNotFound": "\"%s\" column not found in the data source",
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
-    "ErrDataSourceSelect": "No match to data source specified",
+    "ErrDataSourceSelect": "No data source mapping provided",
     "ErrDuringExportError": "Error while exporting to DB",
-    "ErrFieldForDeleteNotSelected": "No fields for which data should be deleted specified",
+    "ErrFieldForDeleteNotSelected": "No fields in which data should be deleted specified",
     "ErrFieldForUpdateNotSelected": "No fields to update specified",
     "ErrFillTable": "Failed to fill \"%s\" table",
-    "ErrKeyFieldForUpdateNotSelected": "No key field for which data should be updated specified",
+    "ErrKeyFieldForUpdateNotSelected": "No key field in which data should be updated specified",
     "ErrNotConnectedToDatabase": "No connection with database",
     "ErrSyncKeyDeletedDest": "Synchronization error: \"%s\" key field not found in the table",
     "ErrSyncKeyDeletedSource": "Synchronization error: source field not found for \"%s\" key field",
@@ -1708,7 +1708,7 @@
     "VendorDesc": "1C: Enterprise 8 - Query"
   },
   "imports/database/DBImport": {
-    "ErrExecQuery": "Error in querying database.",
+    "ErrExecQuery": "Error in query execution database.",
     "ErrNotConnectedToDatabase": "No connection with database",
     "ErrTableNotSpecified": "Database table not specified",
     "ExecQueryProcess": "Request execution",
@@ -1861,7 +1861,7 @@
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
     "DatabaseTypeName": "MS Excel (ODBC) [UniDAC]",
-    "ErrODBCExcelNotExists": "ODBC driver to connect with Excel files not installed"
+    "ErrODBCExcelNotExists": "ODBC driver for Excel files not installed"
   },
   "Libraries/bgdbrtl/UniDAC/FBUniDACDB": {
     "DatabaseTypeName": "Firebird"
@@ -1966,6 +1966,7 @@
     "ErrCannotLinkColumnsFromSameTable": "You cannot link \"%s\" and \"%s\" columns from the same table",
     "ErrColumnCanBeIncludedInOnlyOneLink": "\"%s\" column of %d table can only be part of a \"single\" link",
     "ErrLinkedColumnTypesMismatch": "\"%s\" and \"%s\" types of linked columns mismatch",
+    "ErrLinkMustContainMainTableColumn": "The main table field must be provided while link creation",
     "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
     "Link": "Link"
   },
@@ -2000,7 +2001,11 @@
     "ColumnDefs": "Column descriptions",
     "ContainedStatisticsCompute": "Calculate statistics",
     "ErrColOutOfRange": "%d column number is out of [%d; %d] range",
+    "ErrColumnDefsNotAssigned": "Field descriptions not initialized",
+    "ErrDataSourceActive": "Data set is not in closed state",
+    "ErrDataSourceClosed": "Data set is not in opened state",
     "ErrDataSourceNotConfigured": "Data set not configured",
+    "ErrDataSourceNotEditing": "Data set is not in edited state",
     "ErrRowOutOfRange": "%d row number is out of [%d; %d] range",
     "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first",
     "Statistics": "Statistics"
@@ -2070,7 +2075,9 @@
     "ErrMustLessThanInt": "%d value of \"%s\" parameter must be less than %d",
     "ErrOutOfRange": "%g value of \"%s\" parameter is out of [%g; %g] range",
     "ErrOutOfRangeInt": "%d value of \"%s\" parameter is out of [%d; %d] range",
-    "ErrParamIsNull": "%s parameter must be initialized"
+    "ErrParamIsNull": "%s parameter must be initialized",
+    "ErrPropertyIsNull": "%s property must be initialized",
+    "ErrPropertyIsReadOnly": "%s property is read-only"
   },
   "Libraries/bgrtl/ExecutionContext": {
     "ErrExecutionContextAlreadyExists": "Failed to install the external execution context: context already exists",
@@ -2127,7 +2134,7 @@
     "ODSFilesDesc": "OpenDocument spreadsheet",
     "PDFFilesDesc": "PDF documents",
     "RtfFilesDesc": "Files in RTF format",
-    "SELFilesDesc": "Request files",
+    "SELFilesDesc": "Select files",
     "SHPFilesDesc": "Shape format",
     "SQBFilesDesc": "Query designer files",
     "SQLFilesDesc": "SQL files",
@@ -2204,6 +2211,8 @@
     "ErrSlimReadWriteLockDebugFinalized": "%p sinchronizer finalized"
   },
   "Libraries/bgrtl/System": {
+    "ErrInterfaceNotSupported": "%s interface not supported by object",
+    "ErrInvalidClassTypecast": "The object is not a descendant of %s class",
     "ErrInvalidGUID": "Failed to convert \"%s\" row to GUID",
     "ErrObjectIsNil": "Null object reference"
   },
@@ -2217,7 +2226,10 @@
     "ErrStreamNotAssigned": "Source data stream not initialized"
   },
   "Libraries/bgrtl/ThreadPool": {
-    "ErrCannotChangeParams": "You cannot change the thread pool parameters upon its application start"
+    "ErrCannotChangeParams": "You cannot change the thread pool parameters upon its application start",
+    "ErrJoin": "One or several subtasks failed",
+    "ErrThreadPoolDestroyed": "The task cannot be completed because the thread pool containing it has been deleted",
+    "ErrWorkItemIsNull": "Link to task object not initialized"
   },
   "Libraries/bgrtl/TimeZones": {
     "ErrCantOpenKey": "Error attempting to read %s registry key: %s (%d error code)"
@@ -2275,7 +2287,13 @@
     "Data": "Data",
     "UniqueValuesDataAlreadyInitialized": "Unique value data has already been initialized"
   },
+  "Libraries/bgrtl/UpdateHelpers": {
+    "ErrUpdateCookieInvalidOwner": "The updated object cookie belongs to another object",
+    "ErrUpdateCookieIsNil": "Attempt to perform operation with empty Cookie reference of the updated object"
+  },
   "Libraries/bgrtl/Utils": {
+    "DaysNick": "days",
+    "ErrContainerAlreadyIncludeClass": "Container already includes %s class",
     "ErrDataSourceIsNil": "No reference to %sdata source",
     "ErrDataSourceNotActive": "%s data source is not active"
   },
@@ -2309,6 +2327,7 @@
     "VariableInfosVendorMetaDesc": "variable description vendor"
   },
   "Libraries/bgrtl/Vendors": {
+    "ErrObjectNotFound": "%s %s does not exist in the identifier list",
     "VendorGroupMetaDesc": "vendor group",
     "VendorMetaDesc": "vendor"
   },
@@ -2756,14 +2775,23 @@
     "ErrActivateModelNodes": "Error occurred while activating nodes",
     "ErrAllNodesLocked": "All workflow nodes locked",
     "ErrComponentNotInitialized": "Base component not initialized",
+    "ErrModelHasLockedNodes": "Workflow contains %d locked nodes",
     "ErrModelNodeAlreadyInitialized": "Node already initialized",
+    "ErrMultipleVariablesFound": "Multiple variables with \"%s\" name found ",
     "ErrNodeConfigNotInitialized": "Node configuration not initialized",
     "ErrNodeIsNoMemberOfModel": "Node does not belong to the workflow",
     "ErrNodeLocked": "\"%s\" node is blocked",
+    "ErrNodeNotFoundInModel": "The requested node does not belong to the workflow",
     "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
+    "ErrParentProcessError": "Error in parent process",
     "ErrPortMismatch": "Incompatible component vendor: node port list does not match",
+    "ErrPortParentIsNil": "Link to the node port is not included into list",
+    "ErrPublishedNodeNameIsEmpty": "No published node name specified",
     "ErrSocketNotConfigured": "Socket not configured",
+    "ErrUnableToLoadNodeConfig": "Failed to load the node configuration",
+    "ErrVariableNamesAndValuesCountMustBeEqual": "Number of names and variables values must be the same",
     "ErrVariableNotFound": "Variable under \"%s\" name not found",
+    "ErrVendorMalfunction": "\"%s\" node component malfunctioned",
     "ExplodeGenericModel": "Expanded \"%s\" supernode",
     "Left": "Left",
     "LogActivateNodeStart": "Activating \"%s\" node",
@@ -2929,6 +2957,24 @@
   "Libraries/PropManager/CommonPropBinder": {
     "ErrMainInterfaceIsNil": "Root element interface not set or removed"
   },
+  "Libraries/PropManager/InterfacePropManager": {
+    "ErrCantAccessPropertyValue": "Failed to get access to value of \"%s\" property",
+    "ErrFindInterfaceDublicate": "Interface duplicate found in metadata: \"%s\"",
+    "ErrGetValueOutOfBounds": "Value of \"%s\" property is not in the range of allowable values of the requested type",
+    "ErrGuidNotFound": "\"%s\" interface not found in metadata",
+    "ErrIncorrectIndexDataType": "\"%s\" property has incorrect indexer type",
+    "ErrInterfaceNameNotFound": "Interface with \"%s\" name not registered",
+    "ErrInterfaceParentNotFound": "Parent interface \"%s\" not found",
+    "ErrInvalidMetadataResource": "Error reading metadata from \"%s\" resource",
+    "ErrInvalidUTFInt": "Error reading integer packed number",
+    "ErrManagerNotInitialized": "Interface property manager not initialized",
+    "ErrParentNotInitialized": "Not initialized parent of \"%s.%s\" interface",
+    "ErrReferenceIsNil": "Interface reference not initialized",
+    "ErrReferenceNotFound": "Failed to find the implemented interface",
+    "ErrSetValueOutOfBounds": "Set value \"%d\" of  \"%s\" property is not in the range of allowable values",
+    "ErrVaiantTypeNotFound": "No \"%s\" property in metadata for \"%s.%s\" interface",
+    "ErrValueOutOfRange": "\"%d\" value is not in the range of allowable values of \"%s\" type"
+  },
   "Libraries/Regression/DataSourceRegressionModelComponentEngine": {
     "ErrNoModel": "Model is not configured. It is required to train the node before its application",
     "ErrOutputColumnInvalid": "Invalid output column",
@@ -3000,6 +3046,7 @@
     "ErrUnknownMethodID": "Unknown method identifier: %d"
   },
   "Libraries/rpc/Session": {
+    "ErrDifferentRpcExceptionProcAlreadyRegistered": "Another Rpc exception handler already registered",
     "ErrDisconnectedSession": "Connection lost",
     "ErrMaxObjectIdReached": "Limit in %d values of object identifiers reached",
     "ErrUnknownInterfaceID": "Unknown interface identifier: %d"
@@ -3038,8 +3085,11 @@
     "ErrCannotSaveReadOnlyPackage": "You cannot save %s read-only package",
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
+    "ErrEncryptedPackage": "Encrypted package \"%s\" cannot be opened to be viewed and edited",
     "ErrFailedToRestorePackage": "Failed to restore %s package",
+    "ErrFileAlreadyEditing": "You cannot save package in \"%s\" file. This file has already been used by another process",
     "ErrFileNameNotSpecified": "No file name specified",
+    "ErrInvalidModelLockCookieOwner": "Invalid node lock Cookie owner specified",
     "ErrInvalidPath": "Invalid file path: \"%s\"",
     "ErrModelNodeNotFound": "Node %s not found",
     "ErrModelNodeNotPublished": "Node %s published",
@@ -3049,7 +3099,13 @@
     "ErrPackageNotFoundByFileName": "Failed to find %s package",
     "ErrPackageRestoreErrors": "Errors occurred while restoring %s package",
     "ErrPublishedModelNodeNotFound": "Failed to find published node with %s identifier",
+    "ErrPublishedNodeNameIsEmpty": "No name for published node with \"%s\" caption specified",
+    "ErrSaveAsAlreadyOpenedPackage": "You cannot save package in \"%s\" file. The package with such file has already been opened in the current session.",
+    "ErrSavePackagePermissionDenied": "No appropriate rights to save package with %s name",
     "ErrSessionAlreadyContainsPackage": "%s package already open in the current session",
+    "ErrSessionBackupAlreadyDeleted": "This session backup has already been deleted by another client from the current account",
+    "ErrSessionBackupAlreadyRestored": "This session backup has already been restored by another client from the current account",
+    "ErrSessionBackupModified": "This session backup has already been changed by another client from the current account",
     "FileNames": "File names",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s started",
@@ -3073,11 +3129,27 @@
     "ErrInvalidPasswordHashInConfig": "Configuration file contains invalid password hash",
     "ErrInvalidUserNameOrPassword": "Invalid username or password",
     "ErrLeadingOrTrailingWhitespaceInPassword": "Password must not begin or end with a space",
+    "ErrNoUsersWithAdminPrivileges": "There are no users with admin privileges",
     "ErrUserAlreadyDeleted": "User already deleted",
     "ErrUserHasActiveSessions": "%s user has active sessions",
-    "ErrUserNameConflictsWithSharedDirectory": "Username conflicts with %s shared directory name"
+    "ErrUserNameConflictsWithSharedDirectory": "Username conflicts with %s shared directory name",
+    "ErrUserNameIsReserved": "%s identifier has already been reserved and it cannot be used as a username",
+    "ErrUserNameMustBeValidIdentifier": "Username must be a valid identifier",
+    "LogAddGroup": "%s group added",
+    "LogAddUser": "%s user added",
+    "LogDeleteGroup": "%s group deleted",
+    "LogDeleteUser": "%s user deleted",
+    "User": "User",
+    "UserMetaDesc": "User"
   },
   "Studio/Server/BatchLauncher/BatchLauncher": {
+    "CommandLineFmt": "Usage: %s <keys>",
+    "ErrConnectionError": "Server connection error",
+    "ErrExecutionError": "Batch execution error",
+    "ErrInvalidCommandLineParameters": "Invalid command line parameters",
+    "ErrLostConnectionToServer": "Server connection lost",
+    "ErrUnknownCommandLineParameter": "Unknown command line parameter: %s",
+    "ErrVariablesOnlyAllowedForNode": "Variables usage is only possible if a separate node is running",
     "ExampleTitle": "Example:",
     "OptionAddressDesc": "IP address or hostname (default: %s)",
     "OptionNodeNameDesc": "Node name or GUID",
@@ -3087,7 +3159,8 @@
     "OptionSavePackageDesc": "Save package after execution",
     "OptionTeachDesc": "Retraining mode",
     "OptionUserNameDesc": "Username",
-    "Switches": "<Keys>"
+    "Switches": "<Keys>",
+    "VariableSwitchesInfo": "Any other keys are interpreted as variable names.\nFormat: <Variable_name>=\n<Variable_value>"
   },
   "Studio/Server/ServiceConsts": {
     "ServiceDisplayName": "LoginomServer"
@@ -3095,6 +3168,7 @@
   "Studio/SharedDirectories": {
     "ErrSharedDirectoryAlreadyDeleted": "Shared directory already deleted",
     "ErrSharedDirectoryNameConflictsWithUser": "Username conflicts with %s shared directory name",
+    "ErrSharedDirectoryNameIsReserved": "%s identifier has already been reserved and it cannot be used as a shared directory name",
     "ErrSharedDirectoryNameMustBeValidIdentifier": "The shared directory name must be a valid identifier",
     "LogAddDirectory": "%s shared directory created",
     "LogDeleteDirectory": "%s shared directory deleted",
@@ -3102,6 +3176,7 @@
   },
   "Studio/SocketDeductorServerSettings": {
     "Bind": "Address binding",
+    "PingPeriod": "Client connection check period",
     "Port": "TCP port",
     "SSLCertificateFile": "Certificate file name",
     "SSLPrivateKeyFile": "Private key file name",
@@ -3222,9 +3297,9 @@
   },
   "Viewers/Cube/CubeDetailing": {
     "DetailingProcessCaption": "\"%s\" detailing by [%d, %d] cell",
-    "ErrCubeScopeMissing": "Failed to get Cube context when creating detailing visualizer",
-    "ErrDetailingViewDataSource": "Failed to prepare data source for Cube detailing visualizer \"%s\"",
-    "ErrDetailingViewExecution": "Error while executing \"%s\" Cube detailing visualizer",
+    "ErrCubeScopeMissing": "Failed to get the Cube context when creating detailing visualizer",
+    "ErrDetailingViewDataSource": "Failed to prepare data source for the Cube detailing visualizer \"%s\"",
+    "ErrDetailingViewExecution": "Error while executing the Cube detailing visualizer \"%s\"",
     "ErrDetailingViewInitialization": "Error while initialization of \"%s\" Cube detailing visualizer",
     "ManagerBrowse": "Table",
     "ManagerStatistics": "Statistics",
@@ -3258,7 +3333,7 @@
   "Viewers/Cube/CubeSummaries": {
     "CountCaseDisplayName": "Count",
     "DefExprDisplayName": "Expression",
-    "ErrCaseClassNotDynamic": "Fact is not dynamic",
+    "ErrCaseClassNotDynamic": "Measure is not calculated",
     "ErrCaseFuncNotExist": "No \"%s\" aggregation for \"%s\" measure",
     "ErrCaseSubFuncNotExist": "\"%s\" measure with \"%s\" aggregation does not display \"%s\"",
     "ErrIIDNotRegistered": "\"%s\" identifier not registered",
@@ -3418,13 +3493,20 @@
   },
   "Warehouse2/DBMDEngine": {
     "ErrDimensionFKIsNull": "Link to \"%s\" dimension not found.\nThe foreign key value not specified.",
-    "ErrNotFoundVersionInfo": "Failed to read version information about Deductor Warehouse version.\n%s"
+    "ErrDimensionFKNotFound": "Link to \"%s\" dimension not found.\nThe dimension with primary key \"%s\" was not found in the dimension list.",
+    "ErrNotFoundVersionInfo": "Failed to read version information about Deductor Warehouse version.\n%s",
+    "ErrProcessFKIsNull": "Link to \"%s\" process not found.\nThe foreign key value not specified.",
+    "ErrProcessFKNotFound": "Link to \"%s\" process not found.\nThe process with primary key \"%s\" was not found in the process list.",
+    "ErrSetMDItem": "Error reading metadata from DB.\nFor object with ID=%s, Name=\"%s\".\nError: %s"
   },
   "Warehouse2/Deductor/DDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse",
     "DWConnectionVendorDesc": "Connect to the Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/DDWEngine": {
+    "ErrDimensionValueIsNull": "Value of \"%s\" dimension in \"%d\" row is null. ",
+    "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (\"%d\" row).  ",
+    "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
@@ -3437,6 +3519,11 @@
     "VendorDesc": "Retrieve data from a Deductor data warehouse"
   },
   "Warehouse2/Deductor/Ver6/DW6Engine": {
+    "CommentForFieldID": "Primary key",
+    "ErrCheckProcess": "[%s] \"%s\" process must consist of at least two dimensions.",
+    "ErrDataCube": "Failed to read information about the Cube [%s] \"%s\" .\n%s",
+    "ErrDataNotLoad": "Data is not loaded to DW.\nPossible reasons:\nFirebird - spaces at the end of string dimensions;\nMS SQL - case-insensitive letters of string dimensions.\nIf data deletion is set by dimension, this data has been deleted from DW.\nError occurred while restoring constraints and indexes:\n%s",
+    "ErrRebuildCube": "Error occurred while Cube updating [%s] \"%s\" .\n%s",
     "MsgRelationTableList": "Related tables available:\n%s"
   },
   "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {

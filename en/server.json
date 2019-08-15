@@ -2106,8 +2106,13 @@
   "Libraries/bgrtl/ExtensionsStd": {
     "DisplayFormatExtensionCaption": "Display Format"
   },
+  "Libraries/bgrtl/ExternalColumnDef": {
+    "ErrColumnCantBeContinuous": "\"%s\" column of \"%s\" type cannot be continuous"
+  },
   "Libraries/bgrtl/FieldInfoLinks": {
-    "ErrLinkedFieldInfoNotFound": "Field under %s name not found"
+    "ErrLinkedFieldInfoNotFound": "Field under %s name not found",
+    "ErrLinkedFieldInfoNotSpecified": "No link to column or variable set",
+    "ErrLinkedFieldInfoTypesMismatch": "%s field type is not compatible with the source field type"
   },
   "Libraries/bgrtl/FileMask": {
     "ACCDBFilesDesc": "MS Access 2007 Database",
@@ -2162,6 +2167,7 @@
     "ErrInvalidBackupFileName": "Invalid backup file name: %s",
     "ErrInvalidCurrentDirectory": "Invalid current directory: %s",
     "ErrInvalidMountedDirectoryName": "Invalid mounted directory name: %s",
+    "ErrMountedDirectoryPathIsNotAbsolutePath": "The specified path to the mounted directory is not an absolute pat: \"%s\"",
     "ErrNoMountedDirectories": "No directories mounted",
     "ErrOpenFile": "Failed to open file: %s",
     "ErrParentFileStorageNotConnected": "Root file storage not connected",
@@ -2174,12 +2180,46 @@
     "Message": "Error"
   },
   "Libraries/bgrtl/HTML": {
+    "ErrItemAlreadyExists": "CSS item with \"%s\" name already exists",
     "ErrItemByNameNotFound": "CSS element under \"%s\" name not found",
     "ExcelSheetDefaultName": "Sheet1"
+  },
+  "Libraries/bgrtl/InterfacesScope": {
+    "ErrInitializeChild": "Error initializing context of %p object",
+    "ErrInterfacesScopeAlreadyInitialized": "Contect container already initialized",
+    "ObjectNotFound": "Context does not contain the object with %s identifier"
+  },
+  "Libraries/bgrtl/IntfClasses": {
+    "ErrAlienItem": "The processed item does not belong to the specified list"
+  },
+  "Libraries/bgrtl/IntfStream": {
+    "ErrStreamIsReadOnly": "The data stream is open in the read-only mode"
+  },
+  "Libraries/bgrtl/LinkClnt": {
+    "ErrUnLock": "UnLock method was called without Lock method"
+  },
+  "Libraries/bgrtl/LinkSrvr": {
+    "LockError": "UnLock method was called without Lock method",
+    "UpdateError": "EndUpdate method was called without BeginUpdate method"
+  },
+  "Libraries/bgrtl/MathUtils": {
+    "ErrBadMatrix": "Two-dimensional dynamic array is not rectangular matrix",
+    "ErrDeterminantIsZero": "It is impossible to calculate the inverse matrix: determinant is zero.",
+    "ErrDispersionIsZero": "It is impossible to calculate the correlation matrix:  variance of one of the values is zero",
+    "ErrRegressXYDimMismatch": "The length of X vector must equal the length of Y vector"
   },
   "Libraries/bgrtl/OperationBracketsAssist": {
     "ErrActionAlreadyBeginning": "Action has already been started",
     "ErrActionNotBeginning": "Action hasn't been started"
+  },
+  "Libraries/bgrtl/ProgressTracker": {
+    "ErrUnableAddChildToTerminatedProcess": "You cannot add subprocess to the incorrectly terminated process"
+  },
+  "Libraries/bgrtl/QueueException": {
+    "ErrAggregateExceptionMessage": "Exceptions occurred while processing",
+    "ErrGetExceptionClassFunctionAlreadyAssigned": "GetExceptionClass function already initialized",
+    "ErrGetExceptionIDFunctionAlreadyAssigned": "GetExceptionID function already initialized",
+    "ErrQueueExceptionEndUnexpected": "Attempt to end the queued exception block handling without its start"
   },
   "Libraries/bgrtl/Random": {
     "ErrMSequenceCountOutOfBounds": "The required M-sequence length must be more than 0"
@@ -2198,7 +2238,11 @@
   },
   "Libraries/bgrtl/Statistics": {
     "ComputeStatistics": "Calculate statistics",
-    "ErrDataSourceNotAssigned": "No data set reference"
+    "ErrDataSourceNotAssigned": "No data set reference",
+    "ErrNullsNotAllowed": "Missing values are prohibited (missing value in \"%s\" column)",
+    "ErrProcessKeptStatistics": "Errors occurred while calculating the list of unique values",
+    "ErrProcessKeptStatisticsNonExistentNull": "Previously missing null value was found in \"%s\" field",
+    "ErrProcessKeptStatisticsNonExistentValue": "Previously missing null value \"%s\" was found in \"%s\" field"
   },
   "Libraries/bgrtl/StatUniqueValues": {
     "ErrNotImplemented": "This functionality not implemented"
@@ -2208,12 +2252,18 @@
     "NullValue": "<Null>"
   },
   "Libraries/bgrtl/SyncObjs": {
-    "ErrSlimReadWriteLockDebugFinalized": "%p sinchronizer finalized"
+    "ErrSlimReadWriteLockDebugFinalized": "%p sinchronizer finalized",
+    "ErrSlimReadWriteLockFinalize": "%p synchronizer cannot be deleted as it has been still being used"
   },
   "Libraries/bgrtl/System": {
+    "ErrDestroyCallForbidden": "Direct call of destructor is forbidden",
+    "ErrFIsProxyObjectFunctionAlreadyAssigned": "IsProxyObject function already initialized",
+    "ErrGetProxyObjectIdFunctionAlreadyAssigned": "GetProxyObjectId Function already initialized",
+    "ErrIIDNotSupported": "Interface with %s identifier not supported by the object",
     "ErrInterfaceNotSupported": "%s interface not supported by object",
     "ErrInvalidClassTypecast": "The object is not a descendant of %s class",
     "ErrInvalidGUID": "Failed to convert \"%s\" row to GUID",
+    "ErrObjectDeleteRefCount": "You cannot delete the object of %s class due to interface links to it: %d",
     "ErrObjectIsNil": "Null object reference"
   },
   "Libraries/bgrtl/SysUtils": {
@@ -2283,11 +2333,16 @@
     "ErrEnumVendorInfoManagerNotRegistered": "Enumeration description manager not registered",
     "ErrTypeInfoVariableManagerNotRegistered": "Variable manager for %s type not registered"
   },
+  "Libraries/bgrtl/UniqueValues": {
+    "ErrNullAsValueChangeForbidden": "NullAsValue parameter value of a non-empty list of unique values cannot be changed",
+    "ErrValueAlreadyExists": "\"%s\" value already exists in the list of unique values"
+  },
   "Libraries/bgrtl/UniqueValuesData": {
     "Data": "Data",
     "UniqueValuesDataAlreadyInitialized": "Unique value data has already been initialized"
   },
   "Libraries/bgrtl/UpdateHelpers": {
+    "ErrEndUpdateUnexpected": "Attempt to complete the update process without its start",
     "ErrUpdateCookieInvalidOwner": "The updated object cookie belongs to another object",
     "ErrUpdateCookieIsNil": "Attempt to perform operation with empty Cookie reference of the updated object"
   },
@@ -2343,6 +2398,7 @@
     "ErrFileExists": "%s file already exists in the archive",
     "ErrIdentName": "File under %s name already exists in the archive",
     "ErrIndexOutOfRange": "Out of range index",
+    "ErrReopenArchive": "Failed to constantly open archive",
     "ErrReWriteLocalFileHeader": "Error updating local file header",
     "ErrWrongHMAC": "Data encryption error",
     "ErrWrongPassword": "Wrong password"
@@ -2351,7 +2407,17 @@
     "ErrDefineProperty": "Failed to set \"%s\" property",
     "ErrUnhandledPromiseRejected": "Unhandled error in Promise"
   },
+  "Libraries/ChakraCore/ChakraRunRes": {
+    "ErrResNotFound": "%s resource not found",
+    "ErrRunServiceCode": "Failed to execute service JavaScript-code (source: %s)"
+  },
+  "Libraries/ChakraCore/ChakraUtils": {
+    "ErrLibraryVersionNotFound": "%s ^%d.%d library not found"
+  },
   "Libraries/Config/Config": {
+    "ErrAttributeNotExist": "%s attribute does not exist.",
+    "ErrConfigElementAlien": "The configuration element does not belong to the specified list",
+    "ErrConfigElementByNameNotFound": "Configuration element with %s name not found",
     "ErrUnsupportedPropertyType": "Unsupported property type",
     "ErrVectorLengthOverflow": "%d array length exceeds the allowable %d limit",
     "ErrWrongElementsClass": "Invalid configuration node list class"
@@ -2387,30 +2453,58 @@
     "ErrGenericViewsNotSaved": "Failed to save visualizers of \"%s\" supernode",
     "ErrLinkIsNil": "No link set",
     "ErrModelNodeNotRestored": "Failed to restore \"%s\" node",
+    "ErrModelPackageNotExist": "The package to which the object belonged was closed",
     "ErrNodeBlocked": "\"%s\" node is blocked",
     "ErrNodeIsNil": "No node specified",
+    "ExplodeGenericCaption": "Expanded \"%s\" supernode",
+    "ExplodeGenericCaptionDef": "Expanded supernode",
+    "MoveLinkCaption": "\"%s.%s\" - \"%s.%s\" Link Moved",
     "MoveLinkCaptionDef": "Link Moved"
   },
   "Libraries/Config/ConfigBackupService": {
+    "ErrBackupManagerNotRegistered": "Class not registered for \"%s\" identifier",
+    "ErrBackupMarkerDelete": "Attempt to delete the current backup point: \"%s\"",
+    "ErrBackupPointInitialize": "Backup point initialization error:\n\"%s\"",
     "ErrBackupPointRollBack": "Failed to restore point: \"%s\"",
     "ErrBackupPointUpdate": "Failed to update point: \"%s\"",
     "ErrRollBackAggregateMessage": "Errors occurred during recovery",
     "ErrRootBackupContainerFinish": "Attempt to close root recovery point"
   },
   "Libraries/Config/ConfigBinary": {
+    "ErrInvalidUTFInt": "Error reading integer packed number",
+    "ErrUnknownConfigBinaryStream": "Unsupported configuration data stream",
     "ErrUnsupportedConfigBinaryStreamVersion": "Unsupported version of %d configuration data stream",
     "ErrUnsupportedDataType": "Unsupported configuration attribute data type"
   },
   "Libraries/Config/ConfigScheme": {
     "CountDesc": "Count",
+    "ErrAttributeByNameNotFound": "Schema attribute with \"%s\" name not found.",
     "ErrTypeByNameNotFound": "\"%s\" named type not found",
     "ItemDesc": "Item",
     "ValueDesc": "Value",
     "VarDataDesc": "Data",
     "VarTypeDesc": "Type"
   },
+  "Libraries/Config/ConfigWrappers": {
+    "ErrBaseConfigNotExists": "No base configuration when reading the derived item",
+    "ErrBaseElementGuidNotExists": "No base element for the derived collection element with %s identifier",
+    "ErrBaseElementIDNotExists": "No base element for the derived collection element with %d identifier",
+    "ErrBaseElementNameNotExists": "No base element for the derived collection element with %s name",
+    "ErrBaseElementNotExists": "No base element for the derived collection element",
+    "ErrConfigElementByNameNotFound": "Configuration item with %s name not found",
+    "ErrDuplicateSequenceItemNames": "The collection contains more than one item with %s name"
+  },
   "Libraries/Config/ConfigXML": {
+    "ErrErrorReadingAttribute": "Failed to read the value of \"%s\"attribute",
     "ErrUnsupportedDataType": "Unsupported configuration attribute data type"
+  },
+  "Libraries/Config/DelphiConfigScheme": {
+    "ErrBindedConfigSchemeTypeNotFound": "Binded configuration schema type for %s type not found",
+    "ErrConfigSchemeTypeAlreadyExist": "%s configuration schema type has already been added to the schema",
+    "ErrUnsupportedPropertyType": "Unsupported property type"
+  },
+  "Libraries/Config/LoadConfigContext": {
+    "ErrCannotLoadSomeConfigElements": "Failed to load some configuration elements"
   },
   "Libraries/DataPartition/LearnPartition": {
     "ErrNotReadyYet": "Partition method not implemented"
@@ -2418,6 +2512,7 @@
   "Libraries/DataPartition/Partition": {
     "AVLTreeBuilding": "Group data",
     "BiasedSamplingDesc": "Biased sampling",
+    "ErrInSelectFields": "No fields have been selected that define the stratum.",
     "ErrPartitionMethod": "No sampling method specified",
     "ErrSamplingRecordCount": "The selected %d row count is out of [%d; %d] range",
     "ErrSamplingRecordPercent": "The selected %d row percentage is out of [%d; %d] range",
@@ -2497,14 +2592,20 @@
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Data contains null values"
   },
+  "Libraries/Math/LagOpPolynom": {
+    "ErrPrepareLagMatrixIncorrectData": "Incorrect data passed to PrepareLagMatrix procedure"
+  },
   "Libraries/Math/SparseSolvers": {
+    "ErrCreateSolver": "Error creating sparse solver with type: %s",
     "ErrNoMatrixOrRhs": "Matrix or right side not set",
     "ErrNonSquareSuperMatrixNotSupportedYet": "Solver SuperLU does not support non-square matrices yet",
     "ErrSuperLUSolver": "SuperLU Solver procedure failed",
+    "ErrSuperMatrixNotConverted": "Matrix not converted to SuperLU format",
     "ErrWrongArrayType": "Unsupported array type: %s",
     "ErrWrongMatrixType": "Unsupported matrix type: %s"
   },
   "Libraries/Math/Splines": {
+    "ErrLinearFunctionReferencePoints": "Invalid coordinates to create linear function",
     "ErrUnknownSparseSolver": "Unknown sparse solver type: %s",
     "ErrWrongSplineType": "Invalid spline type for %s: %s algorithm"
   },
@@ -2654,6 +2755,9 @@
   "Libraries/Model/Generic/ModelOutputComponentVendor": {
     "VendorCaption": "Output Node"
   },
+  "Libraries/Model/ModelCommon": {
+    "ErrPortParentIsNil": "Link to the node port is not included into list"
+  },
   "Libraries/Model/ModelComponent": {
     "ErrInvalidComponentEngineImplementation": "Invalid component engine implementation",
     "ErrModelComponentAlreadyInitialized": "The node component already initialized",
@@ -2774,7 +2878,12 @@
     "DependentNodeOutputPort": "Dependent nodes",
     "ErrActivateModelNodes": "Error occurred while activating nodes",
     "ErrAllNodesLocked": "All workflow nodes locked",
+    "ErrCannotFindPreviousProcess": "Failed to find the previous activation process for \"%s\" node",
     "ErrComponentNotInitialized": "Base component not initialized",
+    "ErrDuplicatePublishedNodeName": "The package already contains the published node with \"%s\" name",
+    "ErrInvalidModelCriticalSectionCookie": "Invalid Cookie for critical workflow section blocking",
+    "ErrInvalidModelLockCookie": "Invalid Cookie for workflow nodes blocking",
+    "ErrInvalidModelLockCookieOwner": "Invalid owner of Cookie for workflow nodes blocking",
     "ErrModelHasLockedNodes": "Workflow contains %d locked nodes",
     "ErrModelNodeAlreadyInitialized": "Node already initialized",
     "ErrMultipleVariablesFound": "Multiple variables with \"%s\" name found ",
@@ -2804,8 +2913,11 @@
     "Top": "Top"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
+    "ErrMsgCantFindLinkNode": "You cannot define the link response port",
     "ErrMsgNoAllVendorsCollected": "Failed to get all required types of vendors",
     "ErrMsgNoSubModel": "Supernode component not created",
+    "ErrMsgNoVendorInfo": "Failed to get information on the derived component of for \"%s\" node",
+    "ErrMsgNoVendorLocator": "Failed to get port vendor enumerator",
     "ErrSubModelVendorNotCreated": "You cannot create the supernode component In the current context",
     "WarnModelNotSupportInPort": "Failed to create input port for \"%s\" port",
     "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
@@ -2906,9 +3018,18 @@
   },
   "Libraries/Normalization/NormalData": {
     "CalculateCacheProcessCaption": "Data Set Caching",
-    "InterceptDisplayName": "Intercept"
+    "ErrImpossibleToAllocate": "You cannot allocate memory for cached normalized data source",
+    "ErrNotEnoughCache": "Insufficient cache size to store normalized data string",
+    "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
+    "ErrUnexpectedEndUpdate": "EndUpdate call without corresponding BeginUpdate",
+    "InterceptDisplayName": "Intercept",
+    "NormDSTypeNotSupported": "Unsupported type of the requested normalized data set"
+  },
+  "Libraries/Normalization/NormalDataFactory": {
+    "ErrMultNormTypeWrong": "Invalid multiplied factor type"
   },
   "Libraries/Normalization/Normalizers": {
+    "ErrInvalidDenormCode": "You cannot denormalize the discrete field value",
     "ErrNotImplemented": "This functionality not implemented",
     "ErrRefIdRequired": "The reference category used in the normalizer is not defined",
     "ErrWrongDiscreteIndexRange": "Prenormalized index: %d is out of allowable [%d ; %d] range",
@@ -2952,10 +3073,13 @@
   "Libraries/Optimization/Optimizer": {
     "ErrMethodAlreadyRegistered": "%s method implementation already registered",
     "ErrMethodNotImplemented": "%s method not implemented",
-    "ErrStepIsNull": "Another strategy step not specified"
+    "ErrStepIsNull": "Another strategy step not specified",
+    "ErrUnsupportedConstraint": "%s method does not support %s constraint type"
   },
   "Libraries/PropManager/CommonPropBinder": {
-    "ErrMainInterfaceIsNil": "Root element interface not set or removed"
+    "ErrCantFindIntfEditor": "Failed to find interface editor",
+    "ErrMainInterfaceIsNil": "Root element interface not set or removed",
+    "ErrNotCompatibleDataTypes": "Property and variable types are not compatible"
   },
   "Libraries/PropManager/InterfacePropManager": {
     "ErrCantAccessPropertyValue": "Failed to get access to value of \"%s\" property",
@@ -2963,6 +3087,7 @@
     "ErrGetValueOutOfBounds": "Value of \"%s\" property is not in the range of allowable values of the requested type",
     "ErrGuidNotFound": "\"%s\" interface not found in metadata",
     "ErrIncorrectIndexDataType": "\"%s\" property has incorrect indexer type",
+    "ErrIndexerCountNotFound": "No \"%s\" property in metadata for \"%s.%s\" interface",
     "ErrInterfaceNameNotFound": "Interface with \"%s\" name not registered",
     "ErrInterfaceParentNotFound": "Parent interface \"%s\" not found",
     "ErrInvalidMetadataResource": "Error reading metadata from \"%s\" resource",
@@ -2988,6 +3113,9 @@
     "RegressionOutputVariables": "Summary",
     "RegressionParams": "Regression parameters",
     "RegressionTrainingResults": "Training results"
+  },
+  "Libraries/Regression/Regression": {
+    "ErrWrongRegressionParamsConstructor": "Invalid regression parameter constructor used"
   },
   "Libraries/Regression/RegressionModel": {
     "ApplyModelProcessCaption": "Model Application",
@@ -3046,16 +3174,27 @@
     "ErrUnknownMethodID": "Unknown method identifier: %d"
   },
   "Libraries/rpc/Session": {
+    "ErrCannotAddSessionToClosingSessionHost": "You cannot add a new session while SessionHost closing",
     "ErrDifferentRpcExceptionProcAlreadyRegistered": "Another Rpc exception handler already registered",
+    "ErrDifferentRpcVerionAlreadyRegistered": "Another RPC version number already registered",
     "ErrDisconnectedSession": "Connection lost",
+    "ErrIncorrectMainServerObjectInterfaceID": "Invalid interface identifier of the main server object received",
+    "ErrInvalidObjectID": "Invalid object identifier: %d",
+    "ErrMainServerObjectNotRegistered": "The main server object is not registered",
     "ErrMaxObjectIdReached": "Limit in %d values of object identifiers reached",
+    "ErrMethodHasOutputParameters": "%s method contains output parameters",
+    "ErrRpcVersionMismatch": "Client of %s version cannot get connected to the server of %s version",
     "ErrUnknownInterfaceID": "Unknown interface identifier: %d"
+  },
+  "Libraries/rpc/WebSocketRemoteServer": {
+    "ErrSSLChangeAfterStart": "SSL parameters cannot be changed after server start"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
-    "WSDLClientConnectionVendorCaption": "Web Service"
+    "WSDLClientConnectionVendorCaption": "Web Service",
+    "WSDLClientConnectionVendorDesc": "Connection to the web service specified by WSDL document"
   },
   "Libraries/XSDFilesConnection/XSDFilesConnection": {
     "ErrLoadXSD": "Error loading XSD files"
@@ -3085,6 +3224,7 @@
     "ErrCannotSaveReadOnlyPackage": "You cannot save %s read-only package",
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
+    "ErrDuplicatePublishedNodeName": "The package already contains more than one published node with \"%s\" name",
     "ErrEncryptedPackage": "Encrypted package \"%s\" cannot be opened to be viewed and edited",
     "ErrFailedToRestorePackage": "Failed to restore %s package",
     "ErrFileAlreadyEditing": "You cannot save package in \"%s\" file. This file has already been used by another process",
@@ -3100,6 +3240,7 @@
     "ErrPackageRestoreErrors": "Errors occurred while restoring %s package",
     "ErrPublishedModelNodeNotFound": "Failed to find published node with %s identifier",
     "ErrPublishedNodeNameIsEmpty": "No name for published node with \"%s\" caption specified",
+    "ErrPublishedPackageNotFound": "Failed to find the published package with %s name and %s version",
     "ErrSaveAsAlreadyOpenedPackage": "You cannot save package in \"%s\" file. The package with such file has already been opened in the current session.",
     "ErrSavePackagePermissionDenied": "No appropriate rights to save package with %s name",
     "ErrSessionAlreadyContainsPackage": "%s package already open in the current session",
@@ -3300,7 +3441,7 @@
     "ErrCubeScopeMissing": "Failed to get the Cube context when creating detailing visualizer",
     "ErrDetailingViewDataSource": "Failed to prepare data source for the Cube detailing visualizer \"%s\"",
     "ErrDetailingViewExecution": "Error while executing the Cube detailing visualizer \"%s\"",
-    "ErrDetailingViewInitialization": "Error while initialization of \"%s\" Cube detailing visualizer",
+    "ErrDetailingViewInitialization": "Error while initialization of the Cube detailing visualizer \"%s\" ",
     "ManagerBrowse": "Table",
     "ManagerStatistics": "Statistics",
     "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" visualizer configuration of the Cube detailing"
@@ -3523,8 +3664,12 @@
     "ErrCheckProcess": "[%s] \"%s\" process must consist of at least two dimensions.",
     "ErrDataCube": "Failed to read information about the Cube [%s] \"%s\" .\n%s",
     "ErrDataNotLoad": "Data is not loaded to DW.\nPossible reasons:\nFirebird - spaces at the end of string dimensions;\nMS SQL - case-insensitive letters of string dimensions.\nIf data deletion is set by dimension, this data has been deleted from DW.\nError occurred while restoring constraints and indexes:\n%s",
-    "ErrRebuildCube": "Error occurred while Cube updating [%s] \"%s\" .\n%s",
-    "MsgRelationTableList": "Related tables available:\n%s"
+    "ErrRebuildCube": "Error occurred while the Cube updating [%s] \"%s\" .\n%s",
+    "MsgMoreLengthName": "Too long name of \"%s\" field.\nErrors may occur when executing SQL queries to DW.",
+    "MsgMoreLengthPrefix": "Too long value of \"%s\" prefix.\nErrors may occur when executing SQL queries to DW.",
+    "MsgRebuildCube": "Update the Cubes in the Data Warehouse",
+    "MsgRelationTableList": "Related tables available:\n%s",
+    "MsgReservedName": "\"%s\" field name coincides with the reserved words.\nErrors may occur when executing SQL queries to DW."
   },
   "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse [Firebird]",
@@ -3580,7 +3725,9 @@
     "ErrCustomPointDate": "Data value cannot be empty",
     "ErrFilterTypeIncorrect": "\"%s\" filter type incompatible",
     "ErrListEmpty": "List cannot be empty",
+    "ErrSkipIntervalCount": "Number of missed periods cannot be less than 1",
     "ErrStringEmpty": "Value cannot be empty",
+    "ErrUseIntervalCount": "Number of periods cannot be less than 1",
     "FilterType": "Filter type",
     "IntervalType": "Interval type",
     "ListVal": "List of values",

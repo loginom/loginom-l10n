@@ -423,12 +423,6 @@
       "SONNType": "Self-organizing network type"
     }
   },
-  "components/sorting": {
-    "SortingColumnItem": {
-      "CaseSensitive": "Case sensitive.",
-      "SortDirection": "Sort order."
-    }
-  },
   "components/ungroupdata": {
     "UngroupDataEngine": {
       "AbsentDataPoints": "Absent data points for position termination",

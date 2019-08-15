@@ -423,12 +423,6 @@
       "SONNType": "Тип самоорганизующейся сети"
     }
   },
-  "components/sorting": {
-    "SortingColumnItem": {
-      "CaseSensitive": "Чувствительность к регистру.",
-      "SortDirection": "Порядок сортировки."
-    }
-  },
   "components/ungroupdata": {
     "UngroupDataEngine": {
       "AbsentDataPoints": "Точек отсутствия для прекращения позиции",

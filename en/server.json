@@ -2886,7 +2886,7 @@
     "ErrInvalidModelLockCookieOwner": "Invalid owner of Cookie for workflow nodes blocking",
     "ErrModelHasLockedNodes": "Workflow contains %d locked nodes",
     "ErrModelNodeAlreadyInitialized": "Node already initialized",
-    "ErrMultipleVariablesFound": "Multiple variables with \"%s\" name found ",
+    "ErrMultipleVariablesFound": "Multiple variables with \"%s\" name found",
     "ErrNodeConfigNotInitialized": "Node configuration not initialized",
     "ErrNodeIsNoMemberOfModel": "Node does not belong to the workflow",
     "ErrNodeLocked": "\"%s\" node is blocked",
@@ -3441,7 +3441,7 @@
     "ErrCubeScopeMissing": "Failed to get the Cube context when creating detailing visualizer",
     "ErrDetailingViewDataSource": "Failed to prepare data source for the Cube detailing visualizer \"%s\"",
     "ErrDetailingViewExecution": "Error while executing the Cube detailing visualizer \"%s\"",
-    "ErrDetailingViewInitialization": "Error while initialization of the Cube detailing visualizer \"%s\" ",
+    "ErrDetailingViewInitialization": "Error while initialization of the Cube detailing visualizer \"%s\"",
     "ManagerBrowse": "Table",
     "ManagerStatistics": "Statistics",
     "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" visualizer configuration of the Cube detailing"
@@ -3645,8 +3645,8 @@
     "DWConnectionVendorDesc": "Connect to the Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/DDWEngine": {
-    "ErrDimensionValueIsNull": "Value of \"%1:s\" dimension in \"%0:d\" row is null. ",
-    "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (\"%d\" row).  ",
+    "ErrDimensionValueIsNull": "Value of \"%1:s\" dimension in \"%0:d\" row is null.",
+    "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (\"%d\" row).",
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",
     "MsgEnableConstraint": "Restore indexes and constraints.",

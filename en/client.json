@@ -70,6 +70,7 @@
     "RemoveVendorConfirm": "Do you want to remove the component?"
   },
   "app/ConfigurePublishedPackagesForm": {
+    "DisNamespace": "http://schemas.loginom.com/integration",
     "ErrPathNotSpecified": "Path to the package file is not specified"
   },
   "app/ListViewForm": {
@@ -340,8 +341,8 @@
     "DescriptionN": "Number",
     "DescriptionTestNum": "Test",
     "InputPortsNotActived": "Do you want to activate input ports?",
-    "LabelTamplateA1Dat": "%MIN[от d.m.yy h:mm]%MAX[ до d.m.yy h:mm]",
-    "LabelTamplateA1Num": "%MIN[от #,0.####]%MAX[ до #,0.####]",
+    "LabelTamplateA1Dat": "%MIN[from d.m.yy h:mm]%MAX[ to d.m.yy h:mm]",
+    "LabelTamplateA1Num": "%MIN[from #,0.####]%MAX[ to #,0.####]",
     "LabelTamplateA2Dat": "%OP%MIN..%MAX%CP",
     "LabelTamplateA2Num": "%OP%MIN[4]..%MAX[4]%CP",
     "LabelTamplateA3Dat": "%FD[5] %OP%MIN..%MAX%CP",
@@ -417,7 +418,7 @@
     "InputPortsNotActived": "Do you want to activate input ports?"
   },
   "components/columnflipping/ColumnFlippingWizard": {
-    "ColumnFlippingTitle": "Column Сonvolution",
+    "ColumnFlippingTitle": "Column Convolution",
     "UsageInfo": "Info",
     "UsageTransposition": "Transposed"
   },

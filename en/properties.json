@@ -227,7 +227,7 @@
   },
   "components/filterdata": {
     "FilterColumnItem": {
-      "CaseSensitive": "Учитывать регистр",
+      "CaseSensitive": "Case-sensitive",
       "CompareValue": "Compare values",
       "CompareValueList": "List of values",
       "CompareValueLowerBound": "Lower bound",

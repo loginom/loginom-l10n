@@ -64,6 +64,12 @@
     "BinningCountLinContMethodSettings": {
       "BinsCount": "Количество"
     },
+    "BinningCustomBinItem": {
+      "BinLabel": "Метка интервала",
+      "BinNumber": "Номер интервала",
+      "BoundModes": "Режим границ интервала",
+      "RelativeVolume": "Относительный объем интервалов"
+    },
     "BinningDefExtension": {
       "AlwaysDefaultSettings": "Всегда использовать настройки метода по умолчанию",
       "BinsType": "Тип интервалов",
@@ -440,6 +446,13 @@
       "UngroupMethod": "Метод разгруппировки"
     }
   },
+  "components/uniondata": {
+    "CustomUnionDataEngine": {
+      "ColumnDisplayNamePrefix": "Префикс метки",
+      "ColumnNamePrefix": "Префикс имени",
+      "UsePrefixes": "Использовать префиксы"
+    }
+  },
   "components/wsdlclient": {
     "WSDLClient": {
       "CompositeColumnNames": "Генерировать составные метки полей",
@@ -536,6 +549,14 @@
       "Configurator": "Настройки импорта XML"
     }
   },
+  "Libraries/1CConnection/1CConnection": {
+    "1CConnectionConfigurator": {
+      "ConnectionString": "Строка подключения",
+      "Password": "Пароль",
+      "SavePassword": "Сохранить пароль",
+      "UserName": "Имя пользователя"
+    }
+  },
   "Libraries/1CConnection/1Cv8Connection": {
     "1Cv8ConnectionConfigurator": {
       "PlatformVersion": "Версия платформы"
@@ -601,6 +622,15 @@
       "Extension": "Расширение настраиваемого описания столбца"
     }
   },
+  "Libraries/bgrtl/Interfaces": {
+    "CollectionItem": {
+      "ID": "Идентификатор",
+      "Name": "Имя"
+    },
+    "NamedItem": {
+      "Name": "Имя элемента"
+    }
+  },
   "Libraries/bgrtl/Logger": {
     "LoggerConfigurator": {
       "LogFileMaxIndex": "Количество резервных файлов",
@@ -608,6 +638,19 @@
       "LogFileName": "Имя файла",
       "LogFileRewrite": "Перезапись файла",
       "MinLogLevel": "Уровень логирования"
+    }
+  },
+  "Libraries/bgrtl/Statistics": {
+    "StatInfo": {
+      "Avg": "Среднее",
+      "DataType": "Тип данных значений",
+      "Max": "Максимум",
+      "Min": "Минимум"
+    }
+  },
+  "Libraries/bgrtl/Variables": {
+    "VariableInfo": {
+      "DataType": "Тип данных"
     }
   },
   "Libraries/DataPartition/LearnPartition": {
@@ -653,6 +696,16 @@
       "SpecifyTimeZone": "Наличие временной зоны"
     }
   },
+  "Libraries/FileConnection/ExportFileModelComponentEngine": {
+    "ExportFileModelComponentEngine": {
+      "FileName": "Имя файла"
+    }
+  },
+  "Libraries/FileConnection/ImportFileModelComponentEngine": {
+    "ImportFileModelComponentEngine": {
+      "FileName": "Имя файла"
+    }
+  },
   "Libraries/ImportXMLConfigurator/ImportXMLConfigurator": {
     "ImportXMLConfigurator": {
       "CompositeColumnNames": "Генерировать составные метки полей",
@@ -668,6 +721,12 @@
     }
   },
   "Libraries/Model/DeductorServerSettings": {
+    "DeductorServerSettings": {
+      "PackagePoolSize": "Размер пула пакетов",
+      "SessionBackupDirectory": "Директория, содержащая резервные копии сессий",
+      "StopTimeout": "Таймаут остановки сервера",
+      "UserStorageDirectory": "Директория, содержащая личные папки пользователей"
+    },
     "SocketDeductorServerSettings": {
       "Bind": "Прослушиваемые адреса",
       "PingPeriod": "Период проверки соединения с клиентом",
@@ -694,6 +753,23 @@
       "AddSignificance": "Порог значимости при добавлении фактора",
       "Hierarchy": "Иерархия взаимодействий",
       "RemoveSignificance": "Порог значимости при исключении фактора"
+    },
+    "RegressionClassificationParams": {
+      "EventId": "Индекс заданного события",
+      "EventType": "Тип события",
+      "Threshold": "Порог отсечения"
+    },
+    "RegressionParams": {
+      "AutoMethod": "Автоматическая настройка",
+      "AutoPriority": "Приоритет автоматической настройки",
+      "Denormalize": "Денормализировать коэффициенты модели",
+      "Epsilon": "Точность решения",
+      "FactorSelection": "Настройки пошагового отбора факторов",
+      "Intercept": "Включить в модель константу",
+      "Regularization": "Настройки регуляризации",
+      "SimpleParams": "Параметры упрощенной настройки регрессии",
+      "Statistics": "Настройки расчета статистики отбора факторов",
+      "UseDetailedSettings": "Использовать детальные настройки"
     },
     "RegressionSimpleParams": {
       "ExactInexact": "Приоритет точные/недостоверные данные",

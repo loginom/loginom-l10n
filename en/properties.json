@@ -695,6 +695,9 @@
       "Hierarchy": "Hierarchy of interactions",
       "RemoveSignificance": "Significance threshold in case of factor exception"
     },
+    "RegressionClassificationParams": {
+      "Threshold": "Cuttoff"
+    },
     "RegressionSimpleParams": {
       "ExactInexact": "Exact/inexact data priority",
       "FactLessMore": "Less/more factors priority",

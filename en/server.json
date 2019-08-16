@@ -623,7 +623,7 @@
     "ValuesColumnDisplayName": "Values"
   },
   "components/columnflipping/ColumnFlippingVendor": {
-    "VendorCaption": "Column Сonvolution",
+    "VendorCaption": "Column Convolution",
     "VendorDesc": "Create flat table from pivot table"
   },
   "components/coluniondata/ColUnionData": {
@@ -772,7 +772,7 @@
     "ResultDisplayName": "Execution result"
   },
   "components/execcmd/ExecCmdVendor": {
-    "VendorCaption": "Сommand Execution",
+    "VendorCaption": "Command Execution",
     "VendorDesc": "External command execution"
   },
   "components/execnode/ExecNodeComponent": {
@@ -1074,11 +1074,11 @@
     "ModelPValue": "Model P-value",
     "RegressionCoefsNamePostfix": "|Coefficients",
     "RegressionColumn": "%s|Regression",
-    "RegressionLBoundNamePostfix": "|СI lower bound",
+    "RegressionLBoundNamePostfix": "|CI lower bound",
     "RegressionPValueNamePostfix": "|Significance",
     "RegressionStdErrorNamePostfix": "|Sd. dev.",
     "RegressionTStatNamePostfix": "|T-statistics",
-    "RegressionUBoundNamePostfix": "|СI upper bound",
+    "RegressionUBoundNamePostfix": "|CI upper bound",
     "TestSamples": "Samples in the test set",
     "TotalSamples": "Total samples",
     "TotalSelectedSamples": "Total selected samples",
@@ -1149,11 +1149,11 @@
     "PredictionProbability": "Event probabillity|Prediction",
     "PredictionScore": "Score|Prediction",
     "RegressionCoefsNamePostfix": "|Coefficients",
-    "RegressionLBoundNamePostfix": "|СI lower bound of odds ratio",
+    "RegressionLBoundNamePostfix": "|CI lower bound of odds ratio",
     "RegressionOddsRatioPostfix": "|Odds ratio",
     "RegressionScoreNamePostfix": "|Score",
     "RegressionStdErrorNamePostfix": "|Sd. dev.",
-    "RegressionUBoundNamePostfix": "|СI upper bound of odds ratio",
+    "RegressionUBoundNamePostfix": "|CI upper bound of odds ratio",
     "RegressionWaldPValueNamePostfix": "|P-value of the Wald criterion",
     "RegressionWaldStatNamePostfix": "|Wald criterion",
     "TestAvgCE": "Average cross-entropy in the test set",
@@ -1831,7 +1831,7 @@
   },
   "Libraries/1CConnection/1Cv8Connection": {
     "ErrConnectionString": "Error in connection string",
-    "ErrTestConnection": "Сonnection test failed",
+    "ErrTestConnection": "Connection test failed",
     "NotConnected": "Not connected to infobase"
   },
   "Libraries/1CConnection/1Cv8ConnectionVendor": {

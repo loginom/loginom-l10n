@@ -345,7 +345,7 @@
     "CorrType": {
       "$Caption": "Correlation Coefficient Type",
       "Pirson": "Pearson",
-      "CorrFuncExtr": "Сorrection function extremum",
+      "CorrFuncExtr": "Correction function extremum",
       "TauBKendall": "Kendall Tau-b",
       "Spearman": "Spearman"
     }
@@ -826,10 +826,10 @@
   "Libraries/1CConnection/1Cv8Connection": {
     "1Cv8Version": {
       "$Caption": "Platform Versions",
-      "_1Cv8_0": "1С:Enterprise 8.0",
-      "_1Cv8_1": "1С:Enterprise 8.1",
-      "_1Cv8_2": "1С:Enterprise 8.2",
-      "_1Cv8_3": "1С:Enterprise 8.3"
+      "_1Cv8_0": "1C:Enterprise 8.0",
+      "_1Cv8_1": "1C:Enterprise 8.1",
+      "_1Cv8_2": "1C:Enterprise 8.2",
+      "_1Cv8_3": "1C:Enterprise 8.3"
     }
   },
   "Libraries/bgdbrtl/DB": {
@@ -1719,7 +1719,7 @@
     "ROCViewCutoffType": {
       "$Caption": "Cutoff",
       "Current": "From handler",
-      "User": "Сonfigurable",
+      "User": "Configurable",
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
       "BreakEven": "Break even point (TPR = PPV)",

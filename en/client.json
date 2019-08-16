@@ -1949,7 +1949,7 @@
   },
   "wizards/columns/EditColumnDefForm": {
     "AddBtnText": "Add",
-    "AddColumnDefTitle": "Add Сolumn",
+    "AddColumnDefTitle": "Add Column",
     "DefaultUsageType": "Default usage type",
     "ErrColumnEmptyName": "Column name cannot be empty",
     "ErrColumnInvalidIdentifier": "Entered \"{0}\" column name is not a valid identifier",

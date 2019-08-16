@@ -1407,7 +1407,7 @@
   },
   "components/em/EMClusterizationParams": {
     "cntEMClusterizationParams": {
-      "title": "EM Сlustering Parameters"
+      "title": "EM Clustering Parameters"
     }
   },
   "components/enrichdata/EnrichDataWizard": {
@@ -1424,10 +1424,10 @@
   },
   "components/execcmd/ExecCmdWizard": {
     "frmExecCmd": {
-      "title": "Сommand Execution"
+      "title": "Command Execution"
     },
     "lblCmdLine": {
-      "text": "Сommand line"
+      "text": "Command line"
     },
     "pedTimeout.valueConfig": {
       "emptyText": "∞"
@@ -1783,9 +1783,9 @@
       "tooltip": "Delete"
     },
     "colCaseSensitive": {
-      "altText": "Сase-sensitive",
-      "menuText": "Сase-sensitive",
-      "text": "Сase-sensitive"
+      "altText": "Case-sensitive",
+      "menuText": "Case-sensitive",
+      "text": "Case-sensitive"
     },
     "colCaseSensitive.0": {
       "tooltip": "Case-sensitive"
@@ -2940,7 +2940,7 @@
       "fieldLabel": "Field"
     },
     "chbSearchCaseSensitive": {
-      "fieldLabel": "Сase-sensitive"
+      "fieldLabel": "Case-sensitive"
     },
     "lblSearchResult": {
       "fieldLabel": "Result"
@@ -3347,7 +3347,7 @@
       "tooltip": "Rename"
     },
     "mniAddToNewGroup": {
-      "text": "Сreate group...",
+      "text": "Create group...",
       "tooltip": "Create group and add visualizer into it"
     },
     "mniAddWithoutGroup": {
@@ -3837,13 +3837,13 @@
       "text": "Attribute"
     },
     "colRepOddsLowerBound": {
-      "text": "СI lower bound"
+      "text": "CI lower bound"
     },
     "colRepOddsRatio": {
       "text": "Odds ratio"
     },
     "colRepOddsUpperBound": {
-      "text": "СI upper bound"
+      "text": "CI upper bound"
     },
     "colRepPValue": {
       "text": "Significance"
@@ -4306,7 +4306,7 @@
       "fieldLabel": "Name"
     },
     "frmEditColumnDefForm": {
-      "title": "Add Сolumn"
+      "title": "Add Column"
     }
   },
   "wizards/columnsdisposition/ColumnsDispositionWizard": {

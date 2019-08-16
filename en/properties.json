@@ -598,7 +598,7 @@
       "UsageType": "Column usage type"
     },
     "TuneColumnDef": {
-      "Extension": "Сolumn description extension"
+      "Extension": "Column description extension"
     }
   },
   "Libraries/bgrtl/Logger": {

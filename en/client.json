@@ -141,7 +141,7 @@
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
     "mnuPortsShowAll": "Show all ports",
     "ModelUnitLabel": "Module name",
-    "VendorLabel": "Component name"
+    "VendorLabel": "Component Caption"
   },
   "app/ModelForm": {
     "ActivateCurrent": "Run node",

@@ -3645,7 +3645,7 @@
     "DWConnectionVendorDesc": "Connect to the Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/DDWEngine": {
-    "ErrDimensionValueIsNull": "Value of \"%s\" dimension in \"%d\" row is null. ",
+    "ErrDimensionValueIsNull": "Value of \"%1:s\" dimension in \"%0:d\" row is null. ",
     "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (\"%d\" row).  ",
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",

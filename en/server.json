@@ -3322,7 +3322,7 @@
     "SSLCertificateFile": "Certificate file name",
     "SSLPrivateKeyFile": "Private key file name",
     "WSPort": "WebSocket port",
-    "WSSPort": "WebSocket SSL/TLS порт"
+    "WSSPort": "WebSocket SSL/TLS port"
   },
   "Studio/SolutionTree": {
     "Connection": "Connection",

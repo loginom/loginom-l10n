@@ -447,8 +447,8 @@
   },
   "components/binning/BinningVendor": {
     "OutputRanges": "Quantization ranges",
-    "VendorCaption": "Quantization",
-    "VendorDesc": "User data quantization"
+    "VendorCaption": "Binning",
+    "VendorDesc": "User binning"
   },
   "components/calcdata/CalcData": {
     "ErrExceededRecursiveCalls": "Maximum number of (%d) recursive calls of Data function in \"%s\" expression exceeded.\nTo solve this problem you must enable Caching.",
@@ -888,7 +888,7 @@
     "WarnReachedLimitScanRow": "Maximum scanned row count reached: %d"
   },
   "components/filterdata/FilterDataVendor": {
-    "VendorCaption": "Row Filters",
+    "VendorCaption": "Row Filter",
     "VendorDesc": "Row selection by condition"
   },
   "components/filtration/DataRecovery": {

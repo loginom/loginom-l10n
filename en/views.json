@@ -4068,7 +4068,7 @@
       "text": "No"
     },
     "colHistogramMark": {
-      "text": "Interval"
+      "text": "Caption"
     },
     "colHistogramPercentage": {
       "text": "%"
@@ -4119,7 +4119,7 @@
       "text": "Login"
     },
     "chkRememberUser": {
-      "boxLabel": "Remember User",
+      "boxLabel": "Remember me",
       "fieldLabel": " "
     },
     "edtPassword": {

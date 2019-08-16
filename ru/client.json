@@ -170,7 +170,7 @@
     "EditPortDisplayName": "Редактирование метки порта...",
     "EditPortDisplayNameWindowTitle": "Редактирование",
     "EditPortFieldLabel": "Метка порта",
-    "ErrNodeNotInitialized": "У узла \"{0}\" не задан поставщик информации о компоненте",
+    "ErrNodeNotInitialized": "У узла \"{0}\" не задан компонент",
     "Error": "Ошибка",
     "ErrPortNotCreated": "Не удалось создать новый порт",
     "ErrRunQueueFunctions": "Ошибки при выполнении отложенного обновления объектов Сценария",
@@ -1863,7 +1863,7 @@
     "NotInitializedError": "Узел не проинициализирован",
     "SourceNodeDoesntExists": "Исходный узел визуализатора для этого отчета не существует",
     "VendorMalfunctionError": "Ошибка компонента узла",
-    "VendorNotDefined": "У визуализатора не задан поставщик информации"
+    "VendorNotDefined": "У визуализатора не задан компонент"
   },
   "viewers/roc/ConfusionMatrix": {
     "Event": "Событие",

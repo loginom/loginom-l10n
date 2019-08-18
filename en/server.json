@@ -2321,6 +2321,10 @@
     "ErrSlimReadWriteLockDebugLockRead": "You cannot lock for reading %p synchronizer that has already been locked from the same stream",
     "ErrSlimReadWriteLockDebugLockWrite": "You cannot lock for writing %p synchronizer that has already been locked from the same stream",
     "ErrSlimReadWriteLockDebugTryUpgradeToWrite": "You cannot increase the lock level of %p synchronizer from read lock to write lock without first locking it for reading",
+    "ErrSlimReadWriteLockDebugTryUpgradeToWriteSameThread": "Incorrect call of the method required to increase the synchronizer lock level %p from read lock to write lock",
+    "ErrSlimReadWriteLockDebugUnLockRead": "You cannot release read lock from the %p synchronizer without first blocking it for reading",
+    "ErrSlimReadWriteLockDebugUnLockWrite": "You cannot release write lock from the %p synchronizer without first blocking it for writing",
+    "ErrSlimReadWriteLockDowngradeToRead": "%p synchronizer downgrade error from write lock to read lock",
     "ErrSlimReadWriteLockFinalize": "%p synchronizer cannot be deleted as it has been still being used",
     "ErrSlimReadWriteLockLockRead": "You cannot lock %p synchronizer for reading",
     "ErrSlimReadWriteLockLockWrite": "You cannot lock %p synchronizer for writing",
@@ -2365,6 +2369,7 @@
   },
   "Libraries/bgrtl/ThreadPool": {
     "ErrCannotChangeParams": "You cannot change the thread pool parameters upon its application start",
+    "ErrCannotWaitForSelf": "You cannot wait for completion of the same task inside the task",
     "ErrJoin": "One or several subtasks failed",
     "ErrThreadPoolDestroyed": "The task cannot be completed because the thread pool containing it has been deleted",
     "ErrWorkItemIsNull": "Reference to task object not initialized"
@@ -2505,6 +2510,7 @@
     "ErrReWriteLocalFileHeader": "Error updating local file header",
     "ErrSeekRead": "You can only move forward in the data stream",
     "ErrSeekWrite": "You cannot move along the data stream",
+    "ErrWriteAfterEnd": "Stream already completed",
     "ErrWrongHMAC": "Data encryption error",
     "ErrWrongPassword": "Wrong password"
   },
@@ -2538,6 +2544,7 @@
     "ErrConfigElementAlien": "The configuration element does not belong to the specified list",
     "ErrConfigElementByNameNotFound": "Configuration element with %s name not found",
     "ErrRefToClassNotInitOrWrongClass": "Collection reference has not been initialized or realtes to the invalid class",
+    "ErrUnmatchedAttrType": "Accessing to %s attribute value of %s type as the value of %s type",
     "ErrUnsupportedPropertyType": "Unsupported property type",
     "ErrVectorLengthOverflow": "%d array length exceeds the allowable %d limit",
     "ErrWrongElementsClass": "Invalid configuration node list class"
@@ -2760,7 +2767,9 @@
   },
   "Libraries/Math/SplineTrend": {
     "ErrBuildSeasonalIndexesSolver": "%d solver error when calculating seasonal indices",
-    "ErrBuildTrendPSpline": "%d error of the smoothing spline calculation procedure during trend building"
+    "ErrBuildTrendPSpline": "%d error of the smoothing spline calculation procedure during trend building",
+    "ErrSITimePointsExceedLimits": "Data points for seasonal indexes calculation must be within the following limits [0; Period)",
+    "ErrTrendSmoothingNotSet": "The trend calculation procedure was called without specifying smoothing parameters"
   },
   "Libraries/Math/StatDistributions": {
     "ErrNotImplemented": "Functionality not implemented"
@@ -3206,6 +3215,7 @@
     "ErrNotImplemented": "This functionality not implemented"
   },
   "Libraries/Normalization/NormalColumnsRange": {
+    "ErrCursorNotReady": "The flag iterator cursor does not indicate value",
     "ErrNotImplemented": "This functionality not implemented"
   },
   "Libraries/Normalization/NormalData": {
@@ -3215,6 +3225,7 @@
     "ErrNotEnoughCache": "Insufficient cache size to store normalized data string",
     "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
     "ErrUnexpectedEndUpdate": "EndUpdate call without corresponding BeginUpdate",
+    "ErrUnexpectedUnlockedState": "Calling nested BeginUpdate cache of the normalized data set must be locked",
     "ErrWrongArraySize": "%s %d array size not equal to the expected %d",
     "ErrWrongNormalizerParams": "Error adding \"%s\" factor: the output columns count of %d normalizer does not match the expected %d",
     "InterceptDisplayName": "Intercept",
@@ -3246,7 +3257,11 @@
   },
   "Libraries/Normalization/NormalizerSettings": {
     "ErrMinMaxNormTypeNotSupported": "The selected \"%s\" normalization type is not supported by Min-Max normalization settings",
-    "ErrMinMaxStatNaN": "Failed to calculate the maximum/minimum value for the range normalization settings, \"%s\" column"
+    "ErrMinMaxStatNaN": "Failed to calculate the maximum/minimum value for the range normalization settings, \"%s\" column",
+    "ErrNanDivisor": "You cannot calculate divisor to normalize relations, \"%s\" column",
+    "ErrQuotientNormTypeNotSupported": "The selected \"%s\" normalization type is not supported by the relation normalization settings",
+    "ErrQuotientStatNotSupported": "The selected statistic divisor \"%s\" is not supported by the relation normalization settings",
+    "ErrStatDivisorNotAvailable": "The installed statistic indicator \"%s\" cannot be used as relation normalization divisor"
   },
   "Libraries/Normalization/NormMatrixData": {
     "ErrGetColNotSupported": "Normalized matrix column request not supported"
@@ -3256,6 +3271,7 @@
   },
   "Libraries/Normalization/TunedNormParams": {
     "ErrAvailableNormTypeNotFound": "No valid normalization type found",
+    "ErrControlRangeNotAvailable": "The installed \"%s\" type of range control is not valid for this normalizer",
     "ErrWrongNormParamsConstructor": "Invalid normalization parameter constructor used",
     "FACT_ANY": "ANY",
     "FACT_ANY_COUNTINUOUS": "ANY CONTINUOUS",
@@ -3276,6 +3292,7 @@
     "ErrUniqueValuesSyncConflict": "Input data set is not compatible with normalization settings"
   },
   "Libraries/Normalization/TuneNormColumnDefs": {
+    "ErrNilStatInfoProvider": "Nil provider of the statistic columns information was passed",
     "ErrTuneNormColumnDefsVendorNotSet": "IBGTuneNormColumnDefsVendor interface not set",
     "ErrWrongConstructor": "Invalid column collection constructor called"
   },
@@ -3287,6 +3304,7 @@
     "CreateNormalDataProcessCaption": "Create Normalized Data Set",
     "CreateOutDataProcessCaption": "Preparing output data set",
     "ErrGetNormData": "Errors occurred while requesting normalized data set",
+    "ErrUniqueIndexNotDiscrete": "You cannot query the unique value index of non-discrete column",
     "ErrUniqueValueNotFound": "\"%s\" not found in the list of configured unique values (\"%s\" column, %d string)"
   },
   "Libraries/Normalization/TuneNormDataSourceSocketDef": {
@@ -3302,12 +3320,15 @@
     "ErrMinMaxInteger": "The specified minimum value %d is more than the maximum value %d",
     "ErrOrphanValue": "Parameter not associated with collection",
     "ErrParameterInaccessible": "Parameter value inaccessible",
-    "ErrParameterWrongDataType": "Invalid parameter data type"
+    "ErrParameterWrongDataType": "Invalid parameter data type",
+    "ErrValuesCountMismatch": "The count of %d values passed to the calculation function mismatches the count of %d parameters"
   },
   "Libraries/Optimization/Optimizer": {
+    "ErrFunctionTypeNotSupported": "Object functions with return value of %s type are not supported by %s method",
     "ErrMethodAlreadyRegistered": "%s method implementation already registered",
     "ErrMethodNotImplemented": "%s method not implemented",
     "ErrMethodRequiresParameters": "%s method requires additional configuration",
+    "ErrSingleParameterRequired": "%s method can provide optimization only for a single parameter",
     "ErrStepIsNull": "Another strategy step not specified",
     "ErrUnsupportedConstraint": "%s method does not support %s constraint type"
   },
@@ -3325,6 +3346,7 @@
     "ErrGetValueOutOfBounds": "Value of \"%s\" property is not in the range of allowable values of the requested type",
     "ErrGuidNotFound": "\"%s\" interface not found in metadata",
     "ErrIncorrectIndexDataType": "\"%s\" property has incorrect indexer type",
+    "ErrIndexerCountIncorrect": "The property with \"%s\" count of items is incorrect for the indexed property \"%s.%s.%s\" ",
     "ErrIndexerCountNotFound": "No \"%s\" property in metadata for \"%s.%s\" interface",
     "ErrInterfaceNameNotFound": "Interface with \"%s\" name not registered",
     "ErrInterfaceParentNotFound": "Parent interface \"%s\" not found",
@@ -3360,6 +3382,7 @@
   },
   "Libraries/Regression/RegressionModel": {
     "ApplyModelProcessCaption": "Model Application",
+    "ErrApplyWrongFeatures": "The column count of the input data set %d not equal to the regressors count of %d model  ",
     "RegressionStatistics": "Regression statistics"
   },
   "Libraries/Regression/RegressionStatistics": {
@@ -3390,6 +3413,9 @@
     "ErrDisconnectedProxy": "Client proxy object disconnected",
     "ErrInterfaceIdentifierMustNotBeNull": "Interface identifier must not be null"
   },
+  "Libraries/rpc/CustomConnectors/DataSourceRpcCached_Invoker": {
+    "ErrRowIndexAndRowCountOutOfRange": "Sum of values of ARowIndex and ARowCount parameters must not exceed the total row count in the data set"
+  },
   "Libraries/rpc/InterceptSendMessageTransport": {
     "ErrNotImplemented": "This method implementation is not provided"
   },
@@ -3397,6 +3423,7 @@
     "ErrConnectionFailure": "Remote computer connection lost"
   },
   "Libraries/rpc/RemoteMessageData": {
+    "ErrArrayLevelNotSupported": "Arrays nesting level above %d is not supported",
     "ErrInvalidMessageSignature": "Invalid message signature",
     "ErrMessageSizeCannotBeNegative": "Message size cannot be negative",
     "ErrMessageSizeIncrementCannotBeNegative": "Message size increment cannot be negative",
@@ -3425,14 +3452,17 @@
     "ErrMaxObjectIdReached": "Limit in %d values of object identifiers reached",
     "ErrMethodHasNoReturnValue": "%s method has no return value",
     "ErrMethodHasOutputParameters": "%s method contains output parameters",
+    "ErrMethodReturnValueIsNotInterface": "The return value of %s method is not an interface object reference",
     "ErrRpcVersionMismatch": "Client of %s version cannot get connected to the server of %s version",
-    "ErrUnknownInterfaceID": "Unknown interface identifier: %d"
+    "ErrUnknownInterfaceID": "Unknown interface identifier: %d",
+    "ErrValueOutOfRange": "%d value is not in the range of allowable values [%d; %d]"
   },
   "Libraries/rpc/WebSocketRemoteServer": {
     "ErrSSLChangeAfterStart": "SSL parameters cannot be changed after server start"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
-    "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s"
+    "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s",
+    "WarnMainWSDLNotLoaded": "Main WSDL source (%s) not loaded (%s). We are trying to load the backup source."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
     "WSDLClientConnectionVendorCaption": "Web Service",
@@ -3446,6 +3476,7 @@
     "XSDFilesConnectionVendorDesc": "Connection to the set of XSD schemas located in the file storage"
   },
   "Studio/ApplicationManager": {
+    "ErrBootupOptions": "Error in boottup parameters.\nBoth batch processing parameters \"Run\" and \"Retrain\" are specified at the same time.",
     "ErrNoPackageFileName": "No package file specified."
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
@@ -3454,6 +3485,12 @@
   "Studio/Converters/Converter_201806051619_TuneNorm_InvalidUsageType": {
     "ErrTuneNormInvalidUsageTypeNode": "Usage type of the \"Output\" field near \"%s\" column of \"%s\" node was moved to the \"Not defined\" field",
     "ErrTuneNormInvalidUsageTypeVendor": "Usage type of the \"Output\" field near \"%s\" column of derived component \"%s\" was moved to the \"Not defined\" field"
+  },
+  "Studio/Converters/Converter_20180828194301_LogRegression_DerivedAtomic": {
+    "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes that refer to the nodes in other packages could be reset.\nOne of the following actions is required:\n  - reconfigure and retrain the \"Logistic Regression\" nodes that cannot be converted\n  - restore configuration of the specified nodes to the original (base)\n  - contact Loginom support for help"
+  },
+  "Studio/Converters/Converter_201809181721_LogRegression_RelativeTerms": {
+    "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nIt is required to reconfigure and retrain the \"Logistic Regression\" nodes that cannot be converted"
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"
@@ -3896,6 +3933,7 @@
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",
+    "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension ",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
@@ -3907,6 +3945,7 @@
     "VendorDesc": "Retrieve data from a Deductor data warehouse"
   },
   "Warehouse2/Deductor/Ver6/DW6Engine": {
+    "CommentForFieldChangeID": "Reference to the activity journal",
     "CommentForFieldID": "Primary key",
     "ErrCheckProcess": "[%s] \"%s\" process must consist of at least two dimensions.",
     "ErrDataCube": "Failed to read information about the Cube [%s] \"%s\" .\n%s",

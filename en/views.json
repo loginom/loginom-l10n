@@ -4715,7 +4715,7 @@
       "boxLabel": "Stat. parameter"
     },
     "rgQuotient": {
-      "fieldLabel": "Divider"
+      "fieldLabel": "Divisor"
     }
   },
   "wizards/previewpanel/PreviewPanel": {

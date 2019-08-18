@@ -128,13 +128,13 @@
     "ErrHTTPHeaders": "Error while generating HTTP headers",
     "ErrXMLExportNoContext": "No export context specified",
     "FailedRequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz \"_failed\"",
-    "RequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz",
+    "RequestFileNameFormat": "\"Request_\"yyyy\"-\"mm\"-\"dd\"_\"hh\"-\"nn\"-\"ss\".\"Zzz",
     "RequestFileNameFormatEx": "%s_%d",
     "RequestFileNameFormatFull": "%s.%s"
   },
   "Common/WSDL/SOAP": {
-    "ErrCantSetupSOAPEnvelopeMsg": "Failed to set up SOAP envelope based on %s message",
-    "ErrCantSetupSOAPEnvelopeOp": "Failed to set up SOAP envelope for %s operation",
+    "ErrCantSetupSOAPEnvelopeMsg": "Failed to create SOAP envelope based on %s message",
+    "ErrCantSetupSOAPEnvelopeOp": "Failed to create SOAP envelope for %s operation",
     "ErrMessageHasNoBody": "Message has no body",
     "ErrMessageNotConnectedToOperation": "Message not connected to a specific operation was sent to SOAP envelope",
     "ErrNonSOAPMessage": "Non SOAP message",
@@ -174,7 +174,7 @@
     "ErrPartContentsNotDefined": "\"%s\" part does not reference schema definitions",
     "ErrPartIsReferencedByElement": "\"%s\" part defined by element not by XSD schema type",
     "ErrPartIsReferencedByType": "\"%s\" part defined by type not by XSD schema element",
-    "ErrPortBindingExtensionCollision": "\"%s port and \"%s\" binding extensions do not match",
+    "ErrPortBindingExtensionCollision": "\"%s\" port and \"%s\" binding extensions do not match",
     "ErrPortMustSpecifyExtension": "\"%s\" endpoint (port) extension not specified or not supported",
     "ErrPortTypeNotFound": "\"%s\" port type for \"%s\" binding not found",
     "ErrSchemaDoesNotContainPartElement": "\"%s\" part references \"%s\"{\"%s\"} element not found in XSD schema",
@@ -213,8 +213,8 @@
     "ErrNoParentElement": "No parent element in \"%s\" element",
     "ErrSiblingAttributionFailed": "It is not possible to define \"%s{%s}\" sibling corresponding the schema for \"%s\" element",
     "ErrSubElementAttributionFailed": "It is not possible to define \"%s{%s}\" subelement corresponding the schema for \"%s\" element",
-    "ErrXMLParse": "Error parsing XML:\n  Row: %d\n  Position: %d\n  Error code: %d\n  Message:\n  %s",
-    "ErrXMLValidate": "XML validation error:\n  Row: %d\n  Position: %d\n  Error code: %d\n  Message:\n  %s"
+    "ErrXMLParse": "Error parsing XML:\n  Line: %d\n  Column: %d\n  Error code: %d\n  Message:\n  %s",
+    "ErrXMLValidate": "XML validation error:\n  Line: %d\n  Column: %d\n  Error code: %d\n  Message:\n  %s"
   },
   "Common/XML/Processor/XMLRequestProcessor": {
     "ErrXMLExportNoContext": "No export context specified",
@@ -793,7 +793,7 @@
     "DocIDColumn": "Document ID",
     "ErrCharsetForCodePageNotFound": "No supported XML character set found for %d code page",
     "ErrExtractXML": "Error extracting XML from %d row of the input data set:\n  Error code: %d\n  Message: %s",
-    "ErrExtractXMLInitError": "Handler initialization error Extract\nXML:\n  %s",
+    "ErrExtractXMLInitError": "Error initializing Extract XML: %s",
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputFieldNotSelected": "You must specify containing XML field",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
@@ -1026,8 +1026,8 @@
     "WarnPreviewRunning": "Preview already running"
   },
   "components/javascript/JavaScriptExecutor": {
-    "ErrGetModuleSourceUnassigned": "JavaScript plugin reading function not installed",
-    "ErrGetModuleURLUnassigned": "JavaScript path resolver function not installed"
+    "ErrGetModuleSourceUnassigned": "JavaScript module contents reading function unassigned",
+    "ErrGetModuleURLUnassigned": "JavaScript path resolver function unassigned"
   },
   "components/javascript/JavaScriptVendor": {
     "VendorCaption": "JavaScript",
@@ -1209,7 +1209,7 @@
     "ErrIterationCountCannotBeNegative": "Iteration count cannot be negative",
     "ErrIterationCountOverflow": "Maximum allowable number of iterations exceeded: %d",
     "ErrLoopVariableCannotBeMapped": "The loop variable cannot receive at the inlet the output variable value",
-    "ErrMappedVariableDuplicate": "Thelinked variables list contains duplicate references to \"%s\" variable",
+    "ErrMappedVariableDuplicate": "Thelinked variables list contains duplicate links to \"%s\" variable",
     "ErrMappedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch",
     "ErrNoConditionVariable": "No variable to check the loop termination condition",
     "ErrParallelProcessingError": "Error occurred while parallel loop processing",
@@ -1422,7 +1422,7 @@
     "VendorDesc": "Formation of representative subset"
   },
   "components/search/Search": {
-    "ErrDataSourceIsNil": "Link to data source not initialized",
+    "ErrDataSourceIsNil": "Reference to data source not initialized",
     "ErrDataSourceNotActive": "Failed to start search. No data source connected",
     "ErrNoDataSource": "Failed to start search. No data source",
     "ErrNotFound": "%s = \"%s\" string not found",
@@ -1905,7 +1905,7 @@
   },
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Bit index is out of range",
-    "ErrStringIsNotSet": "\"%s\" string is not a set representation",
+    "ErrStringIsNotSet": "\"%s\" string is not a valid set view",
     "ErrSubSetPowerIsZerro": "Attempt to extract all subsets with the power less than 0 or more than the set power as such",
     "IndexesDesc": "Array of indexes",
     "SizeDesc": "Set power"
@@ -2080,12 +2080,24 @@
     "ErrPropertyIsReadOnly": "%s property is read-only"
   },
   "Libraries/bgrtl/ExecutionContext": {
+    "ErrDeleteValueMismatch": "You cannot retrieve the element with %s key from the execution context that does not match the current element in the context",
     "ErrExecutionContextAlreadyExists": "Failed to install the external execution context: context already exists",
     "ErrExistingExecutionContextIsLocal": "The execution context used is not external",
-    "ErrExternalExecutionContextNotInstalled": "External execution context not installed"
+    "ErrExternalExecutionContextNotInstalled": "The external execution context not installed",
+    "ErrKeyNotExist": "No element with %s key in the execution context",
+    "ErrUninstallFromParallelThreadNotSupported": "The execution context uninstalling from the parallel thread is not supported while the thread in which it has been created exists"
   },
   "Libraries/bgrtl/ExportHTMLTable": {
+    "ErrTableCellsOverflow": "Number of cells in the exported table exceeds the allowable maximum of %d cells",
+    "ErrTableColsOverflow": "Number of columns in the exported table exceeds the allowable maximum of %d columns",
+    "ErrTableRowsOverflow": "Number of rows in the exported table exceeds the allowable maximum of %d rows",
+    "ErrTableTooManyCols": "Number of columns in the exported %d table exceeds the allowable maximum of %d columns",
+    "ErrTableTooManyRows": "Number of rows in the exported %d table exceeds the allowable maximum of %d rows",
     "ExcelSheetDefaultName": "Sheet1"
+  },
+  "Libraries/bgrtl/ExportStream": {
+    "ErrDataProducerCloseFail": "Error occurred while closing the data generator: %s",
+    "ErrReadAfterForceStop": "You cannot read: stream was forcedly stopped."
   },
   "Libraries/bgrtl/Extensions": {
     "ErrBaseExtensionMultipleFound": "There are several extensions for %s base identifier",
@@ -2193,7 +2205,14 @@
     "ErrAlienItem": "The processed item does not belong to the specified list"
   },
   "Libraries/bgrtl/IntfStream": {
-    "ErrStreamIsReadOnly": "The data stream is open in the read-only mode"
+    "ErrStreamIsReadOnly": "The data stream is open in the read-only mode",
+    "ErrStreamReadBuffer": "When reading bytes from the data stream, %d was read instead of %d",
+    "ErrStreamReadBufferInvalidParams": "Invalid parameter values when reading from the data stream: Length = %d; Count = %d; Offset = %d",
+    "ErrStreamReadBufferLength": "When reading from the data stream, the size of the resulting buffer %d is less than the number of bytes required for %d reading",
+    "ErrStreamSeekOutOf2GbRange": "When moving, the cursor of the data stream went beyond 2 GB, it is required to use the 64th analog of the function",
+    "ErrStreamWriteBuffer": "When writing bytes to the data stream, %d was written instead of %d",
+    "ErrStreamWriteBufferInvalidParams": "Invalid parameter values when writing to the data stream: Length = %d; Count = %d; Offset = %d",
+    "ErrStreamWriteBufferLength": "When writing to the data stream, the size of the initial buffer %d is less than the number of bytes required for %d writing"
   },
   "Libraries/bgrtl/LinkClnt": {
     "ErrUnLock": "UnLock method was called without Lock method"
@@ -2206,13 +2225,25 @@
     "ErrBadMatrix": "Two-dimensional dynamic array is not rectangular matrix",
     "ErrDeterminantIsZero": "It is impossible to calculate the inverse matrix: determinant is zero.",
     "ErrDispersionIsZero": "It is impossible to calculate the correlation matrix:  variance of one of the values is zero",
-    "ErrRegressXYDimMismatch": "The length of X vector must equal the length of Y vector"
+    "ErrMultMatrixVectDimMismatch": "You cannot multiply matrix by vector with a different number of matrix columns and vector length.",
+    "ErrNotSqrMatr": "The coefficient matrix must be a square matrix.",
+    "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function",
+    "ErrRegressPowerAndDataErr": "To provide proper functioning of the regression function it is required to satisfy the inequality 0 <= \"polynomia degree\" < \"data points count\".",
+    "ErrRegressXYDimMismatch": "The length of X vector must equal the length of Y vector",
+    "ErrSLAEDimMismatch": "The vector length of the intercept terms must coincide with the row count of the coefficient matrix."
+  },
+  "Libraries/bgrtl/OpenArray": {
+    "ErrVariantToVarRec": "Failed to convert the Variant variable to the TVarRec value due to the unsupported data type %d of the Variant variable",
+    "ErrVarRecToVariant": "Failed to convert the TVarRec variable to the Variant value due to the unsupported data type %d of the TVarRec variable"
   },
   "Libraries/bgrtl/OperationBracketsAssist": {
     "ErrActionAlreadyBeginning": "Action has already been started",
-    "ErrActionNotBeginning": "Action hasn't been started"
+    "ErrActionCookieInvalidOwner": "The object action Cookie belongs to another object  ",
+    "ErrActionNotBeginning": "Action hasn't been started",
+    "ErrOwnerDiposedBeforeActionCookie": "The object has been disposed before the object action Cookie"
   },
   "Libraries/bgrtl/ProgressTracker": {
+    "ErrCannotChangeMaxSavedProcessCount": "You cannot change the maximum count of saved processes: buffer of saved processes has already been used",
     "ErrUnableAddChildToTerminatedProcess": "You cannot add subprocess to the incorrectly terminated process"
   },
   "Libraries/bgrtl/QueueException": {
@@ -2222,13 +2253,38 @@
     "ErrQueueExceptionEndUnexpected": "Attempt to end the queued exception block handling without its start"
   },
   "Libraries/bgrtl/Random": {
-    "ErrMSequenceCountOutOfBounds": "The required M-sequence length must be more than 0"
+    "ErrBuildMSequenceErr": "The required array length must not exceed the upper bound of the random numbers.",
+    "ErrMSequenceCountOutOfBounds": "The required M-sequence length must be more than 0",
+    "ErrMSequenceSetValueErr": "The shift register value cannot be equal to zero or exceed the sequence length.",
+    "ErrParamMustLessOrEqualThanParam": "%g value of \"%s\" parameter must be less than or equal to %g value of \"%s\" parameter ",
+    "RandSeed": "Initial value of random number"
+  },
+  "Libraries/bgrtl/ScalarUtils": {
+    "ErrScalarToValue": "Error converting value from the scalar data type",
+    "ErrValueToScalar": "Error converting value to the scalar data type"
   },
   "Libraries/bgrtl/SemverUtils": {
+    "BuildMetadata": "built metadata",
+    "ErrCaretRangeVersionMaskFormat": "Version mask must have the following format: ^Major[.Minor[.Patch[-Pre-releaseVersion]]]",
+    "ErrIdentifierContainsInvalidCharacter": "\"%s\" identifier contains invalid character: %s",
+    "ErrInvalidVersionMask": "\"%s\" is not a valid version mask",
+    "ErrInvalidVersionNumber": "\"%s\" is not a valid version number",
+    "ErrTildeRangeVersionMaskFormat": "Version mask must have the following format: ~Major[.Minor[.Patch[-Pre-releaseVersion]]]",
+    "ErrVersionFormat": "Version must have the following format: Major.Minor.Patch[-Pre-releaseVersion][+Built Metadata]",
+    "ErrVersionPartContainsEmptyIdentifier": "\"%s\" part contains an empty identifier: \"%s\"",
+    "ErrVersionPartHasLeadingZero": "\"%s\" version number element contains leading zero",
+    "ErrVersionPartIsEmpty": "\"%s\" part is an empty string",
+    "ErrVersionPartIsNegative": "\"%s\" version number element is negative",
+    "ErrXRangeVersionMaskFormat": "Version mask must have the following format: [Major.[Minor.]]*",
     "PreReleaseVersion": "prerelease version"
   },
   "Libraries/bgrtl/ServiceVariables": {
     "ErrServiceVariablesAlreadyInitialized": "Service variables have already been initialized"
+  },
+  "Libraries/bgrtl/Singleton": {
+    "ErrObjectDeleteRefCount": "You cannot delete the object of %s class due to interface links to it: %d",
+    "ErrSingletonInstanceDestroyForbidden": "Explicit deletion of the single instance of %s class is forbidden",
+    "ErrUnexpectedRelease": "Attempt to reduce the interface links number not first increasing this number first"
   },
   "Libraries/bgrtl/SparseArray": {
     "ErrItemNotExist": "Item with %d index does not exist"
@@ -2239,23 +2295,54 @@
   "Libraries/bgrtl/Statistics": {
     "ComputeStatistics": "Calculate statistics",
     "ErrDataSourceNotAssigned": "No data set reference",
-    "ErrNullsNotAllowed": "Missing values are prohibited (missing value in \"%s\" column)",
+    "ErrNullsNotAllowed": "Null values are prohibited (null value in \"%s\" column)",
     "ErrProcessKeptStatistics": "Errors occurred while calculating the list of unique values",
     "ErrProcessKeptStatisticsNonExistentNull": "Previously missing null value was found in \"%s\" field",
-    "ErrProcessKeptStatisticsNonExistentValue": "Previously missing null value \"%s\" was found in \"%s\" field"
+    "ErrProcessKeptStatisticsNonExistentValue": "Previously missing null value \"%s\" was found in \"%s\" field",
+    "ErrStatisticsBuildCookieInvalidOwner": "The statistics builder Cookie belongs to another object",
+    "ErrStatisticsBuildCookieIsNil": "Attempt to complete the calculation completion operation with null reference to the statistics builder Cookie"
   },
   "Libraries/bgrtl/StatUniqueValues": {
-    "ErrNotImplemented": "This functionality not implemented"
+    "ErrLoadRefCount": "The array length of the values count does not match the unique values count",
+    "ErrNotImplemented": "This functionality not implemented",
+    "ErrOrderIndexesLength": "The index array length does not match the unique values count",
+    "ErrWrongSyncClass": "Invalid synchronization source class. Expected instance of %s class, actually %s"
   },
   "Libraries/bgrtl/StrUtils": {
     "ErrCodePageNotExist": "Codepage under %d does not exist",
+    "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value",
+    "ErrInvalidDateTime": "\"%s\" string cannot be converted to the date/time value",
+    "ErrInvalidFloat": "\"%s\" string cannot be converted to the real type value",
     "NullValue": "<Null>"
   },
   "Libraries/bgrtl/SyncObjs": {
+    "ErrSlimReadWriteLockDebugDowngradeToRead": "You cannot decreaase the lock level of %p synchronizer from write lock to read lock without first increasing the level",
     "ErrSlimReadWriteLockDebugFinalized": "%p sinchronizer finalized",
-    "ErrSlimReadWriteLockFinalize": "%p synchronizer cannot be deleted as it has been still being used"
+    "ErrSlimReadWriteLockDebugLockRead": "You cannot lock for reading %p synchronizer that has already been locked from the same stream",
+    "ErrSlimReadWriteLockDebugLockWrite": "You cannot lock for writing %p synchronizer that has already been locked from the same stream",
+    "ErrSlimReadWriteLockDebugTryUpgradeToWrite": "You cannot increase the lock level of %p synchronizer from read lock to write lock without first locking it for reading",
+    "ErrSlimReadWriteLockFinalize": "%p synchronizer cannot be deleted as it has been still being used",
+    "ErrSlimReadWriteLockLockRead": "You cannot lock %p synchronizer for reading",
+    "ErrSlimReadWriteLockLockWrite": "You cannot lock %p synchronizer for writing",
+    "ErrSlimReadWriteLockUnLockRead": "Error releasing read locks of %p sinchronizer",
+    "ErrSlimReadWriteLockUnLockWrite": "Error releasing write locks of %p sinchronizer",
+    "ErrSpinLockFinalize": "%p synchronizer cannot be used as it has already been finalized",
+    "ErrWaitCount": "Invalid count of %d objects for waiting operation"
+  },
+  "Libraries/bgrtl/SysHeap": {
+    "ErrObjectDeleteRefCount": "You cannot delete the object of %s class due to interface links to it: %d"
   },
   "Libraries/bgrtl/System": {
+    "ErrConvertCharToAnsiChar": "Failed to convert %s Unicode character with %d code to Ansi character",
+    "ErrConvertDateTimeToBool": "Failed to convert the Date/time value %g to the boolean value",
+    "ErrConvertDateTimeToInt": "Failed to convert the Date/time value %g to integer",
+    "ErrConvertFloatToBool": "Failed to convert the real value %g to the boolean value",
+    "ErrConvertFloatToDateTime": "Failed to convert the real value %g to the Date/time value",
+    "ErrConvertFloatToInt": "Failed to convert the real value %g to integer",
+    "ErrConvertIntToDateTime": "Failed to convert the integer value %d to the Date/time value",
+    "ErrConvertIntToFloat": "Failed to convert the integer value %d to the real number without accuracy loss",
+    "ErrConvertIntToSet": "Failed to convert %d number of %d bits to the set of %d bits",
+    "ErrConvertSetToInt": "Failed to convert the set of %d bits to the number of %d bits",
     "ErrDestroyCallForbidden": "Direct call of destructor is forbidden",
     "ErrFIsProxyObjectFunctionAlreadyAssigned": "IsProxyObject function already initialized",
     "ErrGetProxyObjectIdFunctionAlreadyAssigned": "GetProxyObjectId Function already initialized",
@@ -2263,6 +2350,7 @@
     "ErrInterfaceNotSupported": "%s interface not supported by object",
     "ErrInvalidClassTypecast": "The object is not a descendant of %s class",
     "ErrInvalidGUID": "Failed to convert \"%s\" row to GUID",
+    "ErrMaxEndThreadProcCountReached": "You cannot register more than %d procedures of finalization for a stream",
     "ErrObjectDeleteRefCount": "You cannot delete the object of %s class due to interface links to it: %d",
     "ErrObjectIsNil": "Null object reference"
   },
@@ -2279,7 +2367,7 @@
     "ErrCannotChangeParams": "You cannot change the thread pool parameters upon its application start",
     "ErrJoin": "One or several subtasks failed",
     "ErrThreadPoolDestroyed": "The task cannot be completed because the thread pool containing it has been deleted",
-    "ErrWorkItemIsNull": "Link to task object not initialized"
+    "ErrWorkItemIsNull": "Reference to task object not initialized"
   },
   "Libraries/bgrtl/TimeZones": {
     "ErrCantOpenKey": "Error attempting to read %s registry key: %s (%d error code)"
@@ -2335,6 +2423,7 @@
   },
   "Libraries/bgrtl/UniqueValues": {
     "ErrNullAsValueChangeForbidden": "NullAsValue parameter value of a non-empty list of unique values cannot be changed",
+    "ErrNullsNotAllowed": "Addition of the missing values to the unique values list is prohibited",
     "ErrValueAlreadyExists": "\"%s\" value already exists in the list of unique values"
   },
   "Libraries/bgrtl/UniqueValuesData": {
@@ -2343,14 +2432,20 @@
   },
   "Libraries/bgrtl/UpdateHelpers": {
     "ErrEndUpdateUnexpected": "Attempt to complete the update process without its start",
+    "ErrLockCookieInvalidOwner": "The blocked object Cookie belongs to another object",
+    "ErrLockCookieIsNil": "Attempt to complete the operation with null reference to the blocked object Cookie",
+    "ErrUnlockUnexpected": "Attempt to unlock the object that has not been previously locked",
     "ErrUpdateCookieInvalidOwner": "The updated object cookie belongs to another object",
-    "ErrUpdateCookieIsNil": "Attempt to perform operation with empty Cookie reference of the updated object"
+    "ErrUpdateCookieIsNil": "Attempt to complete the operation with null reference to the updated object Cookie"
   },
   "Libraries/bgrtl/Utils": {
     "DaysNick": "days",
     "ErrContainerAlreadyIncludeClass": "Container already includes %s class",
-    "ErrDataSourceIsNil": "No reference to %sdata source",
-    "ErrDataSourceNotActive": "%s data source is not active"
+    "ErrDataSourceIsNil": "No reference to %s data source",
+    "ErrDataSourceNotActive": "%s data source is not active",
+    "ErrInvalidHexStr": "\"%s\" string is not a valid view of the sexadecimal number",
+    "ErrInvalidVarType": "\"%s\" is not a string view of TVarType value",
+    "ErrIsNotValidSet": "\"%s\" string is not a valid set view"
   },
   "Libraries/bgrtl/VariableDefs": {
     "ErrVariableByUsageNotFound": "Variable with \"%s\" usage type not found",
@@ -2373,13 +2468,20 @@
     "ErrCannotDeleteNotDynamicLink": "You cannot delete non-dynamic link",
     "ErrCannotLinkVariablesFromSameTable": "You cannot link \"%s\" and \"%s\" variables from the same table",
     "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch",
+    "ErrLinkMustContainMainTableVariable": "When creating link, the main table variable must be provided",
     "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
+    "ErrVariableCanBeIncludedInOnlyOneLink": "\"%s\" variable of %d table can only be part of a \"single\" link",
     "Link": "Link"
   },
   "Libraries/bgrtl/VariablesVendor": {
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable variable \"%s\"",
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type",
     "VariableInfosVendorMetaDesc": "variable description vendor"
+  },
+  "Libraries/bgrtl/VarUtils": {
+    "ErrConvertStrToType": "Error converting \"%s\" string to %s value ",
+    "ErrConvertToOpenArrayInvalidParams": "Invalid parameter values when converting the Variant vector to the open array: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
+    "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value"
   },
   "Libraries/bgrtl/Vendors": {
     "ErrObjectNotFound": "%s %s does not exist in the identifier list",
@@ -2398,16 +2500,33 @@
     "ErrFileExists": "%s file already exists in the archive",
     "ErrIdentName": "File under %s name already exists in the archive",
     "ErrIndexOutOfRange": "Out of range index",
+    "ErrMultipleTransactions": "Adding several files to the archive in parallel is not supported",
     "ErrReopenArchive": "Failed to constantly open archive",
     "ErrReWriteLocalFileHeader": "Error updating local file header",
+    "ErrSeekRead": "You can only move forward in the data stream",
+    "ErrSeekWrite": "You cannot move along the data stream",
     "ErrWrongHMAC": "Data encryption error",
     "ErrWrongPassword": "Wrong password"
   },
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Failed to set \"%s\" property",
+    "ErrDisposeRuntime": "Error disposing JavaScript runtime environment: \"%s\"",
+    "ErrGetModuleSourceUnassigned": "JavaScript module contents reading function unassigned",
+    "ErrMessageQueue": "Unhandled exception when queuing JavaScript events",
+    "ErrMessageUnhandledPromiseRejection": "Unhandled exception when tracking rejected Promise",
+    "ErrOriginalDll": "Operation prohibited. Inncompatible version of ChakraCore library is used.",
+    "ErrRaiseException": "Unhandled exception inside JavaScript built-in function: \"%s\"",
+    "ErrRaiseModuleException": "Unhandled exception when loading JavaScript module",
+    "ErrTooFewArgs": "Too few arguments were called to %s function (%d whereas %d is minimum value)",
+    "ErrTooManyArgs": "Many arguments were called to %s function (%d whereas %d is maximum value)",
     "ErrUnhandledPromiseRejected": "Unhandled error in Promise"
   },
+  "Libraries/ChakraCore/ChakraCommonJS": {
+    "ErrGetModuleSourceUnassigned": "JavaScript module download function unassigned",
+    "ErrGetModuleURLUnassigned": "JavaScript module paths resolution function unassigned"
+  },
   "Libraries/ChakraCore/ChakraRunRes": {
+    "BadSerializedScript": "Service JavaScript code in %s resource incorrectly serialized, non-serialized code executed",
     "ErrResNotFound": "%s resource not found",
     "ErrRunServiceCode": "Failed to execute service JavaScript-code (source: %s)"
   },
@@ -2418,6 +2537,7 @@
     "ErrAttributeNotExist": "%s attribute does not exist.",
     "ErrConfigElementAlien": "The configuration element does not belong to the specified list",
     "ErrConfigElementByNameNotFound": "Configuration element with %s name not found",
+    "ErrRefToClassNotInitOrWrongClass": "Collection reference has not been initialized or realtes to the invalid class",
     "ErrUnsupportedPropertyType": "Unsupported property type",
     "ErrVectorLengthOverflow": "%d array length exceeds the allowable %d limit",
     "ErrWrongElementsClass": "Invalid configuration node list class"
@@ -2464,13 +2584,17 @@
   "Libraries/Config/ConfigBackupService": {
     "ErrBackupManagerNotRegistered": "Class not registered for \"%s\" identifier",
     "ErrBackupMarkerDelete": "Attempt to delete the current backup point: \"%s\"",
-    "ErrBackupPointInitialize": "Backup point initialization error:\n\"%s\"",
+    "ErrBackupPointIncorrect": "You cannot backup changes to point: \"%s\"",
+    "ErrBackupPointInitialize": "Backup point initialization error: \"%s\"",
     "ErrBackupPointRollBack": "Failed to restore point: \"%s\"",
     "ErrBackupPointUpdate": "Failed to update point: \"%s\"",
+    "ErrCookieInvalidOwner": "The blocked object Cookie belongs to another object",
+    "ErrCookieIsNil": "Attempt to complete the operation with null reference to the blocked object Cookie",
     "ErrRollBackAggregateMessage": "Errors occurred during recovery",
     "ErrRootBackupContainerFinish": "Attempt to close root recovery point"
   },
   "Libraries/Config/ConfigBinary": {
+    "ErrAttrTypeMismatch": "\"%s\" attribute data type mismatch",
     "ErrInvalidUTFInt": "Error reading integer packed number",
     "ErrUnknownConfigBinaryStream": "Unsupported configuration data stream",
     "ErrUnsupportedConfigBinaryStreamVersion": "Unsupported version of %d configuration data stream",
@@ -2479,24 +2603,47 @@
   "Libraries/Config/ConfigScheme": {
     "CountDesc": "Count",
     "ErrAttributeByNameNotFound": "Schema attribute with \"%s\" name not found.",
-    "ErrTypeByNameNotFound": "\"%s\" named type not found",
+    "ErrDuplicateAttributeName": "Type of \"%s\" schema contains more than one attribute with \"%s\" name",
+    "ErrElementByNameNotFound": "Schema element with \"%s\" name was not found.",
+    "ErrItemNameNotFound": "Enumeration item with \"%s\" name was not found.",
+    "ErrSameAttributeAndElementName": "Type of \"%s\" schema contains attribute and element with the same \"%s\" name",
+    "ErrTypeByNameNotFound": "Type with \"%s\" name not found",
     "ItemDesc": "Item",
     "ValueDesc": "Value",
     "VarDataDesc": "Data",
     "VarTypeDesc": "Type"
   },
+  "Libraries/Config/ConfigUtils": {
+    "ErrConfigSchemeTypesMismatch": "Type of %s schema of the loaded configuration is not compatible with the schema type of %s object"
+  },
   "Libraries/Config/ConfigWrappers": {
-    "ErrBaseConfigNotExists": "No base configuration when reading the derived item",
+    "ErrBaseConfigNotExists": "No base configuration when reading the derived element",
     "ErrBaseElementGuidNotExists": "No base element for the derived collection element with %s identifier",
     "ErrBaseElementIDNotExists": "No base element for the derived collection element with %d identifier",
     "ErrBaseElementNameNotExists": "No base element for the derived collection element with %s name",
     "ErrBaseElementNotExists": "No base element for the derived collection element",
-    "ErrConfigElementByNameNotFound": "Configuration item with %s name not found",
-    "ErrDuplicateSequenceItemNames": "The collection contains more than one item with %s name"
+    "ErrConfigElementByNameNotFound": "Configuration element with %s name not found",
+    "ErrDuplicateDerivedItemGuids": "The collection contains more than one item derived from the item with %s identifier",
+    "ErrDuplicateDerivedItemIDs": "The collection contains more than one item derived from the item with %d identifier",
+    "ErrDuplicateDerivedItemNames": "The collection contains more than one item derived from the item with %s name",
+    "ErrDuplicateSequenceItemGuids": "The collection contains more than one item with %s identifier",
+    "ErrDuplicateSequenceItemIDChanged": "The collection contained base and derived items with the same %d identifier. The derived item identifier was changed to %d",
+    "ErrDuplicateSequenceItemIDOverride": "The collection contained base and derived items with the same %d identifier. The base item was ignored",
+    "ErrDuplicateSequenceItemIDs": "The collection contains more than one item with %d identifier",
+    "ErrDuplicateSequenceItemNameChanged": "The collection contained base and derived items with the same %s identifier. The derived item was renamed to %s",
+    "ErrDuplicateSequenceItemNameOverride": "The collection contained base and derived items with the same %d name. The base item was ignored",
+    "ErrDuplicateSequenceItemNames": "The collection contains more than one item with %s name",
+    "ErrGetConfigWriterItemByIndexNotSupported": "Receipt of the derived configuration item by index is not supported",
+    "ErrGetConfigWriterItemCountNotSupported": "Receipt of the derived item count of the configuration is not supported",
+    "HintConvertAtomicConfigElement": "When reading the atomic element of %s configuration converting will be performed"
   },
   "Libraries/Config/ConfigXML": {
     "ErrErrorReadingAttribute": "Failed to read the value of \"%s\"attribute",
-    "ErrUnsupportedDataType": "Unsupported configuration attribute data type"
+    "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value",
+    "ErrInvalidChar": "\"%s\" string cannot be converted to the \"character\" value",
+    "ErrInvalidFloat": "\"%s\" string cannot be converted to the real type value",
+    "ErrUnsupportedDataType": "Unsupported configuration attribute data type",
+    "ErrXmlParseError": "Xml parsing error: \"%s\" description, %d string, %d column"
   },
   "Libraries/Config/DelphiConfigScheme": {
     "ErrBindedConfigSchemeTypeNotFound": "Binded configuration schema type for %s type not found",
@@ -2528,6 +2675,7 @@
   },
   "Libraries/DataSampling/Sampling": {
     "AVLTreeBuilding": "Group data",
+    "BiasedSamplingDesc": "Biased sampling",
     "ErrInSelectFields": "No fields have been selected that define the stratum.",
     "ErrSamplingMethod": "No sampling method specified",
     "RandomSamplingDesc": "Random sampling",
@@ -2599,6 +2747,7 @@
     "ErrCreateSolver": "Error creating sparse solver with type: %s",
     "ErrNoMatrixOrRhs": "Matrix or right side not set",
     "ErrNonSquareSuperMatrixNotSupportedYet": "Solver SuperLU does not support non-square matrices yet",
+    "ErrSizesNotEqual": "The matrix columns count and dimension of the right part /solution do not match",
     "ErrSuperLUSolver": "SuperLU Solver procedure failed",
     "ErrSuperMatrixNotConverted": "Matrix not converted to SuperLU format",
     "ErrWrongArrayType": "Unsupported array type: %s",
@@ -2610,7 +2759,8 @@
     "ErrWrongSplineType": "Invalid spline type for %s: %s algorithm"
   },
   "Libraries/Math/SplineTrend": {
-    "ErrBuildSeasonalIndexesSolver": "%d solver error when calculating seasonal indices"
+    "ErrBuildSeasonalIndexesSolver": "%d solver error when calculating seasonal indices",
+    "ErrBuildTrendPSpline": "%d error of the smoothing spline calculation procedure during trend building"
   },
   "Libraries/Math/StatDistributions": {
     "ErrNotImplemented": "Functionality not implemented"
@@ -2651,7 +2801,7 @@
   },
   "Libraries/Model/Connections/ModelConnectionWorkFlow": {
     "ErrAlienConnectionNode": "\"%s\" connection  does not belong to the current connection list",
-    "ErrDerivedConnectionVendorNotFound": "No derived connection node component found",
+    "ErrDerivedConnectionVendorNotFound": "No derived component for the connection node found",
     "ErrNodeIsNotConnectionReference": "\"%s\" node  is not a connection reference",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrNoReferencedConnection": "\"%s\" node does not refer to any connections",
@@ -2718,7 +2868,7 @@
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
-    "ErrUnknownCouplerDefType": "Unknown coupler type",
+    "ErrUnknownCouplerDefType": "Unknown connection descriptor type",
     "IsSealedVendor": "Sealed",
     "ModelComponent": "Node component",
     "OriginalComponentVendorGuidDesc": "Original component GUID"
@@ -2756,12 +2906,14 @@
     "VendorCaption": "Output Node"
   },
   "Libraries/Model/ModelCommon": {
-    "ErrPortParentIsNil": "Link to the node port is not included into list"
+    "ErrPortParentIsNil": "Reference to the node port is not included into list",
+    "ErrPortsParentNodeIsNil": "The node port list does not belong to any node"
   },
   "Libraries/Model/ModelComponent": {
+    "ErrAlreadyConfiguringSocket": "The node component is in the socket configuring state",
     "ErrInvalidComponentEngineImplementation": "Invalid component engine implementation",
     "ErrModelComponentAlreadyInitialized": "The node component already initialized",
-    "ErrUnknownCouplerDefType": "Unknown coupler type"
+    "ErrUnknownCouplerDefType": "Unknown connection descriptor type"
   },
   "Libraries/Model/ModelComponentCouplerDefItems": {
     "CouplerDefMetaDesc": "Connection"
@@ -2816,8 +2968,13 @@
   },
   "Libraries/Model/ModelPackage": {
     "ErrAlienModelUnit": "Node does not belong to the current package",
-    "ErrPackageLinkAlreadyExists": "Link to \"%s\" package already exists",
+    "ErrCircularPackageLinksNotAllowed": "Circular links between packages are not allowed",
+    "ErrPackageLinkAlreadyExists": "Reference to \"%s\" package already exists",
+    "ErrPackageLinkToSelfNotAllowed": "You cannot add link to yourself in the package",
     "ErrPackageNameCannotBeEmpty": "Package name cannot be empty",
+    "ErrPackageNameInvalidCharacter": "\"%s\" package name contains the invalid \"%s\" character",
+    "ErrPackageNameInvalidFirstCharacter": "\"%s\" package name starts with the invalid \"%s\" character",
+    "ErrPackageWithNameLinkAlreadyExists": "Link to the package with \"%s\" name already exists",
     "ModelUnitDisplayNameDefault": "Module"
   },
   "Libraries/Model/ModelPackageContext": {
@@ -2825,6 +2982,9 @@
     "ErrExecNodeBaseComponentNotFound": "Base component for \"%s\" node not found"
   },
   "Libraries/Model/ModelPackageManager": {
+    "BackupRestored": "Error occurred while saving \"%s\" package. File restored from backup.",
+    "CompatConvertRequired": "While downloading \"%s\" package of %s version converting will be performed.",
+    "ErrCannotLoadPackageElement": "Package download error: failed to download \"%s\" element",
     "ErrCannotOpenFile": "Failed to open \"%s\" file"
   },
   "Libraries/Model/ModelReports": {
@@ -2835,15 +2995,18 @@
     "SocketConstraintMetaDesc": "Socket constraint"
   },
   "Libraries/Model/ModelSocketConstraintDefs": {
+    "ErrModelSocketDefConstraintAlreadyInitialized": "Socket constraint description already initialized",
     "ErrSocketIsNil": "No reference to socket specified"
   },
   "Libraries/Model/ModelSocketConstraintItems": {
     "SocketConstraintMetaDesc": "Socket constraint"
   },
   "Libraries/Model/ModelSocketConstraints": {
+    "ErrModelSocketConstraintAlreadyInitialized": "Socket constraint already initialized",
     "ErrSocketIsNil": "No reference to socket specified"
   },
   "Libraries/Model/ModelSocketDefItems": {
+    "ErrItemBySocketDefNotFound": "Socket description not found in the list",
     "SocketMetaDesc": "Socket"
   },
   "Libraries/Model/ModelSocketDefs": {
@@ -2853,7 +3016,10 @@
     "ErrInterfaceNotSupported": "Input and output sockets are incompatible"
   },
   "Libraries/Model/ModelSocketItems": {
+    "ErrCannotAddNotMultipleSocket": "You cannot dynamically add non-multiple socket",
+    "ErrCannotDeleteNotDynamicSocket": "You cannot delete non-dynamic socket",
     "ErrItemBySocketNotFound": "Socket not found in the list",
+    "ErrMaxOccursOfMultipleSocketIsReached": "Maximum multiple socket count reached",
     "SocketMetaDesc": "Socket"
   },
   "Libraries/Model/ModelSockets": {
@@ -2864,6 +3030,9 @@
     "CurrentModel": "Current module",
     "DeleteReferringVendorCaption": "Delete \"%s\" Derived Component",
     "ErrAlienExcludedNode": "\"%s\" node does not belong to the current module",
+    "ErrAlienSubModel": "Supernode does not belong to the current workflow",
+    "ErrComponentVendorIsSealed": "It is forbidden to create the derived component for this node",
+    "ErrDerivedConnectionVendorNotFound": "No derived component for the connection node found",
     "LocalModelComponentVendorMetaDesc": "local component",
     "ModelComponentVendorMetaDesc": "component"
   },
@@ -2875,12 +3044,15 @@
     "CopyNodeCaption": "\"%s\" Element Copied",
     "CopyNodesCaption": "Elements Copied",
     "DeleteElementsCaption": "Elements deleted",
+    "DeleteInputSocketCaption": "\"%s\" Input of \"%s\" Node Deleted",
     "DependentNodeOutputPort": "Dependent nodes",
     "ErrActivateModelNodes": "Error occurred while activating nodes",
     "ErrAllNodesLocked": "All workflow nodes locked",
+    "ErrAlreadyConfiguringSocket": "\"%s\" node already in the socket configuring state",
     "ErrCannotFindPreviousProcess": "Failed to find the previous activation process for \"%s\" node",
     "ErrComponentNotInitialized": "Base component not initialized",
     "ErrDuplicatePublishedNodeName": "The package already contains the published node with \"%s\" name",
+    "ErrInactiveBranch": "\"%s\" node is in the inactive condition branch",
     "ErrInvalidModelCriticalSectionCookie": "Invalid Cookie for critical workflow section blocking",
     "ErrInvalidModelLockCookie": "Invalid Cookie for workflow nodes blocking",
     "ErrInvalidModelLockCookieOwner": "Invalid owner of Cookie for workflow nodes blocking",
@@ -2894,7 +3066,7 @@
     "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
     "ErrParentProcessError": "Error in parent process",
     "ErrPortMismatch": "Incompatible component vendor: node port list does not match",
-    "ErrPortParentIsNil": "Link to the node port is not included into list",
+    "ErrPortParentIsNil": "Reference to the node port is not included into list",
     "ErrPublishedNodeNameIsEmpty": "No published node name specified",
     "ErrSocketNotConfigured": "Socket not configured",
     "ErrUnableToLoadNodeConfig": "Failed to load the node configuration",
@@ -2907,10 +3079,12 @@
     "LogActivateNodeSuccess": "Successfully activated \"%s\" node",
     "LogDeactivateNode": "\"%s\" node deactivated",
     "LogNodeActivationError": "Error activating \"%s\" node",
+    "ResetModelNodeConfiguration": "Initial configuration of \"%s\" node reset ",
     "RestoreBackupProcessCaption": "Restore Backup Configuration",
     "SynchronizationInputPort": "Execution order",
     "SynchronizationOutputPort": "Execution order",
-    "Top": "Top"
+    "Top": "Top",
+    "WarnLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
     "ErrMsgCantFindLinkNode": "You cannot define the link response port",
@@ -2920,6 +3094,7 @@
     "ErrMsgNoVendorLocator": "Failed to get port vendor enumerator",
     "ErrSubModelVendorNotCreated": "You cannot create the supernode component In the current context",
     "WarnModelNotSupportInPort": "Failed to create input port for \"%s\" port",
+    "WrnNullRttiInfo": "Invalid supernode port descriptor vendor detected",
     "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
@@ -2972,6 +3147,9 @@
     "ErrCannotLinkVariablesFromSameTable": "You cannot link \"%s\" and \"%s\" variables from the same table",
     "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch"
   },
+  "Libraries/Model/Variables/TuneVariablesSocketConstraint": {
+    "ErrValueNotAllowed": "\"%s\" value of the input variable \"%s\" does not match the specified limits"
+  },
   "Libraries/Model/Variables/VariablesModelComponentEngine": {
     "InputVariables": "Input variables",
     "OutputVariables": "Output variables"
@@ -2995,10 +3173,15 @@
     "TableDataVendorGroupCaption": "Table View"
   },
   "Libraries/Model/WebServiceInputNode/WebServiceInputNodeComponent": {
+    "ErrInvalidInputColumnCount": "Invalid column count in the input matrix of values: %d; required: %d",
+    "ErrInvalidInputElementCount": "Invalid element count in the input array: %d; required: %d",
     "ErrInvalidInputRowCount": "Invalid row count in the variable value matrix: %d"
   },
   "Libraries/Model/WorkFlow": {
-    "ErrCircularLink": "No circular links between nodes",
+    "ErrCircularLink": "Circular links between nodes are not allowed",
+    "ErrInputLinkAlreadyExists": "Link to the input port \"%s\" of \"%s\" node already exists",
+    "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
+    "ErrUnableToRestoreLinkTo": "Failed to restore link to the input of \"%s\" node",
     "Links": "Links",
     "Node": "Node",
     "Nodes": "Nodes",
@@ -3010,7 +3193,16 @@
     "InputDataSource": "Input data source",
     "OutputDataSource": "Output data set"
   },
+  "Libraries/Normalization/FixedNormalData": {
+    "ErrArrayExpceted": "You cannot denormalize a single element. Array from %d elements must be at the input.",
+    "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
+    "ErrWrongArraySize": "'%s' %d array size not equal to the expected size of %d array"
+  },
+  "Libraries/Normalization/NormalColumns": {
+    "ErrExcludeOutOfRange": "The deleted range is out of range. The following values are given: start index %d, range length %d. The index of the last deleted column %d exceeds the index of the last deleted column %d."
+  },
   "Libraries/Normalization/NormalColumnsManager": {
+    "ErrIrremNotExcluded": "Irremovable factor \"%s\" cannot be excluded",
     "ErrNotImplemented": "This functionality not implemented"
   },
   "Libraries/Normalization/NormalColumnsRange": {
@@ -3018,18 +3210,32 @@
   },
   "Libraries/Normalization/NormalData": {
     "CalculateCacheProcessCaption": "Data Set Caching",
+    "ErrArrayExpected": "You cannot denormalize a single element. Array from %d elements must be denormalized for \"%s\" column.  ",
     "ErrImpossibleToAllocate": "You cannot allocate memory for cached normalized data source",
     "ErrNotEnoughCache": "Insufficient cache size to store normalized data string",
     "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
     "ErrUnexpectedEndUpdate": "EndUpdate call without corresponding BeginUpdate",
+    "ErrWrongArraySize": "%s %d array size not equal to the expected %d",
+    "ErrWrongNormalizerParams": "Error adding \"%s\" factor: the output columns count of %d normalizer does not match the expected %d",
     "InterceptDisplayName": "Intercept",
-    "NormDSTypeNotSupported": "Unsupported type of the requested normalized data set"
+    "NormDSTypeNotSupported": "Unsupported type of the requested normalized data set",
+    "UnsupportedPrenormInDataType": "Unsupported type of the normalizer data of the normalized string"
+  },
+  "Libraries/Normalization/NormalDataArray": {
+    "ErrWrongBufferSize": "String size of %d results is less than the size of the normalized string %d"
   },
   "Libraries/Normalization/NormalDataFactory": {
+    "ErrFactoryAlreadyRegistered": "Factory for this normalized data set format has already been registered",
+    "ErrFactoryIsNotRegistered": "Factory for this normalized data set format has not  been registered",
     "ErrMultNormTypeWrong": "Invalid multiplied factor type"
   },
   "Libraries/Normalization/Normalizers": {
+    "ErrCorrectionMissed": "Denormalization coefficients correction ignored",
     "ErrInvalidDenormCode": "You cannot denormalize the discrete field value",
+    "ErrLessThanMin": "The normalized value is less than the minimum value range",
+    "ErrMoreThanMax": "The normalized value is more than the maximum value range",
+    "ErrNormLessThanMin": "The denormalized value is less than the minimum value range",
+    "ErrNormMoreThanMax": "The denormalized value is more than the maximum value range",
     "ErrNotImplemented": "This functionality not implemented",
     "ErrRefIdRequired": "The reference category used in the normalizer is not defined",
     "ErrWrongDiscreteIndexRange": "Prenormalized index: %d is out of allowable [%d ; %d] range",
@@ -3037,6 +3243,16 @@
     "VS_MEAN": " to mean",
     "VS_MEAN_PREV": " to mean from previous",
     "VS_MEAN_SUBS": " to mean from subsequent"
+  },
+  "Libraries/Normalization/NormalizerSettings": {
+    "ErrMinMaxNormTypeNotSupported": "The selected \"%s\" normalization type is not supported by Min-Max normalization settings",
+    "ErrMinMaxStatNaN": "Failed to calculate the maximum/minimum value for the range normalization settings, \"%s\" column"
+  },
+  "Libraries/Normalization/NormMatrixData": {
+    "ErrGetColNotSupported": "Normalized matrix column request not supported"
+  },
+  "Libraries/Normalization/PreNormDataAccessor": {
+    "ErrNoIndexInHash": "No index of the installed %d column in Accessor hash"
   },
   "Libraries/Normalization/TunedNormParams": {
     "ErrAvailableNormTypeNotFound": "No valid normalization type found",
@@ -3053,19 +3269,37 @@
   },
   "Libraries/Normalization/TunedNormParamsProvider": {
     "ErrInvalidColumn": "No available normalization types for \"%s\" column",
-    "ErrNotImplemented": "This functionality not implemented"
+    "ErrInvalidFactorIndex": "Invalid %d factor index (available range [%d;%d])",
+    "ErrNotImplemented": "This functionality not implemented",
+    "ErrProcessKeptStatisticsChangedUniqueValues": "The unique values list for \"%s\" column changed; component reconfiguration required",
+    "ErrStatIndicatorsNeddedIndexOutRange": "Invalid index of the requested statistical indicators",
+    "ErrUniqueValuesSyncConflict": "Input data set is not compatible with normalization settings"
+  },
+  "Libraries/Normalization/TuneNormColumnDefs": {
+    "ErrTuneNormColumnDefsVendorNotSet": "IBGTuneNormColumnDefsVendor interface not set",
+    "ErrWrongConstructor": "Invalid column collection constructor called"
+  },
+  "Libraries/Normalization/TuneNormColumnDefsVendor": {
+    "ErrIncorrectUsedDK": "Invalid \"%s\" data kind of normalized column \"%s\""
   },
   "Libraries/Normalization/TuneNormDataSource": {
     "CreateInDataProcessCaption": "Prepare input data set",
     "CreateNormalDataProcessCaption": "Create Normalized Data Set",
-    "CreateOutDataProcessCaption": "Preparing output data set"
+    "CreateOutDataProcessCaption": "Preparing output data set",
+    "ErrGetNormData": "Errors occurred while requesting normalized data set",
+    "ErrUniqueValueNotFound": "\"%s\" not found in the list of configured unique values (\"%s\" column, %d string)"
   },
   "Libraries/Normalization/TuneNormDataSourceSocketDef": {
     "ErrNotImplemented": "This functionality not implemented"
   },
   "Libraries/Optimization/Optimization": {
     "ErrAbsentSubstitution": "Parameter with %d index is not listed",
+    "ErrConstraintsParameterNotFound": "Parameter with %d index not found in the constraints list",
+    "ErrDuplicateIndex": "Parameter with %d index added more than once",
     "ErrForeignParameter": "Parameter does not belong to the current collection",
+    "ErrItemByParameterNotFound": "Collection item matching the specified parameter was not found",
+    "ErrMinMaxFloat": "The specified minimum value %f is more than the maximum value %f",
+    "ErrMinMaxInteger": "The specified minimum value %d is more than the maximum value %d",
     "ErrOrphanValue": "Parameter not associated with collection",
     "ErrParameterInaccessible": "Parameter value inaccessible",
     "ErrParameterWrongDataType": "Invalid parameter data type"
@@ -3073,16 +3307,20 @@
   "Libraries/Optimization/Optimizer": {
     "ErrMethodAlreadyRegistered": "%s method implementation already registered",
     "ErrMethodNotImplemented": "%s method not implemented",
+    "ErrMethodRequiresParameters": "%s method requires additional configuration",
     "ErrStepIsNull": "Another strategy step not specified",
     "ErrUnsupportedConstraint": "%s method does not support %s constraint type"
   },
   "Libraries/PropManager/CommonPropBinder": {
     "ErrCantFindIntfEditor": "Failed to find interface editor",
+    "ErrCantFindPropBind": "Failed to find the property mapping for interface",
     "ErrMainInterfaceIsNil": "Root element interface not set or removed",
     "ErrNotCompatibleDataTypes": "Property and variable types are not compatible"
   },
   "Libraries/PropManager/InterfacePropManager": {
+    "ErrCannotSetPropertyToNull": "You cannot assign null value to \"%s\" property",
     "ErrCantAccessPropertyValue": "Failed to get access to value of \"%s\" property",
+    "ErrDataTypeNotEqual": "The actual type of \"%s\" property does not match the requested one",
     "ErrFindInterfaceDublicate": "Interface duplicate found in metadata: \"%s\"",
     "ErrGetValueOutOfBounds": "Value of \"%s\" property is not in the range of allowable values of the requested type",
     "ErrGuidNotFound": "\"%s\" interface not found in metadata",
@@ -3094,11 +3332,14 @@
     "ErrInvalidUTFInt": "Error reading integer packed number",
     "ErrManagerNotInitialized": "Interface property manager not initialized",
     "ErrParentNotInitialized": "Not initialized parent of \"%s.%s\" interface",
+    "ErrPropAccessorNotFound": "Failed to find \"%s\" accessor in metadata for \"%s.%s\" property",
     "ErrReferenceIsNil": "Interface reference not initialized",
     "ErrReferenceNotFound": "Failed to find the implemented interface",
     "ErrSetValueOutOfBounds": "Set value \"%d\" of  \"%s\" property is not in the range of allowable values",
+    "ErrVaiantTypeIncorrect": "The property containing \"%s\" value type is incorrect for the variant property \"%s.%s.%s\"  ",
     "ErrVaiantTypeNotFound": "No \"%s\" property in metadata for \"%s.%s\" interface",
-    "ErrValueOutOfRange": "\"%d\" value is not in the range of allowable values of \"%s\" type"
+    "ErrValueOutOfRange": "\"%d\" value is not in the range of allowable values of \"%s\" type",
+    "ErrVisibilityMismatch": "Visibility of \"%s\" interface mismatches the required visibility"
   },
   "Libraries/Regression/DataSourceRegressionModelComponentEngine": {
     "ErrNoModel": "Model is not configured. It is required to train the node before its application",
@@ -3182,6 +3423,7 @@
     "ErrInvalidObjectID": "Invalid object identifier: %d",
     "ErrMainServerObjectNotRegistered": "The main server object is not registered",
     "ErrMaxObjectIdReached": "Limit in %d values of object identifiers reached",
+    "ErrMethodHasNoReturnValue": "%s method has no return value",
     "ErrMethodHasOutputParameters": "%s method contains output parameters",
     "ErrRpcVersionMismatch": "Client of %s version cannot get connected to the server of %s version",
     "ErrUnknownInterfaceID": "Unknown interface identifier: %d"
@@ -3200,7 +3442,8 @@
     "ErrLoadXSD": "Error loading XSD files"
   },
   "Libraries/XSDFilesConnection/XSDFilesConnectionVendor": {
-    "XSDFilesConnectionVendorCaption": "Set of XSD Schemas"
+    "XSDFilesConnectionVendorCaption": "Set of XSD Schemas",
+    "XSDFilesConnectionVendorDesc": "Connection to the set of XSD schemas located in the file storage"
   },
   "Studio/ApplicationManager": {
     "ErrNoPackageFileName": "No package file specified."
@@ -3233,7 +3476,10 @@
     "ErrInvalidPath": "Invalid file path: \"%s\"",
     "ErrModelNodeNotFound": "Node %s not found",
     "ErrModelNodeNotPublished": "Node %s published",
+    "ErrMustRestoreReferencedPackage": "You cannot restore dependent package %s without restoring %s package to which it refers",
     "ErrNoPublishedNodes": "The package contains no published nodes",
+    "ErrPackageAlreadyEditing": "Package with %s name has already been used by another process and it cannot be opened for editing",
+    "ErrPackageBackupReferencesAlreadyRevived": "References to other packages have already been restored for backup of %s package",
     "ErrPackageDoesNotBelongToCurrentSession": "%s package does not belong to the current session",
     "ErrPackageNotFound": "Failed to find package with %s name and %s version",
     "ErrPackageNotFoundByFileName": "Failed to find %s package",
@@ -3633,11 +3879,11 @@
     "MDDatabase": "Metadata database"
   },
   "Warehouse2/DBMDEngine": {
-    "ErrDimensionFKIsNull": "Link to \"%s\" dimension not found.\nThe foreign key value not specified.",
-    "ErrDimensionFKNotFound": "Link to \"%s\" dimension not found.\nThe dimension with primary key \"%s\" was not found in the dimension list.",
+    "ErrDimensionFKIsNull": "Reference to \"%s\" dimension not found.\nThe foreign key value not specified.",
+    "ErrDimensionFKNotFound": "Reference to \"%s\" dimension not found.\nThe dimension with primary key \"%s\" was not found in the dimension list.",
     "ErrNotFoundVersionInfo": "Failed to read version information about Deductor Warehouse version.\n%s",
-    "ErrProcessFKIsNull": "Link to \"%s\" process not found.\nThe foreign key value not specified.",
-    "ErrProcessFKNotFound": "Link to \"%s\" process not found.\nThe process with primary key \"%s\" was not found in the process list.",
+    "ErrProcessFKIsNull": "Reference to \"%s\" process not found.\nThe foreign key value not specified.",
+    "ErrProcessFKNotFound": "Reference to \"%s\" process not found.\nThe process with primary key \"%s\" was not found in the process list.",
     "ErrSetMDItem": "Error reading metadata from DB.\nFor object with ID=%s, Name=\"%s\".\nError: %s"
   },
   "Warehouse2/Deductor/DDWConnectionVendor": {
@@ -3648,6 +3894,7 @@
     "ErrDimensionValueIsNull": "Value of \"%1:s\" dimension in \"%0:d\" row is null.",
     "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (\"%d\" row).",
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
+    "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",

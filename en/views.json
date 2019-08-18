@@ -42,7 +42,7 @@
       "text": "Path"
     },
     "colUserDisplayName": {
-      "text": "Full caption"
+      "text": "Full name"
     },
     "colUserName": {
       "text": "User"
@@ -62,7 +62,7 @@
       "text": "Cancel"
     },
     "colDisplayName": {
-      "text": "Full caption"
+      "text": "Full Name"
     },
     "colName": {
       "text": "User"
@@ -144,7 +144,7 @@
       "fieldLabel": "Package file path"
     },
     "frmAddPackageLinkForm": {
-      "title": "Add Link to Package"
+      "title": "Add Reference to Package"
     }
   },
   "app/ConfigureBatchProcModesForm": {
@@ -155,10 +155,10 @@
       "text": "Cancel"
     },
     "chbRunBatchMode": {
-      "boxLabel": "To run a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes will be activated in the run mode. When the feature is disabled, the specified node and all its sub nodes will not be activated for execution in the batch mode."
+      "boxLabel": "Run a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes will be activated in the run mode. When the feature is disabled, the specified node and all its sub nodes will not be activated for execution in the batch mode."
     },
     "chbTeachBatchMode": {
-      "boxLabel": "To retrain a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes, for which the model can be rebuilt, will be activated in the training mode. When the feature is disabled, the specified node and all its sub nodes will not be activated for training in the batch mode."
+      "boxLabel": "Retrain a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes, for which the model can be rebuilt, will be activated in the training mode. When the feature is disabled, the specified node and all its sub nodes will not be activated for training in the batch mode."
     },
     "cntBatchProcModes": {
       "title": "Valid Modes of Batch Processing"
@@ -517,7 +517,7 @@
       "title": "Connections"
     },
     "pnlDerivedVendorsContainer": {
-      "title": "Derivative Components"
+      "title": "Derived Components"
     },
     "pnlDescription": {
       "title": "Description"
@@ -566,7 +566,7 @@
       "fieldLabel": "Version"
     },
     "frmPackageLinkForm": {
-      "title": "Link to Package"
+      "title": "Reference to Package"
     }
   },
   "app/PackagesListForm": {
@@ -701,10 +701,10 @@
       "tooltip": "Copy"
     },
     "txtAbsoluteUrl": {
-      "fieldLabel": "Absolute <i>(for shared use) </i>"
+      "fieldLabel": "Absolute <i>(for shared use)</i>"
     },
     "txtRelativeUrl": {
-      "fieldLabel": "Relative <i>(for personal use) </i>"
+      "fieldLabel": "Relative <i>(for personal use)</i>"
     }
   },
   "components/assnrules/AssnRulesWizard": {
@@ -4222,7 +4222,7 @@
       "text": "Resort Links"
     },
     "btnShowInvalidRelations": {
-      "text": "Show Lost Connections"
+      "text": "Show Lost Links"
     },
     "btnSyncThroughColumns": {
       "tooltip": "Sync"
@@ -4234,7 +4234,7 @@
       "tooltip": "Delete all links"
     },
     "btnTargetShowInvalidRelations": {
-      "tooltip": "Show lost connections"
+      "tooltip": "Show lost links"
     },
     "colDataKind": {
       "text": "Sort of data"

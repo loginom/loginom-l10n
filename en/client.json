@@ -58,6 +58,7 @@
   },
   "app/Application": {
     "ErrVersionFailure": "Error when requesting the latest version",
+    "LoginomLastVersionDownloadUrl": "https://loginom.com/downloads",
     "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost.",
     "VersionErrorResponseStatus": "Error when requesting the latest version. Response code: \"{0}\". Message: \"{1}\"",
     "VersionWrongServiceResponse": "Wrong service response with the information on the latest Loginom version"
@@ -191,7 +192,7 @@
     "PortSubTypeUndefined": "Failed to define the port subtype",
     "RecreateBaseNodeForDerivedVendor": "Recreate base node",
     "RemoveComment": "Delete comment",
-    "RemoveSelectedConfirm": "Do you really want to delete the selected nodes and connections?",
+    "RemoveSelectedConfirm": "Do you really want to delete the selected nodes and links?",
     "RenameNode": "Rename...",
     "ResetConfiguration": "Restore original node configuration",
     "SelectOneNode": "Select only one node",
@@ -228,7 +229,7 @@
     "EditDisplayName": "Edit",
     "EditDisplayNameMsgTitle": "Edit Caption",
     "EditDisplayNameTooltip": "Edit...",
-    "Links": "Links",
+    "Links": "References",
     "Reports": "Reports",
     "Update": "Update",
     "Visibility": "Visibility",
@@ -277,7 +278,7 @@
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Base Node",
-    "BaseNodeTooltip": "Link to base node",
+    "BaseNodeTooltip": "Reference to base node",
     "Delete": "Delete",
     "DeleteTooltip": "Delete...",
     "DescriptionHeader": "Description",
@@ -289,6 +290,7 @@
     "VisibilityHeader": "Visibility"
   },
   "app/Version": {
+    "CompanyWebsite": "https://loginom.com",
     "LegalCopyright": "© Analytical Technologies 2017"
   },
   "app/WindowTitle": {
@@ -593,7 +595,7 @@
     "RegressionParamsPage": "Logistic regression wizard"
   },
   "components/loop/LoopMappingWizard": {
-    "InvalidLinkFormat": "No variables in connection of \"{0}\" input variable with \"{1}\" output variable",
+    "InvalidLinkFormat": "No variable in link of \"{0}\" input variable with \"{1}\" output variable",
     "LoopMappingWizardTitle": "Mapping Variables",
     "SourceTitle": "Output Variables",
     "TargetTitle": "Input Variables"
@@ -1933,7 +1935,7 @@
     "RemoveAllMappingColumnDefsConfirm": "Do you really want to delete all output columns?"
   },
   "wizards/columns/ColumnsMappingWizard": {
-    "RemoveInvalidRelationsConfirm": "Connections with non-existent objects were found. Do you want to delete all lost connections and continue?"
+    "RemoveInvalidRelationsConfirm": "Links with non-existent objects were found. Do you want to delete all lost links and continue?"
   },
   "wizards/columns/DataSetOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"

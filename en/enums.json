@@ -793,7 +793,7 @@
       "XLSX": "Excel 2007"
     },
     "ExcelReferenceStyle": {
-      "$Caption": "Excel Link Type",
+      "$Caption": "Excel Reference Type",
       "R1C1": "R1C1",
       "A1": "A1"
     },
@@ -920,7 +920,7 @@
       "UpperInclusive": "Upper bound inclusive"
     },
     "ConcatenationType": {
-      "$Caption": "Logical Connection Type",
+      "$Caption": "Logical Operation Type",
       "And": "AND",
       "Or": "OR"
     },
@@ -1722,6 +1722,7 @@
       "User": "Configurable",
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
+      "MinErr": "Minimum cost",
       "BreakEven": "Break even point (TPR = PPV)",
       "Accuracy": "Highest overall accuracy",
       "FScore": "Maximum F1 Score",

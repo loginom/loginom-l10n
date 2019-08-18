@@ -798,7 +798,7 @@
     "DocIDColumn": "Идентификатор документа",
     "ErrCharsetForCodePageNotFound": "Не найден поддерживаемый набор символов XML для кодовой страницы %d",
     "ErrExtractXML": "Ошибка при извлечении XML из строки %d входного набора:\n  Код ошибки: %d\n  Сообщение: %s",
-    "ErrExtractXMLInitError": "Ошибка инициализации обработчика Извлечение XML:\n  %s",
+    "ErrExtractXMLInitError": "Ошибка инициализации Извлечения XML: %s",
     "ErrImportNotConfigured": "Дерево импорта не настроено",
     "ErrInputFieldNotSelected": "Необходимо задать поле, содержащее XML",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика!",
@@ -2451,7 +2451,7 @@
   "Libraries/bgrtl/Utils": {
     "DaysNick": "дн.",
     "ErrContainerAlreadyIncludeClass": "Контейнер уже содержит класс %s",
-    "ErrDataSourceIsNil": "Нет ссылки на источник данных%s",
+    "ErrDataSourceIsNil": "Нет ссылки на источник данных %s",
     "ErrDataSourceNotActive": "Источник данных%s не активен",
     "ErrInvalidHexStr": "Строка \"%s\" не является правильным представлением шестнадцатеричного числа",
     "ErrInvalidVarType": "\"%s\" не является строковым представлением значения типа TVarType",

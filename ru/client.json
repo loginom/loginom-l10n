@@ -106,7 +106,7 @@
   "app/MainMenuForm": {
     "EmptyPackageName": "Пакет не выбран",
     "ErrCannotSaveReadOnlyPackage": "Нельзя сохранить пакет с именем \"{0}\", открытый только на чтение.",
-    "ErrLoadPackageErrors": "В процессе загрузки пакета \"{0}\" возникли ошибки",
+    "ErrLoadPackageErrors": "В процессе открытия пакета \"{0}\" возникли ошибки",
     "ErrNoPackageToClose": "Не найден пакет, который можно закрыть.",
     "ErrNoPackageToSave": "Нет пакета для сохранения.",
     "ErrOpenReadOnlyPackage": "Пакет \"{0}\" открыт только на чтение, потому что он уже открыт другим пользователем. Сохранение возможно только под другим именем.",
@@ -258,7 +258,7 @@
   },
   "app/SelectBaseVendorForm": {
     "CantChangeVendor": "Не удалось установить компонент",
-    "ThereIsNodeVendors": "Список компонентов пуст. Создайте производный компонент от подходящего узла"
+    "ThereIsNodeVendors": "Список компонентов пуст. Создайте производный компонент от совместимого узла"
   },
   "app/ServerConnection": {
     "ErrSyncSocketPluginNotInstalledOrDisabled": "Плагин SyncSocket не установлен или отключен."
@@ -596,7 +596,7 @@
     "RegressionParamsPage": "Настройка логистической регрессии"
   },
   "components/loop/LoopMappingWizard": {
-    "InvalidLinkFormat": "Отсутствует переменные в связи входной переменной \"{0}\" с выходной \"{1}\"",
+    "InvalidLinkFormat": "Отсутствует переменная в связи входной переменной \"{0}\" с выходной \"{1}\"",
     "LoopMappingWizardTitle": "Сопоставление переменных",
     "SourceTitle": "Выходные переменные",
     "TargetTitle": "Входные переменные"

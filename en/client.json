@@ -105,7 +105,7 @@
   "app/MainMenuForm": {
     "EmptyPackageName": "Package not selected",
     "ErrCannotSaveReadOnlyPackage": "You cannot save \"{0}\" read-only package",
-    "ErrLoadPackageErrors": "Errors occurred while \"{0}\" package downloading",
+    "ErrLoadPackageErrors": "Errors occurred while \"{0}\" package opening",
     "ErrNoPackageToClose": "No package to be closed was found.",
     "ErrNoPackageToSave": "There is no package to save.",
     "ErrOpenReadOnlyPackage": "\"{0}\" package is open only in the read-only mode as it has already been opened by another user. Saving is possible only under a different name.",
@@ -169,7 +169,7 @@
     "EditPortDisplayName": "Edit port caption...",
     "EditPortDisplayNameWindowTitle": "Edit",
     "EditPortFieldLabel": "Port caption",
-    "ErrNodeNotInitialized": "No component vendor specified for \"{0}\" node",
+    "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "Error": "Error",
     "ErrPortNotCreated": "Failed to create new port",
     "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
@@ -256,8 +256,8 @@
     "VersionMask": "Version"
   },
   "app/SelectBaseVendorForm": {
-    "CantChangeVendor": "Failed to install component",
-    "ThereIsNodeVendors": "The list of components is empty. Create a derived component from the appropriate node."
+    "CantChangeVendor": "Failed to set component",
+    "ThereIsNodeVendors": "The list of components is empty. Create a derived component from the compatible node."
   },
   "app/ServerConnection": {
     "ErrSyncSocketPluginNotInstalledOrDisabled": "SyncSocket plugin is not installed or disabled."
@@ -291,7 +291,7 @@
   },
   "app/Version": {
     "CompanyWebsite": "https://loginom.com",
-    "LegalCopyright": "© Analytical Technologies 2017"
+    "LegalCopyright": "© LLC Analytical Technologies 2017"
   },
   "app/WindowTitle": {
     "Close": "Close",
@@ -420,7 +420,7 @@
     "InputPortsNotActived": "Do you want to activate input ports?"
   },
   "components/columnflipping/ColumnFlippingWizard": {
-    "ColumnFlippingTitle": "Column Convolution",
+    "ColumnFlippingTitle": "Unpivoting",
     "UsageInfo": "Info",
     "UsageTransposition": "Transposed"
   },
@@ -613,7 +613,7 @@
     "VariableNotFoundErrorFormat": "No \"{0}\" variable"
   },
   "components/neuralnet/NeuralNetParamsWizard": {
-    "DecayAvg": "Average",
+    "DecayAvg": "Mean",
     "DecayNone": "None",
     "DecayStrong": "Strong",
     "DecayVeryStrong": "Very strong",
@@ -690,7 +690,7 @@
     "RoundMultipleParamLabel": "Multiplicity",
     "RoundParamLabel": "Rounding parameter",
     "TimeAxisColumnUsageType": "Ordinal field",
-    "UngroupedColumnUsageType": "Ungrouped"
+    "UngroupedColumnUsageType": "Ungroup"
   },
   "components/uniondata/UnionDataWizard": {
     "MissingMainColumn": "Failed to show link not connected with the main table",
@@ -771,7 +771,7 @@
     "ErrUpdateFieldsDetails": "List of table columns in which changes occurred:",
     "KeyColumnText": "Key",
     "SyncThroughColumnsToolTip": "Refresh table fields",
-    "Title": "Specify Source Columns and Table Fields Mapping"
+    "Title": "Specify Source Columns and Table Fields Mapping\nMap Source Columns to Table Fields"
   },
   "exports/dbexport/DBExportParamsWizard": {
     "ErrTableNameNotSelected": "No table name selected",
@@ -1019,8 +1019,8 @@
     "ServerPasteException": "Server error message: "
   },
   "filestorage/DragAndDropHandler": {
-    "DropText": "Drag and drop to start the download",
-    "EmptyDirectoryText": "Folder is empty. Drag files to this area to download them"
+    "DropText": "Drag and drop to start the upload",
+    "EmptyDirectoryText": "Folder is empty. Drag files to this area to upload them"
   },
   "filestorage/FileDownloader": {
     "CantSaveDownLoadedFile": "Failed to save the downloaded file"
@@ -1126,7 +1126,7 @@
     "DeleteAllTitle": "Delete all conditions"
   },
   "highcharts/Extensions": {
-    "HighchartsAreNotLoaded": "To connect extensions you must first download Highchats"
+    "HighchartsAreNotLoaded": "To connect extensions you must first load Highchats"
   },
   "highcharts/Localization": {
     "Loading": "Loading..."
@@ -1861,7 +1861,7 @@
     "NotInitializedError": "Node not initialized",
     "SourceNodeDoesntExists": "The visualizer reference node does not exist for this report",
     "VendorMalfunctionError": "Node component error",
-    "VendorNotDefined": "No vendor specified for visualizer"
+    "VendorNotDefined": "No component specified for visualizer"
   },
   "viewers/roc/ConfusionMatrix": {
     "Event": "Event",
@@ -1917,7 +1917,7 @@
     "CardTitle_Forum": "Forum: Questions and Answers",
     "CardTitle_WebSite": "Company Website",
     "LoginWebSite": "https://loginom.com",
-    "NoNewsLog": "No news downloaded"
+    "NoNewsLog": "Failed to get news"
   },
   "wizards/BaseWizard": {
     "ErrAbortCaption": "Setup Aborted",
@@ -2139,7 +2139,7 @@
     "btnSyncThroughColumnsTooltip": "Sync variables",
     "CreateMappingToAllConfirm": "Do you really want to create output variables for all inputs?",
     "EmptyListText": "No matching variables",
-    "frmColumnsMappingTitle": "Adjustment of Variables Compliance",
+    "frmColumnsMappingTitle": "Adjustment of Variables Mapping",
     "GroupField_MissingFields": "Missing variables",
     "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?",

@@ -9,7 +9,7 @@
   },
   "Common/WSDL/Processor/WSDLRequestProcessor": {
     "MIMEResponseStatus": {
-      "$Caption": "MIME Response Processing Result",
+      "$Caption": "MIME response processing result",
       "Ok": "No errors",
       "Cancelled": "Canceled by user",
       "InitError": "Initialization error: %s",
@@ -21,7 +21,7 @@
       "UnhandledError": "Unhandled error: %s"
     },
     "WSDLPrepareRequestStatus": {
-      "$Caption": "WSDL Request Formation Result",
+      "$Caption": "WSDL request formation result",
       "NoError": "No errors",
       "Cancelled": "Canceled by user",
       "InitError": "Error initializing WSDL request: %s",
@@ -86,7 +86,7 @@
   },
   "Common/XML/Processor/XMLRequestProcessor": {
     "ExportErrorCode": {
-      "$Caption": "XML Export Request Processing Result",
+      "$Caption": "XML export request processing result",
       "NoError": "No errors",
       "Cancelled": "Canceled by user",
       "DataSourceIsEmpty": "The input data source contains no records",
@@ -94,7 +94,7 @@
       "ExportError": "Error executing export procedure: %s"
     },
     "XMLRequestErrorCode": {
-      "$Caption": "XML Request Processing Result",
+      "$Caption": "XML request processing result",
       "NoError": "No errors",
       "Cancelled": "Canceled by user",
       "InitError": "%s",
@@ -535,10 +535,10 @@
   },
   "components/loop": {
     "GroupProcessingKind": {
-      "$Caption": "Method of Data Set Partition into Groups",
+      "$Caption": "Method of data set partition into groups",
       "FixedGroupSize": "Fixed group size",
       "FixedGroupCount": "Fixed group count",
-      "GroupByUniqueValues": "Group by the unique values fields"
+      "GroupByUniqueValues": "Grouping by the unique values fields"
     },
     "LoopKind": {
       "$Caption": "Loop Type",
@@ -635,7 +635,7 @@
   },
   "components/slidingwindow": {
     "SlidingWindowIncompleteRecordsProcessing": {
-      "$Caption": "Incomplete Records Processing Method",
+      "$Caption": "Incomplete records processing method",
       "Leave": "Leave incomplete records",
       "CutPadded": "Delete added incomplete records",
       "CutAll": "Delete all incomplete records"
@@ -730,8 +730,8 @@
   "exports/database": {
     "DBExportType": {
       "$Caption": "Export Mode",
-      "Append": "Insert data into table",
-      "Overload": "Clear table and fill with data",
+      "Append": "Append data to table",
+      "Overload": "Clear table and append data",
       "Delete": "Delete records by key fields",
       "Refresh": "Delete records by key fields and insert data into table",
       "Update": "Update existing table records"
@@ -1077,7 +1077,7 @@
       "NearestEven": "Round to the nearest even number",
       "Down": "Round down",
       "Up": "Round up",
-      "Truncate": "Truncation of fractional parts",
+      "Truncate": "Truncation of fractional part",
       "NearestMath": "Round to the nearest number"
     },
     "RowNumberer": {
@@ -1104,7 +1104,7 @@
       "TotalCount": "Values count",
       "DifMin": "Differences minimum",
       "DifMax": "Differences maximum",
-      "DifAvg": "Differences average",
+      "DifAvg": "Mean Difference",
       "DifSum": "Differences sum",
       "DifSumSq": "Sum of squared differences",
       "DifStdDev": "Standard deviation of differences",
@@ -1148,7 +1148,7 @@
   },
   "Libraries/bgrtl/ProgressTracker": {
     "ProgressTrackerProcessStatus": {
-      "$Caption": "Process Status",
+      "$Caption": "Process status",
       "NotStarted": "Not started",
       "Processing": "Processing",
       "NotResponding": "Not responding",

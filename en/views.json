@@ -466,7 +466,7 @@
       "tooltip": "Configure node..."
     },
     "btnShowDerivedNodes": {
-      "tooltip": "Show parent nodes for derivatives"
+      "tooltip": "Show parent nodes for derived"
     },
     "btnShowOutline": {
       "tooltip": "Show workflow outline"
@@ -1424,7 +1424,7 @@
   },
   "components/execcmd/ExecCmdWizard": {
     "frmExecCmd": {
-      "title": "Command Execution"
+      "title": "Program Execution"
     },
     "lblCmdLine": {
       "text": "Command line"
@@ -2515,7 +2515,7 @@
       "text": "Preview..."
     },
     "chbFieldsStar": {
-      "boxLabel": "Extract all <b>(*) </b> fields"
+      "boxLabel": "Retrieve all fields <b>(*)</b>"
     },
     "cntConnection": {
       "fieldLabel": "Connection"
@@ -3905,7 +3905,7 @@
       "text": "Total"
     },
     "colEventClass": {
-      "text": "Classified"
+      "text": "Predicted by classifier"
     },
     "colEvents": {
       "text": "Correct"
@@ -4268,7 +4268,7 @@
       "text": "Usage type"
     },
     "frmColumnsMapping": {
-      "title": "Adjustment of Columns Compliance"
+      "title": "Adjustment of Columns Mapping"
     },
     "rbLinks": {
       "boxLabel": "Links"

@@ -195,7 +195,7 @@
   "Common/XML/Processor/XMLExportImpl": {
     "ColumnName": "Data column name",
     "ErrColumnMappedToNonExistentNode": "\"%s\" input data set column has been assigned for nonexistent \"%s\" XSD schema node",
-    "ErrNodeAndColumnDontExist": "The matching settings of the input data set and XSD schema refer to nonexistent \"%s\" node of XSD schema and \"%s\" column of the input set",
+    "ErrNodeAndColumnDontExist": "The mapping settings of the input data set and XSD schema refer to nonexistent \"%s\" node of XSD schema and \"%s\" column of the input set",
     "ErrNodeCantMapColumnType": "\"%s\" column of the input data set has \"%s\" data type that cannot be converted to \"%s\" type of \"%s\" node of XSD  schema",
     "ErrNodeMappedToNonExistentColumn": "\"%s\" node of XSD schema has been assigned for nonexistent \"%s\" input data set column",
     "ErrNodeMustBeMapped": "For %s schema node with required value, no association with the input data set field has been assigned",
@@ -368,8 +368,8 @@
     "VendorDesc": "Calculate autocorrelation function values"
   },
   "components/binning/Binning": {
-    "CalculatingBarChartsProcess": "Histogram calculation",
-    "CalculatingBinsProcess": "Calculate bins",
+    "CalculatingBarChartsProcess": "Calculating histogram",
+    "CalculatingBinsProcess": "Calculating bins",
     "DoTeachProcessFmt": "\"%s\" field processing",
     "ErrBinsInvalidFmt": "Bins for \"%s\" column are not valid for quantization",
     "ErrBinsNotDefined": "Bins not defined for the specified parameters",
@@ -377,7 +377,7 @@
     "ErrDefineBinsFailedFmt": "Failed to define quantization intervals for \"%s\" field",
     "ErrInputDataSourceNotActive": "Quantized data source is not active",
     "ErrMethodNotDefined": "The binning method is not defined for the given parameters",
-    "ErrMethodNotDefinedFmt": "Quantization method unspecified for \"%s\" column",
+    "ErrMethodNotDefinedFmt": "Binning method unspecified for \"%s\" column",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "ErrNoMethodFmt": "No quantization method available for \"%s\" column",
     "ErrNotFoundBinsClass": "No bin class found to generate the example template",
@@ -390,7 +390,7 @@
     "PostfixSDBins": "SD",
     "PostfixTileBins": "Tiled",
     "PostfixWithCountBins": "Bins",
-    "TeachProcess": "Formation of quantization bins"
+    "TeachProcess": "Quantization bins forming"
   },
   "components/binning/BinningLabelConstructor": {
     "Inf": "+Inf",
@@ -432,7 +432,7 @@
     "ErrSumFmt": "Failed to get sum of values for %s field",
     "ErrZeroTileCount": "Bin (tile) count must be > 0",
     "NegativValueForTileSumm": "Negative values are not allowed when creating bins by sum of characteristic",
-    "SortProcessFmt": "Sort %s field",
+    "SortProcessFmt": "%s field sorting ",
     "WarnNoRound": "In case of optimal tile quantization bin bounds are not rounded"
   },
   "components/binning/BinningQuantizers": {
@@ -498,8 +498,8 @@
   },
   "components/clope/ClopeEngine": {
     "ClopeApplyNotify": "Model application",
-    "ClopeTrainNotify": "Cluster search",
-    "ClopeTransactionNotify": "Transactions preparation",
+    "ClopeTrainNotify": "Cluster searching",
+    "ClopeTransactionNotify": "Transactions preparing",
     "ColumnNameCluster": "Cluster number",
     "ColumnNameN": "N",
     "ColumnNameS": "S",
@@ -531,7 +531,7 @@
     "NAdditionalIters": "Pretraining iteration count"
   },
   "components/clusterization/ClusterizationEngine": {
-    "ClusterizationTrainNotify": "Cluster search",
+    "ClusterizationTrainNotify": "Cluster searching",
     "ColumnNameCluster": "Cluster number",
     "ColumnNameDistance": "Distance to cluster center",
     "ColumnNameUniqueCoordSuffix": "|Coordinate",
@@ -542,7 +542,7 @@
     "ErrWrongModel": "Model does not match the input data",
     "OutDataSetCenters": "Cluster centers",
     "OutDataSetClusters": "Clustering",
-    "PrepareDataNotify": "Prepare data"
+    "PrepareDataNotify": "Data searching"
   },
   "components/clusterization/ClusterizationVendor": {
     "VendorCaption": "Clustering",
@@ -576,7 +576,7 @@
     "ClassMarkPostfix": " Caption",
     "ClassNumPostfix": " Class number",
     "ClassSignificantPostfix": " Significance",
-    "CoarseClassesProcessDesc": "Build coarse classes",
+    "CoarseClassesProcessDesc": "Coarse classes building",
     "ErrClassStorageNotDefined": "The fine classes storage of one of the columns not defined",
     "ErrCoarseClassBuilderNotValid": "The fine classes storage does not comply with the customized settings",
     "ErrExternalBinningOverFlow": "The external binning size for \"%s\" column exceeds the allowable value",
@@ -615,7 +615,7 @@
     "To": "to "
   },
   "components/columnflipping/ColumnFlipping": {
-    "ColumnFlippingProcess": "Column convolution",
+    "ColumnFlippingProcess": "Unpivoting",
     "DataTypesColumnDisplayName": "Data types",
     "DisplayNamesColumnDisplayName": "Captions",
     "ErrRowCountExceedMaxValue": "Row count of the result set exceeded the maximum value",
@@ -623,7 +623,7 @@
     "ValuesColumnDisplayName": "Values"
   },
   "components/columnflipping/ColumnFlippingVendor": {
-    "VendorCaption": "Column Convolution",
+    "VendorCaption": "Unpivoting",
     "VendorDesc": "Create flat table from pivot table"
   },
   "components/coluniondata/ColUnionData": {
@@ -663,12 +663,12 @@
   "components/corranalysis/CorrAnalysis": {
     "ColumnSet1": "Field 1",
     "ColumnSet2": "Field 2",
-    "CorrAnalysisExtremumCFNotify": "Calculation of cross-correlation functions extremes",
-    "CorrAnalysisNotify": "Calculation of correlation coefficients",
-    "CorrAnalysisPirsonNotify": "Calculation of Pearson correlation coefficients",
-    "CorrAnalysisRankedStatNotify": "Statistics calculation for rank variables",
-    "CorrAnalysisSpearmanNotify": "Calculation of Spearman's correlation coefficients",
-    "CorrAnalysisTauBKendallNotify": "Calculation of Kendall's Tau-b correlation coefficients",
+    "CorrAnalysisExtremumCFNotify": "Cross-correlation functions extremes calculating",
+    "CorrAnalysisNotify": "Correlation coefficients calculating",
+    "CorrAnalysisPirsonNotify": "Pearson correlation coefficients calculating",
+    "CorrAnalysisRankedStatNotify": "Statistics for rank variables calculating",
+    "CorrAnalysisSpearmanNotify": "Spearman's correlation coefficients calculating",
+    "CorrAnalysisTauBKendallNotify": "Kendall's Tau-b correlation coefficients calculating",
     "DisplayName": "Caption",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "Name": "Name"
@@ -679,7 +679,7 @@
   },
   "components/crosstab/CrossTab": {
     "CountCaseDisplayName": "Count",
-    "CrossTabProcess": "Build crosstab",
+    "CrossTabProcess": "Crosstab building",
     "ErrTooManyDimensionsInColumns": "Too many column dimensions selected",
     "InvalidColumnNameFmt": "Failed to generate column name from \"%s\" unique value",
     "NullGroupCaption": "<...>",
@@ -690,10 +690,10 @@
     "VendorDesc": "Create flat table from pivot table"
   },
   "components/datatovariables/DataToVariablesEngine": {
-    "DataToVariablesNotify": "Variable calculation",
+    "DataToVariablesNotify": "Variable calculating",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "ErrNoOneAggregation": "It is required to specify at least one aggregation option for \"%s\" field",
-    "FindMedianNotify": "Median calculation"
+    "FindMedianNotify": "Median calculating"
   },
   "components/datatovariables/DataToVariablesVendor": {
     "VendorCaption": "Table into Variables",
@@ -714,9 +714,9 @@
     "ErrRootNodeNotSelected": "No root XML element selected",
     "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into XML tree",
     "ErrXMLExport": "Error generating XML:\n  Error code: %d\n  %s",
-    "ExportDataSetProcessCaption": "Data Set Processing",
+    "ExportDataSetProcessCaption": "Data set processing",
     "IDName": "ID",
-    "WriteXMLFileProcessCaption": "XML document formation",
+    "WriteXMLFileProcessCaption": "XML document forming",
     "XMLName": "XML",
     "XSDConnection": "Connect to XSD schema source"
   },
@@ -743,8 +743,8 @@
     "ErrWrongModel": "Model does not match the input data",
     "OutDataSetCenters": "Cluster centers",
     "OutDataSetClusters": "Clustering",
-    "PrepareDataNotify": "Prepare data",
-    "TrainNotify": "Cluster search"
+    "PrepareDataNotify": "Data preparing",
+    "TrainNotify": "Cluster searching"
   },
   "components/em/EMVendor": {
     "VendorCaption": "EM Clustering",
@@ -772,8 +772,8 @@
     "ResultDisplayName": "Execution result"
   },
   "components/execcmd/ExecCmdVendor": {
-    "VendorCaption": "Command Execution",
-    "VendorDesc": "External command execution"
+    "VendorCaption": "Program Execution",
+    "VendorDesc": "External program execution"
   },
   "components/execnode/ExecNodeComponent": {
     "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" node for which inheritance is prohibited",
@@ -881,7 +881,7 @@
   },
   "components/filterdata/FilterData": {
     "ErrPreviewDataSourceNotActive": "Failed to apply filter, input not activated",
-    "FilterDataNotify": "Filter operation",
+    "FilterDataNotify": "Data filtering",
     "FilterPreviewProcess": "Filter operation preview",
     "OutputDataSource": "Comply with the condition",
     "OutputDataSourceElse": "Do not comply with the condition",
@@ -920,11 +920,11 @@
     "ErrOptimGradientVerificationFailed": "Analytical gradient verification failed",
     "ErrOptimIntegrityFailed": "The infinite value of the optimized function or its gradient was detected",
     "NotEnoughData": "Not enough data to train the model with the given structure",
-    "TrainARIMAXProcessCaption": "Model Training"
+    "TrainARIMAXProcessCaption": "Model training"
   },
   "components/forecast/ARIMAXModel": {
     "ARDisplayName": "AR[%d]",
-    "ARIMAForecastProcessCaption": "Forecast Calculation",
+    "ARIMAForecastProcessCaption": "Forecast calculating",
     "ErrCoefsLengthMismatch": "Vector depth of %d parameters  does not match the required %d",
     "ErrModelHasNoIntercept": "The current model has no intercept",
     "ErrUnknownCoefficients": "Model contains unknown coefficients",
@@ -946,7 +946,7 @@
     "SeasonalPeriod": "Period of the seasonal component"
   },
   "components/forecast/ARIMAXTasks": {
-    "ARIMAXProcessCaption": "%s Model Training",
+    "ARIMAXProcessCaption": "%s model training",
     "ErrNotARIMAXTaskContext": "Internal error: context is not the training context for ARIMAX model",
     "MessageCurrentModel": "ARIMAX: AIC of the current selected %s model: %.8f",
     "MessageNewModel": "ARIMAX: AIC of %s model: %.8f",
@@ -1006,9 +1006,9 @@
   "components/groupdata/GroupData": {
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "ErrNoOneAggregation": "It is required to specify at least one aggregation option for \"%s\" fact",
-    "FindMedianNotify": "Median calculation",
-    "GroupDataNotify": "Group data",
-    "SortNotify": "Sort result"
+    "FindMedianNotify": "Median calculating",
+    "GroupDataNotify": "Data grouping",
+    "SortNotify": "Grouped data sorting"
   },
   "components/groupdata/GroupDataVendor": {
     "VendorCaption": "Grouping",
@@ -1069,7 +1069,7 @@
     "ErrWrongOutputColumnsCount": "Exactly 1 output column must be defined, %d output columns are currently defined",
     "ErrWrongOutputField": "Invalid %s output field properties, %s data sort, %s data type",
     "Intercept": "<Intercept>",
-    "LinRegTrainProcessName": "Build model",
+    "LinRegTrainProcessName": "Model building",
     "ModelDF": "Number of the model degrees of freedom",
     "ModelPValue": "Model P-value",
     "RegressionCoefsNamePostfix": "|Coefficients",
@@ -1095,13 +1095,13 @@
     "RegBackwardAssignProcessName": "Excluding %s factor from the final model",
     "RegBackwardStepProcessName": "Stepwise selection - %s factor exclusion",
     "RegFoldSet": "Validation partition %d",
-    "RegForwardAssignProcessName": "%s factor addition to the final model",
-    "RegForwardStepProcessName": "Stepwise selection - %s factor addition",
+    "RegForwardAssignProcessName": "%s factor adding to the final model",
+    "RegForwardStepProcessName": "Stepwise selection - %s factor adding",
     "RegPrepareData": "Preparing data before training",
     "RegTrainElnetGridProcessName": "Build model (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
-    "RegTrainLassoGridProcessName": "Build model (L1-regularization coefficient = %.4f)",
+    "RegTrainLassoGridProcessName": "Model building (L1-regularization coefficient = %.4f)",
     "RegTrainProcessName": "%s method - model training",
-    "RegTrainRidgeGridProcessName": "Build model (L2-regularization coefficient = %.4f)",
+    "RegTrainRidgeGridProcessName": "Model building (L2-regularization coefficient = %.4f)",
     "ValidationProcess": "Model validation"
   },
   "components/linregression/LinRegressionVendor": {
@@ -1139,8 +1139,8 @@
     "ErrWrongOutputFieldNotDiscrete": "Invalid \"%s\" output field properties, \"%s\" data sort, whereas \"%s\" is only valid",
     "ErrWrongOutputUniqueCount": "Number of \"%s\"output column unique values is %d (exactly 2 required)",
     "Intercept": "<Intercept>",
-    "LogRegStoreStatProcessName": "Calculation of quality indicators",
-    "LogRegTrainProcessName": "Build model",
+    "LogRegStoreStatProcessName": "Quality indicators calculating",
+    "LogRegTrainProcessName": "Model building",
     "ModelDF": "Number of the model degrees of freedom",
     "ModelPValue": "Model P-value",
     "OutputUniqueValuesNotCalculated": "Unique values of \"%s\" output column not calculated",
@@ -1179,13 +1179,13 @@
     "RegBackwardAssignProcessName": "Excluding %s factor from the final model",
     "RegBackwardStepProcessName": "Stepwise selection - %s factor exclusion",
     "RegFoldSet": "Validation partition %d",
-    "RegForwardAssignProcessName": "%s factor addition to the final model",
-    "RegForwardStepProcessName": "Stepwise selection - %s factor addition",
+    "RegForwardAssignProcessName": "%s factor adding to the final model",
+    "RegForwardStepProcessName": "Stepwise selection - %s factor adding",
     "RegPrepareData": "Preparing data before training",
-    "RegTrainElnetGridProcessName": "Build model (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
-    "RegTrainLassoGridProcessName": "Build model (L1-regularization coefficient = %.4f)",
+    "RegTrainElnetGridProcessName": "Model building (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
+    "RegTrainLassoGridProcessName": "Model building (L1-regularization coefficient = %.4f)",
     "RegTrainProcessName": "%s method - model training",
-    "RegTrainRidgeGridProcessName": "Build model (L2-regularization coefficient = %.4f)",
+    "RegTrainRidgeGridProcessName": "Model building (L2-regularization coefficient = %.4f)",
     "ValidationProcess": "Model validation"
   },
   "components/logregression/LogRegressionVendor": {
@@ -1209,7 +1209,7 @@
     "ErrIterationCountCannotBeNegative": "Iteration count cannot be negative",
     "ErrIterationCountOverflow": "Maximum allowable number of iterations exceeded: %d",
     "ErrLoopVariableCannotBeMapped": "The loop variable cannot receive at the inlet the output variable value",
-    "ErrMappedVariableDuplicate": "Thelinked variables list contains duplicate links to \"%s\" variable",
+    "ErrMappedVariableDuplicate": "The linked variables list contains duplicate links to \"%s\" variable",
     "ErrMappedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch",
     "ErrNoConditionVariable": "No variable to check the loop termination condition",
     "ErrParallelProcessingError": "Error occurred while parallel loop processing",
@@ -1230,7 +1230,7 @@
     "IterationStatusSocketName": "Iterations execution status",
     "IterationSuccessFlagFieldDisplayName": "Success flag field",
     "ProcessActivate": "Activating \"%s\" node",
-    "ProcessAppendDataSet": "Append output data set",
+    "ProcessAppendDataSet": "Output data set appending",
     "ProcessGroupProcessing": "Group processing",
     "ProcessInputDataSourceGrouping": "Defining groups in the source data set",
     "WarningTeachCriticalIterationCount": "Node training started with %d iterations count. Training with many iterations can cause memory overflow error."
@@ -1244,10 +1244,10 @@
     "ErrBetasArraySizeMismatch": "The coefficient array size for F-measure calculation mismatches the class count"
   },
   "components/neuralnet/NeuralNet": {
-    "AutofitProcessCaption": "Neural Network Parameters Selection",
-    "CalcModelErrorsProcessCaption": "Calculation of quality indicators",
+    "AutofitProcessCaption": "Neural network parameters selection",
+    "CalcModelErrorsProcessCaption": "Quality indicators calculating",
     "CVPassProcessCaption": "%d iteration",
-    "CVProcessCaption": "Cross Validation",
+    "CVProcessCaption": "Cross validation",
     "DecayDegree": "Decay degree",
     "ErrCannotContinueTraining": "You cannot continue training since the structure of the trained neural network does not correspond to the new training parameters",
     "ErrClassifierUnknownClass": "Unknown class is present in the output classifier column",
@@ -1266,27 +1266,27 @@
     "ErrRowLengthMismatch": "%d row length does not match the column count in %d matrix",
     "ErrTrainNetworkError": "Neural network training failed",
     "ErrWrongNeuronCounts": "One or several invalid neuron count values specified",
-    "ExecuteProcessCaption": "Input Data Process",
-    "FitDecayProcessCaption": "Training: Decay Degree = %.1f",
-    "FitH0DecayProcessCaption": "Training: without Hidden Layers; Decay Degree = %.1f",
-    "FitH0ProcessCaption": "Training: without Hidden Layers",
-    "FitH1DecayProcessCaption": "Training: One Hidden Layer = %d Neurons; Decay Degree = %.1f",
+    "ExecuteProcessCaption": "Input data process",
+    "FitDecayProcessCaption": "Training: decay degree = %.1f",
+    "FitH0DecayProcessCaption": "Training: without hidden layers; decay degree = %.1f",
+    "FitH0ProcessCaption": "Training: without hidden layers",
+    "FitH1DecayProcessCaption": "Training: one hidden layer = %d neurons; decay degree = %.1f",
     "FitH1ProcessCaption": "Training: one hidden = %d layer of neurons",
-    "FitH2DecayProcessCaption": "Training: First Hidden Layer = %d Neurons; Second Hidden Layer = %d Neurons; Decay Degree = %.1f",
-    "FitH2ProcessCaption": "Training: First Hidden Layyer = %d Neurons; Second Hidden Layer = %d Neurons",
+    "FitH2DecayProcessCaption": "Training: first hidden layer = %d neurons; second hidden layer = %d neurons; decay degree = %.1f",
+    "FitH2ProcessCaption": "Training: first hidden layyer = %d neurons; second hidden layer = %d neurons",
     "HLSize": "Number of neurons in the hidden layers (same)",
     "Nh1": "Number of neurons in the first hidden layer",
     "Nh2": "Number of neurons in the second hidden layer",
     "NHL": "Number of hidden layers",
-    "PrepareProcessCaption": "Prepare Data",
-    "TestSetProcessCaption": "Test Set Process",
-    "TrainProcessCaption": "Neural Network Training",
-    "ValidationSetProcessCaption": "Validation Set Process"
+    "PrepareProcessCaption": "Data preparing",
+    "TestSetProcessCaption": "Test set process",
+    "TrainProcessCaption": "Neural network training",
+    "ValidationSetProcessCaption": "Validation set process"
   },
   "components/neuralnet/NeuralNetEngine": {
     "ActualClsIDColumn": "Class ID|Fact",
     "CVAvgCE": "Average cross-entropy in cross validation",
-    "CVAvgError": "Average absolute error in cross validation",
+    "CVAvgError": "Mean absolute error in cross validation",
     "CVAvgRelError": "Average relative error in cross validation",
     "CVClsErrorPercentage": "Cross validation error percentage",
     "CVRMSError": "Root-mean-square error in cross validation",
@@ -1314,7 +1314,7 @@
     "PredictedClsProbColumn": "Posterior probability",
     "PredictedColumn": "%s|Prediction",
     "TestAvgCE": "Average cross-entropy in the test set",
-    "TestAvgError": "The test set average absolute error",
+    "TestAvgError": "The test set mean absolute error",
     "TestAvgRelError": "The test set average relative error",
     "TestClsErrorPercentage": "Percentage of classification errors in the test set",
     "TestRMSError": "Root-mean-square error in the test set",
@@ -1373,7 +1373,7 @@
     "VendorDesc": "Data quality assessment"
   },
   "components/reformcolumns/ReformColumnsVendor": {
-    "VendorCaption": "Field parameters",
+    "VendorCaption": "Field Parameters",
     "VendorDesc": "Change field parameters"
   },
   "components/replace/ReplaceColumns": {
@@ -1414,7 +1414,7 @@
     "RESTClientErrorRowID": "Error executing request generated from row No %d of the input data set:\n%s"
   },
   "components/restclient/RESTClientVendor": {
-    "VendorCaption": "REST Service Call",
+    "VendorCaption": "REST Service Request",
     "VendorDesc": "Request execution through REST service connection"
   },
   "components/sampling/SamplingVendor": {
@@ -1467,7 +1467,7 @@
     "ErrWrongModel": "Model does not match the input data",
     "OutDataSetCenters": "Coordinates of nodes",
     "OutDataSetClusters": "Clustering",
-    "PrepareDataNotify": "Prepare data",
+    "PrepareDataNotify": "Data preparing",
     "SONNTrainNotify": "Network training"
   },
   "components/sonn/SONNVendor": {
@@ -1475,7 +1475,7 @@
     "VendorDesc": "Data clustering by self-organizing neural networks"
   },
   "components/sorting/SortingEngine": {
-    "SortingNotify": "Sort"
+    "SortingNotify": "Data sorting"
   },
   "components/sorting/SortingVendor": {
     "VendorCaption": "Sort",
@@ -1622,8 +1622,8 @@
     "UnknownException": "Unknown Exception"
   },
   "exports/database/DBExport": {
-    "AddToTableNotify": "Add records to table",
-    "DeleteFromTableNotify": "Delete data from table",
+    "AddToTableNotify": "Addition of records to table",
+    "DeleteFromTableNotify": "Deletion of records from table",
     "ErrColumnNotFound": "\"%s\" column not found in the data source",
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
     "ErrDataSourceSelect": "No data source mapping provided",
@@ -1638,8 +1638,8 @@
     "ErrSyncKeyTypesMismatch": "Synchronization error: \"%s\" key field type is not compatible with \"%s\" source field type",
     "ErrTableNameNotSelected": "No table name selected",
     "ErrUnknownExportType": "Unknown export type",
-    "GroupDataNotify": "Group data",
-    "UpdateRecordsNotify": "Update existing table records"
+    "GroupDataNotify": "Data grouping",
+    "UpdateRecordsNotify": "Existing table records updating"
   },
   "exports/database/DBExportVendor": {
     "VendorCaption": "Database",
@@ -1649,8 +1649,8 @@
     "PropErrErrSheetName": "The excel sheet name cannot contain the following characters: ? * / [ ]",
     "PropErrLongSheetName": "Excel sheet name cannot be longer than 31 characters",
     "PropErrNoSheetName": "No sheet name specified",
-    "SaveExcelBookProcess": "Save to file",
-    "WriteDataProcess": "Write data to Excel workbook"
+    "SaveExcelBookProcess": "Saving to file",
+    "WriteDataProcess": "Writing data to Excel workbook"
   },
   "exports/excelfile/ExportExcelFileVendor": {
     "VendorCaption": "Excel File",
@@ -1665,7 +1665,7 @@
     "VendorDesc": "Export data to Loginom Data file"
   },
   "exports/textfile/ExportTextFile": {
-    "CalculateColumnSizeProcess": "Column width calculation",
+    "CalculateColumnSizeProcess": "Column width calculating",
     "WriteDataProcess": "Writing data to file"
   },
   "exports/textfile/ExportTextFileVendor": {
@@ -1686,9 +1686,9 @@
     "ErrRootNodeNotSelected": "No root element selected for export",
     "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into the export tree",
     "ErrXMLExport": "Error exporting XML:\n  Error code: %d\n  %s",
-    "ExportDataSetProcessCaption": "Data Set Export",
+    "ExportDataSetProcessCaption": "Data set exporting",
     "FileConnection": "Connect to file storage",
-    "WriteXMLFileProcessCaption": "XML File Record",
+    "WriteXMLFileProcessCaption": "XML file writing",
     "XSDConnection": "Connect to XSD schema source"
   },
   "exports/xml/ExportXMLVendor": {
@@ -1697,10 +1697,10 @@
   },
   "imports/1cv8/1Cv8QueryImport": {
     "ErrInterpretValue": "Failed to convert value from query result to standard type",
-    "FillDataSetProcess": "Fill data set",
+    "FillDataSetProcess": "Data set filling",
     "NotConnected": "Not connected to infobase",
-    "OpenResultSetProcess": "Open query",
-    "PrepareFieldDefsProcess": "Execute query and get field list",
+    "OpenResultSetProcess": "Query opening",
+    "PrepareFieldDefsProcess": "Query executing",
     "PreviewProcess": "Data preview"
   },
   "imports/1cv8/1Cv8QueryImportVendor": {
@@ -1708,13 +1708,13 @@
     "VendorDesc": "1C: Enterprise 8 - Query"
   },
   "imports/database/DBImport": {
-    "ErrExecQuery": "Error in query execution database.",
+    "ErrExecQuery": "Error executing DB query.",
     "ErrNotConnectedToDatabase": "No connection with database",
     "ErrTableNotSpecified": "Database table not specified",
-    "ExecQueryProcess": "Request execution",
-    "ImportDataProcess": "Import data",
-    "OpenTableProcess": "Open table",
-    "PrepareFieldList": "Prepare field list",
+    "ExecQueryProcess": "Query executing",
+    "ImportDataProcess": "Data importing",
+    "OpenTableProcess": "Table opening",
+    "PrepareFieldList": "Field list query",
     "PreviewProcess": "Data preview"
   },
   "imports/database/DBImportVendor": {
@@ -1742,8 +1742,8 @@
     "ErrPropSheetNumber": "Incorrect Excel worksheet index",
     "ErrSheet": "Failed to find Excel sheet",
     "ErrSuggestRange": "Excel file is not open. According to the current settings it is impossible to determine the column count for import",
-    "ProcessCaptionOpenExcelFile": "Open %s file",
-    "ProcessCaptionReadData": "Read Data"
+    "ProcessCaptionOpenExcelFile": "%s file opening",
+    "ProcessCaptionReadData": "Data reading"
   },
   "imports/excelfile/ImportExcelFileVendor": {
     "VendorCaption": "Excel File",
@@ -2640,8 +2640,8 @@
     "ErrDuplicateSequenceItemNameChanged": "The collection contained base and derived items with the same %s identifier. The derived item was renamed to %s",
     "ErrDuplicateSequenceItemNameOverride": "The collection contained base and derived items with the same %d name. The base item was ignored",
     "ErrDuplicateSequenceItemNames": "The collection contains more than one item with %s name",
-    "ErrGetConfigWriterItemByIndexNotSupported": "Receipt of the derived configuration item by index is not supported",
-    "ErrGetConfigWriterItemCountNotSupported": "Receipt of the derived item count of the configuration is not supported",
+    "ErrGetConfigWriterItemByIndexNotSupported": "Receiving derived configuration item by index not supported",
+    "ErrGetConfigWriterItemCountNotSupported": "Receiving derived item count of the configuration not supported",
     "HintConvertAtomicConfigElement": "When reading the atomic element of %s configuration converting will be performed"
   },
   "Libraries/Config/ConfigXML": {
@@ -3072,9 +3072,9 @@
     "ErrNodeIsNoMemberOfModel": "Node does not belong to the workflow",
     "ErrNodeLocked": "\"%s\" node is blocked",
     "ErrNodeNotFoundInModel": "The requested node does not belong to the workflow",
-    "ErrNodeNotInitialized": "No component vendor specified for \"%s\" node",
+    "ErrNodeNotInitialized": "No component specified for \"%s\" node",
     "ErrParentProcessError": "Error in parent process",
-    "ErrPortMismatch": "Incompatible component vendor: node port list does not match",
+    "ErrPortMismatch": "Incompatible component: node port list does not match",
     "ErrPortParentIsNil": "Reference to the node port is not included into list",
     "ErrPublishedNodeNameIsEmpty": "No published node name specified",
     "ErrSocketNotConfigured": "Socket not configured",
@@ -3089,7 +3089,7 @@
     "LogDeactivateNode": "\"%s\" node deactivated",
     "LogNodeActivationError": "Error activating \"%s\" node",
     "ResetModelNodeConfiguration": "Initial configuration of \"%s\" node reset ",
-    "RestoreBackupProcessCaption": "Restore Backup Configuration",
+    "RestoreBackupProcessCaption": "Backup configuration restoring",
     "SynchronizationInputPort": "Execution order",
     "SynchronizationOutputPort": "Execution order",
     "Top": "Top",
@@ -3219,7 +3219,7 @@
     "ErrNotImplemented": "This functionality not implemented"
   },
   "Libraries/Normalization/NormalData": {
-    "CalculateCacheProcessCaption": "Data Set Caching",
+    "CalculateCacheProcessCaption": "Data set caching",
     "ErrArrayExpected": "You cannot denormalize a single element. Array from %d elements must be denormalized for \"%s\" column.  ",
     "ErrImpossibleToAllocate": "You cannot allocate memory for cached normalized data source",
     "ErrNotEnoughCache": "Insufficient cache size to store normalized data string",
@@ -3300,9 +3300,9 @@
     "ErrIncorrectUsedDK": "Invalid \"%s\" data kind of normalized column \"%s\""
   },
   "Libraries/Normalization/TuneNormDataSource": {
-    "CreateInDataProcessCaption": "Prepare input data set",
-    "CreateNormalDataProcessCaption": "Create Normalized Data Set",
-    "CreateOutDataProcessCaption": "Preparing output data set",
+    "CreateInDataProcessCaption": "Input data set preparing",
+    "CreateNormalDataProcessCaption": "Normalized data set creating",
+    "CreateOutDataProcessCaption": "Output data set preparing",
     "ErrGetNormData": "Errors occurred while requesting normalized data set",
     "ErrUniqueIndexNotDiscrete": "You cannot query the unique value index of non-discrete column",
     "ErrUniqueValueNotFound": "\"%s\" not found in the list of configured unique values (\"%s\" column, %d string)"
@@ -3381,7 +3381,7 @@
     "ErrWrongRegressionParamsConstructor": "Invalid regression parameter constructor used"
   },
   "Libraries/Regression/RegressionModel": {
-    "ApplyModelProcessCaption": "Model Application",
+    "ApplyModelProcessCaption": "Model application",
     "ErrApplyWrongFeatures": "The column count of the input data set %d not equal to the regressors count of %d model  ",
     "RegressionStatistics": "Regression statistics"
   },
@@ -3645,10 +3645,10 @@
     "ValueColumnDislpayName": "Value"
   },
   "Viewers/Browse/BrowseViewFilterEngine": {
-    "FilterDataNotify": "Data filter"
+    "FilterDataNotify": "Data filtering"
   },
   "Viewers/Browse/BrowseViewSortingEngine": {
-    "SortingNotify": "Sort"
+    "SortingNotify": "Data sorting"
   },
   "Viewers/Browse/BrowseViewVendor": {
     "VendorCaption": "Table",
@@ -3752,7 +3752,7 @@
     "ErrTooManyDimensions": "Too many dimensions selected"
   },
   "Viewers/Cube/CubeSource": {
-    "LoadNotify": "Prepare input data"
+    "LoadNotify": "Input data preparing"
   },
   "Viewers/Cube/CubeSummaries": {
     "CountCaseDisplayName": "Count",
@@ -3769,8 +3769,8 @@
     "ErrExportCubeClosed": "You cannot export a crosstab when the Cube is inactive",
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
     "ErrPhantomCaseBracketsOpened": "You cannot start creating time measure until you delete the existing time fact",
-    "IncLoadMatrixNotify": "Increment measure calculation",
-    "LoadMatrixNotify": "Measure calculation"
+    "IncLoadMatrixNotify": "Increment measure calculating",
+    "LoadMatrixNotify": "Measure calculating"
   },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
@@ -3933,7 +3933,7 @@
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",
-    "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension ",
+    "MsgDeleteDataProcess": "Delete the process from the data warehouse by data dimension ",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
@@ -3974,7 +3974,7 @@
     "DWConnectionVendorDesc": "Connect to data warehouse"
   },
   "Warehouse2/DWDataEngine": {
-    "ErrExecSQL": "Error executing request to DB.\n%s"
+    "ErrExecSQL": "Error executing query to DB.\n%s"
   },
   "Warehouse2/DWExtract": {
     "DWObjectName": "Object",
@@ -3996,11 +3996,11 @@
     "SubNodes": "Subnodes"
   },
   "Warehouse2/DWImport": {
-    "ErrExecQuery": "Error executing request to Data Warehouse",
+    "ErrExecQuery": "Error executing query to Data Warehouse",
     "ErrNotConnectedToDatabase": "Not connected to Data Warehouse",
     "ErrObjectDWNotSpecified": "Data Warehouse object not specified",
-    "ExecQueryProcess": "Execute request to Data Warehouse",
-    "ImportDataProcess": "Data import from Data Warehouse"
+    "ExecQueryProcess": "Executing query to data warehouse",
+    "ImportDataProcess": "Data importing from Data Warehouse"
   },
   "Warehouse2/MDChoiceTree": {
     "ErrDWObjectsNotFound": "No data warehouse objects with %s names found",

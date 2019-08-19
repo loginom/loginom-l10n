@@ -1628,7 +1628,7 @@
   },
   "exports/database/DBExport": {
     "AddToTableNotify": "Добавление записей в таблицу",
-    "DeleteFromTableNotify": "Удаление данных из таблицы",
+    "DeleteFromTableNotify": "Удаление записей из таблицы",
     "ErrColumnNotFound": "В источнике данных не найдена колонка \"%s\"",
     "ErrColumnTypesMismatch": "Тип столбца \"%s\" не совместим с типом исходного столбца \"%s\"",
     "ErrDataSourceSelect": "Не указано ни одного соответствия с источником данных",
@@ -1705,7 +1705,7 @@
     "FillDataSetProcess": "Заполнение набора данных",
     "NotConnected": "Не установлено подключение к информационной базе",
     "OpenResultSetProcess": "Открытие запроса",
-    "PrepareFieldDefsProcess": "Выполнение запроса и получение списка полей",
+    "PrepareFieldDefsProcess": "Выполнение запроса",
     "PreviewProcess": "Предварительный просмотр данных"
   },
   "imports/1cv8/1Cv8QueryImportVendor": {

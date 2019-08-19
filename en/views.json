@@ -2610,7 +2610,7 @@
     },
     "colAgg": {
       "text": "Type",
-      "tooltip": "Type of data warehouse object"
+      "tooltip": "Type of Data Warehouse object"
     },
     "colCondition": {
       "text": "Condition"
@@ -2623,7 +2623,7 @@
     },
     "colMDType": {
       "text": "Type",
-      "tooltip": "Type of data warehouse object"
+      "tooltip": "Type of Data Warehouse object"
     },
     "colValue": {
       "text": "Value"
@@ -2667,13 +2667,13 @@
       "text": "Description"
     },
     "colTree": {
-      "text": "Data warehouse object"
+      "text": "Data Warehouse object"
     },
     "frmDWObjects": {
       "title": "Select Data Warehouse Object"
     },
     "lblObjectsTree": {
-      "text": "Data warehouse objects"
+      "text": "Data Warehouse objects"
     }
   },
   "imports/dwh/ListValueDialog": {
@@ -2947,6 +2947,9 @@
     },
     "rbtSearchCompareTypeFull": {
       "boxLabel": "full"
+    },
+    "rbtSearchCompareTypeStart": {
+      "boxLabel": ""
     },
     "rbtSearchCompareTypeSubstring": {
       "boxLabel": "substring"
@@ -4043,11 +4046,17 @@
     "btnStatisticsInRows": {
       "tooltip": "Transpose"
     },
+    "chkBottomBound": {
+      "boxLabel": ""
+    },
     "chkIncludeNullValue": {
       "boxLabel": "Show null value in histogram"
     },
     "chkRound": {
       "fieldLabel": "Round"
+    },
+    "chkUpperBound": {
+      "boxLabel": ""
     },
     "colBoxPlot": {
       "text": "Box plot"

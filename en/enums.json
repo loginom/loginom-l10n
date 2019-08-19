@@ -222,7 +222,7 @@
       "SD": "SD coefficients"
     },
     "BinningOutputColumnKind": {
-      "$Caption": "Usage Type of Resultant Quantization Fields",
+      "$Caption": "Usage Type of Resultant Binning Fields",
       "BinsID": "Bins identifier",
       "BinNumber": "Bin number",
       "BinLabel": "Caption",
@@ -954,6 +954,8 @@
     },
     "DataSourceTypeEx": {
       "$Caption": "Extended Data Set Type",
+      "Teach": "",
+      "Test": "",
       "All": "All"
     },
     "DataStatus": {
@@ -1444,6 +1446,7 @@
     },
     "ChartError": {
       "$Caption": "Chart Error",
+      "Valid": "",
       "DateTimeWarning": "Time data on the real axis",
       "NoData": "No data to display",
       "InValidColumn": "Field type does not match",

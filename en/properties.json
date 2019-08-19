@@ -252,8 +252,8 @@
       "OrderedSample": "Source data ordered"
     },
     "ElimOutlierColumnDefExtension": {
-      "ActionExtr": "Extreme processing method",
-      "ActionOut": "Outliers eimination method",
+      "ActionExtr": "Extremes processing method",
+      "ActionOut": "Outliers elimination method",
       "DetectEKvartil": "For extreme",
       "DetectESko": "For extreme",
       "DetectOKvartil": "For outlier",

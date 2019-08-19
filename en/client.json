@@ -75,6 +75,7 @@
     "ErrPathNotSpecified": "Path to the package file is not specified"
   },
   "app/ListViewForm": {
+    "NotObjects": "",
     "NumberObjects": "{0} objects"
   },
   "app/LoginomMenuForm": {
@@ -758,7 +759,7 @@
   },
   "exports/dbexport/DBCreateTableDialog": {
     "DublicateFieldName": "A field with the same name already exists",
-    "ErrCreateTable": "Error occurred while creating the table",
+    "ErrCreateTable": "Error creating table",
     "ErrFieldSize": "Size of {0} field must be more than 0",
     "ErrTableName": "Invalid table name",
     "InvalidFieldNameChar": "Invalid character in field name"
@@ -1167,7 +1168,7 @@
     "MetaDataNodeTypeProc": "Process"
   },
   "imports/dwh/DWObjectWizard": {
-    "ErrNoSelectedObject": "Specify data Warehouse object",
+    "ErrNoSelectedObject": "Specify Data Warehouse object",
     "ErrObjectNotFound": "\"{0}\" Data Warehouse object not found",
     "NoConnection": "No connection"
   },
@@ -1522,6 +1523,7 @@
     "SetSelectedPage": "Selected page",
     "SortingButtonText": "Sort",
     "SortingTitle": "Sort",
+    "UndefinedCellValue": "",
     "WarnExportTableSizeWarning": "The current Table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
   "viewers/browse/FastPreviewForm": {
@@ -1916,6 +1918,7 @@
     "CardTitle_FeedBack": "Feedback",
     "CardTitle_Forum": "Forum: Questions and Answers",
     "CardTitle_WebSite": "Company Website",
+    "LinkWebSite": "",
     "LoginWebSite": "https://loginom.com",
     "NoNewsLog": "Failed to get news"
   },

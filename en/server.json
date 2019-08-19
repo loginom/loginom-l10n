@@ -23,6 +23,8 @@
     "ErrTooManyArgs": "Many arguments were called to %s function (%d whereas %d is maximum value)"
   },
   "Common/CertList/CertList": {
+    "ErrCertificateStoresFuncAlreadyInstalled": "",
+    "ErrCertificateStoresFuncUnassigned": "",
     "ErrCertListImplementationNotRegistered": "Certificate list implementation with %s identifier not registered",
     "ErrCertListImplementationsNotRegistered": "Certificate list implementation not registered"
   },
@@ -76,7 +78,7 @@
   "Common/CodeExec/CodeAPIDataSetProxies": {
     "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of [%d; %d] range",
     "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table",
-    "ErrInvalidDataSourceColumnIndex": "%d index of input table column №%d is out of [%d; %d] range",
+    "ErrInvalidDataSourceColumnIndex": "%d index of input table column No%d is out of [%d; %d] range",
     "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table №%d"
   },
   "Common/HTTP/CachedHttpStream": {
@@ -371,30 +373,33 @@
     "CalculatingBarChartsProcess": "Calculating histogram",
     "CalculatingBinsProcess": "Calculating bins",
     "DoTeachProcessFmt": "\"%s\" field processing",
-    "ErrBinsInvalidFmt": "Bins for \"%s\" column are not valid for quantization",
+    "ErrBinsInvalidFmt": "Bins for \"%s\" column are not valid for binning",
     "ErrBinsNotDefined": "Bins not defined for the specified parameters",
     "ErrCreateQuantizer": "Failed to create quantizer",
-    "ErrDefineBinsFailedFmt": "Failed to define quantization intervals for \"%s\" field",
+    "ErrDefineBinsFailedFmt": "Failed to define binning intervals for \"%s\" field",
     "ErrInputDataSourceNotActive": "Quantized data source is not active",
     "ErrMethodNotDefined": "The binning method is not defined for the given parameters",
     "ErrMethodNotDefinedFmt": "Binning method unspecified for \"%s\" column",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoMethodFmt": "No quantization method available for \"%s\" column",
+    "ErrNoMethodFmt": "No binning method available for \"%s\" column",
     "ErrNotFoundBinsClass": "No bin class found to generate the example template",
     "ErrOrderID": "Bin identifiers not ordered",
     "ErrPreviewExamplesInvalidLength": "The template number does not match the data types number",
     "ExecuteProcess": "Output data processing",
-    "InputBinsDataSource": "External quantization bins",
+    "InputBinsDataSource": "External binning bins",
     "PostfixDisplayNameFmt": " %s %s",
     "PostfixExtermalBins": "External",
     "PostfixSDBins": "SD",
     "PostfixTileBins": "Tiled",
     "PostfixWithCountBins": "Bins",
-    "TeachProcess": "Quantization bins forming"
+    "TeachProcess": "Binning bins forming"
   },
   "components/binning/BinningLabelConstructor": {
     "Inf": "+Inf",
-    "NegInf": "-Inf"
+    "InfDateTime": "",
+    "NegInf": "-Inf",
+    "NegInfDateTime": "",
+    "Nothing": ""
   },
   "components/binning/BinningMethod": {
     "ErrInvalidBinFmt": "Failed to generate bins for \"%s\" field"
@@ -404,8 +409,8 @@
     "ErrBinsCount": "Bin count must be more than 0",
     "ErrBinsCountLimitFmt": "Bin count must not exceed %d",
     "ErrBinWidthFmt": "Failed to define bin width for %s field",
-    "ErrGenerateBins": "Failed to generate quantization bins",
-    "ErrInfinityFmt": "Quantization bins for %s field were not created. The field contains the \"infinity\" value.",
+    "ErrGenerateBins": "Failed to generate binning bins",
+    "ErrInfinityFmt": "Binning bins for %s field were not created. The field contains the \"infinity\" value.",
     "ErrInvalidBinRowFmt": "Failed to generate bin for %s field from %d row",
     "ErrInvalidRangeWidthFmt": "The initial bin boundary exceeds the final boundary for %s field",
     "ErrLogBinsCountLimitFmt": ", for %s field.",
@@ -427,13 +432,13 @@
     "AlignTile": "Align tiles",
     "ErrBinsCountLimitFmt": "Tiles number must not exceed %d",
     "ErrContextNotReadyFmt": "Context not ready for %s field and %s method",
-    "ErrNoMethod": "Failed to get tiled quantization settings",
+    "ErrNoMethod": "Failed to get tiled binning settings",
     "ErrNoValuesFmt": "%s field contains no data, it is impossible to generate bins",
     "ErrSumFmt": "Failed to get sum of values for %s field",
     "ErrZeroTileCount": "Bin (tile) count must be > 0",
     "NegativValueForTileSumm": "Negative values are not allowed when creating bins by sum of characteristic",
     "SortProcessFmt": "%s field sorting ",
-    "WarnNoRound": "In case of optimal tile quantization bin bounds are not rounded"
+    "WarnNoRound": "In case of optimal tile binning bin bounds are not rounded"
   },
   "components/binning/BinningQuantizers": {
     "ErrNoBins": "No bins defined for quantizer"
@@ -446,7 +451,7 @@
     "ErrNumericType": "Data type not related to the numeric values"
   },
   "components/binning/BinningVendor": {
-    "OutputRanges": "Quantization ranges",
+    "OutputRanges": "Binning ranges",
     "VendorCaption": "Binning",
     "VendorDesc": "User binning"
   },
@@ -3630,6 +3635,7 @@
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
     "LogColumnNotFoundFmt": "No %s field found in the input data set. The field has been deleted from the displayed fields.",
     "LogNewColumnFmt": "New %s field appeared in the input data set. The field has been added to the displayed fields.",
+    "NullText": "",
     "PrepareViewData": "Table"
   },
   "Viewers/Browse/BrowseViewExport": {
@@ -3933,7 +3939,7 @@
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",
-    "MsgDeleteDataProcess": "Delete the process from the data warehouse by data dimension ",
+    "MsgDeleteDataProcess": "Delete the process from the Data Warehouse by data dimension ",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
@@ -3971,7 +3977,7 @@
   },
   "Warehouse2/DWConnectionVendor": {
     "DWConnectionVendorCaption": "Data Warehouse",
-    "DWConnectionVendorDesc": "Connect to data warehouse"
+    "DWConnectionVendorDesc": "Connect to Data Warehouse"
   },
   "Warehouse2/DWDataEngine": {
     "ErrExecSQL": "Error executing query to DB.\n%s"
@@ -3999,7 +4005,7 @@
     "ErrExecQuery": "Error executing query to Data Warehouse",
     "ErrNotConnectedToDatabase": "Not connected to Data Warehouse",
     "ErrObjectDWNotSpecified": "Data Warehouse object not specified",
-    "ExecQueryProcess": "Executing query to data warehouse",
+    "ExecQueryProcess": "Executing query to Data Warehouse",
     "ImportDataProcess": "Data importing from Data Warehouse"
   },
   "Warehouse2/MDChoiceTree": {

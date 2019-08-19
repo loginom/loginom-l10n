@@ -162,7 +162,7 @@
   },
   "components/coluniondata": {
     "ColUnionDataEngine": {
-      "RowsPaddingType": "Supplement to the largest set",
+      "RowsPaddingType": "Appending to the largest data set",
       "TailsAlignType": "Row count complies"
     }
   },
@@ -253,7 +253,7 @@
     },
     "ElimOutlierColumnDefExtension": {
       "ActionExtr": "Extremes processing method",
-      "ActionOut": "Outliers elimination method",
+      "ActionOut": "Outliers processing method",
       "DetectEKvartil": "For extreme",
       "DetectESko": "For extreme",
       "DetectOKvartil": "For outlier",
@@ -323,7 +323,7 @@
     "LoopComponent": {
       "AppendIterationIdentifiers": "Add iteration identifiers",
       "CompareValue": "Value",
-      "ConditionVariableLink": "Completion condition variable",
+      "ConditionVariableLink": "Loop exit condition variable",
       "GroupCount": "Group count",
       "GroupDataSourceSocket": "Socket containing columns to group",
       "GroupProcessingKind": "Type of batch processing",
@@ -379,7 +379,7 @@
   },
   "components/partition": {
     "PartitionEngine": {
-      "Partition": "Partition into Sets"
+      "Partition": "Partitioning"
     }
   },
   "components/reformcolumns": {
@@ -477,7 +477,7 @@
   "exports/excelfile": {
     "ExportExcelFile": {
       "FileType": "Excel file type",
-      "SheetName": "Name of the worksheet to export",
+      "SheetName": "Sheet name",
       "WebSetting": "Settings for web client"
     },
     "ExportExcelWebSetting": {
@@ -496,7 +496,7 @@
       "DateFormat": "Date format",
       "DateSeparator": "Date separator",
       "DecimalSeparator": "Decimal separator",
-      "DelimiterChar": "Column separator",
+      "DelimiterChar": "Column delimiter",
       "FormatType": "Data format",
       "TextQualifier": "Text qualifier",
       "TimeFormat": "Time format",
@@ -533,9 +533,9 @@
       "DateFormat": "Date format",
       "DateSeparator": "Date separator",
       "DecimalSeparator": "Decimal separator",
-      "DelimiterChar": "Column separator",
+      "DelimiterChar": "Column delimiter",
       "FirstLineAsTitle": "First line title",
-      "MultipleDelimiters": "Accept multiple separators in succession for one",
+      "MultipleDelimiters": "Accept multiple delimiters in succession for one",
       "RowsToSkip": "Skip rows",
       "TextQualifier": "Text qualifier",
       "TimeSeparator": "Time separator",
@@ -570,7 +570,7 @@
       "ClearPoolOnDeactivate": "Clear pool when deactivated"
     },
     "DatabaseConfigurator": {
-      "CharacterSet": "Code page",
+      "CharacterSet": "Codepage",
       "DatabasePath": "Connection string",
       "Direct": "Do not use DBMS client",
       "ObjectQuotes": "Configure quotes",

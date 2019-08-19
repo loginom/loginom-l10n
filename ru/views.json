@@ -715,10 +715,10 @@
       "title": "Частые наборы"
     },
     "colDisplayName": {
-      "text": "Имя"
+      "text": "Метка"
     },
     "colName": {
-      "text": "Метка"
+      "text": "Имя"
     },
     "frmAssnRulesWizard": {
       "title": "Ассоциативные правила"
@@ -1126,7 +1126,7 @@
       "text": "Вес доказательства"
     },
     "colColumnIV": {
-      "text": "Индекс"
+      "text": "IV"
     },
     "colColumnName": {
       "text": "Столбец"

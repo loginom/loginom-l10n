@@ -739,9 +739,9 @@
   },
   "exports/excelfile": {
     "ExcelCaptionType": {
-      "$Caption": "Тип для заголовка столбцов",
-      "AsName": "Заголовок как имя",
-      "AsDisplayName": "Заголовок как метка"
+      "$Caption": "Тип заголовка столбцов",
+      "AsName": "Имена полей",
+      "AsDisplayName": "Метки полей"
     },
     "ExcelHeadersRow": {
       "$Caption": "Заголовки столбцов",
@@ -1244,10 +1244,10 @@
   },
   "Libraries/FileConnection/TextFileTypes": {
     "TextFileCaptionType": {
-      "$Caption": "Тип для заголовка столбцов",
+      "$Caption": "Заголовки столбцов",
       "NoCaption": "Нет строки заголовков",
-      "UseColumnNames": "Имена столбцов (полей)",
-      "UseColumnDisplayNames": "Метки столбцов (полей)"
+      "UseColumnNames": "Имена полей",
+      "UseColumnDisplayNames": "Метки полей"
     },
     "TextFileFormatType": {
       "$Caption": "Тип для формата данных",

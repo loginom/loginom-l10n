@@ -79,7 +79,7 @@
     "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of [%d; %d] range",
     "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table",
     "ErrInvalidDataSourceColumnIndex": "%d index of input table column No%d is out of [%d; %d] range",
-    "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table №%d"
+    "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table No%d"
   },
   "Common/HTTP/CachedHttpStream": {
     "ErrCachedHttpStreamClassAlreadyAssigned": "Cached HTTP stream class already registered",
@@ -89,7 +89,7 @@
     "ErrHttpResponseExRequired": "To create %s class instance support by IHTTPResponseEx interface HTTP client response is required",
     "ErrHttpResponseWriteDisallowed": "Writing to HTTP response stream disallowed",
     "ErrInconsistentContentLength": "Actual received %d data size inconsistent with Content-Length %d header value",
-    "ErrReadStreamBufferLength": "The provided %d buffer size is insufficient to read %d bytes"
+    "ErrReadStreamBufferLength": "The provided %d buffer size is too smal to read %d bytes"
   },
   "Common/HTTP/HTTPNetRequest": {
     "ErrHTTPNetRequest": "Request to \"%s\" URL failed"
@@ -155,7 +155,7 @@
     "ErrBindingOperationExtensionCollision": "Types of \"%s\" binding extensions and \"%s\" operations do not match",
     "ErrCantDefineTransmissionPrimitive": "Failed to define data exchange primitive for %s operation, %s port type",
     "ErrFaultMustHaveExactlyOnePart": "Error defining %s operation, %s port type: fault message must contain exactly one part",
-    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation/>\" in \"%s\" binding HTTP declaration for \"%s\" operation ",
+    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation/>\" in \"%s\" binding HTTP declaration for \"%s\" operation",
     "ErrHttpPartReferencesComplexElement": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to %s{%s} XSD schema element related to the complex type",
     "ErrHttpPartReferencesComplexType": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to the complex type of %s{%s} XSD schema",
     "ErrInputMimeTypeContainsWildcard": "The incoming service message content must relate to the specific MIME type (actually - %s)",
@@ -213,8 +213,8 @@
     "ErrCDATAInNonStringType": "%s element from %s namespace cannot contain <CDATA/> section because it relates to '%s' type",
     "ErrMaxOccExceeded": "Maximum number of \"%s\" element occurrences exceeded (%d allowed)",
     "ErrNoParentElement": "No parent element in \"%s\" element",
-    "ErrSiblingAttributionFailed": "It is not possible to define \"%s{%s}\" sibling corresponding the schema for \"%s\" element",
-    "ErrSubElementAttributionFailed": "It is not possible to define \"%s{%s}\" subelement corresponding the schema for \"%s\" element",
+    "ErrSiblingAttributionFailed": "It is not possible to define \"%1:s{%2:s}\" sibling corresponding the schema for \"%0:s\" element",
+    "ErrSubElementAttributionFailed": "It is not possible to define \"%1:s{%2:s}\" subelement corresponding the schema for \"%0:s\" element",
     "ErrXMLParse": "Error parsing XML:\n  Line: %d\n  Column: %d\n  Error code: %d\n  Message:\n  %s",
     "ErrXMLValidate": "XML validation error:\n  Line: %d\n  Column: %d\n  Error code: %d\n  Message:\n  %s"
   },
@@ -260,7 +260,7 @@
     "ErrParseFileUnhandledException": "Unhandled exception parsing '%s' file:\n%s",
     "ErrParseStream": "Error parsing stream in %d row, %d position:\n  %s",
     "ErrParseStreamNoXML": "Error parsing stream in %d row, %d position: the source is not XML file or has incorrect syntax",
-    "ErrParseStreamUnhandledException": "Unhandled exception parsing stream:\n %s",
+    "ErrParseStreamUnhandledException": "Unhandled exception parsing stream:\n  %s",
     "ErrParseStreamUnrecognizedEncoding": "Stream parsing error: unrecognized %s encoding",
     "ErrParseURL": "Error in %d row, %d position when executing request to URL '%s':\n  %s",
     "ErrParseURLNoXML": "Error in %d row, %d position when executing request to URL '%s': server response is not XML file",
@@ -339,12 +339,12 @@
     "ErrNConsequentMaxWrongValue": "Invalid maximum item count in the rules antecedent or consequence",
     "ErrNItemsMaxWrongValue": "Invalid maximum item count in the set",
     "ErrNoItemColumn": "No transaction item column in the input data",
-    "ErrNoModel": "Model is not configured. It is required to train the node before its application",
+    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
     "ErrNonDiscreteItemColumn": "Transaction items must relate to the discrete type",
     "ErrNoTransactionColumn": "No transaction identifier column in the input data",
     "ErrWrongBaseSourceDataType": "Data type does not match the model",
-    "InputDataSourceSuppl": "Auxiliary data",
-    "OutDataSetApply": "Rules application",
+    "InputDataSourceSuppl": "Supplementary data",
+    "OutDataSetApply": "Apply rules",
     "OutDataSetItemsets": "Frequent sets",
     "OutDataSetRules": "Association rules"
   },
@@ -471,7 +471,7 @@
   },
   "components/calcdata/CalcItemChakra": {
     "ErrExprParse": "Error parsing \"%s\" expression: %s",
-    "ErrExprUsesUndefinedVariable": "%s undefined variable used in \"%s\" expression",
+    "ErrExprUsesUndefinedVariable": "%1:s undefined variable used in \"%0:s\" expression",
     "ExprCalculateError": "Error calculating \"%s\" expression, %d row of the input data set"
   },
   "components/calcdata/ExprColumns": {
@@ -502,8 +502,8 @@
     "VendorDesc": "Creating calculated variables"
   },
   "components/clope/ClopeEngine": {
-    "ClopeApplyNotify": "Model application",
-    "ClopeTrainNotify": "Cluster searching",
+    "ClopeApplyNotify": "Model applying",
+    "ClopeTrainNotify": "Clustering",
     "ClopeTransactionNotify": "Transactions preparing",
     "ColumnNameCluster": "Cluster number",
     "ColumnNameN": "N",
@@ -513,7 +513,7 @@
     "ErrMoreThanOneItemColumn": "More than one transaction item column in the input data",
     "ErrMoreThanOneTransactionColumn": "More than one transaction identifier column in the input data",
     "ErrNoItemColumn": "No transaction item column in the input data",
-    "ErrNoModel": "Model is not configured. It is required to train the node before its application",
+    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
     "ErrNonDiscreteItemColumn": "Transaction items must relate to the discrete type",
     "ErrNoTransactionColumn": "No transaction identifier column in the input data",
     "ErrTransactionTypeNotMatched": "Transaction identifier types do not match",
@@ -536,18 +536,18 @@
     "NAdditionalIters": "Pretraining iteration count"
   },
   "components/clusterization/ClusterizationEngine": {
-    "ClusterizationTrainNotify": "Cluster searching",
+    "ClusterizationTrainNotify": "Clustering",
     "ColumnNameCluster": "Cluster number",
     "ColumnNameDistance": "Distance to cluster center",
     "ColumnNameUniqueCoordSuffix": "|Coordinate",
     "ColumnNameUniqueValueSuffix": "|Value",
     "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoModel": "Model is not configured. It is required to train the node before its application",
+    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
     "ErrWrongModel": "Model does not match the input data",
     "OutDataSetCenters": "Cluster centers",
     "OutDataSetClusters": "Clustering",
-    "PrepareDataNotify": "Data searching"
+    "PrepareDataNotify": "Data preparing"
   },
   "components/clusterization/ClusterizationVendor": {
     "VendorCaption": "Clustering",
@@ -591,7 +591,7 @@
     "ErrInputBinningMissValue": "External binning for \"%s\" column does not contain unique \"%s\" value",
     "ErrInputBinningMissValues": "External binning contains not all unique values of \"%s\" column",
     "ErrInputRangeDataSourceIsNotExist": "No external binning data source",
-    "ErrNoModel": "Model is not configured. It is required to train the node before its application",
+    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
     "InputRangesDataSource": "External quantization ranges"
   },
   "components/coarseclasses/CoarseClassesMapper": {
@@ -633,13 +633,13 @@
   },
   "components/coluniondata/ColUnionData": {
     "ErrNoActiveInputs": "No active inputs",
-    "ErrNoTailsAlignDataSource": "No data source for alignment",
+    "ErrNoTailsAlignDataSource": "No data source for appending",
     "JoinedDataSource": "Joined table",
     "JoinedVariables": "Joined variables",
     "MainDataSource": "Main table"
   },
   "components/coluniondata/ColUnionDataVendor": {
-    "VendorCaption": "Connection",
+    "VendorCaption": "Column Union",
     "VendorDescription": "Join several data sets by vertical gluing"
   },
   "components/condition/Condition": {
@@ -671,7 +671,7 @@
     "CorrAnalysisExtremumCFNotify": "Cross-correlation functions extremes calculating",
     "CorrAnalysisNotify": "Correlation coefficients calculating",
     "CorrAnalysisPirsonNotify": "Pearson correlation coefficients calculating",
-    "CorrAnalysisRankedStatNotify": "Statistics for rank variables calculating",
+    "CorrAnalysisRankedStatNotify": "Ancillary statistics calculating",
     "CorrAnalysisSpearmanNotify": "Spearman's correlation coefficients calculating",
     "CorrAnalysisTauBKendallNotify": "Kendall's Tau-b correlation coefficients calculating",
     "DisplayName": "Caption",
@@ -709,7 +709,7 @@
     "ErrDocIDColumnNotAssigned": "No field that is the Document Identifier defined",
     "ErrExportNotConfigured": "XML tree not configured",
     "ErrIncorrectExportConfiguration": "Errors in configuration",
-    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
+    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
     "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
     "ErrMappedNodeNotOwnedByExportTree": "%s node for which input data set column selection is requested is not included into XML tree",
     "ErrNodeDoesNotDescendFromSelectedRoot": "%s node is not a descendant of the selected %s root element",
@@ -721,13 +721,13 @@
     "ErrXMLExport": "Error generating XML:\n  Error code: %d\n  %s",
     "ExportDataSetProcessCaption": "Data set processing",
     "IDName": "ID",
-    "WriteXMLFileProcessCaption": "XML document forming",
+    "WriteXMLFileProcessCaption": "XML document generation",
     "XMLName": "XML",
     "XSDConnection": "Connect to XSD schema source"
   },
   "components/datatoxml/DataToXMLVendor": {
-    "VendorCaption": "XML Formation",
-    "VendorDesc": "XML document formation according to given XSD schema"
+    "VendorCaption": "XML Generation",
+    "VendorDesc": "XML document generation according to given XSD schema"
   },
   "components/datereform/DateReform": {
     "ErrFormatingString": "Error converting date/time to string with %s format",
@@ -744,12 +744,12 @@
     "ColumnNameUniqueValueSuffix": "|Value",
     "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoModel": "Model is not configured. It is required to train the node before its application",
+    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
     "ErrWrongModel": "Model does not match the input data",
     "OutDataSetCenters": "Cluster centers",
     "OutDataSetClusters": "Clustering",
     "PrepareDataNotify": "Data preparing",
-    "TrainNotify": "Cluster searching"
+    "TrainNotify": "Clustering"
   },
   "components/em/EMVendor": {
     "VendorCaption": "EM Clustering",
@@ -801,7 +801,7 @@
     "ErrExtractXMLInitError": "Error initializing Extract XML: %s",
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputFieldNotSelected": "You must specify containing XML field",
-    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
+    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
     "ErrNoInputDataSource": "No input data source connected",
     "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
@@ -819,12 +819,12 @@
     "ErrFactorMatrixAfterRot": "Illconditioned factor mapping matrix",
     "ErrFactorMatrixBadSize": "Incorrect factor mapping matrix size",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoModel": "Model is not configured. It is required to train the node before its application",
+    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
     "ErrWrongModel": "Input data does not match previously trained model",
     "FactorAnalysisColumnsDisplayNames": "Caption",
     "FactorAnalysisColumnsNames": "Name",
     "FactorAnalysisDisplayName": "Factor",
-    "FactorAnalysisNotify": "Factor analysis",
+    "FactorAnalysisNotify": "Factor calculating",
     "OutDataSetFactors": "Factors",
     "OutDataSetLoadings": "Factor loadings"
   },
@@ -958,7 +958,7 @@
     "MessageSelectedModel": "ARIMAX: %s model selected, number of degrees of freedom: %d"
   },
   "components/forecast/ARIMAXTeacher": {
-    "ErrInvalidTrainData": "The model cannot be built on the basis of the specified data",
+    "ErrInvalidTrainData": "The model cannot be trained on the basis of the specified data",
     "ErrNoTrainData": "No train data"
   },
   "components/forecast/ARIMAXTrainingResults": {
@@ -998,8 +998,8 @@
     "ResDF": "Number of the residues degrees of freedom",
     "ResidualColumn": "%s|Approximation error",
     "SEColumn": "Standard deviation",
-    "TrainAvgError": "The training set average absolute error",
-    "TrainAvgRelError": "The training set average relative error",
+    "TrainAvgError": "The training set mean absolute error",
+    "TrainAvgRelError": "The training set mean relative error",
     "TrainRMSError": "The training set root-mean-square error",
     "TStatColumn": "T-statistics",
     "UBoundColumn": "%s|Upper bound"
@@ -1043,7 +1043,7 @@
     "ErrInvalidColNamePrefix": "\"%s\" name prefix is not a valid identifier",
     "ErrRowCountExceedMaxValue": "Row count of the result data set exceeded %d maximum value",
     "ProgressCompareIndexes": "Index mapping",
-    "ProgressFormResult": "Output data set formation",
+    "ProgressFormResult": "Output data set generation",
     "ProgressJoinedTableIndex": "Joined table indexing",
     "ProgressMainTableIndex": "Main table indexing"
   },
@@ -1070,9 +1070,9 @@
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrOutputColumnNotValid": "Invalid specified output column",
     "ErrTeachNoOutputField": "No output data field specified",
-    "ErrWrongInputField": "Invalid %s input field properties, %s data sort, %s data type",
+    "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data sort, \"%s\" data type",
     "ErrWrongOutputColumnsCount": "Exactly 1 output column must be defined, %d output columns are currently defined",
-    "ErrWrongOutputField": "Invalid %s output field properties, %s data sort, %s data type",
+    "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data sort, \"%s\" data type",
     "Intercept": "<Intercept>",
     "LinRegTrainProcessName": "Model building",
     "ModelDF": "Number of the model degrees of freedom",
@@ -1271,7 +1271,7 @@
     "ErrRowLengthMismatch": "%d row length does not match the column count in %d matrix",
     "ErrTrainNetworkError": "Neural network training failed",
     "ErrWrongNeuronCounts": "One or several invalid neuron count values specified",
-    "ExecuteProcessCaption": "Input data process",
+    "ExecuteProcessCaption": "Input data iteration",
     "FitDecayProcessCaption": "Training: decay degree = %.1f",
     "FitH0DecayProcessCaption": "Training: without hidden layers; decay degree = %.1f",
     "FitH0ProcessCaption": "Training: without hidden layers",
@@ -1284,9 +1284,9 @@
     "Nh2": "Number of neurons in the second hidden layer",
     "NHL": "Number of hidden layers",
     "PrepareProcessCaption": "Data preparing",
-    "TestSetProcessCaption": "Test set process",
+    "TestSetProcessCaption": "Test data set iteration",
     "TrainProcessCaption": "Neural network training",
-    "ValidationSetProcessCaption": "Validation set process"
+    "ValidationSetProcessCaption": "Validation data set iteration"
   },
   "components/neuralnet/NeuralNetEngine": {
     "ActualClsIDColumn": "Class ID|Fact",
@@ -1320,15 +1320,15 @@
     "PredictedColumn": "%s|Prediction",
     "TestAvgCE": "Average cross-entropy in the test set",
     "TestAvgError": "The test set mean absolute error",
-    "TestAvgRelError": "The test set average relative error",
+    "TestAvgRelError": "The test set mean relative error",
     "TestClsErrorPercentage": "Percentage of classification errors in the test set",
     "TestRMSError": "Root-mean-square error in the test set",
     "TestSamples": "Samples in the test set",
     "TotalSamples": "Total samples",
     "TotalSelectedSamples": "Total selected samples",
     "TrainAvgCE": "Average cross-entropy in the training set",
-    "TrainAvgError": "The training set average absolute error",
-    "TrainAvgRelError": "The training set average relative error",
+    "TrainAvgError": "The training set mean absolute error",
+    "TrainAvgRelError": "The training set mean relative error",
     "TrainClsErrorPercentage": "Percentage of classification errors in the training set",
     "TrainRMSError": "The training set root-mean-square error",
     "TrainSamples": "Samples in the training set"
@@ -1355,8 +1355,8 @@
     "PartitionDisplayName": "Test set"
   },
   "components/partition/PartitionVendor": {
-    "VendorCaption": "Partition into Sets",
-    "VendorDesc": "Formation of test and training sets"
+    "VendorCaption": "Partitioning",
+    "VendorDesc": "Selection of test and training sets"
   },
   "components/quality/Quality": {
     "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
@@ -1378,8 +1378,8 @@
     "VendorDesc": "Data quality assessment"
   },
   "components/reformcolumns/ReformColumnsVendor": {
-    "VendorCaption": "Field Parameters",
-    "VendorDesc": "Change field parameters"
+    "VendorCaption": "Field Features",
+    "VendorDesc": "Change field features"
   },
   "components/replace/ReplaceColumns": {
     "ErrSourceGuidNotFound": "No input replacement table with GUID = %s",
@@ -1424,7 +1424,7 @@
   },
   "components/sampling/SamplingVendor": {
     "VendorCaption": "Sampling",
-    "VendorDesc": "Formation of representative subset"
+    "VendorDesc": "Selection of representative subset"
   },
   "components/search/Search": {
     "ErrDataSourceIsNil": "Reference to data source not initialized",
@@ -1466,7 +1466,7 @@
     "ColumnNameUniqueValueSuffix": "|Value",
     "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoModel": "Model is not configured. It is required to train the node before its application",
+    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
     "ErrSONNIncorrectSize": "Incorrect network size for %s: %d",
     "ErrSONNTypeNotSupported": "\"%s\" type of self-organizing network not supported",
     "ErrWrongModel": "Model does not match the input data",
@@ -1518,7 +1518,7 @@
     "SupportInputDataSource": "Data for quota calculation",
     "UngroupInputDataSource": "Ungrouped data",
     "UngroupOutputDataSource": "Ungroup output",
-    "UngroupQualityDisplayName": "Ungrouping quality index",
+    "UngroupQualityDisplayName": "Ungrouping quality indicator",
     "UngroupStatsDataSource": "Model quality indicators and seasonal indexes"
   },
   "components/ungroupdata/UngroupDataAVLTrees": {
@@ -1535,13 +1535,13 @@
     "ErrWrongTimeseriesKeyDatatype": "Invalid time series key type"
   },
   "components/ungroupdata/UngroupDataTimeseriesModel": {
-    "ErrBadlyConditionedMatrix": "(%d x %d) matrix is singular or ill-conditioned: U[%d;%d] = 0 in %d iteration",
+    "ErrBadlyConditionedMatrix": "(%1:d x %2:d) matrix is singular or ill-conditioned: U[%3:d;%4:d] = 0 in %0:d iteration",
     "ErrDFNotConsistent": "Failed to provide the required number of degrees of freedom",
-    "ErrEngineUnassigned": "Engine not installed for the ungroup model",
+    "ErrEngineUnassigned": "Engine not set for the ungroup model",
     "ErrOptimGradientVerificationFailed": "Analytical gradient verification failed",
     "ErrOptimIntegrityFailed": "The infinite value of the optimized function or its gradient was detected",
-    "ErrSingularMatrixCol": "(%d x %d) matrix contains zero column No %d in %d iteration",
-    "ErrSingularMatrixRow": "(%d x %d) matrix contains zero row No %d in %d iteration",
+    "ErrSingularMatrixCol": "(%1:d x %2:d) matrix contains zero column No %3:d in %0:d iteration",
+    "ErrSingularMatrixRow": "(%1:d x %2:d) matrix contains zero row No %3:d in %0:d iteration",
     "ErrSLECalcPrepare": "Error while preparing the equations system",
     "ErrSLEStructPrepare": "Error while preparing data structures of the equations system",
     "ErrSolver": "%d error when solving the equation system at %d iteration",
@@ -1572,7 +1572,7 @@
     "InputVariablesOverFlow": "Number of the input variables exceeded = %d maximum value"
   },
   "components/unionvariables/UnionVariablesVendor": {
-    "VendorCaption": "Union (Variables)",
+    "VendorCaption": "Variable Union",
     "VendorDesc": "Combine several sets of variables into one"
   },
   "components/variablestodata/VariablesToDataEngine": {
@@ -1605,7 +1605,7 @@
   "components/wsdlclient/WSDLClientBase": {
     "AdditionalDataSet": "Additional data",
     "ErrIncorrectWSDLClientRequestConfiguration": "Web service request configuration contains errors",
-    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
+    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
     "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
     "ErrMappedNodeNotOwnedByRequestTree": "%s node for which input set column selection is requested is not included into the request tree",
     "ErrNothingSelected": "No nodes selected for service response import",
@@ -1630,13 +1630,13 @@
     "AddToTableNotify": "Addition of records to table",
     "DeleteFromTableNotify": "Deletion of records from table",
     "ErrColumnNotFound": "\"%s\" column not found in the data source",
-    "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
+    "ErrColumnTypesMismatch": "\"%s\" column type is not compatible with \"%s\" source column type",
     "ErrDataSourceSelect": "No data source mapping provided",
     "ErrDuringExportError": "Error while exporting to DB",
-    "ErrFieldForDeleteNotSelected": "No fields in which data should be deleted specified",
+    "ErrFieldForDeleteNotSelected": "No fields by which data should be deleted specified",
     "ErrFieldForUpdateNotSelected": "No fields to update specified",
     "ErrFillTable": "Failed to fill \"%s\" table",
-    "ErrKeyFieldForUpdateNotSelected": "No key field in which data should be updated specified",
+    "ErrKeyFieldForUpdateNotSelected": "No key field by which data should be updated specified",
     "ErrNotConnectedToDatabase": "No connection with database",
     "ErrSyncKeyDeletedDest": "Synchronization error: \"%s\" key field not found in the table",
     "ErrSyncKeyDeletedSource": "Synchronization error: source field not found for \"%s\" key field",
@@ -1681,7 +1681,7 @@
     "ErrCannotProceedWithoutRootElement": "To perform the operation you must first select the root XML element for export",
     "ErrExportNotConfigured": "Export tree not configured",
     "ErrIncorrectExportConfiguration": "Errors in configuration",
-    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
+    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
     "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
     "ErrMappedNodeNotOwnedByExportTree": "%s node for which input set column selection is requested is not included into the export tree",
     "ErrNodeDoesNotDescendFromSelectedRoot": "%s node is not a descendant of the selected %s root element",
@@ -1702,7 +1702,7 @@
   },
   "imports/1cv8/1Cv8QueryImport": {
     "ErrInterpretValue": "Failed to convert value from query result to standard type",
-    "FillDataSetProcess": "Data set filling",
+    "FillDataSetProcess": "Data importing",
     "NotConnected": "Not connected to infobase",
     "OpenResultSetProcess": "Query opening",
     "PrepareFieldDefsProcess": "Query executing",
@@ -1819,7 +1819,7 @@
   "imports/xml/ImportXML": {
     "ErrFileNotSelected": "XML file for import not selected",
     "ErrImportNotConfigured": "Import tree not configured",
-    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the handler settings!",
+    "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
     "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrXMLImport": "Error importing XML:\n  Error code: %d\n  %s",
@@ -1832,7 +1832,7 @@
   },
   "Libraries/1CConnection/1CConnection": {
     "ErrDBPath": "Failed to get path to DB",
-    "ErrLocalDBForbidden": "Connections to local server databases are forbidden"
+    "ErrLocalDBForbidden": "Connections to local databases on server are forbidden"
   },
   "Libraries/1CConnection/1Cv8Connection": {
     "ErrConnectionString": "Error in connection string",
@@ -1945,8 +1945,8 @@
   },
   "Libraries/bgrtl/ClassObjectsLocator": {
     "ErrInitChildScope": "Error initializing the context of the added object %p",
-    "ErrObjectAlreadyExist": "%s %s already exists in the identifier list",
-    "ErrObjectNotFound": "%s %s does not exist in the identifier list",
+    "ErrObjectAlreadyExist": "%s already exists in %s identifier list",
+    "ErrObjectNotFound": "%s does not exist in %s identifier list",
     "ObjMetaDesc": "object"
   },
   "Libraries/bgrtl/ColumnDefs": {
@@ -2373,7 +2373,7 @@
     "ErrStreamNotAssigned": "Source data stream not initialized"
   },
   "Libraries/bgrtl/ThreadPool": {
-    "ErrCannotChangeParams": "You cannot change the thread pool parameters upon its application start",
+    "ErrCannotChangeParams": "You cannot change the thread pool parameters upon start of its applying",
     "ErrCannotWaitForSelf": "You cannot wait for completion of the same task inside the task",
     "ErrJoin": "One or several subtasks failed",
     "ErrThreadPoolDestroyed": "The task cannot be completed because the thread pool containing it has been deleted",
@@ -2494,7 +2494,7 @@
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value"
   },
   "Libraries/bgrtl/Vendors": {
-    "ErrObjectNotFound": "%s %s does not exist in the identifier list",
+    "ErrObjectNotFound": "%s does not exist in %s identifier list",
     "VendorGroupMetaDesc": "vendor group",
     "VendorMetaDesc": "vendor"
   },
@@ -2643,10 +2643,10 @@
     "ErrDuplicateSequenceItemIDOverride": "The collection contained base and derived items with the same %d identifier. The base item was ignored",
     "ErrDuplicateSequenceItemIDs": "The collection contains more than one item with %d identifier",
     "ErrDuplicateSequenceItemNameChanged": "The collection contained base and derived items with the same %s identifier. The derived item was renamed to %s",
-    "ErrDuplicateSequenceItemNameOverride": "The collection contained base and derived items with the same %d name. The base item was ignored",
+    "ErrDuplicateSequenceItemNameOverride": "The collection contained base and derived items with the same %s name. The base item was ignored",
     "ErrDuplicateSequenceItemNames": "The collection contains more than one item with %s name",
-    "ErrGetConfigWriterItemByIndexNotSupported": "Receiving derived configuration item by index not supported",
-    "ErrGetConfigWriterItemCountNotSupported": "Receiving derived item count of the configuration not supported",
+    "ErrGetConfigWriterItemByIndexNotSupported": "Getting derived configuration item by index not supported",
+    "ErrGetConfigWriterItemCountNotSupported": "Getting derived item count of the configuration not supported",
     "HintConvertAtomicConfigElement": "When reading the atomic element of %s configuration converting will be performed"
   },
   "Libraries/Config/ConfigXML": {
@@ -2679,8 +2679,8 @@
     "RandomUniformSamplingDesc": "Group sampling",
     "SequenceSamplingDesc": "Sequence sampling",
     "StratifiedSamplingDesc": "Stratified sampling",
-    "TeachDataSet": "Training set formation",
-    "TestDataSet": "Test set formation"
+    "TeachDataSet": "Training set selection",
+    "TestDataSet": "Test set selection"
   },
   "Libraries/DataPartition/PartitionIndexGenerator": {
     "ErrExternalColumnNotReady": "No external partition column specified"
@@ -3225,7 +3225,7 @@
   },
   "Libraries/Normalization/NormalData": {
     "CalculateCacheProcessCaption": "Data set caching",
-    "ErrArrayExpected": "You cannot denormalize a single element. Array from %d elements must be denormalized for \"%s\" column.  ",
+    "ErrArrayExpected": "You cannot denormalize a single element. Array from %1:d elements must be denormalized for \"%0:s\" column.  ",
     "ErrImpossibleToAllocate": "You cannot allocate memory for cached normalized data source",
     "ErrNotEnoughCache": "Insufficient cache size to store normalized data string",
     "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
@@ -3266,17 +3266,17 @@
     "ErrNanDivisor": "You cannot calculate divisor to normalize relations, \"%s\" column",
     "ErrQuotientNormTypeNotSupported": "The selected \"%s\" normalization type is not supported by the relation normalization settings",
     "ErrQuotientStatNotSupported": "The selected statistic divisor \"%s\" is not supported by the relation normalization settings",
-    "ErrStatDivisorNotAvailable": "The installed statistic indicator \"%s\" cannot be used as relation normalization divisor"
+    "ErrStatDivisorNotAvailable": "The set statistic indicator \"%s\" cannot be used as relation normalization divisor"
   },
   "Libraries/Normalization/NormMatrixData": {
     "ErrGetColNotSupported": "Normalized matrix column request not supported"
   },
   "Libraries/Normalization/PreNormDataAccessor": {
-    "ErrNoIndexInHash": "No index of the installed %d column in Accessor hash"
+    "ErrNoIndexInHash": "No index of the set %d column in Accessor hash"
   },
   "Libraries/Normalization/TunedNormParams": {
     "ErrAvailableNormTypeNotFound": "No valid normalization type found",
-    "ErrControlRangeNotAvailable": "The installed \"%s\" type of range control is not valid for this normalizer",
+    "ErrControlRangeNotAvailable": "The set \"%s\" type of range control is not valid for this normalizer",
     "ErrWrongNormParamsConstructor": "Invalid normalization parameter constructor used",
     "FACT_ANY": "ANY",
     "FACT_ANY_COUNTINUOUS": "ANY CONTINUOUS",
@@ -3352,24 +3352,24 @@
     "ErrGuidNotFound": "\"%s\" interface not found in metadata",
     "ErrIncorrectIndexDataType": "\"%s\" property has incorrect indexer type",
     "ErrIndexerCountIncorrect": "The property with \"%s\" count of items is incorrect for the indexed property \"%s.%s.%s\" ",
-    "ErrIndexerCountNotFound": "No \"%s\" property in metadata for \"%s.%s\" interface",
+    "ErrIndexerCountNotFound": "No \"%2:s\" property in metadata for \"%0:s.%1:s\" interface",
     "ErrInterfaceNameNotFound": "Interface with \"%s\" name not registered",
     "ErrInterfaceParentNotFound": "Parent interface \"%s\" not found",
     "ErrInvalidMetadataResource": "Error reading metadata from \"%s\" resource",
     "ErrInvalidUTFInt": "Error reading integer packed number",
     "ErrManagerNotInitialized": "Interface property manager not initialized",
     "ErrParentNotInitialized": "Not initialized parent of \"%s.%s\" interface",
-    "ErrPropAccessorNotFound": "Failed to find \"%s\" accessor in metadata for \"%s.%s\" property",
+    "ErrPropAccessorNotFound": "Failed to find \"%2:s\" accessor in metadata for \"%0:s.%1:s\" property",
     "ErrReferenceIsNil": "Interface reference not initialized",
     "ErrReferenceNotFound": "Failed to find the implemented interface",
     "ErrSetValueOutOfBounds": "Set value \"%d\" of  \"%s\" property is not in the range of allowable values",
-    "ErrVaiantTypeIncorrect": "The property containing \"%s\" value type is incorrect for the variant property \"%s.%s.%s\"  ",
-    "ErrVaiantTypeNotFound": "No \"%s\" property in metadata for \"%s.%s\" interface",
+    "ErrVaiantTypeIncorrect": "The property containing \"%3:s\" value type is incorrect for the variant property \"%0:s.%1:s.%2:s\"",
+    "ErrVaiantTypeNotFound": "No \"%2:s\" property in metadata for \"%0:s.%1:s\" interface",
     "ErrValueOutOfRange": "\"%d\" value is not in the range of allowable values of \"%s\" type",
     "ErrVisibilityMismatch": "Visibility of \"%s\" interface mismatches the required visibility"
   },
   "Libraries/Regression/DataSourceRegressionModelComponentEngine": {
-    "ErrNoModel": "Model is not configured. It is required to train the node before its application",
+    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
     "ErrOutputColumnInvalid": "Invalid output column",
     "ErrOutputCount": "There must be exactly one output column",
     "ErrTrainingNotComplite": "Failed to train the node on the basis of the current training set",
@@ -3386,7 +3386,7 @@
     "ErrWrongRegressionParamsConstructor": "Invalid regression parameter constructor used"
   },
   "Libraries/Regression/RegressionModel": {
-    "ApplyModelProcessCaption": "Model application",
+    "ApplyModelProcessCaption": "Model applying",
     "ErrApplyWrongFeatures": "The column count of the input data set %d not equal to the regressors count of %d model  ",
     "RegressionStatistics": "Regression statistics"
   },
@@ -3581,7 +3581,7 @@
     "ErrVariablesOnlyAllowedForNode": "Variables usage is only possible if a separate node is running",
     "ExampleTitle": "Example:",
     "OptionAddressDesc": "IP address or hostname (default: %s)",
-    "OptionNodeNameDesc": "Node name or GUID",
+    "OptionNodeNameDesc": "Name or GUID of node",
     "OptionPackageFileNameDesc": "Package path and file name (required parameter)",
     "OptionPasswordDesc": "Password",
     "OptionPortDesc": "Port (default: %s)",
@@ -3774,7 +3774,7 @@
     "ErrAlreadyExporting": "You cannot export a crosstab until the current export is finished",
     "ErrExportCubeClosed": "You cannot export a crosstab when the Cube is inactive",
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
-    "ErrPhantomCaseBracketsOpened": "You cannot start creating time measure until you delete the existing time fact",
+    "ErrPhantomCaseBracketsOpened": "Failed to create a temporary measure because another temporary measure exists",
     "IncLoadMatrixNotify": "Increment measure calculating",
     "LoadMatrixNotify": "Measure calculating"
   },
@@ -3842,18 +3842,18 @@
     "EventsChartXLabel": "Bin",
     "EventsChartYLabel": "Captured response, %",
     "EventsCumChartTitle": "% captured response chart (cumulative)",
-    "EventsCumChartXLabel": "Sampling ratio, %",
+    "EventsCumChartXLabel": "Percentile",
     "EventsCumChartYLabel": "Captured response, %",
     "FNR": "FNR (1-Sensitivity)",
     "FPR": "FPR (1-Specificity)",
     "GainChartTitle": "Gain Chart",
-    "GainChartXLabel": "Sampling ratio, %",
+    "GainChartXLabel": "Percentile",
     "GainChartYLabel": "Gain",
     "LiftChartTitle": "Lift Chart",
     "LiftChartXLabel": "Bin",
     "LiftChartYLabel": "Lift",
     "LiftCumChartTitle": "Lift Chart (Cumulative)",
-    "LiftCumChartXLabel": "Sampling ratio, %",
+    "LiftCumChartXLabel": "Percentile",
     "LiftCumChartYLabel": "Lift",
     "NPV": "NPV (Negative Prediction Value)",
     "OCR": "OCR (Overall Classification Rate)",
@@ -3867,7 +3867,7 @@
     "PrecisionRecallChartYLabel": "PPV (Precision)",
     "ResponseChartTitle": "Response Chart",
     "ResponseCumChartTitle": "Response Chart (Cumulative)",
-    "ResponseCumChartXLabel": "Sampling ratio, %",
+    "ResponseCumChartXLabel": "Percentile",
     "ResponseCumChartYLabel": "% events",
     "ROCChartTitle": "ROC Curve",
     "ROCChartXLabel": "FPR (1-specificity)",
@@ -3948,7 +3948,7 @@
   },
   "Warehouse2/Deductor/DDWImportVendor": {
     "VendorCaption": "Deductor Warehouse",
-    "VendorDesc": "Retrieve data from a Deductor data warehouse"
+    "VendorDesc": "Extract data from a Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/Ver6/DW6Engine": {
     "CommentForFieldChangeID": "Reference to the activity journal",

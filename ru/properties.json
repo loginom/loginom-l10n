@@ -477,7 +477,7 @@
   "exports/excelfile": {
     "ExportExcelFile": {
       "FileType": "Тип файла Excel",
-      "SheetName": "Имя листа для экспорта",
+      "SheetName": "Имя листа",
       "WebSetting": "Настройки для web клиента"
     },
     "ExportExcelWebSetting": {

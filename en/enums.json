@@ -21,13 +21,13 @@
       "UnhandledError": "Unhandled error: %s"
     },
     "WSDLPrepareRequestStatus": {
-      "$Caption": "WSDL request formation result",
+      "$Caption": "WSDL request generation result",
       "NoError": "No errors",
       "Cancelled": "Canceled by user",
       "InitError": "Error initializing WSDL request: %s",
       "ConnectionUndefined": "WSDL connection not specified",
       "OperationUndefined": "The operation used is not defined",
-      "NoContextForInputMessage": "No context for formation of the incoming service message",
+      "NoContextForInputMessage": "No context for generation of the incoming service message",
       "UnsupportedSoapTransport": "Unsupported SOAP transport",
       "PrepareError": "Error preparing data request: %s",
       "UnimplementedRequestType": "The requests with %s extensions are not currently supported"
@@ -152,8 +152,8 @@
       "Date": "Date",
       "Time": "Time",
       "DateTime": "Date and time",
-      "Float": "With floating point (single precision)",
-      "Double": "With floating point (double precision)",
+      "Float": "Floating point number (single precision)",
+      "Double": "Floating point number (double precision)",
       "Decimal": "Decimal number",
       "Integer": "Integer",
       "PosInteger": "Positive integer",
@@ -273,7 +273,7 @@
       "LowerBound": "Lower bound",
       "UpperBound": "Upper bound",
       "WoE": "Weight of evidence",
-      "IV": "Information index",
+      "IV": "Information value",
       "Weight": "Class weight",
       "UpperBoundIsOpen": "Upper range bound open",
       "PreQuantingApplied": "Prequantization"
@@ -309,7 +309,7 @@
       "EventsCount": "Events count",
       "NonEventsCount": "Non-events count",
       "TotalEventsCount": "Total",
-      "IV": "Information index",
+      "IV": "Information value",
       "Significance": "Column significance"
     },
     "InputBinningColumnKind": {
@@ -325,15 +325,15 @@
   "components/coluniondata": {
     "ColUnionDataTailsAlignType": {
       "$Caption": "Compliance of Output Data Set Row Count",
-      "CutToShortest": "With minimum set",
-      "ExtendToLongest": "With maximum set",
-      "UserSpecified": "Set defined"
+      "CutToShortest": "With minimum data set",
+      "ExtendToLongest": "With maximum data set",
+      "UserSpecified": "Data set defined"
     },
     "ColUnionRowsPaddingType": {
-      "$Caption": "Supplement to the Largest Data Set",
-      "None": "No to supplement",
-      "Repeat": "Repeat data set",
-      "LastRow": "Supplement with the last row"
+      "$Caption": "Appending to the Largest Data Set",
+      "None": "Not to append",
+      "Repeat": "Repeat all rows",
+      "LastRow": "Repeat the last row"
     }
   },
   "components/corranalysis": {
@@ -731,7 +731,7 @@
     "DBExportType": {
       "$Caption": "Export Mode",
       "Append": "Append data to table",
-      "Overload": "Clear table and append data",
+      "Overload": "Clear table and fill in data",
       "Delete": "Delete records by key fields",
       "Refresh": "Delete records by key fields and insert data into table",
       "Update": "Update existing table records"
@@ -739,9 +739,9 @@
   },
   "exports/excelfile": {
     "ExcelCaptionType": {
-      "$Caption": "Type for Column Header",
-      "AsName": "Header as name",
-      "AsDisplayName": "Header as caption"
+      "$Caption": "Column Header Type",
+      "AsName": "Fields names",
+      "AsDisplayName": "Fields captions"
     },
     "ExcelHeadersRow": {
       "$Caption": "Column Headers",
@@ -752,7 +752,7 @@
     "ExcelHeadersRowWebSet": {
       "$Caption": "Column Headers",
       "NoHeadersRow": "No header row",
-      "HeadersRowAsName": "Field names",
+      "HeadersRowAsName": "Fields names",
       "HeadersRowAsDisplayName": "Fields captions"
     },
     "ExcelLimitRowType": {
@@ -812,7 +812,7 @@
   "imports/native": {
     "DDFCompression": {
       "$Caption": "Compression Algorithm",
-      "None": "Without compression",
+      "None": "None",
       "LZO": "LZO",
       "LZ4": "LZ4"
     },
@@ -1075,7 +1075,7 @@
       "IsNotNull": "Not null"
     },
     "RoundMode": {
-      "$Caption": "Rounding Mode",
+      "$Caption": "Round Towards Zero",
       "NearestEven": "Round to the nearest even number",
       "Down": "Round down",
       "Up": "Round up",
@@ -1096,7 +1096,7 @@
       "$Caption": "Statistical Indicators",
       "Min": "Minimum",
       "Max": "Maximum",
-      "Avg": "Average",
+      "Avg": "Mean",
       "Sum": "Sum",
       "SumSq": "Sum of squares",
       "StdDev": "Standard deviation",
@@ -1186,7 +1186,7 @@
       "Sequence": "Sequence"
     },
     "LearnPartitionMethod": {
-      "$Caption": "Method of Training/Test Component Partition with Training",
+      "$Caption": "Method of Training/Test Component Partitioning with Training",
       "Random": "Random",
       "Sequence": "Sequence",
       "Flag": "Partition specified"
@@ -1244,10 +1244,10 @@
   },
   "Libraries/FileConnection/TextFileTypes": {
     "TextFileCaptionType": {
-      "$Caption": "Type for Column Header",
+      "$Caption": "Column Headers",
       "NoCaption": "No header row",
-      "UseColumnNames": "Column (field) names",
-      "UseColumnDisplayNames": "Column (field) captions"
+      "UseColumnNames": "Fields names",
+      "UseColumnDisplayNames": "Fields captions"
     },
     "TextFileFormatType": {
       "$Caption": "Type for Data Format",
@@ -1472,7 +1472,7 @@
       "Close": "Close"
     },
     "ChartMode": {
-      "$Caption": "Index type",
+      "$Caption": "Type of Pointers",
       "Hand": "Hand",
       "Ruler": "Ruler",
       "Pointer": "Pointer",
@@ -1702,7 +1702,7 @@
     "ROCViewAprioriProb": {
       "$Caption": "Prior Probability Event Source",
       "None": "Do not correct",
-      "Model": "From handler",
+      "Model": "From node settings",
       "Train": "From the training set",
       "Test": "From the test set",
       "User": "Configure"
@@ -1721,7 +1721,7 @@
     },
     "ROCViewCutoffType": {
       "$Caption": "Cutoff",
-      "Current": "From handler",
+      "Current": "From node settings",
       "User": "Configurable",
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
@@ -1823,7 +1823,7 @@
       "FuzzyLogicEqual": " ~ "
     },
     "MetaDataNodeType": {
-      "$Caption": "Metadata Types",
+      "$Caption": "Types of Metadata Warehouse",
       "Item": "Item",
       "ComDimList": "Dimensions",
       "ProcList": "Processes",

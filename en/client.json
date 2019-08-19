@@ -258,7 +258,7 @@
   },
   "app/SelectBaseVendorForm": {
     "CantChangeVendor": "Failed to set component",
-    "ThereIsNodeVendors": "The list of components is empty. Create a derived component from the compatible node."
+    "ThereIsNodeVendors": "The list of components is empty. Create derived component from the compatible node."
   },
   "app/ServerConnection": {
     "ErrSyncSocketPluginNotInstalledOrDisabled": "SyncSocket plugin is not installed or disabled."
@@ -292,7 +292,7 @@
   },
   "app/Version": {
     "CompanyWebsite": "https://loginom.com",
-    "LegalCopyright": "© LLC Analytical Technologies 2017"
+    "LegalCopyright": "© OOO Analytical Technologies 2017"
   },
   "app/WindowTitle": {
     "Close": "Close",
@@ -627,7 +627,7 @@
   "components/reformcolumns/ReformColumnsWizard": {
     "ColumnCachingMethodText": "Caching",
     "ColumnDisplayNameText": "Caption",
-    "ReformColumnsWizardTitle": "Configure fields parameters"
+    "ReformColumnsWizardTitle": "Configure fields features"
   },
   "components/replace/ReplaceVariablesWizard": {
     "VariablesTitle": "Variables"
@@ -691,7 +691,7 @@
     "RoundMultipleParamLabel": "Multiplicity",
     "RoundParamLabel": "Rounding parameter",
     "TimeAxisColumnUsageType": "Ordinal field",
-    "UngroupedColumnUsageType": "Ungroup"
+    "UngroupedColumnUsageType": "Ungroupable"
   },
   "components/uniondata/UnionDataWizard": {
     "MissingMainColumn": "Failed to show link not connected with the main table",
@@ -772,7 +772,7 @@
     "ErrUpdateFieldsDetails": "List of table columns in which changes occurred:",
     "KeyColumnText": "Key",
     "SyncThroughColumnsToolTip": "Refresh table fields",
-    "Title": "Specify Source Columns and Table Fields Mapping\nMap Source Columns to Table Fields"
+    "Title": "Map Source Columns to Table Fields"
   },
   "exports/dbexport/DBExportParamsWizard": {
     "ErrTableNameNotSelected": "No table name selected",
@@ -1501,7 +1501,7 @@
     "FilterButtonText": "Filter",
     "FilterTitle": "Filter",
     "FindAgainCellFmt": "Find next [{0}]",
-    "FindCellFmt": "Find from the page top [{0}]",
+    "FindCellFmt": "Find first [{0}]",
     "FirstTableRowAction": "First row",
     "FormatButtonText": "Format",
     "FormatTitle": "Format",
@@ -2017,7 +2017,7 @@
     "UniqueValuesLimitError": "{0} field cannot be used for biased sampling due to excess  of the unique values number (over {1})"
   },
   "wizards/datapartition/PartitionWizard": {
-    "PartitionTitle": "Partition into Sets"
+    "PartitionTitle": "Partitioning"
   },
   "wizards/datapartition/RandomUniformMethodForm": {
     "GroupAbsoluteSize": "Group size in rows",

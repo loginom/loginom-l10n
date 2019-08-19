@@ -155,10 +155,10 @@
       "text": "Cancel"
     },
     "chbRunBatchMode": {
-      "boxLabel": "Run a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes will be activated in the run mode. When the feature is disabled, the specified node and all its sub nodes will not be activated for execution in the batch mode."
+      "boxLabel": "Run a node and all its sub nodes.<br>During the batch processing, this node and all its subnodes will be activated in the run mode. When the feature is disabled, the specified node and all its subnodes will not be activated for execution in the batch mode."
     },
     "chbTeachBatchMode": {
-      "boxLabel": "Retrain a node and all its sub nodes.<br>During the batch processing, this node and all its sub nodes, for which the model can be rebuilt, will be activated in the training mode. When the feature is disabled, the specified node and all its sub nodes will not be activated for training in the batch mode."
+      "boxLabel": "Retrain a node and all its sub nodes.<br>During the batch processing, this node and all its subnodes, for which the model can be rebuilt, will be activated in the training mode. When the feature is disabled, the specified node and all its subnodes will not be activated for training in the batch mode."
     },
     "cntBatchProcModes": {
       "title": "Valid Modes of Batch Processing"
@@ -526,7 +526,7 @@
       "title": "Workflow"
     },
     "pnlVendorsContainer": {
-      "title": "Components "
+      "title": "Components"
     }
   },
   "app/PackageForm": {
@@ -718,7 +718,7 @@
       "text": "Caption"
     },
     "colName": {
-      "text": "Caption"
+      "text": "Name"
     },
     "frmAssnRulesWizard": {
       "title": "Association Rules"
@@ -766,7 +766,7 @@
       "fieldLabel": "Round limits"
     },
     "chkStrictLowerLimit": {
-      "fieldLabel": "Set lower bound"
+      "fieldLabel": "Set lower limit"
     },
     "chkStrictUpperLimit": {
       "fieldLabel": "Set upper limit"
@@ -804,7 +804,7 @@
       "tooltip": "Increase decimal"
     },
     "btnLabelTemplateGetHelp": {
-      "text": "Sample"
+      "text": "Example"
     },
     "cbbLabelTamplate": {
       "fieldLabel": "Template"
@@ -882,7 +882,7 @@
       "tooltip": "Add expression"
     },
     "btnAddSimilarExpr": {
-      "tooltip": "Add similar expression"
+      "tooltip": "Clone expression"
     },
     "btnAnd": {
       "text": "AND",
@@ -1126,7 +1126,7 @@
       "text": "Weight of evidence"
     },
     "colColumnIV": {
-      "text": "Index"
+      "text": "IV"
     },
     "colColumnName": {
       "text": "Column"
@@ -1209,7 +1209,7 @@
       "text": "Data set defining row count"
     },
     "frmColUnionData": {
-      "title": "Connection"
+      "title": "Column Union"
     }
   },
   "components/condition/ConditionParamsWizard": {
@@ -2722,7 +2722,7 @@
       "title": "Import from Excel File"
     },
     "pnlTaleSetings": {
-      "title": "Data Area"
+      "title": "Data Source"
     }
   },
   "imports/native/ImportNativePreviewWizard": {
@@ -2736,7 +2736,7 @@
       "fieldLabel": "Compression"
     },
     "edtDDFSystem": {
-      "fieldLabel": "Decimal"
+      "fieldLabel": "Bitness"
     },
     "frmImportFromFile": {
       "title": "Import from Loginom Data File"
@@ -2949,7 +2949,7 @@
       "boxLabel": "full"
     },
     "rbtSearchCompareTypeStart": {
-      "boxLabel": ""
+      "boxLabel": "from the start"
     },
     "rbtSearchCompareTypeSubstring": {
       "boxLabel": "substring"
@@ -2997,7 +2997,7 @@
       "text": "Find first"
     },
     "btnFindAgain": {
-      "text": "Search"
+      "text": "Find"
     },
     "btnFirstPage": {
       "tooltip": "First page"
@@ -3497,7 +3497,7 @@
       "fieldLabel": "Exponential form"
     },
     "cbThousand": {
-      "fieldLabel": "Numeric separator"
+      "fieldLabel": "Thousands separator"
     },
     "cntAlignment": {
       "title": "Alignment"
@@ -3884,7 +3884,7 @@
       "tooltip": "Delete all..."
     },
     "btnReloadViewData": {
-      "text": "Reload Data"
+      "text": "Reread data"
     },
     "btnRename": {
       "text": "Rename",
@@ -3908,7 +3908,7 @@
       "text": "Total"
     },
     "colEventClass": {
-      "text": "Predicted by classifier"
+      "text": "Predicted"
     },
     "colEvents": {
       "text": "Correct"

@@ -1549,7 +1549,7 @@
       "text": "Cancel"
     },
     "btnDeselectAll": {
-      "text": "Deselect All"
+      "text": "Uncheck all"
     },
     "frmFactorEditDialog": {
       "title": "Aggregation Options"

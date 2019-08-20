@@ -1205,8 +1205,8 @@
     "ErrConditionComponentInLoopNotAllowed": "Выполнение компонента Условие в цикле запрещено",
     "ErrGroupColumnNotFound": "Не найден столбец \"%s\", используемый для группировки данных",
     "ErrGroupCountMustBePositive": "Количество групп должно быть положительным",
-    "ErrGroupDataSourceSocketNotFound": "Не найден сокет с идентификатором \"%s\", содержащий столбцы для группировки",
-    "ErrGroupDataSourceSocketNotSpecified": "Не задан сокет, содержащий столбцы для группировки",
+    "ErrGroupDataSourceSocketNotFound": "Не найден порт с идентификатором \"%s\", содержащий столбцы для группировки",
+    "ErrGroupDataSourceSocketNotSpecified": "Не задан порт, содержащий столбцы для группировки",
     "ErrGroupSizeMustBePositive": "Количество строк в группе должно быть положительным",
     "ErrIncompatibleTerminateCondition": "Условие завершения цикла \"%s\" не совместимо с типом данных \"%s\"",
     "ErrIncorrectMaxThreadCount": "Максимальное количество потоков должно быть не меньше %d",
@@ -1219,9 +1219,9 @@
     "ErrNoConditionVariable": "Отсутствует переменная для проверки условия завершения цикла",
     "ErrParallelProcessingError": "При параллельном выполнении цикла возникла ошибка",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Цикл с постусловием не поддерживает параллельную обработку",
-    "ErrSocketIsNotInputDataSourceSocket": "Сокет \"%s\" не является входным сокетом, содержащим набор данных",
-    "ErrSocketNotConfigured": "Сокет не настроен",
-    "ErrUnsupportedInputSocketType": "Сокет \"%s\" имеет неподдерживаемый тип",
+    "ErrSocketIsNotInputDataSourceSocket": "Порт \"%s\" не является входным портом, содержащим набор данных",
+    "ErrSocketNotConfigured": "Порт не настроен",
+    "ErrUnsupportedInputSocketType": "Порт \"%s\" имеет неподдерживаемый тип",
     "IterationCaption": "Итерация №%d",
     "IterationConfiguration": "Сохраненная конфигурация",
     "IterationConfigurationCount": "Количество конфигураций",
@@ -1416,7 +1416,7 @@
     "ResponseColumn": "Ответ сервера",
     "RESTClientConnection": "Подключение к REST-сервису",
     "RESTClientErrorNoID": "Ошибка при выполнении запроса:\n%s",
-    "RESTClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки №%d входного набора:\n%s"
+    "RESTClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки %d входного набора:\n%s"
   },
   "components/restclient/RESTClientVendor": {
     "VendorCaption": "Вызов REST-сервиса",
@@ -1540,8 +1540,8 @@
     "ErrEngineUnassigned": "Для модели разгруппировки не установлен Engine",
     "ErrOptimGradientVerificationFailed": "Проверка аналитического градиента завершилась неудачно",
     "ErrOptimIntegrityFailed": "Обнаружено бесконечное значение оптимизируемой функции или ее градиента",
-    "ErrSingularMatrixCol": "На итерации %d матрица (%d x %d) содержит нулевой столбец № %d",
-    "ErrSingularMatrixRow": "На итерации %d матрица (%d x %d) содержит нулевую строку № %d",
+    "ErrSingularMatrixCol": "На итерации %d матрица (%d x %d) содержит нулевой столбец №%d",
+    "ErrSingularMatrixRow": "На итерации %d матрица (%d x %d) содержит нулевую строку №%d",
     "ErrSLECalcPrepare": "Ошибка при подготовке системы уравнений",
     "ErrSLEStructPrepare": "Ошибка при подготовке структур данных системы уравнений",
     "ErrSolver": "Ошибка %d при решении системы уравнений на итерации %d",
@@ -2786,7 +2786,7 @@
     "ErrNotImplemented": "Функционал не реализован"
   },
   "Libraries/Model/ComponentInputSocketConstraintDef": {
-    "ErrInterfaceNotSupported": "Входной и выходной сокеты несовместимы",
+    "ErrInterfaceNotSupported": "Входной и выходной порты несовместимы",
     "ErrInterfaceNotSupportedEx": "Интерфейс %s не поддерживается"
   },
   "Libraries/Model/ComponentSettings": {
@@ -2905,7 +2905,7 @@
     "GenericVendorCaption": "Подмодель"
   },
   "Libraries/Model/Generic/ModelInnerComponent": {
-    "ErrAlreadyConfiguringInnerSocket": "Внешний сокет компонента уже настраивается"
+    "ErrAlreadyConfiguringInnerSocket": "Внешний порт компонента уже настраивается"
   },
   "Libraries/Model/Generic/ModelInputComponent": {
     "ErrInnerOutputSocketDefIsEmtpy": "Не указаны типы следующих входов: "
@@ -3010,35 +3010,35 @@
   },
   "Libraries/Model/ModelSocketConstraintDefs": {
     "ErrModelSocketDefConstraintAlreadyInitialized": "Описание ограничения сокета уже проинициализировано",
-    "ErrSocketIsNil": "Не задана ссылка на сокет"
+    "ErrSocketIsNil": "Не задана ссылка на порт"
   },
   "Libraries/Model/ModelSocketConstraintItems": {
     "SocketConstraintMetaDesc": "Ограничение сокета"
   },
   "Libraries/Model/ModelSocketConstraints": {
     "ErrModelSocketConstraintAlreadyInitialized": "Ограничение сокета уже проинициализировано",
-    "ErrSocketIsNil": "Не задана ссылка на сокет"
+    "ErrSocketIsNil": "Не задана ссылка на порт"
   },
   "Libraries/Model/ModelSocketDefItems": {
     "ErrItemBySocketDefNotFound": "Описание сокета в списке не найдено",
-    "SocketMetaDesc": "Сокет"
+    "SocketMetaDesc": "Порт"
   },
   "Libraries/Model/ModelSocketDefs": {
     "SocketDefAlreadyInitialized": "Описание сокета уже проинициализировано"
   },
   "Libraries/Model/ModelSocketInterfaceConstraintDef": {
-    "ErrInterfaceNotSupported": "Входной и выходной сокеты несовместимы"
+    "ErrInterfaceNotSupported": "Входной и выходной порты несовместимы"
   },
   "Libraries/Model/ModelSocketItems": {
-    "ErrCannotAddNotMultipleSocket": "Нельзя динамически добавить не множественный сокет",
-    "ErrCannotDeleteNotDynamicSocket": "Нельзя удалить не динамический сокет",
-    "ErrItemBySocketNotFound": "Сокет в списке не найден",
+    "ErrCannotAddNotMultipleSocket": "Нельзя динамически добавить не множественный порт",
+    "ErrCannotDeleteNotDynamicSocket": "Нельзя удалить не динамический порт",
+    "ErrItemBySocketNotFound": "Порт в списке не найден",
     "ErrMaxOccursOfMultipleSocketIsReached": "Достигнуто максимальное количество множественного сокета",
-    "SocketMetaDesc": "Сокет"
+    "SocketMetaDesc": "Порт"
   },
   "Libraries/Model/ModelSockets": {
-    "ErrModelSocketAlreadyInitialized": "Сокет уже проинициализирован",
-    "ErrModelSocketNotConfigured": "Сокет не настроен"
+    "ErrModelSocketAlreadyInitialized": "Порт уже проинициализирован",
+    "ErrModelSocketNotConfigured": "Порт не настроен"
   },
   "Libraries/Model/ModelUnit": {
     "CurrentModel": "Текущий модуль",
@@ -3062,7 +3062,7 @@
     "DependentNodeOutputPort": "Зависимые узлы",
     "ErrActivateModelNodes": "При активизации узлов возникла ошибка",
     "ErrAllNodesLocked": "Все узлы сценария заблокированы",
-    "ErrAlreadyConfiguringSocket": "Узел \"%s\" уже находится в состоянии настройки сокета",
+    "ErrAlreadyConfiguringSocket": "Узел \"%s\" уже находится в состоянии настройки порта",
     "ErrCannotFindPreviousProcess": "Не удалось найти предыдущий процесс активизации узла \"%s\"",
     "ErrComponentNotInitialized": "Базовый компонент не проинициализирован",
     "ErrDuplicatePublishedNodeName": "Пакет уже содержит опубликованный узел с именем \"%s\"",
@@ -3082,7 +3082,7 @@
     "ErrPortMismatch": "Несовместимый компонент: не совпадает список портов узла",
     "ErrPortParentIsNil": "Ссылка на порт узла не входит в какой-либо список",
     "ErrPublishedNodeNameIsEmpty": "Не задано имя опубликованного узла",
-    "ErrSocketNotConfigured": "Сокет не настроен",
+    "ErrSocketNotConfigured": "Порт не настроен",
     "ErrUnableToLoadNodeConfig": "Не удалось загрузить конфигурацию узла",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Количество имён и значений переменных должно быть одинаковым",
     "ErrVariableNotFound": "Переменная с именем \"%s\" не найдена",
@@ -3466,7 +3466,7 @@
     "ErrSSLChangeAfterStart": "Параметры SSL не могут быть изменены после запуска сервера"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
-    "ErrWSDLLoad": "Ошибка загрузки WSDL: \nИмя файла: %s",
+    "ErrWSDLLoad": "Ошибка загрузки WSDL:\nИмя файла: %s",
     "WarnMainWSDLNotLoaded": "Основной источник WSDL (%s) не загружен (%s). Пытаемся загрузить резервный источник."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {

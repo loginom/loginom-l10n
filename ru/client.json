@@ -1349,7 +1349,7 @@
     "StatusWarning": "Warning"
   },
   "mxgraph/port/AddPort": {
-    "AddPortDescription": "\nDrag'n'Drop исходящего порта другого узла \n автоматически создаст нужный порт, если есть совместимый кандидат.",
+    "AddPortDescription": "\nDrag'n'Drop исходящего порта другого узла\n автоматически создаст нужный порт, если есть совместимый кандидат.",
     "AddPortDisplayName": "Добавить еще один порт."
   },
   "mxgraph/port/Port": {
@@ -1417,7 +1417,7 @@
   },
   "rpc/CustomClient": {
     "ErrConnectToServerEx": "Подключиться к серверу не удалось.\nОшибка: {0}.",
-    "ErrSocketNotPrepared": "Сокет не подготовлен."
+    "ErrSocketNotPrepared": "Порт не подготовлен."
   },
   "rpc/EnumTypeInfoService": {
     "ErrEnumTypeInfoServiceManagerNotInstalled": "Менеджер сервиса метаданных перечислений не проинициализирован",
@@ -2043,13 +2043,13 @@
     "ActionDelete": "Удалить",
     "ActionDeleteAll": "Удалить все...",
     "ActionInsert": "Вставить",
-    "DefaultSocketCaption": "Сокет",
+    "DefaultSocketCaption": "Порт",
     "DeleteAllConfirm": "Удалить все входы/выходы?",
     "EmptyName": "<Уникальное>",
     "ErrCompareIndex": "Количество сокетов на сервере не совпадает с количеством сокетов на клиенте.",
     "ErrGetAvalibleSocketDefFmt": "Не удалось получить описание описание сокета для вендора {0}.",
     "ErrGetAvalibleSocketDefs": "Не удалось получить описание описание сокетов",
-    "ErrMoveDerivedSocket": "Нельзя перемещать наследованный сокет.",
+    "ErrMoveDerivedSocket": "Нельзя перемещать наследованный порт",
     "SocketLabelFmt": "{0} {1}",
     "SocketTypeInputDesc": "Входы",
     "SocketTypeOutputDesc": "Выходы"

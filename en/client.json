@@ -272,7 +272,7 @@
     "ErrVendorMalfunction": "\"{0}\" node component malfunctioned",
     "MsgNodeConfigurationChanged": "Node configuration changed",
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
-    "MsgNodeLocked": "\"{0}\" node is blocked",
+    "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
     "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
     "OperationAborted": "Action not supported"
@@ -401,7 +401,7 @@
     "AcceptCurrentBinning": "Do you want to accept the current binning?",
     "CalculateInformationValuesApplyText": "Calculate",
     "CalculateInformationValuesTitle": "Calculate",
-    "ChangeColumnPurposeToInput": "'{0}' field is blocked due to usage of the external or locked binning. Do you want to unlock and continue?",
+    "ChangeColumnPurposeToInput": "'{0}' field is locked due to usage of the external or locked binning. Do you want to unlock and continue?",
     "CurrentBinningNotSaved": "Current binning contains unsaved changes",
     "LockAll": "Lock all",
     "LockSelected": "Lock selected",
@@ -1180,7 +1180,7 @@
     "FileNotLoaded": "File not open",
     "NullSheetID": "Null sheet",
     "SheetNotFoundByNameFmt": "\"{0}\" sheet not found in Excel workbook",
-    "SheetNotFoundByNumberFmt": "Sheet No {0} not found in Excel workbook"
+    "SheetNotFoundByNumberFmt": "Sheet #{0} not found in Excel workbook"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Enter query text"
@@ -1311,7 +1311,7 @@
   },
   "mxgraph/node/comment/Note": {
     "ErrCommentNotSaved": "Failed to save comment",
-    "NodeIsLocked": "Node is blocked, it is impossible to change comment",
+    "NodeIsLocked": "Node is locked, it is impossible to change comment",
     "WrongCommentValue": "Invalid comment value"
   },
   "mxgraph/node/controls/ControlsAbstract": {
@@ -1337,7 +1337,7 @@
   },
   "mxgraph/node/label/Label": {
     "ErrLabelNotSaved": "Failed to save caption",
-    "NodeIsLocked": "Caption edit forbidden: node is blocked",
+    "NodeIsLocked": "Caption edit forbidden: node is locked",
     "NodeLabel": "Node caption",
     "WrongLabelValue": "Invalid caption value"
   },
@@ -1774,7 +1774,7 @@
     "ExportToastTitle": "Export from the Cube",
     "HideSingleCase": "Hide single measure",
     "SeriesOutOfBoundsMsg": "Chart limits exceeded.\nCurrent number of series: {0}.\nMaximum number of series: {1}",
-    "WarnExportTableSizeWarning": "The current crosstab size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
+    "WarnExportTableSizeWarning": "The current cross table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
   "viewers/cube/DimensionFilterSelectionPanel": {
     "DimensionFilterSelectionPanelTitle": "Check by pattern",
@@ -1816,7 +1816,7 @@
     "CaseInvite": "Drag the fields to the rows, columns and filters area by dragging from the left list of the available fields or by pressing the \"+\" button"
   },
   "viewers/LockableView": {
-    "LockMaskText": "Node is blocked"
+    "LockMaskText": "Node is locked"
   },
   "viewers/regression/LinRegressReportView": {
     "TStatInfoParam": "T-statistics"
@@ -2049,7 +2049,7 @@
     "ErrCompareIndex": "The server amount of sockets does not comply with the client amount of sockets.",
     "ErrGetAvalibleSocketDefFmt": "Failed to get description of socket for {0} vendor.",
     "ErrGetAvalibleSocketDefs": "Failed to get description of sockets",
-    "ErrMoveDerivedSocket": "It is prohibited to move derived socket.",
+    "ErrMoveDerivedSocket": "It is prohibited to move derived socket",
     "SocketLabelFmt": "{0} {1}",
     "SocketTypeInputDesc": "Inputs",
     "SocketTypeOutputDesc": "Outputs"

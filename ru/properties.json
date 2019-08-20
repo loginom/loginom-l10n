@@ -325,7 +325,7 @@
       "CompareValue": "Значение",
       "ConditionVariableLink": "Переменная условия завершения",
       "GroupCount": "Количество групп",
-      "GroupDataSourceSocket": "Сокет, содержащий столбцы для группировки",
+      "GroupDataSourceSocket": "Порт, содержащий столбцы для группировки",
       "GroupProcessingKind": "Вид групповой обработки",
       "GroupSize": "Количество строк в группе",
       "IgnoreErrors": "Игнорировать ошибки",

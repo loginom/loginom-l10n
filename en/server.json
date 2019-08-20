@@ -78,8 +78,8 @@
   "Common/CodeExec/CodeAPIDataSetProxies": {
     "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of [%d; %d] range",
     "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table",
-    "ErrInvalidDataSourceColumnIndex": "%d index of input table column No%d is out of [%d; %d] range",
-    "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table No%d"
+    "ErrInvalidDataSourceColumnIndex": "%d index of input table column #%d is out of [%d; %d] range",
+    "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table #%d"
   },
   "Common/HTTP/CachedHttpStream": {
     "ErrCachedHttpStreamClassAlreadyAssigned": "Cached HTTP stream class already registered",
@@ -684,7 +684,7 @@
   },
   "components/crosstab/CrossTab": {
     "CountCaseDisplayName": "Count",
-    "CrossTabProcess": "Crosstab building",
+    "CrossTabProcess": "Cross table building",
     "ErrTooManyDimensionsInColumns": "Too many column dimensions selected",
     "InvalidColumnNameFmt": "Failed to generate column name from \"%s\" unique value",
     "NullGroupCaption": "<...>",
@@ -782,7 +782,7 @@
   },
   "components/execnode/ExecNodeComponent": {
     "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" node for which inheritance is prohibited",
-    "ErrNodeLocked": "\"%s\" node is blocked",
+    "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Reference node not found",
@@ -888,8 +888,8 @@
     "ErrPreviewDataSourceNotActive": "Failed to apply filter, input not activated",
     "FilterDataNotify": "Data filtering",
     "FilterPreviewProcess": "Filter operation preview",
-    "OutputDataSource": "Comply with the condition",
-    "OutputDataSourceElse": "Do not comply with the condition",
+    "OutputDataSource": "Filtered",
+    "OutputDataSourceElse": "Filtered Out",
     "WarnReachedLimitScanRow": "Maximum scanned row count reached: %d"
   },
   "components/filterdata/FilterDataVendor": {
@@ -1142,7 +1142,7 @@
     "ErrWrongOutputColumnsCount": "Exactly 1 output column must be defined, %d output columns are currently defined",
     "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data sort, \"%s\" data type",
     "ErrWrongOutputFieldNotDiscrete": "Invalid \"%s\" output field properties, \"%s\" data sort, whereas \"%s\" is only valid",
-    "ErrWrongOutputUniqueCount": "Number of \"%s\"output column unique values is %d (exactly 2 required)",
+    "ErrWrongOutputUniqueCount": "Number of \"%s\" output column unique values is %d (exactly 2 required)",
     "Intercept": "<Intercept>",
     "LogRegStoreStatProcessName": "Quality indicators calculating",
     "LogRegTrainProcessName": "Model building",
@@ -1203,7 +1203,7 @@
     "ErrColumnDataTypesChanged": "The column data types in the data set differ from the previous iteration",
     "ErrCompareValueUnassigned": "No comparison value specified for the loop termination condition",
     "ErrConditionComponentInLoopNotAllowed": "Execution of the \"Condition in loop not allowed\" component",
-    "ErrGroupColumnNotFound": "\"%s\" column usedfor data grouping not found",
+    "ErrGroupColumnNotFound": "\"%s\" column used for data grouping not found",
     "ErrGroupCountMustBePositive": "Group count must be positive",
     "ErrGroupDataSourceSocketNotFound": "No socket with \"%s\" identifier containing columns to group found",
     "ErrGroupDataSourceSocketNotSpecified": "No socket containing columns to group specified",
@@ -1222,7 +1222,7 @@
     "ErrSocketIsNotInputDataSourceSocket": "\"%s\" socket is not input socket containing data set",
     "ErrSocketNotConfigured": "Socket not configured",
     "ErrUnsupportedInputSocketType": "Unsupported \"%s\" socket type",
-    "IterationCaption": "Iteration №%d",
+    "IterationCaption": "Iteration #%d",
     "IterationConfiguration": "Saved configuration",
     "IterationConfigurationCount": "Configuration count",
     "IterationConfigurationItem": "Configuration collection item",
@@ -1416,7 +1416,7 @@
     "ResponseColumn": "Server response",
     "RESTClientConnection": "Connect to REST service",
     "RESTClientErrorNoID": "Error executing request:\n%s",
-    "RESTClientErrorRowID": "Error executing request generated from row No %d of the input data set:\n%s"
+    "RESTClientErrorRowID": "Error executing request generated from row %d of the input data set:\n%s"
   },
   "components/restclient/RESTClientVendor": {
     "VendorCaption": "REST Service Request",
@@ -1540,8 +1540,8 @@
     "ErrEngineUnassigned": "Engine not set for the ungroup model",
     "ErrOptimGradientVerificationFailed": "Analytical gradient verification failed",
     "ErrOptimIntegrityFailed": "The infinite value of the optimized function or its gradient was detected",
-    "ErrSingularMatrixCol": "(%1:d x %2:d) matrix contains zero column No %3:d in %0:d iteration",
-    "ErrSingularMatrixRow": "(%1:d x %2:d) matrix contains zero row No %3:d in %0:d iteration",
+    "ErrSingularMatrixCol": "(%1:d x %2:d) matrix contains zero column #%3:d in %0:d iteration",
+    "ErrSingularMatrixRow": "(%1:d x %2:d) matrix contains zero row #%3:d in %0:d iteration",
     "ErrSLECalcPrepare": "Error while preparing the equations system",
     "ErrSLEStructPrepare": "Error while preparing data structures of the equations system",
     "ErrSolver": "%d error when solving the equation system at %d iteration",
@@ -1600,7 +1600,7 @@
     "WSDLClientConnection": "Connection to the web service",
     "WSDLClientError": "Error executing request with %s identifier:\n%s",
     "WSDLClientErrorNoID": "Error executing request:\n%s",
-    "WSDLClientErrorRowID": "Error executing request generated from row No %d of the input data set:\n%s"
+    "WSDLClientErrorRowID": "Error executing request generated from row #%d of the input data set:\n%s"
   },
   "components/wsdlclient/WSDLClientBase": {
     "AdditionalDataSet": "Additional data",
@@ -2442,8 +2442,8 @@
   },
   "Libraries/bgrtl/UpdateHelpers": {
     "ErrEndUpdateUnexpected": "Attempt to complete the update process without its start",
-    "ErrLockCookieInvalidOwner": "The blocked object Cookie belongs to another object",
-    "ErrLockCookieIsNil": "Attempt to complete the operation with null reference to the blocked object Cookie",
+    "ErrLockCookieInvalidOwner": "The locked object Cookie belongs to another object",
+    "ErrLockCookieIsNil": "Attempt to complete the operation with null reference to the locked object Cookie",
     "ErrUnlockUnexpected": "Attempt to unlock the object that has not been previously locked",
     "ErrUpdateCookieInvalidOwner": "The updated object cookie belongs to another object",
     "ErrUpdateCookieIsNil": "Attempt to complete the operation with null reference to the updated object Cookie"
@@ -2586,7 +2586,7 @@
     "ErrLinkIsNil": "No link set",
     "ErrModelNodeNotRestored": "Failed to restore \"%s\" node",
     "ErrModelPackageNotExist": "The package to which the object belonged was closed",
-    "ErrNodeBlocked": "\"%s\" node is blocked",
+    "ErrNodeBlocked": "\"%s\" node is locked",
     "ErrNodeIsNil": "No node specified",
     "ExplodeGenericCaption": "Expanded \"%s\" supernode",
     "ExplodeGenericCaptionDef": "Expanded supernode",
@@ -2600,8 +2600,8 @@
     "ErrBackupPointInitialize": "Backup point initialization error: \"%s\"",
     "ErrBackupPointRollBack": "Failed to restore point: \"%s\"",
     "ErrBackupPointUpdate": "Failed to update point: \"%s\"",
-    "ErrCookieInvalidOwner": "The blocked object Cookie belongs to another object",
-    "ErrCookieIsNil": "Attempt to complete the operation with null reference to the blocked object Cookie",
+    "ErrCookieInvalidOwner": "The locked object Cookie belongs to another object",
+    "ErrCookieIsNil": "Attempt to complete the operation with null reference to the locked object Cookie",
     "ErrRollBackAggregateMessage": "Errors occurred during recovery",
     "ErrRootBackupContainerFinish": "Attempt to close root recovery point"
   },
@@ -3075,7 +3075,7 @@
     "ErrMultipleVariablesFound": "Multiple variables with \"%s\" name found",
     "ErrNodeConfigNotInitialized": "Node configuration not initialized",
     "ErrNodeIsNoMemberOfModel": "Node does not belong to the workflow",
-    "ErrNodeLocked": "\"%s\" node is blocked",
+    "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotFoundInModel": "The requested node does not belong to the workflow",
     "ErrNodeNotInitialized": "No component specified for \"%s\" node",
     "ErrParentProcessError": "Error in parent process",
@@ -3112,7 +3112,7 @@
     "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
-    "ErrNodeLocked": "\"%s\" node is blocked",
+    "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Reference node not found",
@@ -3780,7 +3780,7 @@
   },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
-    "VendorDesc": "Multidimensional display (crosstab and cross chart)"
+    "VendorDesc": "Multidimensional display (Pivot table and Pivot chart)"
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Component",

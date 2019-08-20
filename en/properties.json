@@ -728,7 +728,7 @@
       "UserStorageDirectory": "Directory containing personal user folders"
     },
     "SocketDeductorServerSettings": {
-      "Bind": "Address binding",
+      "Bind": "IP address",
       "PingPeriod": "Client connection check period",
       "Port": "TCP port",
       "SSLCertificateFile": "Certificate file name",

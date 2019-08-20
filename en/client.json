@@ -1318,8 +1318,8 @@
     "ActionsBtn": "Other Actions",
     "ControlStopBtn": "Processing Stop",
     "DeactivateNodeBtn": "Deactivate Node",
-    "LaunchBtn": "Processing Launch",
-    "SettingBtn": "Setting",
+    "LaunchBtn": "Run Node",
+    "SettingBtn": "Settings",
     "SetupViewersBtn": "Configure Visualizers"
   },
   "mxgraph/node/informer/InfoMagicButton": {

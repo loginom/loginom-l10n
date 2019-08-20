@@ -3604,7 +3604,7 @@
     "SharedDirectoryMetaDesc": "Общая директория"
   },
   "Studio/SocketDeductorServerSettings": {
-    "Bind": "Прослушиваемые адреса",
+    "Bind": "IP адрес",
     "PingPeriod": "Период проверки соединения с клиентом",
     "Port": "TCP порт",
     "SSLCertificateFile": "Имя файла сертификата",

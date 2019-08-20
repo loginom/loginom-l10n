@@ -3546,7 +3546,7 @@
     "WarnSessionStopTimeout": "Failed to stop %s user session for %d milliseconds. Number of processes not completed: %d. List of active subprocesses: %s. List of not started subprocesses: %s."
   },
   "Studio/DeductorServerConnector": {
-    "ErrCannotConfigureActiveConnection": "You cannot change active connection settings"
+    "ErrCannotConfigureActiveConnection": "It is impossible to change active connection settings"
   },
   "Studio/DeductorServerSettings": {
     "SessionBackupDirectory": "Session backups",
@@ -3604,7 +3604,7 @@
     "SharedDirectoryMetaDesc": "Shared folder"
   },
   "Studio/SocketDeductorServerSettings": {
-    "Bind": "Address binding",
+    "Bind": "IP address",
     "PingPeriod": "Client connection check period",
     "Port": "TCP port",
     "SSLCertificateFile": "Certificate file name",

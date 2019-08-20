@@ -1335,7 +1335,7 @@
   },
   "components/neuralnet/NeuralNetParams": {
     "Decay": "Decay parameter",
-    "ErrFloatValuesRelation": "\"%s\": parameter value (%f) must not exceed \"%s\" parameter value (%f) ",
+    "ErrFloatValuesRelation": "\"%s\": parameter value (%f) must not exceed \"%s\" parameter value (%f)",
     "MaxEpochs": "Maximum number of epochs",
     "NRestarts": "Number of restarts",
     "RegNNOutputInf": "Output layer activation function infimum",
@@ -3162,7 +3162,7 @@
     "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables are not compatible"
   },
   "Libraries/Model/Variables/TuneVariablesSocketConstraint": {
-    "ErrValueNotAllowed": "\"%s\" value of the input variable \"%s\" does not match the specified сonstraints"
+    "ErrValueNotAllowed": "\"%s\" value of the input variable \"%s\" does not match the specified constraints"
   },
   "Libraries/Model/Variables/VariablesModelComponentEngine": {
     "InputVariables": "Input variables",
@@ -3231,7 +3231,7 @@
     "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
     "ErrUnexpectedEndUpdate": "EndUpdate call without corresponding BeginUpdate",
     "ErrUnexpectedUnlockedState": "Calling nested BeginUpdate cache of the normalized data set must be locked",
-    "ErrWrongArraySize": "Size %d of '%s' array not equal to the expected %d",
+    "ErrWrongArraySize": "Size %1:d of '%0:s' array not equal to the expected %2:d",
     "ErrWrongNormalizerParams": "Error adding \"%s\" factor: the output columns count of %d normalizer does not match the expected %d",
     "InterceptDisplayName": "Intercept",
     "NormDSTypeNotSupported": "Unsupported type of the requested normalized data set",

@@ -3037,7 +3037,7 @@
     "SocketMetaDesc": "Порт"
   },
   "Libraries/Model/ModelSockets": {
-    "ErrModelSocketAlreadyInitialized": "Сокет уже проинициализирован ",
+    "ErrModelSocketAlreadyInitialized": "Сокет уже проинициализирован",
     "ErrModelSocketNotConfigured": "Порт не настроен"
   },
   "Libraries/Model/ModelUnit": {

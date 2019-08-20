@@ -1417,7 +1417,7 @@
   },
   "rpc/CustomClient": {
     "ErrConnectToServerEx": "Подключиться к серверу не удалось.\nОшибка: {0}.",
-    "ErrSocketNotPrepared": "Сокет не подготовлен. "
+    "ErrSocketNotPrepared": "Сокет не подготовлен."
   },
   "rpc/EnumTypeInfoService": {
     "ErrEnumTypeInfoServiceManagerNotInstalled": "Менеджер сервиса метаданных перечислений не проинициализирован",

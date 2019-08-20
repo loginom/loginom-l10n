@@ -526,7 +526,7 @@
       "title": "Workflow"
     },
     "pnlVendorsContainer": {
-      "title": "Components"
+      "title": "Components "
     }
   },
   "app/PackageForm": {
@@ -4047,7 +4047,7 @@
       "tooltip": "Transpose"
     },
     "chkBottomBound": {
-      "boxLabel": ""
+      "boxLabel": " "
     },
     "chkIncludeNullValue": {
       "boxLabel": "Show null value in histogram"
@@ -4056,7 +4056,7 @@
       "fieldLabel": "Round"
     },
     "chkUpperBound": {
-      "boxLabel": ""
+      "boxLabel": " "
     },
     "colBoxPlot": {
       "text": "Box plot"

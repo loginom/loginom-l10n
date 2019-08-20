@@ -2092,7 +2092,7 @@
     "ErrNodeNotFoundFmt": "\"{0}\" target node was not found, it may have been deleted or became unavailable.",
     "NotifyNodeNotSelected": "No target node selected",
     "ReferenceNodeWizardTitle": "Reference Node",
-    "WarnNodeLoadLimitExceeded": "\"{0}\" target node is not selected.\n{1} limit of loaded node levels has been exceeded."
+    "WarnNodeLoadLimitExceeded": "\"{0}\" target node is not selected.\n {1} limit of loaded node levels has been exceeded."
   },
   "wizards/regression/RegressionWizard": {
     "AboveAccuracy": "Increased accuracy",

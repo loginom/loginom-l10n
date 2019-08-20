@@ -155,7 +155,7 @@
     "ErrBindingOperationExtensionCollision": "Types of \"%s\" binding extensions and \"%s\" operations do not match",
     "ErrCantDefineTransmissionPrimitive": "Failed to define data exchange primitive for %s operation, %s port type",
     "ErrFaultMustHaveExactlyOnePart": "Error defining %s operation, %s port type: fault message must contain exactly one part",
-    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation/>\" in \"%s\" binding HTTP declaration for \"%s\" operation",
+    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation/>\" in \"%s\" binding HTTP declaration for \"%s\" operation ",
     "ErrHttpPartReferencesComplexElement": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to %s{%s} XSD schema element related to the complex type",
     "ErrHttpPartReferencesComplexType": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to the complex type of %s{%s} XSD schema",
     "ErrInputMimeTypeContainsWildcard": "The incoming service message content must relate to the specific MIME type (actually - %s)",
@@ -256,7 +256,7 @@
     "ErrParserIsActive": "You cannot change parser properties during parsing"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
-    "ErrParseFile": "Error in %d row, %d position while parsing '%s' file: \n %s",
+    "ErrParseFile": "Error in %d row, %d position while parsing '%s' file:\n  %s",
     "ErrParseFileUnhandledException": "Unhandled exception parsing '%s' file:\n%s",
     "ErrParseStream": "Error parsing stream in %d row, %d position:\n  %s",
     "ErrParseStreamNoXML": "Error parsing stream in %d row, %d position: the source is not XML file or has incorrect syntax",
@@ -396,10 +396,10 @@
   },
   "components/binning/BinningLabelConstructor": {
     "Inf": "+Inf",
-    "InfDateTime": "",
+    "InfDateTime": " ",
     "NegInf": "-Inf",
-    "NegInfDateTime": "",
-    "Nothing": ""
+    "NegInfDateTime": " ",
+    "Nothing": " "
   },
   "components/binning/BinningMethod": {
     "ErrInvalidBinFmt": "Failed to generate bins for \"%s\" field"
@@ -437,7 +437,7 @@
     "ErrSumFmt": "Failed to get sum of values for %s field",
     "ErrZeroTileCount": "Bin (tile) count must be > 0",
     "NegativValueForTileSumm": "Negative values are not allowed when creating bins by sum of characteristic",
-    "SortProcessFmt": "%s field sorting ",
+    "SortProcessFmt": "%s field sorting",
     "WarnNoRound": "In case of optimal tile binning bin bounds are not rounded"
   },
   "components/binning/BinningQuantizers": {
@@ -2243,7 +2243,7 @@
   },
   "Libraries/bgrtl/OperationBracketsAssist": {
     "ErrActionAlreadyBeginning": "Action has already been started",
-    "ErrActionCookieInvalidOwner": "The object action Cookie belongs to another object  ",
+    "ErrActionCookieInvalidOwner": "The object action Cookie belongs to another object",
     "ErrActionNotBeginning": "Action hasn't been started",
     "ErrOwnerDiposedBeforeActionCookie": "The object has been disposed before the object action Cookie"
   },
@@ -2261,7 +2261,7 @@
     "ErrBuildMSequenceErr": "The required array length must not exceed the upper bound of the random numbers.",
     "ErrMSequenceCountOutOfBounds": "The required M-sequence length must be more than 0",
     "ErrMSequenceSetValueErr": "The shift register value cannot be equal to zero or exceed the sequence length.",
-    "ErrParamMustLessOrEqualThanParam": "%g value of \"%s\" parameter must be less than or equal to %g value of \"%s\" parameter ",
+    "ErrParamMustLessOrEqualThanParam": "%g value of \"%s\" parameter must be less than or equal to %g value of \"%s\" parameter",
     "RandSeed": "Initial value of random number"
   },
   "Libraries/bgrtl/ScalarUtils": {
@@ -2489,7 +2489,7 @@
     "VariableInfosVendorMetaDesc": "variable description vendor"
   },
   "Libraries/bgrtl/VarUtils": {
-    "ErrConvertStrToType": "Error converting \"%s\" string to %s value ",
+    "ErrConvertStrToType": "Error converting \"%s\" string to %s value",
     "ErrConvertToOpenArrayInvalidParams": "Invalid parameter values when converting the Variant vector to the open array: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value"
   },
@@ -3093,7 +3093,7 @@
     "LogActivateNodeSuccess": "Successfully activated \"%s\" node",
     "LogDeactivateNode": "\"%s\" node deactivated",
     "LogNodeActivationError": "Error activating \"%s\" node",
-    "ResetModelNodeConfiguration": "Initial configuration of \"%s\" node reset ",
+    "ResetModelNodeConfiguration": "Initial configuration of \"%s\" node reset",
     "RestoreBackupProcessCaption": "Backup configuration restoring",
     "SynchronizationInputPort": "Execution order",
     "SynchronizationOutputPort": "Execution order",
@@ -3225,7 +3225,7 @@
   },
   "Libraries/Normalization/NormalData": {
     "CalculateCacheProcessCaption": "Data set caching",
-    "ErrArrayExpected": "You cannot denormalize a single element. Array from %1:d elements must be denormalized for \"%0:s\" column.  ",
+    "ErrArrayExpected": "You cannot denormalize a single element. Array from %1:d elements must be denormalized for \"%0:s\" column.",
     "ErrImpossibleToAllocate": "You cannot allocate memory for cached normalized data source",
     "ErrNotEnoughCache": "Insufficient cache size to store normalized data string",
     "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
@@ -3351,7 +3351,7 @@
     "ErrGetValueOutOfBounds": "Value of \"%s\" property is not in the range of allowable values of the requested type",
     "ErrGuidNotFound": "\"%s\" interface not found in metadata",
     "ErrIncorrectIndexDataType": "\"%s\" property has incorrect indexer type",
-    "ErrIndexerCountIncorrect": "The property with \"%s\" count of items is incorrect for the indexed property \"%s.%s.%s\" ",
+    "ErrIndexerCountIncorrect": "The property with \"%s\" count of items is incorrect for the indexed property \"%s.%s.%s\"",
     "ErrIndexerCountNotFound": "No \"%2:s\" property in metadata for \"%0:s.%1:s\" interface",
     "ErrInterfaceNameNotFound": "Interface with \"%s\" name not registered",
     "ErrInterfaceParentNotFound": "Parent interface \"%s\" not found",
@@ -3387,7 +3387,7 @@
   },
   "Libraries/Regression/RegressionModel": {
     "ApplyModelProcessCaption": "Model applying",
-    "ErrApplyWrongFeatures": "The column count of the input data set %d not equal to the regressors count of %d model  ",
+    "ErrApplyWrongFeatures": "The column count of the input data set %d not equal to the regressors count of %d model",
     "RegressionStatistics": "Regression statistics"
   },
   "Libraries/Regression/RegressionStatistics": {
@@ -3939,7 +3939,7 @@
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",
-    "MsgDeleteDataProcess": "Delete the process from the Data Warehouse by data dimension ",
+    "MsgDeleteDataProcess": "Delete the process from the Data Warehouse by data dimension",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
@@ -4032,7 +4032,7 @@
   },
   "Warehouse2/MDTree": {
     "ErrColumnCantBeContinuous": "\"%s\" object of \"%s\" type cannot be continuous",
-    "ErrMismatchVersionInfo": "Deductor Warehouse versions do not match.\n  Component: \"%s\" \n  BD DW: \"%s\"",
+    "ErrMismatchVersionInfo": "Deductor Warehouse versions do not match.\n  Component: \"%s\"\n  BD DW: \"%s\"",
     "ErrNodeTypeExist": "Subnode of the specified \"%s\" type already exists"
   }
 }

@@ -2525,7 +2525,7 @@
     "ErrGetModuleSourceUnassigned": "Не установлена функция чтения содержимого модуля JavaScript",
     "ErrMessageQueue": "Не обработанное исключение при постановке в очередь событий JavaScript",
     "ErrMessageUnhandledPromiseRejection": "Не обработанное исключение при отслеживании отклоненных Promise",
-    "ErrOriginalDll": "Операция запрещена. Используется несовместимая версия библиотеки ChakraCore.",
+    "ErrOriginalDll": "Операция не поддерживается. Используется несовместимая версия библиотеки ChakraCore.",
     "ErrRaiseException": "Не обработанное исключение внутри встроенной функции JavaScript: \"%s\"",
     "ErrRaiseModuleException": "Не обработанное исключение при загрузке модуля JavaScript",
     "ErrTooFewArgs": "В функцию %s передано недостаточно аргументов (%d, когда минимум %d)",
@@ -2888,9 +2888,9 @@
     "OriginalComponentVendorGuidDesc": "GUID Исходного компонента"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
-    "ErrCannotChangeDerivedSocketType": "Запрещено изменять тип данных производных сокетов",
+    "ErrCannotChangeDerivedSocketType": "Запрещено изменять тип данных производных портов",
     "ErrCannotDeleteDerivedConnections": "Удаление производных подключений запрещено",
-    "ErrCannotDeleteDerivedSocket": "Удаление производных сокетов запрещено",
+    "ErrCannotDeleteDerivedSocket": "Удаление производных портов запрещено",
     "ErrCannotDeleteDerivedVendors": "Удаление производных компонентов запрещено"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
@@ -2924,7 +2924,7 @@
     "ErrPortsParentNodeIsNil": "Список портов узла не принадлежит какому-либо узлу"
   },
   "Libraries/Model/ModelComponent": {
-    "ErrAlreadyConfiguringSocket": "Компонент узла уже находится в состоянии настройки сокета",
+    "ErrAlreadyConfiguringSocket": "Компонент узла уже находится в состоянии настройки порта",
     "ErrInvalidComponentEngineImplementation": "Неверная реализация движка компонента",
     "ErrModelComponentAlreadyInitialized": "Компонент узла уже проинициализирован",
     "ErrUnknownCouplerDefType": "Неизвестный тип описателя соединения"
@@ -3006,14 +3006,14 @@
     "ModelReportGroup": "Группа отчетов"
   },
   "Libraries/Model/ModelSocketConstraintDefItems": {
-    "SocketConstraintMetaDesc": "Ограничение сокета"
+    "SocketConstraintMetaDesc": "Ограничение порта"
   },
   "Libraries/Model/ModelSocketConstraintDefs": {
     "ErrModelSocketDefConstraintAlreadyInitialized": "Описание ограничения сокета уже проинициализировано",
     "ErrSocketIsNil": "Не задана ссылка на порт"
   },
   "Libraries/Model/ModelSocketConstraintItems": {
-    "SocketConstraintMetaDesc": "Ограничение сокета"
+    "SocketConstraintMetaDesc": "Ограничение порта"
   },
   "Libraries/Model/ModelSocketConstraints": {
     "ErrModelSocketConstraintAlreadyInitialized": "Ограничение сокета уже проинициализировано",
@@ -3033,11 +3033,11 @@
     "ErrCannotAddNotMultipleSocket": "Нельзя динамически добавить не множественный порт",
     "ErrCannotDeleteNotDynamicSocket": "Нельзя удалить не динамический порт",
     "ErrItemBySocketNotFound": "Порт в списке не найден",
-    "ErrMaxOccursOfMultipleSocketIsReached": "Достигнуто максимальное количество множественного сокета",
+    "ErrMaxOccursOfMultipleSocketIsReached": "Достигнуто максимальное количество множественного порта",
     "SocketMetaDesc": "Порт"
   },
   "Libraries/Model/ModelSockets": {
-    "ErrModelSocketAlreadyInitialized": "Порт уже проинициализирован",
+    "ErrModelSocketAlreadyInitialized": "Сокет уже проинициализирован ",
     "ErrModelSocketNotConfigured": "Порт не настроен"
   },
   "Libraries/Model/ModelUnit": {
@@ -3297,8 +3297,8 @@
     "ErrUniqueValuesSyncConflict": "Данные входного набора несовместимы с настройками нормализации"
   },
   "Libraries/Normalization/TuneNormColumnDefs": {
-    "ErrNilStatInfoProvider": "Передан пустой(nil) провайдер статистической информации колонок",
-    "ErrTuneNormColumnDefsVendorNotSet": "Интерфейс IBGTuneNormColumnDefsVendor не установлен",
+    "ErrNilStatInfoProvider": "Передан пустой провайдер статистической информации колонок",
+    "ErrTuneNormColumnDefsVendorNotSet": "Вендор настраиваемых полей с нормализацией не установлен",
     "ErrWrongConstructor": "Вызван неправильный конструктор коллекции колонок"
   },
   "Libraries/Normalization/TuneNormColumnDefsVendor": {
@@ -4032,7 +4032,7 @@
   },
   "Warehouse2/MDTree": {
     "ErrColumnCantBeContinuous": "Объект \"%s\" типа \"%s\" не может быть непрерывным",
-    "ErrMismatchVersionInfo": "Версии Deductor Warehouse не совпадают.\n  Компонент: \"%s\" \n  БД ХД: \"%s\"",
+    "ErrMismatchVersionInfo": "Версии Deductor Warehouse не совпадают.\n  Компонент: \"%s\"\n  БД ХД: \"%s\"",
     "ErrNodeTypeExist": "Уже есть подузел указанного типа \"%s\""
   }
 }

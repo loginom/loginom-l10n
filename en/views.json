@@ -526,7 +526,7 @@
       "title": "Workflow"
     },
     "pnlVendorsContainer": {
-      "title": "Components "
+      "title": "Components"
     }
   },
   "app/PackageForm": {
@@ -627,7 +627,7 @@
       "tooltip": "Close other packages..."
     },
     "pmiCreate": {
-      "text": "Create",
+      "text": "New",
       "tooltip": "Create new package..."
     },
     "pmiCreateUnsaved": {
@@ -2081,7 +2081,7 @@
       "text": "Name"
     },
     "frmConnection": {
-      "title": "Connection Wizard"
+      "title": "Connection Parameters"
     },
     "grdParams": {
       "title": "GET Request Parameters"
@@ -2135,7 +2135,7 @@
       "title": "Authorization to Get WSDL File"
     },
     "frmConnection": {
-      "title": "Connection Wizard"
+      "title": "Connection Parameters"
     }
   },
   "connections/xsdfiles/XSDFilesConnectionWizard": {
@@ -2379,8 +2379,8 @@
       "tooltip": "Copy"
     },
     "btnCreateDirectory": {
-      "text": "Create Directory",
-      "tooltip": "Create directory..."
+      "text": "New Folder",
+      "tooltip": "New folder..."
     },
     "btnCut": {
       "text": "Cut",
@@ -3963,7 +3963,7 @@
       "fieldLabel": "Cutoff"
     },
     "lblAprioriEvent": {
-      "text": "Apriori event"
+      "text": "Prior Probability"
     },
     "lblChartType": {
       "text": "Chart type"
@@ -4358,7 +4358,7 @@
       "fieldLabel": "Caption"
     },
     "frmConnectionWizard": {
-      "title": "Connection Wizard"
+      "title": "Connection Parameters"
     }
   },
   "wizards/connection/DatabasePathForm": {

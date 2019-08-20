@@ -330,8 +330,8 @@
       "UserSpecified": "Data set defined"
     },
     "ColUnionRowsPaddingType": {
-      "$Caption": "Appending to the Largest Data Set",
-      "None": "Not to append",
+      "$Caption": "Missing Terminal Lines Filling",
+      "None": "Leave empty",
       "Repeat": "Repeat all rows",
       "LastRow": "Repeat the last row"
     }
@@ -1260,7 +1260,7 @@
       "$Caption": "Cache Strings Mode",
       "Off": "Do not use cache",
       "Manual": "Custom cache size",
-      "Auto": "Auto define"
+      "Auto": "Auto"
     }
   },
   "Libraries/Model/ModelWorkFlow": {
@@ -1269,7 +1269,7 @@
       "Private": "Private",
       "Protected": "Protected",
       "Internal": "Internal",
-      "Public": "Open",
+      "Public": "Public",
       "Published": "Published"
     }
   },

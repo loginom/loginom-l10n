@@ -1417,7 +1417,7 @@
   },
   "rpc/CustomClient": {
     "ErrConnectToServerEx": "Подключиться к серверу не удалось.\nОшибка: {0}.",
-    "ErrSocketNotPrepared": "Порт не подготовлен."
+    "ErrSocketNotPrepared": "Сокет не подготовлен. "
   },
   "rpc/EnumTypeInfoService": {
     "ErrEnumTypeInfoServiceManagerNotInstalled": "Менеджер сервиса метаданных перечислений не проинициализирован",
@@ -2049,7 +2049,7 @@
     "ErrCompareIndex": "Количество сокетов на сервере не совпадает с количеством сокетов на клиенте.",
     "ErrGetAvalibleSocketDefFmt": "Не удалось получить описание описание сокета для вендора {0}.",
     "ErrGetAvalibleSocketDefs": "Не удалось получить описание описание сокетов",
-    "ErrMoveDerivedSocket": "Нельзя перемещать наследованный порт",
+    "ErrMoveDerivedSocket": "Нельзя перемещать отнаследованный порт",
     "SocketLabelFmt": "{0} {1}",
     "SocketTypeInputDesc": "Входы",
     "SocketTypeOutputDesc": "Выходы"
@@ -2155,7 +2155,7 @@
     "ActivatingCaption": "Активизация...",
     "ExceptionTitle": "Ошибка",
     "NotActivatedText": "Не активировано",
-    "NotFoundSocket": "Узел не содержит запрашиваемого сокета"
+    "NotFoundSocket": "Узел не содержит запрашиваемого порта"
   },
   "wizards/WizardForm": {
     "BtnNextCaption": "Далее",

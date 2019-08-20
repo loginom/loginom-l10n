@@ -131,7 +131,7 @@
       "NClustersAutoSelect": "Auto selection of clusters",
       "NClustersMax": "Maximum number of clusters",
       "NClustersMin": "Minimum number of clusters",
-      "StatTestThreshold": "Cluster separation threshold"
+      "StatTestThreshold": "Cluster splitting significance level"
     }
   },
   "components/coarseclasses": {
@@ -162,7 +162,7 @@
   },
   "components/coluniondata": {
     "ColUnionDataEngine": {
-      "RowsPaddingType": "Appending to the largest data set",
+      "RowsPaddingType": "Missing terminal lines filling",
       "TailsAlignType": "Row count complies"
     }
   },
@@ -325,7 +325,7 @@
       "CompareValue": "Value",
       "ConditionVariableLink": "Loop exit condition variable",
       "GroupCount": "Group count",
-      "GroupDataSourceSocket": "Socket containing columns to group",
+      "GroupDataSourceSocket": "Port containing columns to group",
       "GroupProcessingKind": "Type of batch processing",
       "GroupSize": "Group row count",
       "IgnoreErrors": "Ignore errors",

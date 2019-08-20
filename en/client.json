@@ -4,7 +4,7 @@
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection wizard",
     "DirectorySettings": "Folders",
-    "Disabled": "Execution prohibited",
+    "Disabled": "Execution forbidden",
     "LogFileMaxIndex": "Number of backup files",
     "LogFileMaxSize": "Maximum file size",
     "LogFileName": "File name",
@@ -548,7 +548,7 @@
     "ValueListIsEmpty": "No values"
   },
   "components/filterdata/FilterDataWizard": {
-    "Activation": "Login activation",
+    "Activation": "Input port activation",
     "ActivationCanceled": "Canceled by user",
     "FilterApply": "Apply filter",
     "FilterPreview": "Filter"
@@ -580,20 +580,20 @@
     "FullJoinDataDesc": "Full outer join includes all rows from the main and joining data sets into result. If the key fields match then the rows are filled in with real values. Columns are filled in with the null values in mismatched rows.",
     "GroupField_MissingFields": "Missing columns",
     "InnerJoinDataDesc": "The inner join includes into result all rows for which a match has been found for the key fields of the main and joining datasets.",
-    "JoinDataWizardTitle": "Join Data Wizard",
+    "JoinDataWizardTitle": "Configure Data Joining",
     "JoinedColumns": "Columns of joining data set",
     "LeftJoinDataDesc": "The outer left join includes into result all rows from the main data set supplemented by the column values from the joining data set that coincide in the key fields.",
     "MainColumns": "Main data set columns",
     "RightJoinDataDesc": "The outer right join includes into result all rows from the joining data set supplemented by the column values from the main data set that coincide in the key fields."
   },
   "components/linregression/LinRegressionWizard": {
-    "RegressionDetailPage": "Detailed linear regression wizard",
-    "RegressionParamsPage": "Linear regression wizard"
+    "RegressionDetailPage": "Detailed configuring of linear regression",
+    "RegressionParamsPage": "Linear regression configuring"
   },
   "components/logregression/LogRegressionWizard": {
     "GetValueList": "Get list",
-    "RegressionDetailPage": "Detailed logistic regression wizard",
-    "RegressionParamsPage": "Logistic regression wizard"
+    "RegressionDetailPage": "Detailed configuring of logistic regression",
+    "RegressionParamsPage": "Logistic regression configuring"
   },
   "components/loop/LoopMappingWizard": {
     "InvalidLinkFormat": "No variable in link of \"{0}\" input variable with \"{1}\" output variable",
@@ -602,7 +602,7 @@
     "TargetTitle": "Input Variables"
   },
   "components/loop/LoopNodeWizard": {
-    "LoopNodeWizardTitle": "Loop Node Wizard"
+    "LoopNodeWizardTitle": "Loop Node Selection"
   },
   "components/loop/LoopParamsWizard": {
     "AutodetectMaxThreadCount": "Auto detect",
@@ -868,8 +868,8 @@
     "DDTagIntersect": "DDTag intersection of different receivers within the same dd zone",
     "DDZoneIsNotContainer": "dd zone must be container",
     "DDZoneReciever": "dd zone cannot be receiver",
-    "NestedDDZone": "Nested dd zones are prohibited",
-    "NestedReciever": "Nested receivers are prohibited",
+    "NestedDDZone": "Nested dd zones are not supported",
+    "NestedReciever": "Nested receivers are not supported",
     "NonContainerRecieverBadConfig": "Receiver may not be container, only if NoAddOnDrop == NoPlaceholder == true"
   },
   "ext/TotalLabel": {
@@ -1011,7 +1011,7 @@
     "CantDeleteFileAfterPasting": "Failed to delete source file {0} after pasting",
     "CantDeleteFolderAfterPasting": "Failed to delete source directory {0} after pasting",
     "CantPasteFile": "Failed to paste file",
-    "CantPasteFolder": "Failed to paste directory",
+    "CantPasteFolder": "Failed to paste folder",
     "Copied": "Copied",
     "Cuted": "Cut",
     "HasNotStorageItems": "No files to be copied/cut",
@@ -1030,21 +1030,21 @@
     "FileAlreayLoading": "{0} file has already been downloading. Wait until the end or cancel the download process."
   },
   "filestorage/FileStorageForm": {
-    "CantCreateFolder": "Failed to create directory",
+    "CantCreateFolder": "Failed to create folder",
     "CantDeleteFile": "Failed to delete file",
-    "CantDeleteFolder": "Failed to delete directory",
+    "CantDeleteFolder": "Failed to delete folder",
     "CantDownloadFolder": "Directory downloads have not been implemented yet",
     "ConfirmDeleteAll": "Do you really want to delete all?",
     "ConfirmDeleting": "Do you really want to delete the selection?",
     "ConfirmStopLoaders": "Active downloads will be canceled. Do you want to continue?",
-    "CreateDirectoryTitle": "Create Directory",
+    "CreateDirectoryTitle": "New Folder",
     "DeleteAllTitle": "Delete All Directory Files",
     "DirectoryAlreadyExists": "A directory with the same name already exists",
     "FileAlreadyExists": "A file with the same name already exists",
     "FileStorageNotConnected": "No connection to file storage",
     "NeedNotEmptyFolderName": "You must specify a non-empty directory name",
     "RenamingStorageItem": "Rename",
-    "SetNewDirectoryName": "New directory name:",
+    "SetNewDirectoryName": "New folder name:",
     "SetNewName": "New name:"
   },
   "filestorage/FileUploader": {
@@ -1813,7 +1813,7 @@
     "Yes": "Yes"
   },
   "viewers/cube/PivotGrid": {
-    "CaseInvite": "Drag the fields to the rows, columns and filters area by dragging from the left list of the available fields or by pressing the \"+\" button"
+    "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields or by pressing the \"+\" button"
   },
   "viewers/LockableView": {
     "LockMaskText": "Node is locked"
@@ -2043,13 +2043,13 @@
     "ActionDelete": "Delete",
     "ActionDeleteAll": "Delete all...",
     "ActionInsert": "Paste",
-    "DefaultSocketCaption": "Socket",
+    "DefaultSocketCaption": "Port",
     "DeleteAllConfirm": "Do you want to delete all inputs/outputs?",
     "EmptyName": "<Unique>",
     "ErrCompareIndex": "The server amount of sockets does not comply with the client amount of sockets.",
-    "ErrGetAvalibleSocketDefFmt": "Failed to get description of socket for {0} vendor.",
-    "ErrGetAvalibleSocketDefs": "Failed to get description of sockets",
-    "ErrMoveDerivedSocket": "It is prohibited to move derived socket",
+    "ErrGetAvalibleSocketDefFmt": "Failed to get socket definition for {0} vendor.",
+    "ErrGetAvalibleSocketDefs": "Failed to get socket defenitions",
+    "ErrMoveDerivedSocket": "It is forbidden to move derived port",
     "SocketLabelFmt": "{0} {1}",
     "SocketTypeInputDesc": "Inputs",
     "SocketTypeOutputDesc": "Outputs"
@@ -2155,7 +2155,7 @@
     "ActivatingCaption": "Activating...",
     "ExceptionTitle": "Error",
     "NotActivatedText": "Not activated",
-    "NotFoundSocket": "Node does not contain the requested socket"
+    "NotFoundSocket": "Node does not contain the requested port"
   },
   "wizards/WizardForm": {
     "BtnNextCaption": "Next",

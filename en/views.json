@@ -1182,7 +1182,7 @@
       "text": "Usage type"
     },
     "colDataKind": {
-      "text": "Sort of data"
+      "text": "Data kind"
     },
     "colIndex": {
       "text": "No",
@@ -1335,7 +1335,7 @@
   },
   "components/datarecovery/DataRecoveryWizard": {
     "colDataKind": {
-      "text": "Sort of data"
+      "text": "Data kind"
     },
     "colIndex": {
       "text": "No",
@@ -1396,7 +1396,7 @@
       "title": "Outliers Elimination Method"
     },
     "colDataKind": {
-      "text": "Sort of data"
+      "text": "Data kind"
     },
     "colDisplayName": {
       "text": "Input fields"
@@ -4246,7 +4246,7 @@
       "tooltip": "Show lost links"
     },
     "colDataKind": {
-      "text": "Sort of data"
+      "text": "Data kind"
     },
     "colDefaultUsageType": {
       "text": "Usage type",
@@ -4300,7 +4300,7 @@
       "text": "Cancel"
     },
     "cbxDataKind": {
-      "fieldLabel": "Sort of data"
+      "fieldLabel": "Data kind"
     },
     "cbxDataType": {
       "fieldLabel": "Data type"

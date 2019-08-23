@@ -70,7 +70,7 @@
       "Unknown": "Unknown",
       "OneWay": "One way",
       "RequestResponse": "Request-response",
-      "SolicitResponse": "Request-response",
+      "SolicitResponse": "Solicit-response",
       "Notification": "Notification"
     }
   },
@@ -330,7 +330,7 @@
       "UserSpecified": "Data set defined"
     },
     "ColUnionRowsPaddingType": {
-      "$Caption": "Missing Terminal Lines Filling",
+      "$Caption": "Missing Terminal Rows Filling",
       "None": "Leave empty",
       "Repeat": "Repeat all rows",
       "LastRow": "Repeat the last row"
@@ -942,7 +942,7 @@
       "Forecast": "Forecast"
     },
     "DataKind": {
-      "$Caption": "Sort of Data",
+      "$Caption": "Data Kind",
       "Undefined": "Undefined",
       "Continuous": "Continuous",
       "Discrete": "Discrete"
@@ -1037,7 +1037,7 @@
       "Name": "Name",
       "DisplayName": "Caption",
       "DataType": "Data type",
-      "DataKind": "Sort of data",
+      "DataKind": "Data kind",
       "Size": "Data size",
       "DefaultUsageType": "Default usage type",
       "UsageType": "Usage type",

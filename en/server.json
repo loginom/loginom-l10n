@@ -51,7 +51,7 @@
     "ColumnIsNull": "Check if the value is set in the column cell",
     "Columns": "Columns",
     "Count": "Count",
-    "DataKind": "Sort of data",
+    "DataKind": "Data kind",
     "DataType": "Data type",
     "DefaultUsageType": "Default usage type",
     "DisplayName": "Caption",
@@ -805,9 +805,9 @@
     "ErrNoInputDataSource": "No input data source connected",
     "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
-    "ErrorCodeColumn": "Completion code",
+    "ErrorCodeColumn": "Error Code",
     "ErrorDataSet": "Errors and exit codes",
-    "ErrorDescColumn": "Error description",
+    "ErrorDescColumn": "Error Description",
     "InputDataSource": "Input data source",
     "XSDConnection": "Connect to XSD schema source"
   },
@@ -1409,9 +1409,9 @@
     "VendorDesc": "Replace variable values"
   },
   "components/restclient/RESTClient": {
-    "ErrorCodeColumn": "Completion code",
-    "ErrorDescColumn": "Error description",
-    "OutputDataSet": "REST service response",
+    "ErrorCodeColumn": "Error Code",
+    "ErrorDescColumn": "Error Description",
+    "OutputDataSet": "Service Response",
     "RequestIDOutputColumn": "Request identifier",
     "ResponseColumn": "Server response",
     "RESTClientConnection": "Connect to REST service",
@@ -1419,7 +1419,7 @@
     "RESTClientErrorRowID": "Error executing request generated from %d row of the input data set:\n%s"
   },
   "components/restclient/RESTClientVendor": {
-    "VendorCaption": "REST Service Request",
+    "VendorCaption": "REST Request",
     "VendorDesc": "Request execution through REST service connection"
   },
   "components/sampling/SamplingVendor": {
@@ -1589,15 +1589,15 @@
     "VendorDesc": "Create data set from variables set"
   },
   "components/wsdlclient/WSDLClient": {
-    "ErrorCodeColumn": "Completion code",
-    "ErrorDescColumn": "Error description",
+    "ErrorCodeColumn": "Error Code",
+    "ErrorDescColumn": "Error Description",
     "FaultNameOutputColumn": "Exception name",
     "FaultsDataSet": "Exceptions (WSDL fault)",
     "ImportIDOutputColumn": "Part identifier",
-    "OutputDataSet": "Web service response",
-    "RawOutputColumn": "Raw response",
-    "RequestIDOutputColumn": "Request identifier",
-    "WSDLClientConnection": "Connection to the web service",
+    "OutputDataSet": "Service Response",
+    "RawOutputColumn": "Raw Response",
+    "RequestIDOutputColumn": "Request Identifier",
+    "WSDLClientConnection": "Connection to the SOAP service",
     "WSDLClientError": "Error executing request with %s identifier:\n%s",
     "WSDLClientErrorNoID": "Error executing request:\n%s",
     "WSDLClientErrorRowID": "Error executing request generated from row #%d of the input data set:\n%s"
@@ -1619,7 +1619,7 @@
     "RequestDataSource": "Request data source"
   },
   "components/wsdlclient/WSDLClientVendor": {
-    "VendorCaption": "Web Service Request",
+    "VendorCaption": "SOAP Request",
     "VendorDesc": "Request execution through connection to WSDL described web service and conversion of the received response into a data set"
   },
   "Embedded/EmbeddedMain": {
@@ -2322,7 +2322,7 @@
   },
   "Libraries/bgrtl/SyncObjs": {
     "ErrSlimReadWriteLockDebugDowngradeToRead": "You cannot decreaase the lock level of synchronizer %p from write lock to read lock without first increasing the level",
-    "ErrSlimReadWriteLockDebugFinalized": "Sinchronizer %p finalized",
+    "ErrSlimReadWriteLockDebugFinalized": "Synchronizer %p finalized",
     "ErrSlimReadWriteLockDebugLockRead": "You cannot lock for reading synchronizer %p that has already been locked from the same stream",
     "ErrSlimReadWriteLockDebugLockWrite": "You cannot lock for writing synchronizer %p that has already been locked from the same stream",
     "ErrSlimReadWriteLockDebugTryUpgradeToWrite": "You cannot increase the lock level of synchronizer %p from read lock to write lock without first locking it for reading",
@@ -2956,7 +2956,7 @@
   },
   "Libraries/Model/ModelComponentVendorGroupsCommon": {
     "AnalyticVendorGroupCaption": "Data Mining",
-    "ExploratoryVendorGroupCaption": "Investigation",
+    "ExploratoryVendorGroupCaption": "Exploration",
     "ExportVendorGroupCaption": "Export",
     "FlowControlVendorGroupCaption": "Control",
     "ImportVendorGroupCaption": "Import",
@@ -3402,7 +3402,7 @@
     "ErrInvalidParamDataType": "Invalid %s GET request parameter data type",
     "ErrInvalidParamName": "Invalid %s GET request parameter name",
     "ErrInvalidURL": "Invalid URL service format",
-    "ErrMustExplicitRequestContentType": "Content-type of the request data must be explicitly set",
+    "ErrMustExplicitRequestContentType": "Data request Content-type must be explicitly set",
     "ErrNoServiceURL": "Service URL not specified",
     "ErrWSDLGenerate": "Error while generating WSDL description"
   },
@@ -3470,7 +3470,7 @@
     "WarnMainWSDLNotLoaded": "Main WSDL source (%s) not loaded (%s). We are trying to load the backup source."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
-    "WSDLClientConnectionVendorCaption": "Web Service",
+    "WSDLClientConnectionVendorCaption": "SOAP Service",
     "WSDLClientConnectionVendorDesc": "Connection to the web service specified by WSDL document"
   },
   "Libraries/XSDFilesConnection/XSDFilesConnection": {

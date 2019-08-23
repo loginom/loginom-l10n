@@ -788,7 +788,7 @@
       "Stop": "До первой пустой строки"
     },
     "ExcelFileType": {
-      "$Caption": "Тип файла excel",
+      "$Caption": "Тип файла Excel",
       "XLS": "Excel 2003",
       "XLSX": "Excel 2007"
     },

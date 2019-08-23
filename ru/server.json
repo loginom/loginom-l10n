@@ -1411,7 +1411,7 @@
   "components/restclient/RESTClient": {
     "ErrorCodeColumn": "Код завершения",
     "ErrorDescColumn": "Описание ошибки",
-    "OutputDataSet": "Ответ REST-сервиса",
+    "OutputDataSet": "Ответ сервиса",
     "RequestIDOutputColumn": "Идентификатор запроса",
     "ResponseColumn": "Ответ сервера",
     "RESTClientConnection": "Подключение к REST-сервису",
@@ -1419,7 +1419,7 @@
     "RESTClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки %d входного набора:\n%s"
   },
   "components/restclient/RESTClientVendor": {
-    "VendorCaption": "Вызов REST-сервиса",
+    "VendorCaption": "REST-запрос",
     "VendorDesc": "Выполняет запрос через подключение к REST-сервису"
   },
   "components/sampling/SamplingVendor": {
@@ -1594,10 +1594,10 @@
     "FaultNameOutputColumn": "Имя исключения",
     "FaultsDataSet": "Исключения (WSDL fault)",
     "ImportIDOutputColumn": "Идентификатор части",
-    "OutputDataSet": "Ответ веб-сервиса",
+    "OutputDataSet": "Ответ сервиса",
     "RawOutputColumn": "Сырой ответ",
     "RequestIDOutputColumn": "Идентификатор запроса",
-    "WSDLClientConnection": "Подключение к веб-сервису",
+    "WSDLClientConnection": "Подключение к SOAP-сервису",
     "WSDLClientError": "Ошибка при выполнении запроса с идентификатором %s:\n%s",
     "WSDLClientErrorNoID": "Ошибка при выполнении запроса:\n%s",
     "WSDLClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки №%d входного набора:\n%s"
@@ -1619,7 +1619,7 @@
     "RequestDataSource": "Источник данных запроса"
   },
   "components/wsdlclient/WSDLClientVendor": {
-    "VendorCaption": "Вызов веб-сервиса",
+    "VendorCaption": "SOAP-запрос",
     "VendorDesc": "Выполняет запрос через подключение к веб-сервису, описанному WSDL, и преобразует полученный ответ в набор данных"
   },
   "Embedded/EmbeddedMain": {
@@ -3470,8 +3470,8 @@
     "WarnMainWSDLNotLoaded": "Основной источник WSDL (%s) не загружен (%s). Пытаемся загрузить резервный источник."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
-    "WSDLClientConnectionVendorCaption": "Веб-сервис",
-    "WSDLClientConnectionVendorDesc": "Подключение к веб-сервису, заданному документом WSDL"
+    "WSDLClientConnectionVendorCaption": "SOAP-сервис",
+    "WSDLClientConnectionVendorDesc": "Подключение к SOAP-сервису, заданному документом WSDL"
   },
   "Libraries/XSDFilesConnection/XSDFilesConnection": {
     "ErrLoadXSD": "Ошибка при загрузке XSD-файлов"

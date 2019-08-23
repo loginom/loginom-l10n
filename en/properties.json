@@ -1,7 +1,7 @@
 {
   "Common/WSDL/HTTPHeaders": {
     "CustomHeadersConfigurator": {
-      "CustomHeaders": "HTTP Headers Collection"
+      "CustomHeaders": "HTTP Headers"
     },
     "HTTPHeaderItem": {
       "HeaderValue": "Value",
@@ -162,7 +162,7 @@
   },
   "components/coluniondata": {
     "ColUnionDataEngine": {
-      "RowsPaddingType": "Missing terminal lines filling",
+      "RowsPaddingType": "Missing terminal rows filling",
       "TailsAlignType": "Row count complies"
     }
   },
@@ -217,7 +217,7 @@
       "ImportXMLSettings": "Configure XML import",
       "InputColumn": "XML column",
       "NeedUnescape": "Unescape XML entities",
-      "ProduceErrorDescs": "Provide description of completion codes"
+      "ProduceErrorDescs": "Provide description of error codes"
     }
   },
   "components/factoranalysis": {
@@ -390,7 +390,7 @@
   "components/restclient": {
     "RESTClient": {
       "CustomHeadersConfigurator": "Custom header settings",
-      "ProduceErrorDescs": "Provide description of completion codes",
+      "ProduceErrorDescs": "Provide description of error codes",
       "RequestConfigurator": "Configure request data export",
       "RequestDebug": "Request debug settings"
     }
@@ -458,7 +458,7 @@
       "CompositeColumnNames": "Generate composite field captions",
       "CustomHeadersConfigurator": "Custom header settings",
       "IgnoreAbsentValues": "Allow required fields skipping",
-      "ProduceErrorDescs": "Provide description of completion codes",
+      "ProduceErrorDescs": "Provide description of error codes",
       "ProduceRawOutput": "Produce \"raw\" server response",
       "RepeatUniqueValues": "Repeat unit values",
       "RequestConfigurator": "Configure request data export",
@@ -793,8 +793,8 @@
       "ClientAuth": "Authorization to execute request",
       "ExchangeTimeOut": "Data exchange timeout (ms)",
       "IgnoreCertificateErrors": "Ignore SSL certificate errors",
-      "RequestContentType": "Content-type request",
-      "ResponseContentType": "Content-type response",
+      "RequestContentType": "Request Content-Type",
+      "ResponseContentType": "Response Content-Type",
       "TimeOut": "Connection timeout (ms)",
       "URL": "Service URL",
       "Verb": "Method"
@@ -811,8 +811,8 @@
       "TimeOut": "Connection timeout (ms)",
       "WSDLAuth": "Authorization to get WSDL file",
       "WSDLSource": "WSDL source",
-      "XSLT": "XSLT location",
-      "XSLTOn": "Convert WSDL description using XSLT"
+      "XSLT": "XSLT path",
+      "XSLTOn": "Transform WSDL description using XSLT"
     }
   },
   "Viewers/Chart/ChartColumnInfo": {

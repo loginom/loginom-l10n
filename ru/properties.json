@@ -1,7 +1,7 @@
 {
   "Common/WSDL/HTTPHeaders": {
     "CustomHeadersConfigurator": {
-      "CustomHeaders": "Коллекция заголовков HTTP"
+      "CustomHeaders": "Заголовки HTTP"
     },
     "HTTPHeaderItem": {
       "HeaderValue": "Значение",

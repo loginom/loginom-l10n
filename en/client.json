@@ -96,7 +96,7 @@
     "ErrUrlPathNotFound": "\"{0}\" path not found",
     "FavoritesTitle": "Favorites",
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
-    "MsgTransportError": "Server connection lost",
+    "MsgTransportError": "Server connection disrupted",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
     "PackageCopyOpened": "Changes in the open link  \"{0}\" package will be reflected in the current package upon its reload",
     "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",

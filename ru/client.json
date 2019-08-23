@@ -1988,7 +1988,7 @@
   "wizards/connection/ConnectionsViewWizard": {
     "AccessModification": "Настроить модификатор доступа...",
     "BtnShowVendorsEdit": "Показать/скрыть дерево классов подключений",
-    "BtnTextTest": "Проверить",
+    "BtnTextTest": "Тестировать",
     "BtnTooltipConnect": "Активировать подключение",
     "BtnTooltipDelete": "Удалить подключение...",
     "BtnTooltipEdit": "Настроить подключение...",

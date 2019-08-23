@@ -2007,7 +2007,7 @@
   },
   "connections/onec8/OneC8ConnectionParams": {
     "btnTestConnection": {
-      "text": "Протестировать подключение"
+      "text": "Тестировать"
     }
   },
   "connections/onec8/OneC8ConnectionStringForm": {
@@ -4380,7 +4380,7 @@
   },
   "wizards/connection/DBConnectionParams": {
     "btnTestConnection": {
-      "text": "Протестировать подключение"
+      "text": "Тестировать"
     },
     "cntParams": {
       "title": "Параметры"

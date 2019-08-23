@@ -558,21 +558,21 @@
     "ErrCantApplyFineClassesBinning": "You cannot apply fine classes for binning for %s column. There are too many unique values",
     "ErrCantLoadBackup": "Failed to restore binning",
     "ErrCantSaveBackup": "Failed to save current binning",
-    "ErrContDataKindExpected": "Continuous data type of %s column expected",
-    "ErrDiscreteDataKindExpected": "Discrete data type of %s column expected",
+    "ErrContDataKindExpected": "Continuous data kind of %s column expected",
+    "ErrDiscreteDataKindExpected": "Discrete data kind of %s column expected",
     "ErrIncorrectEventValue": "The output field does not contain \"%s\" value",
     "ErrInputBinningIsNotCorrected": "External binning for \"%s\" column incorrectly specified",
     "ErrOutColumnNotDefined": "Undefined output field",
     "ErrOutColumnNotValid": "The output field must be discrete with 2 unique values",
     "ErrOverflow": "Number of the input data source binning operations exceeds the allowable value",
-    "ErrVoidDataKind": "Data type of the processed column not defined"
+    "ErrVoidDataKind": "Data kind of the processed column not defined"
   },
   "components/coarseclasses/CoarseClassesConfig": {
     "EquabilityCoefficient": "Equability coefficient",
-    "ErrDoNotFitAsTargetColumn": "The output column must have the discrete data type and contain exactly 2 unique values",
+    "ErrDoNotFitAsTargetColumn": "The output column must have the discrete data kind and contain exactly 2 unique values",
     "ErrIncorrectColumnPurpose": "Incorrect \"%s\" field usage type",
     "ErrNotAllowedInputBinningKind": "The input field does not support the new usage type in the external partition (data type restriction)",
-    "ErrRequiredContinuousOrDiscrete": "Continuous or discrete data type is required",
+    "ErrRequiredContinuousOrDiscrete": "Continuous or discrete data kind is required",
     "MaxClassCount": "Required class count",
     "MinimalClassQuota": "Minimum class quota"
   },
@@ -983,7 +983,7 @@
     "ErrMultipleOutputsNotSupported": "%s model allows only one output field",
     "ErrNoOutputFieldsSelected": "No output data field specified",
     "ErrNotTrained": "Model not trained",
-    "ErrWrongInputField": "Invalid %s input field properties, %s data sort, %s data type",
+    "ErrWrongInputField": "Invalid %s input field properties, %s data kind, %s data type",
     "ErrWrongModelInput": "Input columns do not match previously trained model",
     "ForecastModelCoefficients": "Model coefficients",
     "ForecastOutputDataSet": "Model output",
@@ -1070,9 +1070,9 @@
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrOutputColumnNotValid": "Invalid specified output column",
     "ErrTeachNoOutputField": "No output data field specified",
-    "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data sort, \"%s\" data type",
+    "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data kind, \"%s\" data type",
     "ErrWrongOutputColumnsCount": "Exactly 1 output column must be defined, %d output columns are currently defined",
-    "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data sort, \"%s\" data type",
+    "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data kind, \"%s\" data type",
     "Intercept": "<Intercept>",
     "LinRegTrainProcessName": "Model training",
     "ModelDF": "Number of the model degrees of freedom",
@@ -1138,10 +1138,10 @@
     "ErrNotImplemented": "Functionality not implemented",
     "ErrOutputColumnNotValid": "Invalid specified output column",
     "ErrTeachNoOutputField": "No output data field specified",
-    "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data sort, \"%s\" data type",
+    "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data kind, \"%s\" data type",
     "ErrWrongOutputColumnsCount": "Exactly 1 output column must be defined, %d output columns are currently defined",
-    "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data sort, \"%s\" data type",
-    "ErrWrongOutputFieldNotDiscrete": "Invalid \"%s\" output field properties, \"%s\" data sort, whereas \"%s\" is only valid",
+    "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data kind, \"%s\" data type",
+    "ErrWrongOutputFieldNotDiscrete": "Invalid \"%s\" output field properties, \"%s\" data kind, whereas \"%s\" is only valid",
     "ErrWrongOutputUniqueCount": "Number of \"%s\" output column unique values is %d (exactly 2 required)",
     "Intercept": "<Intercept>",
     "LogRegStoreStatProcessName": "Quality indicators calculating",
@@ -1597,7 +1597,7 @@
     "OutputDataSet": "Service Response",
     "RawOutputColumn": "Raw Response",
     "RequestIDOutputColumn": "Request Identifier",
-    "WSDLClientConnection": "Connection to the SOAP service",
+    "WSDLClientConnection": "Connection to SOAP service",
     "WSDLClientError": "Error executing request with %s identifier:\n%s",
     "WSDLClientErrorNoID": "Error executing request:\n%s",
     "WSDLClientErrorRowID": "Error executing request generated from row #%d of the input data set:\n%s"
@@ -3471,7 +3471,7 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
     "WSDLClientConnectionVendorCaption": "SOAP Service",
-    "WSDLClientConnectionVendorDesc": "Connection to the web service specified by WSDL document"
+    "WSDLClientConnectionVendorDesc": "Connection to SOAP service specified by WSDL document"
   },
   "Libraries/XSDFilesConnection/XSDFilesConnection": {
     "ErrLoadXSD": "Error loading XSD files"
@@ -3891,7 +3891,7 @@
     "UniqueValuesCalculation": "Unique values calculation"
   },
   "Viewers/Statistics/StatViewBuilder": {
-    "ErrNonContinuousDataKind": "The input column must have continuous  data type",
+    "ErrNonContinuousDataKind": "The input column must have continuous data kind",
     "ErrRequiredColumnNotFound": "No column with the specified number in the input data source"
   },
   "Viewers/Statistics/StatViewCalculation": {

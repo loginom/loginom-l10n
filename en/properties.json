@@ -608,8 +608,8 @@
   },
   "Libraries/bgrtl/DataSet": {
     "ColumnDef": {
-      "DataKind": "Column data kind",
-      "DataType": "Column data type",
+      "DataKind": "Data kind",
+      "DataType": "Data type",
       "DefaultUsageType": "Default usage type",
       "DisplayName": "Caption",
       "Index": "Index",

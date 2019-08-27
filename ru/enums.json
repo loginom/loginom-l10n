@@ -927,6 +927,11 @@
       "Last": "Последний",
       "NullCount": "Количество пропусков"
     },
+    "ApplicationMode": {
+      "$Caption": "Режим работы приложения",
+      "Design": "Интерактивный",
+      "Run": "Выполнение"
+    },
     "BoundMode": {
       "$Caption": "Принадлежность границы",
       "LowerInclusive": "Нижняя граница включительно",
@@ -1595,14 +1600,6 @@
       "Rows": "В строках"
     }
   },
-  "Viewers/Cube/CubeDetailing": {
-    "CubeDetailingType": {
-      "$Caption": "Способ детализации",
-      "Browse": "Таблица",
-      "Form": "Форма",
-      "Statistics": "Статистика"
-    }
-  },
   "Viewers/Cube/CubeDimensions": {
     "CubeDimensionFilterType": {
       "$Caption": "Режим выбора фильтра",
@@ -1692,6 +1689,14 @@
       "CompareWithPrevByCol": "Отличие от предыдущего по вертикали",
       "CumulativeSumByRow": "Накапливающаяся сумма по горизонтали",
       "CumulativeSumByCol": "Накапливающаяся сумма по вертикали"
+    }
+  },
+  "Viewers/Detailing/Detailing": {
+    "DetailingType": {
+      "$Caption": "Способ детализации",
+      "Browse": "Таблица",
+      "Form": "Форма",
+      "Statistics": "Статистика"
     }
   },
   "Viewers/LinRegressReport/LinRegressReportCommon": {

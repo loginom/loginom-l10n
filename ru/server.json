@@ -784,6 +784,7 @@
     "ErrNodeComponentVendorIsSealed": "Невозможно задать ссылку на узел \"%s\", для которого запрещено наследование",
     "ErrNodeLocked": "Узел \"%s\" заблокирован",
     "ErrNodeNotInitialized": "Узел \"%s\" не проинициализирован",
+    "ErrPortNotConfigurable": "Настройка порта не поддерживается",
     "ErrReferencedNodeNotAvailable": "Исходный узел не доступен",
     "ErrReferencedNodeNotFound": "Исходный узел не найден",
     "ErrReferencedNodeNotSpecified": "Не задана ссылка на узел",
@@ -1219,6 +1220,7 @@
     "ErrNoConditionVariable": "Отсутствует переменная для проверки условия завершения цикла",
     "ErrParallelProcessingError": "При параллельном выполнении цикла возникла ошибка",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Цикл с постусловием не поддерживает параллельную обработку",
+    "ErrPortNotConfigurable": "Настройка порта не поддерживается",
     "ErrSocketIsNotInputDataSourceSocket": "Порт \"%s\" не является входным портом, содержащим набор данных",
     "ErrSocketNotConfigured": "Порт не настроен",
     "ErrUnsupportedInputSocketType": "Порт \"%s\" имеет неподдерживаемый тип",
@@ -1624,6 +1626,8 @@
   },
   "Embedded/EmbeddedMain": {
     "ErrOpenURL": "Невозможно перейти по адресу: %s",
+    "LocalStorageLoadFailed": "Local Storage не прочитано",
+    "LocalStorageSaveFailed": "Local Storage не сохранено",
     "UnknownException": "Unknown Exception"
   },
   "exports/database/DBExport": {
@@ -2591,7 +2595,9 @@
     "ExplodeGenericCaption": "Подмодель \"%s\" развернута",
     "ExplodeGenericCaptionDef": "Подмодель развернута",
     "MoveLinkCaption": "Перемещена связь \"%s.%s\" - \"%s.%s\"",
-    "MoveLinkCaptionDef": "Перемещена связь"
+    "MoveLinkCaptionDef": "Перемещена связь",
+    "SetPackageVarsCaption": "Установлены переменные пакета \"%s\"",
+    "SetPackageVarsCaptionDef": "Установлены переменные пакета"
   },
   "Libraries/Config/ConfigBackupService": {
     "ErrBackupManagerNotRegistered": "Не зарегистрирован класс для идентификатора \"%s\"",
@@ -2989,7 +2995,10 @@
     "ErrPackageNameInvalidCharacter": "Имя пакета \"%s\" содержит недопустимый символ \"%s\"",
     "ErrPackageNameInvalidFirstCharacter": "Имя пакета \"%s\" начинается с недопустимого символа \"%s\"",
     "ErrPackageWithNameLinkAlreadyExists": "Ссылка на пакет с именем \"%s\" уже существует",
-    "ModelUnitDisplayNameDefault": "Модуль"
+    "ErrVariableNamesAndValuesCountMustBeEqual": "Количество имён и значений переменных должно быть одинаковым",
+    "ErrVariableNotFound": "Переменная с именем \"%s\" не найдена",
+    "ModelUnitDisplayNameDefault": "Модуль",
+    "RestoreVariablesBackupProcessCaption": "Восстановление значений переменных пакета"
   },
   "Libraries/Model/ModelPackageContext": {
     "ErrBasePackageNotFound": "Базовый пакет не найден",
@@ -3110,6 +3119,10 @@
     "WarnModelNotSupportInPort": "Невозможно создать входной порт для порта \"%s\"",
     "WrnNullRttiInfo": "Обнаружен некорректный вендор описателя порта подмодели",
     "WrnUnknownSocketDefVendorType": "Не удалось определить тип вендора для интерфейса %s с GUID %s"
+  },
+  "Libraries/Model/PackageEditableVariables": {
+    "ErrVariableRestriction": "Запрещено изменение переменной",
+    "ErrVariablesRestriction": "Запрещено изменение списка переменных"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "Узел \"%s\" заблокирован",
@@ -3578,7 +3591,6 @@
     "ErrInvalidCommandLineParameters": "Неверно указаны параметры командной строки",
     "ErrLostConnectionToServer": "Потеряно соединение с сервером",
     "ErrUnknownCommandLineParameter": "Неизвестный параметр командной строки: %s",
-    "ErrVariablesOnlyAllowedForNode": "Использование переменных возможно только в случае, если выполняется отдельный узел",
     "ExampleTitle": "Пример:",
     "OptionAddressDesc": "IP адрес или имя хоста (по умолчанию: %s)",
     "OptionNodeNameDesc": "Имя или GUID узла",
@@ -3626,6 +3638,7 @@
     "Reports": "Отчеты",
     "ServiceInputPorts": "Служебные входные порты",
     "ServiceOutputPorts": "Служебные выходные порты",
+    "Variables": "Переменные",
     "Vendors": "Компоненты",
     "WorkFlow": "Сценарий"
   },
@@ -3725,16 +3738,6 @@
     "MaxDotsCountDesc": "Максимальное количество точек",
     "MaxSeriesCountDesc": "Максимальное количество серий"
   },
-  "Viewers/Cube/CubeDetailing": {
-    "DetailingProcessCaption": "Детализация \"%s\" по ячейке [%d, %d]",
-    "ErrCubeScopeMissing": "Не удалось получить контекст Куба при создании визуализатора детализации",
-    "ErrDetailingViewDataSource": "Не удалось подготовить источник данных для визуализатора детализации Куба \"%s\"",
-    "ErrDetailingViewExecution": "Ошибка выполнения визуализатора детализации Куба \"%s\"",
-    "ErrDetailingViewInitialization": "Ошибка инициализации визуализатора детализации Куба \"%s\"",
-    "ManagerBrowse": "Таблица",
-    "ManagerStatistics": "Статистика",
-    "MsgEmbeddedViewLoadFailed": "Не удалось загрузить конфигурацию визуализатора \"%s\" детализации Куба"
-  },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
     "ErrOrderNumberDim": "Некорректные порядковые номера измерений",
@@ -3781,6 +3784,16 @@
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Куб",
     "VendorDesc": "Многомерное отображение (кросс-таблица и кросс-диаграмма)"
+  },
+  "Viewers/Detailing/Detailing": {
+    "DetailingProcessCaption": "Детализация \"%s\" по ячейке [%d, %d]",
+    "ErrDetailingViewDataSource": "Не удалось подготовить источник данных для детализации \"%s\"",
+    "ErrDetailingViewExecution": "Ошибка выполнения детализации \"%s\"",
+    "ErrDetailingViewInitialization": "Ошибка инициализации детализации \"%s\"",
+    "ErrScopeMissing": "Не удалось получить контекст владельца при инициализации детализации \"%s\"",
+    "ManagerBrowse": "Таблица",
+    "ManagerStatistics": "Статистика",
+    "MsgEmbeddedViewLoadFailed": "Не удалось загрузить конфигурацию детализации \"%s\""
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Компонент",
@@ -3866,6 +3879,8 @@
     "PrecisionRecallChartXLabel": "TPR (Recall)",
     "PrecisionRecallChartYLabel": "PPV (Precision)",
     "ResponseChartTitle": "Диаграмма отклика",
+    "ResponseChartXLabel": "Диапазон",
+    "ResponseChartYLabel": "Отклик, %",
     "ResponseCumChartTitle": "Диаграмма отклика (кумулятивная)",
     "ResponseCumChartXLabel": "Доля выборки, %",
     "ResponseCumChartYLabel": "% событий",

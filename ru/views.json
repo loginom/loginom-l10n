@@ -650,6 +650,55 @@
       "tooltip": "Сохранить пакет как..."
     }
   },
+  "app/PackageVariablesForm": {
+    "btnAdd": {
+      "tooltip": "Добавить..."
+    },
+    "btnDelete": {
+      "tooltip": "Удалить"
+    },
+    "btnDeleteAll": {
+      "tooltip": "Удалить все..."
+    },
+    "btnEdit": {
+      "tooltip": "Редактировать..."
+    },
+    "btnMoveDown": {
+      "tooltip": "Переместить вниз"
+    },
+    "btnMoveUp": {
+      "tooltip": "Переместить вверх"
+    },
+    "btnRestoreSettings": {
+      "tooltip": "Отменить все изменения"
+    },
+    "colDelete": {
+      "tooltip": "Удалить все..."
+    },
+    "colDelete.0": {
+      "tooltip": "Удалить"
+    },
+    "colDisplayName": {
+      "text": "Метка"
+    },
+    "colHidden": {
+      "text": "Скрытая",
+      "tooltip": "Не отображается в режиме просмотра отчетов"
+    },
+    "colName": {
+      "text": "Имя"
+    },
+    "colReadonly": {
+      "text": "Только для чтения",
+      "tooltip": "Редактируется только в режиме разработки сценария"
+    },
+    "colValue": {
+      "text": "Значение"
+    },
+    "edtFilter": {
+      "emptyText": "Фильтрация"
+    }
+  },
   "app/SelectBaseVendorForm": {
     "btnApply": {
       "text": "Применить"
@@ -3537,6 +3586,9 @@
     }
   },
   "viewers/cube/CasesTunePanel": {
+    "btnAdd": {
+      "tooltip": "Добавить факт..."
+    },
     "btnAddCalc": {
       "tooltip": "Добавить вычисляемый факт..."
     },
@@ -3552,8 +3604,8 @@
     "btnCollapse": {
       "tooltip": "Свернуть дерево"
     },
-    "btnDeleteCalc": {
-      "tooltip": "Удалить вычисляемый факт"
+    "btnDelete": {
+      "tooltip": "Удалить факт"
     },
     "btnDown": {
       "tooltip": "Переместить вниз"
@@ -3662,9 +3714,6 @@
     },
     "colDisplayName": {
       "text": "Поля"
-    },
-    "lblDetailingStub": {
-      "text": "Выделите ячейку для визуализации ее данных"
     },
     "mniAddCalcCase": {
       "text": "Добавить вычисляемый факт..."
@@ -3778,6 +3827,12 @@
   },
   "viewers/cube/EmbeddedBrowseForm": {
     "mniGoToLine": {
+      "tooltip": "Перейти к строке..."
+    }
+  },
+  "viewers/detailing/EmbeddedBrowseForm": {
+    "mniGoToLine": {
+      "text": "Перейти к строке...",
       "tooltip": "Перейти к строке..."
     }
   },
@@ -4201,7 +4256,7 @@
       "text": "Удалить все связи"
     },
     "btnCreateMapping": {
-      "tooltip": "Создать выходной..."
+      "tooltip": "Создать выходной"
     },
     "btnCreateMappingToAll": {
       "tooltip": "Создать выходные для всех входных..."
@@ -4210,7 +4265,7 @@
       "tooltip": "Настроить список допустимых значений переменной..."
     },
     "btnEditMappingColumn": {
-      "tooltip": "Настроить..."
+      "tooltip": "Редактировать..."
     },
     "btnGetSourceColumns": {
       "tooltip": "Получить список"
@@ -4220,6 +4275,9 @@
     },
     "btnMoveMappingColumnUp": {
       "tooltip": "Переместить вверх"
+    },
+    "btnProduceType": {
+      "tooltip": "Тип создания производных столбцов"
     },
     "btnRemoveMappingColumnSelected": {
       "tooltip": "Удалить выбранные"

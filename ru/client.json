@@ -124,6 +124,7 @@
     "ModelViews": "Визуализаторы",
     "OutputPorts": "Выходные порты",
     "PackagesParent": "Пакеты",
+    "PackageVariables": "Переменные",
     "Properties": "Параметры",
     "QstCloseAllPackages": "Закрыть все пакеты?",
     "QstCloseOtherPackages": "Закрыть другие пакеты?",
@@ -231,6 +232,7 @@
     "EditDisplayNameMsgTitle": "Редактирование метки",
     "EditDisplayNameTooltip": "Редактировать...",
     "Links": "Ссылки",
+    "PackageVariables": "Переменные",
     "Reports": "Отчеты",
     "Update": "Обновить",
     "Visibility": "Область видимости",
@@ -241,6 +243,27 @@
     "ErrOpenPath": "Не удается открыть путь \"{0}\".\nОшибка: \"{1}\".",
     "ErrPathNotFound": "Указанный путь не найден \"{0}\".",
     "ReadOnlyPackageNamePostfix": " (только чтение)"
+  },
+  "app/PackageVariableEditForm": {
+    "AddBtnText": "Добавить",
+    "AddVariableTitle": "Добавить переменную",
+    "ErrVariableEmptyName": "Имя переменной не может быть пустым",
+    "ErrVariableInvalidIdentifier": "Введенное имя переменной \"{0}\" не является правильным идентификатором",
+    "ErrVariableNameAlreadyExists": "Переменная с именем \"{0}\" уже существует",
+    "GroupEditingTitle": "Групповое редактирование",
+    "HiddenFieldLabel": "Скрытая:",
+    "HiddenFieldTip": "Не отображается в режиме просмотра отчетов",
+    "ModifyBtnText": "Применить",
+    "ModifyVariableTitle": "Редактировать переменную",
+    "ReadonlyFieldLabel": "Только для чтения:",
+    "ReadonlyFieldTip": "Редактируется только в режиме разработки сценария"
+  },
+  "app/PackageVariablesForm": {
+    "DeleteAllPrompt": "Вы действительно хотите удалить все переменные?",
+    "DeletePrompt": "Вы действительно хотите удалить переменные?",
+    "DeleteTitle": "Удаление переменных",
+    "MsgAddedVariableCanNotSelected": "Переменная добавлена, но не отображается, т.к. не соответствует фильтру",
+    "MsgEditedVariableCanNotSelected": "Переменная переименована, но не отображается, т.к. не соответствует фильтру"
   },
   "app/ReferencesListForm": {
     "AddLink": "Добавить",
@@ -275,7 +298,7 @@
     "MsgNodeLocked": "Узел \"{0}\" заблокирован",
     "MsgNodeNotExists": "Узел \"{0}\" не существует",
     "MsgNotFoundContainer": "Нет способа отобразить \"{0}.{1}\"",
-    "OperationAborted": "Действие не поддерживается"
+    "MsgNotFoundWizard": "Не существует мастера настройки для объекта \"{0}\""
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Базовый узел",
@@ -1430,7 +1453,7 @@
     "ExceptionClassFmt": "КЛАСС ИСКЛЮЧЕНИЯ: {0}",
     "InnerExceptionTitle": "ВНУТРЕННИЕ ИСКЛЮЧЕНИЯ:",
     "MessageFmt": "СООБЩЕНИЕ: {0}",
-    "OperationAborted": "Операция прервана",
+    "OperationAborted": "Операция отменена",
     "SenderNameFmt": "ОТПРАВИТЕЛЬ: {0}",
     "StackTraceFmt": "ТРАССА:\n{0}"
   },
@@ -1746,10 +1769,6 @@
     "WarnDependencyPrefix": "При удалении вычисляемого факта произойдут следующие изменения состояния Куба:",
     "WarnDependencySuffix": "Продолжить действие?"
   },
-  "viewers/cube/CubeDetailingController": {
-    "ErrNullEngine": "Ошибка инициализации визуализатора",
-    "Loading": "Загрузка"
-  },
   "viewers/cube/CubeDragDropController": {
     "Ascending": "По возрастанию",
     "Collapse": "Свернуть",
@@ -1792,12 +1811,6 @@
     "TooManyValuesMsg": "Невозможно отобразить список значений\nТекущее кол-во значений: {0}\nМаксимальное кол-во значений: {1}",
     "UncheckAllTooltip": "Снять все"
   },
-  "viewers/cube/EmbeddedBrowseForm": {
-    "SelectFirst": "Первая запись",
-    "SelectLast": "Последняя запись",
-    "SelectNext": "Следующая запись",
-    "SelectPrev": "Предыдущая запись"
-  },
   "viewers/cube/PivotDataSource": {
     "CaseDisplayName": "Факт",
     "CaseFilterDesc": "Установлен фильтр по факту",
@@ -1814,6 +1827,16 @@
   },
   "viewers/cube/PivotGrid": {
     "CaseInvite": "Перенесите поля в область строк, столбцов или фильтров, перетащив из левого списка доступных полей или нажав кнопку \"+\""
+  },
+  "viewers/detailing/Detailing": {
+    "ErrNullEngine": "Ошибка инициализации визуализатора",
+    "Loading": "Загрузка"
+  },
+  "viewers/detailing/EmbeddedBrowseForm": {
+    "SelectFirst": "Первая запись",
+    "SelectLast": "Последняя запись",
+    "SelectNext": "Следующая запись",
+    "SelectPrev": "Предыдущая запись"
   },
   "viewers/LockableView": {
     "LockMaskText": "Узел заблокирован"
@@ -1935,6 +1958,7 @@
     "EmptyListText": "Нет подходящих столбцов",
     "GroupField_MissingFields": "Отсутствующие столбцы",
     "MsgAddedColumnCanNotSelected": "Столбец добавлен, но не отображается, т.к. не соответствует фильтру",
+    "MsgEditedColumnCanNotSelected": "Столбец переименован, но не отображается, т.к. не соответствует фильтру",
     "RemoveAllMappingColumnDefsConfirm": "Вы действительно хотите удалить все выходные столбцы?"
   },
   "wizards/columns/ColumnsMappingWizard": {
@@ -1945,9 +1969,6 @@
   },
   "wizards/columns/DataSourceOutputSocketWizard": {
     "frmColumnsMappingTitle": "Настройка выходных столбцов"
-  },
-  "wizards/columns/DerivedDataSourceMappingEngineOutputPortWizard": {
-    "ProduceTypeDisplayName": "Тип создания производных столбцов"
   },
   "wizards/columns/DerivedDataSourceOutputSocketWizard": {
     "frmColumnsMappingTitle": "Настройка выходных столбцов"
@@ -1961,7 +1982,7 @@
     "ErrColumnNameAlreadyExists": "Столбец с именем \"{0}\" уже существует",
     "GroupEditingTitle": "Групповое редактирование",
     "ModifyBtnText": "Применить",
-    "ModifyColumnDefTitle": "Настроить столбец"
+    "ModifyColumnDefTitle": "Редактировать столбец"
   },
   "wizards/columns/EditTuneColumnDefForm": {
     "UsageType": "Назначение"
@@ -2126,7 +2147,7 @@
     "ErrVariableNameAlreadyExists": "Переменная с именем \"{0}\" уже существует",
     "GroupEditingTitle": "Групповое редактирование",
     "ModifyBtnText": "Применить",
-    "ModifyVariableTitle": "Настроить переменную"
+    "ModifyVariableTitle": "Редактировать переменную"
   },
   "wizards/variables/VariablesEditValuesWizard": {
     "frmColumnsMappingTitle": "Настройка значений переменных"
@@ -2135,6 +2156,7 @@
     "colTargetNameTitle": "Метка",
     "frmColumnsMappingTitle": "Настройка выходных переменных",
     "MsgAddedVariableCanNotSelected": "Переменная добавлена, но не отображается, т.к. не соответствует фильтру",
+    "MsgEditedVariableCanNotSelected": "Переменная переименована, но не отображается, т.к. не соответствует фильтру",
     "RemoveAllMappingVariablesConfirm": "Вы действительно хотите удалить все переменные?"
   },
   "wizards/variables/VariablesMappingWizard": {
@@ -2145,6 +2167,7 @@
     "frmColumnsMappingTitle": "Настройка соответствия между переменными",
     "GroupField_MissingFields": "Отсутствующие переменные",
     "MsgAddedVariableCanNotSelected": "Переменная добавлена, но не отображается, т.к. не соответствует фильтру",
+    "MsgEditedVariableCanNotSelected": "Переменная переименована, но не отображается, т.к. не соответствует фильтру",
     "RemoveAllMappingVariablesConfirm": "Вы действительно хотите удалить все переменные?",
     "RemoveRequiredMappingVariableConfirm": "Переменная \"{0}\" является обязательной. Вы действительно хотите ее удалить?"
   },

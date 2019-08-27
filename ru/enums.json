@@ -1,4 +1,17 @@
 {
+  "Common/CalcFunctions/FuncDesc": {
+    "CalcFuncCategory": {
+      "$Caption": "Категория функции",
+      "Financical": "Финансовые",
+      "DateTime": "Дата/Время",
+      "Mathematic": "Математические",
+      "Statistic": "Статистические",
+      "Logic": "Логические",
+      "String": "Строковые",
+      "Other": "Прочие",
+      "Model": "Модели"
+    }
+  },
   "Common/CertList/CertList": {
     "CertStoreCollection": {
       "$Caption": "Коллекции хранилищ сертификатов",
@@ -34,7 +47,7 @@
     }
   },
   "Common/WSDL/WSDL": {
-    "HttpVerb": {
+    "HTTPVerb": {
       "$Caption": "Метод HTTP",
       "GET": "GET",
       "POST": "POST"
@@ -1345,6 +1358,14 @@
     }
   },
   "Libraries/Optimization/Optimization": {
+    "ConstraintType": {
+      "$Caption": "Тип ограничений оптимизируемых параметров",
+      "None": "Отсутствует",
+      "Simple": "Простое",
+      "Range": "Диапазон",
+      "Linear": "Линейное",
+      "NonLinear": "Нелинейное"
+    },
     "OptimizationMethod": {
       "$Caption": "Метод оптимизации",
       "Exhaustive": "Исчерпывающий поиск",

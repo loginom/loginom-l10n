@@ -3552,9 +3552,6 @@
     "btnCollapse": {
       "tooltip": "Collapse tree"
     },
-    "btnDeleteCalc": {
-      "tooltip": "Delete calculated measure"
-    },
     "btnDown": {
       "tooltip": "Move down"
     },
@@ -3662,9 +3659,6 @@
     },
     "colDisplayName": {
       "text": "Fields"
-    },
-    "lblDetailingStub": {
-      "text": "Select cell to visualize its data"
     },
     "mniAddCalcCase": {
       "text": "Add calculated measure..."

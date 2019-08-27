@@ -75,7 +75,6 @@
     "ErrPathNotSpecified": "Path to the package file is not specified"
   },
   "app/ListViewForm": {
-    "NotObjects": "",
     "NumberObjects": "{0} objects"
   },
   "app/LoginomMenuForm": {
@@ -96,7 +95,7 @@
     "ErrUrlPathNotFound": "\"{0}\" path not found",
     "FavoritesTitle": "Favorites",
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
-    "MsgTransportError": " Server disconnection",
+    "MsgTransportError": "Server disconnection",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
     "PackageCopyOpened": "Changes in the open link  \"{0}\" package will be reflected in the current package upon its reload",
     "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
@@ -274,8 +273,7 @@
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
     "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
-    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
-    "OperationAborted": "Action not supported"
+    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\""
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Base Node",
@@ -1523,7 +1521,6 @@
     "SetSelectedPage": "Selected page",
     "SortingButtonText": "Sort",
     "SortingTitle": "Sort",
-    "UndefinedCellValue": "",
     "WarnExportTableSizeWarning": "The current Table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
   "viewers/browse/FastPreviewForm": {
@@ -1746,10 +1743,6 @@
     "WarnDependencyPrefix": "On calculated measure delete, the following changes in the Cube state will occur:",
     "WarnDependencySuffix": "Do you want to continue action?"
   },
-  "viewers/cube/CubeDetailingController": {
-    "ErrNullEngine": "Visualizer initialization error",
-    "Loading": "Loading"
-  },
   "viewers/cube/CubeDragDropController": {
     "Ascending": "Ascending",
     "Collapse": "Collapse",
@@ -1792,12 +1785,6 @@
     "TooManyValuesMsg": "Failed to show list of values\nCurrent number of values: {0}\nMaximum number of values: {1}",
     "UncheckAllTooltip": "Uncheck all"
   },
-  "viewers/cube/EmbeddedBrowseForm": {
-    "SelectFirst": "First record",
-    "SelectLast": "Last record",
-    "SelectNext": "Next record",
-    "SelectPrev": "Previous record"
-  },
   "viewers/cube/PivotDataSource": {
     "CaseDisplayName": "Fact",
     "CaseFilterDesc": "Measure filter enabled",
@@ -1814,6 +1801,16 @@
   },
   "viewers/cube/PivotGrid": {
     "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields or by pressing the \"+\" button"
+  },
+  "viewers/detailing/Detailing": {
+    "ErrNullEngine": "Visualizer initialization error",
+    "Loading": "Loading"
+  },
+  "viewers/detailing/EmbeddedBrowseForm": {
+    "SelectFirst": "First record",
+    "SelectLast": "Last record",
+    "SelectNext": "Next record",
+    "SelectPrev": "Previous record"
   },
   "viewers/LockableView": {
     "LockMaskText": "Node is locked"
@@ -1918,7 +1915,6 @@
     "CardTitle_FeedBack": "Feedback",
     "CardTitle_Forum": "Forum: Questions and Answers",
     "CardTitle_WebSite": "Company Website",
-    "LinkWebSite": "",
     "LoginWebSite": "https://loginom.com",
     "NoNewsLog": "Failed to get news"
   },
@@ -1945,9 +1941,6 @@
   },
   "wizards/columns/DataSourceOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"
-  },
-  "wizards/columns/DerivedDataSourceMappingEngineOutputPortWizard": {
-    "ProduceTypeDisplayName": "Creation type of derived columns"
   },
   "wizards/columns/DerivedDataSourceOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"

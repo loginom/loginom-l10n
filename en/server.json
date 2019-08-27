@@ -23,8 +23,6 @@
     "ErrTooManyArgs": "Many arguments were called to %s function (%d whereas %d is maximum value)"
   },
   "Common/CertList/CertList": {
-    "ErrCertificateStoresFuncAlreadyInstalled": "",
-    "ErrCertificateStoresFuncUnassigned": "",
     "ErrCertListImplementationNotRegistered": "Certificate list implementation with %s identifier not registered",
     "ErrCertListImplementationsNotRegistered": "Certificate list implementation not registered"
   },
@@ -3578,7 +3576,6 @@
     "ErrInvalidCommandLineParameters": "Invalid command line parameters",
     "ErrLostConnectionToServer": "Server connection lost",
     "ErrUnknownCommandLineParameter": "Unknown command line parameter: %s",
-    "ErrVariablesOnlyAllowedForNode": "Variables usage is only possible if a separate node is running",
     "ExampleTitle": "Example:",
     "OptionAddressDesc": "IP address or hostname (default: %s)",
     "OptionNodeNameDesc": "Name or GUID of node",
@@ -3635,7 +3632,6 @@
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
     "LogColumnNotFoundFmt": "No %s field found in the input data set. The field has been deleted from the displayed fields.",
     "LogNewColumnFmt": "New %s field appeared in the input data set. The field has been added to the displayed fields.",
-    "NullText": "",
     "PrepareViewData": "Table"
   },
   "Viewers/Browse/BrowseViewExport": {
@@ -3725,16 +3721,6 @@
     "MaxDotsCountDesc": "Maximum dots count",
     "MaxSeriesCountDesc": "Maximum series count"
   },
-  "Viewers/Cube/CubeDetailing": {
-    "DetailingProcessCaption": "\"%s\" detailing by cell [%d, %d]",
-    "ErrCubeScopeMissing": "Failed to get the Cube context when creating detailing visualizer",
-    "ErrDetailingViewDataSource": "Failed to prepare data source for the Cube detailing visualizer \"%s\"",
-    "ErrDetailingViewExecution": "Error while executing the Cube detailing visualizer \"%s\"",
-    "ErrDetailingViewInitialization": "Error while initialization of the Cube detailing visualizer \"%s\"",
-    "ManagerBrowse": "Table",
-    "ManagerStatistics": "Statistics",
-    "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" visualizer configuration of the Cube detailing"
-  },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
     "ErrOrderNumberDim": "Incorrect dimension order numbers",
@@ -3781,6 +3767,11 @@
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
     "VendorDesc": "Multidimensional display (Pivot table and Pivot chart)"
+  },
+  "Viewers/Detailing/Detailing": {
+    "DetailingProcessCaption": "\"%s\" detailing by cell [%d, %d]",
+    "ManagerBrowse": "Table",
+    "ManagerStatistics": "Statistics"
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Component",

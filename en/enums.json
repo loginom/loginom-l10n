@@ -34,7 +34,7 @@
     }
   },
   "Common/WSDL/WSDL": {
-    "HttpVerb": {
+    "HTTPVerb": {
       "$Caption": "HTTP Method",
       "GET": "GET",
       "POST": "POST"
@@ -954,8 +954,6 @@
     },
     "DataSourceTypeEx": {
       "$Caption": "Extended Data Set Type",
-      "Teach": "",
-      "Test": "",
       "All": "All"
     },
     "DataStatus": {
@@ -1446,7 +1444,6 @@
     },
     "ChartError": {
       "$Caption": "Chart Error",
-      "Valid": "",
       "DateTimeWarning": "Time data on the real axis",
       "NoData": "No data to display",
       "InValidColumn": "Field type does not match",
@@ -1574,14 +1571,6 @@
       "Rows": "In rows"
     }
   },
-  "Viewers/Cube/CubeDetailing": {
-    "CubeDetailingType": {
-      "$Caption": "Detailing Type",
-      "Browse": "Table",
-      "Form": "Form",
-      "Statistics": "Statistics"
-    }
-  },
   "Viewers/Cube/CubeDimensions": {
     "CubeDimensionFilterType": {
       "$Caption": "Filter Selection Mode",
@@ -1671,6 +1660,14 @@
       "CompareWithPrevByCol": "Diference from previous by column",
       "CumulativeSumByRow": "Cumulative sum by row",
       "CumulativeSumByCol": "Cumulative sum by column"
+    }
+  },
+  "Viewers/Detailing/Detailing": {
+    "DetailingType": {
+      "$Caption": "Detailing Type",
+      "Browse": "Table",
+      "Form": "Form",
+      "Statistics": "Statistics"
     }
   },
   "Viewers/LinRegressReport/LinRegressReportCommon": {

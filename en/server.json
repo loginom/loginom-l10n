@@ -798,7 +798,7 @@
     "DocIDColumn": "Document ID",
     "ErrCharsetForCodePageNotFound": "No supported XML character set found for code page %d",
     "ErrExtractXML": "Error extracting XML from row %d of the input data set:\n  Error code: %d\n  Message: %s",
-    "ErrExtractXMLInitError": "Error initializing Extract XML: %s",
+    "ErrExtractXMLInitError": "Error initializing Extract XML:\n  %s",
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputFieldNotSelected": "You must specify containing XML field",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",

@@ -798,7 +798,7 @@
     "DocIDColumn": "Идентификатор документа",
     "ErrCharsetForCodePageNotFound": "Не найден поддерживаемый набор символов XML для кодовой страницы %d",
     "ErrExtractXML": "Ошибка при извлечении XML из строки %d входного набора:\n  Код ошибки: %d\n  Сообщение: %s",
-    "ErrExtractXMLInitError": "Ошибка инициализации Извлечения XML: %s",
+    "ErrExtractXMLInitError": "Ошибка инициализации Извлечения XML:\n  %s",
     "ErrImportNotConfigured": "Дерево импорта не настроено",
     "ErrInputFieldNotSelected": "Необходимо задать поле, содержащее XML",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика.",

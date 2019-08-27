@@ -128,7 +128,7 @@
       "Text": "Text",
       "CData": "CDATA",
       "ProcessingInstruction": "Xml parser instruction",
-      "Comment": "Comment"
+      "Comment": "Comments"
     },
     "XMLStrTransformResult": {
       "$Caption": "Xml String to BG Types and Vice Versa Transformation Result",

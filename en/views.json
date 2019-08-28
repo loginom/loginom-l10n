@@ -650,6 +650,53 @@
       "tooltip": "Save package as..."
     }
   },
+  "app/PackageVariablesForm": {
+    "btnAdd": {
+      "tooltip": "Add..."
+    },
+    "btnDelete": {
+      "tooltip": "Delete"
+    },
+    "btnDeleteAll": {
+      "tooltip": "Delete all..."
+    },
+    "btnEdit": {
+      "tooltip": "Edit..."
+    },
+    "btnMoveDown": {
+      "tooltip": "Move down"
+    },
+    "btnMoveUp": {
+      "tooltip": "Move up"
+    },
+    "btnRestoreSettings": {
+      "tooltip": "Undo all changes"
+    },
+    "colDelete": {
+      "tooltip": "Delete all..."
+    },
+    "colDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colDisplayName": {
+      "text": "Caption"
+    },
+    "colHidden": {
+      "text": "Hidden"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colReadonly": {
+      "text": "Read-only"
+    },
+    "colValue": {
+      "text": "Value"
+    },
+    "edtFilter": {
+      "emptyText": "Filter"
+    }
+  },
   "app/SelectBaseVendorForm": {
     "btnApply": {
       "text": "Apply"
@@ -3537,6 +3584,9 @@
     }
   },
   "viewers/cube/CasesTunePanel": {
+    "btnAdd": {
+      "tooltip": "Add measure..."
+    },
     "btnAddCalc": {
       "tooltip": "Add calculated measure..."
     },
@@ -3551,6 +3601,9 @@
     },
     "btnCollapse": {
       "tooltip": "Collapse tree"
+    },
+    "btnDelete": {
+      "tooltip": "Delete measure"
     },
     "btnDown": {
       "tooltip": "Move down"
@@ -3596,13 +3649,13 @@
       "tooltip": "Add calculated measure..."
     },
     "btnCaseCaption": {
-      "text": "Facts"
+      "text": "Measures"
     },
     "btnChart": {
       "tooltip": "Chart"
     },
     "btnChartCase": {
-      "text": "Fact",
+      "text": "Measure",
       "tooltip": "Displayed measure"
     },
     "btnChartRestrictions": {
@@ -3772,6 +3825,12 @@
   },
   "viewers/cube/EmbeddedBrowseForm": {
     "mniGoToLine": {
+      "tooltip": "Go to row..."
+    }
+  },
+  "viewers/detailing/EmbeddedBrowseForm": {
+    "mniGoToLine": {
+      "text": "Go to row...",
       "tooltip": "Go to row..."
     }
   },
@@ -4204,7 +4263,7 @@
       "tooltip": "Configure list of allowed variable values..."
     },
     "btnEditMappingColumn": {
-      "tooltip": "Configure..."
+      "tooltip": "Edit..."
     },
     "btnGetSourceColumns": {
       "tooltip": "Get list"
@@ -4214,6 +4273,9 @@
     },
     "btnMoveMappingColumnUp": {
       "tooltip": "Move up"
+    },
+    "btnProduceType": {
+      "tooltip": "Derived columns creation type"
     },
     "btnRemoveMappingColumnSelected": {
       "tooltip": "Delete selected"

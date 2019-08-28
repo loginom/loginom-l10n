@@ -782,6 +782,7 @@
     "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" node for which inheritance is forbidden",
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
+    "ErrPortNotConfigurable": "Configuring this port is not supported",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Reference node not found",
     "ErrReferencedNodeNotSpecified": "No reference to node specified",
@@ -1217,6 +1218,7 @@
     "ErrNoConditionVariable": "No variable to check the loop termination condition",
     "ErrParallelProcessingError": "Error occurred while parallel loop processing",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Posttested loop does not support parallel processing",
+    "ErrPortNotConfigurable": "Configuring this port is not supported",
     "ErrSocketIsNotInputDataSourceSocket": "\"%s\" port is not input port containing data set",
     "ErrSocketNotConfigured": "Port not configured",
     "ErrUnsupportedInputSocketType": "Unsupported \"%s\" port type",
@@ -1622,6 +1624,8 @@
   },
   "Embedded/EmbeddedMain": {
     "ErrOpenURL": "Failed to go to the following address: %s",
+    "LocalStorageLoadFailed": "Local Storage load failed",
+    "LocalStorageSaveFailed": "Local Storage save failed",
     "UnknownException": "Unknown Exception"
   },
   "exports/database/DBExport": {
@@ -1791,7 +1795,7 @@
   "imports/native/ImportNative": {
     "ErrFileFormat": "Not Loginom Data file",
     "ErrSignature": "Signature mismatch",
-    "ErrSystemUnsupported": "Decimal not supported",
+    "ErrSystemUnsupported": "Bitness not supported",
     "ErrVersion": "Incorrect version",
     "WarnCompatibilityMode": "File was opened in compatibility mode"
   },
@@ -2987,6 +2991,7 @@
     "ErrPackageNameInvalidCharacter": "\"%s\" package name contains the invalid \"%s\" character",
     "ErrPackageNameInvalidFirstCharacter": "\"%s\" package name starts with the invalid \"%s\" character",
     "ErrPackageWithNameLinkAlreadyExists": "Link to the package with \"%s\" name already exists",
+    "ErrVariableNotFound": "Variable under \"%s\" name not found",
     "ModelUnitDisplayNameDefault": "Module"
   },
   "Libraries/Model/ModelPackageContext": {
@@ -3623,6 +3628,7 @@
     "Reports": "Reports",
     "ServiceInputPorts": "Service input ports",
     "ServiceOutputPorts": "Service output ports",
+    "Variables": "Variables",
     "Vendors": "Components",
     "WorkFlow": "Workflow"
   },
@@ -3857,6 +3863,8 @@
     "PrecisionRecallChartXLabel": "TPR (Recall)",
     "PrecisionRecallChartYLabel": "PPV (Precision)",
     "ResponseChartTitle": "Response Chart",
+    "ResponseChartXLabel": "Bin",
+    "ResponseChartYLabel": "Response, %",
     "ResponseCumChartTitle": "Response Chart (Cumulative)",
     "ResponseCumChartXLabel": "Percentile",
     "ResponseCumChartYLabel": "% events",

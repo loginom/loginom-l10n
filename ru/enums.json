@@ -1467,7 +1467,7 @@
       "$Caption": "Тип оси",
       "Linear": "Линейная",
       "Logarithmic": "Логарифмическая",
-      "Datetime": "Дата-время",
+      "Datetime": "Дата/Время",
       "Category": "Категории"
     },
     "ChartError": {

@@ -1,4 +1,17 @@
 {
+  "Common/CalcFunctions/FuncDesc": {
+    "CalcFuncCategory": {
+      "$Caption": "Function Category",
+      "Financical": "Financial",
+      "DateTime": "Date/Time",
+      "Mathematic": "Math",
+      "Statistic": "Statistical",
+      "Logic": "Logical",
+      "String": "Text",
+      "Other": "Other",
+      "Model": "Models"
+    }
+  },
   "Common/CertList/CertList": {
     "CertStoreCollection": {
       "$Caption": "Certificate Store Collections",
@@ -914,6 +927,9 @@
       "Last": "Last",
       "NullCount": "Null count"
     },
+    "ApplicationMode": {
+      "$Caption": "Application Mode"
+    },
     "BoundMode": {
       "$Caption": "Bound Ownership",
       "LowerInclusive": "Lower bound inclusive",
@@ -1439,7 +1455,7 @@
       "$Caption": "Axis Type",
       "Linear": "Linear",
       "Logarithmic": "Logarithmic",
-      "Datetime": "Date-time",
+      "Datetime": "Date/Time",
       "Category": "Categories"
     },
     "ChartError": {

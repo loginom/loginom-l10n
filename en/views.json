@@ -2030,7 +2030,7 @@
       "boxLabel": "Configured information base"
     },
     "rbServer": {
-      "boxLabel": "On 1C: Enterprise  server"
+      "boxLabel": "On 1C:Enterprise  server"
     },
     "txtDBCatalog": {
       "fieldLabel": "Database directory"
@@ -2753,7 +2753,7 @@
       "fieldLabel": "Connection"
     },
     "frmOneC8QueryImport": {
-      "title": "Data Query from 1C: Enterprise 8"
+      "title": "Data Query from 1C:Enterprise 8"
     }
   },
   "imports/textfile/ImportTextFileParamsWizard": {
@@ -4195,7 +4195,7 @@
       "text": "Delete All Links"
     },
     "btnCreateMapping": {
-      "tooltip": "Create output..."
+      "tooltip": "Create output"
     },
     "btnCreateMappingToAll": {
       "tooltip": "Create outputs for all inputs..."

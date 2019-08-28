@@ -1708,7 +1708,7 @@
   },
   "imports/1cv8/1Cv8QueryImportVendor": {
     "VendorCaption": "1C Query",
-    "VendorDesc": "1C: Enterprise 8 - Query"
+    "VendorDesc": "1C:Enterprise 8 - Query"
   },
   "imports/database/DBImport": {
     "ErrExecQuery": "Error executing DB query.",
@@ -1839,7 +1839,7 @@
   },
   "Libraries/1CConnection/1Cv8ConnectionVendor": {
     "1Cv8ConnectionVendorCaption": "1C:Enterprise 8",
-    "1Cv8ConnectionVendorDesc": "Database - 1C: Enterprise 8"
+    "1Cv8ConnectionVendorDesc": "Database - 1C:Enterprise 8"
   },
   "Libraries/bgdbrtl/DB": {
     "ComponentTip": "%s [%s]",

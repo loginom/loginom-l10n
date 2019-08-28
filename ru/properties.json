@@ -8,6 +8,14 @@
       "Name": "Имя"
     }
   },
+  "Common/WSDL/Processor/WSDLRequestDebug": {
+    "WSDLRequestDebug": {
+      "DumpRequest": "Сохранять текст запроса на диск",
+      "DumpRequestFolder": "Папка на диске для сохранения запросов",
+      "ResponseStub": "Имя файла, подставляемого в качестве ответа",
+      "UseResponseStub": "Имитировать запрос с ответом в файле"
+    }
+  },
   "Common/WSDL/WSDLClientAuth": {
     "WSDLAuthorization": {
       "Mode": "Тип авторизации",
@@ -20,14 +28,6 @@
     },
     "WSDLOAuthCredentials": {
       "Token": "Токен OAuth"
-    }
-  },
-  "Common/WSDL/WSDLRequestDebug": {
-    "WSDLRequestDebug": {
-      "DumpRequest": "Сохранять текст запроса на диск",
-      "DumpRequestFolder": "Папка на диске для сохранения запросов",
-      "ResponseStub": "Имя файла, подставляемого в качестве ответа",
-      "UseResponseStub": "Имитировать запрос с ответом в файле"
     }
   },
   "components/assnrules": {
@@ -581,12 +581,12 @@
       "UserName": "Логин"
     }
   },
-  "Libraries/bgdbrtl/MyUniDACDB": {
+  "Libraries/bgdbrtl/UniDAC/MyUniDACDB": {
     "MyUniDACDatabaseConfigurator": {
       "WaitTimeoutTransaction": "Время жизни на время транзакции при неактивности"
     }
   },
-  "Libraries/bgdbrtl/SQLiteUniDACDB": {
+  "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
     "SQLiteFunctionDefs": {
       "CaseChangeUnicode": "lower, upper для UNICODE",
       "LikeMode": "Режим работы LIKE",
@@ -720,24 +720,7 @@
       "Disabled": "Отключен"
     }
   },
-  "Libraries/Model/DeductorServerSettings": {
-    "DeductorServerSettings": {
-      "PackagePoolSize": "Размер пула пакетов",
-      "SessionBackupDirectory": "Директория, содержащая резервные копии сессий",
-      "StopTimeout": "Таймаут остановки сервера",
-      "UserStorageDirectory": "Директория, содержащая личные папки пользователей"
-    },
-    "SocketDeductorServerSettings": {
-      "Bind": "IP адрес",
-      "PingPeriod": "Период проверки соединения с клиентом",
-      "Port": "TCP порт",
-      "SSLCertificateFile": "Имя файла сертификата",
-      "SSLPrivateKeyFile": "Имя файла закрытого ключа",
-      "WSPort": "WebSocket порт",
-      "WSSPort": "WebSocket SSL/TLS порт"
-    }
-  },
-  "Libraries/Model/ModelConnectionComponentEngine": {
+  "Libraries/Model/Connections/ModelConnectionComponentEngine": {
     "ModelConnectionComponentEngine": {
       "Connection": "Подключение"
     }
@@ -815,7 +798,24 @@
       "XSLTOn": "Преобразовать WSDL-описание с помощью XSLT"
     }
   },
-  "Viewers/Chart/ChartColumnInfo": {
+  "Studio/DeductorServerSettings": {
+    "DeductorServerSettings": {
+      "PackagePoolSize": "Размер пула пакетов",
+      "SessionBackupDirectory": "Директория, содержащая резервные копии сессий",
+      "StopTimeout": "Таймаут остановки сервера",
+      "UserStorageDirectory": "Директория, содержащая личные папки пользователей"
+    },
+    "SocketDeductorServerSettings": {
+      "Bind": "IP адрес",
+      "PingPeriod": "Период проверки соединения с клиентом",
+      "Port": "TCP порт",
+      "SSLCertificateFile": "Имя файла сертификата",
+      "SSLPrivateKeyFile": "Имя файла закрытого ключа",
+      "WSPort": "WebSocket порт",
+      "WSSPort": "WebSocket SSL/TLS порт"
+    }
+  },
+  "Viewers/Chart/Bridge/ChartColumnInfo": {
     "ChartColumnInfo": {
       "DisplayName": "Отображаемое имя колонки",
       "Name": "Имя колонки"

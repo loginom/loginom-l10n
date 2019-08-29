@@ -1143,7 +1143,7 @@
   },
   "filtersview/FiltersView": {
     "DeleteAllPrompt": "Do you really want to delete all conditions from list?",
-    "DeleteAllTitle": "Delete all Сonditions"
+    "DeleteAllTitle": "Delete all Conditions"
   },
   "highcharts/Extensions": {
     "HighchartsAreNotLoaded": "To connect extensions you must first load Highchats"

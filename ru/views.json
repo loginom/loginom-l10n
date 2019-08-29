@@ -3836,6 +3836,11 @@
       "tooltip": "Перейти к строке..."
     }
   },
+  "viewers/detailing/StubView": {
+    "lblStubView": {
+      "text": "Выделите ячейку для визуализации ее данных"
+    }
+  },
   "viewers/regression/RegressionReportView": {
     "btnFormat": {
       "text": "Формат",

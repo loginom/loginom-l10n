@@ -446,15 +446,15 @@
   },
   "components/filterdata": {
     "FilterRelationType": {
-      "$Caption": "Relationship Type",
+      "$Caption": "Relation type",
       "Less": "<",
       "LessOrEqual": "<=",
       "Greater": ">",
       "GreaterOrEqual": ">=",
       "Equal": "=",
       "NotEqual": "<>",
-      "IsNull": "Null",
-      "IsNotNull": "Not null",
+      "IsNull": "null",
+      "IsNotNull": "not null",
       "Between": "within the range",
       "NotBetween": "out of the range",
       "In": "listed",
@@ -465,7 +465,7 @@
       "NotStartingWith": "not starting with",
       "EndingWith": "ending with",
       "NotEndingWith": "not ending with",
-      "FirstPeriod": "First",
+      "FirstPeriod": "first",
       "NotFirstPeriod": "not first",
       "LastPeriod": "last",
       "NotLastPeriod": "not last",
@@ -1085,8 +1085,8 @@
       "GreaterOrEqual": ">=",
       "Equal": "=",
       "NotEqual": "<>",
-      "IsNull": "Null",
-      "IsNotNull": "Not null"
+      "IsNull": "null",
+      "IsNotNull": "not null"
     },
     "RoundMode": {
       "$Caption": "Round Towards Zero",
@@ -1615,7 +1615,7 @@
   },
   "Viewers/Cube/CubeFilter": {
     "CubeCaseFilterRelation": {
-      "$Caption": "Filter Condition",
+      "$Caption": "Filter Relation",
       "TopN": "first N",
       "BottomN": "last N",
       "PartOfTotal": "part of total",

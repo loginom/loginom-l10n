@@ -1525,7 +1525,7 @@
       "fieldLabel": "Field"
     },
     "cbbRelationType": {
-      "fieldLabel": "Condition"
+      "fieldLabel": "Relation"
     },
     "chkCaseSensitiveSimple": {
       "fieldLabel": "Case-sensitive"
@@ -2499,7 +2499,7 @@
       "fieldLabel": "Field"
     },
     "cbbRelationType": {
-      "fieldLabel": "Condition"
+      "fieldLabel": "Relation"
     },
     "pnlBaseDate": {
       "title": "Base Date"

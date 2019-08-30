@@ -1,1 +1,46 @@
-{ }
+{
+  "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
+    "ConnectedToServer": "Connecting to server {0}",
+    "ErrConnectionFailure": "Server connection lost {0}",
+    "PendingUnloadAppDomain": "Service shutdown is planned, application domain name: \"{0}\\\", identifier: {1}"
+  },
+  "DeductorIntegrationServerCore/DisServiceHostFactory": {
+    "StartingService": "Service start, version: {0}, application domain name: \"{1}\\\", identifier: {2}",
+    "StoppingService": "Service stop, application domain name: \"{0}\\\", identifier: {1}"
+  },
+  "DeductorIntegrationServerCore/RestHelpPageGenerator": {
+    "Body": "Body",
+    "Description": "Description",
+    "Example": "Example",
+    "Format": "Format",
+    "HttpMethod": "HTTP Method:",
+    "Json": "Json",
+    "JsonRequestExampleDesc": "The following is an example Json request body:",
+    "JsonRequestSchemaDesc": "The following is the request Json Schema:",
+    "JsonResponseExampleDesc": "The following is an example Json response body:",
+    "JsonResponseSchemaDesc": "The following is the response Json Schema:",
+    "MainPageDesc": "This page describes the endpoints of this web service.",
+    "MainPageTitle": "Endpoints at {0}",
+    "MessageDirection": "Message direction",
+    "Method": "Method",
+    "NotAvailable": "Unknown",
+    "OperationDesc": "Operations at {0}",
+    "OperationPageTitle": "Reference for {0}",
+    "Request": "Request",
+    "RequestBodyIsEmpty": "The request body is empty.",
+    "Response": "Response",
+    "Schema": "Schema",
+    "SericeContractPageDesc": "This page describes the service oparations at this endpoint.",
+    "SericeContractPageTitle": "Operations at {0}",
+    "Uri": "Uri",
+    "Url": "Url:",
+    "UrlExample": "Url example:",
+    "UrlFormat": "URL Format:"
+  },
+  "DeductorIntegrationServerCore/ServiceHelper": {
+    "ErrProcessingRequestCompleted": "Processing completed successfully"
+  },
+  "DeductorIntegrationServerCore/ServiceTypeBuilder": {
+    "NoPublishedPackagesServiceDocumentation": "No packages have been published at this time."
+  }
+}

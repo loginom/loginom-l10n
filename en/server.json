@@ -650,7 +650,7 @@
     "ErrIncorrectConditionConfiguration": "The condition list contains errors",
     "ErrInvalidAggregationType": "\"%s\" aggregation function does not apply to the specified field",
     "ErrInvalidCompareValue": "\"%s\" value  is not compatible with \"%s\" data type",
-    "ErrInvalidRelationType": "\"%s\" relationship type is not applicable to the specified field and aggregation function",
+    "ErrInvalidRelationType": "\"%s\" relation type is not applicable to the specified field and aggregation function",
     "ErrNoConditionBranchItems": "No condition branches specified",
     "ErrNoConditionItems": "Condition branch cannot be empty"
   },
@@ -845,7 +845,7 @@
     "ErrIncorrectCompareUpperBound": "The entered upper bound value does not match the filtered column type",
     "ErrIncorrectCompareValue": "The entered value does not match the filtered column type",
     "ErrIncorrectCompareValueList": "List values do not match the filtered column type",
-    "ErrIncorrectRelationType": "Relationship type does not match the filtered column type",
+    "ErrIncorrectRelationType": "Relation type does not match the filtered column type",
     "ErrNoConditions": "No filtering conditions",
     "ErrRowNumberNotSupported": "Row numerators not supported",
     "ErrUnknownDataType": "No data type specified",
@@ -2129,7 +2129,7 @@
     "ErrColumnCantBeContinuous": "\"%s\" column of \"%s\" type cannot be continuous"
   },
   "Libraries/bgrtl/FieldInfoLinks": {
-    "ErrLinkedFieldInfoNotFound": "Field under %s name not found",
+    "ErrLinkedFieldInfoNotFound": "Field with %s name not found",
     "ErrLinkedFieldInfoNotSpecified": "No link to column or variable set",
     "ErrLinkedFieldInfoTypesMismatch": "%s field type is not compatible with the source field type"
   },
@@ -2200,7 +2200,7 @@
   },
   "Libraries/bgrtl/HTML": {
     "ErrItemAlreadyExists": "CSS item with \"%s\" name already exists",
-    "ErrItemByNameNotFound": "CSS element under \"%s\" name not found",
+    "ErrItemByNameNotFound": "CSS element with \"%s\" name not found",
     "ExcelSheetDefaultName": "Sheet1"
   },
   "Libraries/bgrtl/InterfacesScope": {
@@ -2464,7 +2464,7 @@
     "VariableMetaDesc": "Variable"
   },
   "Libraries/bgrtl/VariableInfoLinks": {
-    "ErrLinkedVariableInfoNotFound": "Variable under %s name not found",
+    "ErrLinkedVariableInfoNotFound": "Variable with %s name not found",
     "ErrLinkedVariableInfoNotSpecified": "No reference to variable specified",
     "ErrLinkedVariableInfoTypesMismatch": "%s variable type is not compatible with the source variable type"
   },
@@ -2991,7 +2991,7 @@
     "ErrPackageNameInvalidCharacter": "\"%s\" package name contains the invalid \"%s\" character",
     "ErrPackageNameInvalidFirstCharacter": "\"%s\" package name starts with the invalid \"%s\" character",
     "ErrPackageWithNameLinkAlreadyExists": "Link to the package with \"%s\" name already exists",
-    "ErrVariableNotFound": "Variable under \"%s\" name not found",
+    "ErrVariableNotFound": "Variable with \"%s\" name not found",
     "ModelUnitDisplayNameDefault": "Module"
   },
   "Libraries/Model/ModelPackageContext": {
@@ -3088,7 +3088,7 @@
     "ErrSocketNotConfigured": "Port not configured",
     "ErrUnableToLoadNodeConfig": "Failed to load the node configuration",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Number of names and variables values must be the same",
-    "ErrVariableNotFound": "Variable under \"%s\" name not found",
+    "ErrVariableNotFound": "Variable with \"%s\" name not found",
     "ErrVendorMalfunction": "\"%s\" node component malfunctioned",
     "ExplodeGenericModel": "Expanded \"%s\" supernode",
     "Left": "Left",
@@ -3743,7 +3743,7 @@
     "HTMLTitle": "Cross Table"
   },
   "Viewers/Cube/CubeFilter": {
-    "ErrBadRelation": "Condition not supported by aggregation"
+    "ErrBadRelation": "Relation not supported by aggregation"
   },
   "Viewers/Cube/CubeHeaders": {
     "CubeTotalValue": "Total:",

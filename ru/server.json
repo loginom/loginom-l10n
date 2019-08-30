@@ -3615,15 +3615,6 @@
     "LogDeleteDirectory": "Удалена общая директория %s",
     "SharedDirectoryMetaDesc": "Общая директория"
   },
-  "Studio/SocketDeductorServerSettings": {
-    "Bind": "IP адрес",
-    "PingPeriod": "Период проверки соединения с клиентом",
-    "Port": "TCP порт",
-    "SSLCertificateFile": "Имя файла сертификата",
-    "SSLPrivateKeyFile": "Имя файла закрытого ключа",
-    "WSPort": "WebSocket порт",
-    "WSSPort": "WebSocket SSL/TLS порт"
-  },
   "Studio/SolutionTree": {
     "Connection": "Подключение",
     "Connections": "Подключения",

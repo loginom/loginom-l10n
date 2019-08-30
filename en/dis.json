@@ -13,7 +13,7 @@
     "Description": "Description",
     "Example": "Example",
     "Format": "Format",
-    "HttpMethod": "HTTP Method:",
+    "HttpMethod": "HTTP Method: ",
     "Json": "Json",
     "JsonRequestExampleDesc": "The following is an example Json request body:",
     "JsonRequestSchemaDesc": "The following is the request Json Schema:",
@@ -33,14 +33,14 @@
     "SericeContractPageDesc": "This page describes the service oparations at this endpoint.",
     "SericeContractPageTitle": "Operations at {0}",
     "Uri": "Uri",
-    "Url": "Url:",
-    "UrlExample": "Url example:",
-    "UrlFormat": "URL Format:"
+    "Url": "Url: ",
+    "UrlExample": "Url example: ",
+    "UrlFormat": "URL Format: "
   },
   "DeductorIntegrationServerCore/ServiceHelper": {
     "ErrProcessingRequestCompleted": "Processing completed successfully"
   },
   "DeductorIntegrationServerCore/ServiceTypeBuilder": {
-    "NoPublishedPackagesServiceDocumentation": "No packages have been published at this time."
+    "NoPublishedPackagesServiceDocumentation": "No packages have been published at this time. "
   }
 }

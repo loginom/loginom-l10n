@@ -234,12 +234,12 @@
   "components/filterdata": {
     "FilterColumnItem": {
       "CaseSensitive": "Case-sensitive",
-      "CompareValue": "Compare values",
+      "CompareValue": "Compare value",
       "CompareValueList": "List of values",
       "CompareValueLowerBound": "Lower bound",
       "CompareValuePeriodBaseDate": "Base interval date",
       "CompareValuePeriodCount": "Time period value",
-      "CompareValuePeriodType": "Time period type",
+      "CompareValuePeriodType": "Time span type",
       "CompareValueUpperBound": "Upper bound",
       "DataType": "Data type",
       "Name": "Name",

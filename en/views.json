@@ -1519,7 +1519,7 @@
       "text": "OR"
     },
     "cbbDatePeriodTypeSimple": {
-      "fieldLabel": "Time period type"
+      "fieldLabel": "Time span type"
     },
     "cbbField": {
       "fieldLabel": "Field"
@@ -2616,10 +2616,10 @@
       "text": "Cancel"
     },
     "cbxPeriodType": {
-      "fieldLabel": "Period type"
+      "fieldLabel": "Time span"
     },
     "frmDateValuesDialog": {
-      "title": "Select Period"
+      "title": "Select Time Span"
     },
     "pnlBaseDate": {
       "title": "Base Date"

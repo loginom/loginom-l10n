@@ -141,7 +141,7 @@
       "Text": "Text",
       "CData": "CDATA",
       "ProcessingInstruction": "Xml parser instruction",
-      "Comment": "Comments"
+      "Comment": "Comment"
     },
     "XMLStrTransformResult": {
       "$Caption": "Xml String to BG Types and Vice Versa Transformation Result",
@@ -998,7 +998,7 @@
       "Variant": "Variant"
     },
     "DatePeriodType": {
-      "$Caption": "Types of Date Periods",
+      "$Caption": "Time Span Type",
       "Day": "Day",
       "Week": "Week",
       "Month": "Month",

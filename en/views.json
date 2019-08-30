@@ -1519,7 +1519,7 @@
       "text": "OR"
     },
     "cbbDatePeriodTypeSimple": {
-      "fieldLabel": "Time span type"
+      "fieldLabel": "Time span unit"
     },
     "cbbField": {
       "fieldLabel": "Field"

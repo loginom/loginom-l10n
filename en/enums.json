@@ -998,7 +998,7 @@
       "Variant": "Variant"
     },
     "DatePeriodType": {
-      "$Caption": "Time Span Type",
+      "$Caption": "Time Span Unit",
       "Day": "Day",
       "Week": "Week",
       "Month": "Month",

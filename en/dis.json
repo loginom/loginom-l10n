@@ -1,6 +1,9 @@
 {
   "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
+    "AddedPublishedPackage": "The published package \"{1}\" of the version \"{2}\" has been added on the server {0}",
+    "ChangedPublishedPackage": "The published package \"{1}\" of version \"{2}\" has been changed on server {0}",
     "ConnectedToServer": "Connecting to server {0}",
+    "DeletedPublishedPackage": "The published package \"{1}\" of version \"{2}\" was deleted on server {0}",
     "ErrConnectionFailure": "Server connection lost {0}",
     "PendingUnloadAppDomain": "Service shutdown is planned, application domain name: \"{0}\", identifier: {1}"
   },

@@ -239,7 +239,7 @@
       "CompareValueLowerBound": "Lower bound",
       "CompareValuePeriodBaseDate": "Base interval date",
       "CompareValuePeriodCount": "Time period value",
-      "CompareValuePeriodType": "Time span type",
+      "CompareValuePeriodType": "Time span unit",
       "CompareValueUpperBound": "Upper bound",
       "DataType": "Data type",
       "Name": "Name",

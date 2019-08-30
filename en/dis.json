@@ -2,11 +2,11 @@
   "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
     "ConnectedToServer": "Connecting to server {0}",
     "ErrConnectionFailure": "Server connection lost {0}",
-    "PendingUnloadAppDomain": "Service shutdown is planned, application domain name: \"{0}\\\", identifier: {1}"
+    "PendingUnloadAppDomain": "Service shutdown is planned, application domain name: \"{0}\", identifier: {1}"
   },
   "DeductorIntegrationServerCore/DisServiceHostFactory": {
-    "StartingService": "Service start, version: {0}, application domain name: \"{1}\\\", identifier: {2}",
-    "StoppingService": "Service stop, application domain name: \"{0}\\\", identifier: {1}"
+    "StartingService": "Service start, version: {0}, application domain name: \"{1}\", identifier: {2}",
+    "StoppingService": "Service stop, application domain name: \"{0}\", identifier: {1}"
   },
   "DeductorIntegrationServerCore/RestHelpPageGenerator": {
     "Body": "Body",

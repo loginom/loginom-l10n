@@ -9,33 +9,33 @@
     "ErrSqlCommandOrTableNotSpecified": "Элемент database должен содержать атрибут sqlCommand или table"
   },
   "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
-    "AddedPublishedPackage": "На сервере {0} добавлен опубликованный пакет \"{1}\\\" версии \\\"{2}\\\"",
-    "ChangedPublishedPackage": "На сервере {0} изменен опубликованный пакет \"{1}\\\" версии \\\"{2}\\\"",
+    "AddedPublishedPackage": "На сервере {0} добавлен опубликованный пакет \"{1}\" версии \"{2}\"",
+    "ChangedPublishedPackage": "На сервере {0} изменен опубликованный пакет \"{1}\" версии \"{2}\"",
     "ChangedPublishedPackages": "На сервере {0} изменен список опубликованных пакетов",
     "ConnectedToServer": "Выполнено подключение к серверу {0}",
-    "DeletedPublishedPackage": "На сервере {0} удален опубликованный пакет \"{1}\\\" версии \\\"{2}\\\"",
-    "ErrCannotAddPublishedPackage": "Пакет \"{1}\\\" версии \\\"{2}\\\", принадлежащий серверу {0}, не может быть опубликован: {3}",
+    "DeletedPublishedPackage": "На сервере {0} удален опубликованный пакет \"{1}\" версии \"{2}\"",
+    "ErrCannotAddPublishedPackage": "Пакет \"{1}\" версии \"{2}\", принадлежащий серверу {0}, не может быть опубликован: {3}",
     "ErrCannotConnectToServer": "Не удалось подключиться к серверу {0}",
     "ErrConnectionFailure": "Потеряно соединение с сервером {0}",
     "ErrDifferentPackagesWithSameNameAndVersion": "пакет отличается от уже опубликованного пакета с тем же именем и версией",
-    "ErrDuplicateNodeNames": "пакет содержит более одного узла с именем \"{0}\\\"",
-    "ErrEmptyNodeName": "не задано имя узла с меткой \"{0}\\\" и идентификатором {{{1}}}",
+    "ErrDuplicateNodeNames": "пакет содержит более одного узла с именем \"{0}\"",
+    "ErrEmptyNodeName": "не задано имя узла с меткой \"{0}\" и идентификатором {{{1}}}",
     "ErrExecuteNodeConnectionFailure": "Во время обработки запроса было потеряно соединение с сервером {0}",
-    "ErrInvalidPackageNamespace": "\"{0}\\\" не является допустимым пространством имён",
+    "ErrInvalidPackageNamespace": "\"{0}\" не является допустимым пространством имён",
     "ErrLoadPackageDefsError": "Ошибка загрузки пакетов для сервера {0}",
-    "ErrNoApplicableDeductorServers": "Не найдено ни одного сервера, на котором доступен пакет \"{0}\\\" версии \\\"{1}\\\"",
-    "ErrNodeNameAlreadyExistsInDifferentPackage": "узел с именем \"{0}\\\" уже существует в пакете \\\"{1}\\\" версии \\\"{2}\\\"",
-    "ErrNoWorkingApplicableDeductorServers": "Нет ни одного работающего сервера, на котором доступен пакет \"{0}\\\" версии \\\"{1}\\\"",
+    "ErrNoApplicableDeductorServers": "Не найдено ни одного сервера, на котором доступен пакет \"{0}\" версии \"{1}\"",
+    "ErrNodeNameAlreadyExistsInDifferentPackage": "узел с именем \"{0}\" уже существует в пакете \"{1}\" версии \"{2}\"",
+    "ErrNoWorkingApplicableDeductorServers": "Нет ни одного работающего сервера, на котором доступен пакет \"{0}\" версии \"{1}\"",
     "ErrPackageHasNoPublishedNodes": "пакет не содержит ни одного опубликованного узла",
     "ErrSavePackageDefsError": "Ошибка сохранения пакетов для сервера {0}",
     "ErrServerDisconnectError": "Ошибка отключения от сервера {0}",
     "ErrUpdatePackageDefsError": "Ошибка обновления пакетов для сервера {0}",
-    "PendingUnloadAppDomain": "Запланирована остановка сервиса, имя домена приложения: \"{0}\\\", идентификатор: {1}"
+    "PendingUnloadAppDomain": "Запланирована остановка сервиса, имя домена приложения: \"{0}\", идентификатор: {1}"
   },
   "DeductorIntegrationServerCore/DisServiceHostFactory": {
     "ErrInitializationException": "При инициализации сервиса возникло исключение",
-    "StartingService": "Запуск сервиса, версия: {0}, имя домена приложения: \"{1}\\\", идентификатор: {2}",
-    "StoppingService": "Остановка сервиса, имя домена приложения: \"{0}\\\", идентификатор: {1}"
+    "StartingService": "Запуск сервиса, версия: {0}, имя домена приложения: \"{1}\", идентификатор: {2}",
+    "StoppingService": "Остановка сервиса, имя домена приложения: \"{0}\", идентификатор: {1}"
   },
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
     "ErrInputNeedsToBeWrappedInAnObject": "Входные параметры должны быть обёрнуты в объект",
@@ -82,11 +82,11 @@
     "ErrInvalidColumnCount": "Недопустимое количество столбцов в матрице значений: {0}; необходимо: {1}",
     "ErrInvalidElementCount": "Недопустимое количество элементов в наборе данных: {0}; необходимо: {1}",
     "ErrInvalidRowCount": "Недопустимое количество строк в матрице значений переменных: {0}",
-    "ErrMissingRequiredParameter": "Отсутствует обязательный параметр \"{0}\\\"",
+    "ErrMissingRequiredParameter": "Отсутствует обязательный параметр \"{0}\"",
     "ErrProcessingRequestCompleted": "Обработка завершена успешно",
     "ErrProcessingRequestException": "При обработке запроса возникло исключение",
-    "ErrUnsupportedFieldType": "Поле \"{0}\\\" содержит значение недопустимого типа {1}",
-    "ExecutePackageInfo": "Обработка пакета \"{0}\\\" версии {1}, выполнение узла \\\"{2}\\\" с идентификатором {{{3}}}"
+    "ErrUnsupportedFieldType": "Поле \"{0}\" содержит значение недопустимого типа {1}",
+    "ExecutePackageInfo": "Обработка пакета \"{0}\" версии {1}, выполнение узла \"{2}\" с идентификатором {{{3}}}"
   },
   "DeductorIntegrationServerCore/ServiceTypeBuilder": {
     "ErrNoPublishedPackages": "Не опубликовано ни одного пакета",

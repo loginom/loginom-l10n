@@ -3605,15 +3605,6 @@
     "LogDeleteDirectory": "%s shared directory deleted",
     "SharedDirectoryMetaDesc": "Shared folder"
   },
-  "Studio/SocketDeductorServerSettings": {
-    "Bind": "IP address",
-    "PingPeriod": "Client connection check period",
-    "Port": "TCP port",
-    "SSLCertificateFile": "Certificate file name",
-    "SSLPrivateKeyFile": "Private key file name",
-    "WSPort": "WebSocket port",
-    "WSSPort": "WebSocket SSL/TLS port"
-  },
   "Studio/SolutionTree": {
     "Connection": "Connection",
     "Connections": "Connections",

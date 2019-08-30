@@ -74,9 +74,9 @@
     "SericeContractPageDesc": "Данная страница описывает операции службы в этой конечной точке.",
     "SericeContractPageTitle": "Операции в {0}",
     "Uri": "Uri",
-    "Url": "Url:",
-    "UrlExample": "Пример Url:",
-    "UrlFormat": "Формат URL: "
+    "Url": "Url: ",
+    "UrlExample": "Пример Url: ",
+    "UrlFormat": "Формат Url: "
   },
   "DeductorIntegrationServerCore/ServiceHelper": {
     "ErrInvalidColumnCount": "Недопустимое количество столбцов в матрице значений: {0}; необходимо: {1}",

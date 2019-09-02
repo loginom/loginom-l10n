@@ -190,7 +190,6 @@
     "NodeVisibilityPublic": "Visibility inside all packages",
     "NodeVisibilityPublished": "Visibility inside all packages and as web service",
     "NodeVisibilityTitle": "Node Visibility",
-    "PortSubTypeUndefined": "Failed to define the port subtype",
     "RecreateBaseNodeForDerivedVendor": "Recreate base node",
     "RemoveComment": "Delete comment",
     "RemoveSelectedConfirm": "Do you really want to delete the selected nodes and links?",

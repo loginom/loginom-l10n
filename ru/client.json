@@ -191,7 +191,6 @@
     "NodeVisibilityPublic": "видимость во всех пакетах",
     "NodeVisibilityPublished": "видимость во всех пакетах и в виде веб-сервиса",
     "NodeVisibilityTitle": "Видимость узла",
-    "PortSubTypeUndefined": "Подтип порта не удалось определить",
     "RecreateBaseNodeForDerivedVendor": "Пересоздать базовый узел",
     "RemoveComment": "Удалить комментарий",
     "RemoveSelectedConfirm": "Вы действительно хотите удалить выделенные узлы и связи?",

@@ -82,14 +82,21 @@
     "ErrInvalidColumnCount": "Недопустимое количество столбцов в матрице значений: {0}; необходимо: {1}",
     "ErrInvalidElementCount": "Недопустимое количество элементов в наборе данных: {0}; необходимо: {1}",
     "ErrInvalidRowCount": "Недопустимое количество строк в матрице значений переменных: {0}",
+    "ErrMissingArrayItem": "Отсутствует элемент массива \"{0}\"",
     "ErrMissingRequiredParameter": "Отсутствует обязательный параметр \"{0}\"",
+    "ErrMissingRequiredTreeNode": "Отсутствует обязательный узел дерева \"{0}\"",
+    "ErrMissingRequiredTreeNodeFlag": "Отсутствует флаг наличия обязательного узла дерева \"{0}\"",
     "ErrProcessingRequestCompleted": "Обработка завершена успешно",
     "ErrProcessingRequestException": "При обработке запроса возникло исключение",
+    "ErrRootElementCannotBeNull": "Корневой элемент не должен быть равен null",
+    "ErrRootElementMustBeSingle": "Матрица значений должна содержать только один корневой элемент",
     "ErrUnsupportedFieldType": "Поле \"{0}\" содержит значение недопустимого типа {1}",
     "ExecutePackageInfo": "Обработка пакета \"{0}\" версии {1}, выполнение узла \"{2}\" с идентификатором {{{3}}}"
   },
   "DeductorIntegrationServerCore/ServiceTypeBuilder": {
     "ErrNoPublishedPackages": "Не опубликовано ни одного пакета",
+    "ErrRootNodeNotFound": "Не найден корневой узел дерева",
+    "ErrTreeMustHaveSingleRootNode": "Дерево не может содержать более одного корневого узла",
     "NoPublishedPackagesServiceDocumentation": "В настоящий момент не опубликовано ни одного пакета. "
   }
 }

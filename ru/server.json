@@ -694,6 +694,24 @@
     "VendorCaption": "Кросс-таблица",
     "VendorDesc": "Создание сводной таблицы из плоской"
   },
+  "components/datatotree/DataToTreeEngine": {
+    "ErrCannotSetSourceColumnForContainer": "Невозможно задать исходный столбец для узла-контейнера %s",
+    "ErrCanOnlySetIndexColumnForArray": "Невозможно задать столбец с индексом для узла %s, который не является массивом",
+    "ErrIndexColumnNotFound": "Не удалось найти столбец с индексом %s для узла %s",
+    "ErrIndexColumnTypeMismatch": "Тип индекса узла %s не совместим с типом исходного столбца %s",
+    "ErrNoColumnsForProcessing": "Не указаны столбцы для обработки",
+    "ErrRepeatedGlobalNodeIndex": "Недопустимое повторяющееся значение глобального индекса узла \"%s\": %d",
+    "ErrSourceColumnNotFound": "Не удалось найти исходный столбец %s для узла %s",
+    "ErrSourceColumnTypeMismatch": "Тип узла %s не совместим с типом исходного столбца %s"
+  },
+  "components/datatotree/DataToTreeModelComponentEngine": {
+    "InputDataSource": "Входной источник данных",
+    "OutputDataTree": "Выходное дерево"
+  },
+  "components/datatotree/DataToTreeVendor": {
+    "VendorCaption": "Таблица в дерево",
+    "VendorDesc": "Формирование дерева из таблицы данных"
+  },
   "components/datatovariables/DataToVariablesEngine": {
     "DataToVariablesNotify": "Расчет переменных",
     "ErrNoColumnsForProcessing": "Не указаны столбцы для обработки",
@@ -1488,6 +1506,23 @@
     "VendorCaption": "Сортировка",
     "VendorDesc": "Сортировка данных"
   },
+  "components/treetodata/TreeToDataEngine": {
+    "CompositeDisplayNameSeparator": "|",
+    "ComputeRowCountProcess": "Расчёт количества строк",
+    "ErrInvalidGlobalIndexDataType": "Недопустимый тип данных глобального индекса узла: %s",
+    "ErrNoDataNodeSelected": "Не выбрано ни одного узла с данными",
+    "ErrRowOutOfRange": "Номер строки %d вне диапазона [%d; %d]",
+    "GlobalIndex": "Глобальный индекс",
+    "PrepareRowIndexesProcess": "Подготовка индексов строк"
+  },
+  "components/treetodata/TreeToDataModelComponentEngine": {
+    "InputDataTree": "Входное дерево",
+    "OutputDataSource": "Выходной набор данных"
+  },
+  "components/treetodata/TreeToDataVendor": {
+    "VendorCaption": "Дерево в таблицу",
+    "VendorDesc": "Формирование таблицы данных из дерева"
+  },
   "components/ungroupdata/UngroupData": {
     "ConfidenceBandLowerDisplayName": "Нижняя граница 95% ДИ",
     "ConfidenceBandUpperDisplayName": "Верхняя граница 95% ДИ",
@@ -1922,6 +1957,17 @@
   "Libraries/bgrtl/CachedDataSet": {
     "ErrRowCountLimitReached": "Достигнут предел максимального кол-ва строк"
   },
+  "Libraries/bgrtl/CachedDataTree": {
+    "ErrCannotGetForeignKey": "Невозможно получить внешний ключ для узла с идентификатором %d: узел не является массивом",
+    "ErrCannotGetNodeExistFlag": "Невозможно получить флаг наличия узла с идентификатором %d: узел не является простым контейнером",
+    "ErrCannotGetNodeValue": "Невозможно получить значение узла с идентификатором %d: узел является контейнером",
+    "ErrCannotGetRowCount": "Невозможно получить количество строк для узла с идентификатором %d: узел не является массивом",
+    "ErrColumnIndexOutOfRange": "Номер столбца %d вне диапазона [%d; %d]",
+    "ErrInvalidNodeInfo": "Некорректное описание узла: %s",
+    "ErrRowCountLimitReached": "Достигнут предел максимального кол-ва строк",
+    "ErrRowOutOfRange": "Номер строки %d вне диапазона [%d; %d]",
+    "ErrTableIndexOutOfRange": "Номер таблицы %d вне диапазона [%d; %d]"
+  },
   "Libraries/bgrtl/Classes": {
     "CountDesc": "Количество",
     "ErrConfigApplyModeNotSupported": "Данный способ загрузки конфигурации не поддерживается",
@@ -2022,6 +2068,36 @@
   "Libraries/bgrtl/DataSetColumns": {
     "ErrDataSoureNotAssigned": "Нет ссылки на набор данных"
   },
+  "Libraries/bgrtl/DataTree": {
+    "ErrAlienNodeInfo": "Описание узла \"%s\" не принадлежит текущему дереву",
+    "ErrCannotAppendNodeBeforeParentNode": "Невозможно добавить узел \"%s\" раньше родительского узла",
+    "ErrCannotPostNodeBeforeChildNodes": "Недопустим вызов метода Post для узла \"%s\" раньше вызова Post для дочерних узлов",
+    "ErrCannotPostNodeWithoutAppend": "Недопустим вызов метода Post для узла \"%s\" без вызова Append",
+    "ErrCannotRepeatAppendNode": "Недопустим повторный вызов Append для узла \"%s\" без вызова Post",
+    "ErrCanOnlyAppendContainerOrArray": "Недопустим вызов метода Append для узла \"%s\", который не является контейнером или массивом",
+    "ErrDataTreeActive": "Дерево не находится в закрытом состоянии",
+    "ErrDataTreeClosed": "Дерево не находится в открытом состоянии",
+    "ErrDataTreeNotConfigured": "Дерево не настроено",
+    "ErrDataTreeNotEditing": "Дерево не находится в состоянии редактирования",
+    "ErrIsNotAncestorNode": "Узел \"%s\" не является предком узла \"%s\"",
+    "ErrUnexpectedEndUpdate": "Нельзя вызвать метод EndUpdate предварительно не вызвав BeginUpdate",
+    "NodeDefTree": "Дерево описаний узлов"
+  },
+  "Libraries/bgrtl/DataTreeNodeDefs": {
+    "ErrCannotInitializeNodeWithDifferentContainerFlag": "Невозможно проинициализировать узел из исходного, который отличается значением признака контейнера",
+    "ErrChangeDataKindNotAllowed": "Невозможно изменить вид данных узла, который является контейнером",
+    "ErrChangeDataTypeNotAllowed": "Невозможно изменить тип данных узла, который является контейнером",
+    "ErrChangeIsContainerNotAllowed": "Невозможно изменить признак контейнера у узла, который является корневым или содержит дочерние узлы",
+    "ErrNodeCantBeContinuous": "Узел \"%s\" типа \"%s\" не может быть непрерывным",
+    "ErrOnlyContainerNodeCanHaveSubNodes": "Только узел, являющийся контейнером, может содержать дочерние узлы",
+    "Root": "Корневой узел",
+    "RootNodeDisplayName": "Root"
+  },
+  "Libraries/bgrtl/DataTreeNodeDefsVendor": {
+    "DataTreeNodeInfosVendorMetaDesc": "вендор описаний узлов",
+    "ErrInvalidUsageType": "Назначение \"%s\" недопустимо для настраиваемого узла \"%s\"",
+    "ErrNodeTypesMismatch": "Тип узла %s не совместим с типом исходного узла %s"
+  },
   "Libraries/bgrtl/DelayLoadHook": {
     "ErrInvalidDelayedProc": "Не найдена процедура, загружаемая отложено"
   },
@@ -2043,6 +2119,12 @@
     "ErrNoMappingForRequiredColumn": "Обязательному входному столбцу %s не сопоставлен выходной",
     "ErrSourceColumnNotFound": "Не удалось найти исходный столбец %s для выходного столбца %s",
     "ErrTargetColumnWithoutSource": "Выходному столбцу %s не сопоставлен входной столбец"
+  },
+  "Libraries/bgrtl/DerivedDataTree": {
+    "ErrNodeTypesMismatch": "Тип узла %s не совместим с типом исходного узла %s",
+    "ErrNoMappingForRequiredNode": "Обязательному входному узлу %s не сопоставлен выходной",
+    "ErrSourceNodeNotFound": "Не удалось найти исходный узел %s для выходного узла %s",
+    "ErrTargetNodeWithoutSource": "Выходному узлу %s не сопоставлен входной узел"
   },
   "Libraries/bgrtl/DerivedVariables": {
     "ErrNoMappingForRequiredVariable": "Обязательной входной переменной %s не сопоставлена выходная",
@@ -2399,6 +2481,11 @@
     "ErrInputColumnInfoNotFound": "Не удалось найти исходный столбец %s для настраиваемого столбца %s",
     "ErrInputColumnInfoTypesMismatch": "Тип столбца %s не совместим с типом исходного столбца %s",
     "ErrInvalidUsageType": "Назначение \"%s\" недопустимо для настраиваемого столбца \"%s\""
+  },
+  "Libraries/bgrtl/TuneDataTree": {
+    "ErrInputNodeInfoNotFound": "Не удалось найти исходный узел %s для настраиваемого узла %s",
+    "ErrInputNodeInfoTypesMismatch": "Тип узла %s не совместим с типом исходного узла %s",
+    "ErrInvalidUsageType": "Назначение \"%s\" недопустимо для настраиваемого узла \"%s\""
   },
   "Libraries/bgrtl/TuneVariables": {
     "ErrInvalidUsageType": "Назначение \"%s\" недопустимо для настраиваемой переменной \"%s\"",
@@ -2873,6 +2960,15 @@
   "Libraries/Model/DataSet/SocketFieldInfoLinks": {
     "ErrFieldInfoDoesNotBelongToComponent": "Поле \"%s\" не принадлежит текущему компоненту"
   },
+  "Libraries/Model/DataTree/DataTreeOutputSocket": {
+    "DataTree": "Дерево данных"
+  },
+  "Libraries/Model/DataTree/InputDataTreeSocketDef": {
+    "InputDataTreeSocketDefVendorCaption": "Дерево"
+  },
+  "Libraries/Model/DataTree/OutputDataTreeSocketDef": {
+    "OutputDataTreeSocketDefVendorCaption": "Дерево"
+  },
   "Libraries/Model/DerivedModelComponentVendor": {
     "BaseComponentVendorGuidDesc": "GUID Базового компонента",
     "BaseNode": "Базовый узел",
@@ -2962,6 +3058,7 @@
   },
   "Libraries/Model/ModelComponentVendorGroupsCommon": {
     "AnalyticVendorGroupCaption": "Data Mining",
+    "DataTreeVendorGroupCaption": "Дерево",
     "ExploratoryVendorGroupCaption": "Исследование",
     "ExportVendorGroupCaption": "Экспорт",
     "FlowControlVendorGroupCaption": "Управление",
@@ -3073,6 +3170,7 @@
     "ErrAllNodesLocked": "Все узлы сценария заблокированы",
     "ErrAlreadyConfiguringSocket": "Узел \"%s\" уже находится в состоянии настройки порта",
     "ErrCannotFindPreviousProcess": "Не удалось найти предыдущий процесс активизации узла \"%s\"",
+    "ErrColumnDataTypeChanged": "Изменился тип данных столбца \"%s\"",
     "ErrComponentNotInitialized": "Базовый компонент не проинициализирован",
     "ErrDuplicatePublishedNodeName": "Пакет уже содержит опубликованный узел с именем \"%s\"",
     "ErrInactiveBranch": "Узел \"%s\" находится в неактивной ветви условия",
@@ -3087,12 +3185,14 @@
     "ErrNodeLocked": "Узел \"%s\" заблокирован",
     "ErrNodeNotFoundInModel": "Запрашиваемый узел не принадлежит сценарию",
     "ErrNodeNotInitialized": "У узла \"%s\" не задан компонент",
+    "ErrNodeParametersChanged": "Изменились параметры узла \"%s\"",
     "ErrParentProcessError": "Ошибка в родительском процессе",
     "ErrPortMismatch": "Несовместимый компонент: не совпадает список портов узла",
     "ErrPortParentIsNil": "Ссылка на порт узла не входит в какой-либо список",
     "ErrPublishedNodeNameIsEmpty": "Не задано имя опубликованного узла",
     "ErrSocketNotConfigured": "Порт не настроен",
     "ErrUnableToLoadNodeConfig": "Не удалось загрузить конфигурацию узла",
+    "ErrVariableDataTypeChanged": "Изменился тип данных переменной \"%s\"",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Количество имён и значений переменных должно быть одинаковым",
     "ErrVariableNotFound": "Переменная с именем \"%s\" не найдена",
     "ErrVendorMalfunction": "Компонент узла \"%s\" неисправен",
@@ -3200,9 +3300,12 @@
     "TableDataVendorGroupCaption": "Табличное представление"
   },
   "Libraries/Model/WebServiceInputNode/WebServiceInputNodeComponent": {
+    "ErrDataRowNotFound": "В матрице значений не найдена строка с индексом %d",
     "ErrInvalidInputColumnCount": "Недопустимое количество столбцов во входной матрице значений: %d; необходимо: %d",
     "ErrInvalidInputElementCount": "Недопустимое количество элементов во входном массиве: %d; необходимо: %d",
-    "ErrInvalidInputRowCount": "Недопустимое количество строк в матрице значений переменных: %d"
+    "ErrInvalidInputRowCount": "Недопустимое количество строк в матрице значений переменных: %d",
+    "ErrInvalidTreeDataRowLength": "Недопустимое количество элементов в массиве значений узла %s: %d; необходимо: %d",
+    "ErrRootElementMustBeSingle": "Матрица значений должна содержать только один корневой элемент"
   },
   "Libraries/Model/WorkFlow": {
     "ErrCircularLink": "Циклические связи между узлами запрещены",
@@ -3775,6 +3878,14 @@
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Куб",
     "VendorDesc": "Многомерное отображение (кросс-таблица и кросс-диаграмма)"
+  },
+  "Viewers/DataTree/DataTreeView": {
+    "ErrNotDefinedInputDataTree": "Не определено входное дерево данных",
+    "InputDataTree": "Дерево данных"
+  },
+  "Viewers/DataTree/DataTreeViewVendor": {
+    "VendorCaption": "Дерево данных",
+    "VendorDesc": "Отображение данных в виде дерева"
   },
   "Viewers/Detailing/Detailing": {
     "DetailingProcessCaption": "Детализация \"%s\" по ячейке [%d, %d]",

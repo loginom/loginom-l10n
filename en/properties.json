@@ -10,9 +10,9 @@
   },
   "Common/WSDL/Processor/WSDLRequestDebug": {
     "WSDLRequestDebug": {
-      "DumpRequest": "Save Request Text to Disk",
-      "DumpRequestFolder": "Folder to save requests",
-      "ResponseStub": "File applied as response",
+      "DumpRequest": "Save Query Text to Disk",
+      "DumpRequestFolder": "Folder to save queries",
+      "ResponseStub": "File supplied as response",
       "UseResponseStub": "Simulate request with response in a file"
     }
   },
@@ -136,7 +136,7 @@
   },
   "components/coarseclasses": {
     "CoarseClassesInputContinuousParams": {
-      "FineIntervalsCount": "Interval count",
+      "FineIntervalsCount": "Intervals count",
       "IncludeHighBounds": "Include upper interval bounds",
       "UsePrequanting": "Prequanting"
     },
@@ -148,7 +148,7 @@
     },
     "CoarseClassesInputParams": {
       "MaxClassCount": "Maximum class count",
-      "MinClassPercentage": "Minimum class percentage, %",
+      "MinClassPercentage": "Minimum class weight, %",
       "UniformityCoef": "Uniformity"
     },
     "CoarseClassesTargetParams": {
@@ -212,7 +212,7 @@
   },
   "components/extractxml": {
     "ExtractXMLEngine": {
-      "HaltOnParseErrors": "Halt in case of errors",
+      "HaltOnParseErrors": "Halt on errors",
       "IDColumn": "Column identifying XML document",
       "ImportXMLSettings": "Configure XML import",
       "InputColumn": "XML column",
@@ -238,7 +238,7 @@
       "CompareValueList": "List of values",
       "CompareValueLowerBound": "Lower bound",
       "CompareValuePeriodBaseDate": "Base interval date",
-      "CompareValuePeriodCount": "Time period value",
+      "CompareValuePeriodCount": "Time span value",
       "CompareValuePeriodType": "Time span unit",
       "CompareValueUpperBound": "Upper bound",
       "DataType": "Data type",

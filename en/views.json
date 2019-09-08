@@ -97,13 +97,13 @@
       "boxLabel": "Workflow design"
     },
     "chkGlobalFileStorage": {
-      "boxLabel": "Full file storage access"
+      "boxLabel": "File storage full access"
     },
     "chkInteractiveMode": {
       "boxLabel": "Interactive mode login"
     },
     "chkServiceMode": {
-      "boxLabel": "Service mode login"
+      "boxLabel": "Service mode"
     },
     "chkViewer": {
       "boxLabel": "View reports"
@@ -231,10 +231,10 @@
       "boxLabel": "Unique name for package"
     },
     "rdoGenerateForPackageVersion": {
-      "boxLabel": "Unique name for each package version"
+      "boxLabel": "Generate unique name for each package version"
     },
     "rdoUseDisNamespace": {
-      "boxLabel": "Loginom integrator namespace"
+      "boxLabel": "Use Loginom integrator namespace"
     }
   },
   "app/ConsoleForm": {
@@ -297,7 +297,7 @@
   },
   "app/LoginomMenuForm": {
     "btnCheckNewVersion": {
-      "text": "Check for update"
+      "text": "Check for updates"
     },
     "btnGoToNewVersion": {
       "text": "New version available"
@@ -472,7 +472,7 @@
       "tooltip": "Show workflow outline"
     },
     "btnShowReferenceNodes": {
-      "tooltip": "Show source nodes for reference nodes"
+      "tooltip": "Show source nodes for referencing nodes"
     },
     "btnShowVendors": {
       "tooltip": "Show/hide component panel"
@@ -490,7 +490,7 @@
       "tooltip": "Show as workflow"
     },
     "mniHorizontalAlignBottom": {
-      "text": "Align bottom",
+      "text": "Align on the bottom",
       "tooltip": "Horizontal bottom alignment"
     },
     "mniHorizontalAlignCenter": {
@@ -688,7 +688,8 @@
       "text": "Name"
     },
     "colReadonly": {
-      "text": "Read-only"
+      "text": "Read-only",
+      "tooltip": "edit can be done only in real case"
     },
     "colValue": {
       "text": "Value"
@@ -1704,7 +1705,7 @@
       "boxLabel": "Case-sensitive strings"
     },
     "colDisplayName": {
-      "text": "Field"
+      "text": "Field name"
     },
     "colInputData": {
       "text": "Fields"
@@ -3230,7 +3231,7 @@
   },
   "viewers/chart/ChartView": {
     "colAddSerie": {
-      "tooltip": "Add series"
+      "tooltip": "Create series"
     },
     "colFieldName": {
       "text": "Fields"
@@ -3245,7 +3246,7 @@
     },
     "grdFields": {
       "title": "Fields",
-      "tooltip": "Add series"
+      "tooltip": "Create series"
     },
     "pnlChartView": {
       "title": "Chart"
@@ -3785,13 +3786,13 @@
       "boxLabel": "Case-sensitive"
     },
     "rbAdd": {
-      "boxLabel": "Add to checked"
+      "boxLabel": "Add to selected"
     },
     "rbDeselect": {
       "boxLabel": "Uncheck"
     },
     "rbRemove": {
-      "boxLabel": "Remove from checked"
+      "boxLabel": "Deselect"
     },
     "rbSelect": {
       "boxLabel": "Check"

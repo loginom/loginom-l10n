@@ -16,7 +16,7 @@
     "CertStoreCollection": {
       "$Caption": "Certificate Store Collections",
       "CurrentUser": "Current user",
-      "LocalMachine": "Local machine",
+      "LocalMachine": "Localhost",
       "Services": "Service"
     }
   },
@@ -160,7 +160,7 @@
     "XSDDataTypeRefinement": {
       "$Caption": "XML Data Type Refinement",
       "Any": "Any type",
-      "AnySimple": "Any simple type",
+      "AnySimple": "Any atomic type",
       "None": "Unknown",
       "Date": "Date",
       "Time": "Time",
@@ -193,7 +193,7 @@
   },
   "components/autocorrelation": {
     "AutoCorrelationDomainCalc": {
-      "$Caption": "Autocorrelation Function Domain Calculation",
+      "$Caption": "Autocorrelation Function Calculation Domain",
       "Time": "Time",
       "Frequency": "Frequency",
       "Auto": "Auto"
@@ -777,7 +777,7 @@
     "ExcelUpdateFileMode": {
       "$Caption": "Update Excel File",
       "ForceCreateFile": "Replace existing file",
-      "Update": "Introduce changes into existing file"
+      "Update": "Change existing file"
     },
     "ExcelUpdateSheetMode": {
       "$Caption": "Excel Sheet Update",
@@ -928,7 +928,9 @@
       "NullCount": "Null count"
     },
     "ApplicationMode": {
-      "$Caption": "Application Mode"
+      "$Caption": "Application Mode",
+      "Design": "Interactive",
+      "Run": "Execution"
     },
     "BoundMode": {
       "$Caption": "Bound Ownership",
@@ -1359,6 +1361,14 @@
     }
   },
   "Libraries/Optimization/Optimization": {
+    "ConstraintType": {
+      "$Caption": "Constraint Type of Optimized Parameters",
+      "None": "None",
+      "Simple": "Simple",
+      "Range": "Range",
+      "Linear": "Linear",
+      "NonLinear": "Nonlinear"
+    },
     "OptimizationMethod": {
       "$Caption": "Optimization Method",
       "Exhaustive": "Exhaustive search",

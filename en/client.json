@@ -1,6 +1,6 @@
 {
   "admin/ServerSettingsForm": {
-    "Bind": "IP address",
+    "Bind": "IP Address",
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection wizard",
     "DirectorySettings": "Folders",
@@ -57,17 +57,17 @@
     "ReadOnlyPackageNamePostfix": " (read-only)"
   },
   "app/Application": {
-    "ErrVersionFailure": "Error when requesting the latest version",
+    "ErrVersionFailure": "Error while requesting the latest version",
     "LoginomLastVersionDownloadUrl": "https://loginom.com/downloads",
     "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost.",
-    "VersionErrorResponseStatus": "Error when requesting the latest version. Response code: \"{0}\". Message: \"{1}\"",
+    "VersionErrorResponseStatus": "Error while requesting the latest version. Response code: \"{0}\". Message: \"{1}\"",
     "VersionWrongServiceResponse": "Wrong service response with the information on the latest Loginom version"
   },
   "app/AppUtils": {
     "ConfirmRemovingUnit": "Do you really want to delete the module?",
-    "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently used.",
-    "ErrSelectedVendorLocked": "Failed to delete the selected \"{0}\" componet. Some of the derived nodes are currently used.",
-    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the selected \"{0}\" component? The nodes created on its basis will be unavailable.",
+    "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently in use.",
+    "ErrSelectedVendorLocked": "Failed to delete the selected \"{0}\" componet. Some of the derived nodes are currently in use.",
+    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the selected \"{0}\" component? The derived nodes will be unavailable.",
     "RemoveVendorConfirm": "Do you want to remove the component?"
   },
   "app/ConfigurePublishedPackagesForm": {
@@ -85,7 +85,7 @@
     "YourVersionIsActual": "You are using the current version"
   },
   "app/MainForm": {
-    "AskIfOpenPackageByLink": "The open package will be blocked by you until it is closed. Do you want to open it?",
+    "AskIfOpenPackageByLink": "The open package will be locked by you until it is closed. Do you want to open it?",
     "CantCreateShareLinks": "Failed to generate address for the current page",
     "CantFindPackage": "Failed to find package",
     "CantGetAbsolutePath": "Failed to get absolute path for \"{0}\" file",
@@ -95,7 +95,7 @@
     "ErrUrlPathNotFound": "\"{0}\" path not found",
     "FavoritesTitle": "Favorites",
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
-    "MsgTransportError": "Server disconnection",
+    "MsgTransportError": "Server connection lost",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
     "PackageCopyOpened": "Changes in the open link  \"{0}\" package will be reflected in the current package upon its reload",
     "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
@@ -108,7 +108,7 @@
     "ErrLoadPackageErrors": "Errors occurred while \"{0}\" package opening",
     "ErrNoPackageToClose": "No package to be closed was found.",
     "ErrNoPackageToSave": "There is no package to save.",
-    "ErrOpenReadOnlyPackage": "\"{0}\" package is open only in the read-only mode as it has already been opened by another user. Saving is possible only under a different name.",
+    "ErrOpenReadOnlyPackage": "\"{0}\" package is opened in read-only mode as it has already been opened by another user. Saving is possible only under a different name.",
     "ErrSaveReadOnlyPackage": "You cannot save \"{0}\" read-only package without changing the name"
   },
   "app/MapTree": {
@@ -136,7 +136,7 @@
     "UnitDisplayNameDefault": "Module",
     "Users": "Users",
     "Vendors": "Components",
-    "Wizard": "Wizard",
+    "Wizard": "Settings",
     "WorkFlow": "Workflow"
   },
   "app/MapTreeForm": {
@@ -153,7 +153,7 @@
     "AddNewConnectionInheritedNode": "Add connection node to workflow",
     "AddNewConnectionReferenceNode": "Add reference to connection into workflow",
     "AddNewNode": "Add node to workflow",
-    "CantFindGenericModelNode": "Supernode node not found",
+    "CantFindGenericModelNode": "Child model node not found",
     "CantFindSourceNode": "Failed to find reference node",
     "CloneNode": "Clone node",
     "ComposeExplodeNode": "Collapse nodes into supernode / expand supernode",
@@ -161,7 +161,7 @@
     "ConfigurePort": "Configure port...",
     "ConfirmRemovingDerivedVendor": "Do you really want to delete the derived component?",
     "CopyNode": "Copy node",
-    "DeactivateCurrent": "Deactivate node",
+    "DeactivateCurrent": "Inactivate node",
     "DeleteDerivedVendor": "Delete...",
     "DeleteLink": "Delete link...",
     "DeleteNode": "Delete node...",
@@ -252,7 +252,8 @@
     "HiddenFieldLabel": "Hidden:",
     "ModifyBtnText": "Apply",
     "ModifyVariableTitle": "Edit Variable",
-    "ReadonlyFieldLabel": "Read-only:"
+    "ReadonlyFieldLabel": "Read-only:",
+    "ReadonlyFieldTip": "edit can be done while you are working on this case"
   },
   "app/PackageVariablesForm": {
     "DeleteAllPrompt": "Do you really want to delete all variables?",
@@ -651,7 +652,7 @@
     "VariablesTitle": "Variables"
   },
   "components/replace/ReplaceWizard": {
-    "DeleteAllPrompt": "Do you really want to remove all replacement options?",
+    "DeleteAllPrompt": "Do you really want to remove all substitution options?",
     "DeleteAllPromptTitle": "Delete substitution table",
     "EditorDisabled": "Include replacement to edit",
     "EditorNotChoosed": "Select replacement to edit.",
@@ -685,12 +686,12 @@
     "CaseSensitiveActionDesc": "Case-sensitive",
     "ColumnIsUsed": "Field already used",
     "DeleteAllConfirm": "Do you want to cancel all fields sorting?",
-    "DeleteConfirmFmt": "Do you want to cancel \"{0}\" field sorting?",
+    "DeleteConfirmFmt": "Do you want to clear \"{0}\" field sorting?",
     "DeleteTitle": "Cancel Sort",
     "HintForSortDirectionAsc": "Ascending",
     "HintForSortDirectionDesc": "Descending",
     "InvalidRowDescFmt": "\"{0}\" input field not found",
-    "MultiDeleteConfirm": "Do you want to cancel sorting for selected fields?",
+    "MultiDeleteConfirm": "Do you want to clear sorting for selected fields?",
     "NotCaseSensitiveActionDesc": "Not case-sensitive"
   },
   "components/ungroupdata/UngroupDataWizard": {
@@ -1045,7 +1046,7 @@
     "CantSaveDownLoadedFile": "Failed to save the downloaded file"
   },
   "filestorage/FileSenderManager": {
-    "FileAlreayLoading": "{0} file has already been downloading. Wait until the end or cancel the download process."
+    "FileAlreayLoading": "{0} file download is already in progress. Wait until the completion or cancel the download process."
   },
   "filestorage/FileStorageForm": {
     "CantCreateFolder": "Failed to create folder",
@@ -1071,13 +1072,13 @@
   },
   "filestorage/LoaderViewController": {
     "DownloadWindowTitle": "File Download",
-    "ErrCancelLoaders": "Operation cancel error",
+    "ErrCancelLoaders": "Error cancelling operations",
     "UploadWindowTitle": "Upload Files to Server"
   },
   "filestorage/LoadView": {
     "CancelAllConfirm": "Do you really want to cancel all downloads?",
     "CancelAllLoadersBtn": "Cancel All",
-    "ErrCancelAllLoaders": "Operation cancel error"
+    "ErrCancelAllLoaders": "Error cancelling operations"
   },
   "filtersview/FilterItem": {
     "bdtCurrent": "current date",
@@ -1329,7 +1330,7 @@
   },
   "mxgraph/node/comment/Note": {
     "ErrCommentNotSaved": "Failed to save comment",
-    "NodeIsLocked": "Node is locked, it is impossible to change comment",
+    "NodeIsLocked": "Comment change forbidden: node is locked",
     "WrongCommentValue": "Invalid comment value"
   },
   "mxgraph/node/controls/ControlsAbstract": {
@@ -1454,7 +1455,7 @@
   },
   "rpc/ExecutionContext": {
     "ErrExecutionContextNotInstalled": "No reference to execution context provided",
-    "ErrExternalExecutionContextManagerNotInstalled": "External execution context manager not installed"
+    "ErrExternalExecutionContextManagerNotInstalled": "External execution context manager not set"
   },
   "rpc/Interfaces": {
     "ErrObjectIsNil": "Null object reference",
@@ -1703,7 +1704,7 @@
   "viewers/chart/ModalWindow": {
     "Apply": "Apply",
     "Cancel": "Cancel",
-    "CancelChangesTitle": "Do you want to cancel changes?"
+    "CancelChangesTitle": "Do you want to undo changes?"
   },
   "viewers/chart/SeriesCreator": {
     "AddBtnText": "Add"
@@ -1955,7 +1956,7 @@
     "RemoveAllMappingColumnDefsConfirm": "Do you really want to delete all output columns?"
   },
   "wizards/columns/ColumnsMappingWizard": {
-    "RemoveInvalidRelationsConfirm": "Links with non-existent objects were found. Do you want to delete all lost links and continue?"
+    "RemoveInvalidRelationsConfirm": "References ti non-existent objects were found. Do you want to delete all lost references and continue?"
   },
   "wizards/columns/DataSetOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"
@@ -2077,7 +2078,7 @@
     "NotConnectedText": "Not connected"
   },
   "wizards/InputFileConnectionWizard": {
-    "MsgFileAlreadyExist": "{0} file exists. Do you want to write over?",
+    "MsgFileAlreadyExist": "{0} file exists. Do you want to  overwrite?",
     "MsgNotConnected": "Connection is not active. Do you want o activate it now?"
   },
   "wizards/normalization/ControlRangeSettings": {
@@ -2162,7 +2163,7 @@
     "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
     "MsgEditedVariableCanNotSelected": "Variable has been renamed but it is not selected because it does not match the filter",
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?",
-    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is required. Do you really want to delete it?"
+    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is mandatory. Do you really want to delete it?"
   },
   "wizards/WizardActivateInputPorts": {
     "ActivateCaption": "Activate",

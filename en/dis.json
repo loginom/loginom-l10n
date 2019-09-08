@@ -1,19 +1,43 @@
 {
+  "DeductorClient/DeductorConnector": {
+    "ErrAlreadyConnected": "You are connected already",
+    "ErrNotConnected": "the connection was not done"
+  },
+  "DeductorIntegrationServerCore/ConfigurationSections": {
+    "ErrNoColumnsSpecified": "it was not given any value of column for connection ",
+    "ErrSqlCommandAndTableBothSpecified": "it not possible to assign the value of sqlCommand and a table"
+  },
   "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
     "AddedPublishedPackage": "The published package \"{1}\" of the version \"{2}\" has been added on the server {0}",
     "ChangedPublishedPackage": "The published package \"{1}\" of version \"{2}\" has been changed on server {0}",
+    "ChangedPublishedPackages": "om the server {0} there are a change in the list of published packages",
     "ConnectedToServer": "Connecting to server {0}",
     "DeletedPublishedPackage": "The published package \"{1}\" of version \"{2}\" was deleted on server {0}",
+    "ErrCannotAddPublishedPackage": "The package{1} of the version{2} which was belong to server{0} can not be published{3}",
+    "ErrCannotConnectToServer": "it is not possible to be connected to the server",
     "ErrConnectionFailure": "Server connection lost {0}",
+    "ErrDifferentPackagesWithSameNameAndVersion": "this package is completely different that the same one which was published previously with the same name and the same version",
+    "ErrDuplicateNodeNames": "the package contains more than one node with \"{0}\" name",
+    "ErrInvalidPackageNamespace": "\"{0}\" is invalid namespace",
+    "ErrPackageHasNoPublishedNodes": "The package contains no published nodes",
     "PendingUnloadAppDomain": "Service shutdown is planned, application domain name: \"{0}\", identifier: {1}"
   },
   "DeductorIntegrationServerCore/DisServiceHostFactory": {
     "StartingService": "Service start, version: {0}, application domain name: \"{1}\", identifier: {2}",
     "StoppingService": "Service stop, application domain name: \"{0}\", identifier: {1}"
   },
+  "DeductorIntegrationServerCore/JsonDispatchFormatter": {
+    "ErrInvalidContentType": "not execrable value ",
+    "WarnDuplicateRequestParameter": "the request consist of more than one parameter",
+    "WarnUnknownRequestParameter": "the request consist with unknown name of parameter"
+  },
+  "DeductorIntegrationServerCore/LoggerManager": {
+    "ErrUnknownLogLevel": "unknown level of connection"
+  },
   "DeductorIntegrationServerCore/RestHelpPageGenerator": {
     "Body": "Body",
     "Description": "Description",
+    "ErrInvalidParameterType": "this parameter consist of not acceptable type of information",
     "Example": "Example",
     "Format": "Format",
     "HttpMethod": "HTTP Method: ",
@@ -41,9 +65,15 @@
     "UrlFormat": "URL Format: "
   },
   "DeductorIntegrationServerCore/ServiceHelper": {
-    "ErrProcessingRequestCompleted": "Processing completed successfully"
+    "ErrMissingArrayItem": "Missing \"{0}\" array item",
+    "ErrMissingRequiredParameter": "Missing required \"{0}\" parameter",
+    "ErrMissingRequiredTreeNode": "Missing required \"{0}\" tree node",
+    "ErrProcessingRequestCompleted": "Processing completed successfully",
+    "ErrRootElementCannotBeNull": "Root element must not be null"
   },
   "DeductorIntegrationServerCore/ServiceTypeBuilder": {
+    "ErrNoPublishedPackages": "not even one package was published",
+    "ErrRootNodeNotFound": "Root tree node not found",
     "NoPublishedPackagesServiceDocumentation": "No packages have been published at this time. "
   }
 }

@@ -1,20 +1,20 @@
 {
   "JS/JsDictionaryExtensions": {
-    "ErrKeyAlreadyExists": "An item with this key already exists in the dictionary"
+    "ErrKeyAlreadyExists": "An item with this key already exists  in the dictionary"
   },
   "Net/BaseSocketMessageTransport": {
     "ErrIncorrectMessageSize": "Incorrect message size: {0}",
     "ErrIncorrectServerResponse": "Incorrect server response received"
   },
   "Net/Extended80Rec": {
-    "ErrOverflow": "Overflow while attempting to cast value to the double type",
+    "ErrOverflow": "Overflow while attempting to cast value to the Double type",
     "ErrWrongByteCount": "The byte array length for TBGExtended80Rec must be exactly 10 bytes"
   },
   "Net/MessageTransport": {
-    "ErrConnectionFailure": "Remote computer connection lost"
+    "ErrConnectionFailure": "Remote host connection lost"
   },
   "Net/MessageTransportAsync": {
-    "ErrConnectionFailure": "Remote computer connection lost"
+    "ErrConnectionFailure": "Remote host connection lost"
   },
   "Net/PropertySelector": {
     "ErrInvalidCountSelector": "countSelector must be of collection type => collection.Count",
@@ -31,7 +31,7 @@
     "ErrUnknownInterfaceID": "Unknown interface identifier: {0}",
     "ErrUnknownInterfaceName": "{0} interface not registered",
     "ErrUnknownMethodID": "Unknown method identifier {0}",
-    "ErrUnsupportedParameterType": "Unsupported parameter type"
+    "ErrUnsupportedParameterType": "Unsupported argument type"
   },
   "Net/ServerRemoteObjects": {
     "ErrQueryInterfaceNotAllowed": "You cannot query interface with {0} identifier via QueryInterface",
@@ -39,7 +39,7 @@
   },
   "Net/Session": {
     "ErrCannotAddSessionToClosingSessionHost": "You cannot add a new session while SessionHost closing",
-    "ErrDifferentRpcExceptionDelegateAlreadyRegistered": "Another Rpc exception handler already registered",
+    "ErrDifferentRpcExceptionDelegateAlreadyRegistered": "Another RPC exception handler already registered",
     "ErrDifferentRpcVerionAlreadyRegistered": "Another RPC version number already registered",
     "ErrDisconnectedSession": "Connection lost",
     "ErrDisconnectedSessionClientOnly": "Server connection lost",
@@ -47,13 +47,13 @@
     "ErrInvalidObjectID": "Invalid object identifier: {0}",
     "ErrInvalidResponseMessageType": "Invalid response message type: {0}",
     "ErrMainServerObjectNotRegistered": "The main server object is not registered",
-    "ErrMaxObjectIdReached": "Limit in {0} values of object identifiers reached",
+    "ErrMaxObjectIdReached": "Object identifiers limit of  {0} values reached",
     "ErrRpcVersionMismatch": "Client of {0} version cannot get connected to the server of {1} version",
     "ErrUnknownInterfaceID": "Unknown interface identifier: {0}"
   },
   "Net/SessionThreaded": {
     "ErrIncorrectMainServerObjectInterfaceID": "Invalid interface identifier of the main server object received",
-    "ErrInvalidMessageSignature": "Unsupported parameter type",
+    "ErrInvalidMessageSignature": "Unsupported argument type",
     "ErrUnknownInterfaceID": "Unknown interface identifier: {0}"
   },
   "Net/SparseArray": {
@@ -67,7 +67,7 @@
     "ErrIsProxyObjectIdCachedDelegateAlreadyAssigned": "IsProxyObjectIdCached delegate already initialized"
   },
   "Net/WebSocketMessageTransport": {
-    "ErrConnectionClosed": "Connection with remote computer closed",
+    "ErrConnectionClosed": "Connection closed by remote host",
     "ErrFailedToConnectWebSocket": "Failed to connect to the web socket at the following address {0}"
   }
 }

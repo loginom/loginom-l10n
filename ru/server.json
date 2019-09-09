@@ -2062,8 +2062,7 @@
     "ErrDataSourceNotConfigured": "Набор данных не настроен",
     "ErrDataSourceNotEditing": "Набор данных не находится в состоянии редактирования",
     "ErrRowOutOfRange": "Номер строки %d вне диапазона [%d; %d]",
-    "ErrUnexpectedEndUpdate": "Нельзя вызвать метод EndUpdate предварительно не вызвав BeginUpdate",
-    "Statistics": "Статистика"
+    "ErrUnexpectedEndUpdate": "Нельзя вызвать метод EndUpdate предварительно не вызвав BeginUpdate"
   },
   "Libraries/bgrtl/DataSetColumns": {
     "ErrDataSoureNotAssigned": "Нет ссылки на набор данных"
@@ -2080,8 +2079,7 @@
     "ErrDataTreeNotConfigured": "Дерево не настроено",
     "ErrDataTreeNotEditing": "Дерево не находится в состоянии редактирования",
     "ErrIsNotAncestorNode": "Узел \"%s\" не является предком узла \"%s\"",
-    "ErrUnexpectedEndUpdate": "Нельзя вызвать метод EndUpdate предварительно не вызвав BeginUpdate",
-    "NodeDefTree": "Дерево описаний узлов"
+    "ErrUnexpectedEndUpdate": "Нельзя вызвать метод EndUpdate предварительно не вызвав BeginUpdate"
   },
   "Libraries/bgrtl/DataTreeNodeDefs": {
     "ErrCannotInitializeNodeWithDifferentContainerFlag": "Невозможно проинициализировать узел из исходного, который отличается значением признака контейнера",
@@ -2930,9 +2928,6 @@
     "InputDataSource": "Входной источник данных",
     "OutputDataSource": "Выходной набор данных"
   },
-  "Libraries/Model/DataSet/DataSourceOutputSocket": {
-    "DataSource": "Набор данных"
-  },
   "Libraries/Model/DataSet/DataSourceVariablesMultiInputDataSetOutputModelComponentEngine": {
     "InputVariables": "Входные переменные"
   },
@@ -2959,9 +2954,6 @@
   },
   "Libraries/Model/DataSet/SocketFieldInfoLinks": {
     "ErrFieldInfoDoesNotBelongToComponent": "Поле \"%s\" не принадлежит текущему компоненту"
-  },
-  "Libraries/Model/DataTree/DataTreeOutputSocket": {
-    "DataTree": "Дерево данных"
   },
   "Libraries/Model/DataTree/InputDataTreeSocketDef": {
     "InputDataTreeSocketDefVendorCaption": "Дерево"

@@ -12,7 +12,7 @@
     "LoggerSettings": "Logging parameters",
     "MinLogLevel": "Logging level",
     "PackagePoolSize": "Package pool size",
-    "PingPeriod": "Connection check period (s)",
+    "PingPeriod": "Connection check timeout (s)",
     "Port": "TCP port",
     "ServerSettings": "Server parameters",
     "SessionBackupDirectory": "Session backups",

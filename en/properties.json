@@ -131,7 +131,7 @@
       "NClustersAutoSelect": "Auto selection of clusters",
       "NClustersMax": "Maximum number of clusters",
       "NClustersMin": "Minimum number of clusters",
-      "StatTestThreshold": "Cluster splitting significance level"
+      "StatTestThreshold": "Cluster splitting significance threshold"
     }
   },
   "components/coarseclasses": {

@@ -2051,8 +2051,7 @@
     "ErrDataSourceNotConfigured": "Data set not configured",
     "ErrDataSourceNotEditing": "Data set is not in the edited state",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range",
-    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first",
-    "Statistics": "Statistics"
+    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataSetColumns": {
     "ErrDataSoureNotAssigned": "No data set reference"
@@ -2061,8 +2060,7 @@
     "ErrDataTreeActive": "Tree is not in the closed state",
     "ErrDataTreeClosed": "Tree is not in the opened state",
     "ErrDataTreeNotConfigured": "Tree not configured",
-    "ErrDataTreeNotEditing": "Tree is not in the edited state",
-    "NodeDefTree": "Node description tree"
+    "ErrDataTreeNotEditing": "Tree is not in the edited state"
   },
   "Libraries/bgrtl/DataTreeNodeDefs": {
     "Root": "Root node",
@@ -2899,9 +2897,6 @@
     "InputDataSource": "Input data source",
     "OutputDataSource": "Output data set"
   },
-  "Libraries/Model/DataSet/DataSourceOutputSocket": {
-    "DataSource": "Data set"
-  },
   "Libraries/Model/DataSet/DataSourceVariablesMultiInputDataSetOutputModelComponentEngine": {
     "InputVariables": "Input variables"
   },
@@ -2928,9 +2923,6 @@
   },
   "Libraries/Model/DataSet/SocketFieldInfoLinks": {
     "ErrFieldInfoDoesNotBelongToComponent": "\"%s\" field does not belong to the current component"
-  },
-  "Libraries/Model/DataTree/DataTreeOutputSocket": {
-    "DataTree": "Data tree"
   },
   "Libraries/Model/DataTree/InputDataTreeSocketDef": {
     "InputDataTreeSocketDefVendorCaption": "Tree"

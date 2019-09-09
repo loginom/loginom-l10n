@@ -1952,7 +1952,7 @@
   },
   "Libraries/bgrtl/CachedDataTree": {
     "ErrColumnIndexOutOfRange": "Column number %d is out of [%d; %d] range",
-    "ErrInvalidNodeInfo": "Invalid node description: %s ",
+    "ErrInvalidNodeInfo": "Invalid node description: %s",
     "ErrRowCountLimitReached": "Maximum row count limit reached",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range",
     "ErrTableIndexOutOfRange": "Table number %d is out of [%d; %d] range"
@@ -3574,7 +3574,7 @@
     "ErrCannotCreateDirectory": "Failed to create \"%s\" folder",
     "ErrCannotDeleteBasePackage": "You cannot delete %s base package without deleting %s dependent package that references it",
     "ErrCannotGetPackageLinkRef": "Failed to get the object reference to the package link with %s name",
-    "ErrCannotGetPackageRef": "Failed to get the object reference to the package  %s ",
+    "ErrCannotGetPackageRef": "Failed to get the object reference to the package  %s",
     "ErrCannotSaveReadOnlyPackage": "You cannot save %s read-only package",
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",

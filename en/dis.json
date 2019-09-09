@@ -4,7 +4,7 @@
     "ErrNotConnected": "the connection was not done"
   },
   "DeductorIntegrationServerCore/ConfigurationSections": {
-    "ErrNoColumnsSpecified": "it was not given any value of column for connection ",
+    "ErrNoColumnsSpecified": "it was not given any value of column for connection",
     "ErrSqlCommandAndTableBothSpecified": "it not possible to assign the value of sqlCommand and a table"
   },
   "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
@@ -27,7 +27,7 @@
     "StoppingService": "Service stop, application domain name: \"{0}\", identifier: {1}"
   },
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
-    "ErrInvalidContentType": "not execrable value ",
+    "ErrInvalidContentType": "not execrable value",
     "WarnDuplicateRequestParameter": "the request consist of more than one parameter",
     "WarnUnknownRequestParameter": "the request consist with unknown name of parameter"
   },

@@ -44,12 +44,12 @@
     "ArgColumn": "Column Index or name",
     "ArgRow": "Row index",
     "ArgValue": "Value",
-    "ColumnCount": "Column count",
+    "ColumnCount": "Columns count",
     "ColumnGet": "Get column cell value",
     "ColumnIsNull": "Check if the value is set in the column cell",
     "Columns": "Columns",
     "Count": "Count",
-    "DataKind": "Data kind",
+    "DataKind": "Kind of data",
     "DataType": "Data type",
     "DefaultUsageType": "Default usage type",
     "DisplayName": "Caption",
@@ -408,7 +408,7 @@
     "ErrBinsCountLimitFmt": "Bin count must not exceed %d",
     "ErrBinWidthFmt": "Failed to define bin width for %s field",
     "ErrGenerateBins": "Failed to generate binning ranges",
-    "ErrInfinityFmt": "Binning bins for %s field were not created. The field contains the \"infinity\" value.",
+    "ErrInfinityFmt": "Bins for %s field were not created. The field contains the \"infinity\" value.",
     "ErrInvalidBinRowFmt": "Failed to generate bin for %s field from row %d",
     "ErrInvalidRangeWidthFmt": "The initial bin boundary exceeds the final boundary for %s field",
     "ErrLogBinsCountLimitFmt": ", for %s field.",
@@ -944,7 +944,7 @@
   "components/forecast/ARIMAXModel": {
     "ARDisplayName": "AR[%d]",
     "ARIMAForecastProcessCaption": "Forecast calculating",
-    "ErrCoefsLengthMismatch": "Vector depth of %d parameters  does not match the required %d",
+    "ErrCoefsLengthMismatch": "Vector lengh of %d parameters  does not match the required %d",
     "ErrModelHasNoIntercept": "The current model has no intercept",
     "ErrUnknownCoefficients": "Model contains unknown coefficients",
     "InterceptDisplayName": "Intercept",
@@ -1157,7 +1157,7 @@
     "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data kind, \"%s\" data type",
     "ErrWrongOutputFieldNotDiscrete": "Invalid \"%s\" output field properties, \"%s\" data kind, whereas \"%s\" is only valid",
     "ErrWrongOutputUniqueCount": "Number of \"%s\" output column unique values is %d (exactly 2 required)",
-    "Intercept": "<Intercept>",
+    "Intercept": "<Constant>",
     "LogRegStoreStatProcessName": "Quality indicators calculating",
     "LogRegTrainProcessName": "Model building",
     "ModelDF": "Number of the model degrees of freedom",
@@ -1410,7 +1410,7 @@
   "components/replace/ReplaceTable": {
     "ErrColumnsCount": "The field number in the input replacement table is less than 2",
     "ErrDataType": "The input replacement table data type does not match the replaced field data type",
-    "ErrDuplicateValue": "Value is duplicated in the replacement table",
+    "ErrDuplicateValue": "Duplicate value in the replacement table",
     "ErrInputDataType": "Error getting input data type for \"%s\"",
     "ErrRegExValue": "Invalid regular expression specified",
     "ErrTypeCast": "Error converting value type in the replacement table for \"%s\"",
@@ -1455,7 +1455,7 @@
     "NodeName": "Node name"
   },
   "components/slidingwindow/SlidingWindowVendor": {
-    "VendorCaption": "Lag",
+    "VendorCaption": "Sliding window",
     "VendorDescription": "Transpose one or several data columns using lag"
   },
   "components/smoothing/DWT": {
@@ -1553,7 +1553,7 @@
   },
   "components/ungroupdata/UngroupDataAVLTrees": {
     "ErrDatasetTooSparse": "Set points are too sparse for the given seasonality period",
-    "ErrDuplicateGroup": "Each group in the ungroupable set must match a single line",
+    "ErrDuplicateGroup": "Each group in the ungroupable set must match a single row",
     "ErrEmptyGroup": "No data belonging to this group in the reference set",
     "ErrNoError": "No errors",
     "ErrNoGroupData": "Group time series is empty",
@@ -1598,8 +1598,8 @@
   "components/unionvariables/UnionVariables": {
     "ErrNoActiveInputs": "No active inputs",
     "InputJoinedVariables": "Added variables",
-    "InputPortsOverFlow": "Number of the input ports exceeded = maximum value %d",
-    "InputVariablesOverFlow": "Number of the input variables exceeded = maximum value %d"
+    "InputPortsOverFlow": "Number of the input ports exceeded,  maximum value = %d",
+    "InputVariablesOverFlow": "Number of the input variables exceeded, maximum value =  %d"
   },
   "components/unionvariables/UnionVariablesVendor": {
     "VendorCaption": "Variable Union",
@@ -1974,7 +1974,7 @@
     "ErrUnableToRecreateNamesIndex": "You cannot recreate node name index",
     "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered",
     "ErrVendorNameConverterAlreadyRegistered": "Name converter from \"%s\" to\"%s\" vendors already registered",
-    "GuidDesc": "Item Guid",
+    "GuidDesc": "Item GUID",
     "IDDesc": "Identifier",
     "Item": "Item",
     "ItemMetaDesc": "Item"
@@ -2030,7 +2030,7 @@
     "fld2to4WeekPeriodName": "week",
     "fld2to4WrongPeriodName": "period",
     "fld2to4YearPeriodName": "year",
-    "fldOneDayPeriodName": "Day",
+    "fldOneDayPeriodName": "day",
     "fldOneMonthPeriodName": "month",
     "fldOneQuarterPeriodName": "quarter",
     "fldOneWeekPeriodName": "week",
@@ -2039,7 +2039,7 @@
     "VersionSerialNumber": "Serial number"
   },
   "Libraries/bgrtl/Couplers": {
-    "ErrModelSocketCouplerDefAlreadyCoupled": "Coupler already connected"
+    "ErrModelSocketCouplerDefAlreadyCoupled": "Already connected"
   },
   "Libraries/bgrtl/DataSet": {
     "ColumnDefs": "Column descriptions",
@@ -2211,7 +2211,7 @@
     "ODSFilesDesc": "OpenDocument spreadsheet",
     "PDFFilesDesc": "PDF documents",
     "RtfFilesDesc": "Files in RTF format",
-    "SELFilesDesc": "Select files",
+    "SELFilesDesc": "Request files",
     "SHPFilesDesc": "Shape format",
     "SQBFilesDesc": "Query designer files",
     "SQLFilesDesc": "SQL files",
@@ -2269,7 +2269,7 @@
     "ErrStreamReadBuffer": "When reading bytes from the data stream, %d was read instead of %d",
     "ErrStreamReadBufferInvalidParams": "Invalid parameter values when reading from the data stream: Length = %d; Count = %d; Offset = %d",
     "ErrStreamReadBufferLength": "When reading from the data stream, the size of the resulting buffer %d is less than the number of bytes required for reading %d",
-    "ErrStreamSeekOutOf2GbRange": "When moving, the cursor of the data stream went beyond 2 GB, it is required to use the 64th analog of the function",
+    "ErrStreamSeekOutOf2GbRange": "When moving, the cursor of the data stream went beyond 2 GB, it is required to use the 64bit version of the function",
     "ErrStreamWriteBuffer": "When writing bytes to the data stream, %d was written instead of %d",
     "ErrStreamWriteBufferInvalidParams": "Invalid parameter values when writing to the data stream: Length = %d; Count = %d; Offset = %d",
     "ErrStreamWriteBufferLength": "When writing to the data stream, the size of the initial buffer %d is less than the number of bytes required for writing %d"
@@ -2513,7 +2513,7 @@
     "ErrDataSourceNotActive": "%s data source is not active",
     "ErrInvalidHexStr": "\"%s\" string is not a valid view of the sexadecimal number",
     "ErrInvalidVarType": "\"%s\" is not a string view of TVarType value",
-    "ErrIsNotValidSet": "\"%s\" string is not a valid set view"
+    "ErrIsNotValidSet": "\"%s\" string is not a valid set representation"
   },
   "Libraries/bgrtl/VariableDefs": {
     "ErrVariableByUsageNotFound": "Variable with \"%s\" usage type not found",
@@ -3317,10 +3317,10 @@
   "Libraries/Normalization/Normalizers": {
     "ErrCorrectionMissed": "Denormalization coefficients correction ignored",
     "ErrInvalidDenormCode": "You cannot denormalize the discrete field value",
-    "ErrLessThanMin": "The normalized value is less than the minimum value range",
-    "ErrMoreThanMax": "The normalized value is more than the maximum value range",
-    "ErrNormLessThanMin": "The denormalized value is less than the minimum value range",
-    "ErrNormMoreThanMax": "The denormalized value is more than the maximum value range",
+    "ErrLessThanMin": "The normalized value is less than the range minimum value ",
+    "ErrMoreThanMax": "The normalized value is more than the range maximum value ",
+    "ErrNormLessThanMin": "The denormalized value is less than the range minimum value ",
+    "ErrNormMoreThanMax": "The denormalized value is more than the range maximum value ",
     "ErrNotImplemented": "This functionality not implemented",
     "ErrRefIdRequired": "The reference category used in the normalizer is not defined",
     "ErrWrongDiscreteIndexRange": "Prenormalized index: %d is out of allowable range [%d ; %d]",
@@ -3470,7 +3470,7 @@
     "ErrInvalidContentType": "Invalid Content-type value format: %s",
     "ErrInvalidParamDataType": "Invalid %s GET request parameter data type",
     "ErrInvalidParamName": "Invalid %s GET request parameter name",
-    "ErrInvalidURL": "Invalid URL service format",
+    "ErrInvalidURL": "Invalid service URL format",
     "ErrMustExplicitRequestContentType": "Data request Content-type must be explicitly set",
     "ErrNoServiceURL": "Service URL not specified",
     "ErrWSDLGenerate": "Error while generating WSDL description"
@@ -3776,7 +3776,7 @@
   },
   "Viewers/Cube/CubeCalcSummaries": {
     "ErrCalculationExpression": "Error occurred while calculating the expression corresponding to calculated measure \"%s\"",
-    "ErrExprResultIsString": "The expression result relates to the string type",
+    "ErrExprResultIsString": "The expression result is of string type",
     "ErrParseExpression": "Error occurred while parsing the expression corresponding to calculated measure \"%s\"",
     "ErrRecursiveCall": "Circular reference between calculated measures detected: %s"
   },
@@ -3866,7 +3866,7 @@
   },
   "Viewers/LogRegressReport/LogRegressReport": {
     "Component": "Component",
-    "ConstFactor": "<Intercept>",
+    "ConstFactor": "<Constant>",
     "ErrNotDefinedComponent": "Undefined component",
     "FinalModel": "Final model",
     "NullModel": "Null model",
@@ -3893,7 +3893,7 @@
     "AllPrecisionRatesChartTitle": "Precision Chart",
     "AllPrecisionRatesChartXLabel": "Cuttoff",
     "AllPrecisionRatesChartYLabel": "PPV, NPV, OPR, OCR",
-    "Base": "Base",
+    "Base": "Baseline",
     "Best": "Best",
     "BreakEvenChartTitle": "Break Even Chart",
     "BreakEvenChartXLabel": "Cuttoff",
@@ -4008,7 +4008,7 @@
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
     "MsgRecordSkipDimValueIsNull": "Data of string \"%d\" was not added to DW. \"%s\" dimension value is null.",
-    "MsgStatisticsGathering": "Statistics gathering"
+    "MsgStatisticsGathering": "Collect statistics"
   },
   "Warehouse2/Deductor/DDWImportVendor": {
     "VendorCaption": "Deductor Warehouse",

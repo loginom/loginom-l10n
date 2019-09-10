@@ -19,7 +19,7 @@
   "Net/PropertySelector": {
     "ErrInvalidCountSelector": "countSelector must be of collection type => collection.Count",
     "ErrInvalidItemSelector": "itemSelector must be of (collection, i) type => collection[i]",
-    "ErrInvalidSelector": "selector must be of source type => new { source.Prop1, source.Prop2 ... }",
+    "ErrInvalidSelector": "selector format must be source type => new { source.Prop1, source.Prop2 ... }",
     "ErrNoPropertyAttribute": "{0} property does not contain RemotePropertyAttribute",
     "ErrPropertySelectorValueTypeNotSupported": "{0} type of properties not supported"
   },

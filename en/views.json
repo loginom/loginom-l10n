@@ -225,7 +225,7 @@
       "title": "Namespace"
     },
     "rdoCustom": {
-      "boxLabel": "Custom"
+      "boxLabel": "Specify manually"
     },
     "rdoGenerateForPackage": {
       "boxLabel": "Unique name for package"
@@ -1489,13 +1489,13 @@
       "title": "XML Extraction Parameters"
     },
     "rbFull": {
-      "boxLabel": "One request for all data set"
+      "boxLabel": "One query for all data set"
     },
     "rbIDColumn": {
       "boxLabel": "Request identifier - input data set field"
     },
     "rbIDColumnNull": {
-      "boxLabel": "One request in each input data set row"
+      "boxLabel": "Query for each input data set row"
     }
   },
   "components/factoranalysis/FactorAnalysisWizard": {
@@ -1538,7 +1538,7 @@
       "fieldLabel": "Compare values"
     },
     "edtDateSpanSimple": {
-      "fieldLabel": "Time period value"
+      "fieldLabel": "Time-span value"
     },
     "edtLowerBoundSimple": {
       "fieldLabel": "Lower bound"
@@ -1969,7 +1969,7 @@
       "boxLabel": "Request identifier - input data set field:"
     },
     "rbSimple": {
-      "boxLabel": "One request in each input data set row"
+      "boxLabel": "Query for each input data set row"
     }
   },
   "components/wsdlclient/CustomHeadersWizard": {
@@ -2635,7 +2635,7 @@
       "boxLabel": "Available data"
     },
     "spnPeriodCount": {
-      "fieldLabel": "Period count"
+      "fieldLabel": "Periods count"
     }
   },
   "imports/dwh/DWImportWizard": {
@@ -3330,7 +3330,7 @@
       "tooltip": "Configure fields"
     },
     "btnHand": {
-      "tooltip": "Drag mode"
+      "tooltip": "Drag&drop mode"
     },
     "btnNavigator": {
       "tooltip": "Navigator"
@@ -3956,7 +3956,7 @@
       "text": "Event"
     },
     "colConfusionNonEvent": {
-      "text": "Non-event"
+      "text": " Negative event"
     },
     "colConfusionTotal": {
       "text": "Total"
@@ -4156,7 +4156,7 @@
       "fieldLabel": "Interval count"
     },
     "fldNumberOfDecimals": {
-      "fieldLabel": "Decimals"
+      "fieldLabel": "Decimals precision"
     },
     "lblRowCount": {
       "html": "Row count"
@@ -4631,9 +4631,6 @@
     },
     "colType": {
       "text": "Type"
-    },
-    "frmGenericModelComponent": {
-      "title": "Supernode"
     }
   },
   "wizards/normalization/ColumnsEditForm": {
@@ -4831,7 +4828,7 @@
       "fieldLabel": "Data type"
     },
     "cbxNullValue": {
-      "boxLabel": "Null value",
+      "boxLabel": "Missing value",
       "fieldLabel": "Value"
     },
     "cbxUsageType": {

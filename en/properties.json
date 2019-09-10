@@ -73,7 +73,7 @@
     "BinningDefExtension": {
       "AlwaysDefaultSettings": "Always use default method settings",
       "BinsType": "Bins type",
-      "LabelTemplate": "Caption template",
+      "LabelTemplate": "Label template",
       "MethodType": "Binning method type"
     },
     "BinningLinearContinuousMethodSettings": {

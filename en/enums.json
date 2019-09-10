@@ -258,7 +258,7 @@
       "Normal": "Normal rounding"
     },
     "BinningSDMode": {
-      "$Caption": "Bin Create Mode",
+      "$Caption": "Bin Creation Mode",
       "sdm1": "+/- 1 SD",
       "sdm2": "+/- 2 SD",
       "sdm3": "+/- 3 SD"
@@ -286,7 +286,7 @@
       "LowerBound": "Lower bound",
       "UpperBound": "Upper bound",
       "WoE": "Weight of evidence",
-      "IV": "Information value",
+      "IV": "Information index",
       "Weight": "Class weight",
       "UpperBoundIsOpen": "Upper range bound open",
       "PreQuantingApplied": "Prequantization"
@@ -298,7 +298,7 @@
       "Weight": "Weight",
       "Count": "Count",
       "EventCount": "Events",
-      "NoEventCount": "Non-events"
+      "NoEventCount": "Negative events"
     },
     "ColumnPurpose": {
       "$Caption": "Field usage type",
@@ -383,7 +383,7 @@
     "RowsDocIdenti": {
       "$Caption": "Document Identification",
       "Full": "One request for all data set",
-      "SingleRow": "One request in each input data set row",
+      "SingleRow": "One request per each input data set row",
       "ByID": "Request identifier - input data set field"
     }
   },
@@ -1570,7 +1570,7 @@
       "Percent": "Percent",
       "Label": "Label",
       "LabelPercent": "Label, percent",
-      "LabelValue": "Label, value",
+      "LabelValue": "Key, value",
       "PercentTotal": "Percent, total",
       "LabelPercentTotal": "Caption, percentage, total",
       "XValue": "X value"

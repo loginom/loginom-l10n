@@ -1095,7 +1095,7 @@
     "RegressionColumn": "%s|Regression",
     "RegressionLBoundNamePostfix": "|CI lower bound",
     "RegressionPValueNamePostfix": "|Significance",
-    "RegressionStdErrorNamePostfix": "|Sd. dev.",
+    "RegressionStdErrorNamePostfix": "|Std. dev.",
     "RegressionTStatNamePostfix": "|T-statistics",
     "RegressionUBoundNamePostfix": "|CI upper bound",
     "TestSamples": "Samples in the test set",

@@ -829,7 +829,7 @@
   "ext/ExtJS": {
     "ErrEnumMenuItemNotFound": "Menu item not found",
     "ErrUnsupportedToggleComponent": "Unsupported toggle component",
-    "LongProcessingMessage": "Wait, data processing is in progress"
+    "LongProcessingMessage": "Please wait, data processing is in progress"
   },
   "ext/FieldUtils": {
     "ErrRadioGroupNotPrepared": "Radio group not prepared",

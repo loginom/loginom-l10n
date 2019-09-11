@@ -1506,7 +1506,8 @@
     "ComputeRowCountProcess": "Compute row count",
     "ErrNoDataNodeSelected": "No data node selected",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range",
-    "GlobalIndex": "Global index"
+    "GlobalIndex": "Global index",
+    "PrepareRowIndexesProcess": "Preparation of row indexes"
   },
   "components/treetodata/TreeToDataModelComponentEngine": {
     "InputDataTree": "Input tree",
@@ -3180,6 +3181,10 @@
     "WrnNullRttiInfo": "Invalid supernode port definition vendor detected",
     "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
   },
+  "Libraries/Model/PackageEditableVariables": {
+    "ErrVariableRestriction": "Variable change forbidden",
+    "ErrVariablesRestriction": "Variable list change forbidden"
+  },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
@@ -3258,7 +3263,8 @@
   "Libraries/Model/WebServiceInputNode/WebServiceInputNodeComponent": {
     "ErrInvalidInputColumnCount": "Invalid column count in the input matrix of values: %d; required: %d",
     "ErrInvalidInputElementCount": "Invalid element count in the input array: %d; required: %d",
-    "ErrInvalidInputRowCount": "Invalid row count in the variable value matrix: %d"
+    "ErrInvalidInputRowCount": "Invalid row count in the variable value matrix: %d",
+    "ErrRootElementMustBeSingle": "Matrix of values must contain only one root element"
   },
   "Libraries/Model/WorkFlow": {
     "ErrCircularLink": "Circular links between nodes are not allowed",

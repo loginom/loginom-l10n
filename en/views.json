@@ -4631,6 +4631,9 @@
     },
     "colType": {
       "text": "Type"
+    },
+    "frmGenericModelComponent": {
+      "title": "Supernode"
     }
   },
   "wizards/normalization/ColumnsEditForm": {

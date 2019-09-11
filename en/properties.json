@@ -50,7 +50,7 @@
     "AutoCorrelationEngine": {
       "CalcPacf": "Calculate PACF",
       "DomainCalc": "ACF calculation domain",
-      "LagCount": "Lag count"
+      "LagCount": "Количество_пробеловLag count"
     }
   },
   "components/binning": {

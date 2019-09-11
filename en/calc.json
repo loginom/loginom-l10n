@@ -1,1 +1,354 @@
-{ }
+{
+  "CryptFunctions": {
+    "CRC32": {
+      "Arguments": "String is a string for which CRC32 value is calculated.",
+      "Description": "CRC32(String)"
+    },
+    "HardKey": {
+      "Arguments": "Arguments are absent",
+      "Description": "HardKey()"
+    },
+    "MD5": {
+      "Arguments": "String is a string for which MD5 value is calculated.",
+      "Description": "MD5(String)"
+    },
+    "SHA1": {
+      "Arguments": "String is a string for which SHA1 value is calculated.",
+      "Description": "SHA1(String)"
+    }
+  },
+  "Functions": {
+    "Abs": {
+      "Arguments": "Argument - numeric expression.",
+      "Description": "Abs(Argument)"
+    },
+    "AbsErr": {
+      "Arguments": "Arguments - any numeric expressions.",
+      "Description": "AbsErr(Argument1, Argument2)"
+    },
+    "AddDay": {
+      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Description": "AddDay(Date, Count)"
+    },
+    "AddMonth": {
+      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Description": "AddMonth(Date, Count)"
+    },
+    "AddQuarter": {
+      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Description": "AddQuarter(Date, Count)"
+    },
+    "AddWeek": {
+      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Description": "AddWeek(Date, Count)"
+    },
+    "AddYear": {
+      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Description": "AddYear(Date, Count)"
+    },
+    "AMGD": {
+      "Arguments": "Arguments, numeric expressions.",
+      "Description": "AMGD(Cost, Residual_cost, Operating_time, Period)"
+    },
+    "ArcCos": {
+      "Description": "ArcCos(Value)"
+    },
+    "ArcSin": {
+      "Description": "ArcSin(Value)"
+    },
+    "ArcTan": {
+      "Description": "ArcTan(Value)"
+    },
+    "AutoRegression": {
+      "Arguments": "C - invariable,\nA0 ... An - regression coefficients,\nX(t) ... X(t-n) - row values.",
+      "Description": "AutoRegression(C, A0, X{t}, A1, X{t-1} ...)"
+    },
+    "Avg": {
+      "Arguments": "Arguments - any numeric expressions.",
+      "Description": "Avg(Argument1, Argument2 ...)"
+    },
+    "Chr": {
+      "Arguments": "Argument - numerical code of Unicode character in the range [0, 65535].",
+      "Description": "Chr(Argument)"
+    },
+    "Concat": {
+      "Arguments": "String - string expression.",
+      "Description": "Concat(String, String [, ... String])"
+    },
+    "Count": {
+      "Arguments": "String - string expression.",
+      "Description": "Count(String)"
+    },
+    "CreateGUID": {
+      "Description": "CreateGUID([Format = \"B\", UpperCase = True])"
+    },
+    "CumulativeSum": {
+      "Description": "CumulativeSum(\"FieldName\" [, \"GroupFieldName\"])"
+    },
+    "DamLevDist": {
+      "Arguments": "String1, \nString2 - expressions of the string type.",
+      "Description": "DamLevDist(String1, String2)"
+    },
+    "Data": {
+      "Description": "Data(\"FieldName\",StringNumber)"
+    },
+    "DateTimeToStr": {
+      "Description": "DateTimeToStr(Date_time [, Format_of date [, Format_of time]])"
+    },
+    "DateToStr": {
+      "Description": "DateToStr(Date [, Format_of date])"
+    },
+    "Day": {
+      "Arguments": "Date - the date type field.",
+      "Description": "Day(Date)"
+    },
+    "DayOfWeek": {
+      "Arguments": "Date - the date type field.",
+      "Description": "DayOfWeek(Date)"
+    },
+    "DaysBetween": {
+      "Arguments": "Date1, Date2 - the date type field.",
+      "Description": "DaysBetween(Date1, Date2)"
+    },
+    "Decode": {
+      "Description": "Decode(Expression, Value1, Result1 [, Value2, Result2]... [, Default_value = \"\"])"
+    },
+    "DecodeF": {
+      "Description": "DecodeF(Expression, Accuracy, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])"
+    },
+    "DecodeN": {
+      "Description": "DecodeN(Expression, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])"
+    },
+    "DecodeS": {
+      "Description": "DecodeS(Expression, Value1, Result1 [, Value2, Result2]... [, Deafult_value = \"\"])"
+    },
+    "DecodeV": {
+      "Description": "DecodeV(Expression, Value, Result [, Value, Result]... [, Default_value = Null])"
+    },
+    "DisplayName": {
+      "Arguments": "FieldName - name of field, variable or expression",
+      "Description": "DisplayName([\"FieldName\"])"
+    },
+    "DKhi2": {
+      "Description": "DKhi2(Degrees_of_freedom, Argument)"
+    },
+    "EncodeDate": {
+      "Arguments": "Year - year in the form of number,\nMonth - month in the form of number,\nDay - day in the form of number.",
+      "Description": "EncodeDate(Year, Month, Day)"
+    },
+    "EncodeDateTime": {
+      "Arguments": "Year - year in the form of number,\nMonth - month in the form of number,\nDay - day in the form of number,\nHours - hours in the form of number,\nMinutes - minutes in the form of number,\nSeconds - seconds in the form of number.",
+      "Description": "EncodeDateTime(Year, Month, Day, Hours, Minutes, Seconds)"
+    },
+    "EncodeTime": {
+      "Arguments": "Hours - hours in the form of number,\nMinutes - minutes in the form of number,\nSeconds - seconds in the form of number.",
+      "Description": "EncodeTime(Hours, Minutes, Seconds)"
+    },
+    "Exp": {
+      "Arguments": "Degree - numeric expression.",
+      "Description": "Exp(Degree)"
+    },
+    "ExpMovingAverage": {
+      "Arguments": "Arguments - values of the numeric row",
+      "Description": "ExpMovingAverage(X{t}, X{t-1} ...)"
+    },
+    "Factorial": {
+      "Arguments": "Argument - integer positive numeric expression.",
+      "Description": "Factorial(Argument)"
+    },
+    "Find": {
+      "Description": "Find(Substring, String[, Order = 1])"
+    },
+    "FKhi2": {
+      "Description": "FKhi2(Degrees_of_freedom, Argument)"
+    },
+    "Format": {
+      "Arguments": "Format_string - string expression of the special type\nExpression - arbitrary string expression.",
+      "Description": "Format(Format_string, Expression [, ... Expression])"
+    },
+    "Frac": {
+      "Arguments": "Argument - numeric expression.",
+      "Description": "Frac(Argument)"
+    },
+    "Hour": {
+      "Arguments": "DateTime - the date/time type field.",
+      "Description": "Hour(DateTime)"
+    },
+    "IN": {
+      "Description": "N(Value, Element1, Element2, ..., ElementN)"
+    },
+    "Int": {
+      "Arguments": "Argument - numeric expression.",
+      "Description": "Int(Argument)"
+    },
+    "InvKhi2": {
+      "Description": "InvKhi2(Degree_of_freedom, Probability)"
+    },
+    "IsInfinite": {
+      "Arguments": "Argument - numeric expression;",
+      "Description": "IsInfinite(Argument)"
+    },
+    "IsNull": {
+      "Arguments": "Argument - any expression;",
+      "Description": "IsNull(Argument)"
+    },
+    "Left": {
+      "Arguments": "String - expression of the string type.",
+      "Description": "Left(String, Count_of_characters)"
+    },
+    "LevDist": {
+      "Arguments": "String1, \nString2 - expressions of the string type.",
+      "Description": "LevDist(String1, String2)"
+    },
+    "Ln": {
+      "Arguments": "Argument - positive numeric expression.",
+      "Description": "Ln(Argument)"
+    },
+    "Log": {
+      "Arguments": "Basis - numeric expression;\nArgument - positive numeric expression.",
+      "Description": "Log(Basis, Argument)"
+    },
+    "Lower": {
+      "Arguments": "Argument - string expression.",
+      "Description": "Lower(Argument)"
+    },
+    "Max": {
+      "Arguments": "Argument1,\nArgument2,\n... - numeric expressions.",
+      "Description": "Max(Argument1, Argument2 ...)"
+    },
+    "Min": {
+      "Arguments": "Argument1,\nArgument2,\n... - numeric expressions.",
+      "Description": "Min(Argument1, Argument2 ...)"
+    },
+    "Minute": {
+      "Arguments": "DateTime - the date/time type field.",
+      "Description": "Minute(DateTime)"
+    },
+    "Month": {
+      "Arguments": "Date - the date type field.",
+      "Description": "Month(Date)"
+    },
+    "MonthsBetween": {
+      "Arguments": "Date1, Date2 - the date type field.",
+      "Description": "MonthsBetween(Date1, Date2)"
+    },
+    "MovingAverage": {
+      "Description": "MovingAverage(X{t}, X{t-1} ...)"
+    },
+    "NVL": {
+      "Description": "NVL(Expression [, Default_value = \"\"])"
+    },
+    "Pi": {
+      "Arguments": "Arguments are absent.",
+      "Description": "Pi()"
+    },
+    "PKhi2": {
+      "Description": "PKhi2(Degrees_of_freedom, Argument)"
+    },
+    "Pow": {
+      "Arguments": "Argument - numeric expression;\nDegree - numeric expression;",
+      "Description": "Pow(Argument, Degree)"
+    },
+    "Random": {
+      "Arguments": "Arguments are absent.",
+      "Description": "Random()"
+    },
+    "RelErr": {
+      "Arguments": "Arguments - any numeric expressions.",
+      "Description": "RelErr(Argument1, Argument2)"
+    },
+    "Repeat": {
+      "Arguments": "String - string expression.\nCount_of_repeats - integer",
+      "Description": "Repeat(String, Count_of_repeats)"
+    },
+    "Replace": {
+      "Description": "Replace(String, Old_template, New_template [, Replace_all, Ignore_case])"
+    },
+    "Right": {
+      "Arguments": "String - expression of the string type.",
+      "Description": "Right(String, Count_of_characters)"
+    },
+    "Round": {
+      "Description": "Round(Argument1 [, Argument2 = 0])"
+    },
+    "RowCount": {
+      "Arguments": "Arguments are absent.",
+      "Description": "RowCount()"
+    },
+    "RowNum": {
+      "Arguments": "Arguments are absent.",
+      "Description": "RowNum()"
+    },
+    "Second": {
+      "Arguments": "DateTime - the date/time type field.",
+      "Description": "Second(DateTime)"
+    },
+    "Sign": {
+      "Arguments": "Argument - numeric expression;",
+      "Description": "Sign(Argument)"
+    },
+    "Space": {
+      "Description": "Space(Count_of_spaces)"
+    },
+    "Sqrt": {
+      "Arguments": "Argument - positive numeric expression.",
+      "Description": "Sqrt(Argument)"
+    },
+    "StartOfTheWeek": {
+      "Arguments": "Date - argument of the Date/Time type.",
+      "Description": "StartOfTheWeek(Date)"
+    },
+    "Stat": {
+      "Description": "Stat(\"FieldName\", \"Type\")"
+    },
+    "StdDev": {
+      "Arguments": "Arguments - any numeric expressions.",
+      "Description": "StdDev(Argument1, Argument2 ...)"
+    },
+    "Str": {
+      "Arguments": "Argument - expression of  the numeric type.",
+      "Description": "Str(Argument)"
+    },
+    "StrToDate": {
+      "Description": "StrToDate(Argument [, Format])"
+    },
+    "StrZero": {
+      "Arguments": "Expression - numeric expression.\nTotal_length - length of the resulting string",
+      "Description": "StrZero(Expression, Total_length)"
+    },
+    "Stuff": {
+      "Description": "Stuff(Source, Position_start, Length [, Inserted_string = \"\"])"
+    },
+    "SubStr": {
+      "Description": "SubStr(Source, Start, Length)"
+    },
+    "TrimLeft": {
+      "Arguments": "Argument - string expression.",
+      "Description": "TrimLeft(Argument)"
+    },
+    "TrimRight": {
+      "Arguments": "Argument - string expression.",
+      "Description": "TrimRight(Argument)"
+    },
+    "Upper": {
+      "Arguments": "Argument - string expression.",
+      "Description": "Upper(Argument)"
+    },
+    "Val": {
+      "Arguments": "String - string expression.",
+      "Description": "Val(String)"
+    },
+    "Week": {
+      "Arguments": "Date - the date type field.",
+      "Description": "Week(Date)"
+    },
+    "Year": {
+      "Arguments": "Date - the date type field.",
+      "Description": "Year(Date)"
+    },
+    "YearsBetween": {
+      "Arguments": "Date1, Date2 - the date type field.",
+      "Description": "YearsBetween(Date1, Date2)"
+    }
+  }
+}

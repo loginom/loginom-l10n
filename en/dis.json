@@ -5,7 +5,8 @@
   },
   "DeductorIntegrationServerCore/ConfigurationSections": {
     "ErrNoColumnsSpecified": "it was not given any value of column for connection",
-    "ErrSqlCommandAndTableBothSpecified": "it not possible to assign the value of sqlCommand and a table"
+    "ErrSqlCommandAndTableBothSpecified": "it not possible to assign the value of sqlCommand and a table",
+    "ErrSqlCommandOrTableNotSpecified": "Database element must contain sqlCommand or table attribute "
   },
   "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
     "AddedPublishedPackage": "The published package \"{1}\" of the version \"{2}\" has been added on the server {0}",
@@ -18,8 +19,11 @@
     "ErrConnectionFailure": "Server connection lost {0}",
     "ErrDifferentPackagesWithSameNameAndVersion": "this package is completely different that the same one which was published previously with the same name and the same version",
     "ErrDuplicateNodeNames": "the package contains more than one node with \"{0}\" name",
+    "ErrEmptyNodeName": "no node name with \"{0}\" caption and  {{{1}}} identifier specified",
     "ErrInvalidPackageNamespace": "\"{0}\" is invalid namespace",
+    "ErrLoadPackageDefsError": "Error of loading of packages for {0} server ",
     "ErrPackageHasNoPublishedNodes": "The package contains no published nodes",
+    "ErrSavePackageDefsError": "Error of saving of packages for {0} server",
     "PendingUnloadAppDomain": "Service shutdown is planned, application domain name: \"{0}\", identifier: {1}"
   },
   "DeductorIntegrationServerCore/DisServiceHostFactory": {
@@ -28,6 +32,7 @@
   },
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
     "ErrInvalidContentType": "not execrable value",
+    "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified\nWebBodyFormatMessageProperty",
     "WarnDuplicateRequestParameter": "the request consist of more than one parameter",
     "WarnUnknownRequestParameter": "the request consist with unknown name of parameter"
   },
@@ -74,6 +79,7 @@
   "DeductorIntegrationServerCore/ServiceTypeBuilder": {
     "ErrNoPublishedPackages": "not even one package was published",
     "ErrRootNodeNotFound": "Root tree node not found",
+    "ErrTreeMustHaveSingleRootNode": "Tree cannot contain more than one root node",
     "NoPublishedPackagesServiceDocumentation": "No packages have been published at this time. "
   }
 }

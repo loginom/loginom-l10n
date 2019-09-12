@@ -2,53 +2,65 @@
   "CryptFunctions": {
     "CRC32": {
       "Arguments": "String is a string for which CRC32 value is calculated.",
-      "Description": "CRC32(String)"
+      "Description": "CRC32(String)",
+      "Output": "Function returns the number - CRC32 value calculated on the basis of the given string. \nCalculations are performed above the sequence of the String characters using UTF-8 encoding.  "
     },
     "HardKey": {
       "Arguments": "Arguments are absent",
-      "Description": "HardKey()"
+      "Description": "HardKey()",
+      "Output": "Function returns the serial number of the electronic key."
     },
     "MD5": {
       "Arguments": "String is a string for which MD5 value is calculated.",
-      "Description": "MD5(String)"
+      "Description": "MD5(String)",
+      "Output": "Function returns HEX value MD5 calculated on the basis of the given string. \nCalculations are performed above the sequence of the String characters using UTF-8 encoding."
     },
     "SHA1": {
       "Arguments": "String is a string for which SHA1 value is calculated.",
-      "Description": "SHA1(String)"
+      "Description": "SHA1(String)",
+      "Output": "Function returns HEX value SHA1 calculated on the basis of the given string. \nCalculations are performed above the sequence of the String characters using UTF-8 encoding."
     }
   },
   "Functions": {
     "Abs": {
       "Arguments": "Argument - numeric expression.",
-      "Description": "Abs(Argument)"
+      "Description": "Abs(Argument)",
+      "Output": "Returns the argument module."
     },
     "AbsErr": {
       "Arguments": "Arguments - any numeric expressions.",
-      "Description": "AbsErr(Argument1, Argument2)"
+      "Description": "AbsErr(Argument1, Argument2)",
+      "Output": "Returns the absolute accuracy of two arguments."
     },
     "AddDay": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
-      "Description": "AddDay(Date, Count)"
+      "Description": "AddDay(Date, Count)",
+      "Output": "Function returns the Date argument value increased by the specified Number of days.\nThe number can be also negative, in this case the function will return the date the given number of days before the specified date."
     },
     "AddMonth": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
-      "Description": "AddMonth(Date, Count)"
+      "Description": "AddMonth(Date, Count)",
+      "Output": "Function returns the Date argument value increased by the specified Number of months.\nThe number can be also negative, in this case the function will return the date the given number of months before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting month, the function will set the date to the last day of the resulting month."
     },
     "AddQuarter": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
-      "Description": "AddQuarter(Date, Count)"
+      "Description": "AddQuarter(Date, Count)",
+      "Output": "Function returns the Date argument value increased by the specified Number of quarters.\nThe number can be also negative, in this case the function will return the date the given number of quarters before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting quarter, the function will set the date to the last day of the resulting quarter."
     },
     "AddWeek": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
-      "Description": "AddWeek(Date, Count)"
+      "Description": "AddWeek(Date, Count)",
+      "Output": "Function returns the Date argument value increased by the specified Number of weeks.\nThe number can be also negative, in this case the function will return the date the given number of weeks before the specified date."
     },
     "AddYear": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
-      "Description": "AddYear(Date, Count)"
+      "Description": "AddYear(Date, Count)",
+      "Output": "Function returns the Date argument value increased by the specified Number of years.\nThe number can be also negative, in this case the function will return the date the given number of years before the specified date."
     },
     "AMGD": {
       "Arguments": "Arguments, numeric expressions.",
-      "Description": "AMGD(Cost, Residual_cost, Operating_time, Period)"
+      "Description": "AMGD(Cost, Residual_cost, Operating_time, Period)",
+      "Output": "Returns the annual property depreciation for the specified period."
     },
     "ArcCos": {
       "Description": "ArcCos(Value)"

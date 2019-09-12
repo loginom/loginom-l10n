@@ -86,7 +86,7 @@
     "ErrCachedHttpStreamClassUnassigned": "Класс кэшируемого HTTP-потока не зарегистрирован"
   },
   "Common/HTTP/CachedHttpStream_Win": {
-    "ErrHttpResponseExRequired": "Для создания экземпляра класса %s необходима поддержка ответом HTTP-клиента интерфейса IHTTPResponseEx",
+    "ErrHttpResponseExRequired": "Не удалось создать экземпляр класса %s, необходима поддержка ответом HTTP-клиента интерфейса IHTTPResponseEx",
     "ErrHttpResponseWriteDisallowed": "Запись в поток HTTP-ответа запрещена",
     "ErrInconsistentContentLength": "Фактический размер принятых данных %d не совпадает со значением заголовка Content-Length %d",
     "ErrReadStreamBufferLength": "Размер предоставленного буфера %d недостаточен для чтения %d байт"

@@ -693,9 +693,12 @@
     "VendorDesc": "Create pivot table from flat table"
   },
   "components/datatotree/DataToTreeEngine": {
+    "ErrCannotSetSourceColumnForContainer": "Failed to set the source column for %s node-container  ",
+    "ErrCanOnlySetIndexColumnForArray": "Failed to set the column with index for %s node that is not an array",
     "ErrIndexColumnNotFound": "Column with %s index for %s node not found",
     "ErrIndexColumnTypeMismatch": "Index type of %s node is not compatible with %s source column type",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "ErrRepeatedGlobalNodeIndex": "Invalid repeated value of global index of \"%s\" node: %d",
     "ErrSourceColumnNotFound": "Failed to find source %s column for %s node",
     "ErrSourceColumnTypeMismatch": "%s node type is not compatible with %s source column type"
   },
@@ -1504,6 +1507,7 @@
   "components/treetodata/TreeToDataEngine": {
     "CompositeDisplayNameSeparator": "|",
     "ComputeRowCountProcess": "Compute row count",
+    "ErrInvalidGlobalIndexDataType": "Invalid data type of the global node index: %s",
     "ErrNoDataNodeSelected": "No data node selected",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range",
     "GlobalIndex": "Global index",
@@ -1952,6 +1956,8 @@
     "ErrRowCountLimitReached": "Maximum row count limit reached"
   },
   "Libraries/bgrtl/CachedDataTree": {
+    "ErrCannotGetNodeValue": "You cannot get the node value with %d identifier: the node is a container",
+    "ErrCannotGetRowCount": "You cannot get the row count for the node with %d identifier: the node is not an array",
     "ErrColumnIndexOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrInvalidNodeInfo": "Invalid node description: %s",
     "ErrRowCountLimitReached": "Maximum row count limit reached",
@@ -2058,17 +2064,26 @@
     "ErrDataSoureNotAssigned": "No data set reference"
   },
   "Libraries/bgrtl/DataTree": {
+    "ErrAlienNodeInfo": "Description of \"%s\" node does not belong to the current tree ",
+    "ErrCannotAppendNodeBeforeParentNode": "You cannot append \"%s\" node before the parent node",
     "ErrDataTreeActive": "Tree is not in the closed state",
     "ErrDataTreeClosed": "Tree is not in the opened state",
     "ErrDataTreeNotConfigured": "Tree not configured",
-    "ErrDataTreeNotEditing": "Tree is not in the edited state"
+    "ErrDataTreeNotEditing": "Tree is not in the edited state",
+    "ErrIsNotAncestorNode": "\"%s\" node is not ancestor of \"%s\" node",
+    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataTreeNodeDefs": {
+    "ErrChangeDataKindNotAllowed": "You cannot change the data kind of the node that is a container",
+    "ErrChangeDataTypeNotAllowed": "You cannot change the data type of the node that is a container",
+    "ErrNodeCantBeContinuous": "\"%s\" node of \"%s\" type cannot be continuous",
+    "ErrOnlyContainerNodeCanHaveSubNodes": "Only container node can have subnodes",
     "Root": "Root node",
     "RootNodeDisplayName": "Root"
   },
   "Libraries/bgrtl/DataTreeNodeDefsVendor": {
     "DataTreeNodeInfosVendorMetaDesc": "node description vendor",
+    "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable node \"%s\"",
     "ErrNodeTypesMismatch": "%s node type is not compatible with %s source node type"
   },
   "Libraries/bgrtl/DelayLoadHook": {
@@ -2094,7 +2109,10 @@
     "ErrTargetColumnWithoutSource": "The required output column %s has not been mapped to the input column"
   },
   "Libraries/bgrtl/DerivedDataTree": {
-    "ErrNodeTypesMismatch": "%s node type is not compatible with %s source node type"
+    "ErrNodeTypesMismatch": "%s node type is not compatible with %s source node type",
+    "ErrNoMappingForRequiredNode": "The required input node %s has not been mapped to the output node",
+    "ErrSourceNodeNotFound": "Failed to find source %s node for output %s node",
+    "ErrTargetNodeWithoutSource": "The output node %s has not been mapped to the input node"
   },
   "Libraries/bgrtl/DerivedVariables": {
     "ErrNoMappingForRequiredVariable": "The required input variable %s has not been mapped to the output variable",
@@ -2453,7 +2471,9 @@
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable column \"%s\""
   },
   "Libraries/bgrtl/TuneDataTree": {
-    "ErrInputNodeInfoTypesMismatch": "%s node type is not compatible with %s source node type"
+    "ErrInputNodeInfoNotFound": "Failed to find source %s node for the configurable node %s",
+    "ErrInputNodeInfoTypesMismatch": "%s node type is not compatible with %s source node type",
+    "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable node \"%s\""
   },
   "Libraries/bgrtl/TuneVariables": {
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable variable \"%s\"",
@@ -3056,7 +3076,8 @@
     "ErrPackageWithNameLinkAlreadyExists": "Link to the package with \"%s\" name already exists",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Number of names and variables values must be the same",
     "ErrVariableNotFound": "Variable with \"%s\" name not found",
-    "ModelUnitDisplayNameDefault": "Module"
+    "ModelUnitDisplayNameDefault": "Module",
+    "RestoreVariablesBackupProcessCaption": "Restore Values of the Package Variables"
   },
   "Libraries/Model/ModelPackageContext": {
     "ErrBasePackageNotFound": "Base package not found",
@@ -3261,9 +3282,11 @@
     "TableDataVendorGroupCaption": "Table View"
   },
   "Libraries/Model/WebServiceInputNode/WebServiceInputNodeComponent": {
+    "ErrDataRowNotFound": "The string with %d index not found in the matrix of values",
     "ErrInvalidInputColumnCount": "Invalid column count in the input matrix of values: %d; required: %d",
     "ErrInvalidInputElementCount": "Invalid element count in the input array: %d; required: %d",
     "ErrInvalidInputRowCount": "Invalid row count in the variable value matrix: %d",
+    "ErrInvalidTreeDataRowLength": "Invalid element count in the array of %s node values: %d; required: %d",
     "ErrRootElementMustBeSingle": "Matrix of values must contain only one root element"
   },
   "Libraries/Model/WorkFlow": {
@@ -3842,13 +3865,18 @@
     "InputDataTree": "Data tree"
   },
   "Viewers/DataTree/DataTreeViewVendor": {
-    "VendorCaption": "Data Tree"
+    "VendorCaption": "Data Tree",
+    "VendorDesc": "Tree data display"
   },
   "Viewers/Detailing/Detailing": {
     "DetailingProcessCaption": "\"%s\" detailing by cell [%d, %d]",
+    "ErrDetailingViewDataSource": "Failed to prepare the data source for \"%s\" detailing",
+    "ErrDetailingViewExecution": "Error of \"%s\" detailing execution",
     "ErrDetailingViewInitialization": "Detailing initialization error \"%s\"",
+    "ErrScopeMissing": "Failed to get the owner context during \"%s\" detailing initialization ",
     "ManagerBrowse": "Table",
-    "ManagerStatistics": "Statistics"
+    "ManagerStatistics": "Statistics",
+    "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" detailing configuration "
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Component",

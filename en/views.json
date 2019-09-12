@@ -682,7 +682,8 @@
       "text": "Caption"
     },
     "colHidden": {
-      "text": "Hidden"
+      "text": "Hidden",
+      "tooltip": "Not selected in the reports view mode"
     },
     "colName": {
       "text": "Name"
@@ -3833,6 +3834,11 @@
     "mniGoToLine": {
       "text": "Go to row...",
       "tooltip": "Go to row..."
+    }
+  },
+  "viewers/detailing/StubView": {
+    "lblStubView": {
+      "text": "Select the cell to visualise its data"
     }
   },
   "viewers/regression/RegressionReportView": {

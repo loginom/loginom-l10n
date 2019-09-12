@@ -250,6 +250,7 @@
     "ErrVariableNameAlreadyExists": "\"{0}\" variable already exists",
     "GroupEditingTitle": "Group Editing",
     "HiddenFieldLabel": "Hidden:",
+    "HiddenFieldTip": "Not selected in the reports view mode",
     "ModifyBtnText": "Apply",
     "ModifyVariableTitle": "Edit Variable",
     "ReadonlyFieldLabel": "Read-only:",
@@ -294,7 +295,8 @@
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
     "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
-    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\""
+    "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
+    "MsgNotFoundWizard": "No wizard for \"{0}\" object "
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Base Node",

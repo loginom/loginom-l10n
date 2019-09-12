@@ -79,25 +79,36 @@
     },
     "AutoRegression": {
       "Arguments": "C - invariable,\nA0 ... An - regression coefficients,\nX(t) ... X(t-n) - row values.",
-      "Description": "AutoRegression(C, A0, X{t}, A1, X{t-1} ...)"
+      "Description": "AutoRegression(C, A0, X{t}, A1, X{t-1} ...)",
+      "Output": "It is used to create customizable model of the following autoregression type: \nPrediction = С + A0 * X(t) + A1 * X(t-1) + ..."
     },
     "Avg": {
       "Arguments": "Arguments - any numeric expressions.",
-      "Description": "Avg(Argument1, Argument2 ...)"
+      "Description": "Avg(Argument1, Argument2 ...)",
+      "Output": "Returns arithmetic mean of arguments. "
     },
     "Chr": {
       "Arguments": "Argument - numerical code of Unicode character in the range [0, 65535].",
-      "Description": "Chr(Argument)"
+      "Description": "Chr(Argument)",
+      "Output": "Returns Unicode character according to its code."
     },
     "Concat": {
       "Arguments": "String - string expression.",
-      "Description": "Concat(String, String [, ... String])"
+      "Description": "Concat(String, String [, ... String])",
+      "Output": "Combines several strings into one.\nMissing values are interpreted as the strings with zero length, namely, as \"\"."
+    },
+    "Cos": {
+      "Arguments": "Angle - angle value in radians.",
+      "Description": "Cos(Angle)",
+      "Output": "Returns cosine of the set angle."
     },
     "Count": {
       "Arguments": "String - string expression.",
-      "Description": "Count(String)"
+      "Description": "Count(String)",
+      "Output": "Returns count of characters in the string."
     },
     "CreateGUID": {
+      "Arguments": "Format - method of GUID string representation (\"N\", \"D\", \"B\", \"P\").\nUpperCase - argument related to the logical type defining  the character case of hexadecimal digits.",
       "Description": "CreateGUID([Format = \"B\", UpperCase = True])"
     },
     "CumulativeSum": {
@@ -108,25 +119,33 @@
       "Description": "DamLevDist(String1, String2)"
     },
     "Data": {
+      "Arguments": "FieldName - name of the field data of which are required\nStringNumber - number of the string value of which is required",
       "Description": "Data(\"FieldName\",StringNumber)"
     },
     "DateTimeToStr": {
-      "Description": "DateTimeToStr(Date_time [, Format_of date [, Format_of time]])"
+      "Arguments": "Date_time - expression of the date/time type. Date_format - optional parameter date format in terms of D, M, Y.\nTime_format - optional parameter time format in terms of H, N, S, Z.",
+      "Description": "DateTimeToStr(Date_time [, Format_of date [, Format_of time]])",
+      "Output": "Returns the string representation of the Date_time argument.\nExamples of the date format:\n\"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")  \n\"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")\nExamples of the time format:  \n\"H:NN\" - converts the time into the \"hours:minutes\" format (\"9:53\")  \n\"HH:NN:SS\"  - converts the time into the \"hours:minutes:seconds\" format (\"09:05:53\")"
     },
     "DateToStr": {
-      "Description": "DateToStr(Date [, Format_of date])"
+      "Arguments": "Date - expression of the date/time type. \nDate_format - optional parameter date format in terms of D, M, Y.",
+      "Description": "DateToStr(Date [, Format_of date])",
+      "Output": "Returns the string representation of the Date argument.\nExamples of the date format:\n\"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")  \n\"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")"
     },
     "Day": {
       "Arguments": "Date - the date type field.",
-      "Description": "Day(Date)"
+      "Description": "Day(Date)",
+      "Output": "Returns the day according to the specified date."
     },
     "DayOfWeek": {
       "Arguments": "Date - the date type field.",
-      "Description": "DayOfWeek(Date)"
+      "Description": "DayOfWeek(Date)",
+      "Output": "Returns the week day according to the specified date."
     },
     "DaysBetween": {
       "Arguments": "Date1, Date2 - the date type field.",
-      "Description": "DaysBetween(Date1, Date2)"
+      "Description": "DaysBetween(Date1, Date2)",
+      "Output": "Returns the total number of days between two dates."
     },
     "Decode": {
       "Description": "Decode(Expression, Value1, Result1 [, Value2, Result2]... [, Default_value = \"\"])"
@@ -152,15 +171,18 @@
     },
     "EncodeDate": {
       "Arguments": "Year - year in the form of number,\nMonth - month in the form of number,\nDay - day in the form of number.",
-      "Description": "EncodeDate(Year, Month, Day)"
+      "Description": "EncodeDate(Year, Month, Day)",
+      "Output": "Function returns the date formed from the specified arguments."
     },
     "EncodeDateTime": {
       "Arguments": "Year - year in the form of number,\nMonth - month in the form of number,\nDay - day in the form of number,\nHours - hours in the form of number,\nMinutes - minutes in the form of number,\nSeconds - seconds in the form of number.",
-      "Description": "EncodeDateTime(Year, Month, Day, Hours, Minutes, Seconds)"
+      "Description": "EncodeDateTime(Year, Month, Day, Hours, Minutes, Seconds)",
+      "Output": "Function returns the date and time formed from the specified arguments."
     },
     "EncodeTime": {
       "Arguments": "Hours - hours in the form of number,\nMinutes - minutes in the form of number,\nSeconds - seconds in the form of number.",
-      "Description": "EncodeTime(Hours, Minutes, Seconds)"
+      "Description": "EncodeTime(Hours, Minutes, Seconds)",
+      "Output": "Function returns the time formed from the specified arguments."
     },
     "Exp": {
       "Arguments": "Degree - numeric expression.",
@@ -172,7 +194,8 @@
     },
     "Factorial": {
       "Arguments": "Argument - integer positive numeric expression.",
-      "Description": "Factorial(Argument)"
+      "Description": "Factorial(Argument)",
+      "Output": "Returns the argument factorial."
     },
     "Find": {
       "Description": "Find(Substring, String[, Order = 1])"
@@ -186,33 +209,52 @@
     },
     "Frac": {
       "Arguments": "Argument - numeric expression.",
-      "Description": "Frac(Argument)"
+      "Description": "Frac(Argument)",
+      "Output": "Returns the fractional part of the Argument."
     },
     "Hour": {
       "Arguments": "DateTime - the date/time type field.",
-      "Description": "Hour(DateTime)"
+      "Description": "Hour(DateTime)",
+      "Output": "Returns the hour according to the specified date/time."
+    },
+    "IF": {
+      "Arguments": "Antecedent - logical expression;\nValue1,\nValue2 - expressions of any types",
+      "Description": "IF(Antecedent, Value1, Value2)",
+      "Output": "Returns Value1 if the Antecedent is true or Value2 if it is false. The function result has the variable type"
+    },
+    "IFF": {
+      "Arguments": "Antecedent - logical expression;\nValue1,\nValue2 - numeric expressions or expressions of the Date/time type",
+      "Description": "IFF(Antecedent, Value1, Value2)",
+      "Output": "Returns Value1 if the Antecedent is true or Value2 if it is false."
     },
     "IN": {
-      "Description": "N(Value, Element1, Element2, ..., ElementN)"
+      "Arguments": "Value - value of the target element;\nElement1,\nElement2,\nElementN - values of the list elements",
+      "Description": "N(Value, Element1, Element2, ..., ElementN)",
+      "Output": "Function returns the TRUE value of the logical type if the Value is in the list, otherwise the result is FALSE."
     },
     "Int": {
       "Arguments": "Argument - numeric expression.",
-      "Description": "Int(Argument)"
+      "Description": "Int(Argument)",
+      "Output": "Returns the integer part of the Argument."
     },
     "InvKhi2": {
+      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nProbability - the probability connected with gamma distribution. ",
       "Description": "InvKhi2(Degree_of_freedom, Probability)"
     },
     "IsInfinite": {
       "Arguments": "Argument - numeric expression;",
-      "Description": "IsInfinite(Argument)"
+      "Description": "IsInfinite(Argument)",
+      "Output": "Determines whether the transferred value is an infinite number."
     },
     "IsNull": {
       "Arguments": "Argument - any expression;",
-      "Description": "IsNull(Argument)"
+      "Description": "IsNull(Argument)",
+      "Output": "Checks whether the Argument is null.\nReturns the logical value."
     },
     "Left": {
       "Arguments": "String - expression of the string type.",
-      "Description": "Left(String, Count_of_characters)"
+      "Description": "Left(String, Count_of_characters)",
+      "Output": "Returns the given count of characters of the left string part."
     },
     "LevDist": {
       "Arguments": "String1, \nString2 - expressions of the string type.",
@@ -220,7 +262,8 @@
     },
     "Ln": {
       "Arguments": "Argument - positive numeric expression.",
-      "Description": "Ln(Argument)"
+      "Description": "Ln(Argument)",
+      "Output": "Returns the natural argument logarithm."
     },
     "Log": {
       "Arguments": "Basis - numeric expression;\nArgument - positive numeric expression.",
@@ -228,7 +271,8 @@
     },
     "Lower": {
       "Arguments": "Argument - string expression.",
-      "Description": "Lower(Argument)"
+      "Description": "Lower(Argument)",
+      "Output": "Returns the lowercase argument."
     },
     "Max": {
       "Arguments": "Argument1,\nArgument2,\n... - numeric expressions.",
@@ -240,32 +284,50 @@
     },
     "Minute": {
       "Arguments": "DateTime - the date/time type field.",
-      "Description": "Minute(DateTime)"
+      "Description": "Minute(DateTime)",
+      "Output": "Returns minutes according to the specified date/time."
     },
     "Month": {
       "Arguments": "Date - the date type field.",
-      "Description": "Month(Date)"
+      "Description": "Month(Date)",
+      "Output": "Returns the month according to the specified date."
     },
     "MonthsBetween": {
       "Arguments": "Date1, Date2 - the date type field.",
-      "Description": "MonthsBetween(Date1, Date2)"
+      "Description": "MonthsBetween(Date1, Date2)",
+      "Output": "Returns the total number of months between two dates."
     },
     "MovingAverage": {
+      "Arguments": "Arguments - values of the numeric row",
       "Description": "MovingAverage(X{t}, X{t-1} ...)"
     },
+    "Now": {
+      "Arguments": "Arguments are absent.",
+      "Description": "Now()"
+    },
+    "Null": {
+      "Arguments": "Arguments are absent.",
+      "Description": "Null()",
+      "Output": "Function returns the null value."
+    },
     "NVL": {
-      "Description": "NVL(Expression [, Default_value = \"\"])"
+      "Arguments": "Expression - any string or numeric expression.\nDefault_value - optional parameter, string or numeric expression value of which is returned if the Expression is equal to Null. ",
+      "Description": "NVL(Expression [, Default_value = \"\"])",
+      "Output": "Returns the Expression value if it is not equal to Null and Default_value otherwise."
     },
     "Pi": {
       "Arguments": "Arguments are absent.",
-      "Description": "Pi()"
+      "Description": "Pi()",
+      "Output": "Returns the \"PI\" invariable value 3.1415926535897932385."
     },
     "PKhi2": {
+      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
       "Description": "PKhi2(Degrees_of_freedom, Argument)"
     },
     "Pow": {
       "Arguments": "Argument - numeric expression;\nDegree - numeric expression;",
-      "Description": "Pow(Argument, Degree)"
+      "Description": "Pow(Argument, Degree)",
+      "Output": "Returns the argument in the given degree."
     },
     "Random": {
       "Arguments": "Arguments are absent.",
@@ -273,7 +335,8 @@
     },
     "RelErr": {
       "Arguments": "Arguments - any numeric expressions.",
-      "Description": "RelErr(Argument1, Argument2)"
+      "Description": "RelErr(Argument1, Argument2)",
+      "Output": "Returns the relative accuracy of two arguments."
     },
     "Repeat": {
       "Arguments": "String - string expression.\nCount_of_repeats - integer",
@@ -284,50 +347,67 @@
     },
     "Right": {
       "Arguments": "String - expression of the string type.",
-      "Description": "Right(String, Count_of_characters)"
+      "Description": "Right(String, Count_of_characters)",
+      "Output": "Returns the given count of characters of the right string part."
     },
     "Round": {
+      "Arguments": "Argument1 - numeric expression,\nArgument2 - optional parameter, the number of digits following the decimal point, integer.",
       "Description": "Round(Argument1 [, Argument2 = 0])"
     },
     "RowCount": {
       "Arguments": "Arguments are absent.",
-      "Description": "RowCount()"
+      "Description": "RowCount()",
+      "Output": "Function returns the row count in the data source."
     },
     "RowNum": {
       "Arguments": "Arguments are absent.",
-      "Description": "RowNum()"
+      "Description": "RowNum()",
+      "Output": "Function returns the current record number of the data source. "
     },
     "Second": {
       "Arguments": "DateTime - the date/time type field.",
-      "Description": "Second(DateTime)"
+      "Description": "Second(DateTime)",
+      "Output": "Returns seconds according to the specified date/time."
     },
     "Sign": {
       "Arguments": "Argument - numeric expression;",
-      "Description": "Sign(Argument)"
+      "Description": "Sign(Argument)",
+      "Output": "Returns the argument sign."
+    },
+    "Sin": {
+      "Arguments": "Angle - angle value in radians.",
+      "Description": "Sin(Angle)",
+      "Output": "Returns sinus of the set angle."
     },
     "Space": {
-      "Description": "Space(Count_of_spaces)"
+      "Arguments": "Count_of_spaces - integer.",
+      "Description": "Space(Count_of_spaces)",
+      "Output": "Returns the given count of spaces."
     },
     "Sqrt": {
       "Arguments": "Argument - positive numeric expression.",
-      "Description": "Sqrt(Argument)"
+      "Description": "Sqrt(Argument)",
+      "Output": "Returns the argument square root."
     },
     "StartOfTheWeek": {
       "Arguments": "Date - argument of the Date/Time type.",
       "Description": "StartOfTheWeek(Date)"
     },
     "Stat": {
-      "Description": "Stat(\"FieldName\", \"Type\")"
+      "Description": "Stat(\"FieldName\", \"Type\")",
+      "Output": "Function returns one of the statistical indicators. \nThe type can adopt one of the following values:\n       Min - minimum value\n       Max - maximum value\n       Avg - average value\n       StdDev - standard deviation\n       Sum - sum of values\n       SumSq - sum of square values\n       Count - count of values\n       UniqueCount - count of unique values\n       NullCount - count of missing values\nNote: FieldName and Type - string values, namely, explicitly given FieldName and Type must be in quotation marks.\nFor example: Stat(\"COL1\", \"Min\")"
     },
     "StdDev": {
       "Arguments": "Arguments - any numeric expressions.",
-      "Description": "StdDev(Argument1, Argument2 ...)"
+      "Description": "StdDev(Argument1, Argument2 ...)",
+      "Output": "Returns the standard deviation of arguments."
     },
     "Str": {
       "Arguments": "Argument - expression of  the numeric type.",
       "Description": "Str(Argument)"
     },
     "StrToDate": {
+      "Arguments": "Argument - the string expression containing date/time\nFormat - optional parameter date/time format in terms of D, M, Y, H, N, S, Z",
       "Description": "StrToDate(Argument [, Format])"
     },
     "StrZero": {
@@ -340,6 +420,28 @@
     "SubStr": {
       "Description": "SubStr(Source, Start, Length)"
     },
+    "Sum": {
+      "Arguments": "Arguments - any numeric expressions.",
+      "Description": "Sum(Argument1, Argument2 ...)",
+      "Output": "Returns the sum of arguments."
+    },
+    "SumSq": {
+      "Arguments": "Arguments - any numeric expressions.",
+      "Description": "SumSq(Argument1, Argument2 ...)"
+    },
+    "Tan": {
+      "Arguments": "Angle - angle value in radians.",
+      "Description": "Tan(Angle)",
+      "Output": "Returns tangent of the set angle."
+    },
+    "Today": {
+      "Arguments": "Arguments are absent.",
+      "Description": "Today()"
+    },
+    "Trim": {
+      "Arguments": "Argument - string expression.",
+      "Description": "Trim(Argument)"
+    },
     "TrimLeft": {
       "Arguments": "Argument - string expression.",
       "Description": "TrimLeft(Argument)"
@@ -350,7 +452,8 @@
     },
     "Upper": {
       "Arguments": "Argument - string expression.",
-      "Description": "Upper(Argument)"
+      "Description": "Upper(Argument)",
+      "Output": "Returns the uppercase argument."
     },
     "Val": {
       "Arguments": "String - string expression.",
@@ -362,11 +465,13 @@
     },
     "Year": {
       "Arguments": "Date - the date type field.",
-      "Description": "Year(Date)"
+      "Description": "Year(Date)",
+      "Output": "Returns the year according to the specified date."
     },
     "YearsBetween": {
       "Arguments": "Date1, Date2 - the date type field.",
-      "Description": "YearsBetween(Date1, Date2)"
+      "Description": "YearsBetween(Date1, Date2)",
+      "Output": "Returns the total number of years between two dates."
     }
   }
 }

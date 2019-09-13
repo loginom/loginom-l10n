@@ -84,7 +84,7 @@
     "ErrCachedHttpStreamClassUnassigned": "Cached HTTP stream class not registered"
   },
   "Common/HTTP/CachedHttpStream_Win": {
-    "ErrHttpResponseExRequired": "Failed to create %s class instance, support by HTTP client response of IHTTPResponseEx interface is required",
+    "ErrHttpResponseExRequired": "Failed to create %s class instance, HTTP client response must support IHTTPResponseEx interface",
     "ErrHttpResponseWriteDisallowed": "Writing to HTTP response stream disallowed",
     "ErrInconsistentContentLength": "Actual received data size %d inconsistent with Content-Length %d header value",
     "ErrReadStreamBufferLength": "The provided buffer size %d is too smal to read %d bytes"
@@ -1367,7 +1367,7 @@
     "RegressionVendorDesc": "Trains multilayer perceptron to complete the regression tasks"
   },
   "components/partition/PartitionEngine": {
-    "OutDataSetCommon": "Common data set",
+    "OutDataSetCommon": "Common output data set",
     "OutDataSetTeach": "Training output data set",
     "OutDataSetTest": "Test output data set",
     "PartitionDisplayName": "Test set"

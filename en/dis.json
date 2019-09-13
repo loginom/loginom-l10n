@@ -14,7 +14,7 @@
     "ChangedPublishedPackages": "om the server {0} there are a change in the list of published packages",
     "ConnectedToServer": "Connecting to server {0}",
     "DeletedPublishedPackage": "The published package \"{1}\" of version \"{2}\" was deleted on server {0}",
-    "ErrCannotAddPublishedPackage": "The package{1} of the version{2} which was belong to server{0} can not be published{3}",
+    "ErrCannotAddPublishedPackage": "\"{1}\" package of \"{2}\" version related to {0} server cannot be published: {3}",
     "ErrCannotConnectToServer": " {0} server connection failed",
     "ErrConnectionFailure": " {0} server connection lost",
     "ErrDifferentPackagesWithSameNameAndVersion": "the package does not match the previously published package with the same name and version",
@@ -37,14 +37,14 @@
   },
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
     "ErrInputNeedsToBeWrappedInAnObject": "Input parameters must be wrapped in an object",
-    "ErrInvalidContentType": "not execrable value",
+    "ErrInvalidContentType": "Invalid value of the Content-Type caption: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",
     "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified\nWebBodyFormatMessageProperty",
     "WarnDuplicateRequestParameter": "the request consist of more than one parameter",
     "WarnUnknownRequestParameter": "the request consist with unknown name of parameter"
   },
   "DeductorIntegrationServerCore/LoggerManager": {
-    "ErrUnknownLogLevel": "unknown level of connection"
+    "ErrUnknownLogLevel": "Unknown logging level: {0}"
   },
   "DeductorIntegrationServerCore/RestHelpPageGenerator": {
     "Body": "Body",

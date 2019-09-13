@@ -55,7 +55,7 @@
   },
   "components/binning": {
     "BinningBinsDefExtension": {
-      "KindForBins": "Usage type of bin column"
+      "KindForBins": "Usage type of column for binning"
     },
     "BinningContinuousBinItem": {
       "LowerBound": "Lower range bound",

@@ -1,6 +1,6 @@
 {
   "DeductorClient/DeductorConnector": {
-    "ErrAlreadyConnected": "You are connected already",
+    "ErrAlreadyConnected": "Already connected",
     "ErrNotConnected": "the connection was not done"
   },
   "DeductorIntegrationServerCore/ConfigurationSections": {
@@ -15,9 +15,9 @@
     "ConnectedToServer": "Connecting to server {0}",
     "DeletedPublishedPackage": "The published package \"{1}\" of version \"{2}\" was deleted on server {0}",
     "ErrCannotAddPublishedPackage": "The package{1} of the version{2} which was belong to server{0} can not be published{3}",
-    "ErrCannotConnectToServer": "it is not possible to be connected to the server",
-    "ErrConnectionFailure": "Server connection lost {0}",
-    "ErrDifferentPackagesWithSameNameAndVersion": "this package is completely different that the same one which was published previously with the same name and the same version",
+    "ErrCannotConnectToServer": " {0} server connection failed",
+    "ErrConnectionFailure": " {0} server connection lost",
+    "ErrDifferentPackagesWithSameNameAndVersion": "the package does not match the previously published package with the same name and version",
     "ErrDuplicateNodeNames": "the package contains more than one node with \"{0}\" name",
     "ErrEmptyNodeName": "no node name with \"{0}\" caption and  {{{1}}} identifier specified",
     "ErrExecuteNodeConnectionFailure": "{0} server connection lost during request processing",

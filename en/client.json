@@ -694,7 +694,7 @@
     "HintForSortDirectionDesc": "Descending",
     "InvalidRowDescFmt": "\"{0}\" input field not found",
     "MultiDeleteConfirm": "Do you want to clear sorting for selected fields?",
-    "NotCaseSensitiveActionDesc": "Not case-sensitive"
+    "NotCaseSensitiveActionDesc": "Case-insensitive"
   },
   "components/ungroupdata/UngroupDataWizard": {
     "ErrDataTypeTimeAxisFields": "Field data types for data sequentializing must match",

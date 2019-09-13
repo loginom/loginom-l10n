@@ -84,7 +84,7 @@
     "ErrCachedHttpStreamClassUnassigned": "Cached HTTP stream class not registered"
   },
   "Common/HTTP/CachedHttpStream_Win": {
-    "ErrHttpResponseExRequired": "To create %s class instance support by IHTTPResponseEx interface HTTP client response is required",
+    "ErrHttpResponseExRequired": "Failed to create %s class instance, support by HTTP client response of IHTTPResponseEx interface is required",
     "ErrHttpResponseWriteDisallowed": "Writing to HTTP response stream disallowed",
     "ErrInconsistentContentLength": "Actual received data size %d inconsistent with Content-Length %d header value",
     "ErrReadStreamBufferLength": "The provided buffer size %d is too smal to read %d bytes"
@@ -833,7 +833,7 @@
     "VendorDescription": "Extracts XML document from the string field of the data set and imports it into the output data set according to the specified schema"
   },
   "components/factoranalysis/FactorAnalysis": {
-    "ErrFactorMatrixAfterRot": "Illconditioned factor mapping matrix",
+    "ErrFactorMatrixAfterRot": "Ill-conditioned factor mapping matrix",
     "ErrFactorMatrixBadSize": "Incorrect factor mapping matrix size",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
@@ -914,13 +914,13 @@
     "VendorDesc": "Row selection by condition"
   },
   "components/filtration/DataRecovery": {
-    "DataRecovery": "Imputation",
+    "DataRecovery": "Fill empty",
     "PaymentAdditionalFeatures": "Calculation of the additional features",
     "QualityEngine": "Data quality",
     "ScanningInputData": "Input data scanning"
   },
   "components/filtration/DataRecoveryVendor": {
-    "VendorCaption": "Imputation",
+    "VendorCaption": "Fill empty",
     "VendorDesc": "Fill in missing data"
   },
   "components/filtration/ELimOutlier": {
@@ -941,7 +941,7 @@
     "ErrIncorrectData": "Incorrect data passed to %s procedure",
     "ErrOptimGradientVerificationFailed": "Analytical gradient verification failed",
     "ErrOptimIntegrityFailed": "The infinite value of the optimized function or its gradient was detected",
-    "NotEnoughData": "Not enough data to train the model with the given structure",
+    "NotEnoughData": "Not enough data points in the series to train the model with the given structure",
     "TrainARIMAXProcessCaption": "Model training"
   },
   "components/forecast/ARIMAXModel": {
@@ -2677,7 +2677,7 @@
   "Libraries/Config/ConfigBackupService": {
     "ErrBackupManagerNotRegistered": "Class not registered for \"%s\" identifier",
     "ErrBackupMarkerDelete": "Attempt to delete the current backup point: \"%s\"",
-    "ErrBackupPointIncorrect": "You cannot backup changes to point: \"%s\"",
+    "ErrBackupPointIncorrect": "Rollback to backup point \"%s\" failed",
     "ErrBackupPointInitialize": "Backup point initialization error: \"%s\"",
     "ErrBackupPointRollBack": "Failed to restore point: \"%s\"",
     "ErrBackupPointUpdate": "Failed to update point: \"%s\"",
@@ -3565,7 +3565,7 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s",
-    "WarnMainWSDLNotLoaded": "Main WSDL source (%s) not loaded (%s). We are trying to load the backup source."
+    "WarnMainWSDLNotLoaded": "Main WSDL source (%s) failed to get loaded (%s). Loading the backup source."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
     "WSDLClientConnectionVendorCaption": "SOAP Service",
@@ -3781,7 +3781,7 @@
   "Viewers/Chart/Server/ChartColumnInfo": {
     "ChartExtremesProgress": "Search for extremes",
     "ChartSortingProgress": "Data sorting",
-    "ChartTotalsProgress": "Addition of series"
+    "ChartTotalsProgress": "Series sum calculation"
   },
   "Viewers/Chart/Server/ChartParametres": {
     "Alpha": "Transparency",
@@ -3873,10 +3873,10 @@
     "ErrDetailingViewDataSource": "Failed to prepare the data source for \"%s\" detailing",
     "ErrDetailingViewExecution": "Error of \"%s\" detailing execution",
     "ErrDetailingViewInitialization": "Detailing initialization error \"%s\"",
-    "ErrScopeMissing": "Failed to get the owner context during \"%s\" detailing initialization ",
+    "ErrScopeMissing": "Failed to get the owner context during \"%s\" detailing initialization",
     "ManagerBrowse": "Table",
     "ManagerStatistics": "Statistics",
-    "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" detailing configuration "
+    "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" detailing configuration"
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Component",

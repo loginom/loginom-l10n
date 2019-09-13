@@ -39,7 +39,7 @@
       "Cancelled": "Canceled by user",
       "InitError": "Error initializing WSDL request: %s",
       "ConnectionUndefined": "WSDL connection not specified",
-      "OperationUndefined": "The operation used is not defined",
+      "OperationUndefined": "The used operation undefined",
       "NoContextForInputMessage": "No context for generation of the incoming service message",
       "UnsupportedSoapTransport": "Unsupported SOAP transport",
       "PrepareError": "Error preparing data request: %s",
@@ -1682,8 +1682,8 @@
       "PercentByCol": "Percent by column",
       "RankByRow": "Rank by row",
       "RankByCol": "Rank by column",
-      "CompareWithPrevByRow": "Diference from previous by row",
-      "CompareWithPrevByCol": "Diference from previous by column",
+      "CompareWithPrevByRow": "Difference from previous by row",
+      "CompareWithPrevByCol": "Difference from previous by column",
       "CumulativeSumByRow": "Cumulative sum by row",
       "CumulativeSumByCol": "Cumulative sum by column"
     }

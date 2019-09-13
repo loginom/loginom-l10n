@@ -724,7 +724,7 @@
       "fieldLabel": "Name"
     },
     "frmSelectVisibilityForm": {
-      "title": "Select Visibility"
+      "title": "Select access modifier"
     },
     "rdoInternal": {
       "boxLabel": "Internal (available only within current package)"
@@ -1330,7 +1330,7 @@
       "boxLabel": "Extremum of cross-correlation function"
     },
     "cbCorrTypeKendall": {
-      "boxLabel": "Kendall Tay-b coefficient"
+      "boxLabel": "Kendall Tau-b coefficient"
     },
     "cbCorrTypeLinear": {
       "boxLabel": "Pearson correlation coefficient"
@@ -1900,7 +1900,7 @@
       "title": "Seasonality"
     },
     "cntUngroupPeriod": {
-      "title": "Ungrouped Row"
+      "title": "Ungrouped Series"
     },
     "colSupport": {
       "text": "Reference data"
@@ -2618,7 +2618,7 @@
       "text": "Cancel"
     },
     "cbxPeriodType": {
-      "fieldLabel": "Time span"
+      "fieldLabel": "Time span unit"
     },
     "frmDateValuesDialog": {
       "title": "Select Time Span"
@@ -2699,7 +2699,7 @@
       "text": "Move to selected"
     },
     "mniIsSelectedAll": {
-      "text": "Move to selected all"
+      "text": "Move all to selectedl"
     },
     "txtFilterMDFields": {
       "emptyText": "Filter"

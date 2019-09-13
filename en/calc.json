@@ -78,7 +78,7 @@
       "Output": "Returns the value arctangent, namely, the angle in radians the tangent of which is equal to the Value."
     },
     "AutoRegression": {
-      "Arguments": "C - invariable,\nA0 ... An - regression coefficients,\nX(t) ... X(t-n) - row values.",
+      "Arguments": "C - invariable,\nA0 ... An - regression coefficients,\nX(t) ... X(t-n) - series values.",
       "Description": "AutoRegression(C, A0, X{t}, A1, X{t-1} ...)",
       "Output": "It is used to create customizable model of the following autoregression type: \nPrediction = С + A0 * X(t) + A1 * X(t-1) + ..."
     },
@@ -189,7 +189,7 @@
       "Description": "Exp(Degree)"
     },
     "ExpMovingAverage": {
-      "Arguments": "Arguments - values of the numeric row",
+      "Arguments": "Arguments - values of the numeric series",
       "Description": "ExpMovingAverage(X{t}, X{t-1} ...)"
     },
     "Factorial": {
@@ -298,7 +298,7 @@
       "Output": "Returns the total number of months between two dates."
     },
     "MovingAverage": {
-      "Arguments": "Arguments - values of the numeric row",
+      "Arguments": "Arguments - values of the numeric series",
       "Description": "MovingAverage(X{t}, X{t-1} ...)"
     },
     "Now": {

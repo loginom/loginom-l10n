@@ -1,10 +1,10 @@
 {
   "DeductorClient/DeductorConnector": {
     "ErrAlreadyConnected": "Already connected",
-    "ErrNotConnected": "the connection was not done"
+    "ErrNotConnected": "Not connected"
   },
   "DeductorIntegrationServerCore/ConfigurationSections": {
-    "ErrNoColumnsSpecified": "it was not given any value of column for connection",
+    "ErrNoColumnsSpecified": "No column was specified for logging",
     "ErrSqlCommandAndTableBothSpecified": "it not possible to assign the value of sqlCommand and a table",
     "ErrSqlCommandOrTableNotSpecified": "Database element must contain sqlCommand or table attribute "
   },
@@ -23,7 +23,9 @@
     "ErrExecuteNodeConnectionFailure": "{0} server connection lost during request processing",
     "ErrInvalidPackageNamespace": "\"{0}\" is invalid namespace",
     "ErrLoadPackageDefsError": "Error of loading of packages for {0} server ",
+    "ErrNoApplicableDeductorServers": "No server found on which \"{0}\" package of \"{1}\" version is available.",
     "ErrNodeNameAlreadyExistsInDifferentPackage": "node with \"{0}\" name already exists in \"{1}\" package of \"{2}\" version   ",
+    "ErrNoWorkingApplicableDeductorServers": "No functioning server found on which \"{0}\" package of \"{1}\" version is available.",
     "ErrPackageHasNoPublishedNodes": "The package contains no published nodes",
     "ErrSavePackageDefsError": "Error of saving of packages for {0} server",
     "ErrServerDisconnectError": "Error of disconnection from {0} server",
@@ -40,8 +42,8 @@
     "ErrInvalidContentType": "Invalid value of the Content-Type caption: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",
     "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified\nWebBodyFormatMessageProperty",
-    "WarnDuplicateRequestParameter": "the request consist of more than one parameter",
-    "WarnUnknownRequestParameter": "the request consist with unknown name of parameter"
+    "WarnDuplicateRequestParameter": "The request contains more than one parameter with  {0} name",
+    "WarnUnknownRequestParameter": "The request contains parameter with unknown {0} name"
   },
   "DeductorIntegrationServerCore/LoggerManager": {
     "ErrUnknownLogLevel": "Unknown logging level: {0}"
@@ -49,7 +51,7 @@
   "DeductorIntegrationServerCore/RestHelpPageGenerator": {
     "Body": "Body",
     "Description": "Description",
-    "ErrInvalidParameterType": "this parameter consist of not acceptable type of information",
+    "ErrInvalidParameterType": "The parameter has the invalid data type: {0}",
     "Example": "Example",
     "Format": "Format",
     "HttpMethod": "HTTP Method: ",
@@ -83,6 +85,7 @@
     "ErrMissingArrayItem": "Missing \"{0}\" array item",
     "ErrMissingRequiredParameter": "Missing required \"{0}\" parameter",
     "ErrMissingRequiredTreeNode": "Missing required \"{0}\" tree node",
+    "ErrMissingRequiredTreeNodeFlag": "Missing required tree node flag \"{0}\"",
     "ErrProcessingRequestCompleted": "Processing completed successfully",
     "ErrProcessingRequestException": "Exception occurred during the request processing",
     "ErrRootElementCannotBeNull": "Root element must not be null",

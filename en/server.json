@@ -1956,6 +1956,8 @@
     "ErrRowCountLimitReached": "Maximum row count limit reached"
   },
   "Libraries/bgrtl/CachedDataTree": {
+    "ErrCannotGetForeignKey": "You cannot get the foreign key for the node with %d identifier: the node is not an array",
+    "ErrCannotGetNodeExistFlag": "You cannot get the node exist flag with %d identifier: the node is not a simple container",
     "ErrCannotGetNodeValue": "You cannot get the node value with %d identifier: the node is a container",
     "ErrCannotGetRowCount": "You cannot get the row count for the node with %d identifier: the node is not an array",
     "ErrColumnIndexOutOfRange": "Column number %d is out of [%d; %d] range",
@@ -2066,6 +2068,10 @@
   "Libraries/bgrtl/DataTree": {
     "ErrAlienNodeInfo": "Description of \"%s\" node does not belong to the current tree ",
     "ErrCannotAppendNodeBeforeParentNode": "You cannot append \"%s\" node before the parent node",
+    "ErrCannotPostNodeBeforeChildNodes": "Post method calling for \"%s\" node before the Post call for the child nodes is forbidden",
+    "ErrCannotPostNodeWithoutAppend": "Post method calling for \"%s\" node without the Append call is forbidden",
+    "ErrCannotRepeatAppendNode": "Repeated Append calling for \"%s\" node without the Post call is forbidden",
+    "ErrCanOnlyAppendContainerOrArray": "Append calling method for \"%s\" node that is not a container or array is forbidden.",
     "ErrDataTreeActive": "Tree is not in the closed state",
     "ErrDataTreeClosed": "Tree is not in the opened state",
     "ErrDataTreeNotConfigured": "Tree not configured",
@@ -2074,8 +2080,10 @@
     "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataTreeNodeDefs": {
+    "ErrCannotInitializeNodeWithDifferentContainerFlag": "You cannot initialize the node from the source node that has a different meaning of the container feature. ",
     "ErrChangeDataKindNotAllowed": "You cannot change the data kind of the node that is a container",
     "ErrChangeDataTypeNotAllowed": "You cannot change the data type of the node that is a container",
+    "ErrChangeIsContainerNotAllowed": "You cannot change the container indicator of the node that is the root one or contains child nodes",
     "ErrNodeCantBeContinuous": "\"%s\" node of \"%s\" type cannot be continuous",
     "ErrOnlyContainerNodeCanHaveSubNodes": "Only container node can have subnodes",
     "Root": "Root node",

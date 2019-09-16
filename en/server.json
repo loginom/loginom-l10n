@@ -800,7 +800,7 @@
     "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" node for which inheritance is forbidden",
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
-    "ErrPortNotConfigurable": "Configuring this port is not supported",
+    "ErrPortNotConfigurable": "The port configuring not supported",
     "ErrReferencedNodeNotAvailable": "Reference node not available",
     "ErrReferencedNodeNotFound": "Referenced node not found",
     "ErrReferencedNodeNotSpecified": "No reference to node specified",
@@ -1236,7 +1236,7 @@
     "ErrNoConditionVariable": "No variable to check the loop termination condition",
     "ErrParallelProcessingError": "Error occurred while parallel loop processing",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Posttested loop does not support parallel processing",
-    "ErrPortNotConfigurable": "Configuring this port is not supported",
+    "ErrPortNotConfigurable": "The port configuring not supported",
     "ErrSocketIsNotInputDataSourceSocket": "\"%s\" port is not input port containing data set",
     "ErrSocketNotConfigured": "Port not configured",
     "ErrUnsupportedInputSocketType": "Unsupported \"%s\" port type",
@@ -2080,7 +2080,7 @@
     "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataTreeNodeDefs": {
-    "ErrCannotInitializeNodeWithDifferentContainerFlag": "You cannot initialize the node from the source node that has a different meaning of the container feature. ",
+    "ErrCannotInitializeNodeWithDifferentContainerFlag": "You cannot initialize the node from the source node that has a different meaning of the container feature.",
     "ErrChangeDataKindNotAllowed": "You cannot change the data kind of the node that is a container",
     "ErrChangeDataTypeNotAllowed": "You cannot change the data type of the node that is a container",
     "ErrChangeIsContainerNotAllowed": "You cannot change the container indicator of the node that is the root one or contains child nodes",
@@ -2982,7 +2982,7 @@
   "Libraries/Model/DerivedModelUnitAspects": {
     "ErrCannotChangeDerivedSocketType": "You cannot change the derived ports data type",
     "ErrCannotDeleteDerivedConnections": "You cannot delete derived connections",
-    "ErrCannotDeleteDerivedSocket": "You cannot delete derived ports",
+    "ErrCannotDeleteDerivedSocket": "You cannot delete the derived ports",
     "ErrCannotDeleteDerivedVendors": "You cannot delete derived components"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
@@ -2997,7 +2997,7 @@
     "GenericVendorCaption": "Supernode"
   },
   "Libraries/Model/Generic/ModelInnerComponent": {
-    "ErrAlreadyConfiguringInnerSocket": "The external component port has already been configuring"
+    "ErrAlreadyConfiguringInnerSocket": "The external port component has already been configuring"
   },
   "Libraries/Model/Generic/ModelInputComponent": {
     "ErrInnerOutputSocketDefIsEmtpy": "The following input types are not specified: "
@@ -3611,7 +3611,7 @@
     "ErrCannotCreateDirectory": "Failed to create \"%s\" folder",
     "ErrCannotDeleteBasePackage": "You cannot delete %s base package without deleting %s dependent package that references it",
     "ErrCannotGetPackageLinkRef": "Failed to get the object reference to the package link with %s name",
-    "ErrCannotGetPackageRef": "Failed to get the object reference to the package  %s",
+    "ErrCannotGetPackageRef": "Failed to get the object reference to the package with %s name",
     "ErrCannotSaveReadOnlyPackage": "You cannot save %s read-only package",
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
@@ -4045,7 +4045,7 @@
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.\n%s",
     "ErrError": "Error:",
-    "MsgDeleteDataProcess": "Delete the process from the Data Warehouse by data dimension",
+    "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",

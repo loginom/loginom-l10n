@@ -7,7 +7,7 @@
       "Mathematic": "Math",
       "Statistic": "Statistical",
       "Logic": "Logical",
-      "String": "Text",
+      "String": "String",
       "Other": "Other",
       "Model": "Models"
     }
@@ -1276,7 +1276,7 @@
       "$Caption": "Cache Strings Mode",
       "Off": "Do not use cache",
       "Manual": "Custom cache size",
-      "Auto": "Auto"
+      "Auto": "Auto define"
     }
   },
   "Libraries/Model/ModelWorkFlow": {

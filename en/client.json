@@ -247,7 +247,7 @@
     "AddVariableTitle": "Add Variable",
     "ErrVariableEmptyName": "Variable name cannot be empty",
     "ErrVariableInvalidIdentifier": "Entered \"{0}\" variable name is not a valid identifier",
-    "ErrVariableNameAlreadyExists": "\"{0}\" variable already exists",
+    "ErrVariableNameAlreadyExists": "Variable with \"{0}\" name already exists",
     "GroupEditingTitle": "Group Editing",
     "HiddenFieldLabel": "Hidden:",
     "HiddenFieldTip": "Not selected in the reports view mode",
@@ -1351,7 +1351,7 @@
     "Visualizer": "Visualizer"
   },
   "mxgraph/node/InheritedNode": {
-    "VendorModified": "The base node has been changed and now it is out of sync with it. It is required to update or reset to the original configuration of derived node"
+    "VendorModified": "The base node has been changed and now it is out of sync with it. It is required to update or reset to the original configuration of the derived node"
   },
   "mxgraph/node/label/GenericEnterLabel": {
     "GenericEnterLabel": "Enter"
@@ -1752,7 +1752,7 @@
     "TotalNodeCaption": "Total"
   },
   "viewers/cube/CasesCalcPanel": {
-    "ErrCaseAlreadyExist": "\"{0}\" measure already exists",
+    "ErrCaseAlreadyExist": "Measure with \"{0}\" name already exists",
     "ErrDimAlreadyExist": "\"{0}\" dimension already exists",
     "ErrWhitespaceExpression": "Expression cannot be empty string"
   },

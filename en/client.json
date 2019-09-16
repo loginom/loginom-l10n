@@ -296,7 +296,7 @@
     "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
     "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
-    "MsgNotFoundWizard": "No wizard for \"{0}\" object "
+    "MsgNotFoundWizard": "No wizard for \"{0}\" object"
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Base Node",

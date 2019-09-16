@@ -6,7 +6,7 @@
   "DeductorIntegrationServerCore/ConfigurationSections": {
     "ErrNoColumnsSpecified": "No column was specified for log-in",
     "ErrSqlCommandAndTableBothSpecified": "It is forbidden to specify sqlCommand and table attributes simultaneously",
-    "ErrSqlCommandOrTableNotSpecified": "Database element must contain sqlCommand or table attribute "
+    "ErrSqlCommandOrTableNotSpecified": "Database element must contain sqlCommand or table attribute"
   },
   "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
     "AddedPublishedPackage": "The published package \"{1}\" of the version \"{2}\" has been added on the server {0}",
@@ -15,16 +15,16 @@
     "ConnectedToServer": "Connected to server {0}",
     "DeletedPublishedPackage": "The published package \"{1}\" of version \"{2}\" was deleted on server {0}",
     "ErrCannotAddPublishedPackage": "\"{1}\" package of \"{2}\" version related to {0} server cannot be published: {3}",
-    "ErrCannotConnectToServer": " {0} server connection failed",
-    "ErrConnectionFailure": " {0} server connection lost",
+    "ErrCannotConnectToServer": "{0} server connection failed",
+    "ErrConnectionFailure": "{0} server connection lost",
     "ErrDifferentPackagesWithSameNameAndVersion": "the package does not match the previously published package with the same name and version",
     "ErrDuplicateNodeNames": "the package contains more than one node with \"{0}\" name",
     "ErrEmptyNodeName": "no node name with \"{0}\" caption and  {{{1}}} identifier specified",
     "ErrExecuteNodeConnectionFailure": "{0} server connection lost during request processing",
     "ErrInvalidPackageNamespace": "\"{0}\" is invalid namespace",
-    "ErrLoadPackageDefsError": "Error of loading of packages for {0} server ",
+    "ErrLoadPackageDefsError": "Error of loading of packages for {0} server",
     "ErrNoApplicableDeductorServers": "No server found on which \"{0}\" package of \"{1}\" version is available.",
-    "ErrNodeNameAlreadyExistsInDifferentPackage": "node with \"{0}\" name already exists in \"{1}\" package of \"{2}\" version   ",
+    "ErrNodeNameAlreadyExistsInDifferentPackage": "node with \"{0}\" name already exists in \"{1}\" package of \"{2}\" version",
     "ErrNoWorkingApplicableDeductorServers": "No functioning server found on which \"{0}\" package of \"{1}\" version is available.",
     "ErrPackageHasNoPublishedNodes": "The package contains no published nodes",
     "ErrSavePackageDefsError": "Error of saving of packages for {0} server",
@@ -33,7 +33,7 @@
     "PendingUnloadAppDomain": "Service shutdown is planned, application domain name: \"{0}\", identifier: {1}"
   },
   "DeductorIntegrationServerCore/DisServiceHostFactory": {
-    "ErrInitializationException": "Exception occurred during the service initialization ",
+    "ErrInitializationException": "Exception occurred during the service initialization",
     "StartingService": "Service start, version: {0}, application domain name: \"{1}\", identifier: {2}",
     "StoppingService": "Service shutdown, application domain name: \"{0}\", identifier: {1}"
   },
@@ -76,7 +76,7 @@
     "Uri": "Uri",
     "Url": "Url: ",
     "UrlExample": "Url example: ",
-    "UrlFormat": "URL format:"
+    "UrlFormat": "URL format: "
   },
   "DeductorIntegrationServerCore/ServiceHelper": {
     "ErrInvalidColumnCount": "Invalid column count in the matrix of values:  {0}; required: {1}",
@@ -97,6 +97,6 @@
     "ErrNoPublishedPackages": "No published packages",
     "ErrRootNodeNotFound": "Root tree node not found",
     "ErrTreeMustHaveSingleRootNode": "Tree cannot contain more than one root node",
-    "NoPublishedPackagesServiceDocumentation": "No packages have been currently published."
+    "NoPublishedPackagesServiceDocumentation": "No packages have been currently published. "
   }
 }

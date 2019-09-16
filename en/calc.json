@@ -3,7 +3,7 @@
     "CRC32": {
       "Arguments": "String is a string for which CRC32 value is calculated.",
       "Description": "CRC32(String)",
-      "Output": "Function returns the number - CRC32 value calculated on the basis of the given string. \nCalculations are performed above the sequence of the String characters using UTF-8 encoding.  "
+      "Output": "Function returns the number - CRC32 value calculated on the basis of the given string.\nCalculations are performed above the sequence of the String characters using UTF-8 encoding."
     },
     "HardKey": {
       "Arguments": "Arguments are absent",
@@ -13,12 +13,12 @@
     "MD5": {
       "Arguments": "String is a string for which MD5 value is calculated.",
       "Description": "MD5(String)",
-      "Output": "Function returns HEX value MD5 calculated on the basis of the given string. \nCalculations are performed above the sequence of the String characters using UTF-8 encoding."
+      "Output": "Function returns HEX value MD5 calculated on the basis of the given string.\nCalculations are performed above the sequence of the String characters using UTF-8 encoding."
     },
     "SHA1": {
       "Arguments": "String is a string for which SHA1 value is calculated.",
       "Description": "SHA1(String)",
-      "Output": "Function returns HEX value SHA1 calculated on the basis of the given string. \nCalculations are performed above the sequence of the String characters using UTF-8 encoding."
+      "Output": "Function returns HEX value SHA1 calculated on the basis of the given string.\nCalculations are performed above the sequence of the String characters using UTF-8 encoding."
     }
   },
   "Functions": {
@@ -80,12 +80,12 @@
     "AutoRegression": {
       "Arguments": "C - invariable,\nA0 ... An - regression coefficients,\nX(t) ... X(t-n) - series values.",
       "Description": "AutoRegression(C, A0, X{t}, A1, X{t-1} ...)",
-      "Output": "It is used to create customizable model of the following autoregression type: \nPrediction = C + A0 * X(t) + A1 * X(t-1) + ..."
+      "Output": "It is used to create customizable model of the following autoregression type:\nPrediction = C + A0 * X(t) + A1 * X(t-1) + ..."
     },
     "Avg": {
       "Arguments": "Arguments - any numeric expressions.",
       "Description": "Avg(Argument1, Argument2 ...)",
-      "Output": "Returns arithmetic mean of arguments. "
+      "Output": "Returns arithmetic mean of arguments."
     },
     "Chr": {
       "Arguments": "Argument - numerical code of Unicode character in the range [0, 65535].",
@@ -118,9 +118,9 @@
       "Output": "Function returns the cumulative sum according to the field.\nNote: FieldName and GroupFieldName are string values, namely, the explicitly given FieldName and GroupFieldName must be specified in quotation marks.\nFor example: CumulativeSum(\"COL1\", \"COL2\")"
     },
     "DamLevDist": {
-      "Arguments": "String1, \nString2 - expressions of the string type.",
+      "Arguments": "String1,\nString2 - expressions of the string type.",
       "Description": "DamLevDist(String1, String2)",
-      "Output": "Function returns the values of the Damerau–Levenshtein distance for Srting1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity measure of two strings. Its result is the minimum number of deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one.   "
+      "Output": "Function returns the values of the Damerau–Levenshtein distance for Srting1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity measure of two strings. Its result is the minimum number of deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one."
     },
     "Data": {
       "Arguments": "FieldName - name of the field data of which are required\nRowNumber - number of the row value of which is required",
@@ -130,12 +130,12 @@
     "DateTimeToStr": {
       "Arguments": "Date_time - expression of the date/time type. Date_format - optional parameter date format in terms of D, M, Y.\nTime_format - optional parameter time format in terms of H, N, S, Z.",
       "Description": "DateTimeToStr(Date_time [, Format_of date [, Format_of time]])",
-      "Output": "Returns the string representation of the Date_time argument.\nExamples of the date format:\n\"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")  \n\"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")\nExamples of the time format:  \n\"H:NN\" - converts the time into the \"hours:minutes\" format (\"9:53\")  \n\"HH:NN:SS\"  - converts the time into the \"hours:minutes:seconds\" format (\"09:05:53\")"
+      "Output": "Returns the string representation of the Date_time argument.\nExamples of the date format:\n  \"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")\n  \"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")\nExamples of the time format:\n  \"H:NN\" - converts the time into the \"hours:minutes\" format (\"9:53\")\n  \"HH:NN:SS\"  - converts the time into the \"hours:minutes:seconds\" format (\"09:05:53\")"
     },
     "DateToStr": {
-      "Arguments": "Date - expression of the date/time type. \nDate_format - optional parameter date format in terms of D, M, Y.",
+      "Arguments": "Date - expression of the date/time type.\nDate_format - optional parameter date format in terms of D, M, Y.",
       "Description": "DateToStr(Date [, Format_of date])",
-      "Output": "Returns the string representation of the Date argument.\nExamples of the date format:\n\"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")  \n\"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")"
+      "Output": "Returns the string representation of the Date argument.\nExamples of the date format:\n  \"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")\n  \"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")"
     },
     "Day": {
       "Arguments": "Date - the date type field.",
@@ -153,29 +153,29 @@
       "Output": "Returns the total number of days between two dates."
     },
     "Decode": {
-      "Arguments": "Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\nValueN - the expression value of which is compared with the Expression argument.\nResultN - the expression of the string type that is returned if the Expression = ValueN.\nDefault_value - the expression of the string type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to \"\").   ",
+      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\n ValueN - the expression value of which is compared with the Expression argument.\n ResultN - the expression of the string type that is returned if the Expression = ValueN.\n Default_value - the expression of the string type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to \"\").",
       "Description": "Decode(Expression, Value1, Result1 [, Value2, Result2]... [, Default_value = \"\"])",
-      "Output": "Implements IF - THEN - ELSE feature and the function result is related to the string type. \nAll ResultN expressions are calculated before the Expression and ValueN comparison."
+      "Output": " Implements IF - THEN - ELSE feature and the function result is related to the string type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeF": {
-      "Arguments": "Expression - any numeric expression value of which is used for comparison.\nAccuracy - the numeric expression, comparison accuracy.\nValueN - the numeric expression value of which is compared with the Expression argument.\nResultN - the value that is returned if |ValueN - ExpressionN| <= Accuracy.\nDefault_value - the numeric expression the result of which is returned if none of the ValuesN is equal to the Expression (by default 0).",
+      "Arguments": " Expression - any numeric expression value of which is used for comparison.\n Accuracy - the numeric expression, comparison accuracy.\n ValueN - the numeric expression value of which is compared with the Expression argument.\n ResultN - the value that is returned if |ValueN - ExpressionN| <= Accuracy.\n Default_value - the numeric expression the result of which is returned if none of the ValuesN is equal to the Expression (by default 0).",
       "Description": "DecodeF(Expression, Accuracy, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])",
-      "Output": "Implements IF - THEN - ELSE feature and the function result as all its arguments are related to the numeric or Date/Time type. \nAll ResultN expressions are calculated before the Expression and ValueN comparison."
+      "Output": " Implements IF - THEN - ELSE feature and the function result as all its arguments are related to the numeric or Date/Time type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeN": {
-      "Arguments": "Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\nValueN - the expression value of which is compared with the Expression argument.\nResultN - the expression of the numeric or Date/Time type that is returned if the Expression = ValueN.\nDefault_value - the expression of the numeric or Date/Time type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to 0).",
+      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\n ValueN - the expression value of which is compared with the Expression argument.\n ResultN - the expression of the numeric or Date/Time type that is returned if the Expression = ValueN.\n Default_value - the expression of the numeric or Date/Time type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to 0).",
       "Description": "DecodeN(Expression, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])",
-      "Output": "Implements IF - THEN - ELSE feature and the function result is related to the numeric or Date/Time type. \nAll ResultN expressions are calculated before the Expression and ValueN comparison."
+      "Output": " Implements IF - THEN - ELSE feature and the function result is related to the numeric or Date/Time type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeS": {
-      "Arguments": "Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\nValueN - the expression value of which is compared with the Expression argument.\nResultN - the expression of the string type that is returned if the Expression = ValueN.\nDefault_value - the expression of the string type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to \"\").   ",
+      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\n ValueN - the expression value of which is compared with the Expression argument.\n ResultN - the expression of the string type that is returned if the Expression = ValueN.\n Default_value - the expression of the string type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to \"\").",
       "Description": "DecodeS(Expression, Value1, Result1 [, Value2, Result2]... [, Deafult_value = \"\"])",
-      "Output": "Implements IF - THEN - ELSE feature and the function result is related to the string type. \nAll ResultN expressions are calculated before the Expression and ValueN comparison."
+      "Output": " Implements IF - THEN - ELSE feature and the function result is related to the string type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeV": {
-      "Arguments": "Expression - the expression value of which is  alternately compared with the values of the Value arguments.\nValue - the expression value of which is compared with the Expression argument.\nResult - the expression that is returned if the Expression = Value.\nDefault_value - the expression the result of which is returned if the Expression is equal to none of the Values (if it is not stated then it is equal to Null).  ",
+      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the Value arguments.\n Value - the expression value of which is compared with the Expression argument.\n Result - the expression that is returned if the Expression = Value.\n Default_value - the expression the result of which is returned if the Expression is equal to none of the Values (if it is not stated then it is equal to Null).",
       "Description": "DecodeV(Expression, Value, Result [, Value, Result]... [, Default_value = Null])",
-      "Output": "Implements IF - THEN - ELSE feature. \nAll Result expressions are calculated before the Expression and Values comparison."
+      "Output": " Implements IF - THEN - ELSE feature.\n All Result expressions are calculated before the Expression and Values comparison."
     },
     "DisplayName": {
       "Arguments": "FieldName - name of field, variable or expression",
@@ -210,7 +210,7 @@
     "ExpMovingAverage": {
       "Arguments": "Arguments - values of the numeric series",
       "Description": "ExpMovingAverage(X{t}, X{t-1} ...)",
-      "Output": "Used for construction of the user model of the exponentially smoothed moving average.\n\nThe exponentially smoothed moving average as opposed to the simple moving average attaches much significance to the last observations as compared with the last but ones, etc. \n\nCalculation formula is defined by the recurrence equation: EMA(t) = a * X(t) + (1 - a) * EMA(t-1), where EMA(k) - the value of exponentially smoothed moving average in point k, a - smoothing parameter, a = 2 / (n + 1), where n - window width."
+      "Output": "Used for construction of the user model of the exponentially smoothed moving average.\n\nThe exponentially smoothed moving average as opposed to the simple moving average attaches much significance to the last observations as compared with the last but ones, etc.\n\nCalculation formula is defined by the recurrence equation: EMA(t) = a * X(t) + (1 - a) * EMA(t-1), where EMA(k) - the value of exponentially smoothed moving average in point k, a - smoothing parameter, a = 2 / (n + 1), where n - window width."
     },
     "Factorial": {
       "Arguments": "Argument - integer positive numeric expression.",
@@ -218,19 +218,19 @@
       "Output": "Returns the argument factorial."
     },
     "Find": {
-      "Arguments": "Substring - searched substring,\nString - the string in which substring is searched,\nOrder - optional parameter position of which successive occurrence of the Substring in the String it is required to return. Argument of the numeric type. ",
+      "Arguments": "Substring - searched substring,\nString - the string in which substring is searched,\nOrder - optional parameter position of which successive occurrence of the Substring in the String it is required to return. Argument of the numeric type.",
       "Description": "Find(Substring, String[, Order = 1])",
-      "Output": "Function returns position of the first character of the Substring of the set Order in the String.\nThe order can be both positive and negative. If the Order is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\nIf there is no occurence of the set order, the function returns 0.\nFor example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\nFind(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\nIf the Order is equal to zero, the function will return the null value (Null)."
+      "Output": "Function returns position of the first character of the Substring of the set Order in the String.\n The order can be both positive and negative. If the Order is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\n If there is no occurence of the set order, the function returns 0.\n For example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\n Find(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\n If the Order is equal to zero, the function will return the null value (Null)."
     },
     "FKhi2": {
       "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
       "Description": "FKhi2(Degrees_of_freedom, Argument)",
-      "Output": "Integral function of gamma distribution equal to (1 - one-sided probability of Chi-square distribution) with n degrees of freedom.\n\n  "
+      "Output": "Integral function of gamma distribution equal to (1 - one-sided probability of Chi-square distribution) with n degrees of freedom."
     },
     "Format": {
       "Arguments": "Format_string - string expression of the special type\nExpression - arbitrary string expression.",
       "Description": "Format(Format_string, Expression [, ... Expression])",
-      "Output": "Returns the list of expressions in the given format.\nFormat_string is represented below:\n       [String] %s [String] [... [[String]%s[String]]] \n       String - string expression\n       %s - character that is replaced by another Expression from the list."
+      "Output": "Returns the list of expressions in the given format.\nFormat_string is represented below:\n       [String] %s [String] [... [[String]%s[String]]]\n       String - string expression\n       %s - character that is replaced by another Expression from the list."
     },
     "Frac": {
       "Arguments": "Argument - numeric expression.",
@@ -263,9 +263,9 @@
       "Output": "Returns the integer part of the Argument."
     },
     "InvKhi2": {
-      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nProbability - the probability connected with gamma distribution. ",
+      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nProbability - the probability connected with gamma distribution.",
       "Description": "InvKhi2(Degree_of_freedom, Probability)",
-      "Output": "Returns inverse gamma distribution for the integral function equal to (1 - one-sided probability of Chi-square distribution). If p=FKhi2(N, X) then InvKhi2(N, P) = X\n\n  "
+      "Output": "Returns inverse gamma distribution for the integral function equal to (1 - one-sided probability of Chi-square distribution). If p=FKhi2(N, X) then InvKhi2(N, P) = X"
     },
     "IsInfinite": {
       "Arguments": "Argument - numeric expression;",
@@ -283,7 +283,7 @@
       "Output": "Returns the given count of characters of the left string part."
     },
     "LevDist": {
-      "Arguments": "String1, \nString2 - expressions of the string type.",
+      "Arguments": "String1,\nString2 - expressions of the string type.",
       "Description": "LevDist(String1, String2)",
       "Output": "Function returns the values of the Damerau–Levenshtein distance for Srting1, String2. The Damerau–Levenshtein distance is also called the edit distance that is the similarity measure of two strings. Its result is the minimum number of deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one."
     },
@@ -318,7 +318,7 @@
       "Output": "Returns minutes according to the specified date/time."
     },
     "Mod": {
-      "Arguments": "Dividend - integer numeric expression, \nDivisor - integer numeric expression.",
+      "Arguments": "Dividend - integer numeric expression,\nDivisor - integer numeric expression.",
       "Description": "Mod(Dividend, Divisor)",
       "Output": "Returns remainder from integer division of the Dividend by the Divisor."
     },
@@ -335,7 +335,7 @@
     "MovingAverage": {
       "Arguments": "Arguments - values of the numeric series",
       "Description": "MovingAverage(X{t}, X{t-1} ...)",
-      "Output": "Used for construction of the user model of the simple moving average in the user models.\n\nFormula of the moving average calculation:\nMA = (X(t) + ... + X(t - n))/n.\n"
+      "Output": "Used for construction of the user model of the simple moving average in the user models.\n\nFormula of the moving average calculation:\nMA = (X(t) + ... + X(t - n))/n. "
     },
     "Now": {
       "Arguments": "Arguments are absent.",
@@ -348,7 +348,7 @@
       "Output": "Function returns the null value."
     },
     "NVL": {
-      "Arguments": "Expression - any string or numeric expression.\nDefault_value - optional parameter, string or numeric expression value of which is returned if the Expression is equal to Null. ",
+      "Arguments": "Expression - any string or numeric expression.\nDefault_value - optional parameter, string or numeric expression value of which is returned if the Expression is equal to Null.",
       "Description": "NVL(Expression [, Default_value = \"\"])",
       "Output": "Returns the Expression value if it is not equal to Null and Default_value otherwise."
     },
@@ -360,7 +360,7 @@
     "PKhi2": {
       "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
       "Description": "PKhi2(Degrees_of_freedom, Argument)",
-      "Output": "Returns one-sided probability of Chi-square distribution. "
+      "Output": "Returns one-sided probability of Chi-square distribution."
     },
     "Pow": {
       "Arguments": "Argument - numeric expression;\nDegree - numeric expression;",
@@ -383,7 +383,7 @@
       "Output": "Returns the string - given repetition string as many times as may be necessary."
     },
     "Replace": {
-      "Arguments": "String - the string in which it is required to make a replacement;\nOld_template - the replaced substring;\nNew_Template - the string with which the Old template will be replaced; \nReplace_all - flag of replacement of all occurences of the Old template with the New template. Argument of the logical type;\nIgnore_case - flag of case sensitivity in case of replacement. Argument of the logical type. ",
+      "Arguments": "String - the string in which it is required to make a replacement;\nOld_template - the replaced substring;\nNew_Template - the string with which the Old template will be replaced;\nReplace_all - flag of replacement of all occurences of the Old template with the New template. Argument of the logical type;\nIgnore_case - flag of case sensitivity in case of replacement. Argument of the logical type.",
       "Description": "Replace(String, Old_template, New_template [, Replace_all, Ignore_case])",
       "Output": "Function returns the String in which occurences of the Old template were substituted with the New template.\nIf the \"Replace all\" flag has the True (true) meaning, then all occurences of the Old template will be replaced with the New template in the returned string.\nIf the \"Replace all\" flag has the False (false) meaning, then only the first in order occurence will be replaced in the returned string.\nIf the \"Ignore case\" flag has the True (true) meaning, then search for the replaced fragments (the Old template) will be case insensitive. \n If the \"Ignore case\" flag has the False (false) meaning, then search for the replaced fragments (the Old template) will be case sensitive. \n It is allowed not to state the last two parameters. \n If the \"Ignore case\" flag is not stated, then search for the replaced fragments will be case sensitive.\n If the \"Replace all\" flag is not stated, then only the first occurence of the replaced substring will be replaced.\n For example, Replace(\"A000a00A\", \"A\", \"B\", True, True) will return string \"B000B00B\" , namely, it will replace all occurences of string \"A\" with string \"B\" ignoring the character case;\n Replace(\"A000a00A\", \"A\", \"B\", True, False) will return string \"B000a00B\".\n Replace(\"A000a00A\", \"A\", \"B\") will return string \"B000a00A\"."
     },
@@ -405,7 +405,7 @@
     "RowNum": {
       "Arguments": "Arguments are absent.",
       "Description": "RowNum()",
-      "Output": "Function returns the current record number of the data source. "
+      "Output": "Function returns the current record number of the data source."
     },
     "Second": {
       "Arguments": "DateTime - the date/time type field.",
@@ -440,7 +440,7 @@
     "Stat": {
       "Arguments": "FieldName - the field by which it is required to receive the indicator value\nType - the statistics indicator that is required to receive",
       "Description": "Stat(\"FieldName\", \"Type\")",
-      "Output": "Function returns one of the statistical indicators. \nThe type can adopt one of the following values:\n       Min - minimum value\n       Max - maximum value\n       Avg - average value\n       StdDev - standard deviation\n       Sum - sum of values\n       SumSq - sum of square values\n       Count - count of values\n       UniqueCount - count of unique values\n       NullCount - count of missing values\nNote: FieldName and Type - string values, namely, explicitly given FieldName and Type must be in quotation marks.\nFor example: Stat(\"COL1\", \"Min\")"
+      "Output": "Function returns one of the statistical indicators.\nThe type can adopt one of the following values:\n       Min - minimum value\n       Max - maximum value\n       Avg - average value\n       StdDev - standard deviation\n       Sum - sum of values\n       SumSq - sum of square values\n       Count - count of values\n       UniqueCount - count of unique values\n       NullCount - count of missing values\nNote: FieldName and Type - string values, namely, explicitly given FieldName and Type must be in quotation marks.\nFor example: Stat(\"COL1\", \"Min\")"
     },
     "StdDev": {
       "Arguments": "Arguments - any numeric expressions.",
@@ -460,12 +460,12 @@
     "StrZero": {
       "Arguments": "Expression - numeric expression.\nTotal_length - length of the resulting string",
       "Description": "StrZero(Expression, Total_length)",
-      "Output": "Adds zeros at the front of the specified expression so that the resulting string length is equal to the Total_length.  "
+      "Output": "Adds zeros at the front of the specified expression so that the resulting string length is equal to the Total_length."
     },
     "Stuff": {
       "Arguments": "Source - string expression.\nInserted_string - string expression.\nStart - position of the insert start\nLength - length of the deleted substring",
       "Description": "Stuff(Source, Position_start, Length [, Inserted_string = \"\"])",
-      "Output": "Returns the string of the following type. At first substring is deleted from the Source, starting from the Start position of the Length length. Then instead of the deleted substring the Inserted_string is inserted. "
+      "Output": "Returns the string of the following type. At first substring is deleted from the Source, starting from the Start position of the Length length. Then instead of the deleted substring the Inserted_string is inserted."
     },
     "SubStr": {
       "Arguments": "Source - string expression.\nStart - position of the substring start\nLength - the substring length",
@@ -480,7 +480,7 @@
     "SumSq": {
       "Arguments": "Arguments - any numeric expressions.",
       "Description": "SumSq(Argument1, Argument2 ...)",
-      "Output": "Returns the sum of squared arguments. "
+      "Output": "Returns the sum of squared arguments."
     },
     "Tan": {
       "Arguments": "Angle - angle value in radians.",
@@ -547,37 +547,37 @@
     "RegExMatch": {
       "Arguments": "RegularExpression - the regular expressions string;\nString - the input string.",
       "Description": "RegExMatch(RegularExpression, String)",
-      "Output": "Checks the match between the string and regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions.     "
+      "Output": "Checks the match between the string and regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExMatchCount": {
       "Arguments": "RegularExpression - the regular expressions string;\nString - the input string.",
       "Description": "RegExMatchCount(RegularExpression, String)",
-      "Output": "Returns the number of the string parts matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions.     "
+      "Output": "Returns the number of the string parts matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExMatchedExp": {
-      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount. ",
+      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedExp(RegularExpression, String [, PartNumber = 1])",
-      "Output": "Returns the string part matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions.     "
+      "Output": "Returns the string part matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExMatchedNamedSubExp": {
-      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupName - name of the group defined by metacharacters (...); \nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount. ",
+      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupName - name of the group defined by metacharacters (...);\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedNamedSubExp(RegularExpression, String, GroupName [, partNumber = 1])",
-      "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurence of opening brackets.      \nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions.    "
+      "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExMatchedSubExp": {
-      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupNumber - order number of the group defined by metacharacters (...); \nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount. ",
+      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupNumber - order number of the group defined by metacharacters (...);\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedSubExp(RegularExpression, String, GroupNumber [, PartNumber = 1])",
-      "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurence of opening brackets.      \nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions.   "
+      "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExReplace": {
       "Arguments": "RegularExpression - the regular expression string;\nInput string - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string part matching the regular expression;\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.\nExtended syntax - extended replacement syntax (only for PCRE2)",
       "Description": "RegExReplace(RegularExpression, InputString, ReplaceString [, PartNumber = 1, ExtendedSyntax = False])",
-      "Output": "Returns the Input String in which the PartNumber expression occurence of the Regular Expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions.     "
+      "Output": "Returns the Input String in which the PartNumber expression occurence of the Regular Expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExReplaceAll": {
       "Arguments": "RegularExpression - the regular expression string;\nInput string - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string parts matching the regular expression;\nExtended syntax - extended replacement syntax (only for PCRE2)",
       "Description": "RegExReplaceAll(RegularExpression, InputString, ReplaceString [, ExtendedSyntax = False])",
-      "Output": "Returns the Input String in which all occurences of the Regular Expression expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions.     "
+      "Output": "Returns the Input String in which all occurences of the Regular Expression expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     }
   }
 }

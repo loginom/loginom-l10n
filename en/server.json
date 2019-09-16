@@ -693,7 +693,7 @@
     "VendorDesc": "Create pivot table from flat table"
   },
   "components/datatotree/DataToTreeEngine": {
-    "ErrCannotSetSourceColumnForContainer": "Failed to set the source column for %s node-container  ",
+    "ErrCannotSetSourceColumnForContainer": "Failed to set the source column for %s node-container",
     "ErrCanOnlySetIndexColumnForArray": "Failed to set the column with index for %s node that is not an array",
     "ErrIndexColumnNotFound": "Column with %s index for %s node not found",
     "ErrIndexColumnTypeMismatch": "Index type of %s node is not compatible with %s source column type",
@@ -2066,7 +2066,7 @@
     "ErrDataSoureNotAssigned": "No data set reference"
   },
   "Libraries/bgrtl/DataTree": {
-    "ErrAlienNodeInfo": "Description of \"%s\" node does not belong to the current tree ",
+    "ErrAlienNodeInfo": "Description of \"%s\" node does not belong to the current tree",
     "ErrCannotAppendNodeBeforeParentNode": "You cannot append \"%s\" node before the parent node",
     "ErrCannotPostNodeBeforeChildNodes": "Post method calling for \"%s\" node before the Post call for the child nodes is forbidden",
     "ErrCannotPostNodeWithoutAppend": "Post method calling for \"%s\" node without the Append call is forbidden",
@@ -3354,10 +3354,10 @@
   "Libraries/Normalization/Normalizers": {
     "ErrCorrectionMissed": "Denormalization coefficients correction ignored",
     "ErrInvalidDenormCode": "You cannot denormalize the discrete field value",
-    "ErrLessThanMin": "The normalized value is less than the range minimum value ",
-    "ErrMoreThanMax": "The normalized value is more than the range maximum value ",
-    "ErrNormLessThanMin": "The denormalized value is less than the range minimum value ",
-    "ErrNormMoreThanMax": "The denormalized value is more than the range maximum value ",
+    "ErrLessThanMin": "The normalized value is less than the range minimum value",
+    "ErrMoreThanMax": "The normalized value is more than the range maximum value",
+    "ErrNormLessThanMin": "The denormalized value is less than the range minimum value",
+    "ErrNormMoreThanMax": "The denormalized value is more than the range maximum value",
     "ErrNotImplemented": "This functionality not implemented",
     "ErrRefIdRequired": "The reference category used in the normalizer is not defined",
     "ErrWrongDiscreteIndexRange": "Prenormalized index: %d is out of allowable range [%d ; %d]",

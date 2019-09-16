@@ -3962,7 +3962,7 @@
       "text": "Event"
     },
     "colConfusionNonEvent": {
-      "text": " Negative event"
+      "text": "Negative event"
     },
     "colConfusionTotal": {
       "text": "Total"

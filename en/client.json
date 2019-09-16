@@ -254,7 +254,7 @@
     "ModifyBtnText": "Apply",
     "ModifyVariableTitle": "Edit Variable",
     "ReadonlyFieldLabel": "Read-only:",
-    "ReadonlyFieldTip": "edit can be done while you are working on this case"
+    "ReadonlyFieldTip": "Edited only in the script development mode"
   },
   "app/PackageVariablesForm": {
     "DeleteAllPrompt": "Do you really want to delete all variables?",

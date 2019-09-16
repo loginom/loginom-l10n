@@ -4,14 +4,14 @@
     "ErrNotConnected": "Not connected"
   },
   "DeductorIntegrationServerCore/ConfigurationSections": {
-    "ErrNoColumnsSpecified": "No column was specified for logging",
-    "ErrSqlCommandAndTableBothSpecified": "it not possible to assign the value of sqlCommand and a table",
+    "ErrNoColumnsSpecified": "No column was specified for log-in",
+    "ErrSqlCommandAndTableBothSpecified": "It is forbidden to specify sqlCommand and table attributes simultaneously",
     "ErrSqlCommandOrTableNotSpecified": "Database element must contain sqlCommand or table attribute "
   },
   "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
     "AddedPublishedPackage": "The published package \"{1}\" of the version \"{2}\" has been added on the server {0}",
     "ChangedPublishedPackage": "The published package \"{1}\" of version \"{2}\" has been changed on server {0}",
-    "ChangedPublishedPackages": "om the server {0} there are a change in the list of published packages",
+    "ChangedPublishedPackages": "The published packages list changed on {0} server",
     "ConnectedToServer": "Connecting to server {0}",
     "DeletedPublishedPackage": "The published package \"{1}\" of version \"{2}\" was deleted on server {0}",
     "ErrCannotAddPublishedPackage": "\"{1}\" package of \"{2}\" version related to {0} server cannot be published: {3}",
@@ -76,7 +76,7 @@
     "Uri": "Uri",
     "Url": "Url: ",
     "UrlExample": "Url example: ",
-    "UrlFormat": "URL Format: "
+    "UrlFormat": "URL format:"
   },
   "DeductorIntegrationServerCore/ServiceHelper": {
     "ErrInvalidColumnCount": "Invalid column count in the matrix of values:  {0}; required: {1}",
@@ -94,9 +94,9 @@
     "ExecutePackageInfo": "Processing of \"{0}\" package of {1} version, execution of \"{2}\" node with {{{3}}} identifier"
   },
   "DeductorIntegrationServerCore/ServiceTypeBuilder": {
-    "ErrNoPublishedPackages": "not even one package was published",
+    "ErrNoPublishedPackages": "No published packages",
     "ErrRootNodeNotFound": "Root tree node not found",
     "ErrTreeMustHaveSingleRootNode": "Tree cannot contain more than one root node",
-    "NoPublishedPackagesServiceDocumentation": "No packages have been published at this time. "
+    "NoPublishedPackagesServiceDocumentation": "No packages have been currently published."
   }
 }

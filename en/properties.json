@@ -12,7 +12,7 @@
     "WSDLRequestDebug": {
       "DumpRequest": "Save Query Text to Disk",
       "DumpRequestFolder": "Folder to save queries",
-      "ResponseStub": "File supplied as response",
+      "ResponseStub": "File name supplied as response",
       "UseResponseStub": "Simulate request with response in a file"
     }
   },

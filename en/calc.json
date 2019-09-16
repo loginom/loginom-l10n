@@ -80,7 +80,7 @@
     "AutoRegression": {
       "Arguments": "C - invariable,\nA0 ... An - regression coefficients,\nX(t) ... X(t-n) - series values.",
       "Description": "AutoRegression(C, A0, X{t}, A1, X{t-1} ...)",
-      "Output": "It is used to create customizable model of the following autoregression type: \nPrediction = С + A0 * X(t) + A1 * X(t-1) + ..."
+      "Output": "It is used to create customizable model of the following autoregression type: \nPrediction = C + A0 * X(t) + A1 * X(t-1) + ..."
     },
     "Avg": {
       "Arguments": "Arguments - any numeric expressions.",
@@ -108,7 +108,7 @@
       "Output": "Returns count of characters in the string."
     },
     "CreateGUID": {
-      "Arguments": "Format - method of GUID string representation (\"N\", \"D\", \"B\", \"P\").\nUpperCase - argument related to the logical type defining  the character case of hexadecimal digits.",
+      "Arguments": "Format - method of GUID string representation (\"N\", \"D\", \"B\", \"P\").\nUpperCase - argument of the logical type defining  the character case of hexadecimal digits.",
       "Description": "CreateGUID([Format = \"B\", UpperCase = True])",
       "Output": "Function returns GUID string representation in the specified format:  \"N\" - 32 numbers;\n  \"N\" - 32 numbers;\n  \"D\" - 32 hyphenated numbers;\n  \"B\" - 32 hyphenated numbers and numbers in curved brackets;\n  \"P\" - 32 hyphenated numbers and numbers in curved and round brackets;\nIf the format is not specified, it is required to use \"B\" format. By default hexadecimal digits are written in uppercase.\nAs GUID will be generated each time when getting the expression value, for example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
     },
@@ -123,9 +123,9 @@
       "Output": "Function returns the values of the Damerau–Levenshtein distance for Srting1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity measure of two strings. Its result is the minimum number of deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one.   "
     },
     "Data": {
-      "Arguments": "FieldName - name of the field data of which are required\nStringNumber - number of the string value of which is required",
+      "Arguments": "FieldName - name of the field data of which are required\nRowNumber - number of the row value of which is required",
       "Description": "Data(\"FieldName\",StringNumber)",
-      "Output": "Function returns the FieldName field value taken from the StringNumber string.\nIn case of the recursive usage of this function it is required to set the \"Cache the calculated expression values\" flag in the \"Expression parameters\" window.\nNote: FieldName - the string value, namely, the explicitly given FieldName must be specified in quotation marks.\nFor example, Data(\"COL1\", 2)"
+      "Output": "Function returns the FieldName field value taken from the RowNumber row.\nIn case of the recursive usage of this function it is required to set the \"Cache the calculated expression values\" flag in the \"Expression parameters\" window.\nNote: FieldName - the string value, namely, the explicitly given FieldName must be specified in quotation marks.\nFor example, Data(\"COL1\", 2)"
     },
     "DateTimeToStr": {
       "Arguments": "Date_time - expression of the date/time type. Date_format - optional parameter date format in terms of D, M, Y.\nTime_format - optional parameter time format in terms of H, N, S, Z.",
@@ -218,9 +218,9 @@
       "Output": "Returns the argument factorial."
     },
     "Find": {
-      "Arguments": "Substring - sought substring,\nString - the string in which substring is sought,\nOrder - optional parameter position of which successive occurrence of the Substring in the String it is required to return. Argument of the numeric type. ",
+      "Arguments": "Substring - searched substring,\nString - the string in which substring is searched,\nOrder - optional parameter position of which successive occurrence of the Substring in the String it is required to return. Argument of the numeric type. ",
       "Description": "Find(Substring, String[, Order = 1])",
-      "Output": "Function returns position of the first character of the Substring of the set Order in the String.\nThe order can be both positive and negative. If the Order is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\nIf there is no occurence of the set order, the function returns 0.\nFor example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"А\" to string \"A000A00A\", namely, 5;\nFind(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"А\" to string \"A000A00A\", namely, 8.\nIf the Order is equal to zero, the function will return the null value (Null)."
+      "Output": "Function returns position of the first character of the Substring of the set Order in the String.\nThe order can be both positive and negative. If the Order is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\nIf there is no occurence of the set order, the function returns 0.\nFor example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\nFind(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\nIf the Order is equal to zero, the function will return the null value (Null)."
     },
     "FKhi2": {
       "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
@@ -385,7 +385,7 @@
     "Replace": {
       "Arguments": "String - the string in which it is required to make a replacement;\nOld_template - the replaced substring;\nNew_Template - the string with which the Old template will be replaced; \nReplace_all - flag of replacement of all occurences of the Old template with the New template. Argument of the logical type;\nIgnore_case - flag of case sensitivity in case of replacement. Argument of the logical type. ",
       "Description": "Replace(String, Old_template, New_template [, Replace_all, Ignore_case])",
-      "Output": "Function returns the String in which occurences of the Old template were substituted with the New template.\nIf the \"Replace all\" flag has the True (true) meaning, then all occurences of the Old template will be replaced with the New template in the returned string.\nIf the \"Replace all\" flag has the False (false) meaning, then only the first in order occurence will be replaced in the returned string.\nIf the \"Ignore case\" flag has the True (true) meaning, then search for the replaced fragments (the Old template) will be case insensitive. \n If the \"Ignore case\" flag has the False (false) meaning, then search for the replaced fragments (the Old template) will be case sensitive. \n It is allowed not to state the last two parameters. \n If the \"Ignore case\" flag is not stated, then search for the replaced fragments will be case sensitive.\n If the \"Replace all\" flag is not stated, then only the first occurence of the replaced substring will be replaced.\n For example, Replace(\"A000а00A\", \"А\", \"B\", True, True) will return string \"B000B00B\" , namely, it will replace all occurences of string \"А\" with string \"В\" ignoring the character case;\n Replace(\"A000а00A\", \"А\", \"B\", True, False) will return string \"B000а00B\".\n Replace(\"A000а00A\", \"А\", \"B\") will return string \"B000а00A\"."
+      "Output": "Function returns the String in which occurences of the Old template were substituted with the New template.\nIf the \"Replace all\" flag has the True (true) meaning, then all occurences of the Old template will be replaced with the New template in the returned string.\nIf the \"Replace all\" flag has the False (false) meaning, then only the first in order occurence will be replaced in the returned string.\nIf the \"Ignore case\" flag has the True (true) meaning, then search for the replaced fragments (the Old template) will be case insensitive. \n If the \"Ignore case\" flag has the False (false) meaning, then search for the replaced fragments (the Old template) will be case sensitive. \n It is allowed not to state the last two parameters. \n If the \"Ignore case\" flag is not stated, then search for the replaced fragments will be case sensitive.\n If the \"Replace all\" flag is not stated, then only the first occurence of the replaced substring will be replaced.\n For example, Replace(\"A000a00A\", \"A\", \"B\", True, True) will return string \"B000B00B\" , namely, it will replace all occurences of string \"A\" with string \"B\" ignoring the character case;\n Replace(\"A000a00A\", \"A\", \"B\", True, False) will return string \"B000a00B\".\n Replace(\"A000a00A\", \"A\", \"B\") will return string \"B000a00A\"."
     },
     "Right": {
       "Arguments": "String - expression of the string type.",
@@ -535,12 +535,12 @@
   },
   "RegExFunctions": {
     "RegExDomain": {
-      "Arguments": "Input string - the input string in which Email-address will be sought;\nOccurenceNumber - the order number of Email-address in the sought string.",
-      "Description": "RegExDomain(Вх.Строка [, Ном.Вхожд = 1])",
+      "Arguments": "Input string - the input string in which Email-address will be searched;\nOccurenceNumber - the order number of Email-address in the searched string.",
+      "Description": "RegExDomain(InputString [, OccurenceNumber = 1])",
       "Output": "Returns OccurencesNumber website URL from the InputString string, not including www till the first level domain, inclusively.\nRegular expressions are used for search."
     },
     "RegExEmail": {
-      "Arguments": "Input string - the input string in which Email-address will be sought;\nOccurenceNumber - the order number of Email-address in the sought string.",
+      "Arguments": "Input string - the input string in which Email-address will be searched;\nOccurenceNumber - the order number of Email-address in the searched string.",
       "Description": "RegExEmail(Input String [, OccurenceNumber = 1])",
       "Output": "Extracts OccurencesNumber Email-address from the InputString string.\nRegular expressions are used for search."
     },

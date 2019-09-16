@@ -289,7 +289,7 @@
       "tooltip": "Tile"
     },
     "btnVisibility": {
-      "tooltip": "Configure visibility..."
+      "tooltip": "Configure the area of visibility..."
     },
     "cntDescription": {
       "title": "Description"
@@ -690,7 +690,7 @@
     },
     "colReadonly": {
       "text": "Read-only",
-      "tooltip": "edit can be done only in real case"
+      "tooltip": "Edited only in the script development mode"
     },
     "colValue": {
       "text": "Value"

@@ -446,7 +446,7 @@
   },
   "components/filterdata": {
     "FilterRelationType": {
-      "$Caption": "Relation type",
+      "$Caption": "Relation Type",
       "Less": "<",
       "LessOrEqual": "<=",
       "Greater": ">",
@@ -776,8 +776,8 @@
     },
     "ExcelUpdateFileMode": {
       "$Caption": "Update Excel File",
-      "ForceCreateFile": "Replace existing file",
-      "Update": "Change existing file"
+      "ForceCreateFile": "Replace an existing file",
+      "Update": "Change an existing file"
     },
     "ExcelUpdateSheetMode": {
       "$Caption": "Excel Sheet Update",
@@ -971,7 +971,7 @@
       "Test": "Test"
     },
     "DataSourceTypeEx": {
-      "$Caption": "Extended Data Set Type",
+      "$Caption": "Extended Set of Data Type",
       "All": "All"
     },
     "DataStatus": {

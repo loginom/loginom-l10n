@@ -41,7 +41,7 @@
     "ErrInputNeedsToBeWrappedInAnObject": "Input parameters must be wrapped in an object",
     "ErrInvalidContentType": "Invalid value of the Content-Type caption: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",
-    "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified\nWebBodyFormatMessageProperty",
+    "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified WebBodyFormatMessageProperty",
     "WarnDuplicateRequestParameter": "The request contains more than one parameter with  {0} name",
     "WarnUnknownRequestParameter": "The request contains parameter with unknown {0} name"
   },

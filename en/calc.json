@@ -110,7 +110,7 @@
     "CreateGUID": {
       "Arguments": "Format - method of GUID string representation (\"N\", \"D\", \"B\", \"P\").\nUpperCase - argument of the logical type defining  the character case of hexadecimal digits.",
       "Description": "CreateGUID([Format = \"B\", UpperCase = True])",
-      "Output": "Function returns GUID string representation in the specified format:  \"N\" - 32 numbers;\n  \"N\" - 32 numbers;\n  \"D\" - 32 hyphenated numbers;\n  \"B\" - 32 hyphenated numbers and numbers in curved brackets;\n  \"P\" - 32 hyphenated numbers and numbers in curved and round brackets;\nIf the format is not specified, it is required to use \"B\" format. By default hexadecimal digits are written in uppercase.\nAs GUID will be generated each time when getting the expression value, for example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
+      "Output": "Function returns GUID string representation in the specified format:  \"N\" - 32 digits;\n  \"N\" - 32 digits;\n  \"D\" - 32 hyphenated digits;\n  \"B\" - 32 hyphenated digits and digits in curved brackets;\n  \"P\" - 32 hyphenated digits and digits in curved and round brackets;\nIf the format is not specified, it is required to use \"B\" format. By default hexadecimal digits are written in uppercase.\nAs GUID will be generated each time when getting the expression value, for example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
     },
     "CumulativeSum": {
       "Arguments": "FieldName - the field by which it is required to receive the cumulative sum\nGroupFieldName - the field by which data are grouped. This parameter is not particularly required. If this parameter is specified, it is required to calculate the cumulative sums within groups.",
@@ -123,7 +123,7 @@
       "Output": "Function returns the values of the Damerau–Levenshtein distance for Srting1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity measure of two strings. Its result is the minimum number of deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one."
     },
     "Data": {
-      "Arguments": "FieldName - name of the field data of which are required\nRowNumber - number of the row value of which is required",
+      "Arguments": "FieldName - return value field name\nRowNumber - return value row number",
       "Description": "Data(\"FieldName\",StringNumber)",
       "Output": "Function returns the FieldName field value taken from the RowNumber row.\nIn case of the recursive usage of this function it is required to set the \"Cache the calculated expression values\" flag in the \"Expression parameters\" window.\nNote: FieldName - the string value, namely, the explicitly given FieldName must be specified in quotation marks.\nFor example, Data(\"COL1\", 2)"
     },
@@ -218,7 +218,7 @@
       "Output": "Returns the argument factorial."
     },
     "Find": {
-      "Arguments": "Substring - searched substring,\nString - the string in which substring is searched,\nOrder - optional parameter position of which successive occurrence of the Substring in the String it is required to return. Argument of the numeric type.",
+      "Arguments": "Substring - searched substring,\nString - the string in which substring is searched,\nMatchIndex - optional occurence index of the Substring in the String to be returned. Argument of the numeric type.",
       "Description": "Find(Substring, String[, Order = 1])",
       "Output": "Function returns position of the first character of the Substring of the set Order in the String.\n The order can be both positive and negative. If the Order is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\n If there is no occurence of the set order, the function returns 0.\n For example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\n Find(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\n If the Order is equal to zero, the function will return the null value (Null)."
     },

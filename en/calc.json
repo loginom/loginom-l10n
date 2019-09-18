@@ -30,7 +30,7 @@
     "AbsErr": {
       "Arguments": "Arguments - any numeric expressions.",
       "Description": "AbsErr(Argument1, Argument2)",
-      "Output": "Returns the absolute accuracy of two arguments."
+      "Output": "Returns the absolute error of two arguments."
     },
     "AddDay": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
@@ -158,8 +158,8 @@
       "Output": " Implements IF - THEN - ELSE feature and the function result is related to the string type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeF": {
-      "Arguments": " Expression - any numeric expression value of which is used for comparison.\n Accuracy - the numeric expression, comparison accuracy.\n ValueN - the numeric expression value of which is compared with the Expression argument.\n ResultN - the value that is returned if |ValueN - ExpressionN| <= Accuracy.\n Default_value - the numeric expression the result of which is returned if none of the ValuesN is equal to the Expression (by default 0).",
-      "Description": "DecodeF(Expression, Accuracy, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])",
+      "Arguments": " Expression - any numeric expression value of which is used for comparison.\nError - the numeric expression, comparison error.\n ValueN - the numeric expression value of which is compared with the Expression argument.\n ResultN - the value that is returned if |ValueN - ExpressionN| <= Accuracy.\n Default_value - the numeric expression the result of which is returned if none of the ValuesN is equal to the Expression (by default 0).",
+      "Description": "DecodeF(Expression, Error, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])",
       "Output": " Implements IF - THEN - ELSE feature and the function result as all its arguments are related to the numeric or Date/Time type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeN": {
@@ -375,7 +375,7 @@
     "RelErr": {
       "Arguments": "Arguments - any numeric expressions.",
       "Description": "RelErr(Argument1, Argument2)",
-      "Output": "Returns the relative accuracy of two arguments."
+      "Output": "Returns the relative error of two arguments."
     },
     "Repeat": {
       "Arguments": "String - string expression.\nCount_of_repeats - integer",

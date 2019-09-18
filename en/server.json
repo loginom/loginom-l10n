@@ -3823,7 +3823,7 @@
   },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
-    "ErrOrderNumberDim": "Incorrect dimension order numbers",
+    "ErrOrderNumberDim": "Incorrect dimension order indexes",
     "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
     "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"
@@ -4002,7 +4002,7 @@
   },
   "Viewers/Statistics/StatViewCalculation": {
     "ErrInvalidHistBounds": "Invalid histogram interval bounds set",
-    "ErrRequiredColumnNotFound": "No columns with the specified numbers in the input data source",
+    "ErrRequiredColumnNotFound": "No columns with the specified indexes in the input data source",
     "ErrRequiredSimpleStats": "It is required to calculate simple statistics"
   },
   "Viewers/Statistics/StatViewHistogram": {

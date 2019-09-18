@@ -1,6 +1,6 @@
 {
   "admin/ServerSettingsForm": {
-    "Bind": "IP Address",
+    "Bind": "IP address",
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection wizard",
     "DirectorySettings": "Folders",
@@ -914,7 +914,7 @@
     "VendorsTitle": "Components"
   },
   "ext/VTypes": {
-    "AlphaNumUnicodeIncorrect": "This field must contain only letters, numbers and _.",
+    "AlphaNumUnicodeIncorrect": "This field must contain only letters, digits and _.",
     "ErrInvalidIdentifier": "Entered value is invalid identifier.",
     "VersionIncorrect": "Incorrect Version Format",
     "VersionMaskIncorrect": "Incorrect format of version mask."
@@ -1306,7 +1306,7 @@
     "WarningTitle": "Warning"
   },
   "lib/StrUtils": {
-    "ErrInvalidDigitsValue": "Numbers in other languages are not supported",
+    "ErrInvalidDigitsValue": "Digits in other languages are not supported",
     "ErrInvalidFormatValue": "{0} string is not compatible with {1} format",
     "FalseText": "false",
     "TrueText": "true"

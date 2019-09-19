@@ -35,27 +35,27 @@
     "AddDay": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddDay(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of days.\nThe number can be also negative, in this case the function will return the date the given number of days before the specified date."
+      "Output": "Function returns the Date argument value increased by the specified Number of days. The number can be also negative, in this case the function will return the date the given number of days before the specified date."
     },
     "AddMonth": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddMonth(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of months.\nThe number can be also negative, in this case the function will return the date the given number of months before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting month, the function will set the date to the last day of the resulting month."
+      "Output": "Function returns the Date argument value increased by the specified Number of months. The number can be also negative, in this case the function will return the date the given number of months before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting month, the function will set the date to the last day of the resulting month."
     },
     "AddQuarter": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddQuarter(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of quarters.\nThe number can be also negative, in this case the function will return the date the given number of quarters before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting quarter, the function will set the date to the last day of the resulting quarter."
+      "Output": "Function returns the Date argument value increased by the specified Number of quarters. The number can be also negative, in this case the function will return the date the given number of quarters before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting quarter, the function will set the date to the last day of the resulting quarter."
     },
     "AddWeek": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddWeek(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of weeks.\nThe number can be also negative, in this case the function will return the date the given number of weeks before the specified date."
+      "Output": "Function returns the Date argument value increased by the specified Number of weeks. The number can be also negative, in this case the function will return the date the given number of weeks before the specified date."
     },
     "AddYear": {
       "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddYear(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of years.\nThe number can be also negative, in this case the function will return the date the given number of years before the specified date."
+      "Output": "Function returns the Date argument value increased by the specified Number of years. The number can be also negative, in this case the function will return the date the given number of years before the specified date."
     },
     "AMGD": {
       "Arguments": "Arguments, numeric expressions.",
@@ -128,7 +128,7 @@
       "Output": "Function returns the FieldName field value taken from the RowNumber row.\nIn case of the recursive usage of this function it is required to set the \"Cache the calculated expression values\" flag in the \"Expression parameters\" window.\nNote: FieldName - the string value, namely, the explicitly given FieldName must be specified in quotation marks.\nFor example, Data(\"COL1\", 2)"
     },
     "DateTimeToStr": {
-      "Arguments": "Date_time - expression of the date/time type. Date_format - optional parameter date format in terms of D, M, Y.\nTime_format - optional parameter time format in terms of H, N, S, Z.",
+      "Arguments": "Date_time - expression of the date/time type.\nDate_format - optional parameter date format in terms of D, M, Y.\nTime_format - optional parameter time format in terms of H, N, S, Z.",
       "Description": "DateTimeToStr(Date_time [, Format_of date [, Format_of time]])",
       "Output": "Returns the string representation of the Date_time argument.\nExamples of the date format:\n  \"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")\n  \"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")\nExamples of the time format:\n  \"H:NN\" - converts the time into the \"hours:minutes\" format (\"9:53\")\n  \"HH:NN:SS\"  - converts the time into the \"hours:minutes:seconds\" format (\"09:05:53\")"
     },
@@ -158,7 +158,7 @@
       "Output": " Implements IF - THEN - ELSE feature and the function result is related to the string type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeF": {
-      "Arguments": " Expression - any numeric expression value of which is used for comparison.\nError - the numeric expression, comparison error.\n ValueN - the numeric expression value of which is compared with the Expression argument.\n ResultN - the value that is returned if |ValueN - ExpressionN| <= Accuracy.\n Default_value - the numeric expression the result of which is returned if none of the ValuesN is equal to the Expression (by default 0).",
+      "Arguments": " Expression - any numeric expression value of which is used for comparison.\n Error - the numeric expression, comparison error.\n ValueN - the numeric expression value of which is compared with the Expression argument.\n ResultN - the value that is returned if |ValueN - ExpressionN| <= Accuracy.\n Default_value - the numeric expression the result of which is returned if none of the ValuesN is equal to the Expression (by default 0).",
       "Description": "DecodeF(Expression, Error, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])",
       "Output": " Implements IF - THEN - ELSE feature and the function result as all its arguments are related to the numeric or Date/Time type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
@@ -275,7 +275,7 @@
     "IsNull": {
       "Arguments": "Argument - any expression;",
       "Description": "IsNull(Argument)",
-      "Output": "Checks whether the Argument is null.\nReturns the logical value."
+      "Output": "Checks whether the Argument is null. Returns the logical value."
     },
     "Left": {
       "Arguments": "String - expression of the string type.",
@@ -285,7 +285,7 @@
     "LevDist": {
       "Arguments": "String1,\nString2 - expressions of the string type.",
       "Description": "LevDist(String1, String2)",
-      "Output": "Function returns the values of the Damerau–Levenshtein distance for Srting1, String2. The Damerau–Levenshtein distance is also called the edit distance that is the similarity measure of two strings. Its result is the minimum number of deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one."
+      "Output": "String1 = Row1 and so on"
     },
     "Ln": {
       "Arguments": "Argument - positive numeric expression.",
@@ -318,7 +318,7 @@
       "Output": "Returns minutes according to the specified date/time."
     },
     "Mod": {
-      "Arguments": "Dividend - integer numeric expression,\nDivisor - integer numeric expression.",
+      "Arguments": "Divider - integer numerical expression ,\nDivisor - integer numerical expression.",
       "Description": "Mod(Dividend, Divisor)",
       "Output": "Returns remainder from integer division of the Dividend by the Divisor."
     },
@@ -385,7 +385,7 @@
     "Replace": {
       "Arguments": "String - the string in which it is required to make a replacement;\nOld_template - the replaced substring;\nNew_Template - the string with which the Old template will be replaced;\nReplace_all - flag of replacement of all occurences of the Old template with the New template. Argument of the logical type;\nIgnore_case - flag of case sensitivity in case of replacement. Argument of the logical type.",
       "Description": "Replace(String, Old_template, New_template [, Replace_all, Ignore_case])",
-      "Output": "Function returns the String in which occurences of the Old template were substituted with the New template.\nIf the \"Replace all\" flag has the True (true) meaning, then all occurences of the Old template will be replaced with the New template in the returned string.\nIf the \"Replace all\" flag has the False (false) meaning, then only the first in order occurence will be replaced in the returned string.\nIf the \"Ignore case\" flag has the True (true) meaning, then search for the replaced fragments (the Old template) will be case insensitive. \n If the \"Ignore case\" flag has the False (false) meaning, then search for the replaced fragments (the Old template) will be case sensitive. \n It is allowed not to state the last two parameters. \n If the \"Ignore case\" flag is not stated, then search for the replaced fragments will be case sensitive.\n If the \"Replace all\" flag is not stated, then only the first occurence of the replaced substring will be replaced.\n For example, Replace(\"A000a00A\", \"A\", \"B\", True, True) will return string \"B000B00B\" , namely, it will replace all occurences of string \"A\" with string \"B\" ignoring the character case;\n Replace(\"A000a00A\", \"A\", \"B\", True, False) will return string \"B000a00B\".\n Replace(\"A000a00A\", \"A\", \"B\") will return string \"B000a00A\"."
+      "Output": "Function returns the String in which occurences of the Old template were substituted with the New template.\n If the \"Replace all\" flag has the True (true) meaning, then all occurences of the Old template will be replaced with the New template in the returned string.\n If the \"Replace all\" flag has the False (false) meaning, then only the first in order occurence will be replaced in the returned string.\n If the \"Ignore case\" flag has the True (true) meaning, then search for the replaced fragments (the Old template) will be case insensitive.\n If the \"Ignore case\" flag has the False (false) meaning, then search for the replaced fragments (the Old template) will be case sensitive.\n It is allowed not to state the last two parameters.\n If the \"Ignore case\" flag is not stated, then search for the replaced fragments will be case sensitive.\n If the \"Replace all\" flag is not stated, then only the first occurence of the replaced substring will be replaced.\n For example, Replace(\"A000a00A\", \"A\", \"B\", True, True) will return string \"B000B00B\" , namely, it will replace all occurences of string \"A\" with string \"B\" ignoring the character case;\n Replace(\"A000a00A\", \"A\", \"B\", True, False) will return string \"B000a00B\".\n Replace(\"A000a00A\", \"A\", \"B\") will return string \"B000a00A\"."
     },
     "Right": {
       "Arguments": "String - expression of the string type.",

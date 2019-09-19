@@ -3694,7 +3694,7 @@
     "OptionTeachDesc": "Retraining mode",
     "OptionUserNameDesc": "Username",
     "Switches": "<Keys>",
-    "VariableSwitchesInfo": "Any other keys are interpreted as variable names.\nFormat: <Variable_name>=\n<Variable_value>"
+    "VariableSwitchesInfo": "Any other keys are interpreted as variable names.\nFormat: <Variable_name>=<Variable_value>"
   },
   "Studio/Server/ServiceConsts": {
     "ServiceDisplayName": "LoginomServer"
@@ -3823,7 +3823,7 @@
   },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
-    "ErrOrderNumberDim": "Incorrect dimension order indexes",
+    "ErrOrderNumberDim": "Incorrect dimension indexes",
     "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
     "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"

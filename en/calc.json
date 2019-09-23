@@ -33,29 +33,29 @@
       "Output": "Returns the absolute error of two arguments."
     },
     "AddDay": {
-      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Arguments": "Date - argument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddDay(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of days. The number can be also negative, in this case the function will return the date the given number of days before the specified date."
+      "Output": "Function returns the Date argument value, increased by the specified Number of days. The number can also be negative. In this case, the function will return the date to the given number of days before the specified date."
     },
     "AddMonth": {
-      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Arguments": "Date - argument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddMonth(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of months. The number can be also negative, in this case the function will return the date the given number of months before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting month, the function will set the date to the last day of the resulting month."
+      "Output": "Function returns the Date argument value, increased by the specified Number of months. The number can also be negative. In this case, the function will return the date to the given number of months before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting month, the function will set the date to the last day of the resulting month."
     },
     "AddQuarter": {
-      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Arguments": "Date - argument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddQuarter(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of quarters. The number can be also negative, in this case the function will return the date the given number of quarters before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting quarter, the function will set the date to the last day of the resulting quarter."
+      "Output": "Function returns the Date argument value, increased by the specified Number of quarters. The number can also be negative. In this case, the function will return the date to the given number of quarters before the specified date.\n\nIf the specified day of the month exceeds the last day of the resulting quarter, the function will set the date to the last day of the resulting quarter."
     },
     "AddWeek": {
-      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Arguments": "Date - argument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddWeek(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of weeks. The number can be also negative, in this case the function will return the date the given number of weeks before the specified date."
+      "Output": "Function returns the Date argument value, increased by the specified Number of weeks. The number can also be negative. In this case, the function will return the date to the given number of weeks before the specified date."
     },
     "AddYear": {
-      "Arguments": "Date - agrument of the Date/Time type\nCount - argument of the integer type.",
+      "Arguments": "Date - argument of the Date/Time type\nCount - argument of the integer type.",
       "Description": "AddYear(Date, Count)",
-      "Output": "Function returns the Date argument value increased by the specified Number of years. The number can be also negative, in this case the function will return the date the given number of years before the specified date."
+      "Output": "Function returns the Date argument value, increased by the specified Number of years. The number can also be negative. In this case, the function will return the date to the given number of years before the specified date."
     },
     "AMGD": {
       "Arguments": "Arguments, numeric expressions.",
@@ -108,9 +108,9 @@
       "Output": "Returns count of characters in the string."
     },
     "CreateGUID": {
-      "Arguments": "Format - method of GUID string representation (\"N\", \"D\", \"B\", \"P\").\nUpperCase - argument of the logical type defining  the character case of hexadecimal digits.",
+      "Arguments": "Format - method of GUID string representation (\"N\", \"D\", \"B\", \"P\").\nUpperCase - argument of the logical type defining the character case of hexadecimal digits.",
       "Description": "CreateGUID([Format = \"B\", UpperCase = True])",
-      "Output": "Function returns GUID string representation in the specified format:  \"N\" - 32 digits;\n  \"N\" - 32 digits;\n  \"D\" - 32 hyphenated digits;\n  \"B\" - 32 hyphenated digits and digits in curved brackets;\n  \"P\" - 32 hyphenated digits and digits in curved and round brackets;\nIf the format is not specified, it is required to use \"B\" format. By default hexadecimal digits are written in uppercase.\nAs GUID will be generated each time when getting the expression value, for example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
+      "Output": "Function returns GUID string representation in the specified format:  \"N\" - 32 digits;\n  \"N\" - 32 digits;\n  \"D\" - 32 hyphenated digits;\n  \"B\" - 32 hyphenated digits and digits in curved brackets;\n  \"P\" - 32 hyphenated digits and digits in curved and round brackets;\nIf the format is not specified, it is required to use \"B\" format. By default hexadecimal digits are written in uppercase.\nAs GUID will be generated each time when getting the expression value. For example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
     },
     "CumulativeSum": {
       "Arguments": "FieldName - the field by which it is required to receive the cumulative sum\nGroupFieldName - the field by which data are grouped. This parameter is not particularly required. If this parameter is specified, it is required to calculate the cumulative sums within groups.",
@@ -120,7 +120,7 @@
     "DamLevDist": {
       "Arguments": "String1,\nString2 - expressions of the string type.",
       "Description": "DamLevDist(String1, String2)",
-      "Output": "Function returns the values of the Damerau–Levenshtein distance for Srting1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity measure of two strings. Its result is the minimum number of deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one."
+      "Output": "Function returns the value of the Damerau–Levenshtein distance for String1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity of measurement of the two strings. Its result is the minimum number of the character deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one."
     },
     "Data": {
       "Arguments": "FieldName - return value field name\nRowNumber - return value row number",
@@ -163,7 +163,7 @@
       "Output": " Implements IF - THEN - ELSE feature and the function result as all its arguments are related to the numeric or Date/Time type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeN": {
-      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\n ValueN - the expression value of which is compared with the Expression argument.\n ResultN - the expression of the numeric or Date/Time type that is returned if the Expression = ValueN.\n Default_value - the expression of the numeric or Date/Time type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to 0).",
+      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\n ValueN - the expression value of which is compared with the Expression argument.\n ResultN - the expression of the numeric or Date/Time type that is returned if the Expression = ValueN.\n Default_value - the expression of the numeric or Date/Time type the result of which is returned, if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to 0).",
       "Description": "DecodeN(Expression, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])",
       "Output": " Implements IF - THEN - ELSE feature and the function result is related to the numeric or Date/Time type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
@@ -173,7 +173,7 @@
       "Output": " Implements IF - THEN - ELSE feature and the function result is related to the string type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeV": {
-      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the Value arguments.\n Value - the expression value of which is compared with the Expression argument.\n Result - the expression that is returned if the Expression = Value.\n Default_value - the expression the result of which is returned if the Expression is equal to none of the Values (if it is not stated then it is equal to Null).",
+      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the Value arguments.\n Value - the expression value of which is compared with the Expression argument.\n Result - the expression that is returned if the Expression = Value.\n Default_value - the expression, the result of which is returned if the Expression is equal to none of the Values (if it is not stated then it is equal to Null).",
       "Description": "DecodeV(Expression, Value, Result [, Value, Result]... [, Default_value = Null])",
       "Output": " Implements IF - THEN - ELSE feature.\n All Result expressions are calculated before the Expression and Values comparison."
     },
@@ -210,7 +210,7 @@
     "ExpMovingAverage": {
       "Arguments": "Arguments - values of the numeric series",
       "Description": "ExpMovingAverage(X{t}, X{t-1} ...)",
-      "Output": "Used for construction of the user model of the exponentially smoothed moving average.\n\nThe exponentially smoothed moving average as opposed to the simple moving average attaches much significance to the last observations as compared with the last but ones, etc.\n\nCalculation formula is defined by the recurrence equation: EMA(t) = a * X(t) + (1 - a) * EMA(t-1), where EMA(k) - the value of exponentially smoothed moving average in point k, a - smoothing parameter, a = 2 / (n + 1), where n - window width."
+      "Output": "Used for construction of the user model of the exponentially smoothed moving average.\n\nAn exponentially smoothed moving average, as opposed to a simple moving average, gives the latest observations a more significant weight than the penultimate one, etc.\n\nCalculation formula is defined by the recurrence equation: EMA(t) = a * X(t) + (1 - a) * EMA(t-1), where EMA(k) - the value of exponentially smoothed moving average in point k, a - smoothing parameter, a = 2 / (n + 1), where n - window width."
     },
     "Factorial": {
       "Arguments": "Argument - integer positive numeric expression.",
@@ -285,7 +285,7 @@
     "LevDist": {
       "Arguments": "String1,\nString2 - expressions of the string type.",
       "Description": "LevDist(String1, String2)",
-      "Output": "String1 = Row1 and so on"
+      "Output": "Function returns the value of the Levenshtein distance for String1, String2. The Levenshtein distance is also called the edit distance that is the similarity of measurement of the two strings. Its result is the minimum number of the character deletion, insertion and substitution operations that must be performed in order to transform one string into the other one."
     },
     "Ln": {
       "Arguments": "Argument - positive numeric expression.",
@@ -318,7 +318,7 @@
       "Output": "Returns minutes according to the specified date/time."
     },
     "Mod": {
-      "Arguments": "Divider - integer numerical expression ,\nDivisor - integer numerical expression.",
+      "Arguments": "Divider - integer numerical expression,\nDivisor - integer numerical expression.",
       "Description": "Mod(Dividend, Divisor)",
       "Output": "Returns remainder from integer division of the Dividend by the Divisor."
     },
@@ -340,7 +340,7 @@
     "Now": {
       "Arguments": "Arguments are absent.",
       "Description": "Now()",
-      "Output": "Returns the current date.\nAs the current date and time are the date of the expression calculation that is calculated each time when getting the expression value, for example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
+      "Output": "Returns the current date.\nAs the current date and time are the date of the expression calculation that is calculated each time when getting the expression value. For example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
     },
     "Null": {
       "Arguments": "Arguments are absent.",
@@ -370,7 +370,7 @@
     "Random": {
       "Arguments": "Arguments are absent.",
       "Description": "Random()",
-      "Output": "Returns pseudorandom evenly distributed number larger or equal to 0 and less than 1.\nAs random number will be generated each time when getting the expression value, for example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
+      "Output": "Returns pseudorandom evenly distributed number larger or equal to 0 and less than 1.\nAs a random number will be generated each time when getting the expression value, for example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
     },
     "RelErr": {
       "Arguments": "Arguments - any numeric expressions.",
@@ -380,12 +380,12 @@
     "Repeat": {
       "Arguments": "String - string expression.\nCount_of_repeats - integer",
       "Description": "Repeat(String, Count_of_repeats)",
-      "Output": "Returns the string - given repetition string as many times as may be necessary."
+      "Output": "Returns a string - repeating the given string as many times as necessary."
     },
     "Replace": {
-      "Arguments": "String - the string in which it is required to make a replacement;\nOld_template - the replaced substring;\nNew_Template - the string with which the Old template will be replaced;\nReplace_all - flag of replacement of all occurences of the Old template with the New template. Argument of the logical type;\nIgnore_case - flag of case sensitivity in case of replacement. Argument of the logical type.",
+      "Arguments": "String - the string in which a replacement is required;\nOld_template - the replaced substring;\nNew_Template - the string with which the Old template will be replaced;\nReplace_all - flag of replacement of all occurences of the Old template with the New template. Argument of the logical type;\nIgnore_case - flag of case sensitivity in case of replacement. Argument of the logical type.",
       "Description": "Replace(String, Old_template, New_template [, Replace_all, Ignore_case])",
-      "Output": "Function returns the String in which occurences of the Old template were substituted with the New template.\n If the \"Replace all\" flag has the True (true) meaning, then all occurences of the Old template will be replaced with the New template in the returned string.\n If the \"Replace all\" flag has the False (false) meaning, then only the first in order occurence will be replaced in the returned string.\n If the \"Ignore case\" flag has the True (true) meaning, then search for the replaced fragments (the Old template) will be case insensitive.\n If the \"Ignore case\" flag has the False (false) meaning, then search for the replaced fragments (the Old template) will be case sensitive.\n It is allowed not to state the last two parameters.\n If the \"Ignore case\" flag is not stated, then search for the replaced fragments will be case sensitive.\n If the \"Replace all\" flag is not stated, then only the first occurence of the replaced substring will be replaced.\n For example, Replace(\"A000a00A\", \"A\", \"B\", True, True) will return string \"B000B00B\" , namely, it will replace all occurences of string \"A\" with string \"B\" ignoring the character case;\n Replace(\"A000a00A\", \"A\", \"B\", True, False) will return string \"B000a00B\".\n Replace(\"A000a00A\", \"A\", \"B\") will return string \"B000a00A\"."
+      "Output": "Function returns the String in which occurences of the Old template were substituted with the New template.\n If the \"Replace all\" flag has the True (true) meaning, then all occurences of the Old template will be replaced with the New template in the returned string.\n If the \"Replace all\" flag has the False (false) meaning, then only the first in order occurence will be replaced in the returned string.\n If the \"Ignore case\" flag has the True (true) meaning, then a search for the replaced fragments (the Old template) will be case insensitive.\n If the \"Ignore case\" flag has the False (false) meaning, then a search for the replaced fragments (the Old template) will be case sensitive.\n Not stating the last two parameters is permitted.\n If the \"Ignore case\" flag is not stated, then a search for the replaced fragments will be case sensitive.\n If the \"Replace all\" flag is not stated, then only the first occurence of the replaced substring will be replaced.\n For example, Replace(\"A000a00A\", \"A\", \"B\", True, True) will return string \"B000B00B\", namely, it will replace all occurences of string \"A\" with string \"B\" ignoring the character case;\n Replace(\"A000a00A\", \"A\", \"B\", True, False) will return string \"B000a00B\".\n Replace(\"A000a00A\", \"A\", \"B\") will return string \"B000a00A\"."
     },
     "Right": {
       "Arguments": "String - expression of the string type.",
@@ -438,7 +438,7 @@
       "Output": "Function returns the date of the specified week start according to ISO 8601 standard subject to which the week starts from Monday and ends with Sunday."
     },
     "Stat": {
-      "Arguments": "FieldName - the field by which it is required to receive the indicator value\nType - the statistics indicator that is required to receive",
+      "Arguments": "FieldName - the field by which receipt of the indicator value is required\nType - the statistics indicator that is required to receive",
       "Description": "Stat(\"FieldName\", \"Type\")",
       "Output": "Function returns one of the statistical indicators.\nThe type can adopt one of the following values:\n       Min - minimum value\n       Max - maximum value\n       Avg - average value\n       StdDev - standard deviation\n       Sum - sum of values\n       SumSq - sum of square values\n       Count - count of values\n       UniqueCount - count of unique values\n       NullCount - count of missing values\nNote: FieldName and Type - string values, namely, explicitly given FieldName and Type must be in quotation marks.\nFor example: Stat(\"COL1\", \"Min\")"
     },
@@ -455,7 +455,7 @@
     "StrToDate": {
       "Arguments": "Argument - the string expression containing date/time\nFormat - optional parameter date/time format in terms of D, M, Y, H, N, S, Z",
       "Description": "StrToDate(Argument [, Format])",
-      "Output": "Function coverts the string containing the date in the \"Date/Time\" format.\nthe format examples:\n  \"DD.MM.YY\" - means that the Argument contains strings of the following type: \"25.12.04\";\n  \"DD/MM/YY/HH:NN:SS\" - means that the Argument contains strings of the following type:  \"25/12/04/12:44:54\";"
+      "Output": "Function converts the string containing the date in the \"Date/Time\" format.\nThe format examples:\n  \"DD.MM.YY\" - means that the Argument contains strings of the following type: \"25.12.04\";\n  \"DD/MM/YY/HH:NN:SS\" - means that the Argument contains strings of the following type:  \"25/12/04/12:44:54\";"
     },
     "StrZero": {
       "Arguments": "Expression - numeric expression.\nTotal_length - length of the resulting string",
@@ -465,7 +465,7 @@
     "Stuff": {
       "Arguments": "Source - string expression.\nInserted_string - string expression.\nStart - position of the insert start\nLength - length of the deleted substring",
       "Description": "Stuff(Source, Position_start, Length [, Inserted_string = \"\"])",
-      "Output": "Returns the string of the following type. At first substring is deleted from the Source, starting from the Start position of the Length length. Then instead of the deleted substring the Inserted_string is inserted."
+      "Output": "Returns the string of the following type. At first, substring is deleted from the Source, starting from the Start position of the Length length. Then instead of the deleted substring, the Inserted_string is inserted."
     },
     "SubStr": {
       "Arguments": "Source - string expression.\nStart - position of the substring start\nLength - the substring length",
@@ -490,7 +490,7 @@
     "Today": {
       "Arguments": "Arguments are absent.",
       "Description": "Today()",
-      "Output": "Returns the current date.\nAs the current date is the date of the expression calculation that is calculated each time when getting the expression value, for example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
+      "Output": "Returns the current date.\nAs the current date is the date of the expression calculation that is calculated each time the expression value is obtained. For example, when viewing a result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
     },
     "Trim": {
       "Arguments": "Argument - string expression.",
@@ -515,12 +515,12 @@
     "Val": {
       "Arguments": "String - string expression.",
       "Description": "Val(String)",
-      "Output": "Converts the given string into the number taking locale into account"
+      "Output": "Converts the given string into a number, taking locale into account"
     },
     "Week": {
       "Arguments": "Date - the date type field.",
       "Description": "Week(Date)",
-      "Output": "Returns the week number of the year by the set date according to ISO 8601 standard subject to which the week starts from Monday and ends with Sunday. The first week of the year starts from Monday, for the days from January 1 to the first Monday the number of the last week of the previous year is returned."
+      "Output": "Returns the week number of the year by the set date according to ISO 8601 standard subject to which the week starts from Monday and ends with Sunday. The first week of the year starts from Monday. For the days from January 1 to the first Monday, the number of the last week of the previous year is returned."
     },
     "Year": {
       "Arguments": "Date - the date type field.",

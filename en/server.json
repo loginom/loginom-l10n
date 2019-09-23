@@ -1,6 +1,6 @@
 {
   "Common/1Cv8/1Cv8Query": {
-    "ErrEofArrived": "Data set end reached",
+    "ErrEofArrived": "Data set limit reached",
     "ErrQueryNotActive": "Query is not active"
   },
   "Common/1Cv8/1Cv8SessionManager": {

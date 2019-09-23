@@ -41,7 +41,7 @@
   "admin/UserListForm": {
     "Admin": "Administration",
     "Blocked": "Blocked",
-    "DeleteUserConfirm": "Do you want to delete user folder from file system?",
+    "DeleteUserConfirm": "Do you want to delete user folder from the file system?",
     "Designer": "Workflows design",
     "DisplayName": "Full caption",
     "GlobalFileStorage": "Access to all files",

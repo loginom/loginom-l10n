@@ -690,7 +690,7 @@
     },
     "colReadonly": {
       "text": "Read-only",
-      "tooltip": "Edited only in the script development mode"
+      "tooltip": "Edited only in script development mode"
     },
     "colValue": {
       "text": "Value"
@@ -2699,7 +2699,7 @@
       "text": "Move to selected"
     },
     "mniIsSelectedAll": {
-      "text": "Move all to selectedl"
+      "text": "Move all to selected"
     },
     "txtFilterMDFields": {
       "emptyText": "Filter"
@@ -4029,7 +4029,7 @@
       "text": "Chart type"
     },
     "lblCutoff": {
-      "text": "Cuttoff"
+      "text": "Cutoff"
     },
     "lblParams": {
       "text": "Classification scores"

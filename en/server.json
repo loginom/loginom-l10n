@@ -87,7 +87,7 @@
     "ErrHttpResponseExRequired": "Failed to create %s class instance, HTTP client response must support IHTTPResponseEx interface",
     "ErrHttpResponseWriteDisallowed": "Writing to HTTP response stream disallowed",
     "ErrInconsistentContentLength": "Actual received data size %d inconsistent with Content-Length %d header value",
-    "ErrReadStreamBufferLength": "The provided buffer size %d is too smal to read %d bytes"
+    "ErrReadStreamBufferLength": "The provided buffer size %d is too small to read %d bytes"
   },
   "Common/HTTP/HTTPNetRequest": {
     "ErrHTTPNetRequest": "Request to \"%s\" URL failed"
@@ -242,8 +242,8 @@
     "ErrRootElementPathOnTreeRoot": "Attempt to get the schema root element path for the tree root node",
     "ErrSetAsStringDatetimeAttempt": "Attempt to set the SetAsString based value for the \"Date/time\" data type node",
     "ErrSetAsStringVariantAttempt": "Attempt to set the SetAsString based value for the \"Variable\" data type node",
-    "ErrSetDateTimeAsStringTypeMismatch": "Attempt to set the SetDateTimeAsString based value for the node with the data type different from the \"Date/time\" one",
-    "ErrSetVariantAsStringTypeMismatch": "Attempt to set the SetDateTimeAsString based value for the node with the data type different from the \"Variable\" one",
+    "ErrSetDateTimeAsStringTypeMismatch": "Failed to set value via the SetDateTimeAsString function for the node with non \"Date/time\" data type",
+    "ErrSetVariantAsStringTypeMismatch": "Failed to set value via the SetDateTimeAsString function for the node with non \"Variant\" data type",
     "ErrTreeSelectionUpdate": "EndUpdateSelection method called without BeginUpdateSelection method",
     "ErrValueConversionImpossible": "Failed to convert \"%s\" string to \"%s\" value",
     "ErrValueIntConversionImpossible": "Failed to convert \"%s\" string to \"%s\" number: %s",
@@ -337,7 +337,7 @@
     "ErrNConsequentMaxWrongValue": "Invalid maximum item count in the rules antecedent or consequence",
     "ErrNItemsMaxWrongValue": "Invalid maximum item count in the set",
     "ErrNoItemColumn": "No transaction item column in the input data",
-    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
+    "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "ErrNonDiscreteItemColumn": "Transaction items must relate to the discrete type",
     "ErrNoTransactionColumn": "No transaction identifier column in the input data",
     "ErrWrongBaseSourceDataType": "Data type does not match the model",
@@ -511,7 +511,7 @@
     "ErrMoreThanOneItemColumn": "More than one transaction item column in the input data",
     "ErrMoreThanOneTransactionColumn": "More than one transaction identifier column in the input data",
     "ErrNoItemColumn": "No transaction item column in the input data",
-    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
+    "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "ErrNonDiscreteItemColumn": "Transaction items must relate to the discrete type",
     "ErrNoTransactionColumn": "No transaction identifier column in the input data",
     "ErrTransactionTypeNotMatched": "Transaction identifier types do not match",
@@ -541,7 +541,7 @@
     "ColumnNameUniqueValueSuffix": "|Value",
     "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
+    "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "ErrWrongModel": "Model does not match the input data",
     "OutDataSetCenters": "Cluster centers",
     "OutDataSetClusters": "Clustering",
@@ -562,7 +562,7 @@
     "ErrInputBinningIsNotCorrected": "External binning for \"%s\" column incorrectly specified",
     "ErrOutColumnNotDefined": "Undefined output field",
     "ErrOutColumnNotValid": "The output field must be discrete with 2 unique values",
-    "ErrOverflow": "Number of the input data source binning operations exceeds the allowable value",
+    "ErrOverflow": "Number of input data source binning operations exceeds the allowable value",
     "ErrVoidDataKind": "Data kind of the processed column not defined"
   },
   "components/coarseclasses/CoarseClassesConfig": {
@@ -575,7 +575,7 @@
     "MinimalClassQuota": "Minimum class quota"
   },
   "components/coarseclasses/CoarseClassesEngine": {
-    "ActiveInputPortRequired": "It is required to activate the input port to build the coarse classes",
+    "ActiveInputPortRequired": "Activation of input port is required to build the coarse classes",
     "ClassMarkPostfix": " Caption",
     "ClassNumPostfix": " Class number",
     "ClassSignificantPostfix": " Significance",
@@ -589,7 +589,7 @@
     "ErrInputBinningMissValue": "External binning for \"%s\" column does not contain unique \"%s\" value",
     "ErrInputBinningMissValues": "External binning contains not all unique values of \"%s\" column",
     "ErrInputRangeDataSourceIsNotExist": "No external binning data source",
-    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
+    "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "InputRangesDataSource": "External quantization ranges"
   },
   "components/coarseclasses/CoarseClassesMapper": {
@@ -666,7 +666,7 @@
   "components/corranalysis/CorrAnalysis": {
     "ColumnSet1": "Field 1",
     "ColumnSet2": "Field 2",
-    "CorrAnalysisExtremumCFNotify": "Cross-correlation functions extremes calculating",
+    "CorrAnalysisExtremumCFNotify": "Extremes of cross-correlation functions calculating",
     "CorrAnalysisNotify": "Correlation coefficients calculating",
     "CorrAnalysisPirsonNotify": "Pearson correlation coefficients calculating",
     "CorrAnalysisRankedStatNotify": "Ancillary statistics calculating",
@@ -760,7 +760,7 @@
     "ColumnNameUniqueValueSuffix": "|Value",
     "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
+    "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "ErrWrongModel": "Model does not match the input data",
     "OutDataSetCenters": "Cluster centers",
     "OutDataSetClusters": "Clustering",
@@ -830,13 +830,13 @@
   },
   "components/extractxml/ExtractXMLVendor": {
     "VendorCaption": "XML Extraction",
-    "VendorDescription": "Extracts XML document from the string field of the data set and imports it into the output data set according to the specified schema"
+    "VendorDescription": "Extracts XML document from the string field of the data set and imports it into the output data set, according to the specified schema"
   },
   "components/factoranalysis/FactorAnalysis": {
     "ErrFactorMatrixAfterRot": "Ill-conditioned factor mapping matrix",
     "ErrFactorMatrixBadSize": "Incorrect factor mapping matrix size",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
+    "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "ErrWrongModel": "Input data does not match previously trained model",
     "FactorAnalysisColumnsDisplayNames": "Caption",
     "FactorAnalysisColumnsNames": "Name",
@@ -1015,9 +1015,9 @@
     "ResDF": "Number of the residues degrees of freedom",
     "ResidualColumn": "%s|Approximation error",
     "SEColumn": "Standard deviation",
-    "TrainAvgError": "The training set mean absolute error",
-    "TrainAvgRelError": "The training set mean relative error",
-    "TrainRMSError": "The training set root-mean-square error",
+    "TrainAvgError": "The mean absolute error of the training set",
+    "TrainAvgRelError": "The mean relative error of the training set",
+    "TrainRMSError": "The root-mean-square error of the training set",
     "TStatColumn": "T-statistics",
     "UBoundColumn": "%s|Upper bound"
   },
@@ -1027,7 +1027,7 @@
   },
   "components/groupdata/GroupData": {
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoOneAggregation": "It is required to specify at least one aggregation option for \"%s\" fact",
+    "ErrNoOneAggregation": "Specification of at least one aggregation option for \"%s\" fact is required",
     "FindMedianNotify": "Median calculating",
     "GroupDataNotify": "Data grouping",
     "SortNotify": "Grouped data sorting"
@@ -1184,11 +1184,11 @@
     "TestSamples": "Samples in the test set",
     "TotalSamples": "Total samples",
     "TotalSelectedSamples": "Total selected samples",
-    "TrainAvgCE": "Average cross-entropy in the training set",
-    "TrainClsErrorPercentage": "Percentage of classification errors in the training set",
-    "TrainRMSError": "The training set root-mean-square error",
+    "TrainAvgCE": "The average cross-entropy of the training set",
+    "TrainClsErrorPercentage": "Percentage of classification errors of the training set",
+    "TrainRMSError": "The root-mean-square error of the training set",
     "TrainSamples": "Samples in the training set",
-    "TrainThreshold": "Model train cuttoff",
+    "TrainThreshold": "Model train cutoff",
     "ValidationPartitions": "Number of validation partitions",
     "ValidationSamples": "Samples in the validation set"
   },
@@ -1226,7 +1226,7 @@
     "ErrGroupDataSourceSocketNotSpecified": "No port containing columns to group specified",
     "ErrGroupSizeMustBePositive": "Group row count must be positive",
     "ErrIncompatibleTerminateCondition": "\"%s\" loop termination condition is not compatible with \"%s\" data type",
-    "ErrIncorrectMaxThreadCount": "Maximum thread count must be not less than %d",
+    "ErrIncorrectMaxThreadCount": "Maximum thread count must be no less than %d",
     "ErrInvalidMappedVariable": "Invalid mapped variables passed from output to input",
     "ErrIterationCountCannotBeNegative": "Iteration count cannot be negative",
     "ErrIterationCountOverflow": "Maximum allowable number of iterations exceeded: %d",
@@ -1236,7 +1236,7 @@
     "ErrNoConditionVariable": "No variable to check the loop termination condition",
     "ErrParallelProcessingError": "Error occurred while parallel loop processing",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Posttested loop does not support parallel processing",
-    "ErrPortNotConfigurable": "The port configuring not supported",
+    "ErrPortNotConfigurable": "Port configuration not supported",
     "ErrSocketIsNotInputDataSourceSocket": "\"%s\" port is not input port containing data set",
     "ErrSocketNotConfigured": "Port not configured",
     "ErrUnsupportedInputSocketType": "Unsupported \"%s\" port type",
@@ -1250,7 +1250,7 @@
     "IterationIdentifiers": "Identifier values",
     "IterationIdFieldDisplayName": "Iteration identifier",
     "IterationIndex": "Iteration index",
-    "IterationStatusSocketName": "Iterations execution status",
+    "IterationStatusSocketName": "Iteration execution status",
     "IterationSuccessFlagFieldDisplayName": "Success flag field",
     "ProcessActivate": "Activating \"%s\" node",
     "ProcessAppendDataSet": "Output data set appending",
@@ -1278,7 +1278,7 @@
     "ErrInvalidNeuronKind": "Invalid neuron kind: %d",
     "ErrLayerNeuronCountMismatch": "The layer neuron count mismatches the required value %d",
     "ErrMissingOrInfiniteValue": "Only non-empty final values are allowed in the data",
-    "ErrMustSetEqualLayerSizes": "Before requesting the coarse size of the neural network, it is required to set the same number of neurons in the hidden layers",
+    "ErrMustSetEqualLayerSizes": "Before requesting the coarse size of the neural network, the setting of the same number of neurons in the hidden layers is required",
     "ErrNetworkUntrained": "You cannot perform the requested operation using the untrained neural network",
     "ErrNeuronWeightsCountMismatch": "The specified count of input neuron weights %d mismatches the required %d value",
     "ErrNoInputColumns": "Neural network input data columns not set",
@@ -1344,11 +1344,11 @@
     "TestSamples": "Samples in the test set",
     "TotalSamples": "Total samples",
     "TotalSelectedSamples": "Total selected samples",
-    "TrainAvgCE": "Average cross-entropy in the training set",
-    "TrainAvgError": "The training set mean absolute error",
-    "TrainAvgRelError": "The training set mean relative error",
-    "TrainClsErrorPercentage": "Percentage of classification errors in the training set",
-    "TrainRMSError": "The training set root-mean-square error",
+    "TrainAvgCE": "The average cross-entropy of the training set",
+    "TrainAvgError": "The mean absolute error of the training set",
+    "TrainAvgRelError": "The mean relative error of the training set",
+    "TrainClsErrorPercentage": "Percentage of classification errors of the training set",
+    "TrainRMSError": "The root-mean-square error of the training set",
     "TrainSamples": "Samples in the training set"
   },
   "components/neuralnet/NeuralNetParams": {
@@ -1484,7 +1484,7 @@
     "ColumnNameUniqueValueSuffix": "|Value",
     "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
+    "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "ErrSONNIncorrectSize": "Incorrect network size for %s: %d",
     "ErrSONNTypeNotSupported": "\"%s\" type of self-organizing network not supported",
     "ErrWrongModel": "Model does not match the input data",
@@ -1603,7 +1603,7 @@
   "components/unionvariables/UnionVariables": {
     "ErrNoActiveInputs": "No active inputs",
     "InputJoinedVariables": "Added variables",
-    "InputPortsOverFlow": "Number of the input ports exceeded,  maximum value = %d",
+    "InputPortsOverFlow": "Number of input ports exceeded the maximum value = %d",
     "InputVariablesOverFlow": "Number of the input variables exceeded, maximum value =  %d"
   },
   "components/unionvariables/UnionVariablesVendor": {
@@ -1642,7 +1642,7 @@
     "ErrIncorrectWSDLClientRequestConfiguration": "Web service request configuration contains errors",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
     "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
-    "ErrMappedNodeNotOwnedByRequestTree": "%s node for which input set column selection is requested is not included into the request tree",
+    "ErrMappedNodeNotOwnedByRequestTree": "%s node for which input set column selection is requested not included in the request tree",
     "ErrNothingSelected": "No nodes selected for service response import",
     "ErrOperationNotFound": "\"%s\" operation not found in \"%s\" endpoint description of \"%s\" service",
     "ErrOperationNotSelected": "No WSDL operation selected for request execution",
@@ -1650,7 +1650,7 @@
     "ErrPortNotSelected": "No WSDL service endpoint for the request execution selected",
     "ErrResponseNotConfigured": "Service response not configured",
     "ErrTransmissionPrimitiveNotSupported": "Operations with \"%s\" exchange primitive are not supported",
-    "ErrUnmappedNodeNotOwnedByRequestTree": "%s node for which link reset is requested is not included into the request tree",
+    "ErrUnmappedNodeNotOwnedByRequestTree": "%s node for which link reset is requested is not included in the request tree",
     "RequestDataSource": "Request data source"
   },
   "components/wsdlclient/WSDLClientVendor": {
@@ -1887,7 +1887,7 @@
     "ErrDBPath": "Failed to get path to DB",
     "ErrExecuteProcedure": "Error executing stored procedure \"%s\"",
     "ErrExecuteQuery": "Error while SQL executing:\n%s",
-    "ErrIndexColumnsNotSelect": "No columns to make an index for are specified",
+    "ErrIndexColumnsNotSelect": "No columns to make an index are specified",
     "ErrLocalDBForbidden": "Connections to local server databases are forbidden",
     "ErrOpenQuery": "Error while SQL opening :\n%s",
     "ErrParameterTypesDoNotMatch": "Parameter types do not match",
@@ -1968,7 +1968,7 @@
   },
   "Libraries/bgrtl/Classes": {
     "CountDesc": "Count",
-    "ErrConfigApplyModeNotSupported": "This method of the configuration loading not supported",
+    "ErrConfigApplyModeNotSupported": "This method of configuration loading not supported",
     "ErrInvalidName": "\"%s\" is not a valid identifier",
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
     "ErrItemByGuidNotFound": "%s with %s identifier not found",
@@ -2019,7 +2019,7 @@
     "ErrCannotLinkColumnsFromSameTable": "You cannot link \"%s\" and \"%s\" columns from the same table",
     "ErrColumnCanBeIncludedInOnlyOneLink": "\"%s\" column of table %d can only be part of a \"single\" link",
     "ErrLinkedColumnTypesMismatch": "\"%s\" and \"%s\" types of linked columns mismatch",
-    "ErrLinkMustContainMainTableColumn": "The main table field must be provided while link creation",
+    "ErrLinkMustContainMainTableColumn": "The main table field must be provided while link is created",
     "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
     "Link": "Link"
   },
@@ -2060,7 +2060,7 @@
     "ErrDataSourceNotConfigured": "Data set not configured",
     "ErrDataSourceNotEditing": "Data set is not in the edited state",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range",
-    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first"
+    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method without calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataSetColumns": {
     "ErrDataSoureNotAssigned": "No data set reference"
@@ -2077,13 +2077,13 @@
     "ErrDataTreeNotConfigured": "Tree not configured",
     "ErrDataTreeNotEditing": "Tree is not in the edited state",
     "ErrIsNotAncestorNode": "\"%s\" node is not ancestor of \"%s\" node",
-    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method not calling BeginUpdate first"
+    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method without calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataTreeNodeDefs": {
-    "ErrCannotInitializeNodeWithDifferentContainerFlag": "You cannot initialize the node from the source node that has a different meaning of the container feature.",
+    "ErrCannotInitializeNodeWithDifferentContainerFlag": "You cannot initialize the node from the source node, which differs by the meaning of the container feature.",
     "ErrChangeDataKindNotAllowed": "You cannot change the data kind of the node that is a container",
     "ErrChangeDataTypeNotAllowed": "You cannot change the data type of the node that is a container",
-    "ErrChangeIsContainerNotAllowed": "You cannot change the container indicator of the node that is the root one or contains child nodes",
+    "ErrChangeIsContainerNotAllowed": "You cannot change the container indicator of a node that is a root node, or contains child nodes",
     "ErrNodeCantBeContinuous": "\"%s\" node of \"%s\" type cannot be continuous",
     "ErrOnlyContainerNodeCanHaveSubNodes": "Only container node can have subnodes",
     "Root": "Root node",
@@ -2106,7 +2106,7 @@
   },
   "Libraries/bgrtl/DerivedCollectionItemAspects": {
     "ErrCannotChangeDerivedCollectionItemName": "You cannot change the derived collection item name",
-    "ErrCannotChangeDerivedFieldDataType": "You cannot change the derived fields data type",
+    "ErrCannotChangeDerivedFieldDataType": "You cannot change the derived field data type",
     "ErrCannotDeleteDerivedCollectionItem": "You cannot delete the derived collection item name",
     "ErrCannotMoveDerivedCollectionItem": "You cannot change position of the derived collection items"
   },
@@ -2130,8 +2130,8 @@
   },
   "Libraries/bgrtl/Encoding": {
     "ErrConvertToASCII": "\"%s\" string cannot be converted to ASCII encoded string",
-    "ErrUTF8ToWideCharOverflow": "Code unit %.2x is not start of UTF8 character that consists of not more than 3 code units",
-    "ErrUTF8ToWideCharWrongOffset": "Code unit %.2x is not start of UTF8 character"
+    "ErrUTF8ToWideCharOverflow": "Code unit %.2x is not the start of UTF8 character that consists of not more than 3 code units",
+    "ErrUTF8ToWideCharWrongOffset": "Code unit %.2x is not the start of UTF8 character"
   },
   "Libraries/bgrtl/EnumTypInfo": {
     "ErrEnumNotRegistered": "\"%s\" enumeration not registered"
@@ -2266,7 +2266,7 @@
     "ErrInvalidBackupFileName": "Invalid backup file name: %s",
     "ErrInvalidCurrentDirectory": "Invalid current directory: %s",
     "ErrInvalidMountedDirectoryName": "Invalid mounted directory name: %s",
-    "ErrMountedDirectoryPathIsNotAbsolutePath": "The specified path to the mounted directory is not an absolute pat: \"%s\"",
+    "ErrMountedDirectoryPathIsNotAbsolutePath": "The specified path to the mounted directory is not an absolute path: \"%s\"",
     "ErrNoMountedDirectories": "No directories mounted",
     "ErrOpenFile": "Failed to open file: %s",
     "ErrParentFileStorageNotConnected": "Root file storage not connected",
@@ -2315,7 +2315,7 @@
     "ErrMultMatrixVectDimMismatch": "You cannot multiply matrix by vector with a different number of matrix columns and vector length.",
     "ErrNotSqrMatr": "The coefficient matrix must be a square matrix.",
     "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function",
-    "ErrRegressPowerAndDataErr": "To provide proper functioning of the regression function it is required to satisfy the inequality 0 <= \"polynomia degree\" < \"data points count\".",
+    "ErrRegressPowerAndDataErr": "The inequality 0 <= \"polynomial degree\" < \"data points count\" must be fullfilled for proper regression function application.",
     "ErrRegressXYDimMismatch": "The length of X vector must equal the length of Y vector",
     "ErrSLAEDimMismatch": "The vector length of the intercept terms must coincide with the row count of the coefficient matrix."
   },
@@ -2337,7 +2337,7 @@
     "ErrAggregateExceptionMessage": "Exceptions occurred while processing",
     "ErrGetExceptionClassFunctionAlreadyAssigned": "GetExceptionClass function already initialized",
     "ErrGetExceptionIDFunctionAlreadyAssigned": "GetExceptionID function already initialized",
-    "ErrQueueExceptionEndUnexpected": "Attempt to end the queued exception block handling without its start"
+    "ErrQueueExceptionEndUnexpected": "Attempting to complete a queued exception handling block without first starting it"
   },
   "Libraries/bgrtl/Random": {
     "ErrBuildMSequenceErr": "The required array length must not exceed the upper bound of the random numbers.",
@@ -2528,7 +2528,7 @@
     "UniqueValuesDataAlreadyInitialized": "Unique value data has already been initialized"
   },
   "Libraries/bgrtl/UpdateHelpers": {
-    "ErrEndUpdateUnexpected": "Attempt to complete the update process without its start",
+    "ErrEndUpdateUnexpected": "Attempting to complete the update process without first starting it",
     "ErrLockCookieInvalidOwner": "The locked object Cookie belongs to another object",
     "ErrLockCookieIsNil": "Attempt to complete the operation with null reference to the locked object Cookie",
     "ErrUnlockUnexpected": "Attempt to unlock the object that has not been previously locked",
@@ -2635,7 +2635,7 @@
     "ErrAttributeNotExist": "%s attribute does not exist.",
     "ErrConfigElementAlien": "The configuration element does not belong to the specified list",
     "ErrConfigElementByNameNotFound": "Configuration element with %s name not found",
-    "ErrRefToClassNotInitOrWrongClass": "Collection reference has not been initialized or realtes to the invalid class",
+    "ErrRefToClassNotInitOrWrongClass": "Collection reference has not been initialized or relates to the invalid class",
     "ErrUnmatchedAttrType": "Accessing to %s attribute value of %s type as the value of %s type",
     "ErrUnsupportedPropertyType": "Unsupported property type",
     "ErrVectorLengthOverflow": "Length of array %d exceeds the allowable %d limit",
@@ -3141,7 +3141,7 @@
     "DeleteReferringVendorCaption": "Delete \"%s\" Derived Component",
     "ErrAlienExcludedNode": "\"%s\" node does not belong to the current module",
     "ErrAlienSubModel": "Supernode does not belong to the current workflow",
-    "ErrComponentVendorIsSealed": "It is forbidden to create the derived component for this node",
+    "ErrComponentVendorIsSealed": "Creation of derived component for this node is forbidden",
     "ErrDerivedConnectionVendorNotFound": "No derived component for the connection node found",
     "LocalModelComponentVendorMetaDesc": "local component",
     "ModelComponentVendorMetaDesc": "component"
@@ -3203,7 +3203,7 @@
     "ErrMsgCantFindLinkNode": "Failed to define the second link port",
     "ErrMsgNoAllVendorsCollected": "Failed to get all required types of vendors",
     "ErrMsgNoSubModel": "Supernode component not created",
-    "ErrMsgNoVendorInfo": "Failed to get information on the derived component of for \"%s\" node",
+    "ErrMsgNoVendorInfo": "Failed to get information on the derived component for \"%s\" node",
     "ErrMsgNoVendorLocator": "Failed to get port vendor enumerator",
     "ErrSubModelVendorNotCreated": "You cannot create the supernode component In the current context",
     "WarnModelNotSupportInPort": "Failed to create input port for \"%s\" port",
@@ -3371,7 +3371,7 @@
     "ErrMinMaxStatNaN": "Failed to calculate the maximum/minimum value for the range normalization settings, \"%s\" column",
     "ErrNanDivisor": "You cannot calculate divisor to normalize relations, \"%s\" column",
     "ErrQuotientNormTypeNotSupported": "The selected \"%s\" normalization type is not supported by the relation normalization settings",
-    "ErrQuotientStatNotSupported": "The selected statistic divisor \"%s\" is not supported by the relation normalization settings",
+    "ErrQuotientStatNotSupported": "Use of the selected statistics parameter \"%s\" as divisor in the relation normalization settings is not allowed",
     "ErrStatDivisorNotAvailable": "The set statistic indicator \"%s\" cannot be used as relation normalization divisor"
   },
   "Libraries/Normalization/NormMatrixData": {
@@ -3403,7 +3403,7 @@
     "ErrUniqueValuesSyncConflict": "Input data set is not compatible with normalization settings"
   },
   "Libraries/Normalization/TuneNormColumnDefs": {
-    "ErrNilStatInfoProvider": "Nil provider of the statistic columns information was passed",
+    "ErrNilStatInfoProvider": "Null provider of the statistic columns information was passed",
     "ErrTuneNormColumnDefsVendorNotSet": "Vendor of configurable fields with normalization not set",
     "ErrWrongConstructor": "Invalid column collection constructor called"
   },
@@ -3475,7 +3475,7 @@
     "ErrVisibilityMismatch": "Visibility of \"%s\" interface mismatches the required visibility"
   },
   "Libraries/Regression/DataSourceRegressionModelComponentEngine": {
-    "ErrNoModel": "Model is not trained. It is required to train the node before its applying",
+    "ErrNoModel": "Model is not trained.  Training of node before its application is required",
     "ErrOutputColumnInvalid": "Invalid output column",
     "ErrOutputCount": "There must be exactly one output column",
     "ErrTrainingNotComplite": "Failed to train the node on the basis of the current training set",
@@ -3573,7 +3573,7 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s",
-    "WarnMainWSDLNotLoaded": "Main WSDL source (%s) failed to get loaded (%s). Loading the backup source."
+    "WarnMainWSDLNotLoaded": "Loading of main WSDL source (%s) failed (%s). Loading the backup source."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
     "WSDLClientConnectionVendorCaption": "SOAP Service",
@@ -3601,7 +3601,7 @@
     "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes that refer to the nodes in other packages could be reset.\nOne of the following actions is required:\n  - reconfigure and retrain the \"Logistic Regression\" nodes that cannot be converted\n  - restore configuration of the specified nodes to the original (base)\n  - contact Loginom support for help"
   },
   "Studio/Converters/Converter_201809181721_LogRegression_RelativeTerms": {
-    "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nIt is required to reconfigure and retrain the \"Logistic Regression\" nodes that cannot be converted"
+    "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nReconfiguration and retraining of the \"Logistic Regression\" nodes that cannot be converted is required"
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"
@@ -3933,14 +3933,14 @@
   },
   "Viewers/ROC/ROCViewCharts": {
     "AllPrecisionRatesChartTitle": "Precision Chart",
-    "AllPrecisionRatesChartXLabel": "Cuttoff",
+    "AllPrecisionRatesChartXLabel": "Cutoff",
     "AllPrecisionRatesChartYLabel": "PPV, NPV, OPR, OCR",
     "Base": "Baseline",
     "Best": "Best",
     "BreakEvenChartTitle": "Break Even Chart",
-    "BreakEvenChartXLabel": "Cuttoff",
+    "BreakEvenChartXLabel": "Cutoff",
     "BreakEvenChartYLabel": "TPR, PPV",
-    "Cutoff": "Cuttoff",
+    "Cutoff": "Cutoff",
     "ErrSerieCountConfigLoadError": "Incorrect series count in configuration",
     "EventsChartTitle": "% captured response chart",
     "EventsChartXLabel": "Bin",
@@ -3962,7 +3962,7 @@
     "NPV": "NPV (Negative Prediction Value)",
     "OCR": "OCR (Overall Classification Rate)",
     "OPR": "OPR (Overall Precision Rate)",
-    "OverallRatesChartXLabel": "Cuttoff",
+    "OverallRatesChartXLabel": "Cutoff",
     "OverallRatesChartYLabel": "TPR, TNR, FPR, FNR",
     "OverallRatesTitle": "Basic Rates",
     "PPV": "PPV (Positive Predictive Value)",
@@ -4003,7 +4003,7 @@
   "Viewers/Statistics/StatViewCalculation": {
     "ErrInvalidHistBounds": "Invalid histogram interval bounds set",
     "ErrRequiredColumnNotFound": "No columns with the specified indexes in the input data source",
-    "ErrRequiredSimpleStats": "It is required to calculate simple statistics"
+    "ErrRequiredSimpleStats": "Simple statistics need to be calculated"
   },
   "Viewers/Statistics/StatViewHistogram": {
     "DefaultSeparator": ": ",

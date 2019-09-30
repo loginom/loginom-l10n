@@ -61,12 +61,12 @@
     "LoginomLastVersionDownloadUrl": "https://loginom.com/downloads",
     "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost.",
     "VersionErrorResponseStatus": "Error while requesting the latest version. Response code: \"{0}\". Message: \"{1}\"",
-    "VersionWrongServiceResponse": "Wrong service response with the information on the latest Loginom version"
+    "VersionWrongServiceResponse": "Wrong service response with information on the latest Loginom version"
   },
   "app/AppUtils": {
     "ConfirmRemovingUnit": "Do you really want to delete the module?",
     "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently in use.",
-    "ErrSelectedVendorLocked": "Failed to delete the selected \"{0}\" componet. Some of the derived nodes are currently in use.",
+    "ErrSelectedVendorLocked": "Failed to delete the selected \"{0}\" component. Some of the derived nodes are currently in use.",
     "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the selected \"{0}\" component? The derived nodes will be unavailable.",
     "RemoveVendorConfirm": "Do you want to remove the component?"
   },
@@ -254,7 +254,7 @@
     "ModifyBtnText": "Apply",
     "ModifyVariableTitle": "Edit Variable",
     "ReadonlyFieldLabel": "Read-only:",
-    "ReadonlyFieldTip": "Edited only in the script development mode"
+    "ReadonlyFieldTip": "Edited only in script development mode"
   },
   "app/PackageVariablesForm": {
     "DeleteAllPrompt": "Do you really want to delete all variables?",
@@ -459,10 +459,10 @@
     "EmptyVendor": "Not defined"
   },
   "components/corranalysis/CorrAnalysisWizard": {
-    "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if you want to determine the linear relationship between two processes or parts of the processes that occur with a certain time lag.",
-    "CorrTypeKendall": "The Tay-b Kendall rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. It is recommended to use it for categorical data.",
-    "CorrTypePearson": "Using the Pearson correlation coefficient it is possible to determine the strength and direction of the linear relationship between two processes that occur simultaneously.",
-    "CorrTypeSpearman": "The Spearman's rank correlation coefficient is another version of the rank correlation. Not the numerical values but corresponding ranks are used for numerical fields to estimate the connection strength. Therefore, the Spearman coefficient will be 1 or -1 for any monotone sequences."
+    "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if you want to determine the linear relationship between two processes, or parts of the processes that occur with a certain time lag.",
+    "CorrTypeKendall": "The Tay-b Kendall rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. Use for categorical data is recommended.",
+    "CorrTypePearson": "Using the Pearson correlation coefficient, it is possible to determine the strength and direction of the linear relationship between two processes that occur simultaneously. ",
+    "CorrTypeSpearman": "The Spearman's rank correlation coefficient is another version of the rank correlation. Corresponding ranks, not numerical values, are used for numerical fields to estimate the connection strength. Therefore, the Spearman coefficient will be 1 or -1 for any monotone sequences."
   },
   "components/crosstab/CrossTabWizard": {
     "CaseDesc": "Facts",
@@ -598,14 +598,14 @@
   },
   "components/joindata/JoinDataWizard": {
     "DifferenceJoinDataDesc": "The difference includes all rows from the main data set into result, with the exception of the rows for which the key fields of the main (left) and subtracted (right) data sets coincide.",
-    "FullJoinDataDesc": "Full outer join includes all rows from the main and joining data sets into result. If the key fields match then the rows are filled in with real values. Columns are filled in with the null values in mismatched rows.",
+    "FullJoinDataDesc": "Full outer join includes all rows from the main and joining data sets into result. If the key fields match, then the rows are filled in with real values. Columns are filled in with the null values in mismatched rows.",
     "GroupField_MissingFields": "Missing columns",
     "InnerJoinDataDesc": "The inner join includes into result all rows for which a match has been found for the key fields of the main and joining datasets.",
     "JoinDataWizardTitle": "Configure Data Joining",
     "JoinedColumns": "Columns of joining data set",
-    "LeftJoinDataDesc": "The outer left join includes into result all rows from the main data set supplemented by the column values from the joining data set that coincide in the key fields.",
+    "LeftJoinDataDesc": "The outer left join includes into result all rows from the main data set, supplemented by the column values from the joining data set that coincide in the key fields.",
     "MainColumns": "Main data set columns",
-    "RightJoinDataDesc": "The outer right join includes into result all rows from the joining data set supplemented by the column values from the main data set that coincide in the key fields."
+    "RightJoinDataDesc": "The outer right join includes into result all rows from the joining data set, supplemented by the column values from the main data set that coincide in the key fields."
   },
   "components/linregression/LinRegressionWizard": {
     "RegressionDetailPage": "Detailed configuring of linear regression",
@@ -668,7 +668,7 @@
     "ReplacementsSourceError": "Replacements source error",
     "ReplacementsSourceErrorTip": "No replacement source with Guid {0}",
     "ReplaceOtherByEmpty": "With empty",
-    "ReplaceOtherByNone": "No to replace",
+    "ReplaceOtherByNone": "Do not replace",
     "ReplaceOtherByRegExp": "With regular expression",
     "ReplaceOtherByValue": "With value",
     "SourceFieldInfo": "Info",
@@ -776,7 +776,7 @@
     "TestConnectionTitle": "Test Connection"
   },
   "connections/xsdfiles/XSDFilesConnectionWizard": {
-    "ErrFileNameAdd": "{0} file cannot be added to the list, perhaps, it has aready been added"
+    "ErrFileNameAdd": "{0} file cannot be added to the list. Perhaps, it has aready been added"
   },
   "exports/dbexport/DBCreateTableDialog": {
     "DublicateFieldName": "A field with the same name already exists",
@@ -878,7 +878,7 @@
     "DragText": "Drag to item to link with",
     "ErrGetActionUndefined": "Undefined bg.ext.GetAction function",
     "ErrMultiSelection": "Multiple row selection must be enabled for both linked tables",
-    "ErrMultiSelectRequired": "It is allowed to link one row with many other rows, it is required to enable multiple selection of rows in linked tables",
+    "ErrMultiSelectRequired": "Linking one row with many other rows is permitted. Enabling of multiple selection of rows in linked tables required",
     "ErrNotSupportedBufferedStore": "LinkGrid does not support BufferedStore"
   },
   "ext/Lock": {
@@ -1110,7 +1110,7 @@
     "fldNegative": "not",
     "fldOneDayPeriodName": "day",
     "fldOneMonthPeriodName": "month",
-    "fldOneQuarterPeriodName": "quarter",
+    "fldOneQuarterPeriodName": "quarter.",
     "fldOneWeekPeriodName": "week",
     "fldOneWrongPeriodName": "period",
     "fldOneYearPeriodName": "year",
@@ -1312,7 +1312,7 @@
     "TrueText": "true"
   },
   "lib/ViewController": {
-    "ErrViewClassName": "Incorrect \"{0}\" view class name"
+    "ErrViewClassName": "The display class name \"{0}\" is invalid"
   },
   "listview/ListView": {
     "Delete": "Delete",
@@ -1351,7 +1351,7 @@
     "Visualizer": "Visualizer"
   },
   "mxgraph/node/InheritedNode": {
-    "VendorModified": "The base node has been changed and now it is out of sync with it. It is required to update or reset to the original configuration of the derived node"
+    "VendorModified": "The base node has been changed and now it is out of sync. An update or reset to the original configuration of the derived node is required"
   },
   "mxgraph/node/label/GenericEnterLabel": {
     "GenericEnterLabel": "Enter"
@@ -1823,7 +1823,7 @@
     "Yes": "Yes"
   },
   "viewers/cube/PivotGrid": {
-    "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields or by pressing the \"+\" button"
+    "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields, or by pressing the \"+\" button"
   },
   "viewers/detailing/Detailing": {
     "ErrNullEngine": "Visualizer initialization error",
@@ -1894,7 +1894,7 @@
     "AUC_PR_Tooltip": "Area under the PR curve",
     "AUC_ROC": "AUC ROC",
     "AUC_ROC_Tooltip": "Area under the ROC curve",
-    "Cutoff": "Cuttoff",
+    "Cutoff": "Cutoff",
     "CutoffFPR": "FPR (1-Specificity)",
     "CutoffFScore": "F1 Score",
     "CutoffMCC": "MCC",
@@ -1958,7 +1958,7 @@
     "RemoveAllMappingColumnDefsConfirm": "Do you really want to delete all output columns?"
   },
   "wizards/columns/ColumnsMappingWizard": {
-    "RemoveInvalidRelationsConfirm": "References ti non-existent objects were found. Do you want to delete all lost references and continue?"
+    "RemoveInvalidRelationsConfirm": "References to non-existent objects were found. Do you want to delete all lost references and continue?"
   },
   "wizards/columns/DataSetOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"
@@ -2066,7 +2066,7 @@
     "ErrCompareIndex": "The server amount of sockets does not match with the client amount of sockets.",
     "ErrGetAvalibleSocketDefFmt": "Failed to get socket definition for {0} vendor.",
     "ErrGetAvalibleSocketDefs": "Failed to get socket defenitions",
-    "ErrMoveDerivedSocket": "It is forbidden to move derived port",
+    "ErrMoveDerivedSocket": "Moving derived port forbidden",
     "SocketLabelFmt": "{0} {1}",
     "SocketTypeInputDesc": "Inputs",
     "SocketTypeOutputDesc": "Outputs"
@@ -2081,7 +2081,7 @@
   },
   "wizards/InputFileConnectionWizard": {
     "MsgFileAlreadyExist": "{0} file exists. Do you want to  overwrite?",
-    "MsgNotConnected": "Connection is not active. Do you want o activate it now?"
+    "MsgNotConnected": "Connection is not active. Do you want to activate it now?"
   },
   "wizards/normalization/ControlRangeSettings": {
     "ValidateEditorsErr": "Error in value range control settings"
@@ -2152,7 +2152,7 @@
     "colTargetNameTitle": "Caption",
     "frmColumnsMappingTitle": "Configure Output Variables",
     "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
-    "MsgEditedVariableCanNotSelected": "Variable has been renamed but it is not selected because it does not match the filter",
+    "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected, because it does not match the filter",
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?"
   },
   "wizards/variables/VariablesMappingWizard": {

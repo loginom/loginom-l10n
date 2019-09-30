@@ -740,7 +740,7 @@
     "RegressionClassificationParams": {
       "EventId": "Specified event index",
       "EventType": "Event type",
-      "Threshold": "Cuttoff"
+      "Threshold": "Cutoff"
     },
     "RegressionParams": {
       "AutoMethod": "Auto setup",

@@ -383,7 +383,7 @@
     "RowsDocIdenti": {
       "$Caption": "Document Identification",
       "Full": "One request for all data set",
-      "SingleRow": "One request per each input data set row",
+      "SingleRow": "One request per input data set row",
       "ByID": "Request identifier - input data set field"
     }
   },
@@ -1123,10 +1123,10 @@
       "DifMin": "Differences minimum",
       "DifMax": "Differences maximum",
       "DifAvg": "Mean Difference",
-      "DifSum": "Differences sum",
+      "DifSum": "Sum of differences",
       "DifSumSq": "Sum of squared differences",
       "DifStdDev": "Standard deviation of differences",
-      "DifCount": "Differences count"
+      "DifCount": "Count of differences"
     },
     "UsageType": {
       "$Caption": "Usage Type",
@@ -1182,7 +1182,7 @@
       "$Caption": "Event Type",
       "First": "First listed",
       "Last": "Last listed",
-      "Rare": "More rare",
+      "Rare": "Rarer",
       "Frequent": "More frequent",
       "Exact": "Explicitly set"
     }
@@ -1718,7 +1718,7 @@
   },
   "Viewers/ROC/ROCViewTypes": {
     "ROCValueRepresentation": {
-      "$Caption": "Cuttoff",
+      "$Caption": "Cutoff",
       "Absolute": "Absolute",
       "Percent": "Percent"
     },

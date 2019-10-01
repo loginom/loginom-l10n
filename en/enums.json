@@ -1235,7 +1235,7 @@
       "$Caption": "Test Set Priority",
       "Default": "Defined by algorithm",
       "Begin": "Set start",
-      "End": "Set end"
+      "End": "End of Set"
     }
   },
   "Libraries/DataSampling/Sampling": {

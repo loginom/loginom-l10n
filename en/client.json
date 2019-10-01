@@ -461,7 +461,7 @@
   "components/corranalysis/CorrAnalysisWizard": {
     "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if you want to determine the linear relationship between two processes, or parts of the processes that occur with a certain time lag.",
     "CorrTypeKendall": "The Tay-b Kendall rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. Use for categorical data is recommended.",
-    "CorrTypePearson": "Using the Pearson correlation coefficient, it is possible to determine the strength and direction of the linear relationship between two processes that occur simultaneously. ",
+    "CorrTypePearson": "Using the Pearson correlation coefficient, it is possible to determine the strength and direction of the linear relationship between two processes that occur simultaneously.",
     "CorrTypeSpearman": "The Spearman's rank correlation coefficient is another version of the rank correlation. Corresponding ranks, not numerical values, are used for numerical fields to estimate the connection strength. Therefore, the Spearman coefficient will be 1 or -1 for any monotone sequences."
   },
   "components/crosstab/CrossTabWizard": {
@@ -605,7 +605,7 @@
     "JoinedColumns": "Columns of joining data set",
     "LeftJoinDataDesc": "The outer left join includes into result all rows from the main data set, supplemented by the column values from the joining data set that coincide in the key fields.",
     "MainColumns": "Main data set columns",
-    "RightJoinDataDesc": "The outer right join includes into result all rows from the joining data set, supplemented by the column values from the main data set that coincide in the key fields."
+    "RightJoinDataDesc": "The outer right join includes into result all rows from the joining data set supplemented by the column values from the main data set that coincide in the key fields."
   },
   "components/linregression/LinRegressionWizard": {
     "RegressionDetailPage": "Detailed configuring of linear regression",
@@ -776,7 +776,7 @@
     "TestConnectionTitle": "Test Connection"
   },
   "connections/xsdfiles/XSDFilesConnectionWizard": {
-    "ErrFileNameAdd": "{0} file cannot be added to the list. Perhaps, it has aready been added"
+    "ErrFileNameAdd": "{0} file cannot be added to the list. Perhaps, it has already been added."
   },
   "exports/dbexport/DBCreateTableDialog": {
     "DublicateFieldName": "A field with the same name already exists",
@@ -1110,7 +1110,7 @@
     "fldNegative": "not",
     "fldOneDayPeriodName": "day",
     "fldOneMonthPeriodName": "month",
-    "fldOneQuarterPeriodName": "quarter.",
+    "fldOneQuarterPeriodName": "quarter",
     "fldOneWeekPeriodName": "week",
     "fldOneWrongPeriodName": "period",
     "fldOneYearPeriodName": "year",

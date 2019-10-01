@@ -113,7 +113,7 @@
       "Output": "Function returns GUID string representation in the specified format:  \"N\" - 32 digits;\n  \"N\" - 32 digits;\n  \"D\" - 32 hyphenated digits;\n  \"B\" - 32 hyphenated digits and digits in curved brackets;\n  \"P\" - 32 hyphenated digits and digits in curved and round brackets;\nIf the format is not specified, use of \"B\" format is required. By default hexadecimal digits are written in uppercase.\nAs GUID will be generated each time when getting the expression value. For example, when viewing result in the tabular form or executing data export, it is generally recommended to activate this option if there is \"Cache\" expression parameter."
     },
     "CumulativeSum": {
-      "Arguments": "FieldName - the field by which it is required to receive the cumulative sum\nGroupFieldName - the field by which data are grouped. This parameter is not particularly required. If this parameter is specified, it is required to calculate the cumulative sums within groups.",
+      "Arguments": "FieldName - the field which is required to receive the cumulative sum\nGroupFieldName - the field by which data are grouped. This parameter is not particularly required. If this parameter is specified, it is required to calculate the cumulative sums within groups.",
       "Description": "CumulativeSum(\"FieldName\" [, \"GroupFieldName\"])",
       "Output": "Function returns the cumulative sum according to the field.\nNote: FieldName and GroupFieldName are string values, namely, the explicitly given FieldName and GroupFieldName must be specified in quotation marks.\nFor example: CumulativeSum(\"COL1\", \"COL2\")"
     },
@@ -350,7 +350,7 @@
     "NVL": {
       "Arguments": "Expression - any string or numeric expression.\nDefault_value - optional parameter, string or numeric expression value of which is returned if the Expression is equal to Null.",
       "Description": "NVL(Expression [, Default_value = \"\"])",
-      "Output": "Returns the Expression value if it is not equal to Null and Default_value otherwise."
+      "Output": "Returns the Expression value if it is not otherwise equal to Null and Default_value."
     },
     "Pi": {
       "Arguments": "Arguments are absent.",

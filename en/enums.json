@@ -16,7 +16,7 @@
     "CertStoreCollection": {
       "$Caption": "Certificate Store Collections",
       "CurrentUser": "Current user",
-      "LocalMachine": "Localhost",
+      "LocalMachine": "Local machine",
       "Services": "Service"
     }
   },
@@ -160,7 +160,7 @@
     "XSDDataTypeRefinement": {
       "$Caption": "XML Data Type Refinement",
       "Any": "Any type",
-      "AnySimple": "Any atomic type",
+      "AnySimple": "Any simple type",
       "None": "Unknown",
       "Date": "Date",
       "Time": "Time",
@@ -258,7 +258,7 @@
       "Normal": "Normal rounding"
     },
     "BinningSDMode": {
-      "$Caption": "Bin Creation Mode",
+      "$Caption": "Bin Create Mode",
       "sdm1": "+/- 1 SD",
       "sdm2": "+/- 2 SD",
       "sdm3": "+/- 3 SD"
@@ -1000,7 +1000,7 @@
       "Variant": "Variant"
     },
     "DatePeriodType": {
-      "$Caption": "Time Span Unit",
+      "$Caption": "Time Span Units",
       "Day": "Day",
       "Week": "Week",
       "Month": "Month",
@@ -1234,7 +1234,7 @@
     "TestPriorityPosition": {
       "$Caption": "Test Set Priority",
       "Default": "Defined by algorithm",
-      "Begin": "Set start",
+      "Begin": "Start of set",
       "End": "End of Set"
     }
   },
@@ -1339,7 +1339,7 @@
       "BackwardDifference": "Backward difference",
       "Helmert": "Helmert",
       "ReverseHelmert": "Reverse Helmert",
-      "Constant": "Constant",
+      "Constant": "Intercept",
       "Mult": "Multiplication",
       "Index": "Unique value index"
     },
@@ -1570,7 +1570,7 @@
       "Percent": "Percent",
       "Label": "Label",
       "LabelPercent": "Label, percent",
-      "LabelValue": "Key, value",
+      "LabelValue": "Label, value",
       "PercentTotal": "Percent, total",
       "LabelPercentTotal": "Caption, percentage, total",
       "XValue": "X value"

@@ -55,7 +55,7 @@
   },
   "components/binning": {
     "BinningBinsDefExtension": {
-      "KindForBins": "Назначение колонки для интервалов"
+      "KindForBins": "Назначение для интервалов"
     },
     "BinningContinuousBinItem": {
       "LowerBound": "Нижняя граница диапазона",

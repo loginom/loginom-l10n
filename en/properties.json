@@ -11,7 +11,7 @@
   "Common/WSDL/Processor/WSDLRequestDebug": {
     "WSDLRequestDebug": {
       "DumpRequest": "Save Query Text to Disk",
-      "DumpRequestFolder": "Folder to save queries",
+      "DumpRequestFolder": "Folder to save requests",
       "ResponseStub": "File name supplied as response",
       "UseResponseStub": "Simulate request with response in a file"
     }
@@ -55,7 +55,7 @@
   },
   "components/binning": {
     "BinningBinsDefExtension": {
-      "KindForBins": "Usage type of column for binning"
+      "KindForBins": "Bins usage type"
     },
     "BinningContinuousBinItem": {
       "LowerBound": "Lower range bound",
@@ -73,7 +73,7 @@
     "BinningDefExtension": {
       "AlwaysDefaultSettings": "Always use default method settings",
       "BinsType": "Bins type",
-      "LabelTemplate": "Label template",
+      "LabelTemplate": "Caption template",
       "MethodType": "Binning method type"
     },
     "BinningLinearContinuousMethodSettings": {

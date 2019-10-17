@@ -111,7 +111,7 @@
     "ErrColumnIndexOutOfRange": "HTTP messages encoder is configured to export the column with index #%d, however the data source contains only %d values",
     "ErrDuplicateSearchPattern": "\"%s\" search string occurring more than once",
     "ErrEncoderNotInitialized": "HTTP messages encoder not initialized",
-    "ErrInfNaNNotAllowed": "Infinity and NaN are not valid floating point numbers to be passed in GET/POST requests URL Encoded/URL Replacement",
+    "ErrInfNaNNotAllowed": "Infinities and NaN are not valid floating point numbers to be passed in GET/POST requests URL Encoded/URL Replacement",
     "ErrNoInputMessage": "\"%s\" operation does not contain the incoming message description",
     "ErrNonHttpBinding": "\"%s\" is not HTTP binding",
     "ErrNonHttpMessage": "\"%s\" message of \"%s\" operation is not HTTP message",
@@ -169,7 +169,7 @@
     "ErrMimeContentReferencesComplexType": "mime:content extension element in \"%s\" message (\"%s\" operation) is associated with \"%s\" part that refers to the complex type of %s{%s} XSD schema",
     "ErrNoDefinitionsElement": "<definitions/> element of WSDL description is missing or does not belong to the WSDL namespace",
     "ErrNotArrayType": "\"%s\" is not an array type description",
-    "ErrOpDefNotFoundInPortType": "\"%s\" operation referenced by \"%s\" binding  not found in \"%s\" port type definition",
+    "ErrOpDefNotFoundInPortType": "\"%s\" operation referenced by \"%s\" binding not found in \"%s\" port type definition",
     "ErrOperationMustSpecifyExtension": "\"%s\" operation extension of \"%s\" port binding not specified or not supported",
     "ErrPartContentsNotDefined": "\"%s\" part does not reference schema definitions",
     "ErrPartIsReferencedByElement": "\"%s\" part defined by element and not by XSD schema type",
@@ -181,13 +181,13 @@
     "ErrSchemaDoesNotContainPartType": "\"%s\" part references \"%s\"{\"%s\"} type not found in XSD schema",
     "ErrSeveralElementsNotAllowed": "More than one <%s/> element not allowed in WSDL description",
     "ErrSoapActionRequiredForHTTP": "It is required to specify \"<soap:operation/>\" extension element with soapAction attribute for SOAP HTTP transport operations",
-    "ErrSoapBodyInNonSoapMessage": "\"%s\" message referenced by \"%s\" operation of \"%s\" binding is not SOAP message but it contains SOAP body",
+    "ErrSoapBodyInNonSoapMessage": "\"%s\" message referenced by \"%s\" operation of \"%s\" binding is not SOAP message, but it contains SOAP body",
     "ErrSoapDocumentEncoded": "\"Document\" style SOAP messages with \"encoded\" usage type are not supported",
     "ErrSoapDocumentLiteralPartRefersToType": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema type is assigned to document style SOAP message with literal usage type",
     "ErrSoapMessageMultipleExtensions": "For \"%s\" SOAP message referenced by \"%s\" operation of \"%s\" binding, more than one extension type is specified",
     "ErrSoapOperationVersionConflict": "SOAP version of %s operation conflicts with %s binding version",
     "ErrSoapRPCPartRefersToElement": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema element is assigned to RPC style SOAP message",
-    "ErrSoapTransportNotSupported": "SOAP transports except HTTP are currently not supported",
+    "ErrSoapTransportNotSupported": "SOAP transports except for HTTP are currently not supported",
     "ErrUrlReplacementMustUseGET": "Error defining input message of \"%s\" operation of \"%s\" binding: message of \"%s\" type must use \"%s\" request method",
     "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema included into WSDL file (row %d, position %d):\nError code: %d\nReason: %s",
     "ErrWsdlImportNoAccess": "No access to the imported %s document"
@@ -198,7 +198,7 @@
     "ErrNodeAndColumnDontExist": "The mapping settings of the input data set and XSD schema refer to nonexistent \"%s\" node of XSD schema and \"%s\" column of the input set",
     "ErrNodeCantMapColumnType": "\"%s\" column of the input data set has \"%s\" data type that cannot be converted to \"%s\" type of \"%s\" node of XSD  schema",
     "ErrNodeMappedToNonExistentColumn": "\"%s\" node of XSD schema has been assigned for nonexistent \"%s\" input data set column",
-    "ErrNodeMustBeMapped": "For %s schema node with mandatory value, no association with the input data set field has been assigned",
+    "ErrNodeMustBeMapped": "For %s schema node with required value, no association with the input data set field has been assigned",
     "ErrOneOfSubNodesMustBeSelected": "%s schema node must have at least one subnode selected for export",
     "ErrValueIntExportImpossible": "Failed to export value %d to XML document node with \"%s\" type: %s",
     "ErrXMLExportContextNoDataSource": "Attempt to create XML export context not specifying data source",
@@ -230,8 +230,8 @@
     "Enclosed_All": "All #",
     "Enclosed_Choice": "Choice #",
     "Enclosed_Sequence": "Sequence #",
-    "ErrAttributeNoRequiredValue": "Value for %s attribute is mandatory",
-    "ErrElementNoRequiredValue": "Value for %s element is mandatory",
+    "ErrAttributeNoRequiredValue": "No required value for %s attribute",
+    "ErrElementNoRequiredValue": "No required value for %s element",
     "ErrEmptyNodeName": "Tree node name cannot be empty",
     "ErrInvalidPath": "Invalid node path: %s",
     "ErrNodeLimitExceeded": "Maximum allowable number of (%d) tree nodes exceeded",
@@ -242,7 +242,7 @@
     "ErrRootElementPathOnTreeRoot": "Attempt to get the schema root element path for the tree root node",
     "ErrSetAsStringDatetimeAttempt": "Attempt to set the SetAsString based value for the \"Date/time\" data type node",
     "ErrSetAsStringVariantAttempt": "Attempt to set the SetAsString based value for the \"Variable\" data type node",
-    "ErrSetDateTimeAsStringTypeMismatch": "Failed to set value via the SetDateTimeAsString function for the node with non \"Date/time\" data type",
+    "ErrSetDateTimeAsStringTypeMismatch": "Attempt to set the SetDateTimeAsString based value for the node with the data type different from the \"Date/time\" based value",
     "ErrSetVariantAsStringTypeMismatch": "Failed to set value via the SetDateTimeAsString function for the node with non \"Variant\" data type",
     "ErrTreeSelectionUpdate": "EndUpdateSelection method called without BeginUpdateSelection method",
     "ErrValueConversionImpossible": "Failed to convert \"%s\" string to \"%s\" value",
@@ -309,7 +309,7 @@
     "Any": "Any item",
     "ErrCantCreateXMLDOMDocument60": "Error creating COM object of XML document; possible reason - not installed MSXML 6.0",
     "ErrXSDElementExistsWithAnotherType": "%s item to be added from %s  namespace already exists in the schema and has a different type",
-    "ErrXSDIncludeNamespaceMismatch": "\"%s\" schema is trying to include \"%s\" schema but the target namespace \"%s\" of the included schema does not match \"%s\"",
+    "ErrXSDIncludeNamespaceMismatch": "\"%s\" schema is trying to include \"%s\" schema, but the target namespace \"%s\" of the included schema does not match \"%s\"",
     "ErrXSDNoAccess": "No access to %s document",
     "ErrXSDNoSchemaElement": "%s document does not contain 'schema' root element 'schema'",
     "WarnXSDElementRemoved": "%s:%s element was removed from %s document because it could not be verified using the file storage"
@@ -373,7 +373,7 @@
     "DoTeachProcessFmt": "\"%s\" field processing",
     "ErrBinsInvalidFmt": "Bins for \"%s\" column are not valid for binning",
     "ErrBinsNotDefined": "Bins not defined for the specified parameters",
-    "ErrCreateQuantizer": "Failed to create binner",
+    "ErrCreateQuantizer": "Failed to create quantizer",
     "ErrDefineBinsFailedFmt": "Failed to define binning intervals for \"%s\" field",
     "ErrInputDataSourceNotActive": "Quantized data source is not active",
     "ErrMethodNotDefined": "The binning method is not defined for the given parameters",
@@ -801,8 +801,8 @@
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrPortNotConfigurable": "The port configuring not supported",
-    "ErrReferencedNodeNotAvailable": "Reference node not available",
-    "ErrReferencedNodeNotFound": "Referenced node not found",
+    "ErrReferencedNodeNotAvailable": "Source node not available",
+    "ErrReferencedNodeNotFound": "Source node not found",
     "ErrReferencedNodeNotSpecified": "No reference to node specified",
     "ErrUnableToLoadComponentConfig": "Failed to load the internal component configuration"
   },
@@ -864,7 +864,7 @@
     "ErrIncorrectCompareValue": "The entered value does not match the filtered column type",
     "ErrIncorrectCompareValueList": "List values do not match the filtered column type",
     "ErrIncorrectRelationType": "Relation type does not match the filtered column type",
-    "ErrNoConditions": "No filtering conditions",
+    "ErrNoConditions": "No filtering criteria",
     "ErrRowNumberNotSupported": "Row numerators not supported",
     "ErrUnknownDataType": "No data type specified",
     "FirstLastDateFmt": "%s %s %s from %s",
@@ -911,7 +911,7 @@
   },
   "components/filterdata/FilterDataVendor": {
     "VendorCaption": "Row Filter",
-    "VendorDesc": "Row selection by condition"
+    "VendorDesc": "Row filtering by criteria"
   },
   "components/filtration/DataRecovery": {
     "DataRecovery": "Fill empty",
@@ -1160,7 +1160,7 @@
     "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data kind, \"%s\" data type",
     "ErrWrongOutputFieldNotDiscrete": "Invalid \"%s\" output field properties, \"%s\" data kind, whereas \"%s\" is only valid",
     "ErrWrongOutputUniqueCount": "Number of \"%s\" output column unique values is %d (exactly 2 required)",
-    "Intercept": "<Constant>",
+    "Intercept": "<Intercept>",
     "LogRegStoreStatProcessName": "Quality indicators calculating",
     "LogRegTrainProcessName": "Model building",
     "ModelDF": "Number of the model degrees of freedom",
@@ -1309,8 +1309,8 @@
   "components/neuralnet/NeuralNetEngine": {
     "ActualClsIDColumn": "Class ID|Fact",
     "CVAvgCE": "Average cross-entropy in cross validation",
-    "CVAvgError": "Mean absolute error in cross validation",
-    "CVAvgRelError": "Mean relative error in cross validation",
+    "CVAvgError": "The mean absolute error in cross validation",
+    "CVAvgRelError": "The mean relative error in cross validation",
     "CVClsErrorPercentage": "Cross validation error percentage",
     "CVRMSError": "Root-mean-square error in cross validation",
     "ErrInvalidClassifierResult": "Invalid classification result in row %d",
@@ -1458,7 +1458,7 @@
     "NodeName": "Node name"
   },
   "components/slidingwindow/SlidingWindowVendor": {
-    "VendorCaption": "Sliding window",
+    "VendorCaption": "Lag",
     "VendorDescription": "Transpose one or several data columns using lag"
   },
   "components/smoothing/DWT": {
@@ -1604,7 +1604,7 @@
     "ErrNoActiveInputs": "No active inputs",
     "InputJoinedVariables": "Added variables",
     "InputPortsOverFlow": "Number of input ports exceeded the maximum value = %d",
-    "InputVariablesOverFlow": "Number of the input variables exceeded, maximum value =  %d"
+    "InputVariablesOverFlow": "Number of the input variables exceeded the maximum value =  %d"
   },
   "components/unionvariables/UnionVariablesVendor": {
     "VendorCaption": "Variable Union",
@@ -1999,7 +1999,7 @@
   },
   "Libraries/bgrtl/ColumnDefs": {
     "ColumnMetaDesc": "Column",
-    "ErrColumnByUsageNotFound": "Column with destination \"%s\" not found",
+    "ErrColumnByUsageNotFound": "Column with usage type \"%s\" not found",
     "ErrColumnCantBeContinuous": "\"%s\" column of \"%s\" type cannot be continuous",
     "ErrSize": "Data size must be more than or equal to zero"
   },
@@ -2080,7 +2080,7 @@
     "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method without calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataTreeNodeDefs": {
-    "ErrCannotInitializeNodeWithDifferentContainerFlag": "You cannot initialize the node from the source node, which differs by the meaning of the container feature.",
+    "ErrCannotInitializeNodeWithDifferentContainerFlag": "You cannot initialize the node from the source node, which differs by the meaning of the container indicator.",
     "ErrChangeDataKindNotAllowed": "You cannot change the data kind of the node that is a container",
     "ErrChangeDataTypeNotAllowed": "You cannot change the data type of the node that is a container",
     "ErrChangeIsContainerNotAllowed": "You cannot change the container indicator of a node that is a root node, or contains child nodes",
@@ -2315,7 +2315,7 @@
     "ErrMultMatrixVectDimMismatch": "You cannot multiply matrix by vector with a different number of matrix columns and vector length.",
     "ErrNotSqrMatr": "The coefficient matrix must be a square matrix.",
     "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function",
-    "ErrRegressPowerAndDataErr": "The inequality 0 <= \"polynomial degree\" < \"data points count\" must be fullfilled for proper regression function application.",
+    "ErrRegressPowerAndDataErr": "The inequality 0 <= \"polynomial degree\" < \"data points count\" must be fulfilled for proper regression function application.",
     "ErrRegressXYDimMismatch": "The length of X vector must equal the length of Y vector",
     "ErrSLAEDimMismatch": "The vector length of the intercept terms must coincide with the row count of the coefficient matrix."
   },
@@ -2635,7 +2635,7 @@
     "ErrAttributeNotExist": "%s attribute does not exist.",
     "ErrConfigElementAlien": "The configuration element does not belong to the specified list",
     "ErrConfigElementByNameNotFound": "Configuration element with %s name not found",
-    "ErrRefToClassNotInitOrWrongClass": "Collection reference has not been initialized or relates to the invalid class",
+    "ErrRefToClassNotInitOrWrongClass": "Collection reference has not been initialized or relates to an invalid class",
     "ErrUnmatchedAttrType": "Accessing to %s attribute value of %s type as the value of %s type",
     "ErrUnsupportedPropertyType": "Unsupported property type",
     "ErrVectorLengthOverflow": "Length of array %d exceeds the allowable %d limit",
@@ -2668,8 +2668,8 @@
     "DeleteVendorCaptionDef": "Component Deleted",
     "DeleteViewCaption": "\"%s\" Visualizer Deleted",
     "DeleteViewCaptionDef": "Visualizer Deleted",
-    "ErrGenericViewsNotLoaded": "Failed to load visualizers of \"%s\" submodel",
-    "ErrGenericViewsNotSaved": "Failed to save visualizers of \"%s\" submodel",
+    "ErrGenericViewsNotLoaded": "Failed to load visualizers of \"%s\" supernode",
+    "ErrGenericViewsNotSaved": "Failed to save visualizers of \"%s\" supernode",
     "ErrLinkIsNil": "No link set",
     "ErrModelNodeNotRestored": "Failed to restore \"%s\" node",
     "ErrModelPackageNotExist": "The package to which the object belonged was closed",
@@ -2974,7 +2974,7 @@
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
-    "ErrUnknownCouplerDefType": "Unknown coupler def type",
+    "ErrUnknownCouplerDefType": "Unknown coupler type",
     "IsSealedVendor": "Sealed",
     "ModelComponent": "Node component",
     "OriginalComponentVendorGuidDesc": "Original component GUID"
@@ -3019,7 +3019,7 @@
     "ErrAlreadyConfiguringSocket": "The node component is in the port configuring state",
     "ErrInvalidComponentEngineImplementation": "Invalid component engine implementation",
     "ErrModelComponentAlreadyInitialized": "The node component already initialized",
-    "ErrUnknownCouplerDefType": "Unknown coupler def type"
+    "ErrUnknownCouplerDefType": "Unknown coupler type"
   },
   "Libraries/Model/ModelComponentCouplerDefItems": {
     "CouplerDefMetaDesc": "Coupler"
@@ -3066,7 +3066,7 @@
     "ErrModelEngineOutputPortAlreadyInitialized": "The output port already initialized"
   },
   "Libraries/Model/ModelNodesCopyUtils": {
-    "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" reference node is not available at the required destination.",
+    "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" source node is not available at the required destination.",
     "ErrNodeNotConfigurable": "Failed to create the node copy with the following name: \"%s\" and GUID: %s",
     "ErrNoNodesSpecified": "No node set specified",
     "ErrNoSourceModelUnit": "Source module not found",
@@ -3217,7 +3217,7 @@
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
-    "ErrReferencedNodeNotAvailable": "Reference node not available",
+    "ErrReferencedNodeNotAvailable": "Source node not available",
     "ErrReferencedNodeNotFound": "Source node not found",
     "ErrReferencedNodeNotSpecified": "No reference to node specified"
   },
@@ -3554,7 +3554,7 @@
   },
   "Libraries/rpc/Session": {
     "ErrCannotAddSessionToClosingSessionHost": "You cannot add a new session while SessionHost closing",
-    "ErrDifferentRpcExceptionProcAlreadyRegistered": "Another Rpc exception handler already registered",
+    "ErrDifferentRpcExceptionProcAlreadyRegistered": "Another RPC exception handler already registered",
     "ErrDifferentRpcVerionAlreadyRegistered": "Another RPC version number already registered",
     "ErrDisconnectedSession": "Connection lost",
     "ErrIncorrectMainServerObjectInterfaceID": "Invalid interface identifier of the main server object received",
@@ -3652,7 +3652,7 @@
     "WarnSessionStopTimeout": "Failed to terminate %s user session for %d milliseconds. Number of processes not completed: %d. List of active subprocesses: %s. List of not started subprocesses: %s."
   },
   "Studio/DeductorServerConnector": {
-    "ErrCannotConfigureActiveConnection": "Can not change active connection settings"
+    "ErrCannotConfigureActiveConnection": "Cannot change active connection settings"
   },
   "Studio/DeductorServerSettings": {
     "SessionBackupDirectory": "Session backups",
@@ -3700,13 +3700,13 @@
     "ServiceDisplayName": "LoginomServer"
   },
   "Studio/SharedDirectories": {
-    "ErrSharedDirectoryAlreadyDeleted": "Shared folder already deleted",
+    "ErrSharedDirectoryAlreadyDeleted": "Shared directory already deleted",
     "ErrSharedDirectoryNameConflictsWithUser": "Username conflicts with %s shared directory name",
     "ErrSharedDirectoryNameIsReserved": "%s identifier has already been reserved and it cannot be used as a shared directory name",
     "ErrSharedDirectoryNameMustBeValidIdentifier": "The shared directory name must be a valid identifier",
-    "LogAddDirectory": "%s shared folder created",
-    "LogDeleteDirectory": "%s shared folder deleted",
-    "SharedDirectoryMetaDesc": "Shared folder"
+    "LogAddDirectory": "%s shared directory created",
+    "LogDeleteDirectory": "%s shared directory deleted",
+    "SharedDirectoryMetaDesc": "Shared directory"
   },
   "Studio/SolutionTree": {
     "Connection": "Connection",
@@ -3754,11 +3754,11 @@
   },
   "Viewers/Browse/BrowseViewVendor": {
     "VendorCaption": "Table",
-    "VendorDesc": "Table data display"
+    "VendorDesc": "Table data view"
   },
   "Viewers/Chart/ChartViewVendor": {
     "VendorCaption": "Chart",
-    "VendorDesc": "Chart data display"
+    "VendorDesc": "Chart data view"
   },
   "Viewers/Chart/Component/BindedCheckBox": {
     "CheckBoxBadObject": "Object has been deleted",
@@ -3866,7 +3866,7 @@
   },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
-    "VendorDesc": "Multidimensional display (Pivot table and Pivot chart)"
+    "VendorDesc": "Multidimensional data viewer (Pivot table and Pivot chart)"
   },
   "Viewers/DataTree/DataTreeView": {
     "ErrNotDefinedInputDataTree": "No input data tree defined",
@@ -3874,7 +3874,7 @@
   },
   "Viewers/DataTree/DataTreeViewVendor": {
     "VendorCaption": "Data Tree",
-    "VendorDesc": "Tree data display"
+    "VendorDesc": "Tree data view"
   },
   "Viewers/Detailing/Detailing": {
     "DetailingProcessCaption": "\"%s\" detailing by cell [%d, %d]",
@@ -3908,7 +3908,7 @@
   },
   "Viewers/LogRegressReport/LogRegressReport": {
     "Component": "Component",
-    "ConstFactor": "<Constant>",
+    "ConstFactor": "<Intercept>",
     "ErrNotDefinedComponent": "Undefined component",
     "FinalModel": "Final model",
     "NullModel": "Null model",
@@ -4063,7 +4063,7 @@
     "ErrDataCube": "Failed to read information about the Cube [%s] \"%s\" .\n%s",
     "ErrDataNotLoad": "Data is not loaded to DW.\nPossible reasons:\nFirebird - spaces at the end of string dimensions;\nMS SQL - case-insensitive letters of string dimensions.\nIf data deletion is set by dimension, this data has been deleted from DW.\nError occurred while restoring constraints and indexes:\n%s",
     "ErrRebuildCube": "Error occurred while the Cube updating [%s] \"%s\" .\n%s",
-    "MsgMoreLengthName": "Name of field\"%s\" is too long.\nErrors may occur when executing SQL queries to DW.",
+    "MsgMoreLengthName": "Name of \"%s\" field is too long.\nErrors may occur when executing SQL queries to DW.",
     "MsgMoreLengthPrefix": "Too long value of \"%s\" prefix.\nErrors may occur when executing SQL queries to DW.",
     "MsgRebuildCube": "Update the Cubes in the Data Warehouse",
     "MsgRelationTableList": "Related tables available:\n%s",

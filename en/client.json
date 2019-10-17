@@ -12,7 +12,7 @@
     "LoggerSettings": "Logging parameters",
     "MinLogLevel": "Logging level",
     "PackagePoolSize": "Package pool size",
-    "PingPeriod": "Connection check timeout (s)",
+    "PingPeriod": "Connection check period (s)",
     "Port": "TCP port",
     "ServerSettings": "Server parameters",
     "SessionBackupDirectory": "Session backups",
@@ -136,7 +136,7 @@
     "UnitDisplayNameDefault": "Module",
     "Users": "Users",
     "Vendors": "Components",
-    "Wizard": "Settings",
+    "Wizard": "Wizard",
     "WorkFlow": "Workflow"
   },
   "app/MapTreeForm": {
@@ -153,15 +153,15 @@
     "AddNewConnectionInheritedNode": "Add connection node to workflow",
     "AddNewConnectionReferenceNode": "Add reference to connection into workflow",
     "AddNewNode": "Add node to workflow",
-    "CantFindGenericModelNode": "Child model node not found",
-    "CantFindSourceNode": "Failed to find reference node",
+    "CantFindGenericModelNode": "Supernode node not found",
+    "CantFindSourceNode": "Failed to find source node",
     "CloneNode": "Clone node",
     "ComposeExplodeNode": "Collapse nodes into supernode / expand supernode",
     "ComposeNode": "Collapse nodes to supernode",
     "ConfigurePort": "Configure port...",
     "ConfirmRemovingDerivedVendor": "Do you really want to delete the derived component?",
     "CopyNode": "Copy node",
-    "DeactivateCurrent": "Inactivate node",
+    "DeactivateCurrent": "Deactivate node",
     "DeleteDerivedVendor": "Delete...",
     "DeleteLink": "Delete link...",
     "DeleteNode": "Delete node...",
@@ -260,8 +260,8 @@
     "DeleteAllPrompt": "Do you really want to delete all variables?",
     "DeletePrompt": "Do you really want to delete variables?",
     "DeleteTitle": "Delete Variables",
-    "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
-    "MsgEditedVariableCanNotSelected": "Variable has been renamed but it is not selected because it does not match the filter"
+    "MsgAddedVariableCanNotSelected": "Variable has been added, but it is not selected because it does not match the filter",
+    "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected because it does not match the filter"
   },
   "app/ReferencesListForm": {
     "AddLink": "Add",
@@ -313,7 +313,7 @@
   },
   "app/Version": {
     "CompanyWebsite": "https://loginom.com",
-    "LegalCopyright": "© Analytical Technologies 2017"
+    "LegalCopyright": "© OOO Analytical Technologies 2017"
   },
   "app/WindowTitle": {
     "Close": "Close",
@@ -631,7 +631,7 @@
     "MaxThreadCountMinPrefix": "Value cannot be lower",
     "NoSocketError": "No data source input port for batch processing",
     "NullReferenceNode": "Not defined",
-    "NullReferenceNodeError": "No reference node",
+    "NullReferenceNodeError": "No source node",
     "VariableNotFoundErrorFormat": "No \"{0}\" variable"
   },
   "components/neuralnet/NeuralNetParamsWizard": {
@@ -660,7 +660,7 @@
     "EditorNotChoosed": "Select replacement to edit.",
     "ErrFileFieldMiss": "Item is not file upload field",
     "ErrFileNotChoosed": "No file selected",
-    "ErrTypeCastError": "Can not cast {0} value to {1} data type",
+    "ErrTypeCastError": "Value {0} cannot be cast to {1} data type",
     "OutputDataTypeError": "The output values type cannot be unambiguous without replacement of others",
     "ReplaceGroupCommon": "Exact match",
     "ReplaceGroupRegex": "Regular expressions",
@@ -688,12 +688,12 @@
     "CaseSensitiveActionDesc": "Case-sensitive",
     "ColumnIsUsed": "Field already used",
     "DeleteAllConfirm": "Do you want to cancel all fields sorting?",
-    "DeleteConfirmFmt": "Do you want to clear \"{0}\" field sorting?",
+    "DeleteConfirmFmt": "Do you want to cancel \"{0}\" field sorting?",
     "DeleteTitle": "Cancel Sort",
     "HintForSortDirectionAsc": "Ascending",
     "HintForSortDirectionDesc": "Descending",
     "InvalidRowDescFmt": "\"{0}\" input field not found",
-    "MultiDeleteConfirm": "Do you want to clear sorting for selected fields?",
+    "MultiDeleteConfirm": "Do you want to cancel sorting for selected fields?",
     "NotCaseSensitiveActionDesc": "Case-insensitive"
   },
   "components/ungroupdata/UngroupDataWizard": {
@@ -1244,7 +1244,7 @@
   "imports/textfile/TimeSeparatorStore": {
     "Colon": "Colon (:)",
     "Default": "Default",
-    "Point": "Dot (.)"
+    "Point": "Point (.)"
   },
   "imports/textfile/ValueFalseStore": {
     "False1": "False",
@@ -1312,7 +1312,7 @@
     "TrueText": "true"
   },
   "lib/ViewController": {
-    "ErrViewClassName": "The display class name \"{0}\" is invalid"
+    "ErrViewClassName": "The view class name \"{0}\" is invalid"
   },
   "listview/ListView": {
     "Delete": "Delete",
@@ -1849,7 +1849,7 @@
     "ModelInfoAIC": "AIC",
     "ModelInfoAICc": "AICc",
     "ModelInfoBIC": "BIC",
-    "ModelInfoConstant": "Constant",
+    "ModelInfoConstant": "Intercept",
     "ModelInfoDFE": "Number of degrees of freedom",
     "ModelInfoHQC": "HQC",
     "ModelInfoLogLikelihood": "-2 Log Likelihood",
@@ -1875,13 +1875,13 @@
     "NeedNotEmptyGroupName": "Group name cannot be empty",
     "SetNewGroupName": "New group name:",
     "ShowSourceModelView": "Go to source visualizer",
-    "SourceNodeDoesntExists": "The visualizer reference node does not exist for this report"
+    "SourceNodeDoesntExists": "The visualizer source node does not exist for this report"
   },
   "viewers/reports/ReportsView": {
     "CantDeactivateBefore": "Error: failed to deactivate the chain of previous nodes to update data",
     "ConfirmLongRefresh": "Recalculation may take a long time. Do you want to continue?",
     "NotInitializedError": "Node not initialized",
-    "SourceNodeDoesntExists": "The visualizer reference node does not exist for this report",
+    "SourceNodeDoesntExists": "The visualizer source node does not exist for this report",
     "VendorMalfunctionError": "Node component error",
     "VendorNotDefined": "No component specified for visualizer"
   },
@@ -1953,12 +1953,12 @@
     "CreateMappingToAllConfirm": "Do you really want to create output columns for all inputs?",
     "EmptyListText": "No matching columns",
     "GroupField_MissingFields": "Missing columns",
-    "MsgAddedColumnCanNotSelected": "Column has been added but it is not selected because it does not match the filter",
-    "MsgEditedColumnCanNotSelected": "Column has been renamed but it is not selected because it does not match the filter",
+    "MsgAddedColumnCanNotSelected": "Column has been added, but it is not selected because it does not match the filter",
+    "MsgEditedColumnCanNotSelected": "Column has been renamed, but it is not selected because it does not match the filter",
     "RemoveAllMappingColumnDefsConfirm": "Do you really want to delete all output columns?"
   },
   "wizards/columns/ColumnsMappingWizard": {
-    "RemoveInvalidRelationsConfirm": "References to non-existent objects were found. Do you want to delete all lost references and continue?"
+    "RemoveInvalidRelationsConfirm": "Links with non-existent objects were found. Do you want to delete all lost links and continue?"
   },
   "wizards/columns/DataSetOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Columns"
@@ -2063,7 +2063,7 @@
     "DefaultSocketCaption": "Port",
     "DeleteAllConfirm": "Do you want to delete all inputs/outputs?",
     "EmptyName": "<Unique>",
-    "ErrCompareIndex": "The server amount of sockets does not match with the client amount of sockets.",
+    "ErrCompareIndex": "The server amount of sockets does not match the client amount of sockets.",
     "ErrGetAvalibleSocketDefFmt": "Failed to get socket definition for {0} vendor.",
     "ErrGetAvalibleSocketDefs": "Failed to get socket defenitions",
     "ErrMoveDerivedSocket": "Moving derived port forbidden",
@@ -2080,7 +2080,7 @@
     "NotConnectedText": "Not connected"
   },
   "wizards/InputFileConnectionWizard": {
-    "MsgFileAlreadyExist": "{0} file exists. Do you want to  overwrite?",
+    "MsgFileAlreadyExist": "{0} file exists. Do you want to overwrite?",
     "MsgNotConnected": "Connection is not active. Do you want to activate it now?"
   },
   "wizards/normalization/ControlRangeSettings": {
@@ -2151,8 +2151,8 @@
   "wizards/variables/VariablesEditWizard": {
     "colTargetNameTitle": "Caption",
     "frmColumnsMappingTitle": "Configure Output Variables",
-    "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
-    "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected, because it does not match the filter",
+    "MsgAddedVariableCanNotSelected": "Variable has been added, but it is not selected because it does not match the filter",
+    "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected because it does not match the filter",
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?"
   },
   "wizards/variables/VariablesMappingWizard": {
@@ -2162,10 +2162,10 @@
     "EmptyListText": "No matching variables",
     "frmColumnsMappingTitle": "Adjustment of Variables Mapping",
     "GroupField_MissingFields": "Missing variables",
-    "MsgAddedVariableCanNotSelected": "Variable has been added but it is not selected because it does not match the filter",
-    "MsgEditedVariableCanNotSelected": "Variable has been renamed but it is not selected because it does not match the filter",
+    "MsgAddedVariableCanNotSelected": "Variable has been added, but it is not selected because it does not match the filter",
+    "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected because it does not match the filter",
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?",
-    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is mandatory. Do you really want to delete it?"
+    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is required. Do you really want to delete it?"
   },
   "wizards/WizardActivateInputPorts": {
     "ActivateCaption": "Activate",

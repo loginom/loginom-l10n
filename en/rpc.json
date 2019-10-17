@@ -1,6 +1,6 @@
 {
   "JS/JsDictionaryExtensions": {
-    "ErrKeyAlreadyExists": "An item with this key already exists  in the dictionary"
+    "ErrKeyAlreadyExists": "An item with this key already exists in the dictionary"
   },
   "Net/BaseSocketMessageTransport": {
     "ErrIncorrectMessageSize": "Incorrect message size: {0}",
@@ -47,7 +47,7 @@
     "ErrInvalidObjectID": "Invalid object identifier: {0}",
     "ErrInvalidResponseMessageType": "Invalid response message type: {0}",
     "ErrMainServerObjectNotRegistered": "The main server object is not registered",
-    "ErrMaxObjectIdReached": "Object identifiers limit of  {0} values reached",
+    "ErrMaxObjectIdReached": "Object identifiers limit of {0} values reached",
     "ErrRpcVersionMismatch": "Client of {0} version cannot get connected to the server of {1} version",
     "ErrUnknownInterfaceID": "Unknown interface identifier: {0}"
   },

@@ -120,7 +120,7 @@
     "DamLevDist": {
       "Arguments": "String1,\nString2 - expressions of the string type.",
       "Description": "DamLevDist(String1, String2)",
-      "Output": "Function returns the value of the Damerau–Levenshtein distance for String1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity of measurement of the two strings. Its result is the minimum number of the character deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into the other one."
+      "Output": "Function returns the value of the Damerau–Levenshtein distance for String1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity of measurement of the two strings. Its result is the minimum number of the character deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into another."
     },
     "Data": {
       "Arguments": "FieldName - return value field name\nRowNumber - return value row number",

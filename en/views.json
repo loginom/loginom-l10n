@@ -103,7 +103,7 @@
       "boxLabel": "Interactive mode login"
     },
     "chkServiceMode": {
-      "boxLabel": "Service mode"
+      "boxLabel": "Service mode login"
     },
     "chkViewer": {
       "boxLabel": "View reports"
@@ -225,10 +225,10 @@
       "title": "Namespace"
     },
     "rdoCustom": {
-      "boxLabel": "Specify manually"
+      "boxLabel": "Custom"
     },
     "rdoGenerateForPackage": {
-      "boxLabel": "Unique name for package"
+      "boxLabel": "Generate unique name for package"
     },
     "rdoGenerateForPackageVersion": {
       "boxLabel": "Generate unique name for each package version"
@@ -472,7 +472,7 @@
       "tooltip": "Show workflow outline"
     },
     "btnShowReferenceNodes": {
-      "tooltip": "Show source nodes for referencing nodes"
+      "tooltip": "Show source nodes for reference nodes"
     },
     "btnShowVendors": {
       "tooltip": "Show/hide component panel"
@@ -1496,7 +1496,7 @@
       "boxLabel": "Request identifier - input data set field"
     },
     "rbIDColumnNull": {
-      "boxLabel": "Query for each input data set row"
+      "boxLabel": "One request per each input data set row"
     }
   },
   "components/factoranalysis/FactorAnalysisWizard": {
@@ -1565,7 +1565,7 @@
   },
   "components/filterdata/FilterDataCollection": {
     "btdDeleteAllFilters": {
-      "text": "Delete All Conditions"
+      "text": "Delete All Filtering Criteria"
     }
   },
   "components/filterdata/FilterDataWizard": {
@@ -1643,7 +1643,7 @@
       "title": "Configure Loop Type"
     },
     "txtReferenceNode": {
-      "fieldLabel": "Reference node"
+      "fieldLabel": "Source node"
     }
   },
   "components/neuralnet/NeuralNetAutofitWizard": {
@@ -1970,7 +1970,7 @@
       "boxLabel": "Request identifier - input data set field:"
     },
     "rbSimple": {
-      "boxLabel": "Query for each input data set row"
+      "boxLabel": "One request per each input data set row"
     }
   },
   "components/wsdlclient/CustomHeadersWizard": {

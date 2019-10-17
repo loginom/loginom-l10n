@@ -218,7 +218,7 @@
       "UpperLimitOpen": "Верхняя граница диапазонов открыта"
     },
     "BinningMatchingObservationsMode": {
-      "$Caption": "Режим обработки совпадающих наблюдений",
+      "$Caption": "Совпадающие наблюдения",
       "AddToNextBin": "Добавлять в следующий",
       "AddCurrent": "Сохранять в текущем",
       "Random": "Назначать случайно",

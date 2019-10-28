@@ -1,6 +1,6 @@
 {
   "Common/1Cv8/1Cv8Query": {
-    "ErrEofArrived": "Data set limit reached",
+    "ErrEofArrived": "Data set end reached",
     "ErrQueryNotActive": "Query is not active"
   },
   "Common/1Cv8/1Cv8SessionManager": {
@@ -19,8 +19,8 @@
     "ErrInvalidFunctionName": "Invalid %s function name",
     "ErrNoFunc": "No reference to function",
     "ErrOddArgs": "%s function can accept only odd number of arguments",
-    "ErrTooFewArgs": "Too few arguments supplied to %s function (%d  whereas %d is minimum number)",
-    "ErrTooManyArgs": "Too many arguments supplied to %s function (%d whereas %d is maximum number)"
+    "ErrTooFewArgs": "Few arguments supplied to %s function (%d whereas %d is minimum number)",
+    "ErrTooManyArgs": "Many arguments supplied to %s function (%d whereas %d is maximum number)"
   },
   "Common/CertList/CertList": {
     "ErrCertListImplementationNotRegistered": "Certificate list implementation with %s identifier not registered",
@@ -31,7 +31,7 @@
     "AuthRoot": "Third-Party Root Certification Authorities",
     "CA": "Intermediate Certification Authorities",
     "Disallowed": "Untrusted Certificates",
-    "My": "Private",
+    "My": "Personal",
     "Root": "Trusted Root Certification Authorities",
     "SmartCardRoot": "Smart Card Trusted Root Certificates",
     "Trust": "Enterprise Trust",
@@ -44,12 +44,12 @@
     "ArgColumn": "Column Index or name",
     "ArgRow": "Row index",
     "ArgValue": "Value",
-    "ColumnCount": "Columns count",
+    "ColumnCount": "Column count",
     "ColumnGet": "Get column cell value",
     "ColumnIsNull": "Check if the value is set in the column cell",
     "Columns": "Columns",
     "Count": "Count",
-    "DataKind": "Kind of data",
+    "DataKind": "Data kind",
     "DataType": "Data type",
     "DefaultUsageType": "Default usage type",
     "DisplayName": "Caption",
@@ -68,7 +68,7 @@
     "Value": "Value"
   },
   "Common/CodeExec/CodeAPIDataSetExceptions": {
-    "ColumnByNameNotFound": "Column \"%s\" not found",
+    "ColumnByNameNotFound": "Column with \"%s\" name not found",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrNoRowForEditing": "Failed to change value because there is no editable row",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
@@ -159,7 +159,7 @@
     "ErrInputMimeTypeContainsWildcard": "The incoming service message content must relate to the specific MIME type (actually - %s)",
     "ErrInvalidMimeType": "Invalid MIME type: %s",
     "ErrItemTypeNotFound": "\"%s\" array item type not found in schema",
-    "ErrMessageDefHasNoSuchPart": "\"%s\" message definition does not contain \"%s\" part",
+    "ErrMessageDefHasNoSuchPart": "\"%s\" message definition does not contain the part with\"%s\" name",
     "ErrMessageDefinitionNotFound": "\"%s\" message definition not found in the document",
     "ErrMessageDefNotFound": "\"%s\" message referenced by \"%s\" operation of \"%s\" binding not found",
     "ErrMessageMustSpecifyExtension": "\"%s\" message extension (\"%s\" operation of \"%s\" binding) not specified or not supported",
@@ -242,7 +242,7 @@
     "ErrRootElementPathOnTreeRoot": "Attempt to get the schema root element path for the tree root node",
     "ErrSetAsStringDatetimeAttempt": "Attempt to set the SetAsString based value for the \"Date/time\" data type node",
     "ErrSetAsStringVariantAttempt": "Attempt to set the SetAsString based value for the \"Variable\" data type node",
-    "ErrSetDateTimeAsStringTypeMismatch": "Attempt to set the SetDateTimeAsString based value for the node with the data type different from the \"Date/time\" based value",
+    "ErrSetDateTimeAsStringTypeMismatch": "Failed to set value via the SetDateTimeAsString function for the node with non \"Date/time\" data type",
     "ErrSetVariantAsStringTypeMismatch": "Failed to set value via the SetDateTimeAsString function for the node with non \"Variant\" data type",
     "ErrTreeSelectionUpdate": "EndUpdateSelection method called without BeginUpdateSelection method",
     "ErrValueConversionImpossible": "Failed to convert \"%s\" string to \"%s\" value",
@@ -282,11 +282,11 @@
   },
   "Common/XML/XML": {
     "ErrCodePageByXMLCharsetAlreadyInstalled": "The function required to get the code page number based on XML character set has already been installed",
-    "ErrCodePageByXMLCharsetUnassigned": "The function required to get the code page number based on XML character set has not been set",
+    "ErrCodePageByXMLCharsetUnassigned": "The function required to get the code page number based on XML character set has not been installed",
     "ErrGenerateNamespacePrefixOverflow": "Counter overflow during namespace prefix generation",
     "ErrStrToValueIntBadTypeRefinement": "\"%s\" type of refinement is not allowed when converting from string to integer",
     "ErrXMLCharsetByCodePageAlreadyInstalled": "The function required to get XML character set based on the code page number has already been installed",
-    "ErrXMLCharsetByCodePageUnassigned": "The function required to get XML character set based on the code page number has not been set"
+    "ErrXMLCharsetByCodePageUnassigned": "The function required to get XML character set based on the code page number has not been installed"
   },
   "Common/XML/XML_MSXML": {
     "ErrElementMustHaveAttribute": "\"%s\" attribute required for \"%s\" element",
@@ -485,7 +485,7 @@
     "ErrBracket": "Incorrect brackets",
     "ErrIllegalCharacter": "Invalid \"%s\" character",
     "ErrInvalidExpression": "Invalid expression: \"%s\"",
-    "ErrQuote": "Unclosed string intercept in string %d",
+    "ErrQuote": "Unclosed string constant in line %d",
     "ErrUnknownFunction": "Unknown function: %s"
   },
   "components/calcvariables/CalcVariables": {
@@ -713,7 +713,7 @@
   "components/datatovariables/DataToVariablesEngine": {
     "DataToVariablesNotify": "Variable calculating",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoOneAggregation": "It is required to specify at least one aggregation option for \"%s\" field",
+    "ErrNoOneAggregation": "At least one aggregation option for \"%s\" field must be specified",
     "FindMedianNotify": "Median calculating"
   },
   "components/datatovariables/DataToVariablesVendor": {
@@ -800,7 +800,7 @@
     "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" node for which inheritance is forbidden",
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
-    "ErrPortNotConfigurable": "The port configuring not supported",
+    "ErrPortNotConfigurable": "Port configuration not supported",
     "ErrReferencedNodeNotAvailable": "Source node not available",
     "ErrReferencedNodeNotFound": "Source node not found",
     "ErrReferencedNodeNotSpecified": "No reference to node specified",
@@ -914,13 +914,13 @@
     "VendorDesc": "Row filtering by criteria"
   },
   "components/filtration/DataRecovery": {
-    "DataRecovery": "Fill empty",
+    "DataRecovery": "Imputation",
     "PaymentAdditionalFeatures": "Calculation of the additional features",
     "QualityEngine": "Data quality",
     "ScanningInputData": "Input data scanning"
   },
   "components/filtration/DataRecoveryVendor": {
-    "VendorCaption": "Fill empty",
+    "VendorCaption": "Imputation",
     "VendorDesc": "Fill in missing data"
   },
   "components/filtration/ELimOutlier": {
@@ -1027,7 +1027,7 @@
   },
   "components/groupdata/GroupData": {
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNoOneAggregation": "Specification of at least one aggregation option for \"%s\" fact is required",
+    "ErrNoOneAggregation": "At least one aggregation option for \"%s\" fact must be specified",
     "FindMedianNotify": "Median calculating",
     "GroupDataNotify": "Data grouping",
     "SortNotify": "Grouped data sorting"
@@ -1778,7 +1778,7 @@
     "ErrParseFmt": "Error occurred while parsing line %d: %s",
     "ErrPropInvalidNamedRange": "Invalid named range",
     "ErrPropInvalidSheetName": "The excel sheet name cannot contain the following characters: ? * / [ ]",
-    "ErrPropNamedRange": "Range name not specified",
+    "ErrPropNamedRange": "Named range not specified",
     "ErrPropNamedRangeNotFound": "\"%s\" named range not found in \"%s\" file",
     "ErrPropSheetName": "Excel sheet name not specified",
     "ErrPropSheetNumber": "Incorrect Excel worksheet index",
@@ -2009,7 +2009,7 @@
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable column \"%s\""
   },
   "Libraries/bgrtl/ColumnInfoLinks": {
-    "ErrLinkedColumnInfoNotFound": "\"%s\" column not found",
+    "ErrLinkedColumnInfoNotFound": "Column with \"%s\" name not found",
     "ErrLinkedColumnInfoNotSpecified": "No column link set",
     "ErrLinkedColumnInfoTypesMismatch": "%s column type is not compatible with the source column type"
   },
@@ -2296,7 +2296,7 @@
     "ErrStreamReadBuffer": "When reading bytes from the data stream, %d was read instead of %d",
     "ErrStreamReadBufferInvalidParams": "Invalid parameter values when reading from the data stream: Length = %d; Count = %d; Offset = %d",
     "ErrStreamReadBufferLength": "When reading from the data stream, the size of the resulting buffer %d is less than the number of bytes required for reading %d",
-    "ErrStreamSeekOutOf2GbRange": "When moving, the cursor of the data stream went beyond 2 GB, it is required to use the 64bit version of the function",
+    "ErrStreamSeekOutOf2GbRange": "When moving, the cursor of the data stream went beyond 2 GB, it is required to use the 64-bit version of the function",
     "ErrStreamWriteBuffer": "When writing bytes to the data stream, %d was written instead of %d",
     "ErrStreamWriteBufferInvalidParams": "Invalid parameter values when writing to the data stream: Length = %d; Count = %d; Offset = %d",
     "ErrStreamWriteBufferLength": "When writing to the data stream, the size of the initial buffer %d is less than the number of bytes required for writing %d"
@@ -2520,7 +2520,7 @@
   },
   "Libraries/bgrtl/UniqueValues": {
     "ErrNullAsValueChangeForbidden": "NullAsValue parameter value of a non-empty list of unique values cannot be changed",
-    "ErrNullsNotAllowed": "Addition of the missing values to the unique values list is forbidden",
+    "ErrNullsNotAllowed": "Addition of the null values to the unique values list is forbidden",
     "ErrValueAlreadyExists": "\"%s\" value already exists in the list of unique values"
   },
   "Libraries/bgrtl/UniqueValuesData": {
@@ -2615,8 +2615,8 @@
     "ErrOriginalDll": "Operation is not supported. Inncompatible version of ChakraCore library is used.",
     "ErrRaiseException": "Unhandled exception inside JavaScript built-in function: \"%s\"",
     "ErrRaiseModuleException": "Unhandled exception when loading JavaScript module",
-    "ErrTooFewArgs": "Too few arguments were called to %s function (%d whereas %d is minimum value)",
-    "ErrTooManyArgs": "Many arguments were called to %s function (%d whereas %d is maximum value)",
+    "ErrTooFewArgs": "Few arguments supplied to %s function (%d whereas %d is minimum number)",
+    "ErrTooManyArgs": "Many arguments supplied to %s function (%d whereas %d is maximum number)",
     "ErrUnhandledPromiseRejected": "Unhandled error in Promise"
   },
   "Libraries/ChakraCore/ChakraCommonJS": {
@@ -2848,7 +2848,7 @@
     "ErrCreateSolver": "Error creating sparse solver with type: %s",
     "ErrNoMatrixOrRhs": "Matrix or right side not set",
     "ErrNonSquareSuperMatrixNotSupportedYet": "Solver SuperLU does not support non-square matrices yet",
-    "ErrSizesNotEqual": "The matrix columns count and dimension of the right part /solution do not match",
+    "ErrSizesNotEqual": "The matrix column count and dimension of the right part/solution do not match",
     "ErrSuperLUSolver": "SuperLU Solver procedure failed",
     "ErrSuperMatrixNotConverted": "Matrix not converted to SuperLU format",
     "ErrWrongArrayType": "Unsupported array type: %s",
@@ -3077,7 +3077,7 @@
     "ErrAlienModelUnit": "Node does not belong to the current package",
     "ErrCircularPackageLinksNotAllowed": "Circular links between packages are not allowed",
     "ErrPackageLinkAlreadyExists": "Reference to \"%s\" package already exists",
-    "ErrPackageLinkToSelfNotAllowed": "You cannot add self-reference in the package",
+    "ErrPackageLinkToSelfNotAllowed": "Package cannot have a self-reference",
     "ErrPackageNameCannotBeEmpty": "Package name cannot be empty",
     "ErrPackageNameInvalidCharacter": "\"%s\" package name contains the invalid \"%s\" character",
     "ErrPackageNameInvalidFirstCharacter": "\"%s\" package name starts with the invalid \"%s\" character",
@@ -3095,7 +3095,7 @@
     "BackupRestored": "Error occurred while saving \"%s\" package. File restored from backup.",
     "CompatConvertRequired": "While downloading \"%s\" package of %s version converting will be performed.",
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
-    "ErrCannotOpenFile": "Failed to open file: %s"
+    "ErrCannotOpenFile": "Failed to open file: \"%s\""
   },
   "Libraries/Model/ModelReports": {
     "CantAddGenericInputViewToReport": "Addition of supernode input node visualizers to Reports is not supported",
@@ -3200,7 +3200,7 @@
     "WarnLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
-    "ErrMsgCantFindLinkNode": "Failed to define the second link port",
+    "ErrMsgCantFindLinkNode": "Failed to find the second link port",
     "ErrMsgNoAllVendorsCollected": "Failed to get all required types of vendors",
     "ErrMsgNoSubModel": "Supernode component not created",
     "ErrMsgNoVendorInfo": "Failed to get information on the derived component for \"%s\" node",
@@ -3319,7 +3319,7 @@
     "ErrWrongArraySize": "Size %1:d of '%0:s' array not equal to the expected size of  array %2:d"
   },
   "Libraries/Normalization/NormalColumns": {
-    "ErrExcludeOutOfRange": "The range being deleted is out of bounds. The following values are given: start index %d, range length %d. The index of the last deleted column %d exceeds the index of the last deleted column %d."
+    "ErrExcludeOutOfRange": "The range to be deleted is out of limits. The following values are given: start index %d, range length %d. The index of the last deleted column %d exceeds the index of the last deleted column %d."
   },
   "Libraries/Normalization/NormalColumnsManager": {
     "ErrIrremNotExcluded": "Irremovable factor \"%s\" cannot be excluded",
@@ -3338,7 +3338,7 @@
     "ErrUnexpectedEndUpdate": "EndUpdate call without corresponding BeginUpdate",
     "ErrUnexpectedUnlockedState": "Calling nested BeginUpdate cache of the normalized data set must be locked",
     "ErrWrongArraySize": "Size %1:d of '%0:s' array not equal to the expected %2:d",
-    "ErrWrongNormalizerParams": "Error adding \"%s\" factor: the output columns count of %d normalizer does not match the expected %d",
+    "ErrWrongNormalizerParams": "Error adding \"%s\" factor: the output column count of %d normalizer does not match the expected %d",
     "InterceptDisplayName": "Intercept",
     "NormDSTypeNotSupported": "Unsupported type of the requested normalized data set",
     "UnsupportedPrenormInDataType": "Unsupported type of the normalizer data of the normalized string"
@@ -3404,7 +3404,7 @@
   },
   "Libraries/Normalization/TuneNormColumnDefs": {
     "ErrNilStatInfoProvider": "Null provider of the statistic columns information was passed",
-    "ErrTuneNormColumnDefsVendorNotSet": "Vendor of configurable fields with normalization not set",
+    "ErrTuneNormColumnDefsVendorNotSet": "Vendor of configurable fields with normalization not installed",
     "ErrWrongConstructor": "Invalid column collection constructor called"
   },
   "Libraries/Normalization/TuneNormColumnDefsVendor": {
@@ -3475,7 +3475,7 @@
     "ErrVisibilityMismatch": "Visibility of \"%s\" interface mismatches the required visibility"
   },
   "Libraries/Regression/DataSourceRegressionModelComponentEngine": {
-    "ErrNoModel": "Model is not trained.  Training of node before its application is required",
+    "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "ErrOutputColumnInvalid": "Invalid output column",
     "ErrOutputCount": "There must be exactly one output column",
     "ErrTrainingNotComplite": "Failed to train the node on the basis of the current training set",
@@ -3531,7 +3531,7 @@
     "ErrNotImplemented": "This method implementation is not provided"
   },
   "Libraries/rpc/MessageTransport": {
-    "ErrConnectionFailure": "Remote computer connection lost"
+    "ErrConnectionFailure": "Remote host connection lost"
   },
   "Libraries/rpc/RemoteMessageData": {
     "ErrArrayLevelNotSupported": "Arrays nesting level above %d is not supported",
@@ -3543,7 +3543,7 @@
     "ErrUnknownInterfaceID": "Unknown interface identifier: %d",
     "ErrUnknownInterfaceName": "%s interface not registered",
     "ErrUnknownMethodID": "Unknown method identifier: %d",
-    "ErrUnsupportedParameterType": "Unsupported parameter type"
+    "ErrUnsupportedParameterType": "Unsupported argument type"
   },
   "Libraries/rpc/RemotingConvertUtils": {
     "ErrValueOutOfRange": "%d value is not in the range of allowable values %s"
@@ -3560,7 +3560,7 @@
     "ErrIncorrectMainServerObjectInterfaceID": "Invalid interface identifier of the main server object received",
     "ErrInvalidObjectID": "Invalid object identifier: %d",
     "ErrMainServerObjectNotRegistered": "The main server object is not registered",
-    "ErrMaxObjectIdReached": "Limit in %d values of object identifiers reached",
+    "ErrMaxObjectIdReached": "Object identifiers limit of %d values reached",
     "ErrMethodHasNoReturnValue": "%s method has no return value",
     "ErrMethodHasOutputParameters": "%s method contains output parameters",
     "ErrMethodReturnValueIsNotInterface": "The return value of %s method is not an interface object reference",
@@ -3573,7 +3573,7 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s",
-    "WarnMainWSDLNotLoaded": "Loading of main WSDL source (%s) failed (%s). Loading the backup source."
+    "WarnMainWSDLNotLoaded": "Loading of the main WSDL source (%s) failed (%s). Loading from the reserve source."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
     "WSDLClientConnectionVendorCaption": "SOAP Service",
@@ -3595,7 +3595,7 @@
   },
   "Studio/Converters/Converter_201806051619_TuneNorm_InvalidUsageType": {
     "ErrTuneNormInvalidUsageTypeNode": "Usage type of the \"Output\" field near \"%s\" column of \"%s\" node was moved to the \"Not defined\" field",
-    "ErrTuneNormInvalidUsageTypeVendor": "Usage type of the \"Output\" field near \"%s\" column of derived component \"%s\" was moved to the \"Not defined\" field"
+    "ErrTuneNormInvalidUsageTypeVendor": "Usage type of the \"Output\" field near \"%s\" column of derived component \"%s\" was moved to the \"Unspecified\" field"
   },
   "Studio/Converters/Converter_20180828194301_LogRegression_DerivedAtomic": {
     "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes that refer to the nodes in other packages could be reset.\nOne of the following actions is required:\n  - reconfigure and retrain the \"Logistic Regression\" nodes that cannot be converted\n  - restore configuration of the specified nodes to the original (base)\n  - contact Loginom support for help"
@@ -3823,7 +3823,7 @@
   },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
-    "ErrOrderNumberDim": "Incorrect dimension indexes",
+    "ErrOrderNumberDim": "Incorrect dimension order numbers",
     "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
     "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"
@@ -3866,7 +3866,7 @@
   },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
-    "VendorDesc": "Multidimensional data viewer (Pivot table and Pivot chart)"
+    "VendorDesc": "Multidimensional data view (Pivot table and Pivot chart)"
   },
   "Viewers/DataTree/DataTreeView": {
     "ErrNotDefinedInputDataTree": "No input data tree defined",
@@ -4014,7 +4014,7 @@
     "To": "to "
   },
   "Viewers/Statistics/StatViewUniqueValues": {
-    "ErrRequiredColumnNotFound": "No columns with the specified numbers in the input data source"
+    "ErrRequiredColumnNotFound": "No columns with the specified indexes in the input data source"
   },
   "Viewers/Statistics/StatViewValuesRange": {
     "OwnerIsDisposed": "The main collection of histogram values has been disposed"

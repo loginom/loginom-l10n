@@ -7,7 +7,7 @@
       "Mathematic": "Math",
       "Statistic": "Statistical",
       "Logic": "Logical",
-      "String": "String",
+      "String": "Text",
       "Other": "Other",
       "Model": "Models"
     }
@@ -164,7 +164,7 @@
       "None": "Unknown",
       "Date": "Date",
       "Time": "Time",
-      "DateTime": "Date and time",
+      "DateTime": "Date/time",
       "Float": "Floating point number (single precision)",
       "Double": "Floating point number (double precision)",
       "Decimal": "Decimal number",
@@ -179,7 +179,7 @@
       "Byte": "Signed integer, 8 bits",
       "ULong": "Unsigned integer, 64 bits",
       "UInt": "Unsigned integer, 32 bits",
-      "UShort": "Unsigned integer, 16 bit",
+      "UShort": "Unsigned integer, 16 bits",
       "UByte": "Unsigned integer, 8 bits"
     }
   },
@@ -218,7 +218,7 @@
       "UpperLimitOpen": "Upper range bound open"
     },
     "BinningMatchingObservationsMode": {
-      "$Caption": "Matching Observations Processing Mode",
+      "$Caption": "Matching Observations",
       "AddToNextBin": "Add to next",
       "AddCurrent": "Save in current",
       "Random": "Set randomly",
@@ -286,7 +286,7 @@
       "LowerBound": "Lower bound",
       "UpperBound": "Upper bound",
       "WoE": "Weight of evidence",
-      "IV": "Information index",
+      "IV": "Information value",
       "Weight": "Class weight",
       "UpperBoundIsOpen": "Upper range bound open",
       "PreQuantingApplied": "Prequantization"
@@ -1235,7 +1235,7 @@
       "$Caption": "Test Set Priority",
       "Default": "Defined by algorithm",
       "Begin": "Start of set",
-      "End": "End of Set"
+      "End": "End of set"
     }
   },
   "Libraries/DataSampling/Sampling": {
@@ -1274,9 +1274,9 @@
   "Libraries/Model/DataSet/ImportModelComponentEngine": {
     "CacheStringsMode": {
       "$Caption": "Cache Strings Mode",
-      "Off": "Do not use cache",
-      "Manual": "Custom cache size",
-      "Auto": "Auto define"
+      "Off": "Disable",
+      "Manual": "Custom",
+      "Auto": "Auto"
     }
   },
   "Libraries/Model/ModelWorkFlow": {
@@ -1625,7 +1625,7 @@
   },
   "Viewers/Cube/CubeFilter": {
     "CubeCaseFilterRelation": {
-      "$Caption": "Filter Relation",
+      "$Caption": "Relation Type",
       "TopN": "first N",
       "BottomN": "last N",
       "PartOfTotal": "part of total",

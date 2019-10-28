@@ -67,7 +67,7 @@
     "ConfirmRemovingUnit": "Do you really want to delete the module?",
     "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently in use.",
     "ErrSelectedVendorLocked": "Failed to delete the selected \"{0}\" component. Some of the derived nodes are currently in use.",
-    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the selected \"{0}\" component? The derived nodes will be unavailable.",
+    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the selected \"{0}\" component? The nodes created on its basis will be unavailable.",
     "RemoveVendorConfirm": "Do you want to remove the component?"
   },
   "app/ConfigurePublishedPackagesForm": {
@@ -254,7 +254,7 @@
     "ModifyBtnText": "Apply",
     "ModifyVariableTitle": "Edit Variable",
     "ReadonlyFieldLabel": "Read-only:",
-    "ReadonlyFieldTip": "Edited only in script development mode"
+    "ReadonlyFieldTip": "Edited only in design mode"
   },
   "app/PackageVariablesForm": {
     "DeleteAllPrompt": "Do you really want to delete all variables?",
@@ -460,7 +460,7 @@
   },
   "components/corranalysis/CorrAnalysisWizard": {
     "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if you want to determine the linear relationship between two processes, or parts of the processes that occur with a certain time lag.",
-    "CorrTypeKendall": "The Tay-b Kendall rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. Use for categorical data is recommended.",
+    "CorrTypeKendall": "The Tau-b Kendall rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. Use for categorical data is recommended.",
     "CorrTypePearson": "Using the Pearson correlation coefficient, it is possible to determine the strength and direction of the linear relationship between two processes that occur simultaneously.",
     "CorrTypeSpearman": "The Spearman's rank correlation coefficient is another version of the rank correlation. Corresponding ranks, not numerical values, are used for numerical fields to estimate the connection strength. Therefore, the Spearman coefficient will be 1 or -1 for any monotone sequences."
   },
@@ -654,8 +654,8 @@
     "VariablesTitle": "Variables"
   },
   "components/replace/ReplaceWizard": {
-    "DeleteAllPrompt": "Do you really want to remove all substitution options?",
-    "DeleteAllPromptTitle": "Delete substitution table",
+    "DeleteAllPrompt": "Do you really want to remove all replacement options?",
+    "DeleteAllPromptTitle": "Delete replacement table",
     "EditorDisabled": "Include replacement to edit",
     "EditorNotChoosed": "Select replacement to edit.",
     "ErrFileFieldMiss": "Item is not file upload field",
@@ -839,7 +839,7 @@
     "InvalidDateTimeValue": "Invalid datetime value",
     "InvalidFloatNumber": "Invalid number",
     "InvalidIntegerNumber": "Invalid integer",
-    "InvalidValueIsNull": "Value must be not empty",
+    "InvalidValueIsNull": "Null value is not allowed",
     "MinMaxError": "Minimum value cannot exceed maximum value.",
     "ValidateEditorsError": "Editors error"
   },
@@ -1213,17 +1213,17 @@
   "imports/textfile/DateSeparatorStore": {
     "BackSlash": "Backslash (\\)",
     "Default": "Default",
-    "Point": "Point (.)",
+    "Point": "Dot (.)",
     "Slash": "Slash (/)"
   },
   "imports/textfile/DecimalSeparatorStore": {
     "Comma": "Comma (,)",
     "Default": "Default",
-    "Point": "Point (.)"
+    "Point": "Dot (.)"
   },
   "imports/textfile/DelimiterStore": {
     "Comma": "Comma",
-    "Point": "Point",
+    "Point": "Dot",
     "Semicolon": "Semicolon",
     "Space": "Space",
     "TabCharacter": "Tab character"
@@ -1244,7 +1244,7 @@
   "imports/textfile/TimeSeparatorStore": {
     "Colon": "Colon (:)",
     "Default": "Default",
-    "Point": "Point (.)"
+    "Point": "Dot (.)"
   },
   "imports/textfile/ValueFalseStore": {
     "False1": "False",
@@ -1457,7 +1457,7 @@
   },
   "rpc/ExecutionContext": {
     "ErrExecutionContextNotInstalled": "No reference to execution context provided",
-    "ErrExternalExecutionContextManagerNotInstalled": "External execution context manager not set"
+    "ErrExternalExecutionContextManagerNotInstalled": "External execution context manager not installed"
   },
   "rpc/Interfaces": {
     "ErrObjectIsNil": "Null object reference",
@@ -1843,7 +1843,7 @@
   },
   "viewers/regression/LogRegressReportView": {
     "IsEvent": "Event",
-    "IsNotEvent": "Negative event"
+    "IsNotEvent": "Non-event"
   },
   "viewers/regression/RegressionReportView": {
     "ModelInfoAIC": "AIC",
@@ -1887,7 +1887,7 @@
   },
   "viewers/roc/ConfusionMatrix": {
     "Event": "Event",
-    "NonEvent": "Negative event"
+    "NonEvent": "Non-event"
   },
   "viewers/roc/ROCView": {
     "AUC_PR": "AUC PR",
@@ -1975,7 +1975,7 @@
     "DefaultUsageType": "Default usage type",
     "ErrColumnEmptyName": "Column name cannot be empty",
     "ErrColumnInvalidIdentifier": "Entered \"{0}\" column name is not a valid identifier",
-    "ErrColumnNameAlreadyExists": "\"{0}\" column already exists",
+    "ErrColumnNameAlreadyExists": "Column with \"{0}\" name already exists",
     "GroupEditingTitle": "Group Editing",
     "ModifyBtnText": "Apply",
     "ModifyColumnDefTitle": "Edit Column"
@@ -1999,7 +1999,7 @@
     "WizardTitle": "Connection Wizard"
   },
   "wizards/connection/ConnectionReferenceComponentWizard": {
-    "ConnectionReferenceTitle": "Connection link",
+    "ConnectionReferenceTitle": "Connection Reference",
     "ConnectionsColumnTitle": "Connections"
   },
   "wizards/connection/ConnectionsViewWizard": {
@@ -2140,7 +2140,7 @@
     "DefaultUsageType": "Default usage type",
     "ErrVariableEmptyName": "Variable name cannot be empty",
     "ErrVariableInvalidIdentifier": "Entered \"{0}\" variable name is not a valid identifier",
-    "ErrVariableNameAlreadyExists": "\"{0}\" variable already exists",
+    "ErrVariableNameAlreadyExists": "Variable with \"{0}\" name already exists",
     "GroupEditingTitle": "Group Editing",
     "ModifyBtnText": "Apply",
     "ModifyVariableTitle": "Edit Variable"
@@ -2156,8 +2156,8 @@
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?"
   },
   "wizards/variables/VariablesMappingWizard": {
-    "btnAutoSyncThroughColumnsTooltip": "Auto sync of variables",
-    "btnSyncThroughColumnsTooltip": "Sync variables",
+    "btnAutoSyncThroughColumnsTooltip": "Automapping of variables",
+    "btnSyncThroughColumnsTooltip": "Map variables",
     "CreateMappingToAllConfirm": "Do you really want to create output variables for all inputs?",
     "EmptyListText": "No matching variables",
     "frmColumnsMappingTitle": "Adjustment of Variables Mapping",

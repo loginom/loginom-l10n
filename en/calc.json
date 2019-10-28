@@ -8,7 +8,7 @@
     "HardKey": {
       "Arguments": "Arguments are absent",
       "Description": "HardKey()",
-      "Output": "Function returns the serial number of the electronic key."
+      "Output": "Function returns the serial number of the dongle key."
     },
     "MD5": {
       "Arguments": "String is a string for which MD5 value is calculated.",
@@ -25,7 +25,7 @@
     "Abs": {
       "Arguments": "Argument - numeric expression.",
       "Description": "Abs(Argument)",
-      "Output": "Returns the argument module."
+      "Output": "Returns the absolute value of Argument."
     },
     "AbsErr": {
       "Arguments": "Arguments - any numeric expressions.",
@@ -58,7 +58,7 @@
       "Output": "Function returns the Date argument value, increased by the specified Number of years. The number can also be negative. In this case, the function will return the date to the given number of years before the specified date."
     },
     "AMGD": {
-      "Arguments": "Arguments, numeric expressions.",
+      "Arguments": "Arguments - numeric expressions.",
       "Description": "AMGD(Cost, Residual_cost, Operating_time, Period)",
       "Output": "Returns the annual property depreciation for the specified period."
     },
@@ -124,17 +124,17 @@
     },
     "Data": {
       "Arguments": "FieldName - return value field name\nRowNumber - return value row number",
-      "Description": "Data(\"FieldName\",StringNumber)",
+      "Description": "Data(\"FieldName\",RowNumber)",
       "Output": "Function returns the FieldName field value taken from the RowNumber row.\nIn case of the recursive usage of this function it is required to set the \"Cache the calculated expression values\" flag in the \"Expression parameters\" window.\nNote: FieldName - the string value, namely, the explicitly given FieldName must be specified in quotation marks.\nFor example, Data(\"COL1\", 2)"
     },
     "DateTimeToStr": {
       "Arguments": "Date_time - expression of the date/time type.\nDate_format - optional parameter date format in terms of D, M, Y.\nTime_format - optional parameter time format in terms of H, N, S, Z.",
-      "Description": "DateTimeToStr(Date_time [, Format_of date [, Format_of time]])",
+      "Description": "DateTimeToStr(Date_time [, Date_format [, Time_format]])",
       "Output": "Returns the string representation of the Date_time argument.\nExamples of the date format:\n  \"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")\n  \"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")\nExamples of the time format:\n  \"H:NN\" - converts the time into the \"hours:minutes\" format (\"9:53\")\n  \"HH:NN:SS\"  - converts the time into the \"hours:minutes:seconds\" format (\"09:05:53\")"
     },
     "DateToStr": {
       "Arguments": "Date - expression of the date/time type.\nDate_format - optional parameter date format in terms of D, M, Y.",
-      "Description": "DateToStr(Date [, Format_of date])",
+      "Description": "DateToStr(Date [, Date_format])",
       "Output": "Returns the string representation of the Date argument.\nExamples of the date format:\n  \"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")\n  \"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")"
     },
     "Day": {
@@ -219,8 +219,8 @@
     },
     "Find": {
       "Arguments": "Substring - searched substring,\nString - the string in which substring is searched,\nMatchIndex - optional occurence index of the Substring in the String to be returned. Argument of the numeric type.",
-      "Description": "Find(Substring, String[, Order = 1])",
-      "Output": "Function returns position of the first character of the Substring of the set Order in the String.\n The order can be both positive and negative. If the Order is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\n If there is no occurence of the set order, the function returns 0.\n For example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\n Find(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\n If the Order is equal to zero, the function will return the null value (Null)."
+      "Description": "Find(Substring, String[, MatchingIndex = 1])",
+      "Output": "Function returns position of the first character of the Substring of the set MatchingIndex in the String.\n The MatchingIndex can be both positive and negative. If the MatchingIndex is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\n If there is no occurence of the set order, the function returns 0.\n For example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\n Find(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\n If the MatchingIndex is equal to zero, the function will return the null value (Null)."
     },
     "FKhi2": {
       "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
@@ -440,7 +440,7 @@
     "Stat": {
       "Arguments": "FieldName - the field by which receipt of the indicator value is required\nType - the statistics indicator that is required to receive",
       "Description": "Stat(\"FieldName\", \"Type\")",
-      "Output": "Function returns one of the statistical indicators.\nThe type can adopt one of the following values:\n       Min - minimum value\n       Max - maximum value\n       Avg - average value\n       StdDev - standard deviation\n       Sum - sum of values\n       SumSq - sum of square values\n       Count - count of values\n       UniqueCount - count of unique values\n       NullCount - count of missing values\nNote: FieldName and Type - string values, namely, explicitly given FieldName and Type must be in quotation marks.\nFor example: Stat(\"COL1\", \"Min\")"
+      "Output": "Function returns one of the statistical indicators.\nThe type can adopt one of the following values:\n       Min - minimum value\n       Max - maximum value\n       Avg - average value\n       StdDev - standard deviation\n       Sum - sum of values\n       SumSq - sum of square values\n       Count - count of values\n       UniqueCount - count of unique values\n       NullCount - count of null values\nNote: FieldName and Type - string values, namely, explicitly given FieldName and Type must be in quotation marks.\nFor example: Stat(\"COL1\", \"Min\")"
     },
     "StdDev": {
       "Arguments": "Arguments - any numeric expressions.",
@@ -535,13 +535,13 @@
   },
   "RegExFunctions": {
     "RegExDomain": {
-      "Arguments": "Input string - the input string in which Email-address will be searched;\nOccurenceNumber - the order number of Email-address in the searched string.",
+      "Arguments": "InputString - the input string in which Email-address will be searched;\nOccurenceNumber - the index of Email-address in the searched string.",
       "Description": "RegExDomain(InputString [, OccurenceNumber = 1])",
       "Output": "Returns OccurencesNumber website URL from the InputString string, not including www till the first level domain, inclusively.\nRegular expressions are used for search."
     },
     "RegExEmail": {
-      "Arguments": "Input string - the input string in which Email-address will be searched;\nOccurenceNumber - the order number of Email-address in the searched string.",
-      "Description": "RegExEmail(Input String [, OccurenceNumber = 1])",
+      "Arguments": "InputString - the input string in which Email-address will be searched;\nOccurenceNumber - the index of Email-address in the searched string.",
+      "Description": "RegExEmail(InputString [, OccurenceNumber = 1])",
       "Output": "Extracts OccurencesNumber Email-address from the InputString string.\nRegular expressions are used for search."
     },
     "RegExMatch": {
@@ -555,27 +555,27 @@
       "Output": "Returns the number of the string parts matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExMatchedExp": {
-      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
+      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedExp(RegularExpression, String [, PartNumber = 1])",
       "Output": "Returns the string part matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExMatchedNamedSubExp": {
-      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupName - name of the group defined by metacharacters (...);\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
+      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupName - name of the group defined by metacharacters (...);\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedNamedSubExp(RegularExpression, String, GroupName [, partNumber = 1])",
       "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurrence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExMatchedSubExp": {
-      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupNumber - order number of the group defined by metacharacters (...);\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
+      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupNumber - order number of the group defined by metacharacters (...);\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedSubExp(RegularExpression, String, GroupNumber [, PartNumber = 1])",
       "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExReplace": {
-      "Arguments": "RegularExpression - the regular expression string;\nInput string - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string part matching the regular expression;\nPartNumber - the part order number matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.\nExtended syntax - extended replacement syntax (only for PCRE2)",
+      "Arguments": "RegularExpression - the regular expression string;\nInputString - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string part matching the regular expression;\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.\nExtendedSyntax - extended replacement syntax (PCRE2 library is used)",
       "Description": "RegExReplace(RegularExpression, InputString, ReplaceString [, PartNumber = 1, ExtendedSyntax = False])",
-      "Output": "Returns the Input String in which the PartNumber expression occurence of the Regular Expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+      "Output": "Returns the InputString in which the PartNumber expression occurence of the RegularExpression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExReplaceAll": {
-      "Arguments": "RegularExpression - the regular expression string;\nInput string - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string parts matching the regular expression;\nExtended syntax - extended replacement syntax (only for PCRE2)",
+      "Arguments": "RegularExpression - the regular expression string;\nInputString - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string parts matching the regular expression;\nExtendedSyntax - extended replacement syntax (PCRE2 library is used)",
       "Description": "RegExReplaceAll(RegularExpression, InputString, ReplaceString [, ExtendedSyntax = False])",
       "Output": "Returns the Input String in which all occurences of the Regular Expression expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     }

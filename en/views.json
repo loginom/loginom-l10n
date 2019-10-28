@@ -228,10 +228,10 @@
       "boxLabel": "Custom"
     },
     "rdoGenerateForPackage": {
-      "boxLabel": "Generate unique name for package"
+      "boxLabel": "Generate unique for package"
     },
     "rdoGenerateForPackageVersion": {
-      "boxLabel": "Generate unique name for each package version"
+      "boxLabel": "Generate unique for each package version"
     },
     "rdoUseDisNamespace": {
       "boxLabel": "Use Loginom integrator namespace"
@@ -289,7 +289,7 @@
       "tooltip": "Tile"
     },
     "btnVisibility": {
-      "tooltip": "Configure the area of visibility..."
+      "tooltip": "Configure visibility..."
     },
     "cntDescription": {
       "title": "Description"
@@ -490,7 +490,7 @@
       "tooltip": "Show as workflow"
     },
     "mniHorizontalAlignBottom": {
-      "text": "Align on the bottom",
+      "text": "Align bottom",
       "tooltip": "Horizontal bottom alignment"
     },
     "mniHorizontalAlignCenter": {
@@ -690,7 +690,7 @@
     },
     "colReadonly": {
       "text": "Read-only",
-      "tooltip": "Edited only in script development mode"
+      "tooltip": "Edited only in design mode"
     },
     "colValue": {
       "text": "Value"
@@ -724,7 +724,7 @@
       "fieldLabel": "Name"
     },
     "frmSelectVisibilityForm": {
-      "title": "Select access modifier"
+      "title": "Select Visibility"
     },
     "rdoInternal": {
       "boxLabel": "Internal (available only within current package)"
@@ -1490,13 +1490,13 @@
       "title": "XML Extraction Parameters"
     },
     "rbFull": {
-      "boxLabel": "One query for all data set"
+      "boxLabel": "One request for all data set"
     },
     "rbIDColumn": {
       "boxLabel": "Request identifier - input data set field"
     },
     "rbIDColumnNull": {
-      "boxLabel": "One request per each input data set row"
+      "boxLabel": "One request per input data set row"
     }
   },
   "components/factoranalysis/FactorAnalysisWizard": {
@@ -1539,7 +1539,7 @@
       "fieldLabel": "Compare values"
     },
     "edtDateSpanSimple": {
-      "fieldLabel": "Time-span value"
+      "fieldLabel": "Time span value"
     },
     "edtLowerBoundSimple": {
       "fieldLabel": "Lower bound"
@@ -1706,7 +1706,7 @@
       "boxLabel": "Case-sensitive strings"
     },
     "colDisplayName": {
-      "text": "Field name"
+      "text": "Field"
     },
     "colInputData": {
       "text": "Fields"
@@ -1970,7 +1970,7 @@
       "boxLabel": "Request identifier - input data set field:"
     },
     "rbSimple": {
-      "boxLabel": "One request per each input data set row"
+      "boxLabel": "One request per input data set row"
     }
   },
   "components/wsdlclient/CustomHeadersWizard": {
@@ -3331,7 +3331,7 @@
       "tooltip": "Configure fields"
     },
     "btnHand": {
-      "tooltip": "Drag&drop mode"
+      "tooltip": "Drag mode"
     },
     "btnNavigator": {
       "tooltip": "Navigator"
@@ -3787,13 +3787,13 @@
       "boxLabel": "Case-sensitive"
     },
     "rbAdd": {
-      "boxLabel": "Add to selected"
+      "boxLabel": "Add to checked"
     },
     "rbDeselect": {
       "boxLabel": "Uncheck"
     },
     "rbRemove": {
-      "boxLabel": "Deselect"
+      "boxLabel": "Remove from checked"
     },
     "rbSelect": {
       "boxLabel": "Check"
@@ -3962,7 +3962,7 @@
       "text": "Event"
     },
     "colConfusionNonEvent": {
-      "text": "Negative event"
+      "text": "Non-event"
     },
     "colConfusionTotal": {
       "text": "Total"
@@ -4020,7 +4020,7 @@
       "fieldLabel": "Events, %"
     },
     "fldUserCutoff": {
-      "fieldLabel": "Cutoff"
+      "fieldLabel": "Threshold value"
     },
     "lblAprioriEvent": {
       "text": "Prior Probability"
@@ -4162,7 +4162,7 @@
       "fieldLabel": "Interval count"
     },
     "fldNumberOfDecimals": {
-      "fieldLabel": "Decimals precision"
+      "fieldLabel": "Decimals"
     },
     "lblRowCount": {
       "html": "Row count"
@@ -4255,7 +4255,7 @@
       "text": "Auto Link"
     },
     "btnAutoSyncThroughColumns": {
-      "tooltip": "Auto sync"
+      "tooltip": "Automapping"
     },
     "btnClearLinks": {
       "text": "Delete All Links"
@@ -4837,7 +4837,7 @@
       "fieldLabel": "Data type"
     },
     "cbxNullValue": {
-      "boxLabel": "Missing value",
+      "boxLabel": "Null value",
       "fieldLabel": "Value"
     },
     "cbxUsageType": {

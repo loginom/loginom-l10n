@@ -1330,7 +1330,7 @@
       "boxLabel": "Экстремум взаимнокорреляционной функции"
     },
     "cbCorrTypeKendall": {
-      "boxLabel": "Коэффициент Tay-b Кендалла"
+      "boxLabel": "Коэффициент Тау-b Кендалла"
     },
     "cbCorrTypeLinear": {
       "boxLabel": "Коэффициент корреляции Пирсона"

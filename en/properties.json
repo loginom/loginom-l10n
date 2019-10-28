@@ -10,7 +10,7 @@
   },
   "Common/WSDL/Processor/WSDLRequestDebug": {
     "WSDLRequestDebug": {
-      "DumpRequest": "Save Query Text to Disk",
+      "DumpRequest": "Save Request Text to Disk",
       "DumpRequestFolder": "Folder to save requests",
       "ResponseStub": "File name supplied as response",
       "UseResponseStub": "Simulate request with response in a file"
@@ -727,7 +727,7 @@
   },
   "Libraries/Normalization/NormalDataSourceModelComponentEngine": {
     "NormalDataSourceModelComponentEngine": {
-      "AllowMissingValues": "Allow missing values",
+      "AllowMissingValues": "Allow null values",
       "LearnPartition": "Component data partition with training"
     }
   },

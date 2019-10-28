@@ -411,7 +411,7 @@
     "ErrBinWidthFmt": "Для поля %s не удалось определить ширину интервала",
     "ErrGenerateBins": "Не удалось получить интервалы квантования",
     "ErrInfinityFmt": "Интервалы квантования для поля %s не созданы. Поле содержит значение \"бесконечность\"",
-    "ErrInvalidBinRowFmt": "Не возможно получить интервал для поля %s из строки %d",
+    "ErrInvalidBinRowFmt": "Невозможно получить интервал для поля %s из строки %d",
     "ErrInvalidRangeWidthFmt": "Для поля %s начальная граница интервалов больше конечной границы",
     "ErrLogBinsCountLimitFmt": ", для поля %s.",
     "ErrLowerLimit": "Не задана нижняя граница диапазонов",
@@ -673,7 +673,7 @@
     "CorrAnalysisPirsonNotify": "Вычисление коэффициентов корреляции Пирсона",
     "CorrAnalysisRankedStatNotify": "Вычисление дополнительной статистики",
     "CorrAnalysisSpearmanNotify": "Вычисление коэффициентов корреляции Спирмена",
-    "CorrAnalysisTauBKendallNotify": "Вычисление коэффициентов корреляции Tau-b Кендалла",
+    "CorrAnalysisTauBKendallNotify": "Вычисление коэффициентов корреляции Тау-b Кендалла",
     "DisplayName": "Метка",
     "ErrNoColumnsForProcessing": "Не указаны столбцы для обработки",
     "Name": "Имя"
@@ -1773,7 +1773,7 @@
     "ErrColumnExcistFmt": "Поле с именем \"%s\" уже существует",
     "ErrColumnInvalidIdentFmt": "Имя \"%s\" не может являться идентификатором",
     "ErrExcelNotOpen": "Не удалось выполнить операцию, файл Excel не открыт",
-    "ErrGetRealRange": "Файл excel не открыт. По текущим настройкам не возможно определить диапазон для импорта данных",
+    "ErrGetRealRange": "Файл excel не открыт. По текущим настройкам невозможно определить диапазон для импорта данных",
     "ErrInvalidExplicitRange": "Диапазон задан не верно",
     "ErrNoUsedRange": "Ошибка книги Excel, диапазон листа задан некорректно",
     "ErrOpenExcelBook": "Не удалось открыть Excel файл %s",
@@ -1785,7 +1785,7 @@
     "ErrPropSheetName": "Не задано имя листа Excel",
     "ErrPropSheetNumber": "Индекс листа Excel задан некорректно",
     "ErrSheet": "Не удалось найти лист Excel",
-    "ErrSuggestRange": "Файл excel не открыт. По текущим настройкам не возможно определить количество столбцов для импорта",
+    "ErrSuggestRange": "Файл excel не открыт. По текущим настройкам невозможно определить количество столбцов для импорта",
     "ProcessCaptionOpenExcelFile": "Открыть файл %s",
     "ProcessCaptionReadData": "Чтение данных"
   },
@@ -3575,7 +3575,7 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Ошибка загрузки WSDL:\nИмя файла: %s",
-    "WarnMainWSDLNotLoaded": "Основной источник WSDL (%s) не загружен (%s). Пытаемся загрузить резервный источник."
+    "WarnMainWSDLNotLoaded": "Основной источник WSDL (%s) не загружен (%s). Пытаемся загрузить из резервного источника."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
     "WSDLClientConnectionVendorCaption": "SOAP-сервис",

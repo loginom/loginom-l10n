@@ -360,7 +360,9 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 В конце набора | End of set | |
 В начале набора | Start of set | |
 Очистка содержимого | Truncate
-
+Порядковый номер | Order number
+Именованный диапазон | Named range
+Плохо обусловленная матрица факторного отображения | Ill-conditioned factor mapping matrix
 
 ### Общие рекомендации:
 

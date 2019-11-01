@@ -21,7 +21,7 @@ Russian | English | Context |
 Тип временного промежутка | Time span unit | |
 Резервный источник | Backup source | |
 Соответствуют условию | Filtered | |
-Не соответствуют условию | Filtered Out | |
+Не соответствуют условию | Filtered out | |
 Кэшировать | Cache | |
 Указано | Specified | |
 Явно заданное | Explicitly given | |
@@ -57,12 +57,12 @@ Russian | English | Context |
 Обучающее множество | Training set | |
 Формирование множества | Set selection | |
 Тестовое множество | Test set | |
-Запуск обработки | Run node | |
-Выполнить узел | Run node | |
+Запуск обработки | Run node |Одинаково с "Выполнить узел" - так и должно быть?|
+Выполнить узел | Run node |Одинаково с "Запуск обработки" - так и должно быть? |
 Узел | Node | |
 Цикл | Loop | |
 Выполнение компонента | Component execution | |
-Пропущенные значения | Null/missing values | |
+Пропущенные значения | Null values | Missing values - неправильно|
 Свойство | Property | |
 Ограничения | Constraints | |
 Истинная доля событий | Prior probability | |
@@ -103,8 +103,8 @@ Russian | English | Context |
 Временный факт | Temporary measure | |
 Производный элемент | Derived item | |
 Производный элемент конфигурации | Derived configuration item | |
-Сценарий | Workflow | |
-Сценарий | Script | |
+Сценарий | Workflow |Есть еще Script|
+Сценарий | Script |Есть еще Workflow |
 Локальная база данных | Local data base | |
 Индекс качества разгруппировки | Ungrouping quality indicator | |
 Показатели качества модели | Model quality indicators | |
@@ -135,7 +135,7 @@ XSD-схема на входе | Input XSD schema | |
 Выполнить запрос | Execute query | |
 Соответствие между столбцами | Columns mapping | |
 Настройка соответствия между переменными | Adjustment of variables mapping | |
-Загружать | Upload, download, load | |
+Загружать | Upload, download, load |Есть разница - зависит от направления|
 Квантование | Binning | |
 Свертка столбцов | Unpivoting | |
 Количества производных элементов | Derived item count | |
@@ -263,7 +263,6 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Конечные классы | Coarse сlasses | |
 Завершенные процессы | Completed processes | |
 Перетащите выражение | Drag expression | |
-Пропущенное значение | Missing value | |
 Настроить узел | Configure node | |
 Настроить порядок выполнения | Customize execution order | |
 По умолчанию | Default | |

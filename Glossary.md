@@ -358,12 +358,13 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Индекс выходного набора | Output data set index | |
 В конце набора | End of set | |
 В начале набора | Start of set | |
-Очистка содержимого | Truncate
-Порядковый номер | Order number
-Именованный диапазон | Named range
-Плохо обусловленная матрица факторного отображения | Ill-conditioned factor mapping matrix
-Признак контейнера  | Container flag
+Очистка содержимого | Truncate | |
+Порядковый номер | Order number | |
+Именованный диапазон | Named range | |
+Плохо обусловленная матрица факторного отображения | Ill-conditioned factor mapping matrix | |
+Признак контейнера  | Container flag | |
 Порядок  | Matching index  | Имена аргументов в Arguments и в Description
+
 ### Общие рекомендации:
 
 1. Лучше использовать сокращенную версию, например, Сравнение – Compare и т .д.

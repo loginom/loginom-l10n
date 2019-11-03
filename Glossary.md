@@ -363,7 +363,7 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Именованный диапазон | Named range
 Плохо обусловленная матрица факторного отображения | Ill-conditioned factor mapping matrix
 Признак контейнера  | Container flag
-Порядок  | Matching index 
+Порядок  | Matching index  | Имена аргументов в Arguments и в Description
 ### Общие рекомендации:
 
 1. Лучше использовать сокращенную версию, например, Сравнение – Compare и т .д.

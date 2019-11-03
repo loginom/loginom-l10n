@@ -34,11 +34,11 @@
     "ErrUnsupportedParameterType": "Unsupported argument type"
   },
   "Net/ServerRemoteObjects": {
-    "ErrQueryInterfaceNotAllowed": "You cannot query interface with {0} identifier via QueryInterface",
+    "ErrQueryInterfaceNotAllowed": "Failed to query interface with {0} identifier via QueryInterface",
     "ErrUnknownMethodID": "Unknown method identifier {0}"
   },
   "Net/Session": {
-    "ErrCannotAddSessionToClosingSessionHost": "You cannot add a new session while SessionHost closing",
+    "ErrCannotAddSessionToClosingSessionHost": "Failed to add a new session while SessionHost closing",
     "ErrDifferentRpcExceptionDelegateAlreadyRegistered": "Another RPC exception handler already registered",
     "ErrDifferentRpcVerionAlreadyRegistered": "Another RPC version number already registered",
     "ErrDisconnectedSession": "Connection lost",
@@ -57,7 +57,7 @@
     "ErrUnknownInterfaceID": "Unknown interface identifier: {0}"
   },
   "Net/SparseArray": {
-    "ErrCannotAddDefaultValue": "You cannot add a default type value to the sparse array",
+    "ErrCannotAddDefaultValue": "Failed to add a default type value to the sparse array",
     "ErrItemNotExist": "Item with {0} index does not exist"
   },
   "Net/System": {

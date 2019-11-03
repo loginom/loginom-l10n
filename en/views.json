@@ -158,7 +158,7 @@
       "boxLabel": "Run a node and all its sub nodes.<br>During the batch processing, this node and all its subnodes will be activated in the run mode. When the feature is disabled, the specified node and all its subnodes will not be activated for execution in the batch mode."
     },
     "chbTeachBatchMode": {
-      "boxLabel": "Retrain a node and all its sub nodes.<br>During the batch processing, this node and all its subnodes, for which the model can be rebuilt, will be activated in the training mode. When the feature is disabled, the specified node and all its subnodes will not be activated for training in the batch mode."
+      "boxLabel": "Retrain a node and all its sub nodes.<br>During the batch processing, this node and all its subnodes for which the model can be rebuilt, will be activated in the training mode. When the feature is disabled, the specified node and all its subnodes will not be activated for training in the batch mode."
     },
     "cntBatchProcModes": {
       "title": "Valid Modes of Batch Processing"
@@ -2647,9 +2647,9 @@
       "tooltip": "Move up"
     },
     "colActionChecked": {
-      "altText": "Display",
-      "menuText": "Display",
-      "text": "Display"
+      "altText": "Show",
+      "menuText": "Show",
+      "text": "Show"
     },
     "colActionDelete": {
       "tooltip": "Delete all..."
@@ -2687,7 +2687,7 @@
       "title": "Available DWH Items"
     },
     "mniChecked": {
-      "text": "Display"
+      "text": "Show"
     },
     "mniDelete": {
       "text": "Delete"
@@ -3971,7 +3971,7 @@
       "text": "Predicted"
     },
     "colEvents": {
-      "text": "Correct"
+      "text": "Actually"
     },
     "lblConfusionMatrix": {
       "text": "Confusion matrices"

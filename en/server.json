@@ -164,7 +164,7 @@
     "ErrMessageDefNotFound": "\"%s\" message referenced by \"%s\" operation of \"%s\" binding not found",
     "ErrMessageMustSpecifyExtension": "\"%s\" message extension (\"%s\" operation of \"%s\" binding) not specified or not supported",
     "ErrMessageSoapVersionConflict": "SOAP version of %s message conflicts with %s operation version",
-    "ErrMimeContentMessageDefHasMultipleOrNoParts": "\"<%s/>\" element without \"part\" attribute refers to \"%s\" message definition which contains more than one part or does not contain any",
+    "ErrMimeContentMessageDefHasMultipleOrNoParts": "\"<%s/>\" element without \"part\" attribute refers to \"%s\" message definition, which contains more than one part or does not contain any",
     "ErrMimeContentReferencesComplexElement": "mime:content extension element in \"%s\" message (\"%s\" operation) is associated with \"%s\" part that refers to %s{%s} XSD schema element related to the complex type",
     "ErrMimeContentReferencesComplexType": "mime:content extension element in \"%s\" message (\"%s\" operation) is associated with \"%s\" part that refers to the complex type of %s{%s} XSD schema",
     "ErrNoDefinitionsElement": "<definitions/> element of WSDL description is missing or does not belong to the WSDL namespace",
@@ -202,7 +202,7 @@
     "ErrOneOfSubNodesMustBeSelected": "%s schema node must have at least one subnode selected for export",
     "ErrValueIntExportImpossible": "Failed to export value %d to XML document node with \"%s\" type: %s",
     "ErrXMLExportContextNoDataSource": "Attempt to create XML export context not specifying data source",
-    "ErrXMLExportRootElementAttributeRepeats": "You cannot re-add %s attribute to %s XML document root element",
+    "ErrXMLExportRootElementAttributeRepeats": "Failed to re-add %s attribute to %s XML document root element",
     "ErrXMLExportRootElementSubElementRepeats": "Failed to re-add %s element to root element of %s XML document",
     "ErrXMLExportSchemaDoesNotAllowElement": "XSD schema does not allow to export %s element to current XML document",
     "NodePath": "Tree node path"
@@ -251,7 +251,7 @@
   },
   "Common/XML/SAX/XMLSAX": {
     "ErrImplementationIntfNotSupported": "%s interface not supported by %s implementation",
-    "ErrParserIsActive": "You cannot change parser properties during parsing"
+    "ErrParserIsActive": "Failed to change parser properties during parsing"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
     "ErrParseFile": "Error in row %d, position %d while parsing '%s' file:\n  %s",
@@ -272,7 +272,7 @@
     "ErrSaxParserNotCreated": "MSXML SAX parser COM object not created",
     "ErrSaxParserPropertyInvalidArg": "Invalid argument type when setting '%s' property of MSXML SAX parser",
     "ErrSaxParserPropertyUnknownError": "Unknown error setting '%s' property of MSXML SAX parser",
-    "ErrSaxParserPutFeature": "Error setting '%s' option of MSXML SAX parser",
+    "ErrSaxParserPutFeature": "Error when setting '%s' option of MSXML SAX parser",
     "ErrSaxParserPutHandler": "Error when setting handler of MSXML SAX parser: %s",
     "ErrSaxParserPutProperty": "Error setting '%s' property of MSXML SAX parser",
     "ErrUnsupportedXSDImplementation": "This implementation of IBGXSD interface is not supported",
@@ -454,7 +454,7 @@
     "VendorDesc": "User binning"
   },
   "components/calcdata/CalcData": {
-    "ErrExceededRecursiveCalls": "Maximum number of (%d) recursive calls of Data function in \"%s\" expression exceeded.\nTo solve this problem you must enable Caching.",
+    "ErrExceededRecursiveCalls": "Maximum number of (%d) recursive calls of Data function in \"%s\" expression exceeded.\nTo solve this problem it is required to enable Caching.",
     "ErrExprIsStringType": "\"%s\" expression of string type",
     "InputVariables": "Input variables",
     "NameNotExists": "No field, variable or expression with \"%s\" name exists"
@@ -485,7 +485,7 @@
     "ErrBracket": "Incorrect brackets",
     "ErrIllegalCharacter": "Invalid \"%s\" character",
     "ErrInvalidExpression": "Invalid expression: \"%s\"",
-    "ErrQuote": "Unclosed string constant in line %d",
+    "ErrQuote": "Unclosed string constant in %d line",
     "ErrUnknownFunction": "Unknown function: %s"
   },
   "components/calcvariables/CalcVariables": {
@@ -552,8 +552,8 @@
     "VendorDesc": "Data clustering"
   },
   "components/coarseclasses/CoarseClassesBuilder": {
-    "ErrCantApplyExternalBinning": "You cannot apply binning for %s column.",
-    "ErrCantApplyFineClassesBinning": "You cannot apply fine classes for binning for %s column. There are too many unique values",
+    "ErrCantApplyExternalBinning": "Failed to apply binning for %s column.",
+    "ErrCantApplyFineClassesBinning": "Failed to apply fine classes for binning for %s column. There are too many unique values",
     "ErrCantLoadBackup": "Failed to restore binning",
     "ErrCantSaveBackup": "Failed to save current binning",
     "ErrContDataKindExpected": "Continuous data kind of %s column expected",
@@ -721,7 +721,7 @@
     "VendorDesc": "Aggregate data into variables"
   },
   "components/datatoxml/DataToXML": {
-    "ErrCannotProceedWithoutRootElement": "To perform the operation you must first select the root XML element",
+    "ErrCannotProceedWithoutRootElement": "To perform the operation it is required to select the root XML element first",
     "ErrDocIDColumnNotAssigned": "No field that is the Document Identifier defined",
     "ErrExportNotConfigured": "XML tree not configured",
     "ErrIncorrectExportConfiguration": "Errors in configuration",
@@ -817,7 +817,7 @@
     "ErrExtractXML": "Error extracting XML from row %d of the input data set:\n  Error code: %d\n  Message: %s",
     "ErrExtractXMLInitError": "Error initializing Extract XML:\n  %s",
     "ErrImportNotConfigured": "Import tree not configured",
-    "ErrInputFieldNotSelected": "You must specify containing XML field",
+    "ErrInputFieldNotSelected": "It is required to specify XML containing field",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
     "ErrNoInputDataSource": "No input data source connected",
     "ErrNothingSelected": "No nodes selected for import",
@@ -1141,7 +1141,7 @@
     "ErrContextCreateNoRows": "The log. regression model builder context cannot be created for empty data set"
   },
   "components/logregression/LogRegressionEngine": {
-    "ActualEvent": "Event|Fact",
+    "ActualEvent": "Event| Actual",
     "Chi2": "Chi-square",
     "ColumnDisplayName": "Input field captions",
     "ColumnName": "Input field names",
@@ -1272,14 +1272,14 @@
     "CVPassProcessCaption": "Iteration %d",
     "CVProcessCaption": "Cross validation",
     "DecayDegree": "Decay degree",
-    "ErrCannotContinueTraining": "You cannot continue training since the structure of the trained neural network does not correspond to the new training parameters",
+    "ErrCannotContinueTraining": "Failed to continue training since the structure of the trained neural network does not correspond to the new training parameters",
     "ErrClassifierUnknownClass": "Unknown class is present in the output classifier column",
     "ErrDataSourceNumInputsMismatch": "Input data %d dimension mismatches the number of neural network inputs %d",
     "ErrInvalidNeuronKind": "Invalid neuron kind: %d",
     "ErrLayerNeuronCountMismatch": "The layer neuron count mismatches the required value %d",
     "ErrMissingOrInfiniteValue": "Only non-empty final values are allowed in the data",
     "ErrMustSetEqualLayerSizes": "Before requesting the coarse size of the neural network, the setting of the same number of neurons in the hidden layers is required",
-    "ErrNetworkUntrained": "You cannot perform the requested operation using the untrained neural network",
+    "ErrNetworkUntrained": "Failed to perform the requested operation using the untrained neural network",
     "ErrNeuronWeightsCountMismatch": "The specified count of input neuron weights %d mismatches the required %d value",
     "ErrNoInputColumns": "Neural network input data columns not set",
     "ErrNoOutputColumns": "Neural network output data columns not set",
@@ -1307,7 +1307,7 @@
     "ValidationSetProcessCaption": "Validation data set iteration"
   },
   "components/neuralnet/NeuralNetEngine": {
-    "ActualClsIDColumn": "Class ID|Fact",
+    "ActualClsIDColumn": "Class ID|Actual",
     "CVAvgCE": "Average cross-entropy in cross validation",
     "CVAvgError": "The mean absolute error in cross validation",
     "CVAvgRelError": "The mean relative error in cross validation",
@@ -1715,7 +1715,7 @@
     "VendorDesc": "Export data to text file"
   },
   "exports/xml/ExportXML": {
-    "ErrCannotProceedWithoutRootElement": "To perform the operation you must first select the root XML element for export",
+    "ErrCannotProceedWithoutRootElement": "To perform the operation it is required to select the root XML element for export first",
     "ErrExportNotConfigured": "Export tree not configured",
     "ErrIncorrectExportConfiguration": "Errors in configuration",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
@@ -1778,7 +1778,7 @@
     "ErrParseFmt": "Error occurred while parsing line %d: %s",
     "ErrPropInvalidNamedRange": "Invalid named range",
     "ErrPropInvalidSheetName": "The excel sheet name cannot contain the following characters: ? * / [ ]",
-    "ErrPropNamedRange": "Named range not specified",
+    "ErrPropNamedRange": "Named range name not specified",
     "ErrPropNamedRangeNotFound": "\"%s\" named range not found in \"%s\" file",
     "ErrPropSheetName": "Excel sheet name not specified",
     "ErrPropSheetNumber": "Incorrect Excel worksheet index",
@@ -1956,10 +1956,10 @@
     "ErrRowCountLimitReached": "Maximum row count limit reached"
   },
   "Libraries/bgrtl/CachedDataTree": {
-    "ErrCannotGetForeignKey": "You cannot get the foreign key for the node with %d identifier: the node is not an array",
-    "ErrCannotGetNodeExistFlag": "You cannot get the node exist flag with %d identifier: the node is not a simple container",
-    "ErrCannotGetNodeValue": "You cannot get the node value with %d identifier: the node is a container",
-    "ErrCannotGetRowCount": "You cannot get the row count for the node with %d identifier: the node is not an array",
+    "ErrCannotGetForeignKey": "Failed to get the foreign key for the node with %d identifier: the node is not an array",
+    "ErrCannotGetNodeExistFlag": "Failed to get the node exist flag with %d identifier: the node is not a simple container",
+    "ErrCannotGetNodeValue": "Failed to get the node value with %d identifier: the node is a container",
+    "ErrCannotGetRowCount": "Failed to get the row count for the node with %d identifier: the node is not an array",
     "ErrColumnIndexOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrInvalidNodeInfo": "Invalid node description: %s",
     "ErrRowCountLimitReached": "Maximum row count limit reached",
@@ -1980,7 +1980,7 @@
     "ErrSameItemsGuid": "\"%s\" and \"%s\" items have the same \"%s\" identifiers",
     "ErrSameItemsID": "\"%s\" and \"%s\" items have the same identifiers \"%d\"",
     "ErrSameItemsName": "\"%s\" and \"%s\" items have the same \"%s\" names",
-    "ErrUnableToRecreateNamesIndex": "You cannot recreate node name index",
+    "ErrUnableToRecreateNamesIndex": "Failed to recreate node name index",
     "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered",
     "ErrVendorNameConverterAlreadyRegistered": "Name converter from \"%s\" to\"%s\" vendors already registered",
     "GuidDesc": "Item GUID",
@@ -2015,8 +2015,8 @@
   },
   "Libraries/bgrtl/ColumnsMultiLinks": {
     "ErrAlienLinkedColumn": "\"%s\" field does not belong to any of the used field lists",
-    "ErrCannotDeleteNotDynamicLink": "You cannot delete non-dynamic link",
-    "ErrCannotLinkColumnsFromSameTable": "You cannot link \"%s\" and \"%s\" columns from the same table",
+    "ErrCannotDeleteNotDynamicLink": "Failed to delete non-dynamic link",
+    "ErrCannotLinkColumnsFromSameTable": "Failed to link \"%s\" and \"%s\" columns from the same table",
     "ErrColumnCanBeIncludedInOnlyOneLink": "\"%s\" column of table %d can only be part of a \"single\" link",
     "ErrLinkedColumnTypesMismatch": "\"%s\" and \"%s\" types of linked columns mismatch",
     "ErrLinkMustContainMainTableColumn": "The main table field must be provided while link is created",
@@ -2060,14 +2060,14 @@
     "ErrDataSourceNotConfigured": "Data set not configured",
     "ErrDataSourceNotEditing": "Data set is not in the edited state",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range",
-    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method without calling BeginUpdate first"
+    "ErrUnexpectedEndUpdate": "Failed to call EndUpdate method without calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataSetColumns": {
     "ErrDataSoureNotAssigned": "No data set reference"
   },
   "Libraries/bgrtl/DataTree": {
     "ErrAlienNodeInfo": "Description of \"%s\" node does not belong to the current tree",
-    "ErrCannotAppendNodeBeforeParentNode": "You cannot append \"%s\" node before the parent node",
+    "ErrCannotAppendNodeBeforeParentNode": "Failed to append \"%s\" node before the parent node",
     "ErrCannotPostNodeBeforeChildNodes": "Post method calling for \"%s\" node before the Post call for the child nodes is forbidden",
     "ErrCannotPostNodeWithoutAppend": "Post method calling for \"%s\" node without the Append call is forbidden",
     "ErrCannotRepeatAppendNode": "Repeated Append calling for \"%s\" node without the Post call is forbidden",
@@ -2077,13 +2077,13 @@
     "ErrDataTreeNotConfigured": "Tree not configured",
     "ErrDataTreeNotEditing": "Tree is not in the edited state",
     "ErrIsNotAncestorNode": "\"%s\" node is not ancestor of \"%s\" node",
-    "ErrUnexpectedEndUpdate": "You cannot call EndUpdate method without calling BeginUpdate first"
+    "ErrUnexpectedEndUpdate": "Failed to call EndUpdate method without calling BeginUpdate first"
   },
   "Libraries/bgrtl/DataTreeNodeDefs": {
-    "ErrCannotInitializeNodeWithDifferentContainerFlag": "You cannot initialize the node from the source node, which differs by the meaning of the container indicator.",
-    "ErrChangeDataKindNotAllowed": "You cannot change the data kind of the node that is a container",
-    "ErrChangeDataTypeNotAllowed": "You cannot change the data type of the node that is a container",
-    "ErrChangeIsContainerNotAllowed": "You cannot change the container indicator of a node that is a root node, or contains child nodes",
+    "ErrCannotInitializeNodeWithDifferentContainerFlag": "Failed to initialize the node from the source node, which differs by the container flag value.",
+    "ErrChangeDataKindNotAllowed": "Failed to change the data kind of the node that is a container",
+    "ErrChangeDataTypeNotAllowed": "Failed to change the data type of the node that is a container",
+    "ErrChangeIsContainerNotAllowed": "Failed to change the container indicator of a node that is a root node, or contains child nodes",
     "ErrNodeCantBeContinuous": "\"%s\" node of \"%s\" type cannot be continuous",
     "ErrOnlyContainerNodeCanHaveSubNodes": "Only container node can have subnodes",
     "Root": "Root node",
@@ -2105,10 +2105,10 @@
     "ErrSingleConnectionPointSinkIsNil": "Connection point has no connection"
   },
   "Libraries/bgrtl/DerivedCollectionItemAspects": {
-    "ErrCannotChangeDerivedCollectionItemName": "You cannot change the derived collection item name",
-    "ErrCannotChangeDerivedFieldDataType": "You cannot change the derived field data type",
-    "ErrCannotDeleteDerivedCollectionItem": "You cannot delete the derived collection item name",
-    "ErrCannotMoveDerivedCollectionItem": "You cannot change position of the derived collection items"
+    "ErrCannotChangeDerivedCollectionItemName": "It is forbidden to change the derived collection item name",
+    "ErrCannotChangeDerivedFieldDataType": "It is forbidden to change the derived field data type",
+    "ErrCannotDeleteDerivedCollectionItem": "It is forbidden to delete the derived collection item name",
+    "ErrCannotMoveDerivedCollectionItem": "It is forbidden to change position of the derived collection items"
   },
   "Libraries/bgrtl/DerivedDataSet": {
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
@@ -2147,8 +2147,8 @@
   "Libraries/bgrtl/ExceptUtils": {
     "ErrAbstract": "Abstract method calling %s",
     "ErrAbstractMethod": "Abstract method calling %s.%s",
-    "ErrAssign": "You cannot assign property values of %s object  to the object values of the unsupported class %s",
-    "ErrAssignIntf": "You cannot assign property values of %s object  to the object values of the unsupported interface",
+    "ErrAssign": "Failed to assign property values of %s object  to the object values of the unsupported class %s",
+    "ErrAssignIntf": "Failed to assign property values of %s object  to the object values of the unsupported interface",
     "ErrFloatParamIsNan": "\"%s\" parameter value equal to NaN is not allowed",
     "ErrInvalidIndex": "Index value %d of \"%s\" parameter is out of [%d; %d] range",
     "ErrMethodParamIsNull": "%s parameter of %s method must be initialized",
@@ -2167,7 +2167,7 @@
     "ErrPropertyIsReadOnly": "%s property is read-only"
   },
   "Libraries/bgrtl/ExecutionContext": {
-    "ErrDeleteValueMismatch": "You cannot retrieve the element with %s key from the execution context that does not match the current element in the context",
+    "ErrDeleteValueMismatch": "Failed to retrieve the element with %s key from the execution context that does not match the current element in the context",
     "ErrExecutionContextAlreadyExists": "Failed to install the external execution context: context already exists",
     "ErrExistingExecutionContextIsLocal": "The execution context used is not external",
     "ErrExternalExecutionContextNotInstalled": "The external execution context not installed",
@@ -2184,12 +2184,12 @@
   },
   "Libraries/bgrtl/ExportStream": {
     "ErrDataProducerCloseFail": "Error occurred while closing the data generator: %s",
-    "ErrReadAfterForceStop": "You cannot read: stream was forcedly stopped."
+    "ErrReadAfterForceStop": "Failed to read: stream was forcedly stopped."
   },
   "Libraries/bgrtl/Extensions": {
     "ErrBaseExtensionMultipleFound": "There are several extensions for %s base identifier",
     "ErrBaseExtensionNotFound": "No extension for %s base identifier found",
-    "ErrDeleteExtension": "You cannot delete extension with index %d",
+    "ErrDeleteExtension": "Failed to delete extension with index %d",
     "ErrExtensionAlreadyExists": "\"%s\" extension already exists",
     "ErrExtensionAlreadyInitialized": "Extension already initialized",
     "ErrExtensionsInstanceDestroyForbidden": "Explicit deletion of the extension list instance is forbidden",
@@ -2312,7 +2312,7 @@
     "ErrBadMatrix": "Two-dimensional dynamic array is not rectangular matrix",
     "ErrDeterminantIsZero": "It is impossible to calculate the inverse matrix: determinant is zero.",
     "ErrDispersionIsZero": "It is impossible to calculate the correlation matrix:  variance of one of the values is zero",
-    "ErrMultMatrixVectDimMismatch": "You cannot multiply matrix by vector with a different number of matrix columns and vector length.",
+    "ErrMultMatrixVectDimMismatch": "Failed to multiply matrix by vector with a different number of matrix columns and vector length.",
     "ErrNotSqrMatr": "The coefficient matrix must be a square matrix.",
     "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function",
     "ErrRegressPowerAndDataErr": "The inequality 0 <= \"polynomial degree\" < \"data points count\" must be fulfilled for proper regression function application.",
@@ -2330,8 +2330,8 @@
     "ErrOwnerDiposedBeforeActionCookie": "The object has been disposed before the object action Cookie"
   },
   "Libraries/bgrtl/ProgressTracker": {
-    "ErrCannotChangeMaxSavedProcessCount": "You cannot change the maximum count of saved processes: buffer of saved processes has already been used",
-    "ErrUnableAddChildToTerminatedProcess": "You cannot add subprocess to the incorrectly terminated process"
+    "ErrCannotChangeMaxSavedProcessCount": "Failed to change the maximum count of saved processes: buffer of saved processes has already been used",
+    "ErrUnableAddChildToTerminatedProcess": "Failed to add subprocess to the incorrectly terminated process"
   },
   "Libraries/bgrtl/QueueException": {
     "ErrAggregateExceptionMessage": "Exceptions occurred while processing",
@@ -2369,7 +2369,7 @@
     "ErrServiceVariablesAlreadyInitialized": "Service variables have already been initialized"
   },
   "Libraries/bgrtl/Singleton": {
-    "ErrObjectDeleteRefCount": "You cannot delete the object of %s class due to interface references to it: %d",
+    "ErrObjectDeleteRefCount": "Failed to delete the object of %s class due to interface references to it: %d",
     "ErrSingletonInstanceDestroyForbidden": "Explicit deletion of the single instance of %s class is forbidden",
     "ErrUnexpectedRelease": "Attempt to reduce the interface links number not first increasing this number first"
   },
@@ -2403,25 +2403,25 @@
     "NullValue": "<Null>"
   },
   "Libraries/bgrtl/SyncObjs": {
-    "ErrSlimReadWriteLockDebugDowngradeToRead": "You cannot decreaase the lock level of synchronizer %p from write lock to read lock without first increasing the level",
+    "ErrSlimReadWriteLockDebugDowngradeToRead": "Failed to decreaase the lock level of synchronizer %p from write lock to read lock without first increasing the level",
     "ErrSlimReadWriteLockDebugFinalized": "Synchronizer %p finalized",
-    "ErrSlimReadWriteLockDebugLockRead": "You cannot lock for reading synchronizer %p that has already been locked from the same stream",
-    "ErrSlimReadWriteLockDebugLockWrite": "You cannot lock for writing synchronizer %p that has already been locked from the same stream",
-    "ErrSlimReadWriteLockDebugTryUpgradeToWrite": "You cannot increase the lock level of synchronizer %p from read lock to write lock without first locking it for reading",
+    "ErrSlimReadWriteLockDebugLockRead": "Failed to lock for reading synchronizer %p that has already been locked from the same stream",
+    "ErrSlimReadWriteLockDebugLockWrite": "Failed to lock for writing synchronizer %p that has already been locked from the same stream",
+    "ErrSlimReadWriteLockDebugTryUpgradeToWrite": "Failed to increase the lock level of synchronizer %p from read lock to write lock without first locking it for reading",
     "ErrSlimReadWriteLockDebugTryUpgradeToWriteSameThread": "Incorrect call of the method required to increase the synchronizer lock level %p from read lock to write lock",
-    "ErrSlimReadWriteLockDebugUnLockRead": "You cannot release read lock from synchronizer %p without first blocking it for reading",
-    "ErrSlimReadWriteLockDebugUnLockWrite": "You cannot release write lock from synchronizer %p without first blocking it for writing",
+    "ErrSlimReadWriteLockDebugUnLockRead": "Failed to release read lock from synchronizer %p without first blocking it for reading",
+    "ErrSlimReadWriteLockDebugUnLockWrite": "Failed to release write lock from synchronizer %p without first blocking it for writing",
     "ErrSlimReadWriteLockDowngradeToRead": "Synchronizer %p downgrade error from write lock to read lock",
     "ErrSlimReadWriteLockFinalize": "Synchronizer %p cannot be deleted as it has been still being used",
-    "ErrSlimReadWriteLockLockRead": "You cannot lock synchronizer %p for reading",
-    "ErrSlimReadWriteLockLockWrite": "You cannot lock synchronizer %p for writing",
+    "ErrSlimReadWriteLockLockRead": "Failed to lock synchronizer %p for reading",
+    "ErrSlimReadWriteLockLockWrite": "Failed to lock synchronizer %p for writing",
     "ErrSlimReadWriteLockUnLockRead": "Error releasing read locks of synchronizer %p",
     "ErrSlimReadWriteLockUnLockWrite": "Error releasing write locks of synchronizer %p",
     "ErrSpinLockFinalize": "Synchronizer %p cannot be used as it has already been finalized",
     "ErrWaitCount": "Invalid count of %d objects for waiting operation"
   },
   "Libraries/bgrtl/SysHeap": {
-    "ErrObjectDeleteRefCount": "You cannot delete the object of %s class due to interface references to it: %d"
+    "ErrObjectDeleteRefCount": "Failed to delete the object of %s class due to interface references to it: %d"
   },
   "Libraries/bgrtl/System": {
     "ErrConvertCharToAnsiChar": "Failed to convert %s Unicode character with code %d to Ansi character",
@@ -2441,8 +2441,8 @@
     "ErrInterfaceNotSupported": "%s interface not supported by object",
     "ErrInvalidClassTypecast": "The object is not a descendant of %s class",
     "ErrInvalidGUID": "Failed to convert \"%s\" row to GUID",
-    "ErrMaxEndThreadProcCountReached": "You cannot register more than %d procedures of finalization for a stream",
-    "ErrObjectDeleteRefCount": "You cannot delete the object of %s class due to interface references to it: %d",
+    "ErrMaxEndThreadProcCountReached": "Failed to register more than %d procedures of finalization for a stream",
+    "ErrObjectDeleteRefCount": "Failed to delete the object of %s class due to interface references to it: %d",
     "ErrObjectIsNil": "Null object reference"
   },
   "Libraries/bgrtl/SysUtils": {
@@ -2455,8 +2455,8 @@
     "ErrStreamNotAssigned": "Source data stream not initialized"
   },
   "Libraries/bgrtl/ThreadPool": {
-    "ErrCannotChangeParams": "You cannot change the thread pool parameters upon start of its applying",
-    "ErrCannotWaitForSelf": "You cannot wait for completion of the same task inside the task",
+    "ErrCannotChangeParams": "Failed to change the thread pool parameters upon start of its applying",
+    "ErrCannotWaitForSelf": "Failed to wait for completion of the same task inside the task",
     "ErrJoin": "One or several subtasks failed",
     "ErrThreadPoolDestroyed": "The task cannot be completed because the thread pool containing it has been deleted",
     "ErrWorkItemIsNull": "Reference to task object not initialized"
@@ -2466,7 +2466,7 @@
   },
   "Libraries/bgrtl/Trees": {
     "ErrTreeWalk": "This tree walk implementation is missing",
-    "ErrUnableToRecreateNamesIndex": "You cannot recreate node name index",
+    "ErrUnableToRecreateNamesIndex": "Failed to recreate node name index",
     "NodeIndexDesc": "Node index",
     "NodeMetaDesc": "Node",
     "RootDesc": "Root node",
@@ -2485,7 +2485,7 @@
   },
   "Libraries/bgrtl/TuneVariables": {
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable variable \"%s\"",
-    "ErrSourceVariableAssigned": "You cannot edit the custom variable value for which the source variable is set",
+    "ErrSourceVariableAssigned": "Failed to edit the custom variable value for which the source variable is set",
     "ErrSourceVariableNotFound": "Failed to find the source variable %s for the configurable variable %s",
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
   },
@@ -2562,8 +2562,8 @@
   },
   "Libraries/bgrtl/VariablesMultiLinks": {
     "ErrAlienLinkedVariable": "\"%s\" variable does not belong to any variable list being used",
-    "ErrCannotDeleteNotDynamicLink": "You cannot delete non-dynamic link",
-    "ErrCannotLinkVariablesFromSameTable": "You cannot link \"%s\" and \"%s\" variables from the same table",
+    "ErrCannotDeleteNotDynamicLink": "Failed to delete non-dynamic link",
+    "ErrCannotLinkVariablesFromSameTable": "Failed to link \"%s\" and \"%s\" variables from the same table",
     "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch",
     "ErrLinkMustContainMainTableVariable": "When creating link, the main table variable must be provided",
     "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
@@ -2590,7 +2590,7 @@
     "ErrArchiveNotOpen": "Archive not open",
     "ErrCompressErr": "Data compression error",
     "ErrCompressStream": "Compressed data stream error",
-    "ErrCreateReadStream": "You cannot create a read stream until the write stream is finished",
+    "ErrCreateReadStream": "Failed to create a read stream until the write stream is finished",
     "ErrCreateWriteStream": "Failed to create the write stream",
     "ErrDeleteFilr": "Failed to update file headers",
     "ErrDirectoryEndRecordx64": "Failed to find directories in archive",
@@ -2600,8 +2600,8 @@
     "ErrMultipleTransactions": "Adding several files to the archive in parallel is not supported",
     "ErrReopenArchive": "Failed to constantly open archive",
     "ErrReWriteLocalFileHeader": "Error updating local file header",
-    "ErrSeekRead": "You can only move forward in the data stream",
-    "ErrSeekWrite": "You cannot move along the data stream",
+    "ErrSeekRead": "It is possible to move only forward in the data stream",
+    "ErrSeekWrite": "Failed to move along the data stream",
     "ErrWriteAfterEnd": "Stream already completed",
     "ErrWrongHMAC": "Data encryption error",
     "ErrWrongPassword": "Wrong password"
@@ -2980,10 +2980,10 @@
     "OriginalComponentVendorGuidDesc": "Original component GUID"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
-    "ErrCannotChangeDerivedSocketType": "You cannot change the derived ports data type",
-    "ErrCannotDeleteDerivedConnections": "You cannot delete derived connections",
-    "ErrCannotDeleteDerivedSocket": "You cannot delete the derived ports",
-    "ErrCannotDeleteDerivedVendors": "You cannot delete derived components"
+    "ErrCannotChangeDerivedSocketType": "It is forbidden to change the derived ports data type",
+    "ErrCannotDeleteDerivedConnections": "Failed to delete derived connections",
+    "ErrCannotDeleteDerivedSocket": "It is forbidden to delete the derived ports",
+    "ErrCannotDeleteDerivedVendors": "It is forbidden to delete derived components"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
     "ErrInputSocketDefIsEmtpy": "The following input types are not specified: ",
@@ -3126,8 +3126,8 @@
     "ErrInterfaceNotSupported": "Input and output ports are incompatible"
   },
   "Libraries/Model/ModelSocketItems": {
-    "ErrCannotAddNotMultipleSocket": "You cannot dynamically add non-multiple port",
-    "ErrCannotDeleteNotDynamicSocket": "You cannot delete non-dynamic port",
+    "ErrCannotAddNotMultipleSocket": "Failed to add non-multiple port dynamically",
+    "ErrCannotDeleteNotDynamicSocket": "Failed to delete non-dynamic port",
     "ErrItemBySocketNotFound": "Port not found in the list",
     "ErrMaxOccursOfMultipleSocketIsReached": "Maximum multiple port count reached",
     "SocketMetaDesc": "Port"
@@ -3205,7 +3205,7 @@
     "ErrMsgNoSubModel": "Supernode component not created",
     "ErrMsgNoVendorInfo": "Failed to get information on the derived component for \"%s\" node",
     "ErrMsgNoVendorLocator": "Failed to get port vendor enumerator",
-    "ErrSubModelVendorNotCreated": "You cannot create the supernode component In the current context",
+    "ErrSubModelVendorNotCreated": "Failed to create the supernode component In the current context",
     "WarnModelNotSupportInPort": "Failed to create input port for \"%s\" port",
     "WrnNullRttiInfo": "Invalid supernode port definition vendor detected",
     "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
@@ -3261,7 +3261,7 @@
   },
   "Libraries/Model/Variables/SocketVariablesMultiLinks": {
     "ErrAlienLinkedVariable": "\"%s\" variable does not belong to any variable list being used",
-    "ErrCannotLinkVariablesFromSameTable": "You cannot link \"%s\" and \"%s\" variables from the same table",
+    "ErrCannotLinkVariablesFromSameTable": "Failed to link \"%s\" and \"%s\" variables from the same table",
     "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables are not compatible"
   },
   "Libraries/Model/Variables/TuneVariablesSocketConstraint": {
@@ -3314,7 +3314,7 @@
     "OutputDataSource": "Output data set"
   },
   "Libraries/Normalization/FixedNormalData": {
-    "ErrArrayExpceted": "You cannot denormalize a single element. Array from %d elements must be at the input.",
+    "ErrArrayExpceted": "Failed to denormalize a single element. Array from %d elements must be at the input.",
     "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
     "ErrWrongArraySize": "Size %1:d of '%0:s' array not equal to the expected size of  array %2:d"
   },
@@ -3331,8 +3331,8 @@
   },
   "Libraries/Normalization/NormalData": {
     "CalculateCacheProcessCaption": "Data set caching",
-    "ErrArrayExpected": "You cannot denormalize a single element. Array from %1:d elements must be denormalized for \"%0:s\" column.",
-    "ErrImpossibleToAllocate": "You cannot allocate memory for cached normalized data source",
+    "ErrArrayExpected": "Failed to denormalize a single element. Array from %1:d elements must be denormalized for \"%0:s\" column.",
+    "ErrImpossibleToAllocate": "Failed to allocate memory for cached normalized data source",
     "ErrNotEnoughCache": "Insufficient cache size to store normalized data string",
     "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
     "ErrUnexpectedEndUpdate": "EndUpdate call without corresponding BeginUpdate",
@@ -3353,7 +3353,7 @@
   },
   "Libraries/Normalization/Normalizers": {
     "ErrCorrectionMissed": "Denormalization coefficients correction ignored",
-    "ErrInvalidDenormCode": "You cannot denormalize the discrete field value",
+    "ErrInvalidDenormCode": "Failed to denormalize the discrete field value",
     "ErrLessThanMin": "The normalized value is less than the range minimum value",
     "ErrMoreThanMax": "The normalized value is more than the range maximum value",
     "ErrNormLessThanMin": "The denormalized value is less than the range minimum value",
@@ -3369,7 +3369,7 @@
   "Libraries/Normalization/NormalizerSettings": {
     "ErrMinMaxNormTypeNotSupported": "The selected \"%s\" normalization type is not supported by Min-Max normalization settings",
     "ErrMinMaxStatNaN": "Failed to calculate the maximum/minimum value for the range normalization settings, \"%s\" column",
-    "ErrNanDivisor": "You cannot calculate divisor to normalize relations, \"%s\" column",
+    "ErrNanDivisor": "Failed to calculate divisor to normalize relations, \"%s\" column",
     "ErrQuotientNormTypeNotSupported": "The selected \"%s\" normalization type is not supported by the relation normalization settings",
     "ErrQuotientStatNotSupported": "Use of the selected statistics parameter \"%s\" as divisor in the relation normalization settings is not allowed",
     "ErrStatDivisorNotAvailable": "The set statistic indicator \"%s\" cannot be used as relation normalization divisor"
@@ -3415,7 +3415,7 @@
     "CreateNormalDataProcessCaption": "Normalized data set creating",
     "CreateOutDataProcessCaption": "Output data set preparing",
     "ErrGetNormData": "Errors occurred while requesting normalized data set",
-    "ErrUniqueIndexNotDiscrete": "You cannot query the unique value index of non-discrete column",
+    "ErrUniqueIndexNotDiscrete": "Failed to query the unique value index of non-discrete column",
     "ErrUniqueValueNotFound": "\"%s\" not found in the list of configured unique values (\"%s\" column, string %d)"
   },
   "Libraries/Normalization/TuneNormDataSourceSocketDef": {
@@ -3450,7 +3450,7 @@
     "ErrNotCompatibleDataTypes": "Property and variable types are not compatible"
   },
   "Libraries/PropManager/InterfacePropManager": {
-    "ErrCannotSetPropertyToNull": "You cannot assign null value to \"%s\" property",
+    "ErrCannotSetPropertyToNull": "Failed to assign null value to \"%s\" property",
     "ErrCantAccessPropertyValue": "Failed to get access to value of \"%s\" property",
     "ErrDataTypeNotEqual": "The actual type of \"%s\" property does not match the requested one",
     "ErrFindInterfaceDublicate": "Interface duplicate found in metadata: \"%s\"",
@@ -3549,11 +3549,11 @@
     "ErrValueOutOfRange": "%d value is not in the range of allowable values %s"
   },
   "Libraries/rpc/ServerRemoteObjects": {
-    "ErrQueryInterfaceNotAllowed": "You cannot query interface with %s identifier via QueryInterface",
+    "ErrQueryInterfaceNotAllowed": "Failed to query interface with %s identifier via QueryInterface",
     "ErrUnknownMethodID": "Unknown method identifier: %d"
   },
   "Libraries/rpc/Session": {
-    "ErrCannotAddSessionToClosingSessionHost": "You cannot add a new session while SessionHost closing",
+    "ErrCannotAddSessionToClosingSessionHost": "Failed to add a new session while SessionHost closing",
     "ErrDifferentRpcExceptionProcAlreadyRegistered": "Another RPC exception handler already registered",
     "ErrDifferentRpcVerionAlreadyRegistered": "Another RPC version number already registered",
     "ErrDisconnectedSession": "Connection lost",
@@ -3609,22 +3609,22 @@
   "Studio/DeductorServer": {
     "ErrAccessDenied": "Access denied",
     "ErrCannotCreateDirectory": "Failed to create \"%s\" folder",
-    "ErrCannotDeleteBasePackage": "You cannot delete %s base package without deleting %s dependent package that references it",
+    "ErrCannotDeleteBasePackage": "Failed to delete %s base package without deleting %s dependent package that references it",
     "ErrCannotGetPackageLinkRef": "Failed to get the object reference to the package link with %s name",
     "ErrCannotGetPackageRef": "Failed to get the object reference to the package with %s name",
-    "ErrCannotSaveReadOnlyPackage": "You cannot save %s read-only package",
+    "ErrCannotSaveReadOnlyPackage": "Failed to save %s read-only package",
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
     "ErrDuplicatePublishedNodeName": "The package already contains more than one published node with \"%s\" name",
     "ErrEncryptedPackage": "Encrypted package \"%s\" cannot be opened to be viewed and edited",
     "ErrFailedToRestorePackage": "Failed to restore %s package",
-    "ErrFileAlreadyEditing": "You cannot save package in \"%s\" file. This file has already been used by another process",
+    "ErrFileAlreadyEditing": "Failed to save package in \"%s\" file. This file has already been used by another process",
     "ErrFileNameNotSpecified": "No file name specified",
     "ErrInvalidModelLockCookieOwner": "Invalid node lock Cookie owner specified",
     "ErrInvalidPath": "Invalid file path: \"%s\"",
     "ErrModelNodeNotFound": "Node %s not found",
     "ErrModelNodeNotPublished": "Node %s published",
-    "ErrMustRestoreReferencedPackage": "You cannot restore dependent package %s without restoring %s package to which it refers",
+    "ErrMustRestoreReferencedPackage": "Failed to restore dependent package %s without restoring %s package to which it refers",
     "ErrNoPublishedNodes": "The package contains no published nodes",
     "ErrPackageAlreadyEditing": "Package with %s name has already been used by another process and it cannot be opened for editing",
     "ErrPackageBackupReferencesAlreadyRevived": "References to other packages have already been restored for backup of %s package",
@@ -3635,7 +3635,7 @@
     "ErrPublishedModelNodeNotFound": "Failed to find published node with %s identifier",
     "ErrPublishedNodeNameIsEmpty": "No name for published node with \"%s\" caption specified",
     "ErrPublishedPackageNotFound": "Failed to find the published package with %s name and %s version",
-    "ErrSaveAsAlreadyOpenedPackage": "You cannot save package in \"%s\" file. The package with such file has already been opened in the current session.",
+    "ErrSaveAsAlreadyOpenedPackage": "Failed to save package in \"%s\" file. The package with such file has already been opened in the current session.",
     "ErrSavePackagePermissionDenied": "No appropriate rights to save package with %s name",
     "ErrSessionAlreadyContainsPackage": "%s package already open in the current session",
     "ErrSessionBackupAlreadyDeleted": "This session backup has already been deleted by another client from the current account",
@@ -3727,8 +3727,8 @@
     "WorkFlow": "Workflow"
   },
   "Viewers/Browse/BrowseView": {
-    "ErrExportBusy": "You cannot export table in the process of data modification",
-    "ErrExportDataInvalid": "You cannot export table with unprepared data",
+    "ErrExportBusy": "Failed to export table in the process of data modification",
+    "ErrExportDataInvalid": "Failed to export table with unprepared data",
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
     "LogColumnNotFoundFmt": "No %s field found in the input data set. The field has been deleted from the displayed fields.",
     "LogNewColumnFmt": "New %s field appeared in the input data set. The field has been added to the displayed fields.",
@@ -3857,8 +3857,8 @@
   },
   "Viewers/Cube/CubeView": {
     "CubeViewProcess": "Cube",
-    "ErrAlreadyExporting": "You cannot export a crosstab until the current export is finished",
-    "ErrExportCubeClosed": "You cannot export a crosstab when the Cube is inactive",
+    "ErrAlreadyExporting": "Failed to export a crosstab until the current export is finished",
+    "ErrExportCubeClosed": "Failed to export a crosstab when the Cube is inactive",
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
     "ErrPhantomCaseBracketsOpened": "Failed to create a temporary measure because another temporary measure exists",
     "IncLoadMatrixNotify": "Increment measure calculating",
@@ -4091,7 +4091,7 @@
   "Warehouse2/DWExtract": {
     "DWObjectName": "Object",
     "DWObjectType": "Object type",
-    "ErrDWObjectNameNotFound": "No \"%s\" data warehouse object  found.",
+    "ErrDWObjectNameNotFound": "No data warehouse object with \"%s\" name found.",
     "SelectionTree": "Tree of selected objects"
   },
   "Warehouse2/DWExtractTree": {

@@ -24,7 +24,7 @@
     "WSSPort": "WebSocket SSL/TLS port"
   },
   "admin/SharedDirectoriesForm": {
-    "DeleteUserConfirm": "Do you want to delete folder from file system?"
+    "DeleteUserConfirm": "Do you want to delete folder from the file system?"
   },
   "admin/SharedDirectoryForm": {
     "AddBtnText": "Add",
@@ -104,12 +104,12 @@
   },
   "app/MainMenuForm": {
     "EmptyPackageName": "Package not selected",
-    "ErrCannotSaveReadOnlyPackage": "You cannot save \"{0}\" read-only package",
+    "ErrCannotSaveReadOnlyPackage": "Failed to save \"{0}\" read-only package",
     "ErrLoadPackageErrors": "Errors occurred while \"{0}\" package opening",
     "ErrNoPackageToClose": "No package to be closed was found.",
     "ErrNoPackageToSave": "There is no package to save.",
     "ErrOpenReadOnlyPackage": "\"{0}\" package is opened in read-only mode as it has already been opened by another user. Saving is possible only under a different name.",
-    "ErrSaveReadOnlyPackage": "You cannot save \"{0}\" read-only package without changing the name"
+    "ErrSaveReadOnlyPackage": "Failed to save \"{0}\" read-only package without changing the name"
   },
   "app/MapTree": {
     "AdminArea": "Administration",
@@ -459,7 +459,7 @@
     "EmptyVendor": "Not defined"
   },
   "components/corranalysis/CorrAnalysisWizard": {
-    "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if you want to determine the linear relationship between two processes, or parts of the processes that occur with a certain time lag.",
+    "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if it is required to determine the linear relationship between two processes, or parts of the processes that occur with a certain time lag.",
     "CorrTypeKendall": "The Tau-b Kendall rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. Use for categorical data is recommended.",
     "CorrTypePearson": "Using the Pearson correlation coefficient, it is possible to determine the strength and direction of the linear relationship between two processes that occur simultaneously.",
     "CorrTypeSpearman": "The Spearman's rank correlation coefficient is another version of the rank correlation. Corresponding ranks, not numerical values, are used for numerical fields to estimate the connection strength. Therefore, the Spearman coefficient will be 1 or -1 for any monotone sequences."
@@ -727,7 +727,7 @@
   },
   "components/wsdlclient/CommonRequestController": {
     "AutoMapPromtTitle": "Auto Link",
-    "ConfirmAutoMap": "Links will be automatically arranged by field caption and data type. Already configured links will be deleted.",
+    "ConfirmAutoMap": "Links will be automatically mapped by field caption and data type. Already configured links will be deleted.",
     "ConfirmDeleteAll": "Do you want to delete all links?",
     "DeletePromtTitle": "Delete",
     "ErrInvalidLinkFound": "Invalid link of \"{0}\" field with \"{1}\" request has been found",
@@ -1028,7 +1028,7 @@
     "TitleSave": "Save File"
   },
   "filestorage/CopyPasteManager": {
-    "CantCopyInTheSameDirectory": "You cannot copy into the same directory",
+    "CantCopyInTheSameDirectory": "Failed to copy into the same directory",
     "CantDeleteFileAfterPasting": "Failed to delete source file {0} after pasting",
     "CantDeleteFolderAfterPasting": "Failed to delete source directory {0} after pasting",
     "CantPasteFile": "Failed to paste file",
@@ -1037,7 +1037,7 @@
     "Cuted": "Cut",
     "HasNotStorageItems": "No files to be copied/cut",
     "ItemsAreSimilar": "Names of {0} files/directories are similar. When pasted, they will be overwritten. Do you want to continue?",
-    "NoItemsInBuffer": "Clipboard is empty. You must first copy files or folders",
+    "NoItemsInBuffer": "Clipboard is empty. It is required to copy files or folders first",
     "ServerPasteException": "Server error message: "
   },
   "filestorage/DragAndDropHandler": {
@@ -1063,7 +1063,7 @@
     "DirectoryAlreadyExists": "A directory with the same name already exists",
     "FileAlreadyExists": "A file with the same name already exists",
     "FileStorageNotConnected": "No connection to file storage",
-    "NeedNotEmptyFolderName": "You must specify a non-empty directory name",
+    "NeedNotEmptyFolderName": "It is required to specify a non-empty directory name",
     "RenamingStorageItem": "Rename",
     "SetNewDirectoryName": "New folder name:",
     "SetNewName": "New name:"
@@ -1148,7 +1148,7 @@
     "DeleteAllTitle": "Delete all Conditions"
   },
   "highcharts/Extensions": {
-    "HighchartsAreNotLoaded": "To add extensions you must first load Highchats"
+    "HighchartsAreNotLoaded": "To add extensions it is required to load Highchats first"
   },
   "highcharts/Localization": {
     "Loading": "Loading..."
@@ -1512,7 +1512,7 @@
     "ErrExportFormFailed": "Failed to export Form:\n{0}",
     "ErrMaxPage": "There is no page with the index larger than the last index",
     "ErrMinPage": "There is no page with index smaller than the starting index",
-    "ErrOverRowLimitFmt": "You cannot set row index more than {0}",
+    "ErrOverRowLimitFmt": "Failed to set row index more than {0}",
     "ErrPageIndexOutOfRangeFmt": "Invalid {0} page index",
     "ErrRowIndexOutOfRangeFmt": "Invalid {0} row index",
     "ExportFileTitle": "Table",
@@ -1548,7 +1548,7 @@
   },
   "viewers/browse/FastPreviewForm": {
     "NodeIsNotActive": "Node not activated",
-    "PreviewAllowedSocketTypes": "For now, you can only show data for a table or variables",
+    "PreviewAllowedSocketTypes": "For now, it is possible to show data only for a table or variables",
     "WindowTitleEnd": "Quick View"
   },
   "viewers/chart/ChartEditor": {

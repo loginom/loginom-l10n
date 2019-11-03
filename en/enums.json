@@ -1116,7 +1116,7 @@
       "Sum": "Sum",
       "SumSq": "Sum of squares",
       "StdDev": "Standard deviation",
-      "NullCount": "Missing Values Count",
+      "NullCount": "Null Values Count",
       "UniqueValues": "Unique values",
       "UniqueValuesCount": "Unique values count",
       "TotalCount": "Values count",

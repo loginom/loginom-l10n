@@ -1141,7 +1141,7 @@
     "ErrContextCreateNoRows": "The log. regression model builder context cannot be created for empty data set"
   },
   "components/logregression/LogRegressionEngine": {
-    "ActualEvent": "Event| Actual",
+    "ActualEvent": "Event|Actual",
     "Chi2": "Chi-square",
     "ColumnDisplayName": "Input field captions",
     "ColumnName": "Input field names",

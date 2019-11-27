@@ -109,7 +109,7 @@ Russian | English | Context |
 Индекс качества разгруппировки | Ungrouping quality indicator | |
 Показатели качества модели | Model quality indicators | |
 Сезонные индексы | Seasonal indexes | |
-Фактически | Correct | |
+Фактически | Actually | |
 Классифицировано | Predicted | |
 Соответствие | Mapping, map | |
 Тип указателей | Type of pointers | |

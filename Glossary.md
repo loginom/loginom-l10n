@@ -138,7 +138,6 @@ XSD-схема на входе | Input XSD schema | |
 Настройка соответствия между переменными | Adjustment of variables mapping | |
 Загружать | Upload, download, load |Есть разница - зависит от направления|
 Квантование | Binning | |
-Свертка столбцов | Unpivoting | |
 Количества производных элементов | Derived item count | |
 Количество | Count | |
 Неверный тип данных | Invalid data type | |

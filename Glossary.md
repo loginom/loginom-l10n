@@ -49,7 +49,8 @@ Russian | English | Context |
 Настройка | Configure, configuring | |
 Настройки | Settings | |
 Общая папка | Shared folder | |
-Запрос | Request, query | |
+Запрос | Request | | КОНТЕКСТ!
+Запрос | Query | | КОНТЕКСТ!
 Синхронизатор | Synchronizer | |
 Исследование | Exploration | |
 Подмножество | Subset | |

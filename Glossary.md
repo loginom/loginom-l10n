@@ -37,7 +37,7 @@ Russian | English | Context |
 Искомая подстрока | Searched substring | |
 Аргумент числового типа | Argument of the numeric type | |
 Накапливающаяся сумма | Cumulative sum | |
-Постоянная | Invariable | |
+Постоянная | Constant | |
 Недопустимый тип данных | Invalid data type | |
 Пакет | Package | |
 Не удалось подключиться к серверу | Server connection failed | |

@@ -359,7 +359,7 @@
       "$Caption": "Correlation Coefficient Type",
       "Pirson": "Pearson",
       "CorrFuncExtr": "Correction function extremum",
-      "TauBKendall": "Kendall Tau-b",
+      "TauBKendall": "Kendall's Tau-b",
       "Spearman": "Spearman"
     }
   },
@@ -1339,7 +1339,7 @@
       "BackwardDifference": "Backward difference",
       "Helmert": "Helmert",
       "ReverseHelmert": "Reverse Helmert",
-      "Constant": "Intercept",
+      "Constant": "Constant",
       "Mult": "Multiplication",
       "Index": "Unique value index"
     },

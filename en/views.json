@@ -1330,7 +1330,7 @@
       "boxLabel": "Extremum of cross-correlation function"
     },
     "cbCorrTypeKendall": {
-      "boxLabel": "Kendall Tau-b coefficient"
+      "boxLabel": "Kendall's Tau-b coefficient"
     },
     "cbCorrTypeLinear": {
       "boxLabel": "Pearson correlation coefficient"

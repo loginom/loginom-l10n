@@ -434,7 +434,7 @@
     "ErrNoValuesFmt": "%s field contains no data, it is impossible to generate bins",
     "ErrSumFmt": "Failed to get sum of values for %s field",
     "ErrZeroTileCount": "Bin (tile) count must be > 0",
-    "NegativValueForTileSumm": "Negative values are not allowed when creating bins by sum of characteristic",
+    "NegativValueForTileSumm": "Negative values are not allowed when creating bins by sum of value",
     "SortProcessFmt": "%s field sorting",
     "WarnNoRound": "In case of optimal tile binning bin bounds are not rounded"
   },
@@ -2317,7 +2317,7 @@
     "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function",
     "ErrRegressPowerAndDataErr": "The inequality 0 <= \"polynomial degree\" < \"data points count\" must be fulfilled for proper regression function application.",
     "ErrRegressXYDimMismatch": "The length of X vector must equal the length of Y vector",
-    "ErrSLAEDimMismatch": "The vector length of the intercept terms must coincide with the row count of the coefficient matrix."
+    "ErrSLAEDimMismatch": "The vector length of the constant terms must coincide with the row count of the coefficient matrix."
   },
   "Libraries/bgrtl/OpenArray": {
     "ErrVariantToVarRec": "Failed to convert the Variant variable to the TVarRec value due to the unsupported data type %d of the Variant variable",
@@ -2974,7 +2974,7 @@
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
-    "ErrUnknownCouplerDefType": "Unknown coupler type",
+    "ErrUnknownCouplerDefType": "Unknown type of the connection descriptor",
     "IsSealedVendor": "Sealed",
     "ModelComponent": "Node component",
     "OriginalComponentVendorGuidDesc": "Original component GUID"
@@ -3019,7 +3019,7 @@
     "ErrAlreadyConfiguringSocket": "The node component is in the port configuring state",
     "ErrInvalidComponentEngineImplementation": "Invalid component engine implementation",
     "ErrModelComponentAlreadyInitialized": "The node component already initialized",
-    "ErrUnknownCouplerDefType": "Unknown coupler type"
+    "ErrUnknownCouplerDefType": "Unknown type of the connection descriptor"
   },
   "Libraries/Model/ModelComponentCouplerDefItems": {
     "CouplerDefMetaDesc": "Coupler"

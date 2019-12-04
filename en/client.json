@@ -460,7 +460,7 @@
   },
   "components/corranalysis/CorrAnalysisWizard": {
     "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if it is required to determine the linear relationship between two processes, or parts of the processes that occur with a certain time lag.",
-    "CorrTypeKendall": "The Tau-b Kendall rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. Use for categorical data is recommended.",
+    "CorrTypeKendall": "The Kendall's Tau-b rank correlation coefficient is used to identify the quantitative relationship between variables if they can be ranked. Use for categorical data is recommended.",
     "CorrTypePearson": "Using the Pearson correlation coefficient, it is possible to determine the strength and direction of the linear relationship between two processes that occur simultaneously.",
     "CorrTypeSpearman": "The Spearman's rank correlation coefficient is another version of the rank correlation. Corresponding ranks, not numerical values, are used for numerical fields to estimate the connection strength. Therefore, the Spearman coefficient will be 1 or -1 for any monotone sequences."
   },

@@ -78,7 +78,7 @@
       "Output": "Returns the value arctangent, namely, the angle in radians the tangent of which is equal to the Value."
     },
     "AutoRegression": {
-      "Arguments": "C - invariable,\nA0 ... An - regression coefficients,\nX(t) ... X(t-n) - series values.",
+      "Arguments": "C - constant,\nA0 ... An - regression coefficients,\nX(t) ... X(t-n) - series values.",
       "Description": "AutoRegression(C, A0, X{t}, A1, X{t-1} ...)",
       "Output": "It is used to create customizable model of the following autoregression type:\nPrediction = C + A0 * X(t) + A1 * X(t-1) + ..."
     },
@@ -219,8 +219,8 @@
     },
     "Find": {
       "Arguments": "Substring - searched substring,\nString - the string in which substring is searched,\nMatchIndex - optional occurence index of the Substring in the String to be returned. Argument of the numeric type.",
-      "Description": "Find(Substring, String[, MatchingIndex = 1])",
-      "Output": "Function returns position of the first character of the Substring of the set MatchingIndex in the String.\n The MatchingIndex can be both positive and negative. If the MatchingIndex is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\n If there is no occurence of the set order, the function returns 0.\n For example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\n Find(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\n If the MatchingIndex is equal to zero, the function will return the null value (Null)."
+      "Description": "Find(Substring, String[, MatchIndex = 1])",
+      "Output": "Function returns position of the first character of the Substring of the set MatchIndex in the String.\n The MatchIndex can be both positive and negative. If the MatchIndex is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\n If there is no occurence of the set order, the function returns 0.\n For example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\n Find(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\n If the MatchIndex is equal to zero, the function will return the null value (Null)."
     },
     "FKhi2": {
       "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",

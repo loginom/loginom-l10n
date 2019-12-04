@@ -9,7 +9,7 @@ Russian | English | Context |
 Числовое выражение | Numerical expression | |
 Целое | Integer | |
 Регулярное выражение | Regular expression | |
-Строка | String, row, line | В зависимости от контекста |
+Строка | String, row, line | String - последовательность символов. Row - строка - набор данных Line - строчка в тексте (крайне редко) |
 Строка регулярного выражения | Regular expression string | |
 Входная строка | Input string | |
 Распознанные события | Captured response | |

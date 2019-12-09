@@ -360,7 +360,7 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 В начале набора | Start of set | |
 Очистка содержимого | Truncate | |
 Порядковый номер | Order number | |
-Именованный диапазон | Named range | |
+Именованный диапазон | Named range | | Используется только в Excel. В остальных случаях нужно думать.
 Плохо обусловленная матрица факторного отображения | Ill-conditioned factor mapping matrix | |
 Признак контейнера  | Container flag | |
 Порядок  | Match index  | | Имена аргументов в Arguments и в Description

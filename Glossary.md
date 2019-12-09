@@ -104,8 +104,8 @@ Russian | English | Context |
 Временный факт | Temporary measure | |
 Производный элемент | Derived item | |
 Производный элемент конфигурации | Derived configuration item | |
-Сценарий | Workflow |Есть еще Script|
-Сценарий | Script |Есть еще Workflow |
+Сценарий | Workflow | | Сценарий как визуальное отображение узлов Loginom и связей между ними - workflow
+Сценарий | Script | | Сценарий как программный код - script
 Локальная база данных | Local data base | |
 Индекс качества разгруппировки | Ungrouping quality indicator | |
 Показатели качества модели | Model quality indicators | |

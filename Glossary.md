@@ -98,7 +98,7 @@ Russian | English | Context |
 Соединение (переменные) | Variable Union | |
 Объединение | Union | |
 Источник данных для выравнивания | Data source for appending | |
-Факт | Measure | |
+Факт | Measure | | В Кубе факт переводится как measure. В хранилище данных переводится как fact.
 Искать с начала | Find first | |
 Поиск | Search | |
 Временный факт | Temporary measure | |

@@ -286,7 +286,7 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Куб | Cube | |
 Кросс-таблица | Cross Table | |
 Свертка столбцов | Unpivoting | |
-Многомерное отображение | Multidimensional data viewer | |
+Многомерное отображение | Multidimensional data view | | View, так как viewer - один из режимов Loginom
 Кросс-таблица и кросс-диаграмма | Pivot table and pivot chart | |
 Далее приводится…. | The following is … | |
 Текст ответа Json | Json response body | |

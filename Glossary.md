@@ -112,7 +112,7 @@ Russian | English | Context |
 Сезонные индексы | Seasonal indexes | |
 Фактически | Actually | |
 Классифицировано | Predicted | |
-Соответствие | Mapping, map | |
+Соответствие | Mapping, map | |Mapping - только когда можно от одной сущности построить связь к другой сущности (например, входные и выходные поля)
 Тип указателей | Type of pointers | |
 Извлечение данных | Extract data | |
 Хранилище данных | Data warehouse | |

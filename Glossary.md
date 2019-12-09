@@ -377,6 +377,5 @@ P-значение | P-value | |
 4. В IT терминологии предпочтительнее использовать Active Voice. Passive Voice – в редких случаях. Хотя не будет ошибкой.
 5. Необходимость использования "You". В общем случае нужно писать обезличенные сообщения. Например: "Failed to...." и "It is not possible to ...". Правило для перевода такое: Если в исходной строке "Вы" нет, то и в целевой строке "You" быть не должно.
 6. Имеется определенная путаница с bins-range-interval. Нужно правило. Проверяли каждую строчку. Аналогичная ситуация с items и elements.
-7. Representation используется в качестве «отражения» только в файле «калькулятор». В остальных случаях – view.
-8. There should be no second person pronouns in error messages.
-9. Better to use null instead of empty.
+7. There should be no second person pronouns in the error messages.
+8. Better to use "null" instead of "empty".

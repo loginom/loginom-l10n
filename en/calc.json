@@ -25,7 +25,7 @@
     "Abs": {
       "Arguments": "Argument - numeric expression.",
       "Description": "Abs(Argument)",
-      "Output": "Returns the argument module."
+      "Output": "Returns the absolute value of argument."
     },
     "AbsErr": {
       "Arguments": "Arguments - any numeric expressions.",

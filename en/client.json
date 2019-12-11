@@ -1339,7 +1339,7 @@
     "ActionsBtn": "Other Actions",
     "ControlStopBtn": "Processing Stop",
     "DeactivateNodeBtn": "Deactivate Node",
-    "LaunchBtn": "Run Node",
+    "LaunchBtn": "Start Processing",
     "SettingBtn": "Settings",
     "SetupViewersBtn": "Configure Visualizers"
   },
@@ -1809,7 +1809,7 @@
     "UncheckAllTooltip": "Uncheck all"
   },
   "viewers/cube/PivotDataSource": {
-    "CaseDisplayName": "Fact",
+    "CaseDisplayName": "Measure",
     "CaseFilterDesc": "Measure filter enabled",
     "ErrInvalidRange": "Out of range index",
     "FilterCountDesc": "Dimensions with enabled filter",

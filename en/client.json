@@ -917,7 +917,7 @@
     "AlphaNumUnicodeIncorrect": "This field must contain only letters, digits and _.",
     "ErrInvalidIdentifier": "Entered value is invalid identifier.",
     "VersionIncorrect": "Incorrect Version Format",
-    "VersionMaskIncorrect": "Incorrect format of version mask."
+    "VersionMaskIncorrect": "Incorrect format of version mask"
   },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "The relative paths of the base package are used."

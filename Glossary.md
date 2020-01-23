@@ -51,8 +51,8 @@ String | String | последовательность символов. |
 Настройка | Configure, configuring | |
 Настройки | Settings | |
 Общая папка | Shared folder | |
-Запрос | Request | | КОНТЕКСТ!
-Запрос | Query | | КОНТЕКСТ!
+Запрос | Request | |
+Запрос | Query | |
 Синхронизатор | Synchronizer | |
 Исследование | Exploration | |
 Подмножество | Subset | |

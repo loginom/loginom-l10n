@@ -134,7 +134,7 @@
     },
     "DateToStr": {
       "Arguments": "Date - expression of the date/time type.\nFormat - optional parameter date format in terms of D, M, Y.",
-      "Description": "DateToStr(Date [, Date_format])",
+      "Description": "DateToStr(Date [, Date])",
       "Output": "Returns the string representation of the Date argument.\nExamples of the date format:\n  \"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")\n  \"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")"
     },
     "Day": {

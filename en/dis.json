@@ -1,6 +1,6 @@
 {
   "DeductorClient/DeductorConnector": {
-    "ErrAlreadyConnected": "Connected to server",
+    "ErrAlreadyConnected": "Already connected",
     "ErrNotConnected": "Not connected"
   },
   "DeductorIntegrationServerCore/ConfigurationSections": {

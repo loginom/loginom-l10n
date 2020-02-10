@@ -99,17 +99,8 @@
     "chkGlobalFileStorage": {
       "boxLabel": "File storage full access"
     },
-    "chkInteractiveMode": {
-      "boxLabel": "Interactive mode login"
-    },
-    "chkServiceMode": {
-      "boxLabel": "Service mode login"
-    },
     "chkViewer": {
       "boxLabel": "View reports"
-    },
-    "cntAppModes": {
-      "title": "Application Usage Modes"
     },
     "cntUserRoles": {
       "title": "User Roles"
@@ -245,18 +236,9 @@
       "title": "Processes"
     }
   },
-  "app/EditDisplayNameForm": {
-    "btnApply": {
-      "text": "Apply"
-    },
+  "app/FindNodeForm": {
     "btnCancel": {
       "text": "Cancel"
-    },
-    "edtDisplayName": {
-      "fieldLabel": "Caption"
-    },
-    "frmEditDisplayNameForm": {
-      "title": "Edit"
     }
   },
   "app/ListViewForm": {
@@ -296,12 +278,6 @@
     }
   },
   "app/LoginomMenuForm": {
-    "btnCheckNewVersion": {
-      "text": "Check for updates"
-    },
-    "btnGoToNewVersion": {
-      "text": "New version available"
-    },
     "btnHelp": {
       "text": "Help"
     },
@@ -518,9 +494,6 @@
     },
     "pnlDerivedVendorsContainer": {
       "title": "Derived Components"
-    },
-    "pnlDescription": {
-      "title": "Description"
     },
     "pnlModelForm": {
       "title": "Workflow"
@@ -857,12 +830,6 @@
     },
     "cbbLabelTamplate": {
       "fieldLabel": "Template"
-    },
-    "chkLowerLimitOpen": {
-      "boxLabel": "Lower bound open"
-    },
-    "chkUpperLimitOpen": {
-      "boxLabel": "Upper bound open"
     },
     "colAlwaysDefaultSettings": {
       "text": "Auto",
@@ -1564,7 +1531,7 @@
     }
   },
   "components/filterdata/FilterDataCollection": {
-    "btdDeleteAllFilters": {
+    "btnDeleteAllFilters": {
       "text": "Delete All Filtering Criteria"
     }
   },
@@ -1890,6 +1857,11 @@
   "components/sorting/SortingWizard": {
     "pnlSortingMain": {
       "title": "Sort"
+    }
+  },
+  "components/treetodata/TreeToDataWizard": {
+    "colName": {
+      "text": "Name"
     }
   },
   "components/ungroupdata/UngroupDataWizard": {
@@ -2309,6 +2281,11 @@
       "title": "Export to Loginom Data File"
     }
   },
+  "exports/tableau/TableauCreateTableDialog": {
+    "btnCancel": {
+      "text": "Cancel"
+    }
+  },
   "exports/textfile/ExportTextFileParamsWizard": {
     "btnConnect": {
       "text": "Connect"
@@ -2417,6 +2394,9 @@
     },
     "frmOpenDialogForm": {
       "title": "Open File"
+    },
+    "mniSortByType": {
+      "text": "Type"
     },
     "pnlDirectoriesTree": {
       "title": "Folders"
@@ -2534,17 +2514,14 @@
     "btnOpenPackage": {
       "text": "Open Package..."
     },
-    "colFilePath": {
-      "text": "File path"
-    },
     "colOpenDate": {
       "text": "Open time"
     },
     "colPackageName": {
       "text": "Name"
     },
-    "lblLastPackages": {
-      "text": "Recent opened packages"
+    "grdRecentPackages": {
+      "title": "Recent opened packages"
     },
     "pnlHomePage": {
       "title": "Home"
@@ -2889,6 +2866,20 @@
       "text": "Select replacement source"
     }
   },
+  "login/Login": {
+    "btnLogin": {
+      "text": "Login"
+    },
+    "chkRememberUser": {
+      "boxLabel": "Remember me"
+    },
+    "edtPassword": {
+      "emptyText": "Password"
+    },
+    "edtUsername": {
+      "emptyText": "Username"
+    }
+  },
   "progress/ProgressForm": {
     "colActionDelete": {
       "tooltip": "Delete all completed processes..."
@@ -3128,26 +3119,6 @@
       "tooltip": "Show field names"
     }
   },
-  "viewers/browse/FastPreviewForm": {
-    "btnClose": {
-      "text": "Close"
-    },
-    "colDisplayName": {
-      "text": "Caption"
-    },
-    "colName": {
-      "text": "Name"
-    },
-    "colNumber": {
-      "text": "No"
-    },
-    "colValue": {
-      "text": "Value"
-    },
-    "frmFastPreviewForm": {
-      "title": "Quick View"
-    }
-  },
   "viewers/chart/AxesEditor": {
     "cbxAlignAxes": {
       "fieldLabel": "Align axes"
@@ -3248,9 +3219,6 @@
     "grdFields": {
       "title": "Fields",
       "tooltip": "Create series"
-    },
-    "pnlChartView": {
-      "title": "Chart"
     }
   },
   "viewers/chart/SerieEditor": {
@@ -3362,11 +3330,6 @@
     },
     "lblChartStatus": {
       "text": "Inactive node"
-    }
-  },
-  "viewers/coarseclasses/CoarseClassesView": {
-    "pnlCoarseClassesView": {
-      "title": "Coarse Classes"
     }
   },
   "viewers/common/ViewerCard": {
@@ -3523,68 +3486,6 @@
       "title": "Filter Measures"
     }
   },
-  "viewers/cube/CasesFormatPanel": {
-    "btnApply": {
-      "text": "Apply"
-    },
-    "btnCancel": {
-      "text": "Cancel"
-    },
-    "cbbHAlignment": {
-      "fieldLabel": "Horizontal alignment"
-    },
-    "cbbVAlignment": {
-      "fieldLabel": "Vertical  alignment"
-    },
-    "cbFormatStr": {
-      "boxLabel": "Custom format"
-    },
-    "cbNegValuesRedColor": {
-      "boxLabel": "Negative in red"
-    },
-    "cbScientific": {
-      "fieldLabel": "Exponential form"
-    },
-    "cbThousand": {
-      "fieldLabel": "Thousands separator"
-    },
-    "cntAlignment": {
-      "title": "Alignment"
-    },
-    "cntFormat": {
-      "title": "Formatting"
-    },
-    "colDateFormat": {
-      "text": "Format"
-    },
-    "colFunctionType": {
-      "text": "Aggregation"
-    },
-    "colSubFunctionDataType": {
-      "text": "Type"
-    },
-    "colSubFunctionType": {
-      "text": "Display"
-    },
-    "edtCurrency": {
-      "fieldLabel": "Currency"
-    },
-    "edtDecimalDigit": {
-      "fieldLabel": "Decimal place limit",
-      "maxText": "No more than {0} decimal places",
-      "negativeText": "Only non-negative values are allowed"
-    },
-    "edtSampleResult": {
-      "emptyText": "Calculate...",
-      "fieldLabel": "Result"
-    },
-    "edtSampleSource": {
-      "fieldLabel": "Example"
-    },
-    "frmCasesFormatPanel": {
-      "title": "Format Measures"
-    }
-  },
   "viewers/cube/CasesTunePanel": {
     "btnAdd": {
       "tooltip": "Add measure..."
@@ -3646,6 +3547,20 @@
       "fieldLabel": "Series"
     }
   },
+  "viewers/cube/CubeFormatPanel": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "colDisplayFunctionType": {
+      "text": "Aggregation"
+    },
+    "colSubFunctionType": {
+      "text": "Display"
+    },
+    "frmCubeFormatPanel": {
+      "title": "Formatting"
+    }
+  },
   "viewers/cube/CubeView": {
     "btnAddCalcCase": {
       "tooltip": "Add calculated measure..."
@@ -3693,9 +3608,6 @@
     },
     "btnFilterCase": {
       "tooltip": "Filter measures..."
-    },
-    "btnFormatCase": {
-      "tooltip": "Format measures..."
     },
     "btnSeriesPosition": {
       "tooltip": "Series position"
@@ -3776,6 +3688,47 @@
       "text": "Configure measures..."
     }
   },
+  "viewers/cube/CustomFormatPanel": {
+    "cbbHAlignment": {
+      "fieldLabel": "Horizontal alignment"
+    },
+    "cbbVAlignment": {
+      "fieldLabel": "Vertical  alignment"
+    },
+    "cbFormatStr": {
+      "boxLabel": "Custom format"
+    },
+    "cbNegValuesRedColor": {
+      "boxLabel": "Negative in red"
+    },
+    "cbScientific": {
+      "fieldLabel": "Exponential form"
+    },
+    "cbThousand": {
+      "fieldLabel": "Thousands separator"
+    },
+    "cntAlignment": {
+      "title": "Alignment"
+    },
+    "colDateFormat": {
+      "text": "Format"
+    },
+    "edtCurrency": {
+      "fieldLabel": "Currency"
+    },
+    "edtDecimalDigit": {
+      "fieldLabel": "Decimal place limit",
+      "maxText": "No more than {0} decimal places",
+      "negativeText": "Only non-negative values are allowed"
+    },
+    "edtSampleResult": {
+      "emptyText": "Calculate...",
+      "fieldLabel": "Result"
+    },
+    "edtSampleSource": {
+      "fieldLabel": "Example"
+    }
+  },
   "viewers/cube/DimensionFilterSelectionPanel": {
     "btnApply": {
       "text": "Apply"
@@ -3839,6 +3792,23 @@
   "viewers/detailing/StubView": {
     "lblStubView": {
       "text": "Select the cell to visualise its data"
+    }
+  },
+  "viewers/fastpreview/FastPreviewForm": {
+    "btnClose": {
+      "text": "Close"
+    },
+    "colDisplayName": {
+      "text": "Caption"
+    },
+    "colNumber": {
+      "text": "No"
+    },
+    "colTreeValue": {
+      "text": "Value"
+    },
+    "frmFastPreviewForm": {
+      "title": "Quick View"
     }
   },
   "viewers/regression/RegressionReportView": {
@@ -3925,9 +3895,6 @@
     },
     "lblPValueThreshold": {
       "text": "Significance threshold"
-    },
-    "pnlRegressionReportView": {
-      "title": "Regression Report"
     }
   },
   "viewers/reports/ReportsForm": {
@@ -4180,42 +4147,6 @@
       "fieldLabel": "Interval boundaries rounding"
     }
   },
-  "welcome/WelcomePage": {
-    "btnHelp": {
-      "text": "Help"
-    },
-    "btnLogin": {
-      "text": "Login"
-    },
-    "chkRememberUser": {
-      "boxLabel": "Remember me",
-      "fieldLabel": " "
-    },
-    "edtPassword": {
-      "fieldLabel": "Password"
-    },
-    "edtUsername": {
-      "fieldLabel": "Username"
-    },
-    "lblInfoItem1": {
-      "text": "● All analysis technologies - one platform"
-    },
-    "lblInfoItem2": {
-      "text": "● From simple methods to machine learning"
-    },
-    "lblInfoItem3": {
-      "text": "● Integration of heterogeneous data"
-    },
-    "lblInfoItem4": {
-      "text": "● Low cost of ownership"
-    },
-    "lblInfoTitle": {
-      "text": "Advanced analytics without programming"
-    },
-    "lblNews": {
-      "text": "News"
-    }
-  },
   "wizards/columndefs/ColumnDefsTuning": {
     "btnRefreshAll": {
       "text": "Refresh All"
@@ -4444,8 +4375,10 @@
   "wizards/connection/DBConnectionParams": {
     "btnTestConnection": {
       "text": "Test"
-    },
-    "cntParams": {
+    }
+  },
+  "wizards/connection/DBConnectionParamsAdditional": {
+    "cntCommonParams": {
       "title": "Parameters"
     }
   },
@@ -4592,6 +4525,11 @@
     },
     "lblNoParams": {
       "text": "No custom settings"
+    }
+  },
+  "wizards/datatree/EditDataTreeNodeDefForm": {
+    "btnApply": {
+      "text": "Apply"
     }
   },
   "wizards/done/DoneWizard": {

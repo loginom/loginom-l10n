@@ -92,6 +92,13 @@
   "Common/HTTP/HTTPNetRequest": {
     "ErrHTTPNetRequest": "Request to \"%s\" URL failed"
   },
+  "Common/JavaScript/JavaScriptModuleLoader": {
+    "ErrModuleFileTooBig": "%s module file cannot be loaded: the permissible file size limit is exceeded (%d > %d bytes)",
+    "ErrModuleNotExists": "File of \"%s\" module not found",
+    "ErrModulePath": "Failed to resolve \"%s\" module name",
+    "ErrModuleSourceRead": "Error reading \"%s\" module file",
+    "ErrModuleSpecifierEmpty": "No module name specified"
+  },
   "Common/WSDL/HTTPHeaders": {
     "ErrInvalidHeaderName": "Invalid %s header name"
   },
@@ -290,8 +297,6 @@
   },
   "Common/XML/XML_MSXML": {
     "ErrElementMustHaveAttribute": "\"%s\" attribute required for \"%s\" element",
-    "ErrXMLLoadFailure": "Failed to load %s document",
-    "ErrXMLLoadStringFailure": "Failed to load XML document from string",
     "ErrXMLParseFailure": "Error processing %s document (row %d, position %d): %s",
     "ErrXMLParseStringFailure": "Error processing XML (row %d, position %d): %s"
   },
@@ -330,8 +335,6 @@
     "ColumnNameRuleLift": "Lift",
     "ColumnNameRuleSupport": "Support",
     "ColumnNameTransactionID": "Transaction identifier",
-    "ErrModelDifferentSupport": "Minimum support reduced, it is required to rebuild the model",
-    "ErrModelExcludeItems": "Elements with maximum support added or excluded, it is required to rebuild the model",
     "ErrMoreThanOneItemColumn": "More than one transaction item column in the input data",
     "ErrMoreThanOneTransactionColumn": "More than one transaction identifier column in the input data",
     "ErrNConsequentMaxWrongValue": "Invalid maximum item count in the rules antecedent or consequence",
@@ -1037,11 +1040,6 @@
     "VendorDesc": "Group data"
   },
   "components/javascript/JavaScriptEngine": {
-    "ErrModuleFileTooBig": "%s module file cannot be loaded: the permissible file size limit is exceeded (%d > %d bytes)",
-    "ErrModuleNotExists": "File of \"%s\" module not found",
-    "ErrModulePath": "Failed to resolve \"%s\" module name",
-    "ErrModuleSourceRead": "Error reading \"%s\" module file",
-    "ErrModuleSpecifierEmpty": "No module name specified",
     "InputDataSource": "Input data source",
     "OutputDataSet": "Output data set",
     "PreviewProcess": "Data preview",
@@ -1921,7 +1919,7 @@
     "ErrIncorrectRegEx": "Error parsing driver name template: %s"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCStringBuilder": {
-    "InvalidODBCDriverName": "\"%s\" driver not registered"
+    "ErrInvalidODBCDriverName": "\"%s\" driver not registered"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
@@ -2668,8 +2666,6 @@
     "DeleteVendorCaptionDef": "Component Deleted",
     "DeleteViewCaption": "\"%s\" Visualizer Deleted",
     "DeleteViewCaptionDef": "Visualizer Deleted",
-    "ErrGenericViewsNotLoaded": "Failed to load visualizers of \"%s\" supernode",
-    "ErrGenericViewsNotSaved": "Failed to save visualizers of \"%s\" supernode",
     "ErrLinkIsNil": "No link set",
     "ErrModelNodeNotRestored": "Failed to restore \"%s\" node",
     "ErrModelPackageNotExist": "The package to which the object belonged was closed",
@@ -2986,8 +2982,8 @@
     "ErrCannotDeleteDerivedVendors": "It is forbidden to delete derived components"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
-    "ErrInputSocketDefIsEmtpy": "The following input types are not specified: ",
-    "ErrOutputSocketDefIsEmtpy": "The following output types are not specified: "
+    "ErrUntypedInputSocketDefs": "The following input types are not specified: ",
+    "ErrUntypedOutputSocketDefs": "The following output types are not specified: "
   },
   "Libraries/Model/Generic/ModelGenericComponentEngine": {
     "ActivateOuterData": "External data",
@@ -3000,13 +2996,13 @@
     "ErrAlreadyConfiguringInnerSocket": "The external port component has already been configuring"
   },
   "Libraries/Model/Generic/ModelInputComponent": {
-    "ErrInnerOutputSocketDefIsEmtpy": "The following input types are not specified: "
+    "ErrUntypedInnerOutputSocketDefs": "The following input types are not specified: "
   },
   "Libraries/Model/Generic/ModelInputComponentVendor": {
     "VendorCaption": "Input Node"
   },
   "Libraries/Model/Generic/ModelOutputComponent": {
-    "ErrInnerInputSocketDefIsEmtpy": "The following output types are not specified: "
+    "ErrUntypedInnerInputSocketDefs": "The following output types are not specified: "
   },
   "Libraries/Model/Generic/ModelOutputComponentVendor": {
     "VendorCaption": "Output Node"
@@ -3152,7 +3148,6 @@
     "AddInputSocketCaption": "\"%s\" input added to \"%s\" node",
     "ComponentOutputPort": "Component",
     "CopyNodeCaption": "\"%s\" Element Copied",
-    "CopyNodesCaption": "Elements Copied",
     "DeleteElementsCaption": "Elements deleted",
     "DeleteInputSocketCaption": "\"%s\" Input of \"%s\" Node Deleted",
     "DependentNodeOutputPort": "Dependent nodes",
@@ -3877,7 +3872,6 @@
     "VendorDesc": "Tree data view"
   },
   "Viewers/Detailing/Detailing": {
-    "DetailingProcessCaption": "\"%s\" detailing by cell [%d, %d]",
     "ErrDetailingViewDataSource": "Failed to prepare the data source for \"%s\" detailing",
     "ErrDetailingViewExecution": "Error of \"%s\" detailing execution",
     "ErrDetailingViewInitialization": "Detailing initialization error \"%s\"",

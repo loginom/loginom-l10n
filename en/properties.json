@@ -553,7 +553,6 @@
     "1CConnectionConfigurator": {
       "ConnectionString": "Connection string",
       "Password": "Password",
-      "SavePassword": "Save password",
       "UserName": "Username"
     }
   },
@@ -576,7 +575,6 @@
       "ObjectQuotes": "Configure quotes",
       "Password": "Password",
       "QuotedObjectNames": "Quote names",
-      "SavePassword": "Save password",
       "SystemTables": "Show system tables",
       "UserName": "Username"
     }

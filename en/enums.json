@@ -1789,10 +1789,7 @@
       "Range": "Range",
       "NullCount": "Null count",
       "NotNullCount": "Values",
-      "UniqueCount": "Unique",
-      "MinLength": "Minimum string length",
-      "MaxLength": "Maximum string length",
-      "MeanLength": "Average string length"
+      "UniqueCount": "Unique"
     },
     "StatViewQuartileNumber": {
       "$Caption": "Quartile Number",

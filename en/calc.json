@@ -182,11 +182,6 @@
       "Description": "DisplayName([\"FieldName\"])",
       "Output": "Function returns the caption (display name) according to the field name, variable or expression.\nIf the function is called without arguments, it returns the caption of the current calculated expression.\nNote: FieldName - the string value, namely, the explicitly given FieldName must be specified in quotation marks.\nFor example: DisplayName(\"COL1\")"
     },
-    "DKhi2": {
-      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
-      "Description": "DKhi2(Degrees_of_freedom, Argument)",
-      "Output": "Density function of gamma distribution of Chi-square"
-    },
     "EncodeDate": {
       "Arguments": "Year - year in the form of number,\nMonth - month in the form of number,\nDay - day in the form of number.",
       "Description": "EncodeDate(Year, Month, Day)",
@@ -222,11 +217,6 @@
       "Description": "Find(Substring, String[, MatchIndex = 1])",
       "Output": "Function returns position of the first character of the Substring of the set MatchIndex in the String.\n The MatchIndex can be both positive and negative. If the MatchIndex is positive, the search is performed from left to right, if it is negative, the search is performed from right to left.\n If there is no occurence of the set order, the function returns 0.\n For example,  Find(\"A\", \"A000A00A\", 2) will return position of the second left occurence of substring \"A\" to string \"A000A00A\", namely, 5;\n Find(\"A\", \"A000A00A\", -1) will return position of the first right occurence of substring \"A\" to string \"A000A00A\", namely, 8.\n If the MatchIndex is equal to zero, the function will return the null value (Null)."
     },
-    "FKhi2": {
-      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
-      "Description": "FKhi2(Degrees_of_freedom, Argument)",
-      "Output": "Integral function of gamma distribution equal to (1 - one-sided probability of Chi-square distribution) with n degrees of freedom."
-    },
     "Format": {
       "Arguments": "Format_string - string expression of the special type\nExpression - arbitrary string expression.",
       "Description": "Format(Format_string, Expression [, ... Expression])",
@@ -261,11 +251,6 @@
       "Arguments": "Argument - numeric expression.",
       "Description": "Int(Argument)",
       "Output": "Returns the integer part of the Argument."
-    },
-    "InvKhi2": {
-      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nProbability - the probability connected with gamma distribution.",
-      "Description": "InvKhi2(Degree_of_freedom, Probability)",
-      "Output": "Returns inverse gamma distribution for the integral function equal to (1 - one-sided probability of Chi-square distribution). If p=FKhi2(N, X) then InvKhi2(N, P) = X"
     },
     "IsInfinite": {
       "Arguments": "Argument - numeric expression;",
@@ -356,11 +341,6 @@
       "Arguments": "Arguments are absent.",
       "Description": "Pi()",
       "Output": "Returns the pi constant value 3.1415926535897932385."
-    },
-    "PKhi2": {
-      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
-      "Description": "PKhi2(Degrees_of_freedom, Argument)",
-      "Output": "Returns one-sided probability of Chi-square distribution."
     },
     "Pow": {
       "Arguments": "Argument - numeric expression;\nDegree - numeric expression;",
@@ -578,6 +558,28 @@
       "Arguments": "RegularExpression - the regular expression string;\nInputString - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string parts matching the regular expression;\nExtendedSyntax - extended replacement syntax (PCRE2 library is used)",
       "Description": "RegExReplaceAll(RegularExpression, InputString, ReplaceString [, ExtendedSyntax = False])",
       "Output": "Returns the Input String in which all occurences of the Regular Expression expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+    }
+  },
+  "StatFunctions": {
+    "DKhi2": {
+      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
+      "Description": "DKhi2(Degrees_of_freedom, Argument)",
+      "Output": "Density function of gamma distribution of Chi-square"
+    },
+    "FKhi2": {
+      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
+      "Description": "FKhi2(Degrees_of_freedom, Argument)",
+      "Output": "Integral function of gamma distribution equal to (1 - one-sided probability of Chi-square distribution) with n degrees of freedom."
+    },
+    "InvKhi2": {
+      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nProbability - the probability connected with gamma distribution.",
+      "Description": "InvKhi2(Degree_of_freedom, Probability)",
+      "Output": "Returns inverse gamma distribution for the integral function equal to (1 - one-sided probability of Chi-square distribution). If p=FKhi2(N, X) then InvKhi2(N, P) = X"
+    },
+    "PKhi2": {
+      "Arguments": "Degrees_of_freedom - number of degrees of freedom.\nArgument - value for which it is required to calculate the distribution density.",
+      "Description": "PKhi2(Degrees_of_freedom, Argument)",
+      "Output": "Returns one-sided probability of Chi-square distribution."
     }
   }
 }

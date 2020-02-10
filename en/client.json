@@ -1,4 +1,7 @@
 {
+  "about/About": {
+    "NewVersionCommunityHref": "https://loginom.com/downloads"
+  },
   "admin/ServerSettingsForm": {
     "Bind": "IP address",
     "ComponentSettings": "Component parameters",
@@ -39,16 +42,16 @@
     "SaveBtnText": "Save"
   },
   "admin/UserListForm": {
-    "Admin": "Administration",
     "Blocked": "Blocked",
     "DeleteUserConfirm": "Do you want to delete user folder from the file system?",
-    "Designer": "Workflows design",
     "DisplayName": "Full caption",
     "GlobalFileStorage": "Access to all files",
-    "Interactive": "Interactive mode",
     "Name": "Login",
-    "Service": "Service mode",
-    "Update": "Update",
+    "Update": "Update"
+  },
+  "admin/UserModel": {
+    "Admin": "Administration",
+    "Designer": "Workflows design",
     "Viewer": "View reports"
   },
   "app/AddPackageLinkForm": {
@@ -57,11 +60,7 @@
     "ReadOnlyPackageNamePostfix": " (read-only)"
   },
   "app/Application": {
-    "ErrVersionFailure": "Error while requesting the latest version",
-    "LoginomLastVersionDownloadUrl": "https://loginom.com/downloads",
-    "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost.",
-    "VersionErrorResponseStatus": "Error while requesting the latest version. Response code: \"{0}\". Message: \"{1}\"",
-    "VersionWrongServiceResponse": "Wrong service response with information on the latest Loginom version"
+    "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost."
   },
   "app/AppUtils": {
     "ConfirmRemovingUnit": "Do you really want to delete the module?",
@@ -78,11 +77,8 @@
     "NumberObjects": "{0} objects"
   },
   "app/LoginomMenuForm": {
-    "CheckFailed": "Check failed. Please check the new version on the website",
-    "GoToDownload": "Go to website",
     "Menu": "Menu",
-    "QstQuit": "There are not saved packages. Do you want to exit without saving?",
-    "YourVersionIsActual": "You are using the current version"
+    "QstQuit": "There are not saved packages. Do you want to exit without saving?"
   },
   "app/MainForm": {
     "AskIfOpenPackageByLink": "The open package will be locked by you until it is closed. Do you want to open it?",
@@ -142,9 +138,7 @@
   "app/MapTreeForm": {
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
-    "mnuPortsShowAll": "Show all ports",
-    "ModelUnitLabel": "Module name",
-    "VendorLabel": "Component Caption"
+    "mnuPortsShowAll": "Show all ports"
   },
   "app/ModelForm": {
     "ActivateCurrent": "Run node",
@@ -227,7 +221,6 @@
     "Delete": "Delete",
     "DeleteTooltip": "Delete...",
     "EditDisplayName": "Edit",
-    "EditDisplayNameMsgTitle": "Edit Caption",
     "EditDisplayNameTooltip": "Edit...",
     "Links": "References",
     "PackageVariables": "Variables",
@@ -317,7 +310,7 @@
   },
   "app/WindowTitle": {
     "Close": "Close",
-    "Help": "Help",
+    "Doc": "Help",
     "Minimize": "Minimize",
     "Restore": "Restore"
   },
@@ -1154,6 +1147,7 @@
     "Loading": "Loading..."
   },
   "homepage/HomePage": {
+    "NoNewsLog": "Failed to get news",
     "RemoveFromHistoryFmt": "No \"{0}\" file found. It may have been renamed, moved or deleted. Do you want to remove this package from the list of recent packages?",
     "RemoveFromHistoryTitle": "No file found"
   },
@@ -1546,11 +1540,6 @@
     "SortingTitle": "Sort",
     "WarnExportTableSizeWarning": "The current Table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
-  "viewers/browse/FastPreviewForm": {
-    "NodeIsNotActive": "Node not activated",
-    "PreviewAllowedSocketTypes": "For now, it is possible to show data only for a table or variables",
-    "WindowTitleEnd": "Quick View"
-  },
   "viewers/chart/ChartEditor": {
     "ExportTo": "Export to "
   },
@@ -1815,7 +1804,6 @@
     "FilterCountDesc": "Dimensions with enabled filter",
     "FunctionDisplayName": "Aggregation",
     "No": "No",
-    "NoDimensionValueDisplayName": "Value",
     "RecordCountDesc": "Filtered row count",
     "SourceRecordCountDesc": "Source row count",
     "SubFunctionCountDesc": "Number of displayed measures",
@@ -1834,6 +1822,11 @@
     "SelectLast": "Last record",
     "SelectNext": "Next record",
     "SelectPrev": "Previous record"
+  },
+  "viewers/fastpreview/FastPreviewForm": {
+    "NodeIsNotActive": "Node not activated",
+    "PreviewAllowedSocketTypes": "For now, it is possible to show data only for a table or variables",
+    "WindowTitleEnd": "Quick View"
   },
   "viewers/LockableView": {
     "LockMaskText": "Node is locked"
@@ -1920,7 +1913,6 @@
     "LowerQuartile": "Lower quartile",
     "Median": "Median",
     "NotAvailable": "Not available",
-    "NotDefined": "Not defined",
     "RightOutlier": "Maximum outlier",
     "RightWhisker": "Sample maximum",
     "SliderTipFmt": "{0}: {1}",
@@ -1932,14 +1924,6 @@
     "TuneStatisticsTitle": "Configure Parameters",
     "UniqueValuesCount": "Values count - ",
     "UpperQuartile": "Upper quartile"
-  },
-  "welcome/WelcomePage": {
-    "CardTitle_Campus": "Campus - a community of analysts",
-    "CardTitle_FeedBack": "Feedback",
-    "CardTitle_Forum": "Forum: Questions and Answers",
-    "CardTitle_WebSite": "Company Website",
-    "LoginWebSite": "https://loginom.com",
-    "NoNewsLog": "Failed to get news"
   },
   "wizards/BaseWizard": {
     "ErrAbortCaption": "Setup Aborted",

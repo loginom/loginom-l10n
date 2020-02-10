@@ -3750,6 +3750,57 @@
     "btnTotalHistogram": {
       "tooltip": "Показывать генеральную совокупность в гистограммах"
     },
+    "colAttribute": {
+      "text": "Атрибут"
+    },
+    "colClusterIndexer": {
+      "text": "#",
+      "tooltip": "Номер строки"
+    },
+    "colClusterLabel": {
+      "text": "Метка кластера"
+    },
+    "colClusterSize": {
+      "text": "Поддержка"
+    },
+    "colColumnIndexer": {
+      "text": "#",
+      "tooltip": "Номер строки"
+    },
+    "colColumnName": {
+      "text": "Метка поля"
+    },
+    "colDataType": {
+      "text": "Тип"
+    },
+    "colDisplayName": {
+      "text": "Метка"
+    },
+    "colIndex": {
+      "text": "№",
+      "tooltip": "Номер значения"
+    },
+    "colShare": {
+      "text": "Доля"
+    },
+    "lblCellImportance": {
+      "text": "Значимость ячейки"
+    },
+    "lblClusterSize": {
+      "text": "Мощность кластера"
+    },
+    "lblColumnImportance": {
+      "text": "Значимость поля"
+    },
+    "lblComparisonWelcome": {
+      "text": "Выделите несколько ячеек для сравнения кластеров по полю"
+    },
+    "lblHideUnusedColumns": {
+      "text": "Скрывать неиспользуемые поля"
+    },
+    "lblHistogramUnavailable": {
+      "text": "Невозможно отобразить гистограмму"
+    },
     "mniFocusGrid": {
       "text": "Menu Item"
     }

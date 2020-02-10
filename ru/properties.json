@@ -55,7 +55,7 @@
   },
   "components/binning": {
     "BinningBinsDefExtension": {
-      "KindForBins": "Назначение для интервалов"
+      "KindForBins": "Назначение"
     },
     "BinningContinuousBinItem": {
       "LowerBound": "Нижняя граница диапазона",
@@ -71,10 +71,10 @@
       "RelativeVolume": "Относительный объем интервалов"
     },
     "BinningDefExtension": {
-      "AlwaysDefaultSettings": "Всегда использовать настройки метода по умолчанию",
+      "AlwaysDefaultSettings": "Определять настройки метода автоматически",
       "BinsType": "Тип интервалов",
       "LabelTemplate": "Шаблон меток",
-      "MethodType": "Тип метода получения интервалов"
+      "MethodType": "Метод"
     },
     "BinningLinearCommonMethodSettings": {
       "LowerLimitOpen": "Нижняя граница открыта",
@@ -491,7 +491,7 @@
     "ExportExcelFile": {
       "FileType": "Тип файла Excel",
       "SheetName": "Имя листа",
-      "WebSetting": "Настройки для web клиента"
+      "WebSetting": "Настройки"
     },
     "ExportExcelWebSetting": {
       "HeadersRow": "Строка заголовков"
@@ -644,18 +644,18 @@
   },
   "Libraries/bgrtl/DataSet": {
     "ColumnDef": {
-      "DataKind": "Вид данных столбца",
-      "DataType": "Тип данных столбца",
-      "DefaultUsageType": "Назначение столбца по умолчанию",
+      "DataKind": "Вид данных",
+      "DataType": "Тип данных",
+      "DefaultUsageType": "Назначение по умолчанию",
       "DisplayName": "Метка",
       "Index": "Индекс",
       "Name": "Имя",
       "Size": "Максимальная длина (кол-во символов) строковых значений столбца",
-      "Usable": "Признак использования столбца (суррогат UsageType)",
-      "UsageType": "Назначение столбца"
+      "Usable": "Признак использования (суррогат UsageType)",
+      "UsageType": "Назначение"
     },
     "TuneColumnDef": {
-      "Extension": "Расширение настраиваемого описания столбца"
+      "Extension": "Расширение"
     }
   },
   "Libraries/bgrtl/Interfaces": {

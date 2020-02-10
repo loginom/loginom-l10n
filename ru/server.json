@@ -469,13 +469,13 @@
     "VendorDesc": "Создание вычисляемых полей"
   },
   "components/calcdata/CalcItem": {
-    "ErrExprParse": "Ошибка при разборе выражения \"%s\": %s",
-    "ExprCalculateError": "Ошибка при вычислении выражения \"%s\", строка %d входного набора"
+    "ErrExprParse": "Ошибка разбора выражения \"%s\"",
+    "ExprCalculateError": "Ошибка вычисления выражения \"%s\", строка %d входного набора"
   },
   "components/calcdata/CalcItemChakra": {
-    "ErrExprParse": "Ошибка при разборе выражения \"%s\": %s",
+    "ErrExprParse": "Ошибка разбора выражения \"%s\"",
     "ErrExprUsesUndefinedVariable": "В выражении \"%s\" используется неопределенная переменная %s",
-    "ExprCalculateError": "Ошибка при вычислении выражения \"%s\", строка %d входного набора"
+    "ExprCalculateError": "Ошибка вычисления выражения \"%s\", строка %d входного набора"
   },
   "components/calcdata/ExprColumns": {
     "ColumnMetaDesc": "Столбец",
@@ -494,9 +494,9 @@
     "ErrUnknownFunction": "Неизвестная функция: %s"
   },
   "components/calcvariables/CalcVariables": {
-    "ErrExprCalculate": "Ошибка при вычислении выражения \"%s\"",
+    "ErrExprCalculate": "Ошибка вычисления выражения \"%s\"",
     "ErrExprIsStringType": "Выражение \"%s\" имеет строковый тип",
-    "ErrExprParse": "Ошибка при разборе выражения \"%s\": %s",
+    "ErrExprParse": "Ошибка разбора выражения \"%s\"",
     "ErrVarValueSet": "Ошибка при установке значения выражения \"%s\"",
     "NameNotExists": "Входной переменной или выражения с именем \"%s\" не существует"
   },
@@ -713,11 +713,11 @@
   },
   "components/datatotree/DataToTreeModelComponentEngine": {
     "InputDataSource": "Входной источник данных",
-    "OutputDataTree": "Выходное дерево"
+    "OutputDataTree": "Выходное дерево данных"
   },
   "components/datatotree/DataToTreeVendor": {
     "VendorCaption": "Таблица в дерево",
-    "VendorDesc": "Формирование дерева из таблицы данных"
+    "VendorDesc": "Формирование дерева данных из таблицы данных"
   },
   "components/datatovariables/DataToVariablesEngine": {
     "DataToVariablesNotify": "Расчет переменных",
@@ -1518,12 +1518,12 @@
     "PrepareRowIndexesProcess": "Подготовка индексов строк"
   },
   "components/treetodata/TreeToDataModelComponentEngine": {
-    "InputDataTree": "Входное дерево",
+    "InputDataTree": "Входное дерево данных",
     "OutputDataSource": "Выходной набор данных"
   },
   "components/treetodata/TreeToDataVendor": {
     "VendorCaption": "Дерево в таблицу",
-    "VendorDesc": "Формирование таблицы данных из дерева"
+    "VendorDesc": "Формирование таблицы данных из дерева данных"
   },
   "components/ungroupdata/UngroupData": {
     "ConfidenceBandLowerDisplayName": "Нижняя граница 95% ДИ",
@@ -1990,7 +1990,7 @@
     "ErrODBCBigQueryNotExists": "ODBC-драйвер для подключения к BigQuery не установлен. Установочные пакеты и краткое описание драйвера можно найти по адресу:"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
-    "DatabaseTypeName": "MS Excel (ODBC) [UniDAC]",
+    "DatabaseTypeName": "MS Excel (ODBC)",
     "ErrODBCExcelNotExists": "ODBC-драйвер для подключения к Excel файлам не установлен"
   },
   "Libraries/bgdbrtl/UniDAC/FBUniDACDB": {
@@ -2163,10 +2163,10 @@
     "ErrCannotPostNodeWithoutAppend": "Недопустим вызов метода Post для узла \"%s\" без вызова Append",
     "ErrCannotRepeatAppendNode": "Недопустим повторный вызов Append для узла \"%s\" без вызова Post",
     "ErrCanOnlyAppendContainerOrArray": "Недопустим вызов метода Append для узла \"%s\", который не является контейнером или массивом",
-    "ErrDataTreeActive": "Дерево не находится в закрытом состоянии",
-    "ErrDataTreeClosed": "Дерево не находится в открытом состоянии",
-    "ErrDataTreeNotConfigured": "Дерево не настроено",
-    "ErrDataTreeNotEditing": "Дерево не находится в состоянии редактирования",
+    "ErrDataTreeActive": "Дерево данных не находится в закрытом состоянии",
+    "ErrDataTreeClosed": "Дерево данных не находится в открытом состоянии",
+    "ErrDataTreeNotConfigured": "Дерево данных не настроено",
+    "ErrDataTreeNotEditing": "Дерево данных не находится в состоянии редактирования",
     "ErrIsNotAncestorNode": "Узел \"%s\" не является предком узла \"%s\"",
     "ErrUnexpectedEndUpdate": "Нельзя вызвать метод EndUpdate предварительно не вызвав BeginUpdate"
   },
@@ -2723,7 +2723,7 @@
     "ErrGetModuleURLUnassigned": "Не установлена функция разрешения путей модулей JavaScript"
   },
   "Libraries/ChakraCore/ChakraRunRes": {
-    "BadSerializedScript": "Некорректно сериализован служебный JavaScript-код в ресурсе %s, выполняется несериализванный код",
+    "BadSerializedScript": "Некорректно сериализован служебный JavaScript-код в ресурсе %s, выполняется несериализованный код",
     "ErrResNotFound": "Ресурс %s не найден",
     "ErrRunServiceCode": "Не удалось выполнить служебный JavaScript-код (источник: %s)"
   },
@@ -3059,10 +3059,10 @@
     "ErrFieldInfoDoesNotBelongToComponent": "Поле \"%s\" не принадлежит текущему компоненту"
   },
   "Libraries/Model/DataTree/InputDataTreeSocketDef": {
-    "InputDataTreeSocketDefVendorCaption": "Дерево"
+    "InputDataTreeSocketDefVendorCaption": "Дерево данных"
   },
   "Libraries/Model/DataTree/OutputDataTreeSocketDef": {
-    "OutputDataTreeSocketDefVendorCaption": "Дерево"
+    "OutputDataTreeSocketDefVendorCaption": "Дерево данных"
   },
   "Libraries/Model/DerivedModelComponentVendor": {
     "BaseComponentVendorGuidDesc": "GUID Базового компонента",
@@ -3161,7 +3161,7 @@
   },
   "Libraries/Model/ModelComponentVendorGroupsCommon": {
     "AnalyticVendorGroupCaption": "Data Mining",
-    "DataTreeVendorGroupCaption": "Дерево",
+    "DataTreeVendorGroupCaption": "Дерево данных",
     "ExploratoryVendorGroupCaption": "Исследование",
     "ExportVendorGroupCaption": "Экспорт",
     "FlowControlVendorGroupCaption": "Управление",
@@ -3322,7 +3322,7 @@
     "LogActivateNodeStart": "Активация узла \"%s\"",
     "LogActivateNodeSuccess": "Успешно активирован узел \"%s\"",
     "LogDeactivateNode": "Деактивирован узел \"%s\"",
-    "LogNodeActivationError": "Ошибка активации узла \"%s\"",
+    "LogNodeActivationError": "Ошибка активации узла \"%s\" GUID=%s",
     "LogPackagedNodeActivationError": "Ошибка активации узла \"%s\" GUID=%s Пакет=%s",
     "ResetModelNodeConfiguration": "У узла \"%s\" восстановлена исходная конфигурация",
     "RestoreBackupProcessCaption": "Восстановление конфигурации из резервной копии",

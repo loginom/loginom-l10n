@@ -203,8 +203,8 @@
     "DeletePort": "Удалить порт",
     "DeriveNode": "Создать производный компонент...",
     "EditPortDisplayName": "Редактирование метки порта...",
-    "EditPortDisplayNameWindowTitle": "Редактирование",
-    "EditPortFieldLabel": "Метка порта",
+    "EditPortDisplayNameWindowTitle": "Редактирование метки порта",
+    "EditPortFieldLabel": "Метка",
     "ErrNodeNotInitialized": "У узла \"{0}\" не задан компонент",
     "Error": "Ошибка",
     "ErrPortNotCreated": "Не удалось создать новый порт",
@@ -353,7 +353,7 @@
   },
   "app/Version": {
     "CompanyWebsite": "https://loginom.ru",
-    "LegalCopyright": "© ООО Аналитические технологии 2017"
+    "LegalCopyright": "© ООО «Аналитические технологии» 2017"
   },
   "app/WindowTitle": {
     "Close": "Закрыть",
@@ -1462,7 +1462,7 @@
     "ActionsBtn": "Другие действия",
     "ControlStopBtn": "Остановка обработки",
     "DeactivateNodeBtn": "Деактивировать узел",
-    "LaunchBtn": "Запуск обработки",
+    "LaunchBtn": "Выполнить узел",
     "SettingBtn": "Настройка",
     "SetupViewersBtn": "Настройка визуализаторов"
   },
@@ -2084,15 +2084,15 @@
     "DaysSuffix": " дней",
     "ErrBounds": "Минимум больше максимума",
     "InfiniteValues": "Выборка содержит бесконечные значения",
-    "LeftOutlier": "Наименьший выброс",
-    "LeftWhisker": "Наблюдаемый минимум",
-    "LowerQuartile": "Нижний квартиль",
-    "Median": "Медиана",
+    "LeftOutlier": "Наименьший выброс: ",
+    "LeftWhisker": "Наблюдаемый минимум: ",
+    "LowerQuartile": "Нижний квартиль: ",
+    "Median": "Медиана: ",
     "NotAvailable": "Недоступно",
     "NotCalculated": "Не вычислено",
     "NullData": "Поле содержит только пропуски",
-    "RightOutlier": "Наибольший выброс",
-    "RightWhisker": "Наблюдаемый максимум",
+    "RightOutlier": "Наибольший выброс: ",
+    "RightWhisker": "Наблюдаемый максимум: ",
     "SliderTipFmt": "{0}: {1}",
     "SliderTipMax": "макс",
     "SliderTipMin": "мин",
@@ -2106,7 +2106,7 @@
     "TuneStatisticsTitle": "Настройка показателей",
     "UndefinedDataKind": "Неопределенный вид данных",
     "UniqueValuesCount": "Число значений - ",
-    "UpperQuartile": "Верхний квартиль"
+    "UpperQuartile": "Верхний квартиль: "
   },
   "wizards/BaseWizard": {
     "ErrAbortCaption": "Настройка прервана",
@@ -2261,7 +2261,7 @@
     "ActionInsert": "Вставить",
     "DefaultSocketCaption": "Порт",
     "DeleteAllConfirm": "Удалить все входы/выходы?",
-    "EmptyName": "<Уникальное>",
+    "EmptyName": "<Не задано>",
     "ErrCompareIndex": "Количество сокетов на сервере не совпадает с количеством сокетов на клиенте.",
     "ErrGetAvalibleSocketDefFmt": "Не удалось получить описание описание сокета для вендора {0}.",
     "ErrGetAvalibleSocketDefs": "Не удалось получить описание описание сокетов",

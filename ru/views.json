@@ -400,7 +400,7 @@
   },
   "app/MainMenuForm": {
     "btnCloseAllPackages": {
-      "text": "Закрыть все"
+      "text": "Закрыть все..."
     },
     "btnClosePackage": {
       "text": "Закрыть"
@@ -2802,7 +2802,7 @@
       "text": "Блог"
     },
     "btnCreatePackage": {
-      "text": "Создать новый пакет..."
+      "text": "Создать пакет..."
     },
     "btnCreateUnsavedPackage": {
       "text": "Создать черновик"

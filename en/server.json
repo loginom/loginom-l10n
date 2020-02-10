@@ -4003,6 +4003,7 @@
     "DefaultSeparator": ": ",
     "From": "from ",
     "LeftCloseBracket": "[",
+    "LeftOpenBracket": "(",
     "RightCloseBracket": "]",
     "RightOpenBracket": ")",
     "To": "to "

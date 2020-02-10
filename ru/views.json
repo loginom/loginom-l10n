@@ -3249,8 +3249,7 @@
       "text": "Q&A"
     },
     "chkRememberUser": {
-      "boxLabel": "Запомнить",
-      "fieldLabel": " "
+      "boxLabel": "Запомнить"
     },
     "edtPassword": {
       "emptyText": "Пароль"

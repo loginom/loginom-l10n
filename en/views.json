@@ -2525,14 +2525,23 @@
     "btnCreateUnsavedPackage": {
       "text": "New Draft"
     },
+    "btnFacebook": {
+      "href": "https://facebook.com/lg.platform/"
+    },
     "btnFastStart": {
       "href": "https://help.loginom.com/userguide/quick-start/"
+    },
+    "btnInstagram": {
+      "href": "https://instagram.com/loginom_company/"
     },
     "btnIntro": {
       "href": "https://loginom.com/welcome-video/"
     },
     "btnLearning": {
       "href": "https://loginom.com/learning/"
+    },
+    "btnLinkedin": {
+      "href": "https://linkedin.com/company/loginom/"
     },
     "btnMoreNews": {
       "href": "https://loginom.com/blog/"
@@ -2545,6 +2554,15 @@
     },
     "btnSupport": {
       "href": "https://loginom.com/company/support/"
+    },
+    "btnTwitter": {
+      "href": "https://twitter.com/loginom_company/"
+    },
+    "btnVk": {
+      "href": "https://vk.com/lg.platform/"
+    },
+    "btnYouTube": {
+      "href": "https://youtube.com/loginom/"
     },
     "colOpenDate": {
       "text": "Open time"

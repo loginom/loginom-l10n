@@ -845,6 +845,13 @@
       "_1Cv8_3": "1С:Предприятие 8.3"
     }
   },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseDB": {
+    "ClickHouseCompressionMethod": {
+      "$Caption": "Метод сжатия данных",
+      "None": "Без сжатия",
+      "LZ4": "LZ4"
+    }
+  },
   "Libraries/bgdbrtl/DB": {
     "DBServerType": {
       "$Caption": "Тип базы данных",
@@ -865,6 +872,15 @@
       "DoubleQuotes": "Двойные кавычки \"\"",
       "Apostrophes": "Апострофы ``"
     },
+    "SSLMode": {
+      "$Caption": "Использование SSL",
+      "Disabled": "Отключено",
+      "Allow": "Разрешено",
+      "Prefer": "Предпочтительно",
+      "Require": "Обязательно",
+      "VerifyCA": "Обязательно (с проверкой ЦС)",
+      "VerifyIdentity": "Обязательно (с проверкой сервера)"
+    },
     "TransactionIsolationLevel": {
       "$Caption": "Уровень изолированности транзакций",
       "ReadUnCommitted": "Read uncommitted",
@@ -872,6 +888,13 @@
       "RepeatableRead": "Repeatable Read",
       "Snapshot": "Snapshot",
       "Serializable": "Serializable"
+    }
+  },
+  "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
+    "BigQueryAuthMechanismType": {
+      "$Caption": "Механизм аутентификации",
+      "ServiceAcc": "Сервисная аутентификация",
+      "UserAcc": "Пользовательская аутентификация"
     }
   },
   "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
@@ -1273,6 +1296,14 @@
       "Fixed": "Фиксированной ширины"
     }
   },
+  "Libraries/LDAP/LDAP": {
+    "LDAPConnectionSecurity": {
+      "$Caption": "Безопасность соединения",
+      "Simple": "Обычное соединение",
+      "SSL": "SSL/TLS",
+      "StartTLS": "STARTTLS"
+    }
+  },
   "Libraries/Model/DataSet/ImportModelComponentEngine": {
     "CacheStringsMode": {
       "$Caption": "Режим кэширования строк",
@@ -1428,6 +1459,14 @@
       "None": "Не рассчитывать",
       "All": "Для всех моделей",
       "FinalOnly": "Для финальной модели"
+    }
+  },
+  "Studio/DeductorUsers": {
+    "DeductorUserAuthMode": {
+      "$Caption": "Аутентификация",
+      "None": "Нет",
+      "Local": "Локальная",
+      "LDAP": "LDAP"
     }
   },
   "Viewers/Browse/BrowseViewSearch": {
@@ -1792,10 +1831,7 @@
       "Range": "Размах",
       "NullCount": "Пропуски",
       "NotNullCount": "Значения",
-      "UniqueCount": "Уникальные",
-      "MinLength": "Минимальная длина строки",
-      "MaxLength": "Максимальная длина строки",
-      "MeanLength": "Средняя длина строки"
+      "UniqueCount": "Уникальные"
     },
     "StatViewQuartileNumber": {
       "$Caption": "Номер квартиля",

@@ -76,6 +76,10 @@
       "LabelTemplate": "Шаблон меток",
       "MethodType": "Тип метода получения интервалов"
     },
+    "BinningLinearCommonMethodSettings": {
+      "LowerLimitOpen": "Нижняя граница открыта",
+      "UpperLimitOpen": "Верхняя граница открыта"
+    },
     "BinningLinearContinuousMethodSettings": {
       "LowerLimit": "Нижняя граница",
       "UpperLimit": "Верхняя граница"
@@ -169,6 +173,9 @@
   "components/condition": {
     "Condition": {
       "DebugMode": "Режим отладки"
+    },
+    "ConditionComponentEngine": {
+      "Condition": "Условие"
     },
     "ConditionItem": {
       "CaseSensitive": "Учитывать регистр",
@@ -429,6 +436,12 @@
       "SONNType": "Тип самоорганизующейся сети"
     }
   },
+  "components/treetodata": {
+    "TreeToDataEngine": {
+      "CompositeColumnNames": "Генерировать составные метки полей",
+      "RepeatParentNodeValues": "Дублировать значения родительских узлов"
+    }
+  },
   "components/ungroupdata": {
     "UngroupDataEngine": {
       "AbsentDataPoints": "Точек отсутствия для прекращения позиции",
@@ -553,13 +566,18 @@
     "1CConnectionConfigurator": {
       "ConnectionString": "Строка подключения",
       "Password": "Пароль",
-      "SavePassword": "Сохранить пароль",
       "UserName": "Имя пользователя"
     }
   },
   "Libraries/1CConnection/1Cv8Connection": {
     "1Cv8ConnectionConfigurator": {
       "PlatformVersion": "Версия платформы"
+    }
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseDB": {
+    "ClickHouseDatabaseConfigurator": {
+      "CompressionMethod": "Метод сжатия данных",
+      "IsLocalTimeZone": "Учитывать временную зону"
     }
   },
   "Libraries/bgdbrtl/DB": {
@@ -576,9 +594,27 @@
       "ObjectQuotes": "Настройка кавычек",
       "Password": "Пароль",
       "QuotedObjectNames": "Обрамлять имена кавычками",
-      "SavePassword": "Сохранить пароль",
       "SystemTables": "Показывать системные таблицы",
       "UserName": "Логин"
+    },
+    "DBSSLConfigurable": {
+      "SSLConfigurator": "Настройки SSL"
+    },
+    "DBSSLConfigurator": {
+      "SSLCA": "Сертификат CA",
+      "SSLCert": "Сертификат пользователя",
+      "SSLKey": "Приватный ключ",
+      "SSLKeyPassword": "Пароль приватного ключа",
+      "UseSSL": "Использовать SSL"
+    }
+  },
+  "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
+    "BigQueryODBCUniDACDatabaseConfigurator": {
+      "Email": "Email cервисного аккаунта",
+      "IsRequestGoogleDrive": "Подключаться к Google Drive",
+      "KeyFilePath": "Путь к секретному ключу",
+      "SSLCA": "Сертификат CA",
+      "UseSystemTrustStore": "Системное хранилище сертификатов"
     }
   },
   "Libraries/bgdbrtl/UniDAC/MyUniDACDB": {
@@ -715,6 +751,20 @@
       "TimeZone": "Временная зона по умолчанию"
     }
   },
+  "Libraries/LDAP/LDAP": {
+    "LDAPConfigurator": {
+      "Account": "Учетная запись",
+      "BaseDN": "Базовый домен",
+      "ConnectionSecurity": "Безопасность соединения",
+      "Filter": "Фильтр LDAP",
+      "FullNameAttribute": "Атрибут полного имени",
+      "Host": "Хост",
+      "NameAttribute": "Атрибут имени",
+      "Password": "Пароль",
+      "Port": "Порт",
+      "UseSASL": "Использовать SASL авторизацию"
+    }
+  },
   "Libraries/Model/ComponentSettings": {
     "ComponentSettings": {
       "Disabled": "Отключен"
@@ -750,6 +800,7 @@
       "FactorSelection": "Настройки пошагового отбора факторов",
       "Intercept": "Включить в модель константу",
       "Regularization": "Настройки регуляризации",
+      "ShowRefCoeffs": "Показывать коэффициенты опорных категорий",
       "SimpleParams": "Параметры упрощенной настройки регрессии",
       "Statistics": "Настройки расчета статистики отбора факторов",
       "UseDetailedSettings": "Использовать детальные настройки"

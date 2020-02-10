@@ -94,6 +94,13 @@
   "Common/HTTP/HTTPNetRequest": {
     "ErrHTTPNetRequest": "Запрос к URL \"%s\" завершился с ошибкой"
   },
+  "Common/JavaScript/JavaScriptModuleLoader": {
+    "ErrModuleFileTooBig": "Файл модуля %s не может быть загружен: превышено ограничение на допустимый размер файла (%d > %d байт)",
+    "ErrModuleNotExists": "Не найден файл модуля \"%s\"",
+    "ErrModulePath": "Не удалось разрешить имя модуля \"%s\"",
+    "ErrModuleSourceRead": "Ошибка при чтении файла модуля \"%s\"",
+    "ErrModuleSpecifierEmpty": "Не указано имя модуля"
+  },
   "Common/WSDL/HTTPHeaders": {
     "ErrInvalidHeaderName": "Недопустимое имя заголовка %s"
   },
@@ -292,8 +299,6 @@
   },
   "Common/XML/XML_MSXML": {
     "ErrElementMustHaveAttribute": "Атрибут \"%s\" обязателен для элемента \"%s\"",
-    "ErrXMLLoadFailure": "Невозможно загрузить документ %s",
-    "ErrXMLLoadStringFailure": "Невозможно загрузить документ XML из строки",
     "ErrXMLParseFailure": "Ошибка при обработке документа %s (строка %d, позиция %d): %s",
     "ErrXMLParseStringFailure": "Ошибка при обработке XML (строка %d, позиция %d): %s"
   },
@@ -332,8 +337,6 @@
     "ColumnNameRuleLift": "Лифт",
     "ColumnNameRuleSupport": "Поддержка",
     "ColumnNameTransactionID": "Идентификатор транзакции",
-    "ErrModelDifferentSupport": "Минимальная поддержка уменьшена, необходимо перестроить модель",
-    "ErrModelExcludeItems": "Добавлены или исключены элементы с максимальной поддержкой, необходимо перестроить модель",
     "ErrMoreThanOneItemColumn": "Во входных данных более одного столбца элементов транзакций",
     "ErrMoreThanOneTransactionColumn": "Во входных данных более одного столбца идентификаторов транзакций",
     "ErrNConsequentMaxWrongValue": "Неверно задано максимальное число элементов в условии или следствии правил",
@@ -553,6 +556,9 @@
     "VendorCaption": "Кластеризация",
     "VendorDesc": "Кластеризация данных"
   },
+  "components/clusterization/ClusterProfiles": {
+    "ClusterNamePrefix": "Кластер "
+  },
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantApplyExternalBinning": "Невозможно использовать разбиение для столбца %s.",
     "ErrCantApplyFineClassesBinning": "Невозможно использовать начальные классы в качестве разбиения для столбца %s. Слишком много уникальных значений",
@@ -676,6 +682,7 @@
     "CorrAnalysisTauBKendallNotify": "Вычисление коэффициентов корреляции Тау-b Кендалла",
     "DisplayName": "Метка",
     "ErrNoColumnsForProcessing": "Не указаны столбцы для обработки",
+    "ErrNullInColumns": "Обработка данных с пропущенными значениями пока не поддерживается",
     "Name": "Имя"
   },
   "components/corranalysis/CorrAnalysisVendor": {
@@ -1039,11 +1046,6 @@
     "VendorDesc": "Группировка данных"
   },
   "components/javascript/JavaScriptEngine": {
-    "ErrModuleFileTooBig": "Файл модуля %s не может быть загружен: превышено ограничение на допустимый размер файла (%d > %d байт)",
-    "ErrModuleNotExists": "Не найден файл модуля \"%s\"",
-    "ErrModulePath": "Не удалось разрешить имя модуля \"%s\"",
-    "ErrModuleSourceRead": "Ошибка при чтении файла модуля \"%s\"",
-    "ErrModuleSpecifierEmpty": "Не указано имя модуля",
     "InputDataSource": "Входной источник данных",
     "OutputDataSet": "Выходной набор данных",
     "PreviewProcess": "Предварительный просмотр данных",
@@ -1665,6 +1667,10 @@
     "LocalStorageSaveFailed": "Local Storage не сохранено",
     "UnknownException": "Unknown Exception"
   },
+  "Embedded/RelativeFileDialogs": {
+    "AbsolutePath": "Абсолютный путь",
+    "RelativePath": "Относительный путь"
+  },
   "exports/database/DBExport": {
     "AddToTableNotify": "Добавление записей в таблицу",
     "DeleteFromTableNotify": "Удаление записей из таблицы",
@@ -1682,6 +1688,7 @@
     "ErrSyncKeyTypesMismatch": "Ошибка синхронизации: тип ключевого поля \"%s\" не совместим с типом исходного поля \"%s\"",
     "ErrTableNameNotSelected": "Не указано имя таблицы",
     "ErrUnknownExportType": "Неизвестный тип экспорта",
+    "ErrUpdateNotSupported": "Операция обновления записей по ключу не поддерживается текущей базой данных",
     "GroupDataNotify": "Группировка данных",
     "UpdateRecordsNotify": "Обновить существующие записи в таблице"
   },
@@ -1707,6 +1714,39 @@
   "exports/native/ExportNativeVendor": {
     "VendorCaption": "Loginom Data файл",
     "VendorDesc": "Экспорт данных в Loginom Data файл"
+  },
+  "exports/tableau/ExportTableau": {
+    "AddToTableNotify": "Добавление записей в таблицу",
+    "ErrAPIInit": "Ошибка инициализации Tableau API ",
+    "ErrAppendOverwriteForbidden": "Одновременное добавление и перезаписывание записей запрещено",
+    "ErrCantCreateEmptyTable": "Невозможно создать пустую таблицу",
+    "ErrColumnNotFound": "В источнике данных не найдено поле \"%s\"",
+    "ErrColumnTypesMismatch": "Тип поля \"%s\" не совместим с типом исходного поля \"%s\"",
+    "ErrCouldntCreateTable": "Не удалось создать таблицу %s",
+    "ErrCouldntRewriteTable": "Не удалось пересоздать таблицу %s",
+    "ErrDataSourceSelect": "Не указано ни одного соответствия с источником данных",
+    "ErrDuringExport": "Ошибка при выполнении экспорта в файл Tableau",
+    "ErrExtensionNotSupported": "Расширение \"%s\" не является правильным расширением файла Tableau Extract",
+    "ErrExtractSDKNotFound": "Tableau Extract SDK не установлено",
+    "ErrFilePath": "Не удалось получить путь к файлу",
+    "ErrFillTable": "Заполнить таблицу \"%s\" не удалось",
+    "ErrHyperExtractSDKNotFound": "Tableau Extract API 2.0 SDK не установлено",
+    "ErrHyperNotSupportedInWin32": "Формат данных \"*.hyper\" поддерживается только в 64-битной версии программы",
+    "ErrMissingServerConnection": "Отсутствует подключение к серверу Tableau",
+    "ErrNoColumnDefs": "Отсутствуют описания колонок",
+    "ErrNoFileStorage": "Не найдено файловое хранилище",
+    "ErrProjectNameNotSelected": "Не указано имя проекта",
+    "ErrServerFileNameNotSelected": "Не указано имя источника на сервере",
+    "ErrTableAlreadyExists": "Таблица %s уже существует",
+    "ErrTableNameNotSelected": "Не указано имя таблицы",
+    "ErrTableNotFound": "Не найдена таблица %s",
+    "FileConnection": "Подключение к файловому хранилищу",
+    "PublishToServerNotify": "Публикация файла на сервер",
+    "TableauRestConnection": "Подключение к серверу Tableau"
+  },
+  "exports/tableau/ExportTableauVendor": {
+    "VendorCaption": "Tableau файл",
+    "VendorDesc": "Экспорт данных в файл Tableau"
   },
   "exports/textfile/ExportTextFile": {
     "CalculateColumnSizeProcess": "Расчет ширины столбцов",
@@ -1882,6 +1922,40 @@
     "1Cv8ConnectionVendorCaption": "1С:Предприятие 8",
     "1Cv8ConnectionVendorDesc": "База данных - 1С:Предприятие 8"
   },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockReader": {
+    "ErrColOutOfRange": "Номер столбца %d вне диапазона [%d; %d]",
+    "ErrFetch": "Ошибка при чтении набора данных",
+    "ErrGetFieldDesc": "Не удалось получить описания полей для таблицы %s",
+    "ErrNoSuchSetting": "Параметр конфигурации с именем \"%s\" не существует",
+    "ErrRowOutOfRange": "Номер строки %d вне диапазона [%d; %d]"
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
+    "ErrColNotNullable": "Столбец \"%s\" (тип %s) не может принимать значения Null",
+    "ErrColOutOfRange": "Номер столбца %d вне диапазона [%d; %d]",
+    "ErrColValueOutOfRange": "Значение %g выходит за границы допустимого диапазона столбца \"%s\" (тип %s)",
+    "ErrColValueOutOfRangeInt": "Значение %d выходит за границы допустимого диапазона столбца \"%s\" (тип %s)",
+    "ErrColValueOutOfRangeString": "Длина строки \"%s\" превышает допустимую для столбца \"%s\" (тип %s)",
+    "ErrConvertFloatToDecimal": "Невозможно преобразовать значение вещественного типа %g к значению Decimal (столбец \"%s\")",
+    "ErrUnsupportedDataType": "Тип данных столбца \"%s\" не поддерживается"
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseClient": {
+    "ErrInvalidPort": "Указан некорректный номер порта: %s"
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseDB": {
+    "DatabaseTypeName": "ClickHouse",
+    "ErrColumnNotFound": "Столбец \"%s\" не найден в целевой таблице",
+    "ErrInsertDataFormatUnsupported": "Формат данных \"%s\" в INSERT не поддерживается",
+    "ErrInsertFormatUnsupported": "Используемый формат INSERT не поддерживается",
+    "ErrInsertParamsInvalidCount": "Не совпадает число полей таблицы и параметров",
+    "ErrInsertUnsupported": "Выполнение INSERT не поддерживается в операциях выборки данных",
+    "ErrInsertValuesUnsupported": "Поддерживается только параметризованный INSERT",
+    "ErrNotOwnSession": "Сессия не принадлежит базе данных",
+    "ErrStoredProcUnsupported": "ClickHouse не поддерживает хранимые процедуры"
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseDBUtils": {
+    "ErrClickHouse": "Ошибка ClickHouse: %s",
+    "ErrDateOutOfRange": "Дата %s выходит за пределы допустимого диапазона [%s; %s]"
+  },
   "Libraries/bgdbrtl/DB": {
     "ComponentTip": "%s [%s]",
     "ErrCommandTypeNotYetSupported": "Тип SQL-команды %s пока не поддерживается",
@@ -1898,10 +1972,22 @@
     "ErrSetSequence": "Ошибка установки Sequence для DB. Старый Sequence = %d",
     "ErrTableNameNotSelect": "Не указано имя таблицы",
     "ErrTestConnection": "Ошибка проверки подключения:\n%s",
-    "ErrUnPrepareQuery": "Ошибка очистки подготовленного запроса"
+    "ErrUnPrepareQuery": "Ошибка очистки подготовленного запроса",
+    "WarnQueryExecuting": "Запрос уже выполняется"
+  },
+  "Libraries/bgdbrtl/DBSSL": {
+    "DecryptPrivateKey": "Ошибка при дешифрации закрытого ключа",
+    "ErrFileNoAccess": "Файл \"%s\" недоступен",
+    "ErrFileNotFound": "Файл \"%s\" не найден",
+    "ErrGetFileStorage": "Не удалось обратиться к файловому хранилищу",
+    "SSLOptions": "Настройки SSL"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
     "DatabaseTypeName": "MS Access (OLEDB)"
+  },
+  "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
+    "DatabaseTypeName": "BigQuery (ODBC)",
+    "ErrODBCBigQueryNotExists": "ODBC-драйвер для подключения к BigQuery не установлен. Установочные пакеты и краткое описание драйвера можно найти по адресу:"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
     "DatabaseTypeName": "MS Excel (ODBC) [UniDAC]",
@@ -1923,7 +2009,8 @@
     "ErrIncorrectRegEx": "Ошибка при разборе шаблона имени драйвера: %s"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCStringBuilder": {
-    "InvalidODBCDriverName": "Драйвер \"%s\" не зарегистрирован"
+    "ErrInvalidODBCDriverName": "Драйвер \"%s\" не зарегистрирован",
+    "ErrODBCDriverName": "В строке подключения не указан драйвер ODBC"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
@@ -1962,8 +2049,10 @@
     "ErrCannotGetNodeExistFlag": "Невозможно получить флаг наличия узла с идентификатором %d: узел не является простым контейнером",
     "ErrCannotGetNodeValue": "Невозможно получить значение узла с идентификатором %d: узел является контейнером",
     "ErrCannotGetRowCount": "Невозможно получить количество строк для узла с идентификатором %d: узел не является массивом",
+    "ErrCannotGetRowRange": "Невозможно получить диапазон строк для узла с идентификатором %d: узел не является массивом",
     "ErrColumnIndexOutOfRange": "Номер столбца %d вне диапазона [%d; %d]",
     "ErrInvalidNodeInfo": "Некорректное описание узла: %s",
+    "ErrInvalidNodeInfoID": "Недопустимый идентификатор узла: %d",
     "ErrRowCountLimitReached": "Достигнут предел максимального кол-ва строк",
     "ErrRowOutOfRange": "Номер строки %d вне диапазона [%d; %d]",
     "ErrTableIndexOutOfRange": "Номер таблицы %d вне диапазона [%d; %d]"
@@ -2152,6 +2241,7 @@
     "ErrAssign": "Невозможно присвоить значениям свойств объекта %s значения объекта неподдерживаемого класса %s",
     "ErrAssignIntf": "Невозможно присвоить значениям свойств объекта %s значения объекта неподдерживаемого интерфейса",
     "ErrFloatParamIsNan": "Значение параметра \"%s\" равное NaN недопустимо",
+    "ErrFunctionRefIsNull": "Ссылка на функцию %s должна быть проинициализирована",
     "ErrInvalidIndex": "Значение индекса %d параметра \"%s\" вне диапазона [%d; %d]",
     "ErrMethodParamIsNull": "Параметр %s метода %s должен быть проинициализирован",
     "ErrMustGreaterOrEqualThan": "Значение %g параметра \"%s\" должно быть больше или равно %g",
@@ -2220,7 +2310,9 @@
     "AllExcelFilesDesc": "Файлы Excel",
     "AllFilesDesc": "Все файлы",
     "AllSQLiteFilesDesc": "База данных SQLite",
+    "AllTableauFilesDesc": "Tableau Data Extracts",
     "BMPFilesDesc": "Точечные рисунки",
+    "CertFilesDesc": "Сертификат",
     "DbfFilesDesc": "Файлы dBase",
     "DdfFilesDesc": "DDF файл",
     "DocFilesDesc": "Документы MS Word",
@@ -2231,13 +2323,17 @@
     "GIFFilesDesc": "Формат GIF",
     "HlpFilesDesc": "Файл справки",
     "HtmFilesDesc": "Веб-страницы",
+    "HyperFilesDesc": "Tableau Hyper Extracts",
     "ICOFilesDesc": "Иконка",
     "JPGFilesDesc": "Формат JPEG",
+    "JSONFilesDesc": "Текстовый файл для обмена данными",
+    "KeyFilesDesc": "Закрытый ключ",
     "LgdFilesDesc": "Loginom Data файл",
     "LogFilesDesc": "Файлы журналов регистрации",
     "MdbFilesDesc": "База данных MS Access",
     "MhtFilesDesc": "Веб-архив, один файл",
     "ODSFilesDesc": "Электронная таблица OpenDocument",
+    "P12FilesDesc": "Файлы PKCS #12",
     "PDFFilesDesc": "PDF документы",
     "RtfFilesDesc": "Файлы в формате RTF",
     "SELFilesDesc": "Файлы запросов",
@@ -2247,6 +2343,7 @@
     "SupportedExcelFilesDesc": "Файлы Excel",
     "SupportedLgdFilesDesc": "Loginom Data файлы",
     "SysFilesDesc": "Файлы конфигураций",
+    "TdeFilesDesc": "Tableau Extracts",
     "TxtFilesDesc": "Текстовые файлы",
     "WMFFilesDesc": "Метафайл",
     "WSDLFilesDesc": "Файлы описания веб-сервиса",
@@ -2670,8 +2767,6 @@
     "DeleteVendorCaptionDef": "Удален компонент",
     "DeleteViewCaption": "Удален визуализатор \"%s\"",
     "DeleteViewCaptionDef": "Удален визуализатор",
-    "ErrGenericViewsNotLoaded": "Не удалось загрузить визуализаторы подмодели \"%s\"",
-    "ErrGenericViewsNotSaved": "Не удалось сохранить визуализаторы подмодели \"%s\"",
     "ErrLinkIsNil": "Связь не задана",
     "ErrModelNodeNotRestored": "Не удалось восстановить узел \"%s\"",
     "ErrModelPackageNotExist": "Пакет, которому принадлежал объект, был закрыт",
@@ -2789,9 +2884,17 @@
   "Libraries/DataSampling/SamplingBuilder": {
     "SplitIntoIntervals": "Интерквантильное разделение"
   },
+  "Libraries/DBConnection/ClickHouse/ClickHouseDBConnectionVendor": {
+    "VendorCaption": "ClickHouse",
+    "VendorDesc": "СУБД ClickHouse"
+  },
   "Libraries/DBConnection/UniDAC/AccessODBCUniDACDBConnectionVendor": {
     "VendorCaption": "MS Access",
     "VendorDesc": "СУБД MS Access (ODBC)"
+  },
+  "Libraries/DBConnection/UniDAC/BigQueryODBCUniDACDBConnectionVendor": {
+    "VendorCaption": "BigQuery",
+    "VendorDesc": "Google BigQuery (ODBC)"
   },
   "Libraries/DBConnection/UniDAC/ExcelODBCUniDACDBConnectionVendor": {
     "VendorCaption": "MS Excel",
@@ -2982,14 +3085,18 @@
     "OriginalComponentVendorGuidDesc": "GUID Исходного компонента"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
+    "ErrCannotChangeDerivedName": "Запрещено изменять имя производных портов",
     "ErrCannotChangeDerivedSocketType": "Запрещено изменять тип данных производных портов",
     "ErrCannotDeleteDerivedConnections": "Удаление производных подключений запрещено",
     "ErrCannotDeleteDerivedSocket": "Удаление производных портов запрещено",
     "ErrCannotDeleteDerivedVendors": "Удаление производных компонентов запрещено"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
-    "ErrInputSocketDefIsEmtpy": "Не указаны типы следующих входов: ",
-    "ErrOutputSocketDefIsEmtpy": "Не указаны типы следующих выходов: "
+    "ErrInputSocketDefsEmptyName": "Не задано имя следующих входов: ",
+    "ErrOnlySinglePortCanHaveEmptyName": "Имя порта можно не задавать, только если порт является единственным",
+    "ErrOutputSocketDefsEmptyName": "Не задано имя следующих выходов: ",
+    "ErrUntypedInputSocketDefs": "Не указаны типы следующих входов: ",
+    "ErrUntypedOutputSocketDefs": "Не указаны типы следующих выходов: "
   },
   "Libraries/Model/Generic/ModelGenericComponentEngine": {
     "ActivateOuterData": "Внешние данные",
@@ -3002,13 +3109,17 @@
     "ErrAlreadyConfiguringInnerSocket": "Внешний порт компонента уже настраивается"
   },
   "Libraries/Model/Generic/ModelInputComponent": {
-    "ErrInnerOutputSocketDefIsEmtpy": "Не указаны типы следующих входов: "
+    "ErrInnerOutputSocketDefsEmptyName": "Не задано имя следующих входов: ",
+    "ErrOnlySinglePortCanHaveEmptyName": "Имя порта можно не задавать, только если порт является единственным",
+    "ErrUntypedInnerOutputSocketDefs": "Не указаны типы следующих входов: "
   },
   "Libraries/Model/Generic/ModelInputComponentVendor": {
     "VendorCaption": "Входной узел"
   },
   "Libraries/Model/Generic/ModelOutputComponent": {
-    "ErrInnerInputSocketDefIsEmtpy": "Не указаны типы следующих выходов: "
+    "ErrInnerInputSocketDefsEmptyName": "Не задано имя следующих выходов: ",
+    "ErrOnlySinglePortCanHaveEmptyName": "Имя порта можно не задавать, только если порт является единственным",
+    "ErrUntypedInnerInputSocketDefs": "Не указаны типы следующих выходов: "
   },
   "Libraries/Model/Generic/ModelOutputComponentVendor": {
     "VendorCaption": "Выходной узел"
@@ -3068,12 +3179,28 @@
     "ErrModelEngineOutputPortAlreadyInitialized": "Выходной порт уже проинициализирован"
   },
   "Libraries/Model/ModelNodesCopyUtils": {
+    "CopyNodesCaption": "Скопированы узлы",
+    "ErrCantPasteBaseInsideDerived": "Невозможно переместить базовый компонент \"%s\" внутрь производного узла \"%s\".",
+    "ErrCantPasteDerivedInsideBase": "Невозможно переместить производный узел \"%s\" внутрь базового узла \"%s\"",
+    "ErrCantPasteInsideSelf": "Невозможно переместить узел \"%s\" внутрь самого себя",
     "ErrCantRestoreReferenceNode": "Не удалось восстановить ссылку от узла \"%s\". Исходный узел \"%s\" не доступен в целевом расположении.",
+    "ErrCycleFound": "Обнаружена циклическая зависимость узлов!",
+    "ErrDuringMove": "В ходе перемещения узлов возникли ошибки",
+    "ErrLinkPortNotConnetedToNode": "Порт линка с идентификатором %s не подключен к узлу",
+    "ErrMovedVendorUnavailableForNode": "Перемещённый производный компонент %s недоступен для узла %s.",
     "ErrNodeNotConfigurable": "Не удалось создать копию узла с названием: \"%s\" и GUID: %s",
     "ErrNoNodesSpecified": "Не задан набор узлов",
     "ErrNoSourceModelUnit": "Не найден исходный модуль",
     "ErrNoTargetModelUnit": "Не найден целевой модуль",
-    "ErrSomeNodeDisposed": "Один или несколько исходных узлов были удалены или перемещены"
+    "ErrSomeNodeDisposed": "Один или несколько исходных узлов были удалены или перемещены",
+    "ErrUnableToRestoreLinkBetween": "Не удалось восстановить связь между узлами \"%s\" и \"%s\"",
+    "ErrVendorNotFound": "Компонент \"%s\" не найден",
+    "ErrVendorUnavailableForMovedNode": "Производный компонент %s недоступен для перемещённого узла %s.",
+    "ForceMovingForbidden": "Операция принудительного перемещения запрещена",
+    "MoveNodesCaption": "Перемещены узлы",
+    "OperationCanceled": "Операция была отменена",
+    "UnknownNodeName": "Неизвестный узел",
+    "UnknownVendorName": "Неизвестный компонент"
   },
   "Libraries/Model/ModelPackage": {
     "ErrAlienModelUnit": "Модуль не принадлежит текущему пакету",
@@ -3086,6 +3213,7 @@
     "ErrPackageWithNameLinkAlreadyExists": "Ссылка на пакет с именем \"%s\" уже существует",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Количество имён и значений переменных должно быть одинаковым",
     "ErrVariableNotFound": "Переменная с именем \"%s\" не найдена",
+    "LogPackageSetVersion": "Версия пакета %s изменена на %s",
     "ModelUnitDisplayNameDefault": "Модуль",
     "RestoreVariablesBackupProcessCaption": "Восстановление значений переменных пакета"
   },
@@ -3097,7 +3225,8 @@
     "BackupRestored": "При сохранении пакета \"%s\" возникла ошибка. Файл восстановлен из резервной копии.",
     "CompatConvertRequired": "При загрузке пакета \"%s\" версии %s будет произведено конвертирование.",
     "ErrCannotLoadPackageElement": "Ошибка загрузки пакета: не удалось загрузить элемент \"%s\"",
-    "ErrCannotOpenFile": "Не удалось открыть файл \"%s\""
+    "ErrCannotOpenFile": "Не удалось открыть файл \"%s\"",
+    "LogPackageSaved": "Сохранён пакет \"%s\""
   },
   "Libraries/Model/ModelReports": {
     "CantAddGenericInputViewToReport": "Добавление визуализаторов входного узла подмодели в Отчеты не поддерживается",
@@ -3154,7 +3283,6 @@
     "AddInputSocketCaption": "Добавлен вход \"%s\" к узлу \"%s\"",
     "ComponentOutputPort": "Компонент",
     "CopyNodeCaption": "Скопирован элемент \"%s\"",
-    "CopyNodesCaption": "Скопированы элементы",
     "DeleteElementsCaption": "Удалены элементы",
     "DeleteInputSocketCaption": "Удален вход \"%s\" узла \"%s\"",
     "DependentNodeOutputPort": "Зависимые узлы",
@@ -3165,6 +3293,7 @@
     "ErrColumnDataTypeChanged": "Изменился тип данных столбца \"%s\"",
     "ErrComponentNotInitialized": "Базовый компонент не проинициализирован",
     "ErrDuplicatePublishedNodeName": "Пакет уже содержит опубликованный узел с именем \"%s\"",
+    "ErrGetSourcePackageName": "Ошибка при определении имени пакета. Возможно источник сообщения был удален.",
     "ErrInactiveBranch": "Узел \"%s\" находится в неактивной ветви условия",
     "ErrInvalidModelCriticalSectionCookie": "Некорректный Cookie блокировки критической секции сценария",
     "ErrInvalidModelLockCookie": "Некорректный Cookie блокировки узлов сценария",
@@ -3194,6 +3323,7 @@
     "LogActivateNodeSuccess": "Успешно активирован узел \"%s\"",
     "LogDeactivateNode": "Деактивирован узел \"%s\"",
     "LogNodeActivationError": "Ошибка активации узла \"%s\"",
+    "LogPackagedNodeActivationError": "Ошибка активации узла \"%s\" GUID=%s Пакет=%s",
     "ResetModelNodeConfiguration": "У узла \"%s\" восстановлена исходная конфигурация",
     "RestoreBackupProcessCaption": "Восстановление конфигурации из резервной копии",
     "SynchronizationInputPort": "Порядок выполнения",
@@ -3202,12 +3332,17 @@
     "WarnLinkPortNotConnetedToNode": "Порт линка с идентификатором %s не подключен к узлу"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
+    "ErrInvalidVendor": "Компонент \"%s\" неисправен",
     "ErrMsgCantFindLinkNode": "Невозможно определить ответный порт у связи",
     "ErrMsgNoAllVendorsCollected": "Не удалось получить все необходимые типы вендоров",
     "ErrMsgNoSubModel": "Не создан компонент подмодели",
     "ErrMsgNoVendorInfo": "Не удалось получить информацию об производном компоненте узла \"%s\"",
     "ErrMsgNoVendorLocator": "Не удалось получить перечислитель вендоров портов",
     "ErrSubModelVendorNotCreated": "В текущем контексте нельзя создать компонент подмодели",
+    "ErrUnableToRestoreLinkBetween": "Не удалось восстановить связь между узлами \"%s\" и \"%s\"",
+    "ErrUnableToRestoreLinkFrom": "Не удалось восстановить связь, подключенную к выходу узла \"%s\"",
+    "ErrUnableToRestoreLinkTo": "Не удалось восстановить связь, подключенную ко входу узла \"%s\"",
+    "UnknownNodeDisplayName": "Неизвестный узел",
     "WarnModelNotSupportInPort": "Невозможно создать входной порт для порта \"%s\"",
     "WrnNullRttiInfo": "Обнаружен некорректный вендор описателя порта подмодели",
     "WrnUnknownSocketDefVendorType": "Не удалось определить тип вендора для интерфейса %s с GUID %s"
@@ -3573,6 +3708,15 @@
   "Libraries/rpc/WebSocketRemoteServer": {
     "ErrSSLChangeAfterStart": "Параметры SSL не могут быть изменены после запуска сервера"
   },
+  "Libraries/TableauRestConnection/TableauRestCommon": {
+    "ErrTableauPublishingNotSupported": "Публикация на сервер Tableau не поддерживается",
+    "HttpResponse": "Неожиданный ответ сервера. Код ответа: %d, сообщение: %s",
+    "ProjectNotFound": "Проект с именем \"%s\" не был найден на сервере"
+  },
+  "Libraries/TableauRestConnection/TableauRestConnectionVendor": {
+    "TableauRestConnectionVendorCaption": "Tableau сервер",
+    "TableauRestConnectionVendorDesc": "Подключение к Tableau серверу по REST API"
+  },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Ошибка загрузки WSDL:\nИмя файла: %s",
     "WarnMainWSDLNotLoaded": "Основной источник WSDL (%s) не загружен (%s). Пытаемся загрузить из резервного источника."
@@ -3644,11 +3788,17 @@
     "ErrSessionBackupAlreadyRestored": "Данная резервная копия сессии уже была восстановлена другим клиентом из-под текущей учётной записи",
     "ErrSessionBackupModified": "Данная резервная копия сессии была изменена другим клиентом из-под текущей учётной записи",
     "FileNames": "Имена файлов",
+    "PackageClosedLogMsg": "Закрыт пакет \"%s\"",
+    "PackageOpenedEditLogMsg": "Открыт пакет \"%s\" в режиме редактирования",
+    "PackageOpenedReadLogMsg": "Открыт пакет \"%s\" в режиме чтения",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s запущен",
     "Session": "Сессия",
+    "SessionBatch": "Пакетная обработка",
     "SessionCloseLogMsg": "Закрыта сессия для пользователя %s",
     "SessionInitializedLogMsg": "Инициализирована сессия для пользователя %s",
+    "SessionIntegrator": "Запрос из интегратора",
+    "SessionInteractive": "Интерактивная сессия",
     "User": "Пользователь",
     "UserName": "Имя пользователя",
     "WarnSessionStopTimeout": "Не удалось остановить сессию пользователя %s в течение %d миллисекунд. Количество не завершённых процессов: %d. Список активных подпроцессов: %s. Список не запущенных подпроцессов: %s."
@@ -3661,10 +3811,16 @@
     "UserStorageDirectory": "Дисковое пространство пользователей"
   },
   "Studio/DeductorUsers": {
+    "AllowedApplicationModes": "Разрешённые режимы работы приложения",
+    "Blocked": "Заблокирован",
     "ErrAccessDenied": "Отказано в доступе",
     "ErrApplicationModeNotAllowed": "Не разрешено подключение в режиме \"%s\"",
     "ErrInvalidPasswordHashInConfig": "Файл конфигурации содержит некорректный хеш пароля",
     "ErrInvalidUserNameOrPassword": "Неверное имя пользователя или пароль",
+    "ErrLastAdminChangeDenied": "Невозможно удалить или изменить единственную учетную запись администратора %s с локальной аутентификацией",
+    "ErrLDAPAuthentifyDisabled": "Не поддерживается аутентификация через LDAP",
+    "ErrLDAPGetFullName": "Не удалось получить полное имя пользователя %s",
+    "ErrLDAPUserNotFound": "Пользователь %s не найден в службе каталогов",
     "ErrLeadingOrTrailingWhitespaceInPassword": "Пароль не должен начинаться или заканчиваться пробелом",
     "ErrNoUsersWithAdminPrivileges": "Не существует ни одного пользователя с правами администратора",
     "ErrUserAlreadyDeleted": "Пользователь уже удалён",
@@ -3672,10 +3828,15 @@
     "ErrUserNameConflictsWithSharedDirectory": "Имя пользователя не может совпадать с именем общей директории %s",
     "ErrUserNameIsReserved": "Идентификатор %s зарезервирован и не может быть использован в качестве имени пользователя",
     "ErrUserNameMustBeValidIdentifier": "Имя пользователя должно быть правильным идентификатором",
+    "IsAdmin": "Администратор",
+    "IsDesigner": "Аналитик",
+    "IsViewer": "Просмотр отчетов",
     "LogAddGroup": "Добавлена группа %s",
     "LogAddUser": "Добавлен пользователь %s",
     "LogDeleteGroup": "Удалена группа %s",
     "LogDeleteUser": "Удален пользователь %s",
+    "LogUserPropertySet": "Изменение учетной записи %s: %s=%s",
+    "UseGlobalFileStorage": "Использование глобального файлового хранилище",
     "User": "Пользователь",
     "UserMetaDesc": "Пользователь"
   },
@@ -3820,6 +3981,11 @@
     "ErrParseExpression": "При разборе выражения, соответствующего вычисляемому факту \"%s\" возникла ошибка",
     "ErrRecursiveCall": "Обнаружена циклическая зависимость между вычисляемыми фактами: %s"
   },
+  "Viewers/Cube/CubeCaseSort": {
+    "DimDataTypeDesc": "Тип данных измерения",
+    "DimNameDesc": "Имя измерения",
+    "DimValueDesc": "Значение заголовка"
+  },
   "Viewers/Cube/CubeChart": {
     "MaxDotsCountDesc": "Максимальное количество точек",
     "MaxSeriesCountDesc": "Максимальное количество серий"
@@ -3843,6 +4009,7 @@
     "ErrBadRelation": "Условие не поддерживается агрегацией"
   },
   "Viewers/Cube/CubeHeaders": {
+    "CubeDummyValue": "Значение",
     "CubeTotalValue": "Итого:",
     "ErrTooManyDimensions": "Выбрано слишком много измерений"
   },
@@ -3860,10 +4027,12 @@
   },
   "Viewers/Cube/CubeView": {
     "CubeViewProcess": "Куб",
+    "DetailingProcessCaptionSuffix": " по ячейке [%d, %d]",
     "ErrAlreadyExporting": "Нельзя экспортировать кросс-таблицу, пока не будет завершен текущий экспорт",
     "ErrExportCubeClosed": "Нельзя экспортировать кросс-таблицу, когда Куб не активен",
     "ErrExportDeactivate": "Экспорт прерван из-за деактивации узла",
     "ErrPhantomCaseBracketsOpened": "Нельзя начать создание временного факта, пока не удален существующий временный факт",
+    "ErrSortCountExceeded": "Число отсортированных колонок не может превышать %d",
     "IncLoadMatrixNotify": "Инкрементный расчет фактов",
     "LoadMatrixNotify": "Расчет фактов"
   },
@@ -3880,11 +4049,11 @@
     "VendorDesc": "Отображение данных в виде дерева"
   },
   "Viewers/Detailing/Detailing": {
-    "DetailingProcessCaption": "Детализация \"%s\" по ячейке [%d, %d]",
     "ErrDetailingViewDataSource": "Не удалось подготовить источник данных для детализации \"%s\"",
     "ErrDetailingViewExecution": "Ошибка выполнения детализации \"%s\"",
     "ErrDetailingViewInitialization": "Ошибка инициализации детализации \"%s\"",
     "ErrScopeMissing": "Не удалось получить контекст владельца при инициализации детализации \"%s\"",
+    "GenericDetailingProcessCaption": "Детализация \"%s\"",
     "ManagerBrowse": "Таблица",
     "ManagerStatistics": "Статистика",
     "MsgEmbeddedViewLoadFailed": "Не удалось загрузить конфигурацию детализации \"%s\""
@@ -4012,6 +4181,7 @@
     "DefaultSeparator": ": ",
     "From": "от ",
     "LeftCloseBracket": "[",
+    "LeftOpenBracket": "(",
     "RightCloseBracket": "]",
     "RightOpenBracket": ")",
     "To": "до "

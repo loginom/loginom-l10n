@@ -76,6 +76,10 @@
       "LabelTemplate": "Caption template",
       "MethodType": "Method"
     },
+    "BinningLinearCommonMethodSettings": {
+      "LowerLimitOpen": "Lower bound open",
+      "UpperLimitOpen": "Upper bound open"
+    },
     "BinningLinearContinuousMethodSettings": {
       "LowerLimit": "Lower bound",
       "UpperLimit": "Upper bound"
@@ -169,6 +173,9 @@
   "components/condition": {
     "Condition": {
       "DebugMode": "Debug mode"
+    },
+    "ConditionComponentEngine": {
+      "Condition": "Condition"
     },
     "ConditionItem": {
       "CaseSensitive": "Case-sensitive",
@@ -429,6 +436,12 @@
       "SONNType": "Self-organizing network type"
     }
   },
+  "components/treetodata": {
+    "TreeToDataEngine": {
+      "CompositeColumnNames": "Generate composite field captions",
+      "RepeatParentNodeValues": "Repeat parent node values"
+    }
+  },
   "components/ungroupdata": {
     "UngroupDataEngine": {
       "AbsentDataPoints": "Absent data points for position termination",
@@ -487,6 +500,18 @@
   "exports/native": {
     "ExportNative": {
       "Compression": "Compression"
+    }
+  },
+  "exports/tableau": {
+    "ExportTableau": {
+      "Append": "Add records while publishing",
+      "CreateTableIfDoesntExist": "Create table if it doesn't exist",
+      "Overwrite": "Overwrite data while publishing",
+      "ProjectName": "Project name on server",
+      "PublishingEnabled": "Publish on server",
+      "RewriteFileOnExport": "Rewrite file when exporting",
+      "ServerFileName": "File name on server",
+      "TableName": "Table name"
     }
   },
   "exports/textfile": {
@@ -561,6 +586,12 @@
       "PlatformVersion": "Platform version"
     }
   },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseDB": {
+    "ClickHouseDatabaseConfigurator": {
+      "CompressionMethod": "Data compression method",
+      "IsLocalTimeZone": "Consider local time zone"
+    }
+  },
   "Libraries/bgdbrtl/DB": {
     "ConnPoolConfigurable": {
       "PoolingOptions": "Pool settings"
@@ -577,6 +608,25 @@
       "QuotedObjectNames": "Quote names",
       "SystemTables": "Show system tables",
       "UserName": "Username"
+    },
+    "DBSSLConfigurable": {
+      "SSLConfigurator": "SSL settings"
+    },
+    "DBSSLConfigurator": {
+      "SSLCA": "CA certificate",
+      "SSLCert": "User certificate",
+      "SSLKey": "Private key",
+      "SSLKeyPassword": "Private key password",
+      "UseSSL": "Use SSL"
+    }
+  },
+  "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
+    "BigQueryODBCUniDACDatabaseConfigurator": {
+      "Email": "Service account e-mail",
+      "IsRequestGoogleDrive": "Connect to Google Drive",
+      "KeyFilePath": "Path to secret key",
+      "SSLCA": "CA certificate",
+      "UseSystemTrustStore": "System certificate store"
     }
   },
   "Libraries/bgdbrtl/UniDAC/MyUniDACDB": {
@@ -713,6 +763,20 @@
       "TimeZone": "Default time zone"
     }
   },
+  "Libraries/LDAP/LDAP": {
+    "LDAPConfigurator": {
+      "Account": "Account",
+      "BaseDN": "Base domain",
+      "ConnectionSecurity": "Connection security",
+      "Filter": "LDAP filter",
+      "FullNameAttribute": "Full name attribute",
+      "Host": "Host",
+      "NameAttribute": "Name attribute",
+      "Password": "Password",
+      "Port": "Port",
+      "UseSASL": "Use SASL authorisation"
+    }
+  },
   "Libraries/Model/ComponentSettings": {
     "ComponentSettings": {
       "Disabled": "Disabled"
@@ -779,6 +843,15 @@
       "TimeOut": "Connection timeout (ms)",
       "URL": "Service URL",
       "Verb": "Method"
+    }
+  },
+  "Libraries/TableauRestConnection/TableauRestConnection": {
+    "TableauRestConnectionConfigurator": {
+      "ApiVersion": "Tableau REST API version",
+      "Password": "Password",
+      "ServerUrl": "Server Url",
+      "Site": "Site",
+      "UserName": "Username"
     }
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {

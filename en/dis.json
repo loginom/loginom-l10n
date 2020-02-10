@@ -26,6 +26,8 @@
     "ErrNoApplicableDeductorServers": "No server found on which \"{0}\" package of \"{1}\" version is available.",
     "ErrNodeNameAlreadyExistsInDifferentPackage": "node with \"{0}\" name already exists in \"{1}\" package of \"{2}\" version",
     "ErrNoWorkingApplicableDeductorServers": "No functioning server found on which \"{0}\" package of \"{1}\" version is available.",
+    "ErrOnlySingleInputPortCanHaveEmptyName": "no name specified for {0} input node and the port is not single",
+    "ErrOnlySingleOutputPortCanHaveEmptyName": "no name specified for {0} output node and the port is not single",
     "ErrPackageHasNoPublishedNodes": "The package contains no published nodes",
     "ErrSavePackageDefsError": "Error of saving of packages for {0} server",
     "ErrServerDisconnectError": "Error of disconnection from {0} server",
@@ -39,6 +41,7 @@
   },
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
     "ErrInputNeedsToBeWrappedInAnObject": "Input parameters must be wrapped in an object",
+    "ErrInvalidCharsetQualityFormat": "Invalid format of the list item in Accept-Charset header: {0}",
     "ErrInvalidContentType": "Invalid value of the Content-Type caption: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",
     "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified WebBodyFormatMessageProperty",
@@ -91,7 +94,9 @@
     "ErrRootElementCannotBeNull": "Root element must not be null",
     "ErrRootElementMustBeSingle": "Matrix of values must contain only one root element",
     "ErrUnsupportedFieldType": "\"{0}\" field contains the value of the invalid {1} type",
-    "ExecutePackageInfo": "Processing of \"{0}\" package of {1} version, execution of \"{2}\" node with {{{3}}} identifier"
+    "ExecutePackageInfo": "Processing of \"{0}\" package of {1} version, execution of \"{2}\" node with {{{3}}} identifier",
+    "ReceivedRequest": "Request for processing received",
+    "SendingResponse": "Response sending"
   },
   "DeductorIntegrationServerCore/ServiceTypeBuilder": {
     "ErrNoPublishedPackages": "No published packages",

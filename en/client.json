@@ -1,7 +1,21 @@
 {
   "about/About": {
+    "ErrVersionWrongServiceResponse": "Incorrect response of the service with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
-    "NewVersionHref": "https://loginom.com/tags/release-notes/"
+    "NewVersionHref": "https://loginom.com/tags/release-notes/",
+    "NewVersionIsAvaliableFmt": " {0} version is available"
+  },
+  "admin/LDAPSettings": {
+    "ConnectionSecurity": "Connection security",
+    "LDAPAccount": "Account",
+    "LDAPBaseDN": "Base domain",
+    "LDAPFilter": "LDAP filter",
+    "LDAPFullNameAttribute": "Attribute with full username",
+    "LDAPHost": "Host",
+    "LDAPNameAttribute": "Attribute with username",
+    "LDAPPassword": "Password",
+    "LDAPPort": "Port",
+    "UseSASL": "Use SASL"
   },
   "admin/ServerSettingsForm": {
     "Bind": "IP address",
@@ -9,6 +23,7 @@
     "ConnectionSettings": "Connection wizard",
     "DirectorySettings": "Folders",
     "Disabled": "Execution forbidden",
+    "LDAPSettings": "LDAP parameters",
     "LogFileMaxIndex": "Number of backup files",
     "LogFileMaxSize": "Maximum file size",
     "LogFileName": "File name",
@@ -43,16 +58,19 @@
     "SaveBtnText": "Save"
   },
   "admin/UserListForm": {
+    "AuthMode": "Authentification",
     "Blocked": "Blocked",
     "DeleteUserConfirm": "Do you want to delete user folder from the file system?",
     "DisplayName": "Full caption",
     "GlobalFileStorage": "Access to all files",
     "Name": "Login",
+    "Roles": "Roles",
     "Update": "Update"
   },
   "admin/UserModel": {
     "Admin": "Administration",
     "Designer": "Workflows design",
+    "Service": "Package execution",
     "Viewer": "View reports"
   },
   "app/AddPackageLinkForm": {
@@ -73,6 +91,20 @@
   "app/ConfigurePublishedPackagesForm": {
     "DisNamespace": "http://schemas.loginom.com/integration",
     "ErrPathNotSpecified": "Path to the package file is not specified"
+  },
+  "app/FindNodeForm": {
+    "ErrorInvalidGUIDFormat": "GUID value not in {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX} format",
+    "ErrorInvalidNameFormat": "Name value is invalid identifier",
+    "NodeNotFinded": "No node found by the given search criteria"
+  },
+  "app/LicenseItem": {
+    "ErrorStateFmt": "Failed to get information on {0} license"
+  },
+  "app/Licenses": {
+    "FailLicenseListText": "Failed to get license list",
+    "FailLicenseText": "Error occurred while license text receiving",
+    "LicenseModalTitle": "License Agreement",
+    "ThirdPartyModalTitle": "Third Party Software"
   },
   "app/ListViewForm": {
     "NumberObjects": "{0} objects"
@@ -110,6 +142,7 @@
     "ErrSaveReadOnlyPackage": "Failed to save \"{0}\" read-only package without changing the name"
   },
   "app/MapTree": {
+    "About": "About",
     "AdminArea": "Administration",
     "ConnectionDisplayNameDefault": "Connection",
     "Connections": "Connections",
@@ -138,9 +171,12 @@
     "WorkFlow": "Workflow"
   },
   "app/MapTreeForm": {
+    "DisplayName": "Caption",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
-    "mnuPortsShowAll": "Show all ports"
+    "mnuPortsShowAll": "Show all ports",
+    "ModelUnitRenameTitle": "Rename Module",
+    "VendorRenameTitle": "Rename Component"
   },
   "app/ModelForm": {
     "ActivateCurrent": "Run node",
@@ -149,6 +185,7 @@
     "AddNewConnectionInheritedNode": "Add connection node to workflow",
     "AddNewConnectionReferenceNode": "Add reference to connection into workflow",
     "AddNewNode": "Add node to workflow",
+    "CancelOperation": "Cancel operation",
     "CantFindGenericModelNode": "Supernode node not found",
     "CantFindSourceNode": "Failed to find source node",
     "CloneNode": "Clone node",
@@ -157,6 +194,7 @@
     "ConfigurePort": "Configure port...",
     "ConfirmRemovingDerivedVendor": "Do you really want to delete the derived component?",
     "CopyNode": "Copy node",
+    "CutNode": "Cut node",
     "DeactivateCurrent": "Deactivate node",
     "DeleteDerivedVendor": "Delete...",
     "DeleteLink": "Delete link...",
@@ -169,10 +207,12 @@
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "Error": "Error",
     "ErrPortNotCreated": "Failed to create new port",
+    "ErrRetryPasteConfirm": "Errors occurred while pasting. Do you want to repeat forcedly?\n{0}",
     "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
     "ExpandGenericModel": "Expand supernode",
     "ExplodeNode": "Expand supernode",
+    "ForceRetry": "Force retry",
     "GoToConnection": "Go to connection",
     "GoToConnections": "Go to connections",
     "HideControlVariablesPorts": "Hide control variables port",
@@ -222,7 +262,9 @@
     "AddUnitTooltip": "Add module",
     "Delete": "Delete",
     "DeleteTooltip": "Delete...",
+    "DisplayName": "Caption",
     "EditDisplayName": "Edit",
+    "EditDisplayNameTitle": "Edit Module Caption",
     "EditDisplayNameTooltip": "Edit...",
     "Links": "References",
     "PackageVariables": "Variables",
@@ -291,7 +333,9 @@
     "MsgNodeLocked": "\"{0}\" node is locked",
     "MsgNodeNotExists": "\"{0}\" node does not exist",
     "MsgNotFoundContainer": "There is no way to display \"{0}.{1}\"",
-    "MsgNotFoundWizard": "No wizard for \"{0}\" object"
+    "MsgNotFoundWizard": "No wizard for \"{0}\" object",
+    "SaveAsBtnText": "Save package as...",
+    "SaveBtnText": "Save package"
   },
   "app/VendorsListForm": {
     "BaseNodeHeader": "Base Node",
@@ -313,7 +357,9 @@
   "app/WindowTitle": {
     "Close": "Close",
     "Doc": "Help",
+    "HelpMenu": "Help Menu",
     "Minimize": "Minimize",
+    "QA": "Ask a question",
     "QAHref": "https://qa.loginom.com/questions/",
     "Restore": "Restore"
   },
@@ -475,6 +521,17 @@
   "components/datarecovery/DataRecoveryWizard": {
     "NotUsedAction": "Not selected"
   },
+  "components/datatotree/DataToTreeWizard": {
+    "ClearAllLinksPromtTitle": "Delete",
+    "ConfirmClearAllLinks": "Do you want to delete all links?",
+    "GlobalNodeIndex": "Global index",
+    "MsgAddedDataTreeNodeCanNotSelected": "Node has been added, but it is not selected because it does not match the filter",
+    "MsgEditedDataTreeNodeCanNotSelected": "Node has been renamed, but it is not selected because it does not match the filter",
+    "NotLink": "not linked",
+    "RemoveAllDataTreeNodesConfirm": "Do you really want to delete all nodes?",
+    "RemoveNodeWithChildsConfirm": "Do you really want to delete \"{0}\" node with child nodes?",
+    "WarnCannotDeleteRootNode": "Failed to delete root node"
+  },
   "components/datatovariables/DataToVariablesWizard": {
     "DataToVariablesTitle": "Table into Variables",
     "GroupDataFactor": "Variables"
@@ -563,6 +620,10 @@
     "SetLabel": "List",
     "StartingWith": "starting with",
     "ValueListIsEmpty": "No values"
+  },
+  "components/filterdata/FilterDataCollection": {
+    "ConfirmDeleteAll": "Do you really want to delete all conditions?",
+    "UniqueValuesLimitError": "\"{0}\" field has unique value count exceeding the allowable limit {1}\n"
   },
   "components/filterdata/FilterDataWizard": {
     "Activation": "Input port activation",
@@ -692,6 +753,9 @@
     "MultiDeleteConfirm": "Do you want to cancel sorting for selected fields?",
     "NotCaseSensitiveActionDesc": "Case-insensitive"
   },
+  "components/treetodata/TreeToDataWizard": {
+    "GlobalNodeIndex": "Global node index"
+  },
   "components/ungroupdata/UngroupDataWizard": {
     "ErrDataTypeTimeAxisFields": "Field data types for data sequentializing must match",
     "ErrInSelectGroupFields": "Ungroupable field not selected",
@@ -798,6 +862,23 @@
   "exports/excelfile/ExportExcelFilePreviewWizard": {
     "DefaultSheetName": "Sheet1"
   },
+  "exports/tableau/ExportTableauMappingWizard": {
+    "colDisplayNameTitle": "Tableau Table Fields",
+    "colSourceNameTitle": "Source Columns",
+    "ErrAbsentDataSourceSourceDetails": "List of absent source columns used previously:",
+    "ErrAbsentFieldsDetails": "List of absent table columns used previously:",
+    "ErrUpdateFieldsDetails": "List of table columns in which changes occurred:",
+    "SyncThroughColumnsToolTip": "Refresh table fields",
+    "Title": "Map Source Columns to Table Fields"
+  },
+  "exports/tableau/ExportTableauParamsWizard": {
+    "ErrProjectNameNotSelected": "No project name specified",
+    "ErrServerFileNameNotSelected": "No source name specified on server",
+    "ErrTableNameNotSelected": "No table name specified"
+  },
+  "exports/tableau/TableauCreateTableDialog": {
+    "DublicateFieldName": "A field with the same name already exists"
+  },
   "exports/xml/BaseXmlRequestWizard": {
     "EmptyNamespace": "empty namespace",
     "ExportXmlRequestTitle": "Field Mapping for Export"
@@ -811,6 +892,12 @@
   },
   "ext/CustomRowBody": {
     "ToggleRowNotFoundRow": "No row to open/close was found"
+  },
+  "ext/DataSourceProxy": {
+    "DataSourceNotActive": "Data set not active"
+  },
+  "ext/ExcessColumnLabel": {
+    "TooltipTemplate": " {0} from {1} rows displayed"
   },
   "ext/ExportUtils": {
     "BytesSuffix": "byte",
@@ -891,9 +978,12 @@
   },
   "ext/TotalLabel": {
     "HeaderFormat": "# |{0}|",
-    "RowCountSymbol": "#"
+    "RowCountSymbol": "#",
+    "TooltipPartTemplate": " {0} from {1} rows displayed",
+    "TooltipTemplate": "Total row count {0}"
   },
   "ext/TriStateSortColumn": {
+    "SortClearAllText": "Clear all sorting",
     "SortClearText": "Clear sort"
   },
   "ext/TypedTag": {
@@ -922,12 +1012,16 @@
     "ACCDBFileDesc": "MS Access 2007 Database",
     "ACCDBFilesDesc": "MS Access 2007 Databases",
     "AllFilesDesc": "All Files",
+    "AllTableauFileDesc": "Tableau file",
+    "AllTableauFilesDesc": "Tableau Data Extracts",
     "ArchiveFileDesc": "Archive",
     "ArchiveFilesDesc": "Archives",
     "AudioFileDesc": "Audio File",
     "AudioFilesDesc": "Audio files",
     "BMPFileDesc": "Bitmap",
     "BMPFilesDesc": "Bitmaps",
+    "CertFileDesc": "Certificate",
+    "CertFilesDesc": "Certificates",
     "CsvFileDesc": "CSV file",
     "CsvFilesDesc": "CSV files",
     "DbfFileDesc": "dBase file",
@@ -949,12 +1043,18 @@
     "GIFFilesDesc": "GIF images",
     "HtmFileDesc": "Webpage",
     "HtmFilesDesc": "Webpages",
+    "HyperFileDesc": "Tableau Hyper Extract",
+    "HyperFilesDesc": "Tableau Hyper Extracts",
     "ICOFileDesc": "Icon",
     "ICOFilesDesc": "Icons",
     "IMGAllFileDesc": "Image",
     "IMGAllFilesDesc": "Images",
     "JPGFileDesc": "JPEG image",
     "JPGFilesDesc": "JPEG images",
+    "JSONFileDesc": "Text file for data exchange",
+    "JSONFilesDesc": "Text files for data exchange",
+    "KeyFileDesc": "Private key",
+    "KeyFilesDesc": "Private keys",
     "LckFileDesc": "Lock file",
     "LckFilesDesc": "Lock files",
     "LGDFileDesc": "Loginom Data file",
@@ -971,6 +1071,8 @@
     "MhtFilesDesc": "Web archives, one file",
     "ODSFileDesc": "OpenDocument spreadsheet",
     "ODSFilesDesc": "OpenDocument spreadsheets",
+    "P12FileDesc": "PKCS #12 file",
+    "P12FilesDesc": "PKCS #12 files",
     "PDFFileDesc": "PDF document",
     "PDFFilesDesc": "PDF documents",
     "PNGFileDesc": "PNG image",
@@ -987,6 +1089,8 @@
     "SVGFilesDesc": "SVG images",
     "SysFileDesc": "Configuration file",
     "SysFilesDesc": "Configuration files",
+    "TdeFileDesc": "Tableau Extract",
+    "TdeFilesDesc": "Tableau Extracts",
     "TxtFileDesc": "Text file",
     "TxtFilesDesc": "Text files",
     "VideoFileDesc": "Video file",
@@ -1019,6 +1123,12 @@
   },
   "filedialog/SaveDialogForm": {
     "BtnSave": "Save",
+    "CantCreateFolder": "Failed to create \"{0}\" folder",
+    "CreateFolderTitle": "Create Folder",
+    "FileAlreadyExists": "A file with the same name already exists",
+    "FolderAlreadyExists": "A folder with the same name already exists",
+    "NeedNotEmptyFolderName": "It is required to specify a non-empty folder name",
+    "NewFolderName": "New folder name:",
     "OverwritePromptMsgFmt": "\"{0}\" already exists. Do you want to replace it?",
     "OverwritePromptTitle": "Confirm Save As",
     "TitleSave": "Save File"
@@ -1150,13 +1260,20 @@
     "Loading": "Loading..."
   },
   "homepage/Banner": {
+    "ErrVersionWrongServiceResponse": "Incorrect response of the service with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
-    "NewVersionHref": "https://loginom.com/tags/release-notes/"
+    "NewVersionHref": "https://loginom.com/tags/release-notes/",
+    "NewVersionIsAvaliableFmt": " {0} version is available"
   },
   "homepage/HomePage": {
+    "CleanConfirm": "Do you want to clean the list of recently opened packages?",
+    "CleanConfirmOk": "Clean",
+    "CleanTitle": "Clean List",
     "NoNewsLog": "Failed to get news",
     "RemoveFromHistoryFmt": "No \"{0}\" file found. It may have been renamed, moved or deleted. Do you want to remove this package from the list of recent packages?",
-    "RemoveFromHistoryTitle": "No file found"
+    "RemoveFromHistoryTitle": "No file found",
+    "RemoveNoRightsFmt": "\"{0}\" user has no rights to open the package",
+    "RemoveNoRightsTitle": "Failed to open package"
   },
   "imports/dbimport/DBImportTable": {
     "FieldsFilter": "Fields filter"
@@ -1321,6 +1438,9 @@
     "Group": "Group",
     "Title": "Caption"
   },
+  "login/Login": {
+    "VersionLabelFmt": "Version: {0}"
+  },
   "mxgraph/graph/Graph": {
     "ImplementThisInModelForm": "This function must be implemented in ModelForm",
     "LeaveSubmodel": "Move up"
@@ -1377,6 +1497,7 @@
   "mxgraph/port/Port": {
     "CONNECTION": "Connection",
     "DATASOURCE": "Data set",
+    "DATATREE": "Data tree",
     "INHERITANCE": "Inheritance",
     "MODEL": "Model",
     "OptionalPortParam": "Optional port",
@@ -1449,6 +1570,7 @@
   },
   "rpc/Exceptions": {
     "ErrAbstractFunction": "Abstract method \"{0}\" was called",
+    "ErrAggregateExceptionMessage": "Exceptions occurred while processing",
     "ExceptionClassFmt": "EXCEPTION CLASS: {0}",
     "InnerExceptionTitle": "INTERNAL EXCEPTIONS:",
     "MessageFmt": "MESSAGE: {0}",
@@ -1714,6 +1836,34 @@
     "OnTop": "Bring to front",
     "Options": "Settings: {0}..."
   },
+  "viewers/clusterprofiles/CachedState": {
+    "TotalClusterDisplayName": "Total"
+  },
+  "viewers/clusterprofiles/ClusterProfilesUtils": {
+    "RangeBorderViolationErr": "Range border violation"
+  },
+  "viewers/clusterprofiles/ClusterProfilesView": {
+    "FieldPrefixMax": "to",
+    "FieldPrefixMin": "from"
+  },
+  "viewers/clusterprofiles/ComparisonController": {
+    "BarHidden": "(hidden)"
+  },
+  "viewers/clusterprofiles/GridController": {
+    "CenterCoord": "Coordinate:",
+    "CompareTo": " / ",
+    "EmptyValue": "Value - empty string",
+    "InfiniteValues": "Quick view contains infinite values",
+    "NotAvailable": "Not available",
+    "NotComputed": "Not calculated",
+    "NullBar": "null",
+    "NullData": "Only null data in the field",
+    "OutOf": "from",
+    "ResidueBar": "Other",
+    "StringLength": "(string length)",
+    "TooManyValues": "Too many unique values",
+    "UndefinedDataKind": "Undefined data type"
+  },
   "viewers/common/ViewerCard": {
     "AddVisualizer": "Add visualizer"
   },
@@ -1815,10 +1965,15 @@
     "SourceRecordCountDesc": "Source row count",
     "SubFunctionCountDesc": "Number of displayed measures",
     "SubFunctionDisplayName": "Display",
+    "WarnCubeSortedColLimit": "Count of sorted columns cannot exceed {0}",
     "Yes": "Yes"
   },
   "viewers/cube/PivotGrid": {
-    "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields, or by pressing the \"+\" button"
+    "AscSortCaption": "Sort Ascending",
+    "BackwardSortNavButton": "Backward Sort",
+    "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields, or by pressing the \"+\" button",
+    "DescSortCaption": "Sort Descending",
+    "ForwardSortNavButton": "Forward Sort"
   },
   "viewers/detailing/Detailing": {
     "ErrNullEngine": "Visualizer initialization error",
@@ -1830,9 +1985,13 @@
     "SelectNext": "Next record",
     "SelectPrev": "Previous record"
   },
+  "viewers/fastpreview/DataTreeForm": {
+    "LoadedNodesLimitNote": "Only the first {0} are shown from the sorted nodes"
+  },
   "viewers/fastpreview/FastPreviewForm": {
     "NodeIsNotActive": "Node not activated",
     "PreviewAllowedSocketTypes": "For now, it is possible to show data only for a table or variables",
+    "TitleNodeDeactivated": "(DEACTIVATED)",
     "WindowTitleEnd": "Quick View"
   },
   "viewers/LockableView": {
@@ -1914,21 +2073,30 @@
   },
   "viewers/statistics/StatView": {
     "CountOfStrings": "Row count: ",
+    "DaysSuffix": "days",
     "ErrBounds": "Minimum more than maximum",
+    "InfiniteValues": "Quick view contains infinite values",
     "LeftOutlier": "Minimum outlier: ",
     "LeftWhisker": "Sample minimum: ",
     "LowerQuartile": "Lower quartile: ",
     "Median": "Median: ",
     "NotAvailable": "Not available",
+    "NotCalculated": "Not calculated",
+    "NullData": "Only null data in the field",
     "RightOutlier": "Maximum outlier: ",
     "RightWhisker": "Sample maximum: ",
     "SliderTipFmt": "{0}: {1}",
     "SliderTipMax": "max",
     "SliderTipMin": "min",
+    "StringLengthMax": "Minimum string length:",
+    "StringLengthMean": "Mean string length:",
+    "StringLengthMin": "Maximum string length:",
+    "StringLengthSuffix": "string length:",
     "TuneColumnsLabelTitle": "Field Caption",
     "TuneColumnsTitle": "Configure Fields",
     "TuneStatisticsLabelTitle": "Statistics Parameter",
     "TuneStatisticsTitle": "Configure Parameters",
+    "UndefinedDataKind": "Undefined data kind",
     "UniqueValuesCount": "Values count - ",
     "UpperQuartile": "Upper quartile: "
   },
@@ -2008,6 +2176,7 @@
     "BtnTooltipTest": "Test connection",
     "ClearSort": "Clear sort",
     "ConnectionPath": "Connection path",
+    "ConnectionRenameTitle": "Rename Connection",
     "ConnectionStatus": "Connection status",
     "DeleteConnectionPrompt": "Do you really want to delete {0} connection?",
     "DeleteConnectionPromptTitle": "Delete Connection",
@@ -2045,6 +2214,37 @@
     "SummaryRelOverflowErr": "Total percentage must not exceed 100%",
     "SummarySetName": "Total:",
     "UnknownValue": "Unknown value"
+  },
+  "wizards/datatree/DataTreeNodeDefsMappingWizard": {
+    "CreateMappingToAllConfirm": "Do you really want to create output nodes for all inputs?",
+    "MsgAddedDataTreeNodeCanNotSelected": "Node has been added, but it is not selected because it does not match the filter",
+    "MsgConnectedDataTreeNodeCanNotSelected": "Node in the output tree connected, but it is not selected because it does not match the filter",
+    "MsgEditedDataTreeNodeCanNotSelected": "Node has been renamed, but it is not selected because it does not match the filter",
+    "RemoveAllMappingDataTreeNodesConfirm": "Do you really want to delete all output nodes?",
+    "RemoveInvalidRelationsConfirm": "Links with non-existent objects were found. Do you want to delete all lost links and continue?",
+    "RemoveNodeWithChildsConfirm": "Do you really want to delete \"{0}\" node with child nodes?",
+    "RemoveRequiredMappingNodeDefConfirm": "\"{0}\" node is used. Do you really want to delete it?",
+    "WarnCannotDeleteRootNode": "Failed to delete root node"
+  },
+  "wizards/datatree/DataTreeOutputSocketWizard": {
+    "frmDataTreeMappingTitle": "Configure Output Nodes"
+  },
+  "wizards/datatree/DataTreeSourceOutputSocketWizard": {
+    "frmDataTreeMappingTitle": "Configure Output Nodes"
+  },
+  "wizards/datatree/EditDataTreeNodeDefForm": {
+    "AddBtnText": "Add",
+    "AddNodeDefTitle": "Add Node",
+    "DefaultUsageType": "Default usage type",
+    "ErrNodeEmptyName": "Node name cannot be empty",
+    "ErrNodeInvalidIdentifier": "Entered \"{0}\" node name is not a valid identifier",
+    "ErrNodeNameAlreadyExists": "Node with \"{0}\" name already exists",
+    "ModifyBtnText": "Apply",
+    "ModifyNodeDefTitle": "Edit Node",
+    "UsageType": "Usage type"
+  },
+  "wizards/datatree/TuneDataTreeInputPortWizard": {
+    "frmDataTreeMappingTitle": "Configure Input Nodes"
   },
   "wizards/genericmodelcomponent/GenericModelComponentWizard": {
     "ActionAdd": "Add",

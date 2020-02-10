@@ -1,10 +1,48 @@
 {
   "about/About": {
     "btnBugReport": {
-      "href": "https://loginom.com/company/feedback/"
+      "href": "https://loginom.com/company/feedback/",
+      "text": "Report a problem"
+    },
+    "btnLicenseAgreement": {
+      "text": "License Agreement"
+    },
+    "btnProductUrl": {
+      "text": "Loginom web site"
+    },
+    "btnThirdParty": {
+      "text": "External components"
     },
     "btnWhatsNew": {
-      "href": "https://loginom.com/tags/release-notes/"
+      "href": "https://loginom.com/tags/release-notes/",
+      "text": "What's new?"
+    },
+    "frmAbout": {
+      "title": "About"
+    },
+    "lblActualVersion": {
+      "text": "Latest version installed"
+    },
+    "lblCheckingVersion": {
+      "text": "Check for updates..."
+    },
+    "lblExpirationDate": {
+      "text": "License termination date:"
+    },
+    "lblPlatformEdition": {
+      "text": "Edition:"
+    },
+    "lblSerialNumber": {
+      "text": "Serial number:"
+    },
+    "lblUnknownVersion": {
+      "text": "Failed to check for updates"
+    },
+    "lblVersion": {
+      "text": "Version:"
+    },
+    "mniCopy": {
+      "text": "Copy information"
     }
   },
   "admin/ServerSettingsForm": {
@@ -95,6 +133,9 @@
     "btnCancel": {
       "text": "Cancel"
     },
+    "cbxAuthMode": {
+      "fieldLabel": "Authentification"
+    },
     "chkAdmin": {
       "boxLabel": "Administration"
     },
@@ -106,6 +147,9 @@
     },
     "chkGlobalFileStorage": {
       "boxLabel": "File storage full access"
+    },
+    "chkRunner": {
+      "boxLabel": "Package execution"
     },
     "chkViewer": {
       "boxLabel": "View reports"
@@ -245,11 +289,31 @@
     }
   },
   "app/FindNodeForm": {
+    "btnApply": {
+      "text": "Go to Node"
+    },
     "btnCancel": {
       "text": "Cancel"
     },
     "edtGUID": {
       "emptyText": "{________-____-____-____-____________}"
+    },
+    "frmFindNodeForm": {
+      "title": "Find Workflow Node"
+    },
+    "rbByGUID": {
+      "boxLabel": "By GUID"
+    },
+    "rbByLabel": {
+      "boxLabel": "By caption"
+    },
+    "rbByName": {
+      "boxLabel": "By name"
+    }
+  },
+  "app/LicenseItem": {
+    "btnHomePage": {
+      "text": "homepage"
     }
   },
   "app/ListViewForm": {
@@ -275,6 +339,9 @@
       "text": "Set up",
       "tooltip": "Set up..."
     },
+    "btnShowDescription": {
+      "tooltip": "Show/hide property inspector"
+    },
     "btnTable": {
       "tooltip": "Table"
     },
@@ -289,6 +356,9 @@
     }
   },
   "app/LoginomMenuForm": {
+    "btnAbout": {
+      "text": "About"
+    },
     "btnHelp": {
       "text": "Help"
     },
@@ -297,6 +367,9 @@
     },
     "btnLogOut": {
       "text": "Log Out"
+    },
+    "btnQA": {
+      "text": "Ask a question"
     },
     "btnQuit": {
       "text": "Close"
@@ -382,11 +455,17 @@
     "btnExpandToNodes": {
       "tooltip": "Expand/collapse to nodes"
     },
+    "btnFindNode": {
+      "tooltip": "Find node..."
+    },
     "btnRemoveNode": {
       "tooltip": "Delete node"
     },
     "btnSetNodeActive": {
       "tooltip": "Open/close node"
+    },
+    "btnShow": {
+      "tooltip": "Go to"
     },
     "btnShowViews": {
       "tooltip": "Show visualizers"
@@ -416,6 +495,9 @@
     },
     "btnCursor": {
       "tooltip": "Object selection mode"
+    },
+    "btnCut": {
+      "tooltip": "Cut"
     },
     "btnDeriveModelNode": {
       "tooltip": "Create derived component ..."
@@ -454,6 +536,9 @@
     },
     "btnShowDerivedNodes": {
       "tooltip": "Show parent nodes for derived"
+    },
+    "btnShowDescription": {
+      "tooltip": "Show/hide property inspector"
     },
     "btnShowOutline": {
       "tooltip": "Show workflow outline"
@@ -703,6 +788,9 @@
     },
     "btnCancel": {
       "text": "Cancel"
+    },
+    "edtGUID": {
+      "fieldLabel": "GUID"
     },
     "edtName": {
       "fieldLabel": "Name"
@@ -1378,6 +1466,77 @@
       "title": "Imputation"
     }
   },
+  "components/datatotree/DataToTreeWizard": {
+    "btnAddChild": {
+      "tooltip": "Add child node"
+    },
+    "btnAddSibling": {
+      "tooltip": "Add neighboring node"
+    },
+    "btnAutoLinkAll": {
+      "text": "Auto link all"
+    },
+    "btnClearLinks": {
+      "text": "Delete All Links"
+    },
+    "btnEdit": {
+      "tooltip": "Edit..."
+    },
+    "btnGenerateSubNodes": {
+      "tooltip": "Generate child elements"
+    },
+    "btnLoadByXSD": {
+      "tooltip": "Load from XSD..."
+    },
+    "btnMoveDown": {
+      "tooltip": "Move down"
+    },
+    "btnMoveUp": {
+      "tooltip": "Move up"
+    },
+    "btnNextExpandable": {
+      "tooltip": "Next recursive"
+    },
+    "btnShowInvalidRelations": {
+      "text": "Show Lost Links"
+    },
+    "colDelete": {
+      "tooltip": "Delete all..."
+    },
+    "colDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colFields": {
+      "text": "Source data set columns"
+    },
+    "colLink": {
+      "text": "Related fields"
+    },
+    "colLink.editor": {
+      "emptyText": "not linked"
+    },
+    "colNodes": {
+      "text": "Tree node"
+    },
+    "frmDataToTreeWizard": {
+      "title": "Data to Tree Transformation Wizard"
+    },
+    "mniAutoLinkTree": {
+      "text": "Auto link"
+    },
+    "mniDeleteColumnLink": {
+      "text": "Delete link"
+    },
+    "mniDeleteTreeLink": {
+      "text": "Delete link"
+    },
+    "txtFieldsFilter": {
+      "emptyText": "Filter"
+    },
+    "txtTreeFilter": {
+      "emptyText": "Filter"
+    }
+  },
   "components/datatoxml/DataToXmlParamsWizard": {
     "cntFormatSettings": {
       "title": "Configure Formatting"
@@ -1390,6 +1549,9 @@
     }
   },
   "components/datereform/DateReformWizard": {
+    "colCount": {
+      "tooltip": "Transformation count"
+    },
     "colDisplayName": {
       "text": "Field"
     },
@@ -1871,8 +2033,23 @@
     }
   },
   "components/treetodata/TreeToDataWizard": {
+    "btnDeselectAll": {
+      "tooltip": "Deselect all"
+    },
+    "btnReverse": {
+      "tooltip": "Invert selection"
+    },
+    "btnSelectAll": {
+      "tooltip": "Check all"
+    },
     "colName": {
       "text": "Name"
+    },
+    "colNodes": {
+      "text": "Nodes"
+    },
+    "frmTreeToDataWizard": {
+      "title": "Select Tree Nodes"
     }
   },
   "components/ungroupdata/UngroupDataWizard": {
@@ -2018,6 +2195,9 @@
     "colRequestLink": {
       "text": "Related fields"
     },
+    "colRequestLink.editor": {
+      "emptyText": "not linked"
+    },
     "colTreeNode": {
       "text": "Object"
     },
@@ -2126,6 +2306,11 @@
     },
     "pedURL.valueConfig": {
       "emptyText": "http://example.com/operation-path"
+    }
+  },
+  "connections/tableaurest/TableauRestConnectionParams": {
+    "btnTestConnection": {
+      "text": "Test"
     }
   },
   "connections/webservice/AuthorizationForm": {
@@ -2292,9 +2477,61 @@
       "title": "Export to Loginom Data File"
     }
   },
+  "exports/tableau/ExportTableauParamsWizard": {
+    "btnConnect": {
+      "text": "Connect"
+    },
+    "btnCreateTable": {
+      "text": "Create Table..."
+    },
+    "cntPublishing": {
+      "title": "Publish the Exported Fle on Tableau Server"
+    },
+    "edtConnection": {
+      "fieldLabel": "File storage"
+    },
+    "frmExportParamsForm": {
+      "title": "Data Export to Tableau File"
+    }
+  },
   "exports/tableau/TableauCreateTableDialog": {
+    "btnAdd": {
+      "text": "Add",
+      "tooltip": "Add field"
+    },
+    "btnApply": {
+      "text": "Create Table"
+    },
     "btnCancel": {
       "text": "Cancel"
+    },
+    "btnDefaults": {
+      "text": "Restore",
+      "tooltip": "Restore default field list"
+    },
+    "btnMoveDown": {
+      "tooltip": "Move down"
+    },
+    "btnMoveUp": {
+      "tooltip": "Move up"
+    },
+    "colDelete": {
+      "tooltip": "Delete all"
+    },
+    "colDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colName": {
+      "text": "Field name"
+    },
+    "colType": {
+      "text": "Field type"
+    },
+    "fldTableName": {
+      "fieldLabel": "Table name"
+    },
+    "frmTableauCreateTableDialog": {
+      "title": "Create New Table"
     }
   },
   "exports/textfile/ExportTextFileParamsWizard": {
@@ -2406,8 +2643,38 @@
     "frmOpenDialogForm": {
       "title": "Open File"
     },
+    "mniCreateFolder": {
+      "text": "New folder..."
+    },
+    "mniOpen": {
+      "text": "Open"
+    },
+    "mniRefresh": {
+      "text": "Refresh"
+    },
+    "mniSort": {
+      "text": "Sort"
+    },
+    "mniSortAsc": {
+      "text": "Ascending"
+    },
+    "mniSortByName": {
+      "text": "Name"
+    },
+    "mniSortByPath": {
+      "text": "Path"
+    },
+    "mniSortBySize": {
+      "text": "Size"
+    },
+    "mniSortByTime": {
+      "text": "Changed"
+    },
     "mniSortByType": {
       "text": "Type"
+    },
+    "mniSortDesc": {
+      "text": "Descending"
     },
     "pnlDirectoriesTree": {
       "title": "Folders"
@@ -2515,9 +2782,24 @@
       "text": "Delete All Conditions"
     }
   },
+  "homepage/Banner": {
+    "btnGoToNewVersion": {
+      "text": "Go to"
+    },
+    "btnLicenseAgreement": {
+      "text": "License Agreement"
+    },
+    "lblCommunityBannerText": {
+      "text": "This \"Community\" edition is for non-commercial use."
+    },
+    "lblCookiesInfo": {
+      "text": "We use cookies-files. Using this application you agree to use cookies-files."
+    }
+  },
   "homepage/HomePage": {
     "btnBlog": {
-      "href": "https://loginom.com/blog/"
+      "href": "https://loginom.com/blog/",
+      "text": "Blog"
     },
     "btnCreatePackage": {
       "text": "New Package..."
@@ -2529,31 +2811,37 @@
       "href": "https://facebook.com/lg.platform/"
     },
     "btnFastStart": {
-      "href": "https://help.loginom.com/userguide/quick-start/"
+      "href": "https://help.loginom.com/userguide/quick-start/",
+      "text": "Fast Start"
     },
     "btnInstagram": {
       "href": "https://instagram.com/loginom_company/"
     },
     "btnIntro": {
-      "href": "https://loginom.com/welcome-video/"
+      "href": "https://loginom.com/welcome-video/",
+      "text": "Getting acquainted with Loginom"
     },
     "btnLearning": {
-      "href": "https://loginom.com/learning/"
+      "href": "https://loginom.com/learning/",
+      "text": "Learning"
     },
     "btnLinkedin": {
       "href": "https://linkedin.com/company/loginom/"
     },
     "btnMoreNews": {
-      "href": "https://loginom.com/blog/"
+      "href": "https://loginom.com/blog/",
+      "text": "More News"
     },
     "btnOpenPackage": {
       "text": "Open Package..."
     },
     "btnRreleaseNotes": {
-      "href": "https://loginom.com/tags/release-notes/"
+      "href": "https://loginom.com/tags/release-notes/",
+      "text": "What's new in Loginom?"
     },
     "btnSupport": {
-      "href": "https://loginom.com/company/support/"
+      "href": "https://loginom.com/company/support/",
+      "text": "Support"
     },
     "btnTwitter": {
       "href": "https://twitter.com/loginom_company/"
@@ -2564,6 +2852,12 @@
     "btnYouTube": {
       "href": "https://youtube.com/loginom/"
     },
+    "colActionClean": {
+      "tooltip": "Clean list..."
+    },
+    "colActionClean.0": {
+      "tooltip": "Remove from list"
+    },
     "colOpenDate": {
       "text": "Open time"
     },
@@ -2572,6 +2866,24 @@
     },
     "grdRecentPackages": {
       "title": "Recent opened packages"
+    },
+    "mniClean": {
+      "text": "Clean list..."
+    },
+    "mniFavorite": {
+      "text": "Add to favorite"
+    },
+    "mniOpen": {
+      "text": "Go to"
+    },
+    "mniOpenInFolder": {
+      "text": "Show in folder"
+    },
+    "mniRemoveRecord": {
+      "text": "Remove from list"
+    },
+    "mniUnfavorite": {
+      "text": "Remove from favorite"
     },
     "pnlHomePage": {
       "title": "Home"
@@ -2918,19 +3230,23 @@
   },
   "login/Login": {
     "btnFastStart": {
-      "href": "https://help.loginom.com/userguide/quick-start/"
+      "href": "https://help.loginom.com/userguide/quick-start/",
+      "text": "Fast Start"
     },
     "btnHelp": {
-      "href": "https://help.loginom.com/"
+      "href": "https://help.loginom.com/",
+      "text": "Documents"
     },
     "btnIntro": {
-      "href": "https://loginom.com/welcome-video/"
+      "href": "https://loginom.com/welcome-video/",
+      "text": "Getting acquainted with Loginom"
     },
     "btnLogin": {
       "text": "Login"
     },
     "btnQA": {
-      "href": "https://qa.loginom.com/"
+      "href": "https://qa.loginom.com/",
+      "text": "Q&A"
     },
     "chkRememberUser": {
       "boxLabel": "Remember me"
@@ -3395,16 +3711,97 @@
     }
   },
   "viewers/clusterprofiles/ClusterProfilesView": {
+    "btnClusterGridPosition": {
+      "tooltip": "Cluster position in table"
+    },
+    "btnComparison": {
+      "text": "Compare",
+      "tooltip": "Comparison of the selected clusters by field"
+    },
+    "btnDetailing": {
+      "tooltip": "Detailing"
+    },
+    "btnDetailingType": {
+      "tooltip": "Detailing type"
+    },
+    "btnFilter": {
+      "text": "Filter",
+      "tooltip": "Table filter settings"
+    },
+    "btnHistogramScale": {
+      "tooltip": "Scaling of histograms"
+    },
+    "btnImportanceHeatMap": {
+      "tooltip": "Significance by colour"
+    },
+    "btnIndicator": {
+      "tooltip": "Indicator"
+    },
+    "btnNullBar": {
+      "tooltip": "Show null column in histograms"
+    },
+    "btnResidueBar": {
+      "tooltip": "Show \"Other\" column in histograms"
+    },
+    "btnStackedHistogram": {
+      "tooltip": "Stacked histogram"
+    },
+    "btnTotalHistogram": {
+      "tooltip": "Show universal set in histograms"
+    },
+    "colAttribute": {
+      "text": "Attribute"
+    },
     "colClusterIndexer": {
       "text": "#",
       "tooltip": "Row number"
+    },
+    "colClusterLabel": {
+      "text": "Class caption"
+    },
+    "colClusterSize": {
+      "text": "Support"
     },
     "colColumnIndexer": {
       "text": "#",
       "tooltip": "Row number"
     },
+    "colColumnName": {
+      "text": "Field caption"
+    },
+    "colDataType": {
+      "text": "Type"
+    },
+    "colDisplayName": {
+      "text": "Caption"
+    },
     "colIndex": {
-      "text": "No"
+      "text": "No",
+      "tooltip": "Value number"
+    },
+    "colShare": {
+      "text": "Weight"
+    },
+    "lblCellImportance": {
+      "text": "Cell significance"
+    },
+    "lblClusterSize": {
+      "text": "Cluster size"
+    },
+    "lblColumnImportance": {
+      "text": "Field significance"
+    },
+    "lblComparisonWelcome": {
+      "text": "Select several cells to compare clusters by field"
+    },
+    "lblHideUnusedColumns": {
+      "text": "Hide unused fields"
+    },
+    "lblHistogramUnavailable": {
+      "text": "Failed to show histogram"
+    },
+    "mniFocusGrid": {
+      "text": "Menu Item"
     }
   },
   "viewers/common/ViewerCard": {
@@ -3626,14 +4023,32 @@
     "btnApply": {
       "text": "Apply"
     },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "colDimensionDisplayName": {
+      "text": "Dimension"
+    },
+    "colDimensionType": {
+      "text": "Position"
+    },
     "colDisplayFunctionType": {
       "text": "Aggregation"
+    },
+    "colSubFunctionDataType": {
+      "text": "Type"
     },
     "colSubFunctionType": {
       "text": "Display"
     },
     "frmCubeFormatPanel": {
       "title": "Formatting"
+    },
+    "pnlCases": {
+      "title": "Measures"
+    },
+    "pnlDimensions": {
+      "title": "Dimensions"
     }
   },
   "viewers/cube/CubeView": {
@@ -3683,6 +4098,9 @@
     },
     "btnFilterCase": {
       "tooltip": "Filter measures..."
+    },
+    "btnFormatCube": {
+      "tooltip": "Formatting..."
     },
     "btnSeriesPosition": {
       "tooltip": "Series position"
@@ -3785,6 +4203,9 @@
     "cntAlignment": {
       "title": "Alignment"
     },
+    "cntFormat": {
+      "title": "Formatting"
+    },
     "colDateFormat": {
       "text": "Format"
     },
@@ -3876,13 +4297,25 @@
     "colDisplayName": {
       "text": "Caption"
     },
+    "colName": {
+      "text": "Name"
+    },
     "colNumber": {
       "text": "No"
+    },
+    "colTreeNode": {
+      "text": "Caption"
+    },
+    "colTreeNodeName": {
+      "text": "Name"
     },
     "colTreeNumber": {
       "text": "No"
     },
     "colTreeValue": {
+      "text": "Value"
+    },
+    "colValue": {
       "text": "Value"
     },
     "frmFastPreviewForm": {
@@ -4305,6 +4738,9 @@
     "btnShowInvalidRelations": {
       "text": "Show Lost Links"
     },
+    "btnSortByLinks": {
+      "tooltip": "Sort by links"
+    },
     "btnSyncThroughColumns": {
       "tooltip": "Sync"
     },
@@ -4422,6 +4858,16 @@
       "emptyText": "Filter/Search"
     }
   },
+  "wizards/connection/BigQueryConnectionParams": {
+    "fldBigQueryConnectionParams": {
+      "title": "BigQuery Parameters"
+    }
+  },
+  "wizards/connection/ClickHouseConnectionParams": {
+    "fldClickHouseConnectionParams": {
+      "title": "ClickHouse Parameters"
+    }
+  },
   "wizards/connection/ConnectionConfigWizard": {
     "fldDescription": {
       "fieldLabel": "Comment"
@@ -4453,6 +4899,9 @@
   "wizards/connection/DBConnectionParams": {
     "btnTestConnection": {
       "text": "Test"
+    },
+    "edtSSLParams": {
+      "fieldLabel": "SSL settings"
     }
   },
   "wizards/connection/DBConnectionParamsAdditional": {
@@ -4494,6 +4943,17 @@
   "wizards/connection/SQLiteConnectionParams": {
     "cntSQLiteConnectionParams": {
       "title": "SQLite Parameters"
+    }
+  },
+  "wizards/connection/SSLParamsForm": {
+    "btnApply": {
+      "text": "Save"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "frmSSLSettings": {
+      "title": "SSL settings"
     }
   },
   "wizards/datapartition/BiasedMethodForm": {
@@ -4605,9 +5065,170 @@
       "text": "No custom settings"
     }
   },
+  "wizards/datatree/DataTreeNodeDefsMappingWizard": {
+    "btnAddChild": {
+      "tooltip": "Add child node"
+    },
+    "btnAddSibling": {
+      "tooltip": "Add neighboring node"
+    },
+    "btnAutoLink": {
+      "text": "Auto Link"
+    },
+    "btnAutoSync": {
+      "tooltip": "Automapping"
+    },
+    "btnClearLinks": {
+      "text": "Delete All Links"
+    },
+    "btnDeselectAll": {
+      "tooltip": "Deselect all"
+    },
+    "btnEdit": {
+      "tooltip": "Edit..."
+    },
+    "btnGenerateSubNodes": {
+      "tooltip": "Generate child elements"
+    },
+    "btnGetSourceNodes": {
+      "tooltip": "Get list"
+    },
+    "btnLoadByXSD": {
+      "tooltip": "Load from XSD..."
+    },
+    "btnMoveDown": {
+      "tooltip": "Move down"
+    },
+    "btnMoveUp": {
+      "tooltip": "Move up"
+    },
+    "btnNextExpandable": {
+      "tooltip": "Next recursive unopened node"
+    },
+    "btnRemoveSelectedLinks": {
+      "tooltip": "Delete selected links"
+    },
+    "btnResortLinks": {
+      "text": "Resort Links"
+    },
+    "btnReverse": {
+      "tooltip": "Invert selection"
+    },
+    "btnSelectAll": {
+      "tooltip": "Check all"
+    },
+    "btnShowInvalidRelations": {
+      "text": "Show Lost Links"
+    },
+    "btnSync": {
+      "tooltip": "Sync"
+    },
+    "btnTargetAutoLink": {
+      "tooltip": "Auto link"
+    },
+    "btnTargetClearLinks": {
+      "tooltip": "Delete all links"
+    },
+    "btnTargetShowInvalidRelations": {
+      "tooltip": "Show lost links"
+    },
+    "colDelete": {
+      "tooltip": "Delete all..."
+    },
+    "colDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colSourceDataKind": {
+      "text": "Data kind"
+    },
+    "colSourceDisplayName": {
+      "text": "Input nodes"
+    },
+    "colSourceNode": {
+      "text": "Input tree"
+    },
+    "colTargetDataKind": {
+      "text": "Data kind"
+    },
+    "colTargetName": {
+      "text": "Name"
+    },
+    "colTargetNode": {
+      "text": "Output tree"
+    },
+    "frmDataTreeMapping": {
+      "title": "Adjustment of Tree Nodes Mapping"
+    },
+    "rbLinks": {
+      "boxLabel": "Links"
+    },
+    "rbTable": {
+      "boxLabel": "Table"
+    },
+    "SourceFilter": {
+      "emptyText": "Filter"
+    },
+    "TargetFilter": {
+      "emptyText": "Filter"
+    }
+  },
   "wizards/datatree/EditDataTreeNodeDefForm": {
     "btnApply": {
       "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbxDataKind": {
+      "fieldLabel": "Data kind"
+    },
+    "cbxDataType": {
+      "fieldLabel": "Data type"
+    },
+    "cbxUsageType": {
+      "fieldLabel": "Usage type"
+    },
+    "chbIsArray": {
+      "fieldLabel": "Array"
+    },
+    "chbIsContainer": {
+      "fieldLabel": "Container"
+    },
+    "edtDisplayName": {
+      "fieldLabel": "Caption"
+    },
+    "edtName": {
+      "fieldLabel": "Name"
+    },
+    "frmEditDataTreeNodeDefForm": {
+      "title": "Add Node"
+    }
+  },
+  "wizards/datatree/XSDLoadingDialog": {
+    "btnApply": {
+      "text": "Upload"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "cbxNamespace": {
+      "emptyText": "All namespaces",
+      "fieldLabel": "Namespace"
+    },
+    "cbxRoot": {
+      "fieldLabel": "Root element"
+    },
+    "edtFilePath": {
+      "fieldLabel": "XSD file"
+    },
+    "fldRecursiveDepth": {
+      "fieldLabel": "Recursive depth"
+    },
+    "frmXSDLoadingDialog": {
+      "title": "Load Tree from XSD Schema"
+    },
+    "lblRewriteHint": {
+      "text": "Existing nodes will be deleted while schema loading"
     }
   },
   "wizards/done/DoneWizard": {

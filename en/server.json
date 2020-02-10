@@ -554,6 +554,9 @@
     "VendorCaption": "Clustering",
     "VendorDesc": "Data clustering"
   },
+  "components/clusterization/ClusterProfiles": {
+    "ClusterNamePrefix": "Cluster"
+  },
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantApplyExternalBinning": "Failed to apply binning for %s column.",
     "ErrCantApplyFineClassesBinning": "Failed to apply fine classes for binning for %s column. There are too many unique values",
@@ -677,6 +680,7 @@
     "CorrAnalysisTauBKendallNotify": "Kendall's Tau-b correlation coefficients calculating",
     "DisplayName": "Caption",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "ErrNullInColumns": "Proccessing of data with lost values not supported yet",
     "Name": "Name"
   },
   "components/corranalysis/CorrAnalysisVendor": {
@@ -1661,6 +1665,10 @@
     "LocalStorageSaveFailed": "Local Storage save failed",
     "UnknownException": "Unknown Exception"
   },
+  "Embedded/RelativeFileDialogs": {
+    "AbsolutePath": "Absolute path",
+    "RelativePath": "Relative path"
+  },
   "exports/database/DBExport": {
     "AddToTableNotify": "Addition of records to table",
     "DeleteFromTableNotify": "Deletion of records from table",
@@ -1703,6 +1711,38 @@
   "exports/native/ExportNativeVendor": {
     "VendorCaption": "Loginom Data File",
     "VendorDesc": "Export data to Loginom Data file"
+  },
+  "exports/tableau/ExportTableau": {
+    "AddToTableNotify": "Addition of records to table",
+    "ErrAPIInit": "Tableau API initialization error",
+    "ErrCantCreateEmptyTable": "Failed to create empty table",
+    "ErrColumnNotFound": "\"%s\" field not found in the data source",
+    "ErrColumnTypesMismatch": "\"%s\" field type is not compatible with \"%s\" source field type",
+    "ErrCouldntCreateTable": "Failed to create %s table",
+    "ErrCouldntRewriteTable": "Failed to recreate %s table",
+    "ErrDataSourceSelect": "No data source mapping provided",
+    "ErrDuringExport": "Error while exporting to Tableau file",
+    "ErrExtensionNotSupported": "\"%s\" extension is not a correct extension of Tableau Extract file",
+    "ErrExtractSDKNotFound": "Tableau Extract SDK not found",
+    "ErrFilePath": "Failed to get path to file",
+    "ErrFillTable": "Failed to fill \"%s\" table",
+    "ErrHyperExtractSDKNotFound": "Tableau Extract API 2.0 SDK not found",
+    "ErrHyperNotSupportedInWin32": "\"*.hyper\" data format suported only in 64-bit software version",
+    "ErrMissingServerConnection": "No connection with Tableau server",
+    "ErrNoColumnDefs": "No columns description",
+    "ErrNoFileStorage": "No file storage found",
+    "ErrProjectNameNotSelected": "No project name specified",
+    "ErrServerFileNameNotSelected": "No source name specified on server",
+    "ErrTableAlreadyExists": "%s table already exists",
+    "ErrTableNameNotSelected": "No table name specified",
+    "ErrTableNotFound": "No %s table found",
+    "FileConnection": "Connect to file storage",
+    "PublishToServerNotify": "Publish file on server",
+    "TableauRestConnection": "Connect to Tableau server"
+  },
+  "exports/tableau/ExportTableauVendor": {
+    "VendorCaption": "Tableau file",
+    "VendorDesc": "Data export to Tableau file"
   },
   "exports/textfile/ExportTextFile": {
     "CalculateColumnSizeProcess": "Column width calculating",
@@ -1878,6 +1918,35 @@
     "1Cv8ConnectionVendorCaption": "1C:Enterprise 8",
     "1Cv8ConnectionVendorDesc": "Database - 1C:Enterprise 8"
   },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockReader": {
+    "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
+    "ErrFetch": "Error occurred while data set reading",
+    "ErrGetFieldDesc": "Failed to receive description of fields for %s table",
+    "ErrNoSuchSetting": "Configuration parameter with \"%s\" name does not exist",
+    "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
+    "ErrColNotNullable": "\"%s\" column (%s) type cannot have Null values",
+    "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
+    "ErrConvertFloatToDecimal": "Failed to convert the real value %g to the Decimal value (\"%s\" column)",
+    "ErrUnsupportedDataType": "Column data type \"%s\" not supported"
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseClient": {
+    "ErrInvalidPort": "Incorrect port number specified: %s"
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseDB": {
+    "DatabaseTypeName": "ClickHouse",
+    "ErrColumnNotFound": "\"%s\" column not found in target table",
+    "ErrInsertDataFormatUnsupported": "\"%s\" data format not supported in INSERT",
+    "ErrInsertFormatUnsupported": "Used INSERT format not supported",
+    "ErrInsertValuesUnsupported": "Only parametrized INSERT supported",
+    "ErrNotOwnSession": "Session does not belong to the database",
+    "ErrStoredProcUnsupported": "ClickHouse does not support the stored procedures"
+  },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseDBUtils": {
+    "ErrClickHouse": "ClickHouse error: %s",
+    "ErrDateOutOfRange": "%s date is out of allowable range [%s; %s]"
+  },
   "Libraries/bgdbrtl/DB": {
     "ComponentTip": "%s [%s]",
     "ErrCommandTypeNotYetSupported": "%s type of SQL command not supported yet",
@@ -1894,10 +1963,21 @@
     "ErrSetSequence": "Sequence initialization error for DB. Old Sequence = %d",
     "ErrTableNameNotSelect": "No table name specified",
     "ErrTestConnection": "Connection test error:\n%s",
-    "ErrUnPrepareQuery": "Error clearing prepared query"
+    "ErrUnPrepareQuery": "Error clearing prepared query",
+    "WarnQueryExecuting": "Query already executing"
+  },
+  "Libraries/bgdbrtl/DBSSL": {
+    "DecryptPrivateKey": "Error while private key decryption",
+    "ErrFileNoAccess": "\"%s\" file unavailable",
+    "ErrFileNotFound": "\"%s\" file not found",
+    "ErrGetFileStorage": "Failed to address to file storage",
+    "SSLOptions": "SSL settings"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
     "DatabaseTypeName": "MS Access (OLEDB)"
+  },
+  "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
+    "DatabaseTypeName": "BigQuery (ODBC)"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
     "DatabaseTypeName": "MS Excel (ODBC)",
@@ -1919,7 +1999,8 @@
     "ErrIncorrectRegEx": "Error parsing driver name template: %s"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCStringBuilder": {
-    "ErrInvalidODBCDriverName": "\"%s\" driver not registered"
+    "ErrInvalidODBCDriverName": "\"%s\" driver not registered",
+    "ErrODBCDriverName": "No ODBC driver specified in connection string"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
@@ -1958,8 +2039,10 @@
     "ErrCannotGetNodeExistFlag": "Failed to get the node exist flag with %d identifier: the node is not a simple container",
     "ErrCannotGetNodeValue": "Failed to get the node value with %d identifier: the node is a container",
     "ErrCannotGetRowCount": "Failed to get the row count for the node with %d identifier: the node is not an array",
+    "ErrCannotGetRowRange": "Failed to get the row range for the node with %d identifier: the node is not an array",
     "ErrColumnIndexOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrInvalidNodeInfo": "Invalid node description: %s",
+    "ErrInvalidNodeInfoID": "Invalid node identifier: %d",
     "ErrRowCountLimitReached": "Maximum row count limit reached",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range",
     "ErrTableIndexOutOfRange": "Table number %d is out of [%d; %d] range"
@@ -2216,7 +2299,9 @@
     "AllExcelFilesDesc": "Excel files",
     "AllFilesDesc": "All files",
     "AllSQLiteFilesDesc": "SQLite database",
+    "AllTableauFilesDesc": "Tableau Data Extracts",
     "BMPFilesDesc": "Bitmaps",
+    "CertFilesDesc": "Certificate",
     "DbfFilesDesc": "dBase files",
     "DdfFilesDesc": "DDF file",
     "DocFilesDesc": "MS Word documents",
@@ -2227,13 +2312,17 @@
     "GIFFilesDesc": "GIF format",
     "HlpFilesDesc": "Help file",
     "HtmFilesDesc": "Webpages",
+    "HyperFilesDesc": "Tableau Hyper Extracts",
     "ICOFilesDesc": "Icon",
     "JPGFilesDesc": "JPEG format",
+    "JSONFilesDesc": "Text file for data exchange",
+    "KeyFilesDesc": "Private key",
     "LgdFilesDesc": "Loginom Data file",
     "LogFilesDesc": "Registration log files",
     "MdbFilesDesc": "MS Access database",
     "MhtFilesDesc": "Web archive, one file",
     "ODSFilesDesc": "OpenDocument spreadsheet",
+    "P12FilesDesc": "PKCS #12 files",
     "PDFFilesDesc": "PDF documents",
     "RtfFilesDesc": "Files in RTF format",
     "SELFilesDesc": "Request files",
@@ -2243,6 +2332,7 @@
     "SupportedExcelFilesDesc": "Excel files",
     "SupportedLgdFilesDesc": "Loginom Data files",
     "SysFilesDesc": "Configuration files",
+    "TdeFilesDesc": "Tableau Extracts",
     "TxtFilesDesc": "Text files",
     "WMFFilesDesc": "Metafile",
     "WSDLFilesDesc": "Web service description files",
@@ -2783,9 +2873,17 @@
   "Libraries/DataSampling/SamplingBuilder": {
     "SplitIntoIntervals": "Interquantile separation"
   },
+  "Libraries/DBConnection/ClickHouse/ClickHouseDBConnectionVendor": {
+    "VendorCaption": "ClickHouse",
+    "VendorDesc": "ClickHouse data base management system"
+  },
   "Libraries/DBConnection/UniDAC/AccessODBCUniDACDBConnectionVendor": {
     "VendorCaption": "MS Access",
     "VendorDesc": "MS Access (ODBC) DBMS"
+  },
+  "Libraries/DBConnection/UniDAC/BigQueryODBCUniDACDBConnectionVendor": {
+    "VendorCaption": "BigQuery",
+    "VendorDesc": "Google BigQuery (ODBC)"
   },
   "Libraries/DBConnection/UniDAC/ExcelODBCUniDACDBConnectionVendor": {
     "VendorCaption": "MS Excel",
@@ -2976,12 +3074,16 @@
     "OriginalComponentVendorGuidDesc": "Original component GUID"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
+    "ErrCannotChangeDerivedName": "It is forbidden to change the derived ports name",
     "ErrCannotChangeDerivedSocketType": "It is forbidden to change the derived ports data type",
     "ErrCannotDeleteDerivedConnections": "Failed to delete derived connections",
     "ErrCannotDeleteDerivedSocket": "It is forbidden to delete the derived ports",
     "ErrCannotDeleteDerivedVendors": "It is forbidden to delete derived components"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
+    "ErrInputSocketDefsEmptyName": "No name of the following inputs specified:",
+    "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
+    "ErrOutputSocketDefsEmptyName": "No name of the following outputs specified:",
     "ErrUntypedInputSocketDefs": "The following input types are not specified: ",
     "ErrUntypedOutputSocketDefs": "The following output types are not specified: "
   },
@@ -2996,12 +3098,16 @@
     "ErrAlreadyConfiguringInnerSocket": "The external port component has already been configuring"
   },
   "Libraries/Model/Generic/ModelInputComponent": {
+    "ErrInnerOutputSocketDefsEmptyName": "No name of the following inputs specified:",
+    "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
     "ErrUntypedInnerOutputSocketDefs": "The following input types are not specified: "
   },
   "Libraries/Model/Generic/ModelInputComponentVendor": {
     "VendorCaption": "Input Node"
   },
   "Libraries/Model/Generic/ModelOutputComponent": {
+    "ErrInnerInputSocketDefsEmptyName": "No name of the following outputs specified:",
+    "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
     "ErrUntypedInnerInputSocketDefs": "The following output types are not specified: "
   },
   "Libraries/Model/Generic/ModelOutputComponentVendor": {
@@ -3062,12 +3168,23 @@
     "ErrModelEngineOutputPortAlreadyInitialized": "The output port already initialized"
   },
   "Libraries/Model/ModelNodesCopyUtils": {
+    "CopyNodesCaption": "Nodes Copied",
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" source node is not available at the required destination.",
+    "ErrCycleFound": "Circular reference between nodes detected!",
+    "ErrDuringMove": "Errors occurred while nodes moving",
+    "ErrLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node",
     "ErrNodeNotConfigurable": "Failed to create the node copy with the following name: \"%s\" and GUID: %s",
     "ErrNoNodesSpecified": "No node set specified",
     "ErrNoSourceModelUnit": "Source module not found",
     "ErrNoTargetModelUnit": "Target module not found",
-    "ErrSomeNodeDisposed": "One or several source nodes have been deleted or moved"
+    "ErrSomeNodeDisposed": "One or several source nodes have been deleted or moved",
+    "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
+    "ErrVendorNotFound": "\"%s\" component not found",
+    "ForceMovingForbidden": "Forced movement forbidden",
+    "MoveNodesCaption": "Nodes Moved",
+    "OperationCanceled": "Operation canceled",
+    "UnknownNodeName": "Unknown node",
+    "UnknownVendorName": "Unknown component"
   },
   "Libraries/Model/ModelPackage": {
     "ErrAlienModelUnit": "Node does not belong to the current package",
@@ -3080,6 +3197,7 @@
     "ErrPackageWithNameLinkAlreadyExists": "Link to the package with \"%s\" name already exists",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Number of names and variables values must be the same",
     "ErrVariableNotFound": "Variable with \"%s\" name not found",
+    "LogPackageSetVersion": "%s package version changed to %s",
     "ModelUnitDisplayNameDefault": "Module",
     "RestoreVariablesBackupProcessCaption": "Restore Values of the Package Variables"
   },
@@ -3091,7 +3209,8 @@
     "BackupRestored": "Error occurred while saving \"%s\" package. File restored from backup.",
     "CompatConvertRequired": "While downloading \"%s\" package of %s version converting will be performed.",
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
-    "ErrCannotOpenFile": "Failed to open file: \"%s\""
+    "ErrCannotOpenFile": "Failed to open file: \"%s\"",
+    "LogPackageSaved": "\"%s\" package saved"
   },
   "Libraries/Model/ModelReports": {
     "CantAddGenericInputViewToReport": "Addition of supernode input node visualizers to Reports is not supported",
@@ -3158,6 +3277,7 @@
     "ErrColumnDataTypeChanged": "\"%s\" column data type changed",
     "ErrComponentNotInitialized": "Base component not initialized",
     "ErrDuplicatePublishedNodeName": "The package already contains the published node with \"%s\" name",
+    "ErrGetSourcePackageName": "Error occurred while package name defining. Perhaps, the message source could be deleted.",
     "ErrInactiveBranch": "\"%s\" node is in the inactive condition branch",
     "ErrInvalidModelCriticalSectionCookie": "Invalid Cookie for critical workflow section locking",
     "ErrInvalidModelLockCookie": "Invalid Cookie for workflow nodes locking",
@@ -3187,6 +3307,7 @@
     "LogActivateNodeSuccess": "Successfully activated \"%s\" node",
     "LogDeactivateNode": "\"%s\" node deactivated",
     "LogNodeActivationError": "Error activating \"%s\" node, GUID=%s",
+    "LogPackagedNodeActivationError": "Error while \"%s\" node activation GUID=%s Package=%s",
     "ResetModelNodeConfiguration": "Initial configuration of \"%s\" node reset",
     "RestoreBackupProcessCaption": "Backup configuration restoring",
     "SynchronizationInputPort": "Execution order",
@@ -3195,12 +3316,17 @@
     "WarnLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
+    "ErrInvalidVendor": "\"%s\" component malfunctioned",
     "ErrMsgCantFindLinkNode": "Failed to find the second link port",
     "ErrMsgNoAllVendorsCollected": "Failed to get all required types of vendors",
     "ErrMsgNoSubModel": "Supernode component not created",
     "ErrMsgNoVendorInfo": "Failed to get information on the derived component for \"%s\" node",
     "ErrMsgNoVendorLocator": "Failed to get port vendor enumerator",
     "ErrSubModelVendorNotCreated": "Failed to create the supernode component In the current context",
+    "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
+    "ErrUnableToRestoreLinkFrom": "Failed to restore link to the output of \"%s\" node",
+    "ErrUnableToRestoreLinkTo": "Failed to restore link to the input of \"%s\" node",
+    "UnknownNodeDisplayName": "Unknown node",
     "WarnModelNotSupportInPort": "Failed to create input port for \"%s\" port",
     "WrnNullRttiInfo": "Invalid supernode port definition vendor detected",
     "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
@@ -3566,6 +3692,15 @@
   "Libraries/rpc/WebSocketRemoteServer": {
     "ErrSSLChangeAfterStart": "SSL parameters cannot be changed after server start"
   },
+  "Libraries/TableauRestConnection/TableauRestCommon": {
+    "ErrTableauPublishingNotSupported": "Tableau server publishing not supported",
+    "HttpResponse": "Unexpected server response. Response code: %d, message: %s",
+    "ProjectNotFound": "Project with with \"%s\" name not found on server"
+  },
+  "Libraries/TableauRestConnection/TableauRestConnectionVendor": {
+    "TableauRestConnectionVendorCaption": "Tableau Server",
+    "TableauRestConnectionVendorDesc": "Connect to Tableau server by REST API"
+  },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s",
     "WarnMainWSDLNotLoaded": "Loading of the main WSDL source (%s) failed (%s). Loading from the reserve source."
@@ -3637,11 +3772,17 @@
     "ErrSessionBackupAlreadyRestored": "This session backup has already been restored by another client from the current account",
     "ErrSessionBackupModified": "This session backup has already been changed by another client from the current account",
     "FileNames": "File names",
+    "PackageClosedLogMsg": "Close \"%s\" package",
+    "PackageOpenedEditLogMsg": "\"%s\" package opened in the edit mode",
+    "PackageOpenedReadLogMsg": "\"%s\" package opened in the read mode",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s started",
     "Session": "Session",
+    "SessionBatch": "Batch processing",
     "SessionCloseLogMsg": "Closed session for %s user",
     "SessionInitializedLogMsg": "Initialized session for %s user",
+    "SessionIntegrator": "Tequest from integrator",
+    "SessionInteractive": "Interactive session",
     "User": "User",
     "UserName": "Username",
     "WarnSessionStopTimeout": "Failed to terminate %s user session for %d milliseconds. Number of processes not completed: %d. List of active subprocesses: %s. List of not started subprocesses: %s."
@@ -3654,10 +3795,15 @@
     "UserStorageDirectory": "User disk space"
   },
   "Studio/DeductorUsers": {
+    "AllowedApplicationModes": "Allowed application modes",
+    "Blocked": "Blocked",
     "ErrAccessDenied": "Access denied",
     "ErrApplicationModeNotAllowed": "Connection in \"%s\" mode not allowed",
     "ErrInvalidPasswordHashInConfig": "Configuration file contains invalid password hash",
     "ErrInvalidUserNameOrPassword": "Invalid username or password",
+    "ErrLDAPAuthentifyDisabled": "LDAP authentication not supported",
+    "ErrLDAPGetFullName": "Failed to get the full name of %s user",
+    "ErrLDAPUserNotFound": "%s user not found in the directory service",
     "ErrLeadingOrTrailingWhitespaceInPassword": "Password must not begin or end with a space",
     "ErrNoUsersWithAdminPrivileges": "There are no users with admin privileges",
     "ErrUserAlreadyDeleted": "User already deleted",
@@ -3665,10 +3811,15 @@
     "ErrUserNameConflictsWithSharedDirectory": "Username conflicts with %s shared directory name",
     "ErrUserNameIsReserved": "%s identifier has already been reserved and it cannot be used as a username",
     "ErrUserNameMustBeValidIdentifier": "Username must be a valid identifier",
+    "IsAdmin": "Admin",
+    "IsDesigner": "Designer",
+    "IsViewer": "View reports",
     "LogAddGroup": "%s group added",
     "LogAddUser": "%s user added",
     "LogDeleteGroup": "%s group deleted",
     "LogDeleteUser": "%s user deleted",
+    "LogUserPropertySet": "%s account change: %s=%s",
+    "UseGlobalFileStorage": "Use global file storage",
     "User": "User",
     "UserMetaDesc": "User"
   },
@@ -3812,6 +3963,11 @@
     "ErrParseExpression": "Error occurred while parsing the expression corresponding to calculated measure \"%s\"",
     "ErrRecursiveCall": "Circular reference between calculated measures detected: %s"
   },
+  "Viewers/Cube/CubeCaseSort": {
+    "DimDataTypeDesc": "Dimension data type",
+    "DimNameDesc": "Dimension name",
+    "DimValueDesc": "Header value"
+  },
   "Viewers/Cube/CubeChart": {
     "MaxDotsCountDesc": "Maximum dots count",
     "MaxSeriesCountDesc": "Maximum series count"
@@ -3835,6 +3991,7 @@
     "ErrBadRelation": "Relation not supported by aggregation"
   },
   "Viewers/Cube/CubeHeaders": {
+    "CubeDummyValue": "Value",
     "CubeTotalValue": "Total:",
     "ErrTooManyDimensions": "Too many dimensions selected"
   },
@@ -3852,16 +4009,18 @@
   },
   "Viewers/Cube/CubeView": {
     "CubeViewProcess": "Cube",
+    "DetailingProcessCaptionSuffix": "by cell [%d, %d]",
     "ErrAlreadyExporting": "Failed to export a crosstab until the current export is finished",
     "ErrExportCubeClosed": "Failed to export a crosstab when the Cube is inactive",
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
     "ErrPhantomCaseBracketsOpened": "Failed to create a temporary measure because another temporary measure exists",
+    "ErrSortCountExceeded": "Count of sorted columns cannot exceed %d",
     "IncLoadMatrixNotify": "Increment measure calculating",
     "LoadMatrixNotify": "Measure calculating"
   },
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Cube",
-    "VendorDesc": "Multidimensional data view (Pivot table and Pivot chart)"
+    "VendorDesc": "Multidimensional data view (Cross Table and Cross Chart)"
   },
   "Viewers/DataTree/DataTreeView": {
     "ErrNotDefinedInputDataTree": "No input data tree defined",
@@ -3876,6 +4035,7 @@
     "ErrDetailingViewExecution": "Error of \"%s\" detailing execution",
     "ErrDetailingViewInitialization": "Detailing initialization error \"%s\"",
     "ErrScopeMissing": "Failed to get the owner context during \"%s\" detailing initialization",
+    "GenericDetailingProcessCaption": "\"%s\" detailing",
     "ManagerBrowse": "Table",
     "ManagerStatistics": "Statistics",
     "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" detailing configuration"

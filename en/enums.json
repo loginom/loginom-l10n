@@ -845,6 +845,13 @@
       "_1Cv8_3": "1C:Enterprise 8.3"
     }
   },
+  "Libraries/bgdbrtl/ClickHouse/ClickHouseDB": {
+    "ClickHouseCompressionMethod": {
+      "$Caption": "Data Compression Method",
+      "None": "Without compression",
+      "LZ4": "LZ4"
+    }
+  },
   "Libraries/bgdbrtl/DB": {
     "DBServerType": {
       "$Caption": "Database Type",
@@ -865,6 +872,15 @@
       "DoubleQuotes": "Double quotes \"\"",
       "Apostrophes": "Apostrophes ``"
     },
+    "SSLMode": {
+      "$Caption": "Use SSL",
+      "Disabled": "Disabled",
+      "Allow": "Allowed",
+      "Prefer": "Prefer",
+      "Require": "Required",
+      "VerifyCA": "Required (with CA verification)",
+      "VerifyIdentity": "Required (with server verification)"
+    },
     "TransactionIsolationLevel": {
       "$Caption": "Transaction Isolation Level",
       "ReadUnCommitted": "Read uncommitted",
@@ -872,6 +888,13 @@
       "RepeatableRead": "Repeatable Read",
       "Snapshot": "Snapshot",
       "Serializable": "Serializable"
+    }
+  },
+  "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
+    "BigQueryAuthMechanismType": {
+      "$Caption": "Authentication Mechanism",
+      "ServiceAcc": "Service authentification",
+      "UserAcc": "User authentification"
     }
   },
   "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
@@ -1271,6 +1294,14 @@
       "Fixed": "Fixed width"
     }
   },
+  "Libraries/LDAP/LDAP": {
+    "LDAPConnectionSecurity": {
+      "$Caption": "Connection Security",
+      "Simple": "Simple connection",
+      "SSL": "SSL/TLS",
+      "StartTLS": "STARTTLS"
+    }
+  },
   "Libraries/Model/DataSet/ImportModelComponentEngine": {
     "CacheStringsMode": {
       "$Caption": "Cache Strings Mode",
@@ -1426,6 +1457,14 @@
       "None": "Do not calculate",
       "All": "For all models",
       "FinalOnly": "For the final model"
+    }
+  },
+  "Studio/DeductorUsers": {
+    "DeductorUserAuthMode": {
+      "$Caption": "Authentification",
+      "None": "None",
+      "Local": "Local",
+      "LDAP": "LDAP"
     }
   },
   "Viewers/Browse/BrowseViewSearch": {

@@ -502,6 +502,18 @@
       "Compression": "Сжатие"
     }
   },
+  "exports/tableau": {
+    "ExportTableau": {
+      "Append": "Добавлять записи при публикации",
+      "CreateTableIfDoesntExist": "Создавать таблицу, если не существует",
+      "Overwrite": "Перезаписывать данные при публикации",
+      "ProjectName": "Имя проекта на сервере",
+      "PublishingEnabled": "Публиковать на сервер",
+      "RewriteFileOnExport": "Пересоздавать файл при экспорте",
+      "ServerFileName": "Имя файла на сервере",
+      "TableName": "Имя таблицы"
+    }
+  },
   "exports/textfile": {
     "ExportTextFile": {
       "CaptionType": "Строка заголовка",
@@ -832,6 +844,15 @@
       "TimeOut": "Таймаут подключения (мс)",
       "URL": "URL сервиса",
       "Verb": "Метод"
+    }
+  },
+  "Libraries/TableauRestConnection/TableauRestConnection": {
+    "TableauRestConnectionConfigurator": {
+      "ApiVersion": "Версия Tableau REST API",
+      "Password": "Пароль",
+      "ServerUrl": "Адрес сервера",
+      "Site": "Сайт",
+      "UserName": "Имя пользователя"
     }
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {

@@ -1,4 +1,12 @@
 {
+  "about/About": {
+    "btnBugReport": {
+      "href": "https://loginom.com/company/feedback/"
+    },
+    "btnWhatsNew": {
+      "href": "https://loginom.com/tags/release-notes/"
+    }
+  },
   "admin/ServerSettingsForm": {
     "btnRefresh": {
       "text": "Refresh",
@@ -239,6 +247,9 @@
   "app/FindNodeForm": {
     "btnCancel": {
       "text": "Cancel"
+    },
+    "edtGUID": {
+      "emptyText": "{________-____-____-____-____________}"
     }
   },
   "app/ListViewForm": {
@@ -316,7 +327,7 @@
   },
   "app/MainMenuForm": {
     "btnCloseAllPackages": {
-      "text": "Close all"
+      "text": "Close all..."
     },
     "btnClosePackage": {
       "text": "Close"
@@ -2505,14 +2516,35 @@
     }
   },
   "homepage/HomePage": {
+    "btnBlog": {
+      "href": "https://loginom.com/blog/"
+    },
     "btnCreatePackage": {
       "text": "New Package..."
     },
     "btnCreateUnsavedPackage": {
       "text": "New Draft"
     },
+    "btnFastStart": {
+      "href": "https://help.loginom.com/userguide/quick-start/"
+    },
+    "btnIntro": {
+      "href": "https://loginom.com/welcome-video/"
+    },
+    "btnLearning": {
+      "href": "https://loginom.com/learning/"
+    },
+    "btnMoreNews": {
+      "href": "https://loginom.com/blog/"
+    },
     "btnOpenPackage": {
       "text": "Open Package..."
+    },
+    "btnRreleaseNotes": {
+      "href": "https://loginom.com/tags/release-notes/"
+    },
+    "btnSupport": {
+      "href": "https://loginom.com/company/support/"
     },
     "colOpenDate": {
       "text": "Open time"
@@ -2867,8 +2899,20 @@
     }
   },
   "login/Login": {
+    "btnFastStart": {
+      "href": "https://help.loginom.com/userguide/quick-start/"
+    },
+    "btnHelp": {
+      "href": "https://help.loginom.com/"
+    },
+    "btnIntro": {
+      "href": "https://loginom.com/welcome-video/"
+    },
     "btnLogin": {
       "text": "Login"
+    },
+    "btnQA": {
+      "href": "https://qa.loginom.com/"
     },
     "chkRememberUser": {
       "boxLabel": "Remember me"
@@ -3330,6 +3374,19 @@
     },
     "lblChartStatus": {
       "text": "Inactive node"
+    }
+  },
+  "viewers/clusterprofiles/ClusterProfilesView": {
+    "colClusterIndexer": {
+      "text": "#",
+      "tooltip": "Row number"
+    },
+    "colColumnIndexer": {
+      "text": "#",
+      "tooltip": "Row number"
+    },
+    "colIndex": {
+      "text": "No"
     }
   },
   "viewers/common/ViewerCard": {
@@ -3802,6 +3859,9 @@
       "text": "Caption"
     },
     "colNumber": {
+      "text": "No"
+    },
+    "colTreeNumber": {
       "text": "No"
     },
     "colTreeValue": {

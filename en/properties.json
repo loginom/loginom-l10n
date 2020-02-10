@@ -55,7 +55,7 @@
   },
   "components/binning": {
     "BinningBinsDefExtension": {
-      "KindForBins": "Bins usage type"
+      "KindForBins": "Usage type"
     },
     "BinningContinuousBinItem": {
       "LowerBound": "Lower range bound",
@@ -71,10 +71,10 @@
       "RelativeVolume": "Relative bin volume"
     },
     "BinningDefExtension": {
-      "AlwaysDefaultSettings": "Always use default method settings",
+      "AlwaysDefaultSettings": "Use automatic method settings",
       "BinsType": "Bins type",
       "LabelTemplate": "Caption template",
-      "MethodType": "Binning method type"
+      "MethodType": "Method"
     },
     "BinningLinearContinuousMethodSettings": {
       "LowerLimit": "Lower bound",
@@ -478,7 +478,7 @@
     "ExportExcelFile": {
       "FileType": "Excel file type",
       "SheetName": "Sheet name",
-      "WebSetting": "Settings for web client"
+      "WebSetting": "Settings"
     },
     "ExportExcelWebSetting": {
       "HeadersRow": "Headers row"
@@ -613,11 +613,11 @@
       "Index": "Index",
       "Name": "Name",
       "Size": "Maximum length (number of characters) of string column values",
-      "Usable": "Indicator of column usage (UsageType surrogate)",
-      "UsageType": "Column usage type"
+      "Usable": "Indicator of usage (UsageType surrogate)",
+      "UsageType": "Usage type"
     },
     "TuneColumnDef": {
-      "Extension": "Column description extension"
+      "Extension": "Extension"
     }
   },
   "Libraries/bgrtl/Interfaces": {

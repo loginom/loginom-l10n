@@ -1,6 +1,7 @@
 {
   "about/About": {
-    "NewVersionCommunityHref": "https://loginom.com/downloads"
+    "NewVersionCommunityHref": "https://loginom.com/downloads/",
+    "NewVersionHref": "https://loginom.com/tags/release-notes/"
   },
   "admin/ServerSettingsForm": {
     "Bind": "IP address",
@@ -78,6 +79,7 @@
   },
   "app/LoginomMenuForm": {
     "Menu": "Menu",
+    "QAHref": "https://qa.loginom.com/questions/",
     "QstQuit": "There are not saved packages. Do you want to exit without saving?"
   },
   "app/MainForm": {
@@ -162,8 +164,8 @@
     "DeletePort": "Delete port",
     "DeriveNode": "Create derived component ...",
     "EditPortDisplayName": "Edit port caption...",
-    "EditPortDisplayNameWindowTitle": "Edit",
-    "EditPortFieldLabel": "Port caption",
+    "EditPortDisplayNameWindowTitle": "Edit port caption",
+    "EditPortFieldLabel": "Caption",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "Error": "Error",
     "ErrPortNotCreated": "Failed to create new port",
@@ -312,6 +314,7 @@
     "Close": "Close",
     "Doc": "Help",
     "Minimize": "Minimize",
+    "QAHref": "https://qa.loginom.com/questions/",
     "Restore": "Restore"
   },
   "codemirror/CodeMirrorTernController": {
@@ -1146,6 +1149,10 @@
   "highcharts/Localization": {
     "Loading": "Loading..."
   },
+  "homepage/Banner": {
+    "NewVersionCommunityHref": "https://loginom.com/downloads/",
+    "NewVersionHref": "https://loginom.com/tags/release-notes/"
+  },
   "homepage/HomePage": {
     "NoNewsLog": "Failed to get news",
     "RemoveFromHistoryFmt": "No \"{0}\" file found. It may have been renamed, moved or deleted. Do you want to remove this package from the list of recent packages?",
@@ -1333,7 +1340,7 @@
     "ActionsBtn": "Other Actions",
     "ControlStopBtn": "Processing Stop",
     "DeactivateNodeBtn": "Deactivate Node",
-    "LaunchBtn": "Start Processing",
+    "LaunchBtn": "Run node",
     "SettingBtn": "Settings",
     "SetupViewersBtn": "Configure Visualizers"
   },
@@ -1908,13 +1915,13 @@
   "viewers/statistics/StatView": {
     "CountOfStrings": "Row count: ",
     "ErrBounds": "Minimum more than maximum",
-    "LeftOutlier": "Minimum outlier",
-    "LeftWhisker": "Sample minimum",
-    "LowerQuartile": "Lower quartile",
-    "Median": "Median",
+    "LeftOutlier": "Minimum outlier: ",
+    "LeftWhisker": "Sample minimum: ",
+    "LowerQuartile": "Lower quartile: ",
+    "Median": "Median: ",
     "NotAvailable": "Not available",
-    "RightOutlier": "Maximum outlier",
-    "RightWhisker": "Sample maximum",
+    "RightOutlier": "Maximum outlier: ",
+    "RightWhisker": "Sample maximum: ",
     "SliderTipFmt": "{0}: {1}",
     "SliderTipMax": "max",
     "SliderTipMin": "min",
@@ -1923,7 +1930,7 @@
     "TuneStatisticsLabelTitle": "Statistics Parameter",
     "TuneStatisticsTitle": "Configure Parameters",
     "UniqueValuesCount": "Values count - ",
-    "UpperQuartile": "Upper quartile"
+    "UpperQuartile": "Upper quartile: "
   },
   "wizards/BaseWizard": {
     "ErrAbortCaption": "Setup Aborted",
@@ -2046,14 +2053,15 @@
     "ActionInsert": "Paste",
     "DefaultSocketCaption": "Port",
     "DeleteAllConfirm": "Do you want to delete all inputs/outputs?",
-    "EmptyName": "<Unique>",
+    "EmptyName": "<Unspecified>",
     "ErrCompareIndex": "The server amount of sockets does not match the client amount of sockets.",
     "ErrGetAvalibleSocketDefFmt": "Failed to get socket definition for {0} vendor.",
     "ErrGetAvalibleSocketDefs": "Failed to get socket defenitions",
     "ErrMoveDerivedSocket": "Moving derived port forbidden",
     "SocketLabelFmt": "{0} {1}",
     "SocketTypeInputDesc": "Inputs",
-    "SocketTypeOutputDesc": "Outputs"
+    "SocketTypeOutputDesc": "Outputs",
+    "UniqueName": "<Unique>"
   },
   "wizards/InputConnectionWizard": {
     "ConnectCaption": "Connect",

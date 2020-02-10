@@ -1,8 +1,8 @@
 {
   "about/About": {
     "ErrVersionWrongServiceResponse": "Неверный ответ сервиса с информацией о последней версии",
-    "NewVersionCommunityHref": "https://loginom.ru/downloads",
-    "NewVersionHref": "https://loginom.ru/tags/release-notes",
+    "NewVersionCommunityHref": "https://loginom.ru/downloads/",
+    "NewVersionHref": "https://loginom.ru/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Доступна версия {0}"
   },
   "admin/LDAPSettings": {
@@ -112,7 +112,7 @@
   },
   "app/LoginomMenuForm": {
     "Menu": "Меню",
-    "QAHref": "https://qa.loginom.ru/questions",
+    "QAHref": "https://qa.loginom.ru/questions/",
     "QstQuit": "Есть не сохранённые пакеты. Выйти без сохранения?"
   },
   "app/MainForm": {
@@ -361,7 +361,7 @@
     "HelpMenu": "Помощь",
     "Minimize": "Минимизировать",
     "QA": "Задать вопрос",
-    "QAHref": "https://qa.loginom.ru/questions",
+    "QAHref": "https://qa.loginom.ru/questions/",
     "Restore": "Восстановить"
   },
   "codemirror/CodeMirrorTernController": {
@@ -1263,8 +1263,8 @@
   },
   "homepage/Banner": {
     "ErrVersionWrongServiceResponse": "Неверный ответ сервиса с информацией о последней версии",
-    "NewVersionCommunityHref": "https://loginom.ru/downloads",
-    "NewVersionHref": "https://loginom.ru/tags/release-notes",
+    "NewVersionCommunityHref": "https://loginom.ru/downloads/",
+    "NewVersionHref": "https://loginom.ru/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Доступна версия {0}"
   },
   "homepage/HomePage": {

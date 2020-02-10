@@ -1,7 +1,7 @@
 {
   "about/About": {
     "btnBugReport": {
-      "href": "https://loginom.ru/company/feedback",
+      "href": "https://loginom.ru/company/feedback/",
       "text": "Сообщить о проблеме"
     },
     "btnLicenseAgreement": {
@@ -14,7 +14,7 @@
       "text": "Сторонние компоненты"
     },
     "btnWhatsNew": {
-      "href": "https://loginom.ru/tags/release-notes",
+      "href": "https://loginom.ru/tags/release-notes/",
       "text": " Что нового?"
     },
     "frmAbout": {
@@ -2829,7 +2829,7 @@
       "href": "https://linkedin.com/company/loginom/"
     },
     "btnMoreNews": {
-      "href": "https://loginom.ru/blog",
+      "href": "https://loginom.ru/blog/",
       "text": "Посмотреть еще"
     },
     "btnOpenPackage": {

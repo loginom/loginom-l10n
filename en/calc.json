@@ -6,7 +6,7 @@
       "Output": "Function returns the number - CRC32 value calculated on the basis of the given string.\nCalculations are performed above the sequence of the String characters using UTF-8 encoding."
     },
     "HardKey": {
-      "Arguments": "Arguments are absent",
+      "Arguments": "Arguments are absent.",
       "Description": "HardKey()",
       "Output": "Function returns the serial number of the dongle key."
     },
@@ -134,7 +134,7 @@
     },
     "DateToStr": {
       "Arguments": "Date - expression of the date/time type.\nFormat - optional parameter date format in terms of D, M, Y.",
-      "Description": "DateToStr(Date [, Date])",
+      "Description": "DateToStr(Date [, Format])",
       "Output": "Returns the string representation of the Date argument.\nExamples of the date format:\n  \"DD.MM.YY\" - converts the date into the \"day.month.year\" format (\"25.12.04\")\n  \"MM/DD/YYYY\"  - converts the date into the \"month.day.year\" format (\"12/25/2004\")"
     },
     "Day": {
@@ -153,27 +153,27 @@
       "Output": "Returns the total number of days between two dates."
     },
     "Decode": {
-      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\n ValueN - the expression value of which is compared with the Expression argument.\n ResultN - the expression of the string type that is returned if the Expression = ValueN.\n Default_value - the expression of the string type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to \"\").",
+      "Arguments": "Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\nValueN - the expression value of which is compared with the Expression argument.\nResultN - the expression of the string type that is returned if the Expression = ValueN.\nDefault_value - the expression of the string type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to \"\").",
       "Description": "Decode(Expression, Value1, Result1 [, Value2, Result2]... [, Default_value = \"\"])",
       "Output": " Implements IF - THEN - ELSE feature and the function result is related to the string type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeF": {
-      "Arguments": " Expression - any numeric expression value of which is used for comparison.\n Error - the numeric expression, comparison error.\n ValueN - the numeric expression value of which is compared with the Expression argument.\n ResultN - the value that is returned if |ValueN - ExpressionN| <= Accuracy.\n Default_value - the numeric expression the result of which is returned if none of the ValuesN is equal to the Expression (by default 0).",
+      "Arguments": "Expression - any numeric expression value of which is used for comparison.\nError - the numeric expression, comparison error.\nValueN - the numeric expression value of which is compared with the Expression argument.\nResultN - the value that is returned if |ValueN - ExpressionN| <= Accuracy.\nDefault_value - the numeric expression the result of which is returned if none of the ValuesN is equal to the Expression (by default 0).",
       "Description": "DecodeF(Expression, Error, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])",
       "Output": " Implements IF - THEN - ELSE feature and the function result as all its arguments are related to the numeric or Date/Time type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeN": {
-      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\n ValueN - the expression value of which is compared with the Expression argument.\n ResultN - the expression of the numeric or Date/Time type that is returned if the Expression = ValueN.\n Default_value - the expression of the numeric or Date/Time type the result of which is returned, if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to 0).",
+      "Arguments": "Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\nValueN - the expression value of which is compared with the Expression argument.\nResultN - the expression of the numeric or Date/Time type that is returned if the Expression = ValueN.\nDefault_value - the expression of the numeric or Date/Time type the result of which is returned, if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to 0).",
       "Description": "DecodeN(Expression, Value1, Result1 [, Value2, Result2]... [, Default_value = 0])",
       "Output": " Implements IF - THEN - ELSE feature and the function result is related to the numeric or Date/Time type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeS": {
-      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\n ValueN - the expression value of which is compared with the Expression argument.\n ResultN - the expression of the string type that is returned if the Expression = ValueN.\n Default_value - the expression of the string type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to \"\").",
+      "Arguments": "Expression - the expression value of which is  alternately compared with the values of the ValueN arguments.\nValueN - the expression value of which is compared with the Expression argument.\nResultN - the expression of the string type that is returned if the Expression = ValueN.\nDefault_value - the expression of the string type the result of which is returned if the Expression is equal to none of the ValuesN (if it is not stated then it is equal to \"\").",
       "Description": "DecodeS(Expression, Value1, Result1 [, Value2, Result2]... [, Deafult_value = \"\"])",
       "Output": " Implements IF - THEN - ELSE feature and the function result is related to the string type.\n All ResultN expressions are calculated before the Expression and ValueN comparison."
     },
     "DecodeV": {
-      "Arguments": " Expression - the expression value of which is  alternately compared with the values of the Value arguments.\n Value - the expression value of which is compared with the Expression argument.\n Result - the expression that is returned if the Expression = Value.\n Default_value - the expression, the result of which is returned if the Expression is equal to none of the Values (if it is not stated then it is equal to Null).",
+      "Arguments": "Expression - the expression value of which is  alternately compared with the values of the Value arguments.\nValue - the expression value of which is compared with the Expression argument.\nResult - the expression that is returned if the Expression = Value.\nDefault_value - the expression, the result of which is returned if the Expression is equal to none of the Values (if it is not stated then it is equal to Null).",
       "Description": "DecodeV(Expression, Value, Result [, Value, Result]... [, Default_value = Null])",
       "Output": " Implements IF - THEN - ELSE feature.\n All Result expressions are calculated before the Expression and Values comparison."
     },
@@ -444,7 +444,7 @@
     },
     "Stuff": {
       "Arguments": "Source - string expression.\nInserted_string - string expression.\nStart - position of the insert start\nLength - length of the deleted substring",
-      "Description": "Stuff(Source, Position_start, Length [, Inserted_string = \"\"])",
+      "Description": "Stuff(Source, Start, Length [, Inserted_string = \"\"])",
       "Output": "Returns the string of the following type. At first, substring is deleted from the Source, starting from the Start position of the Length length. Then instead of the deleted substring, the Inserted_string is inserted."
     },
     "SubStr": {

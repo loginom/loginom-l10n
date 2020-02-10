@@ -467,11 +467,11 @@
     "VendorDesc": "Create calculated fields"
   },
   "components/calcdata/CalcItem": {
-    "ErrExprParse": "Error parsing \"%s\" expression: %s",
+    "ErrExprParse": "Error parsing \"%s\" expression",
     "ExprCalculateError": "Error calculating \"%s\" expression, row %d of the input data set"
   },
   "components/calcdata/CalcItemChakra": {
-    "ErrExprParse": "Error parsing \"%s\" expression: %s",
+    "ErrExprParse": "Error parsing \"%s\" expression",
     "ErrExprUsesUndefinedVariable": "%1:s undefined variable used in \"%0:s\" expression",
     "ExprCalculateError": "Error calculating \"%s\" expression, row %d of the input data set"
   },
@@ -494,7 +494,7 @@
   "components/calcvariables/CalcVariables": {
     "ErrExprCalculate": "Error calculating \"%s\" expression",
     "ErrExprIsStringType": "\"%s\" expression of string type",
-    "ErrExprParse": "Error parsing \"%s\" expression: %s",
+    "ErrExprParse": "Error parsing \"%s\" expression",
     "ErrVarValueSet": "Error setting \"%s\" expression value",
     "NameNotExists": "No input variable or expression with \"%s\" name exists"
   },
@@ -707,11 +707,11 @@
   },
   "components/datatotree/DataToTreeModelComponentEngine": {
     "InputDataSource": "Input data source",
-    "OutputDataTree": "Output tree"
+    "OutputDataTree": "Output data tree"
   },
   "components/datatotree/DataToTreeVendor": {
     "VendorCaption": "Table to Tree",
-    "VendorDesc": "Create tree from data table"
+    "VendorDesc": "Create data tree from data table"
   },
   "components/datatovariables/DataToVariablesEngine": {
     "DataToVariablesNotify": "Variable calculating",
@@ -1512,12 +1512,12 @@
     "PrepareRowIndexesProcess": "Preparation of row indexes"
   },
   "components/treetodata/TreeToDataModelComponentEngine": {
-    "InputDataTree": "Input tree",
+    "InputDataTree": "Input data tree",
     "OutputDataSource": "Output data set"
   },
   "components/treetodata/TreeToDataVendor": {
     "VendorCaption": "Tree to Table",
-    "VendorDesc": "Create data table from tree"
+    "VendorDesc": "Create data table from data tree"
   },
   "components/ungroupdata/UngroupData": {
     "ConfidenceBandLowerDisplayName": "Lower bound 95% CI",
@@ -1900,7 +1900,7 @@
     "DatabaseTypeName": "MS Access (OLEDB)"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
-    "DatabaseTypeName": "MS Excel (ODBC) [UniDAC]",
+    "DatabaseTypeName": "MS Excel (ODBC)",
     "ErrODBCExcelNotExists": "ODBC driver for Excel files not installed"
   },
   "Libraries/bgdbrtl/UniDAC/FBUniDACDB": {
@@ -2070,10 +2070,10 @@
     "ErrCannotPostNodeWithoutAppend": "Post method calling for \"%s\" node without the Append call is forbidden",
     "ErrCannotRepeatAppendNode": "Repeated Append calling for \"%s\" node without the Post call is forbidden",
     "ErrCanOnlyAppendContainerOrArray": "Append calling method for \"%s\" node that is not a container or array is forbidden.",
-    "ErrDataTreeActive": "Tree is not in the closed state",
-    "ErrDataTreeClosed": "Tree is not in the opened state",
-    "ErrDataTreeNotConfigured": "Tree not configured",
-    "ErrDataTreeNotEditing": "Tree is not in the edited state",
+    "ErrDataTreeActive": "Data tree is not in the closed state",
+    "ErrDataTreeClosed": "Data tree is not in the opened state",
+    "ErrDataTreeNotConfigured": "Data tree not configured",
+    "ErrDataTreeNotEditing": "Data tree is not in the edited state",
     "ErrIsNotAncestorNode": "\"%s\" node is not ancestor of \"%s\" node",
     "ErrUnexpectedEndUpdate": "Failed to call EndUpdate method without calling BeginUpdate first"
   },
@@ -2950,10 +2950,10 @@
     "ErrFieldInfoDoesNotBelongToComponent": "\"%s\" field does not belong to the current component"
   },
   "Libraries/Model/DataTree/InputDataTreeSocketDef": {
-    "InputDataTreeSocketDefVendorCaption": "Tree"
+    "InputDataTreeSocketDefVendorCaption": "Data tree"
   },
   "Libraries/Model/DataTree/OutputDataTreeSocketDef": {
-    "OutputDataTreeSocketDefVendorCaption": "Tree"
+    "OutputDataTreeSocketDefVendorCaption": "Data tree"
   },
   "Libraries/Model/DerivedModelComponentVendor": {
     "BaseComponentVendorGuidDesc": "Base component GUID",
@@ -3044,7 +3044,7 @@
   },
   "Libraries/Model/ModelComponentVendorGroupsCommon": {
     "AnalyticVendorGroupCaption": "Data Mining",
-    "DataTreeVendorGroupCaption": "Tree",
+    "DataTreeVendorGroupCaption": "Data tree",
     "ExploratoryVendorGroupCaption": "Exploration",
     "ExportVendorGroupCaption": "Export",
     "FlowControlVendorGroupCaption": "Control",
@@ -3186,7 +3186,7 @@
     "LogActivateNodeStart": "Activating \"%s\" node",
     "LogActivateNodeSuccess": "Successfully activated \"%s\" node",
     "LogDeactivateNode": "\"%s\" node deactivated",
-    "LogNodeActivationError": "Error activating \"%s\" node",
+    "LogNodeActivationError": "Error activating \"%s\" node, GUID=%s",
     "ResetModelNodeConfiguration": "Initial configuration of \"%s\" node reset",
     "RestoreBackupProcessCaption": "Backup configuration restoring",
     "SynchronizationInputPort": "Execution order",

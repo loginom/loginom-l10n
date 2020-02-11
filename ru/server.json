@@ -1717,7 +1717,7 @@
   },
   "exports/tableau/ExportTableau": {
     "AddToTableNotify": "Добавление записей в таблицу",
-    "ErrAPIInit": "Ошибка инициализации Tableau API ",
+    "ErrAPIInit": "Ошибка инициализации Tableau API",
     "ErrAppendOverwriteForbidden": "Одновременное добавление и перезаписывание записей запрещено",
     "ErrCantCreateEmptyTable": "Невозможно создать пустую таблицу",
     "ErrColumnNotFound": "В источнике данных не найдено поле \"%s\"",

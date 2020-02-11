@@ -555,7 +555,7 @@
     "VendorDesc": "Data clustering"
   },
   "components/clusterization/ClusterProfiles": {
-    "ClusterNamePrefix": "Cluster"
+    "ClusterNamePrefix": "Cluster "
   },
   "components/coarseclasses/CoarseClassesBuilder": {
     "ErrCantApplyExternalBinning": "Failed to apply binning for %s column.",
@@ -3090,9 +3090,9 @@
     "ErrCannotDeleteDerivedVendors": "It is forbidden to delete derived components"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
-    "ErrInputSocketDefsEmptyName": "No name of the following inputs specified:",
+    "ErrInputSocketDefsEmptyName": "No name of the following inputs specified: ",
     "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
-    "ErrOutputSocketDefsEmptyName": "No name of the following outputs specified:",
+    "ErrOutputSocketDefsEmptyName": "No name of the following outputs specified: ",
     "ErrUntypedInputSocketDefs": "The following input types are not specified: ",
     "ErrUntypedOutputSocketDefs": "The following output types are not specified: "
   },
@@ -3107,7 +3107,7 @@
     "ErrAlreadyConfiguringInnerSocket": "The external port component has already been configuring"
   },
   "Libraries/Model/Generic/ModelInputComponent": {
-    "ErrInnerOutputSocketDefsEmptyName": "No name of the following inputs specified:",
+    "ErrInnerOutputSocketDefsEmptyName": "No name of the following inputs specified: ",
     "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
     "ErrUntypedInnerOutputSocketDefs": "The following input types are not specified: "
   },
@@ -3115,7 +3115,7 @@
     "VendorCaption": "Input Node"
   },
   "Libraries/Model/Generic/ModelOutputComponent": {
-    "ErrInnerInputSocketDefsEmptyName": "No name of the following outputs specified:",
+    "ErrInnerInputSocketDefsEmptyName": "No name of the following outputs specified: ",
     "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
     "ErrUntypedInnerInputSocketDefs": "The following output types are not specified: "
   },
@@ -3193,7 +3193,7 @@
     "ErrSomeNodeDisposed": "One or several source nodes have been deleted or moved",
     "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
     "ErrVendorNotFound": "\"%s\" component not found",
-    "ErrVendorUnavailableForMovedNode": " %s derived component is unavailable for moved %s node.",
+    "ErrVendorUnavailableForMovedNode": "%s derived component is unavailable for moved %s node.",
     "ForceMovingForbidden": "Forced movement forbidden",
     "MoveNodesCaption": "Nodes Moved",
     "OperationCanceled": "Operation canceled",
@@ -3815,7 +3815,7 @@
     "ErrApplicationModeNotAllowed": "Connection in \"%s\" mode not allowed",
     "ErrInvalidPasswordHashInConfig": "Configuration file contains invalid password hash",
     "ErrInvalidUserNameOrPassword": "Invalid username or password",
-    "ErrLastAdminChangeDenied": "Failed to delete or change the single %s admin account with local authentication ",
+    "ErrLastAdminChangeDenied": "Failed to delete or change the single %s admin account with local authentication",
     "ErrLDAPAuthentifyDisabled": "LDAP authentication not supported",
     "ErrLDAPGetFullName": "Failed to get the full name of %s user",
     "ErrLDAPUserNotFound": "%s user not found in the directory service",
@@ -4024,7 +4024,7 @@
   },
   "Viewers/Cube/CubeView": {
     "CubeViewProcess": "Cube",
-    "DetailingProcessCaptionSuffix": "by cell [%d, %d]",
+    "DetailingProcessCaptionSuffix": " by cell [%d, %d]",
     "ErrAlreadyExporting": "Failed to export a crosstab until the current export is finished",
     "ErrExportCubeClosed": "Failed to export a crosstab when the Cube is inactive",
     "ErrExportDeactivate": "Export deactivated due to node deactivation",

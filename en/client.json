@@ -3,7 +3,7 @@
     "ErrVersionWrongServiceResponse": "Incorrect response of the service with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": " {0} version is available"
+    "NewVersionIsAvaliableFmt": "{0} version is available"
   },
   "admin/LDAPSettings": {
     "ConnectionSecurity": "Connection security",
@@ -898,7 +898,7 @@
     "DataSourceNotActive": "Data set not active"
   },
   "ext/ExcessColumnLabel": {
-    "TooltipTemplate": " {0} from {1} rows displayed"
+    "TooltipTemplate": "{0} from {1} rows displayed"
   },
   "ext/ExportUtils": {
     "BytesSuffix": "byte",
@@ -980,7 +980,7 @@
   "ext/TotalLabel": {
     "HeaderFormat": "# |{0}|",
     "RowCountSymbol": "#",
-    "TooltipPartTemplate": " {0} from {1} rows displayed",
+    "TooltipPartTemplate": "{0} from {1} rows displayed",
     "TooltipTemplate": "Total row count {0}"
   },
   "ext/TriStateSortColumn": {
@@ -1264,7 +1264,7 @@
     "ErrVersionWrongServiceResponse": "Incorrect response of the service with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": " {0} version is available"
+    "NewVersionIsAvaliableFmt": "{0} version is available"
   },
   "homepage/HomePage": {
     "CleanConfirm": "Do you want to clean the list of recently opened packages?",
@@ -1844,14 +1844,14 @@
     "RangeBorderViolationErr": "Range border violation"
   },
   "viewers/clusterprofiles/ClusterProfilesView": {
-    "FieldPrefixMax": "to",
-    "FieldPrefixMin": "from"
+    "FieldPrefixMax": "to ",
+    "FieldPrefixMin": "from "
   },
   "viewers/clusterprofiles/ComparisonController": {
     "BarHidden": "(hidden)"
   },
   "viewers/clusterprofiles/GridController": {
-    "CenterCoord": "Coordinate:",
+    "CenterCoord": "Coordinate: ",
     "CompareTo": " / ",
     "ConversionError": "Error while reducing to number",
     "EmptyValue": "Value - empty string",
@@ -1860,10 +1860,10 @@
     "NotComputed": "Not calculated",
     "NullBar": "null",
     "NullData": "Only null data in the field",
-    "OutOf": "from",
+    "OutOf": " from ",
     "OutOfRange": "Received values are out of precalculated range",
     "ResidueBar": "Other",
-    "StringLength": "(string length)",
+    "StringLength": " (string length)",
     "TooManyValues": "Too many unique values",
     "UndefinedDataKind": "Undefined data type"
   },
@@ -2079,7 +2079,7 @@
     "ConversionError": "Error while reducing to number",
     "ConvertErrorFmt": "Error while statistics calculation by field \"{0}\":\n{1}",
     "CountOfStrings": "Row count: ",
-    "DaysSuffix": "days",
+    "DaysSuffix": " days",
     "ErrBounds": "Minimum more than maximum",
     "InfiniteValues": "Quick view contains infinite values",
     "LeftOutlier": "Minimum outlier: ",
@@ -2094,10 +2094,10 @@
     "SliderTipFmt": "{0}: {1}",
     "SliderTipMax": "max",
     "SliderTipMin": "min",
-    "StringLengthMax": "Minimum string length:",
-    "StringLengthMean": "Mean string length:",
-    "StringLengthMin": "Maximum string length:",
-    "StringLengthSuffix": "string length:",
+    "StringLengthMax": "Minimum string length: ",
+    "StringLengthMean": "Mean string length: ",
+    "StringLengthMin": "Maximum string length: ",
+    "StringLengthSuffix": " string length: ",
     "TuneColumnsLabelTitle": "Field Caption",
     "TuneColumnsTitle": "Configure Fields",
     "TuneStatisticsLabelTitle": "Statistics Parameter",

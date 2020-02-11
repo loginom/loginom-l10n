@@ -1686,6 +1686,7 @@
     "ErrSyncKeyTypesMismatch": "Synchronization error: \"%s\" key field type is not compatible with \"%s\" source field type",
     "ErrTableNameNotSelected": "No table name selected",
     "ErrUnknownExportType": "Unknown export type",
+    "ErrUpdateNotSupported": "Record update by key not supported by the current database",
     "GroupDataNotify": "Data grouping",
     "UpdateRecordsNotify": "Update existing table records"
   },
@@ -1715,6 +1716,7 @@
   "exports/tableau/ExportTableau": {
     "AddToTableNotify": "Addition of records to table",
     "ErrAPIInit": "Tableau API initialization error",
+    "ErrAppendOverwriteForbidden": "Simultaneous records addition and overwrite are forbidden",
     "ErrCantCreateEmptyTable": "Failed to create empty table",
     "ErrColumnNotFound": "\"%s\" field not found in the data source",
     "ErrColumnTypesMismatch": "\"%s\" field type is not compatible with \"%s\" source field type",
@@ -1928,6 +1930,9 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
     "ErrColNotNullable": "\"%s\" column (%s) type cannot have Null values",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
+    "ErrColValueOutOfRange": "Value %g is out of range of the allowed \"%s\" column range (%s type)",
+    "ErrColValueOutOfRangeInt": "Value %d is out of range of the allowed \"%s\" column range (%s type)",
+    "ErrColValueOutOfRangeString": "\"%s\" string length exceeds the length allowed for \"%s\" column (\"%s\" type)",
     "ErrConvertFloatToDecimal": "Failed to convert the real value %g to the Decimal value (\"%s\" column)",
     "ErrUnsupportedDataType": "Column data type \"%s\" not supported"
   },
@@ -1939,6 +1944,8 @@
     "ErrColumnNotFound": "\"%s\" column not found in target table",
     "ErrInsertDataFormatUnsupported": "\"%s\" data format not supported in INSERT",
     "ErrInsertFormatUnsupported": "Used INSERT format not supported",
+    "ErrInsertParamsInvalidCount": "Mismatching count of table fields and parameters",
+    "ErrInsertUnsupported": "Unsupported INSERT execution for data selection",
     "ErrInsertValuesUnsupported": "Only parametrized INSERT supported",
     "ErrNotOwnSession": "Session does not belong to the database",
     "ErrStoredProcUnsupported": "ClickHouse does not support the stored procedures"
@@ -1977,7 +1984,8 @@
     "DatabaseTypeName": "MS Access (OLEDB)"
   },
   "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
-    "DatabaseTypeName": "BigQuery (ODBC)"
+    "DatabaseTypeName": "BigQuery (ODBC)",
+    "ErrODBCBigQueryNotExists": "ODBC-driver for connection to BigQuery has not been installed. Installation packages and brief driver description can be found at:"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
     "DatabaseTypeName": "MS Excel (ODBC)",
@@ -2231,6 +2239,7 @@
     "ErrAssign": "Failed to assign property values of %s object  to the object values of the unsupported class %s",
     "ErrAssignIntf": "Failed to assign property values of %s object  to the object values of the unsupported interface",
     "ErrFloatParamIsNan": "\"%s\" parameter value equal to NaN is not allowed",
+    "ErrFunctionRefIsNull": "Reference to %s function must be initialized",
     "ErrInvalidIndex": "Index value %d of \"%s\" parameter is out of [%d; %d] range",
     "ErrMethodParamIsNull": "%s parameter of %s method must be initialized",
     "ErrMustGreaterOrEqualThan": "Value %g of \"%s\" parameter must be more than or equal to %g",
@@ -3169,10 +3178,14 @@
   },
   "Libraries/Model/ModelNodesCopyUtils": {
     "CopyNodesCaption": "Nodes Copied",
+    "ErrCantPasteBaseInsideDerived": "Failed to move \"%s\" base component inside \"%s\" derived node.",
+    "ErrCantPasteDerivedInsideBase": "Failed to move \"%s\" derived node inside \"%s\" base node",
+    "ErrCantPasteInsideSelf": "Failed to move \"%s\" node inside itself",
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" source node is not available at the required destination.",
     "ErrCycleFound": "Circular reference between nodes detected!",
     "ErrDuringMove": "Errors occurred while nodes moving",
     "ErrLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node",
+    "ErrMovedVendorUnavailableForNode": "Moved %s derived component is unavailable for %s node.",
     "ErrNodeNotConfigurable": "Failed to create the node copy with the following name: \"%s\" and GUID: %s",
     "ErrNoNodesSpecified": "No node set specified",
     "ErrNoSourceModelUnit": "Source module not found",
@@ -3180,6 +3193,7 @@
     "ErrSomeNodeDisposed": "One or several source nodes have been deleted or moved",
     "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
     "ErrVendorNotFound": "\"%s\" component not found",
+    "ErrVendorUnavailableForMovedNode": " %s derived component is unavailable for moved %s node.",
     "ForceMovingForbidden": "Forced movement forbidden",
     "MoveNodesCaption": "Nodes Moved",
     "OperationCanceled": "Operation canceled",
@@ -3801,6 +3815,7 @@
     "ErrApplicationModeNotAllowed": "Connection in \"%s\" mode not allowed",
     "ErrInvalidPasswordHashInConfig": "Configuration file contains invalid password hash",
     "ErrInvalidUserNameOrPassword": "Invalid username or password",
+    "ErrLastAdminChangeDenied": "Failed to delete or change the single %s admin account with local authentication ",
     "ErrLDAPAuthentifyDisabled": "LDAP authentication not supported",
     "ErrLDAPGetFullName": "Failed to get the full name of %s user",
     "ErrLDAPUserNotFound": "%s user not found in the directory service",

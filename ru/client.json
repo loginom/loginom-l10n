@@ -102,7 +102,7 @@
   },
   "app/Licenses": {
     "FailLicenseListText": "Не удалось получить список лицензий",
-    "FailLicenseText": "Возникла ошибка при поучении текста лицензии",
+    "FailLicenseText": "Возникла ошибка при получении текста лицензии",
     "LicenseModalTitle": "Лицензионное соглашение",
     "ThirdPartyModalTitle": "Стороннее программное обеспечение"
   },

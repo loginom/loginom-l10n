@@ -812,6 +812,7 @@
       "FactorSelection": "Settings of stepwise factor selection",
       "Intercept": "Include intercept into the model",
       "Regularization": "Regularization settings",
+      "ShowRefCoeffs": "Show coefficients of reference categories",
       "SimpleParams": "Parameters of simplified regression settings",
       "Statistics": "Settings of factor selection statistics calculation",
       "UseDetailedSettings": "Use detailed settings"

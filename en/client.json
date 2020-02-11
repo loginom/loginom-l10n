@@ -623,7 +623,7 @@
   },
   "components/filterdata/FilterDataCollection": {
     "ConfirmDeleteAll": "Do you really want to delete all conditions?",
-    "UniqueValuesLimitError": "\"{0}\" field has unique value count exceeding the allowable limit {1}\n"
+    "UniqueValuesLimitError": "\"{0}\" field has unique value count exceeding the allowable limit {1}"
   },
   "components/filterdata/FilterDataWizard": {
     "Activation": "Input port activation",
@@ -857,6 +857,7 @@
   },
   "exports/dbexport/DBExportParamsWizard": {
     "ErrTableNameNotSelected": "No table name selected",
+    "ErrUpdateNotSupported": "Record update by key not supported by the current database",
     "NoConnection": "No connection"
   },
   "exports/excelfile/ExportExcelFilePreviewWizard": {
@@ -1852,6 +1853,7 @@
   "viewers/clusterprofiles/GridController": {
     "CenterCoord": "Coordinate:",
     "CompareTo": " / ",
+    "ConversionError": "Error while reducing to number",
     "EmptyValue": "Value - empty string",
     "InfiniteValues": "Quick view contains infinite values",
     "NotAvailable": "Not available",
@@ -1859,6 +1861,7 @@
     "NullBar": "null",
     "NullData": "Only null data in the field",
     "OutOf": "from",
+    "OutOfRange": "Received values are out of precalculated range",
     "ResidueBar": "Other",
     "StringLength": "(string length)",
     "TooManyValues": "Too many unique values",
@@ -1973,7 +1976,8 @@
     "BackwardSortNavButton": "Backward Sort",
     "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields, or by pressing the \"+\" button",
     "DescSortCaption": "Sort Descending",
-    "ForwardSortNavButton": "Forward Sort"
+    "ForwardSortNavButton": "Forward Sort",
+    "NestedSortCaption": "Sorted headers among nested headers"
   },
   "viewers/detailing/Detailing": {
     "ErrNullEngine": "Visualizer initialization error",
@@ -2072,6 +2076,8 @@
     "TPRShort": "TPR"
   },
   "viewers/statistics/StatView": {
+    "ConversionError": "Error while reducing to number",
+    "ConvertErrorFmt": "Error while statistics calculation by field\"{0}\n\":\n{1}",
     "CountOfStrings": "Row count: ",
     "DaysSuffix": "days",
     "ErrBounds": "Minimum more than maximum",

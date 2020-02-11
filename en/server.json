@@ -1928,7 +1928,7 @@
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
   },
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
-    "ErrColNotNullable": "\"%s\" column (%s) type cannot have Null values",
+    "ErrColNotNullable": "\"%s\" column (%s type) cannot have Null values",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrColValueOutOfRange": "Value %g is out of range of the allowed \"%s\" column range (%s type)",
     "ErrColValueOutOfRangeInt": "Value %d is out of range of the allowed \"%s\" column range (%s type)",
@@ -1977,7 +1977,7 @@
     "DecryptPrivateKey": "Error while private key decryption",
     "ErrFileNoAccess": "\"%s\" file unavailable",
     "ErrFileNotFound": "\"%s\" file not found",
-    "ErrGetFileStorage": "Failed to address to file storage",
+    "ErrGetFileStorage": "No reference to file storage",
     "SSLOptions": "SSL settings"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
@@ -3184,7 +3184,7 @@
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" source node is not available at the required destination.",
     "ErrCycleFound": "Circular reference between nodes detected!",
     "ErrDuringMove": "Errors occurred while nodes moving",
-    "ErrLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node",
+    "ErrLinkPortNotConnetedToNode": "Port of link with %s identifier not connected to node",
     "ErrMovedVendorUnavailableForNode": "Moved %s derived component is unavailable for %s node.",
     "ErrNodeNotConfigurable": "Failed to create the node copy with the following name: \"%s\" and GUID: %s",
     "ErrNoNodesSpecified": "No node set specified",

@@ -589,7 +589,7 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseDB": {
     "ClickHouseDatabaseConfigurator": {
       "CompressionMethod": "Data compression method",
-      "IsLocalTimeZone": "Consider local time zone"
+      "IsLocalTimeZone": "Use local time zone"
     }
   },
   "Libraries/bgdbrtl/DB": {

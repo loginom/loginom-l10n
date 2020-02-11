@@ -27,19 +27,19 @@
       "text": "Check for updates..."
     },
     "lblExpirationDate": {
-      "text": "License termination date:"
+      "text": "License termination date: "
     },
     "lblPlatformEdition": {
-      "text": "Edition:"
+      "text": "Edition: "
     },
     "lblSerialNumber": {
-      "text": "Serial number:"
+      "text": "Serial number: "
     },
     "lblUnknownVersion": {
       "text": "Failed to check for updates"
     },
     "lblVersion": {
-      "text": "Version:"
+      "text": "Version: "
     },
     "mniCopy": {
       "text": "Copy information"

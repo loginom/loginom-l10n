@@ -2077,7 +2077,7 @@
   },
   "viewers/statistics/StatView": {
     "ConversionError": "Error while reducing to number",
-    "ConvertErrorFmt": "Error while statistics calculation by field\"{0}\n\":\n{1}",
+    "ConvertErrorFmt": "Error while statistics calculation by field \"{0}\":\n{1}",
     "CountOfStrings": "Row count: ",
     "DaysSuffix": "days",
     "ErrBounds": "Minimum more than maximum",

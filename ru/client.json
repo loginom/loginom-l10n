@@ -2079,7 +2079,7 @@
   },
   "viewers/statistics/StatView": {
     "ConversionError": "Ошибка приведения к числу",
-    "ConvertErrorFmt": "Ошибка при вычислении статистики по полю\"{0}\":\n{1}",
+    "ConvertErrorFmt": "Ошибка при вычислении статистики по полю \"{0}\":\n{1}",
     "CountOfStrings": "Кол-во строк данных: ",
     "DaysSuffix": " дней",
     "ErrBounds": "Минимум больше максимума",

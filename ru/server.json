@@ -3790,7 +3790,7 @@
     "FileNames": "Имена файлов",
     "PackageClosedLogMsg": "Закрыт пакет \"%s\"",
     "PackageOpenedEditLogMsg": "Открыт пакет \"%s\" в режиме редактирования",
-    "PackageOpenedReadLogMsg": "Открыт пакет \"%s\" в режиме чтения",
+    "PackageOpenedReadLogMsg": "Открыт пакет \"%s\" в режиме только для чтения",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s запущен",
     "Session": "Сессия",

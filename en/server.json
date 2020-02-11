@@ -1030,7 +1030,7 @@
   },
   "components/forecast/ForecastVendor": {
     "VendorCaption": "ARIMAX",
-    "VendorDesc": "Time series forecast using ARIMA Model able to include external factors (ARIMAX)"
+    "VendorDesc": "Time series forecast using ARIMA Model able to include exogenous factors (ARIMAX)"
   },
   "components/groupdata/GroupData": {
     "ErrNoColumnsForProcessing": "No columns for processing specified",
@@ -2884,7 +2884,7 @@
   },
   "Libraries/DBConnection/ClickHouse/ClickHouseDBConnectionVendor": {
     "VendorCaption": "ClickHouse",
-    "VendorDesc": "ClickHouse data base management system"
+    "VendorDesc": "DBMS ClickHouse"
   },
   "Libraries/DBConnection/UniDAC/AccessODBCUniDACDBConnectionVendor": {
     "VendorCaption": "MS Access",

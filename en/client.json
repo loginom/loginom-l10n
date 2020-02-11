@@ -898,7 +898,7 @@
     "DataSourceNotActive": "Data set not active"
   },
   "ext/ExcessColumnLabel": {
-    "TooltipTemplate": "{0} from {1} rows displayed"
+    "TooltipTemplate": "{0} from {1} fields displayed"
   },
   "ext/ExportUtils": {
     "BytesSuffix": "byte",
@@ -2076,7 +2076,7 @@
     "TPRShort": "TPR"
   },
   "viewers/statistics/StatView": {
-    "ConversionError": "Error while reducing to number",
+    "ConversionError": "Error while converting to number",
     "ConvertErrorFmt": "Error while statistics calculation by field \"{0}\":\n{1}",
     "CountOfStrings": "Row count: ",
     "DaysSuffix": " days",

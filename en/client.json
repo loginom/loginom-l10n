@@ -3,12 +3,12 @@
     "ErrVersionWrongServiceResponse": "Incorrect response of the service with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": "{0} version is available"
+    "NewVersionIsAvaliableFmt": "Version {0} is available"
   },
   "admin/LDAPSettings": {
     "ConnectionSecurity": "Connection security",
     "LDAPAccount": "Account",
-    "LDAPBaseDN": "Base domain",
+    "LDAPBaseDN": "Base domain name",
     "LDAPFilter": "LDAP filter",
     "LDAPFullNameAttribute": "Attribute with full username",
     "LDAPHost": "Host",
@@ -356,8 +356,8 @@
   },
   "app/WindowTitle": {
     "Close": "Close",
-    "Doc": "Help",
-    "HelpMenu": "Help Menu",
+    "Doc": "Documentation",
+    "HelpMenu": "Help",
     "Minimize": "Minimize",
     "QA": "Ask a question",
     "QAHref": "https://qa.loginom.com/questions/",
@@ -1264,7 +1264,7 @@
     "ErrVersionWrongServiceResponse": "Incorrect response of the service with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": "{0} version is available"
+    "NewVersionIsAvaliableFmt": "Version {0} is available"
   },
   "homepage/HomePage": {
     "CleanConfirm": "Do you want to clean the list of recently opened packages?",
@@ -1853,15 +1853,15 @@
   "viewers/clusterprofiles/GridController": {
     "CenterCoord": "Coordinate: ",
     "CompareTo": " / ",
-    "ConversionError": "Error while reducing to number",
+    "ConversionError": "Failed to convert to number",
     "EmptyValue": "Value - empty string",
-    "InfiniteValues": "Quick view contains infinite values",
+    "InfiniteValues": "Sample contains infinite values",
     "NotAvailable": "Not available",
     "NotComputed": "Not calculated",
     "NullBar": "null",
-    "NullData": "Only null data in the field",
+    "NullData": "Field contains only null data",
     "OutOf": " from ",
-    "OutOfRange": "Received values are out of precalculated range",
+    "OutOfRange": "Received values are out of predefined range",
     "ResidueBar": "Other",
     "StringLength": " (string length)",
     "TooManyValues": "Too many unique values",
@@ -1968,15 +1968,15 @@
     "SourceRecordCountDesc": "Source row count",
     "SubFunctionCountDesc": "Number of displayed measures",
     "SubFunctionDisplayName": "Display",
-    "WarnCubeSortedColLimit": "Count of sorted columns cannot exceed {0}",
+    "WarnCubeSortedColLimit": "Count of sorted headers cannot exceed {0}",
     "Yes": "Yes"
   },
   "viewers/cube/PivotGrid": {
     "AscSortCaption": "Sort Ascending",
-    "BackwardSortNavButton": "Backward Sort",
+    "BackwardSortNavButton": "Go to Next Sorted Header",
     "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields, or by pressing the \"+\" button",
     "DescSortCaption": "Sort Descending",
-    "ForwardSortNavButton": "Forward Sort",
+    "ForwardSortNavButton": "Go to Previous Sorted Header",
     "NestedSortCaption": "Sorted headers among nested headers"
   },
   "viewers/detailing/Detailing": {
@@ -2076,7 +2076,7 @@
     "TPRShort": "TPR"
   },
   "viewers/statistics/StatView": {
-    "ConversionError": "Error while converting to number",
+    "ConversionError": "Failed to convert to number",
     "ConvertErrorFmt": "Error while statistics calculation by field \"{0}\":\n{1}",
     "CountOfStrings": "Row count: ",
     "DaysSuffix": " days",
@@ -2088,7 +2088,7 @@
     "Median": "Median: ",
     "NotAvailable": "Not available",
     "NotCalculated": "Not calculated",
-    "NullData": "Only null data in the field",
+    "NullData": "Field contains only null data",
     "RightOutlier": "Maximum outlier: ",
     "RightWhisker": "Sample maximum: ",
     "SliderTipFmt": "{0}: {1}",
@@ -2354,7 +2354,7 @@
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?"
   },
   "wizards/variables/VariablesMappingWizard": {
-    "btnAutoSyncThroughColumnsTooltip": "Automapping of variables",
+    "btnAutoSyncThroughColumnsTooltip": "Automapping",
     "btnSyncThroughColumnsTooltip": "Map variables",
     "CreateMappingToAllConfirm": "Do you really want to create output variables for all inputs?",
     "EmptyListText": "No matching variables",

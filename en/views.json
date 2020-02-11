@@ -11,7 +11,7 @@
       "text": "Loginom web site"
     },
     "btnThirdParty": {
-      "text": "External components"
+      "text": "Third Party Software"
     },
     "btnWhatsNew": {
       "href": "https://loginom.com/tags/release-notes/",
@@ -465,7 +465,7 @@
       "tooltip": "Open/close node"
     },
     "btnShow": {
-      "tooltip": "Go to"
+      "tooltip": "Open"
     },
     "btnShowViews": {
       "tooltip": "Show visualizers"
@@ -1519,7 +1519,7 @@
       "text": "Tree node"
     },
     "frmDataToTreeWizard": {
-      "title": "Data to Tree Transformation Wizard"
+      "title": "Table to Tree Transformation Wizard"
     },
     "mniAutoLinkTree": {
       "text": "Auto link"
@@ -2491,7 +2491,7 @@
       "fieldLabel": "File storage"
     },
     "frmExportParamsForm": {
-      "title": "Data Export to Tableau File"
+      "title": "Export to Tableau File"
     }
   },
   "exports/tableau/TableauCreateTableDialog": {
@@ -2623,7 +2623,7 @@
       "fieldLabel": "File type"
     },
     "colFileDate": {
-      "text": "Changed"
+      "text": "Modified"
     },
     "colFilePath": {
       "text": "Path"
@@ -2668,7 +2668,7 @@
       "text": "Size"
     },
     "mniSortByTime": {
-      "text": "Changed"
+      "text": "Modified"
     },
     "mniSortByType": {
       "text": "Type"
@@ -2784,7 +2784,7 @@
   },
   "homepage/Banner": {
     "btnGoToNewVersion": {
-      "text": "Go to"
+      "text": "More"
     },
     "btnLicenseAgreement": {
       "text": "License Agreement"
@@ -2812,14 +2812,14 @@
     },
     "btnFastStart": {
       "href": "https://help.loginom.com/userguide/quick-start/",
-      "text": "Fast Start"
+      "text": "Quick Start"
     },
     "btnInstagram": {
       "href": "https://instagram.com/loginom_company/"
     },
     "btnIntro": {
       "href": "https://loginom.com/welcome-video/",
-      "text": "Getting acquainted with Loginom"
+      "text": "Introduction to Loginom"
     },
     "btnLearning": {
       "href": "https://loginom.com/learning/",
@@ -2874,7 +2874,7 @@
       "text": "Add to favorite"
     },
     "mniOpen": {
-      "text": "Go to"
+      "text": "Open"
     },
     "mniOpenInFolder": {
       "text": "Show in folder"
@@ -3231,15 +3231,15 @@
   "login/Login": {
     "btnFastStart": {
       "href": "https://help.loginom.com/userguide/quick-start/",
-      "text": "Fast Start"
+      "text": "Quick Start"
     },
     "btnHelp": {
       "href": "https://help.loginom.com/",
-      "text": "Documents"
+      "text": "Documentation"
     },
     "btnIntro": {
       "href": "https://loginom.com/welcome-video/",
-      "text": "Getting acquainted with Loginom"
+      "text": "Introduction to Loginom"
     },
     "btnLogin": {
       "text": "Login"
@@ -3783,13 +3783,13 @@
       "text": "Weight"
     },
     "lblCellImportance": {
-      "text": "Cell significance"
+      "text": "Cell importance"
     },
     "lblClusterSize": {
       "text": "Cluster size"
     },
     "lblColumnImportance": {
-      "text": "Field significance"
+      "text": "Field importance"
     },
     "lblComparisonWelcome": {
       "text": "Select several cells to compare clusters by field"
@@ -5206,7 +5206,7 @@
   },
   "wizards/datatree/XSDLoadingDialog": {
     "btnApply": {
-      "text": "Upload"
+      "text": "Load"
     },
     "btnCancel": {
       "text": "Cancel"

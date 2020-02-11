@@ -1856,7 +1856,7 @@
     "CenterCoord": "Координата: ",
     "CompareTo": " / ",
     "ConversionError": "Ошибка приведения к числу",
-    "EmptyValue": "Значение - пустая строка",
+    "EmptyValue": "пустая строка",
     "InfiniteValues": "Выборка содержит бесконечные значения",
     "NotAvailable": "Недоступно",
     "NotComputed": "Не вычислено",
@@ -1970,7 +1970,7 @@
     "SourceRecordCountDesc": "Исходное количество строк",
     "SubFunctionCountDesc": "Количество отображаемых фактов",
     "SubFunctionDisplayName": "Отображение",
-    "WarnCubeSortedColLimit": "Количество отсортированных колонок не может превышать {0}",
+    "WarnCubeSortedColLimit": "Количество отсортированных заголовков не может превышать {0}",
     "Yes": "Да"
   },
   "viewers/cube/PivotGrid": {
@@ -2356,7 +2356,7 @@
     "RemoveAllMappingVariablesConfirm": "Вы действительно хотите удалить все переменные?"
   },
   "wizards/variables/VariablesMappingWizard": {
-    "btnAutoSyncThroughColumnsTooltip": "Автоматическая синхронизация переменных",
+    "btnAutoSyncThroughColumnsTooltip": "Автоматическая синхронизация",
     "btnSyncThroughColumnsTooltip": "Синхронизировать переменные",
     "CreateMappingToAllConfirm": "Вы действительно хотите создать выходные переменные для всех входных?",
     "EmptyListText": "Нет подходящих переменных",

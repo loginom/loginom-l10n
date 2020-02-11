@@ -766,7 +766,7 @@
   "Libraries/LDAP/LDAP": {
     "LDAPConfigurator": {
       "Account": "Account",
-      "BaseDN": "Base domain",
+      "BaseDN": "Base domain name",
       "ConnectionSecurity": "Connection security",
       "Filter": "LDAP filter",
       "FullNameAttribute": "Full name attribute",

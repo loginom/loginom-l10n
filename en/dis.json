@@ -26,7 +26,7 @@
     "ErrNoApplicableDeductorServers": "No server found on which \"{0}\" package of \"{1}\" version is available.",
     "ErrNodeNameAlreadyExistsInDifferentPackage": "node with \"{0}\" name already exists in \"{1}\" package of \"{2}\" version",
     "ErrNoWorkingApplicableDeductorServers": "No functioning server found on which \"{0}\" package of \"{1}\" version is available.",
-    "ErrOnlySingleInputPortCanHaveEmptyName": "no name specified for {0} input node and the port is not single",
+    "ErrOnlySingleInputPortCanHaveEmptyName": "the input port node {0} has unspecified name and the port is not single",
     "ErrOnlySingleOutputPortCanHaveEmptyName": "no name specified for {0} output node and the port is not single",
     "ErrPackageHasNoPublishedNodes": "The package contains no published nodes",
     "ErrSavePackageDefsError": "Error of saving of packages for {0} server",

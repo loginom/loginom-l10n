@@ -1720,24 +1720,24 @@
     "ErrCantCreateEmptyTable": "Failed to create empty table",
     "ErrColumnNotFound": "\"%s\" field not found in the data source",
     "ErrColumnTypesMismatch": "\"%s\" field type is not compatible with \"%s\" source field type",
-    "ErrCouldntCreateTable": "Failed to create %s table",
-    "ErrCouldntRewriteTable": "Failed to recreate %s table",
+    "ErrCouldntCreateTable": "Failed to create \"%s\" table",
+    "ErrCouldntRewriteTable": "Failed to recreate \"%s\" table",
     "ErrDataSourceSelect": "No data source mapping provided",
     "ErrDuringExport": "Error while exporting to Tableau file",
     "ErrExtensionNotSupported": "\"%s\" extension is not a correct extension of Tableau Extract file",
-    "ErrExtractSDKNotFound": "Tableau Extract SDK not found",
+    "ErrExtractSDKNotFound": "Tableau Extract SDK not installed",
     "ErrFilePath": "Failed to get path to file",
     "ErrFillTable": "Failed to fill \"%s\" table",
-    "ErrHyperExtractSDKNotFound": "Tableau Extract API 2.0 SDK not found",
+    "ErrHyperExtractSDKNotFound": "Tableau Extract API 2.0 SDK not installed",
     "ErrHyperNotSupportedInWin32": "\"*.hyper\" data format suported only in 64-bit software version",
     "ErrMissingServerConnection": "No connection with Tableau server",
     "ErrNoColumnDefs": "No columns description",
     "ErrNoFileStorage": "No file storage found",
     "ErrProjectNameNotSelected": "No project name specified",
     "ErrServerFileNameNotSelected": "No source name specified on server",
-    "ErrTableAlreadyExists": "%s table already exists",
+    "ErrTableAlreadyExists": "\"%s\" table already exists",
     "ErrTableNameNotSelected": "No table name specified",
-    "ErrTableNotFound": "No %s table found",
+    "ErrTableNotFound": "No \"%s\" table found",
     "FileConnection": "Connect to file storage",
     "PublishToServerNotify": "Publish file on server",
     "TableauRestConnection": "Connect to Tableau server"
@@ -1923,7 +1923,7 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockReader": {
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrFetch": "Error occurred while data set reading",
-    "ErrGetFieldDesc": "Failed to receive description of fields for %s table",
+    "ErrGetFieldDesc": "Failed to receive description of fields for \"%s\" table",
     "ErrNoSuchSetting": "Configuration parameter with \"%s\" name does not exist",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
   },
@@ -2884,7 +2884,7 @@
   },
   "Libraries/DBConnection/ClickHouse/ClickHouseDBConnectionVendor": {
     "VendorCaption": "ClickHouse",
-    "VendorDesc": "DBMS ClickHouse"
+    "VendorDesc": "ClickHouse DBMS"
   },
   "Libraries/DBConnection/UniDAC/AccessODBCUniDACDBConnectionVendor": {
     "VendorCaption": "MS Access",
@@ -3091,7 +3091,7 @@
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
     "ErrInputSocketDefsEmptyName": "No name of the following inputs specified: ",
-    "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
+    "ErrOnlySinglePortCanHaveEmptyName": "Port name can be unspecified only if the port is single",
     "ErrOutputSocketDefsEmptyName": "No name of the following outputs specified: ",
     "ErrUntypedInputSocketDefs": "The following input types are not specified: ",
     "ErrUntypedOutputSocketDefs": "The following output types are not specified: "
@@ -3108,7 +3108,7 @@
   },
   "Libraries/Model/Generic/ModelInputComponent": {
     "ErrInnerOutputSocketDefsEmptyName": "No name of the following inputs specified: ",
-    "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
+    "ErrOnlySinglePortCanHaveEmptyName": "Port name can be unspecified only if the port is single",
     "ErrUntypedInnerOutputSocketDefs": "The following input types are not specified: "
   },
   "Libraries/Model/Generic/ModelInputComponentVendor": {
@@ -3116,7 +3116,7 @@
   },
   "Libraries/Model/Generic/ModelOutputComponent": {
     "ErrInnerInputSocketDefsEmptyName": "No name of the following outputs specified: ",
-    "ErrOnlySinglePortCanHaveEmptyName": "Only single port can have empty name",
+    "ErrOnlySinglePortCanHaveEmptyName": "Port name can be unspecified only if the port is single",
     "ErrUntypedInnerInputSocketDefs": "The following output types are not specified: "
   },
   "Libraries/Model/Generic/ModelOutputComponentVendor": {
@@ -3786,16 +3786,16 @@
     "ErrSessionBackupAlreadyRestored": "This session backup has already been restored by another client from the current account",
     "ErrSessionBackupModified": "This session backup has already been changed by another client from the current account",
     "FileNames": "File names",
-    "PackageClosedLogMsg": "Close \"%s\" package",
+    "PackageClosedLogMsg": "\"%s\" package closed",
     "PackageOpenedEditLogMsg": "\"%s\" package opened in the edit mode",
-    "PackageOpenedReadLogMsg": "\"%s\" package opened in the read mode",
+    "PackageOpenedReadLogMsg": "\"%s\" package opened in the read-only mode",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s started",
     "Session": "Session",
     "SessionBatch": "Batch processing",
     "SessionCloseLogMsg": "Closed session for %s user",
     "SessionInitializedLogMsg": "Initialized session for %s user",
-    "SessionIntegrator": "Tequest from integrator",
+    "SessionIntegrator": "Request from integrator",
     "SessionInteractive": "Interactive session",
     "User": "User",
     "UserName": "Username",
@@ -3827,7 +3827,7 @@
     "ErrUserNameIsReserved": "%s identifier has already been reserved and it cannot be used as a username",
     "ErrUserNameMustBeValidIdentifier": "Username must be a valid identifier",
     "IsAdmin": "Admin",
-    "IsDesigner": "Designer",
+    "IsDesigner": "Workflows design",
     "IsViewer": "View reports",
     "LogAddGroup": "%s group added",
     "LogAddUser": "%s user added",

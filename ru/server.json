@@ -1722,8 +1722,8 @@
     "ErrCantCreateEmptyTable": "Невозможно создать пустую таблицу",
     "ErrColumnNotFound": "В источнике данных не найдено поле \"%s\"",
     "ErrColumnTypesMismatch": "Тип поля \"%s\" не совместим с типом исходного поля \"%s\"",
-    "ErrCouldntCreateTable": "Не удалось создать таблицу %s",
-    "ErrCouldntRewriteTable": "Не удалось пересоздать таблицу %s",
+    "ErrCouldntCreateTable": "Не удалось создать таблицу \"%s\"",
+    "ErrCouldntRewriteTable": "Не удалось пересоздать таблицу \"%s\"",
     "ErrDataSourceSelect": "Не указано ни одного соответствия с источником данных",
     "ErrDuringExport": "Ошибка при выполнении экспорта в файл Tableau",
     "ErrExtensionNotSupported": "Расширение \"%s\" не является правильным расширением файла Tableau Extract",
@@ -1737,9 +1737,9 @@
     "ErrNoFileStorage": "Не найдено файловое хранилище",
     "ErrProjectNameNotSelected": "Не указано имя проекта",
     "ErrServerFileNameNotSelected": "Не указано имя источника на сервере",
-    "ErrTableAlreadyExists": "Таблица %s уже существует",
+    "ErrTableAlreadyExists": "Таблица \"%s\" уже существует",
     "ErrTableNameNotSelected": "Не указано имя таблицы",
-    "ErrTableNotFound": "Не найдена таблица %s",
+    "ErrTableNotFound": "Не найдена таблица \"%s\"",
     "FileConnection": "Подключение к файловому хранилищу",
     "PublishToServerNotify": "Публикация файла на сервер",
     "TableauRestConnection": "Подключение к серверу Tableau"
@@ -1925,7 +1925,7 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockReader": {
     "ErrColOutOfRange": "Номер столбца %d вне диапазона [%d; %d]",
     "ErrFetch": "Ошибка при чтении набора данных",
-    "ErrGetFieldDesc": "Не удалось получить описания полей для таблицы %s",
+    "ErrGetFieldDesc": "Не удалось получить описания полей для таблицы \"%s\"",
     "ErrNoSuchSetting": "Параметр конфигурации с именем \"%s\" не существует",
     "ErrRowOutOfRange": "Номер строки %d вне диапазона [%d; %d]"
   },
@@ -1979,7 +1979,7 @@
     "DecryptPrivateKey": "Ошибка при дешифрации закрытого ключа",
     "ErrFileNoAccess": "Файл \"%s\" недоступен",
     "ErrFileNotFound": "Файл \"%s\" не найден",
-    "ErrGetFileStorage": "Не удалось обратиться к файловому хранилищу",
+    "ErrGetFileStorage": "Отсутствует ссылка на файловое хранилище",
     "SSLOptions": "Настройки SSL"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
@@ -3829,7 +3829,7 @@
     "ErrUserNameIsReserved": "Идентификатор %s зарезервирован и не может быть использован в качестве имени пользователя",
     "ErrUserNameMustBeValidIdentifier": "Имя пользователя должно быть правильным идентификатором",
     "IsAdmin": "Администратор",
-    "IsDesigner": "Аналитик",
+    "IsDesigner": "Проектирование сценариев",
     "IsViewer": "Просмотр отчетов",
     "LogAddGroup": "Добавлена группа %s",
     "LogAddUser": "Добавлен пользователь %s",

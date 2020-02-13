@@ -1923,7 +1923,7 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockReader": {
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrFetch": "Error occurred while data set reading",
-    "ErrGetFieldDesc": "Failed to receive description of fields for \"%s\" table",
+    "ErrGetFieldDesc": "Failed to get descriptions of fields for \"%s\" table",
     "ErrNoSuchSetting": "Configuration parameter with \"%s\" name does not exist",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
   },

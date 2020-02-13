@@ -779,7 +779,7 @@
     "VendorDesc": "EM algorithm data clustering"
   },
   "components/enrichdata/EnrichData": {
-    "DisplayNamePrefix": "Addition",
+    "DisplayNamePrefix": "Enrich",
     "ErrLinkMustContainColumnOfMainTable": "Link must contain a field from the main table",
     "ErrRowCountExceedMaxValue": "Row count of the result set exceeded maximum value %d",
     "ProgessOutputBuild": "Build result data set",
@@ -1932,7 +1932,7 @@
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrColValueOutOfRange": "Value %g is out of range of the allowed \"%s\" column range (%s type)",
     "ErrColValueOutOfRangeInt": "Value %d is out of range of the allowed \"%s\" column range (%s type)",
-    "ErrColValueOutOfRangeString": "\"%s\" string length exceeds the length allowed for \"%s\" column (\"%s\" type)",
+    "ErrColValueOutOfRangeString": "\"%s\" string length exceeds the length allowed for \"%s\" column (%s type)",
     "ErrConvertFloatToDecimal": "Failed to convert the real value %g to the Decimal value (\"%s\" column)",
     "ErrUnsupportedDataType": "Column data type \"%s\" not supported"
   },

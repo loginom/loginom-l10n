@@ -1947,7 +1947,7 @@
     "ErrInsertDataFormatUnsupported": "Формат данных \"%s\" в INSERT не поддерживается",
     "ErrInsertFormatUnsupported": "Используемый формат INSERT не поддерживается",
     "ErrInsertParamsInvalidCount": "Не совпадает число полей таблицы и параметров",
-    "ErrInsertUnsupported": "Выполнение INSERT не поддерживается в операциях выборки данных",
+    "ErrInsertUnsupported": "Выполнение INSERT не поддерживается, ожидается SELECT запрос",
     "ErrInsertValuesUnsupported": "Поддерживается только параметризованный INSERT",
     "ErrNotOwnSession": "Сессия не принадлежит базе данных",
     "ErrStoredProcUnsupported": "ClickHouse не поддерживает хранимые процедуры"

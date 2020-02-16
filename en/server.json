@@ -1945,7 +1945,7 @@
     "ErrInsertDataFormatUnsupported": "\"%s\" data format not supported in INSERT",
     "ErrInsertFormatUnsupported": "Used INSERT format not supported",
     "ErrInsertParamsInvalidCount": "Mismatching count of table fields and parameters",
-    "ErrInsertUnsupported": "Unsupported INSERT execution for data selection",
+    "ErrInsertUnsupported": "INSERT commands are not supported, SELECT request is expected",
     "ErrInsertValuesUnsupported": "Only parametrized INSERT supported",
     "ErrNotOwnSession": "Session does not belong to the database",
     "ErrStoredProcUnsupported": "ClickHouse does not support the stored procedures"

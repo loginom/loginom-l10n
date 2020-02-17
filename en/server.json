@@ -2822,6 +2822,7 @@
     "ErrDuplicateDerivedItemGuids": "The collection contains more than one item derived from the item with %s identifier",
     "ErrDuplicateDerivedItemIDs": "The collection contains more than one item derived from the item with identifier %d",
     "ErrDuplicateDerivedItemNames": "The collection contains more than one item derived from the item with %s name",
+    "ErrDuplicateSequenceItemGuidOverride": "The collection contained base and derived items with the same unique identifier %s. The base item was ignored",
     "ErrDuplicateSequenceItemGuids": "The collection contains more than one item with %s identifier",
     "ErrDuplicateSequenceItemIDChanged": "The collection contained base and derived items with the same identifier %d. The derived item identifier was changed to %d",
     "ErrDuplicateSequenceItemIDOverride": "The collection contained base and derived items with the same identifier %d. The base item was ignored",
@@ -3730,10 +3731,6 @@
     "XSDFilesConnectionVendorCaption": "Set of XSD Schemas",
     "XSDFilesConnectionVendorDesc": "Connection to the set of XSD schemas located in the file storage"
   },
-  "Studio/ApplicationManager": {
-    "ErrBootupOptions": "Error in run parameters.\nBoth batch processing parameters \"Run\" and \"Retrain\" are specified at the same time.",
-    "ErrNoPackageFileName": "No package file specified."
-  },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Summary"
   },
@@ -3745,7 +3742,7 @@
     "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes that refer to the nodes in other packages could be reset.\nOne of the following actions is required:\n  - reconfigure and retrain the \"Logistic Regression\" nodes that cannot be converted\n  - restore configuration of the specified nodes to the original (base)\n  - contact Loginom support for help"
   },
   "Studio/Converters/Converter_201809181721_LogRegression_RelativeTerms": {
-    "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nReconfiguration and overfitting of the \"Logistic Regression\" nodes that cannot be converted is required"
+    "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nReconfiguration and retraining of the \"Logistic Regression\" nodes that cannot be converted is required"
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"
@@ -3852,7 +3849,7 @@
     "OptionPasswordDesc": "Password",
     "OptionPortDesc": "Port (default: %s)",
     "OptionSavePackageDesc": "Save package after execution",
-    "OptionTeachDesc": "Overfitting mode",
+    "OptionTeachDesc": "Retraining mode",
     "OptionUserNameDesc": "Username",
     "Switches": "<Keys>",
     "VariableSwitchesInfo": "Any other keys are interpreted as variable names.\nFormat: <Variable_name>=<Variable_value>"

@@ -3799,9 +3799,6 @@
     },
     "lblHistogramUnavailable": {
       "text": "Failed to show histogram"
-    },
-    "mniFocusGrid": {
-      "text": "Menu Item"
     }
   },
   "viewers/common/ViewerCard": {

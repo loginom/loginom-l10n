@@ -545,7 +545,7 @@
       "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurrence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },
     "RegExMatchedSubExp": {
-      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupNumber - order number of the group defined by metacharacters (...);\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
+      "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupNumber - index number of the group defined by metacharacters (...);\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedSubExp(RegularExpression, String, GroupNumber [, PartNumber = 1])",
       "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
     },

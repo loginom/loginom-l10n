@@ -311,7 +311,7 @@
       "LinRegressionParams": "Linear regression settings"
     },
     "LinRegressionParams": {
-      "LinRegressionMethod": "Factor selection and protection against retraining",
+      "LinRegressionMethod": "Factor selection and protection against overfitting",
       "LinRegSelQuality": "Factor selection criterion"
     }
   },
@@ -320,7 +320,7 @@
       "LogRegressionParams": "Logistic regression settings"
     },
     "LogRegressionParams": {
-      "LogRegressionMethod": "Factor selection and protection against retraining",
+      "LogRegressionMethod": "Factor selection and protection against overfitting",
       "LogRegSelQuality": "Factor selection criterion",
       "SetupCalibration": "Calibration",
       "UseScoring": "Scoring"

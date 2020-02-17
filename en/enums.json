@@ -220,10 +220,10 @@
     "BinningMatchingObservationsMode": {
       "$Caption": "Matching Observations",
       "AddToNextBin": "Add to next",
-      "AddCurrent": "Save in current",
-      "Random": "Set randomly",
+      "AddCurrent": "Keep in current",
+      "Random": "Assign randomly",
       "AsIs": "Leave as is",
-      "OptimalTile": "Similar tiles"
+      "OptimalTile": "Assign optimal"
     },
     "BinningMethodType": {
       "$Caption": "Ranging Method",
@@ -506,7 +506,7 @@
   },
   "components/linregression": {
     "LinRegressionMethod": {
-      "$Caption": "Factor Selection and Protection against Retraining",
+      "$Caption": "Factor Selection and Protection against Overfitting",
       "Enter": "Enter",
       "Forward": "Forward",
       "Backward": "Backward",
@@ -528,7 +528,7 @@
   },
   "components/logregression": {
     "LogRegressionMethod": {
-      "$Caption": "Factor Selection and Protection against Retraining",
+      "$Caption": "Factor Selection and Protection against Overfitting",
       "Enter": "Enter",
       "Forward": "Forward",
       "Backward": "Backward",

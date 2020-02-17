@@ -578,7 +578,7 @@
     "ErrNotAllowedInputBinningKind": "The input field does not support the new usage type in the external partition (data type restriction)",
     "ErrRequiredContinuousOrDiscrete": "Continuous or discrete data kind is required",
     "MaxClassCount": "Required class count",
-    "MinimalClassQuota": "Minimum class quota"
+    "MinimalClassQuota": "Minimum class weight"
   },
   "components/coarseclasses/CoarseClassesEngine": {
     "ActiveInputPortRequired": "Activation of input port is required to build the coarse classes",
@@ -1945,7 +1945,7 @@
     "ErrInsertDataFormatUnsupported": "\"%s\" data format not supported in INSERT",
     "ErrInsertFormatUnsupported": "Used INSERT format not supported",
     "ErrInsertParamsInvalidCount": "Mismatching count of table fields and parameters",
-    "ErrInsertUnsupported": "INSERT commands are not supported, SELECT request is expected",
+    "ErrInsertUnsupported": "INSERT queries are not supported, SELECT query is expected",
     "ErrInsertValuesUnsupported": "Only parametrized INSERT supported",
     "ErrNotOwnSession": "Session does not belong to the database",
     "ErrStoredProcUnsupported": "ClickHouse does not support the stored procedures"
@@ -3745,7 +3745,7 @@
     "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes that refer to the nodes in other packages could be reset.\nOne of the following actions is required:\n  - reconfigure and retrain the \"Logistic Regression\" nodes that cannot be converted\n  - restore configuration of the specified nodes to the original (base)\n  - contact Loginom support for help"
   },
   "Studio/Converters/Converter_201809181721_LogRegression_RelativeTerms": {
-    "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nReconfiguration and retraining of the \"Logistic Regression\" nodes that cannot be converted is required"
+    "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nReconfiguration and overfitting of the \"Logistic Regression\" nodes that cannot be converted is required"
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"
@@ -3852,7 +3852,7 @@
     "OptionPasswordDesc": "Password",
     "OptionPortDesc": "Port (default: %s)",
     "OptionSavePackageDesc": "Save package after execution",
-    "OptionTeachDesc": "Retraining mode",
+    "OptionTeachDesc": "Overfitting mode",
     "OptionUserNameDesc": "Username",
     "Switches": "<Keys>",
     "VariableSwitchesInfo": "Any other keys are interpreted as variable names.\nFormat: <Variable_name>=<Variable_value>"
@@ -3989,7 +3989,7 @@
   },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
-    "ErrOrderNumberDim": "Incorrect dimension order numbers",
+    "ErrOrderNumberDim": "Incorrect dimension index numbers",
     "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
     "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"

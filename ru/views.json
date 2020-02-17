@@ -3799,9 +3799,6 @@
     },
     "lblHistogramUnavailable": {
       "text": "Невозможно отобразить гистограмму"
-    },
-    "mniFocusGrid": {
-      "text": "Menu Item"
     }
   },
   "viewers/common/ViewerCard": {

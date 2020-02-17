@@ -2824,6 +2824,7 @@
     "ErrDuplicateDerivedItemGuids": "В коллекции содержится более одного элемента, отнаследованного от элемента с идентификатором %s",
     "ErrDuplicateDerivedItemIDs": "В коллекции содержится более одного элемента, отнаследованного от элемента с идентификатором %d",
     "ErrDuplicateDerivedItemNames": "В коллекции содержится более одного элемента, отнаследованного от элемента с именем %s",
+    "ErrDuplicateSequenceItemGuidOverride": "В коллекции содержались базовый и производный элементы с одинаковым уникальным идентификатором %s. Базовый элемент проигнорирован",
     "ErrDuplicateSequenceItemGuids": "В коллекции содержится более одного элемента с идентификатором %s",
     "ErrDuplicateSequenceItemIDChanged": "В коллекции содержались базовый и производный элементы с одинаковым идентификатором %d. Идентификатор производного элемента изменен на %d",
     "ErrDuplicateSequenceItemIDOverride": "В коллекции содержались базовый и производный элементы с одинаковым идентификатором %d. Базовый элемент проигнорирован",
@@ -3731,10 +3732,6 @@
   "Libraries/XSDFilesConnection/XSDFilesConnectionVendor": {
     "XSDFilesConnectionVendorCaption": "Набор XSD-схем",
     "XSDFilesConnectionVendorDesc": "Подключение к набору XSD-схем, расположенных в файловом хранилище"
-  },
-  "Studio/ApplicationManager": {
-    "ErrBootupOptions": "Ошибка в параметрах запуска.\nОдновременно указаны оба параметра пакетной обработки \"Выполнить\" и \"Переобучить\".",
-    "ErrNoPackageFileName": "Не указан файл пакета."
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Сводка"

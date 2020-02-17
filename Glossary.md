@@ -372,6 +372,8 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 P-значение | P-value | |
 Внешние факторы (ARIMAX) | Exogenous factors (ARIMAX) | |
 Вес  | Weight | В контексте coarse classes | | 
+Сокет | Socket |
+Порт | Port |
 
 ### Общие рекомендации:
 

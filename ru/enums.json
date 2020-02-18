@@ -860,7 +860,7 @@
       "MSSQL": "MS SQL",
       "Sybase": "Sybase",
       "DB2": "DB2",
-      "Interbase": "Interbase",
+      "Interbase": "InterBase",
       "Firebird": "Firebird",
       "MySQL": "MySQL",
       "PostgreSQL": "PostgreSQL",

@@ -218,7 +218,7 @@
       "UpperLimitOpen": "Upper range bound open"
     },
     "BinningMatchingObservationsMode": {
-      "$Caption": "Matching Observations",
+      "$Caption": "Ties",
       "AddToNextBin": "Add to next",
       "AddCurrent": "Keep in current",
       "Random": "Assign randomly",
@@ -860,7 +860,7 @@
       "MSSQL": "MS SQL",
       "Sybase": "Sybase",
       "DB2": "DB2",
-      "Interbase": "Interbase",
+      "Interbase": "InterBase",
       "Firebird": "Firebird",
       "MySQL": "MySQL",
       "PostgreSQL": "PostgreSQL",
@@ -909,13 +909,13 @@
       "CryptAES256CBC": "AES-256"
     },
     "SQLiteJournalMode": {
-      "$Caption": "Transaction Log Mode",
+      "$Caption": "Journal Mode",
       "JournalDefault": "Default",
-      "JournalDelete": "Delete file",
+      "JournalDelete": "Delete",
       "JournalTruncate": "Truncate",
-      "JournalPersist": "Header zeroing",
-      "JournalMemory": "Journal memory",
-      "JournalWAL": "Write-ahead logging"
+      "JournalPersist": "Persist",
+      "JournalMemory": "Memory",
+      "JournalWAL": "Write-ahead log"
     },
     "SQLiteLikeMode": {
       "$Caption": "LIKE Mode",

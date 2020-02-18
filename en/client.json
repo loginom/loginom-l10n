@@ -238,7 +238,7 @@
     "SetupConnection": "Configure connection...",
     "SetupNode": "Configure node...",
     "ShowControlVariablesPort": "Show control variables port",
-    "ShowDataPreview": "Quick preview...",
+    "ShowDataPreview": "Quick view...",
     "TeachNode": "Retrain node",
     "TuneDerivedVendor": "Configure...",
     "UndoableDeleteNode": "Delete (forced)...",
@@ -353,7 +353,7 @@
   },
   "app/Version": {
     "CompanyWebsite": "https://loginom.com",
-    "LegalCopyright": "© OOO Analytical Technologies 2017"
+    "LegalCopyright": "© OOO Analiticheskie Tekhnologii 2017"
   },
   "app/WindowTitle": {
     "Close": "Close",
@@ -1004,8 +1004,8 @@
   "ext/VTypes": {
     "AlphaNumUnicodeIncorrect": "This field must contain only letters, digits and _.",
     "ErrInvalidIdentifier": "Entered value is invalid identifier.",
-    "VersionIncorrect": "Incorrect Version Format",
-    "VersionMaskIncorrect": "Incorrect format of version mask"
+    "VersionIncorrect": "Incorrect version format",
+    "VersionMaskIncorrect": "Incorrect format of version range"
   },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "The relative paths of the base package are used."
@@ -1446,7 +1446,7 @@
   },
   "mxgraph/graph/Graph": {
     "ImplementThisInModelForm": "This function must be implemented in ModelForm",
-    "LeaveSubmodel": "Move up"
+    "LeaveSubmodel": "Leave supernode"
   },
   "mxgraph/handler/PortConnectionAbstract": {
     "CycleLinksForbiden": "Cyclic links are forbidden"

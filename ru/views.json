@@ -4917,7 +4917,7 @@
       "fieldLabel": "Протокол"
     },
     "frmInterbasePathForm": {
-      "title": "Строка подключения к Firebird, Interbase"
+      "title": "Строка подключения к Firebird, InterBase"
     },
     "rbLocal": {
       "boxLabel": "Локальное"

@@ -1005,8 +1005,8 @@
   "ext/VTypes": {
     "AlphaNumUnicodeIncorrect": "Это поле должно содержать только буквы, цифры и _.",
     "ErrInvalidIdentifier": "Введенное значение не является правильным идентификатором.",
-    "VersionIncorrect": "Некорректный формат версии.",
-    "VersionMaskIncorrect": "Некорректный формат маски версии."
+    "VersionIncorrect": "Некорректный формат версии",
+    "VersionMaskIncorrect": "Некорректный формат маски версии"
   },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "Используются относительные пути базового пакета"

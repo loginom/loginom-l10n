@@ -1250,7 +1250,7 @@
       "fieldLabel": "Maximum count"
     },
     "fldMinClassPercentage": {
-      "fieldLabel": "Minimum percentage, %"
+      "fieldLabel": "Minimum weight, %"
     },
     "fldUniformityCoef": {
       "fieldLabel": "Uniformity,%"
@@ -4739,7 +4739,7 @@
       "tooltip": "Sort by links"
     },
     "btnSyncThroughColumns": {
-      "tooltip": "Sync"
+      "tooltip": "Map columns"
     },
     "btnTargetAutoLink": {
       "tooltip": "Auto link"
@@ -4917,7 +4917,7 @@
       "fieldLabel": "Protocol"
     },
     "frmInterbasePathForm": {
-      "title": "Firebird, Interbase Connection String"
+      "title": "Firebird, InterBase Connection String"
     },
     "rbLocal": {
       "boxLabel": "Local"
@@ -5118,7 +5118,7 @@
       "text": "Show Lost Links"
     },
     "btnSync": {
-      "tooltip": "Sync"
+      "tooltip": "Map nodes"
     },
     "btnTargetAutoLink": {
       "tooltip": "Auto link"

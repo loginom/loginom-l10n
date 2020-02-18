@@ -27,18 +27,18 @@
     "ErrCertListImplementationsNotRegistered": "Certificate list implementation not registered"
   },
   "Common/CertList/CertList_Win": {
-    "AddressBook": "Other users",
+    "AddressBook": "Other People",
     "AuthRoot": "Third-Party Root Certification Authorities",
     "CA": "Intermediate Certification Authorities",
     "Disallowed": "Untrusted Certificates",
     "My": "Personal",
     "Root": "Trusted Root Certification Authorities",
-    "SmartCardRoot": "Smart Card Trusted Root Certificates",
+    "SmartCardRoot": "Smart Card Trusted Roots",
     "Trust": "Enterprise Trust",
     "TrustedDevices": "Trusted Devices",
     "TrustedPeople": "Trusted People",
     "TrustedPublisher": "Trusted Publishers",
-    "UserDS": "Active Directory user object"
+    "UserDS": "Active Directory User Object"
   },
   "Common/CodeExec/CodeAPI": {
     "ArgColumn": "Column Index or name",
@@ -611,7 +611,7 @@
   },
   "components/coarseclasses/CoarseClassingOptimalAlgorithm": {
     "MaxClassCount": "Maximum class count",
-    "MinClassPercentage": "Minimum class percentage",
+    "MinClassPercentage": "Minimum class weight",
     "UniformityCoef": "Uniformity coefficient"
   },
   "components/coarseclasses/FineClassesStorage": {
@@ -1995,7 +1995,7 @@
     "DatabaseTypeName": "Firebird"
   },
   "Libraries/bgdbrtl/UniDAC/IBUniDACDB": {
-    "DatabaseTypeName": "Interbase"
+    "DatabaseTypeName": "InterBase"
   },
   "Libraries/bgdbrtl/UniDAC/MsSQLOleDbUniDACDB": {
     "DatabaseTypeName": "MS SQL (OLE DB)"
@@ -2904,8 +2904,8 @@
     "VendorDesc": "Firebird DBMS"
   },
   "Libraries/DBConnection/UniDAC/IBUniDACDBConnectionVendor": {
-    "VendorCaption": "Interbase",
-    "VendorDesc": "Interbase DBMS"
+    "VendorCaption": "InterBase",
+    "VendorDesc": "InterBase DBMS"
   },
   "Libraries/DBConnection/UniDAC/MsSQLOleDbUniDACDBConnectionVendor": {
     "VendorCaption": "MS SQL",

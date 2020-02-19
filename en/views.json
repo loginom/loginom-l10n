@@ -27,7 +27,7 @@
       "text": "Check for updates..."
     },
     "lblExpirationDate": {
-      "text": "License expiration date:"
+      "text": "License expiration date: "
     },
     "lblPlatformEdition": {
       "text": "Edition: "
@@ -3732,7 +3732,7 @@
       "tooltip": "Scaling of histograms"
     },
     "btnImportanceHeatMap": {
-      "tooltip": "Significance by colour"
+      "tooltip": "Significance by color"
     },
     "btnIndicator": {
       "tooltip": "Indicator"
@@ -5426,10 +5426,10 @@
   },
   "wizards/previewpanel/PreviewPanel": {
     "btnActivateAndView": {
-      "text": "Activate and View"
+      "text": "Activate and Show"
     },
     "lblEmpty": {
-      "text": "No data to view"
+      "text": "No data to show"
     }
   },
   "wizards/referencenode/ReferenceNodeComponentWizard": {

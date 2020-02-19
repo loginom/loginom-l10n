@@ -2137,7 +2137,7 @@
     "VersionSerialNumber": "Serial number"
   },
   "Libraries/bgrtl/Couplers": {
-    "ErrModelSocketCouplerDefAlreadyCoupled": "Already connected"
+    "ErrModelSocketCouplerDefAlreadyCoupled": "Already coupled"
   },
   "Libraries/bgrtl/DataSet": {
     "ColumnDefs": "Column descriptions",
@@ -3078,7 +3078,7 @@
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
-    "ErrUnknownCouplerDefType": "Unknown type of the connection descriptor",
+    "ErrUnknownCouplerDefType": "Unknown type of the coupler descriptor",
     "IsSealedVendor": "Sealed",
     "ModelComponent": "Node component",
     "OriginalComponentVendorGuidDesc": "Original component GUID"
@@ -3131,7 +3131,7 @@
     "ErrAlreadyConfiguringSocket": "The node component is in the port configuring state",
     "ErrInvalidComponentEngineImplementation": "Invalid component engine implementation",
     "ErrModelComponentAlreadyInitialized": "The node component already initialized",
-    "ErrUnknownCouplerDefType": "Unknown type of the connection descriptor"
+    "ErrUnknownCouplerDefType": "Unknown type of the coupler descriptor"
   },
   "Libraries/Model/ModelComponentCouplerDefItems": {
     "CouplerDefMetaDesc": "Coupler"

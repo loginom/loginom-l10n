@@ -1684,7 +1684,7 @@
   },
   "Viewers/Cube/CubeSummaries": {
     "CubeCaseCellViewType": {
-      "$Caption": "Value View Type",
+      "$Caption": "Value Display Type",
       "Text": "Text only",
       "ImageText": "Text and image",
       "Image": "Image only"
@@ -1715,7 +1715,7 @@
       "Rows": "In rows"
     },
     "CubeSubFunctionType": {
-      "$Caption": "Value View Type",
+      "$Caption": "Value Representation",
       "Value": "Value",
       "PercentByRow": "Percent by row",
       "PercentByCol": "Percent by column",

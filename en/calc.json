@@ -430,7 +430,7 @@
     "Str": {
       "Arguments": "Argument - expression of  the numeric type.",
       "Description": "Str(Argument)",
-      "Output": "Returns the string representation of the Argument taking into account locales."
+      "Output": "Returns the Argument as a string taking into account locales."
     },
     "StrToDate": {
       "Arguments": "Argument - the string expression containing date/time\nFormat - optional parameter date/time format in terms of D, M, Y, H, N, S, Z",
@@ -515,9 +515,9 @@
   },
   "RegExFunctions": {
     "RegExDomain": {
-      "Arguments": "InputString - the input string in which Email-address will be searched;\nOccurenceNumber - the index of Email-address in the searched string.",
+      "Arguments": "InputString - the input string in which domain name will be searched;\nOccurenceNumber - the index of domain name in the searched string.",
       "Description": "RegExDomain(InputString [, OccurenceNumber = 1])",
-      "Output": "Returns OccurencesNumber website URL from the InputString string, not including www till the first level domain, inclusively.\nRegular expressions are used for search."
+      "Output": "Returns OccurencesNumber domain name from the InputString string, not including www till the top level domain, inclusively.\nRegular expressions are used for search."
     },
     "RegExEmail": {
       "Arguments": "InputString - the input string in which Email-address will be searched;\nOccurenceNumber - the index of Email-address in the searched string.",

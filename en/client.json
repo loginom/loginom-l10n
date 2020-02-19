@@ -1446,7 +1446,7 @@
   },
   "mxgraph/graph/Graph": {
     "ImplementThisInModelForm": "This function must be implemented in ModelForm",
-    "LeaveSubmodel": "Leave supernode"
+    "LeaveSubmodel": "Move out"
   },
   "mxgraph/handler/PortConnectionAbstract": {
     "CycleLinksForbiden": "Cyclic links are forbidden"

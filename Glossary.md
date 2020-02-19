@@ -245,8 +245,8 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Видимость | Visibility | |
 Подмодель | Supernode | |
 Настроить область видимости | Configure the area of visibility | |
-Значимость | Significance | | Статистика
-Значимость | Importance | | Профили кластеров 
+Значимость | Significance | Статистика |
+Значимость | Importance | Профили кластеров |
 Установленный фильтр | Enabled filter | |
 Увеличить разрядность | Increase decimal | |
 Уменьшить разрядность | Decrease decimal | |

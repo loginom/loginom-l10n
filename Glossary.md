@@ -168,7 +168,7 @@ XSD-схема на входе | Input XSD schema | |
 Отменить выбор выделенных | Uncheck selected | |
 Количество строк данных | Row count | |
 Гистограмма | Histogram | |
-Доля | Weight | |
+Доля | Weight | Конечные классы | |
 Перейти к строке | Go to row | |
 Режим включенных/исключенных значений | Inclusive/exclusive filter | |
 Время жизни на время транзакции при неактивности | Idle-in-transaction timeout | |

@@ -288,7 +288,7 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Имя класса отображения | View class name | |
 Тип представления значения | Value view type | |
 Куб | Cube | |
-Кросс-таблица | Cross Table | |
+Кросс-таблица | Cross table | |
 Свертка столбцов | Unpivoting | |
 Многомерное отображение | Multidimensional data view | View, так как viewer - один из режимов Loginom |
 Кросс-диаграмма | Cross chart | |

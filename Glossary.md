@@ -100,7 +100,8 @@ String | String | последовательность символов. |
 Соединение (переменные) | Variable Union | |
 Объединение | Union | |
 Источник данных для выравнивания | Data source for appending | |
-Факт | Measure | В Кубе факт переводится как measure. В хранилище данных переводится как fact. |
+Факт | Measure | В Кубе | |
+Факт | Fact | В хранилище данных| |
 Искать с начала | Find first | |
 Поиск | Search | |
 Временный факт | Temporary measure | |

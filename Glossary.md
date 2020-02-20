@@ -356,7 +356,6 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Вложенные ресиверы | Nested receivers | |
 Кросс-валидация | Cross validation | |
 Произошёл разрыв связи с сервером | Server connection lost | |
-Неизвестный тип описателя соединения | Unknown coupler type | |
 Не задано | Unspecified | |
 Источник истинной доли событий | Prior probability event source | |
 Индекс выходного набора | Output data set index | |
@@ -390,3 +389,4 @@ P-значение | P-value | |
 6. Имеется определенная путаница с bins-range-interval. Нужно правило. Проверяли каждую строчку. Аналогичная ситуация с items и elements.
 7. There should be no second person pronouns in the error messages.
 8. Better to use "null" instead of "empty".
+9. Если в ключе указывается Сoupler, значит и в переводе coupler (Например: Неизвестный тип описателя соединения - Unknown type of the coupler descriptor)

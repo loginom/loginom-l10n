@@ -485,7 +485,7 @@
     "ItemDisplayNamePrefix": "Expression"
   },
   "components/calcdata/FloatCLineParser": {
-    "ErrBracket": "Incorrect brackets",
+    "ErrBracket": "Invalid bracket order",
     "ErrIllegalCharacter": "Invalid \"%s\" character",
     "ErrInvalidExpression": "Invalid expression: \"%s\"",
     "ErrQuote": "Unclosed string constant in %d line",
@@ -841,7 +841,7 @@
   },
   "components/factoranalysis/FactorAnalysis": {
     "ErrFactorMatrixAfterRot": "Ill-conditioned factor mapping matrix",
-    "ErrFactorMatrixBadSize": "Incorrect factor mapping matrix size",
+    "ErrFactorMatrixBadSize": "Invalid factor mapping matrix size",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "ErrNoModel": "Model is not trained. Training of the node before its application is required",
     "ErrWrongModel": "Input data does not match previously trained model",
@@ -1487,7 +1487,7 @@
     "ErrClustersRowCountOverflow": "Row count overflow of the \"Cluster Centers\" output data set",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "ErrNoModel": "Model is not trained. Training of the node before its application is required",
-    "ErrSONNIncorrectSize": "Incorrect network size for %s: %d",
+    "ErrSONNIncorrectSize": "Invalid network size for %s: %d",
     "ErrSONNTypeNotSupported": "\"%s\" type of self-organizing network not supported",
     "ErrWrongModel": "Model does not match the input data",
     "OutDataSetCenters": "Coordinates of nodes",
@@ -1835,31 +1835,31 @@
     "ErrHeaderReadError": "Header reading error"
   },
   "imports/native/DDFStreamReader": {
-    "BadNativeStringData": "Incorrect string data",
+    "BadNativeStringData": "Invalid string data",
     "OutOfMaximumRows": "File contains too many rows"
   },
   "imports/native/DDFTupleCompatibilityReader": {
-    "BadNativeStringData": "Incorrect string data",
-    "BadNativeVariantData": "Incorrect Variant data type",
+    "BadNativeStringData": "Invalid string data",
+    "BadNativeVariantData": "Invalid Variant data type",
     "CanNotConvert": "Failed to convert data to 32-bit format"
   },
   "imports/native/DDFTupleOldRowCachedConverter": {
-    "BadNativeStringData": "Incorrect string data",
+    "BadNativeStringData": "Invalid string data",
     "UnknownOperation": "Unknown string converter operation"
   },
   "imports/native/DDFTupleOldRowConverter": {
-    "BadNativeStringData": "Incorrect string data",
+    "BadNativeStringData": "Invalid string data",
     "UnknownOperation": "Unknown string converter operation"
   },
   "imports/native/DDFTupleReader": {
-    "BadNativeStringData": "Incorrect string data",
-    "BadNativeVariantData": "Incorrect Variant data type",
+    "BadNativeStringData": "Invalid string data",
+    "BadNativeVariantData": "Invalid Variant data type",
     "DifferentMetaData": "Metadata does not comply with the previously declared metadata",
     "NegativeRowsCount": "Invalid rows count %d is specified in the file header",
     "OutOfMaximumRows": "File contains too many rows"
   },
   "imports/native/DDFTupleRowConverter": {
-    "BadNativeStringData": "Incorrect string data",
+    "BadNativeStringData": "Invalid string data",
     "BadVariantType": "Unsupported Variant variable type",
     "CanNotConvert": "Failed to convert data to 32-bit format",
     "UnknownOperation": "Unknown string converter operation",
@@ -1871,7 +1871,7 @@
     "ErrFileFormat": "Not Loginom Data file",
     "ErrSignature": "Signature mismatch",
     "ErrSystemUnsupported": "Bitness not supported",
-    "ErrVersion": "Incorrect version",
+    "ErrVersion": "Invalid version",
     "WarnCompatibilityMode": "File was opened in compatibility mode"
   },
   "imports/native/ImportNativeVendor": {
@@ -1937,7 +1937,7 @@
     "ErrUnsupportedDataType": "Column data type \"%s\" not supported"
   },
   "Libraries/bgdbrtl/ClickHouse/ClickHouseClient": {
-    "ErrInvalidPort": "Incorrect port number specified: %s"
+    "ErrInvalidPort": "Invalid port number specified: %s"
   },
   "Libraries/bgdbrtl/ClickHouse/ClickHouseDB": {
     "DatabaseTypeName": "ClickHouse",
@@ -2589,22 +2589,22 @@
   "Libraries/bgrtl/Tuple": {
     "BadArrayVariantType": "Unsupported Variant array variable type",
     "BadNativeArrayStringData": "Invalid relative string reference format",
-    "BadNativeData": "Incorrect data",
-    "BadNativeStringData": "Incorrect string data",
-    "BadVariantStringData": "Incorrect format of Variant variable string data",
-    "BadVariantType": "Incorrect format of Variant variable",
+    "BadNativeData": "Invalid data",
+    "BadNativeStringData": "Invalid string data",
+    "BadVariantStringData": "Invalid format of Variant variable string data",
+    "BadVariantType": "Invalid format of Variant variable",
     "IncompatibleTuples": "Tuple structures are incompatible",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
     "VariantByRefNotSupported": "Unsupported Variant byRef variables",
     "VariantTypeNotSupported": "Variant variables of this type are not supported"
   },
   "Libraries/bgrtl/TupleStrUtils": {
-    "BadNativeStringData": "Incorrect string data"
+    "BadNativeStringData": "Invalid string data"
   },
   "Libraries/bgrtl/TupleVarUtils": {
-    "BadNativeArrayStringData": "Incorrect Variant array string data",
-    "BadVariantArrayData": "Incorrect Variant array data",
-    "BadVariantData": "Incorrect Variant data type",
+    "BadNativeArrayStringData": "Invalid Variant array string data",
+    "BadVariantArrayData": "Invalid Variant array data",
+    "BadVariantData": "Invalid Variant data type",
     "BadVariantType": "Unsupported Variant variable type",
     "CanNotConvert": "Failed to convert data to 32-bit format"
   },
@@ -3654,7 +3654,7 @@
   },
   "Libraries/rpc/BaseTCPBlockSocketMessageTransport": {
     "ErrCouldNotConnectToServer": "Failed to establish connection: %s",
-    "ErrIncorrectServerResponse": "Incorrect server response received"
+    "ErrIncorrectServerResponse": "Bad server response received"
   },
   "Libraries/rpc/ClientObjectProxy": {
     "ErrDisconnectedProxy": "Client proxy object disconnected",
@@ -3986,7 +3986,7 @@
   },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
-    "ErrOrderNumberDim": "Incorrect dimension index numbers",
+    "ErrOrderNumberDim": "Invalid dimension index numbers",
     "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
     "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"

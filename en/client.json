@@ -1,6 +1,6 @@
 {
   "about/About": {
-    "ErrVersionWrongServiceResponse": "Incorrect response of the service with the information on the latest version",
+    "ErrVersionWrongServiceResponse": "Bad response of the service with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Version {0} is available"
@@ -252,11 +252,11 @@
     "ErrNoRefModelNodeTreeNode": "No reference to IBGModelNodeTreeNode"
   },
   "app/PackageForm": {
-    "ErrIncorrectVersionFormat": "Incorrect version format",
+    "ErrIncorrectVersionFormat": "Invalid version format",
     "ErrInvalidPackageName": "\"{0}\" is invalid package name"
   },
   "app/PackageLinkForm": {
-    "ErrIncorrectVersionFormat": "Incorrect version format"
+    "ErrIncorrectVersionFormat": "Invalid version format"
   },
   "app/PackageListForm": {
     "AddUnit": "Add module",
@@ -886,7 +886,7 @@
     "ExportXmlRequestTitle": "Field Mapping for Export"
   },
   "ext/colorfield/Field": {
-    "UndefinedHexFormat": "Incorrect hexadecimal number format"
+    "UndefinedHexFormat": "Invalid hexadecimal number format"
   },
   "ext/colorfield/Pallete": {
     "EmptyPalleteText": "Standard",
@@ -1004,8 +1004,8 @@
   "ext/VTypes": {
     "AlphaNumUnicodeIncorrect": "This field must contain only letters, digits and _.",
     "ErrInvalidIdentifier": "Entered value is invalid identifier.",
-    "VersionIncorrect": "Incorrect version format",
-    "VersionMaskIncorrect": "Incorrect format of version range"
+    "VersionIncorrect": "Invalid version format",
+    "VersionMaskIncorrect": "Invalid format of version range"
   },
   "filedialog/Dialogs": {
     "UseBaseFileStorageToolTip": "The relative paths of the base package are used."
@@ -1262,7 +1262,7 @@
     "Loading": "Loading..."
   },
   "homepage/Banner": {
-    "ErrVersionWrongServiceResponse": "Incorrect response of the service with the information on the latest version",
+    "ErrVersionWrongServiceResponse": "Bad response of the service with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Version {0} is available"
@@ -1415,7 +1415,7 @@
     "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2}  Symbol: {3}"
   },
   "lib/Loader": {
-    "ErrClassName": "Incorrect \"{0}\" class name.",
+    "ErrClassName": "Invalid \"{0}\" class name.",
     "ErrReaddScriptToLoad": "Re-add \"{0}\" script to load",
     "ErrScriptLoadFailed": "Failed to load \"{0}\" script. Status: {1}, Error: {2}",
     "ErrScriptLoadingAsync": "\"{0}\" script has already been asynchronously loading"

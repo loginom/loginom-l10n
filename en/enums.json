@@ -118,7 +118,7 @@
       "SaxParserError": "Error parsing XML document: %s",
       "MIMEParserError": "Error processing server response: %s",
       "UnsupportedRequestType": "Unsupported request type",
-      "BadRequestParam": "Incorrect request parameter",
+      "BadRequestParam": "Bad request parameter",
       "UnknownError": "Unknown error"
     }
   },

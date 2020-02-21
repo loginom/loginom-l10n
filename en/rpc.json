@@ -3,8 +3,8 @@
     "ErrKeyAlreadyExists": "An item with this key already exists in the dictionary"
   },
   "Net/BaseSocketMessageTransport": {
-    "ErrIncorrectMessageSize": "Incorrect message size: {0}",
-    "ErrIncorrectServerResponse": "Incorrect server response received"
+    "ErrIncorrectMessageSize": "Invalid message size: {0}",
+    "ErrIncorrectServerResponse": "Bad server response received"
   },
   "Net/Extended80Rec": {
     "ErrOverflow": "Overflow while attempting to cast value to the Double type",

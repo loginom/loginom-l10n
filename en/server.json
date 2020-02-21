@@ -3918,32 +3918,6 @@
     "VendorCaption": "Chart",
     "VendorDesc": "Chart data view"
   },
-  "Viewers/Chart/Component/BindedCheckBox": {
-    "CheckBoxBadObject": "Object has been deleted",
-    "CheckBoxBadTypeAccess": "Invalid field access",
-    "CheckBoxBindingField": "CheckBox binding error: invalid field"
-  },
-  "Viewers/Chart/Component/BindedEdit": {
-    "EditBadObject": "Object has been deleted",
-    "EditBadTypeAccess": "Invalid field access",
-    "EditBindingField": "Edit binding error: invalid field"
-  },
-  "Viewers/Chart/Component/BindedRadioGroup": {
-    "ErrRadioGroupBadDescriptions": "Incorrect array of RadioGroup names",
-    "ErrRadioGroupBadField": "Invalid field binded to RadioGroup",
-    "ErrRadioGroupBadObject": "Object has been deleted",
-    "ErrRadioGroupBadType": "Invalid RadioGroup element type",
-    "ErrRadioGroupBadTypeAccess": "Invalid field access"
-  },
-  "Viewers/Chart/Component/BindedSpinEdit": {
-    "SpinEditBadObject": "Object has been deleted",
-    "SpinEditBadTypeAccess": "Invalid field access",
-    "SpinEditBindingField": "SpinEdit binding error: invalid field"
-  },
-  "Viewers/Chart/Component/Series": {
-    "Err_Chart_Type": "Invalid chart type",
-    "Err_Series_Type": "Invalid series type"
-  },
   "Viewers/Chart/Server/ChartColumnInfo": {
     "ChartExtremesProgress": "Search for extremes",
     "ChartSortingProgress": "Data sorting",

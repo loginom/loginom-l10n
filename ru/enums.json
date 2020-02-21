@@ -1623,6 +1623,34 @@
       "TopDown": "Справа налево"
     }
   },
+  "Viewers/ClusterProfiles/ClusterProfilesView": {
+    "ClusterProfilesClusterGridPosition": {
+      "$Caption": "Положение кластеров в таблице",
+      "Rows": "Кластеры в строках",
+      "Columns": "Кластеры в столбцах"
+    },
+    "ClusterProfilesHistogramScaling": {
+      "$Caption": "Масштабирование гистограмм",
+      "SizeScale": "Абсолютные частоты",
+      "BarScale": "Относительные частоты",
+      "NoScale": "Плотность вероятности"
+    },
+    "ClusterProfilesIndicatorType": {
+      "$Caption": "Статистический показатель",
+      "Importance": "Значимость",
+      "Histogram": "Гистограмма",
+      "Min": "Минимум",
+      "Max": "Максимум",
+      "Mean": "Среднее",
+      "Sum": "Сумма",
+      "StdDev": "Стд. отклонение",
+      "Range": "Размах",
+      "NullCount": "Пропуски",
+      "NotNullCount": "Значения",
+      "UniqueCount": "Количество уникальных значений",
+      "ClusterCenter": "Центр кластера"
+    }
+  },
   "Viewers/Cube/CubeCalcSummaries": {
     "CalcCubeDimFunction": {
       "$Caption": "Тип представления значения",

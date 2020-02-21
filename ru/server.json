@@ -3938,6 +3938,32 @@
   "Viewers/Chart/Server/ChartViewCacheServer": {
     "DataSourceIsInActive": "Источник данных находится в неактивном состоянии"
   },
+  "Viewers/ClusterProfiles/ClusterProfilesView": {
+    "ClusterProfilesProcess": "Профили кластеров",
+    "Component": "Компонент",
+    "DetailingProcessCaptionSuffix": " по кластерам %s",
+    "ErrNotDefinedComponent": "Не определен компонент",
+    "ErrTableRowState": "Единственная возможная мутация свойства State trsNotSynced -> trsDeleted",
+    "HistogramProcess": "Построение гистограмм",
+    "ImportanceProcess": "Расчет значимости",
+    "ResidueClusterName": "Вне кластеров",
+    "SimpleStatisticsProcess": "Расчет простейших статистических показателей",
+    "TotalClusterName": "Итого"
+  },
+  "Viewers/ClusterProfiles/ClusterProfilesViewVendor": {
+    "VendorCaption": "Профили кластеров",
+    "VendorDesc": "Профили кластеров"
+  },
+  "Viewers/ClusterProfiles/ViewHistogram": {
+    "From": "от ",
+    "ResidueValue": "Прочие",
+    "To": "до "
+  },
+  "Viewers/ClusterProfiles/ViewStatistics": {
+    "DaysPostfix": "дней",
+    "InfinityValue": "INF",
+    "NegInfinityValue": "-INF"
+  },
   "Viewers/CoarseClasses/CoarseClassesView": {
     "Component": "Компонент",
     "ErrNotDefinedComponent": "Не определен компонент"

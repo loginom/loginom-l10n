@@ -3921,32 +3921,6 @@
     "VendorCaption": "Диаграмма",
     "VendorDesc": "Отображение данных в виде диаграммы"
   },
-  "Viewers/Chart/Component/BindedCheckBox": {
-    "CheckBoxBadObject": "Объект был удален",
-    "CheckBoxBadTypeAccess": "Обращение к неверному полю",
-    "CheckBoxBindingField": "Ошибка привязывания CheckBox: неверное поле"
-  },
-  "Viewers/Chart/Component/BindedEdit": {
-    "EditBadObject": "Объект был удален",
-    "EditBadTypeAccess": "Обращение к неверному полю",
-    "EditBindingField": "Ошибка привязывания Edit: неверное поле"
-  },
-  "Viewers/Chart/Component/BindedRadioGroup": {
-    "ErrRadioGroupBadDescriptions": "Неверный массив имен RadioGroup",
-    "ErrRadioGroupBadField": "Неверное поле, связываемое с RadioGroup",
-    "ErrRadioGroupBadObject": "Объект был удален",
-    "ErrRadioGroupBadType": "Неверный тип элементов RadioGroup",
-    "ErrRadioGroupBadTypeAccess": "Обращение к неверному полю"
-  },
-  "Viewers/Chart/Component/BindedSpinEdit": {
-    "SpinEditBadObject": "Объект был удален",
-    "SpinEditBadTypeAccess": "Обращение к неверному полю",
-    "SpinEditBindingField": "Ошибка привязывания SpinEdit: неверное поле"
-  },
-  "Viewers/Chart/Component/Series": {
-    "Err_Chart_Type": "Неверный тип диаграммы",
-    "Err_Series_Type": "Неверный тип серии"
-  },
   "Viewers/Chart/Server/ChartColumnInfo": {
     "ChartExtremesProgress": "Поиск минимумов и максимумов",
     "ChartSortingProgress": "Сортировка данных",

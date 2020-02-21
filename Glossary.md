@@ -51,8 +51,8 @@ String | String | последовательность символов. |
 Настройка | Configure, configuring | |
 Настройки | Settings | |
 Общая папка | Shared folder | |
-Запрос | Request | | Запрос данных по сети SOAP Request , REST Request...
-Запрос | Query | | Запрос к базе данных
+Запрос | Request | Запрос данных по сети SOAP Request , REST Request... |
+Запрос | Query | Запрос к базе данных |
 Синхронизатор | Synchronizer | |
 Исследование | Exploration | |
 Подмножество | Subset | |

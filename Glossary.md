@@ -28,7 +28,6 @@ String | String | последовательность символов. |
 Указано | Specified | |
 Явно заданное | Explicitly given | |
 Уровень логирования | Logging level | |
-Номер вхождения | Occurrence number | |
 Выходной набор | Output data set | |
 Число e | e constant | |
 В заданной степени | In the given degree | |

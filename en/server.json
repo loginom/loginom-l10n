@@ -3935,6 +3935,32 @@
   "Viewers/Chart/Server/ChartViewCacheServer": {
     "DataSourceIsInActive": "Data source is inactive"
   },
+  "Viewers/ClusterProfiles/ClusterProfilesView": {
+    "ClusterProfilesProcess": "Cluster profiles",
+    "Component": "Component",
+    "DetailingProcessCaptionSuffix": "by %s clusters",
+    "ErrNotDefinedComponent": "Undefined clustering component",
+    "ErrTableRowState": "State property different from transfer from trsNotSynced to trsDeleted state was changed",
+    "HistogramProcess": "Histogram building",
+    "ImportanceProcess": "Importance calculation",
+    "ResidueClusterName": "Others",
+    "SimpleStatisticsProcess": "Simple statistics calculation",
+    "TotalClusterName": "Total"
+  },
+  "Viewers/ClusterProfiles/ClusterProfilesViewVendor": {
+    "VendorCaption": "Cluster Profiles",
+    "VendorDesc": "Cluster profiles"
+  },
+  "Viewers/ClusterProfiles/ViewHistogram": {
+    "From": "from",
+    "ResidueValue": "Others",
+    "To": "to"
+  },
+  "Viewers/ClusterProfiles/ViewStatistics": {
+    "DaysPostfix": "days",
+    "InfinityValue": "INF",
+    "NegInfinityValue": "-INF"
+  },
   "Viewers/CoarseClasses/CoarseClassesView": {
     "Component": "Component",
     "ErrNotDefinedComponent": "Undefined component"

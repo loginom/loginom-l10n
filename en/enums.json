@@ -1620,6 +1620,34 @@
       "TopDown": "From right to left"
     }
   },
+  "Viewers/ClusterProfiles/ClusterProfilesView": {
+    "ClusterProfilesClusterGridPosition": {
+      "$Caption": "Cluster Grid Position",
+      "Rows": "Clusters in rows",
+      "Columns": "Clusters in columns"
+    },
+    "ClusterProfilesHistogramScaling": {
+      "$Caption": "Histogram scaling",
+      "SizeScale": "Absolute frequencies",
+      "BarScale": "Relative frequencies",
+      "NoScale": "Density (PDF)"
+    },
+    "ClusterProfilesIndicatorType": {
+      "$Caption": "Statistical indicator",
+      "Importance": "Importance",
+      "Histogram": "Histogram",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "Mean": "Mean",
+      "Sum": "Sum",
+      "StdDev": "Standard deviation",
+      "Range": "Range",
+      "NullCount": "Null count",
+      "NotNullCount": "Values",
+      "UniqueCount": "Count of unique values",
+      "ClusterCenter": "Cluster center"
+    }
+  },
   "Viewers/Cube/CubeCalcSummaries": {
     "CalcCubeDimFunction": {
       "$Caption": "Value View Type",

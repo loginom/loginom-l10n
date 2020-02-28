@@ -127,7 +127,7 @@
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
     "MsgTransportError": "Server connection lost",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
-    "PackageCopyOpened": "Changes in the open link  \"{0}\" package will be reflected in the current package upon its reload",
+    "PackageCopyOpened": "Changes in the open link \"{0}\" package will be reflected in the current package upon its reload",
     "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
     "QstQuitSave": "Do you want to save changes in \"{0}\" package?",
     "ServerDisplayName": "Server"
@@ -792,7 +792,7 @@
     "ConfirmDeleteAll": "Do you want to delete all links?",
     "DeletePromtTitle": "Delete",
     "ErrInvalidLinkFound": "Invalid link of \"{0}\" field with \"{1}\" request has been found",
-    "ErrMultilinkFound": "Multiple link of  \"{0}\" request with \"{1}\" field has been found and it willl be deleted",
+    "ErrMultilinkFound": "Multiple link of \"{0}\" request with \"{1}\" field has been found and it willl be deleted",
     "NotLink": "not linked"
   },
   "components/wsdlclient/DebugParamsController": {
@@ -1411,8 +1411,8 @@
   },
   "lib/Exceptions": {
     "Error": "Error occurred while the program was running.\n{0}",
-    "ErrWindowFull": "Error occurred while the program was running.\nError: \"{0}\"\nUrl: \"{1}\"\nString: {2}  Symbol: {3}",
-    "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2}  Symbol: {3}"
+    "ErrWindowFull": "Error occurred while the program was running.\nError: \"{0}\"\nUrl: \"{1}\"\nString: {2} Symbol: {3}",
+    "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2} Symbol: {3}"
   },
   "lib/Loader": {
     "ErrClassName": "Invalid \"{0}\" class name.",
@@ -2200,7 +2200,7 @@
     "VendorTreeConnections": "Data sources"
   },
   "wizards/datapartition/BiasedMethodForm": {
-    "UniqueValuesLimitError": "{0} field cannot be used for biased sampling due to excess  of the unique values number (over {1})"
+    "UniqueValuesLimitError": "{0} field cannot be used for biased sampling due to excess of the unique values number (over {1})"
   },
   "wizards/datapartition/PartitionWizard": {
     "PartitionTitle": "Partitioning"

@@ -19,7 +19,7 @@
     "ErrConnectionFailure": "{0} server connection lost",
     "ErrDifferentPackagesWithSameNameAndVersion": "the package does not match the previously published package with the same name and version",
     "ErrDuplicateNodeNames": "the package contains more than one node with \"{0}\" name",
-    "ErrEmptyNodeName": "no node name with \"{0}\" caption and  {{{1}}} identifier specified",
+    "ErrEmptyNodeName": "no node name with \"{0}\" caption and {{{1}}} identifier specified",
     "ErrExecuteNodeConnectionFailure": "{0} server connection lost during request processing",
     "ErrInvalidPackageNamespace": "\"{0}\" is an invalid namespace",
     "ErrLoadPackageDefsError": "Error in loading of packages for {0} server",
@@ -45,7 +45,7 @@
     "ErrInvalidContentType": "Invalid value of the Content-Type caption: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",
     "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified WebBodyFormatMessageProperty",
-    "WarnDuplicateRequestParameter": "The request contains more than one parameter with  {0} name",
+    "WarnDuplicateRequestParameter": "The request contains more than one parameter with {0} name",
     "WarnUnknownRequestParameter": "The request contains parameter with unknown {0} name"
   },
   "DeductorIntegrationServerCore/LoggerManager": {
@@ -82,7 +82,7 @@
     "UrlFormat": "Url format: "
   },
   "DeductorIntegrationServerCore/ServiceHelper": {
-    "ErrInvalidColumnCount": "Invalid column count in the matrix of values:  {0}; required: {1}",
+    "ErrInvalidColumnCount": "Invalid column count in the matrix of values: {0}; required: {1}",
     "ErrInvalidElementCount": "Invalid element count in the data set: {0}; required: {1}",
     "ErrInvalidRowCount": "Invalid row count in the variable value matrix: {0}",
     "ErrMissingArrayItem": "Missing \"{0}\" array item",

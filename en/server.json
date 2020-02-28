@@ -203,7 +203,7 @@
     "ColumnName": "Data column name",
     "ErrColumnMappedToNonExistentNode": "\"%s\" input data set column has been assigned for nonexistent \"%s\" XSD schema node",
     "ErrNodeAndColumnDontExist": "The mapping settings of the input data set and XSD schema refer to nonexistent \"%s\" node of XSD schema and \"%s\" column of the input set",
-    "ErrNodeCantMapColumnType": "\"%s\" column of the input data set has \"%s\" data type that cannot be converted to \"%s\" type of \"%s\" node of XSD  schema",
+    "ErrNodeCantMapColumnType": "\"%s\" column of the input data set has \"%s\" data type that cannot be converted to \"%s\" type of \"%s\" node of XSD schema",
     "ErrNodeMappedToNonExistentColumn": "\"%s\" node of XSD schema has been assigned for nonexistent \"%s\" input data set column",
     "ErrNodeMustBeMapped": "For %s schema node with required value, no association with the input data set field has been assigned",
     "ErrOneOfSubNodesMustBeSelected": "%s schema node must have at least one subnode selected for export",
@@ -313,7 +313,7 @@
   "Common/XML/XSD_MSXML": {
     "Any": "Any item",
     "ErrCantCreateXMLDOMDocument60": "Error creating COM object of XML document; possible reason - not installed MSXML 6.0",
-    "ErrXSDElementExistsWithAnotherType": "%s item to be added from %s  namespace already exists in the schema and has a different type",
+    "ErrXSDElementExistsWithAnotherType": "%s item to be added from %s namespace already exists in the schema and has a different type",
     "ErrXSDIncludeNamespaceMismatch": "\"%s\" schema is trying to include \"%s\" schema, but the target namespace \"%s\" of the included schema does not match \"%s\"",
     "ErrXSDNoAccess": "No access to %s document",
     "ErrXSDNoSchemaElement": "%s document does not contain 'schema' root element 'schema'",
@@ -655,7 +655,7 @@
     "ErrFieldNotSpecified": "No comparison field specified",
     "ErrIncorrectConditionConfiguration": "The condition list contains errors",
     "ErrInvalidAggregationType": "\"%s\" aggregation function does not apply to the specified field",
-    "ErrInvalidCompareValue": "\"%s\" value  is not compatible with \"%s\" data type",
+    "ErrInvalidCompareValue": "\"%s\" value is not compatible with \"%s\" data type",
     "ErrInvalidRelationType": "\"%s\" relation type is not applicable to the specified field and aggregation function",
     "ErrNoConditionBranchItems": "No condition branches specified",
     "ErrNoConditionItems": "Condition branch cannot be empty"
@@ -680,7 +680,7 @@
     "CorrAnalysisTauBKendallNotify": "Kendall's Tau-b correlation coefficients calculating",
     "DisplayName": "Caption",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNullInColumns": "Proccessing of data with lost values not supported yet",
+    "ErrNullInColumns": "Processing of data with lost values not supported yet",
     "Name": "Name"
   },
   "components/corranalysis/CorrAnalysisVendor": {
@@ -954,7 +954,7 @@
   "components/forecast/ARIMAXModel": {
     "ARDisplayName": "AR[%d]",
     "ARIMAForecastProcessCaption": "Forecast calculating",
-    "ErrCoefsLengthMismatch": "Vector lengh of %d parameters  does not match the required %d",
+    "ErrCoefsLengthMismatch": "Vector lengh of %d parameters does not match the required %d",
     "ErrModelHasNoIntercept": "The current model has no intercept",
     "ErrUnknownCoefficients": "Model contains unknown coefficients",
     "InterceptDisplayName": "Intercept",
@@ -1606,7 +1606,7 @@
     "ErrNoActiveInputs": "No active inputs",
     "InputJoinedVariables": "Added variables",
     "InputPortsOverFlow": "Number of input ports exceeded the maximum value = %d",
-    "InputVariablesOverFlow": "Number of the input variables exceeded the maximum value =  %d"
+    "InputVariablesOverFlow": "Number of the input variables exceeded the maximum value = %d"
   },
   "components/unionvariables/UnionVariablesVendor": {
     "VendorCaption": "Variable Union",
@@ -1974,7 +1974,7 @@
     "WarnQueryExecuting": "Query already executing"
   },
   "Libraries/bgdbrtl/DBSSL": {
-    "DecryptPrivateKey": "Error while private key decryption",
+    "DecryptPrivateKey": "Error decrypting private key",
     "ErrFileNoAccess": "\"%s\" file unavailable",
     "ErrFileNotFound": "\"%s\" file not found",
     "ErrGetFileStorage": "No reference to file storage",
@@ -2143,7 +2143,7 @@
     "ColumnDefs": "Column descriptions",
     "ContainedStatisticsCompute": "Calculate statistics",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
-    "ErrColumnDefsNotAssigned": "Field descriptions not initialized",
+    "ErrColumnDefsNotAssigned": "Column defentions not initialized",
     "ErrDataSourceActive": "Data set is not in the closed state",
     "ErrDataSourceClosed": "Data set is not in the opened state",
     "ErrDataSourceNotConfigured": "Data set not configured",
@@ -2236,8 +2236,8 @@
   "Libraries/bgrtl/ExceptUtils": {
     "ErrAbstract": "Abstract method calling %s",
     "ErrAbstractMethod": "Abstract method calling %s.%s",
-    "ErrAssign": "Failed to assign property values of %s object  to the object values of the unsupported class %s",
-    "ErrAssignIntf": "Failed to assign property values of %s object  to the object values of the unsupported interface",
+    "ErrAssign": "Failed to assign property values of %s object to the object values of the unsupported class %s",
+    "ErrAssignIntf": "Failed to assign property values of %s object to the object values of the unsupported interface",
     "ErrFloatParamIsNan": "\"%s\" parameter value equal to NaN is not allowed",
     "ErrFunctionRefIsNull": "Reference to %s function must be initialized",
     "ErrInvalidIndex": "Index value %d of \"%s\" parameter is out of [%d; %d] range",
@@ -2408,7 +2408,7 @@
   "Libraries/bgrtl/MathUtils": {
     "ErrBadMatrix": "Two-dimensional dynamic array is not rectangular matrix",
     "ErrDeterminantIsZero": "It is impossible to calculate the inverse matrix: determinant is zero.",
-    "ErrDispersionIsZero": "It is impossible to calculate the correlation matrix:  variance of one of the values is zero",
+    "ErrDispersionIsZero": "It is impossible to calculate the correlation matrix: variance of one of the values is zero",
     "ErrMultMatrixVectDimMismatch": "Failed to multiply matrix by vector with a different number of matrix columns and vector length.",
     "ErrNotSqrMatr": "The coefficient matrix must be a square matrix.",
     "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function",
@@ -3007,9 +3007,9 @@
     "ErrConnectionVendorMustBelongToGroup": "Connection vendor must belong to at least one group"
   },
   "Libraries/Model/Connections/ModelConnectionWorkFlow": {
-    "ErrAlienConnectionNode": "\"%s\" connection  does not belong to the current connection list",
+    "ErrAlienConnectionNode": "\"%s\" connection does not belong to the current connection list",
     "ErrDerivedConnectionVendorNotFound": "No derived component for the connection node found",
-    "ErrNodeIsNotConnectionReference": "\"%s\" node  is not a connection reference",
+    "ErrNodeIsNotConnectionReference": "\"%s\" node is not a connection reference",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrNoReferencedConnection": "\"%s\" node does not refer to any connections",
     "ReplaceReferenceWithDerivedCaption": "\"%s\" Connection Node Replaced by Derived Node"
@@ -3452,7 +3452,7 @@
   "Libraries/Normalization/FixedNormalData": {
     "ErrArrayExpceted": "Failed to denormalize a single element. Array from %d elements must be at the input.",
     "ErrUnbalancedSync": "EndSynchronize call without corresponding BeginSynchronize",
-    "ErrWrongArraySize": "Size %1:d of '%0:s' array not equal to the expected size of  array %2:d"
+    "ErrWrongArraySize": "Size %1:d of '%0:s' array not equal to the expected size of array %2:d"
   },
   "Libraries/Normalization/NormalColumns": {
     "ErrExcludeOutOfRange": "The range to be deleted is out of limits. The following values are given: start index %d, range length %d. The index of the last deleted column %d exceeds the index of the last deleted column %d."
@@ -3484,7 +3484,7 @@
   },
   "Libraries/Normalization/NormalDataFactory": {
     "ErrFactoryAlreadyRegistered": "Factory for this normalized data set format has already been registered",
-    "ErrFactoryIsNotRegistered": "Factory for this normalized data set format has not  been registered",
+    "ErrFactoryIsNotRegistered": "Factory for this normalized data set format has not been registered",
     "ErrMultNormTypeWrong": "Invalid multiplied factor type"
   },
   "Libraries/Normalization/Normalizers": {
@@ -3604,7 +3604,7 @@
     "ErrPropAccessorNotFound": "Failed to find \"%2:s\" accessor in metadata for \"%0:s.%1:s\" property",
     "ErrReferenceIsNil": "Interface reference not initialized",
     "ErrReferenceNotFound": "Failed to find the implemented interface",
-    "ErrSetValueOutOfBounds": "Set value \"%d\" of  \"%s\" property is not in the range of allowable values",
+    "ErrSetValueOutOfBounds": "Set value \"%d\" of \"%s\" property is not in the range of allowable values",
     "ErrVaiantTypeIncorrect": "The property containing \"%3:s\" value type is incorrect for the variant property \"%0:s.%1:s.%2:s\"",
     "ErrVaiantTypeNotFound": "No \"%2:s\" property in metadata for \"%0:s.%1:s\" interface",
     "ErrValueOutOfRange": "Value \"%d\" is not in the range of allowable values of \"%s\" type",
@@ -3940,7 +3940,7 @@
     "Component": "Component",
     "DetailingProcessCaptionSuffix": " by %s clusters",
     "ErrNotDefinedComponent": "Undefined clustering component",
-    "ErrTableRowState": "The \"State\" property was illegally changed. The only legal change is from trsNotSynced to trsDeleted",
+    "ErrTableRowState": "Invalid change of the data field synchronization status occurred",
     "HistogramProcess": "Histogram building",
     "ImportanceProcess": "Importance calculation",
     "ResidueClusterName": "Other",

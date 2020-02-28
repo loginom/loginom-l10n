@@ -2242,7 +2242,7 @@
       "boxLabel": "Configured information base"
     },
     "rbServer": {
-      "boxLabel": "On 1C:Enterprise  server"
+      "boxLabel": "On 1C:Enterprise server"
     },
     "txtDBCatalog": {
       "fieldLabel": "Database directory"
@@ -4183,7 +4183,7 @@
       "fieldLabel": "Horizontal alignment"
     },
     "cbbVAlignment": {
-      "fieldLabel": "Vertical  alignment"
+      "fieldLabel": "Vertical alignment"
     },
     "cbFormatStr": {
       "boxLabel": "Custom format"

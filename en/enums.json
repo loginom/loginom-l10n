@@ -111,7 +111,7 @@
       "NoError": "No errors",
       "Cancelled": "Canceled by user",
       "InitError": "%s",
-      "XMLExportError": "Error while exporting to XML: %s",
+      "XMLExportError": "Error exporting to XML: %s",
       "WSDLClientError": "Error executing request to web service: %s",
       "WSDLFault": "Server sent error message",
       "HTTPClientError": "HTTP client error: %s",
@@ -1165,7 +1165,7 @@
       "Item": "Item"
     },
     "VAlignment": {
-      "$Caption": "Vertical  Alignment",
+      "$Caption": "Vertical Alignment",
       "Top": "Align top",
       "Bottom": "Align bottom",
       "Center": "Align center"

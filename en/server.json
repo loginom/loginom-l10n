@@ -1731,7 +1731,7 @@
     "ErrHyperExtractSDKNotFound": "Tableau Extract API 2.0 SDK not installed",
     "ErrHyperNotSupportedInWin32": "\"*.hyper\" data format suported only in 64-bit software version",
     "ErrMissingServerConnection": "No connection with Tableau server",
-    "ErrNoColumnDefs": "No columns description",
+    "ErrNoColumnDefs": "No column definitions",
     "ErrNoFileStorage": "No file storage found",
     "ErrProjectNameNotSelected": "No project name specified",
     "ErrServerFileNameNotSelected": "No source name specified on server",
@@ -2093,7 +2093,7 @@
     "ErrSize": "Data size must be more than or equal to zero"
   },
   "Libraries/bgrtl/ColumnDefsVendor": {
-    "ColumnInfosVendorMetaDesc": "column description vendor",
+    "ColumnInfosVendorMetaDesc": "column definition vendor",
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable column \"%s\""
   },
@@ -2140,10 +2140,10 @@
     "ErrModelSocketCouplerDefAlreadyCoupled": "Already coupled"
   },
   "Libraries/bgrtl/DataSet": {
-    "ColumnDefs": "Column descriptions",
+    "ColumnDefs": "Column definitions",
     "ContainedStatisticsCompute": "Calculate statistics",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
-    "ErrColumnDefsNotAssigned": "Column defentions not initialized",
+    "ErrColumnDefsNotAssigned": "Column definitions not initialized",
     "ErrDataSourceActive": "Data set is not in the closed state",
     "ErrDataSourceClosed": "Data set is not in the opened state",
     "ErrDataSourceNotConfigured": "Data set not configured",
@@ -2179,7 +2179,7 @@
     "RootNodeDisplayName": "Root"
   },
   "Libraries/bgrtl/DataTreeNodeDefsVendor": {
-    "DataTreeNodeInfosVendorMetaDesc": "node description vendor",
+    "DataTreeNodeInfosVendorMetaDesc": "node definition vendor",
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable node \"%s\"",
     "ErrNodeTypesMismatch": "%s node type is not compatible with %s source node type"
   },
@@ -2670,7 +2670,7 @@
   "Libraries/bgrtl/VariablesVendor": {
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable variable \"%s\"",
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type",
-    "VariableInfosVendorMetaDesc": "variable description vendor"
+    "VariableInfosVendorMetaDesc": "variable definition vendor"
   },
   "Libraries/bgrtl/VarUtils": {
     "ErrConvertStrToType": "Error converting \"%s\" string to %s value",
@@ -3131,7 +3131,7 @@
     "ErrAlreadyConfiguringSocket": "The node component is in the port configuring state",
     "ErrInvalidComponentEngineImplementation": "Invalid component engine implementation",
     "ErrModelComponentAlreadyInitialized": "The node component already initialized",
-    "ErrUnknownCouplerDefType": "Unknown type of the coupler descriptor"
+    "ErrUnknownCouplerDefType": "Unknown type of the coupler definition"
   },
   "Libraries/Model/ModelComponentCouplerDefItems": {
     "CouplerDefMetaDesc": "Coupler"

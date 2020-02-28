@@ -3938,7 +3938,7 @@
   "Viewers/ClusterProfiles/ClusterProfilesView": {
     "ClusterProfilesProcess": "Cluster profiles",
     "Component": "Component",
-    "DetailingProcessCaptionSuffix": "by %s clusters",
+    "DetailingProcessCaptionSuffix": " by %s clusters",
     "ErrNotDefinedComponent": "Undefined clustering component",
     "ErrTableRowState": "The \"State\" property was illegally changed. The only legal change is from trsNotSynced to trsDeleted",
     "HistogramProcess": "Histogram building",
@@ -3952,9 +3952,9 @@
     "VendorDesc": "Cluster profiles"
   },
   "Viewers/ClusterProfiles/ViewHistogram": {
-    "From": "from",
+    "From": "from ",
     "ResidueValue": "Other",
-    "To": "to"
+    "To": "to "
   },
   "Viewers/ClusterProfiles/ViewStatistics": {
     "DaysPostfix": "days",

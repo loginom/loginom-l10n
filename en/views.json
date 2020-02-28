@@ -149,7 +149,7 @@
       "boxLabel": "File storage full access"
     },
     "chkRunner": {
-      "boxLabel": "Package execution"
+      "boxLabel": "Batch processing"
     },
     "chkViewer": {
       "boxLabel": "View reports"
@@ -544,7 +544,7 @@
       "tooltip": "Show workflow outline"
     },
     "btnShowReferenceNodes": {
-      "tooltip": "Show source nodes for reference nodes"
+      "tooltip": "Show source nodes for Reference Nodes"
     },
     "btnShowVendors": {
       "tooltip": "Show/hide component panel"
@@ -3211,7 +3211,7 @@
       "title": "Import from XML File"
     },
     "taFilePreview": {
-      "fieldLabel": "View selected file"
+      "fieldLabel": "Preview selected file"
     }
   },
   "imports/xml/XmlTreeView": {
@@ -3732,7 +3732,7 @@
       "tooltip": "Scaling of histograms"
     },
     "btnImportanceHeatMap": {
-      "tooltip": "Significance by color"
+      "tooltip": "Importance by color"
     },
     "btnIndicator": {
       "tooltip": "Indicator"

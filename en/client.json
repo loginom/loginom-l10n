@@ -70,7 +70,7 @@
   "admin/UserModel": {
     "Admin": "Administration",
     "Designer": "Workflows design",
-    "Service": "Package execution",
+    "Service": "Batch processing",
     "Viewer": "View reports"
   },
   "app/AddPackageLinkForm": {

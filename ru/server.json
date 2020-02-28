@@ -3943,7 +3943,7 @@
     "Component": "Компонент",
     "DetailingProcessCaptionSuffix": " по кластерам %s",
     "ErrNotDefinedComponent": "Не определен компонент кластеризации",
-    "ErrTableRowState": "Произошло изменение свойства State, отличное от перехода из состояния trsNotSynced в trsDeleted",
+    "ErrTableRowState": "Произошло недопустимое изменение статуса синхронизации у поля данных",
     "HistogramProcess": "Построение гистограмм",
     "ImportanceProcess": "Расчет значимости",
     "ResidueClusterName": "Вне кластеров",

@@ -3940,10 +3940,10 @@
     "Component": "Component",
     "DetailingProcessCaptionSuffix": "by %s clusters",
     "ErrNotDefinedComponent": "Undefined clustering component",
-    "ErrTableRowState": "State property different from transfer from trsNotSynced to trsDeleted state was changed",
+    "ErrTableRowState": "The \"State\" property was illegally changed. The only legal change is from trsNotSynced to trsDeleted",
     "HistogramProcess": "Histogram building",
     "ImportanceProcess": "Importance calculation",
-    "ResidueClusterName": "Others",
+    "ResidueClusterName": "Other",
     "SimpleStatisticsProcess": "Simple statistics calculation",
     "TotalClusterName": "Total"
   },
@@ -3953,7 +3953,7 @@
   },
   "Viewers/ClusterProfiles/ViewHistogram": {
     "From": "from",
-    "ResidueValue": "Others",
+    "ResidueValue": "Other",
     "To": "to"
   },
   "Viewers/ClusterProfiles/ViewStatistics": {

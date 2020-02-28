@@ -1644,7 +1644,7 @@
       "Range": "Range",
       "NullCount": "Null count",
       "NotNullCount": "Values",
-      "UniqueCount": "Count of unique values",
+      "UniqueCount": "Unique values count",
       "ClusterCenter": "Cluster center"
     }
   },

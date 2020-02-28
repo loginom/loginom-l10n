@@ -2485,7 +2485,7 @@
       "text": "Create Table..."
     },
     "cntPublishing": {
-      "title": "Publish the Exported Fle on Tableau Server"
+      "title": "Publish on server"
     },
     "edtConnection": {
       "fieldLabel": "File storage"

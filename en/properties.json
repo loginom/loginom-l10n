@@ -560,7 +560,7 @@
       "DecimalSeparator": "Decimal separator",
       "DelimiterChar": "Column delimiter",
       "FirstLineAsTitle": "First line title",
-      "MultipleDelimiters": "Accept multiple delimiters in succession for one",
+      "MultipleDelimiters": "Treat consecutive delimiters as one",
       "RowsToSkip": "Skip rows",
       "TextQualifier": "Text qualifier",
       "TimeSeparator": "Time separator",

@@ -648,8 +648,8 @@
       "tooltip": "Close all packages..."
     },
     "btnCreate": {
-      "text": "Create",
-      "tooltip": "Create new package..."
+      "text": "New",
+      "tooltip": "New package..."
     },
     "btnEdit": {
       "text": "Properties",
@@ -685,7 +685,7 @@
     },
     "mniCreateUnsaved": {
       "text": "Draft",
-      "tooltip": "Create draft"
+      "tooltip": "New draft"
     },
     "mniSaveAs": {
       "text": "Save as...",
@@ -697,11 +697,11 @@
     },
     "pmiCreate": {
       "text": "New",
-      "tooltip": "Create new package..."
+      "tooltip": "New package..."
     },
     "pmiCreateUnsaved": {
       "text": "Draft",
-      "tooltip": "Create draft"
+      "tooltip": "New draft"
     },
     "pmiRefresh": {
       "tooltip": "Refresh"
@@ -3831,7 +3831,7 @@
       "tooltip": "Rename"
     },
     "mniAddToNewGroup": {
-      "text": "Create group...",
+      "text": "New group...",
       "tooltip": "Create group and add visualizer into it"
     },
     "mniAddWithoutGroup": {

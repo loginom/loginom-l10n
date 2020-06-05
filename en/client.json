@@ -110,15 +110,16 @@
     "NumberObjects": "{0} objects"
   },
   "app/LoginomMenuForm": {
+    "ConfirmQuit": "There are not saved packages. Do you want to exit without saving?",
     "Menu": "Menu",
-    "QAHref": "https://qa.loginom.com/questions/",
-    "QstQuit": "There are not saved packages. Do you want to exit without saving?"
+    "QAHref": "https://qa.loginom.com/questions/"
   },
   "app/MainForm": {
     "AskIfOpenPackageByLink": "The open package will be locked by you until it is closed. Do you want to open it?",
     "CantCreateShareLinks": "Failed to generate address for the current page",
     "CantFindPackage": "Failed to find package",
     "CantGetAbsolutePath": "Failed to get absolute path for \"{0}\" file",
+    "ConfirmQuitSave": "Do you want to save changes in \"{0}\" package?",
     "ErrOpenUrlPath": "Failed to open URL \"{0}\".\nError: \"{1}\".",
     "ErrPackageDontExists": "\"{0}\" package not found",
     "ErrPackageNotSaved": "Current package not saved",
@@ -128,8 +129,6 @@
     "MsgTransportError": "Server connection lost",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
     "PackageCopyOpened": "Changes in the open link \"{0}\" package will be reflected in the current package upon its reload",
-    "QstCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
-    "QstQuitSave": "Do you want to save changes in \"{0}\" package?",
     "ServerDisplayName": "Server"
   },
   "app/MainMenuForm": {
@@ -144,6 +143,8 @@
   "app/MapTree": {
     "About": "About",
     "AdminArea": "Administration",
+    "ConfirmCloseAllPackages": "Do you want to close all packages?",
+    "ConfirmCloseOtherPackages": "Do you want to close other packages?",
     "ConnectionDisplayNameDefault": "Connection",
     "Connections": "Connections",
     "ErrInstanceAlreadyExist": "ID already mapped to visual node",
@@ -156,8 +157,6 @@
     "PackagesParent": "Packages",
     "PackageVariables": "Variables",
     "Properties": "Properties",
-    "QstCloseAllPackages": "Do you want to close all packages?",
-    "QstCloseOtherPackages": "Do you want to close other packages?",
     "ReadOnlyPackageNamePostfix": " (read-only)",
     "References": "References",
     "Reports": "Reports",
@@ -2225,6 +2224,7 @@
     "UnknownValue": "Unknown value"
   },
   "wizards/datatree/DataTreeNodeDefsMappingWizard": {
+    "colTargetNodeTuneText": "Caption",
     "CreateMappingToAllConfirm": "Do you really want to create output nodes for all inputs?",
     "MsgAddedDataTreeNodeCanNotSelected": "Node has been added, but it is not selected because it does not match the filter",
     "MsgConnectedDataTreeNodeCanNotSelected": "Node in the output tree connected, but it is not selected because it does not match the filter",
@@ -2350,7 +2350,6 @@
     "frmColumnsMappingTitle": "Configure Variables Values"
   },
   "wizards/variables/VariablesEditWizard": {
-    "colTargetNameTitle": "Caption",
     "frmColumnsMappingTitle": "Configure Output Variables",
     "MsgAddedVariableCanNotSelected": "Variable has been added, but it is not selected because it does not match the filter",
     "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected because it does not match the filter",

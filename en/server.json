@@ -680,7 +680,6 @@
     "CorrAnalysisTauBKendallNotify": "Kendall's Tau-b correlation coefficients calculating",
     "DisplayName": "Caption",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrNullInColumns": "Processing of data with lost values not supported yet",
     "Name": "Name"
   },
   "components/corranalysis/CorrAnalysisVendor": {

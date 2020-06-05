@@ -587,6 +587,7 @@
     "ClassMarkPostfix": " Метка",
     "ClassNumPostfix": " Номер класса",
     "ClassSignificantPostfix": " Значимость",
+    "CoarseClassesCalcStatDesc": "Расчет статистики конечных классов",
     "CoarseClassesProcessDesc": "Построение конечных классов",
     "ErrClassStorageNotDefined": "Хранилище начальных классов одного из столбцов не определено",
     "ErrCoarseClassBuilderNotValid": "Хранилище начальных классов не соответствует установленным настройкам",
@@ -682,7 +683,8 @@
     "CorrAnalysisTauBKendallNotify": "Вычисление коэффициентов корреляции Тау-b Кендалла",
     "DisplayName": "Метка",
     "ErrNoColumnsForProcessing": "Не указаны столбцы для обработки",
-    "ErrNullInColumns": "Обработка данных с пропущенными значениями пока не поддерживается",
+    "ErrTooMuchCorrelations": "Количество одновременно рассчитываемых корреляций не может быть больше %d",
+    "ErrTooMuchRows": "Количество обрабатываемых строк не может быть больше %d",
     "Name": "Имя"
   },
   "components/corranalysis/CorrAnalysisVendor": {
@@ -1077,7 +1079,8 @@
   },
   "components/linregression/LinRegressionBuilder": {
     "ErrWrongLinRegContext": "Неправильный контекст построителя модели линейной регрессии",
-    "ErrWrongLinRegModel": "Обучаемая модель не является моделью линейной регрессии"
+    "ErrWrongLinRegModel": "Обучаемая модель не является моделью линейной регрессии",
+    "ErrWrongProbability": "Значение порога доверительного интервала должно быть в пределах (0, 100)"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "Контекст построителя модели линейной регрессии не может быть создан для пустого набора данных"
@@ -2017,7 +2020,8 @@
     "ErrFileDSNForbidden": "Подключения через файловые DSN запрещены"
   },
   "Libraries/bgdbrtl/UniDAC/OracleUniDACDB": {
-    "DatabaseTypeName": "Oracle"
+    "DatabaseTypeName": "Oracle",
+    "ErrInvalidTableName": "Неверно указано имя таблицы"
   },
   "Libraries/bgdbrtl/UniDAC/PostgresUniDACDB": {
     "DatabaseTypeName": "PostgreSQL"
@@ -3101,7 +3105,7 @@
   },
   "Libraries/Model/Generic/ModelGenericComponentEngine": {
     "ActivateOuterData": "Внешние данные",
-    "ErrInvalidModelLockContext": "Некорректный контекст блокировки узлов сценария"
+    "ErrInvalidModelLockContext": "Подмодель уже заблокирована в рамках другой операции"
   },
   "Libraries/Model/Generic/ModelGenericComponentVendor": {
     "GenericVendorCaption": "Подмодель"
@@ -3227,7 +3231,8 @@
     "CompatConvertRequired": "При загрузке пакета \"%s\" версии %s будет произведено конвертирование.",
     "ErrCannotLoadPackageElement": "Ошибка загрузки пакета: не удалось загрузить элемент \"%s\"",
     "ErrCannotOpenFile": "Не удалось открыть файл \"%s\"",
-    "LogPackageSaved": "Сохранён пакет \"%s\""
+    "LogPackageSaved": "Сохранён пакет \"%s\"",
+    "WarnPackageCreatedInNewerVersion": "Пакет \"%s\" был создан в более новой версии Loginom %s. В текущей версии часть функционала может работать некорректно."
   },
   "Libraries/Model/ModelReports": {
     "CantAddGenericInputViewToReport": "Добавление визуализаторов входного узла подмодели в Отчеты не поддерживается",
@@ -3355,6 +3360,7 @@
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "Узел \"%s\" заблокирован",
     "ErrNodeNotInitialized": "Узел \"%s\" не проинициализирован",
+    "ErrReferencedNodeNotActive": "Исходный узел не активен",
     "ErrReferencedNodeNotAvailable": "Исходный узел не доступен",
     "ErrReferencedNodeNotFound": "Исходный узел не найден",
     "ErrReferencedNodeNotSpecified": "Не задана ссылка на узел"

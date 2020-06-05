@@ -74,6 +74,7 @@
     "Viewer": "Просмотр отчетов"
   },
   "app/AddPackageLinkForm": {
+    "ErrAddPackageLinkErrors": "При добавлении ссылки на пакет возникли ошибки.",
     "ErrPathNotSpecified": "Не указан пакет (путь к файлу пакета).",
     "PackageNotSaved": "Пакет не сохранен",
     "ReadOnlyPackageNamePostfix": " (только чтение)"
@@ -82,11 +83,13 @@
     "MsgAppClose": "Приложение закрывается. Текущий сеанс работы и все несохраненные данные будут потеряны."
   },
   "app/AppUtils": {
-    "ConfirmRemovingUnit": "Вы действительно хотите удалить модуль?",
-    "ErrCannotDeleteUnit": "Невозможно удалить модуль \"{0}\". Некоторые из узлов в данный момент используются",
-    "ErrSelectedVendorLocked": "Выбранный компонент \"{0}\" удалить нельзя. Некоторые из производных узлов в данный момент используются.",
-    "RemoveSelectedVendorConfirmLinked": "Вы действительно хотите удалить выбранный компонент \"{0}\"? Узлы, созданные по нему, будут недоступны.",
-    "RemoveVendorConfirm": "Удалить компонент?"
+    "ConfirmRemovingNode": "Вы действительно хотите удалить узел \"{0}\"?",
+    "ConfirmRemovingUnit": "Вы действительно хотите удалить модуль \"{0}\"?",
+    "ErrCannotDeleteNode": "Невозможно удалить заблокированный узел \"{0}\".",
+    "ErrCannotDeleteUnit": "Невозможно удалить модуль \"{0}\". Некоторые из узлов в данный момент заблокированы.",
+    "ErrSelectedVendorLocked": "Невозможно удалить компонент \"{0}\". Некоторые из производных узлов в данный момент заблокированы.",
+    "RemoveSelectedVendorConfirmLinked": "Вы действительно хотите удалить компонент \"{0}\"? Узлы, созданные по нему, будут недоступны.",
+    "RemoveVendorConfirm": "Удалить компонент \"{0}\"?"
   },
   "app/ConfigurePublishedPackagesForm": {
     "DisNamespace": "http://schemas.loginom.ru/integration",
@@ -111,15 +114,17 @@
     "NumberObjects": "{0} объектов"
   },
   "app/LoginomMenuForm": {
+    "ConfirmQuit": "Есть не сохранённые пакеты. Выйти без сохранения?",
     "Menu": "Меню",
-    "QAHref": "https://qa.loginom.ru/questions/",
-    "QstQuit": "Есть не сохранённые пакеты. Выйти без сохранения?"
+    "QAHref": "https://qa.loginom.ru/questions/"
   },
   "app/MainForm": {
     "AskIfOpenPackageByLink": "Открытый пакет будет заблокирован вами до момента его закрытия. Открыть?",
     "CantCreateShareLinks": "Не удалось сгенерировать адрес для текущей страницы",
     "CantFindPackage": "Не удалось найти пакет",
     "CantGetAbsolutePath": "Не удалось получить абсолютный путь для файла \"{0}\"",
+    "ConfirmCannotCloseModel": "Невозможно закрыть модуль \"{0}\" в пакете \"{1}\".\nНекоторые из узлов в данный момент заблокированы.\nЗакрыть пакет принудительно без сохранения?",
+    "ConfirmQuitSave": "Сохранить изменения в пакете \"{0}\"?",
     "ErrOpenUrlPath": "Не удается открыть URL \"{0}\".\nОшибка: \"{1}\".",
     "ErrPackageDontExists": "Пакет с именем \"{0}\" не найден",
     "ErrPackageNotSaved": "Текущий пакет не сохранен",
@@ -129,8 +134,6 @@
     "MsgTransportError": "Произошёл разрыв связи с сервером",
     "PackageCloseFormat": "Закрыть также пакет \"{0}\"?",
     "PackageCopyOpened": "Изменения в открытом по ссылке пакете \"{0}\" будут отражены в текущем пакете после его перезагрузки",
-    "QstCannotCloseModel": "Невозможно закрыть модуль \"{0}\" в пакете \"{1}\".\nНекоторые из узлов в данный момент используются.\nЗакрыть пакет принудительно без сохранения?",
-    "QstQuitSave": "Сохранить изменения в пакете \"{0}\"?",
     "ServerDisplayName": "Сервер"
   },
   "app/MainMenuForm": {
@@ -145,6 +148,8 @@
   "app/MapTree": {
     "About": "О программе",
     "AdminArea": "Администрирование",
+    "ConfirmCloseAllPackages": "Закрыть все пакеты?",
+    "ConfirmCloseOtherPackages": "Закрыть другие пакеты?",
     "ConnectionDisplayNameDefault": "Подключение",
     "Connections": "Подключения",
     "ErrInstanceAlreadyExist": "Идентификатору уже сопоставлен визуальный узел",
@@ -157,8 +162,6 @@
     "PackagesParent": "Пакеты",
     "PackageVariables": "Переменные",
     "Properties": "Параметры",
-    "QstCloseAllPackages": "Закрыть все пакеты?",
-    "QstCloseOtherPackages": "Закрыть другие пакеты?",
     "ReadOnlyPackageNamePostfix": " (только чтение)",
     "References": "Ссылки",
     "Reports": "Отчеты",
@@ -172,6 +175,7 @@
     "WorkFlow": "Сценарий"
   },
   "app/MapTreeForm": {
+    "ConfirmRemovingReference": "Удалить ссылку \"{0}\"?",
     "DisplayName": "Метка",
     "ErrNodeNotInitialized": "У узла \"{0}\" не задан компонент",
     "ErrVendorMalfunction": "Компонент узла \"{0}\" неисправен",
@@ -205,6 +209,7 @@
     "EditPortDisplayName": "Редактирование метки порта...",
     "EditPortDisplayNameWindowTitle": "Редактирование метки порта",
     "EditPortFieldLabel": "Метка",
+    "ErrCannotDeleteNode": "Невозможно удалить заблокированный узел \"{0}\".",
     "ErrNodeNotInitialized": "У узла \"{0}\" не задан компонент",
     "Error": "Ошибка",
     "ErrPortNotCreated": "Не удалось создать новый порт",
@@ -459,6 +464,7 @@
     "YAxisTitle": "Инф.индекс"
   },
   "components/coarseclasses/ClassesChartWrapper": {
+    "ActualTitleSuffix": " (факт)",
     "FineClassTooltip": "Значение",
     "FineClassXaxisTitle": "Начальный класс"
   },
@@ -475,8 +481,12 @@
     "UnlockSelected": "Разморозить выбранные"
   },
   "components/coarseclasses/CoarseClassesViewer": {
+    "ActualSuffix": " (факт)",
+    "BuildActualStatConfirm": "Пересчитать показатели конечных классов?",
+    "BuildActualStatConfirmYes": "Пересчитать",
     "HideSideBar": "Скрыть боковую панель",
     "Locked": "Заморожено",
+    "NoActualStatInfo": "Не удалось рассчитать статистику начальных и конечных классов",
     "ShowSideBar": "Показать боковую панель",
     "Total": "Всего",
     "Unlocked": "Разморожено"
@@ -935,6 +945,9 @@
     "FilterAction": "Фильтровать",
     "LabelOr": "или",
     "SearchAction": "Искать"
+  },
+  "ext/GridClipboard": {
+    "ErrorTooMany": "Скопировать выделенные ячейки в буфер обмена не удалось. Выделено слишком много строк."
   },
   "ext/GridMenu": {
     "AllColumns": "Везде",
@@ -1612,6 +1625,9 @@
     "ErrViewIsPanel": "Визуализатор должен быть наследником Ext.panel.Panel",
     "WarnViewerObjectDeleted": "Обработка события изменения статуса визуализатора \"{0}\" отменена, так как визуализатор был асинхронно удалён"
   },
+  "viewers/browse/BrowseDataGridClipboard": {
+    "ErrorTooMany": "Скопировать выделенные ячейки в буфер обмена не удалось. Выделено слишком много строк."
+  },
   "viewers/browse/BrowseFormat": {
     "ActColInAllInvisibleTip": "Скрыта",
     "ActColInAllVisibleTip": "Отображается",
@@ -2021,8 +2037,8 @@
     "ModelInfoHQC": "HQC",
     "ModelInfoLogLikelihood": "-2 Log Likelihood",
     "ModelInfoPValue": "Значимость",
-    "ModelInfoR2": "R2",
-    "ModelInfoR2adj": "R2 корр.",
+    "ModelInfoR2": "R^2",
+    "ModelInfoR2adj": "R^2 корр.",
     "ModelInfoXi2": "Хи-квадрат"
   },
   "viewers/reports/ReportsForm": {
@@ -2118,9 +2134,12 @@
     "UsableDesc": "Использовать"
   },
   "wizards/columns/ColumnDefsMappingWizard": {
+    "colDisplayNameText": "Выходные",
     "colDisplayNameTuneText": "Метка",
     "CreateMappingToAllConfirm": "Вы действительно хотите создать выходные столбцы для всех входных?",
     "EmptyListText": "Нет подходящих столбцов",
+    "frmColumnsMappingTitle": "Настройка соответствия между столбцами",
+    "frmColumnsTitle": "Настройка столбцов",
     "GroupField_MissingFields": "Отсутствующие столбцы",
     "MsgAddedColumnCanNotSelected": "Столбец добавлен, но не отображается, т.к. не соответствует фильтру",
     "MsgEditedColumnCanNotSelected": "Столбец переименован, но не отображается, т.к. не соответствует фильтру",
@@ -2227,7 +2246,11 @@
     "UnknownValue": "Не определено"
   },
   "wizards/datatree/DataTreeNodeDefsMappingWizard": {
+    "colTargetNodeText": "Выходное дерево",
+    "colTargetNodeTuneText": "Метка",
     "CreateMappingToAllConfirm": "Вы действительно хотите создать выходные узлы для всех входных?",
+    "frmDataTreeMappingTitle": "Настройка соответствия между деревьями данных",
+    "frmDataTreeTitle": "Настройка дерева данных",
     "MsgAddedDataTreeNodeCanNotSelected": "Узел добавлен, но не отображается, т.к. не соответствует фильтру",
     "MsgConnectedDataTreeNodeCanNotSelected": "Узел в выходном дереве связан, но не отображается, т.к. не соответствует фильтру",
     "MsgEditedDataTreeNodeCanNotSelected": "Узел переименован, но не отображается, т.к. не соответствует фильтру",
@@ -2238,10 +2261,11 @@
     "WarnCannotDeleteRootNode": "Невозможно удалить корневой узел"
   },
   "wizards/datatree/DataTreeOutputSocketWizard": {
-    "frmDataTreeMappingTitle": "Настройка выходных узлов"
+    "colTargetNodeText": "Выходное дерево",
+    "frmDataTreeMappingTitle": "Настройка выходного дерева данных"
   },
   "wizards/datatree/DataTreeSourceOutputSocketWizard": {
-    "frmDataTreeMappingTitle": "Настройка выходных узлов"
+    "frmDataTreeMappingTitle": "Настройка выходного дерева данных"
   },
   "wizards/datatree/EditDataTreeNodeDefForm": {
     "AddBtnText": "Добавить",
@@ -2255,7 +2279,7 @@
     "UsageType": "Назначение"
   },
   "wizards/datatree/TuneDataTreeInputPortWizard": {
-    "frmDataTreeMappingTitle": "Настройка входных узлов"
+    "frmDataTreeMappingTitle": "Настройка входного дерева данных"
   },
   "wizards/genericmodelcomponent/GenericModelComponentWizard": {
     "ActionAdd": "Добавить",
@@ -2352,7 +2376,7 @@
     "frmColumnsMappingTitle": "Настройка значений переменных"
   },
   "wizards/variables/VariablesEditWizard": {
-    "colTargetNameTitle": "Метка",
+    "colDisplayNameTuneText": "Метка",
     "frmColumnsMappingTitle": "Настройка выходных переменных",
     "MsgAddedVariableCanNotSelected": "Переменная добавлена, но не отображается, т.к. не соответствует фильтру",
     "MsgEditedVariableCanNotSelected": "Переменная переименована, но не отображается, т.к. не соответствует фильтру",
@@ -2361,9 +2385,12 @@
   "wizards/variables/VariablesMappingWizard": {
     "btnAutoSyncThroughColumnsTooltip": "Автоматическая синхронизация",
     "btnSyncThroughColumnsTooltip": "Синхронизировать переменные",
+    "colDisplayNameText": "Выходные",
+    "colDisplayNameTuneText": "Метка",
     "CreateMappingToAllConfirm": "Вы действительно хотите создать выходные переменные для всех входных?",
     "EmptyListText": "Нет подходящих переменных",
     "frmColumnsMappingTitle": "Настройка соответствия между переменными",
+    "frmColumnsTitle": "Настройка переменных",
     "GroupField_MissingFields": "Отсутствующие переменные",
     "MsgAddedVariableCanNotSelected": "Переменная добавлена, но не отображается, т.к. не соответствует фильтру",
     "MsgEditedVariableCanNotSelected": "Переменная переименована, но не отображается, т.к. не соответствует фильтру",

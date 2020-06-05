@@ -1,7 +1,7 @@
 {
   "about/About": {
     "btnBugReport": {
-      "href": "https://loginom.ru/company/feedback/",
+      "href": "https://loginom.ru/company/feedback?type=2",
       "text": "Сообщить о проблеме"
     },
     "btnLicenseAgreement": {
@@ -459,7 +459,7 @@
       "tooltip": "Найти узел..."
     },
     "btnRemoveNode": {
-      "tooltip": "Удалить узел"
+      "tooltip": "Удалить узел..."
     },
     "btnSetNodeActive": {
       "tooltip": "Открыть/закрыть узел"
@@ -1180,6 +1180,9 @@
     "btnCalculateIV": {
       "text": "Установить..."
     },
+    "btnClassParamsViewMode": {
+      "tooltip": "Показатели классов"
+    },
     "btnHideSideBar": {
       "tooltip": "Скрыть боковую панель"
     },
@@ -1209,6 +1212,27 @@
     },
     "cntClassParams": {
       "title": "Параметры конечных классов"
+    },
+    "colActualCoarseClassEventCount": {
+      "text": "События (факт)"
+    },
+    "colActualCoarseClassIV": {
+      "text": "Инф.индекс (факт)"
+    },
+    "colActualCoarseClassNoEventCount": {
+      "text": "Не-события (факт)"
+    },
+    "colActualCoarseClassTotalCount": {
+      "text": "Всего (факт)"
+    },
+    "colActualCoarseClassWeight": {
+      "text": "Доля (факт)"
+    },
+    "colActualCoarseClassWoE": {
+      "text": "Вес доказательства (факт)"
+    },
+    "colActualColumnIV": {
+      "text": "IV (факт)"
     },
     "colCoarseClassEventCount": {
       "text": "События"
@@ -1263,6 +1287,15 @@
     },
     "lblUniformityCoef": {
       "text": "Оптимизация"
+    },
+    "mniActual": {
+      "text": "Фактические данные"
+    },
+    "mniTrained": {
+      "text": "Обучающая выборка"
+    },
+    "mniTrainedActual": {
+      "text": "Обучающие и Фактические данные"
     }
   },
   "components/coarseclasses/CoarseClassesWizard": {
@@ -2790,7 +2823,7 @@
       "text": "Лицензионное соглашение"
     },
     "lblCommunityBannerText": {
-      "text": "Это редакция \"Community\" - для некоммерческого использования."
+      "text": "Это редакция Community - для некоммерческого использования."
     },
     "lblCookiesInfo": {
       "text": "Мы используем cookies-файлы. Продолжая использовать это приложение, Вы соглашаетесь с использованием cookies-файлов."
@@ -2874,7 +2907,7 @@
       "text": "Добавить в избранное"
     },
     "mniOpen": {
-      "text": "Перейти"
+      "text": "Открыть"
     },
     "mniOpenInFolder": {
       "text": "Показать в папке"
@@ -5154,7 +5187,7 @@
       "text": "Выходное дерево"
     },
     "frmDataTreeMapping": {
-      "title": "Настройка соответствия между узлами дерева"
+      "title": "Настройка соответствия между деревьями данных"
     },
     "rbLinks": {
       "boxLabel": "Связи"

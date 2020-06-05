@@ -2548,7 +2548,7 @@
       "title": "Separators"
     },
     "cntValue": {
-      "title": "Values View"
+      "title": "Literals"
     },
     "frmExportSettings": {
       "title": "Export to Text File"
@@ -3152,7 +3152,7 @@
       "title": "Separators"
     },
     "cntValue": {
-      "title": "Values View"
+      "title": "Literals"
     },
     "frmFixedColumns": {
       "title": "Import Parameters with Fixed-Width Columns"

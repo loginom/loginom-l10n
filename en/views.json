@@ -1,7 +1,7 @@
 {
   "about/About": {
     "btnBugReport": {
-      "href": "https://loginom.com/company/feedback/",
+      "href": "https://loginom.com/company/feedback?type=2",
       "text": "Report a problem"
     },
     "btnLicenseAgreement": {
@@ -459,7 +459,7 @@
       "tooltip": "Find node..."
     },
     "btnRemoveNode": {
-      "tooltip": "Delete node"
+      "tooltip": "Delete node..."
     },
     "btnSetNodeActive": {
       "tooltip": "Open/close node"
@@ -1180,6 +1180,9 @@
     "btnCalculateIV": {
       "text": "Set..."
     },
+    "btnClassParamsViewMode": {
+      "tooltip": "Coarse Classes statistics source"
+    },
     "btnHideSideBar": {
       "tooltip": "Hide side bar"
     },
@@ -1209,6 +1212,27 @@
     },
     "cntClassParams": {
       "title": "Coarse Class Parameters"
+    },
+    "colActualCoarseClassEventCount": {
+      "text": "Events (actual)"
+    },
+    "colActualCoarseClassIV": {
+      "text": "IV (actual)"
+    },
+    "colActualCoarseClassNoEventCount": {
+      "text": "Non-events (actual)"
+    },
+    "colActualCoarseClassTotalCount": {
+      "text": "Total (actual)"
+    },
+    "colActualCoarseClassWeight": {
+      "text": "Weight (actual)"
+    },
+    "colActualCoarseClassWoE": {
+      "text": "Weight of evidence (actual)"
+    },
+    "colActualColumnIV": {
+      "text": "IV (actual)"
     },
     "colCoarseClassEventCount": {
       "text": "Events"
@@ -1263,6 +1287,15 @@
     },
     "lblUniformityCoef": {
       "text": "Optimization"
+    },
+    "mniActual": {
+      "text": "Actual data"
+    },
+    "mniTrained": {
+      "text": "Training data"
+    },
+    "mniTrainedActual": {
+      "text": "Training and Actual data"
     }
   },
   "components/coarseclasses/CoarseClassesWizard": {
@@ -2790,7 +2823,7 @@
       "text": "License Agreement"
     },
     "lblCommunityBannerText": {
-      "text": "This \"Community\" edition is for non-commercial use."
+      "text": "This Community edition is for non-commercial use."
     },
     "lblCookiesInfo": {
       "text": "We use cookies-files. Using this application you agree to use cookies-files."
@@ -5154,7 +5187,7 @@
       "text": "Output tree"
     },
     "frmDataTreeMapping": {
-      "title": "Adjustment of Tree Nodes Mapping"
+      "title": "Adjustment of Data Trees Mapping"
     },
     "rbLinks": {
       "boxLabel": "Links"

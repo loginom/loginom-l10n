@@ -585,6 +585,7 @@
     "ClassMarkPostfix": " Caption",
     "ClassNumPostfix": " Class number",
     "ClassSignificantPostfix": " Significance",
+    "CoarseClassesCalcStatDesc": "Coarse Classes statistics calculation",
     "CoarseClassesProcessDesc": "Coarse classes building",
     "ErrClassStorageNotDefined": "The fine classes storage of one of the columns not defined",
     "ErrCoarseClassBuilderNotValid": "The fine classes storage does not comply with the customized settings",
@@ -680,6 +681,8 @@
     "CorrAnalysisTauBKendallNotify": "Kendall's Tau-b correlation coefficients calculating",
     "DisplayName": "Caption",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "ErrTooMuchCorrelations": "The number of calculated correlations cannot be more than %d",
+    "ErrTooMuchRows": "The number of processed rows cannot be more than %d",
     "Name": "Name"
   },
   "components/corranalysis/CorrAnalysisVendor": {
@@ -1074,7 +1077,8 @@
   },
   "components/linregression/LinRegressionBuilder": {
     "ErrWrongLinRegContext": "Invalid linear regression model builder context",
-    "ErrWrongLinRegModel": "The trained model is not linear regression model"
+    "ErrWrongLinRegModel": "The trained model is not linear regression model",
+    "ErrWrongProbability": "Сonfidence interval threshold must be within (0, 100)"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "The linear regression model builder context cannot be created for empty data set"
@@ -2014,7 +2018,8 @@
     "ErrFileDSNForbidden": "Connections through file DSN are forbidden"
   },
   "Libraries/bgdbrtl/UniDAC/OracleUniDACDB": {
-    "DatabaseTypeName": "Oracle"
+    "DatabaseTypeName": "Oracle",
+    "ErrInvalidTableName": "Invalid table name"
   },
   "Libraries/bgdbrtl/UniDAC/PostgresUniDACDB": {
     "DatabaseTypeName": "PostgreSQL"
@@ -3098,7 +3103,7 @@
   },
   "Libraries/Model/Generic/ModelGenericComponentEngine": {
     "ActivateOuterData": "External data",
-    "ErrInvalidModelLockContext": "Invalid workflow node lock context"
+    "ErrInvalidModelLockContext": "Supernode already locked in another operation"
   },
   "Libraries/Model/Generic/ModelGenericComponentVendor": {
     "GenericVendorCaption": "Supernode"
@@ -3224,7 +3229,8 @@
     "CompatConvertRequired": "While downloading \"%s\" package of %s version converting will be performed.",
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
     "ErrCannotOpenFile": "Failed to open file: \"%s\"",
-    "LogPackageSaved": "\"%s\" package saved"
+    "LogPackageSaved": "\"%s\" package saved",
+    "WarnPackageCreatedInNewerVersion": "Package \"%s\" was created in a newer version of Loginom %s. In the current version, part of the functionality may not work correctly."
   },
   "Libraries/Model/ModelReports": {
     "CantAddGenericInputViewToReport": "Addition of supernode input node visualizers to Reports is not supported",
@@ -3352,6 +3358,7 @@
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
+    "ErrReferencedNodeNotActive": "Source node is not active",
     "ErrReferencedNodeNotAvailable": "Source node not available",
     "ErrReferencedNodeNotFound": "Source node not found",
     "ErrReferencedNodeNotSpecified": "No reference to node specified"

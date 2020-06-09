@@ -74,6 +74,7 @@
     "Viewer": "View reports"
   },
   "app/AddPackageLinkForm": {
+    "ErrAddPackageLinkErrors": "Errors occurred while reference to package added.",
     "ErrPathNotSpecified": "Package not specified (path to package file).",
     "PackageNotSaved": "Package not saved",
     "ReadOnlyPackageNamePostfix": " (read-only)"
@@ -82,11 +83,13 @@
     "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost."
   },
   "app/AppUtils": {
-    "ConfirmRemovingUnit": "Do you really want to delete the module?",
-    "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently in use.",
-    "ErrSelectedVendorLocked": "Failed to delete the selected \"{0}\" component. Some of the derived nodes are currently in use.",
-    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the selected \"{0}\" component? The nodes created on its basis will be unavailable.",
-    "RemoveVendorConfirm": "Do you want to remove the component?"
+    "ConfirmRemovingNode": "Do you really want to delete \"{0}\" node?",
+    "ConfirmRemovingUnit": "Do you really want to delete the module \"{0}\"?",
+    "ErrCannotDeleteNode": "Failed to delete the locked \"{0}\" node.",
+    "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently locked.",
+    "ErrSelectedVendorLocked": "Failed to delete \"{0}\" component. Some of the derived nodes are currently locked.",
+    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the \"{0}\" component? The nodes created on its basis will be unavailable.",
+    "RemoveVendorConfirm": "Do you want to delete the component \"{0}\"?"
   },
   "app/ConfigurePublishedPackagesForm": {
     "DisNamespace": "http://schemas.loginom.com/integration",
@@ -119,6 +122,7 @@
     "CantCreateShareLinks": "Failed to generate address for the current page",
     "CantFindPackage": "Failed to find package",
     "CantGetAbsolutePath": "Failed to get absolute path for \"{0}\" file",
+    "ConfirmCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
     "ConfirmQuitSave": "Do you want to save changes in \"{0}\" package?",
     "ErrOpenUrlPath": "Failed to open URL \"{0}\".\nError: \"{1}\".",
     "ErrPackageDontExists": "\"{0}\" package not found",
@@ -170,6 +174,7 @@
     "WorkFlow": "Workflow"
   },
   "app/MapTreeForm": {
+    "ConfirmRemovingReference": "Do you want to delete reference \"{0}\"?",
     "DisplayName": "Caption",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
@@ -203,6 +208,7 @@
     "EditPortDisplayName": "Edit port caption...",
     "EditPortDisplayNameWindowTitle": "Edit port caption",
     "EditPortFieldLabel": "Caption",
+    "ErrCannotDeleteNode": "Failed to delete the locked \"{0}\" node.",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "Error": "Error",
     "ErrPortNotCreated": "Failed to create new port",
@@ -457,6 +463,7 @@
     "YAxisTitle": "Inf. Index"
   },
   "components/coarseclasses/ClassesChartWrapper": {
+    "ActualTitleSuffix": " (actual)",
     "FineClassTooltip": "Value",
     "FineClassXaxisTitle": "Fine Class"
   },
@@ -473,8 +480,12 @@
     "UnlockSelected": "Unlock selected"
   },
   "components/coarseclasses/CoarseClassesViewer": {
+    "ActualSuffix": " (actual)",
+    "BuildActualStatConfirm": "Calculate Actual Coarse Classes statistics",
+    "BuildActualStatConfirmYes": "Calculate",
     "HideSideBar": "Hide side bar",
     "Locked": "Locked",
+    "NoActualStatInfo": "Failed to calculate Fine and Coarse Classes statistics",
     "ShowSideBar": "Show side bar",
     "Total": "Total",
     "Unlocked": "Unlocked"
@@ -933,6 +944,9 @@
     "FilterAction": "Filter",
     "LabelOr": "or",
     "SearchAction": "Search"
+  },
+  "ext/GridClipboard": {
+    "ErrorTooMany": "Failed to copy selected cells to clipboard. Too many rows selected."
   },
   "ext/GridMenu": {
     "AllColumns": "All columns",
@@ -1610,6 +1624,9 @@
     "ErrViewIsPanel": "Visualizer must be Ext.panel.Panel descendant",
     "WarnViewerObjectDeleted": "Processing of \"{0}\" visualizer status change event was canceled because the visualizer was asynchronously deleted"
   },
+  "viewers/browse/BrowseDataGridClipboard": {
+    "ErrorTooMany": "Failed to copy selected cells to clipboard. Too many rows selected."
+  },
   "viewers/browse/BrowseFormat": {
     "ActColInAllInvisibleTip": "Hidden",
     "ActColInAllVisibleTip": "Visible",
@@ -2018,8 +2035,8 @@
     "ModelInfoHQC": "HQC",
     "ModelInfoLogLikelihood": "-2 Log Likelihood",
     "ModelInfoPValue": "Significance",
-    "ModelInfoR2": "R2",
-    "ModelInfoR2adj": "R2 corr.",
+    "ModelInfoR2": "R^2",
+    "ModelInfoR2adj": "R^2 adj.",
     "ModelInfoXi2": "Chi-square"
   },
   "viewers/reports/ReportsForm": {
@@ -2115,9 +2132,12 @@
     "UsableDesc": "Use"
   },
   "wizards/columns/ColumnDefsMappingWizard": {
+    "colDisplayNameText": "Outputs",
     "colDisplayNameTuneText": "Caption",
     "CreateMappingToAllConfirm": "Do you really want to create output columns for all inputs?",
     "EmptyListText": "No matching columns",
+    "frmColumnsMappingTitle": "Adjustment of Columns Mapping",
+    "frmColumnsTitle": "Configure Columns",
     "GroupField_MissingFields": "Missing columns",
     "MsgAddedColumnCanNotSelected": "Column has been added, but it is not selected because it does not match the filter",
     "MsgEditedColumnCanNotSelected": "Column has been renamed, but it is not selected because it does not match the filter",
@@ -2224,8 +2244,11 @@
     "UnknownValue": "Unknown value"
   },
   "wizards/datatree/DataTreeNodeDefsMappingWizard": {
+    "colTargetNodeText": "Output tree",
     "colTargetNodeTuneText": "Caption",
     "CreateMappingToAllConfirm": "Do you really want to create output nodes for all inputs?",
+    "frmDataTreeMappingTitle": "Adjustment of Data Trees Mapping",
+    "frmDataTreeTitle": "Configure Data Tree",
     "MsgAddedDataTreeNodeCanNotSelected": "Node has been added, but it is not selected because it does not match the filter",
     "MsgConnectedDataTreeNodeCanNotSelected": "Node in the output tree connected, but it is not selected because it does not match the filter",
     "MsgEditedDataTreeNodeCanNotSelected": "Node has been renamed, but it is not selected because it does not match the filter",
@@ -2236,10 +2259,11 @@
     "WarnCannotDeleteRootNode": "Failed to delete root node"
   },
   "wizards/datatree/DataTreeOutputSocketWizard": {
-    "frmDataTreeMappingTitle": "Configure Output Nodes"
+    "colTargetNodeText": "Output tree",
+    "frmDataTreeMappingTitle": "Configure Output Data Tree"
   },
   "wizards/datatree/DataTreeSourceOutputSocketWizard": {
-    "frmDataTreeMappingTitle": "Configure Output Nodes"
+    "frmDataTreeMappingTitle": "Configure Output Data Tree"
   },
   "wizards/datatree/EditDataTreeNodeDefForm": {
     "AddBtnText": "Add",
@@ -2253,7 +2277,7 @@
     "UsageType": "Usage type"
   },
   "wizards/datatree/TuneDataTreeInputPortWizard": {
-    "frmDataTreeMappingTitle": "Configure Input Nodes"
+    "frmDataTreeMappingTitle": "Configure Input Data Tree"
   },
   "wizards/genericmodelcomponent/GenericModelComponentWizard": {
     "ActionAdd": "Add",
@@ -2350,6 +2374,7 @@
     "frmColumnsMappingTitle": "Configure Variables Values"
   },
   "wizards/variables/VariablesEditWizard": {
+    "colDisplayNameTuneText": "Caption",
     "frmColumnsMappingTitle": "Configure Output Variables",
     "MsgAddedVariableCanNotSelected": "Variable has been added, but it is not selected because it does not match the filter",
     "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected because it does not match the filter",
@@ -2358,9 +2383,12 @@
   "wizards/variables/VariablesMappingWizard": {
     "btnAutoSyncThroughColumnsTooltip": "Automapping",
     "btnSyncThroughColumnsTooltip": "Map variables",
+    "colDisplayNameText": "Outputs",
+    "colDisplayNameTuneText": "Caption",
     "CreateMappingToAllConfirm": "Do you really want to create output variables for all inputs?",
     "EmptyListText": "No matching variables",
     "frmColumnsMappingTitle": "Adjustment of Variables Mapping",
+    "frmColumnsTitle": "Configure Variables",
     "GroupField_MissingFields": "Missing variables",
     "MsgAddedVariableCanNotSelected": "Variable has been added, but it is not selected because it does not match the filter",
     "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected because it does not match the filter",

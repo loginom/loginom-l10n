@@ -69,7 +69,7 @@
     "Method": "Method",
     "NotAvailable": "No data available",
     "OperationDesc": "Service at {0}",
-    "OperationPageTitle": "Reference for {0}",
+    "OperationPageTitle": "Reference to {0}",
     "Request": "Request",
     "RequestBodyIsEmpty": "The request body is empty.",
     "Response": "Response",

@@ -1,6 +1,6 @@
 {
   "about/About": {
-    "ErrVersionWrongServiceResponse": "Bad response of the service with the information on the latest version",
+    "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Version {0} is available"
@@ -74,7 +74,7 @@
     "Viewer": "View reports"
   },
   "app/AddPackageLinkForm": {
-    "ErrAddPackageLinkErrors": "Errors occurred while reference to package added.",
+    "ErrAddPackageLinkErrors": "Errors occurred while adding reference to package.",
     "ErrPathNotSpecified": "Package not specified (path to package file).",
     "PackageNotSaved": "Package not saved",
     "ReadOnlyPackageNamePostfix": " (read-only)"
@@ -84,12 +84,12 @@
   },
   "app/AppUtils": {
     "ConfirmRemovingNode": "Do you really want to delete \"{0}\" node?",
-    "ConfirmRemovingUnit": "Do you really want to delete the module \"{0}\"?",
+    "ConfirmRemovingUnit": "Do you really want to delete \"{0}\" module?",
     "ErrCannotDeleteNode": "Failed to delete the locked \"{0}\" node.",
     "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently locked.",
     "ErrSelectedVendorLocked": "Failed to delete \"{0}\" component. Some of the derived nodes are currently locked.",
-    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete the \"{0}\" component? The nodes created on its basis will be unavailable.",
-    "RemoveVendorConfirm": "Do you want to delete the component \"{0}\"?"
+    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete \"{0}\" component? The nodes created on its basis will be unavailable.",
+    "RemoveVendorConfirm": "Do you want to delete \"{0}\" component?"
   },
   "app/ConfigurePublishedPackagesForm": {
     "DisNamespace": "http://schemas.loginom.com/integration",
@@ -122,7 +122,7 @@
     "CantCreateShareLinks": "Failed to generate address for the current page",
     "CantFindPackage": "Failed to find package",
     "CantGetAbsolutePath": "Failed to get absolute path for \"{0}\" file",
-    "ConfirmCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently used.\nDo you want to close the package forcibly without saving?",
+    "ConfirmCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently locked.\nDo you want to close the package forcibly without saving?",
     "ConfirmQuitSave": "Do you want to save changes in \"{0}\" package?",
     "ErrOpenUrlPath": "Failed to open URL \"{0}\".\nError: \"{1}\".",
     "ErrPackageDontExists": "\"{0}\" package not found",
@@ -174,7 +174,7 @@
     "WorkFlow": "Workflow"
   },
   "app/MapTreeForm": {
-    "ConfirmRemovingReference": "Do you want to delete reference \"{0}\"?",
+    "ConfirmRemovingReference": "Do you want to delete \"{0}\" reference?",
     "DisplayName": "Caption",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
@@ -994,7 +994,7 @@
   "ext/TotalLabel": {
     "HeaderFormat": "# |{0}|",
     "RowCountSymbol": "#",
-    "TooltipPartTemplate": "{0} from {1} rows displayed",
+    "TooltipPartTemplate": "{0} of {1} rows displayed",
     "TooltipTemplate": "Total row count {0}"
   },
   "ext/TriStateSortColumn": {
@@ -1275,7 +1275,7 @@
     "Loading": "Loading..."
   },
   "homepage/Banner": {
-    "ErrVersionWrongServiceResponse": "Bad response of the service with the information on the latest version",
+    "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Version {0} is available"

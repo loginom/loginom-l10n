@@ -681,7 +681,7 @@
     "CorrAnalysisTauBKendallNotify": "Kendall's Tau-b correlation coefficients calculating",
     "DisplayName": "Caption",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrTooMuchCorrelations": "The number of calculated correlations cannot be more than %d",
+    "ErrTooMuchCorrelations": "The number of simultaneously calculated correlations cannot be more than %d",
     "ErrTooMuchRows": "The number of processed rows cannot be more than %d",
     "Name": "Name"
   },
@@ -1078,7 +1078,7 @@
   "components/linregression/LinRegressionBuilder": {
     "ErrWrongLinRegContext": "Invalid linear regression model builder context",
     "ErrWrongLinRegModel": "The trained model is not linear regression model",
-    "ErrWrongProbability": "Сonfidence interval threshold must be within (0, 100)"
+    "ErrWrongProbability": "Confidence interval threshold must be within (0, 100)"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "The linear regression model builder context cannot be created for empty data set"
@@ -3230,7 +3230,7 @@
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
     "ErrCannotOpenFile": "Failed to open file: \"%s\"",
     "LogPackageSaved": "\"%s\" package saved",
-    "WarnPackageCreatedInNewerVersion": "Package \"%s\" was created in a newer version of Loginom %s. In the current version, part of the functionality may not work correctly."
+    "WarnPackageCreatedInNewerVersion": "\"%s\" package was created in a newer version of Loginom %s. In the current version, a part of the functionality may not work correctly."
   },
   "Libraries/Model/ModelReports": {
     "CantAddGenericInputViewToReport": "Addition of supernode input node visualizers to Reports is not supported",
@@ -3947,7 +3947,7 @@
     "DetailingProcessCaptionSuffix": " by %s clusters",
     "ErrNotDefinedComponent": "Undefined clustering component",
     "ErrTableRowState": "Invalid change of the data field synchronization status occurred",
-    "HistogramProcess": "Histogram building",
+    "HistogramProcess": "Build histogram",
     "ImportanceProcess": "Importance calculation",
     "ResidueClusterName": "Other",
     "SimpleStatisticsProcess": "Simple statistics calculation",

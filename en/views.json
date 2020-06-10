@@ -1181,7 +1181,7 @@
       "text": "Set..."
     },
     "btnClassParamsViewMode": {
-      "tooltip": "Coarse Classes statistics source"
+      "tooltip": "Statistics origin"
     },
     "btnHideSideBar": {
       "tooltip": "Hide side bar"

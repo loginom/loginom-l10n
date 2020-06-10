@@ -909,7 +909,7 @@
     "DataSourceNotActive": "Data set not active"
   },
   "ext/ExcessColumnLabel": {
-    "TooltipTemplate": "{0} from {1} fields displayed"
+    "TooltipTemplate": "{0} of {1} fields displayed"
   },
   "ext/ExportUtils": {
     "BytesSuffix": "byte",

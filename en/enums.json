@@ -909,7 +909,7 @@
       "CryptAES256CBC": "AES-256"
     },
     "SQLiteJournalMode": {
-      "$Caption": "Transaction Log Mode",
+      "$Caption": "Transaction Journal Mode",
       "JournalDefault": "Default",
       "JournalDelete": "Delete",
       "JournalTruncate": "Truncate",

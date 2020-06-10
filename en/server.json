@@ -681,7 +681,7 @@
     "CorrAnalysisTauBKendallNotify": "Kendall's Tau-b correlation coefficients calculating",
     "DisplayName": "Caption",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
-    "ErrTooMuchCorrelations": "The number of simultaneously calculated correlations cannot be more than %d",
+    "ErrTooMuchCorrelations": "The number of calculated correlations cannot be more than %d",
     "ErrTooMuchRows": "The number of processed rows cannot be more than %d",
     "Name": "Name"
   },
@@ -3947,7 +3947,7 @@
     "DetailingProcessCaptionSuffix": " by %s clusters",
     "ErrNotDefinedComponent": "Undefined clustering component",
     "ErrTableRowState": "Invalid change of the data field synchronization status occurred",
-    "HistogramProcess": "Build histogram",
+    "HistogramProcess": "Histogram building",
     "ImportanceProcess": "Importance calculation",
     "ResidueClusterName": "Other",
     "SimpleStatisticsProcess": "Simple statistics calculation",

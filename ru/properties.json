@@ -646,6 +646,7 @@
       "Synchronous": "Режим синхронизации"
     },
     "SQLiteUniDACDatabaseConfigurator": {
+      "CreateDBIfNotExists": "Создавать БД, если не существует",
       "Encrypted": "Зашифрованная БД"
     }
   },

@@ -646,6 +646,7 @@
       "Synchronous": "Sync mode"
     },
     "SQLiteUniDACDatabaseConfigurator": {
+      "CreateDBIfNotExists": "Create DB if it doesn't exist",
       "Encrypted": "Encrypted DB"
     }
   },

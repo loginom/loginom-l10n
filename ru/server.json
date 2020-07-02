@@ -3201,7 +3201,7 @@
     "ErrUnableToRestoreLinkBetween": "Не удалось восстановить связь между узлами \"%s\" и \"%s\"",
     "ErrVendorNotFound": "Компонент \"%s\" не найден",
     "ErrVendorUnavailableForMovedNode": "Производный компонент %s недоступен для перемещённого узла %s.",
-    "ForceMovingForbidden": "Операция принудительного перемещения запрещена",
+    "ForceRepeatMovingForbidden": "Операция принудительного повторного перемещения запрещена",
     "MoveNodesCaption": "Перемещены узлы",
     "OperationCanceled": "Операция была отменена",
     "UnknownNodeName": "Неизвестный узел",
@@ -3338,20 +3338,11 @@
     "WarnLinkPortNotConnetedToNode": "Порт линка с идентификатором %s не подключен к узлу"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
-    "ErrInvalidVendor": "Компонент \"%s\" неисправен",
-    "ErrMsgCantFindLinkNode": "Невозможно определить ответный порт у связи",
-    "ErrMsgNoAllVendorsCollected": "Не удалось получить все необходимые типы вендоров",
-    "ErrMsgNoSubModel": "Не создан компонент подмодели",
-    "ErrMsgNoVendorInfo": "Не удалось получить информацию об производном компоненте узла \"%s\"",
-    "ErrMsgNoVendorLocator": "Не удалось получить перечислитель вендоров портов",
     "ErrSubModelVendorNotCreated": "В текущем контексте нельзя создать компонент подмодели",
     "ErrUnableToRestoreLinkBetween": "Не удалось восстановить связь между узлами \"%s\" и \"%s\"",
-    "ErrUnableToRestoreLinkFrom": "Не удалось восстановить связь, подключенную к выходу узла \"%s\"",
-    "ErrUnableToRestoreLinkTo": "Не удалось восстановить связь, подключенную ко входу узла \"%s\"",
     "UnknownNodeDisplayName": "Неизвестный узел",
     "WarnModelNotSupportInPort": "Невозможно создать входной порт для порта \"%s\"",
-    "WrnNullRttiInfo": "Обнаружен некорректный вендор описателя порта подмодели",
-    "WrnUnknownSocketDefVendorType": "Не удалось определить тип вендора для интерфейса %s с GUID %s"
+    "WarnModelNotSupportOutPort": "Невозможно создать выходной порт для порта \"%s\""
   },
   "Libraries/Model/PackageEditableVariables": {
     "ErrVariableRestriction": "Запрещено изменение переменной",
@@ -3772,7 +3763,7 @@
     "ErrInvalidModelLockCookieOwner": "Указан некорректный владелец Cookie блокировки узлов",
     "ErrInvalidPath": "Некорректный путь к файлу: \"%s\"",
     "ErrModelNodeNotFound": "Узел %s не найден",
-    "ErrModelNodeNotPublished": "Узел %s не опубликован",
+    "ErrModelNodeNotPublished": "Узел \"%s\" не опубликован",
     "ErrMustRestoreReferencedPackage": "Невозможно восстановить зависимый пакет %s, не восстанавливая пакет %s, на который он ссылается",
     "ErrNoPublishedNodes": "Пакет не содержит ни одного опубликованного узла",
     "ErrPackageAlreadyEditing": "Пакет с именем %s уже используется другим процессом и не может быть открыт для редактирования",
@@ -3781,6 +3772,7 @@
     "ErrPackageNotFound": "Не удалось найти пакет с именем %s и версией %s",
     "ErrPackageNotFoundByFileName": "Не удалось найти пакет %s",
     "ErrPackageRestoreErrors": "При восстановлении пакета %s возникли ошибки",
+    "ErrPublishedModelNodeMetadataNotFound": "Не удалось найти метаданные для опубликованного узла \"%s\"",
     "ErrPublishedModelNodeNotFound": "Не удалось найти опубликованный узел с идентификатором %s",
     "ErrPublishedNodeNameIsEmpty": "Не задано имя опубликованного узла с меткой \"%s\"",
     "ErrPublishedPackageNotFound": "Не удалось найти опубликованный пакет с именем %s и версией %s",

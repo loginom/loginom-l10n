@@ -1183,9 +1183,6 @@
     "btnClassParamsViewMode": {
       "tooltip": "Показатели классов"
     },
-    "btnHideSideBar": {
-      "tooltip": "Скрыть боковую панель"
-    },
     "btnMergeWithLeft": {
       "tooltip": "Объединить с предыдущим"
     },
@@ -1209,6 +1206,9 @@
     },
     "btnShowClassParamsGrid": {
       "tooltip": "Показать таблицу конечных классов"
+    },
+    "btnShowSideBar": {
+      "tooltip": "Показать боковую панель"
     },
     "cntClassParams": {
       "title": "Параметры конечных классов"
@@ -2830,10 +2830,6 @@
     }
   },
   "homepage/HomePage": {
-    "btnBlog": {
-      "href": "https://loginom.ru/blog/",
-      "text": "Блог"
-    },
     "btnCreatePackage": {
       "text": "Создать пакет..."
     },

@@ -102,6 +102,6 @@
     "ErrNoPublishedPackages": "Не опубликовано ни одного пакета",
     "ErrRootNodeNotFound": "Не найден корневой узел дерева",
     "ErrTreeMustHaveSingleRootNode": "Дерево не может содержать более одного корневого узла",
-    "NoPublishedPackagesServiceDocumentation": "В настоящий момент не опубликовано ни одного пакета. "
+    "NoPublishedPackagesServiceDocumentation": "В настоящий момент не опубликовано ни одного пакета. Для использования пакетов в качестве веб-сервиса необходимо предварительно опубликовать их в Loginom Server."
   }
 }

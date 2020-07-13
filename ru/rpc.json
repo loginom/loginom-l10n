@@ -6,6 +6,13 @@
     "ErrIncorrectMessageSize": "Некорректный размер сообщения: {0}",
     "ErrIncorrectServerResponse": "Получен некорректный ответ от сервера"
   },
+  "Net/ClientObjectProxy": {
+    "ErrDisconnectedProxy": "Клиентский прокси-объект финализирован",
+    "ErrInterfaceIdentifierMustNotBeNull": "Идентификатор интерфейса не должен быть пустым",
+    "ErrInterfaceNotSupported": "Интерфейс {0} не поддерживается объектом",
+    "ErrInvalidArgument": "Недопустимое значение параметра {0}: {1}",
+    "ErrObjectIdIsNotCached": "Значение ObjectId не закешировано"
+  },
   "Net/Extended80Rec": {
     "ErrOverflow": "Переполнение при попытке привести значение к типу Double",
     "ErrWrongByteCount": "Длина байтового массива для TBGExtended80Rec должна точно равняться 10 байт"

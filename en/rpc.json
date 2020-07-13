@@ -6,6 +6,13 @@
     "ErrIncorrectMessageSize": "Invalid message size: {0}",
     "ErrIncorrectServerResponse": "Bad server response received"
   },
+  "Net/ClientObjectProxy": {
+    "ErrDisconnectedProxy": "Client proxy object disconnected",
+    "ErrInterfaceIdentifierMustNotBeNull": "Interface identifier must not be null",
+    "ErrInterfaceNotSupported": "{0} interface not supported by object",
+    "ErrInvalidArgument": "Invalid parameter {0}: {1}",
+    "ErrObjectIdIsNotCached": "ObjectId value is not cached"
+  },
   "Net/Extended80Rec": {
     "ErrOverflow": "Overflow while attempting to cast value to the Double type",
     "ErrWrongByteCount": "The byte array length for TBGExtended80Rec must be exactly 10 bytes"

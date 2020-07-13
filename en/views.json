@@ -1183,9 +1183,6 @@
     "btnClassParamsViewMode": {
       "tooltip": "Statistics origin"
     },
-    "btnHideSideBar": {
-      "tooltip": "Hide side bar"
-    },
     "btnMergeWithLeft": {
       "tooltip": "Merge with previous"
     },
@@ -1209,6 +1206,9 @@
     },
     "btnShowClassParamsGrid": {
       "tooltip": "Show coarse class table"
+    },
+    "btnShowSideBar": {
+      "tooltip": "Show side bar"
     },
     "cntClassParams": {
       "title": "Coarse Class Parameters"
@@ -2830,10 +2830,6 @@
     }
   },
   "homepage/HomePage": {
-    "btnBlog": {
-      "href": "https://loginom.com/blog/",
-      "text": "Blog"
-    },
     "btnCreatePackage": {
       "text": "New Package..."
     },

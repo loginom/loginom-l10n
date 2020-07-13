@@ -3199,7 +3199,7 @@
     "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
     "ErrVendorNotFound": "\"%s\" component not found",
     "ErrVendorUnavailableForMovedNode": "%s derived component is unavailable for moved %s node.",
-    "ForceMovingForbidden": "Forced movement forbidden",
+    "ForceRepeatMovingForbidden": "Forced repeated move operation is forbidden",
     "MoveNodesCaption": "Nodes Moved",
     "OperationCanceled": "Operation canceled",
     "UnknownNodeName": "Unknown node",
@@ -3336,20 +3336,11 @@
     "WarnLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
-    "ErrInvalidVendor": "\"%s\" component malfunctioned",
-    "ErrMsgCantFindLinkNode": "Failed to find the second link port",
-    "ErrMsgNoAllVendorsCollected": "Failed to get all required types of vendors",
-    "ErrMsgNoSubModel": "Supernode component not created",
-    "ErrMsgNoVendorInfo": "Failed to get information on the derived component for \"%s\" node",
-    "ErrMsgNoVendorLocator": "Failed to get port vendor enumerator",
     "ErrSubModelVendorNotCreated": "Failed to create the supernode component In the current context",
     "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
-    "ErrUnableToRestoreLinkFrom": "Failed to restore link to the output of \"%s\" node",
-    "ErrUnableToRestoreLinkTo": "Failed to restore link to the input of \"%s\" node",
     "UnknownNodeDisplayName": "Unknown node",
     "WarnModelNotSupportInPort": "Failed to create input port for \"%s\" port",
-    "WrnNullRttiInfo": "Invalid supernode port definition vendor detected",
-    "WrnUnknownSocketDefVendorType": "Failed to define vendor type for %s interface with %s GUID"
+    "WarnModelNotSupportOutPort": "Failed to create output port for \"%s\" port"
   },
   "Libraries/Model/PackageEditableVariables": {
     "ErrVariableRestriction": "Variable change forbidden",
@@ -3770,7 +3761,7 @@
     "ErrInvalidModelLockCookieOwner": "Invalid node lock Cookie owner specified",
     "ErrInvalidPath": "Invalid file path: \"%s\"",
     "ErrModelNodeNotFound": "Node %s not found",
-    "ErrModelNodeNotPublished": "Node %s published",
+    "ErrModelNodeNotPublished": "Node \"%s\" is not published",
     "ErrMustRestoreReferencedPackage": "Failed to restore dependent package %s without restoring %s package to which it refers",
     "ErrNoPublishedNodes": "The package contains no published nodes",
     "ErrPackageAlreadyEditing": "Package with %s name has already been used by another process and it cannot be opened for editing",
@@ -3779,6 +3770,7 @@
     "ErrPackageNotFound": "Failed to find package with %s name and %s version",
     "ErrPackageNotFoundByFileName": "Failed to find %s package",
     "ErrPackageRestoreErrors": "Errors occurred while restoring %s package",
+    "ErrPublishedModelNodeMetadataNotFound": "Failed to find metadata for published \"%s\" node",
     "ErrPublishedModelNodeNotFound": "Failed to find published node with %s identifier",
     "ErrPublishedNodeNameIsEmpty": "No name for published node with \"%s\" caption specified",
     "ErrPublishedPackageNotFound": "Failed to find the published package with %s name and %s version",

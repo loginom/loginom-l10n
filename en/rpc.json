@@ -10,7 +10,7 @@
     "ErrDisconnectedProxy": "Client proxy object disconnected",
     "ErrInterfaceIdentifierMustNotBeNull": "Interface identifier must not be null",
     "ErrInterfaceNotSupported": "{0} interface not supported by object",
-    "ErrInvalidArgument": "Invalid parameter {0}: {1}",
+    "ErrInvalidArgument": "Invalid value of parameter {0}: {1}",
     "ErrObjectIdIsNotCached": "ObjectId value is not cached"
   },
   "Net/Extended80Rec": {

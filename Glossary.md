@@ -371,35 +371,36 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Автоматическая синхронизация | Automapping | Не автоматическая настройка | |
 P-значение | P-value | |
 Внешние факторы (ARIMAX) | Exogenous factors (ARIMAX) | |
-Вес  | Weight | В контексте coarse classes | | 
+Вес  | Weight | В контексте coarse classes | |
 Сокет | Socket |
 Порт | Port |
-Представление | Representation | Результат преобразования данных к другому типу данных с изменением свойств | | 
-Представление | Display | 1. относится к отображению данных на экране; формат данных = Display format 2. в Кубе Display - отображение факта, еще не утверждено | | 
-Представление | View | визуализатор; отчеты | | 
-Режим просмотра отчетов | Reports view mode | | 
+Представление | Representation | Результат преобразования данных к другому типу данных с изменением свойств | |
+Представление | Display | 1. относится к отображению данных на экране; формат данных = Display format 2. в Кубе Display - отображение факта, еще не утверждено | |
+Представление | View | визуализатор; отчеты | |
+Режим просмотра отчетов | Reports view mode | |
 Режим разработки сценария | Design mode |
-Интерактивный | Interactive | 
+Интерактивный | Interactive |
 Выполнение | Execution |
-Номер | # |Относится только к страницам Excel| | 
-Номер | No |Заголовок в гриде| | 
+Номер | # |Относится только к страницам Excel| |
+Номер | No |Заголовок в гриде| |
 Некорректный ответ от сервера | Bad server response |
 Описание изменений | Release notes
 Повышение информативности | UI/UX improvement
 Оптимизация работы | Performance improvements
-Смещение | Bias 
-Заполнение пропусков | Imputing, imputation 
+Смещение | Bias
+Заполнение пропусков | Imputing, imputation
 Исправление ошибок | Bug fixes | Исправление ошибок в самой программе Loginom
 Повышение удобства | Usability improvements
 Пакетное выполнение | Batch processing
-Версия Loginom | Loginom version 
+Версия Loginom | Loginom version
 Редакция Loginom | Loginom edition
 Рабочее пространство | Working space
 От имени администратора | As an administrator
 Запуск службы | Service start
-Программы и компоненты | Programs & Features 
-Сервер сетевых ключей | Network dongles server 
-Экземпляр программы | Program instance 
+Программы и компоненты | Programs & Features
+Сервер сетевых ключей | Network dongles server
+Экземпляр программы | Program instance
+
 ### Общие рекомендации:
 
 1. Лучше использовать сокращенную версию, например, Сравнение – Compare и т .д.

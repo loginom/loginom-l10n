@@ -876,6 +876,7 @@
       "PackagePoolSize": "Package pool size",
       "SessionBackupDirectory": "Directory containing session backups",
       "StopTimeout": "Server stop timeout",
+      "ThreadPoolSize": "Thread pool size",
       "UserStorageDirectory": "Directory containing personal user folders"
     },
     "SocketDeductorServerSettings": {

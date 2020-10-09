@@ -18,9 +18,10 @@
     "UseSASL": "Use SASL"
   },
   "admin/ServerSettingsForm": {
+    "AppSettings": "Application parameters",
     "Bind": "IP address",
     "ComponentSettings": "Component parameters",
-    "ConnectionSettings": "Connection wizard",
+    "ConnectionSettings": "Connection parameters",
     "DirectorySettings": "Folders",
     "Disabled": "Execution forbidden",
     "LDAPSettings": "LDAP parameters",
@@ -30,6 +31,8 @@
     "LogFileRewrite": "Rewrite file",
     "LoggerSettings": "Logging parameters",
     "MinLogLevel": "Logging level",
+    "NullAsDefault": "Default",
+    "NullAsDisabled": "Off",
     "PackagePoolSize": "Package pool size",
     "PingPeriod": "Connection check period (s)",
     "Port": "TCP port",
@@ -38,7 +41,8 @@
     "SSLCertificateFile": "Certificate file name",
     "SSLPrivateKeyFile": "Private key file name",
     "StopTimeout": "Server stop timeout (s)",
-    "UserStorageDirectory": "Personal data of user",
+    "ThreadPoolSize": "Thread pool size",
+    "UserStorageDirectory": "Users data",
     "WSPort": "WebSocket port",
     "WSSPort": "WebSocket SSL/TLS port"
   },
@@ -358,7 +362,7 @@
   },
   "app/Version": {
     "CompanyWebsite": "https://loginom.com",
-    "LegalCopyright": "© OOO Analiticheskie Tekhnologii 2017"
+    "LegalCopyright": "© OOO Analiticheskie Tehnologii 2017"
   },
   "app/WindowTitle": {
     "Close": "Close",
@@ -715,7 +719,6 @@
   },
   "components/reformcolumns/ReformColumnsWizard": {
     "ColumnCachingMethodText": "Caching",
-    "ColumnDisplayNameText": "Caption",
     "ReformColumnsWizardTitle": "Configure fields features"
   },
   "components/replace/ReplaceVariablesWizard": {

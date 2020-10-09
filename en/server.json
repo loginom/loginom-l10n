@@ -459,6 +459,7 @@
   "components/calcdata/CalcData": {
     "ErrExceededRecursiveCalls": "Maximum number of (%d) recursive calls of Data function in \"%s\" expression exceeded.\nTo solve this problem it is required to enable Caching.",
     "ErrExprIsStringType": "\"%s\" expression of string type",
+    "ErrGetVarArrayUnsupported": "The arrays related to the variable type can return only intermediate expressions (\"%s\" expression, %d row)",
     "InputVariables": "Input variables",
     "NameNotExists": "No field, variable or expression with \"%s\" name exists"
   },
@@ -2015,7 +2016,8 @@
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
-    "ErrFileDSNForbidden": "Connections through file DSN are forbidden"
+    "ErrFileDSNForbidden": "Connections through file DSN are forbidden",
+    "ErrInvalidTableName": "Invalid table name"
   },
   "Libraries/bgdbrtl/UniDAC/OracleUniDACDB": {
     "DatabaseTypeName": "Oracle",
@@ -2732,6 +2734,9 @@
   "Libraries/ChakraCore/ChakraUtils": {
     "ErrLibraryVersionNotFound": "%s ^%d.%d library not found"
   },
+  "Libraries/ChakraCore/ChakraValue": {
+    "ErrJsValuetAsVariantUnsupported": "Transformation of the passed JavaScript object to the value related to the variable type is not supported"
+  },
   "Libraries/Config/Config": {
     "ErrAttributeNotExist": "%s attribute does not exist.",
     "ErrConfigElementAlien": "The configuration element does not belong to the specified list",
@@ -3293,6 +3298,7 @@
     "ErrActivateModelNodes": "Error occurred while activating nodes",
     "ErrAllNodesLocked": "All workflow nodes locked",
     "ErrAlreadyConfiguringSocket": "\"%s\" node already in the port configuring state",
+    "ErrCannotActivateRecursiveNode": "\"%s\" node cannot be activated because it recursively depends on its own activation",
     "ErrCannotFindPreviousProcess": "Failed to find the previous activation process for \"%s\" node",
     "ErrColumnDataTypeChanged": "\"%s\" column data type changed",
     "ErrComponentNotInitialized": "Base component not initialized",
@@ -3801,7 +3807,7 @@
   },
   "Studio/DeductorServerSettings": {
     "SessionBackupDirectory": "Session backups",
-    "UserStorageDirectory": "User disk space"
+    "UserStorageDirectory": "Users data"
   },
   "Studio/DeductorUsers": {
     "AllowedApplicationModes": "Allowed application modes",

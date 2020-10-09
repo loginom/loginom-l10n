@@ -874,12 +874,12 @@
     },
     "SSLMode": {
       "$Caption": "Use SSL",
-      "Disabled": "Disabled",
-      "Allow": "Allowed",
+      "Disabled": "Disable",
+      "Allow": "Allow",
       "Prefer": "Prefer",
-      "Require": "Required",
-      "VerifyCA": "Required (with CA verification)",
-      "VerifyIdentity": "Required (with server verification)"
+      "Require": "Require",
+      "VerifyCA": "Verify CA",
+      "VerifyIdentity": "Verify Full"
     },
     "TransactionIsolationLevel": {
       "$Caption": "Transaction Isolation Level",

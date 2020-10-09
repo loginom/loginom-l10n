@@ -2822,11 +2822,18 @@
     "btnLicenseAgreement": {
       "text": "License Agreement"
     },
+    "btnPersonalOffer": {
+      "href": "https://loginom.com/platform/personal?utm_source=ce&utm_medium=banner&utm_campaign=personal",
+      "text": "More"
+    },
     "lblCommunityBannerText": {
       "text": "This Community edition is for non-commercial use."
     },
     "lblCookiesInfo": {
       "text": "We use cookies-files. Using this application you agree to use cookies-files."
+    },
+    "lblPersonalBannerAdText": {
+      "text": "This Community edition is non-commercial. Personal edition provides more opportunities."
     }
   },
   "homepage/HomePage": {

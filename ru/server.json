@@ -461,6 +461,7 @@
   "components/calcdata/CalcData": {
     "ErrExceededRecursiveCalls": "Превышено максимальное количество рекурсивных вызовов (%d) функции Data в выражении \"%s\".\nДля решения этой проблемы необходимо включить Кэширование.",
     "ErrExprIsStringType": "Выражение \"%s\" имеет строковый тип",
+    "ErrGetVarArrayUnsupported": "Массивы переменного типа могут возвращать только промежуточные выражения (выражение \"%s\", строка %d)",
     "InputVariables": "Входные переменные",
     "NameNotExists": "Поля, переменной или выражения с именем \"%s\" не существует"
   },
@@ -2017,7 +2018,8 @@
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
-    "ErrFileDSNForbidden": "Подключения через файловые DSN запрещены"
+    "ErrFileDSNForbidden": "Подключения через файловые DSN запрещены",
+    "ErrInvalidTableName": "Неверно указано имя таблицы"
   },
   "Libraries/bgdbrtl/UniDAC/OracleUniDACDB": {
     "DatabaseTypeName": "Oracle",
@@ -2734,6 +2736,9 @@
   "Libraries/ChakraCore/ChakraUtils": {
     "ErrLibraryVersionNotFound": "Не найдена библиотека %s ^%d.%d"
   },
+  "Libraries/ChakraCore/ChakraValue": {
+    "ErrJsValuetAsVariantUnsupported": "Преобразование переданного объекта JavaScript в значение переменного типа не поддерживается"
+  },
   "Libraries/Config/Config": {
     "ErrAttributeNotExist": "Атрибут %s не существует.",
     "ErrConfigElementAlien": "Элемент конфигурации не принадлежит указанному списку",
@@ -3295,6 +3300,7 @@
     "ErrActivateModelNodes": "При активизации узлов возникла ошибка",
     "ErrAllNodesLocked": "Все узлы сценария заблокированы",
     "ErrAlreadyConfiguringSocket": "Узел \"%s\" уже находится в состоянии настройки порта",
+    "ErrCannotActivateRecursiveNode": "Узел \"%s\" не может быть активирован, т.к. рекурсивно зависит от активации самого себя",
     "ErrCannotFindPreviousProcess": "Не удалось найти предыдущий процесс активизации узла \"%s\"",
     "ErrColumnDataTypeChanged": "Изменился тип данных столбца \"%s\"",
     "ErrComponentNotInitialized": "Базовый компонент не проинициализирован",
@@ -3803,7 +3809,7 @@
   },
   "Studio/DeductorServerSettings": {
     "SessionBackupDirectory": "Резервные копии сессий",
-    "UserStorageDirectory": "Дисковое пространство пользователей"
+    "UserStorageDirectory": "Личные данные пользователей"
   },
   "Studio/DeductorUsers": {
     "AllowedApplicationModes": "Разрешённые режимы работы приложения",

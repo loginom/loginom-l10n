@@ -876,6 +876,7 @@
       "PackagePoolSize": "Размер пула пакетов",
       "SessionBackupDirectory": "Директория, содержащая резервные копии сессий",
       "StopTimeout": "Таймаут остановки сервера",
+      "ThreadPoolSize": "Размер пула потоков",
       "UserStorageDirectory": "Директория, содержащая личные папки пользователей"
     },
     "SocketDeductorServerSettings": {

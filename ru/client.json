@@ -18,6 +18,7 @@
     "UseSASL": "Использовать SASL"
   },
   "admin/ServerSettingsForm": {
+    "AppSettings": "Параметры приложения",
     "Bind": "IP адрес",
     "ComponentSettings": "Параметры компонента",
     "ConnectionSettings": "Параметры подключения",
@@ -30,15 +31,18 @@
     "LogFileRewrite": "Перезапись файла",
     "LoggerSettings": "Параметры логирования",
     "MinLogLevel": "Уровень логирования",
+    "NullAsDefault": "По умолчанию",
+    "NullAsDisabled": "Отключено",
     "PackagePoolSize": "Размер пула пакетов",
     "PingPeriod": "Период проверки соединения (сек)",
     "Port": "TCP порт",
     "ServerSettings": "Параметры сервера",
-    "SessionBackupDirectory": "Резервные копии сессии",
+    "SessionBackupDirectory": "Резервные копии сессий",
     "SSLCertificateFile": "Имя файла сертификата",
     "SSLPrivateKeyFile": "Имя файла закрытого ключа",
     "StopTimeout": "Таймаут остановки сервера (сек)",
-    "UserStorageDirectory": "Личные данные пользователя",
+    "ThreadPoolSize": "Размер пула потоков",
+    "UserStorageDirectory": "Личные данные пользователей",
     "WSPort": "WebSocket порт",
     "WSSPort": "WebSocket SSL/TLS порт"
   },
@@ -716,7 +720,6 @@
   },
   "components/reformcolumns/ReformColumnsWizard": {
     "ColumnCachingMethodText": "Кэширование",
-    "ColumnDisplayNameText": "Метка",
     "ReformColumnsWizardTitle": "Настройка параметров полей"
   },
   "components/replace/ReplaceVariablesWizard": {

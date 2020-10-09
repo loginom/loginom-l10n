@@ -2822,11 +2822,18 @@
     "btnLicenseAgreement": {
       "text": "Лицензионное соглашение"
     },
+    "btnPersonalOffer": {
+      "href": "https://loginom.ru/platform/personal?utm_source=ce&utm_medium=banner&utm_campaign=personal",
+      "text": "Подробнее"
+    },
     "lblCommunityBannerText": {
       "text": "Это редакция Community - для некоммерческого использования."
     },
     "lblCookiesInfo": {
       "text": "Мы используем cookies-файлы. Продолжая использовать это приложение, Вы соглашаетесь с использованием cookies-файлов."
+    },
+    "lblPersonalBannerAdText": {
+      "text": "Это некоммерческая редакция Community. Больше возможностей с коммерческой редакцией Personal"
     }
   },
   "homepage/HomePage": {

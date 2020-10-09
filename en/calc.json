@@ -235,7 +235,7 @@
     "IF": {
       "Arguments": "Antecedent - logical expression;\nValue1,\nValue2 - expressions of any types",
       "Description": "IF(Antecedent, Value1, Value2)",
-      "Output": "Returns Value1 if the Antecedent is true or Value2 if it is false. The function result has the variable type"
+      "Output": "Returns Value1 if the Antecedent is true or Value2 if it is false. The function result has the variant type"
     },
     "IFF": {
       "Arguments": "Antecedent - logical expression;\nValue1,\nValue2 - numeric expressions or expressions of the Date/time type",

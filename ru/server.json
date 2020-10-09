@@ -1866,12 +1866,12 @@
   },
   "imports/native/DDFTupleRowConverter": {
     "BadNativeStringData": "Строковые данные некорректны",
-    "BadVariantType": "Неподдерживаемый тип переменной типа Variant",
+    "BadVariantType": "Неподдерживаемый подтип типа Variant",
     "CanNotConvert": "Невозможно конвертировать данные в 32-битный формат",
     "UnknownOperation": "Неизвестная операция конвертера строки",
     "VariantArrayNotSupported": "Массивы в переменных типа Variant не поддерживаются",
     "VariantByRefNotSupported": "Переменные типа Variant byRef не поддерживаются",
-    "VariantTypeNotSupported": "Переменные Variant данного типа не поддерживаются"
+    "VariantTypeNotSupported": "Неподдерживаемая маска типа Variant"
   },
   "imports/native/ImportNative": {
     "ErrFileFormat": "Файл не является Loginom Data файлом",
@@ -2595,16 +2595,15 @@
     "ErrVariableTypesMismatch": "Тип переменной %s не совместим с типом исходной переменной %s"
   },
   "Libraries/bgrtl/Tuple": {
-    "BadArrayVariantType": "Неподдерживаемый тип переменной Variant-массива",
     "BadNativeArrayStringData": "Некорректный формат относительной строковой ссылки",
     "BadNativeData": "Данные некорректны",
     "BadNativeStringData": "Строковые данные некорректны",
     "BadVariantStringData": "Некорректный формат строковых данных переменной типа Variant",
-    "BadVariantType": "Некорректный формат переменной типа Variant",
+    "BadVariantType": "Неподдерживаемый подтип типа Variant",
     "IncompatibleTuples": "Структуры кортежей несовместимы",
     "VariantArrayNotSupported": "Массивы в переменных типа Variant не поддерживаются",
     "VariantByRefNotSupported": "Переменные типа Variant byRef не поддерживаются",
-    "VariantTypeNotSupported": "Переменные Variant данного типа не поддерживаются"
+    "VariantTypeNotSupported": "Неподдерживаемая маска типа Variant"
   },
   "Libraries/bgrtl/TupleStrUtils": {
     "BadNativeStringData": "Строковые данные некорректны"
@@ -2613,7 +2612,7 @@
     "BadNativeArrayStringData": "Строковые данные Variant-массива некорректны",
     "BadVariantArrayData": "Данные Variant-массива некорректны",
     "BadVariantData": "Данные типа Variant некорректны",
-    "BadVariantType": "Неподдерживаемый тип Variant-переменной",
+    "BadVariantType": "Неподдерживаемый подтип типа Variant",
     "CanNotConvert": "Невозможно конвертировать данные в 32-битный формат"
   },
   "Libraries/bgrtl/TypedLists": {

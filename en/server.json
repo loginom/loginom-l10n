@@ -459,7 +459,7 @@
   "components/calcdata/CalcData": {
     "ErrExceededRecursiveCalls": "Maximum number of (%d) recursive calls of Data function in \"%s\" expression exceeded.\nTo solve this problem it is required to enable Caching.",
     "ErrExprIsStringType": "\"%s\" expression of string type",
-    "ErrGetVarArrayUnsupported": "The arrays related to the variable type can return only intermediate expressions (\"%s\" expression, %d row)",
+    "ErrGetVarArrayUnsupported": "The arrays related to the variant type can return only intermediate expressions (\"%s\" expression, %d row)",
     "InputVariables": "Input variables",
     "NameNotExists": "No field, variable or expression with \"%s\" name exists"
   },
@@ -1864,12 +1864,12 @@
   },
   "imports/native/DDFTupleRowConverter": {
     "BadNativeStringData": "Invalid string data",
-    "BadVariantType": "Unsupported Variant variable type",
+    "BadVariantType": "Unsupported Variant subtype",
     "CanNotConvert": "Failed to convert data to 32-bit format",
     "UnknownOperation": "Unknown string converter operation",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
-    "VariantByRefNotSupported": "Unsupported Variant byRef variables",
-    "VariantTypeNotSupported": "Variant variables of this type are not supported"
+    "VariantByRefNotSupported": "Unsupported Variant byRef type",
+    "VariantTypeNotSupported": "Unsupported Variant type mask"
   },
   "imports/native/ImportNative": {
     "ErrFileFormat": "Not Loginom Data file",
@@ -2593,16 +2593,15 @@
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
   },
   "Libraries/bgrtl/Tuple": {
-    "BadArrayVariantType": "Unsupported Variant array variable type",
     "BadNativeArrayStringData": "Invalid relative string reference format",
     "BadNativeData": "Invalid data",
     "BadNativeStringData": "Invalid string data",
     "BadVariantStringData": "Invalid format of Variant variable string data",
-    "BadVariantType": "Invalid format of Variant variable",
+    "BadVariantType": "Unsupported Variant subtype",
     "IncompatibleTuples": "Tuple structures are incompatible",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
-    "VariantByRefNotSupported": "Unsupported Variant byRef variables",
-    "VariantTypeNotSupported": "Variant variables of this type are not supported"
+    "VariantByRefNotSupported": "Unsupported Variant byRef type",
+    "VariantTypeNotSupported": "Unsupported Variant type mask"
   },
   "Libraries/bgrtl/TupleStrUtils": {
     "BadNativeStringData": "Invalid string data"
@@ -2611,7 +2610,7 @@
     "BadNativeArrayStringData": "Invalid Variant array string data",
     "BadVariantArrayData": "Invalid Variant array data",
     "BadVariantData": "Invalid Variant data type",
-    "BadVariantType": "Unsupported Variant variable type",
+    "BadVariantType": "Unsupported Variant subtype",
     "CanNotConvert": "Failed to convert data to 32-bit format"
   },
   "Libraries/bgrtl/TypedLists": {
@@ -2735,7 +2734,7 @@
     "ErrLibraryVersionNotFound": "%s ^%d.%d library not found"
   },
   "Libraries/ChakraCore/ChakraValue": {
-    "ErrJsValuetAsVariantUnsupported": "Transformation of the passed JavaScript object to the value related to the variable type is not supported"
+    "ErrJsValuetAsVariantUnsupported": "Transformation of the passed JavaScript object to the value related to the variant type is not supported"
   },
   "Libraries/Config/Config": {
     "ErrAttributeNotExist": "%s attribute does not exist.",

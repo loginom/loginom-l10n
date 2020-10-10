@@ -400,6 +400,13 @@ P-значение | P-value | |
 Программы и компоненты | Programs & Features
 Сервер сетевых ключей | Network dongles server
 Экземпляр программы | Program instance
+ООО «Аналитические технологии» | OOO ANALITICHESKIE TEHNOLOGII
+Категорийные данные | Categorical data
+Масштабируемый алгоритм | Scalable algorithm
+Сверхбольшие базы данных | Large databases
+Транзакционные данные | Transactional data
+Производительность алгоритма | Algorithm performance 
+Панель инструментов | Toolbar 
 
 ### Общие рекомендации:
 

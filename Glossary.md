@@ -388,7 +388,7 @@ P-значение | P-value | |
 Оптимизация работы | Performance improvements
 Смещение | Bias
 Заполнение пропусков | Imputing, imputation
-Исправление ошибок | Bug fixes | Исправление ошибок в самой программе Loginom
+Исправление ошибок | Fixes | Исправление ошибок в самой программе Loginom
 Повышение удобства | Usability improvements
 Пакетное выполнение | Batch processing
 Версия Loginom | Loginom version

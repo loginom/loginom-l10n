@@ -1831,7 +1831,8 @@
     "ErrSheet": "Не удалось найти лист Excel",
     "ErrSuggestRange": "Файл excel не открыт. По текущим настройкам невозможно определить количество столбцов для импорта",
     "ProcessCaptionOpenExcelFile": "Открыть файл %s",
-    "ProcessCaptionReadData": "Чтение данных"
+    "ProcessCaptionReadData": "Чтение данных",
+    "ProcessCaptionReadMetadataFmt": "Чтение метаданных файла %s"
   },
   "imports/excelfile/ImportExcelFileVendor": {
     "VendorCaption": "Excel файл",

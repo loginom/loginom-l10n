@@ -2117,9 +2117,9 @@
     "SliderTipFmt": "{0}: {1}",
     "SliderTipMax": "макс",
     "SliderTipMin": "мин",
-    "StringLengthMax": "Наименьшая длина строки: ",
+    "StringLengthMax": "Наибольшая длина строки: ",
     "StringLengthMean": "Средняя длина строки: ",
-    "StringLengthMin": "Наибольшая длина строки: ",
+    "StringLengthMin": "Наименьшая длина строки: ",
     "StringLengthSuffix": " длины строки: ",
     "TuneColumnsLabelTitle": "Метка поля",
     "TuneColumnsTitle": "Настройка полей",
@@ -2178,7 +2178,8 @@
     "frmColumnsMappingTitle": "Настройка входных столбцов"
   },
   "wizards/columns/TuneDataSourceMappingWizard": {
-    "RemoveRequiredMappingColumnDefConfirm": "Столбец \"{0}\" используется. Вы действительно хотите его удалить?"
+    "RemoveRequiredMappingColumnDefConfirm": "Столбец \"{0}\" используется. Вы действительно хотите его удалить?",
+    "RemoveRequiredMappingColumnDefsConfirm": "Среди выбранных столбцов есть используемые. Вы действительно хотите удалить все выбранные столбцы?"
   },
   "wizards/columnsdisposition/ColumnsDispositionWizard": {
     "AvailableField": "Доступные",
@@ -2398,7 +2399,8 @@
     "MsgAddedVariableCanNotSelected": "Переменная добавлена, но не отображается, т.к. не соответствует фильтру",
     "MsgEditedVariableCanNotSelected": "Переменная переименована, но не отображается, т.к. не соответствует фильтру",
     "RemoveAllMappingVariablesConfirm": "Вы действительно хотите удалить все переменные?",
-    "RemoveRequiredMappingVariableConfirm": "Переменная \"{0}\" является обязательной. Вы действительно хотите ее удалить?"
+    "RemoveRequiredMappingVariableConfirm": "Переменная \"{0}\" используется. Вы действительно хотите ее удалить?",
+    "RemoveRequiredMappingVariablesConfirm": "Среди выбранных переменных есть используемые. Вы действительно хотите удалить все выбранные переменные?"
   },
   "wizards/WizardActivateInputPorts": {
     "ActivateCaption": "Активировать",

@@ -1870,7 +1870,7 @@
     "UnknownOperation": "Unknown string converter operation",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
     "VariantByRefNotSupported": "Unsupported Variant byRef type",
-    "VariantTypeNotSupported": "Unsupported Variant mask"
+    "VariantTypeNotSupported": "Unsupported Variant type mask"
   },
   "imports/native/ImportNative": {
     "ErrFileFormat": "Not Loginom Data file",
@@ -2602,7 +2602,7 @@
     "IncompatibleTuples": "Tuple structures are incompatible",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
     "VariantByRefNotSupported": "Unsupported Variant byRef type",
-    "VariantTypeNotSupported": "Unsupported Variant mask"
+    "VariantTypeNotSupported": "Unsupported Variant type mask"
   },
   "Libraries/bgrtl/TupleStrUtils": {
     "BadNativeStringData": "Invalid string data"

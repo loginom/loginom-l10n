@@ -838,7 +838,7 @@
   },
   "Libraries/1CConnection/1Cv8Connection": {
     "1Cv8Version": {
-      "$Caption": "Platform Versions",
+      "$Caption": "Platform Version",
       "_1Cv8_0": "1C:Enterprise 8.0",
       "_1Cv8_1": "1C:Enterprise 8.1",
       "_1Cv8_2": "1C:Enterprise 8.2",
@@ -1177,7 +1177,7 @@
       "Trace": "Trace",
       "Debug": "Debug",
       "Info": "Info",
-      "Hint": "Event:",
+      "Hint": "Event",
       "Warn": "Warning",
       "Error": "Error",
       "Fatal": "Fatal"

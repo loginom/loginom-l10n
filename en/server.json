@@ -1829,7 +1829,8 @@
     "ErrSheet": "Failed to find Excel sheet",
     "ErrSuggestRange": "Excel file is not open. According to the current settings it is impossible to determine the column count for import",
     "ProcessCaptionOpenExcelFile": "%s file opening",
-    "ProcessCaptionReadData": "Data reading"
+    "ProcessCaptionReadData": "Data reading",
+    "ProcessCaptionReadMetadataFmt": "Read %s file metadata"
   },
   "imports/excelfile/ImportExcelFileVendor": {
     "VendorCaption": "Excel File",
@@ -1869,7 +1870,7 @@
     "UnknownOperation": "Unknown string converter operation",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
     "VariantByRefNotSupported": "Unsupported Variant byRef type",
-    "VariantTypeNotSupported": "Unsupported Variant type mask"
+    "VariantTypeNotSupported": "Unsupported Variant mask"
   },
   "imports/native/ImportNative": {
     "ErrFileFormat": "Not Loginom Data file",
@@ -2601,7 +2602,7 @@
     "IncompatibleTuples": "Tuple structures are incompatible",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
     "VariantByRefNotSupported": "Unsupported Variant byRef type",
-    "VariantTypeNotSupported": "Unsupported Variant type mask"
+    "VariantTypeNotSupported": "Unsupported Variant mask"
   },
   "Libraries/bgrtl/TupleStrUtils": {
     "BadNativeStringData": "Invalid string data"

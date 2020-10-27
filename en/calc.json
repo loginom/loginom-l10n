@@ -527,37 +527,37 @@
     "RegExMatch": {
       "Arguments": "RegularExpression - the regular expressions string;\nString - the input string.",
       "Description": "RegExMatch(RegularExpression, String)",
-      "Output": "Checks the match between the string and regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+      "Output": "Checks the match between the string and regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
     },
     "RegExMatchCount": {
       "Arguments": "RegularExpression - the regular expressions string;\nString - the input string.",
       "Description": "RegExMatchCount(RegularExpression, String)",
-      "Output": "Returns the number of the string parts matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+      "Output": "Returns the number of the string parts matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
     },
     "RegExMatchedExp": {
       "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedExp(RegularExpression, String [, PartNumber = 1])",
-      "Output": "Returns the string part matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+      "Output": "Returns the string part matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
     },
     "RegExMatchedNamedSubExp": {
       "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupName - name of the group defined by metacharacters (...);\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedNamedSubExp(RegularExpression, String, GroupName [, PartNumber = 1])",
-      "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurrence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+      "Output": "Returns the named string part group matching the regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
     },
     "RegExMatchedSubExp": {
       "Arguments": "RegularExpression - the regular expression string;\nString - the input string;\nGroupNumber - index number of the group defined by metacharacters (...);\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.",
       "Description": "RegExMatchedSubExp(RegularExpression, String, GroupNumber [, PartNumber = 1])",
-      "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurrence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+      "Output": "Returns the string part group matching the regular expression.\nGroups are numbered from left to right according to occurrence of opening brackets.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
     },
     "RegExReplace": {
       "Arguments": "RegularExpression - the regular expression string;\nInputString - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string part matching the regular expression;\nPartNumber - the part index matching the regular expression, input string. Parameter must be included into the range from 1 to RegExMatchCount.\nExtendedSyntax - extended replacement syntax (PCRE2 library is used)",
       "Description": "RegExReplace(RegularExpression, InputString, ReplaceString [, PartNumber = 1, ExtendedSyntax = False])",
-      "Output": "Returns the InputString in which the PartNumber expression occurrence of the RegularExpression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+      "Output": "Returns the InputString in which the PartNumber expression occurrence of the RegularExpression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
     },
     "RegExReplaceAll": {
       "Arguments": "RegularExpression - the regular expression string;\nInputString - the input string that will be replaced;\nReplaceString - the string that will be inserted instead of the input string parts matching the regular expression;\nExtendedSyntax - extended replacement syntax (PCRE2 library is used)",
       "Description": "RegExReplaceAll(RegularExpression, InputString, ReplaceString [, ExtendedSyntax = False])",
-      "Output": "Returns the Input String in which all occurrences of the Regular Expression expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the regular Perl expressions."
+      "Output": "Returns the Input String in which all occurrences of the Regular Expression expression will be replaced with the ReplaceString.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
     }
   },
   "StatFunctions": {

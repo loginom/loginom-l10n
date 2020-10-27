@@ -473,7 +473,7 @@
       "IgnoreAbsentValues": "Allow required fields skipping",
       "ProduceErrorDescs": "Provide description of error codes",
       "ProduceRawOutput": "Produce \"raw\" server response",
-      "RepeatUniqueValues": "Repeat unit values",
+      "RepeatUniqueValues": "Repeat single values",
       "RequestConfigurator": "Configure request data export",
       "RequestDebug": "Request debug settings",
       "StrictValidation": "Check for strict XSD validation",

@@ -111,7 +111,7 @@
     "FailLicenseListText": "Failed to get license list",
     "FailLicenseText": "Error occurred while license text receiving",
     "LicenseModalTitle": "License Agreement",
-    "ThirdPartyModalTitle": "Third Party Software"
+    "ThirdPartyModalTitle": "Open Source Third Party Software"
   },
   "app/ListViewForm": {
     "NumberObjects": "{0} objects"
@@ -774,7 +774,7 @@
     "ErrDataTypeTimeAxisFields": "Field data types for data sequentializing must match",
     "ErrInSelectGroupFields": "Ungroupable field not selected",
     "ErrInSelectOutputFields": "No field for ungrouped values dereference selected",
-    "ErrInSelectQuotaCalcFields": "No field for qoutas calculation selected",
+    "ErrInSelectQuotaCalcFields": "No field for quotas calculation selected",
     "ErrInSelectQuotaFields": "No field with quotas selected",
     "ErrInSelectTimeAxisFields": "No fields for data sequentializing selected",
     "ErrNoLinksDefined": "No links defined",
@@ -2115,9 +2115,9 @@
     "SliderTipFmt": "{0}: {1}",
     "SliderTipMax": "max",
     "SliderTipMin": "min",
-    "StringLengthMax": "Minimum string length: ",
+    "StringLengthMax": "Maximum string length: ",
     "StringLengthMean": "Mean string length: ",
-    "StringLengthMin": "Maximum string length: ",
+    "StringLengthMin": "Minimum string length: ",
     "StringLengthSuffix": " string length: ",
     "TuneColumnsLabelTitle": "Field Caption",
     "TuneColumnsTitle": "Configure Fields",
@@ -2176,7 +2176,8 @@
     "frmColumnsMappingTitle": "Configure Input Columns"
   },
   "wizards/columns/TuneDataSourceMappingWizard": {
-    "RemoveRequiredMappingColumnDefConfirm": "\"{0}\" column is used. Do you really want to delete it?"
+    "RemoveRequiredMappingColumnDefConfirm": "\"{0}\" column is used. Do you really want to delete it?",
+    "RemoveRequiredMappingColumnDefsConfirm": "There are used columns among the selected columns. Do you really want to delete all selected columns?"
   },
   "wizards/columnsdisposition/ColumnsDispositionWizard": {
     "AvailableField": "Available",
@@ -2396,7 +2397,8 @@
     "MsgAddedVariableCanNotSelected": "Variable has been added, but it is not selected because it does not match the filter",
     "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected because it does not match the filter",
     "RemoveAllMappingVariablesConfirm": "Do you really want to delete all variables?",
-    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is required. Do you really want to delete it?"
+    "RemoveRequiredMappingVariableConfirm": "\"{0}\" variable is used. Do you really want to delete it?",
+    "RemoveRequiredMappingVariablesConfirm": "There are used variables among the selected variables. Do you really want to delete all selected variables?"
   },
   "wizards/WizardActivateInputPorts": {
     "ActivateCaption": "Activate",

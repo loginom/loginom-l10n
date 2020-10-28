@@ -175,7 +175,7 @@ XSD-схема на входе | Input XSD schema | |
 Ошибка при…. | Error while….+ing | |
 Предпросмотр | Preview | |
 Тип кавычек | Identifier quotes | |
-Диапазон | Bin | |
+Диапазон | Bin | | Для квантования и конечных классов bin. Но для других контекстов возможно нет.
 Итоги | Show totals | |
 Снять | Uncheck | |
 Снять все | Uncheck all | |

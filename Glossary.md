@@ -301,7 +301,7 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Сумма разностей | Sum of differences | |
 Количество разностей | Count of differences | |
 Внешнее правое соединение | Outer right join | |
-Данные группируются | Data are grouped | |
+Данные группируются | Data is grouped | |
 Статус выполнения итераций | Iteration execution status | |
 Максимальное количество потоков | Maximum thread count | |
 Должно быть не меньше | Must be no less than/must not be less than | |

@@ -64,6 +64,57 @@
       "text": "Значение"
     }
   },
+  "admin/SessionsManagerForm": {
+    "btnCleanPool": {
+      "text": "Очистить пул",
+      "tooltip": "Очистить пул пакетов"
+    },
+    "btnClose": {
+      "text": "Закрыть",
+      "tooltip": "Закрыть сессию или пакет"
+    },
+    "btnRefresh": {
+      "text": "Обновить",
+      "tooltip": "Обновить"
+    },
+    "btnResolveIP": {
+      "text": "Имя хоста",
+      "tooltip": "Разрешать имена по IP"
+    },
+    "btnSearch": {
+      "text": "Поиск",
+      "tooltip": "Найти сессию или пакет"
+    },
+    "btnStop": {
+      "text": "Остановить",
+      "tooltip": "Остановить выполнение сессии или пакета"
+    },
+    "colActivity": {
+      "text": "Активность"
+    },
+    "colCreateTime": {
+      "text": "Создан"
+    },
+    "colModifyTime": {
+      "text": "Сохранен"
+    },
+    "colPath": {
+      "text": "Путь"
+    },
+    "colRole": {
+      "text": "Роль",
+      "tooltip": "Основная роль пользователя в сессии"
+    },
+    "colSession": {
+      "text": "Сессии и пакеты"
+    },
+    "colSessionHost": {
+      "text": "Хост"
+    },
+    "colVersion": {
+      "text": "Версия"
+    }
+  },
   "admin/SharedDirectoriesForm": {
     "btnAdd": {
       "text": "Добавить",
@@ -1207,6 +1258,9 @@
     "btnShowClassParamsGrid": {
       "tooltip": "Показать таблицу конечных классов"
     },
+    "btnShowEventRate": {
+      "tooltip": "Доли событий"
+    },
     "btnShowSideBar": {
       "tooltip": "Показать боковую панель"
     },
@@ -1216,17 +1270,23 @@
     "colActualCoarseClassEventCount": {
       "text": "События (факт)"
     },
+    "colActualCoarseClassEventRate": {
+      "text": "Доля событий (факт)"
+    },
     "colActualCoarseClassIV": {
       "text": "Инф.индекс (факт)"
     },
     "colActualCoarseClassNoEventCount": {
       "text": "Не-события (факт)"
     },
+    "colActualCoarseClassNoEventRate": {
+      "text": "Доля не-событий (факт)"
+    },
+    "colActualCoarseClassRate": {
+      "text": "Доля (факт)"
+    },
     "colActualCoarseClassTotalCount": {
       "text": "Всего (факт)"
-    },
-    "colActualCoarseClassWeight": {
-      "text": "Доля (факт)"
     },
     "colActualCoarseClassWoE": {
       "text": "Вес доказательства (факт)"
@@ -1236,6 +1296,9 @@
     },
     "colCoarseClassEventCount": {
       "text": "События"
+    },
+    "colCoarseClassEventRate": {
+      "text": "Доля событий"
     },
     "colCoarseClassHighBorder": {
       "text": "Верхняя"
@@ -1255,11 +1318,14 @@
     "colCoarseClassNoEventCount": {
       "text": "Не-события"
     },
+    "colCoarseClassNoEventRate": {
+      "text": "Доля не-событий"
+    },
+    "colCoarseClassRate": {
+      "text": "Доля"
+    },
     "colCoarseClassTotalCount": {
       "text": "Всего"
-    },
-    "colCoarseClassWeight": {
-      "text": "Доля"
     },
     "colCoarseClassWoE": {
       "text": "Вес доказательства"
@@ -1273,8 +1339,8 @@
     "fldCoarseClassCount": {
       "fieldLabel": "Максимальное кол-во"
     },
-    "fldMinClassPercentage": {
-      "fieldLabel": "Минимальный вес, %"
+    "fldMinClassRate": {
+      "fieldLabel": "Минимальная доля, %"
     },
     "fldUniformityCoef": {
       "fieldLabel": "Равномерность, %"
@@ -1777,7 +1843,15 @@
       "title": "Варианты агрегации"
     }
   },
-  "components/javascript/CodeOutputPreviewForm": {
+  "components/javascript/JavaScriptCodeWizard": {
+    "btnPreview": {
+      "text": "Предпросмотр..."
+    },
+    "frmJavaScriptCode": {
+      "title": "JavaScript"
+    }
+  },
+  "components/javascript/JavaScriptOutputPreviewForm": {
     "btnStopLoading": {
       "text": "Остановить"
     },
@@ -1786,14 +1860,6 @@
     },
     "grdConsole": {
       "title": "Консоль"
-    }
-  },
-  "components/javascript/JavaScriptCodeWizard": {
-    "btnPreview": {
-      "text": "Предпросмотр..."
-    },
-    "frmJavaScriptCode": {
-      "title": "JavaScript"
     }
   },
   "components/loop/LoopParamsWizard": {
@@ -1845,6 +1911,37 @@
     },
     "frmNeuralNetParams": {
       "title": "Настройка параметров нейросети"
+    }
+  },
+  "components/python/PythonCodeWizard": {
+    "btnPreview": {
+      "text": "Предпросмотр..."
+    },
+    "frmPythonCode": {
+      "title": "Python"
+    },
+    "pedWaitTimeout.valueConfig": {
+      "emptyText": "∞"
+    }
+  },
+  "components/python/PythonOutputPreviewForm": {
+    "btnStopLoading": {
+      "text": "Остановить"
+    },
+    "frmCodeOutputPreviewForm": {
+      "title": "Предпросмотр"
+    },
+    "pnlOutMerged": {
+      "title": "Все"
+    },
+    "pnlOutput": {
+      "title": "Вывод"
+    },
+    "pnlStdErr": {
+      "title": "stderr"
+    },
+    "pnlStdOut": {
+      "title": "stdout"
     }
   },
   "components/replace/ReplaceWizard": {
@@ -2485,6 +2582,66 @@
       "title": "Экспорт в базу данных"
     }
   },
+  "exports/dwh/DWExportWizard": {
+    "btnAutoLinkAll": {
+      "text": "Связать все автоматически"
+    },
+    "btnClearLinks": {
+      "text": "Удалить все связи"
+    },
+    "btnShowInvalidRelations": {
+      "text": "Отображать потерянные связи"
+    },
+    "ckbAddDimensionData": {
+      "boxLabel": "Автоматически добавлять значения измерений<br><br>В момент загрузки данных в процесс добавлять отсутствующие значения измерений в хранилище данных автоматически."
+    },
+    "ckbDisableConstraint": {
+      "boxLabel": "Отключить/включить ограничения и индексы<br><br>Перед загрузкой данных в хранилище отключить, а по окончании загрузки восстановить индексы и ограничения."
+    },
+    "ckbRebuildCube": {
+      "boxLabel": "Обновить кубы<br><br>После загрузки данных сформировать заново все кубы с включенной опцией \"Динамическое обновление\" и унаследованные от загружаемого процесса."
+    },
+    "ckbStatisticsGathering": {
+      "boxLabel": "Собрать статистику<br><br>После загрузки данных обновить статистику в хранилище данных. Это позволит ускорить операции по извлечению данных из хранилища."
+    },
+    "colAggregation": {
+      "text": "Способ агрегации"
+    },
+    "colDeleteMode": {
+      "text": "Способ удаления"
+    },
+    "colField": {
+      "text": "Столбцы исходного набора"
+    },
+    "colMDNode": {
+      "text": "Параметр"
+    },
+    "colMDType": {
+      "text": "Тип",
+      "tooltip": "Тип объекта хранилища данных"
+    },
+    "frmDWExport": {
+      "title": "Экспорт в хранилище данных"
+    },
+    "frmDWExportSetting": {
+      "title": "Экспорт в хранилище данных"
+    },
+    "mniAutoLinkTree": {
+      "text": "Связать автоматически"
+    },
+    "mniDeleteColumnLink": {
+      "text": "Удалить связь"
+    },
+    "mniDeleteTreeLink": {
+      "text": "Удалить связь"
+    },
+    "txtFilterField": {
+      "emptyText": "Фильтрация"
+    },
+    "txtFilterMDNode": {
+      "emptyText": "Фильтрация"
+    }
+  },
   "exports/excelfile/ExportExcelFilePreviewWizard": {
     "btnConnect": {
       "text": "Подключить"
@@ -2843,6 +3000,10 @@
     "btnCreateUnsavedPackage": {
       "text": "Создать черновик"
     },
+    "btnExamples": {
+      "href": "https://examples.loginom.ru/",
+      "text": "Демопримеры"
+    },
     "btnFacebook": {
       "href": "https://facebook.com/lg.platform/"
     },
@@ -2961,9 +3122,6 @@
     }
   },
   "imports/dbimport/SQLPreviewForm": {
-    "btnClose": {
-      "text": "Закрыть"
-    },
     "frmSQLPreviewForm": {
       "title": "Предпросмотр"
     }
@@ -3021,11 +3179,6 @@
     "btnUp": {
       "tooltip": "Переместить вверх"
     },
-    "colActionChecked": {
-      "altText": "Выводить",
-      "menuText": "Выводить",
-      "text": "Выводить"
-    },
     "colActionDelete": {
       "tooltip": "Удалить все..."
     },
@@ -3036,6 +3189,9 @@
       "text": "Тип",
       "tooltip": "Тип объекта хранилища данных"
     },
+    "colChecked": {
+      "text": "Выводить"
+    },
     "colCondition": {
       "text": "Условие"
     },
@@ -3043,6 +3199,13 @@
       "text": "Поле"
     },
     "colMDField": {
+      "text": "Параметр"
+    },
+    "colMDGroupType": {
+      "text": "Тип",
+      "tooltip": "Тип объекта хранилища данных"
+    },
+    "colMDNode": {
       "text": "Параметр"
     },
     "colMDType": {
@@ -3076,7 +3239,13 @@
     "mniIsSelectedAll": {
       "text": "Переместить в выбранные все"
     },
+    "trpMDFields": {
+      "title": "Дерево доступных элементы ХД"
+    },
     "txtFilterMDFields": {
+      "emptyText": "Фильтрация"
+    },
+    "txtFilterMDNodes": {
       "emptyText": "Фильтрация"
     }
   },
@@ -3356,24 +3525,22 @@
     "colDisplayName": {
       "text": "Доступные поля"
     },
-    "colFormatOnFormatGrid": {
-      "text": "Формат"
-    },
     "colSourceColumnIndex": {
       "text": "№"
     },
-    "colWidth": {
-      "text": "Ширина"
+    "mniMoveDown": {
+      "text": "Переместить вниз",
+      "tooltip": "Переместить вниз"
     },
-    "grdFieldsGrid": {
-      "title": "Поля"
+    "mniMoveUp": {
+      "text": "Переместить вверх",
+      "tooltip": "Переместить вверх"
     },
-    "mniResetFormat": {
-      "text": "Восстановить формат для всех полей"
+    "mniResetFormats": {
+      "text": "Восстановить формат всех полей"
     },
-    "mniResetWidth": {
-      "text": "Восстановить ширину всех полей",
-      "tooltip": "Восстановить ширину всех полей"
+    "mniResetWidths": {
+      "text": "Восстановить ширину всех полей"
     },
     "mniRestoreFieldOrder": {
       "text": "Восстановить порядок полей",
@@ -3495,9 +3662,6 @@
     },
     "colRowNumberer": {
       "tooltip": "Номер строки"
-    },
-    "grdDataDetail": {
-      "title": "Детализация"
     },
     "lblPage": {
       "text": "Страница"
@@ -3832,9 +3996,6 @@
     },
     "lblHideUnusedColumns": {
       "text": "Скрывать неиспользуемые поля"
-    },
-    "lblHistogramUnavailable": {
-      "text": "Невозможно отобразить гистограмму"
     }
   },
   "viewers/common/ViewerCard": {
@@ -4092,6 +4253,7 @@
       "text": "Факты"
     },
     "btnChart": {
+      "text": "Диаграмма",
       "tooltip": "Диаграмма"
     },
     "btnChartCase": {
@@ -4214,50 +4376,6 @@
       "text": "Настроить факты..."
     }
   },
-  "viewers/cube/CustomFormatPanel": {
-    "cbbHAlignment": {
-      "fieldLabel": "По горизонтали"
-    },
-    "cbbVAlignment": {
-      "fieldLabel": "По вертикали"
-    },
-    "cbFormatStr": {
-      "boxLabel": "Особый формат"
-    },
-    "cbNegValuesRedColor": {
-      "boxLabel": "Отрицательные красным"
-    },
-    "cbScientific": {
-      "fieldLabel": "Экспоненциальная форма"
-    },
-    "cbThousand": {
-      "fieldLabel": "Разделитель разрядов"
-    },
-    "cntAlignment": {
-      "title": "Выравнивание"
-    },
-    "cntFormat": {
-      "title": "Форматирование"
-    },
-    "colDateFormat": {
-      "text": "Формат"
-    },
-    "edtCurrency": {
-      "fieldLabel": "Денежный знак"
-    },
-    "edtDecimalDigit": {
-      "fieldLabel": "Число десятичных знаков",
-      "maxText": "Не более {0} разрядов после запятой",
-      "negativeText": "Допустимы только неотрицательные значения"
-    },
-    "edtSampleResult": {
-      "emptyText": "Рассчитать...",
-      "fieldLabel": "Результат"
-    },
-    "edtSampleSource": {
-      "fieldLabel": "Пример"
-    }
-  },
   "viewers/cube/DimensionFilterSelectionPanel": {
     "btnApply": {
       "text": "Применить"
@@ -4324,17 +4442,44 @@
     }
   },
   "viewers/fastpreview/FastPreviewForm": {
-    "btnClose": {
-      "text": "Закрыть"
+    "btnForm": {
+      "text": "Форма"
+    },
+    "btnSelectFirst": {
+      "tooltip": "Первая строка"
+    },
+    "btnSelectLast": {
+      "tooltip": "Последняя строка"
+    },
+    "btnSelectNext": {
+      "tooltip": "Следующая строка"
+    },
+    "btnSelectPrev": {
+      "tooltip": "Предыдущая строка"
+    },
+    "btnTable": {
+      "text": "Таблица"
     },
     "colDisplayName": {
       "text": "Метка"
+    },
+    "colFormDisplayName": {
+      "text": "Метка"
+    },
+    "colFormName": {
+      "text": "Имя"
+    },
+    "colFormValue": {
+      "text": "Значение"
     },
     "colName": {
       "text": "Имя"
     },
     "colNumber": {
       "text": "№"
+    },
+    "colRowNo": {
+      "tooltip": "Номер строки"
     },
     "colTreeNode": {
       "text": "Метка"
@@ -4353,6 +4498,58 @@
     },
     "frmFastPreviewForm": {
       "title": "Быстрый просмотр данных"
+    },
+    "lblRow": {
+      "text": "Строка"
+    },
+    "mniMoveDown": {
+      "text": "Переместить вниз"
+    },
+    "mniMoveUp": {
+      "text": "Переместить вверх"
+    }
+  },
+  "viewers/format/CustomFormatPanel": {
+    "cbbHAlignment": {
+      "fieldLabel": "Выравнивание"
+    },
+    "cbbVAlignment": {
+      "fieldLabel": "По вертикали"
+    },
+    "cbFormatStr": {
+      "boxLabel": "Особый формат"
+    },
+    "cbNegValuesRedColor": {
+      "boxLabel": "Отрицательные красным"
+    },
+    "cbScientific": {
+      "fieldLabel": "Экспоненциальная форма"
+    },
+    "cbThousand": {
+      "fieldLabel": "Разделитель разрядов"
+    },
+    "cntFormat": {
+      "title": "Форматирование"
+    },
+    "colDateFormat": {
+      "text": "Формат"
+    },
+    "edtCurrency": {
+      "fieldLabel": "Денежный знак"
+    },
+    "edtDecimalDigit": {
+      "fieldLabel": "Число десятичных знаков",
+      "maxText": "Не более {0} разрядов после запятой",
+      "negativeText": "Допустимы только неотрицательные значения"
+    },
+    "edtSampleResult": {
+      "fieldLabel": "Результат"
+    },
+    "edtSampleSource": {
+      "fieldLabel": "Пример"
+    },
+    "edtWidth": {
+      "fieldLabel": "Ширина колонки"
     }
   },
   "viewers/regression/RegressionReportView": {
@@ -4512,6 +4709,9 @@
     "chkDataSetTrain": {
       "boxLabel": "Обучающее"
     },
+    "chkProbCorrection": {
+      "boxLabel": "Априорная доля событий"
+    },
     "cntEvent": {
       "html": "Событие:"
     },
@@ -4527,14 +4727,8 @@
     "colTrainParamValue": {
       "text": "Обучающее"
     },
-    "fldAprioriEventPercent": {
-      "fieldLabel": "Событий, %"
-    },
     "fldUserCutoff": {
       "fieldLabel": "Значение порога"
-    },
-    "lblAprioriEvent": {
-      "text": "Истинная доля событий"
     },
     "lblChartType": {
       "text": "Выбор диаграммы"
@@ -4940,6 +5134,11 @@
   "wizards/connection/DBConnectionParamsAdditional": {
     "cntCommonParams": {
       "title": "Параметры"
+    }
+  },
+  "wizards/connection/DWConnectionParams": {
+    "cntDWConnectionParams": {
+      "title": "Параметры хранилища данных"
     }
   },
   "wizards/connection/InterbasePathForm": {
@@ -5469,6 +5668,9 @@
     }
   },
   "wizards/referencenode/ReferenceNodeComponentWizard": {
+    "chkSaveOwnConfguration": {
+      "boxLabel": "Сохранять конфигурацию выбранного узла"
+    },
     "colDescription": {
       "text": "Комментарий"
     },
@@ -5480,6 +5682,12 @@
     }
   },
   "wizards/regression/RegressionWizard": {
+    "btnActivationPort": {
+      "text": "Активировать вход"
+    },
+    "cntCalibrationParams": {
+      "title": "Поправка на долю событий"
+    },
     "cntFactorSelectionParams": {
       "title": "Настройки отбора факторов"
     },
@@ -5494,6 +5702,33 @@
     },
     "cntRegularizationParams": {
       "title": "Настройки регуляризации"
+    },
+    "colEvents": {
+      "text": "Доля событий, %"
+    },
+    "colName": {
+      "text": "Множество"
+    },
+    "colNoEvents": {
+      "text": "Доля не-событий, %"
+    },
+    "pedEvents.valueConfig": {
+      "emptyText": "<пусто>"
+    },
+    "pedNoEvents.valueConfig": {
+      "emptyText": "<пусто>"
+    },
+    "rbEqualCalibration": {
+      "boxLabel": "На основе обучающего множества"
+    },
+    "rbManualCalibration": {
+      "boxLabel": "Задать вручную"
+    },
+    "rbTestSetCalibration": {
+      "boxLabel": "На основе тестового множества"
+    },
+    "txtActivationPortStatus": {
+      "fieldLabel": "Состояние входа"
     }
   },
   "wizards/variables/EditVariableForm": {

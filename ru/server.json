@@ -23,10 +23,7 @@
     "ErrTooManyArgs": "В функцию %s передано много аргументов (%d, когда максимум %d)"
   },
   "Common/CertList/CertList": {
-    "ErrCertificateStoresFuncAlreadyInstalled": "",
-    "ErrCertificateStoresFuncUnassigned": "",
-    "ErrCertListImplementationNotRegistered": "Реализация списка сертификатов с идентификатором %s не зарегистрирована",
-    "ErrCertListImplementationsNotRegistered": "Не зарегистрирована реализация списка сертификатов"
+    "ErrCertListImplementationNotRegistered": "Реализация списка сертификатов с идентификатором %s не зарегистрирована"
   },
   "Common/CertList/CertList_Win": {
     "AddressBook": "Другие пользователи",
@@ -44,35 +41,55 @@
   },
   "Common/CodeExec/CodeAPI": {
     "ArgColumn": "Индекс или имя столбца",
+    "ArgColumnIndex": "Индекс столбца",
+    "ArgColumnInfo": "Имя или описание столбца",
+    "ArgColumnInfos": "Описания столбцов",
     "ArgRow": "Индекс строки",
     "ArgValue": "Значение",
+    "Column": "Столбец",
     "ColumnCount": "Число столбцов",
     "ColumnGet": "Получить значение ячейки столбца",
     "ColumnIsNull": "Проверить, установлено ли значение в ячейке столбца",
     "Columns": "Столбцы",
+    "ColumnSet": "Установить значение в ячейку столбца",
     "Count": "Количество",
     "DataKind": "Вид данных",
+    "DataSource": "Источник данных",
     "DataType": "Тип данных",
     "DefaultUsageType": "Назначение по умолчанию",
     "DisplayName": "Метка",
+    "DocDataModule": "Модуль доступа к данным",
     "Index": "Индекс",
+    "InputColumn": "Входной столбец",
     "InputTable": "Входной источник данных",
     "InputTables": "Массив входных источников данных",
     "InputVariables": "Входные переменные",
     "Items": "Элементы",
     "Name": "Имя",
+    "OutputColumn": "Выходной столбец",
     "OutputTable": "Выходная таблица",
     "RowCount": "Число строк",
+    "TableAddColumn": "Добавить столбец",
     "TableAppend": "Добавить строку",
+    "TableAssignColumns": "Создать столбцы по описаниям",
+    "TableClearColumns": "Удалить все столбцы",
+    "TableDeleteColumn": "Удалить столбец",
     "TableGet": "Получить значение ячейки таблицы",
+    "TableGetColumn": "Получить столбец",
+    "TableInsertColumn": "Вставить столбец",
     "TableIsNull": "Проверить, установлено ли значение в ячейке таблицы",
     "TableSet": "Установить значение в ячейку добавленной строки",
-    "Value": "Значение"
+    "UsageType": "Назначение",
+    "Value": "Значение",
+    "Variable": "Переменная",
+    "VariableItems": "Коллекция переменных",
+    "Variables": "Переменные"
   },
   "Common/CodeExec/CodeAPIDataSetExceptions": {
-    "ColumnByNameNotFound": "Столбец с именем \"%s\" не найден",
     "ErrColOutOfRange": "Номер столбца %d вне диапазона [%d; %d]",
-    "ErrNoRowForEditing": "Невозможно изменить значение, т.к. нет редактируемой строки",
+    "ErrDataSourceActive": "Набор данных не находится в закрытом состоянии",
+    "ErrDataSourceClosed": "Набор данных не находится в открытом состоянии",
+    "ErrDataSourceNotEditing": "Набор данных не находится в состоянии редактирования",
     "ErrRowOutOfRange": "Номер строки %d вне диапазона [%d; %d]"
   },
   "Common/CodeExec/CodeAPIDataSetProxies": {
@@ -81,8 +98,14 @@
     "ErrInvalidDataSourceColumnIndex": "Индекс %d столбца входной таблицы №%d вне диапазона [%d; %d]",
     "ErrInvalidDataSourceColumnName": "Столбец \"%s\" отсутствует во входной таблице №%d"
   },
+  "Common/CodeExec/CodeAPIPreviewDataSet": {
+    "ErrInvalidDataSetColumnName": "Столбец \"%s\" отсутствует в выходной таблице"
+  },
+  "Common/CodeExec/CodePreview": {
+    "PreviewProcess": "Предварительный просмотр данных",
+    "WarnPreviewRunning": "Предпросмотр уже запущен"
+  },
   "Common/HTTP/CachedHttpStream": {
-    "ErrCachedHttpStreamClassAlreadyAssigned": "Класс кэшируемого HTTP-потока уже зарегистрирован",
     "ErrCachedHttpStreamClassUnassigned": "Класс кэшируемого HTTP-потока не зарегистрирован"
   },
   "Common/HTTP/CachedHttpStream_Win": {
@@ -132,7 +155,6 @@
   },
   "Common/WSDL/Processor/WSDLRequestProcessor": {
     "ErrExportWSDLHttpRequestData": "Ошибка при формировании HTTP-запроса из строки #%d входного набора: %s",
-    "ErrGetElementByMessagePartUnassigned": "При обработке WSDL-запроса не установлено свойство TBGWSDLRequestProcessor.GetElementByMessagePart",
     "ErrHTTPHeaderRedefined": "Заголовок \"%s: %s\" уже присутствует в запросе",
     "ErrHTTPHeaders": "Ошибка при формировании HTTP-заголовков",
     "ErrXMLExportNoContext": "Не задан контекст экспорта",
@@ -197,7 +219,7 @@
     "ErrSoapOperationVersionConflict": "Версия SOAP операции %s конфликтует с версией связывания %s",
     "ErrSoapRPCPartRefersToElement": "Неподдерживаемая комбинация параметров: часть \"%s\", определенная ссылкой на элемент XSD-схемы, назначается сообщению SOAP в стиле RPC",
     "ErrSoapTransportNotSupported": "SOAP транспорты, кроме HTTP, в настоящее время не поддерживаются",
-    "ErrUrlReplacementMustUseGET": "Ошибка в определении input-сообщения операции \"%s\" связывания \"%s\": сообщение типа \"%s\" должно использовать метод запроса \"%s\"",
+    "ErrUrlReplacementNotAllowed": "Ошибка в определении input-сообщения операции \"%s\" связывания \"%s\": сообщение типа \"%s\" не разрешено для метода запроса \"%s\"",
     "ErrWsdlExtractedSchemaParseError": "Ошибка XML при разборе схемы, вложенной в WSDL-файл (строка %d, позиция %d):\nКод ошибки: %d\nПричина: %s",
     "ErrWsdlImportNoAccess": "Нет доступа к импортируемому документу %s"
   },
@@ -259,8 +281,8 @@
     "Group_Idx": "Индекс (%s)"
   },
   "Common/XML/SAX/XMLSAX": {
-    "ErrImplementationIntfNotSupported": "Интерфейс %s не поддерживается реализацией %s",
-    "ErrParserIsActive": "Нельзя изменять свойства парсера в процессе разбора"
+    "ErrParserIsActive": "Нельзя изменять свойства парсера в процессе разбора",
+    "ErrSAXParserImplementationNotRegistered": "Не зарегистрирована реализация SAX-парсера для интерфейса %s"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
     "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n  %s",
@@ -290,12 +312,8 @@
     "UnbalancedPop": "Несбалансированная операция извлечения"
   },
   "Common/XML/XML": {
-    "ErrCodePageByXMLCharsetAlreadyInstalled": "Функция получения номера кодовой страницы по набору символов XML уже установлена",
-    "ErrCodePageByXMLCharsetUnassigned": "Функция получения номера кодовой страницы по набору символов XML не установлена",
     "ErrGenerateNamespacePrefixOverflow": "Переполнение счетчика во время генерации префикса пространства имен",
-    "ErrStrToValueIntBadTypeRefinement": "Уточнение типа \"%s\" не допускается при преобразовании из строки в целое",
-    "ErrXMLCharsetByCodePageAlreadyInstalled": "Функция получения набора символов XML по номеру кодовой страницы уже установлена",
-    "ErrXMLCharsetByCodePageUnassigned": "Функция получения набора символов XML по номеру кодовой страницы не установлена"
+    "ErrStrToValueIntBadTypeRefinement": "Уточнение типа \"%s\" не допускается при преобразовании из строки в целое"
   },
   "Common/XML/XML_MSXML": {
     "ErrElementMustHaveAttribute": "Атрибут \"%s\" обязателен для элемента \"%s\"",
@@ -480,11 +498,7 @@
   },
   "components/calcdata/ExprColumns": {
     "ColumnMetaDesc": "Столбец",
-    "DataTypeDesc": "Тип данных",
     "DefaultExprDisplayName": "Выражение",
-    "DescriptionDesc": "Описание",
-    "ExpressionDesc": "Выражение",
-    "IntermediateDesc": "Промежуточное выражение",
     "ItemDisplayNamePrefix": "Выражение"
   },
   "components/calcdata/FloatCLineParser": {
@@ -581,7 +595,7 @@
     "ErrNotAllowedInputBinningKind": "Входное поле не поддерживает новое назначение во внешнем разбиении (ограничение по типу данных)",
     "ErrRequiredContinuousOrDiscrete": "Требуется непрерывный или дискретный вид данных",
     "MaxClassCount": "Требуемое количество классов",
-    "MinimalClassQuota": "Минимальный вес класса"
+    "MinClassRate": "Минимальная доля класса"
   },
   "components/coarseclasses/CoarseClassesEngine": {
     "ActiveInputPortRequired": "Для построения конечных классов необходимо активировать входной порт",
@@ -615,7 +629,7 @@
   },
   "components/coarseclasses/CoarseClassingOptimalAlgorithm": {
     "MaxClassCount": "Максимальное число классов",
-    "MinClassPercentage": "Минимальная доля класса",
+    "MinClassRate": "Минимальная доля класса",
     "UniformityCoef": "Коэффициент равномерности"
   },
   "components/coarseclasses/FineClassesStorage": {
@@ -764,6 +778,19 @@
   "components/datereform/DateReformVendor": {
     "VendorCaption": "Дата и время",
     "VendorDescription": "Преобразования даты и времени"
+  },
+  "components/duplicates/DuplicatesEngine": {
+    "Contradiction": "Противоречие",
+    "ContradictionGroup": "Группа противоречия",
+    "Duplicate": "Дубликат",
+    "DuplicateGroup": "Группа дубликата",
+    "DuplicatesIndexingNotify": "Поиск дубликатов и противоречий",
+    "ErrNoColumnsForProcessing": "Не указаны столбцы для обработки",
+    "SortingNotify": "Сортировка"
+  },
+  "components/duplicates/DuplicatesVendor": {
+    "VendorCaption": "Дубликаты и противоречия",
+    "VendorDesc": "Выявление дубликатов и противоречий"
   },
   "components/em/EMEngine": {
     "ColumnNameCluster": "Номер кластера",
@@ -1050,17 +1077,23 @@
   },
   "components/javascript/JavaScriptEngine": {
     "InputDataSource": "Входной источник данных",
-    "OutputDataSet": "Выходной набор данных",
-    "PreviewProcess": "Предварительный просмотр данных",
-    "WarnPreviewRunning": "Предпросмотр уже запущен"
-  },
-  "components/javascript/JavaScriptExecutor": {
-    "ErrGetModuleSourceUnassigned": "Не установлена функция чтения содержимого модуля JavaScript",
-    "ErrGetModuleURLUnassigned": "Не установлена функция разрешения путей модулей JavaScript"
+    "JavaScriptConfigureOutputTable": "Подготовка выходных столбцов",
+    "JavaScriptFillOutputTable": "Заполнение выходной таблицы",
+    "OutputDataSet": "Выходной набор данных"
   },
   "components/javascript/JavaScriptVendor": {
     "VendorCaption": "JavaScript",
     "VendorDesc": "Выполнение JavaScript-кода"
+  },
+  "components/javascript/JavaScriptWrappers": {
+    "ErrColumnInfoNoRequiredProperty": "Описание столбца не содержит обязательное свойство '%s'",
+    "ErrInvalidArgWrongType": "Аргумент [%d] имеет неверный тип",
+    "ErrInvalidColumnDataKind": "Неверно указан вид данных",
+    "ErrInvalidColumnDataType": "Неверно указан тип данных",
+    "ErrInvalidColumnInfo": "Некорректное описание столбца",
+    "ErrInvalidColumnUsageType": "Неверно указано назначение",
+    "ErrInvalidThis": "Метод вызван на некорректном объекте",
+    "ErrNoCorrespondingColumn": "Объект не связан со столбцом"
   },
   "components/joindata/JoinData": {
     "DisplayNamePrefix": "Соединение",
@@ -1150,6 +1183,8 @@
   },
   "components/logregression/LogRegressionEngine": {
     "ActualEvent": "Событие|Факт",
+    "CalcTestSetProportionProcessCaption": "Расчет доли событий в тестовом множестве",
+    "CalcTrainSetProportionProcessCaption": "Расчет доли событий в обучающем множестве",
     "Chi2": "Хи-квадрат",
     "ColumnDisplayName": "Метки входных полей",
     "ColumnName": "Имена входных полей",
@@ -1158,6 +1193,7 @@
     "CVClsErrorPercentage": "Процент ошибок классификации при кросс-валидации",
     "CVRMSError": "Среднеквадратическая ошибка при кросс-валидации",
     "ErrClassifierMultipleOutputs": "Для задачи классификации допускается только одно поле выходных данных, сейчас задано %d",
+    "ErrEmptyTestSet": "Пустое тестовое множество не может быть использовано для внесения поправки на долю событий",
     "ErrInvalidFieldsSettings": "Недопустимые настройки полей входного набора",
     "ErrNoLearnData": "В обучающем наборе данных должно быть как минимум две строки",
     "ErrNotImplemented": "Функционал не реализован",
@@ -1168,6 +1204,7 @@
     "ErrWrongOutputField": "Недопустимые свойства выходного поля \"%s\", вид данных \"%s\", тип данных \"%s\"",
     "ErrWrongOutputFieldNotDiscrete": "Недопустимые свойства выходного поля \"%s\", вид данных \"%s\", в то время как допустим только \"%s\"",
     "ErrWrongOutputUniqueCount": "Число уникальных значений выходной колонки \"%s\" равно %d (требуется ровно 2)",
+    "ErrWrongProportionGeneralSet": "Доля событий в генеральном множестве должна быть больше 0 % и меньше 100 %",
     "Intercept": "<Константа>",
     "LogRegStoreStatProcessName": "Расчет показателей качества",
     "LogRegTrainProcessName": "Построение модели",
@@ -1178,6 +1215,7 @@
     "PredictionEvent": "Событие|Прогноз",
     "PredictionProbability": "Вероятность события|Прогноз",
     "PredictionScore": "Балл|Прогноз",
+    "PrepareSetsProportionsProcessCaption": "Подготовка множеств",
     "RegressionCoefsNamePostfix": "|Коэффициенты",
     "RegressionLBoundNamePostfix": "|Нижняя граница д.и. отношения шансов",
     "RegressionOddsRatioPostfix": "|Отношение шансов",
@@ -1186,6 +1224,7 @@
     "RegressionUBoundNamePostfix": "|Верхняя граница д.и. отношения шансов",
     "RegressionWaldPValueNamePostfix": "|P-значение критерия Вальда",
     "RegressionWaldStatNamePostfix": "|Критерий Вальда",
+    "StoreEventsProcessCaption": "Определение выходного набора данных",
     "TestAvgCE": "Средняя перекрестная энтропия на тестовом множестве",
     "TestClsErrorPercentage": "Процент ошибок классификации на тестовом множестве",
     "TestRMSError": "Среднеквадратическая ошибка на тестовом множестве",
@@ -1198,13 +1237,15 @@
     "TrainSamples": "Примеров в обучающем множестве",
     "TrainThreshold": "Порог отсечения при обучении модели",
     "ValidationPartitions": "Число валидационных разбиений",
-    "ValidationSamples": "Примеров в валидационном множестве"
+    "ValidationSamples": "Примеров в валидационном множестве",
+    "WarnPrepareSetsProportionsRunning": "Процесс подготовки множеств уже запущен"
   },
   "components/logregression/LogRegressionModelTree": {
     "ErrFactorIndexesPrepared": "Не подготовлены индексы факторов полной модели"
   },
   "components/logregression/LogRegressionTasks": {
     "ErrNotLogRegTaskContext": "Внутренняя ошибка: контекст не является контекстом обучения модели лог. регрессии",
+    "ErrTooManyWeightColumns": "Количество столбцов с весами не может быть больше 1",
     "ErrWrongValidationPartitionCount": "Число валидационных разбиений должно быть больше 0 (заданное число разбиений = %d)",
     "RegBackwardAssignProcessName": "Исключение фактора %s из финальной модели",
     "RegBackwardStepProcessName": "Пошаговый отбор - исключение фактора %s",
@@ -1245,6 +1286,7 @@
     "ErrParallelProcessingError": "При параллельном выполнении цикла возникла ошибка",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Цикл с постусловием не поддерживает параллельную обработку",
     "ErrPortNotConfigurable": "Настройка порта не поддерживается",
+    "ErrReferencedNodeVendorNotFound": "Не найден исходный узел или компонент",
     "ErrSocketIsNotInputDataSourceSocket": "Порт \"%s\" не является входным портом, содержащим набор данных",
     "ErrSocketNotConfigured": "Порт не настроен",
     "ErrUnsupportedInputSocketType": "Порт \"%s\" имеет неподдерживаемый тип",
@@ -1384,6 +1426,63 @@
     "VendorCaption": "Разбиение на множества",
     "VendorDesc": "Формирование тестового и обучающего множеств"
   },
+  "components/python/PythonComponentSettings": {
+    "PythonLib": "Путь библиотеки"
+  },
+  "components/python/PythonEngine": {
+    "CodeIsHere": "Здесь может быть код работы с данными",
+    "ConfigureOutputTable": "Подготовка выходных столбцов",
+    "CreateDateFrameFromInputTable": "Создать pd.DataFrame по входному набору №1",
+    "ErrCurrentDirectory": "Не удалось определить текущую директорию",
+    "ErrDisallowedExecution": "Выполнение Python запрещено параметрами безопасности",
+    "ErrGetNativePath": "Не удалось получить путь в файловой системе по пути файлового хранилища \"%s\"",
+    "ErrPreviewPythonIsBusy": "Python занят. Невозможно запустить предпросмотр",
+    "ErrVerifyPythonIsBusy": "Python занят. Невозможно запустить проверку синтаксиса",
+    "ErrWaitTimeoutElapsed": "Истекло установленное время ожидания освобождения Python",
+    "InputPortOptional": "Входной порт необязательный",
+    "OutputDataFrameExample": "Полученный выходной pd.DataFrame",
+    "PrepareCompatibleComment": "Если включена опция \"Разрешить формировать выходные столбцы из кода\", структуру выходного набора можно подготовить по pd.DataFrame"
+  },
+  "components/python/PythonExecutor": {
+    "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nПолучить путь в файловой системе по пути файлового хранилища\nАргументы:\n  path: str\n    Путь в файловом хранилище.\nРезультат:\n  Путь в файловой системе.",
+    "ErrResNotFound": "Ресурс %s не найден",
+    "ErrTCLFinalize": "Ошибка при финализации TCL",
+    "ErrUnloadExtension": "Ошибка при выгрузке расширения \"%s\"",
+    "WarnExecuting": "Python уже выполняется"
+  },
+  "components/python/PythonInterface": {
+    "ErrPythonLibraryIncompatibleVersion": "Версия Python %d.%d не поддерживается. Минимальная поддерживаемая версия %d.%d.",
+    "ErrPythonLibraryNotFound": "Не найдена библиотека python"
+  },
+  "components/python/PythonModuleData": {
+    "ColumnGet": "Get($self, row, /)\n--\n\nПолучить значение ячейки столбца\nАргументы:\n  row: int\n    Индекс строки таблицы.\nРезультат:\n  Значение ячейки в соответствие с типом столбца (bool, int, str, float или datetime.datetime). Если ячейка пустая, то возвращается None.",
+    "ColumnIsNull": "IsNull($self, row, /)\n--\n\nПроверить, установлено ли значение в ячейке столбца\nАргументы:\n  row: int\n    Индекс строки таблицы.\nРезультат:\n  True, если ячейка таблицы пустая.\n  False, если в ячейке есть значение.",
+    "ColumnSet": "Set($self, value, /)\n--\n\nУстановить значение в ячейку столбца добавленной строки\nАргументы:\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    Значение совместимого со столбцом типа (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time и их наследники) или None.\nРезультат:\n  None",
+    "ErrColumnInfoNoRequiredProperty": "Описание столбца не содержит обязательное свойство '%s'",
+    "ErrInvalidColumnDataKind": "Неверно указан вид данных",
+    "ErrInvalidColumnDataType": "Неверно указан тип данных",
+    "ErrInvalidColumnUsageType": "Неверно указано назначение",
+    "ErrNoCorrespondingObject": "Объект Python не связан с рабочим объектом",
+    "TableAddColumn": "AddColumn($self, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nДобавить новый столбец\nАргументы:\n  ColumnInfo\n    Любой объект с метаданными столбца, например, другой столбец. Обязательный атрибут Name, опциональные: DisplayName, DataType, DataKind, DefaultUsageType.\n  Name: str\n    Имя столбца.\n  DisplayName: str\n    Метка столбца.\n  DataType: int\n    Тип данных столбца.\n  DataKind: int\n    Вид данных столбца.\n  DefaultUsageType: int\n    Назначение столбца по умолчанию.\nРезультат:\n  Новый столбец таблицы. Неуказанным атрибутам нового столбца присваиваются значения по умолчанию.",
+    "TableAppend": "Append($self, /)\n--\n\nДобавить новую строку\n\nРезультат:\n  None",
+    "TableAssignColumns": "AssignColumns($self, source, /)\n--\n\nСоздать столбцы по описаниям\nАргументы:\n  source: Iterable\n    Объект, возвращающий итератор по объектам с метаданными столбца, например, InputTable.Columns.Объект с метаданными столбца должен содержать атрибут Name и опционально: DisplayName, DataType, DataKind, DefaultUsageType.",
+    "TableClearColumns": "ClearColumns($self, /)\n--\n\nУдалить все столбцы\nРезультат:\n  None",
+    "TableDeleteColumn": "DeleteColumn($self, col, /)\n--\n\nУдалить столбец по индексу или имени\nАргументы:\n  col: Union[int, str]\n    Индекс или имя удаляемого столбца.\nРезультат:\n  None",
+    "TableGet": "Get($self, row, col, /)\n--\n\nПолучить значение ячейки таблицы\n\nАргументы:\n  row: int\n    Индекс строки таблицы\n  col: Union[int, str]\n    Индекс или имя столбца таблицы\nРезультат:\n  Значение ячейки в соответствие с типом столбца (bool, int, str, float или datetime.datetime). Если ячейка пустая, то возвращается None.",
+    "TableGetColumn": "GetColumn($self, col, /)\n--\n\nПолучить столбец по индексу или имени\n\nАргументы:\n  col: Union[int, str]\n    Индекс или имя столбца таблицы\nРезультат:\n  Столбец таблицы",
+    "TableInsertColumn": "InsertColumn($self, Index, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nВставить новый столбец по указанному индексу\nАргументы:\n  Index: int\n    Индекс, по которому вставляется столбец.\n  ColumnInfo\n    Любой объект с метаданными столбца, например, другой столбец. Обязательный атрибут Name, опциональные: DisplayName, DataType, DataKind, DefaultUsageType.\n  Name: str\n    Имя столбца.\n  DisplayName: str\n    Метка столбца.\n  DataType: int\n    Тип данных столбца.\n  DataKind: int\n    Вид данных столбца.\n  DefaultUsageType: int\n    Назначение столбца по умолчанию.\nРезультат:\n  Новый столбец таблицы. Неуказанным атрибутам нового столбца присваиваются значения по умолчанию.",
+    "TableIsNull": "IsNull($self, row, col, /)\n--\n\nПроверить, установлено ли значение в ячейке таблицы\n\nАргументы:\n  row: int\n    Индекс строки таблицы\n  col: Union[int, str]\n    Индекс или имя столбца таблицы\nРезультат:\n  True, если ячейка таблицы пустая.\n  False, если в ячейке есть значение.",
+    "TableSet": "Set($self, col, value, /)\n--\n\nУстановить значение в ячейку добавленной строки\nАргументы:\n  col: Union[int, str]\n    Индекс или имя столбца таблицы\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    Значение совместимого со столбцом типа (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time и их наследники) или None\nРезультат:\n  None"
+  },
+  "components/python/PythonUtils": {
+    "ErrLoadedExtensionRegistrationFailed": "Ошибка служебного кода для регистрации загрузки расширений Python",
+    "ErrPyObjectAsVariantUnsupported": "Преобразование переданного объекта Python в значение переменного типа не поддерживается",
+    "ErrPyObjectFromVariantUnsupported": "Преобразование переданного значения переменного типа в объект Python не поддерживается"
+  },
+  "components/python/PythonVendor": {
+    "VendorCaption": "Python",
+    "VendorDesc": "Выполнение Python-кода"
+  },
   "components/quality/Quality": {
     "ErrOutDataSetIndexOutOfRange": "Индекс выходного набора %d вне диапазона [%d; %d]",
     "GenerationOutputSets": "Формирование выходных наборов",
@@ -1437,6 +1536,7 @@
   "components/restclient/RESTClient": {
     "ErrorCodeColumn": "Код завершения",
     "ErrorDescColumn": "Описание ошибки",
+    "HttpStatusCodeColumn": "Код состояния HTTP",
     "OutputDataSet": "Ответ сервиса",
     "RequestIDOutputColumn": "Идентификатор запроса",
     "ResponseColumn": "Ответ сервера",
@@ -1916,6 +2016,7 @@
   },
   "Libraries/1CConnection/1CConnection": {
     "ErrDBPath": "Не удалось получить путь к БД",
+    "ErrEmptyConnectionString": "Не указана строка подключения",
     "ErrLocalDBForbidden": "Подключения к локальным БД сервера запрещены"
   },
   "Libraries/1CConnection/1Cv8Connection": {
@@ -1965,9 +2066,14 @@
     "ComponentTip": "%s [%s]",
     "ErrCommandTypeNotYetSupported": "Тип SQL-команды %s пока не поддерживается",
     "ErrConnectionString": "Не указана строка подключения",
+    "ErrDatabasePathNotExists": "Файл \"%s\" не найден",
     "ErrDBPath": "Не удалось получить путь к БД",
     "ErrExecuteProcedure": "Ошибка выполнения хранимой процедуры \"%s\"",
     "ErrExecuteQuery": "Ошибка выполнения SQL:\n%s",
+    "ErrIncorrectConnectionString": "Неверный формат строки подключения",
+    "ErrIncorrectDatabase": "Имя базы данных указано неверно",
+    "ErrIncorrectPort": "Порт указан неверно",
+    "ErrIncorrectServer": "Сервер указан неверно",
     "ErrIndexColumnsNotSelect": "Не указаны столбцы по которым необходимо сделать индекс",
     "ErrLocalDBForbidden": "Подключения к локальным БД сервера запрещены",
     "ErrOpenQuery": "Ошибка открытия SQL:\n%s",
@@ -1992,7 +2098,14 @@
   },
   "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
     "DatabaseTypeName": "BigQuery (ODBC)",
-    "ErrODBCBigQueryNotExists": "ODBC-драйвер для подключения к BigQuery не установлен. Установочные пакеты и краткое описание драйвера можно найти по адресу:"
+    "ErrEmailIsEmpty": "Не указан Email cервисного аккаунта",
+    "ErrIncorrectDataset": "Имя набора данных указано неверно",
+    "ErrIncorrectProject": "Название проекта указано неверно",
+    "ErrKeyFilePathIsEmpty": "Не указан путь к файлу секретного ключа",
+    "ErrKeyFilePathNotExists": "Файл ключа \"%s\" не найден",
+    "ErrODBCBigQueryNotExists": "ODBC-драйвер для подключения к BigQuery не установлен. Установочные пакеты и краткое описание драйвера можно найти по адресу:",
+    "ErrRefreshTokenIsEmpty": "Не указан токен для аутентификации",
+    "SSLCANotExists": "Файл сертификата \"%s\" не найден"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
     "DatabaseTypeName": "MS Excel (ODBC)",
@@ -2081,7 +2194,6 @@
     "ErrUnableToRecreateNamesIndex": "Невозможно пересоздать индекс имен элементов",
     "ErrVendorAlreadyRegistered": "Поставщик информации \"%s\" уже зарегистрирован",
     "ErrVendorNameConverterAlreadyRegistered": "Конвертер имен из \"%s\" в \"%s\" поставщиков информации уже зарегистрирован",
-    "GuidDesc": "Guid элемента",
     "IDDesc": "Идентификатор",
     "Item": "Элемент",
     "ItemMetaDesc": "Элемент"
@@ -2149,7 +2261,6 @@
     "ErrModelSocketCouplerDefAlreadyCoupled": "Соединение уже установлено"
   },
   "Libraries/bgrtl/DataSet": {
-    "ColumnDefs": "Описания столбцов",
     "ContainedStatisticsCompute": "Расчет статистики",
     "ErrColOutOfRange": "Номер столбца %d вне диапазона [%d; %d]",
     "ErrColumnDefsNotAssigned": "Не проинициализированы описания полей",
@@ -2333,6 +2444,7 @@
     "HyperFilesDesc": "Tableau Hyper Extracts",
     "ICOFilesDesc": "Иконка",
     "JPGFilesDesc": "Формат JPEG",
+    "JSFilesDesc": "Файлы JavaScript",
     "JSONFilesDesc": "Текстовый файл для обмена данными",
     "KeyFilesDesc": "Закрытый ключ",
     "LgdFilesDesc": "Loginom Data файл",
@@ -2342,6 +2454,7 @@
     "ODSFilesDesc": "Электронная таблица OpenDocument",
     "P12FilesDesc": "Файлы PKCS #12",
     "PDFFilesDesc": "PDF документы",
+    "PYFilesDesc": "Файлы Python",
     "RtfFilesDesc": "Файлы в формате RTF",
     "SELFilesDesc": "Файлы запросов",
     "SHPFilesDesc": "Формат shape",
@@ -2415,15 +2528,8 @@
     "UpdateError": "Метод EndUpdate был вызван без метода BeginUpdate"
   },
   "Libraries/bgrtl/MathUtils": {
-    "ErrBadMatrix": "Двумерный динамический массив не является прямоугольной матрицей",
     "ErrDeterminantIsZero": "Невозможно вычислить обратную матрицу: определитель равен нулю.",
-    "ErrDispersionIsZero": "Невозможно вычислить корреляционную матрицу: дисперсия одной из величин равна нулю",
-    "ErrMultMatrixVectDimMismatch": "Нельзя перемножать матрицу на вектор с различным количеством столбцов матрицы и длиной вектора.",
-    "ErrNotSqrMatr": "Матрица коэффициентов должна быть квадратной матрицей.",
-    "ErrQuickSelectLeftRight": "В функции QuickSelect левая граница %d задана больше правой %d",
-    "ErrRegressPowerAndDataErr": "Для корректного функционирования функции регрессии должно выполняться неравенство 0 <= \"степень полинома\" < \"количество точек данных\".",
-    "ErrRegressXYDimMismatch": "Длина вектора X должна равняться длине вектора Y",
-    "ErrSLAEDimMismatch": "Длина вектора свободных членов должна совпадать с количеством строк матрицы коэффициентов."
+    "ErrQuickSelectLeftRight": "В функции QuickSelect левая граница %d задана больше правой %d"
   },
   "Libraries/bgrtl/OpenArray": {
     "ErrVariantToVarRec": "Невозможно преобразовать переменную типа Variant в значение типа TVarRec из-за неподдерживаемого типа данных %d переменной типа Variant",
@@ -2441,8 +2547,6 @@
   },
   "Libraries/bgrtl/QueueException": {
     "ErrAggregateExceptionMessage": "В процессе обработки возникли исключения",
-    "ErrGetExceptionClassFunctionAlreadyAssigned": "Функция GetExceptionClass уже проинициализирована",
-    "ErrGetExceptionIDFunctionAlreadyAssigned": "Функция GetExceptionID уже проинициализирована",
     "ErrQueueExceptionEndUnexpected": "Попытка завершить блок отложенной обработки исключений, предварительно не начав его"
   },
   "Libraries/bgrtl/Random": {
@@ -2541,15 +2645,14 @@
     "ErrConvertIntToSet": "Невозможно преобразовать число %d размером %d бит к множеству размером %d бит",
     "ErrConvertSetToInt": "Невозможно преобразовать множество размером %d бит к числу размером %d-х бит",
     "ErrDestroyCallForbidden": "Непосредственный вызов деструктора запрещен",
-    "ErrFIsProxyObjectFunctionAlreadyAssigned": "Функция IsProxyObject уже проинициализирована",
-    "ErrGetProxyObjectIdFunctionAlreadyAssigned": "Функция GetProxyObjectId уже проинициализирована",
     "ErrIIDNotSupported": "Интерфейс с идентификатором %s не поддерживается объектом",
     "ErrInterfaceNotSupported": "Интерфейс %s не поддерживается объектом",
     "ErrInvalidClassTypecast": "Объект не является наследником класса %s",
     "ErrInvalidGUID": "Невозможно преобразовать строку \"%s\" к GUID-у",
     "ErrMaxEndThreadProcCountReached": "Невозможно зарегистрировать более %d процедур финализации для потока",
     "ErrObjectDeleteRefCount": "Невозможно удалить объект класса %s из-за наличия на него интерфейсных ссылок: %d",
-    "ErrObjectIsNil": "Пустая ссылка на объект"
+    "ErrObjectIsNil": "Пустая ссылка на объект",
+    "ErrObjectIsNilFmt": "Пустая ссылка на объект %s"
   },
   "Libraries/bgrtl/SysUtils": {
     "ErrCopyPasteRecursive": "Папка \"%s\" не может быть скопирована сама в себя",
@@ -2622,6 +2725,10 @@
   "Libraries/bgrtl/TypInfo": {
     "ErrEnumVendorInfoManagerNotRegistered": "Не зарегистрирован менеджер описаний перечислений",
     "ErrTypeInfoVariableManagerNotRegistered": "Менеджер переменных для типа %s не зарегистрирован"
+  },
+  "Libraries/bgrtl/UITypes": {
+    "Alpha": "Прозрачность",
+    "Color": "Цвет"
   },
   "Libraries/bgrtl/UniqueValues": {
     "ErrNullAsValueChangeForbidden": "Значение параметра NullAsValue непустого списка уникальных значение изменять запрещено",
@@ -2714,7 +2821,6 @@
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Не удалось установить свойство \"%s\"",
     "ErrDisposeRuntime": "Ошибка при удалении среды выполнения JavaScript: \"%s\"",
-    "ErrGetModuleSourceUnassigned": "Не установлена функция чтения содержимого модуля JavaScript",
     "ErrMessageQueue": "Не обработанное исключение при постановке в очередь событий JavaScript",
     "ErrMessageUnhandledPromiseRejection": "Не обработанное исключение при отслеживании отклоненных Promise",
     "ErrOriginalDll": "Операция не поддерживается. Используется несовместимая версия библиотеки ChakraCore.",
@@ -2723,10 +2829,6 @@
     "ErrTooFewArgs": "В функцию %s передано недостаточно аргументов (%d, когда минимум %d)",
     "ErrTooManyArgs": "В функцию %s передано много аргументов (%d, когда максимум %d)",
     "ErrUnhandledPromiseRejected": "Не обработанная ошибка в Promise"
-  },
-  "Libraries/ChakraCore/ChakraCommonJS": {
-    "ErrGetModuleSourceUnassigned": "Не установлена функция загрузки модулей JavaScript",
-    "ErrGetModuleURLUnassigned": "Не установлена функция разрешения путей модулей JavaScript"
   },
   "Libraries/ChakraCore/ChakraRunRes": {
     "BadSerializedScript": "Некорректно сериализован служебный JavaScript-код в ресурсе %s, выполняется несериализованный код",
@@ -2807,6 +2909,10 @@
     "ErrUnsupportedConfigBinaryStreamVersion": "Неподдерживаемая версия %d потока данных конфигурации",
     "ErrUnsupportedDataType": "Неподдерживаемый тип данных атрибута конфигурации"
   },
+  "Libraries/Config/ConfigFile": {
+    "ErrLoadConfigFile": "Ошибка загрузки файла конфигурации: %s",
+    "ErrSaveConfigFile": "Ошибка сохранения файла конфигурации: %s"
+  },
   "Libraries/Config/ConfigScheme": {
     "CountDesc": "Количество",
     "ErrAttributeByNameNotFound": "Атрибут схемы с именем \"%s\" не найден.",
@@ -2824,7 +2930,6 @@
     "ErrConfigSchemeTypesMismatch": "Тип схемы %s загружаемой конфигурации не совместим с типом схемы %s объекта"
   },
   "Libraries/Config/ConfigWrappers": {
-    "ErrBaseConfigNotExists": "Отсутствует базовая конфигурация при чтении производного элемента",
     "ErrBaseElementGuidNotExists": "Отсутствует базовый элемент для производного элемента коллекции с идентификатором %s",
     "ErrBaseElementIDNotExists": "Отсутствует базовый элемент для производного элемента коллекции с идентификатором %d",
     "ErrBaseElementNameNotExists": "Отсутствует базовый элемент для производного элемента коллекции с именем %s",
@@ -2994,6 +3099,9 @@
     "ErrInterfaceNotSupportedEx": "Интерфейс %s не поддерживается"
   },
   "Libraries/Model/ComponentSettings": {
+    "Disabled": "Выполнение запрещено",
+    "ErrSettingIncompatibleType": "Для установки настройки \"%s\" передано значение несовместимого типа",
+    "ErrSettingNotExists": "Настройка \"%s\" не существует",
     "ErrSettingsAlreadyInitialized": "Настройки уже проинициализированы"
   },
   "Libraries/Model/Connections/ConnectionVendor": {
@@ -3171,6 +3279,7 @@
   },
   "Libraries/Model/ModelComponentVendorGroupsCommon": {
     "AnalyticVendorGroupCaption": "Data Mining",
+    "CodeVendorGroupCaption": "Программирование",
     "DataTreeVendorGroupCaption": "Дерево данных",
     "ExploratoryVendorGroupCaption": "Исследование",
     "ExportVendorGroupCaption": "Экспорт",
@@ -3604,7 +3713,6 @@
     "ErrInterfaceParentNotFound": "Не найден родительский интерфейс \"%s\"",
     "ErrInvalidMetadataResource": "Ошибка чтения метаданных из ресурса \"%s\"",
     "ErrInvalidUTFInt": "Ошибка чтения целого упакованного числа",
-    "ErrManagerNotInitialized": "Не проинициализирован менеджер свойств интерфейсов",
     "ErrParentNotInitialized": "У интерфейса \"%s.%s\" не проинициализирован родитель",
     "ErrPropAccessorNotFound": "В метаданных для свойства \"%s.%s\" не удалось найти акцессор \"%s\"",
     "ErrReferenceIsNil": "Интерфейсная ссылка не инициализирована",
@@ -3700,11 +3808,14 @@
     "ErrDisconnectedSession": "Соединение разорвано",
     "ErrIncorrectMainServerObjectInterfaceID": "Получен некорректный идентификатор интерфейса главного серверного объекта",
     "ErrInvalidObjectID": "Невалидный идентификатор объекта: %d",
+    "ErrInvalidRangeBounds": "Левая граница диапазона [%d; %d] больше правой",
     "ErrMainServerObjectNotRegistered": "Главный серверный объект не зарегистрирован",
     "ErrMaxObjectIdReached": "Достигнут предел в %d значений идентификаторов объектов",
     "ErrMethodHasNoReturnValue": "Метод %s не имеет возвращаемого значения",
     "ErrMethodHasOutputParameters": "Метод %s содержит выходные параметры",
     "ErrMethodReturnValueIsNotInterface": "Возвращаемое значение метода %s не является интерфейсной ссылкой на объект",
+    "ErrNegativeRangeBounds": "Границы диапазона [%d; %d] отрицательные",
+    "ErrRangeLengthOutOfRange": "Границы диапазона [%d; %d] не принадлежит допустимому диапазону значений [%d; %d]",
     "ErrRpcVersionMismatch": "Клиент версии %s не может подключиться к серверу версии %s",
     "ErrUnknownInterfaceID": "Неизвестный идентификатор интерфейса: %d",
     "ErrValueOutOfRange": "Значение %d не принадлежит допустимому диапазону значений [%d; %d]"
@@ -3722,7 +3833,9 @@
     "TableauRestConnectionVendorDesc": "Подключение к Tableau серверу по REST API"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
+    "ErrNoWSDLSource": "Не указан источник WSDL",
     "ErrWSDLLoad": "Ошибка загрузки WSDL:\nИмя файла: %s",
+    "ErrWSDLSourceNotExists": "Файл \"%s\" не найден",
     "WarnMainWSDLNotLoaded": "Основной источник WSDL (%s) не загружен (%s). Пытаемся загрузить из резервного источника."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
@@ -3748,6 +3861,9 @@
   },
   "Studio/Converters/Converter_201809181721_LogRegression_RelativeTerms": {
     "WarnCannotConvert": "Невозможно сконвертировать пакет, созданный в предыдущей версии программы.\nНастройки узлов \"Логистическая регрессия\" могли быть сброшены.\nТребуется заново настроить и переобучить узлы \"Логистическая регрессия\", конвертация которых невозможна"
+  },
+  "Studio/Converters/Converter_202003302114_CubeView_Chart": {
+    "WarnCannotConvert": "В настройках визуализатора %s не удалось сконвертировать отображаемый в диаграмме куба факт. Был выбран первый подходящий факт."
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Пакеты Loginom"
@@ -3810,6 +3926,21 @@
   "Studio/DeductorServerSettings": {
     "SessionBackupDirectory": "Резервные копии сессий",
     "UserStorageDirectory": "Личные данные пользователей"
+  },
+  "Studio/DeductorSessionsManager": {
+    "ErrCloseSessionRestriction": "Запрещено закрывать сессию %s",
+    "ErrNodeNotPackageInfo": "Переданный объект не является узлом пакета в диспетчере",
+    "ErrNodeNotSessionInfo": "Переданный объект не является узлом сессии в диспетчере",
+    "ErrPackageNotFound": "Не найден пакет %s в сессии %s. Возможно он уже закрыт",
+    "ErrPackageSessionNotFound": "Не найдена сессия в которой находился пакет %s. Возможно она уже закрыта",
+    "ErrSessionNotFound": "Не найдена сессия %s. Возможно она уже закрыта",
+    "LogManagedPackageClosed": "Пакет %s закрыт из диспетчера",
+    "LogManagedPackageStopped": "Пакет %s остановлен из диспетчера",
+    "LogManagedSessionClosed": "Сессия %s закрыта из диспетчера",
+    "LogManagedSessionStopped": "Сессия %s остановлена из диспетчера",
+    "NotResolvedIP": "Не доступно",
+    "PackagePoolNodeName": "Пул пакетов",
+    "SharedPackagesNodeName": "Общие пакеты"
   },
   "Studio/DeductorUsers": {
     "AllowedApplicationModes": "Разрешённые режимы работы приложения",
@@ -3931,8 +4062,6 @@
     "ChartTotalsProgress": "Нахождение суммы ряда"
   },
   "Viewers/Chart/Server/ChartParametres": {
-    "Alpha": "Прозрачность",
-    "Color": "Цвет",
     "DefaultSerieName": "Серия",
     "ErrAxisNotFound": "Ось с данной позицией не найдена",
     "ErrAxisPositionNotTrue": "Неверная позиция оси",
@@ -3988,6 +4117,12 @@
     "DimValueDesc": "Значение заголовка"
   },
   "Viewers/Cube/CubeChart": {
+    "DimDataTypeDesc": "Тип занных изменения",
+    "DimNameDesc": "Имя измерения",
+    "DimValueDesc": "Уникальное значение, принадлежащее измерению",
+    "ErrAlreadyExists": "Факт с индексом отображения %d уже присутствует в диаграмме куба",
+    "ErrDataType": "Нельзя использовать отображение факта с нечисловым типом данных в диаграмме куба",
+    "ErrNotExists": "Факт с индексом отображения %d отсутствует в диаграмме куба",
     "MaxDotsCountDesc": "Максимальное количество точек",
     "MaxSeriesCountDesc": "Максимальное количество серий"
   },
@@ -4058,6 +4193,14 @@
     "ManagerBrowse": "Таблица",
     "ManagerStatistics": "Статистика",
     "MsgEmbeddedViewLoadFailed": "Не удалось загрузить конфигурацию детализации \"%s\""
+  },
+  "Viewers/Duplicates/DuplicatesView": {
+    "Component": "Компонент",
+    "ErrNotDefinedComponent": "Не определен компонент Дубликаты и противоречия"
+  },
+  "Viewers/Duplicates/DuplicatesViewVendor": {
+    "VendorCaption": "Дубликаты и противоречия",
+    "VendorDesc": "Отображение дубликатов и противоречий в таблице"
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Компонент",
@@ -4198,8 +4341,7 @@
     "VendorDesc": "Отображение статистических показателей"
   },
   "Warehouse2/DataWarehouseConnection": {
-    "ErrTestConnection": "Ошибка проверки подключения:\n%s",
-    "MDDatabase": "База данных с метаданными"
+    "ErrTestConnection": "Ошибка проверки подключения:\n%s"
   },
   "Warehouse2/DBMDEngine": {
     "ErrDimensionFKIsNull": "Ссылка на измерение \"%s\" не найдена.\nНе указано значение внешнего ключа.",
@@ -4218,21 +4360,25 @@
     "ErrDimensionValueNotFound": "Значение \"%s\" измерения \"%s\" не найдено в ХД (строке \"%d\").",
     "ErrDropTable": "В процессе выполнения удаления таблицы связанной с объектом [%s] \"%s\" возникла ошибка.\n%s",
     "ErrEmptyData": "В процессе выполнения очистки данных объекта [%s] \"%s\" возникла ошибка.\n%s",
-    "ErrError": "Ошибка:",
     "MsgDeleteDataProcess": "Удаление по измерению данных Процесса из Хранилища данных",
+    "MsgDisableConstraint": "Отключить индексы и ограничения.",
     "MsgEnableConstraint": "Восстановить индексы и ограничения.",
+    "MsgGroupDataProcess": "Группировка данных Процесса перед загрузкой в Хранилище данных",
+    "MsgGroupDeleteDim": "Подготовка к удалению. Группировка данных по измерению.",
     "MsgLoadDataDimension": "Загрузка данных Измерения в Хранилище данных",
     "MsgLoadDataProcess": "Загрузка данных Процесса в Хранилище данных",
     "MsgRecordSkipDimValueIsNull": "Данные строки \"%d\" не добавлены в ХД. Значение измерения \"%s\" пустое.",
     "MsgStatisticsGathering": "Сбор статистики"
+  },
+  "Warehouse2/Deductor/DDWExportVendor": {
+    "VendorCaption": "Deductor Warehouse",
+    "VendorDesc": "Загрузка данных в Хранилище данных Deductor"
   },
   "Warehouse2/Deductor/DDWImportVendor": {
     "VendorCaption": "Deductor Warehouse",
     "VendorDesc": "Извлечение данных из Хранилища данных Deductor"
   },
   "Warehouse2/Deductor/Ver6/DW6Engine": {
-    "CommentForFieldChangeID": "Ссылка на журнал изменений",
-    "CommentForFieldID": "Первичный ключ",
     "ErrCheckProcess": "Процесс [%s] \"%s\" должен состоять хотя бы из двух измерений.",
     "ErrDataCube": "Не удалось считать информацию о Кубе [%s] \"%s\" .\n%s",
     "ErrDataNotLoad": "Данные в ХД не загружены.\nВозможные причины:\nFirebird - пробелы в конце строковых измерений;\nMS SQL - не учитывает регистр букв строковых измерений.\nЕсли было выставлено удаление данных по измерению - эти данные удалены из ХД.\nВозникла ошибка при восстановлении ограничений и индексов:\n%s",
@@ -4260,55 +4406,45 @@
     "DWConnectionVendorDesc": "Подключение к Хранилищу данных"
   },
   "Warehouse2/DWDataEngine": {
-    "ErrExecSQL": "Ошибка при выполнении запроса к БД.\n%s"
+    "ErrDimNotSourceName": "Для измерения \"%s\" не указано поле из источника данных.",
+    "ErrDimSourceNameNotFound": "Поле \"%s\" указанное для измерения \"%s\" в источнике данных не найдено.",
+    "ErrExecSQL": "Ошибка при выполнении запроса к БД.\n%s",
+    "ErrSourceNameNotFound": "Поле \"%s\" указанное для \"%s\" в источнике данных не найдено."
+  },
+  "Warehouse2/DWExport": {
+    "ErrDimNotSourceName": "Для измерения \"%s\" не указано поле из источника данных.",
+    "ErrNotConnectedToDatabase": "Не установлено соединение с Хранилищем данных",
+    "ErrObjectDWNotSpecified": "Не указан объект Хранилища данных"
   },
   "Warehouse2/DWExtract": {
-    "DWObjectName": "Объект",
-    "DWObjectType": "Тип объекта",
-    "ErrDWObjectNameNotFound": "Не найден объект хранилища данных с именем \"%s\".",
-    "SelectionTree": "Дерево выбранных объектов"
+    "ErrDWObjectNameNotFound": "Не найден объект хранилища данных с именем \"%s\"."
   },
   "Warehouse2/DWExtractTree": {
     "ErrNeedSelectItem": "Необходимо выбрать хотя бы один элемент",
-    "ErrParams": "В параметрах объекта \"%s\" найдена ошибка",
-    "FilterParams": "Параметры фильтрации",
-    "FuncAggr": "Виды агрегации",
-    "ItemLatentFilter": "Элемент скрытого фильтра",
-    "LatentFilter": "Скрытый фильтр",
-    "ObjName": "Имя объекта",
-    "ObjType": "Тип объекта",
-    "Order": "Порядковый номер",
-    "SelectedItem": "Объект",
-    "SubNodes": "Подузлы"
+    "ErrParams": "В параметрах объекта \"%s\" найдена ошибка"
   },
   "Warehouse2/DWImport": {
     "ErrExecQuery": "Ошибка при выполнении запроса к Хранилищу данных",
     "ErrNotConnectedToDatabase": "Не установлено соединение с Хранилищем данных",
+    "ErrNotConnectedToMeataDataNode": "Импортируемое поле \"%s\" (%s) не связано с объектом Хранилища данных",
     "ErrObjectDWNotSpecified": "Не указан объект Хранилища данных",
     "ExecQueryProcess": "Выполнение запроса к Хранилищу данных",
     "ImportDataProcess": "Импорт данных из Хранилища данных"
   },
+  "Warehouse2/DWLoad": {
+    "ErrDWObjectNameNotFound": "Не найден объект Хранилища данных с именем \"%s\"."
+  },
   "Warehouse2/MDChoiceTree": {
-    "ErrDWObjectsNotFound": "Не найдены объекты хранилища данных с именами %s",
-    "SelectedItems": "Выбранные объекты"
+    "ErrDWObjectNotFound": "Объект хранилища данных с именем \"%s\" (%s) не найден",
+    "ErrNodeNotBelongToTree": "Узел метаданных \"%s\" не принадлежит дереву метаданных"
   },
   "Warehouse2/MDFilterParams": {
-    "CustomPointDate": "Значение даты установлено пользователем",
     "ErrCustomPointDate": "Значение даты не может быть пустым",
     "ErrFilterTypeIncorrect": "Тип фильтрации \"%s\" не совместим",
     "ErrListEmpty": "Список не может быть пустым",
     "ErrSkipIntervalCount": "Количество пропущенных периодов не может быть меньше 1",
     "ErrStringEmpty": "Значение не может быть пустым",
-    "ErrUseIntervalCount": "Количество периодов не может быть меньше 1",
-    "FilterType": "Тип фильтрации",
-    "IntervalType": "Вид интервала",
-    "ListVal": "Список значений",
-    "MaxVal": "Значение Max",
-    "MinVal": "Значение Min",
-    "PointType": "Вид точки отсчета",
-    "SkipIntervalCount": "Кол-во пропущенных интервалов",
-    "TheVal": "Значение",
-    "UseIntervalCount": "Кол-во используемых интервалов"
+    "ErrUseIntervalCount": "Количество периодов не может быть меньше 1"
   },
   "Warehouse2/MDTree": {
     "ErrColumnCantBeContinuous": "Объект \"%s\" типа \"%s\" не может быть непрерывным",

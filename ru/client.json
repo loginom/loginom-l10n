@@ -23,7 +23,6 @@
     "ComponentSettings": "Параметры компонента",
     "ConnectionSettings": "Параметры подключения",
     "DirectorySettings": "Папки",
-    "Disabled": "Выполнение запрещено",
     "LDAPSettings": "Параметры LDAP",
     "LogFileMaxIndex": "Количество резервных файлов",
     "LogFileMaxSize": "Максимальный размер файла",
@@ -42,9 +41,20 @@
     "SSLPrivateKeyFile": "Имя файла закрытого ключа",
     "StopTimeout": "Таймаут остановки сервера (сек)",
     "ThreadPoolSize": "Размер пула потоков",
+    "TraceExceptions": "Трассировка исключений",
     "UserStorageDirectory": "Личные данные пользователей",
     "WSPort": "WebSocket порт",
     "WSSPort": "WebSocket SSL/TLS порт"
+  },
+  "admin/SessionsManagerForm": {
+    "ConfirmPackageClose": "Закрыть пакет \"{0}\" без сохранения изменений?",
+    "ConfirmPackageStop": "Остановить выполнение пакета \"{0}\"?",
+    "ConfirmSessionClose": "Закрыть сессию \"{0}\" без сохранения изменений?",
+    "ConfirmSessionStop": "Остановить выполнение сессии \"{0}\"?",
+    "PackageRefCountTip": "Количество сессий ссылающихся на пакет",
+    "ReadOnlyPackageNamePostfix": "(только чтение)",
+    "RoleTipFormat": "Сессия запущена пользователем с ролью {0}",
+    "SessionCapacity": "{0} из {1}"
   },
   "admin/SharedDirectoriesForm": {
     "DeleteUserConfirm": "Удалить папку из файловой системы?"
@@ -134,6 +144,7 @@
     "ErrPackageNotSaved": "Текущий пакет не сохранен",
     "ErrUrlPathNotFound": "Ветка с именем \"{0}\" не найдена.",
     "FavoritesTitle": "Избранное",
+    "MsgManagedPackageClosed": "Пакет {0} был закрыт из диспетчера",
     "MsgNodeNotFound": "Указанный узел не найден. Переход невозможен.",
     "MsgTransportError": "Произошёл разрыв связи с сервером",
     "PackageCloseFormat": "Закрыть также пакет \"{0}\"?",
@@ -161,6 +172,7 @@
     "FileStorage": "Файлы",
     "HomePage": "Начало",
     "InputPorts": "Входные порты",
+    "Manager": "Диспетчер",
     "ModelViews": "Визуализаторы",
     "OutputPorts": "Выходные порты",
     "PackagesParent": "Пакеты",
@@ -488,6 +500,8 @@
     "ActualSuffix": " (факт)",
     "BuildActualStatConfirm": "Пересчитать показатели конечных классов?",
     "BuildActualStatConfirmYes": "Пересчитать",
+    "EventCountTooltip": "Количества событий",
+    "EventRateTooltip": "Доли событий",
     "HideSideBar": "Скрыть боковую панель",
     "Locked": "Заморожено",
     "NoActualStatInfo": "Не удалось рассчитать статистику начальных и конечных классов",
@@ -515,6 +529,9 @@
     "DuplicateSocketsError": "Элементы \"{0}\" и \"{1}\" имеют одинаковые идентификаторы",
     "EmptySocketName": "<Уникальное имя>",
     "EmptyVendor": "Не задан"
+  },
+  "components/condition/ConditionsView": {
+    "UniqueValuesLimitInfo": "Поле \"{0}\" имеет количество уникальных значений {1}, в списке присутствуют только первые {2}"
   },
   "components/corranalysis/CorrAnalysisWizard": {
     "CorrTypeExtremum": "Будет вычислен максимальный по модулю из коэффициентов корреляции двух процессов, рассчитанных при всевозможных временных сдвигах. Следует применять, если необходимо узнать линейную зависимость между двумя процессами или частями процессов, происходящими с некоторым временным лагом.",
@@ -639,7 +656,7 @@
   },
   "components/filterdata/FilterDataCollection": {
     "ConfirmDeleteAll": "Вы действительно хотите удалить все условия?",
-    "UniqueValuesLimitError": "Поле \"{0}\" имеет количество уникальных значений, превышающее допустимый предел {1}"
+    "UniqueValuesLimitInfo": "Поле \"{0}\" имеет количество уникальных значений {1}, в списке присутствуют только первые {2}"
   },
   "components/filterdata/FilterDataWizard": {
     "Activation": "Активация входа",
@@ -657,17 +674,14 @@
     "GroupDataFactor": "Показатели",
     "GroupDataTitle": "Группировка"
   },
-  "components/javascript/CodeOutputPreviewForm": {
-    "CodeExec": "Выполнение скрипта"
-  },
   "components/javascript/JavaScriptCodeMirrorController": {
     "CodePlaceholder": "Введите код"
   },
-  "components/javascript/JavaScriptCodeWizard": {
-    "ConsoleMessagesMissed": " пропущено"
-  },
   "components/javascript/JavaScriptColumnsWizard": {
     "frmJavaScriptOutputTableTitle": "Настройка столбцов выходной таблицы JavaScript"
+  },
+  "components/javascript/JavaScriptPreviewController": {
+    "ConsoleMessagesMissed": " пропущено"
   },
   "components/joindata/JoinDataWizard": {
     "DifferenceJoinDataDesc": "Разность включает в результат все строки из главного набора данных, за исключением строк, для которых ключевые поля главного (левого) и вычитаемого (правого) набора данных совпадают.",
@@ -685,9 +699,11 @@
     "RegressionParamsPage": "Настройка линейной регрессии"
   },
   "components/logregression/LogRegressionWizard": {
+    "GeneralSet": "Генеральное",
     "GetValueList": "Получить список",
     "RegressionDetailPage": "Детальная настройка логистической регрессии",
-    "RegressionParamsPage": "Настройка логистической регрессии"
+    "RegressionParamsPage": "Настройка логистической регрессии",
+    "TrainSet": "Обучающее"
   },
   "components/loop/LoopMappingWizard": {
     "InvalidLinkFormat": "Отсутствует переменная в связи входной переменной \"{0}\" с выходной \"{1}\"",
@@ -714,6 +730,16 @@
     "DecayVeryStrong": "Очень сильная",
     "DecayVeryWeak": "Очень слабая",
     "DecayWeak": "Слабая"
+  },
+  "components/python/PythonCodeMirrorController": {
+    "CodePlaceholder": "Введите код"
+  },
+  "components/python/PythonColumnsWizard": {
+    "frmPythonOutputTableTitle": "Настройка столбцов выходной таблицы Python"
+  },
+  "components/python/PythonOutputPreviewForm": {
+    "OutputStdErrSymbolsSkipped": "символов stderr пропущено",
+    "OutputStdOutSymbolsSkipped": "символов stdout пропущено"
   },
   "components/reformcolumns/EditReformColumnDefForm": {
     "CachingMethod": "Кэширование"
@@ -875,6 +901,10 @@
     "ErrUpdateNotSupported": "Операция обновления записей по ключу не поддерживается текущей базой данных",
     "NoConnection": "Нет подключения"
   },
+  "exports/dwh/DWExportWizard": {
+    "ConfirmClearAllLinks": "Удалить все связи?",
+    "DeleteModeNotDelete": "не удалять"
+  },
   "exports/excelfile/ExportExcelFilePreviewWizard": {
     "DefaultSheetName": "Лист1"
   },
@@ -994,6 +1024,17 @@
     "NestedDDZone": "Вложенные dd зоны запрещены",
     "NestedReciever": "Вложенные ресиверы запрещены",
     "NonContainerRecieverBadConfig": "Ресивер может быть не контейнером, только если NoAddOnDrop == NoPlaceholder == true"
+  },
+  "ext/PaginationPlugin": {
+    "ErrMaxPage": "Нельзя задать страницу больше последней",
+    "ErrMinPage": "Нельзя задать страницу меньше первой",
+    "FirstPage": "Первая страница",
+    "LastPage": "Последняя страница",
+    "MaxPageIndex": "из {0}",
+    "NextPage": "Следующая страница",
+    "Page": "Страница",
+    "PageDescFmt": "[{0} .. {1}]",
+    "PrevPage": "Предыдущая страница"
   },
   "ext/TotalLabel": {
     "HeaderFormat": "# |{0}|",
@@ -1316,6 +1357,7 @@
   "imports/dwh/DWImportWizard": {
     "CompareTipFmt": "[{0}..{1}]",
     "ConfirmDeleteAllFields": "Вы действительно хотите удалить все выбранные столбцы?",
+    "FactAggregationTipFmt": "(Агрегация по умолчанию - {0})",
     "FuncAggregatesUndefined": "Не определены",
     "GetValueList": "Получить список",
     "MetaDataNodeTypeAttr": "Атрибут",
@@ -1515,23 +1557,25 @@
     "AddPortDisplayName": "Добавить еще один порт."
   },
   "mxgraph/port/Port": {
+    "NoAutoMapping": "Автоматическая синхронизация полей отключена",
+    "OptionalPortParam": "Необязательный порт",
+    "RequiredPortParam": "Обязательный порт (требуется связь для выполнения узла)"
+  },
+  "mxgraph/port/PortAbstract": {
     "CONNECTION": "Подключение",
+    "CONTROL_VARIABLES": "Управляющие переменные",
     "DATASOURCE": "Набор данных",
     "DATATREE": "Дерево данных",
     "INHERITANCE": "Наследование",
     "MODEL": "Модель",
-    "OptionalPortParam": "Необязательный порт",
     "ORDER": "Порядок выполнения",
-    "REFERENCE": "Ссылка",
-    "RequiredPortParam": "Обязательный порт (требуется связь для выполнения узла)",
-    "TYPE_UNDEFINED": "Тип порта не известен",
-    "VARIABLES": "Переменные"
-  },
-  "mxgraph/port/PortAbstract": {
     "PortActive": "Порт активен, данные есть",
     "PortConfigured": "Порт сконфигурирован",
     "PortInActive": "Порт не сконфигурирован",
-    "PortPartlyConfigured": "Порт частично сконфигурирован"
+    "PortPartlyConfigured": "Порт частично сконфигурирован",
+    "REFERENCE": "Ссылка",
+    "TYPE_UNDEFINED": "Тип порта не известен",
+    "VARIABLES": "Переменные"
   },
   "navigation/NavigationPanel": {
     "PathBeforeText": "Путь:",
@@ -1624,6 +1668,22 @@
     "ErrInvalidUInt32": "\"{0}\" is not valid unsigned integer value",
     "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value"
   },
+  "test/Instruments": {
+    "DragAndDropOffset": "Смещение координат при Drag'n'Drop: X: {0}, Y: {1}",
+    "FailedFetchingTestId": "Не удалось найти элемент с тестовым идентификатором в этом месте",
+    "FailedGettinScrolledElement": "Не удалось найти элемент с позицией скроллов (отличной от нуля) в этом месте",
+    "NoClipboardAPI": "API браузера для сохранения текста в буфер обмена работает только через HTTPS протокол, начиная с 66 версии Chrome и 63 Firefox",
+    "ScrollPosition": "Позиция скролла: ",
+    "TestIdSavedInClipBoard": "Идентификатор \"{0}\" сохранен в буфер обмена",
+    "WorkaroundClipboardCopy": "Альтернативный вариант копирования в буфер обмена работает только в Chrome, FireFox, Opera и Safari"
+  },
+  "test/Main": {
+    "ShouldBeUniqTestId": "Тестовый идентификатор '{0}' не уникален в рамках текущего DOM. Это не критичная ситуация (т.к. сейчас видим только один элемент с таким идентификатором), но по возможности этого стоит избегать.",
+    "ShouldBeUniqTestIdAmongVisible": "Тестовый идентификатор '{0}' не уникален в рамках текущего DOM среди видимых элементов"
+  },
+  "test/TestIdentifier": {
+    "TableCellWithoutTestId": "Ячейка таблицы без тестового идентификатора"
+  },
   "viewers/BaseView": {
     "ErrViewIsPanel": "Визуализатор должен быть наследником Ext.panel.Panel",
     "WarnViewerObjectDeleted": "Обработка события изменения статуса визуализатора \"{0}\" отменена, так как визуализатор был асинхронно удалён"
@@ -1635,10 +1695,7 @@
     "ActColInAllInvisibleTip": "Скрыта",
     "ActColInAllVisibleTip": "Отображается",
     "ActHideAll": "Скрыть все поля",
-    "ActShowAll": "Отобразить все поля",
-    "EmptyFormatText": "Не задан",
-    "EmptyWidthText": "Не задана",
-    "NoExampleFormats": "Нет примеров"
+    "ActShowAll": "Отобразить все поля"
   },
   "viewers/browse/BrowseGoToLine": {
     "ErrRowNoLessLower": "Номер строки должен быть больше или равен 1",
@@ -1675,10 +1732,10 @@
     "GoToLineApplyActionText": "Перейти",
     "GoToLineTitle": "Перейти к строке",
     "LastTableRowAction": "Последняя строка",
+    "MaxPageIndex": "из {0}",
     "NameRecNoField": "RecNo",
     "NameRowNoField": "RowNo",
     "PageDescFmt": "[{0} .. {1}]",
-    "PageInfoFmt": "Страница {0} из {1}",
     "PageInfoNotActive": "Не активирован",
     "PageInfoViewDataInvalid": "Данные не готовы",
     "RecNoField": "№",
@@ -1957,27 +2014,27 @@
   },
   "viewers/cube/CubeView": {
     "ChartCaseEmptyText": "Список пуст",
+    "ChartCaseManyText": "Факты ({0})",
+    "ChartYAxisTitle": "Факты",
     "DotsOutOfBoundsMsg": "Превышение ограничений диаграммы.\nТекущее кол-во точек: {0}.\nМаксимальное кол-во точек: {1}",
+    "EditSerieColor": "Изменить цвет...",
+    "EmptyChart": "Нет фактов для отображения",
     "ErrExportFailed": "Не удалось экспортировать кросс-таблицу Куба:\n{0}",
     "ExportToastTitle": "Экспорт из Куба",
+    "HideAllSeries": "Скрыть все серии",
     "HideSingleCase": "Скрыть единственный факт",
+    "InvertSeries": "Инвертировать серии",
+    "ResetSerieColor": "Сбросить цвет",
     "SeriesOutOfBoundsMsg": "Превышение ограничений диаграммы.\nТекущее кол-во серий: {0}.\nМаксимальное кол-во серий: {1}",
+    "ShowAllSeries": "Показать все серии",
+    "TooltipMode": "Тип подсказок",
     "WarnExportTableSizeWarning": "Текущий размер кросс-таблицы составляет {0} ячеек.\nРазмер экспортируемого файла оценивается в не менее {1} Mb.\nВы действительно хотите начать экспорт?"
   },
   "viewers/cube/DimensionFilterSelectionPanel": {
-    "DimensionFilterSelectionPanelTitle": "Отметить по маске",
-    "EndingWith": "заканчивается на",
-    "Equal": "=",
-    "Like": "содержит",
-    "NotEndingWith": "не заканчивается на",
-    "NotEqual": "<>",
-    "NotLike": "не содержит",
-    "NotStartingWith": "не начинается с",
-    "StartingWith": "начинается с"
+    "DimensionFilterSelectionPanelTitle": "Отметить по маске"
   },
   "viewers/cube/DimensionsFilterPanel": {
     "CheckAllTooltip": "Отметить все",
-    "TooManyValuesMsg": "Невозможно отобразить список значений\nТекущее кол-во значений: {0}\nМаксимальное кол-во значений: {1}",
     "UncheckAllTooltip": "Снять все"
   },
   "viewers/cube/PivotDataSource": {
@@ -2012,6 +2069,14 @@
     "SelectNext": "Следующая запись",
     "SelectPrev": "Предыдущая запись"
   },
+  "viewers/duplicates/DuplicatesView": {
+    "InputColumn": "Входное поле",
+    "OutputColumn": "Выходное поле"
+  },
+  "viewers/fastpreview/DataSetForm": {
+    "MaxRowFmt": "из {0}",
+    "RowNumbererHeaderSymbol": "№"
+  },
   "viewers/fastpreview/DataTreeForm": {
     "LoadedNodesLimitNote": "Показываются только первые {0} из загруженных узлов"
   },
@@ -2025,6 +2090,7 @@
     "LockMaskText": "Узел заблокирован"
   },
   "viewers/regression/LinRegressReportView": {
+    "ModelInfoMaxLikelihood": "Максимум функции правдоподобия",
     "TStatInfoParam": "Т-статистика"
   },
   "viewers/regression/LogRegressReportView": {
@@ -2036,12 +2102,16 @@
     "ModelInfoAICc": "AICc",
     "ModelInfoBIC": "BIC",
     "ModelInfoConstant": "Константа",
+    "ModelInfoConstantExc": "Исключена",
+    "ModelInfoConstantInc": "Включена",
+    "ModelInfoDeviance": "Deviance",
     "ModelInfoDFE": "Число степеней свободы",
+    "ModelInfoFValue": "F-статистика",
     "ModelInfoHQC": "HQC",
-    "ModelInfoLogLikelihood": "-2 Log Likelihood",
     "ModelInfoPValue": "Значимость",
     "ModelInfoR2": "R^2",
     "ModelInfoR2adj": "R^2 корр.",
+    "ModelInfoStdDev": "Стандартное отклонение",
     "ModelInfoXi2": "Хи-квадрат"
   },
   "viewers/reports/ReportsForm": {
@@ -2132,6 +2202,9 @@
   "wizards/BaseWizard": {
     "ErrAbortCaption": "Настройка прервана",
     "ErrExitExcepitonsCaption": "Ошибки"
+  },
+  "wizards/code/CodeOutputPreviewForm": {
+    "CodeExec": "Выполнение скрипта"
   },
   "wizards/columndefs/ColumnDefsTuning": {
     "UsableDesc": "Использовать"

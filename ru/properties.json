@@ -1,4 +1,9 @@
 {
+  "Common/CodeExec/CodeModelComponentEngine": {
+    "CodeModelComponentEngine": {
+      "CodeConfigurableColumns": "Разрешить формировать выходные столбцы из кода"
+    }
+  },
   "Common/WSDL/HTTPHeaders": {
     "CustomHeadersConfigurator": {
       "CustomHeaders": "Заголовки HTTP"
@@ -152,7 +157,7 @@
     },
     "CoarseClassesInputParams": {
       "MaxClassCount": "Максимальное количество классов",
-      "MinClassPercentage": "Минимальный вес класса, %",
+      "MinClassRate": "Минимальная доля класса, %",
       "UniformityCoef": "Равномерность"
     },
     "CoarseClassesTargetParams": {
@@ -320,9 +325,10 @@
       "LogRegressionParams": "Настройки логистической регрессии"
     },
     "LogRegressionParams": {
+      "EventGeneralPerc": "Доля событий в генеральной выборке (в процентах)",
       "LogRegressionMethod": "Отбор факторов и защита от переобучения",
       "LogRegSelQuality": "Критерий отбора факторов",
-      "SetupCalibration": "Калибровка",
+      "NoEventGeneralPerc": "Доля не-событий в генеральной выборке (в процентах)",
       "UseScoring": "Скоринг"
     }
   },
@@ -389,6 +395,11 @@
       "Partition": "Разбиение на множества"
     }
   },
+  "components/python": {
+    "PythonEngine": {
+      "WaitTimeout": "Тайм-аут ожидания (мс)"
+    }
+  },
   "components/reformcolumns": {
     "ReformColumnsEngine": {
       "CachingMethod": "Кэширование"
@@ -396,6 +407,7 @@
   },
   "components/restclient": {
     "RESTClient": {
+      "CheckHttpStatusCode": "Проверять код состояния HTTP",
       "CustomHeadersConfigurator": "Настройки пользовательских заголовков",
       "ProduceErrorDescs": "Выдавать описание кодов завершения",
       "RequestConfigurator": "Настройки экспорта данных запроса",
@@ -778,11 +790,6 @@
       "UseSASL": "Использовать SASL авторизацию"
     }
   },
-  "Libraries/Model/ComponentSettings": {
-    "ComponentSettings": {
-      "Disabled": "Отключен"
-    }
-  },
   "Libraries/Model/Connections/ModelConnectionComponentEngine": {
     "ModelConnectionComponentEngine": {
       "Connection": "Подключение"
@@ -877,6 +884,7 @@
       "SessionBackupDirectory": "Директория, содержащая резервные копии сессий",
       "StopTimeout": "Таймаут остановки сервера",
       "ThreadPoolSize": "Размер пула потоков",
+      "TraceExceptions": "Трассировка исключений",
       "UserStorageDirectory": "Директория, содержащая личные папки пользователей"
     },
     "SocketDeductorServerSettings": {

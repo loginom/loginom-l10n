@@ -50,7 +50,10 @@
     "HTTPVerb": {
       "$Caption": "Метод HTTP",
       "GET": "GET",
-      "POST": "POST"
+      "POST": "POST",
+      "PUT": "PUT",
+      "DELETE": "DELETE",
+      "PATCH": "PATCH"
     },
     "SoapStyle": {
       "$Caption": "Стиль SOAP-запроса",
@@ -118,8 +121,7 @@
       "SaxParserError": "Ошибка при разборе XML-документа: %s",
       "MIMEParserError": "Ошибка при обработке ответа сервера: %s",
       "UnsupportedRequestType": "Неподдерживаемый тип запроса",
-      "BadRequestParam": "Некорректный параметр запроса",
-      "UnknownError": "Неизвестная ошибка"
+      "BadRequestParam": "Некорректный параметр запроса"
     }
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
@@ -283,11 +285,13 @@
       "ClassMark": "Метка класса",
       "EventsCount": "Число событий",
       "NonEventsCount": "Число не-событий",
+      "EventRate": "Доля событий",
+      "NonEventRate": "Доля не-событий",
       "LowerBound": "Нижняя граница",
       "UpperBound": "Верхняя граница",
       "WoE": "Вес доказательства",
       "IV": "Информационный индекс",
-      "Weight": "Доля класса",
+      "Rate": "Доля класса",
       "UpperBoundIsOpen": "Верхняя граница диапазонов открыта",
       "PreQuantingApplied": "Предквантование"
     },
@@ -295,7 +299,7 @@
       "$Caption": "Тип отображаемых данных",
       "WoE": "WoE",
       "IV": "IV",
-      "Weight": "Доля",
+      "Rate": "Доля",
       "Count": "Количество",
       "EventCount": "События",
       "NoEventCount": "Не-события"
@@ -321,6 +325,8 @@
       "ColumnDisplayName": "Метка столбца",
       "EventsCount": "Число событий",
       "NonEventsCount": "Число не-событий",
+      "EventRate": "Доля событий",
+      "NonEventRate": "Доля не-событий",
       "TotalEventsCount": "Всего",
       "IV": "Информационный индекс",
       "Significance": "Значимость столбца"
@@ -360,7 +366,8 @@
       "Pirson": "Пирсона",
       "CorrFuncExtr": "Экстремум К.Ф.",
       "TauBKendall": "Тау-b Кендалла",
-      "Spearman": "Спирмена"
+      "Spearman": "Спирмена",
+      "CorrFuncLag": "Лаг К.Ф."
     }
   },
   "components/crosstab": {
@@ -527,6 +534,19 @@
     }
   },
   "components/logregression": {
+    "CalibrationMethod": {
+      "$Caption": "Вид поправки на долю событий",
+      "TrainSet": "На основе тестового множества",
+      "TestSet": "На основе обучающего множества",
+      "Manual": "Задать вручную",
+      "Sampling": "Взять из узла сэмплинга",
+      "Partition": "Взять из узла разбиения на множества"
+    },
+    "CalibrationType": {
+      "$Caption": "Тип поправки на долю событий",
+      "Const": "Константой",
+      "Weight": "Весами"
+    },
     "LogRegressionMethod": {
       "$Caption": "Отбор факторов и защита от переобучения",
       "Enter": "Принудительное включение",
@@ -604,7 +624,8 @@
       "RandomValue": "Заменять случайными значениями",
       "LinearInterp": "Линейная интерполяция",
       "CubicInterp": "Кубическая интерполяция",
-      "SplineInterp": "Сплайн-интерполяция"
+      "SplineInterp": "Сплайн-интерполяция",
+      "ZeroValue": "Заменять на 0"
     },
     "ActionOut": {
       "$Caption": "Метод обработки выбросов",
@@ -980,7 +1001,8 @@
       "Item": "Элемент",
       "DimCol": "Измерение в колонках",
       "DimRow": "Измерение в строках",
-      "Forecast": "Прогнозируемое"
+      "Forecast": "Прогнозируемое",
+      "Weight": "Вес"
     },
     "DataKind": {
       "$Caption": "Вид данных",
@@ -1426,28 +1448,13 @@
     },
     "RegressionStatType": {
       "$Caption": "Статистические параметры регрессионной модели",
-      "SSE": "Сумма квадрата ошибки",
-      "ESS": "Сумма квадрата регрессии",
-      "TSS": "Общая сумма квадратов регрессии и ошибки",
       "LL": "-2 Логарифма функции правдоподобия",
       "R2": "Коэффициент детерминации",
       "R2adj": "Скорректированный коэффициент детерминации",
-      "CovMatrix": "Матрица ковариации",
       "AIC": "Информационный критерий Акаике",
       "AICc": "Информационный критерий Акаике скорректированный",
       "BIC": "Информационный критерий Байеса",
-      "HQC": "Информационный критерий Ханнана-Квина",
-      "ErrStat": "Статистика ошибки регрессии",
-      "MSE": "MSE",
-      "RMSE": "RMSE",
-      "F": "F-критерий",
-      "FPvalue": "значимость F-критерия",
-      "StdErr": "Стандартное отклонение",
-      "CIDeviation": "Дельта доверительного интервала",
-      "T": "T-статистика",
-      "TPValue": "Значимость T-статистики",
-      "Z": "Z-статистика",
-      "ZPValue": "Значимость Z-статистики"
+      "HQC": "Информационный критерий Ханнана-Квина"
     },
     "RegularizationSetupMethod": {
       "$Caption": "Метод определения коэффициента регуляризации",
@@ -1459,6 +1466,25 @@
       "None": "Не рассчитывать",
       "All": "Для всех моделей",
       "FinalOnly": "Для финальной модели"
+    }
+  },
+  "Studio/DeductorSessionsManager": {
+    "ManagedSessionType": {
+      "$Caption": "Тип сессии диспетчера",
+      "Client": "Удаленная сессия",
+      "Self": "Сессия диспетчера",
+      "Shared": "Общие пакеты",
+      "Pool": "Пул пакетов",
+      "Backup": "Архивная сессия"
+    },
+    "SessionRole": {
+      "$Caption": "Роль пользователя в сессии",
+      "None": "Без роли",
+      "Admin": "Администрирование",
+      "Designer": "Проектирование сценариев",
+      "Viewer": "Просмотр отчетов",
+      "Service": "Пакетное выполнение",
+      "Integrator": "Выполнение из интегратора"
     }
   },
   "Studio/DeductorUsers": {
@@ -1665,9 +1691,26 @@
       "$Caption": "Расположение серий",
       "Cols": "В столбцах",
       "Rows": "В строках"
+    },
+    "CubeChartTooltipMode": {
+      "$Caption": "Тип подсказок",
+      "Shared": "Групповые подсказки",
+      "Single": "Одиночные подсказки",
+      "None": "Нет подсказок"
     }
   },
   "Viewers/Cube/CubeDimensions": {
+    "CubeDimensionFilterCondition": {
+      "$Caption": "Режим выбора фильтра",
+      "Like": "содержит",
+      "NotLike": "не содержит",
+      "Equal": "=",
+      "NotEqual": "<>",
+      "StartingWith": "начинается с",
+      "NotStartingWith": "не начинается с",
+      "EndingWith": "заканчивается на",
+      "NotEndingWith": "не заканчивается на"
+    },
     "CubeDimensionFilterType": {
       "$Caption": "Режим выбора фильтра",
       "MultipleSelect": "Множественный выбор",
@@ -1769,7 +1812,9 @@
   "Viewers/LinRegressReport/LinRegressReportCommon": {
     "LinRegressReportStatParam": {
       "$Caption": "Статистический критерий",
-      "LogLikelihood": "-2 Log Likelihood",
+      "FTest": "F-тест (P-значение)",
+      "R2": "Коэф-т детерминации",
+      "R2adj": "Коэф-т детерминации (скорр.)",
       "AIC": "AIC",
       "AICc": "AICc",
       "BIC": "BIC",
@@ -1791,14 +1836,6 @@
       "$Caption": "Порог отсечения",
       "Absolute": "Абсолютные",
       "Percent": "Проценты"
-    },
-    "ROCViewAprioriProb": {
-      "$Caption": "Источник истинной доли событий",
-      "None": "Не корректировать",
-      "Model": "Из настроек узла",
-      "Train": "Из обучающего множества",
-      "Test": "Из тестового множества",
-      "User": "Задать"
     },
     "ROCViewChartType": {
       "$Caption": "Тип диаграммы",
@@ -1875,12 +1912,26 @@
       "UserCustom": "Пользовательский фильтр",
       "Variables": "Фильтр с использованием переменных"
     },
+    "MDAggregateFunction": {
+      "$Caption": "Агрегация",
+      "Sum": "Сумма",
+      "Count": "Количество",
+      "Min": "Минимум",
+      "Max": "Максимум",
+      "Avg": "Среднее",
+      "Median": "Медиана",
+      "StdDev": "Стандартное откл.",
+      "UniqueCount": "Кол-во уникальных",
+      "NullCount": "Кол-во пропусков",
+      "First": "Первый",
+      "Last": "Последний"
+    },
     "MDAggregateType": {
       "$Caption": "Список Функции агрегирования фактов",
       "Sum": "Сумма",
       "Min": "Минимум",
       "Max": "Максимум",
-      "AVG": "Среднее",
+      "Avg": "Среднее",
       "Count": "Количество"
     },
     "MDFilterConditionType": {

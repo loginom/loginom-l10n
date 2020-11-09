@@ -201,10 +201,10 @@
   },
   "components/binning": {
     "BinningBinsColumnKind": {
-      "$Caption": "Range Table Field Usage Type",
+      "$Caption": "Bin Table Field Usage Type",
       "None": "Not defined",
       "BinsID": "Bins identifier",
-      "BoundsDataType": "Range bounds data type",
+      "BoundsDataType": "Bin bounds data type",
       "BinNumber": "Bin number",
       "LowerBound": "Lower bound",
       "UpperBound": "Upper bound",
@@ -212,9 +212,9 @@
       "LowerBoundQuota": "Lower bound quota",
       "UpperBoundQuota": "Upper bound quota",
       "BinQuota": "Bin quota",
-      "LowerDeviation": "Deviation from the lower range bound",
-      "UpperDeviation": "Deviation from the upper range bound",
-      "LowerLimitOpen": "Lower range bound open",
+      "LowerDeviation": "Deviation from the lower bin bound",
+      "UpperDeviation": "Deviation from the upper bin bound",
+      "LowerLimitOpen": "Lower bin bound open",
       "UpperLimitOpen": "Upper range bound open"
     },
     "BinningMatchingObservationsMode": {
@@ -228,7 +228,7 @@
     "BinningMethodType": {
       "$Caption": "Ranging Method",
       "None": "<Not defined>",
-      "ExtermalBins": "External ranges",
+      "ExtermalBins": "External bins",
       "Width": "Width",
       "Count": "Count",
       "Tile": "Tile",
@@ -246,11 +246,11 @@
       "LowerBoundQuota": "Lower bound quota",
       "UpperBoundQuota": "Upper bound quota",
       "BinQuota": "Bin quota",
-      "LowerDeviation": "Deviation from the lower range bound",
-      "UpperDeviation": "Deviation from the upper range bound",
-      "LowerLimitOpen": "Lower range bound open",
-      "UpperLimitOpen": "Upper range bound open",
-      "OutOfBins": "Out of range value"
+      "LowerDeviation": "Deviation from the lower bin bound",
+      "UpperDeviation": "Deviation from the upper bin bound",
+      "LowerLimitOpen": "Lower range bin open",
+      "UpperLimitOpen": "Upper bin bound open",
+      "OutOfBins": "Out of bin value"
     },
     "BinningRoundingLevel": {
       "$Caption": "Binning Rounding Level",
@@ -273,7 +273,7 @@
   },
   "components/coarseclasses": {
     "ClassParamsColumnKind": {
-      "$Caption": "Range Table Field Usage Type",
+      "$Caption": "Bin Table Field Usage Type",
       "None": "None",
       "Group": "Group",
       "ColumnName": "Identifier",
@@ -288,7 +288,7 @@
       "WoE": "Weight of evidence",
       "IV": "Information value",
       "Weight": "Class weight",
-      "UpperBoundIsOpen": "Upper range bound open",
+      "UpperBoundIsOpen": "Upper bin bound open",
       "PreQuantingApplied": "Prequantization"
     },
     "CoarseClassChartType": {
@@ -1622,7 +1622,7 @@
   },
   "Viewers/ClusterProfiles/ClusterProfilesView": {
     "ClusterProfilesClusterGridPosition": {
-      "$Caption": "Cluster Grid Position",
+      "$Caption": "Cluster Position in Table",
       "Rows": "Clusters in rows",
       "Columns": "Clusters in columns"
     },

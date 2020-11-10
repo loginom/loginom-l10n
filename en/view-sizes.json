@@ -1,7 +1,7 @@
 {
-    "admin/SessionsManagerForm": {
-        "colActivity": {
-          "width": 150
-        }
+  "admin/SessionsManagerForm": {
+    "colActivity": {
+      "width": 150
     }
+  }
 }

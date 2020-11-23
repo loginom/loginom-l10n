@@ -342,7 +342,6 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Экземпляр класса | Class instance | |
 Расстановка связей по метке поля и типу данных | Links arranged by field caption and data type | |
 Агрегация | Aggregation | |
-Условие фильтрации | Filter relation | |
 Значение верхней границы | Upper bound value | |
 Выброс | Outlier | |
 Экстремальные значения | Extreme values | |
@@ -382,38 +381,38 @@ P-значение | P-value | |
 Выполнение | Execution |
 Номер | # |Относится только к страницам Excel| |
 Номер | No |Заголовок в гриде| |
-Некорректный ответ от сервера | Bad server response |
-Описание изменений | Release notes
-Повышение информативности | UI/UX improvement
-Оптимизация работы | Performance improvements
-Смещение | Bias
-Заполнение пропусков | Imputing, imputation
-Исправление ошибок | Fixes | Исправление ошибок в самой программе Loginom
-Повышение удобства | Usability improvements
-Пакетное выполнение | Batch processing
-Версия Loginom | Loginom version
-Редакция Loginom | Loginom edition
-Рабочее пространство | Working space
-От имени администратора | As an administrator
-Запуск службы | Service start
-Программы и компоненты | Programs & Features
-Сервер сетевых ключей | Network dongles server
-Экземпляр программы | Program instance
-ООО «Аналитические технологии» | OOO ANALITICHESKIE TEHNOLOGII
-Категорийные данные | Categorical data
-Масштабируемый алгоритм | Scalable algorithm
-Сверхбольшие базы данных | Large databases
-Транзакционные данные | Transactional data
-Производительность алгоритма | Algorithm performance
-Панель инструментов | Toolbar
-Регулярное выражение Perl | Perl regular expression
-Осуществлять перебор, перебирать | Iterate over
-Количество отсчетов | Lag count
-Транспонировать | Transpose
-Условия фильтрации | Filtering criteria
-Сложное условие | Complex criterion
-Метод скользящего окна | Windowing method
-Таблица замен | Replacement table
+Некорректный ответ от сервера | Bad server response | |
+Описание изменений | Release notes | |
+Повышение информативности | UI/UX improvement | |
+Оптимизация работы | Performance improvements | |
+Смещение | Bias | |
+Заполнение пропусков | Imputing, imputation | |
+Исправление ошибок | Fixes | Исправление ошибок в самой программе Loginom | |
+Повышение удобства | Usability improvements | |
+Пакетное выполнение | Batch processing | |
+Версия Loginom | Loginom version | |
+Редакция Loginom | Loginom edition | |
+Рабочее пространство | Working space | |
+От имени администратора | As an administrator | |
+Запуск службы | Service start | |
+Программы и компоненты | Programs & Features | |
+Сервер сетевых ключей | Network dongles server | |
+Экземпляр программы | Program instance | |
+ООО «Аналитические технологии» | OOO ANALITICHESKIE TEHNOLOGII | |
+Категорийные данные | Categorical data | |
+Масштабируемый алгоритм | Scalable algorithm | |
+Сверхбольшие базы данных | Large databases | |
+Транзакционные данные | Transactional data | |
+Производительность алгоритма | Algorithm performance | |
+Панель инструментов | Toolbar | |
+Регулярное выражение Perl | Perl regular expression | |
+Осуществлять перебор, перебирать | Iterate over | |
+Количество отсчетов | Lag count | |
+Транспонировать | Transpose | |
+Условия фильтрации | Filtering criteria | |
+Сложное условие | Complex criterion | |
+Метод скользящего окна | Windowing method | |
+Таблица замен | Replacement table | |
 ### Общие рекомендации:
 
 1. Лучше использовать сокращенную версию, например, Сравнение – Compare и т .д.

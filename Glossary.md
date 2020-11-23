@@ -408,6 +408,12 @@ P-значение | P-value | |
 Панель инструментов | Toolbar
 Регулярное выражение Perl | Perl regular expression
 Осуществлять перебор, перебирать | Iterate over
+Количество отсчетов | Lag count
+Транспонировать | Transpose
+Условия фильтрации | Filtering criteria
+Сложное условие | Complex criterion
+Метод скользящего окна | Windowing method
+Таблица замен | Replacement table
 ### Общие рекомендации:
 
 1. Лучше использовать сокращенную версию, например, Сравнение – Compare и т .д.

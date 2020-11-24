@@ -2,6 +2,58 @@
   "admin/SessionsManagerForm": {
     "colActivity": {
       "width": 130
+    },
+    "colCreateTime": {
+      "width": 126
+    },
+    "colModifyTime": {
+      "width": 126
+    }
+  },
+  "imports/dwh/DWImportWizard": {
+    "colMDType": {
+      "width": 50
+    }
+  },
+  "components/binning/MethodSettingsWizard": {
+    "colStatMax": {
+      "width": 130
+    },
+    "colStatMin": {
+      "width": 130
+    }
+  },
+  "components/datereform/DateReformWizard": {
+    "colDoNumber": {
+      "width": 80
+    }
+  },
+  "components/sorting/SortingColumnCollection": {
+    "colCaseSensitive": {
+      "width": 80
+    }
+  },
+  "connections/webservice/AuthorizationForm": {
+    "colExpiry": {
+      "minWidth": 143,
+      "width": 143
+    },
+    "colStart": {
+      "minWidth": 118,
+      "width": 118
+    }
+  },
+  "filedialog/OpenDialogForm": {
+    "colFileDate": {
+      "width": 125
+    },
+    "colName": {
+      "width": 354
+    }
+  },
+  "homepage/HomePage": {
+    "colOpenDate": {
+      "width": 140
     }
   }
 }

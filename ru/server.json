@@ -3760,6 +3760,7 @@
     "ErrCannotGetPackageRef": "Не удалось получить объектную ссылку на пакет с именем %s",
     "ErrCannotSaveReadOnlyPackage": "Невозможно сохранить пакет с именем %s, открытый только на чтение",
     "ErrCircularPackageLink": "Пакет \"%s\" содержит циклическую ссылку на самого себя",
+    "ErrComparePackagesError": "Возникла ошибка при сравнении файла пакета \"%s\" с редактируемой копией в памяти",
     "ErrDeductorServerSessionNotInitialized": "Сессия Loginom Server не инициализирована",
     "ErrDuplicatePublishedNodeName": "Пакет содержит более одного опубликованного узел с именем \"%s\"",
     "ErrEncryptedPackage": "Зашифрованный пакет \"%s\" не может быть открыт для просмотра и редактирования",

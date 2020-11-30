@@ -1561,7 +1561,7 @@
     "ProcessActionDeleteTip": "Delete process",
     "ProcessActionStopTip": "Cancel process",
     "TimeSpanDay": "d ",
-    "TimeSpanFormat": "s\\s u\\ms",
+    "TimeSpanFormat": "s\\s u\\m\\s",
     "TimeSpanHour": "h ",
     "TimeSpanMinutesFormat": "i\\m "
   },

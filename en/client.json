@@ -1555,6 +1555,7 @@
   },
   "progress/ProgressForm": {
     "ErrorInfoText": "{0} {1}: {2}.",
+    "ErrProcessWasDisposed": "Process or subprocesses have already been deleted",
     "MsgClearText": "Do you want to clear descriptions of terminated processes?",
     "MsgProcessingAborted": "Processing aborted",
     "MsgStoplText": "Do you want to cancel all processes?",

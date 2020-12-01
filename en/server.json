@@ -3758,6 +3758,7 @@
     "ErrCannotGetPackageRef": "Failed to get the object reference to the package with %s name",
     "ErrCannotSaveReadOnlyPackage": "Failed to save %s read-only package",
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
+    "ErrComparePackagesError": "Error occurred while comparing \"%s\" package file with edited copy in the memory",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
     "ErrDuplicatePublishedNodeName": "The package already contains more than one published node with \"%s\" name",
     "ErrEncryptedPackage": "Encrypted package \"%s\" cannot be opened to be viewed and edited",

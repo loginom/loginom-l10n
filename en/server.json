@@ -417,7 +417,7 @@
     "ErrBinsCount": "Bin count must be more than 0",
     "ErrBinsCountLimitFmt": "Bin count must not exceed %d",
     "ErrBinWidthFmt": "Failed to define bin width for %s field",
-    "ErrGenerateBins": "Failed to generate binning bins",
+    "ErrGenerateBins": "Failed to generate binning ranges",
     "ErrInfinityFmt": "Bins for %s field were not created. The field contains the \"infinity\" value.",
     "ErrInvalidBinRowFmt": "Failed to generate bin for %s field from row %d",
     "ErrInvalidRangeWidthFmt": "The initial bin boundary exceeds the final boundary for %s field",
@@ -428,7 +428,7 @@
     "ErrSkoAvgFmt": "Failed to get SD/mean for %s field",
     "ErrStatFmt": "Failed to get minimum maximum for %s field",
     "ErrTooManyBinsFmt": "Too many bins defined for %s integer field",
-    "ErrUpperLimit": "No upper bin bound specified",
+    "ErrUpperLimit": "No upper range bound specified",
     "ErrVerySmallWidthFmt": "For %s integer field bin width must be >= 1",
     "ErrWrongBinsDataType": "Invalid bin data type",
     "ErrZeroBinsWidth": "Bin width must be more than 0",
@@ -459,7 +459,7 @@
     "ErrNumericType": "Data type not related to the numeric values"
   },
   "components/binning/BinningVendor": {
-    "OutputRanges": "Binning bins",
+    "OutputRanges": "Binning ranges",
     "VendorCaption": "Binning",
     "VendorDesc": "User binning"
   },
@@ -601,7 +601,7 @@
     "ErrInputBinningMissValues": "External binning contains not all unique values of \"%s\" column",
     "ErrInputRangeDataSourceIsNotExist": "No external binning data source",
     "ErrNoModel": "Model is not trained. Training of the node before its application is required",
-    "InputRangesDataSource": "External binning bins"
+    "InputRangesDataSource": "External quantization ranges"
   },
   "components/coarseclasses/CoarseClassesMapper": {
     "ErrNotAllowedDataType": "Column data type %s not supported",
@@ -623,7 +623,7 @@
     "BlanksClass": "[blank]",
     "ErrColumnIsNotDifenied": "Failed to define the column to process",
     "ErrDataTypesNotMatch": "The specified column data type does not match the data type of the coarse classes",
-    "ErrNotPositiveIntervalsCount": "Bin count must be more than 0",
+    "ErrNotPositiveIntervalsCount": "Interval count must be more than 0",
     "From": "from ",
     "NullClass": "Null class",
     "To": "to "

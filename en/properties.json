@@ -58,8 +58,8 @@
       "KindForBins": "Usage type"
     },
     "BinningContinuousBinItem": {
-      "LowerBound": "Lower bin bound",
-      "UpperBound": "Upper bin bound"
+      "LowerBound": "Lower range bound",
+      "UpperBound": "Upper range bound"
     },
     "BinningCountLinContMethodSettings": {
       "BinsCount": "Count"
@@ -141,7 +141,7 @@
   "components/coarseclasses": {
     "CoarseClassesInputContinuousParams": {
       "FineIntervalsCount": "Intervals count",
-      "IncludeHighBounds": "Include upper bin bounds",
+      "IncludeHighBounds": "Include upper interval bounds",
       "UsePrequanting": "Prequanting"
     },
     "CoarseClassesInputDiscreteParams": {

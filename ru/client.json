@@ -863,6 +863,9 @@
     "MessagePrefix": "Сообщение: ",
     "PartPrefix": "Часть: "
   },
+  "connections/dwh/DWConnectionWizard": {
+    "ErrSchemaNameIsTooLongFmt": "Имя схемы не может содержать более {0} символов."
+  },
   "connections/restservice/ConnectionWizard": {
     "DeleteAllParamsPrompt": "Вы действительно хотите удалить все параметры?",
     "DublicateGetMethodParamNameFmt": "Параметр с именем \"{0}\" уже существует",
@@ -1370,7 +1373,7 @@
   },
   "imports/dwh/DWObjectWizard": {
     "ErrNoSelectedObject": "Укажите объект Хранилища данных",
-    "ErrObjectNotFound": "Объект Хранилища данных с именем \"{0}\" не найден",
+    "ErrObjectNotFound": "Объект Хранилища данных с именем \"{0}\" ({1}) не найден",
     "NoConnection": "Нет подключения"
   },
   "imports/excelfile/ImportExcelFilePreviewWizard": {
@@ -2013,7 +2016,7 @@
     "WarnDependencySuffix": "Продолжить действие?"
   },
   "viewers/cube/CubeView": {
-    "ChartCaseEmptyText": "Список пуст",
+    "ChartCaseEmptyText": "Нет фактов",
     "ChartCaseManyText": "Факты ({0})",
     "ChartYAxisTitle": "Факты",
     "DotsOutOfBoundsMsg": "Превышение ограничений диаграммы.\nТекущее кол-во точек: {0}.\nМаксимальное кол-во точек: {1}",
@@ -2098,19 +2101,19 @@
     "IsNotEvent": "Не-событие"
   },
   "viewers/regression/RegressionReportView": {
-    "ModelInfoAIC": "AIC",
-    "ModelInfoAICc": "AICc",
-    "ModelInfoBIC": "BIC",
+    "ModelInfoAIC": "Критерий Акаике",
+    "ModelInfoAICc": "Критерий Акаике (скорр.)",
+    "ModelInfoBIC": "Критерий Байеса",
     "ModelInfoConstant": "Константа",
     "ModelInfoConstantExc": "Исключена",
     "ModelInfoConstantInc": "Включена",
     "ModelInfoDeviance": "Deviance",
-    "ModelInfoDFE": "Число степеней свободы",
+    "ModelInfoDFE": "Число степеней свободы (ошибки)",
     "ModelInfoFValue": "F-статистика",
-    "ModelInfoHQC": "HQC",
-    "ModelInfoPValue": "Значимость",
-    "ModelInfoR2": "R^2",
-    "ModelInfoR2adj": "R^2 корр.",
+    "ModelInfoHQC": "Критерий Ханнана-Куинна",
+    "ModelInfoPValue": "P-значение (модель)",
+    "ModelInfoR2": "Коэффициент детерминации",
+    "ModelInfoR2adj": "Коэффициент детерминации (скорр.)",
     "ModelInfoStdDev": "Стандартное отклонение",
     "ModelInfoXi2": "Хи-квадрат"
   },

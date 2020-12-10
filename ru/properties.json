@@ -847,8 +847,8 @@
       "ClientAuth": "Авторизация для выполнения запроса",
       "ExchangeTimeOut": "Таймаут обмена данными (мс)",
       "IgnoreCertificateErrors": "Игнорировать ошибки SSL сертификата",
-      "RequestContentType": "Тип Content-type запроса",
-      "ResponseContentType": "Тип Content-type ответа",
+      "RequestContentType": "Content-Type запроса",
+      "ResponseContentType": "Допустимый Content-Type ответа",
       "TimeOut": "Таймаут подключения (мс)",
       "URL": "URL сервиса",
       "Verb": "Метод"

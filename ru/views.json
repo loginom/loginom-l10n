@@ -2426,13 +2426,13 @@
       "title": "Параметры подключения"
     },
     "grdParams": {
-      "title": "Параметры GET запроса"
+      "title": "Параметры запроса"
     },
     "pedRequestContentType.valueConfig": {
-      "regexText": "Недопустимый формат значения Content-type"
+      "regexText": "Недопустимый формат значения Content-Type"
     },
     "pedResponseContentType.valueConfig": {
-      "regexText": "Недопустимый формат значения Content-type"
+      "regexText": "Недопустимый формат значения Content-Type"
     },
     "pedURL.valueConfig": {
       "emptyText": "http://example.com/operation-path"
@@ -3523,7 +3523,7 @@
   },
   "viewers/browse/BrowseFormat": {
     "colDisplayName": {
-      "text": "Доступные поля"
+      "text": "Поля"
     },
     "colSourceColumnIndex": {
       "text": "№"
@@ -4257,8 +4257,8 @@
       "tooltip": "Диаграмма"
     },
     "btnChartCase": {
-      "text": "Факт",
-      "tooltip": "Отображаемый факт"
+      "text": "Выбрать факты...",
+      "tooltip": "Выбрать факты..."
     },
     "btnChartRestrictions": {
       "tooltip": "Ограничения..."
@@ -4267,8 +4267,8 @@
       "tooltip": "Итоги"
     },
     "btnChartType": {
-      "text": "Вид",
-      "tooltip": "Вид диаграммы"
+      "text": "Тип",
+      "tooltip": "Тип диаграммы"
     },
     "btnCollapse": {
       "tooltip": "Свернуть"
@@ -4620,7 +4620,7 @@
       "text": "Верхняя граница ДИ"
     },
     "colRepPValue": {
-      "text": "Значимость"
+      "text": "P-значение"
     },
     "colRepScore": {
       "text": "Балл"

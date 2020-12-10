@@ -23,7 +23,7 @@
     "ErrTooManyArgs": "В функцию %s передано много аргументов (%d, когда максимум %d)"
   },
   "Common/CertList/CertList": {
-    "ErrCertListImplementationNotRegistered": "Реализация списка сертификатов с идентификатором %s не зарегистрирована"
+    "ErrCertListImplementationNotRegistered": "Не зарегистрирована реализация списка сертификатов"
   },
   "Common/CertList/CertList_Win": {
     "AddressBook": "Другие пользователи",
@@ -93,9 +93,9 @@
     "ErrRowOutOfRange": "Номер строки %d вне диапазона [%d; %d]"
   },
   "Common/CodeExec/CodeAPIDataSetProxies": {
-    "ErrInvalidDataSetColumnIndex": "Индекс %d столбца выходной таблицы вне диапазона [%d; %d]",
+    "ErrInvalidDataSetColumnIndex": "Индекс %d столбца выходной таблицы вне диапазона, число столбцов %d",
     "ErrInvalidDataSetColumnName": "Столбец \"%s\" отсутствует в выходной таблице",
-    "ErrInvalidDataSourceColumnIndex": "Индекс %d столбца входной таблицы №%d вне диапазона [%d; %d]",
+    "ErrInvalidDataSourceColumnIndex": "Индекс %d столбца входной таблицы №%d вне диапазона, число столбцов %d",
     "ErrInvalidDataSourceColumnName": "Столбец \"%s\" отсутствует во входной таблице №%d"
   },
   "Common/CodeExec/CodeAPIPreviewDataSet": {
@@ -128,7 +128,7 @@
     "ErrInvalidHeaderName": "Недопустимое имя заголовка %s"
   },
   "Common/WSDL/Processor/MIMECommon": {
-    "ErrInvalidContentType": "Недопустимый формат значения Content-type: %s"
+    "ErrInvalidContentType": "Недопустимый формат значения Content-Type: %s"
   },
   "Common/WSDL/Processor/MIMEExportImpl": {
     "ErrCantExportPart": "Невозможно произвести экспорт содержимого MIME %s, поскольку ранее уже экспортирован альтернативный вариант",
@@ -294,7 +294,7 @@
     "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n  %s",
     "ErrParseURLNoXML": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s': ответ сервера не является XML-файлом",
     "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n  %s",
-    "ErrParseURLUnrecognizedContentType": "Ошибка при выполнении запроса к URL '%s': ответ сервера не обработан, так как Content-type: %s не зарегистрирован",
+    "ErrParseURLUnrecognizedContentType": "Ошибка при выполнении запроса к URL '%s': ответ сервера не обработан, так как Content-Type: %s не зарегистрирован",
     "ErrSaxDocumentHasNoRootElements": "В документе отсутствует корневой элемент",
     "ErrSaxParserFeatureInvalidArg": "Неправильный тип аргумента при установке опции '%s' SAX-парсера MSXML",
     "ErrSaxParserFeatureUnknownError": "Неизвестная ошибка при установке опции '%s' SAX-парсера MSXML",
@@ -1602,7 +1602,7 @@
     "SONNTrainNotify": "Обучение сети"
   },
   "components/sonn/SONNVendor": {
-    "VendorCaption": "Самоорганизующиеся сети",
+    "VendorCaption": "Самоорганизующаяся сеть",
     "VendorDesc": "Кластеризация данных самоорганизующимися нейронными сетями"
   },
   "components/sorting/SortingEngine": {
@@ -2528,6 +2528,7 @@
     "UpdateError": "Метод EndUpdate был вызван без метода BeginUpdate"
   },
   "Libraries/bgrtl/MathUtils": {
+    "ErrBadMatrix": "Двумерный динамический массив не является прямоугольной матрицей",
     "ErrDeterminantIsZero": "Невозможно вычислить обратную матрицу: определитель равен нулю.",
     "ErrQuickSelectLeftRight": "В функции QuickSelect левая граница %d задана больше правой %d"
   },
@@ -3753,11 +3754,11 @@
     "RegressionModel": "Регрессионная модель"
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
-    "ErrInvalidContentType": "Недопустимый формат значения Content-type: %s",
-    "ErrInvalidParamDataType": "Недопустимый тип данных параметра GET-запроса %s",
-    "ErrInvalidParamName": "Недопустимое имя параметра GET-запроса %s",
+    "ErrInvalidContentType": "Недопустимый формат значения Content-Type: %s",
+    "ErrInvalidParamDataType": "Недопустимый тип данных параметра запроса %s",
+    "ErrInvalidParamName": "Недопустимое имя параметра запроса %s",
     "ErrInvalidURL": "Неверный формат URL сервиса",
-    "ErrMustExplicitRequestContentType": "Content-type данных запроса должен быть явно задан",
+    "ErrMustExplicitRequestContentType": "Content-Type данных запроса должен быть явно задан",
     "ErrNoServiceURL": "Не указан URL сервиса",
     "ErrWSDLGenerate": "Ошибка при генерации WSDL-описания"
   },
@@ -4346,10 +4347,10 @@
   "Warehouse2/DBMDEngine": {
     "ErrDimensionFKIsNull": "Ссылка на измерение \"%s\" не найдена.\nНе указано значение внешнего ключа.",
     "ErrDimensionFKNotFound": "Ссылка на измерение \"%s\" не найдена.\nИзмерение с первичным ключом \"%s\" в списке измерений не найдено.",
-    "ErrNotFoundVersionInfo": "Не удалось считать информацию о версии Deductor Warehouse.\n%s",
+    "ErrNotFoundVersionInfo": "Не удалось считать информацию о версии Deductor Warehouse.",
     "ErrProcessFKIsNull": "Ссылка на процесс \"%s\" не найдена.\nНе указано значение внешнего ключа.",
     "ErrProcessFKNotFound": "Ссылка на процесс \"%s\" не найдена.\nПроцесс с первичным ключом \"%s\" в списке процессов не найден.",
-    "ErrSetMDItem": "Ошибка при чтении метаданных из БД.\nДля объекта с ID=%s, Имя=\"%s\".\nОшибка: %s"
+    "ErrSetMDItem": "Ошибка при чтении метаданных из БД.\nДля объекта с ID=%s, Имя=\"%s\"."
   },
   "Warehouse2/Deductor/DDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse",
@@ -4359,7 +4360,7 @@
     "ErrDimensionValueIsNull": "В строке \"%d\" значение измерения \"%s\" пустое.",
     "ErrDimensionValueNotFound": "Значение \"%s\" измерения \"%s\" не найдено в ХД (строке \"%d\").",
     "ErrDropTable": "В процессе выполнения удаления таблицы связанной с объектом [%s] \"%s\" возникла ошибка.\n%s",
-    "ErrEmptyData": "В процессе выполнения очистки данных объекта [%s] \"%s\" возникла ошибка.\n%s",
+    "ErrEmptyData": "В процессе выполнения очистки данных объекта [%s] \"%s\" возникла ошибка.",
     "MsgDeleteDataProcess": "Удаление по измерению данных Процесса из Хранилища данных",
     "MsgDisableConstraint": "Отключить индексы и ограничения.",
     "MsgEnableConstraint": "Восстановить индексы и ограничения.",
@@ -4381,8 +4382,8 @@
   "Warehouse2/Deductor/Ver6/DW6Engine": {
     "ErrCheckProcess": "Процесс [%s] \"%s\" должен состоять хотя бы из двух измерений.",
     "ErrDataCube": "Не удалось считать информацию о Кубе [%s] \"%s\" .\n%s",
-    "ErrDataNotLoad": "Данные в ХД не загружены.\nВозможные причины:\nFirebird - пробелы в конце строковых измерений;\nMS SQL - не учитывает регистр букв строковых измерений.\nЕсли было выставлено удаление данных по измерению - эти данные удалены из ХД.\nВозникла ошибка при восстановлении ограничений и индексов:\n%s",
-    "ErrRebuildCube": "В процессе выполнения обновления Куба [%s] \"%s\" возникла ошибка.\n%s",
+    "ErrDataNotLoad": "Данные в ХД не загружены.\nВозможные причины:\nFirebird - пробелы в конце строковых измерений;\nMS SQL - не учитывает регистр букв строковых измерений.\nЕсли было выставлено удаление данных по измерению - эти данные удалены из ХД.\nВозникла ошибка при восстановлении ограничений и индексов",
+    "ErrRebuildCube": "В процессе выполнения обновления Куба [%s] \"%s\" возникла ошибка.",
     "MsgMoreLengthName": "Слишком длинное имя поля \"%s\".\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД.",
     "MsgMoreLengthPrefix": "Слишком длинное значение префикса \"%s\".\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД.",
     "MsgRebuildCube": "Обновить Кубы в Хранилище данных",
@@ -4408,7 +4409,7 @@
   "Warehouse2/DWDataEngine": {
     "ErrDimNotSourceName": "Для измерения \"%s\" не указано поле из источника данных.",
     "ErrDimSourceNameNotFound": "Поле \"%s\" указанное для измерения \"%s\" в источнике данных не найдено.",
-    "ErrExecSQL": "Ошибка при выполнении запроса к БД.\n%s",
+    "ErrExecSQL": "Ошибка при выполнении запроса к БД.",
     "ErrSourceNameNotFound": "Поле \"%s\" указанное для \"%s\" в источнике данных не найдено."
   },
   "Warehouse2/DWExport": {
@@ -4421,7 +4422,7 @@
   },
   "Warehouse2/DWExtractTree": {
     "ErrNeedSelectItem": "Необходимо выбрать хотя бы один элемент",
-    "ErrParams": "В параметрах объекта \"%s\" найдена ошибка"
+    "ErrParams": "В параметрах объекта \"%s\" (%s) найдена ошибка"
   },
   "Warehouse2/DWImport": {
     "ErrExecQuery": "Ошибка при выполнении запроса к Хранилищу данных",

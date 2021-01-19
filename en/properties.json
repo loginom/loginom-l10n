@@ -152,7 +152,6 @@
     },
     "CoarseClassesInputParams": {
       "MaxClassCount": "Maximum class count",
-      "MinClassPercentage": "Minimum class weight, %",
       "UniformityCoef": "Uniformity"
     },
     "CoarseClassesTargetParams": {
@@ -322,7 +321,6 @@
     "LogRegressionParams": {
       "LogRegressionMethod": "Factor selection and protection against overfitting",
       "LogRegSelQuality": "Factor selection criterion",
-      "SetupCalibration": "Calibration",
       "UseScoring": "Scoring"
     }
   },
@@ -778,11 +776,6 @@
       "UseSASL": "Use SASL authorisation"
     }
   },
-  "Libraries/Model/ComponentSettings": {
-    "ComponentSettings": {
-      "Disabled": "Disabled"
-    }
-  },
   "Libraries/Model/Connections/ModelConnectionComponentEngine": {
     "ModelConnectionComponentEngine": {
       "Connection": "Connection"
@@ -841,7 +834,7 @@
       "ExchangeTimeOut": "Data exchange timeout (ms)",
       "IgnoreCertificateErrors": "Ignore SSL certificate errors",
       "RequestContentType": "Request Content-Type",
-      "ResponseContentType": "Response Content-Type",
+      "ResponseContentType": "Acceptable Response Content-Type",
       "TimeOut": "Connection timeout (ms)",
       "URL": "Service URL",
       "Verb": "Method"

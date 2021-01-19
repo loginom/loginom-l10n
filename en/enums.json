@@ -118,8 +118,7 @@
       "SaxParserError": "Error parsing XML document: %s",
       "MIMEParserError": "Error processing server response: %s",
       "UnsupportedRequestType": "Unsupported request type",
-      "BadRequestParam": "Bad request parameter",
-      "UnknownError": "Unknown error"
+      "BadRequestParam": "Bad request parameter"
     }
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
@@ -287,7 +286,7 @@
       "UpperBound": "Upper bound",
       "WoE": "Weight of evidence",
       "IV": "Information value",
-      "Weight": "Class weight",
+      "Rate": "Class weight",
       "UpperBoundIsOpen": "Upper bin bound open",
       "PreQuantingApplied": "Prequantization"
     },
@@ -295,7 +294,7 @@
       "$Caption": "Displayed Data Type",
       "WoE": "WoE",
       "IV": "IV",
-      "Weight": "Weight",
+      "Rate": "Weight",
       "Count": "Count",
       "EventCount": "Events",
       "NoEventCount": "Negative events"
@@ -1424,28 +1423,13 @@
     },
     "RegressionStatType": {
       "$Caption": "Statistical Parameters of the Regression Model",
-      "SSE": "Sum squared error",
-      "ESS": "Sum of regression square",
-      "TSS": "Total sum of squares regression and squares error",
       "LL": "-2 Logarithm of the likelihood function",
       "R2": "Determination coefficient",
       "R2adj": "Adjusted determination coefficient",
-      "CovMatrix": "Covariance matrix",
       "AIC": "Akaike information criterion",
       "AICc": "Akaike information criterion corrected",
       "BIC": "Bayesian information criterion",
-      "HQC": "Hannan-Quinn information criterion",
-      "ErrStat": "Regression error statistics",
-      "MSE": "MSE",
-      "RMSE": "RMSE",
-      "F": "F-criterion",
-      "FPvalue": "F-criterion significance",
-      "StdErr": "Standard deviation",
-      "CIDeviation": "Confidence interval delta",
-      "T": "T-statistics",
-      "TPValue": "T-statistics significance",
-      "Z": "Z-statistics",
-      "ZPValue": "Z-statistics significance"
+      "HQC": "Hannan-Quinn information criterion"
     },
     "RegularizationSetupMethod": {
       "$Caption": "Regularization Coefficient Setup Method",
@@ -1766,7 +1750,6 @@
   "Viewers/LinRegressReport/LinRegressReportCommon": {
     "LinRegressReportStatParam": {
       "$Caption": "Statistical Criterion",
-      "LogLikelihood": "-2 Log Likelihood",
       "AIC": "AIC",
       "AICc": "AICc",
       "BIC": "BIC",
@@ -1788,14 +1771,6 @@
       "$Caption": "Cutoff",
       "Absolute": "Absolute",
       "Percent": "Percent"
-    },
-    "ROCViewAprioriProb": {
-      "$Caption": "Prior Probability Event Source",
-      "None": "Do not correct",
-      "Model": "From node settings",
-      "Train": "From the training set",
-      "Test": "From the test set",
-      "User": "Configure"
     },
     "ROCViewChartType": {
       "$Caption": "Chart Type",
@@ -1872,12 +1847,14 @@
       "UserCustom": "Use custom filter",
       "Variables": "Filter with variables used"
     },
+    "MDAggregateFunction": {
+      "Avg": "Average"
+    },
     "MDAggregateType": {
       "$Caption": "Fact Aggregation Functions List",
       "Sum": "Sum",
       "Min": "Minimum",
       "Max": "Maximum",
-      "AVG": "Average",
       "Count": "Count"
     },
     "MDFilterConditionType": {

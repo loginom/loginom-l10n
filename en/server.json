@@ -23,8 +23,7 @@
     "ErrTooManyArgs": "Many arguments supplied to %s function (%d whereas %d is maximum number)"
   },
   "Common/CertList/CertList": {
-    "ErrCertListImplementationNotRegistered": "Certificate list implementation with %s identifier not registered",
-    "ErrCertListImplementationsNotRegistered": "Certificate list implementation not registered"
+    "ErrCertListImplementationNotRegistered": "Certificate list implementation with %s identifier not registered"
   },
   "Common/CertList/CertList_Win": {
     "AddressBook": "Other People",
@@ -42,6 +41,7 @@
   },
   "Common/CodeExec/CodeAPI": {
     "ArgColumn": "Column Index or name",
+    "ArgColumnInfos": "Column definitions",
     "ArgRow": "Row index",
     "ArgValue": "Value",
     "ColumnCount": "Column count",
@@ -68,9 +68,7 @@
     "Value": "Value"
   },
   "Common/CodeExec/CodeAPIDataSetExceptions": {
-    "ColumnByNameNotFound": "Column with \"%s\" name not found",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
-    "ErrNoRowForEditing": "Failed to change value because there is no editable row",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
   },
   "Common/CodeExec/CodeAPIDataSetProxies": {
@@ -79,8 +77,11 @@
     "ErrInvalidDataSourceColumnIndex": "Index %d of input table column #%d is out of [%d; %d] range",
     "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table #%d"
   },
+  "Common/CodeExec/CodePreview": {
+    "PreviewProcess": "Data preview",
+    "WarnPreviewRunning": "Preview already running"
+  },
   "Common/HTTP/CachedHttpStream": {
-    "ErrCachedHttpStreamClassAlreadyAssigned": "Cached HTTP stream class already registered",
     "ErrCachedHttpStreamClassUnassigned": "Cached HTTP stream class not registered"
   },
   "Common/HTTP/CachedHttpStream_Win": {
@@ -103,7 +104,7 @@
     "ErrInvalidHeaderName": "Invalid %s header name"
   },
   "Common/WSDL/Processor/MIMECommon": {
-    "ErrInvalidContentType": "Invalid Content-type value format: %s"
+    "ErrInvalidContentType": "Invalid Content-Type value format: %s"
   },
   "Common/WSDL/Processor/MIMEExportImpl": {
     "ErrCantExportPart": "Failed to export MIME %s content as an alternative has already been exported",
@@ -130,7 +131,6 @@
   },
   "Common/WSDL/Processor/WSDLRequestProcessor": {
     "ErrExportWSDLHttpRequestData": "Error occurred while HTTP request generating from row #%d of the input data set: %s",
-    "ErrGetElementByMessagePartUnassigned": "When processing WSDL request, the following property has not been configured: TBGWSDLRequestProcessor.GetElementByMessagePart",
     "ErrHTTPHeaderRedefined": "\"%s: %s\" header already defined in the request",
     "ErrHTTPHeaders": "Error while generating HTTP headers",
     "ErrXMLExportNoContext": "No export context specified",
@@ -195,7 +195,6 @@
     "ErrSoapOperationVersionConflict": "SOAP version of %s operation conflicts with %s binding version",
     "ErrSoapRPCPartRefersToElement": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema element is assigned to RPC style SOAP message",
     "ErrSoapTransportNotSupported": "SOAP transports except for HTTP are currently not supported",
-    "ErrUrlReplacementMustUseGET": "Error defining input message of \"%s\" operation of \"%s\" binding: message of \"%s\" type must use \"%s\" request method",
     "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema included into WSDL file (row %d, position %d):\nError code: %d\nReason: %s",
     "ErrWsdlImportNoAccess": "No access to the imported %s document"
   },
@@ -257,7 +256,6 @@
     "Group_Idx": "(%s) index"
   },
   "Common/XML/SAX/XMLSAX": {
-    "ErrImplementationIntfNotSupported": "%s interface not supported by %s implementation",
     "ErrParserIsActive": "Failed to change parser properties during parsing"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
@@ -270,7 +268,7 @@
     "ErrParseURL": "Error in row %d, position %d when executing request to URL '%s':\n  %s",
     "ErrParseURLNoXML": "Error in row %d, position %d when executing request to URL '%s': server response is not XML file",
     "ErrParseURLUnhandledException": "Unhandled exception parsing request to URL '%s':\n  %s",
-    "ErrParseURLUnrecognizedContentType": "Error executing request to URL '%s': server response was not processed because Content-type: %s had not been registered",
+    "ErrParseURLUnrecognizedContentType": "Error executing request to URL '%s': server response was not processed because Content-Type: %s had not been registered",
     "ErrSaxDocumentHasNoRootElements": "No root element in the document",
     "ErrSaxParserFeatureInvalidArg": "Invalid argument type when setting '%s' feature of MSXML SAX parser",
     "ErrSaxParserFeatureUnknownError": "Unknown error setting '%s' feature of MSXML SAX parser",
@@ -288,12 +286,8 @@
     "UnbalancedPop": "Unbalanced extraction operation"
   },
   "Common/XML/XML": {
-    "ErrCodePageByXMLCharsetAlreadyInstalled": "The function required to get the code page number based on XML character set has already been installed",
-    "ErrCodePageByXMLCharsetUnassigned": "The function required to get the code page number based on XML character set has not been installed",
     "ErrGenerateNamespacePrefixOverflow": "Counter overflow during namespace prefix generation",
-    "ErrStrToValueIntBadTypeRefinement": "\"%s\" type of refinement is not allowed when converting from string to integer",
-    "ErrXMLCharsetByCodePageAlreadyInstalled": "The function required to get XML character set based on the code page number has already been installed",
-    "ErrXMLCharsetByCodePageUnassigned": "The function required to get XML character set based on the code page number has not been installed"
+    "ErrStrToValueIntBadTypeRefinement": "\"%s\" type of refinement is not allowed when converting from string to integer"
   },
   "Common/XML/XML_MSXML": {
     "ErrElementMustHaveAttribute": "\"%s\" attribute required for \"%s\" element",
@@ -478,11 +472,7 @@
   },
   "components/calcdata/ExprColumns": {
     "ColumnMetaDesc": "Column",
-    "DataTypeDesc": "Data type",
     "DefaultExprDisplayName": "Expression",
-    "DescriptionDesc": "Description",
-    "ExpressionDesc": "Expression",
-    "IntermediateDesc": "Intermediate expression",
     "ItemDisplayNamePrefix": "Expression"
   },
   "components/calcdata/FloatCLineParser": {
@@ -579,7 +569,7 @@
     "ErrNotAllowedInputBinningKind": "The input field does not support the new usage type in the external partition (data type restriction)",
     "ErrRequiredContinuousOrDiscrete": "Continuous or discrete data kind is required",
     "MaxClassCount": "Required class count",
-    "MinimalClassQuota": "Minimum class weight"
+    "MinClassRate": "Minimum class weight"
   },
   "components/coarseclasses/CoarseClassesEngine": {
     "ActiveInputPortRequired": "Activation of input port is required to build the coarse classes",
@@ -613,7 +603,6 @@
   },
   "components/coarseclasses/CoarseClassingOptimalAlgorithm": {
     "MaxClassCount": "Maximum class count",
-    "MinClassPercentage": "Minimum class weight",
     "UniformityCoef": "Uniformity coefficient"
   },
   "components/coarseclasses/FineClassesStorage": {
@@ -1048,13 +1037,7 @@
   },
   "components/javascript/JavaScriptEngine": {
     "InputDataSource": "Input data source",
-    "OutputDataSet": "Output data set",
-    "PreviewProcess": "Data preview",
-    "WarnPreviewRunning": "Preview already running"
-  },
-  "components/javascript/JavaScriptExecutor": {
-    "ErrGetModuleSourceUnassigned": "JavaScript module contents reading function unassigned",
-    "ErrGetModuleURLUnassigned": "JavaScript path resolver function unassigned"
+    "OutputDataSet": "Output data set"
   },
   "components/javascript/JavaScriptVendor": {
     "VendorCaption": "JavaScript",
@@ -2079,7 +2062,6 @@
     "ErrUnableToRecreateNamesIndex": "Failed to recreate node name index",
     "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered",
     "ErrVendorNameConverterAlreadyRegistered": "Name converter from \"%s\" to\"%s\" vendors already registered",
-    "GuidDesc": "Item GUID",
     "IDDesc": "Identifier",
     "Item": "Item",
     "ItemMetaDesc": "Item"
@@ -2147,7 +2129,6 @@
     "ErrModelSocketCouplerDefAlreadyCoupled": "Already coupled"
   },
   "Libraries/bgrtl/DataSet": {
-    "ColumnDefs": "Column definitions",
     "ContainedStatisticsCompute": "Calculate statistics",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrColumnDefsNotAssigned": "Column definitions not initialized",
@@ -2415,13 +2396,7 @@
   "Libraries/bgrtl/MathUtils": {
     "ErrBadMatrix": "Two-dimensional dynamic array is not rectangular matrix",
     "ErrDeterminantIsZero": "It is impossible to calculate the inverse matrix: determinant is zero.",
-    "ErrDispersionIsZero": "It is impossible to calculate the correlation matrix: variance of one of the values is zero",
-    "ErrMultMatrixVectDimMismatch": "Failed to multiply matrix by vector with a different number of matrix columns and vector length.",
-    "ErrNotSqrMatr": "The coefficient matrix must be a square matrix.",
-    "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function",
-    "ErrRegressPowerAndDataErr": "The inequality 0 <= \"polynomial degree\" < \"data points count\" must be fulfilled for proper regression function application.",
-    "ErrRegressXYDimMismatch": "The length of X vector must equal the length of Y vector",
-    "ErrSLAEDimMismatch": "The vector length of the constant terms must coincide with the row count of the coefficient matrix."
+    "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function"
   },
   "Libraries/bgrtl/OpenArray": {
     "ErrVariantToVarRec": "Failed to convert the Variant variable to the TVarRec value due to the unsupported data type %d of the Variant variable",
@@ -2439,8 +2414,6 @@
   },
   "Libraries/bgrtl/QueueException": {
     "ErrAggregateExceptionMessage": "Exceptions occurred while processing",
-    "ErrGetExceptionClassFunctionAlreadyAssigned": "GetExceptionClass function already initialized",
-    "ErrGetExceptionIDFunctionAlreadyAssigned": "GetExceptionID function already initialized",
     "ErrQueueExceptionEndUnexpected": "Attempting to complete a queued exception handling block without first starting it"
   },
   "Libraries/bgrtl/Random": {
@@ -2539,8 +2512,6 @@
     "ErrConvertIntToSet": "Failed to convert number %d of %d bits to the set of %d bits",
     "ErrConvertSetToInt": "Failed to convert the set of %d bits to the number of %d bits",
     "ErrDestroyCallForbidden": "Direct call of destructor is forbidden",
-    "ErrFIsProxyObjectFunctionAlreadyAssigned": "IsProxyObject function already initialized",
-    "ErrGetProxyObjectIdFunctionAlreadyAssigned": "GetProxyObjectId Function already initialized",
     "ErrIIDNotSupported": "Interface with %s identifier not supported by the object",
     "ErrInterfaceNotSupported": "%s interface not supported by object",
     "ErrInvalidClassTypecast": "The object is not a descendant of %s class",
@@ -2620,6 +2591,10 @@
   "Libraries/bgrtl/TypInfo": {
     "ErrEnumVendorInfoManagerNotRegistered": "Enumeration description manager not registered",
     "ErrTypeInfoVariableManagerNotRegistered": "Variable manager for %s type not registered"
+  },
+  "Libraries/bgrtl/UITypes": {
+    "Alpha": "Transparency",
+    "Color": "Color"
   },
   "Libraries/bgrtl/UniqueValues": {
     "ErrNullAsValueChangeForbidden": "NullAsValue parameter value of a non-empty list of unique values cannot be changed",
@@ -2712,7 +2687,6 @@
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Failed to set \"%s\" property",
     "ErrDisposeRuntime": "Error disposing JavaScript runtime environment: \"%s\"",
-    "ErrGetModuleSourceUnassigned": "JavaScript module contents reading function unassigned",
     "ErrMessageQueue": "Unhandled exception when queuing JavaScript events",
     "ErrMessageUnhandledPromiseRejection": "Unhandled exception when tracking rejected Promise",
     "ErrOriginalDll": "Operation is not supported. Inncompatible version of ChakraCore library is used.",
@@ -2721,10 +2695,6 @@
     "ErrTooFewArgs": "Few arguments supplied to %s function (%d whereas %d is minimum number)",
     "ErrTooManyArgs": "Many arguments supplied to %s function (%d whereas %d is maximum number)",
     "ErrUnhandledPromiseRejected": "Unhandled error in Promise"
-  },
-  "Libraries/ChakraCore/ChakraCommonJS": {
-    "ErrGetModuleSourceUnassigned": "JavaScript module download function unassigned",
-    "ErrGetModuleURLUnassigned": "JavaScript module paths resolution function unassigned"
   },
   "Libraries/ChakraCore/ChakraRunRes": {
     "BadSerializedScript": "Service JavaScript code in %s resource incorrectly serialized, non-serialized code executed",
@@ -2822,7 +2792,6 @@
     "ErrConfigSchemeTypesMismatch": "Type of %s schema of the loaded configuration is not compatible with the schema type of %s object"
   },
   "Libraries/Config/ConfigWrappers": {
-    "ErrBaseConfigNotExists": "No base configuration when reading the derived element",
     "ErrBaseElementGuidNotExists": "No base element for the derived collection element with %s identifier",
     "ErrBaseElementIDNotExists": "No base element for the derived collection element with identifier %d",
     "ErrBaseElementNameNotExists": "No base element for the derived collection element with %s name",
@@ -3602,7 +3571,6 @@
     "ErrInterfaceParentNotFound": "Parent interface \"%s\" not found",
     "ErrInvalidMetadataResource": "Error reading metadata from \"%s\" resource",
     "ErrInvalidUTFInt": "Error reading packed integer number",
-    "ErrManagerNotInitialized": "Interface property manager not initialized",
     "ErrParentNotInitialized": "Not initialized parent of \"%s.%s\" interface",
     "ErrPropAccessorNotFound": "Failed to find \"%2:s\" accessor in metadata for \"%0:s.%1:s\" property",
     "ErrReferenceIsNil": "Interface reference not initialized",
@@ -3643,11 +3611,11 @@
     "RegressionModel": "Regression model"
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
-    "ErrInvalidContentType": "Invalid Content-type value format: %s",
+    "ErrInvalidContentType": "Invalid Content-Type value format: %s",
     "ErrInvalidParamDataType": "Invalid %s GET request parameter data type",
     "ErrInvalidParamName": "Invalid %s GET request parameter name",
     "ErrInvalidURL": "Invalid service URL format",
-    "ErrMustExplicitRequestContentType": "Data request Content-type must be explicitly set",
+    "ErrMustExplicitRequestContentType": "Data request Content-Type must be explicitly set",
     "ErrNoServiceURL": "Service URL not specified",
     "ErrWSDLGenerate": "Error while generating WSDL description"
   },
@@ -3928,8 +3896,6 @@
     "ChartTotalsProgress": "Series sum calculation"
   },
   "Viewers/Chart/Server/ChartParametres": {
-    "Alpha": "Transparency",
-    "Color": "Color",
     "DefaultSerieName": "Series",
     "ErrAxisNotFound": "No axis with this position found",
     "ErrAxisPositionNotTrue": "Invalid axis position",
@@ -4195,8 +4161,7 @@
     "VendorDesc": "Show statistical indicators"
   },
   "Warehouse2/DataWarehouseConnection": {
-    "ErrTestConnection": "Connection test error:\n%s",
-    "MDDatabase": "Metadata database"
+    "ErrTestConnection": "Connection test error:\n%s"
   },
   "Warehouse2/DBMDEngine": {
     "ErrDimensionFKIsNull": "Reference to \"%s\" dimension not found.\nThe foreign key value not specified.",
@@ -4215,7 +4180,6 @@
     "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (row \"%d\").",
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.\n%s",
-    "ErrError": "Error:",
     "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
@@ -4228,8 +4192,6 @@
     "VendorDesc": "Extract data from a Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/Ver6/DW6Engine": {
-    "CommentForFieldChangeID": "Reference to the activity journal",
-    "CommentForFieldID": "Primary key",
     "ErrCheckProcess": "[%s] \"%s\" process must consist of at least two dimensions.",
     "ErrDataCube": "Failed to read information about the Cube [%s] \"%s\" .\n%s",
     "ErrDataNotLoad": "Data is not loaded to DW.\nPossible reasons:\nFirebird - spaces at the end of string dimensions;\nMS SQL - case-insensitive letters of string dimensions.\nIf data deletion is set by dimension, this data has been deleted from DW.\nError occurred while restoring constraints and indexes:\n%s",
@@ -4260,23 +4222,11 @@
     "ErrExecSQL": "Error executing query to DB.\n%s"
   },
   "Warehouse2/DWExtract": {
-    "DWObjectName": "Object",
-    "DWObjectType": "Object type",
-    "ErrDWObjectNameNotFound": "No data warehouse object with \"%s\" name found.",
-    "SelectionTree": "Tree of selected objects"
+    "ErrDWObjectNameNotFound": "No data warehouse object with \"%s\" name found."
   },
   "Warehouse2/DWExtractTree": {
     "ErrNeedSelectItem": "Select at least one item",
-    "ErrParams": "Error found in \"%s\" object parameters",
-    "FilterParams": "Filter parameters",
-    "FuncAggr": "Aggregation types",
-    "ItemLatentFilter": "Latent filter element",
-    "LatentFilter": "Latent filter",
-    "ObjName": "Object name",
-    "ObjType": "Object type",
-    "Order": "Order number",
-    "SelectedItem": "Object",
-    "SubNodes": "Subnodes"
+    "ErrParams": "Error found in \"%s\" object parameters"
   },
   "Warehouse2/DWImport": {
     "ErrExecQuery": "Error executing query to Data Warehouse",
@@ -4285,27 +4235,13 @@
     "ExecQueryProcess": "Executing query to Data Warehouse",
     "ImportDataProcess": "Data importing from Data Warehouse"
   },
-  "Warehouse2/MDChoiceTree": {
-    "ErrDWObjectsNotFound": "No data warehouse objects with %s names found",
-    "SelectedItems": "Selected items"
-  },
   "Warehouse2/MDFilterParams": {
-    "CustomPointDate": "Custom date",
     "ErrCustomPointDate": "Data value cannot be empty",
     "ErrFilterTypeIncorrect": "\"%s\" filter type incompatible",
     "ErrListEmpty": "List cannot be empty",
     "ErrSkipIntervalCount": "Number of missed periods cannot be less than 1",
     "ErrStringEmpty": "Value cannot be empty",
-    "ErrUseIntervalCount": "Number of periods cannot be less than 1",
-    "FilterType": "Filter type",
-    "IntervalType": "Interval type",
-    "ListVal": "List of values",
-    "MaxVal": "Max value",
-    "MinVal": "Min value",
-    "PointType": "Reference point type",
-    "SkipIntervalCount": "Skipped interval count",
-    "TheVal": "Value",
-    "UseIntervalCount": "Used interval count"
+    "ErrUseIntervalCount": "Number of periods cannot be less than 1"
   },
   "Warehouse2/MDTree": {
     "ErrColumnCantBeContinuous": "\"%s\" object of \"%s\" type cannot be continuous",

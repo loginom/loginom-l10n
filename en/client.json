@@ -23,7 +23,6 @@
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection parameters",
     "DirectorySettings": "Folders",
-    "Disabled": "Execution forbidden",
     "LDAPSettings": "LDAP parameters",
     "LogFileMaxIndex": "Number of backup files",
     "LogFileMaxSize": "Maximum file size",
@@ -637,8 +636,7 @@
     "ValueListIsEmpty": "No values"
   },
   "components/filterdata/FilterDataCollection": {
-    "ConfirmDeleteAll": "Do you really want to delete all conditions?",
-    "UniqueValuesLimitError": "\"{0}\" field has unique value count exceeding the allowable limit {1}"
+    "ConfirmDeleteAll": "Do you really want to delete all conditions?"
   },
   "components/filterdata/FilterDataWizard": {
     "Activation": "Input port activation",
@@ -656,17 +654,14 @@
     "GroupDataFactor": "Parameters",
     "GroupDataTitle": "Grouping"
   },
-  "components/javascript/CodeOutputPreviewForm": {
-    "CodeExec": "Script execution"
-  },
   "components/javascript/JavaScriptCodeMirrorController": {
     "CodePlaceholder": "Enter code"
   },
-  "components/javascript/JavaScriptCodeWizard": {
-    "ConsoleMessagesMissed": " missed"
-  },
   "components/javascript/JavaScriptColumnsWizard": {
     "frmJavaScriptOutputTableTitle": "Configure JavaScript Output Table Columns"
+  },
+  "components/javascript/JavaScriptPreviewController": {
+    "ConsoleMessagesMissed": " missed"
   },
   "components/joindata/JoinDataWizard": {
     "DifferenceJoinDataDesc": "The difference includes all rows from the main data set into result, with the exception of the rows for which the key fields of the main (left) and subtracted (right) data sets coincide.",
@@ -1514,23 +1509,23 @@
     "AddPortDisplayName": "Add another port."
   },
   "mxgraph/port/Port": {
+    "OptionalPortParam": "Optional port",
+    "RequiredPortParam": "Required port (connection is required to run the node)"
+  },
+  "mxgraph/port/PortAbstract": {
     "CONNECTION": "Connection",
     "DATASOURCE": "Data set",
     "DATATREE": "Data tree",
     "INHERITANCE": "Inheritance",
     "MODEL": "Model",
-    "OptionalPortParam": "Optional port",
     "ORDER": "Execution order",
-    "REFERENCE": "Reference",
-    "RequiredPortParam": "Required port (connection is required to run the node)",
-    "TYPE_UNDEFINED": "Undefined port type",
-    "VARIABLES": "Variables"
-  },
-  "mxgraph/port/PortAbstract": {
     "PortActive": "Active port, data available",
     "PortConfigured": "Port configured",
     "PortInActive": "Port not configured",
-    "PortPartlyConfigured": "Port partially configured"
+    "PortPartlyConfigured": "Port partially configured",
+    "REFERENCE": "Reference",
+    "TYPE_UNDEFINED": "Undefined port type",
+    "VARIABLES": "Variables"
   },
   "navigation/NavigationPanel": {
     "PathBeforeText": "Path:",
@@ -1634,10 +1629,7 @@
     "ActColInAllInvisibleTip": "Hidden",
     "ActColInAllVisibleTip": "Visible",
     "ActHideAll": "Hide all fields",
-    "ActShowAll": "Show all fields",
-    "EmptyFormatText": "Not defined",
-    "EmptyWidthText": "Not defined",
-    "NoExampleFormats": "No examples"
+    "ActShowAll": "Show all fields"
   },
   "viewers/browse/BrowseGoToLine": {
     "ErrRowNoLessLower": "Row number must be more than or equal to 1",
@@ -1677,7 +1669,6 @@
     "NameRecNoField": "RecNo",
     "NameRowNoField": "RowNo",
     "PageDescFmt": "[{0} .. {1}]",
-    "PageInfoFmt": "Page {0} of {1}",
     "PageInfoNotActive": "Not activated",
     "PageInfoViewDataInvalid": "Data not ready",
     "RecNoField": "No",
@@ -1963,19 +1954,10 @@
     "WarnExportTableSizeWarning": "The current cross table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
   "viewers/cube/DimensionFilterSelectionPanel": {
-    "DimensionFilterSelectionPanelTitle": "Check by pattern",
-    "EndingWith": "ending with",
-    "Equal": "=",
-    "Like": "contains",
-    "NotEndingWith": "not ending with",
-    "NotEqual": "<>",
-    "NotLike": "does not contain",
-    "NotStartingWith": "not starting with",
-    "StartingWith": "starting with"
+    "DimensionFilterSelectionPanelTitle": "Check by pattern"
   },
   "viewers/cube/DimensionsFilterPanel": {
     "CheckAllTooltip": "Check all",
-    "TooManyValuesMsg": "Failed to show list of values\nCurrent number of values: {0}\nMaximum number of values: {1}",
     "UncheckAllTooltip": "Uncheck all"
   },
   "viewers/cube/PivotDataSource": {
@@ -2036,7 +2018,6 @@
     "ModelInfoConstant": "Intercept",
     "ModelInfoDFE": "Number of degrees of freedom",
     "ModelInfoHQC": "HQC",
-    "ModelInfoLogLikelihood": "-2 Log Likelihood",
     "ModelInfoPValue": "Significance",
     "ModelInfoR2": "R^2",
     "ModelInfoR2adj": "R^2 adj.",
@@ -2130,6 +2111,9 @@
   "wizards/BaseWizard": {
     "ErrAbortCaption": "Setup Aborted",
     "ErrExitExcepitonsCaption": "Errors"
+  },
+  "wizards/code/CodeOutputPreviewForm": {
+    "CodeExec": "Script execution"
   },
   "wizards/columndefs/ColumnDefsTuning": {
     "UsableDesc": "Use"

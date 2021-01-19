@@ -42,7 +42,7 @@
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
     "ErrInputNeedsToBeWrappedInAnObject": "Input parameters must be wrapped in an object",
     "ErrInvalidCharsetQualityFormat": "Invalid format of the list item in Accept-Charset header: {0}",
-    "ErrInvalidContentType": "Invalid value of the Content-Type caption: {0}",
+    "ErrInvalidContentType": "Invalid value of the Content-Type header: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",
     "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified WebBodyFormatMessageProperty",
     "WarnDuplicateRequestParameter": "The request contains more than one parameter with {0} name",

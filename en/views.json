@@ -64,6 +64,14 @@
       "text": "Value"
     }
   },
+  "admin/SessionsManagerForm": {
+    "btnClose": {
+      "text": "Close"
+    },
+    "btnStop": {
+      "text": "Stop"
+    }
+  },
   "admin/SharedDirectoriesForm": {
     "btnAdd": {
       "text": "Add",
@@ -1222,11 +1230,11 @@
     "colActualCoarseClassNoEventCount": {
       "text": "Non-events (actual)"
     },
+    "colActualCoarseClassRate": {
+      "text": "Weight (actual)"
+    },
     "colActualCoarseClassTotalCount": {
       "text": "Total (actual)"
-    },
-    "colActualCoarseClassWeight": {
-      "text": "Weight (actual)"
     },
     "colActualCoarseClassWoE": {
       "text": "Weight of evidence (actual)"
@@ -1255,11 +1263,11 @@
     "colCoarseClassNoEventCount": {
       "text": "Non-events"
     },
+    "colCoarseClassRate": {
+      "text": "Weight"
+    },
     "colCoarseClassTotalCount": {
       "text": "Total"
-    },
-    "colCoarseClassWeight": {
-      "text": "Weight"
     },
     "colCoarseClassWoE": {
       "text": "Weight of evidence"
@@ -1272,9 +1280,6 @@
     },
     "fldCoarseClassCount": {
       "fieldLabel": "Maximum count"
-    },
-    "fldMinClassPercentage": {
-      "fieldLabel": "Minimum weight, %"
     },
     "fldUniformityCoef": {
       "fieldLabel": "Uniformity,%"
@@ -1777,23 +1782,20 @@
       "title": "Aggregation Options"
     }
   },
-  "components/javascript/CodeOutputPreviewForm": {
-    "btnStopLoading": {
-      "text": "Stop"
-    },
-    "frmCodeOutputPreviewForm": {
-      "title": "Preview"
-    },
-    "grdConsole": {
-      "title": "Console"
-    }
-  },
   "components/javascript/JavaScriptCodeWizard": {
     "btnPreview": {
       "text": "Preview..."
     },
     "frmJavaScriptCode": {
       "title": "JavaScript"
+    }
+  },
+  "components/javascript/JavaScriptOutputPreviewForm": {
+    "frmCodeOutputPreviewForm": {
+      "title": "Preview"
+    },
+    "grdConsole": {
+      "title": "Console"
     }
   },
   "components/loop/LoopParamsWizard": {
@@ -1845,6 +1847,25 @@
     },
     "frmNeuralNetParams": {
       "title": "Configure Neural Network Parameters"
+    }
+  },
+  "components/python/PythonCodeWizard": {
+    "btnPreview": {
+      "text": "Preview..."
+    },
+    "pedWaitTimeout.valueConfig": {
+      "emptyText": "∞"
+    }
+  },
+  "components/python/PythonOutputPreviewForm": {
+    "frmCodeOutputPreviewForm": {
+      "title": "Preview"
+    },
+    "pnlStdErr": {
+      "title": "stderr"
+    },
+    "pnlStdOut": {
+      "title": "stdout"
     }
   },
   "components/replace/ReplaceWizard": {
@@ -2329,13 +2350,13 @@
       "title": "Connection Parameters"
     },
     "grdParams": {
-      "title": "GET Request Parameters"
+      "title": "Request Parameters"
     },
     "pedRequestContentType.valueConfig": {
-      "regexText": "Invalid Content-type value format"
+      "regexText": "Invalid Content-Type value format"
     },
     "pedResponseContentType.valueConfig": {
-      "regexText": "Invalid Content-type value format"
+      "regexText": "Invalid Content-Type value format"
     },
     "pedURL.valueConfig": {
       "emptyText": "http://example.com/operation-path"
@@ -2961,9 +2982,6 @@
     }
   },
   "imports/dbimport/SQLPreviewForm": {
-    "btnClose": {
-      "text": "Close"
-    },
     "frmSQLPreviewForm": {
       "title": "Preview"
     }
@@ -3021,11 +3039,6 @@
     "btnUp": {
       "tooltip": "Move up"
     },
-    "colActionChecked": {
-      "altText": "Show",
-      "menuText": "Show",
-      "text": "Show"
-    },
     "colActionDelete": {
       "tooltip": "Delete all..."
     },
@@ -3035,6 +3048,9 @@
     "colAgg": {
       "text": "Type",
       "tooltip": "Type of Data Warehouse object"
+    },
+    "colChecked": {
+      "text": "Show"
     },
     "colCondition": {
       "text": "Condition"
@@ -3356,24 +3372,11 @@
     "colDisplayName": {
       "text": "Available fields"
     },
-    "colFormatOnFormatGrid": {
-      "text": "Format"
-    },
     "colSourceColumnIndex": {
       "text": "No"
     },
-    "colWidth": {
-      "text": "Width"
-    },
-    "grdFieldsGrid": {
-      "title": "Fields"
-    },
-    "mniResetFormat": {
-      "text": "Restore format of all fields"
-    },
-    "mniResetWidth": {
-      "text": "Restore width of all fields",
-      "tooltip": "Restore width of all fields"
+    "mniResetWidths": {
+      "text": "Restore width of all fields"
     },
     "mniRestoreFieldOrder": {
       "text": "Restore fields order",
@@ -3495,9 +3498,6 @@
     },
     "colRowNumberer": {
       "tooltip": "Row number"
-    },
-    "grdDataDetail": {
-      "title": "Detailing"
     },
     "lblPage": {
       "text": "Page"
@@ -3832,9 +3832,6 @@
     },
     "lblHideUnusedColumns": {
       "text": "Hide unused fields"
-    },
-    "lblHistogramUnavailable": {
-      "text": "Failed to show histogram"
     }
   },
   "viewers/common/ViewerCard": {
@@ -4214,50 +4211,6 @@
       "text": "Configure measures..."
     }
   },
-  "viewers/cube/CustomFormatPanel": {
-    "cbbHAlignment": {
-      "fieldLabel": "Horizontal alignment"
-    },
-    "cbbVAlignment": {
-      "fieldLabel": "Vertical alignment"
-    },
-    "cbFormatStr": {
-      "boxLabel": "Custom format"
-    },
-    "cbNegValuesRedColor": {
-      "boxLabel": "Negative in red"
-    },
-    "cbScientific": {
-      "fieldLabel": "Exponential form"
-    },
-    "cbThousand": {
-      "fieldLabel": "Thousands separator"
-    },
-    "cntAlignment": {
-      "title": "Alignment"
-    },
-    "cntFormat": {
-      "title": "Formatting"
-    },
-    "colDateFormat": {
-      "text": "Format"
-    },
-    "edtCurrency": {
-      "fieldLabel": "Currency"
-    },
-    "edtDecimalDigit": {
-      "fieldLabel": "Decimal place limit",
-      "maxText": "No more than {0} decimal places",
-      "negativeText": "Only non-negative values are allowed"
-    },
-    "edtSampleResult": {
-      "emptyText": "Calculate...",
-      "fieldLabel": "Result"
-    },
-    "edtSampleSource": {
-      "fieldLabel": "Example"
-    }
-  },
   "viewers/cube/DimensionFilterSelectionPanel": {
     "btnApply": {
       "text": "Apply"
@@ -4324,9 +4277,6 @@
     }
   },
   "viewers/fastpreview/FastPreviewForm": {
-    "btnClose": {
-      "text": "Close"
-    },
     "colDisplayName": {
       "text": "Caption"
     },
@@ -4353,6 +4303,46 @@
     },
     "frmFastPreviewForm": {
       "title": "Quick View"
+    }
+  },
+  "viewers/format/CustomFormatPanel": {
+    "cbbHAlignment": {
+      "fieldLabel": "Alignment"
+    },
+    "cbbVAlignment": {
+      "fieldLabel": "Vertical alignment"
+    },
+    "cbFormatStr": {
+      "boxLabel": "Custom format"
+    },
+    "cbNegValuesRedColor": {
+      "boxLabel": "Negative in red"
+    },
+    "cbScientific": {
+      "fieldLabel": "Exponential form"
+    },
+    "cbThousand": {
+      "fieldLabel": "Thousands separator"
+    },
+    "cntFormat": {
+      "title": "Formatting"
+    },
+    "colDateFormat": {
+      "text": "Format"
+    },
+    "edtCurrency": {
+      "fieldLabel": "Currency"
+    },
+    "edtDecimalDigit": {
+      "fieldLabel": "Decimal place limit",
+      "maxText": "No more than {0} decimal places",
+      "negativeText": "Only non-negative values are allowed"
+    },
+    "edtSampleResult": {
+      "fieldLabel": "Result"
+    },
+    "edtSampleSource": {
+      "fieldLabel": "Example"
     }
   },
   "viewers/regression/RegressionReportView": {
@@ -4527,14 +4517,8 @@
     "colTrainParamValue": {
       "text": "Train"
     },
-    "fldAprioriEventPercent": {
-      "fieldLabel": "Events, %"
-    },
     "fldUserCutoff": {
       "fieldLabel": "Threshold value"
-    },
-    "lblAprioriEvent": {
-      "text": "Prior Probability"
     },
     "lblChartType": {
       "text": "Chart type"

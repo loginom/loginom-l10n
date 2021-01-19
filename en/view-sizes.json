@@ -1,26 +1,7 @@
 {
-  "admin/SessionsManagerForm": {
-    "colActivity": {
-      "width": 150
-    },
-    "colCreateTime": {
-      "width": 150
-    },
-    "colModifyTime": {
-      "width": 150
-    }
-  },
   "imports/dwh/DWImportWizard": {
     "colMDType": {
       "width": 55
-    }
-  },
-  "components/binning/MethodSettingsWizard": {
-    "colStatMax": {
-      "width": 150
-    },
-    "colStatMin": {
-      "width": 150
     }
   },
   "components/datereform/DateReformWizard": {
@@ -31,29 +12,6 @@
   "components/sorting/SortingColumnCollection": {
     "colCaseSensitive": {
       "width": 115
-    }
-  },
-  "connections/webservice/AuthorizationForm": {
-    "colExpiry": {
-      "minWidth": 130,
-      "width": 130
-    },
-    "colStart": {
-      "minWidth": 145,
-      "width": 145
-    }
-  },
-  "filedialog/OpenDialogForm": {
-    "colFileDate": {
-      "width": 150
-    },
-    "colName": {
-      "width": 329
-    }
-  },
-  "homepage/HomePage": {
-    "colOpenDate": {
-      "width": 150
     }
   }
 }

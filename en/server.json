@@ -23,7 +23,7 @@
     "ErrTooManyArgs": "Many arguments supplied to %s function (%d whereas %d is maximum number)"
   },
   "Common/CertList/CertList": {
-    "ErrCertListImplementationNotRegistered": "Certificate list implementation with %s identifier not registered"
+    "ErrCertListImplementationNotRegistered": "Certificate list implementation not registered"
   },
   "Common/CertList/CertList_Win": {
     "AddressBook": "Other People",
@@ -44,12 +44,14 @@
     "ArgColumnInfos": "Column definitions",
     "ArgRow": "Row index",
     "ArgValue": "Value",
+    "Column": "Column",
     "ColumnCount": "Column count",
     "ColumnGet": "Get column cell value",
     "ColumnIsNull": "Check if the value is set in the column cell",
     "Columns": "Columns",
     "Count": "Count",
     "DataKind": "Data kind",
+    "DataSource": "Data source",
     "DataType": "Data type",
     "DefaultUsageType": "Default usage type",
     "DisplayName": "Caption",
@@ -61,14 +63,21 @@
     "Name": "Name",
     "OutputTable": "Output table",
     "RowCount": "Row count",
+    "TableAddColumn": "Add Column",
     "TableAppend": "Add row",
     "TableGet": "Get table cell value",
     "TableIsNull": "Check if the value is set in the table cell",
     "TableSet": "Set value to the added row cell",
-    "Value": "Value"
+    "UsageType": "Usage type",
+    "Value": "Value",
+    "Variable": "Variable",
+    "Variables": "Variables"
   },
   "Common/CodeExec/CodeAPIDataSetExceptions": {
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
+    "ErrDataSourceActive": "Data set is not in the closed state",
+    "ErrDataSourceClosed": "Data set is not in the opened state",
+    "ErrDataSourceNotEditing": "Data set is not in the edited state",
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
   },
   "Common/CodeExec/CodeAPIDataSetProxies": {
@@ -76,6 +85,9 @@
     "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table",
     "ErrInvalidDataSourceColumnIndex": "Index %d of input table column #%d is out of [%d; %d] range",
     "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table #%d"
+  },
+  "Common/CodeExec/CodeAPIPreviewDataSet": {
+    "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table"
   },
   "Common/CodeExec/CodePreview": {
     "PreviewProcess": "Data preview",
@@ -195,6 +207,7 @@
     "ErrSoapOperationVersionConflict": "SOAP version of %s operation conflicts with %s binding version",
     "ErrSoapRPCPartRefersToElement": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema element is assigned to RPC style SOAP message",
     "ErrSoapTransportNotSupported": "SOAP transports except for HTTP are currently not supported",
+    "ErrUrlReplacementNotAllowed": "Error defining input message of \"%s\" operation of \"%s\" binding: message of \"%s\" type not allowed for \"%s\" request method",
     "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema included into WSDL file (row %d, position %d):\nError code: %d\nReason: %s",
     "ErrWsdlImportNoAccess": "No access to the imported %s document"
   },
@@ -603,6 +616,7 @@
   },
   "components/coarseclasses/CoarseClassingOptimalAlgorithm": {
     "MaxClassCount": "Maximum class count",
+    "MinClassRate": "Minimum class weight",
     "UniformityCoef": "Uniformity coefficient"
   },
   "components/coarseclasses/FineClassesStorage": {
@@ -751,6 +765,14 @@
   "components/datereform/DateReformVendor": {
     "VendorCaption": "Date and Time",
     "VendorDescription": "Reform date/time"
+  },
+  "components/duplicates/DuplicatesEngine": {
+    "ErrNoColumnsForProcessing": "No columns for processing specified",
+    "SortingNotify": "Data sorting"
+  },
+  "components/duplicates/DuplicatesVendor": {
+    "VendorCaption": "Duplicate Detection",
+    "VendorDesc": "Detection of duplicates and contradictions"
   },
   "components/em/EMEngine": {
     "ColumnNameCluster": "Cluster number",
@@ -1365,6 +1387,15 @@
     "VendorCaption": "Partitioning",
     "VendorDesc": "Selection of test and training sets"
   },
+  "components/python/PythonEngine": {
+    "ErrCurrentDirectory": "Failed to define the current directory"
+  },
+  "components/python/PythonExecutor": {
+    "ErrResNotFound": "%s resource not found"
+  },
+  "components/python/PythonVendor": {
+    "VendorCaption": "Python"
+  },
   "components/quality/Quality": {
     "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
     "GenerationOutputSets": "Output data sets generation",
@@ -1418,6 +1449,7 @@
   "components/restclient/RESTClient": {
     "ErrorCodeColumn": "Error Code",
     "ErrorDescColumn": "Error Description",
+    "HttpStatusCodeColumn": "HTTP Status Code",
     "OutputDataSet": "Service Response",
     "RequestIDOutputColumn": "Request identifier",
     "ResponseColumn": "Server response",
@@ -1483,7 +1515,7 @@
     "SONNTrainNotify": "Network training"
   },
   "components/sonn/SONNVendor": {
-    "VendorCaption": "Self-Organizing Networks",
+    "VendorCaption": "Self-Organizing Network",
     "VendorDesc": "Data clustering by self-organizing neural networks"
   },
   "components/sorting/SortingEngine": {
@@ -1897,6 +1929,7 @@
   },
   "Libraries/1CConnection/1CConnection": {
     "ErrDBPath": "Failed to get path to DB",
+    "ErrEmptyConnectionString": "Empty connection string",
     "ErrLocalDBForbidden": "Connections to local databases on server are forbidden"
   },
   "Libraries/1CConnection/1Cv8Connection": {
@@ -1946,6 +1979,7 @@
     "ComponentTip": "%s [%s]",
     "ErrCommandTypeNotYetSupported": "%s type of SQL command not supported yet",
     "ErrConnectionString": "Empty connection string",
+    "ErrDatabasePathNotExists": "\"%s\" file not found",
     "ErrDBPath": "Failed to get path to DB",
     "ErrExecuteProcedure": "Error executing stored procedure \"%s\"",
     "ErrExecuteQuery": "Error while SQL executing:\n%s",
@@ -2312,6 +2346,7 @@
     "HyperFilesDesc": "Tableau Hyper Extracts",
     "ICOFilesDesc": "Icon",
     "JPGFilesDesc": "JPEG format",
+    "JSFilesDesc": "JavaScript files",
     "JSONFilesDesc": "Text file for data exchange",
     "KeyFilesDesc": "Private key",
     "LgdFilesDesc": "Loginom Data file",
@@ -2321,6 +2356,7 @@
     "ODSFilesDesc": "OpenDocument spreadsheet",
     "P12FilesDesc": "PKCS #12 files",
     "PDFFilesDesc": "PDF documents",
+    "PYFilesDesc": "Python files",
     "RtfFilesDesc": "Files in RTF format",
     "SELFilesDesc": "Request files",
     "SHPFilesDesc": "Shape format",
@@ -2961,6 +2997,7 @@
     "ErrInterfaceNotSupportedEx": "%s interface not supported"
   },
   "Libraries/Model/ComponentSettings": {
+    "Disabled": "Execution forbidden",
     "ErrSettingsAlreadyInitialized": "Settings already initialized"
   },
   "Libraries/Model/Connections/ConnectionVendor": {
@@ -3138,6 +3175,7 @@
   },
   "Libraries/Model/ModelComponentVendorGroupsCommon": {
     "AnalyticVendorGroupCaption": "Data Mining",
+    "CodeVendorGroupCaption": "Code",
     "DataTreeVendorGroupCaption": "Data tree",
     "ExploratoryVendorGroupCaption": "Exploration",
     "ExportVendorGroupCaption": "Export",
@@ -3612,8 +3650,8 @@
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "ErrInvalidContentType": "Invalid Content-Type value format: %s",
-    "ErrInvalidParamDataType": "Invalid %s GET request parameter data type",
-    "ErrInvalidParamName": "Invalid %s GET request parameter name",
+    "ErrInvalidParamDataType": "Invalid %s request parameter data type",
+    "ErrInvalidParamName": "Invalid %s request parameter name",
     "ErrInvalidURL": "Invalid service URL format",
     "ErrMustExplicitRequestContentType": "Data request Content-Type must be explicitly set",
     "ErrNoServiceURL": "Service URL not specified",
@@ -3689,6 +3727,7 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s",
+    "ErrWSDLSourceNotExists": "\"%s\" file not found",
     "WarnMainWSDLNotLoaded": "Loading of the main WSDL source (%s) failed (%s). Loading from the reserve source."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
@@ -3909,7 +3948,7 @@
     "ClusterProfilesProcess": "Cluster profiles",
     "Component": "Component",
     "DetailingProcessCaptionSuffix": " by %s clusters",
-    "ErrNotDefinedComponent": "Undefined clustering component",
+    "ErrNotDefinedComponent": "Undefined Clustering component",
     "ErrTableRowState": "Invalid change of the data field synchronization status occurred",
     "HistogramProcess": "Histogram building",
     "ImportanceProcess": "Importance calculation",
@@ -3951,6 +3990,7 @@
     "DimValueDesc": "Header value"
   },
   "Viewers/Cube/CubeChart": {
+    "DimNameDesc": "Dimension name",
     "MaxDotsCountDesc": "Maximum dots count",
     "MaxSeriesCountDesc": "Maximum series count"
   },
@@ -4021,6 +4061,13 @@
     "ManagerBrowse": "Table",
     "ManagerStatistics": "Statistics",
     "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" detailing configuration"
+  },
+  "Viewers/Duplicates/DuplicatesView": {
+    "Component": "Component",
+    "ErrNotDefinedComponent": "Undefined Duplicate Detection component"
+  },
+  "Viewers/Duplicates/DuplicatesViewVendor": {
+    "VendorCaption": "Duplicates and Contradictions"
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Component",
@@ -4166,10 +4213,10 @@
   "Warehouse2/DBMDEngine": {
     "ErrDimensionFKIsNull": "Reference to \"%s\" dimension not found.\nThe foreign key value not specified.",
     "ErrDimensionFKNotFound": "Reference to \"%s\" dimension not found.\nThe dimension with primary key \"%s\" was not found in the dimension list.",
-    "ErrNotFoundVersionInfo": "Failed to read version information about Deductor Warehouse version.\n%s",
+    "ErrNotFoundVersionInfo": "Failed to read version information about Deductor Warehouse version.",
     "ErrProcessFKIsNull": "Reference to \"%s\" process not found.\nThe foreign key value not specified.",
     "ErrProcessFKNotFound": "Reference to \"%s\" process not found.\nThe process with primary key \"%s\" was not found in the process list.",
-    "ErrSetMDItem": "Error reading metadata from DB.\nFor object with ID=%s, Name=\"%s\".\nError: %s"
+    "ErrSetMDItem": "Error reading metadata from DB.\nFor object with ID=%s, Name=\"%s\"."
   },
   "Warehouse2/Deductor/DDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse",
@@ -4179,13 +4226,16 @@
     "ErrDimensionValueIsNull": "Value of \"%1:s\" dimension in \"%0:d\" row is null.",
     "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (row \"%d\").",
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
-    "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.\n%s",
+    "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.",
     "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension",
     "MsgEnableConstraint": "Restore indexes and constraints.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
     "MsgRecordSkipDimValueIsNull": "Data of string \"%d\" was not added to DW. \"%s\" dimension value is null.",
     "MsgStatisticsGathering": "Collect statistics"
+  },
+  "Warehouse2/Deductor/DDWExportVendor": {
+    "VendorCaption": "Deductor Warehouse"
   },
   "Warehouse2/Deductor/DDWImportVendor": {
     "VendorCaption": "Deductor Warehouse",
@@ -4194,8 +4244,8 @@
   "Warehouse2/Deductor/Ver6/DW6Engine": {
     "ErrCheckProcess": "[%s] \"%s\" process must consist of at least two dimensions.",
     "ErrDataCube": "Failed to read information about the Cube [%s] \"%s\" .\n%s",
-    "ErrDataNotLoad": "Data is not loaded to DW.\nPossible reasons:\nFirebird - spaces at the end of string dimensions;\nMS SQL - case-insensitive letters of string dimensions.\nIf data deletion is set by dimension, this data has been deleted from DW.\nError occurred while restoring constraints and indexes:\n%s",
-    "ErrRebuildCube": "Error occurred while the Cube updating [%s] \"%s\" .\n%s",
+    "ErrDataNotLoad": "Data is not loaded to DW.\nPossible reasons:\nFirebird - spaces at the end of string dimensions;\nMS SQL - case-insensitive letters of string dimensions.\nIf data deletion is set by dimension, this data has been deleted from DW.\nError occurred while restoring constraints and indexes",
+    "ErrRebuildCube": "Error occurred while the Cube updating [%s] \"%s\".",
     "MsgMoreLengthName": "Name of \"%s\" field is too long.\nErrors may occur when executing SQL queries to DW.",
     "MsgMoreLengthPrefix": "Too long value of \"%s\" prefix.\nErrors may occur when executing SQL queries to DW.",
     "MsgRebuildCube": "Update the Cubes in the Data Warehouse",
@@ -4219,14 +4269,18 @@
     "DWConnectionVendorDesc": "Connect to Data Warehouse"
   },
   "Warehouse2/DWDataEngine": {
-    "ErrExecSQL": "Error executing query to DB.\n%s"
+    "ErrExecSQL": "Error executing query to DB."
+  },
+  "Warehouse2/DWExport": {
+    "ErrNotConnectedToDatabase": "Not connected to Data Warehouse",
+    "ErrObjectDWNotSpecified": "Data Warehouse object not specified"
   },
   "Warehouse2/DWExtract": {
     "ErrDWObjectNameNotFound": "No data warehouse object with \"%s\" name found."
   },
   "Warehouse2/DWExtractTree": {
     "ErrNeedSelectItem": "Select at least one item",
-    "ErrParams": "Error found in \"%s\" object parameters"
+    "ErrParams": "Error found in \"%s\" (%s) object parameters"
   },
   "Warehouse2/DWImport": {
     "ErrExecQuery": "Error executing query to Data Warehouse",
@@ -4234,6 +4288,9 @@
     "ErrObjectDWNotSpecified": "Data Warehouse object not specified",
     "ExecQueryProcess": "Executing query to Data Warehouse",
     "ImportDataProcess": "Data importing from Data Warehouse"
+  },
+  "Warehouse2/DWLoad": {
+    "ErrDWObjectNameNotFound": "No data warehouse object with \"%s\" name found."
   },
   "Warehouse2/MDFilterParams": {
     "ErrCustomPointDate": "Data value cannot be empty",

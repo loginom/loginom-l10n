@@ -870,6 +870,7 @@
       "SessionBackupDirectory": "Directory containing session backups",
       "StopTimeout": "Server stop timeout",
       "ThreadPoolSize": "Thread pool size",
+      "TraceExceptions": "Trace exceptions",
       "UserStorageDirectory": "Directory containing personal user folders"
     },
     "SocketDeductorServerSettings": {

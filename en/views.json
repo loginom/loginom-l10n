@@ -68,8 +68,24 @@
     "btnClose": {
       "text": "Close"
     },
+    "btnRefresh": {
+      "text": "Refresh",
+      "tooltip": "Refresh"
+    },
+    "btnSearch": {
+      "text": "Search"
+    },
     "btnStop": {
       "text": "Stop"
+    },
+    "colPath": {
+      "text": "Path"
+    },
+    "colSessionHost": {
+      "text": "Host"
+    },
+    "colVersion": {
+      "text": "Version"
     }
   },
   "admin/SharedDirectoriesForm": {
@@ -1791,6 +1807,9 @@
     }
   },
   "components/javascript/JavaScriptOutputPreviewForm": {
+    "btnStopLoading": {
+      "text": "Stop"
+    },
     "frmCodeOutputPreviewForm": {
       "title": "Preview"
     },
@@ -1853,13 +1872,25 @@
     "btnPreview": {
       "text": "Preview..."
     },
+    "frmPythonCode": {
+      "title": "Python"
+    },
     "pedWaitTimeout.valueConfig": {
       "emptyText": "∞"
     }
   },
   "components/python/PythonOutputPreviewForm": {
+    "btnStopLoading": {
+      "text": "Stop"
+    },
     "frmCodeOutputPreviewForm": {
       "title": "Preview"
+    },
+    "pnlOutMerged": {
+      "title": "All"
+    },
+    "pnlOutput": {
+      "title": "Output"
     },
     "pnlStdErr": {
       "title": "stderr"
@@ -2506,6 +2537,42 @@
       "title": "Export to Database"
     }
   },
+  "exports/dwh/DWExportWizard": {
+    "btnAutoLinkAll": {
+      "text": "Auto Link All"
+    },
+    "btnClearLinks": {
+      "text": "Delete All Links"
+    },
+    "btnShowInvalidRelations": {
+      "text": "Show Lost Links"
+    },
+    "colField": {
+      "text": "Source data set columns"
+    },
+    "colMDNode": {
+      "text": "Parameter"
+    },
+    "colMDType": {
+      "text": "Type",
+      "tooltip": "Type of Data Warehouse object"
+    },
+    "mniAutoLinkTree": {
+      "text": "Auto link"
+    },
+    "mniDeleteColumnLink": {
+      "text": "Delete link"
+    },
+    "mniDeleteTreeLink": {
+      "text": "Delete link"
+    },
+    "txtFilterField": {
+      "emptyText": "Filter"
+    },
+    "txtFilterMDNode": {
+      "emptyText": "Filter"
+    }
+  },
   "exports/excelfile/ExportExcelFilePreviewWizard": {
     "btnConnect": {
       "text": "Connect"
@@ -2610,7 +2677,7 @@
   },
   "exports/textfile/ExportTextFilePreviewWizard": {
     "btnActivationPortButton": {
-      "text": "Activate Login"
+      "text": "Activate Input Port"
     },
     "cntConnection": {
       "fieldLabel": "Login status"
@@ -2864,6 +2931,10 @@
     "btnCreateUnsavedPackage": {
       "text": "New Draft"
     },
+    "btnExamples": {
+      "href": "https://examples.loginom.com/",
+      "text": "Examples"
+    },
     "btnFacebook": {
       "href": "https://facebook.com/lg.platform/"
     },
@@ -3061,6 +3132,13 @@
     "colMDField": {
       "text": "Parameter"
     },
+    "colMDGroupType": {
+      "text": "Type",
+      "tooltip": "Type of Data Warehouse object"
+    },
+    "colMDNode": {
+      "text": "Parameter"
+    },
     "colMDType": {
       "text": "Type",
       "tooltip": "Type of Data Warehouse object"
@@ -3093,6 +3171,9 @@
       "text": "Move all to selected"
     },
     "txtFilterMDFields": {
+      "emptyText": "Filter"
+    },
+    "txtFilterMDNodes": {
       "emptyText": "Filter"
     }
   },
@@ -3374,6 +3455,14 @@
     },
     "colSourceColumnIndex": {
       "text": "No"
+    },
+    "mniMoveDown": {
+      "text": "Move down",
+      "tooltip": "Move down"
+    },
+    "mniMoveUp": {
+      "text": "Move up",
+      "tooltip": "Move up"
     },
     "mniResetWidths": {
       "text": "Restore width of all fields"
@@ -4089,6 +4178,7 @@
       "text": "Measures"
     },
     "btnChart": {
+      "text": "Chart",
       "tooltip": "Chart"
     },
     "btnChartCase": {
@@ -4277,14 +4367,38 @@
     }
   },
   "viewers/fastpreview/FastPreviewForm": {
+    "btnForm": {
+      "text": "Form"
+    },
+    "btnSelectFirst": {
+      "tooltip": "First row"
+    },
+    "btnSelectLast": {
+      "tooltip": "Last row"
+    },
+    "btnTable": {
+      "text": "Table"
+    },
     "colDisplayName": {
       "text": "Caption"
+    },
+    "colFormDisplayName": {
+      "text": "Caption"
+    },
+    "colFormName": {
+      "text": "Name"
+    },
+    "colFormValue": {
+      "text": "Value"
     },
     "colName": {
       "text": "Name"
     },
     "colNumber": {
       "text": "No"
+    },
+    "colRowNo": {
+      "tooltip": "Row number"
     },
     "colTreeNode": {
       "text": "Caption"
@@ -4303,6 +4417,15 @@
     },
     "frmFastPreviewForm": {
       "title": "Quick View"
+    },
+    "lblRow": {
+      "text": "Row"
+    },
+    "mniMoveDown": {
+      "text": "Move down"
+    },
+    "mniMoveUp": {
+      "text": "Move up"
     }
   },
   "viewers/format/CustomFormatPanel": {
@@ -4413,7 +4536,7 @@
       "text": "CI upper bound"
     },
     "colRepPValue": {
-      "text": "Significance"
+      "text": "P-value"
     },
     "colRepScore": {
       "text": "Score"
@@ -5011,7 +5134,7 @@
   },
   "wizards/datapartition/SamplingWizard": {
     "btnActivationPort": {
-      "text": "Activate Login"
+      "text": "Activate Input Port"
     },
     "cntMethodType": {
       "title": "Method Parameters"
@@ -5402,7 +5525,7 @@
   },
   "wizards/normalization/NormTuneWizard": {
     "btnActivationPort": {
-      "text": "Activate Login"
+      "text": "Activate Input Port"
     },
     "btnEdit": {
       "text": "Edit",
@@ -5464,6 +5587,9 @@
     }
   },
   "wizards/regression/RegressionWizard": {
+    "btnActivationPort": {
+      "text": "Activate Input Port"
+    },
     "cntFactorSelectionParams": {
       "title": "Factor Selection Settings"
     },
@@ -5478,6 +5604,21 @@
     },
     "cntRegularizationParams": {
       "title": "Regularization Settings"
+    },
+    "colName": {
+      "text": "Set"
+    },
+    "pedEvents.valueConfig": {
+      "emptyText": "<empty>"
+    },
+    "pedNoEvents.valueConfig": {
+      "emptyText": "<empty>"
+    },
+    "rbManualCalibration": {
+      "boxLabel": "Custom"
+    },
+    "txtActivationPortStatus": {
+      "fieldLabel": "Login status"
     }
   },
   "wizards/variables/EditVariableForm": {

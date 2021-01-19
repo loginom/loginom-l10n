@@ -50,7 +50,10 @@
     "HTTPVerb": {
       "$Caption": "HTTP Method",
       "GET": "GET",
-      "POST": "POST"
+      "POST": "POST",
+      "PUT": "PUT",
+      "DELETE": "DELETE",
+      "PATCH": "PATCH"
     },
     "SoapStyle": {
       "$Caption": "SOAP Request Style",
@@ -512,7 +515,7 @@
       "Stepwise": "Stepwise",
       "L2": "Ridge",
       "L1": "LASSO",
-      "L1L2": "Elastic-net"
+      "L1L2": "Elastic-Net"
     },
     "LinRegSelQuality": {
       "$Caption": "Factor Selection Criterion",
@@ -526,6 +529,9 @@
     }
   },
   "components/logregression": {
+    "CalibrationMethod": {
+      "Manual": "Custom"
+    },
     "LogRegressionMethod": {
       "$Caption": "Factor Selection and Protection against Overfitting",
       "Enter": "Enter",
@@ -979,7 +985,8 @@
       "Item": "Item",
       "DimCol": "Dimension in columns",
       "DimRow": "Dimension in rows",
-      "Forecast": "Forecast"
+      "Forecast": "Forecast",
+      "Weight": "Weight"
     },
     "DataKind": {
       "$Caption": "Data Kind",
@@ -1443,6 +1450,14 @@
       "FinalOnly": "For the final model"
     }
   },
+  "Studio/DeductorSessionsManager": {
+    "SessionRole": {
+      "Admin": "Administration",
+      "Designer": "Workflows design",
+      "Viewer": "View reports",
+      "Service": "Batch processing"
+    }
+  },
   "Studio/DeductorUsers": {
     "DeductorUserAuthMode": {
       "$Caption": "Authentification",
@@ -1646,9 +1661,23 @@
       "$Caption": "Series Position",
       "Cols": "In columns",
       "Rows": "In rows"
+    },
+    "CubeChartTooltipMode": {
+      "$Caption": "Tooltip style"
     }
   },
   "Viewers/Cube/CubeDimensions": {
+    "CubeDimensionFilterCondition": {
+      "$Caption": "Filter Selection Mode",
+      "Like": "contains",
+      "NotLike": "does not contain",
+      "Equal": "=",
+      "NotEqual": "<>",
+      "StartingWith": "starting with",
+      "NotStartingWith": "not starting with",
+      "EndingWith": "ending with",
+      "NotEndingWith": "not ending with"
+    },
     "CubeDimensionFilterType": {
       "$Caption": "Filter Selection Mode",
       "MultipleSelect": "Multiple selection",
@@ -1848,13 +1877,25 @@
       "Variables": "Filter with variables used"
     },
     "MDAggregateFunction": {
-      "Avg": "Average"
+      "$Caption": "Aggregation",
+      "Sum": "Sum",
+      "Count": "Count",
+      "Min": "Minimum",
+      "Max": "Maximum",
+      "Avg": "Average",
+      "Median": "Median",
+      "StdDev": "Standard deviation",
+      "UniqueCount": "Unique count",
+      "NullCount": "Null count",
+      "First": "First",
+      "Last": "Last"
     },
     "MDAggregateType": {
       "$Caption": "Fact Aggregation Functions List",
       "Sum": "Sum",
       "Min": "Minimum",
       "Max": "Maximum",
+      "Avg": "Average",
       "Count": "Count"
     },
     "MDFilterConditionType": {

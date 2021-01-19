@@ -45,6 +45,9 @@
     "WSPort": "WebSocket port",
     "WSSPort": "WebSocket SSL/TLS port"
   },
+  "admin/SessionsManagerForm": {
+    "SessionCapacity": "{0} of {1}"
+  },
   "admin/SharedDirectoriesForm": {
     "DeleteUserConfirm": "Do you want to delete folder from the file system?"
   },
@@ -159,6 +162,7 @@
     "FileStorage": "Files",
     "HomePage": "Home",
     "InputPorts": "Input ports",
+    "Manager": "Session Manager",
     "ModelViews": "Visualizers",
     "OutputPorts": "Output ports",
     "PackagesParent": "Packages",
@@ -681,7 +685,8 @@
   "components/logregression/LogRegressionWizard": {
     "GetValueList": "Get list",
     "RegressionDetailPage": "Detailed configuring of logistic regression",
-    "RegressionParamsPage": "Logistic regression configuring"
+    "RegressionParamsPage": "Logistic regression configuring",
+    "TrainSet": "Train"
   },
   "components/loop/LoopMappingWizard": {
     "InvalidLinkFormat": "No variable in link of \"{0}\" input variable with \"{1}\" output variable",
@@ -708,6 +713,9 @@
     "DecayVeryStrong": "Very strong",
     "DecayVeryWeak": "Very weak",
     "DecayWeak": "Weak"
+  },
+  "components/python/PythonCodeMirrorController": {
+    "CodePlaceholder": "Enter source code"
   },
   "components/reformcolumns/EditReformColumnDefForm": {
     "CachingMethod": "Caching"
@@ -869,6 +877,9 @@
     "ErrUpdateNotSupported": "Record update by key not supported by the current database",
     "NoConnection": "No connection"
   },
+  "exports/dwh/DWExportWizard": {
+    "ConfirmClearAllLinks": "Do you want to delete all links?"
+  },
   "exports/excelfile/ExportExcelFilePreviewWizard": {
     "DefaultSheetName": "Sheet1"
   },
@@ -988,6 +999,16 @@
     "NestedDDZone": "Nested dd zones are not supported",
     "NestedReciever": "Nested receivers are not supported",
     "NonContainerRecieverBadConfig": "Receiver may not be container, only if NoAddOnDrop == NoPlaceholder == true"
+  },
+  "ext/PaginationPlugin": {
+    "ErrMaxPage": "There is no page with the index larger than the last index",
+    "ErrMinPage": "There is no page with index smaller than the starting index",
+    "FirstPage": "First page",
+    "LastPage": "Last page",
+    "NextPage": "Next page",
+    "Page": "Page",
+    "PageDescFmt": "[{0} .. {1}]",
+    "PrevPage": "Previous page"
   },
   "ext/TotalLabel": {
     "HeaderFormat": "# |{0}|",
@@ -1322,7 +1343,7 @@
   },
   "imports/dwh/DWObjectWizard": {
     "ErrNoSelectedObject": "Specify Data Warehouse object",
-    "ErrObjectNotFound": "\"{0}\" Data Warehouse object not found",
+    "ErrObjectNotFound": "\"{0}\" ({1}) Data Warehouse object not found",
     "NoConnection": "No connection"
   },
   "imports/excelfile/ImportExcelFilePreviewWizard": {
@@ -1514,6 +1535,7 @@
   },
   "mxgraph/port/PortAbstract": {
     "CONNECTION": "Connection",
+    "CONTROL_VARIABLES": "Control variables",
     "DATASOURCE": "Data set",
     "DATATREE": "Data tree",
     "INHERITANCE": "Inheritance",
@@ -1946,11 +1968,13 @@
   },
   "viewers/cube/CubeView": {
     "ChartCaseEmptyText": "Empty list",
+    "ChartYAxisTitle": "Measures",
     "DotsOutOfBoundsMsg": "Exceeding chart bounds.\nCurrent number of dots: {0}.\nMaximum number of dots: {1}",
     "ErrExportFailed": "Failed to export the Cube crosstab:\n{0}",
     "ExportToastTitle": "Export from the Cube",
     "HideSingleCase": "Hide single measure",
     "SeriesOutOfBoundsMsg": "Chart limits exceeded.\nCurrent number of series: {0}.\nMaximum number of series: {1}",
+    "TooltipMode": "Tooltip style",
     "WarnExportTableSizeWarning": "The current cross table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
   "viewers/cube/DimensionFilterSelectionPanel": {
@@ -1992,6 +2016,9 @@
     "SelectNext": "Next record",
     "SelectPrev": "Previous record"
   },
+  "viewers/fastpreview/DataSetForm": {
+    "RowNumbererHeaderSymbol": "No"
+  },
   "viewers/fastpreview/DataTreeForm": {
     "LoadedNodesLimitNote": "Only the first {0} are shown from the sorted nodes"
   },
@@ -2021,6 +2048,7 @@
     "ModelInfoPValue": "Significance",
     "ModelInfoR2": "R^2",
     "ModelInfoR2adj": "R^2 adj.",
+    "ModelInfoStdDev": "Standard deviation",
     "ModelInfoXi2": "Chi-square"
   },
   "viewers/reports/ReportsForm": {

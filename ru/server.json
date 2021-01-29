@@ -1475,7 +1475,7 @@
     "TableSet": "Set($self, col, value, /)\n--\n\nУстановить значение в ячейку добавленной строки\nАргументы:\n  col: Union[int, str]\n    Индекс или имя столбца таблицы\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    Значение совместимого со столбцом типа (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time и их наследники) или None\nРезультат:\n  None"
   },
   "components/python/PythonUtils": {
-    "ErrLoadedExtensionRegistrationFailed": "Ошибка служебного кода для регистрации загрузки расширений Python",
+    "ErrLoadedExtensionRegistrationFailed": "Ошибка в служебном коде для регистрации загрузки расширений Python",
     "ErrPyObjectAsVariantUnsupported": "Преобразование переданного объекта Python в значение переменного типа не поддерживается",
     "ErrPyObjectFromVariantUnsupported": "Преобразование переданного значения переменного типа в объект Python не поддерживается"
   },
@@ -4118,7 +4118,7 @@
     "DimValueDesc": "Значение заголовка"
   },
   "Viewers/Cube/CubeChart": {
-    "DimDataTypeDesc": "Тип занных изменения",
+    "DimDataTypeDesc": "Тип данных измерения",
     "DimNameDesc": "Имя измерения",
     "DimValueDesc": "Уникальное значение, принадлежащее измерению",
     "ErrAlreadyExists": "Факт с индексом отображения %d уже присутствует в диаграмме куба",

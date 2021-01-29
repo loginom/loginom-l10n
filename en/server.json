@@ -41,6 +41,8 @@
   },
   "Common/CodeExec/CodeAPI": {
     "ArgColumn": "Column Index or name",
+    "ArgColumnIndex": "Column index",
+    "ArgColumnInfo": "Column name or definition",
     "ArgColumnInfos": "Column definitions",
     "ArgRow": "Row index",
     "ArgValue": "Value",
@@ -49,28 +51,38 @@
     "ColumnGet": "Get column cell value",
     "ColumnIsNull": "Check if the value is set in the column cell",
     "Columns": "Columns",
+    "ColumnSet": "Set value to the column cell",
     "Count": "Count",
     "DataKind": "Data kind",
     "DataSource": "Data source",
     "DataType": "Data type",
     "DefaultUsageType": "Default usage type",
     "DisplayName": "Caption",
+    "DocDataModule": "Data access module",
     "Index": "Index",
+    "InputColumn": "Input column",
     "InputTable": "Input data source",
     "InputTables": "Array of input data sources",
     "InputVariables": "Input variables",
     "Items": "Items",
     "Name": "Name",
+    "OutputColumn": "Output column",
     "OutputTable": "Output table",
     "RowCount": "Row count",
     "TableAddColumn": "Add Column",
     "TableAppend": "Add row",
+    "TableAssignColumns": "Create columns by decriptions",
+    "TableClearColumns": "Delete all columns",
+    "TableDeleteColumn": "Delete column",
     "TableGet": "Get table cell value",
+    "TableGetColumn": "Get column",
+    "TableInsertColumn": "Paste column",
     "TableIsNull": "Check if the value is set in the table cell",
     "TableSet": "Set value to the added row cell",
     "UsageType": "Usage type",
     "Value": "Value",
     "Variable": "Variable",
+    "VariableItems": "Collection of variables",
     "Variables": "Variables"
   },
   "Common/CodeExec/CodeAPIDataSetExceptions": {
@@ -81,9 +93,9 @@
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
   },
   "Common/CodeExec/CodeAPIDataSetProxies": {
-    "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of [%d; %d] range",
+    "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of range, %d column count",
     "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table",
-    "ErrInvalidDataSourceColumnIndex": "Index %d of input table column #%d is out of [%d; %d] range",
+    "ErrInvalidDataSourceColumnIndex": "The input table column index %d is out of range, %d column count",
     "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table #%d"
   },
   "Common/CodeExec/CodeAPIPreviewDataSet": {
@@ -207,7 +219,7 @@
     "ErrSoapOperationVersionConflict": "SOAP version of %s operation conflicts with %s binding version",
     "ErrSoapRPCPartRefersToElement": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema element is assigned to RPC style SOAP message",
     "ErrSoapTransportNotSupported": "SOAP transports except for HTTP are currently not supported",
-    "ErrUrlReplacementNotAllowed": "Error defining input message of \"%s\" operation of \"%s\" binding: message of \"%s\" type not allowed for \"%s\" request method",
+    "ErrUrlReplacementNotAllowed": "Error defining input message of \"%s\" operation of \"%s\" binding: the message of \"%s\" type is not allowed for \"%s\" request method",
     "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema included into WSDL file (row %d, position %d):\nError code: %d\nReason: %s",
     "ErrWsdlImportNoAccess": "No access to the imported %s document"
   },
@@ -269,7 +281,8 @@
     "Group_Idx": "(%s) index"
   },
   "Common/XML/SAX/XMLSAX": {
-    "ErrParserIsActive": "Failed to change parser properties during parsing"
+    "ErrParserIsActive": "Failed to change parser properties during parsing",
+    "ErrSAXParserImplementationNotRegistered": "SAX parser implementation for %s interface not registered"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
     "ErrParseFile": "Error in row %d, position %d while parsing '%s' file:\n  %s",
@@ -582,7 +595,7 @@
     "ErrNotAllowedInputBinningKind": "The input field does not support the new usage type in the external partition (data type restriction)",
     "ErrRequiredContinuousOrDiscrete": "Continuous or discrete data kind is required",
     "MaxClassCount": "Required class count",
-    "MinClassRate": "Minimum class weight"
+    "MinClassRate": "Minimum class rate"
   },
   "components/coarseclasses/CoarseClassesEngine": {
     "ActiveInputPortRequired": "Activation of input port is required to build the coarse classes",
@@ -616,7 +629,7 @@
   },
   "components/coarseclasses/CoarseClassingOptimalAlgorithm": {
     "MaxClassCount": "Maximum class count",
-    "MinClassRate": "Minimum class weight",
+    "MinClassRate": "Minimum class rate",
     "UniformityCoef": "Uniformity coefficient"
   },
   "components/coarseclasses/FineClassesStorage": {
@@ -767,11 +780,16 @@
     "VendorDescription": "Reform date/time"
   },
   "components/duplicates/DuplicatesEngine": {
+    "Contradiction": "Contradiction",
+    "ContradictionGroup": "Contradiction group",
+    "Duplicate": "Duplicate",
+    "DuplicateGroup": "Duplicate group",
+    "DuplicatesIndexingNotify": "Search for duplicates and contradictions",
     "ErrNoColumnsForProcessing": "No columns for processing specified",
     "SortingNotify": "Data sorting"
   },
   "components/duplicates/DuplicatesVendor": {
-    "VendorCaption": "Duplicate Detection",
+    "VendorCaption": "Duplicates Detection",
     "VendorDesc": "Detection of duplicates and contradictions"
   },
   "components/em/EMEngine": {
@@ -1059,11 +1077,23 @@
   },
   "components/javascript/JavaScriptEngine": {
     "InputDataSource": "Input data source",
+    "JavaScriptConfigureOutputTable": "Preparing output columns",
+    "JavaScriptFillOutputTable": "Fill in the output table",
     "OutputDataSet": "Output data set"
   },
   "components/javascript/JavaScriptVendor": {
     "VendorCaption": "JavaScript",
     "VendorDesc": "JavaScript code execution"
+  },
+  "components/javascript/JavaScriptWrappers": {
+    "ErrColumnInfoNoRequiredProperty": "Column definition does not contain required '%s' property",
+    "ErrInvalidArgWrongType": "Invalid type of argument [%d]",
+    "ErrInvalidColumnDataKind": "Invalid data kind",
+    "ErrInvalidColumnDataType": "Invalid data type",
+    "ErrInvalidColumnInfo": "Invalid column definition",
+    "ErrInvalidColumnUsageType": "Invalid usage type",
+    "ErrInvalidThis": "Method called for invalid object",
+    "ErrNoCorrespondingColumn": "Object not associated with column"
   },
   "components/joindata/JoinData": {
     "DisplayNamePrefix": "Join",
@@ -1153,6 +1183,8 @@
   },
   "components/logregression/LogRegressionEngine": {
     "ActualEvent": "Event|Actual",
+    "CalcTestSetProportionProcessCaption": "Calculation of event weight in test set",
+    "CalcTrainSetProportionProcessCaption": "Calculation of event weight in training set",
     "Chi2": "Chi-square",
     "ColumnDisplayName": "Input field captions",
     "ColumnName": "Input field names",
@@ -1161,6 +1193,7 @@
     "CVClsErrorPercentage": "Cross validation error percentage",
     "CVRMSError": "Root-mean-square error in cross validation",
     "ErrClassifierMultipleOutputs": "Only one output field is allowed for the classification task, %d is currently specified",
+    "ErrEmptyTestSet": "Empty test set cannot be used for introduction of event weight correction",
     "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrNotImplemented": "Functionality not implemented",
@@ -1171,6 +1204,7 @@
     "ErrWrongOutputField": "Invalid \"%s\" output field properties, \"%s\" data kind, \"%s\" data type",
     "ErrWrongOutputFieldNotDiscrete": "Invalid \"%s\" output field properties, \"%s\" data kind, whereas \"%s\" is only valid",
     "ErrWrongOutputUniqueCount": "Number of \"%s\" output column unique values is %d (exactly 2 required)",
+    "ErrWrongProportionGeneralSet": "Event weight in the general set must be more than 0 % and less than 100 %",
     "Intercept": "<Intercept>",
     "LogRegStoreStatProcessName": "Quality indicators calculating",
     "LogRegTrainProcessName": "Model building",
@@ -1181,6 +1215,7 @@
     "PredictionEvent": "Event|Prediction",
     "PredictionProbability": "Event probabillity|Prediction",
     "PredictionScore": "Score|Prediction",
+    "PrepareSetsProportionsProcessCaption": "Preparing sets",
     "RegressionCoefsNamePostfix": "|Coefficients",
     "RegressionLBoundNamePostfix": "|CI lower bound of odds ratio",
     "RegressionOddsRatioPostfix": "|Odds ratio",
@@ -1189,6 +1224,7 @@
     "RegressionUBoundNamePostfix": "|CI upper bound of odds ratio",
     "RegressionWaldPValueNamePostfix": "|P-value of the Wald criterion",
     "RegressionWaldStatNamePostfix": "|Wald criterion",
+    "StoreEventsProcessCaption": "Output data set defining",
     "TestAvgCE": "Average cross-entropy in the test set",
     "TestClsErrorPercentage": "Percentage of classification errors in the test set",
     "TestRMSError": "Root-mean-square error in the test set",
@@ -1201,13 +1237,15 @@
     "TrainSamples": "Samples in the training set",
     "TrainThreshold": "Model train cutoff",
     "ValidationPartitions": "Number of validation partitions",
-    "ValidationSamples": "Samples in the validation set"
+    "ValidationSamples": "Samples in the validation set",
+    "WarnPrepareSetsProportionsRunning": "Preparation of sets already started"
   },
   "components/logregression/LogRegressionModelTree": {
     "ErrFactorIndexesPrepared": "Full factor model indexes not prepared"
   },
   "components/logregression/LogRegressionTasks": {
     "ErrNotLogRegTaskContext": "Internal error: context is not the training context for the log. regression model",
+    "ErrTooManyWeightColumns": "The weight column count cannot be more than 1",
     "ErrWrongValidationPartitionCount": "Validation partition count must be more than 0 (given partition count = %d)",
     "RegBackwardAssignProcessName": "Excluding %s factor from the final model",
     "RegBackwardStepProcessName": "Stepwise selection - %s factor exclusion",
@@ -1248,6 +1286,7 @@
     "ErrParallelProcessingError": "Error occurred while parallel loop processing",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Posttested loop does not support parallel processing",
     "ErrPortNotConfigurable": "Port configuration not supported",
+    "ErrReferencedNodeVendorNotFound": "Source node or component not found",
     "ErrSocketIsNotInputDataSourceSocket": "\"%s\" port is not input port containing data set",
     "ErrSocketNotConfigured": "Port not configured",
     "ErrUnsupportedInputSocketType": "Unsupported \"%s\" port type",
@@ -1387,14 +1426,62 @@
     "VendorCaption": "Partitioning",
     "VendorDesc": "Selection of test and training sets"
   },
+  "components/python/PythonComponentSettings": {
+    "PythonLib": "Library path"
+  },
   "components/python/PythonEngine": {
-    "ErrCurrentDirectory": "Failed to define the current directory"
+    "CodeIsHere": "Data processing code can be here",
+    "ConfigureOutputTable": "Preparing output columns",
+    "CreateDateFrameFromInputTable": "Create pd.DataFrame by input data set No1",
+    "ErrCurrentDirectory": "Failed to get current directory",
+    "ErrDisallowedExecution": "Python execution forbidden by security settings",
+    "ErrGetNativePath": "Failed to get the path in the file system by the path of \"%s\" file storage",
+    "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
+    "ErrVerifyPythonIsBusy": "Python is busy. Failed to start syntax check",
+    "ErrWaitTimeoutElapsed": "Python wait timeout expired",
+    "InputPortOptional": "Optional input port",
+    "OutputDataFrameExample": "Received output pd.DataFrame",
+    "PrepareCompatibleComment": "If \"Allow creating output columns in script\" option is enabled, the output data set structure can be prepared by pd.DataFrame"
   },
   "components/python/PythonExecutor": {
-    "ErrResNotFound": "%s resource not found"
+    "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nGet the path in the file system by the path of the file storage\nArguments:\n  path: str\n    Path in the file storage.\nResult:\n  Path in the file system.",
+    "ErrResNotFound": "%s resource not found",
+    "ErrTCLFinalize": "Error occurred during TCL finalization",
+    "ErrUnloadExtension": "Error occurred while \"%s\" extension unloading",
+    "WarnExecuting": "Python already executing"
+  },
+  "components/python/PythonInterface": {
+    "ErrPythonLibraryIncompatibleVersion": "Python version %d.%d is not supported. %d.%d is minimum supported version.",
+    "ErrPythonLibraryNotFound": "Python library not found"
+  },
+  "components/python/PythonModuleData": {
+    "ColumnGet": "Get($self, row, /)\n--\n\nGet column cell value\nArguments:\n  row: int\n    Table row index.\nResult:\n  Cell value according to the column type (bool, int, str, float or datetime.datetime). If the cell is null, None is returned.",
+    "ColumnIsNull": "IsNull($self, row, /)\n--\n\nCheck if there is a value in the column cell\n\nArguments:\n  row: int\n    Table row index.\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
+    "ColumnSet": "Set($self, value, /)\n--\n\nSet value in the column cell of the appended row\n\nArguments:\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None.\nResult:\n  None",
+    "ErrColumnInfoNoRequiredProperty": "Column definition does not contain required '%s' property",
+    "ErrInvalidColumnDataKind": "Invalid data kind",
+    "ErrInvalidColumnDataType": "Invalid data type",
+    "ErrInvalidColumnUsageType": "Invalid usage type",
+    "ErrNoCorrespondingObject": "Python object not associated with work object",
+    "TableAddColumn": "AddColumn($self, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nAdd new column\nArguments:\n  ColumnInfo\n   Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified new column attributes are initialized with default values.",
+    "TableAppend": "Append($self, /)\n--\n\nAppend new row\nResult:\n  None",
+    "TableAssignColumns": "AssignColumns($self, source, /)\n--\n\nCreate columns by decriptions\nArguments:\n  source: Iterable\n    The object returning iterator over the column metadata objects, for example, InputTable.Columns. The column metadata object must contain the Name attribute and optionally DisplayName, DataType, DataKind, DefaultUsageType.",
+    "TableClearColumns": "ClearColumns($self, /)\n--\n\nDelete all columns\nResult:\n  None",
+    "TableDeleteColumn": "DeleteColumn($self, col, /)\n--\n\nDelete column by index or name\nArguments:\n  col: Union[int, str]\n    Index or name of deleted column.\nResult:\n  None",
+    "TableGet": "Get($self, row, col, /)\n--\n\nGet table cell value\n\nArguments:\n  row: int\n    Table row index\ncol: Union[int, str]\n    Index or name of table column\nResult:\n  Cell value according to the column type (bool, int, str, float or datetime.datetime). If the cell is null, None is returned.",
+    "TableGetColumn": "GetColumn($self, col, /)\n--\n\nGet column by index or name\n\nArguments:\n  col: Union[int, str]\n    Index or name of table column\nResult:\n  Table column",
+    "TableInsertColumn": "InsertColumn($self, Index, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nInsert a new column at a given index\nArguments:\n  Index: int\n    The index where the new column needs to be inserted.\n  ColumnInfo\n   Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified new column attributes are initialized with default values.",
+    "TableIsNull": "IsNull($self, row, col, /)\n--\n\nCheck if there is a value in the table cell\n\n\nArguments:\n  row: int\n    Table row index\n  col: Union[int, str]\n   Index or name of table column\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
+    "TableSet": "Set($self, col, value, /)\n--\n\nSet value in the cell of the appended row\nАргументы:\n  col: Union[int, str]\n   Index or name of table column\n  value: Union[bool, int, str, float, datetime.datetime, None]\n     The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None\nResult:\n  None"
+  },
+  "components/python/PythonUtils": {
+    "ErrLoadedExtensionRegistrationFailed": "Error in service script for Python extensions loading registration",
+    "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object to the value of the variant type is not supported",
+    "ErrPyObjectFromVariantUnsupported": "Transformation of the passed value of the variant type to the Python object is not supported"
   },
   "components/python/PythonVendor": {
-    "VendorCaption": "Python"
+    "VendorCaption": "Python",
+    "VendorDesc": "Python script execution"
   },
   "components/quality/Quality": {
     "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
@@ -1983,6 +2070,10 @@
     "ErrDBPath": "Failed to get path to DB",
     "ErrExecuteProcedure": "Error executing stored procedure \"%s\"",
     "ErrExecuteQuery": "Error while SQL executing:\n%s",
+    "ErrIncorrectConnectionString": "Invalid format of connection string",
+    "ErrIncorrectDatabase": "Invalid database name",
+    "ErrIncorrectPort": "Invalid port",
+    "ErrIncorrectServer": "Invalid server",
     "ErrIndexColumnsNotSelect": "No columns to make an index are specified",
     "ErrLocalDBForbidden": "Connections to local server databases are forbidden",
     "ErrOpenQuery": "Error while SQL opening :\n%s",
@@ -2007,7 +2098,14 @@
   },
   "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
     "DatabaseTypeName": "BigQuery (ODBC)",
-    "ErrODBCBigQueryNotExists": "ODBC-driver for connection to BigQuery has not been installed. Installation packages and brief driver description can be found at:"
+    "ErrEmailIsEmpty": "No service account e-mail specified",
+    "ErrIncorrectDataset": "Invalid data set name",
+    "ErrIncorrectProject": "Invalid project name",
+    "ErrKeyFilePathIsEmpty": "Path to the private key file is not specified",
+    "ErrKeyFilePathNotExists": "\"%s\" key file not found",
+    "ErrODBCBigQueryNotExists": "ODBC-driver for connection to BigQuery has not been installed. Installation packages and brief driver description can be found at:",
+    "ErrRefreshTokenIsEmpty": "No token specified for authentication",
+    "SSLCANotExists": "\"%s\" certificate file not found"
   },
   "Libraries/bgdbrtl/UniDAC/ExcelODBCUniDACDB": {
     "DatabaseTypeName": "MS Excel (ODBC)",
@@ -2554,7 +2652,8 @@
     "ErrInvalidGUID": "Failed to convert \"%s\" row to GUID",
     "ErrMaxEndThreadProcCountReached": "Failed to register more than %d procedures of finalization for a stream",
     "ErrObjectDeleteRefCount": "Failed to delete the object of %s class due to interface references to it: %d",
-    "ErrObjectIsNil": "Null object reference"
+    "ErrObjectIsNil": "Null object reference",
+    "ErrObjectIsNilFmt": "Null  %s object reference"
   },
   "Libraries/bgrtl/SysUtils": {
     "ErrCopyPasteRecursive": "\"%s\" folder cannot be copied into itself",
@@ -2811,6 +2910,10 @@
     "ErrUnsupportedConfigBinaryStreamVersion": "Unsupported version of configuration data stream %d",
     "ErrUnsupportedDataType": "Unsupported configuration attribute data type"
   },
+  "Libraries/Config/ConfigFile": {
+    "ErrLoadConfigFile": "Configuration file loading error: %s",
+    "ErrSaveConfigFile": "Configuration file saving error: %s"
+  },
   "Libraries/Config/ConfigScheme": {
     "CountDesc": "Count",
     "ErrAttributeByNameNotFound": "Schema attribute with \"%s\" name not found.",
@@ -2998,6 +3101,8 @@
   },
   "Libraries/Model/ComponentSettings": {
     "Disabled": "Execution forbidden",
+    "ErrSettingIncompatibleType": "Incompatible value transferred to provide \"%s\" setting",
+    "ErrSettingNotExists": "\"%s\" setting does not exist",
     "ErrSettingsAlreadyInitialized": "Settings already initialized"
   },
   "Libraries/Model/Connections/ConnectionVendor": {
@@ -3175,7 +3280,7 @@
   },
   "Libraries/Model/ModelComponentVendorGroupsCommon": {
     "AnalyticVendorGroupCaption": "Data Mining",
-    "CodeVendorGroupCaption": "Code",
+    "CodeVendorGroupCaption": "Scripting",
     "DataTreeVendorGroupCaption": "Data tree",
     "ExploratoryVendorGroupCaption": "Exploration",
     "ExportVendorGroupCaption": "Export",
@@ -3704,11 +3809,14 @@
     "ErrDisconnectedSession": "Connection lost",
     "ErrIncorrectMainServerObjectInterfaceID": "Invalid interface identifier of the main server object received",
     "ErrInvalidObjectID": "Invalid object identifier: %d",
+    "ErrInvalidRangeBounds": "The left bound of range [%d; %d] has been set higher than the right one",
     "ErrMainServerObjectNotRegistered": "The main server object is not registered",
     "ErrMaxObjectIdReached": "Object identifiers limit of %d values reached",
     "ErrMethodHasNoReturnValue": "%s method has no return value",
     "ErrMethodHasOutputParameters": "%s method contains output parameters",
     "ErrMethodReturnValueIsNotInterface": "The return value of %s method is not an interface object reference",
+    "ErrNegativeRangeBounds": "Range bounds [%d; %d] are negative",
+    "ErrRangeLengthOutOfRange": "Range bounds [%d; %d] are not in the range of allowable values [%d; %d]",
     "ErrRpcVersionMismatch": "Client of %s version cannot get connected to the server of %s version",
     "ErrUnknownInterfaceID": "Unknown interface identifier: %d",
     "ErrValueOutOfRange": "Value %d is not in the range of allowable values [%d; %d]"
@@ -3726,6 +3834,7 @@
     "TableauRestConnectionVendorDesc": "Connect to Tableau server by REST API"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
+    "ErrNoWSDLSource": "No WSDL source specified",
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s",
     "ErrWSDLSourceNotExists": "\"%s\" file not found",
     "WarnMainWSDLNotLoaded": "Loading of the main WSDL source (%s) failed (%s). Loading from the reserve source."
@@ -3753,6 +3862,9 @@
   },
   "Studio/Converters/Converter_201809181721_LogRegression_RelativeTerms": {
     "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nReconfiguration and retraining of the \"Logistic Regression\" nodes that cannot be converted is required"
+  },
+  "Studio/Converters/Converter_202003302114_CubeView_Chart": {
+    "WarnCannotConvert": "Failed to convert the measure displayed in the cube chart in the visualizer settings. The first suitable measure was selected."
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"
@@ -3815,6 +3927,21 @@
   "Studio/DeductorServerSettings": {
     "SessionBackupDirectory": "Session backups",
     "UserStorageDirectory": "Users data"
+  },
+  "Studio/DeductorSessionsManager": {
+    "ErrCloseSessionRestriction": "%s session closing forbidden",
+    "ErrNodeNotPackageInfo": "The passed object is not a package node in the Session Manager",
+    "ErrNodeNotSessionInfo": "The passed object is not a session node in the Session Manager",
+    "ErrPackageNotFound": "No %s package found in %s session. It may have already been closed. ",
+    "ErrPackageSessionNotFound": "No session with %s package found. It may have already been closed. ",
+    "ErrSessionNotFound": "No %s session found. It may have already been closed. ",
+    "LogManagedPackageClosed": "%s package closed from Session Manager",
+    "LogManagedPackageStopped": "%s package stopped from Session Manager",
+    "LogManagedSessionClosed": "%s session closed from Session Manager",
+    "LogManagedSessionStopped": "%s session stopped from Session Manager",
+    "NotResolvedIP": "Not available",
+    "PackagePoolNodeName": "Pool of packages",
+    "SharedPackagesNodeName": "Shared packages"
   },
   "Studio/DeductorUsers": {
     "AllowedApplicationModes": "Allowed application modes",
@@ -3990,7 +4117,12 @@
     "DimValueDesc": "Header value"
   },
   "Viewers/Cube/CubeChart": {
+    "DimDataTypeDesc": "Dimension data type",
     "DimNameDesc": "Dimension name",
+    "DimValueDesc": "The unique value that belongs to the dimension",
+    "ErrAlreadyExists": "The measure display with index %d already exists in the cube chart",
+    "ErrDataType": "Failed to use the measure display with nonnumeric data type in the cube chart",
+    "ErrNotExists": "The measure display with index %d does not exist in the cube chart",
     "MaxDotsCountDesc": "Maximum dots count",
     "MaxSeriesCountDesc": "Maximum series count"
   },
@@ -4025,7 +4157,7 @@
     "DefExprDisplayName": "Expression",
     "ErrCaseClassNotDynamic": "Measure is not calculated",
     "ErrCaseFuncNotExist": "No \"%s\" aggregation for \"%s\" measure",
-    "ErrCaseSubFuncNotExist": "\"%s\" measure with \"%s\" aggregation does not display \"%s\"",
+    "ErrCaseSubFuncNotExist": "\"%s\" measure with \"%s\" aggregation does not have \"%s\" display",
     "ErrIIDNotRegistered": "\"%s\" identifier not registered",
     "MsgMissingCase": "\"%s\" field matching \"%s\" measure not found in the data set."
   },
@@ -4064,10 +4196,11 @@
   },
   "Viewers/Duplicates/DuplicatesView": {
     "Component": "Component",
-    "ErrNotDefinedComponent": "Undefined Duplicate Detection component"
+    "ErrNotDefinedComponent": "Undefined Duplicates Detection component"
   },
   "Viewers/Duplicates/DuplicatesViewVendor": {
-    "VendorCaption": "Duplicates and Contradictions"
+    "VendorCaption": "Duplicates and Contradictions",
+    "VendorDesc": "Show duplicates and contradictions in table"
   },
   "Viewers/LinRegressReport/LinRegressReport": {
     "Component": "Component",
@@ -4228,14 +4361,18 @@
     "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.",
     "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension",
+    "MsgDisableConstraint": "Disable indexes and constraints.",
     "MsgEnableConstraint": "Restore indexes and constraints.",
+    "MsgGroupDataProcess": "Grouping of the Process data before loading into the Data Warehouse",
+    "MsgGroupDeleteDim": "Preparing to delete. Data grouping by dimension.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
     "MsgRecordSkipDimValueIsNull": "Data of string \"%d\" was not added to DW. \"%s\" dimension value is null.",
     "MsgStatisticsGathering": "Collect statistics"
   },
   "Warehouse2/Deductor/DDWExportVendor": {
-    "VendorCaption": "Deductor Warehouse"
+    "VendorCaption": "Deductor Warehouse",
+    "VendorDesc": "Loading data into the Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/DDWImportVendor": {
     "VendorCaption": "Deductor Warehouse",
@@ -4269,9 +4406,13 @@
     "DWConnectionVendorDesc": "Connect to Data Warehouse"
   },
   "Warehouse2/DWDataEngine": {
-    "ErrExecSQL": "Error executing query to DB."
+    "ErrDimNotSourceName": "No field from the data source specified for \"%s\" dimension.",
+    "ErrDimSourceNameNotFound": "\"%s\" field specified for \"%s\" dimension not found in the data source.",
+    "ErrExecSQL": "Error executing query to DB.",
+    "ErrSourceNameNotFound": "\"%s\" field specified for \"%s\" not found in the data source"
   },
   "Warehouse2/DWExport": {
+    "ErrDimNotSourceName": "No field from the data source specified for \"%s\" dimension.",
     "ErrNotConnectedToDatabase": "Not connected to Data Warehouse",
     "ErrObjectDWNotSpecified": "Data Warehouse object not specified"
   },
@@ -4285,12 +4426,17 @@
   "Warehouse2/DWImport": {
     "ErrExecQuery": "Error executing query to Data Warehouse",
     "ErrNotConnectedToDatabase": "Not connected to Data Warehouse",
+    "ErrNotConnectedToMeataDataNode": "Imported \"%s\" (%s) field is not connected with the Data Warehouse object ",
     "ErrObjectDWNotSpecified": "Data Warehouse object not specified",
     "ExecQueryProcess": "Executing query to Data Warehouse",
     "ImportDataProcess": "Data importing from Data Warehouse"
   },
   "Warehouse2/DWLoad": {
     "ErrDWObjectNameNotFound": "No data warehouse object with \"%s\" name found."
+  },
+  "Warehouse2/MDChoiceTree": {
+    "ErrDWObjectNotFound": "No data warehouse object with \"%s\" (%s) name found",
+    "ErrNodeNotBelongToTree": "\"%s\" metadata node does not belong to the metadata tree"
   },
   "Warehouse2/MDFilterParams": {
     "ErrCustomPointDate": "Data value cannot be empty",

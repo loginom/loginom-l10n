@@ -527,7 +527,7 @@
     "RegExMatch": {
       "Arguments": "RegularExpression - the regular expressions string;\nString - the input string.",
       "Description": "RegExMatch(RegularExpression, String)",
-      "Output": "Checks the match between the string and regular expression.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
+      "Output": "Checks the string and regular expression matching.\nPCRE2 library is used. Syntax and semantics are compatible with the Perl regular expressions."
     },
     "RegExMatchCount": {
       "Arguments": "RegularExpression - the regular expressions string;\nString - the input string.",

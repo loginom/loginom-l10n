@@ -65,21 +65,48 @@
     }
   },
   "admin/SessionsManagerForm": {
+    "btnCleanPool": {
+      "text": "Clear pool",
+      "tooltip": "Clear pool of packages"
+    },
     "btnClose": {
-      "text": "Close"
+      "text": "Close",
+      "tooltip": "Close session or package"
     },
     "btnRefresh": {
       "text": "Refresh",
       "tooltip": "Refresh"
     },
+    "btnResolveIP": {
+      "text": "Host name",
+      "tooltip": "Resolve names by IP"
+    },
     "btnSearch": {
-      "text": "Search"
+      "text": "Search",
+      "tooltip": "Find session or package"
     },
     "btnStop": {
-      "text": "Stop"
+      "text": "Stop",
+      "tooltip": "Cancel execution of session or package"
+    },
+    "colActivity": {
+      "text": "Activity"
+    },
+    "colCreateTime": {
+      "text": "Create Time"
+    },
+    "colModifyTime": {
+      "text": "Save Time"
     },
     "colPath": {
       "text": "Path"
+    },
+    "colRole": {
+      "text": "Role",
+      "tooltip": "Main user role in session"
+    },
+    "colSession": {
+      "text": "Sessions and packages"
     },
     "colSessionHost": {
       "text": "Host"
@@ -925,7 +952,7 @@
   },
   "components/binning/MethodSettingsWizard": {
     "ActivationPortContainer": {
-      "fieldLabel": "Login status"
+      "fieldLabel": "Input status"
     },
     "btnActivationPort": {
       "text": "Activate"
@@ -1231,6 +1258,9 @@
     "btnShowClassParamsGrid": {
       "tooltip": "Show coarse class table"
     },
+    "btnShowEventRate": {
+      "tooltip": "Event rates"
+    },
     "btnShowSideBar": {
       "tooltip": "Show side bar"
     },
@@ -1240,14 +1270,20 @@
     "colActualCoarseClassEventCount": {
       "text": "Events (actual)"
     },
+    "colActualCoarseClassEventRate": {
+      "text": "Event rate (actual)"
+    },
     "colActualCoarseClassIV": {
       "text": "IV (actual)"
     },
     "colActualCoarseClassNoEventCount": {
       "text": "Non-events (actual)"
     },
+    "colActualCoarseClassNoEventRate": {
+      "text": "Non-event rate (actual)"
+    },
     "colActualCoarseClassRate": {
-      "text": "Weight (actual)"
+      "text": "Rate (actual)"
     },
     "colActualCoarseClassTotalCount": {
       "text": "Total (actual)"
@@ -1260,6 +1296,9 @@
     },
     "colCoarseClassEventCount": {
       "text": "Events"
+    },
+    "colCoarseClassEventRate": {
+      "text": "Event rate"
     },
     "colCoarseClassHighBorder": {
       "text": "Upper"
@@ -1279,8 +1318,11 @@
     "colCoarseClassNoEventCount": {
       "text": "Non-events"
     },
+    "colCoarseClassNoEventRate": {
+      "text": "Non-event rate"
+    },
     "colCoarseClassRate": {
-      "text": "Weight"
+      "text": "Rate"
     },
     "colCoarseClassTotalCount": {
       "text": "Total"
@@ -1296,6 +1338,9 @@
     },
     "fldCoarseClassCount": {
       "fieldLabel": "Maximum count"
+    },
+    "fldMinClassRate": {
+      "fieldLabel": "Minimum rate, %"
     },
     "fldUniformityCoef": {
       "fieldLabel": "Uniformity,%"
@@ -1327,10 +1372,10 @@
       "text": "Activate"
     },
     "cntActivationPort": {
-      "fieldLabel": "Login status"
+      "fieldLabel": "Input status"
     },
     "cntActivationPortVisualizer": {
-      "fieldLabel": "Login status"
+      "fieldLabel": "Input status"
     },
     "colAutoMappingColumnKind": {
       "tooltip": "Auto link"
@@ -1528,7 +1573,7 @@
       "tooltip": "Add neighboring node"
     },
     "btnAutoLinkAll": {
-      "text": "Auto link all"
+      "text": "Auto Link All"
     },
     "btnClearLinks": {
       "text": "Delete All Links"
@@ -1764,7 +1809,7 @@
   },
   "components/filterdata/FilterDataWizard": {
     "ActivationPortContainer": {
-      "fieldLabel": "Login status"
+      "fieldLabel": "Input status"
     },
     "btnActivationPort": {
       "text": "Activate"
@@ -2547,6 +2592,24 @@
     "btnShowInvalidRelations": {
       "text": "Show Lost Links"
     },
+    "ckbAddDimensionData": {
+      "boxLabel": "Add values of dimensions<br><br> automatically. When data loading into the process, add missing dimension values to the data warehouse automatically."
+    },
+    "ckbDisableConstraint": {
+      "boxLabel": "Disable/enable constraints and indexes<br><br>Disable before data loading into warehouse, and to restore indexes and constraints after loading."
+    },
+    "ckbRebuildCube": {
+      "boxLabel": "Update cubes<br><br>After data loading, rebuild all cubes with enabled \"Dynamic update\" option and inherited from the loaded process."
+    },
+    "ckbStatisticsGathering": {
+      "boxLabel": "Gather statistics<br><br>Refresh statistics in the data warehouse after data loading. It will enable to speed up operations of data retrieval from the warehouse. "
+    },
+    "colAggregation": {
+      "text": "Aggregation method"
+    },
+    "colDeleteMode": {
+      "text": "Delete mode"
+    },
     "colField": {
       "text": "Source data set columns"
     },
@@ -2556,6 +2619,12 @@
     "colMDType": {
       "text": "Type",
       "tooltip": "Type of Data Warehouse object"
+    },
+    "frmDWExport": {
+      "title": "Export to Data Warehouse"
+    },
+    "frmDWExportSetting": {
+      "title": "Export to Data Warehouse"
     },
     "mniAutoLinkTree": {
       "text": "Auto link"
@@ -2677,10 +2746,10 @@
   },
   "exports/textfile/ExportTextFilePreviewWizard": {
     "btnActivationPortButton": {
-      "text": "Activate Input Port"
+      "text": "Activate Input"
     },
     "cntConnection": {
-      "fieldLabel": "Login status"
+      "fieldLabel": "Input status"
     },
     "cntFieldParam": {
       "title": "Columns View"
@@ -3150,10 +3219,10 @@
       "title": "Import from Data Warehouse"
     },
     "grdFields": {
-      "title": "Selected DWH Items"
+      "title": "Selected DW Items"
     },
     "grdMDFields": {
-      "title": "Available DWH Items"
+      "title": "Available DW Items"
     },
     "mniChecked": {
       "text": "Show"
@@ -3169,6 +3238,9 @@
     },
     "mniIsSelectedAll": {
       "text": "Move all to selected"
+    },
+    "trpMDFields": {
+      "title": "Tree of Available DW Items"
     },
     "txtFilterMDFields": {
       "emptyText": "Filter"
@@ -3451,7 +3523,7 @@
   },
   "viewers/browse/BrowseFormat": {
     "colDisplayName": {
-      "text": "Available fields"
+      "text": "Fields"
     },
     "colSourceColumnIndex": {
       "text": "No"
@@ -3463,6 +3535,9 @@
     "mniMoveUp": {
       "text": "Move up",
       "tooltip": "Move up"
+    },
+    "mniResetFormats": {
+      "text": "Restore format of all fields"
     },
     "mniResetWidths": {
       "text": "Restore width of all fields"
@@ -4182,8 +4257,8 @@
       "tooltip": "Chart"
     },
     "btnChartCase": {
-      "text": "Measure",
-      "tooltip": "Displayed measure"
+      "text": "Select measures...",
+      "tooltip": "Select measures..."
     },
     "btnChartRestrictions": {
       "tooltip": "Restrictions..."
@@ -4376,6 +4451,12 @@
     "btnSelectLast": {
       "tooltip": "Last row"
     },
+    "btnSelectNext": {
+      "tooltip": "Next row"
+    },
+    "btnSelectPrev": {
+      "tooltip": "Previous row"
+    },
     "btnTable": {
       "text": "Table"
     },
@@ -4466,6 +4547,9 @@
     },
     "edtSampleSource": {
       "fieldLabel": "Example"
+    },
+    "edtWidth": {
+      "fieldLabel": "Column width"
     }
   },
   "viewers/regression/RegressionReportView": {
@@ -4624,6 +4708,9 @@
     },
     "chkDataSetTrain": {
       "boxLabel": "Train"
+    },
+    "chkProbCorrection": {
+      "boxLabel": "A priori event weight"
     },
     "cntEvent": {
       "html": "Event:"
@@ -5049,6 +5136,11 @@
       "title": "Parameters"
     }
   },
+  "wizards/connection/DWConnectionParams": {
+    "cntDWConnectionParams": {
+      "title": "Parameters of Data Warehouse"
+    }
+  },
   "wizards/connection/InterbasePathForm": {
     "btnApply": {
       "text": "Save"
@@ -5134,7 +5226,7 @@
   },
   "wizards/datapartition/SamplingWizard": {
     "btnActivationPort": {
-      "text": "Activate Input Port"
+      "text": "Activate Input"
     },
     "cntMethodType": {
       "title": "Method Parameters"
@@ -5146,7 +5238,7 @@
       "text": "No custom settings"
     },
     "txtActivationPortStatus": {
-      "fieldLabel": "Login status"
+      "fieldLabel": "Input status"
     },
     "txtTotalRecords": {
       "fieldLabel": "Total records"
@@ -5525,7 +5617,7 @@
   },
   "wizards/normalization/NormTuneWizard": {
     "btnActivationPort": {
-      "text": "Activate Input Port"
+      "text": "Activate Input"
     },
     "btnEdit": {
       "text": "Edit",
@@ -5550,7 +5642,7 @@
       "title": "Normalization Settings"
     },
     "txtActivationPortStatus": {
-      "fieldLabel": "Login status"
+      "fieldLabel": "Input status"
     },
     "txtColumnsFilter": {
       "emptyText": "Filter"
@@ -5576,6 +5668,9 @@
     }
   },
   "wizards/referencenode/ReferenceNodeComponentWizard": {
+    "chkSaveOwnConfguration": {
+      "boxLabel": "Save configuration of the selected node"
+    },
     "colDescription": {
       "text": "Comment"
     },
@@ -5588,7 +5683,10 @@
   },
   "wizards/regression/RegressionWizard": {
     "btnActivationPort": {
-      "text": "Activate Input Port"
+      "text": "Activate Input"
+    },
+    "cntCalibrationParams": {
+      "title": "Event Weight Correction"
     },
     "cntFactorSelectionParams": {
       "title": "Factor Selection Settings"
@@ -5605,8 +5703,14 @@
     "cntRegularizationParams": {
       "title": "Regularization Settings"
     },
+    "colEvents": {
+      "text": "Event weight, %"
+    },
     "colName": {
       "text": "Set"
+    },
+    "colNoEvents": {
+      "text": "Non-event weight, %"
     },
     "pedEvents.valueConfig": {
       "emptyText": "<empty>"
@@ -5614,11 +5718,17 @@
     "pedNoEvents.valueConfig": {
       "emptyText": "<empty>"
     },
+    "rbEqualCalibration": {
+      "boxLabel": "Based on training set"
+    },
     "rbManualCalibration": {
       "boxLabel": "Custom"
     },
+    "rbTestSetCalibration": {
+      "boxLabel": "Based on test set"
+    },
     "txtActivationPortStatus": {
-      "fieldLabel": "Login status"
+      "fieldLabel": "Input status"
     }
   },
   "wizards/variables/EditVariableForm": {

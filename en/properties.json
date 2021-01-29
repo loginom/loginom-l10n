@@ -1,4 +1,9 @@
 {
+  "Common/CodeExec/CodeModelComponentEngine": {
+    "CodeModelComponentEngine": {
+      "CodeConfigurableColumns": "Allow creating output columns in script"
+    }
+  },
   "Common/WSDL/HTTPHeaders": {
     "CustomHeadersConfigurator": {
       "CustomHeaders": "HTTP Headers"
@@ -152,6 +157,7 @@
     },
     "CoarseClassesInputParams": {
       "MaxClassCount": "Maximum class count",
+      "MinClassRate": "Minimum class rate, %",
       "UniformityCoef": "Uniformity"
     },
     "CoarseClassesTargetParams": {
@@ -319,8 +325,10 @@
       "LogRegressionParams": "Logistic regression settings"
     },
     "LogRegressionParams": {
+      "EventGeneralPerc": "Event weight in general sample (in percent)",
       "LogRegressionMethod": "Factor selection and protection against overfitting",
       "LogRegSelQuality": "Factor selection criterion",
+      "NoEventGeneralPerc": "Non-event weight in general sample (in percent)",
       "UseScoring": "Scoring"
     }
   },
@@ -387,6 +395,11 @@
       "Partition": "Partitioning"
     }
   },
+  "components/python": {
+    "PythonEngine": {
+      "WaitTimeout": "Wait timeout (ms)"
+    }
+  },
   "components/reformcolumns": {
     "ReformColumnsEngine": {
       "CachingMethod": "Caching"
@@ -394,6 +407,7 @@
   },
   "components/restclient": {
     "RESTClient": {
+      "CheckHttpStatusCode": "Check HTTP status code",
       "CustomHeadersConfigurator": "Custom header settings",
       "ProduceErrorDescs": "Provide description of error codes",
       "RequestConfigurator": "Configure request data export",
@@ -834,7 +848,7 @@
       "ExchangeTimeOut": "Data exchange timeout (ms)",
       "IgnoreCertificateErrors": "Ignore SSL certificate errors",
       "RequestContentType": "Request Content-Type",
-      "ResponseContentType": "Acceptable Response Content-Type",
+      "ResponseContentType": "Allowable Response Content-Type",
       "TimeOut": "Connection timeout (ms)",
       "URL": "Service URL",
       "Verb": "Method"

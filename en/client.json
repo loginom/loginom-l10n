@@ -41,11 +41,19 @@
     "SSLPrivateKeyFile": "Private key file name",
     "StopTimeout": "Server stop timeout (s)",
     "ThreadPoolSize": "Thread pool size",
+    "TraceExceptions": "Trace exceptions",
     "UserStorageDirectory": "Users data",
     "WSPort": "WebSocket port",
     "WSSPort": "WebSocket SSL/TLS port"
   },
   "admin/SessionsManagerForm": {
+    "ConfirmPackageClose": "Do you want to close \"{0}\" package without saving changes?",
+    "ConfirmPackageStop": "Do you want to cancel execution of \"{0}\" package?",
+    "ConfirmSessionClose": "Do you want to close \"{0}\" session without saving changes?",
+    "ConfirmSessionStop": "Do you want to cancel execution of \"{0}\" session?",
+    "PackageRefCountTip": "Count of sessions referring to package",
+    "ReadOnlyPackageNamePostfix": "(read-only)",
+    "RoleTipFormat": "Session with {0} role has been started by user",
     "SessionCapacity": "{0} of {1}"
   },
   "admin/SharedDirectoriesForm": {
@@ -113,7 +121,7 @@
     "FailLicenseListText": "Failed to get license list",
     "FailLicenseText": "Error occurred while license text receiving",
     "LicenseModalTitle": "License Agreement",
-    "ThirdPartyModalTitle": "Open Source Third Party Software"
+    "ThirdPartyModalTitle": "Third Party Software"
   },
   "app/ListViewForm": {
     "NumberObjects": "{0} objects"
@@ -135,6 +143,7 @@
     "ErrPackageNotSaved": "Current package not saved",
     "ErrUrlPathNotFound": "\"{0}\" path not found",
     "FavoritesTitle": "Favorites",
+    "MsgManagedPackageClosed": "{0} package closed from Session Manager",
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
     "MsgTransportError": "Server connection lost",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
@@ -490,6 +499,8 @@
     "ActualSuffix": " (actual)",
     "BuildActualStatConfirm": "Calculate Actual Coarse Classes statistics",
     "BuildActualStatConfirmYes": "Calculate",
+    "EventCountTooltip": "Number of events",
+    "EventRateTooltip": "Event rates",
     "HideSideBar": "Hide side bar",
     "Locked": "Locked",
     "NoActualStatInfo": "Failed to calculate Fine and Coarse Classes statistics",
@@ -517,6 +528,9 @@
     "DuplicateSocketsError": "\"{0}\" and \"{1}\" items have the same identifiers",
     "EmptySocketName": "<Unique>",
     "EmptyVendor": "Not defined"
+  },
+  "components/condition/ConditionsView": {
+    "UniqueValuesLimitInfo": "\"{0}\" field has {1} unique values, only the first {2} are listed"
   },
   "components/corranalysis/CorrAnalysisWizard": {
     "CorrTypeExtremum": "The maximum absolute value of the correlation coefficients of two processes calculated for all possible time shifts will be calculated. It should be applied if it is required to determine the linear relationship between two processes, or parts of the processes that occur with a certain time lag.",
@@ -640,7 +654,8 @@
     "ValueListIsEmpty": "No values"
   },
   "components/filterdata/FilterDataCollection": {
-    "ConfirmDeleteAll": "Do you really want to delete all conditions?"
+    "ConfirmDeleteAll": "Do you really want to delete all conditions?",
+    "UniqueValuesLimitInfo": "\"{0}\" field has {1} unique values, only the first {2} are listed"
   },
   "components/filterdata/FilterDataWizard": {
     "Activation": "Input port activation",
@@ -659,7 +674,7 @@
     "GroupDataTitle": "Grouping"
   },
   "components/javascript/JavaScriptCodeMirrorController": {
-    "CodePlaceholder": "Enter code"
+    "CodePlaceholder": "Enter script"
   },
   "components/javascript/JavaScriptColumnsWizard": {
     "frmJavaScriptOutputTableTitle": "Configure JavaScript Output Table Columns"
@@ -683,10 +698,11 @@
     "RegressionParamsPage": "Linear regression configuring"
   },
   "components/logregression/LogRegressionWizard": {
+    "GeneralSet": "General",
     "GetValueList": "Get list",
     "RegressionDetailPage": "Detailed configuring of logistic regression",
     "RegressionParamsPage": "Logistic regression configuring",
-    "TrainSet": "Train"
+    "TrainSet": "Training"
   },
   "components/loop/LoopMappingWizard": {
     "InvalidLinkFormat": "No variable in link of \"{0}\" input variable with \"{1}\" output variable",
@@ -715,7 +731,14 @@
     "DecayWeak": "Weak"
   },
   "components/python/PythonCodeMirrorController": {
-    "CodePlaceholder": "Enter source code"
+    "CodePlaceholder": "Enter script"
+  },
+  "components/python/PythonColumnsWizard": {
+    "frmPythonOutputTableTitle": "Configure сolumns of output output Python table"
+  },
+  "components/python/PythonOutputPreviewForm": {
+    "OutputStdErrSymbolsSkipped": "stderr characters omitted",
+    "OutputStdOutSymbolsSkipped": "stdout characters omitted"
   },
   "components/reformcolumns/EditReformColumnDefForm": {
     "CachingMethod": "Caching"
@@ -839,6 +862,9 @@
     "MessagePrefix": "Message: ",
     "PartPrefix": "Part: "
   },
+  "connections/dwh/DWConnectionWizard": {
+    "ErrSchemaNameIsTooLongFmt": "Schema name cannot contain more than {0} characters."
+  },
   "connections/restservice/ConnectionWizard": {
     "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
     "DublicateGetMethodParamNameFmt": "\"{0}\" parameter already exists",
@@ -878,7 +904,8 @@
     "NoConnection": "No connection"
   },
   "exports/dwh/DWExportWizard": {
-    "ConfirmClearAllLinks": "Do you want to delete all links?"
+    "ConfirmClearAllLinks": "Do you want to delete all links?",
+    "DeleteModeNotDelete": "do not delete"
   },
   "exports/excelfile/ExportExcelFilePreviewWizard": {
     "DefaultSheetName": "Sheet1"
@@ -1005,6 +1032,7 @@
     "ErrMinPage": "There is no page with index smaller than the starting index",
     "FirstPage": "First page",
     "LastPage": "Last page",
+    "MaxPageIndex": "from {0}",
     "NextPage": "Next page",
     "Page": "Page",
     "PageDescFmt": "[{0} .. {1}]",
@@ -1331,6 +1359,7 @@
   "imports/dwh/DWImportWizard": {
     "CompareTipFmt": "[{0}..{1}]",
     "ConfirmDeleteAllFields": "Do you really want to delete all selected columns?",
+    "FactAggregationTipFmt": "(Aggregation by default - {0})",
     "FuncAggregatesUndefined": "Not defined",
     "GetValueList": "Get list",
     "MetaDataNodeTypeAttr": "Attribute",
@@ -1530,6 +1559,7 @@
     "AddPortDisplayName": "Add another port."
   },
   "mxgraph/port/Port": {
+    "NoAutoMapping": "Automapping of fields disabled",
     "OptionalPortParam": "Optional port",
     "RequiredPortParam": "Required port (connection is required to run the node)"
   },
@@ -1640,6 +1670,22 @@
     "ErrInvalidUInt32": "\"{0}\" is not valid unsigned integer value",
     "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value"
   },
+  "test/Instruments": {
+    "DragAndDropOffset": "Coordinates offset when using Drag'n'Drop: X: {0}, Y: {1}",
+    "FailedFetchingTestId": "Failed to find item with text identifier in this place",
+    "FailedGettinScrolledElement": "Failed to find the item with scroll position (different from zero) in this place",
+    "NoClipboardAPI": "Browser API to save text to clipboard is available only via HTTPS protocol starting from Chrome 66 and Firefox 63",
+    "ScrollPosition": "Scroll position:",
+    "TestIdSavedInClipBoard": "\"{0}\" identifier saved to clipboard ",
+    "WorkaroundClipboardCopy": "Alternative option of copying to clipboard is available only in Chrome, FireFox, Opera and Safari"
+  },
+  "test/Main": {
+    "ShouldBeUniqTestId": "'{0}'  test identifier is not unique within the frames of the current DOM. It is no a critical situation (as only one item with such identifier is visible now). But it is recommended to avoid such situation when possible. ",
+    "ShouldBeUniqTestIdAmongVisible": "'{0}'  test identifier is not unique within the frames of the current DOM among visible items"
+  },
+  "test/TestIdentifier": {
+    "TableCellWithoutTestId": "Table cell without test identifier"
+  },
   "viewers/BaseView": {
     "ErrViewIsPanel": "Visualizer must be Ext.panel.Panel descendant",
     "WarnViewerObjectDeleted": "Processing of \"{0}\" visualizer status change event was canceled because the visualizer was asynchronously deleted"
@@ -1688,6 +1734,7 @@
     "GoToLineApplyActionText": "Go to",
     "GoToLineTitle": "Go to Row",
     "LastTableRowAction": "Last row",
+    "MaxPageIndex": "from {0}",
     "NameRecNoField": "RecNo",
     "NameRowNoField": "RowNo",
     "PageDescFmt": "[{0} .. {1}]",
@@ -1967,13 +2014,20 @@
     "WarnDependencySuffix": "Do you want to continue action?"
   },
   "viewers/cube/CubeView": {
-    "ChartCaseEmptyText": "Empty list",
+    "ChartCaseEmptyText": "No measures",
+    "ChartCaseManyText": "Measures ({0})",
     "ChartYAxisTitle": "Measures",
     "DotsOutOfBoundsMsg": "Exceeding chart bounds.\nCurrent number of dots: {0}.\nMaximum number of dots: {1}",
+    "EditSerieColor": "Change color...",
+    "EmptyChart": "No measures to display",
     "ErrExportFailed": "Failed to export the Cube crosstab:\n{0}",
     "ExportToastTitle": "Export from the Cube",
+    "HideAllSeries": "Hide all series",
     "HideSingleCase": "Hide single measure",
+    "InvertSeries": "Invert series",
+    "ResetSerieColor": "Reset color",
     "SeriesOutOfBoundsMsg": "Chart limits exceeded.\nCurrent number of series: {0}.\nMaximum number of series: {1}",
+    "ShowAllSeries": "Show all series",
     "TooltipMode": "Tooltip style",
     "WarnExportTableSizeWarning": "The current cross table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
@@ -2016,7 +2070,12 @@
     "SelectNext": "Next record",
     "SelectPrev": "Previous record"
   },
+  "viewers/duplicates/DuplicatesView": {
+    "InputColumn": "Input field",
+    "OutputColumn": "Output field"
+  },
   "viewers/fastpreview/DataSetForm": {
+    "MaxRowFmt": "from {0}",
     "RowNumbererHeaderSymbol": "No"
   },
   "viewers/fastpreview/DataTreeForm": {
@@ -2032,6 +2091,7 @@
     "LockMaskText": "Node is locked"
   },
   "viewers/regression/LinRegressReportView": {
+    "ModelInfoMaxLikelihood": "Maximum of the likelihood function",
     "TStatInfoParam": "T-statistics"
   },
   "viewers/regression/LogRegressReportView": {
@@ -2043,9 +2103,13 @@
     "ModelInfoAICc": "AICc",
     "ModelInfoBIC": "BIC",
     "ModelInfoConstant": "Intercept",
-    "ModelInfoDFE": "Number of degrees of freedom",
+    "ModelInfoConstantExc": "Excluded",
+    "ModelInfoConstantInc": "Included",
+    "ModelInfoDeviance": "Deviance",
+    "ModelInfoDFE": "Number of degrees of freedom (errors)",
+    "ModelInfoFValue": "F-statistic",
     "ModelInfoHQC": "HQC",
-    "ModelInfoPValue": "Significance",
+    "ModelInfoPValue": "P-value (model)",
     "ModelInfoR2": "R^2",
     "ModelInfoR2adj": "R^2 adj.",
     "ModelInfoStdDev": "Standard deviation",
@@ -2415,7 +2479,7 @@
   "wizards/WizardActivateInputPorts": {
     "ActivateCaption": "Activate",
     "ActivatedCaption": "Activated",
-    "ActivatedText": "Login activated",
+    "ActivatedText": "Input activated",
     "ActivatingCaption": "Activating...",
     "ExceptionTitle": "Error",
     "NotActivatedText": "Not activated",

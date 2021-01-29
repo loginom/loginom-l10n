@@ -285,11 +285,13 @@
       "ClassMark": "Class caption",
       "EventsCount": "Events count",
       "NonEventsCount": "Non-events count",
+      "EventRate": "Event rate",
+      "NonEventRate": "Non-event rate",
       "LowerBound": "Lower bound",
       "UpperBound": "Upper bound",
       "WoE": "Weight of evidence",
       "IV": "Information value",
-      "Rate": "Class weight",
+      "Rate": "Class rate",
       "UpperBoundIsOpen": "Upper range bound open",
       "PreQuantingApplied": "Prequantization"
     },
@@ -297,7 +299,7 @@
       "$Caption": "Displayed Data Type",
       "WoE": "WoE",
       "IV": "IV",
-      "Rate": "Weight",
+      "Rate": "Rate",
       "Count": "Count",
       "EventCount": "Events",
       "NoEventCount": "Negative events"
@@ -323,6 +325,8 @@
       "ColumnDisplayName": "Column caption",
       "EventsCount": "Events count",
       "NonEventsCount": "Non-events count",
+      "EventRate": "Event rate",
+      "NonEventRate": "Non-event rate",
       "TotalEventsCount": "Total",
       "IV": "Information value",
       "Significance": "Column significance"
@@ -362,7 +366,8 @@
       "Pirson": "Pearson",
       "CorrFuncExtr": "Correction function extremum",
       "TauBKendall": "Kendall's Tau-b",
-      "Spearman": "Spearman"
+      "Spearman": "Spearman",
+      "CorrFuncLag": "Correction function lag"
     }
   },
   "components/crosstab": {
@@ -515,7 +520,7 @@
       "Stepwise": "Stepwise",
       "L2": "Ridge",
       "L1": "LASSO",
-      "L1L2": "Elastic-Net"
+      "L1L2": "Elastic Net"
     },
     "LinRegSelQuality": {
       "$Caption": "Factor Selection Criterion",
@@ -530,7 +535,17 @@
   },
   "components/logregression": {
     "CalibrationMethod": {
-      "Manual": "Custom"
+      "$Caption": "Kind of Event Weight Correction",
+      "TrainSet": "Based on test set",
+      "TestSet": "Based on training set",
+      "Manual": "Custom",
+      "Sampling": "Take from Sampling node",
+      "Partition": "Take from Partitioning node"
+    },
+    "CalibrationType": {
+      "$Caption": "Type of Event Weight Correction",
+      "Const": "By constant",
+      "Weight": "By weights"
     },
     "LogRegressionMethod": {
       "$Caption": "Factor Selection and Protection against Overfitting",
@@ -540,11 +555,11 @@
       "Stepwise": "Stepwise",
       "L2": "Ridge",
       "L1": "LASSO",
-      "L1L2": "Elastic-Net"
+      "L1L2": "Elastic Net"
     },
     "LogRegSelQuality": {
       "$Caption": "Factor Selection Criterion",
-      "LR": "Likelihood ratio",
+      "LR": "Deviance",
       "AIC": "Akaike information criterion",
       "AICc": "Akaike information criterion corrected",
       "BIC": "Bayesian information criterion",
@@ -609,7 +624,8 @@
       "RandomValue": "Replace with random values",
       "LinearInterp": "Linear interpolation",
       "CubicInterp": "Cubic interpolation",
-      "SplineInterp": "Spline interpolation"
+      "SplineInterp": "Spline interpolation",
+      "ZeroValue": "Replace with 0"
     },
     "ActionOut": {
       "$Caption": "Outliers Elimination Method",
@@ -1451,11 +1467,22 @@
     }
   },
   "Studio/DeductorSessionsManager": {
+    "ManagedSessionType": {
+      "$Caption": "Session Type of Session Manager",
+      "Client": "Remote session",
+      "Self": "Session manager sesssion",
+      "Shared": "Shared packages",
+      "Pool": "Pool of packages",
+      "Backup": "Backup session"
+    },
     "SessionRole": {
+      "$Caption": "User Role in Session",
+      "None": "None",
       "Admin": "Administration",
       "Designer": "Workflows design",
       "Viewer": "View reports",
-      "Service": "Batch processing"
+      "Service": "Batch processing",
+      "Integrator": "Execute from integrator"
     }
   },
   "Studio/DeductorUsers": {
@@ -1663,7 +1690,10 @@
       "Rows": "In rows"
     },
     "CubeChartTooltipMode": {
-      "$Caption": "Tooltip style"
+      "$Caption": "Tooltip style",
+      "Shared": "Shared tooltips",
+      "Single": "Single tooltips",
+      "None": "No tooltips"
     }
   },
   "Viewers/Cube/CubeDimensions": {
@@ -1779,6 +1809,9 @@
   "Viewers/LinRegressReport/LinRegressReportCommon": {
     "LinRegressReportStatParam": {
       "$Caption": "Statistical Criterion",
+      "FTest": "F-test (P-value)",
+      "R2": "R^2",
+      "R2adj": "R^2 adj.",
       "AIC": "AIC",
       "AICc": "AICc",
       "BIC": "BIC",
@@ -1788,7 +1821,7 @@
   "Viewers/LogRegressReport/LogRegressReportCommon": {
     "RegressReportStatParam": {
       "$Caption": "Statistical Criterion",
-      "LogLikelihood": "-2 Log Likelihood",
+      "LogLikelihood": "Deviance",
       "AIC": "AIC",
       "AICc": "AICc",
       "BIC": "BIC",
@@ -1891,7 +1924,7 @@
       "Last": "Last"
     },
     "MDAggregateType": {
-      "$Caption": "Fact Aggregation Functions List",
+      "$Caption": "Fact Aggregation Function",
       "Sum": "Sum",
       "Min": "Minimum",
       "Max": "Maximum",

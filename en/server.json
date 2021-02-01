@@ -93,9 +93,9 @@
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
   },
   "Common/CodeExec/CodeAPIDataSetProxies": {
-    "ErrInvalidDataSetColumnIndex": "The output table column index %d is out of range, %d column count",
+    "ErrInvalidDataSetColumnIndex": "Index %d of the output table column is out of range, column count %d",
     "ErrInvalidDataSetColumnName": "No \"%s\" column in the output table",
-    "ErrInvalidDataSourceColumnIndex": "The input table column index %d is out of range, %d column count",
+    "ErrInvalidDataSourceColumnIndex": "Index %d of the input table column %d is out of range, column count %d",
     "ErrInvalidDataSourceColumnName": "No \"%s\" column in input table #%d"
   },
   "Common/CodeExec/CodeAPIPreviewDataSet": {
@@ -645,7 +645,7 @@
     "ColumnFlippingProcess": "Unpivoting",
     "DataTypesColumnDisplayName": "Data types",
     "DisplayNamesColumnDisplayName": "Captions",
-    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded the maximum value",
+    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded maximum value",
     "NamesColumnDisplayName": "Captions",
     "ValuesColumnDisplayName": "Values"
   },
@@ -1098,7 +1098,7 @@
   "components/joindata/JoinData": {
     "DisplayNamePrefix": "Join",
     "ErrInvalidColNamePrefix": "\"%s\" name prefix is not a valid identifier",
-    "ErrRowCountExceedMaxValue": "Row count of the result data set exceeded maximum value %d",
+    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded maximum value %d",
     "ProgressCompareIndexes": "Index mapping",
     "ProgressFormResult": "Output data set generation",
     "ProgressJoinedTableIndex": "Joined table indexing",
@@ -1161,7 +1161,7 @@
     "RegForwardAssignProcessName": "%s factor adding to the final model",
     "RegForwardStepProcessName": "Stepwise selection - %s factor adding",
     "RegPrepareData": "Preparing data before training",
-    "RegTrainElnetGridProcessName": "Build model (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
+    "RegTrainElnetGridProcessName": "Model training (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
     "RegTrainLassoGridProcessName": "Model building (L1-regularization coefficient = %.4f)",
     "RegTrainProcessName": "%s method - model training",
     "RegTrainRidgeGridProcessName": "Model building (L2-regularization coefficient = %.4f)",
@@ -1207,7 +1207,7 @@
     "ErrWrongProportionGeneralSet": "Event weight in the general set must be more than 0 % and less than 100 %",
     "Intercept": "<Intercept>",
     "LogRegStoreStatProcessName": "Quality indicators calculating",
-    "LogRegTrainProcessName": "Model building",
+    "LogRegTrainProcessName": "Model training",
     "ModelDF": "Number of the model degrees of freedom",
     "ModelPValue": "Model P-value",
     "OutputUniqueValuesNotCalculated": "Unique values of \"%s\" output column not calculated",
@@ -1220,7 +1220,7 @@
     "RegressionLBoundNamePostfix": "|CI lower bound of odds ratio",
     "RegressionOddsRatioPostfix": "|Odds ratio",
     "RegressionScoreNamePostfix": "|Score",
-    "RegressionStdErrorNamePostfix": "|Sd. dev.",
+    "RegressionStdErrorNamePostfix": "|Std. dev.",
     "RegressionUBoundNamePostfix": "|CI upper bound of odds ratio",
     "RegressionWaldPValueNamePostfix": "|P-value of the Wald criterion",
     "RegressionWaldStatNamePostfix": "|Wald criterion",
@@ -1253,7 +1253,7 @@
     "RegForwardAssignProcessName": "%s factor adding to the final model",
     "RegForwardStepProcessName": "Stepwise selection - %s factor adding",
     "RegPrepareData": "Preparing data before training",
-    "RegTrainElnetGridProcessName": "Model building (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
+    "RegTrainElnetGridProcessName": "Model training (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
     "RegTrainLassoGridProcessName": "Model building (L1-regularization coefficient = %.4f)",
     "RegTrainProcessName": "%s method - model training",
     "RegTrainRidgeGridProcessName": "Model building (L2-regularization coefficient = %.4f)",
@@ -1433,7 +1433,7 @@
     "CodeIsHere": "Data processing code can be here",
     "ConfigureOutputTable": "Preparing output columns",
     "CreateDateFrameFromInputTable": "Create pd.DataFrame by input data set No1",
-    "ErrCurrentDirectory": "Failed to get current directory",
+    "ErrCurrentDirectory": "Failed to define the current directory",
     "ErrDisallowedExecution": "Python execution forbidden by security settings",
     "ErrGetNativePath": "Failed to get the path in the file system by the path of \"%s\" file storage",
     "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
@@ -1456,23 +1456,23 @@
   },
   "components/python/PythonModuleData": {
     "ColumnGet": "Get($self, row, /)\n--\n\nGet column cell value\nArguments:\n  row: int\n    Table row index.\nResult:\n  Cell value according to the column type (bool, int, str, float or datetime.datetime). If the cell is null, None is returned.",
-    "ColumnIsNull": "IsNull($self, row, /)\n--\n\nCheck if there is a value in the column cell\n\nArguments:\n  row: int\n    Table row index.\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
-    "ColumnSet": "Set($self, value, /)\n--\n\nSet value in the column cell of the appended row\n\nArguments:\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None.\nResult:\n  None",
+    "ColumnIsNull": "IsNull($self, row, /)\n--\n\nCheck if there is a value in the column cell\nArguments:\n  row: int\n    Table row index.\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
+    "ColumnSet": "Set($self, value, /)\n--\n\nSet value in the column cell of the appended row\nArguments:\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None.\nResult:\n  None",
     "ErrColumnInfoNoRequiredProperty": "Column definition does not contain required '%s' property",
     "ErrInvalidColumnDataKind": "Invalid data kind",
     "ErrInvalidColumnDataType": "Invalid data type",
     "ErrInvalidColumnUsageType": "Invalid usage type",
     "ErrNoCorrespondingObject": "Python object not associated with work object",
-    "TableAddColumn": "AddColumn($self, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nAdd new column\nArguments:\n  ColumnInfo\n   Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified new column attributes are initialized with default values.",
-    "TableAppend": "Append($self, /)\n--\n\nAppend new row\nResult:\n  None",
+    "TableAddColumn": "AddColumn($self, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nAdd new column\nArguments:\n  ColumnInfo\n    Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified new column attributes are initialized with default values.",
+    "TableAppend": "Append($self, /)\n--\n\nAppend new row\n\nResult:\n  None",
     "TableAssignColumns": "AssignColumns($self, source, /)\n--\n\nCreate columns by decriptions\nArguments:\n  source: Iterable\n    The object returning iterator over the column metadata objects, for example, InputTable.Columns. The column metadata object must contain the Name attribute and optionally DisplayName, DataType, DataKind, DefaultUsageType.",
     "TableClearColumns": "ClearColumns($self, /)\n--\n\nDelete all columns\nResult:\n  None",
     "TableDeleteColumn": "DeleteColumn($self, col, /)\n--\n\nDelete column by index or name\nArguments:\n  col: Union[int, str]\n    Index or name of deleted column.\nResult:\n  None",
-    "TableGet": "Get($self, row, col, /)\n--\n\nGet table cell value\n\nArguments:\n  row: int\n    Table row index\ncol: Union[int, str]\n    Index or name of table column\nResult:\n  Cell value according to the column type (bool, int, str, float or datetime.datetime). If the cell is null, None is returned.",
+    "TableGet": "Get($self, row, col, /)\n--\n\nGet table cell value\n\nArguments:\n  row: int\n    Table row index\n  col: Union[int, str]\n    Index or name of table column\nResult:\n  Cell value according to the column type (bool, int, str, float or datetime.datetime). If the cell is null, None is returned.",
     "TableGetColumn": "GetColumn($self, col, /)\n--\n\nGet column by index or name\n\nArguments:\n  col: Union[int, str]\n    Index or name of table column\nResult:\n  Table column",
-    "TableInsertColumn": "InsertColumn($self, Index, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nInsert a new column at a given index\nArguments:\n  Index: int\n    The index where the new column needs to be inserted.\n  ColumnInfo\n   Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified new column attributes are initialized with default values.",
-    "TableIsNull": "IsNull($self, row, col, /)\n--\n\nCheck if there is a value in the table cell\n\n\nArguments:\n  row: int\n    Table row index\n  col: Union[int, str]\n   Index or name of table column\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
-    "TableSet": "Set($self, col, value, /)\n--\n\nSet value in the cell of the appended row\nАргументы:\n  col: Union[int, str]\n   Index or name of table column\n  value: Union[bool, int, str, float, datetime.datetime, None]\n     The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None\nResult:\n  None"
+    "TableInsertColumn": "InsertColumn($self, Index, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nInsert a new column at a given index\nArguments:\n  Index: int\n    The index where the new column needs to be inserted.\n  ColumnInfo\n    Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified new column attributes are initialized with default values.",
+    "TableIsNull": "IsNull($self, row, col, /)\n--\n\nCheck if there is a value in the table cell\n\nArguments:\n  row: int\n    Table row index\n  col: Union[int, str]\n    Index or name of table column\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
+    "TableSet": "Set($self, col, value, /)\n--\n\nSet value in the cell of the appended row\nArguments:\n  col: Union[int, str]\n    Index or name of table column\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None\nResult:\n  None"
   },
   "components/python/PythonUtils": {
     "ErrLoadedExtensionRegistrationFailed": "Error in service script for Python extensions loading registration",
@@ -1790,7 +1790,7 @@
     "ErrSyncKeyDeletedDest": "Synchronization error: \"%s\" key field not found in the table",
     "ErrSyncKeyDeletedSource": "Synchronization error: source field not found for \"%s\" key field",
     "ErrSyncKeyTypesMismatch": "Synchronization error: \"%s\" key field type is not compatible with \"%s\" source field type",
-    "ErrTableNameNotSelected": "No table name selected",
+    "ErrTableNameNotSelected": "No table name specified",
     "ErrUnknownExportType": "Unknown export type",
     "ErrUpdateNotSupported": "Record update by key not supported by the current database",
     "GroupDataNotify": "Data grouping",
@@ -2075,7 +2075,7 @@
     "ErrIncorrectPort": "Invalid port",
     "ErrIncorrectServer": "Invalid server",
     "ErrIndexColumnsNotSelect": "No columns to make an index are specified",
-    "ErrLocalDBForbidden": "Connections to local server databases are forbidden",
+    "ErrLocalDBForbidden": "Connections to local databases on server are forbidden",
     "ErrOpenQuery": "Error while SQL opening :\n%s",
     "ErrParameterTypesDoNotMatch": "Parameter types do not match",
     "ErrPrepareProcedure": "Error preparing stored procedure \"%s\"",
@@ -2548,7 +2548,7 @@
   },
   "Libraries/bgrtl/QueueException": {
     "ErrAggregateExceptionMessage": "Exceptions occurred while processing",
-    "ErrQueueExceptionEndUnexpected": "Attempting to complete a queued exception handling block without first starting it"
+    "ErrQueueExceptionEndUnexpected": "Attempt to end the queued exception block handling without its start"
   },
   "Libraries/bgrtl/Random": {
     "ErrBuildMSequenceErr": "The required array length must not exceed the upper bound of the random numbers.",
@@ -3306,7 +3306,7 @@
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" source node is not available at the required destination.",
     "ErrCycleFound": "Circular reference between nodes detected!",
     "ErrDuringMove": "Errors occurred while nodes moving",
-    "ErrLinkPortNotConnetedToNode": "Port of link with %s identifier not connected to node",
+    "ErrLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node",
     "ErrMovedVendorUnavailableForNode": "Moved %s derived component is unavailable for %s node.",
     "ErrNodeNotConfigurable": "Failed to create the node copy with the following name: \"%s\" and GUID: %s",
     "ErrNoNodesSpecified": "No node set specified",
@@ -3438,7 +3438,7 @@
     "ErrVariableDataTypeChanged": "\"%s\" variable data type changed",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Number of names and variables values must be the same",
     "ErrVariableNotFound": "Variable with \"%s\" name not found",
-    "ErrVendorMalfunction": "\"%s\" node component malfunctioned",
+    "ErrVendorMalfunction": "\"%s\" node component is malfunctioned",
     "ExplodeGenericModel": "Expanded \"%s\" supernode",
     "Left": "Left",
     "LogActivateNodeStart": "Activating \"%s\" node",
@@ -3513,7 +3513,7 @@
   "Libraries/Model/Variables/SocketVariablesMultiLinks": {
     "ErrAlienLinkedVariable": "\"%s\" variable does not belong to any variable list being used",
     "ErrCannotLinkVariablesFromSameTable": "Failed to link \"%s\" and \"%s\" variables from the same table",
-    "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables are not compatible"
+    "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch"
   },
   "Libraries/Model/Variables/TuneVariablesSocketConstraint": {
     "ErrValueNotAllowed": "\"%s\" value of the input variable \"%s\" does not match the specified constraints"
@@ -3864,7 +3864,7 @@
     "WarnCannotConvert": "Failed to convert the package created in the previous program version.\nSettings of the \"Logistic Regression\" nodes could be reset.\nReconfiguration and retraining of the \"Logistic Regression\" nodes that cannot be converted is required"
   },
   "Studio/Converters/Converter_202003302114_CubeView_Chart": {
-    "WarnCannotConvert": "Failed to convert the measure displayed in the cube chart in the visualizer settings. The first suitable measure was selected."
+    "WarnCannotConvert": "Failed to convert the measure displayed in the cube chart in %s visualizer settings. The first suitable measure was selected."
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"
@@ -3932,9 +3932,9 @@
     "ErrCloseSessionRestriction": "%s session closing forbidden",
     "ErrNodeNotPackageInfo": "The passed object is not a package node in the Session Manager",
     "ErrNodeNotSessionInfo": "The passed object is not a session node in the Session Manager",
-    "ErrPackageNotFound": "No %s package found in %s session. It may have already been closed. ",
-    "ErrPackageSessionNotFound": "No session with %s package found. It may have already been closed. ",
-    "ErrSessionNotFound": "No %s session found. It may have already been closed. ",
+    "ErrPackageNotFound": "No %s package found in %s session. It may have already been closed",
+    "ErrPackageSessionNotFound": "No session with %s package found. It may have already been closed",
+    "ErrSessionNotFound": "No %s session found. It may have already been closed",
     "LogManagedPackageClosed": "%s package closed from Session Manager",
     "LogManagedPackageStopped": "%s package stopped from Session Manager",
     "LogManagedSessionClosed": "%s session closed from Session Manager",
@@ -4426,7 +4426,7 @@
   "Warehouse2/DWImport": {
     "ErrExecQuery": "Error executing query to Data Warehouse",
     "ErrNotConnectedToDatabase": "Not connected to Data Warehouse",
-    "ErrNotConnectedToMeataDataNode": "Imported \"%s\" (%s) field is not connected with the Data Warehouse object ",
+    "ErrNotConnectedToMeataDataNode": "Imported \"%s\" (%s) field is not connected with the Data Warehouse object",
     "ErrObjectDWNotSpecified": "Data Warehouse object not specified",
     "ExecQueryProcess": "Executing query to Data Warehouse",
     "ImportDataProcess": "Data importing from Data Warehouse"

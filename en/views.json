@@ -194,7 +194,7 @@
       "boxLabel": "Block account"
     },
     "chkDesigner": {
-      "boxLabel": "Workflow design"
+      "boxLabel": "Workflows design"
     },
     "chkGlobalFileStorage": {
       "boxLabel": "File storage full access"
@@ -492,7 +492,7 @@
       "tooltip": "Configure node"
     },
     "btnConfigurePublishedPackages": {
-      "tooltip": "Publishing of packages..."
+      "tooltip": "Publish packages..."
     },
     "btnEditProperties": {
       "tooltip": "Properties..."
@@ -983,7 +983,7 @@
     },
     "colAlwaysDefaultSettings": {
       "text": "Auto",
-      "tooltip": "Auto define method settings"
+      "tooltip": "Use automatic method settings"
     },
     "colBinLabel": {
       "text": "Caption"
@@ -1594,7 +1594,7 @@
       "tooltip": "Move up"
     },
     "btnNextExpandable": {
-      "tooltip": "Next recursive"
+      "tooltip": "Next recursive unopened node"
     },
     "btnShowInvalidRelations": {
       "text": "Show Lost Links"
@@ -1775,7 +1775,7 @@
       "fieldLabel": "Base interval date"
     },
     "edtCompareValueSimple": {
-      "fieldLabel": "Compare values"
+      "fieldLabel": "Compare value"
     },
     "edtDateSpanSimple": {
       "fieldLabel": "Time span value"
@@ -2602,7 +2602,7 @@
       "boxLabel": "Update cubes<br><br>After data loading, rebuild all cubes with enabled \"Dynamic update\" option and inherited from the loaded process."
     },
     "ckbStatisticsGathering": {
-      "boxLabel": "Gather statistics<br><br>Refresh statistics in the data warehouse after data loading. It will enable to speed up operations of data retrieval from the warehouse. "
+      "boxLabel": "Gather statistics<br><br>Refresh statistics in the data warehouse after data loading. It will enable to speed up operations of data retrieval from the warehouse."
     },
     "colAggregation": {
       "text": "Aggregation method"
@@ -3929,7 +3929,7 @@
       "tooltip": "Table filter settings"
     },
     "btnHistogramScale": {
-      "tooltip": "Scaling of histograms"
+      "tooltip": "Histogram scaling"
     },
     "btnImportanceHeatMap": {
       "tooltip": "Importance by color"
@@ -4301,7 +4301,7 @@
       "tooltip": "Series position"
     },
     "btnShowTotal": {
-      "tooltip": "Show totals"
+      "tooltip": "Show total"
     },
     "btnSuspendAutoCalculate": {
       "tooltip": "Defer layout update"

@@ -176,7 +176,7 @@
     "OutputPorts": "Output ports",
     "PackagesParent": "Packages",
     "PackageVariables": "Variables",
-    "Properties": "Properties",
+    "Properties": "Parameters",
     "ReadOnlyPackageNamePostfix": " (read-only)",
     "References": "References",
     "Reports": "Reports",
@@ -349,7 +349,7 @@
   "app/TabForm": {
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrPrepareContainer": "When switching to \"{0}.{1}\" error occurred.\n{2}",
-    "ErrVendorMalfunction": "\"{0}\" node component malfunctioned",
+    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
     "MsgNodeConfigurationChanged": "Node configuration changed",
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
     "MsgNodeLocked": "\"{0}\" node is locked",
@@ -411,7 +411,7 @@
   "components/binning/MethodSettingsWizard": {
     "AllExcluded": "<  x <",
     "AllInclusive": "<= x <=",
-    "CalculatingBinsProcess": "Calculate bins",
+    "CalculatingBinsProcess": "Calculating bins",
     "ContextMenuCalculateAllBins": "Calculate all bins",
     "ContextMenuCalculateCurrentBins": "Calculate current",
     "ContextMenuEdit": "Edit",
@@ -476,7 +476,7 @@
   "components/coarseclasses/CalculateInformationValues": {
     "ChartTitle": "Dependence IV on Number of Classes",
     "XAxisTitle": "Class Count",
-    "YAxisTitle": "Inf. Index"
+    "YAxisTitle": "IV"
   },
   "components/coarseclasses/ClassesChartWrapper": {
     "ActualTitleSuffix": " (actual)",
@@ -702,7 +702,7 @@
     "GetValueList": "Get list",
     "RegressionDetailPage": "Detailed configuring of logistic regression",
     "RegressionParamsPage": "Logistic regression configuring",
-    "TrainSet": "Training"
+    "TrainSet": "Train"
   },
   "components/loop/LoopMappingWizard": {
     "InvalidLinkFormat": "No variable in link of \"{0}\" input variable with \"{1}\" output variable",
@@ -734,7 +734,7 @@
     "CodePlaceholder": "Enter script"
   },
   "components/python/PythonColumnsWizard": {
-    "frmPythonOutputTableTitle": "Configure сolumns of output output Python table"
+    "frmPythonOutputTableTitle": "Configure columns of output output Python table"
   },
   "components/python/PythonOutputPreviewForm": {
     "OutputStdErrSymbolsSkipped": "stderr characters omitted",
@@ -899,7 +899,7 @@
     "Title": "Map Source Columns to Table Fields"
   },
   "exports/dbexport/DBExportParamsWizard": {
-    "ErrTableNameNotSelected": "No table name selected",
+    "ErrTableNameNotSelected": "No table name specified",
     "ErrUpdateNotSupported": "Record update by key not supported by the current database",
     "NoConnection": "No connection"
   },
@@ -1675,12 +1675,12 @@
     "FailedFetchingTestId": "Failed to find item with text identifier in this place",
     "FailedGettinScrolledElement": "Failed to find the item with scroll position (different from zero) in this place",
     "NoClipboardAPI": "Browser API to save text to clipboard is available only via HTTPS protocol starting from Chrome 66 and Firefox 63",
-    "ScrollPosition": "Scroll position:",
-    "TestIdSavedInClipBoard": "\"{0}\" identifier saved to clipboard ",
+    "ScrollPosition": "Scroll position: ",
+    "TestIdSavedInClipBoard": "\"{0}\" identifier saved to clipboard",
     "WorkaroundClipboardCopy": "Alternative option of copying to clipboard is available only in Chrome, FireFox, Opera and Safari"
   },
   "test/Main": {
-    "ShouldBeUniqTestId": "'{0}'  test identifier is not unique within the frames of the current DOM. It is no a critical situation (as only one item with such identifier is visible now). But it is recommended to avoid such situation when possible. ",
+    "ShouldBeUniqTestId": "'{0}'  test identifier is not unique within the frames of the current DOM. It is no a critical situation (as only one item with such identifier is visible now). But it is recommended to avoid such situation when possible.",
     "ShouldBeUniqTestIdAmongVisible": "'{0}'  test identifier is not unique within the frames of the current DOM among visible items"
   },
   "test/TestIdentifier": {
@@ -2262,7 +2262,7 @@
   "wizards/connection/ConnectionConfigWizard": {
     "TestConnectionSuccess": "Successful connection test",
     "TestConnectionTitle": "Test Connection",
-    "WizardTitle": "Connection Wizard"
+    "WizardTitle": "Connection Parameters"
   },
   "wizards/connection/ConnectionReferenceComponentWizard": {
     "ConnectionReferenceTitle": "Connection Reference",

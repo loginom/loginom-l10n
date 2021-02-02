@@ -1594,7 +1594,7 @@
       "tooltip": "Move up"
     },
     "btnNextExpandable": {
-      "tooltip": "Next recursive unopened node"
+      "tooltip": "Next recursive unexpanded node"
     },
     "btnShowInvalidRelations": {
       "text": "Show Lost Links"
@@ -4710,13 +4710,13 @@
       "boxLabel": "Train"
     },
     "chkProbCorrection": {
-      "boxLabel": "A priori event weight"
+      "boxLabel": "Prior probability"
     },
     "cntEvent": {
       "html": "Event:"
     },
     "colParamName": {
-      "text": "Value"
+      "text": "Statistics"
     },
     "colSets": {
       "text": "Sets"
@@ -4728,7 +4728,7 @@
       "text": "Train"
     },
     "fldUserCutoff": {
-      "fieldLabel": "Threshold value"
+      "fieldLabel": "Value"
     },
     "lblChartType": {
       "text": "Chart type"
@@ -5335,7 +5335,7 @@
       "tooltip": "Move up"
     },
     "btnNextExpandable": {
-      "tooltip": "Next recursive unopened node"
+      "tooltip": "Next recursive unexpanded node"
     },
     "btnRemoveSelectedLinks": {
       "tooltip": "Delete selected links"

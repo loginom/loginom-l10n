@@ -589,7 +589,7 @@
     "ErrVoidDataKind": "Data kind of the processed column not defined"
   },
   "components/coarseclasses/CoarseClassesConfig": {
-    "EquabilityCoefficient": "Equability coefficient",
+    "EquabilityCoefficient": "Uniformity coefficient",
     "ErrDoNotFitAsTargetColumn": "The output column must have the discrete data kind and contain exactly 2 unique values",
     "ErrIncorrectColumnPurpose": "Incorrect \"%s\" field usage type",
     "ErrNotAllowedInputBinningKind": "The input field does not support the new usage type in the external partition (data type restriction)",
@@ -645,7 +645,7 @@
     "ColumnFlippingProcess": "Unpivoting",
     "DataTypesColumnDisplayName": "Data types",
     "DisplayNamesColumnDisplayName": "Captions",
-    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded maximum value",
+    "ErrRowCountExceedMaxValue": "Row count of the result data set exceeded maximum value",
     "NamesColumnDisplayName": "Captions",
     "ValuesColumnDisplayName": "Values"
   },
@@ -813,7 +813,7 @@
   "components/enrichdata/EnrichData": {
     "DisplayNamePrefix": "Enrich",
     "ErrLinkMustContainColumnOfMainTable": "Link must contain a field from the main table",
-    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded maximum value %d",
+    "ErrRowCountExceedMaxValue": "Row count of the result data set exceeded maximum value %d",
     "ProgessOutputBuild": "Build result data set",
     "ProgressJoinedTableIndex": "Joined table %d indexing"
   },
@@ -824,7 +824,7 @@
   "components/execcmd/ExecCmd": {
     "ErrBadCmdLine": "Failed to determine executable file name",
     "ErrCmdLineIsEmpty": "Empty command line",
-    "ErrCurrentDirectory": "Failed to define the current directory",
+    "ErrCurrentDirectory": "Failed to get current directory ",
     "ErrDisallowedExecution": "Node execution forbidden by security settings",
     "ErrMsgDisplayName": "Error message",
     "ErrResultCmdLineIsEmpty": "Empty result command line.",
@@ -1098,7 +1098,7 @@
   "components/joindata/JoinData": {
     "DisplayNamePrefix": "Join",
     "ErrInvalidColNamePrefix": "\"%s\" name prefix is not a valid identifier",
-    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded maximum value %d",
+    "ErrRowCountExceedMaxValue": "Row count of the result data set exceeded maximum value %d",
     "ProgressCompareIndexes": "Index mapping",
     "ProgressFormResult": "Output data set generation",
     "ProgressJoinedTableIndex": "Joined table indexing",
@@ -1211,7 +1211,7 @@
     "ModelDF": "Number of the model degrees of freedom",
     "ModelPValue": "Model P-value",
     "OutputUniqueValuesNotCalculated": "Unique values of \"%s\" output column not calculated",
-    "PredictedValue": "%s|Predicted value",
+    "PredictedValue": "%s|Prediction",
     "PredictionEvent": "Event|Prediction",
     "PredictionProbability": "Event probabillity|Prediction",
     "PredictionScore": "Score|Prediction",
@@ -1433,7 +1433,7 @@
     "CodeIsHere": "Data processing code can be here",
     "ConfigureOutputTable": "Preparing output columns",
     "CreateDateFrameFromInputTable": "Create pd.DataFrame by input data set No1",
-    "ErrCurrentDirectory": "Failed to define the current directory",
+    "ErrCurrentDirectory": "Failed to get current directory",
     "ErrDisallowedExecution": "Python execution forbidden by security settings",
     "ErrGetNativePath": "Failed to get the path in the file system by the path of \"%s\" file storage",
     "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
@@ -1699,7 +1699,7 @@
     "DisplayNamePrefixName": "Result column caption prefix",
     "ErrInvalidColNamePrefix": "\"%s\" name prefix is not a valid identifier",
     "ErrNoActiveInputs": "No active inputs",
-    "ErrRowCountExceedMaxValue": "Row count of the result set exceeded maximum value %d",
+    "ErrRowCountExceedMaxValue": "Row count of the result data set exceeded maximum value %d",
     "JoinedDataSource": "Joined table",
     "MainDataSource": "Main table",
     "NamePrefixName": "Result column name prefix"
@@ -2653,7 +2653,7 @@
     "ErrMaxEndThreadProcCountReached": "Failed to register more than %d procedures of finalization for a stream",
     "ErrObjectDeleteRefCount": "Failed to delete the object of %s class due to interface references to it: %d",
     "ErrObjectIsNil": "Null object reference",
-    "ErrObjectIsNilFmt": "Null  %s object reference"
+    "ErrObjectIsNilFmt": "Null %s object reference"
   },
   "Libraries/bgrtl/SysUtils": {
     "ErrCopyPasteRecursive": "\"%s\" folder cannot be copied into itself",

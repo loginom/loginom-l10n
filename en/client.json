@@ -734,7 +734,7 @@
     "CodePlaceholder": "Enter script"
   },
   "components/python/PythonColumnsWizard": {
-    "frmPythonOutputTableTitle": "Configure columns of output output Python table"
+    "frmPythonOutputTableTitle": "Configure columns of output Python table"
   },
   "components/python/PythonOutputPreviewForm": {
     "OutputStdErrSymbolsSkipped": "stderr characters omitted",
@@ -2262,7 +2262,7 @@
   "wizards/connection/ConnectionConfigWizard": {
     "TestConnectionSuccess": "Successful connection test",
     "TestConnectionTitle": "Test Connection",
-    "WizardTitle": "Connection Parameters"
+    "WizardTitle": "connection parameters"
   },
   "wizards/connection/ConnectionReferenceComponentWizard": {
     "ConnectionReferenceTitle": "Connection Reference",
@@ -2276,7 +2276,7 @@
     "BtnTooltipDelete": "Delete connection...",
     "BtnTooltipEdit": "Configure connection...",
     "BtnTooltipFilter": "Filter list",
-    "BtnTooltipFind": "Search list",
+    "BtnTooltipFind": "Search",
     "BtnTooltipGroup": "Group list",
     "BtnTooltipRename": "Rename connection...",
     "BtnTooltipSort": "Sort list",

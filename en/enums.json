@@ -302,7 +302,7 @@
       "Rate": "Rate",
       "Count": "Count",
       "EventCount": "Events",
-      "NoEventCount": "Negative events"
+      "NoEventCount": "Non-events"
     },
     "ColumnPurpose": {
       "$Caption": "Field usage type",
@@ -314,7 +314,7 @@
     },
     "ColumnSignificance": {
       "$Caption": "Column Significance",
-      "Void": "Void",
+      "Void": "None",
       "Low": "Low",
       "Medium": "Average",
       "High": "High"
@@ -654,7 +654,7 @@
     "DataSourceCachingMethod": {
       "$Caption": "Data Set Caching",
       "None": "Off",
-      "Complete": "While activation",
+      "Complete": "On activation",
       "Deferred": "On cell access",
       "CustomColumns": "Selected fields"
     }
@@ -1849,7 +1849,7 @@
     "ROCViewCutoffType": {
       "$Caption": "Cutoff",
       "Current": "From node settings",
-      "User": "Configurable",
+      "User": "Custom",
       "Balance": "Balance (TPR = TNR)",
       "Maximum": "Maximum (TPR + TNR)",
       "MinErr": "Minimum cost",

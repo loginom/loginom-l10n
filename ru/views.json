@@ -3996,6 +3996,9 @@
     },
     "lblHideUnusedColumns": {
       "text": "Скрывать неиспользуемые поля"
+    },
+    "lblHistogramStub": {
+      "text": "Невозможно отобразить гистограмму"
     }
   },
   "viewers/common/ViewerCard": {

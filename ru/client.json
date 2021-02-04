@@ -121,7 +121,7 @@
     "FailLicenseListText": "Не удалось получить список лицензий",
     "FailLicenseText": "Возникла ошибка при получении текста лицензии",
     "LicenseModalTitle": "Лицензионное соглашение",
-    "ThirdPartyModalTitle": "Стороннее программное обеспечение"
+    "ThirdPartyModalTitle": "Программное обеспечение с открытым исходным кодом"
   },
   "app/ListViewForm": {
     "NotObjects": "",

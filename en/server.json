@@ -71,7 +71,7 @@
     "RowCount": "Row count",
     "TableAddColumn": "Add Column",
     "TableAppend": "Add row",
-    "TableAssignColumns": "Create columns by decriptions",
+    "TableAssignColumns": "Create columns by definitions",
     "TableClearColumns": "Delete all columns",
     "TableDeleteColumn": "Delete column",
     "TableGet": "Get table cell value",
@@ -219,7 +219,7 @@
     "ErrSoapOperationVersionConflict": "SOAP version of %s operation conflicts with %s binding version",
     "ErrSoapRPCPartRefersToElement": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema element is assigned to RPC style SOAP message",
     "ErrSoapTransportNotSupported": "SOAP transports except for HTTP are currently not supported",
-    "ErrUrlReplacementNotAllowed": "Error defining input message of \"%s\" operation of \"%s\" binding: the message of \"%s\" type is not allowed for \"%s\" request method",
+    "ErrUrlReplacementNotAllowed": "Error defining input message of \"%s\" operation of \"%s\" binding: message of \"%s\" type is not allowed for \"%s\" request method",
     "ErrWsdlExtractedSchemaParseError": "XML error while parsing the schema included into WSDL file (row %d, position %d):\nError code: %d\nReason: %s",
     "ErrWsdlImportNoAccess": "No access to the imported %s document"
   },
@@ -824,7 +824,7 @@
   "components/execcmd/ExecCmd": {
     "ErrBadCmdLine": "Failed to determine executable file name",
     "ErrCmdLineIsEmpty": "Empty command line",
-    "ErrCurrentDirectory": "Failed to get current directory ",
+    "ErrCurrentDirectory": "Failed to get current directory",
     "ErrDisallowedExecution": "Node execution forbidden by security settings",
     "ErrMsgDisplayName": "Error message",
     "ErrResultCmdLineIsEmpty": "Empty result command line.",

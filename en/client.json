@@ -121,7 +121,7 @@
     "FailLicenseListText": "Failed to get license list",
     "FailLicenseText": "Error occurred while license text receiving",
     "LicenseModalTitle": "License Agreement",
-    "ThirdPartyModalTitle": "Third Party Software"
+    "ThirdPartyModalTitle": "Third Party Open Source Software"
   },
   "app/ListViewForm": {
     "NumberObjects": "{0} objects"

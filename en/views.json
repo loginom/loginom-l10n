@@ -3996,6 +3996,9 @@
     },
     "lblHideUnusedColumns": {
       "text": "Hide unused fields"
+    },
+    "lblHistogramStub": {
+      "text": "Failed to show histogram"
     }
   },
   "viewers/common/ViewerCard": {

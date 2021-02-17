@@ -2055,7 +2055,7 @@
   "viewers/cube/PivotGrid": {
     "AscSortCaption": "Sort Ascending",
     "BackwardSortNavButton": "Go to Next Sorted Header",
-    "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields, or by pressing the \"+\" button",
+    "CaseInvite": "Place fields in the row, column or filter zone by dragging from the left list of the available fields, or by clicking on \"+\" button",
     "DescSortCaption": "Sort Descending",
     "ForwardSortNavButton": "Go to Previous Sorted Header",
     "NestedSortCaption": "Sorted headers among nested headers"

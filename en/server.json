@@ -1164,7 +1164,7 @@
     "RegTrainElnetGridProcessName": "Model training (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
     "RegTrainLassoGridProcessName": "Model building (L1-regularization coefficient = %.4f)",
     "RegTrainProcessName": "%s method - model training",
-    "RegTrainRidgeGridProcessName": "Model building (L2-regularization coefficient = %.4f)",
+    "RegTrainRidgeGridProcessName": "Model training (L2-regularization coefficient = %.4f)",
     "ValidationProcess": "Model validation"
   },
   "components/linregression/LinRegressionVendor": {
@@ -1254,9 +1254,9 @@
     "RegForwardStepProcessName": "Stepwise selection - %s factor adding",
     "RegPrepareData": "Preparing data before training",
     "RegTrainElnetGridProcessName": "Model training (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
-    "RegTrainLassoGridProcessName": "Model building (L1-regularization coefficient = %.4f)",
+    "RegTrainLassoGridProcessName": "Model training (L1-regularization coefficient = %.4f)",
     "RegTrainProcessName": "%s method - model training",
-    "RegTrainRidgeGridProcessName": "Model building (L2-regularization coefficient = %.4f)",
+    "RegTrainRidgeGridProcessName": "Model training (L2-regularization coefficient = %.4f)",
     "ValidationProcess": "Model validation"
   },
   "components/logregression/LogRegressionVendor": {

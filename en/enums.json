@@ -1470,7 +1470,7 @@
     "ManagedSessionType": {
       "$Caption": "Session Type of Session Manager",
       "Client": "Remote session",
-      "Self": "Session manager sesssion",
+      "Self": "Session Manager sesssion",
       "Shared": "Shared packages",
       "Pool": "Pool of packages",
       "Backup": "Backup session"

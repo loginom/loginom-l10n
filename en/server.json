@@ -1090,7 +1090,7 @@
     "ErrInvalidArgWrongType": "Invalid type of argument [%d]",
     "ErrInvalidColumnDataKind": "Invalid data kind",
     "ErrInvalidColumnDataType": "Invalid data type",
-    "ErrInvalidColumnInfo": "Invalid column definition",
+    "ErrInvalidColumnInfo": "Invalid column description",
     "ErrInvalidColumnUsageType": "Invalid usage type",
     "ErrInvalidThis": "Method called for invalid object",
     "ErrNoCorrespondingColumn": "Object not associated with column"
@@ -1458,26 +1458,26 @@
     "ColumnGet": "Get($self, row, /)\n--\n\nGet column cell value\nArguments:\n  row: int\n    Table row index.\nResult:\n  Cell value according to the column type (bool, int, str, float or datetime.datetime). If the cell is null, None is returned.",
     "ColumnIsNull": "IsNull($self, row, /)\n--\n\nCheck if there is a value in the column cell\nArguments:\n  row: int\n    Table row index.\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
     "ColumnSet": "Set($self, value, /)\n--\n\nSet value in the column cell of the appended row\nArguments:\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None.\nResult:\n  None",
-    "ErrColumnInfoNoRequiredProperty": "Column definition does not contain required '%s' property",
+    "ErrColumnInfoNoRequiredProperty": "Column description does not contain required '%s' property",
     "ErrInvalidColumnDataKind": "Invalid data kind",
     "ErrInvalidColumnDataType": "Invalid data type",
     "ErrInvalidColumnUsageType": "Invalid usage type",
     "ErrNoCorrespondingObject": "Python object not associated with work object",
-    "TableAddColumn": "AddColumn($self, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nAdd new column\nArguments:\n  ColumnInfo\n    Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified new column attributes are initialized with default values.",
+    "TableAddColumn": "AddColumn($self, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nAdd new column\nArguments:\n  ColumnInfo\n    Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified attributes of the new column are initialized with default values.",
     "TableAppend": "Append($self, /)\n--\n\nAppend new row\n\nResult:\n  None",
     "TableAssignColumns": "AssignColumns($self, source, /)\n--\n\nCreate columns by decriptions\nArguments:\n  source: Iterable\n    The object returning iterator over the column metadata objects, for example, InputTable.Columns. The column metadata object must contain the Name attribute and optionally DisplayName, DataType, DataKind, DefaultUsageType.",
     "TableClearColumns": "ClearColumns($self, /)\n--\n\nDelete all columns\nResult:\n  None",
     "TableDeleteColumn": "DeleteColumn($self, col, /)\n--\n\nDelete column by index or name\nArguments:\n  col: Union[int, str]\n    Index or name of deleted column.\nResult:\n  None",
     "TableGet": "Get($self, row, col, /)\n--\n\nGet table cell value\n\nArguments:\n  row: int\n    Table row index\n  col: Union[int, str]\n    Index or name of table column\nResult:\n  Cell value according to the column type (bool, int, str, float or datetime.datetime). If the cell is null, None is returned.",
     "TableGetColumn": "GetColumn($self, col, /)\n--\n\nGet column by index or name\n\nArguments:\n  col: Union[int, str]\n    Index or name of table column\nResult:\n  Table column",
-    "TableInsertColumn": "InsertColumn($self, Index, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nInsert a new column at a given index\nArguments:\n  Index: int\n    The index where the new column needs to be inserted.\n  ColumnInfo\n    Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified new column attributes are initialized with default values.",
+    "TableInsertColumn": "InsertColumn($self, Index, ColumnInfo=None, Name=None, DisplayName=None, DataType=None, DataKind=None, DefaultUsageType=None)\n--\n\nInsert a new column according to the given index\nArguments:\n  Index: int\n    The index according to which the column is inserted.\n  ColumnInfo\n    Any object with the column metadata, for example, another column. Name is a required attribute; DisplayName, DataType, DataKind, DefaultUsageType are optional.\n  Name: str\n    Column name.\n  DisplayName: str\n    Column caption.\n  DataType: int\n    Column data type.\n  DataKind: int\n    Column data kind.\n  DefaultUsageType: int\n    Column default usage type.\nResult:\n  A new table column. Unspecified attributes of the new column are initialized with default values.",
     "TableIsNull": "IsNull($self, row, col, /)\n--\n\nCheck if there is a value in the table cell\n\nArguments:\n  row: int\n    Table row index\n  col: Union[int, str]\n    Index or name of table column\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
     "TableSet": "Set($self, col, value, /)\n--\n\nSet value in the cell of the appended row\nArguments:\n  col: Union[int, str]\n    Index or name of table column\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None\nResult:\n  None"
   },
   "components/python/PythonUtils": {
     "ErrLoadedExtensionRegistrationFailed": "Error in service script for Python extensions loading registration",
-    "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object to the value of the variant type is not supported",
-    "ErrPyObjectFromVariantUnsupported": "Transformation of the passed value of the variant type to the Python object is not supported"
+    "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object to the value related to the variant type is not supported",
+    "ErrPyObjectFromVariantUnsupported": "Transformation of the passed value related to the variant type to the Python object is not supported"
   },
   "components/python/PythonVendor": {
     "VendorCaption": "Python",
@@ -2847,7 +2847,7 @@
     "ErrConfigElementAlien": "The configuration element does not belong to the specified list",
     "ErrConfigElementByNameNotFound": "Configuration element with %s name not found",
     "ErrRefToClassNotInitOrWrongClass": "Collection reference has not been initialized or relates to an invalid class",
-    "ErrUnmatchedAttrType": "Accessing to %s attribute value of %s type as the value of %s type",
+    "ErrUnmatchedAttrType": "Access to %s attribute value of %s type as the value of %s type",
     "ErrUnsupportedPropertyType": "Unsupported property type",
     "ErrVectorLengthOverflow": "Length of array %d exceeds the allowable %d limit",
     "ErrWrongElementsClass": "Invalid configuration node list class"
@@ -3930,8 +3930,8 @@
   },
   "Studio/DeductorSessionsManager": {
     "ErrCloseSessionRestriction": "%s session closing forbidden",
-    "ErrNodeNotPackageInfo": "The passed object is not a package node in the Session Manager",
-    "ErrNodeNotSessionInfo": "The passed object is not a session node in the Session Manager",
+    "ErrNodeNotPackageInfo": "The passed object is not a package node in Session Manager",
+    "ErrNodeNotSessionInfo": "The passed object is not a session node in Session Manager",
     "ErrPackageNotFound": "No %s package found in %s session. It may have already been closed",
     "ErrPackageSessionNotFound": "No session with %s package found. It may have already been closed",
     "ErrSessionNotFound": "No %s session found. It may have already been closed",
@@ -4199,7 +4199,7 @@
     "ErrNotDefinedComponent": "Undefined Duplicates Detection component"
   },
   "Viewers/Duplicates/DuplicatesViewVendor": {
-    "VendorCaption": "Duplicates and Contradictions",
+    "VendorCaption": "Duplicates Detection",
     "VendorDesc": "Show duplicates and contradictions in table"
   },
   "Viewers/LinRegressReport/LinRegressReport": {

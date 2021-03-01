@@ -1729,7 +1729,7 @@
       "title": "XML Extraction Parameters"
     },
     "rbFull": {
-      "boxLabel": "One request for all data set"
+      "boxLabel": "One request for the whole data set"
     },
     "rbIDColumn": {
       "boxLabel": "Request identifier - input data set field"

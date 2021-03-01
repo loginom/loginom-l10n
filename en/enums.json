@@ -389,7 +389,7 @@
   "components/datatoxml": {
     "RowsDocIdenti": {
       "$Caption": "Document Identification",
-      "Full": "One request for all data set",
+      "Full": "One request for the whole data set",
       "SingleRow": "One request per input data set row",
       "ByID": "Request identifier - input data set field"
     }

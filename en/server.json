@@ -1090,7 +1090,7 @@
     "ErrInvalidArgWrongType": "Invalid type of argument [%d]",
     "ErrInvalidColumnDataKind": "Invalid data kind",
     "ErrInvalidColumnDataType": "Invalid data type",
-    "ErrInvalidColumnInfo": "Invalid column description",
+    "ErrInvalidColumnInfo": "Invalid column definition",
     "ErrInvalidColumnUsageType": "Invalid usage type",
     "ErrInvalidThis": "Method called for invalid object",
     "ErrNoCorrespondingColumn": "Object not associated with column"
@@ -1458,7 +1458,7 @@
     "ColumnGet": "Get($self, row, /)\n--\n\nGet column cell value\nArguments:\n  row: int\n    Table row index.\nResult:\n  Cell value according to the column type (bool, int, str, float or datetime.datetime). If the cell is null, None is returned.",
     "ColumnIsNull": "IsNull($self, row, /)\n--\n\nCheck if there is a value in the column cell\nArguments:\n  row: int\n    Table row index.\nResult:\n  True, if the table cell is null.\n  False, if the table cell contains a value.",
     "ColumnSet": "Set($self, value, /)\n--\n\nSet value in the column cell of the appended row\nArguments:\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None.\nResult:\n  None",
-    "ErrColumnInfoNoRequiredProperty": "Column description does not contain required '%s' property",
+    "ErrColumnInfoNoRequiredProperty": "Column definition does not contain required '%s' property",
     "ErrInvalidColumnDataKind": "Invalid data kind",
     "ErrInvalidColumnDataType": "Invalid data type",
     "ErrInvalidColumnUsageType": "Invalid usage type",
@@ -4199,7 +4199,7 @@
     "ErrNotDefinedComponent": "Undefined Duplicates Detection component"
   },
   "Viewers/Duplicates/DuplicatesViewVendor": {
-    "VendorCaption": "Duplicates Detection",
+    "VendorCaption": "Duplicates and Contradictions",
     "VendorDesc": "Show duplicates and contradictions in table"
   },
   "Viewers/LinRegressReport/LinRegressReport": {

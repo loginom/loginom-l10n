@@ -4446,7 +4446,8 @@
   },
   "viewers/fastpreview/FastPreviewForm": {
     "btnForm": {
-      "text": "Форма"
+      "text": "Форма",
+      "tooltip": "Форма"
     },
     "btnSelectFirst": {
       "tooltip": "Первая строка"
@@ -4461,7 +4462,8 @@
       "tooltip": "Предыдущая строка"
     },
     "btnTable": {
-      "text": "Таблица"
+      "text": "Таблица",
+      "tooltip": "Таблица"
     },
     "colDisplayName": {
       "text": "Метка"

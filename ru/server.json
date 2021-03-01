@@ -942,8 +942,8 @@
   },
   "components/filterdata/FilterData": {
     "ErrPreviewDataSourceNotActive": "Не удалось применить фильтр, вход не активирован",
-    "FilterDataNotify": "Выполнение операции фильтрации",
-    "FilterPreviewProcess": "Предпросмотр операции фильтрации",
+    "FilterDataNotify": "Выполнение фильтрации",
+    "FilterPreviewProcess": "Предварительный просмотр фильтрации",
     "OutputDataSource": "Соответствуют условию",
     "OutputDataSourceElse": "Не соответствуют условию",
     "WarnReachedLimitScanRow": "Достигнуто максимальное количество строк сканирования: %d"
@@ -1438,7 +1438,7 @@
     "ErrGetNativePath": "Не удалось получить путь в файловой системе по пути файлового хранилища \"%s\"",
     "ErrPreviewPythonIsBusy": "Python занят. Невозможно запустить предпросмотр",
     "ErrVerifyPythonIsBusy": "Python занят. Невозможно запустить проверку синтаксиса",
-    "ErrWaitTimeoutElapsed": "Истекло установленное время ожидания освобождения Python",
+    "ErrWaitTimeoutElapsed": "Не удалось захватить Python в течении установленного тайм-аута, т.к. код Python все ещё выполняется в другом узле.",
     "InputPortOptional": "Входной порт необязательный",
     "OutputDataFrameExample": "Полученный выходной pd.DataFrame",
     "PrepareCompatibleComment": "Если включена опция \"Разрешить формировать выходные столбцы из кода\", структуру выходного набора можно подготовить по pd.DataFrame"
@@ -2767,6 +2767,7 @@
     "ErrLinkedVariableInfoTypesMismatch": "Тип переменной %s не совместим с типом исходной переменной"
   },
   "Libraries/bgrtl/Variables": {
+    "ErrUnexpectedEndUpdate": "Нельзя вызвать метод EndUpdate предварительно не вызвав BeginUpdate",
     "ErrVariablesAlreadyEditing": "Переменные уже находятся в состоянии редактирования",
     "ErrVariablesNotActive": "Переменные не активны",
     "ErrVariablesNotConfigured": "Переменные не настроены",
@@ -3836,7 +3837,6 @@
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrNoWSDLSource": "Не указан источник WSDL",
     "ErrWSDLLoad": "Ошибка загрузки WSDL:\nИмя файла: %s",
-    "ErrWSDLSourceNotExists": "Файл \"%s\" не найден",
     "WarnMainWSDLNotLoaded": "Основной источник WSDL (%s) не загружен (%s). Пытаемся загрузить из резервного источника."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
@@ -3877,6 +3877,7 @@
     "ErrCannotGetPackageRef": "Не удалось получить объектную ссылку на пакет с именем %s",
     "ErrCannotSaveReadOnlyPackage": "Невозможно сохранить пакет с именем %s, открытый только на чтение",
     "ErrCircularPackageLink": "Пакет \"%s\" содержит циклическую ссылку на самого себя",
+    "ErrComparePackagesError": "Возникла ошибка при сравнении файла пакета \"%s\" с редактируемой копией в памяти",
     "ErrDeductorServerSessionNotInitialized": "Сессия Loginom Server не инициализирована",
     "ErrDuplicatePublishedNodeName": "Пакет содержит более одного опубликованного узел с именем \"%s\"",
     "ErrEncryptedPackage": "Зашифрованный пакет \"%s\" не может быть открыт для просмотра и редактирования",
@@ -3919,6 +3920,8 @@
     "SessionInteractive": "Интерактивная сессия",
     "User": "Пользователь",
     "UserName": "Имя пользователя",
+    "WarnClosePackageFailed": "Не удалось закрыть пакет %s из диспетчера, возможно, сессия уже закрыта",
+    "WarnCloseSessionFailed": "Не удалось закрыть сессию из диспетчера, возможно, она уже закрыта",
     "WarnSessionStopTimeout": "Не удалось остановить сессию пользователя %s в течение %d миллисекунд. Количество не завершённых процессов: %d. Список активных подпроцессов: %s. Список не запущенных подпроцессов: %s."
   },
   "Studio/DeductorServerConnector": {

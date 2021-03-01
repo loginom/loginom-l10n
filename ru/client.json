@@ -54,7 +54,8 @@
     "PackageRefCountTip": "Количество сессий ссылающихся на пакет",
     "ReadOnlyPackageNamePostfix": "(только чтение)",
     "RoleTipFormat": "Сессия запущена пользователем с ролью {0}",
-    "SessionCapacity": "{0} из {1}"
+    "SessionCapacity": "{0} из {1}",
+    "SessionLastTimeDisposing": "Удаляется"
   },
   "admin/SharedDirectoriesForm": {
     "DeleteUserConfirm": "Удалить папку из файловой системы?"
@@ -299,8 +300,7 @@
   },
   "app/PackagesListForm": {
     "ErrOpenPath": "Не удается открыть путь \"{0}\".\nОшибка: \"{1}\".",
-    "ErrPathNotFound": "Указанный путь не найден \"{0}\".",
-    "ReadOnlyPackageNamePostfix": " (только чтение)"
+    "ErrPathNotFound": "Указанный путь не найден \"{0}\"."
   },
   "app/PackageVariableEditForm": {
     "AddBtnText": "Добавить",
@@ -1603,6 +1603,7 @@
   },
   "progress/ProgressForm": {
     "ErrorInfoText": "{0} {1}: {2}.",
+    "ErrProcessWasDisposed": "Процесс или подпроцессы были уже удалены",
     "MsgClearText": "Очистить описания завершенных процессов?",
     "MsgProcessingAborted": "Обработка прервана",
     "MsgStoplText": "Отменить выполнение всех процессов?",
@@ -1695,7 +1696,7 @@
     "ErrorTooMany": "Скопировать выделенные ячейки в буфер обмена не удалось. Выделено слишком много строк."
   },
   "viewers/browse/BrowseFormat": {
-    "ActColInAllInvisibleTip": "Скрыта",
+    "ActColInAllInvisibleTip": "Скрыто",
     "ActColInAllVisibleTip": "Отображается",
     "ActHideAll": "Скрыть все поля",
     "ActShowAll": "Отобразить все поля"

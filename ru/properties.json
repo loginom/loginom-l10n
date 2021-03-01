@@ -397,7 +397,7 @@
   },
   "components/python": {
     "PythonEngine": {
-      "WaitTimeout": "Тайм-аут ожидания (мс)"
+      "WaitTimeout": "Тайм-аут ожидания запуска (мс)"
     }
   },
   "components/reformcolumns": {

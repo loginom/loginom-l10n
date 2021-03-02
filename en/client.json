@@ -54,7 +54,8 @@
     "PackageRefCountTip": "Count of sessions referring to package",
     "ReadOnlyPackageNamePostfix": "(read-only)",
     "RoleTipFormat": "Session with {0} role has been started by user",
-    "SessionCapacity": "{0} of {1}"
+    "SessionCapacity": "{0} of {1}",
+    "SessionLastTimeDisposing": "Deleting"
   },
   "admin/SharedDirectoriesForm": {
     "DeleteUserConfirm": "Do you want to delete folder from the file system?"
@@ -298,8 +299,7 @@
   },
   "app/PackagesListForm": {
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
-    "ErrPathNotFound": "The specified path was not found \"{0}\".",
-    "ReadOnlyPackageNamePostfix": " (read-only)"
+    "ErrPathNotFound": "The specified path was not found \"{0}\"."
   },
   "app/PackageVariableEditForm": {
     "AddBtnText": "Add",
@@ -1602,6 +1602,7 @@
   },
   "progress/ProgressForm": {
     "ErrorInfoText": "{0} {1}: {2}.",
+    "ErrProcessWasDisposed": "Process or subprocesses have already been deleted",
     "MsgClearText": "Do you want to clear descriptions of terminated processes?",
     "MsgProcessingAborted": "Processing aborted",
     "MsgStoplText": "Do you want to cancel all processes?",

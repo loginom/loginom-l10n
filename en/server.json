@@ -2767,6 +2767,7 @@
     "ErrLinkedVariableInfoTypesMismatch": "%s variable type is not compatible with the source variable type"
   },
   "Libraries/bgrtl/Variables": {
+    "ErrUnexpectedEndUpdate": "Failed to call EndUpdate method without calling BeginUpdate first",
     "ErrVariablesAlreadyEditing": "Variables already in the editing process",
     "ErrVariablesNotActive": "Variables not active",
     "ErrVariablesNotConfigured": "Variables not configured",
@@ -3836,7 +3837,6 @@
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrNoWSDLSource": "No WSDL source specified",
     "ErrWSDLLoad": "Error loading WSDL:\nFile name: %s",
-    "ErrWSDLSourceNotExists": "\"%s\" file not found",
     "WarnMainWSDLNotLoaded": "Loading of the main WSDL source (%s) failed (%s). Loading from the reserve source."
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
@@ -3877,6 +3877,7 @@
     "ErrCannotGetPackageRef": "Failed to get the object reference to the package with %s name",
     "ErrCannotSaveReadOnlyPackage": "Failed to save %s read-only package",
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
+    "ErrComparePackagesError": "Error occurred while comparing \"%s\" package file with edited copy in the memory",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
     "ErrDuplicatePublishedNodeName": "The package already contains more than one published node with \"%s\" name",
     "ErrEncryptedPackage": "Encrypted package \"%s\" cannot be opened to be viewed and edited",
@@ -3919,6 +3920,8 @@
     "SessionInteractive": "Interactive session",
     "User": "User",
     "UserName": "Username",
+    "WarnClosePackageFailed": "Failed to close %s package from Session Manager, probably session is already closed",
+    "WarnCloseSessionFailed": "Failed to close session from Session Manager, it is probably already closed",
     "WarnSessionStopTimeout": "Failed to terminate %s user session for %d milliseconds. Number of processes not completed: %d. List of active subprocesses: %s. List of not started subprocesses: %s."
   },
   "Studio/DeductorServerConnector": {

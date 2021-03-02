@@ -55,7 +55,7 @@
     "ReadOnlyPackageNamePostfix": "(read-only)",
     "RoleTipFormat": "Session with {0} role has been started by user",
     "SessionCapacity": "{0} of {1}",
-    "SessionLastTimeDisposing": "Deleting"
+    "SessionLastTimeDisposing": "Closing"
   },
   "admin/SharedDirectoriesForm": {
     "DeleteUserConfirm": "Do you want to delete folder from the file system?"

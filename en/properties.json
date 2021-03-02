@@ -397,7 +397,7 @@
   },
   "components/python": {
     "PythonEngine": {
-      "WaitTimeout": "Wait timeout (ms)"
+      "WaitTimeout": "Start wait timeout (ms)"
     }
   },
   "components/reformcolumns": {

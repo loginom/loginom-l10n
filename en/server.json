@@ -2848,7 +2848,7 @@
     "ErrConfigElementAlien": "The configuration element does not belong to the specified list",
     "ErrConfigElementByNameNotFound": "Configuration element with %s name not found",
     "ErrRefToClassNotInitOrWrongClass": "Collection reference has not been initialized or relates to an invalid class",
-    "ErrUnmatchedAttrType": "Access to %s attribute value of %s type as to the value of %s type",
+    "ErrUnmatchedAttrType": "Error occurred while accessing %s attribute value of %s type as the value of %s type",
     "ErrUnsupportedPropertyType": "Unsupported property type",
     "ErrVectorLengthOverflow": "Length of array %d exceeds the allowable %d limit",
     "ErrWrongElementsClass": "Invalid configuration node list class"

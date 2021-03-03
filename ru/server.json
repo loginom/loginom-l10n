@@ -2848,7 +2848,7 @@
     "ErrConfigElementAlien": "Элемент конфигурации не принадлежит указанному списку",
     "ErrConfigElementByNameNotFound": "Элемент конфигурации с именем %s не найден",
     "ErrRefToClassNotInitOrWrongClass": "Ссылка на коллекцию не проинициализирована или неверного класса",
-    "ErrUnmatchedAttrType": "Обращение к значению атрибута %s типа %s как значению типа %s",
+    "ErrUnmatchedAttrType": "Обращение к значению атрибута %s типа %s как к значению типа %s",
     "ErrUnsupportedPropertyType": "Неподдерживаемый тип свойства.",
     "ErrVectorLengthOverflow": "Длина %d массива превышает допустимую границу %d",
     "ErrWrongElementsClass": "Неверный класс списка узлов конфигурации"

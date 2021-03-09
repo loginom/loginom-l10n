@@ -418,6 +418,7 @@ P-значение | P-value | |
 Разгруппированные | Ungrouped | |
 Заголовок Content-Type | Content-Type caption | |
 Диспетчер | Session Manager | |
+Установить/снять флажок | Select/Deselect a checkbox | |
 
 ### Общие рекомендации:
 

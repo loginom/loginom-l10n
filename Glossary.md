@@ -413,6 +413,11 @@ P-значение | P-value | |
 Сложное условие | Complex criterion | |
 Метод скользящего окна | Windowing method | |
 Таблица замен | Replacement table | |
+Подсказка | Tip | |
+Доля | Quota | |
+Разгруппированные | Ungrouped | |
+Заголовок Content-Type | Content-Type caption | |
+Диспетчер | Session Manager | |
 
 ### Общие рекомендации:
 

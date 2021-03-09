@@ -419,7 +419,9 @@ P-значение | P-value | |
 Заголовок Content-Type | Content-Type caption | |
 Диспетчер | Session Manager | |
 Установить/снять флажок | Select/Deselect a checkbox | |
-Доля событий | Event rate | | Только в контексте конечных классов
+Доля событий | Event rate | | Только в контексте конечных классов (Coarse Classes) 
+Дубликаты и противоречия | Duplicates Detection | | Это название компонента (узла)
+Дубликаты и противоречия | Duplicates and Contradictions | | Это название визуализатора к узлу Duplicates Detection
 
 ### Общие рекомендации:
 

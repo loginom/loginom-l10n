@@ -419,6 +419,7 @@ P-значение | P-value | |
 Заголовок Content-Type | Content-Type caption | |
 Диспетчер | Session Manager | |
 Установить/снять флажок | Select/Deselect a checkbox | |
+Доля событий | Event rate | | Только в контексте конечных классов
 
 ### Общие рекомендации:
 

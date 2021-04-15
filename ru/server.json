@@ -137,6 +137,8 @@
   },
   "Common/WSDL/Processor/MIMEImportImpl": {
     "ErrCodePageNotSupported": "Кодовая страница \"%s\" не поддерживается",
+    "ErrInvalidUTF16Sequence": "Невалидная UTF16 последовательность: %s",
+    "ErrInvalidUTF8Sequence": "Невалидная UTF8 последовательность: %s",
     "ErrUnbalancedPop": "Несбалансированная операция Pop"
   },
   "Common/WSDL/Processor/WSDLHttpMessageEncoder": {
@@ -480,6 +482,7 @@
     "ErrExceededRecursiveCalls": "Превышено максимальное количество рекурсивных вызовов (%d) функции Data в выражении \"%s\".\nДля решения этой проблемы необходимо включить Кэширование.",
     "ErrExprIsStringType": "Выражение \"%s\" имеет строковый тип",
     "ErrGetVarArrayUnsupported": "Массивы переменного типа могут возвращать только промежуточные выражения (выражение \"%s\", строка %d)",
+    "ErrVarExprAmbiguity": "\"%0:s\" может быть входной переменной или промежуточным выражением. Чтобы разрешить неоднозначность используйте \"%1:s%0:s\" для обращения к переменной или переименуйте выражение \"%0:s\".",
     "InputVariables": "Входные переменные",
     "NameNotExists": "Поля, переменной или выражения с именем \"%s\" не существует"
   },
@@ -635,6 +638,7 @@
   "components/coarseclasses/FineClassesStorage": {
     "BlanksClass": "[пусто]",
     "ErrColumnIsNotDifenied": "Не удалось определить столбец для обработки",
+    "ErrColumnNullDataFmt": "Невозможно сформировать начальные классы для поля \"%s\": все значения пропущенные",
     "ErrDataTypesNotMatch": "Заданный тип данных столбца не соответствует типу данных конечных классов",
     "ErrNotPositiveIntervalsCount": "Количество интервалов должно быть больше 0",
     "From": "от ",
@@ -1078,7 +1082,6 @@
   "components/javascript/JavaScriptEngine": {
     "InputDataSource": "Входной источник данных",
     "JavaScriptConfigureOutputTable": "Подготовка выходных столбцов",
-    "JavaScriptFillOutputTable": "Заполнение выходной таблицы",
     "OutputDataSet": "Выходной набор данных"
   },
   "components/javascript/JavaScriptVendor": {
@@ -2358,6 +2361,7 @@
     "ErrAbstractMethod": "Вызов абстрактного метода %s.%s",
     "ErrAssign": "Невозможно присвоить значениям свойств объекта %s значения объекта неподдерживаемого класса %s",
     "ErrAssignIntf": "Невозможно присвоить значениям свойств объекта %s значения объекта неподдерживаемого интерфейса",
+    "ErrFieldIsNull": "Поле %s должно быть проинициализировано",
     "ErrFloatParamIsNan": "Значение параметра \"%s\" равное NaN недопустимо",
     "ErrFunctionRefIsNull": "Ссылка на функцию %s должна быть проинициализирована",
     "ErrInvalidIndex": "Значение индекса %d параметра \"%s\" вне диапазона [%d; %d]",
@@ -2526,6 +2530,9 @@
   "Libraries/bgrtl/LinkSrvr": {
     "LockError": "Метод UnLock был вызван без метода Lock",
     "UpdateError": "Метод EndUpdate был вызван без метода BeginUpdate"
+  },
+  "Libraries/bgrtl/LoggerConfigurator": {
+    "ErrCannotConfigureLogger": "Не удалось применить параметры логирования"
   },
   "Libraries/bgrtl/MathUtils": {
     "ErrBadMatrix": "Двумерный динамический массив не является прямоугольной матрицей",
@@ -3184,6 +3191,10 @@
   "Libraries/Model/DataTree/OutputDataTreeSocketDef": {
     "OutputDataTreeSocketDefVendorCaption": "Дерево данных"
   },
+  "Libraries/Model/DerivedModelComponent": {
+    "ErrCannotUpdateConfigDefault": "Не удалось обновить конфигурацию производной подмодели перед активацией. Использована неподдерживаемая конфигурация зависимости узлов.",
+    "ErrCannotUpdateConfigDesignMode": "Не удалось обновить конфигурацию производной подмодели перед активацией. Попробуйте обновить конфигурацию текущей подмодели вручную."
+  },
   "Libraries/Model/DerivedModelComponentVendor": {
     "BaseComponentVendorGuidDesc": "GUID Базового компонента",
     "BaseNode": "Базовый узел",
@@ -3220,7 +3231,9 @@
   },
   "Libraries/Model/Generic/ModelGenericComponentEngine": {
     "ActivateOuterData": "Внешние данные",
-    "ErrInvalidModelLockContext": "Подмодель уже заблокирована в рамках другой операции"
+    "ErrInnerNodesLocked": "Внутренние узлы Подмодели заблокированы",
+    "ErrInvalidModelLockContext": "Подмодель уже заблокирована в рамках другой операции",
+    "ErrLockedNodesExist": "Подмодель содержит заблокированные узлы"
   },
   "Libraries/Model/Generic/ModelGenericComponentVendor": {
     "GenericVendorCaption": "Подмодель"
@@ -3412,7 +3425,6 @@
     "ErrAllNodesLocked": "Все узлы сценария заблокированы",
     "ErrAlreadyConfiguringSocket": "Узел \"%s\" уже находится в состоянии настройки порта",
     "ErrCannotActivateRecursiveNode": "Узел \"%s\" не может быть активирован, т.к. рекурсивно зависит от активации самого себя",
-    "ErrCannotFindPreviousProcess": "Не удалось найти предыдущий процесс активизации узла \"%s\"",
     "ErrColumnDataTypeChanged": "Изменился тип данных столбца \"%s\"",
     "ErrComponentNotInitialized": "Базовый компонент не проинициализирован",
     "ErrDuplicatePublishedNodeName": "Пакет уже содержит опубликованный узел с именем \"%s\"",
@@ -3922,7 +3934,9 @@
     "UserName": "Имя пользователя",
     "WarnClosePackageFailed": "Не удалось закрыть пакет %s из диспетчера, возможно, сессия уже закрыта",
     "WarnCloseSessionFailed": "Не удалось закрыть сессию из диспетчера, возможно, она уже закрыта",
-    "WarnSessionStopTimeout": "Не удалось остановить сессию пользователя %s в течение %d миллисекунд. Количество не завершённых процессов: %d. Список активных подпроцессов: %s. Список не запущенных подпроцессов: %s."
+    "WarnSessionStopTimeout": "Не удалось остановить сессию пользователя %s в течение %d миллисекунд. Количество не завершённых процессов: %d. Список активных подпроцессов: %s. Список не запущенных подпроцессов: %s.",
+    "WarnStopPackageProcessesFailed": "Не удалось остановить выполнение активных процессов в пакете %s, возможно, сессия уже закрыта",
+    "WarnStopSessionProcessesFailed": "Не удалось остановить выполнение активных процессов сессии, возможно, сессия уже закрыта"
   },
   "Studio/DeductorServerConnector": {
     "ErrCannotConfigureActiveConnection": "Невозможно изменить настройки активного подключения"
@@ -3963,7 +3977,7 @@
     "ErrUserHasActiveSessions": "У пользователя %s есть активные сессии",
     "ErrUserNameConflictsWithSharedDirectory": "Имя пользователя не может совпадать с именем общей директории %s",
     "ErrUserNameIsReserved": "Идентификатор %s зарезервирован и не может быть использован в качестве имени пользователя",
-    "ErrUserNameMustBeValidIdentifier": "Имя пользователя должно быть правильным идентификатором",
+    "ErrUserNameMustBeValid": "Имя пользователя может состоять из латинских букв, цифр, символов _ - . и пробела,\nно не может заканчиваться точкой или пробелом.",
     "IsAdmin": "Администратор",
     "IsDesigner": "Проектирование сценариев",
     "IsViewer": "Просмотр отчетов",
@@ -4002,7 +4016,7 @@
     "ErrSharedDirectoryAlreadyDeleted": "Общая директория уже удалена",
     "ErrSharedDirectoryNameConflictsWithUser": "Имя общей директории не может совпадать с именем пользователя %s",
     "ErrSharedDirectoryNameIsReserved": "Идентификатор %s зарезервирован и не может быть использован в качестве имени общей директории",
-    "ErrSharedDirectoryNameMustBeValidIdentifier": "Имя общей директории должно быть правильным идентификатором",
+    "ErrSharedDirectoryNameMustBeValid": "Имя общей директории может состоять из латинских букв, цифр, символов _ - . и пробела,\nно не может заканчиваться точкой или пробелом.",
     "LogAddDirectory": "Создана общая директория %s",
     "LogDeleteDirectory": "Удалена общая директория %s",
     "SharedDirectoryMetaDesc": "Общая директория"

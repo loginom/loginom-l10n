@@ -1078,7 +1078,6 @@
   "components/javascript/JavaScriptEngine": {
     "InputDataSource": "Input data source",
     "JavaScriptConfigureOutputTable": "Preparing output columns",
-    "JavaScriptFillOutputTable": "Fill in the output table",
     "OutputDataSet": "Output data set"
   },
   "components/javascript/JavaScriptVendor": {
@@ -3412,7 +3411,6 @@
     "ErrAllNodesLocked": "All workflow nodes locked",
     "ErrAlreadyConfiguringSocket": "\"%s\" node already in the port configuring state",
     "ErrCannotActivateRecursiveNode": "\"%s\" node cannot be activated because it recursively depends on its own activation",
-    "ErrCannotFindPreviousProcess": "Failed to find the previous activation process for \"%s\" node",
     "ErrColumnDataTypeChanged": "\"%s\" column data type changed",
     "ErrComponentNotInitialized": "Base component not initialized",
     "ErrDuplicatePublishedNodeName": "The package already contains the published node with \"%s\" name",
@@ -3963,7 +3961,6 @@
     "ErrUserHasActiveSessions": "%s user has active sessions",
     "ErrUserNameConflictsWithSharedDirectory": "Username conflicts with %s shared directory name",
     "ErrUserNameIsReserved": "%s identifier has already been reserved and it cannot be used as a username",
-    "ErrUserNameMustBeValidIdentifier": "Username must be a valid identifier",
     "IsAdmin": "Admin",
     "IsDesigner": "Workflows design",
     "IsViewer": "View reports",
@@ -4002,7 +3999,6 @@
     "ErrSharedDirectoryAlreadyDeleted": "Shared directory already deleted",
     "ErrSharedDirectoryNameConflictsWithUser": "Username conflicts with %s shared directory name",
     "ErrSharedDirectoryNameIsReserved": "%s identifier has already been reserved and it cannot be used as a shared directory name",
-    "ErrSharedDirectoryNameMustBeValidIdentifier": "The shared directory name must be a valid identifier",
     "LogAddDirectory": "%s shared directory created",
     "LogDeleteDirectory": "%s shared directory deleted",
     "SharedDirectoryMetaDesc": "Shared directory"

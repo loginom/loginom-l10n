@@ -137,6 +137,8 @@
   },
   "Common/WSDL/Processor/MIMEImportImpl": {
     "ErrCodePageNotSupported": "\"%s\" codepage not supported",
+    "ErrInvalidUTF16Sequence": "Invalid UTF16 sequence: %s",
+    "ErrInvalidUTF8Sequence": "Invalid UTF8 sequence: %s",
     "ErrUnbalancedPop": "Unbalanced Pop operation"
   },
   "Common/WSDL/Processor/WSDLHttpMessageEncoder": {
@@ -480,6 +482,7 @@
     "ErrExceededRecursiveCalls": "Maximum number of (%d) recursive calls of Data function in \"%s\" expression exceeded.\nTo solve this problem it is required to enable Caching.",
     "ErrExprIsStringType": "\"%s\" expression of string type",
     "ErrGetVarArrayUnsupported": "The arrays related to the variant type can return only intermediate expressions (\"%s\" expression, %d row)",
+    "ErrVarExprAmbiguity": "\"%0:s\" can be input variable or intermediate expression. To allow nonuniqueness, use \"%1:s%0:s\" to access the variable or rename \"%0:s\" expression. ",
     "InputVariables": "Input variables",
     "NameNotExists": "No field, variable or expression with \"%s\" name exists"
   },
@@ -635,6 +638,7 @@
   "components/coarseclasses/FineClassesStorage": {
     "BlanksClass": "[blank]",
     "ErrColumnIsNotDifenied": "Failed to define the column to process",
+    "ErrColumnNullDataFmt": "Failed to generate fine classes for \"%s\" field: all values are null",
     "ErrDataTypesNotMatch": "The specified column data type does not match the data type of the coarse classes",
     "ErrNotPositiveIntervalsCount": "Interval count must be more than 0",
     "From": "from ",
@@ -2357,6 +2361,7 @@
     "ErrAbstractMethod": "Abstract method calling %s.%s",
     "ErrAssign": "Failed to assign property values of %s object to the object values of the unsupported class %s",
     "ErrAssignIntf": "Failed to assign property values of %s object to the object values of the unsupported interface",
+    "ErrFieldIsNull": "%s field must be initialized",
     "ErrFloatParamIsNan": "\"%s\" parameter value equal to NaN is not allowed",
     "ErrFunctionRefIsNull": "Reference to %s function must be initialized",
     "ErrInvalidIndex": "Index value %d of \"%s\" parameter is out of [%d; %d] range",
@@ -2525,6 +2530,9 @@
   "Libraries/bgrtl/LinkSrvr": {
     "LockError": "UnLock method was called without Lock method",
     "UpdateError": "EndUpdate method was called without BeginUpdate method"
+  },
+  "Libraries/bgrtl/LoggerConfigurator": {
+    "ErrCannotConfigureLogger": "Failed to use logging parameters"
   },
   "Libraries/bgrtl/MathUtils": {
     "ErrBadMatrix": "Two-dimensional dynamic array is not rectangular matrix",
@@ -3183,6 +3191,10 @@
   "Libraries/Model/DataTree/OutputDataTreeSocketDef": {
     "OutputDataTreeSocketDefVendorCaption": "Data tree"
   },
+  "Libraries/Model/DerivedModelComponent": {
+    "ErrCannotUpdateConfigDefault": "Failed to update configuration of the derived supernode before activation. Unsupported configuration of nodes dependence was used.",
+    "ErrCannotUpdateConfigDesignMode": "Failed to update configuration of the derived supernode before activation. Try to update configuration of the current supernode manually."
+  },
   "Libraries/Model/DerivedModelComponentVendor": {
     "BaseComponentVendorGuidDesc": "Base component GUID",
     "BaseNode": "Base node",
@@ -3219,7 +3231,9 @@
   },
   "Libraries/Model/Generic/ModelGenericComponentEngine": {
     "ActivateOuterData": "External data",
-    "ErrInvalidModelLockContext": "Supernode already locked in another operation"
+    "ErrInnerNodesLocked": "Internal Supernode nodes locked",
+    "ErrInvalidModelLockContext": "Supernode already locked in another operation",
+    "ErrLockedNodesExist": "Supernode contains locked nodes"
   },
   "Libraries/Model/Generic/ModelGenericComponentVendor": {
     "GenericVendorCaption": "Supernode"
@@ -3343,7 +3357,7 @@
   },
   "Libraries/Model/ModelPackageManager": {
     "BackupRestored": "Error occurred while saving \"%s\" package. File restored from backup.",
-    "CompatConvertRequired": "While opening \"%s\" package of %s version converting will be performed.",
+    "CompatConvertRequired": "While opening \"%s\" package of %s version, converting will be performed.",
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
     "ErrCannotOpenFile": "Failed to open file: \"%s\"",
     "LogPackageSaved": "\"%s\" package saved",
@@ -3920,7 +3934,9 @@
     "UserName": "Username",
     "WarnClosePackageFailed": "Failed to close %s package from Session Manager. Probably, the session has already been closed",
     "WarnCloseSessionFailed": "Failed to close session from Session Manager. Probably, it has already been closed",
-    "WarnSessionStopTimeout": "Failed to terminate %s user session for %d milliseconds. Number of processes not completed: %d. List of active subprocesses: %s. List of not started subprocesses: %s."
+    "WarnSessionStopTimeout": "Failed to terminate %s user session for %d milliseconds. Number of processes not completed: %d. List of active subprocesses: %s. List of not started subprocesses: %s.",
+    "WarnStopPackageProcessesFailed": "Failed to stop the active processes in %s package, perhaps, the session has already been closed",
+    "WarnStopSessionProcessesFailed": "Failed to stop execution of the active session processes, perhaps, the session has already been closed"
   },
   "Studio/DeductorServerConnector": {
     "ErrCannotConfigureActiveConnection": "Cannot change active connection settings"
@@ -3961,6 +3977,7 @@
     "ErrUserHasActiveSessions": "%s user has active sessions",
     "ErrUserNameConflictsWithSharedDirectory": "Username conflicts with %s shared directory name",
     "ErrUserNameIsReserved": "%s identifier has already been reserved and it cannot be used as a username",
+    "ErrUserNameMustBeValid": "Username can consist of Latin letters, digits, _ - . characters and space,\nbut it cannot end with a dot or space.",
     "IsAdmin": "Admin",
     "IsDesigner": "Workflows design",
     "IsViewer": "View reports",
@@ -3999,6 +4016,7 @@
     "ErrSharedDirectoryAlreadyDeleted": "Shared directory already deleted",
     "ErrSharedDirectoryNameConflictsWithUser": "Username conflicts with %s shared directory name",
     "ErrSharedDirectoryNameIsReserved": "%s identifier has already been reserved and it cannot be used as a shared directory name",
+    "ErrSharedDirectoryNameMustBeValid": "Shared directory name can consist of Latin letters, digits, _ - . characters and space,\nbut it cannot end with a dot or space.",
     "LogAddDirectory": "%s shared directory created",
     "LogDeleteDirectory": "%s shared directory deleted",
     "SharedDirectoryMetaDesc": "Shared directory"

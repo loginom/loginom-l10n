@@ -51,6 +51,10 @@
     "ConfirmPackageStop": "Do you want to cancel execution of \"{0}\" package?",
     "ConfirmSessionClose": "Do you want to close \"{0}\" session without saving changes?",
     "ConfirmSessionStop": "Do you want to cancel execution of \"{0}\" session?",
+    "ErrCannotClosePackage": "Failed to close package. The package contains the active processes that have not been finished while timeout.",
+    "ErrCannotCloseSession": "Failed to close session. The session contains the active processes that have not been finished while timeout.",
+    "ErrCannotStopPackage": "Failed to stop execution of package. The package contains the active processes that have not been finished while timeout.",
+    "ErrCannotStopSession": "Failed to stop execution of session. The session contains the active processes that have not been finished while timeout.",
     "PackageRefCountTip": "Count of sessions referring to package",
     "ReadOnlyPackageNamePostfix": "(read-only)",
     "RoleTipFormat": "Session with {0} role has been started by user",
@@ -129,6 +133,7 @@
   },
   "app/LoginomMenuForm": {
     "ConfirmQuit": "There are not saved packages. Do you want to exit without saving?",
+    "ErrCannotCloseApplication": "Failed to close application due to the active processes that have not been finished while timeout.",
     "Menu": "Menu",
     "QAHref": "https://qa.loginom.com/questions/"
   },
@@ -137,7 +142,7 @@
     "CantCreateShareLinks": "Failed to generate address for the current page",
     "CantFindPackage": "Failed to find package",
     "CantGetAbsolutePath": "Failed to get absolute path for \"{0}\" file",
-    "ConfirmCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently locked.\nDo you want to close the package forcibly without saving?",
+    "ConfirmCannotCloseModel": "Failed to close \"{0}\" module in \"{1}\" package.\nSome of the nodes are currently locked.\nDo you want to cancel the active processes and close the package without saving?",
     "ConfirmQuitSave": "Do you want to save changes in \"{0}\" package?",
     "ErrOpenUrlPath": "Failed to open URL \"{0}\".\nError: \"{1}\".",
     "ErrPackageDontExists": "\"{0}\" package not found",
@@ -157,7 +162,7 @@
     "ErrLoadPackageErrors": "Errors occurred while \"{0}\" package opening",
     "ErrNoPackageToClose": "No package to be closed was found.",
     "ErrNoPackageToSave": "There is no package to save.",
-    "ErrOpenReadOnlyPackage": "\"{0}\" package is opened in read-only mode as it has already been opened by another user. Saving is possible only under a different name.",
+    "ErrOpenReadOnlyPackage": "\"{0}\" package is opened in read-only mode as it has already been opened by another user, or the file can be accesed in read-only mode. Saving is possible only under a different name.",
     "ErrSaveReadOnlyPackage": "Failed to save \"{0}\" read-only package without changing the name"
   },
   "app/MapTree": {
@@ -167,6 +172,7 @@
     "ConfirmCloseOtherPackages": "Do you want to close other packages?",
     "ConnectionDisplayNameDefault": "Connection",
     "Connections": "Connections",
+    "ErrCannotClosePackage": "Failed to close package. The package contains the active processes that have not been finished while timeout.",
     "ErrInstanceAlreadyExist": "ID already mapped to visual node",
     "ErrInstanceNotFound": "There is no associated visual node for ID",
     "FileStorage": "Files",

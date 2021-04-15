@@ -3344,7 +3344,7 @@
   },
   "Libraries/Model/ModelPackageManager": {
     "BackupRestored": "Error occurred while saving \"%s\" package. File restored from backup.",
-    "CompatConvertRequired": "While downloading \"%s\" package of %s version converting will be performed.",
+    "CompatConvertRequired": "While opening \"%s\" package of %s version converting will be performed.",
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
     "ErrCannotOpenFile": "Failed to open file: \"%s\"",
     "LogPackageSaved": "\"%s\" package saved",

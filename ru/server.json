@@ -3344,7 +3344,7 @@
   },
   "Libraries/Model/ModelPackageManager": {
     "BackupRestored": "При сохранении пакета \"%s\" возникла ошибка. Файл восстановлен из резервной копии.",
-    "CompatConvertRequired": "При загрузке пакета \"%s\" версии %s будет произведено конвертирование.",
+    "CompatConvertRequired": "При открытии пакета \"%s\" версии %s будет произведено конвертирование.",
     "ErrCannotLoadPackageElement": "Ошибка загрузки пакета: не удалось загрузить элемент \"%s\"",
     "ErrCannotOpenFile": "Не удалось открыть файл \"%s\"",
     "LogPackageSaved": "Сохранён пакет \"%s\"",

@@ -449,3 +449,4 @@ P-значение | P-value | |
 7. There should be no second person pronouns in the error messages.
 8. Better to use "null" instead of "empty".
 9. Если в ключе указывается Сoupler, значит и в переводе coupler (Например: Неизвестный тип описателя соединения - Unknown type of the coupler descriptor)
+10. Если в исходном варианте имеется тире, лучше избегать конструкций с is a..., denotes, etc. Предпочтительнее ставить двоеточие и сразу продолжать перевод. 

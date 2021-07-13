@@ -63,7 +63,7 @@
       "KindForBins": "Usage type"
     },
     "BinningContinuousBinItem": {
-      "LowerBound": "Lower range bound",
+      "LowerBound": "Lower bin bound",
       "UpperBound": "Upper range bound"
     },
     "BinningCountLinContMethodSettings": {
@@ -71,7 +71,7 @@
     },
     "BinningCustomBinItem": {
       "BinLabel": "Bin caption",
-      "BinNumber": "Bin number",
+      "BinNumber": "Bin index",
       "BoundModes": "Bin bound mode",
       "RelativeVolume": "Relative bin volume"
     },
@@ -145,7 +145,7 @@
   },
   "components/coarseclasses": {
     "CoarseClassesInputContinuousParams": {
-      "FineIntervalsCount": "Intervals count",
+      "FineIntervalsCount": "Bin count",
       "IncludeHighBounds": "Include upper interval bounds",
       "UsePrequanting": "Prequanting"
     },
@@ -265,7 +265,7 @@
     },
     "ElimOutlierColumnDefExtension": {
       "ActionExtr": "Extremes processing method",
-      "ActionOut": "Outliers processing method",
+      "ActionOut": "Outliers elimination method",
       "DetectEKvartil": "For extreme",
       "DetectESko": "For extreme",
       "DetectOKvartil": "For outlier",

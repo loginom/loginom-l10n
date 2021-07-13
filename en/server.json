@@ -399,7 +399,7 @@
     "ErrBinsInvalidFmt": "Bins for \"%s\" column are not valid for binning",
     "ErrBinsNotDefined": "Bins not defined for the specified parameters",
     "ErrCreateQuantizer": "Failed to create quantizer",
-    "ErrDefineBinsFailedFmt": "Failed to define binning intervals for \"%s\" field",
+    "ErrDefineBinsFailedFmt": "Failed to define binning ranges for \"%s\" field",
     "ErrInputDataSourceNotActive": "Quantized data source is not active",
     "ErrMethodNotDefined": "The binning method is not defined for the given parameters",
     "ErrMethodNotDefinedFmt": "Binning method unspecified for \"%s\" column",
@@ -409,13 +409,13 @@
     "ErrOrderID": "Bin identifiers not ordered",
     "ErrPreviewExamplesInvalidLength": "The template number does not match the data types number",
     "ExecuteProcess": "Output data processing",
-    "InputBinsDataSource": "External binning bins",
+    "InputBinsDataSource": "External binning ranges",
     "PostfixDisplayNameFmt": " %s %s",
     "PostfixExtermalBins": "External",
     "PostfixSDBins": "SD",
     "PostfixTileBins": "Tiled",
     "PostfixWithCountBins": "Bins",
-    "TeachProcess": "Binning bins forming"
+    "TeachProcess": "Binning ranges forming"
   },
   "components/binning/BinningLabelConstructor": {
     "Inf": "+Inf",
@@ -461,7 +461,7 @@
     "ErrZeroTileCount": "Bin (tile) count must be > 0",
     "NegativValueForTileSumm": "Negative values are not allowed when creating bins by sum of value",
     "SortProcessFmt": "%s field sorting",
-    "WarnNoRound": "In case of optimal tile binning bin bounds are not rounded"
+    "WarnNoRound": "In case of optimal tile binning range bounds are not rounded"
   },
   "components/binning/BinningQuantizers": {
     "ErrNoBins": "No bins defined for quantizer"
@@ -640,7 +640,7 @@
     "ErrColumnIsNotDifenied": "Failed to define the column to process",
     "ErrColumnNullDataFmt": "Failed to generate fine classes for \"%s\" field: all values are null",
     "ErrDataTypesNotMatch": "The specified column data type does not match the data type of the coarse classes",
-    "ErrNotPositiveIntervalsCount": "Interval count must be more than 0",
+    "ErrNotPositiveIntervalsCount": "Bin count must be more than 0",
     "From": "from ",
     "NullClass": "Null class",
     "To": "to "

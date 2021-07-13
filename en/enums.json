@@ -206,18 +206,18 @@
       "$Caption": "Range Table Field Usage Type",
       "None": "Not defined",
       "BinsID": "Bins identifier",
-      "BoundsDataType": "Range bounds data type",
-      "BinNumber": "Bin number",
+      "BoundsDataType": "Bin bounds data type",
+      "BinNumber": "Bin index",
       "LowerBound": "Lower bound",
       "UpperBound": "Upper bound",
       "BinLabel": "Caption",
       "LowerBoundQuota": "Lower bound quota",
       "UpperBoundQuota": "Upper bound quota",
       "BinQuota": "Bin quota",
-      "LowerDeviation": "Deviation from the lower range bound",
-      "UpperDeviation": "Deviation from the upper range bound",
-      "LowerLimitOpen": "Lower range bound open",
-      "UpperLimitOpen": "Upper range bound open"
+      "LowerDeviation": "Deviation from the lower bin bound",
+      "UpperDeviation": "Deviation from the upper bin bound",
+      "LowerLimitOpen": "Lower bin bound open",
+      "UpperLimitOpen": "Upper bin bound open"
     },
     "BinningMatchingObservationsMode": {
       "$Caption": "Ties",
@@ -239,7 +239,7 @@
     "BinningOutputColumnKind": {
       "$Caption": "Usage Type of Resultant Binning Fields",
       "BinsID": "Bins identifier",
-      "BinNumber": "Bin number",
+      "BinNumber": "Bin index",
       "BinLabel": "Caption",
       "LowerBound": "Lower bound",
       "UpperBound": "Upper bound",
@@ -248,10 +248,10 @@
       "LowerBoundQuota": "Lower bound quota",
       "UpperBoundQuota": "Upper bound quota",
       "BinQuota": "Bin quota",
-      "LowerDeviation": "Deviation from the lower range bound",
-      "UpperDeviation": "Deviation from the upper range bound",
-      "LowerLimitOpen": "Lower range bound open",
-      "UpperLimitOpen": "Upper range bound open",
+      "LowerDeviation": "Deviation from the lower bin bound",
+      "UpperDeviation": "Deviation from the upper bin bound",
+      "LowerLimitOpen": "Lower bin bound open",
+      "UpperLimitOpen": "Upper bin bound open",
       "OutOfBins": "Out of range value"
     },
     "BinningRoundingLevel": {
@@ -292,7 +292,7 @@
       "WoE": "Weight of evidence",
       "IV": "Information value",
       "Rate": "Class rate",
-      "UpperBoundIsOpen": "Upper range bound open",
+      "UpperBoundIsOpen": "Upper bin bound open",
       "PreQuantingApplied": "Prequantization"
     },
     "CoarseClassChartType": {

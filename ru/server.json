@@ -2664,7 +2664,10 @@
   },
   "Libraries/bgrtl/SysUtils": {
     "ErrCopyPasteRecursive": "Папка \"%s\" не может быть скопирована сама в себя",
-    "ErrFileMapping": "Ошибка мэппинга файла \"%s\""
+    "ErrCutPasteRecursive": "Папка \"%s\" не может быть перемещена сама в себя",
+    "ErrDirectoryNotExists": "Папка \"%s\" не существует",
+    "ErrFileMapping": "Ошибка мэппинга файла \"%s\"",
+    "ErrFileNotExists": "Файл \"%s\" не существует"
   },
   "Libraries/bgrtl/TextStream": {
     "ErrBadUnicodeStream": "Исходный поток данных имеет неправильный Unicode формат",
@@ -2829,7 +2832,7 @@
   },
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Не удалось установить свойство \"%s\"",
-    "ErrDisposeRuntime": "Ошибка при удалении среды выполнения JavaScript: \"%s\"",
+    "ErrDisposeRuntime": "Ошибка при удалении среды выполнения JavaScript",
     "ErrMessageQueue": "Не обработанное исключение при постановке в очередь событий JavaScript",
     "ErrMessageUnhandledPromiseRejection": "Не обработанное исключение при отслеживании отклоненных Promise",
     "ErrOriginalDll": "Операция не поддерживается. Используется несовместимая версия библиотеки ChakraCore.",
@@ -3446,7 +3449,8 @@
     "ErrPortMismatch": "Несовместимый компонент: не совпадает список портов узла",
     "ErrPortParentIsNil": "Ссылка на порт узла не входит в какой-либо список",
     "ErrPublishedNodeNameIsEmpty": "Не задано имя опубликованного узла",
-    "ErrSocketNotConfigured": "Порт не настроен",
+    "ErrRequiredPortLinkNotConnected": "К обязательному порту \"%s\" не подключена связь",
+    "ErrSocketNotConfigured": "Порт \"%s\" не настроен",
     "ErrUnableToLoadNodeConfig": "Не удалось загрузить конфигурацию узла",
     "ErrVariableDataTypeChanged": "Изменился тип данных переменной \"%s\"",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Количество имён и значений переменных должно быть одинаковым",
@@ -3454,9 +3458,9 @@
     "ErrVendorMalfunction": "Компонент узла \"%s\" неисправен",
     "ExplodeGenericModel": "Подмодель \"%s\" развернута",
     "Left": "Слева",
-    "LogActivateNodeStart": "Активация узла \"%s\"",
-    "LogActivateNodeSuccess": "Успешно активирован узел \"%s\"",
-    "LogDeactivateNode": "Деактивирован узел \"%s\"",
+    "LogActivateNodeStart": "Активация узла \"%s\" GUID=%s",
+    "LogActivateNodeSuccess": "Успешно активирован узел \"%s\" GUID=%s",
+    "LogDeactivateNode": "Деактивирован узел \"%s\" GUID=%s",
     "LogNodeActivationError": "Ошибка активации узла \"%s\" GUID=%s",
     "LogPackagedNodeActivationError": "Ошибка активации узла \"%s\" GUID=%s Пакет=%s",
     "ResetModelNodeConfiguration": "У узла \"%s\" восстановлена исходная конфигурация",
@@ -3986,7 +3990,7 @@
     "LogDeleteGroup": "Удалена группа %s",
     "LogDeleteUser": "Удален пользователь %s",
     "LogUserPropertySet": "Изменение учетной записи %s: %s=%s",
-    "UseGlobalFileStorage": "Использование глобального файлового хранилище",
+    "UseGlobalFileStorage": "Использование глобального файлового хранилища",
     "User": "Пользователь",
     "UserMetaDesc": "Пользователь"
   },
@@ -4146,7 +4150,6 @@
   },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
-    "ErrOrderNumberDim": "Некорректные порядковые номера измерений",
     "MsgMissingDimensionInColumn": "В наборе данных не найдено поле \"%s\" соответствующее измерению в колонке \"%s\".",
     "MsgMissingDimensionInRow": "В наборе данных не найдено поле \"%s\" соответствующее измерению в строке \"%s\".",
     "MsgNoValues": "Нет значений"

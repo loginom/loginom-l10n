@@ -1204,8 +1204,6 @@
   },
   "filestorage/CopyPasteManager": {
     "CantCopyInTheSameDirectory": "Нельзя скопировать в тот же самый каталог",
-    "CantDeleteFileAfterPasting": "Не удалось удалить исходный файл {0} после вставки",
-    "CantDeleteFolderAfterPasting": "Не удалось удалить исходный каталог {0} после вставки",
     "CantPasteFile": "Не удалось вставить файл",
     "CantPasteFolder": "Не удалось вставить каталог",
     "Copied": "Скопировано",

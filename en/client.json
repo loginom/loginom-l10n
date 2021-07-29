@@ -400,7 +400,7 @@
     "ContextMenuInsertFormateFmt": "Insert format: {0}",
     "ContextMenuInsertKeyFmt": "Insert key: {0}",
     "Desc": "Bin index",
-    "DescAVE": "Arithmetic average of bin boundaries",
+    "DescAVE": "Arithmetic average of bin bounds",
     "DescCP": "Closing \")\" or \"]\" bracket",
     "DescFD": "Caption of quantized field (%FD[3-7] - from the 3rd to the 7th character inclusively)",
     "DescFN": "Name of quantized field (%FN[5] - the first 5 name characters)",

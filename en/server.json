@@ -443,7 +443,7 @@
     "ErrSkoAvgFmt": "Failed to get SD/mean for %s field",
     "ErrStatFmt": "Failed to get minimum maximum for %s field",
     "ErrTooManyBinsFmt": "Too many bins defined for %s integer field",
-    "ErrUpperLimit": "No upper range bound specified",
+    "ErrUpperLimit": "No upper bins bound specified",
     "ErrVerySmallWidthFmt": "For %s integer field bin width must be >= 1",
     "ErrWrongBinsDataType": "Invalid bin data type",
     "ErrZeroBinsWidth": "Bin width must be more than 0",

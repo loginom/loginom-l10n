@@ -64,7 +64,7 @@
     },
     "BinningContinuousBinItem": {
       "LowerBound": "Lower bin bound",
-      "UpperBound": "Upper range bound"
+      "UpperBound": "Upper bin bound"
     },
     "BinningCountLinContMethodSettings": {
       "BinsCount": "Count"

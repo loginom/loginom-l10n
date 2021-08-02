@@ -2664,7 +2664,10 @@
   },
   "Libraries/bgrtl/SysUtils": {
     "ErrCopyPasteRecursive": "\"%s\" folder cannot be copied into itself",
-    "ErrFileMapping": "\"%s\" file mapping error"
+    "ErrCutPasteRecursive": "\"%s\" folder cannot be moved into itself",
+    "ErrDirectoryNotExists": "\"%s\" folder does not exist",
+    "ErrFileMapping": "\"%s\" file mapping error",
+    "ErrFileNotExists": "\"%s\" file does not exist"
   },
   "Libraries/bgrtl/TextStream": {
     "ErrBadUnicodeStream": "Source data stream has invalid Unicode format",
@@ -2829,7 +2832,7 @@
   },
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Failed to set \"%s\" property",
-    "ErrDisposeRuntime": "Error disposing JavaScript runtime environment: \"%s\"",
+    "ErrDisposeRuntime": "Error while deleting JavaScript runtime environment",
     "ErrMessageQueue": "Unhandled exception when queuing JavaScript events",
     "ErrMessageUnhandledPromiseRejection": "Unhandled exception when tracking rejected Promise",
     "ErrOriginalDll": "Operation is not supported. Inncompatible version of ChakraCore library is used.",
@@ -3446,7 +3449,8 @@
     "ErrPortMismatch": "Incompatible component: node port list does not match",
     "ErrPortParentIsNil": "Reference to the node port is not included into list",
     "ErrPublishedNodeNameIsEmpty": "No published node name specified",
-    "ErrSocketNotConfigured": "Port not configured",
+    "ErrRequiredPortLinkNotConnected": "Link to the required port \"%s\" does not exist",
+    "ErrSocketNotConfigured": "\"%s\" port not configured",
     "ErrUnableToLoadNodeConfig": "Failed to load the node configuration",
     "ErrVariableDataTypeChanged": "\"%s\" variable data type changed",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Number of names and variables values must be the same",
@@ -3454,9 +3458,9 @@
     "ErrVendorMalfunction": "\"%s\" node component is malfunctioned",
     "ExplodeGenericModel": "Expanded \"%s\" supernode",
     "Left": "Left",
-    "LogActivateNodeStart": "Activating \"%s\" node",
-    "LogActivateNodeSuccess": "Successfully activated \"%s\" node",
-    "LogDeactivateNode": "\"%s\" node deactivated",
+    "LogActivateNodeStart": "Activating \"%s\" GUID=%s node",
+    "LogActivateNodeSuccess": "Successfully activated \"%s\" GUID=%s node",
+    "LogDeactivateNode": "\"%s\" GUID=%s node deactivated",
     "LogNodeActivationError": "Error activating \"%s\" node, GUID=%s",
     "LogPackagedNodeActivationError": "Error while \"%s\" node activation GUID=%s Package=%s",
     "ResetModelNodeConfiguration": "Initial configuration of \"%s\" node reset",
@@ -4145,7 +4149,6 @@
   },
   "Viewers/Cube/CubeDimensions": {
     "CubeEmptyDimValue": "<...>",
-    "ErrOrderNumberDim": "Invalid dimension index numbers",
     "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
     "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"

@@ -1203,8 +1203,6 @@
   },
   "filestorage/CopyPasteManager": {
     "CantCopyInTheSameDirectory": "Failed to copy into the same directory",
-    "CantDeleteFileAfterPasting": "Failed to delete source file {0} after pasting",
-    "CantDeleteFolderAfterPasting": "Failed to delete source directory {0} after pasting",
     "CantPasteFile": "Failed to paste file",
     "CantPasteFolder": "Failed to paste folder",
     "Copied": "Copied",

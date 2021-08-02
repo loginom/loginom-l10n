@@ -482,7 +482,7 @@
     "ErrExceededRecursiveCalls": "Maximum number of (%d) recursive calls of Data function in \"%s\" expression exceeded.\nTo solve this problem it is required to enable Caching.",
     "ErrExprIsStringType": "\"%s\" expression of string type",
     "ErrGetVarArrayUnsupported": "The arrays related to the variant type can return only intermediate expressions (\"%s\" expression, %d row)",
-    "ErrVarExprAmbiguity": "\"%0:s\" can be input variable or intermediate expression. To allow nonuniqueness, use \"%1:s%0:s\" to access the variable or rename \"%0:s\" expression. ",
+    "ErrVarExprAmbiguity": "\"%0:s\" can be input variable or intermediate expression. To allow nonuniqueness, use \"%1:s%0:s\" to access the variable or rename \"%0:s\" expression.",
     "InputVariables": "Input variables",
     "NameNotExists": "No field, variable or expression with \"%s\" name exists"
   },
@@ -1165,7 +1165,7 @@
     "RegForwardStepProcessName": "Stepwise selection - %s factor adding",
     "RegPrepareData": "Preparing data before training",
     "RegTrainElnetGridProcessName": "Model training (L1-regularization coefficient = %.4f L2-regularization coefficient = %.4f)",
-    "RegTrainLassoGridProcessName": "Model building (L1-regularization coefficient = %.4f)",
+    "RegTrainLassoGridProcessName": "Model training (L1-regularization coefficient = %.4f)",
     "RegTrainProcessName": "%s method - model training",
     "RegTrainRidgeGridProcessName": "Model training (L2-regularization coefficient = %.4f)",
     "ValidationProcess": "Model validation"

@@ -648,8 +648,8 @@
     "ColumnCachingMethod": {
       "$Caption": "Field Caching",
       "None": "Off",
-      "Complete": "While activation",
-      "Deferred": "While handling"
+      "Complete": "On activation",
+      "Deferred": "On cell access"
     },
     "DataSourceCachingMethod": {
       "$Caption": "Data Set Caching",

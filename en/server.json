@@ -1030,7 +1030,7 @@
     "TrainSamples": "Samples in the training set"
   },
   "components/forecast/ForecastEngine": {
-    "AdjustedR2": "Adjusted determination coefficient",
+    "AdjustedR2": "Adjusted сoefficient of determination",
     "AIC": "Akaike information criterion",
     "AICc": "Akaike information criterion corrected",
     "BIC": "Bayesian information criterion",
@@ -1054,7 +1054,7 @@
     "ParameterNameColumn": "Parameter",
     "PredictedColumn": "%s|Prediction",
     "PValueColumn": "P-value",
-    "R2": "Determination coefficient",
+    "R2": "Coefficient of determination",
     "ResDF": "Number of the residues degrees of freedom",
     "ResidualColumn": "%s|Approximation error",
     "SEColumn": "Standard deviation",
@@ -2832,7 +2832,7 @@
   },
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Failed to set \"%s\" property",
-    "ErrDisposeRuntime": "Error while deleting JavaScript runtime environment",
+    "ErrDisposeRuntime": "Error while disposing JavaScript runtime environment",
     "ErrMessageQueue": "Unhandled exception when queuing JavaScript events",
     "ErrMessageUnhandledPromiseRejection": "Unhandled exception when tracking rejected Promise",
     "ErrOriginalDll": "Operation is not supported. Inncompatible version of ChakraCore library is used.",

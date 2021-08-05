@@ -1030,7 +1030,7 @@
     "TrainSamples": "Samples in the training set"
   },
   "components/forecast/ForecastEngine": {
-    "AdjustedR2": "Adjusted сoefficient of determination",
+    "AdjustedR2": "Adjusted coefficient of determination",
     "AIC": "Akaike information criterion",
     "AICc": "Akaike information criterion corrected",
     "BIC": "Bayesian information criterion",

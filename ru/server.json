@@ -1568,6 +1568,9 @@
     "NodeIndex": "Индекс узла",
     "NodeName": "Имя узла"
   },
+  "components/slidingwindow/SlidingWindow": {
+    "ErrOutputColCountOverflow": "Указаны слишком большие значения Глубина истории и/или Горизонт прогноза"
+  },
   "components/slidingwindow/SlidingWindowVendor": {
     "VendorCaption": "Скользящее окно",
     "VendorDescription": "Транспозиция одного или нескольких столбцов данных с использованием скользящего окна"
@@ -3903,7 +3906,6 @@
     "ErrInvalidModelLockCookieOwner": "Указан некорректный владелец Cookie блокировки узлов",
     "ErrInvalidPath": "Некорректный путь к файлу: \"%s\"",
     "ErrModelNodeNotFound": "Узел %s не найден",
-    "ErrModelNodeNotPublished": "Узел \"%s\" не опубликован",
     "ErrMustRestoreReferencedPackage": "Невозможно восстановить зависимый пакет %s, не восстанавливая пакет %s, на который он ссылается",
     "ErrNoPublishedNodes": "Пакет не содержит ни одного опубликованного узла",
     "ErrPackageAlreadyEditing": "Пакет с именем %s уже используется другим процессом и не может быть открыт для редактирования",

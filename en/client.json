@@ -2097,7 +2097,7 @@
   },
   "viewers/regression/LinRegressReportView": {
     "ModelInfoMaxLikelihood": "Maximum of the likelihood function",
-    "TStatInfoParam": "T-statistics"
+    "TStatInfoParam": "T-statistic"
   },
   "viewers/regression/LogRegressReportView": {
     "IsEvent": "Event",

@@ -1061,7 +1061,7 @@
     "TrainAvgError": "The mean absolute error of the training set",
     "TrainAvgRelError": "The mean relative error of the training set",
     "TrainRMSError": "The root-mean-square error of the training set",
-    "TStatColumn": "T-statistics",
+    "TStatColumn": "T-statistic",
     "UBoundColumn": "%s|Upper bound"
   },
   "components/forecast/ForecastVendor": {
@@ -1143,7 +1143,7 @@
     "RegressionLBoundNamePostfix": "|CI lower bound",
     "RegressionPValueNamePostfix": "|Significance",
     "RegressionStdErrorNamePostfix": "|Std. dev.",
-    "RegressionTStatNamePostfix": "|T-statistics",
+    "RegressionTStatNamePostfix": "|T-statistic",
     "RegressionUBoundNamePostfix": "|CI upper bound",
     "TestSamples": "Samples in the test set",
     "TotalSamples": "Total samples",
@@ -2603,7 +2603,7 @@
     "ErrNullsNotAllowed": "Null values are not allowed (null value in \"%s\" column)",
     "ErrProcessKeptStatistics": "Errors occurred while calculating the list of unique values",
     "ErrProcessKeptStatisticsNonExistentNull": "Previously missing null value was found in \"%s\" field",
-    "ErrProcessKeptStatisticsNonExistentValue": "Previously missing null value \"%s\" was found in \"%s\" field",
+    "ErrProcessKeptStatisticsNonExistentValue": "Previously missing value \"%1:s\" was found in \"%0:s\" field",
     "ErrStatisticsBuildCookieInvalidOwner": "The statistics builder Cookie belongs to another object",
     "ErrStatisticsBuildCookieIsNil": "Attempt to complete the calculation completion operation with null reference to the statistics builder Cookie"
   },

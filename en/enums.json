@@ -959,7 +959,7 @@
       "SyncExtra": "Extra"
     }
   },
-  "Libraries/bgrtl/Consts": {
+  "Libraries/bgrtl/EnumDescs": {
     "AggregationType": {
       "$Caption": "Aggregation Function Type",
       "Sum": "Sum",
@@ -987,7 +987,7 @@
       "Or": "OR"
     },
     "ContextUsageType": {
-      "$Caption": "Usage Type",
+      "$Caption": "Usage type",
       "Unspecified": "Unspecified",
       "Useless": "Useless",
       "Excluded": "Excluded",
@@ -1101,7 +1101,7 @@
       "DataKind": "Data kind",
       "Size": "Data size",
       "DefaultUsageType": "Default usage type",
-      "UsageType": "Usage type",
+      "UsageType": "Usage Type",
       "Index": "No",
       "ID": "ID",
       "Data": "Data"
@@ -1458,12 +1458,6 @@
       "$Caption": "Regularization Coefficient Setup Method",
       "Manually": "Custom",
       "Grid": "Auto"
-    },
-    "StatisticsModeType": {
-      "$Caption": "Statistics Calculation Mode",
-      "None": "Do not calculate",
-      "All": "For all models",
-      "FinalOnly": "For the final model"
     }
   },
   "Studio/DeductorSessionsManager": {
@@ -1514,12 +1508,6 @@
       "GridLines": "Match grid",
       "Scale": "Combine scale"
     },
-    "AxisLabelsStyle": {
-      "$Caption": "Axis Caption Type",
-      "None": "No",
-      "Value": "Values",
-      "Percent": "Percent"
-    },
     "AxisPosition": {
       "$Caption": "Axis Position",
       "Abscissa": "Lower",
@@ -1533,20 +1521,6 @@
       "Datetime": "Date/Time",
       "Category": "Categories"
     },
-    "ChartError": {
-      "$Caption": "Chart Error",
-      "DateTimeWarning": "Time data on the real axis",
-      "NoData": "No data to display",
-      "InValidColumn": "Field type does not match",
-      "InValidAxis": "Series type and axis do not match"
-    },
-    "ChartExportFormat": {
-      "$Caption": "Export Format",
-      "SVG": "SVG",
-      "PNG": "PNG",
-      "JPG": "JPG",
-      "PDF": "PDF"
-    },
     "ChartLinkKind": {
       "$Caption": "Field Type",
       "None": "No",
@@ -1555,34 +1529,13 @@
       "YHighData": "Y field max",
       "YColorData": "Color field",
       "BubbleData": "Bubble size",
-      "Labels": "Caption field",
-      "Open": "Open",
-      "Close": "Close"
-    },
-    "ChartMode": {
-      "$Caption": "Type of Pointers",
-      "Hand": "Hand",
-      "Ruler": "Ruler",
-      "Pointer": "Pointer",
-      "Zoom": "Zoom",
-      "Marker": "Marker"
+      "Labels": "Caption field"
     },
     "ChartStacking": {
       "$Caption": "Stacking Type",
       "None": "No",
       "Normal": "Normal",
       "Percent": "Percent"
-    },
-    "ChartTheme": {
-      "$Caption": "Color Scheme",
-      "Default": "Standard",
-      "DarkBlue": "Dark blue",
-      "DarkGreen": "Dark green",
-      "Dark": "Dark",
-      "Gray": "Gray",
-      "Grid": "Table",
-      "GridLight": "Light table",
-      "SandSignica": "Sand"
     },
     "ChartType": {
       "$Caption": "Chart Type",
@@ -1599,9 +1552,7 @@
       "ErrorBar": "Errors",
       "Polygon": "Polygon",
       "ColumnRange": "Columns with ranges",
-      "HeatMap": "Heatmap",
-      "CandleStick": "Candlestick",
-      "OHLC": "OHLC"
+      "HeatMap": "Heatmap"
     },
     "DecimationType": {
       "$Caption": "Point Filter",
@@ -1639,11 +1590,6 @@
       "PercentTotal": "Percent, total",
       "LabelPercentTotal": "Caption, percentage, total",
       "XValue": "X value"
-    },
-    "SeriesMarksAngle": {
-      "$Caption": "Caption Angle",
-      "LeftRight": "Top down",
-      "TopDown": "From right to left"
     }
   },
   "Viewers/ClusterProfiles/ClusterProfilesView": {

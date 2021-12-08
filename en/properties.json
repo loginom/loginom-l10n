@@ -116,7 +116,8 @@
       "Description": "Description",
       "DisplayName": "Caption",
       "Expression": "Expression",
-      "Intermediate": "Intermediate expression"
+      "Intermediate": "Intermediate expression",
+      "Name": "Name"
     }
   },
   "components/clope": {
@@ -190,7 +191,6 @@
   },
   "components/crosstab": {
     "CrossTabEngine": {
-      "AllowInvalidName": "Allow invalid names",
       "DisplayNameSeparator": "Field caption parts separator",
       "SlidingUniqueValues": "Sliding unique values",
       "SlidingUniqueValuesLimit": "Value number limit",
@@ -831,9 +831,7 @@
       "QualitySpeed": "Accuracy/speed priority"
     },
     "RegressionStatisticsParams": {
-      "PredictionIntervalLevel": "% confidence interval",
-      "PredictionIntervalNeeded": "Calculate confidence interval",
-      "StatisticsMode": "Statistics calculation mode"
+      "PredictionIntervalLevel": "% confidence interval"
     },
     "RegularizationParams": {
       "LambdaLasso": "L1-regularization coefficient",
@@ -895,15 +893,6 @@
       "SSLPrivateKeyFile": "Private key file name",
       "WSPort": "WebSocket port",
       "WSSPort": "WebSocket SSL/TLS port"
-    }
-  },
-  "Viewers/Chart/Bridge/ChartColumnInfo": {
-    "ChartColumnInfo": {
-      "DisplayName": "Column caption",
-      "Name": "Column name"
-    },
-    "ChartColumnLink": {
-      "LinkKind": "Column type"
     }
   }
 }

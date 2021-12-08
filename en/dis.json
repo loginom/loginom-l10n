@@ -40,7 +40,6 @@
     "StoppingService": "Service shutdown, application domain name: \"{0}\", identifier: {1}"
   },
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
-    "ErrInputNeedsToBeWrappedInAnObject": "Input parameters must be wrapped in an object",
     "ErrInvalidCharsetQualityFormat": "Invalid format of the list item in Accept-Charset header: {0}",
     "ErrInvalidContentType": "Invalid value of the Content-Type header: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",

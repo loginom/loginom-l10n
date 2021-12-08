@@ -375,9 +375,6 @@
     "VendorCaption": "Association Rules",
     "VendorDesc": "Association rules search"
   },
-  "components/assnrules/FPTree": {
-    "Support": "Support"
-  },
   "components/autocorrelation/AutoCorrelationEngine": {
     "ACFDisplayName": "ACF",
     "ErrFFTHugeSize": "The input data source size exceeds the allowable values for calculation in the frequency domain",
@@ -410,11 +407,6 @@
     "ErrPreviewExamplesInvalidLength": "The template number does not match the data types number",
     "ExecuteProcess": "Output data processing",
     "InputBinsDataSource": "External binning ranges",
-    "PostfixDisplayNameFmt": " %s %s",
-    "PostfixExtermalBins": "External",
-    "PostfixSDBins": "SD",
-    "PostfixTileBins": "Tiled",
-    "PostfixWithCountBins": "Bins",
     "TeachProcess": "Binning ranges forming"
   },
   "components/binning/BinningLabelConstructor": {
@@ -545,12 +537,6 @@
   "components/clope/CLOPEVendor": {
     "VendorCaption": "Transaction Clustering",
     "VendorDesc": "CLOPE algorithm transaction clustering"
-  },
-  "components/clope/TransactionDataSourceSet": {
-    "DataSourceSupplColumnName": "Field name",
-    "DataSourceSupplItem": "Supplementary data source field",
-    "ElementValuesSuppl": "Unique values suppl.",
-    "EncodeArray": "Item index"
   },
   "components/clusterization/Clusterization": {
     "ErrNoTrainData": "No train data",
@@ -841,12 +827,7 @@
   },
   "components/execnode/ExecNodeComponent": {
     "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" node for which inheritance is forbidden",
-    "ErrNodeLocked": "\"%s\" node is locked",
-    "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrPortNotConfigurable": "Port configuration not supported",
-    "ErrReferencedNodeNotAvailable": "Source node not available",
-    "ErrReferencedNodeNotFound": "Source node not found",
-    "ErrReferencedNodeNotSpecified": "No reference to node specified",
     "ErrUnableToLoadComponentConfig": "Failed to load the internal component configuration"
   },
   "components/execnode/ExecNodeComponentVendor": {
@@ -896,9 +877,9 @@
     "Checked": "Checked"
   },
   "components/filterdata/FilterColumns": {
-    "bdtCurrent": "current date",
-    "bdtData": "available data",
     "CompareTipFmt": "%s and %s",
+    "DayFirstPostfix": "first",
+    "DayLastPostfix": "last",
     "ErrColumnNotFound": "Field is specified incorrectly",
     "ErrCompareValueIsNull": "The compared value not defined",
     "ErrEmptyCompareValueList": "No list of values specified",
@@ -910,39 +891,18 @@
     "ErrNoConditions": "No filtering criteria",
     "ErrRowNumberNotSupported": "Row numerators not supported",
     "ErrUnknownDataType": "No data type specified",
-    "FirstLastDateFmt": "%s %s %s from %s",
-    "fld0and5to20DayPeriodName": "days",
-    "fld0and5to20MonthPeriodName": "months",
-    "fld0and5to20QuarterPeriodName": "quarters",
-    "fld0and5to20WeekPeriodName": "weeks",
-    "fld0and5to20WrongPeriodName": "periods",
-    "fld0and5to20YearPeriodName": "years",
-    "fld2to4DayPeriodName": "day",
-    "fld2to4MonthPeriodName": "month",
-    "fld2to4QuarterPeriodName": "quarter",
-    "fld2to4WeekPeriodName": "week",
-    "fld2to4WrongPeriodName": "period",
-    "fld2to4YearPeriodName": "year",
-    "fldDayFirstPostfix": "first",
-    "fldDayLastPostfix": "last",
-    "fldManyFirstPostfix": "first",
-    "fldManyLastPostfix": "last",
-    "fldMonthFirstPostfix": "first",
-    "fldMonthLastPostfix": "last",
-    "fldOneDayPeriodName": "day",
-    "fldOneMonthPeriodName": "month",
-    "fldOneQuarterPeriodName": "quarter",
-    "fldOneWeekPeriodName": "week",
-    "fldOneWrongPeriodName": "period",
-    "fldOneYearPeriodName": "year",
-    "fldOtherFirstPostfix": "first",
-    "fldOtherLastPostfix": "last",
-    "fldQuarterFirstPostfix": "First",
-    "fldQuarterLastPostfix": "last",
-    "fldWeekFirstPostfix": "first",
-    "fldWeekLastPostfix": "last",
-    "fldYearFirstPostfix": "first",
-    "fldYearLastPostfix": "last"
+    "ManyFirstPostfix": "first",
+    "ManyLastPostfix": "last",
+    "MonthFirstPostfix": "first",
+    "MonthLastPostfix": "last",
+    "OtherFirstPostfix": "first",
+    "OtherLastPostfix": "last",
+    "QuarterFirstPostfix": "First",
+    "QuarterLastPostfix": "last",
+    "WeekFirstPostfix": "first",
+    "WeekLastPostfix": "last",
+    "YearFirstPostfix": "first",
+    "YearLastPostfix": "last"
   },
   "components/filterdata/FilterData": {
     "ErrPreviewDataSourceNotActive": "Failed to apply filter, input not activated",
@@ -1116,8 +1076,7 @@
   },
   "components/linregression/LinRegressionBuilder": {
     "ErrWrongLinRegContext": "Invalid linear regression model builder context",
-    "ErrWrongLinRegModel": "The trained model is not linear regression model",
-    "ErrWrongProbability": "Confidence interval threshold must be within (0, 100)"
+    "ErrWrongLinRegModel": "The trained model is not linear regression model"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "The linear regression model builder context cannot be created for empty data set"
@@ -1289,20 +1248,13 @@
     "ErrParallelProcessingError": "Error occurred while parallel loop processing",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Posttested loop does not support parallel processing",
     "ErrPortNotConfigurable": "Port configuration not supported",
-    "ErrReferencedNodeVendorNotFound": "Source node or component not found",
     "ErrSocketIsNotInputDataSourceSocket": "\"%s\" port is not input port containing data set",
     "ErrSocketNotConfigured": "Port not configured",
     "ErrUnsupportedInputSocketType": "Unsupported \"%s\" port type",
     "IterationCaption": "Iteration #%d",
-    "IterationConfiguration": "Saved configuration",
-    "IterationConfigurationCount": "Configuration count",
-    "IterationConfigurationItem": "Configuration collection item",
     "IterationErrorDetailsFieldDisplayName": "Detailed error information",
     "IterationErrorMessageFieldDisplayName": "Error message",
-    "IterationIdentifierDataType": "Configuration ID data type",
-    "IterationIdentifiers": "Identifier values",
     "IterationIdFieldDisplayName": "Iteration identifier",
-    "IterationIndex": "Iteration index",
     "IterationStatusSocketName": "Iteration execution status",
     "IterationSuccessFlagFieldDisplayName": "Success flag field",
     "ProcessActivate": "Activating \"%s\" node",
@@ -2069,7 +2021,6 @@
     "ErrDateOutOfRange": "%s date is out of allowable range [%s; %s]"
   },
   "Libraries/bgdbrtl/DB": {
-    "ComponentTip": "%s [%s]",
     "ErrCommandTypeNotYetSupported": "%s type of SQL command not supported yet",
     "ErrConnectionString": "Empty connection string",
     "ErrDatabasePathNotExists": "\"%s\" file not found",
@@ -2163,9 +2114,7 @@
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Bit index is out of range",
     "ErrStringIsNotSet": "\"%s\" string is not a valid set view",
-    "ErrSubSetPowerIsZerro": "Attempt to extract all subsets with the power less than 0 or more than the set power as such",
-    "IndexesDesc": "Array of indexes",
-    "SizeDesc": "Set power"
+    "ErrSubSetPowerIsZerro": "Attempt to extract all subsets with the power less than 0 or more than the set power as such"
   },
   "Libraries/bgrtl/CachedDataSet": {
     "ErrRowCountLimitReached": "Maximum row count limit reached"
@@ -2184,7 +2133,6 @@
     "ErrTableIndexOutOfRange": "Table number %d is out of [%d; %d] range"
   },
   "Libraries/bgrtl/Classes": {
-    "CountDesc": "Count",
     "ErrConfigApplyModeNotSupported": "This method of configuration loading not supported",
     "ErrInvalidName": "\"%s\" is not a valid identifier",
     "ErrItemAlreadyExist": "%s with \"%s\" name already exists",
@@ -2200,8 +2148,6 @@
     "ErrUnableToRecreateNamesIndex": "Failed to recreate node name index",
     "ErrVendorAlreadyRegistered": "\"%s\" vendor has already been registered",
     "ErrVendorNameConverterAlreadyRegistered": "Name converter from \"%s\" to\"%s\" vendors already registered",
-    "IDDesc": "Identifier",
-    "Item": "Item",
     "ItemMetaDesc": "Item"
   },
   "Libraries/bgrtl/ClassFactory": {
@@ -2220,7 +2166,6 @@
     "ErrSize": "Data size must be more than or equal to zero"
   },
   "Libraries/bgrtl/ColumnDefsVendor": {
-    "ColumnInfosVendorMetaDesc": "column definition vendor",
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable column \"%s\""
   },
@@ -2236,32 +2181,7 @@
     "ErrColumnCanBeIncludedInOnlyOneLink": "\"%s\" column of table %d can only be part of a \"single\" link",
     "ErrLinkedColumnTypesMismatch": "\"%s\" and \"%s\" types of linked columns mismatch",
     "ErrLinkMustContainMainTableColumn": "The main table field must be provided while link is created",
-    "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
-    "Link": "Link"
-  },
-  "Libraries/bgrtl/Consts": {
-    "bdtCurrent": "current date",
-    "bdtData": "available data",
-    "FirstLastDateFmt": "%s %s %s from %s",
-    "fld0and5to20DayPeriodName": "days",
-    "fld0and5to20MonthPeriodName": "months",
-    "fld0and5to20QuarterPeriodName": "quarters",
-    "fld0and5to20WeekPeriodName": "weeks",
-    "fld0and5to20WrongPeriodName": "periods",
-    "fld0and5to20YearPeriodName": "years",
-    "fld2to4DayPeriodName": "day",
-    "fld2to4MonthPeriodName": "month",
-    "fld2to4QuarterPeriodName": "quarter",
-    "fld2to4WeekPeriodName": "week",
-    "fld2to4WrongPeriodName": "period",
-    "fld2to4YearPeriodName": "year",
-    "fldOneDayPeriodName": "day",
-    "fldOneMonthPeriodName": "month",
-    "fldOneQuarterPeriodName": "quarter",
-    "fldOneWeekPeriodName": "week",
-    "fldOneWrongPeriodName": "period",
-    "fldOneYearPeriodName": "year",
-    "VersionSerialNumber": "Serial number"
+    "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached"
   },
   "Libraries/bgrtl/Couplers": {
     "ErrModelSocketCouplerDefAlreadyCoupled": "Already coupled"
@@ -2301,13 +2221,34 @@
     "ErrChangeIsContainerNotAllowed": "Failed to change the container indicator of a node that is a root node, or contains child nodes",
     "ErrNodeCantBeContinuous": "\"%s\" node of \"%s\" type cannot be continuous",
     "ErrOnlyContainerNodeCanHaveSubNodes": "Only container node can have subnodes",
-    "Root": "Root node",
     "RootNodeDisplayName": "Root"
   },
   "Libraries/bgrtl/DataTreeNodeDefsVendor": {
-    "DataTreeNodeInfosVendorMetaDesc": "node definition vendor",
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable node \"%s\"",
     "ErrNodeTypesMismatch": "%s node type is not compatible with %s source node type"
+  },
+  "Libraries/bgrtl/DateUtils": {
+    "AvailableData": "available data",
+    "CurrentData": "current date",
+    "DayPeriodNameFew": "day",
+    "DayPeriodNameMany": "days",
+    "DayPeriodNameOne": "day",
+    "FirstLastDateFmt": "%s %s %s from %s",
+    "MonthPeriodNameFew": "month",
+    "MonthPeriodNameMany": "months",
+    "MonthPeriodNameOne": "month",
+    "QuarterPeriodNameFew": "quarter",
+    "QuarterPeriodNameMany": "quarters",
+    "QuarterPeriodNameOne": "quarter",
+    "WeekPeriodNameFew": "week",
+    "WeekPeriodNameMany": "weeks",
+    "WeekPeriodNameOne": "week",
+    "WrongPeriodNameFew": "period",
+    "WrongPeriodNameMany": "periods",
+    "WrongPeriodNameOne": "period",
+    "YearPeriodNameFew": "year",
+    "YearPeriodNameMany": "years",
+    "YearPeriodNameOne": "year"
   },
   "Libraries/bgrtl/DelayLoadHook": {
     "ErrInvalidDelayedProc": "No delayed loaded procedure found"
@@ -2411,12 +2352,9 @@
     "ErrExtensionAlreadyInitialized": "Extension already initialized",
     "ErrExtensionsInstanceDestroyForbidden": "Explicit deletion of the extension list instance is forbidden",
     "ErrNotSupportedExtensionVendor": "%s extension not supported",
-    "Extension": "Extension",
     "ExtensionVendorMetaDesc": "extension vendor",
     "ExtLoadErrConfigNotFound": "%s extension not loaded as configuration not found",
     "ExtLoadErrVendorNotFound": "Extension not loaded as %s extension vendor not found",
-    "Guid": "Extension vendor Guid",
-    "Item": "Item",
     "SynchronizeExtensionsQuery": "The following configured extensions differ from the original ones:\n%s.\n\nDo you want to sync all extensions?"
   },
   "Libraries/bgrtl/ExtensionsStd": {
@@ -2589,11 +2527,6 @@
   "Libraries/bgrtl/ServiceVariables": {
     "ErrServiceVariablesAlreadyInitialized": "Service variables have already been initialized"
   },
-  "Libraries/bgrtl/Singleton": {
-    "ErrObjectDeleteRefCount": "Failed to delete the object of %s class due to interface references to it: %d",
-    "ErrSingletonInstanceDestroyForbidden": "Explicit deletion of the single instance of %s class is forbidden",
-    "ErrUnexpectedRelease": "Attempt to reduce the interface links number not first increasing this number first"
-  },
   "Libraries/bgrtl/SparseArray": {
     "ErrItemNotExist": "Item with index %d does not exist"
   },
@@ -2690,11 +2623,8 @@
   "Libraries/bgrtl/Trees": {
     "ErrTreeWalk": "This tree walk implementation is missing",
     "ErrUnableToRecreateNamesIndex": "Failed to recreate node name index",
-    "NodeIndexDesc": "Node index",
     "NodeMetaDesc": "Node",
-    "RootDesc": "Root node",
-    "RootDisplayName": "Root",
-    "SubNodesDesc": "Subnodes"
+    "RootDisplayName": "Root"
   },
   "Libraries/bgrtl/TuneDataSource": {
     "ErrInputColumnInfoNotFound": "Failed to find source %s column for configurable %s column",
@@ -2733,16 +2663,9 @@
     "BadVariantType": "Unsupported Variant subtype",
     "CanNotConvert": "Failed to convert data to 32-bit format"
   },
-  "Libraries/bgrtl/TypedLists": {
-    "Item": "Item"
-  },
   "Libraries/bgrtl/TypInfo": {
     "ErrEnumVendorInfoManagerNotRegistered": "Enumeration description manager not registered",
     "ErrTypeInfoVariableManagerNotRegistered": "Variable manager for %s type not registered"
-  },
-  "Libraries/bgrtl/UITypes": {
-    "Alpha": "Transparency",
-    "Color": "Color"
   },
   "Libraries/bgrtl/UniqueValues": {
     "ErrNullAsValueChangeForbidden": "NullAsValue parameter value of a non-empty list of unique values cannot be changed",
@@ -2750,7 +2673,6 @@
     "ErrValueAlreadyExists": "\"%s\" value already exists in the list of unique values"
   },
   "Libraries/bgrtl/UniqueValuesData": {
-    "Data": "Data",
     "UniqueValuesDataAlreadyInitialized": "Unique value data has already been initialized"
   },
   "Libraries/bgrtl/UpdateHelpers": {
@@ -2764,10 +2686,7 @@
   "Libraries/bgrtl/Utils": {
     "DaysNick": "days",
     "ErrContainerAlreadyIncludeClass": "Container already includes %s class",
-    "ErrDataSourceIsNil": "No reference to %s data source",
-    "ErrDataSourceNotActive": "%s data source is not active",
     "ErrInvalidHexStr": "\"%s\" string is not a valid view of the sexadecimal number",
-    "ErrInvalidVarType": "\"%s\" is not a string view of TVarType value",
     "ErrIsNotValidSet": "\"%s\" string is not a valid set representation"
   },
   "Libraries/bgrtl/VariableDefs": {
@@ -2784,8 +2703,7 @@
     "ErrVariablesAlreadyEditing": "Variables already in the editing process",
     "ErrVariablesNotActive": "Variables not active",
     "ErrVariablesNotConfigured": "Variables not configured",
-    "ErrVariablesNotEditing": "Variables not editable",
-    "VariableElements": "Variables list"
+    "ErrVariablesNotEditing": "Variables not editable"
   },
   "Libraries/bgrtl/VariablesMultiLinks": {
     "ErrAlienLinkedVariable": "\"%s\" variable does not belong to any variable list being used",
@@ -2794,13 +2712,11 @@
     "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch",
     "ErrLinkMustContainMainTableVariable": "When creating link, the main table variable must be provided",
     "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
-    "ErrVariableCanBeIncludedInOnlyOneLink": "\"%s\" variable of table %d can only be part of a \"single\" link",
-    "Link": "Link"
+    "ErrVariableCanBeIncludedInOnlyOneLink": "\"%s\" variable of table %d can only be part of a \"single\" link"
   },
   "Libraries/bgrtl/VariablesVendor": {
     "ErrInvalidUsageType": "Usage type \"%s\" is not valid for the configurable variable \"%s\"",
-    "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type",
-    "VariableInfosVendorMetaDesc": "variable definition vendor"
+    "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
   },
   "Libraries/bgrtl/VarUtils": {
     "ErrConvertStrToType": "Error converting \"%s\" string to %s value",
@@ -2836,14 +2752,13 @@
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Failed to set \"%s\" property",
     "ErrDisposeRuntime": "Error while disposing JavaScript runtime environment",
-    "ErrMessageQueue": "Unhandled exception when queuing JavaScript events",
-    "ErrMessageUnhandledPromiseRejection": "Unhandled exception when tracking rejected Promise",
     "ErrOriginalDll": "Operation is not supported. Inncompatible version of ChakraCore library is used.",
+    "ErrPromiseContinuation": "Unhandled exception when queuing JavaScript events",
     "ErrRaiseException": "Unhandled exception inside JavaScript built-in function: \"%s\"",
     "ErrRaiseModuleException": "Unhandled exception when loading JavaScript module",
     "ErrTooFewArgs": "Few arguments supplied to %s function (%d whereas %d is minimum number)",
     "ErrTooManyArgs": "Many arguments supplied to %s function (%d whereas %d is maximum number)",
-    "ErrUnhandledPromiseRejected": "Unhandled error in Promise"
+    "ErrUntrackedPromiseRejection": "Unhandled exception when tracking rejected Promise"
   },
   "Libraries/ChakraCore/ChakraRunRes": {
     "BadSerializedScript": "Service JavaScript code in %s resource incorrectly serialized, non-serialized code executed",
@@ -2929,17 +2844,13 @@
     "ErrSaveConfigFile": "Configuration file saving error: %s"
   },
   "Libraries/Config/ConfigScheme": {
-    "CountDesc": "Count",
     "ErrAttributeByNameNotFound": "Schema attribute with \"%s\" name not found.",
     "ErrDuplicateAttributeName": "Type of \"%s\" schema contains more than one attribute with \"%s\" name",
     "ErrElementByNameNotFound": "Schema element with \"%s\" name was not found.",
     "ErrItemNameNotFound": "Enumeration item with \"%s\" name was not found.",
     "ErrSameAttributeAndElementName": "Type of \"%s\" schema contains attribute and element with the same \"%s\" name",
     "ErrTypeByNameNotFound": "Type with \"%s\" name not found",
-    "ItemDesc": "Item",
-    "ValueDesc": "Value",
-    "VarDataDesc": "Data",
-    "VarTypeDesc": "Type"
+    "ValueDesc": "Value"
   },
   "Libraries/Config/ConfigUtils": {
     "ErrConfigSchemeTypesMismatch": "Type of %s schema of the loaded configuration is not compatible with the schema type of %s object"
@@ -3142,7 +3053,6 @@
   },
   "Libraries/Model/Connections/ModelConnectionWorkFlow": {
     "ErrAlienConnectionNode": "\"%s\" connection does not belong to the current connection list",
-    "ErrDerivedConnectionVendorNotFound": "No derived component for the connection node found",
     "ErrNodeIsNotConnectionReference": "\"%s\" node is not a connection reference",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
     "ErrNoReferencedConnection": "\"%s\" node does not refer to any connections",
@@ -3202,12 +3112,7 @@
     "ErrCannotUpdateConfigDesignMode": "Failed to update configuration of the derived supernode before activation. Try to update configuration of the current supernode manually."
   },
   "Libraries/Model/DerivedModelComponentVendor": {
-    "BaseComponentVendorGuidDesc": "Base component GUID",
     "BaseNode": "Base node",
-    "BaseNodeGuid": "Base node Guid",
-    "Caption": "Caption",
-    "DerivedComponentVendorGuidDesc": "Derived component GUID",
-    "Description": "Description",
     "ErrBaseComponentAlreadyExists": "Base component already exists",
     "ErrBaseComponentNotInitialized": "The node base component not initialized",
     "ErrBaseComponentVendorNotSpecified": "No vendor defined for the base node component",
@@ -3216,10 +3121,7 @@
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
-    "ErrUnknownCouplerDefType": "Unknown type of the coupler definition",
-    "IsSealedVendor": "Sealed",
-    "ModelComponent": "Node component",
-    "OriginalComponentVendorGuidDesc": "Original component GUID"
+    "ErrUnknownCouplerDefType": "Unknown type of the coupler definition"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
     "ErrCannotChangeDerivedName": "It is forbidden to change the derived ports name",
@@ -3350,6 +3252,7 @@
     "ErrPackageNameCannotBeEmpty": "Package name cannot be empty",
     "ErrPackageNameInvalidCharacter": "\"%s\" package name contains the invalid \"%s\" character",
     "ErrPackageNameInvalidFirstCharacter": "\"%s\" package name starts with the invalid \"%s\" character",
+    "ErrPackageNotFoundByFileName": "Failed to find %s package",
     "ErrPackageWithNameLinkAlreadyExists": "Link to the package with \"%s\" name already exists",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Number of names and variables values must be the same",
     "ErrVariableNotFound": "Variable with \"%s\" name not found",
@@ -3358,8 +3261,7 @@
     "RestoreVariablesBackupProcessCaption": "Restore Values of the Package Variables"
   },
   "Libraries/Model/ModelPackageContext": {
-    "ErrBasePackageNotFound": "Base package not found",
-    "ErrExecNodeBaseComponentNotFound": "Base component for \"%s\" node not found"
+    "ErrBasePackageNotFound": "Base package not found"
   },
   "Libraries/Model/ModelPackageManager": {
     "BackupRestored": "Error occurred while saving \"%s\" package. File restored from backup.",
@@ -3414,7 +3316,6 @@
     "ErrAlienExcludedNode": "\"%s\" node does not belong to the current module",
     "ErrAlienSubModel": "Supernode does not belong to the current workflow",
     "ErrComponentVendorIsSealed": "Creation of derived component for this node is forbidden",
-    "ErrDerivedConnectionVendorNotFound": "No derived component for the connection node found",
     "LocalModelComponentVendorMetaDesc": "local component",
     "ModelComponentVendorMetaDesc": "component"
   },
@@ -3460,7 +3361,6 @@
     "ErrVariableNotFound": "Variable with \"%s\" name not found",
     "ErrVendorMalfunction": "\"%s\" node component is malfunctioned",
     "ExplodeGenericModel": "Expanded \"%s\" supernode",
-    "Left": "Left",
     "LogActivateNodeStart": "Activating \"%s\" GUID=%s node",
     "LogActivateNodeSuccess": "Successfully activated \"%s\" GUID=%s node",
     "LogDeactivateNode": "\"%s\" GUID=%s node deactivated",
@@ -3470,7 +3370,6 @@
     "RestoreBackupProcessCaption": "Backup configuration restoring",
     "SynchronizationInputPort": "Execution order",
     "SynchronizationOutputPort": "Execution order",
-    "Top": "Top",
     "WarnLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
@@ -3546,9 +3445,6 @@
     "InputVariables": "Input variables",
     "OutputVariables": "Output variables"
   },
-  "Libraries/Model/Variables/VariablesOutputSocket": {
-    "Variables": "Variables"
-  },
   "Libraries/Model/Views/ModelViewDataSource": {
     "InputDataSource": "Data set"
   },
@@ -3573,11 +3469,7 @@
     "ErrInputLinkAlreadyExists": "Link to the input port \"%s\" of \"%s\" node already exists",
     "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
     "ErrUnableToRestoreLinkTo": "Failed to restore link to the input of \"%s\" node",
-    "Links": "Links",
     "Node": "Node",
-    "Nodes": "Nodes",
-    "PortGuid": "Port Guid",
-    "PortNodeGuid": "Node Guid",
     "UnknownNodeDisplayName": "Unknown node"
   },
   "Libraries/Normalization/DataSourceMultiOutputNormModelComponentEngine": {
@@ -3754,24 +3646,17 @@
     "ErrWrongModelOutput": "Output column does not match previously trained model",
     "RegressionModelCoefficients": "Regression model coefficients",
     "RegressionOutputDataSet": "Regression output",
-    "RegressionOutputVariables": "Summary",
-    "RegressionParams": "Regression parameters",
-    "RegressionTrainingResults": "Training results"
+    "RegressionOutputVariables": "Summary"
   },
   "Libraries/Regression/Regression": {
     "ErrWrongRegressionParamsConstructor": "Invalid regression parameter constructor used"
   },
   "Libraries/Regression/RegressionModel": {
     "ApplyModelProcessCaption": "Model applying",
-    "ErrApplyWrongFeatures": "The column count of the input data set %d not equal to the regressors count of model %d",
-    "RegressionStatistics": "Regression statistics"
+    "ErrApplyWrongFeatures": "The column count of the input data set %d not equal to the regressors count of model %d"
   },
   "Libraries/Regression/RegressionStatistics": {
-    "CoefficientsStats": "Model coefficient statistics",
     "ErrWrongClassType": "Source class does not match "
-  },
-  "Libraries/Regression/RegressionTrainingResults": {
-    "RegressionModel": "Regression model"
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "ErrInvalidContentType": "Invalid Content-Type value format: %s",
@@ -3911,8 +3796,6 @@
     "ErrPackageAlreadyEditing": "Package with %s name has already been used by another process and it cannot be opened for editing",
     "ErrPackageBackupReferencesAlreadyRevived": "References to other packages have already been restored for backup of %s package",
     "ErrPackageDoesNotBelongToCurrentSession": "%s package does not belong to the current session",
-    "ErrPackageNotFound": "Failed to find package with %s name and %s version",
-    "ErrPackageNotFoundByFileName": "Failed to find %s package",
     "ErrPackageRestoreErrors": "Errors occurred while restoring %s package",
     "ErrPublishedModelNodeMetadataNotFound": "Failed to find metadata for published \"%s\" node",
     "ErrPublishedModelNodeNotFound": "Failed to find published node with %s identifier",
@@ -3924,20 +3807,16 @@
     "ErrSessionBackupAlreadyDeleted": "This session backup has already been deleted by another client from the current account",
     "ErrSessionBackupAlreadyRestored": "This session backup has already been restored by another client from the current account",
     "ErrSessionBackupModified": "This session backup has already been changed by another client from the current account",
-    "FileNames": "File names",
     "PackageClosedLogMsg": "\"%s\" package closed",
     "PackageOpenedEditLogMsg": "\"%s\" package opened in the edit mode",
     "PackageOpenedReadLogMsg": "\"%s\" package opened in the read-only mode",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s started",
-    "Session": "Session",
     "SessionBatch": "Batch processing",
     "SessionCloseLogMsg": "Closed session for %s user",
     "SessionInitializedLogMsg": "Initialized session for %s user",
     "SessionIntegrator": "Request from integrator",
     "SessionInteractive": "Interactive session",
-    "User": "User",
-    "UserName": "Username",
     "WarnClosePackageFailed": "Failed to close %s package from Session Manager. Probably, the session has already been closed",
     "WarnCloseSessionFailed": "Failed to close session from Session Manager. Probably, it has already been closed",
     "WarnSessionStopTimeout": "Failed to terminate %s user session for %d milliseconds. Number of processes not completed: %d. List of active subprocesses: %s. List of not started subprocesses: %s.",
@@ -3946,10 +3825,6 @@
   },
   "Studio/DeductorServerConnector": {
     "ErrCannotConfigureActiveConnection": "Cannot change active connection settings"
-  },
-  "Studio/DeductorServerSettings": {
-    "SessionBackupDirectory": "Session backups",
-    "UserStorageDirectory": "Users data"
   },
   "Studio/DeductorSessionsManager": {
     "ErrCloseSessionRestriction": "%s session closing forbidden",
@@ -3993,7 +3868,6 @@
     "LogDeleteUser": "%s user deleted",
     "LogUserPropertySet": "%s account change: %s=%s",
     "UseGlobalFileStorage": "Use global file storage",
-    "User": "User",
     "UserMetaDesc": "User"
   },
   "Studio/Server/BatchLauncher/BatchLauncher": {
@@ -4075,24 +3949,24 @@
     "VendorCaption": "Table",
     "VendorDesc": "Table data view"
   },
-  "Viewers/Chart/ChartViewVendor": {
-    "VendorCaption": "Chart",
-    "VendorDesc": "Chart data view"
-  },
-  "Viewers/Chart/Server/ChartColumnInfo": {
+  "Viewers/Chart/ChartColumnInfo": {
     "ChartExtremesProgress": "Search for extremes",
     "ChartSortingProgress": "Data sorting",
     "ChartTotalsProgress": "Series sum calculation"
   },
-  "Viewers/Chart/Server/ChartParametres": {
+  "Viewers/Chart/ChartParametres": {
     "DefaultSerieName": "Series",
     "ErrAxisNotFound": "No axis with this position found",
     "ErrAxisPositionNotTrue": "Invalid axis position",
     "ErrLinkedColumnDataType": "Invalid data type",
     "ErrLinkedColumnInfoNotFound": "Column not found"
   },
-  "Viewers/Chart/Server/ChartViewCacheServer": {
+  "Viewers/Chart/ChartViewCacheServer": {
     "DataSourceIsInActive": "Data source is inactive"
+  },
+  "Viewers/Chart/ChartViewVendor": {
+    "VendorCaption": "Chart",
+    "VendorDesc": "Chart data view"
   },
   "Viewers/ClusterProfiles/ClusterProfilesView": {
     "ClusterProfilesProcess": "Cluster profiles",
@@ -4134,15 +4008,7 @@
     "ErrParseExpression": "Error occurred while parsing the expression corresponding to calculated measure \"%s\"",
     "ErrRecursiveCall": "Circular reference between calculated measures detected: %s"
   },
-  "Viewers/Cube/CubeCaseSort": {
-    "DimDataTypeDesc": "Dimension data type",
-    "DimNameDesc": "Dimension name",
-    "DimValueDesc": "Header value"
-  },
   "Viewers/Cube/CubeChart": {
-    "DimDataTypeDesc": "Dimension data type",
-    "DimNameDesc": "Dimension name",
-    "DimValueDesc": "The unique value that belongs to the dimension",
     "ErrAlreadyExists": "The measure display with index %d already exists in the cube chart",
     "ErrDataType": "Failed to use the measure display with nonnumeric data type in the cube chart",
     "ErrNotExists": "The measure display with index %d does not exist in the cube chart",
@@ -4368,6 +4234,7 @@
   "Warehouse2/DBMDEngine": {
     "ErrDimensionFKIsNull": "Reference to \"%s\" dimension not found.\nThe foreign key value not specified.",
     "ErrDimensionFKNotFound": "Reference to \"%s\" dimension not found.\nThe dimension with primary key \"%s\" was not found in the dimension list.",
+    "ErrExecSQL": "Error executing query to DB.",
     "ErrNotFoundVersionInfo": "Failed to read version information about Deductor Warehouse version.",
     "ErrProcessFKIsNull": "Reference to \"%s\" process not found.\nThe foreign key value not specified.",
     "ErrProcessFKNotFound": "Reference to \"%s\" process not found.\nThe process with primary key \"%s\" was not found in the process list.",
@@ -4380,7 +4247,6 @@
   "Warehouse2/Deductor/DDWEngine": {
     "ErrDimensionValueIsNull": "Value of \"%1:s\" dimension in \"%0:d\" row is null.",
     "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (row \"%d\").",
-    "ErrDropTable": "Error occurred while deleting the table associated with [%s] \"%s\" object.\n%s",
     "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.",
     "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension",
     "MsgDisableConstraint": "Disable indexes and constraints.",
@@ -4401,14 +4267,11 @@
     "VendorDesc": "Extract data from a Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/Ver6/DW6Engine": {
-    "ErrCheckProcess": "[%s] \"%s\" process must consist of at least two dimensions.",
-    "ErrDataCube": "Failed to read information about the Cube [%s] \"%s\" .\n%s",
     "ErrDataNotLoad": "Data is not loaded to DW.\nPossible reasons:\nFirebird - spaces at the end of string dimensions;\nMS SQL - case-insensitive letters of string dimensions.\nIf data deletion is set by dimension, this data has been deleted from DW.\nError occurred while restoring constraints and indexes",
     "ErrRebuildCube": "Error occurred while the Cube updating [%s] \"%s\".",
     "MsgMoreLengthName": "Name of \"%s\" field is too long.\nErrors may occur when executing SQL queries to DW.",
     "MsgMoreLengthPrefix": "Too long value of \"%s\" prefix.\nErrors may occur when executing SQL queries to DW.",
     "MsgRebuildCube": "Update the Cubes in the Data Warehouse",
-    "MsgRelationTableList": "Related tables available:\n%s",
     "MsgReservedName": "\"%s\" field name coincides with the reserved words.\nErrors may occur when executing SQL queries to DW."
   },
   "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {
@@ -4430,7 +4293,6 @@
   "Warehouse2/DWDataEngine": {
     "ErrDimNotSourceName": "No field from the data source specified for \"%s\" dimension.",
     "ErrDimSourceNameNotFound": "\"%s\" field specified for \"%s\" dimension not found in the data source.",
-    "ErrExecSQL": "Error executing query to DB.",
     "ErrSourceNameNotFound": "\"%s\" field specified for \"%s\" not found in the data source"
   },
   "Warehouse2/DWExport": {

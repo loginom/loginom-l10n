@@ -293,44 +293,6 @@
       "fieldLabel": "Description"
     }
   },
-  "app/ConfigurePublishedPackagesForm": {
-    "btnClose": {
-      "text": "Close"
-    },
-    "btnPublish": {
-      "text": "Publish"
-    },
-    "btnRemove": {
-      "text": "Delete"
-    },
-    "btnUpdate": {
-      "text": "Refresh"
-    },
-    "cbxPackage": {
-      "fieldLabel": "Package file path"
-    },
-    "colPublishedPackages": {
-      "text": "Published packages"
-    },
-    "frmConfigurePublishedPackagesForm": {
-      "title": "Publish Packages"
-    },
-    "fsNamespace": {
-      "title": "Namespace"
-    },
-    "rdoCustom": {
-      "boxLabel": "Custom"
-    },
-    "rdoGenerateForPackage": {
-      "boxLabel": "Generate unique for package"
-    },
-    "rdoGenerateForPackageVersion": {
-      "boxLabel": "Generate unique for each package version"
-    },
-    "rdoUseDisNamespace": {
-      "boxLabel": "Use Loginom integrator namespace"
-    }
-  },
   "app/ConsoleForm": {
     "tabError": {
       "title": "Errors"
@@ -491,9 +453,6 @@
     "btnConfigureModelNode": {
       "tooltip": "Configure node"
     },
-    "btnConfigurePublishedPackages": {
-      "tooltip": "Publish packages..."
-    },
     "btnEditProperties": {
       "tooltip": "Properties..."
     },
@@ -538,7 +497,7 @@
     "btnClone": {
       "tooltip": "Clone node"
     },
-    "btnComposeGenericModel": {
+    "btnComposeExpandGenericModel": {
       "tooltip": "Collapse nodes into supernode / Expand supernode"
     },
     "btnCopy": {
@@ -588,9 +547,6 @@
     "btnShowDerivedNodes": {
       "tooltip": "Show parent nodes for derived"
     },
-    "btnShowDescription": {
-      "tooltip": "Show/hide property inspector"
-    },
     "btnShowOutline": {
       "tooltip": "Show workflow outline"
     },
@@ -608,6 +564,9 @@
     },
     "btnToggleActivateCurrent": {
       "tooltip": "Run node"
+    },
+    "btnTogglePropInspector": {
+      "tooltip": "Show/hide property inspector"
     },
     "btnWorkFlow": {
       "tooltip": "Show as workflow"
@@ -817,6 +776,31 @@
     },
     "edtFilter": {
       "emptyText": "Filter"
+    }
+  },
+  "app/PreviewForm": {
+    "btnClose": {
+      "tooltip": "Close"
+    }
+  },
+  "app/PublishedPackagesAddForm": {
+    "btnPublish": {
+      "text": "Publish"
+    },
+    "fsNamespace": {
+      "title": "Namespace"
+    },
+    "rdoCustom": {
+      "boxLabel": "Custom"
+    },
+    "rdoGenerateForPackage": {
+      "boxLabel": "Generate unique for package"
+    },
+    "rdoGenerateForPackageVersion": {
+      "boxLabel": "Generate unique for each package version"
+    },
+    "rdoUseDisNamespace": {
+      "boxLabel": "Use Loginom integrator namespace"
     }
   },
   "app/SelectBaseVendorForm": {
@@ -3133,12 +3117,6 @@
     "btnCancel": {
       "text": "Cancel"
     },
-    "edtMaxValue": {
-      "fieldLabel": "Upper bound"
-    },
-    "edtMinValue": {
-      "fieldLabel": "Lower bound"
-    },
     "frmBetweenValuesDialog": {
       "title": "Interval Boundaries"
     }
@@ -3149,9 +3127,6 @@
     },
     "btnCancel": {
       "text": "Cancel"
-    },
-    "cbxPeriodType": {
-      "fieldLabel": "Time span unit"
     },
     "frmDateValuesDialog": {
       "title": "Select Time Span"
@@ -3167,23 +3142,20 @@
     },
     "rbData": {
       "boxLabel": "Available data"
-    },
-    "spnPeriodCount": {
-      "fieldLabel": "Periods count"
     }
   },
   "imports/dwh/DWImportWizard": {
+    "btnDelete": {
+      "tooltip": "Delete"
+    },
+    "btnDeleteAll": {
+      "tooltip": "Delete all..."
+    },
     "btnDown": {
       "tooltip": "Move down"
     },
     "btnUp": {
       "tooltip": "Move up"
-    },
-    "colActionDelete": {
-      "tooltip": "Delete all..."
-    },
-    "colActionDelete.0": {
-      "tooltip": "Delete"
     },
     "colAgg": {
       "text": "Type",
@@ -3226,12 +3198,6 @@
     },
     "mniChecked": {
       "text": "Show"
-    },
-    "mniDelete": {
-      "text": "Delete"
-    },
-    "mniDeleteAll": {
-      "text": "Delete all..."
     },
     "mniIsSelected": {
       "text": "Move to selected"
@@ -3350,23 +3316,11 @@
     }
   },
   "imports/textfile/ImportTextFileParamsWizard": {
-    "cntFormat": {
-      "title": "Formats"
-    },
-    "cntSeparators": {
-      "title": "Separators"
-    },
-    "cntValue": {
-      "title": "Literals"
-    },
     "frmFixedColumns": {
       "title": "Import Parameters with Fixed-Width Columns"
     },
     "frmImportSettings": {
       "title": "Configure Import Formats"
-    },
-    "frmSeparators": {
-      "title": "Import Parameters with Separators"
     }
   },
   "imports/textfile/ImportTextFilePreviewWizard": {
@@ -3697,14 +3651,6 @@
       "tooltip": "Show field names"
     }
   },
-  "viewers/chart/AxesEditor": {
-    "cbxAlignAxes": {
-      "fieldLabel": "Align axes"
-    },
-    "frmAxesEditor": {
-      "title": "Configure Axes"
-    }
-  },
   "viewers/chart/AxisEditor": {
     "cbxAxisType": {
       "fieldLabel": "Axis type"
@@ -3715,17 +3661,79 @@
     "chbShowGrid": {
       "fieldLabel": "Show grid"
     },
-    "chbUserMax": {
-      "fieldLabel": "Set maximum value"
-    },
-    "chbUserMin": {
-      "fieldLabel": "Set minimum value"
-    },
     "edtAxisTitle": {
       "fieldLabel": "Title"
     }
   },
-  "viewers/chart/ChartEditor": {
+  "viewers/chart/ChartView": {
+    "btnAnimation": {
+      "tooltip": "Animation"
+    },
+    "btnAxesOptions": {
+      "tooltip": "Configure axes..."
+    },
+    "btnChartOptions": {
+      "tooltip": "General settings..."
+    },
+    "btnHand": {
+      "tooltip": "Drag mode"
+    },
+    "btnInvert": {
+      "tooltip": "Rotate chart"
+    },
+    "btnPointer": {
+      "tooltip": "Pointer mode"
+    },
+    "btnRationing": {
+      "tooltip": "Rationing"
+    },
+    "btnSeriesOptions": {
+      "tooltip": "Series editor..."
+    },
+    "btnShowFieldList": {
+      "tooltip": "Configure fields"
+    },
+    "btnShowNavigator": {
+      "tooltip": "Navigator"
+    },
+    "btnZoomIn": {
+      "tooltip": "Zoom in"
+    },
+    "btnZoomOut": {
+      "tooltip": "Zoom out"
+    },
+    "colFieldName": {
+      "text": "Fields"
+    },
+    "lblChartStatus": {
+      "text": "Inactive node"
+    },
+    "mniDelete": {
+      "text": "Delete"
+    },
+    "mniSerieAxisPosition": {
+      "text": "Axis"
+    },
+    "mniSerieLabelsStyle": {
+      "text": "Caption type"
+    },
+    "mniSerieTooltipStyle": {
+      "text": "Tooltip style"
+    },
+    "mniSerieType": {
+      "text": "Type"
+    },
+    "mniSetLabelField": {
+      "text": "Use as caption field"
+    },
+    "mniSetXField": {
+      "text": "Use as abscissa field"
+    },
+    "mniUndoDelete": {
+      "text": "Cancel delete"
+    }
+  },
+  "viewers/chart/ParametresEditor": {
     "cbxDecimation": {
       "fieldLabel": "Decimation type"
     },
@@ -3759,87 +3767,39 @@
     "chbRationing": {
       "boxLabel": "Rationing"
     },
-    "chbSelector": {
-      "boxLabel": "Select intervals"
-    },
     "chbTooltipShared": {
       "fieldLabel": "Combine tooltips"
     },
     "clrChart": {
-      "emptyText": "Default",
       "fieldLabel": "Background color"
     },
     "edtChartTitle": {
       "fieldLabel": "Title"
     },
-    "nmbrDuration": {
+    "edtDuration": {
       "fieldLabel": "Delay (ms)"
-    },
-    "panelPlotOptions": {
-      "title": "General Settings"
     }
   },
-  "viewers/chart/ChartView": {
-    "colAddSerie": {
-      "tooltip": "Create series"
-    },
-    "colFieldName": {
-      "text": "Fields"
-    },
-    "colLabelField": {
-      "menuText": "Use as caption field",
-      "tooltip": "Use as caption field"
-    },
-    "colXField": {
-      "menuText": "Use as X field",
-      "tooltip": "Use as abscissa field"
-    },
-    "grdFields": {
-      "title": "Fields",
-      "tooltip": "Create series"
-    }
-  },
-  "viewers/chart/SerieEditor": {
-    "cbxSerieAxis": {
-      "fieldLabel": "Axis"
-    },
-    "cbxSerieLabelsStyle": {
-      "fieldLabel": "Caption type"
-    },
-    "cbxSerieTooltipStyle": {
-      "fieldLabel": "Tooltip style"
-    },
-    "cbxSerieType": {
-      "fieldLabel": "Type"
-    },
-    "clrSerie": {
-      "emptyText": "Default",
-      "fieldLabel": "Color"
-    },
+  "viewers/chart/SerieOptions": {
     "edtSerieTitle": {
       "fieldLabel": "Title"
+    }
+  },
+  "viewers/chart/SerieOptionsAdvanced": {
+    "clrSerie": {
+      "fieldLabel": "Color"
     },
     "fldCntLineWidth": {
       "fieldLabel": "Line width"
     },
     "fldCntPointSize": {
       "fieldLabel": "Point size"
-    },
-    "pnlAdvancedOptions": {
-      "title": "Additional"
-    },
-    "pnlMainOptions": {
-      "title": "Main"
-    }
-  },
-  "viewers/chart/SeriesCreator": {
-    "frmSeriesCreator": {
-      "title": "Add Series"
     }
   },
   "viewers/chart/SeriesEditor": {
     "btnAddSerie": {
-      "text": "Add"
+      "text": "Add",
+      "tooltip": "Add Series"
     },
     "btnMoveDown": {
       "tooltip": "Move down"
@@ -3847,67 +3807,17 @@
     "btnMoveUp": {
       "tooltip": "Move up"
     },
-    "colDeleteSeries.0": {
-      "tooltip": "Cancel delete"
-    },
-    "colDeleteSeries.1": {
-      "tooltip": "Delete"
-    },
     "colRowNumberer": {
       "text": "No"
     },
     "colSerieName": {
       "text": "Series name"
     },
-    "frmSeriesEditor": {
-      "title": "Series Editor"
-    }
-  },
-  "viewers/chart/ToolBar": {
-    "btnAnimation": {
-      "tooltip": "Animation"
+    "pnlOptions": {
+      "title": "Main"
     },
-    "btnAxesOptions": {
-      "tooltip": "Configure axes..."
-    },
-    "btnChartOptions": {
-      "tooltip": "General settings..."
-    },
-    "btnFieldList": {
-      "tooltip": "Configure fields"
-    },
-    "btnHand": {
-      "tooltip": "Drag mode"
-    },
-    "btnNavigator": {
-      "tooltip": "Navigator"
-    },
-    "btnPointer": {
-      "tooltip": "Pointer mode"
-    },
-    "btnRationing": {
-      "tooltip": "Rationing"
-    },
-    "btnRotate": {
-      "tooltip": "Rotate chart"
-    },
-    "btnSeriesOptions": {
-      "tooltip": "Series editor..."
-    },
-    "btnZoomIn": {
-      "tooltip": "Zoom in"
-    },
-    "btnZoomOut": {
-      "tooltip": "Zoom out"
-    },
-    "btnZoomReset": {
-      "tooltip": "Reset zoom"
-    },
-    "btnZoomYReset": {
-      "tooltip": "Reset zoom Y"
-    },
-    "lblChartStatus": {
-      "text": "Inactive node"
+    "pnlOptionsAdvanced": {
+      "title": "Additional"
     }
   },
   "viewers/clusterprofiles/ClusterProfilesView": {
@@ -4030,6 +3940,9 @@
       "text": "Rename",
       "tooltip": "Rename"
     },
+    "colVendors": {
+      "text": "Visualizers"
+    },
     "mniAddToNewGroup": {
       "text": "New group...",
       "tooltip": "Create group and add visualizer into it"
@@ -4037,9 +3950,6 @@
     "mniAddWithoutGroup": {
       "text": "Without group",
       "tooltip": "Add visualizer to general list of reports"
-    },
-    "pnlVendors": {
-      "title": "Visualizers"
     },
     "pnlViewsForm": {
       "title": "Visualizers"
@@ -4501,9 +4411,6 @@
     "colValue": {
       "text": "Value"
     },
-    "frmFastPreviewForm": {
-      "title": "Quick View"
-    },
     "lblRow": {
       "text": "Row"
     },
@@ -4891,23 +4798,20 @@
     }
   },
   "wizards/columndefs/ColumnDefsTuning": {
+    "btnRAWView": {
+      "text": "Raw data"
+    },
     "btnRefreshAll": {
       "text": "Refresh All"
     },
     "btnRefreshData": {
       "text": "Refresh Data"
     },
+    "btnResultView": {
+      "text": "Result"
+    },
     "colPropertiesNames": {
       "text": "Fields"
-    },
-    "lblViewMode": {
-      "text": "Display "
-    },
-    "rbRAWView": {
-      "boxLabel": "Raw data"
-    },
-    "rbResultView": {
-      "boxLabel": "Result"
     },
     "seReadRowCount": {
       "fieldLabel": "Row count for analysis"
@@ -5764,7 +5668,7 @@
     }
   },
   "wizards/WizardForm": {
-    "btnCancel": {
+    "btnClose": {
       "tooltip": "Close"
     },
     "btnError": {

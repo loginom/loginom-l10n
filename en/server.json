@@ -519,7 +519,7 @@
     "NameNotExists": "No input variable or expression with \"%s\" name exists"
   },
   "components/calcvariables/CalcVariablesVendor": {
-    "VendorCaption": "Calculator (Variables)",
+    "VendorCaption": "Calculator (variables)",
     "VendorDesc": "Creating calculated variables"
   },
   "components/clope/ClopeEngine": {
@@ -1414,9 +1414,9 @@
     "WStep": "Minimum weight change threshold"
   },
   "components/neuralnet/NeuralNetVendor": {
-    "ClassifierVendorCaption": "Neural Network (Classification)",
+    "ClassifierVendorCaption": "Neural Net (classification)",
     "ClassifierVendorDesc": "Trains multilayer perceptron to complete the classification tasks",
-    "RegressionVendorCaption": "Neural Network (Regression)",
+    "RegressionVendorCaption": "Neural Net (regression)",
     "RegressionVendorDesc": "Trains multilayer perceptron to complete the regression tasks"
   },
   "components/partition/PartitionEngine": {
@@ -1533,7 +1533,7 @@
     "ReplacePostfix": " Replace"
   },
   "components/replacevariables/ReplaceVariablesVendor": {
-    "VendorCaption": "Replace (Variables)",
+    "VendorCaption": "Replace (variables)",
     "VendorDesc": "Replace variable values"
   },
   "components/restclient/RESTClient": {

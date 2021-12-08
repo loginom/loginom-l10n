@@ -1568,6 +1568,9 @@
     "NodeIndex": "Node index",
     "NodeName": "Node name"
   },
+  "components/slidingwindow/SlidingWindow": {
+    "ErrOutputColCountOverflow": "Too high values are specified for Depth period and/or Forecast horizon"
+  },
   "components/slidingwindow/SlidingWindowVendor": {
     "VendorCaption": "Lag",
     "VendorDescription": "Transpose one or several data columns using lag"
@@ -2603,7 +2606,7 @@
     "ErrNullsNotAllowed": "Null values are not allowed (null value in \"%s\" column)",
     "ErrProcessKeptStatistics": "Errors occurred while calculating the list of unique values",
     "ErrProcessKeptStatisticsNonExistentNull": "Previously missing null value was found in \"%s\" field",
-    "ErrProcessKeptStatisticsNonExistentValue": "Previously missing value \"%1:s\" was found in \"%0:s\" field",
+    "ErrProcessKeptStatisticsNonExistentValue": "Previously missing \"%1:s\" value was found in \"%0:s\" field",
     "ErrStatisticsBuildCookieInvalidOwner": "The statistics builder Cookie belongs to another object",
     "ErrStatisticsBuildCookieIsNil": "Attempt to complete the calculation completion operation with null reference to the statistics builder Cookie"
   },
@@ -3903,7 +3906,6 @@
     "ErrInvalidModelLockCookieOwner": "Invalid node lock Cookie owner specified",
     "ErrInvalidPath": "Invalid file path: \"%s\"",
     "ErrModelNodeNotFound": "Node %s not found",
-    "ErrModelNodeNotPublished": "\"%s\" node is not published",
     "ErrMustRestoreReferencedPackage": "Failed to restore dependent package %s without restoring %s package to which it refers",
     "ErrNoPublishedNodes": "The package contains no published nodes",
     "ErrPackageAlreadyEditing": "Package with %s name has already been used by another process and it cannot be opened for editing",

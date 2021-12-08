@@ -21,7 +21,7 @@
       "title": "О программе"
     },
     "lblActualVersion": {
-      "text": "Установлена последняя версия"
+      "text": "Установлена актуальная версия"
     },
     "lblCheckingVersion": {
       "text": "Проверка наличия обновлений..."
@@ -190,6 +190,9 @@
     "chkAdmin": {
       "boxLabel": "Администрирование"
     },
+    "chkAllowPublish": {
+      "boxLabel": "Разрешить публикацию пакетов"
+    },
     "chkBlocked": {
       "boxLabel": "Заблокировать учётную запись"
     },
@@ -280,55 +283,26 @@
     "btnCancel": {
       "text": "Отмена"
     },
+    "chbAllowDerivedNode": {
+      "boxLabel": "Производные узлы"
+    },
+    "chbAllowExecNode": {
+      "boxLabel": "Выполнение узла и Цикл"
+    },
     "fldDisplayName": {
       "fieldLabel": "Метка"
     },
     "frmConfigureDerivedVendorForm": {
       "title": "Настройка производного компонента"
     },
+    "fstTargets": {
+      "title": "Целевые типы узлов"
+    },
     "fstVisibility": {
       "title": "Область видимости"
     },
     "txtDescription": {
       "fieldLabel": "Описание"
-    }
-  },
-  "app/ConfigurePublishedPackagesForm": {
-    "btnClose": {
-      "text": "Закрыть"
-    },
-    "btnPublish": {
-      "text": "Опубликовать"
-    },
-    "btnRemove": {
-      "text": "Удалить"
-    },
-    "btnUpdate": {
-      "text": "Обновить"
-    },
-    "cbxPackage": {
-      "fieldLabel": "Путь к файлу пакета"
-    },
-    "colPublishedPackages": {
-      "text": "Опубликованные пакеты"
-    },
-    "frmConfigurePublishedPackagesForm": {
-      "title": "Публикация пакетов"
-    },
-    "fsNamespace": {
-      "title": "Пространство имен"
-    },
-    "rdoCustom": {
-      "boxLabel": "Задать вручную"
-    },
-    "rdoGenerateForPackage": {
-      "boxLabel": "Генерировать уникальное для пакета"
-    },
-    "rdoGenerateForPackageVersion": {
-      "boxLabel": "Генерировать уникальное для каждой версии пакета"
-    },
-    "rdoUseDisNamespace": {
-      "boxLabel": "Использовать пространство имён Loginom Integrator"
     }
   },
   "app/ConsoleForm": {
@@ -491,9 +465,6 @@
     "btnConfigureModelNode": {
       "tooltip": "Настроить узел"
     },
-    "btnConfigurePublishedPackages": {
-      "tooltip": "Публикация пакетов..."
-    },
     "btnEditProperties": {
       "tooltip": "Свойства..."
     },
@@ -509,6 +480,9 @@
     "btnFindNode": {
       "tooltip": "Найти узел..."
     },
+    "btnPublishPackage": {
+      "tooltip": "Опубликовать..."
+    },
     "btnRemoveNode": {
       "tooltip": "Удалить узел..."
     },
@@ -518,8 +492,14 @@
     "btnShow": {
       "tooltip": "Перейти"
     },
+    "btnShowInPublished": {
+      "tooltip": "Показать в веб-сервисах"
+    },
     "btnShowViews": {
       "tooltip": "Показать визуализаторы"
+    },
+    "colNavigation": {
+      "text": "Навигация"
     },
     "pnlMapTree": {
       "title": "Навигация"
@@ -538,7 +518,7 @@
     "btnClone": {
       "tooltip": "Клонировать узел"
     },
-    "btnComposeGenericModel": {
+    "btnComposeExpandGenericModel": {
       "tooltip": "Свернуть узлы в подмодель / Развернуть подмодель"
     },
     "btnCopy": {
@@ -588,9 +568,6 @@
     "btnShowDerivedNodes": {
       "tooltip": "Показать родительские узлы для производных"
     },
-    "btnShowDescription": {
-      "tooltip": "Показать/скрыть инспектор свойств"
-    },
     "btnShowOutline": {
       "tooltip": "Показать карту сценария"
     },
@@ -608,6 +585,12 @@
     },
     "btnToggleActivateCurrent": {
       "tooltip": "Выполнить узел"
+    },
+    "btnTogglePreview": {
+      "tooltip": "Показать/скрыть быстрый просмотр"
+    },
+    "btnTogglePropInspector": {
+      "tooltip": "Показать/скрыть инспектор свойств"
     },
     "btnWorkFlow": {
       "tooltip": "Показать в виде сценария"
@@ -656,6 +639,9 @@
     "btnCancel": {
       "text": "Отменить"
     },
+    "cbxLocale": {
+      "fieldLabel": "Локаль"
+    },
     "chbUseBasePackageFileStorage": {
       "boxLabel": "Использовать относительные пути базового пакета"
     },
@@ -666,7 +652,7 @@
       "fieldLabel": "Версия"
     },
     "frmPackageForm": {
-      "title": "Пакет"
+      "title": "Свойства пакета"
     }
   },
   "app/PackageLinkForm": {
@@ -686,10 +672,31 @@
       "fieldLabel": "Версия"
     },
     "frmPackageLinkForm": {
-      "title": "Ссылка на пакет"
+      "title": "Свойства ссылки на пакет"
+    }
+  },
+  "app/PackagesAutoSavePanel": {
+    "btnApply": {
+      "text": "Применить"
+    },
+    "btnCancel": {
+      "text": "Отменить"
+    },
+    "chbEnableAutoSave": {
+      "fieldLabel": "Включить автосохранение"
+    },
+    "edtAutoSavePeriod": {
+      "fieldLabel": "Сохранять каждые (минут)"
+    },
+    "lblDescription": {
+      "text": "Пакеты сохраняются с заданным интервалом в файлы с расширением .autosave рядом с .lgp файлами. Сами .lgp файлы при этом не перезаписываются."
     }
   },
   "app/PackagesListForm": {
+    "btnAutoSave": {
+      "text": "Автосохранение",
+      "tooltip": "Настройка автосохранения пакетов..."
+    },
     "btnClose": {
       "text": "Закрыть",
       "tooltip": "Закрыть пакет..."
@@ -712,7 +719,7 @@
     },
     "btnPublish": {
       "text": "Опубликовать",
-      "tooltip": "Публикация пакетов..."
+      "tooltip": "Опубликовать"
     },
     "btnSave": {
       "text": "Сохранить",
@@ -721,6 +728,13 @@
     "btnSaveAll": {
       "text": "Сохранить все",
       "tooltip": "Сохранить все пакеты"
+    },
+    "btnShowInPublished": {
+      "text": "Показать в веб-сервисах",
+      "tooltip": "Показать в веб-сервисах"
+    },
+    "colLocale": {
+      "text": "Локаль"
     },
     "colName": {
       "text": "Имя"
@@ -774,6 +788,9 @@
     "btnAdd": {
       "tooltip": "Добавить..."
     },
+    "btnClone": {
+      "tooltip": "Клонировать..."
+    },
     "btnDelete": {
       "tooltip": "Удалить"
     },
@@ -817,6 +834,113 @@
     },
     "edtFilter": {
       "emptyText": "Фильтрация"
+    }
+  },
+  "app/PreviewForm": {
+    "btnClose": {
+      "tooltip": "Закрыть"
+    },
+    "btnDown": {
+      "tooltip": "Переместить вниз"
+    },
+    "btnHide": {
+      "tooltip": "Скрыть"
+    },
+    "btnMaximize": {
+      "tooltip": "Развернуть"
+    },
+    "btnMinimize": {
+      "tooltip": "Свернуть"
+    },
+    "btnPin": {
+      "tooltip": "Закрепить"
+    },
+    "btnRight": {
+      "tooltip": "Переместить вправо"
+    },
+    "btnUnpin": {
+      "tooltip": "Открепить"
+    }
+  },
+  "app/PublishedPackagesAddForm": {
+    "btnClose": {
+      "text": "Отменить"
+    },
+    "btnPublish": {
+      "text": "Опубликовать"
+    },
+    "cbxPackage": {
+      "fieldLabel": "Пакет"
+    },
+    "chbRefreshOnSave": {
+      "boxLabel": "Обновлять публикацию при сохранении пакета"
+    },
+    "frmPublishedPackagesAddForm": {
+      "title": "Добавление веб-сервиса"
+    },
+    "fsNamespace": {
+      "title": "Пространство имен"
+    },
+    "rdoCustom": {
+      "boxLabel": "Задать вручную"
+    },
+    "rdoGenerateForPackage": {
+      "boxLabel": "Генерировать уникальное для пакета"
+    },
+    "rdoGenerateForPackageVersion": {
+      "boxLabel": "Генерировать уникальное для каждой версии пакета"
+    },
+    "rdoUseDisNamespace": {
+      "boxLabel": "Использовать пространство имён Loginom Integrator"
+    }
+  },
+  "app/PublishedPackagesListForm": {
+    "btnAdd": {
+      "text": "Добавить",
+      "tooltip": "Добавить веб-сервис..."
+    },
+    "btnEdit": {
+      "text": "Редактировать",
+      "tooltip": "Редактировать..."
+    },
+    "btnFinish": {
+      "text": "Завершить",
+      "tooltip": "Завершить..."
+    },
+    "btnRefresh": {
+      "text": "Обновить список",
+      "tooltip": "Обновить список"
+    },
+    "btnUpdatePublication": {
+      "text": "Обновить публикацию",
+      "tooltip": "Обновить публикацию"
+    },
+    "colComment": {
+      "text": "Комментарий"
+    },
+    "colDate": {
+      "text": "Дата изменения"
+    },
+    "colLabel": {
+      "text": "Путь / Метка"
+    },
+    "colName": {
+      "text": "Имя"
+    },
+    "colVersion": {
+      "text": "Версия"
+    },
+    "pmiOpenNode": {
+      "text": "Открыть узел в пакете",
+      "tooltip": "Открыть узел в пакете"
+    },
+    "pmiOpenPackage": {
+      "text": "Открыть пакет",
+      "tooltip": "Открыть пакет"
+    },
+    "pmiRevealInExplorer": {
+      "text": "Показать пакет в папке",
+      "tooltip": "Показать пакет в папке"
     }
   },
   "app/SelectBaseVendorForm": {
@@ -1120,6 +1244,10 @@
       "text": "OR",
       "tooltip": "Логическое \"ИЛИ\""
     },
+    "btnPreview": {
+      "text": "Предпросмотр...",
+      "tooltip": "Предпросмотр..."
+    },
     "btnString": {
       "tooltip": "Строка"
     },
@@ -1163,6 +1291,14 @@
     },
     "lblFuncs": {
       "text": "Список функций"
+    }
+  },
+  "components/calcdata/CalcPreviewForm": {
+    "frmCalcPreviewForm": {
+      "title": "Предпросмотр"
+    },
+    "grdVars": {
+      "title": "Переменные"
     }
   },
   "components/calcdata/ExprEditForm": {
@@ -1786,6 +1922,15 @@
     "edtUpperBoundSimple": {
       "fieldLabel": "Верхняя граница"
     },
+    "mniCopy": {
+      "text": "Копировать"
+    },
+    "mniCut": {
+      "text": "Вырезать"
+    },
+    "mniPaste": {
+      "text": "Вставить"
+    },
     "pnlBaseDate": {
       "title": "Точка отсчета"
     },
@@ -1793,7 +1938,7 @@
       "boxLabel": "Текущая дата"
     },
     "rbCustom": {
-      "boxLabel": "От даты"
+      "boxLabel": "Дата"
     },
     "rbData": {
       "boxLabel": "Имеющиеся данные"
@@ -2663,6 +2808,12 @@
     "edtDDFSystem": {
       "fieldLabel": "Разрядность"
     },
+    "edtStringCacheMaxSize.valueConfig": {
+      "regexText": "Недопустимый размер кэша строк"
+    },
+    "edtStringCacheMemoryUsage": {
+      "fieldLabel": "Размер в памяти"
+    },
     "frmExportSettings": {
       "title": "Экспорт в Loginom Data файл"
     }
@@ -2895,12 +3046,20 @@
       "text": "Вставить",
       "tooltip": "Вставить"
     },
+    "btnPublish": {
+      "text": "Опубликовать",
+      "tooltip": "Опубликовать"
+    },
     "btnRefresh": {
       "tooltip": "Обновить список"
     },
     "btnRename": {
       "text": "Переименовать",
       "tooltip": "Переименовать..."
+    },
+    "btnShowInPublished": {
+      "text": "Показать в веб-сервисах",
+      "tooltip": "Показать в веб-сервисах"
     },
     "btnUpload": {
       "text": "Загрузить",
@@ -2958,7 +3117,7 @@
       "boxLabel": "Текущая дата"
     },
     "rbCustom": {
-      "boxLabel": "От даты"
+      "boxLabel": "Дата"
     },
     "rbData": {
       "boxLabel": "Имеющиеся данные"
@@ -3133,14 +3292,19 @@
     "btnCancel": {
       "text": "Отменить"
     },
-    "edtMaxValue": {
-      "fieldLabel": "Верхняя граница"
-    },
-    "edtMinValue": {
-      "fieldLabel": "Нижняя граница"
-    },
     "frmBetweenValuesDialog": {
       "title": "Значения границ интервала"
+    }
+  },
+  "imports/dwh/CompareValuesDialog": {
+    "btnApply": {
+      "text": "Применить"
+    },
+    "btnCancel": {
+      "text": "Отменить"
+    },
+    "frmCompareValuesDialog": {
+      "title": "Значение для сравнения"
     }
   },
   "imports/dwh/DateValuesDialog": {
@@ -3149,9 +3313,6 @@
     },
     "btnCancel": {
       "text": "Отменить"
-    },
-    "cbxPeriodType": {
-      "fieldLabel": "Тип периода"
     },
     "frmDateValuesDialog": {
       "title": "Выбор периода"
@@ -3163,27 +3324,24 @@
       "boxLabel": "Текущая дата"
     },
     "rbCustom": {
-      "boxLabel": "От даты"
+      "boxLabel": "Дата"
     },
     "rbData": {
       "boxLabel": "Имеющиеся данные"
-    },
-    "spnPeriodCount": {
-      "fieldLabel": "Количество периодов"
     }
   },
   "imports/dwh/DWImportWizard": {
+    "btnDelete": {
+      "tooltip": "Удалить"
+    },
+    "btnDeleteAll": {
+      "tooltip": "Удалить все..."
+    },
     "btnDown": {
       "tooltip": "Переместить вниз"
     },
     "btnUp": {
       "tooltip": "Переместить вверх"
-    },
-    "colActionDelete": {
-      "tooltip": "Удалить все..."
-    },
-    "colActionDelete.0": {
-      "tooltip": "Удалить"
     },
     "colAgg": {
       "text": "Тип",
@@ -3226,12 +3384,6 @@
     },
     "mniChecked": {
       "text": "Выводить"
-    },
-    "mniDelete": {
-      "text": "Удалить"
-    },
-    "mniDeleteAll": {
-      "text": "Удалить все"
     },
     "mniIsSelected": {
       "text": "Переместить в выбранные"
@@ -3350,23 +3502,15 @@
     }
   },
   "imports/textfile/ImportTextFileParamsWizard": {
-    "cntFormat": {
-      "title": "Форматы"
-    },
-    "cntSeparators": {
-      "title": "Разделители"
-    },
-    "cntValue": {
-      "title": "Представление значений"
+    "btnSuggestFormat": {
+      "text": "Определить автоматически",
+      "tooltip": "Определить автоматически все разделители и рассчитать структуру полей"
     },
     "frmFixedColumns": {
       "title": "Параметры импорта со столбцами фиксированной ширины"
     },
     "frmImportSettings": {
       "title": "Настройка форматов импорта"
-    },
-    "frmSeparators": {
-      "title": "Параметры импорта с разделителями"
     }
   },
   "imports/textfile/ImportTextFilePreviewWizard": {
@@ -3697,14 +3841,6 @@
       "tooltip": "Отобразить имена полей"
     }
   },
-  "viewers/chart/AxesEditor": {
-    "cbxAlignAxes": {
-      "fieldLabel": "Выравнивать оси"
-    },
-    "frmAxesEditor": {
-      "title": "Настройки осей"
-    }
-  },
   "viewers/chart/AxisEditor": {
     "cbxAxisType": {
       "fieldLabel": "Тип оси"
@@ -3715,17 +3851,114 @@
     "chbShowGrid": {
       "fieldLabel": "Показывать сетку"
     },
-    "chbUserMax": {
-      "fieldLabel": "Задать максимум"
-    },
-    "chbUserMin": {
-      "fieldLabel": "Задать минимум"
+    "chbUserRange": {
+      "fieldLabel": "Задать интервал"
     },
     "edtAxisTitle": {
       "fieldLabel": "Заголовок"
     }
   },
-  "viewers/chart/ChartEditor": {
+  "viewers/chart/ChartView": {
+    "btnAnimation": {
+      "tooltip": "Анимация"
+    },
+    "btnAxesOptions": {
+      "tooltip": "Настройки осей..."
+    },
+    "btnChartOptions": {
+      "tooltip": "Общие настройки..."
+    },
+    "btnHand": {
+      "tooltip": "Режим перетаскивания"
+    },
+    "btnInvert": {
+      "tooltip": "Повернуть график"
+    },
+    "btnPointer": {
+      "tooltip": "Режим приближения"
+    },
+    "btnRationing": {
+      "tooltip": "Нормировать"
+    },
+    "btnSeriesOptions": {
+      "tooltip": "Настройки серий..."
+    },
+    "btnShowFieldList": {
+      "tooltip": "Настройка полей"
+    },
+    "btnShowNavigator": {
+      "tooltip": "Навигатор"
+    },
+    "btnZoomIn": {
+      "tooltip": "Приблизить"
+    },
+    "btnZoomOut": {
+      "tooltip": "Отдалить"
+    },
+    "btnZoomReset": {
+      "tooltip": "Сбросить масштаб"
+    },
+    "btnZoomYReset": {
+      "tooltip": "Сбросить масштаб Y"
+    },
+    "cntChartInvite": {
+      "html": "Перенесите поля в область диаграммы, перетащив из левого списка доступных полей"
+    },
+    "colFieldName": {
+      "text": "Поля"
+    },
+    "lblChartStatus": {
+      "text": "Узел находится в неактивном состоянии"
+    },
+    "mniAddSerie": {
+      "text": "Создать серию..."
+    },
+    "mniDelete": {
+      "text": "Удалить"
+    },
+    "mniOnBackGround": {
+      "text": "На задний план"
+    },
+    "mniOnTop": {
+      "text": "На передний план"
+    },
+    "mniSerieAxisPosition": {
+      "text": "Ось"
+    },
+    "mniSerieLabelsStyle": {
+      "text": "Тип меток"
+    },
+    "mniSerieTooltipStyle": {
+      "text": "Тип подсказок"
+    },
+    "mniSerieType": {
+      "text": "Тип"
+    },
+    "mniSetLabelField": {
+      "text": "Использовать как поле меток"
+    },
+    "mniSetXField": {
+      "text": "Использовать как поле абсцисс"
+    },
+    "mniShowOptions": {
+      "text": "Настройки: Основные..."
+    },
+    "mniShowOptionsAdvanced": {
+      "text": "Настройки: Дополнительные..."
+    },
+    "mniUndoDelete": {
+      "text": "Отменить удаление"
+    },
+    "txtFilterFields": {
+      "emptyText": "Фильтрация"
+    }
+  },
+  "viewers/chart/LinkEditor": {
+    "cbxColumn": {
+      "emptyText": "Добавьте поле"
+    }
+  },
+  "viewers/chart/ParametresEditor": {
     "cbxDecimation": {
       "fieldLabel": "Тип децимации"
     },
@@ -3759,47 +3992,28 @@
     "chbRationing": {
       "boxLabel": "Нормировать"
     },
-    "chbSelector": {
-      "boxLabel": "Выбор интервалов"
-    },
     "chbTooltipShared": {
       "fieldLabel": "Объединять подсказки"
     },
     "clrChart": {
-      "emptyText": "По умолчанию",
       "fieldLabel": "Цвет фона"
     },
     "edtChartTitle": {
       "fieldLabel": "Заголовок"
     },
-    "nmbrDuration": {
+    "edtDuration": {
       "fieldLabel": "Задержка (мс)"
-    },
-    "panelPlotOptions": {
-      "title": "Общие настройки"
     }
   },
-  "viewers/chart/ChartView": {
-    "colAddSerie": {
-      "tooltip": "Создать серию"
+  "viewers/chart/SerieOptions": {
+    "cbxSerieType": {
+      "fieldLabel": "Тип"
     },
-    "colFieldName": {
-      "text": "Поля"
-    },
-    "colLabelField": {
-      "menuText": "Использовать как поле меток",
-      "tooltip": "Использовать как поле меток"
-    },
-    "colXField": {
-      "menuText": "Использовать как поле X",
-      "tooltip": "Использовать как поле абсцисс"
-    },
-    "grdFields": {
-      "title": "Поля",
-      "tooltip": "Создать серию"
+    "edtSerieTitle": {
+      "fieldLabel": "Название"
     }
   },
-  "viewers/chart/SerieEditor": {
+  "viewers/chart/SerieOptionsAdvanced": {
     "cbxSerieAxis": {
       "fieldLabel": "Ось"
     },
@@ -3809,37 +4023,20 @@
     "cbxSerieTooltipStyle": {
       "fieldLabel": "Тип подсказок"
     },
-    "cbxSerieType": {
-      "fieldLabel": "Тип"
-    },
     "clrSerie": {
-      "emptyText": "По умолчанию",
       "fieldLabel": "Цвет"
-    },
-    "edtSerieTitle": {
-      "fieldLabel": "Название"
     },
     "fldCntLineWidth": {
       "fieldLabel": "Ширина линии"
     },
     "fldCntPointSize": {
       "fieldLabel": "Размер точки"
-    },
-    "pnlAdvancedOptions": {
-      "title": "Дополнительные"
-    },
-    "pnlMainOptions": {
-      "title": "Основные"
-    }
-  },
-  "viewers/chart/SeriesCreator": {
-    "frmSeriesCreator": {
-      "title": "Добавить серию"
     }
   },
   "viewers/chart/SeriesEditor": {
     "btnAddSerie": {
-      "text": "Добавить"
+      "text": "Добавить",
+      "tooltip": "Добавить серию"
     },
     "btnMoveDown": {
       "tooltip": "Переместить вниз"
@@ -3847,67 +4044,17 @@
     "btnMoveUp": {
       "tooltip": "Переместить вверх"
     },
-    "colDeleteSeries.0": {
-      "tooltip": "Отменить удаление"
-    },
-    "colDeleteSeries.1": {
-      "tooltip": "Удалить"
-    },
     "colRowNumberer": {
-      "text": "№"
+      "text": "#"
     },
     "colSerieName": {
       "text": "Имя серии"
     },
-    "frmSeriesEditor": {
-      "title": "Настройки серий"
-    }
-  },
-  "viewers/chart/ToolBar": {
-    "btnAnimation": {
-      "tooltip": "Анимация"
+    "pnlOptions": {
+      "title": "Основные"
     },
-    "btnAxesOptions": {
-      "tooltip": "Настройки осей..."
-    },
-    "btnChartOptions": {
-      "tooltip": "Общие настройки..."
-    },
-    "btnFieldList": {
-      "tooltip": "Настройка полей"
-    },
-    "btnHand": {
-      "tooltip": "Режим перетаскивания"
-    },
-    "btnNavigator": {
-      "tooltip": "Навигатор"
-    },
-    "btnPointer": {
-      "tooltip": "Режим приближения"
-    },
-    "btnRationing": {
-      "tooltip": "Нормировать"
-    },
-    "btnRotate": {
-      "tooltip": "Повернуть график"
-    },
-    "btnSeriesOptions": {
-      "tooltip": "Настройки серий..."
-    },
-    "btnZoomIn": {
-      "tooltip": "Приблизить"
-    },
-    "btnZoomOut": {
-      "tooltip": "Отдалить"
-    },
-    "btnZoomReset": {
-      "tooltip": "Сбросить приближение"
-    },
-    "btnZoomYReset": {
-      "tooltip": "Сбросить приближение Y"
-    },
-    "lblChartStatus": {
-      "text": "Узел находится в неактивном состоянии"
+    "pnlOptionsAdvanced": {
+      "title": "Дополнительные"
     }
   },
   "viewers/clusterprofiles/ClusterProfilesView": {
@@ -4030,6 +4177,9 @@
       "text": "Переименовать",
       "tooltip": "Переименовать"
     },
+    "colVendors": {
+      "text": "Визуализаторы"
+    },
     "mniAddToNewGroup": {
       "text": "Создать группу...",
       "tooltip": "Создать группу и добавить в нее визуализатор"
@@ -4037,9 +4187,6 @@
     "mniAddWithoutGroup": {
       "text": "Без группы",
       "tooltip": "Добавить визуализатор в общий список отчетов"
-    },
-    "pnlVendors": {
-      "title": "Визуализаторы"
     },
     "pnlViewsForm": {
       "title": "Визуализаторы"
@@ -4266,6 +4413,9 @@
     "btnChartRestrictions": {
       "tooltip": "Ограничения..."
     },
+    "btnChartShowSubLevels": {
+      "tooltip": "Уровень заголовков"
+    },
     "btnChartShowTotal": {
       "tooltip": "Итоги"
     },
@@ -4320,6 +4470,12 @@
     },
     "mniAddCalcCase": {
       "text": "Добавить вычисляемый факт..."
+    },
+    "mniChartHideSubLevels": {
+      "text": "Первый уровень"
+    },
+    "mniChartShowSubLevels": {
+      "text": "Все уровни"
     },
     "mniChartShowTotalAll": {
       "text": "Показать"
@@ -4412,6 +4568,9 @@
     "btnCheckAll": {
       "tooltip": "Выбрать все"
     },
+    "btnCopy": {
+      "tooltip": "Копировать"
+    },
     "btnExclusive": {
       "tooltip": "Режим включенных/исключенных значений"
     },
@@ -4420,6 +4579,9 @@
     },
     "btnGroupCheck": {
       "tooltip": "Отметить по маске..."
+    },
+    "btnPaste": {
+      "tooltip": "Вставить"
     },
     "btnReverseCheck": {
       "tooltip": "Инвертировать выбор"
@@ -4431,6 +4593,182 @@
   "viewers/cube/EmbeddedBrowseForm": {
     "mniGoToLine": {
       "tooltip": "Перейти к строке..."
+    }
+  },
+  "viewers/dataquality/QualityView": {
+    "btnCalculateQualityStatistics": {
+      "text": "Рассчитать статистики"
+    },
+    "btnCancelProcess": {
+      "tooltip": "Отмена"
+    },
+    "btnContinueFields": {
+      "text": "Непрерывные",
+      "tooltip": "Непрерывные поля"
+    },
+    "btnDiscreteFields": {
+      "text": "Дискретные",
+      "tooltip": "Дискретные поля"
+    },
+    "btnIndicatorsSettings": {
+      "text": "Показатели",
+      "tooltip": "Настройка показателей..."
+    },
+    "btnOverview": {
+      "text": "Сводка",
+      "tooltip": "Общий обзор набора"
+    },
+    "btnPercentAbsolute": {
+      "tooltip": "Абсолютные или относительные значения"
+    },
+    "btnShowHistogram": {
+      "text": "Гистограмма"
+    },
+    "btnShowPreview": {
+      "tooltip": "Детализация"
+    },
+    "colContinueBoxPlot": {
+      "text": "Диаграмма размаха"
+    },
+    "colContinueDataType": {
+      "text": "Тип"
+    },
+    "colContinueHistogram": {
+      "text": "Гистограмма"
+    },
+    "colContinueIndex": {
+      "text": "№"
+    },
+    "colContinueName": {
+      "text": "Метка"
+    },
+    "colDataSetParam": {
+      "text": "Характеристика набора данных",
+      "tooltip": "Характеристика набора данных"
+    },
+    "colDataSetValue": {
+      "text": "Значение"
+    },
+    "colDiscreteBoxUnique": {
+      "text": "Значения"
+    },
+    "colDiscreteDataType": {
+      "text": "Тип"
+    },
+    "colDiscreteHistogram": {
+      "text": "Гистограмма"
+    },
+    "colDiscreteIndex": {
+      "text": "№"
+    },
+    "colDiscreteName": {
+      "text": "Метка"
+    },
+    "colOverviewCount": {
+      "text": "Проблемы"
+    },
+    "colOverviewDataKind": {
+      "text": "Вид"
+    },
+    "colOverviewDataType": {
+      "text": "Тип"
+    },
+    "colOverviewField": {
+      "text": "Метка"
+    },
+    "colOverviewIndex": {
+      "text": "№"
+    },
+    "colOverviewProblems": {
+      "text": "Виды проблем"
+    },
+    "colOverviewSelected": {
+      "text": " "
+    },
+    "lblCalculateQualityStatistics": {
+      "text": "Отметьте поля для расчета статистики и нажмите кнопку:"
+    },
+    "lblProgress": {
+      "text": "Идет расчет показателей"
+    }
+  },
+  "viewers/dataquality/QualityViewHistogram": {
+    "btnHistogramDisplayType": {
+      "text": "Вид отображения"
+    },
+    "colCount": {
+      "text": "Кол-во"
+    },
+    "colIndex": {
+      "text": "№"
+    },
+    "colMark": {
+      "text": "Метка"
+    },
+    "colPercentage": {
+      "text": "%"
+    },
+    "colWeight": {
+      "text": "Доля"
+    },
+    "lblHistogram": {
+      "text": "Гистограмма"
+    },
+    "lblStub": {
+      "text": "Выделите ячейку для визуализации гистограммы"
+    }
+  },
+  "viewers/dataquality/QualityViewSettings": {
+    "btnApply": {
+      "text": "Применить"
+    },
+    "btnCancel": {
+      "text": "Отменить"
+    },
+    "chbIndicatorSwitch": {
+      "boxLabel": "Индекс качества"
+    },
+    "cntQuartileWidth": {
+      "title": "Интерквартильная ширина"
+    },
+    "cntStandartDeviation": {
+      "title": "Стандартное отклонение"
+    },
+    "fldMaxNullsPercent": {
+      "fieldLabel": "Максимальный процент пропусков"
+    },
+    "fldQualitySettings": {
+      "title": "Выбросы и экстремальные значения"
+    },
+    "fldQuartileExtremalValue": {
+      "fieldLabel": "Экстремальные значения"
+    },
+    "fldQuartileOutValue": {
+      "fieldLabel": "Выбросы"
+    },
+    "fldStdExtremalValue": {
+      "fieldLabel": "Экстремальные значения"
+    },
+    "fldStdOutValue": {
+      "fieldLabel": "Выбросы"
+    },
+    "frmQualityViewSettings": {
+      "title": "Показатели"
+    },
+    "pnlIndicators": {
+      "title": "Выбор показателей"
+    },
+    "pnlQualitySettings": {
+      "title": "Настройки показателей"
+    },
+    "rbDetectQuartile": {
+      "boxLabel": "Интерквартильная ширина"
+    },
+    "rbDetectSko": {
+      "boxLabel": "Стандартное отклонение"
+    },
+    "rbgDetectOE": {
+      "fieldLabel": "Метод идентификации"
     }
   },
   "viewers/detailing/EmbeddedBrowseForm": {
@@ -4500,9 +4838,6 @@
     },
     "colValue": {
       "text": "Значение"
-    },
-    "frmFastPreviewForm": {
-      "title": "Быстрый просмотр данных"
     },
     "lblRow": {
       "text": "Строка"
@@ -4634,7 +4969,7 @@
       "text": "Стандартная ошибка"
     },
     "colRepWaldStat": {
-      "text": "Коэффициент Вальда"
+      "text": "Статистика Вальда"
     },
     "colStatParam": {
       "text": "Показатель"
@@ -4891,23 +5226,22 @@
     }
   },
   "wizards/columndefs/ColumnDefsTuning": {
+    "btnRAWView": {
+      "text": "Исходные данные"
+    },
     "btnRefreshAll": {
-      "text": "Обновить все"
+      "text": "Обновить все",
+      "tooltip": "Рассчитать все имена, метки, типы и виды данных полей"
     },
     "btnRefreshData": {
-      "text": "Обновить данные"
+      "text": "Определить типы данных",
+      "tooltip": "Рассчитать заново только типы и виды данных"
+    },
+    "btnResultView": {
+      "text": "Результат"
     },
     "colPropertiesNames": {
       "text": "Поля"
-    },
-    "lblViewMode": {
-      "text": "Отобразить "
-    },
-    "rbRAWView": {
-      "boxLabel": "Исходные данные"
-    },
-    "rbResultView": {
-      "boxLabel": "Результат"
     },
     "seReadRowCount": {
       "fieldLabel": "Кол-во строк для анализа"
@@ -4933,6 +5267,9 @@
     },
     "btnClearLinks": {
       "text": "Удалить все связи"
+    },
+    "btnCloneMappingColumn": {
+      "tooltip": "Клонировать..."
     },
     "btnCreateMapping": {
       "tooltip": "Создать выходной"
@@ -5764,7 +6101,7 @@
     }
   },
   "wizards/WizardForm": {
-    "btnCancel": {
+    "btnClose": {
       "tooltip": "Закрыть"
     },
     "btnError": {

@@ -959,7 +959,7 @@
       "SyncExtra": "Экстра"
     }
   },
-  "Libraries/bgrtl/Consts": {
+  "Libraries/bgrtl/EnumDescs": {
     "AggregationType": {
       "$Caption": "Тип функции агрегации",
       "Sum": "Сумма",
@@ -1324,6 +1324,12 @@
       "Simple": "Обычное соединение",
       "SSL": "SSL/TLS",
       "StartTLS": "STARTTLS"
+    },
+    "LDAPUserRole": {
+      "$Caption": "Роль нового пользователя",
+      "None": "Отсутствует",
+      "Designer": "Проектирование сценариев",
+      "Viewer": "Просмотр отчетов"
     }
   },
   "Libraries/Model/DataSet/ImportModelComponentEngine": {
@@ -1332,6 +1338,13 @@
       "Off": "Не использовать кэш",
       "Manual": "Задать размер кэша вручную",
       "Auto": "Определять автоматически"
+    }
+  },
+  "Libraries/Model/DerivedModelComponent": {
+    "DerivedModelComponentTarget": {
+      "$Caption": "Целевые типы узлов",
+      "ExecNode": "Выполнение узла и Цикл",
+      "DerivedNode": "Производные узлы"
     }
   },
   "Libraries/Model/ModelWorkFlow": {
@@ -1460,12 +1473,6 @@
       "$Caption": "Метод определения коэффициента регуляризации",
       "Manually": "Задать вручную",
       "Grid": "Автоматически"
-    },
-    "StatisticsModeType": {
-      "$Caption": "Режим расчета статистики",
-      "None": "Не рассчитывать",
-      "All": "Для всех моделей",
-      "FinalOnly": "Для финальной модели"
     }
   },
   "Studio/DeductorSessionsManager": {
@@ -1516,12 +1523,6 @@
       "GridLines": "Совмещать сетку",
       "Scale": "Совмещать масштаб"
     },
-    "AxisLabelsStyle": {
-      "$Caption": "Тип меток осей",
-      "None": "Нет",
-      "Value": "Значения",
-      "Percent": "Проценты"
-    },
     "AxisPosition": {
       "$Caption": "Позиция оси",
       "Abscissa": "Нижняя",
@@ -1535,21 +1536,6 @@
       "Datetime": "Дата/Время",
       "Category": "Категории"
     },
-    "ChartError": {
-      "$Caption": "Ошибка диаграммы",
-      "Valid": "",
-      "DateTimeWarning": "Временные данные на вещественной оси",
-      "NoData": "Нет данных для отображения",
-      "InValidColumn": "Не совпадает тип полей",
-      "InValidAxis": "Не совпадает тип серии и оси"
-    },
-    "ChartExportFormat": {
-      "$Caption": "Формат экспорта",
-      "SVG": "SVG",
-      "PNG": "PNG",
-      "JPG": "JPG",
-      "PDF": "PDF"
-    },
     "ChartLinkKind": {
       "$Caption": "Тип поля",
       "None": "Нет",
@@ -1558,34 +1544,21 @@
       "YHighData": "Поле Y max",
       "YColorData": "Поле цвета",
       "BubbleData": "Размер пузыря",
-      "Labels": "Поле меток",
-      "Open": "Открытие",
-      "Close": "Закрытие"
+      "Labels": "Поле меток"
     },
-    "ChartMode": {
-      "$Caption": "Тип указателей",
-      "Hand": "Рука",
-      "Ruler": "Линейка",
-      "Pointer": "Указка",
-      "Zoom": "Лупа",
-      "Marker": "Маркер"
+    "ChartMarkerSymbol": {
+      "$Caption": "Форма маркера серии",
+      "Default": "По умолчанию",
+      "Circle": "Круг",
+      "Diamond": "Ромб",
+      "TriangleUp": "Стрелка вверх",
+      "TriangleDown": "Стрелка вниз"
     },
     "ChartStacking": {
       "$Caption": "Тип накопления",
       "None": "Нет",
       "Normal": "Обычное",
       "Percent": "Процент"
-    },
-    "ChartTheme": {
-      "$Caption": "Цветовая схема",
-      "Default": "Стандартная",
-      "DarkBlue": "Темно-синяя",
-      "DarkGreen": "Темно-зеленая",
-      "Dark": "Темная",
-      "Gray": "Серая",
-      "Grid": "Таблица",
-      "GridLight": "Светлая таблица",
-      "SandSignica": "Песчаная"
     },
     "ChartType": {
       "$Caption": "Тип диаграммы",
@@ -1602,9 +1575,7 @@
       "ErrorBar": "Ошибки",
       "Polygon": "Полигон",
       "ColumnRange": "Столбчатая с интервалами",
-      "HeatMap": "Тепловая карта",
-      "CandleStick": "Японские свечи",
-      "OHLC": "OHLC"
+      "HeatMap": "Тепловая карта"
     },
     "DecimationType": {
       "$Caption": "Фильтрация точек",
@@ -1642,11 +1613,6 @@
       "PercentTotal": "Процент, итог",
       "LabelPercentTotal": "Метка, процент, итог",
       "XValue": "Значение X"
-    },
-    "SeriesMarksAngle": {
-      "$Caption": "Наклон меток",
-      "LeftRight": "Сверху вниз",
-      "TopDown": "Справа налево"
     }
   },
   "Viewers/ClusterProfiles/ClusterProfilesView": {
@@ -1799,6 +1765,121 @@
       "CompareWithPrevByCol": "Отличие от предыдущего по вертикали",
       "CumulativeSumByRow": "Накапливающаяся сумма по горизонтали",
       "CumulativeSumByCol": "Накапливающаяся сумма по вертикали"
+    }
+  },
+  "Viewers/DataQuality/QualityViewHistogram": {
+    "QualityViewHistogramColumn": {
+      "$Caption": "Колонки гистограммы",
+      "Number": "Номер",
+      "Mark": "Метка",
+      "BarChart": "Доля",
+      "Count": "Кол-во",
+      "Percent": "%"
+    },
+    "QualityViewHistogramDisplayType": {
+      "$Caption": "Тип отображения гистограммы",
+      "All": "Все значения",
+      "Frequent": "Частые значения",
+      "Rare": "Редкие значения",
+      "FrequentAndRare": "Частые и редкие"
+    },
+    "QualityViewHistogramValueType": {
+      "$Caption": "Тип элемента гистограммы",
+      "Common": "Обычное значение",
+      "Null": "Пропущенное значение",
+      "Infinity": "Положительная бесконечность",
+      "NegInfinity": "Отрицательная бесконечность",
+      "Residue": "Остаточные значения",
+      "Empty": "Пустое значение",
+      "WhiteSpace": "Пробельное значение",
+      "WhiteSpaces": "Несколько пробельных значений"
+    }
+  },
+  "Viewers/DataQuality/QualityViewTypes": {
+    "DataSetQuality": {
+      "$Caption": "Качество набора данных",
+      "DetectOE": "Метод определения нетипичных значений",
+      "ColCount": "Столбцов",
+      "RowCount": "Строк",
+      "FullColumns": "Заполненных полей",
+      "FullRecords": "Полных записей",
+      "UsefulColumns": "Пригодных столбцов",
+      "IndexEPV": "Индекс EPV"
+    },
+    "QualityViewCommonColumnType": {
+      "$Caption": "Тип общей колонки",
+      "Index": "№",
+      "Selected": "Выбранные поля",
+      "DataType": "Тип",
+      "Name": "Метка",
+      "DataKind": "Вид"
+    },
+    "QualityViewDetectOE": {
+      "$Caption": "Метод идентификации выбросов и экстремальных значений",
+      "SKO": "Стандартное отклонение",
+      "Quartile": "Интерквартильная ширина"
+    },
+    "QualityViewIndicatorType": {
+      "$Caption": "Показатель качества данных",
+      "QualityIndex": "Индекс качества",
+      "NullCount": "Пропуски",
+      "Histogram": "Гистограмма",
+      "BoxUnique": "Диаграмма уникальных",
+      "ExtrCount": "Экстремальные",
+      "OutCount": "Выбросы",
+      "EmptyCount": "Пустые",
+      "SpaceCount": "Пробельные",
+      "SpaceEnding": "Пробелы в конце",
+      "StrLen": "Длины строк",
+      "ValuesRange": "Диапазон значений",
+      "NegativeCount": "Отрицательные",
+      "ZeroCount": "Нулевые",
+      "InfinityCount": "Бесконечности",
+      "BoxPlot": "Диаграмма размаха",
+      "UniqueCount": "Уникальные",
+      "Min": "Минимум",
+      "Max": "Максимум",
+      "Mean": "Среднее",
+      "Median": "Медиана",
+      "Moda": "Мода",
+      "Monotonique": "Монотонность"
+    },
+    "QualityViewModaType": {
+      "$Caption": "Тип модальности",
+      "Unknown": "Не известен",
+      "Single": "Унимодальный",
+      "Multi": "Мультимодальный",
+      "NoModa": "Без моды"
+    },
+    "QualityViewMonotonique": {
+      "$Caption": "Монотонность ряда значений",
+      "None": "Не монотонная",
+      "Increasing": "Возрастающая",
+      "Descending": "Убывающая"
+    },
+    "QualityViewOverviewColumnType": {
+      "$Caption": "Тип колонки сводки",
+      "Count": "Количество проблем",
+      "Problems": "Проблемы"
+    },
+    "QualityViewProblemType": {
+      "$Caption": "Проблема в поле данных",
+      "Missing": "Пропуски",
+      "Empty": "Пустые",
+      "Zero": "Нули",
+      "Space": "Пробелы",
+      "Infinity": "Бесконечности",
+      "Constant": "Константа",
+      "Unique": "Уникальное",
+      "ConvertError": "Ошибка конвертации",
+      "NotCalculated": "Не вычислено",
+      "NoData": "Нет данных"
+    },
+    "QualityViewSheet": {
+      "$Caption": "Страница визуализатора Качество данных",
+      "Overview": "Сводка",
+      "DiscreteStats": "Детализация дискретных",
+      "ContinueStats": "Детализация непрерывных"
     }
   },
   "Viewers/Detailing/Detailing": {

@@ -40,7 +40,8 @@
     "StoppingService": "Остановка сервиса, имя домена приложения: \"{0}\", идентификатор: {1}"
   },
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
-    "ErrInputNeedsToBeWrappedInAnObject": "Входные параметры должны быть обёрнуты в объект",
+    "ErrInputBodyIsEmpty": "Тело запроса не должно быть пустым",
+    "ErrInputMustContainJsonObject": "Запрос должен содержать объект json",
     "ErrInvalidCharsetQualityFormat": "Недопустимый формат элемента списка в заголовке Accept-Charset: {0}",
     "ErrInvalidContentType": "Недопустимое значение заголовка Content-Type: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "Свойство WebBodyFormatMessageProperty должно иметь значение Raw",
@@ -82,6 +83,7 @@
     "UrlFormat": "Формат Url: "
   },
   "DeductorIntegrationServerCore/ServiceHelper": {
+    "CalledUrl": "Url вызываемого метода: {0}",
     "ErrInvalidColumnCount": "Недопустимое количество столбцов в матрице значений: {0}; необходимо: {1}",
     "ErrInvalidElementCount": "Недопустимое количество элементов в наборе данных: {0}; необходимо: {1}",
     "ErrInvalidRowCount": "Недопустимое количество строк в матрице значений переменных: {0}",
@@ -94,7 +96,7 @@
     "ErrRootElementCannotBeNull": "Корневой элемент не должен быть равен null",
     "ErrRootElementMustBeSingle": "Матрица значений должна содержать только один корневой элемент",
     "ErrUnsupportedFieldType": "Поле \"{0}\" содержит значение недопустимого типа {1}",
-    "ExecutePackageInfo": "Обработка пакета \"{0}\" версии {1}, выполнение узла \"{2}\" с идентификатором {{{3}}}",
+    "ExecutePackageInfo": "Обработка пакета \"{0}\" версии {1}, выполнение узла \"{2}\" с именем \"{3}\" и идентификатором {{{4}}}",
     "ReceivedRequest": "Получен запрос на обработку",
     "SendingResponse": "Отправка ответа"
   },

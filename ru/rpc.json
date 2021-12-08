@@ -11,7 +11,7 @@
     "ErrInterfaceIdentifierMustNotBeNull": "Идентификатор интерфейса не должен быть пустым",
     "ErrInterfaceNotSupported": "Интерфейс {0} не поддерживается объектом",
     "ErrInvalidArgument": "Недопустимое значение параметра {0}: {1}",
-    "ErrObjectIdIsNotCached": "Значение ObjectId не закешировано"
+    "ErrObjectIdIsNotCached": "Значение ObjectId не закэшировано"
   },
   "Net/Extended80Rec": {
     "ErrOverflow": "Переполнение при попытке привести значение к типу Double",

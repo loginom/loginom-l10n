@@ -1,7 +1,12 @@
 {
   "Common/1Cv8/1Cv8Query": {
+    "ErrConnect": "Ошибка подключения к 1С",
     "ErrEofArrived": "Достигнут конец набора данных",
-    "ErrQueryNotActive": "Запрос не активен"
+    "ErrExecuteQuery": "Ошибка выполнения запроса 1С",
+    "ErrPrepareFields": "Ошибка подготовки полей запроса 1С",
+    "ErrPrepareQuery": "Ошибка подготовки запроса 1С",
+    "ErrQueryNotActive": "Запрос не активен",
+    "ErrUnloadResults": "Ошибка выгрузки результатов запроса 1С"
   },
   "Common/1Cv8/1Cv8SessionManager": {
     "ErrEmptyConnectionString": "Не указана строка подключения"
@@ -116,6 +121,10 @@
   },
   "Common/HTTP/HTTPNetRequest": {
     "ErrHTTPNetRequest": "Запрос к URL \"%s\" завершился с ошибкой"
+  },
+  "Common/HTTP/SynapseHTTPSend": {
+    "ErrFailedToMakeHTTPRequest": "Ошибка при выполнениии HTTP запроса. TCP/IP Socket error %d: %s",
+    "ErrMaximumRedirectReached": "Превышено максимальное число переадресаций на: %s"
   },
   "Common/JavaScript/JavaScriptModuleLoader": {
     "ErrModuleFileTooBig": "Файл модуля %s не может быть загружен: превышено ограничение на допустимый размер файла (%d > %d байт)",
@@ -293,6 +302,7 @@
     "ErrParseStreamNoXML": "Ошибка при разборе потока в строке %d, позиция %d: источник не является XML-файлом или имеет некорректный синтаксис",
     "ErrParseStreamUnhandledException": "Необработанное исключение при разборе потока:\n  %s",
     "ErrParseStreamUnrecognizedEncoding": "Ошибка при разборе потока: неизвестная кодировка %s",
+    "ErrParseStreamUnrecognizedEncodingDefault": "Ошибка при разборе потока: неизвестная кодировка",
     "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n  %s",
     "ErrParseURLNoXML": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s': ответ сервера не является XML-файлом",
     "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n  %s",
@@ -375,9 +385,6 @@
     "VendorCaption": "Ассоциативные правила",
     "VendorDesc": "Поиск ассоциативных правил"
   },
-  "components/assnrules/FPTree": {
-    "Support": "Поддержка"
-  },
   "components/autocorrelation/AutoCorrelationEngine": {
     "ACFDisplayName": "АКФ",
     "ErrFFTHugeSize": "Размеры входного источника данных превышают допустимые значения для расчета в частотной области",
@@ -410,11 +417,6 @@
     "ErrPreviewExamplesInvalidLength": "Количество шаблонов не соответствует количеству типов данных",
     "ExecuteProcess": "Обработка выходных данных",
     "InputBinsDataSource": "Внешние диапазоны квантования",
-    "PostfixDisplayNameFmt": " %s %s",
-    "PostfixExtermalBins": "Внешние",
-    "PostfixSDBins": "СКО",
-    "PostfixTileBins": "Плиточный",
-    "PostfixWithCountBins": "Интервальный",
     "TeachProcess": "Формирование интервалов квантования"
   },
   "components/binning/BinningLabelConstructor": {
@@ -484,7 +486,9 @@
     "ErrGetVarArrayUnsupported": "Массивы переменного типа могут возвращать только промежуточные выражения (выражение \"%s\", строка %d)",
     "ErrVarExprAmbiguity": "\"%0:s\" может быть входной переменной или промежуточным выражением. Чтобы разрешить неоднозначность используйте \"%1:s%0:s\" для обращения к переменной или переименуйте выражение \"%0:s\".",
     "InputVariables": "Входные переменные",
-    "NameNotExists": "Поля, переменной или выражения с именем \"%s\" не существует"
+    "NameNotExists": "Поля, переменной или выражения с именем \"%s\" не существует",
+    "PreviewProcess": "Предварительный просмотр вычислений",
+    "WarnPreviewRunning": "Предпросмотр уже запущен"
   },
   "components/calcdata/CalcDataVendor": {
     "VendorCaption": "Калькулятор",
@@ -545,12 +549,6 @@
   "components/clope/CLOPEVendor": {
     "VendorCaption": "Кластеризация транзакций",
     "VendorDesc": "Кластеризация транзакций алгоритмом CLOPE"
-  },
-  "components/clope/TransactionDataSourceSet": {
-    "DataSourceSupplColumnName": "Имя поля",
-    "DataSourceSupplItem": "Поле вспомогательного источника данных",
-    "ElementValuesSuppl": "Уникальные значения доп.",
-    "EncodeArray": "Индекс элемента"
   },
   "components/clusterization/Clusterization": {
     "ErrNoTrainData": "Отсутствуют данные для обучения",
@@ -840,17 +838,18 @@
     "VendorDesc": "Выполнение внешней программы"
   },
   "components/execnode/ExecNodeComponent": {
-    "ErrNodeComponentVendorIsSealed": "Невозможно задать ссылку на узел \"%s\", для которого запрещено наследование",
-    "ErrNodeLocked": "Узел \"%s\" заблокирован",
-    "ErrNodeNotInitialized": "Узел \"%s\" не проинициализирован",
+    "ErrExecNodeNotAllowed": "Выполнение компонента %s не разрешено",
+    "ErrNodeComponentVendorIsSealed": "Невозможно задать ссылку на компонент \"%s\", для которого запрещено наследование",
     "ErrPortNotConfigurable": "Настройка порта не поддерживается",
-    "ErrReferencedNodeNotAvailable": "Исходный узел не доступен",
-    "ErrReferencedNodeNotFound": "Исходный узел не найден",
-    "ErrReferencedNodeNotSpecified": "Не задана ссылка на узел",
+    "ErrReferencedVendorMalfunction": "Исходный компонент \"%s\" неисправен",
+    "ErrReferencedVendorNotAvailable": "Исходный компонент не доступен",
+    "ErrReferencedVendorNotFound": "Исходный компонент не найден",
+    "ErrReferencedVendorNotSpecified": "Не задан исходный компонент",
     "ErrUnableToLoadComponentConfig": "Не удалось загрузить конфигурацию внутреннего компонента"
   },
   "components/execnode/ExecNodeComponentVendor": {
     "InputBaseNode": "Базовый узел",
+    "NodeDisplayNameFormatString": "%s (выполнение)",
     "VendorCaption": "Выполнение узла",
     "VendorDesc": "Применение модели к новым данным"
   },
@@ -896,11 +895,13 @@
     "Checked": "Отмеченный"
   },
   "components/filterdata/FilterColumns": {
-    "bdtCurrent": "текущей даты",
-    "bdtData": "имеющихся данных",
     "CompareTipFmt": "%s и %s",
+    "DayFirstPostfix": "первый",
+    "DayLastPostfix": "последний",
     "ErrColumnNotFound": "Поле указано не верно",
     "ErrCompareValueIsNull": "Сравниваемое значение не определено",
+    "ErrDatePeriodUndefined": "Не удалось определить временной промежуток",
+    "ErrDateSourceTypeDataNotSupported": "Использование дата из набора данных, для определении интервала времени не поддерживается",
     "ErrEmptyCompareValueList": "Не указан список значений",
     "ErrIncorrectCompareLowerBound": "Введенное значение нижней границы не соответствует типу фильтруемого столбца",
     "ErrIncorrectCompareUpperBound": "Введенное значение верхней границы не соответствует типу фильтруемого столбца",
@@ -910,39 +911,18 @@
     "ErrNoConditions": "Нет ни одного условия фильтрации",
     "ErrRowNumberNotSupported": "Использование нумераторов строк не поддерживается",
     "ErrUnknownDataType": "Не указан тип данных",
-    "FirstLastDateFmt": "%s %s %s от %s",
-    "fld0and5to20DayPeriodName": "дней",
-    "fld0and5to20MonthPeriodName": "месяцев",
-    "fld0and5to20QuarterPeriodName": "кварталов",
-    "fld0and5to20WeekPeriodName": "недель",
-    "fld0and5to20WrongPeriodName": "периодов",
-    "fld0and5to20YearPeriodName": "лет",
-    "fld2to4DayPeriodName": "дня",
-    "fld2to4MonthPeriodName": "месяца",
-    "fld2to4QuarterPeriodName": "квартала",
-    "fld2to4WeekPeriodName": "недели",
-    "fld2to4WrongPeriodName": "периода",
-    "fld2to4YearPeriodName": "года",
-    "fldDayFirstPostfix": "первый",
-    "fldDayLastPostfix": "последний",
-    "fldManyFirstPostfix": "первые",
-    "fldManyLastPostfix": "последние",
-    "fldMonthFirstPostfix": "первый",
-    "fldMonthLastPostfix": "последний",
-    "fldOneDayPeriodName": "день",
-    "fldOneMonthPeriodName": "месяц",
-    "fldOneQuarterPeriodName": "квартал",
-    "fldOneWeekPeriodName": "неделя",
-    "fldOneWrongPeriodName": "период",
-    "fldOneYearPeriodName": "год",
-    "fldOtherFirstPostfix": "первое",
-    "fldOtherLastPostfix": "последнее",
-    "fldQuarterFirstPostfix": "первый",
-    "fldQuarterLastPostfix": "последний",
-    "fldWeekFirstPostfix": "первая",
-    "fldWeekLastPostfix": "последняя",
-    "fldYearFirstPostfix": "первый",
-    "fldYearLastPostfix": "последний"
+    "ManyFirstPostfix": "первые",
+    "ManyLastPostfix": "последние",
+    "MonthFirstPostfix": "первый",
+    "MonthLastPostfix": "последний",
+    "OtherFirstPostfix": "первое",
+    "OtherLastPostfix": "последнее",
+    "QuarterFirstPostfix": "первый",
+    "QuarterLastPostfix": "последний",
+    "WeekFirstPostfix": "первая",
+    "WeekLastPostfix": "последняя",
+    "YearFirstPostfix": "первый",
+    "YearLastPostfix": "последний"
   },
   "components/filterdata/FilterData": {
     "ErrPreviewDataSourceNotActive": "Не удалось применить фильтр, вход не активирован",
@@ -1116,8 +1096,7 @@
   },
   "components/linregression/LinRegressionBuilder": {
     "ErrWrongLinRegContext": "Неправильный контекст построителя модели линейной регрессии",
-    "ErrWrongLinRegModel": "Обучаемая модель не является моделью линейной регрессии",
-    "ErrWrongProbability": "Значение порога доверительного интервала должно быть в пределах (0, 100)"
+    "ErrWrongLinRegModel": "Обучаемая модель не является моделью линейной регрессии"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "Контекст построителя модели линейной регрессии не может быть создан для пустого набора данных"
@@ -1126,6 +1105,7 @@
     "ColumnDisplayName": "Метки входных полей",
     "ColumnName": "Имена входных полей",
     "ColumnUniqueValues": "Уникальные значения",
+    "DFE": "Число степеней свободы ошибки",
     "ErrInvalidFieldsSettings": "Недопустимые настройки полей входного набора",
     "ErrMultipleOutputFields": "Допускается только одно поле выходных данных",
     "ErrNoLearnData": "В обучающем наборе данных должно быть как минимум две строки",
@@ -1134,8 +1114,10 @@
     "ErrWrongInputField": "Недопустимые свойства входного поля \"%s\", вид данных \"%s\", тип данных \"%s\"",
     "ErrWrongOutputColumnsCount": "Должна быть определена ровно 1 выходная колонка, сейчас определено %d выходных колонок",
     "ErrWrongOutputField": "Недопустимые свойства выходного поля \"%s\", вид данных \"%s\", тип данных \"%s\"",
+    "FStatistic": "F-статистика",
     "Intercept": "<Константа>",
     "LinRegTrainProcessName": "Построение модели",
+    "LogLikelihood": "Логарифм функции правдоподобия",
     "ModelDF": "Число степеней свободы модели",
     "ModelPValue": "P-значение модели",
     "RegressionCoefsNamePostfix": "|Коэффициенты",
@@ -1145,6 +1127,7 @@
     "RegressionStdErrorNamePostfix": "|Стд. откл.",
     "RegressionTStatNamePostfix": "|T-статистика",
     "RegressionUBoundNamePostfix": "|Верхняя граница д.и.",
+    "StdDev": "Стандартное отклонение",
     "TestSamples": "Примеров в тестовом множестве",
     "TotalSamples": "Всего примеров",
     "TotalSelectedSamples": "Всего отобранных примеров",
@@ -1195,6 +1178,7 @@
     "CVAvgCE": "Средняя перекрестная энтропия при кросс-валидации",
     "CVClsErrorPercentage": "Процент ошибок классификации при кросс-валидации",
     "CVRMSError": "Среднеквадратическая ошибка при кросс-валидации",
+    "DFE": "Число степеней свободы ошибки",
     "ErrClassifierMultipleOutputs": "Для задачи классификации допускается только одно поле выходных данных, сейчас задано %d",
     "ErrEmptyTestSet": "Пустое тестовое множество не может быть использовано для внесения поправки на долю событий",
     "ErrInvalidFieldsSettings": "Недопустимые настройки полей входного набора",
@@ -1213,20 +1197,23 @@
     "LogRegTrainProcessName": "Построение модели",
     "ModelDF": "Число степеней свободы модели",
     "ModelPValue": "P-значение модели",
+    "NullMinusTwoLogL": "-2 Логарифма функции правдоподобия нулевой модели",
     "OutputUniqueValuesNotCalculated": "Уникальные значения выходной колонки \"%s\" не рассчитаны",
     "PredictedValue": "%s|Прогноз",
     "PredictionEvent": "Событие|Прогноз",
     "PredictionProbability": "Вероятность события|Прогноз",
     "PredictionScore": "Балл|Прогноз",
     "PrepareSetsProportionsProcessCaption": "Подготовка множеств",
+    "R2": "Псевдо-R^2 Макфаддена",
+    "R2Adj": "Псевдо-R^2 Макфаддена (скорр.)",
     "RegressionCoefsNamePostfix": "|Коэффициенты",
     "RegressionLBoundNamePostfix": "|Нижняя граница д.и. отношения шансов",
     "RegressionOddsRatioPostfix": "|Отношение шансов",
     "RegressionScoreNamePostfix": "|Балл",
     "RegressionStdErrorNamePostfix": "|Стд. откл.",
     "RegressionUBoundNamePostfix": "|Верхняя граница д.и. отношения шансов",
-    "RegressionWaldPValueNamePostfix": "|P-значение критерия Вальда",
-    "RegressionWaldStatNamePostfix": "|Критерий Вальда",
+    "RegressionWaldPValueNamePostfix": "|P-значение",
+    "RegressionWaldStatNamePostfix": "|Статистика Вальда",
     "StoreEventsProcessCaption": "Определение выходного набора данных",
     "TestAvgCE": "Средняя перекрестная энтропия на тестовом множестве",
     "TestClsErrorPercentage": "Процент ошибок классификации на тестовом множестве",
@@ -1289,29 +1276,23 @@
     "ErrParallelProcessingError": "При параллельном выполнении цикла возникла ошибка",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Цикл с постусловием не поддерживает параллельную обработку",
     "ErrPortNotConfigurable": "Настройка порта не поддерживается",
-    "ErrReferencedNodeVendorNotFound": "Не найден исходный узел или компонент",
     "ErrSocketIsNotInputDataSourceSocket": "Порт \"%s\" не является входным портом, содержащим набор данных",
-    "ErrSocketNotConfigured": "Порт не настроен",
+    "ErrSocketNotConfigured": "Порт \"%s\" не настроен",
     "ErrUnsupportedInputSocketType": "Порт \"%s\" имеет неподдерживаемый тип",
     "IterationCaption": "Итерация №%d",
-    "IterationConfiguration": "Сохраненная конфигурация",
-    "IterationConfigurationCount": "Количество конфигураций",
-    "IterationConfigurationItem": "Элемент коллекции конфигураций",
     "IterationErrorDetailsFieldDisplayName": "Детальная информация об ошибке",
     "IterationErrorMessageFieldDisplayName": "Сообщение об ошибке",
-    "IterationIdentifierDataType": "Тип данных идентификатора конфигурации",
-    "IterationIdentifiers": "Значения идентификаторов",
     "IterationIdFieldDisplayName": "Идентификатор итерации",
-    "IterationIndex": "Номер итерации",
     "IterationStatusSocketName": "Статус выполнения итераций",
     "IterationSuccessFlagFieldDisplayName": "Признак успешного завершения",
-    "ProcessActivate": "Активация узла \"%s\"",
+    "ProcessActivate": "Активация компонента \"%s\"",
     "ProcessAppendDataSet": "Заполнение выходных наборов данных",
     "ProcessGroupProcessing": "Групповая обработка",
     "ProcessInputDataSourceGrouping": "Определение групп в исходном наборе данных",
     "WarningTeachCriticalIterationCount": "Запущено обучение узла с количеством итераций %d. Обучение с большим количеством итераций может вызывать ошибку переполнения памяти."
   },
   "components/loop/LoopComponentVendor": {
+    "NodeDisplayNameFormatString": "%s (цикл)",
     "VendorCaption": "Цикл",
     "VendorDesc": "Многократное выполнение модели на новых данных"
   },
@@ -1504,6 +1485,9 @@
   "components/quality/QualityVendor": {
     "VendorCaption": "Качество данных",
     "VendorDesc": "Оценка качества данных"
+  },
+  "components/reformcolumns/ReformColumns": {
+    "ErrExcludeAllColumnsFromProcessing": "Нельзя исключить все столбцы из дальнейшей обработки"
   },
   "components/reformcolumns/ReformColumnsVendor": {
     "VendorCaption": "Параметры полей",
@@ -1958,11 +1942,11 @@
   },
   "imports/native/DDFTupleOldRowCachedConverter": {
     "BadNativeStringData": "Строковые данные некорректны",
-    "UnknownOperation": "Неизвестная операция конвертора строки"
+    "UnknownOperation": "Неизвестная операция конвертера строки"
   },
   "imports/native/DDFTupleOldRowConverter": {
     "BadNativeStringData": "Строковые данные некорректны",
-    "UnknownOperation": "Неизвестная операция конвертора строки"
+    "UnknownOperation": "Неизвестная операция конвертера строки"
   },
   "imports/native/DDFTupleReader": {
     "BadNativeStringData": "Строковые данные некорректны",
@@ -2026,8 +2010,9 @@
     "ErrLocalDBForbidden": "Подключения к локальным БД сервера запрещены"
   },
   "Libraries/1CConnection/1Cv8Connection": {
+    "ErrConnect": "Ошибка подключения к 1C",
     "ErrConnectionString": "Ошибка в строке подключения",
-    "ErrTestConnection": "Ошибка проверки подключения",
+    "ErrTestConnection": "Ошибка проверки подключения 1C",
     "NotConnected": "Не установлено подключение к информационной базе"
   },
   "Libraries/1CConnection/1Cv8ConnectionVendor": {
@@ -2069,7 +2054,6 @@
     "ErrDateOutOfRange": "Дата %s выходит за пределы допустимого диапазона [%s; %s]"
   },
   "Libraries/bgdbrtl/DB": {
-    "ComponentTip": "%s [%s]",
     "ErrCommandTypeNotYetSupported": "Тип SQL-команды %s пока не поддерживается",
     "ErrConnectionString": "Не указана строка подключения",
     "ErrDatabasePathNotExists": "Файл \"%s\" не найден",
@@ -2100,7 +2084,7 @@
     "SSLOptions": "Настройки SSL"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
-    "DatabaseTypeName": "MS Access (OLEDB)"
+    "DatabaseTypeName": "MS Access (ODBC)"
   },
   "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
     "DatabaseTypeName": "BigQuery (ODBC)",
@@ -2163,9 +2147,7 @@
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Индекс бита вне диапазона",
     "ErrStringIsNotSet": "Строка \"%s\" не является представлением множества",
-    "ErrSubSetPowerIsZerro": "Попытка извлечения всех подмножеств с мощностью меньше 0 или больше мощности самого множества",
-    "IndexesDesc": "Массив индексов",
-    "SizeDesc": "Мощность множества"
+    "ErrSubSetPowerIsZerro": "Попытка извлечения всех подмножеств с мощностью меньше 0 или больше мощности самого множества"
   },
   "Libraries/bgrtl/CachedDataSet": {
     "ErrRowCountLimitReached": "Достигнут предел максимального кол-ва строк"
@@ -2184,7 +2166,6 @@
     "ErrTableIndexOutOfRange": "Номер таблицы %d вне диапазона [%d; %d]"
   },
   "Libraries/bgrtl/Classes": {
-    "CountDesc": "Количество",
     "ErrConfigApplyModeNotSupported": "Данный способ загрузки конфигурации не поддерживается",
     "ErrInvalidName": "\"%s\" не является правильным идентификатором",
     "ErrItemAlreadyExist": "%s с именем \"%s\" уже существует",
@@ -2200,8 +2181,6 @@
     "ErrUnableToRecreateNamesIndex": "Невозможно пересоздать индекс имен элементов",
     "ErrVendorAlreadyRegistered": "Поставщик информации \"%s\" уже зарегистрирован",
     "ErrVendorNameConverterAlreadyRegistered": "Конвертер имен из \"%s\" в \"%s\" поставщиков информации уже зарегистрирован",
-    "IDDesc": "Идентификатор",
-    "Item": "Элемент",
     "ItemMetaDesc": "Элемент"
   },
   "Libraries/bgrtl/ClassFactory": {
@@ -2213,6 +2192,11 @@
     "ErrObjectNotFound": "В списке для идентификатора %s %s не существует",
     "ObjMetaDesc": "объект"
   },
+  "Libraries/bgrtl/ClipboardAdapter": {
+    "ErrHTMLFormatNotImplemented": "Некорректный формат буфера обмена. Поддерживатся только text/plain",
+    "ErrReadForbidden": "Чтение значений запрещено",
+    "ErrWriteForbidden": "Запись значений запрещена"
+  },
   "Libraries/bgrtl/ColumnDefs": {
     "ColumnMetaDesc": "Столбец",
     "ErrColumnByUsageNotFound": "Столбец с назначением \"%s\" не найден",
@@ -2220,7 +2204,6 @@
     "ErrSize": "Размер данных должен быть больше или равен нулю"
   },
   "Libraries/bgrtl/ColumnDefsVendor": {
-    "ColumnInfosVendorMetaDesc": "вендор описаний столбцов",
     "ErrColumnTypesMismatch": "Тип столбца %s не совместим с типом исходного столбца %s",
     "ErrInvalidUsageType": "Назначение \"%s\" недопустимо для настраиваемого столбца \"%s\""
   },
@@ -2236,32 +2219,7 @@
     "ErrColumnCanBeIncludedInOnlyOneLink": "Столбец \"%s\" таблицы %d может входить только в \"одну\" связь",
     "ErrLinkedColumnTypesMismatch": "Типы соединяемых столбцов \"%s\" и \"%s\" не совместимы",
     "ErrLinkMustContainMainTableColumn": "При создании связи должно присутствовать поле из главной таблицы",
-    "ErrMaxOccursOfMultiLinksIsReached": "Достигнуто максимальное количество множественных связей",
-    "Link": "Связь"
-  },
-  "Libraries/bgrtl/Consts": {
-    "bdtCurrent": "текущей даты",
-    "bdtData": "имеющихся данных",
-    "FirstLastDateFmt": "%s %s %s от %s",
-    "fld0and5to20DayPeriodName": "дней",
-    "fld0and5to20MonthPeriodName": "месяцев",
-    "fld0and5to20QuarterPeriodName": "кварталов",
-    "fld0and5to20WeekPeriodName": "недель",
-    "fld0and5to20WrongPeriodName": "периодов",
-    "fld0and5to20YearPeriodName": "лет",
-    "fld2to4DayPeriodName": "дня",
-    "fld2to4MonthPeriodName": "месяца",
-    "fld2to4QuarterPeriodName": "квартала",
-    "fld2to4WeekPeriodName": "недели",
-    "fld2to4WrongPeriodName": "периода",
-    "fld2to4YearPeriodName": "года",
-    "fldOneDayPeriodName": "день",
-    "fldOneMonthPeriodName": "месяц",
-    "fldOneQuarterPeriodName": "квартал",
-    "fldOneWeekPeriodName": "неделя",
-    "fldOneWrongPeriodName": "период",
-    "fldOneYearPeriodName": "год",
-    "VersionSerialNumber": "Серийный номер"
+    "ErrMaxOccursOfMultiLinksIsReached": "Достигнуто максимальное количество множественных связей"
   },
   "Libraries/bgrtl/Couplers": {
     "ErrModelSocketCouplerDefAlreadyCoupled": "Соединение уже установлено"
@@ -2301,13 +2259,34 @@
     "ErrChangeIsContainerNotAllowed": "Невозможно изменить признак контейнера у узла, который является корневым или содержит дочерние узлы",
     "ErrNodeCantBeContinuous": "Узел \"%s\" типа \"%s\" не может быть непрерывным",
     "ErrOnlyContainerNodeCanHaveSubNodes": "Только узел, являющийся контейнером, может содержать дочерние узлы",
-    "Root": "Корневой узел",
     "RootNodeDisplayName": "Root"
   },
   "Libraries/bgrtl/DataTreeNodeDefsVendor": {
-    "DataTreeNodeInfosVendorMetaDesc": "вендор описаний узлов",
     "ErrInvalidUsageType": "Назначение \"%s\" недопустимо для настраиваемого узла \"%s\"",
     "ErrNodeTypesMismatch": "Тип узла %s не совместим с типом исходного узла %s"
+  },
+  "Libraries/bgrtl/DateUtils": {
+    "AvailableData": "имеющихся данных",
+    "CurrentData": "текущей даты",
+    "DayPeriodNameFew": "дня",
+    "DayPeriodNameMany": "дней",
+    "DayPeriodNameOne": "день",
+    "FirstLastDateFmt": "%s %s %s от %s",
+    "MonthPeriodNameFew": "месяца",
+    "MonthPeriodNameMany": "месяцев",
+    "MonthPeriodNameOne": "месяц",
+    "QuarterPeriodNameFew": "квартала",
+    "QuarterPeriodNameMany": "кварталов",
+    "QuarterPeriodNameOne": "квартал",
+    "WeekPeriodNameFew": "недели",
+    "WeekPeriodNameMany": "недель",
+    "WeekPeriodNameOne": "неделя",
+    "WrongPeriodNameFew": "периода",
+    "WrongPeriodNameMany": "периодов",
+    "WrongPeriodNameOne": "период",
+    "YearPeriodNameFew": "года",
+    "YearPeriodNameMany": "лет",
+    "YearPeriodNameOne": "год"
   },
   "Libraries/bgrtl/DelayLoadHook": {
     "ErrInvalidDelayedProc": "Не найдена процедура, загружаемая отложено"
@@ -2411,12 +2390,9 @@
     "ErrExtensionAlreadyInitialized": "Расширение уже проинициализировано",
     "ErrExtensionsInstanceDestroyForbidden": "Явное удаление экземпляра списка расширений запрещено",
     "ErrNotSupportedExtensionVendor": "Расширение %s не поддерживается",
-    "Extension": "Расширение",
     "ExtensionVendorMetaDesc": "вендор расширений",
     "ExtLoadErrConfigNotFound": "Расширение %s не загружено, т.к. конфигурация не найдена",
     "ExtLoadErrVendorNotFound": "Расширение не загружено, т.к. вендор расширения %s не найден",
-    "Guid": "Guid вендора расширения",
-    "Item": "Элемент",
     "SynchronizeExtensionsQuery": "Следующие настраиваемые расширения отличаются от исходных:\n%s.\n\nВы хотите синхронизировать все расширения?"
   },
   "Libraries/bgrtl/ExtensionsStd": {
@@ -2488,6 +2464,7 @@
     "ErrDirectoryAlreadyMounted": "Директория с именем %s уже смонтирована",
     "ErrDirectoryNotExist": "Директория \"%s\" не существует",
     "ErrFileAccess": "Ошибка доступа к файлу: %s",
+    "ErrFileNotExist": "Файл \"%s\" не существует",
     "ErrFileStorageNotConnected": "Хранилище файлов не подключено",
     "ErrInvalidBackupFileName": "Недопустимое имя файла резервной копии: %s",
     "ErrInvalidCurrentDirectory": "Недопустимая текущая директория: %s",
@@ -2533,6 +2510,9 @@
   "Libraries/bgrtl/LinkSrvr": {
     "LockError": "Метод UnLock был вызван без метода Lock",
     "UpdateError": "Метод EndUpdate был вызван без метода BeginUpdate"
+  },
+  "Libraries/bgrtl/LocaleUtils": {
+    "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается системой"
   },
   "Libraries/bgrtl/LoggerConfigurator": {
     "ErrCannotConfigureLogger": "Не удалось применить параметры логирования"
@@ -2589,11 +2569,6 @@
   "Libraries/bgrtl/ServiceVariables": {
     "ErrServiceVariablesAlreadyInitialized": "Служебные переменные уже проинициализированы"
   },
-  "Libraries/bgrtl/Singleton": {
-    "ErrObjectDeleteRefCount": "Невозможно удалить объект класса %s из-за наличия на него интерфейсных ссылок: %d",
-    "ErrSingletonInstanceDestroyForbidden": "Явное удаление единственного экземпляра класса %s запрещено",
-    "ErrUnexpectedRelease": "Попытка уменьшить количество интерфейсных ссылок, предварительно не увеличив это количество"
-  },
   "Libraries/bgrtl/SparseArray": {
     "ErrItemNotExist": "Элемент с индексом %d не существует"
   },
@@ -2621,6 +2596,8 @@
     "ErrInvalidBoolean": "Строка \"%s\" не может быть преобразована в значение логического типа",
     "ErrInvalidDateTime": "Строка \"%s\" не может быть преобразована в значение типа дата/время",
     "ErrInvalidFloat": "Строка \"%s\" не может быть преобразована в значение вещественного типа",
+    "LocaleInvariant": "Инвариантная",
+    "NotSet": "Явно не задана",
     "NullValue": "<Null>"
   },
   "Libraries/bgrtl/SyncObjs": {
@@ -2690,11 +2667,8 @@
   "Libraries/bgrtl/Trees": {
     "ErrTreeWalk": "Данная реализация обхода дерева отсутствует",
     "ErrUnableToRecreateNamesIndex": "Невозможно пересоздать индекс имен узлов",
-    "NodeIndexDesc": "Индекс узла",
     "NodeMetaDesc": "Узел",
-    "RootDesc": "Корневой узел",
-    "RootDisplayName": "Корень",
-    "SubNodesDesc": "Подузлы"
+    "RootDisplayName": "Корень"
   },
   "Libraries/bgrtl/TuneDataSource": {
     "ErrInputColumnInfoNotFound": "Не удалось найти исходный столбец %s для настраиваемого столбца %s",
@@ -2733,16 +2707,9 @@
     "BadVariantType": "Неподдерживаемый подтип типа Variant",
     "CanNotConvert": "Невозможно конвертировать данные в 32-битный формат"
   },
-  "Libraries/bgrtl/TypedLists": {
-    "Item": "Элемент"
-  },
   "Libraries/bgrtl/TypInfo": {
     "ErrEnumVendorInfoManagerNotRegistered": "Не зарегистрирован менеджер описаний перечислений",
     "ErrTypeInfoVariableManagerNotRegistered": "Менеджер переменных для типа %s не зарегистрирован"
-  },
-  "Libraries/bgrtl/UITypes": {
-    "Alpha": "Прозрачность",
-    "Color": "Цвет"
   },
   "Libraries/bgrtl/UniqueValues": {
     "ErrNullAsValueChangeForbidden": "Значение параметра NullAsValue непустого списка уникальных значение изменять запрещено",
@@ -2750,7 +2717,6 @@
     "ErrValueAlreadyExists": "Значение \"%s\" уже присутствует в списке уникальных значений"
   },
   "Libraries/bgrtl/UniqueValuesData": {
-    "Data": "Данные",
     "UniqueValuesDataAlreadyInitialized": "Данные уникальных значений уже проинициализированы"
   },
   "Libraries/bgrtl/UpdateHelpers": {
@@ -2761,13 +2727,15 @@
     "ErrUpdateCookieInvalidOwner": "Cookie обновляемого объекта принадлежит другому объекту",
     "ErrUpdateCookieIsNil": "Попытка выполнить операцию с пустой ссылкой на Cookie обновляемого объекта"
   },
+  "Libraries/bgrtl/URIUtils": {
+    "ErrInvalidDomainName": "Некорректное доменное имя",
+    "ErrPunycodeOverflow": "Переполнение в алгоритме Punycode",
+    "MalformedUTF8PercentEncodedSequence": "Некорректно закодированная с процентами UTF8 последовательность"
+  },
   "Libraries/bgrtl/Utils": {
     "DaysNick": "дн.",
     "ErrContainerAlreadyIncludeClass": "Контейнер уже содержит класс %s",
-    "ErrDataSourceIsNil": "Нет ссылки на источник данных %s",
-    "ErrDataSourceNotActive": "Источник данных%s не активен",
     "ErrInvalidHexStr": "Строка \"%s\" не является правильным представлением шестнадцатеричного числа",
-    "ErrInvalidVarType": "\"%s\" не является строковым представлением значения типа TVarType",
     "ErrIsNotValidSet": "Строка \"%s\" не является правильным представлением множества"
   },
   "Libraries/bgrtl/VariableDefs": {
@@ -2775,7 +2743,7 @@
     "VariableMetaDesc": "Переменная"
   },
   "Libraries/bgrtl/VariableInfoLinks": {
-    "ErrLinkedVariableInfoNotFound": "Переменная с именем %s не найден",
+    "ErrLinkedVariableInfoNotFound": "Переменная с именем %s не найдена",
     "ErrLinkedVariableInfoNotSpecified": "Ссылка на переменную не задана",
     "ErrLinkedVariableInfoTypesMismatch": "Тип переменной %s не совместим с типом исходной переменной"
   },
@@ -2784,8 +2752,7 @@
     "ErrVariablesAlreadyEditing": "Переменные уже находятся в состоянии редактирования",
     "ErrVariablesNotActive": "Переменные не активны",
     "ErrVariablesNotConfigured": "Переменные не настроены",
-    "ErrVariablesNotEditing": "Переменные не находятся в состоянии редактирования",
-    "VariableElements": "Список переменных"
+    "ErrVariablesNotEditing": "Переменные не находятся в состоянии редактирования"
   },
   "Libraries/bgrtl/VariablesMultiLinks": {
     "ErrAlienLinkedVariable": "Переменная \"%s\" не принадлежит ни одному из используемых списков переменных",
@@ -2794,13 +2761,11 @@
     "ErrLinkedVariableTypesMismatch": "Типы соединяемых переменных \"%s\" и \"%s\" не совместимы",
     "ErrLinkMustContainMainTableVariable": "При создании связи должна присутствовать переменная из главной таблицы",
     "ErrMaxOccursOfMultiLinksIsReached": "Достигнуто максимальное количество множественных связей",
-    "ErrVariableCanBeIncludedInOnlyOneLink": "Переменная \"%s\" таблицы %d может входить только в \"одну\" связь",
-    "Link": "Связь"
+    "ErrVariableCanBeIncludedInOnlyOneLink": "Переменная \"%s\" таблицы %d может входить только в \"одну\" связь"
   },
   "Libraries/bgrtl/VariablesVendor": {
     "ErrInvalidUsageType": "Назначение \"%s\" недопустимо для настраиваемой переменной \"%s\"",
-    "ErrVariableTypesMismatch": "Тип переменной %s не совместим с типом исходной переменной %s",
-    "VariableInfosVendorMetaDesc": "вендор описаний переменных"
+    "ErrVariableTypesMismatch": "Тип переменной %s не совместим с типом исходной переменной %s"
   },
   "Libraries/bgrtl/VarUtils": {
     "ErrConvertStrToType": "Ошибка преобразования строки \"%s\" к значению типа %s",
@@ -2836,14 +2801,16 @@
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Не удалось установить свойство \"%s\"",
     "ErrDisposeRuntime": "Ошибка при удалении среды выполнения JavaScript",
-    "ErrMessageQueue": "Не обработанное исключение при постановке в очередь событий JavaScript",
-    "ErrMessageUnhandledPromiseRejection": "Не обработанное исключение при отслеживании отклоненных Promise",
+    "ErrHandlingPromiseRejection": "Ошибка при обработке неперехваченных ошибок Promise",
     "ErrOriginalDll": "Операция не поддерживается. Используется несовместимая версия библиотеки ChakraCore.",
+    "ErrPromiseContinuation": "Не обработанное исключение при постановке в очередь событий JavaScript",
     "ErrRaiseException": "Не обработанное исключение внутри встроенной функции JavaScript: \"%s\"",
     "ErrRaiseModuleException": "Не обработанное исключение при загрузке модуля JavaScript",
     "ErrTooFewArgs": "В функцию %s передано недостаточно аргументов (%d, когда минимум %d)",
     "ErrTooManyArgs": "В функцию %s передано много аргументов (%d, когда максимум %d)",
-    "ErrUnhandledPromiseRejected": "Не обработанная ошибка в Promise"
+    "ErrUnhandledPromiseRejection": "Не обработанная ошибка Promise",
+    "ErrUnhandledPromiseRejections": "Не обработанные ошибки Promise",
+    "ErrUntrackedPromiseRejection": "Не обработанное исключение при отслеживании отклоненных Promise"
   },
   "Libraries/ChakraCore/ChakraRunRes": {
     "BadSerializedScript": "Некорректно сериализован служебный JavaScript-код в ресурсе %s, выполняется несериализованный код",
@@ -2929,17 +2896,13 @@
     "ErrSaveConfigFile": "Ошибка сохранения файла конфигурации: %s"
   },
   "Libraries/Config/ConfigScheme": {
-    "CountDesc": "Количество",
     "ErrAttributeByNameNotFound": "Атрибут схемы с именем \"%s\" не найден.",
     "ErrDuplicateAttributeName": "Тип схемы \"%s\" содержит более одного атрибута с именем \"%s\"",
     "ErrElementByNameNotFound": "Элемент схемы с именем \"%s\" не найден.",
     "ErrItemNameNotFound": "Элемент перечисления с именем \"%s\" не найден.",
     "ErrSameAttributeAndElementName": "Тип схемы \"%s\" содержит атрибут и элемент с одинаковым именем \"%s\"",
     "ErrTypeByNameNotFound": "Тип с именем \"%s\" не найден.",
-    "ItemDesc": "Элемент",
-    "ValueDesc": "Значение",
-    "VarDataDesc": "Данные",
-    "VarTypeDesc": "Тип"
+    "ValueDesc": "Значение"
   },
   "Libraries/Config/ConfigUtils": {
     "ErrConfigSchemeTypesMismatch": "Тип схемы %s загружаемой конфигурации не совместим с типом схемы %s объекта"
@@ -3142,7 +3105,6 @@
   },
   "Libraries/Model/Connections/ModelConnectionWorkFlow": {
     "ErrAlienConnectionNode": "Подключение \"%s\" не принадлежит текущему списку подключений",
-    "ErrDerivedConnectionVendorNotFound": "Производный компонент узла подключения не найден",
     "ErrNodeIsNotConnectionReference": "Узел \"%s\" не является ссылкой на подключение",
     "ErrNodeNotInitialized": "Узел \"%s\" не проинициализирован",
     "ErrNoReferencedConnection": "Узел \"%s\" не ссылается ни на одно подключение",
@@ -3202,24 +3164,19 @@
     "ErrCannotUpdateConfigDesignMode": "Не удалось обновить конфигурацию производной подмодели перед активацией. Попробуйте обновить конфигурацию текущей подмодели вручную."
   },
   "Libraries/Model/DerivedModelComponentVendor": {
-    "BaseComponentVendorGuidDesc": "GUID Базового компонента",
     "BaseNode": "Базовый узел",
-    "BaseNodeGuid": "Guid Базового узла",
-    "Caption": "Название",
-    "DerivedComponentVendorGuidDesc": "GUID Производного компонента",
-    "Description": "Описание",
     "ErrBaseComponentAlreadyExists": "Базовый компонент уже существует",
     "ErrBaseComponentNotInitialized": "Базовый компонент узла не проинициализирован",
     "ErrBaseComponentVendorNotSpecified": "У базового компонента узла не задан вендор",
+    "ErrBaseNodeConfigNotFound": "Не найдена конфигурация базового узла",
     "ErrBaseNodeNotFound": "Базовый узел не найден",
     "ErrCircularInheritanceForbidden": "Циклическое наследование компонентов запрещено",
+    "ErrDerivedComponentVendorGuidNotFound": "Не найден GUID производного компонента",
+    "ErrDerivedNodesNotAllowed": "Создание производных узлов по компоненту %s не разрешено",
     "ErrIncompatibleBaseComponentVendor": "Базовый и производный компоненты не совместимы",
     "ErrParentVendorIsDeleted": "Базовый компонент удален",
     "ErrParentVendorNotFound": "Базовый компонент не найден",
-    "ErrUnknownCouplerDefType": "Неизвестный тип описателя соединения",
-    "IsSealedVendor": "Запечатанный",
-    "ModelComponent": "Компонент узла",
-    "OriginalComponentVendorGuidDesc": "GUID Исходного компонента"
+    "ErrUnknownCouplerDefType": "Неизвестный тип описателя соединения"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
     "ErrCannotChangeDerivedName": "Запрещено изменять имя производных портов",
@@ -3344,12 +3301,15 @@
   },
   "Libraries/Model/ModelPackage": {
     "ErrAlienModelUnit": "Модуль не принадлежит текущему пакету",
+    "ErrCannotRevivePackageLink": "Не удалось восстановить ссылку на пакет с именем %s и версией %s",
     "ErrCircularPackageLinksNotAllowed": "Циклические ссылки между пакетами запрещены",
+    "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается системой",
     "ErrPackageLinkAlreadyExists": "Ссылка на пакет \"%s\" уже существует",
     "ErrPackageLinkToSelfNotAllowed": "В пакете нельзя добавить ссылку на самого себя",
     "ErrPackageNameCannotBeEmpty": "Имя пакета не может быть пустым",
     "ErrPackageNameInvalidCharacter": "Имя пакета \"%s\" содержит недопустимый символ \"%s\"",
     "ErrPackageNameInvalidFirstCharacter": "Имя пакета \"%s\" начинается с недопустимого символа \"%s\"",
+    "ErrPackageNotFoundByFileName": "Не удалось найти пакет %s",
     "ErrPackageWithNameLinkAlreadyExists": "Ссылка на пакет с именем \"%s\" уже существует",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Количество имён и значений переменных должно быть одинаковым",
     "ErrVariableNotFound": "Переменная с именем \"%s\" не найдена",
@@ -3358,11 +3318,11 @@
     "RestoreVariablesBackupProcessCaption": "Восстановление значений переменных пакета"
   },
   "Libraries/Model/ModelPackageContext": {
-    "ErrBasePackageNotFound": "Базовый пакет не найден",
-    "ErrExecNodeBaseComponentNotFound": "Не найден базовый компонент для узла \"%s\""
+    "ErrBasePackageNotFound": "Базовый пакет не найден"
   },
   "Libraries/Model/ModelPackageManager": {
     "BackupRestored": "При сохранении пакета \"%s\" возникла ошибка. Файл восстановлен из резервной копии.",
+    "CompatConvertMessages": "Сообщения при конвертировании пакета \"%s\"",
     "CompatConvertRequired": "При открытии пакета \"%s\" версии %s будет произведено конвертирование.",
     "ErrCannotLoadPackageElement": "Ошибка загрузки пакета: не удалось загрузить элемент \"%s\"",
     "ErrCannotOpenFile": "Не удалось открыть файл \"%s\"",
@@ -3414,7 +3374,7 @@
     "ErrAlienExcludedNode": "Узел \"%s\" не принадлежит текущему модулю",
     "ErrAlienSubModel": "Подмодель не принадлежит текущему сценарию",
     "ErrComponentVendorIsSealed": "Создание производного компонента по данному узлу запрещено",
-    "ErrDerivedConnectionVendorNotFound": "Производный компонент для узла подключения не найден",
+    "ErrNodeNotInitialized": "Узел не проинициализирован",
     "LocalModelComponentVendorMetaDesc": "локальный компонент",
     "ModelComponentVendorMetaDesc": "компонент"
   },
@@ -3460,7 +3420,6 @@
     "ErrVariableNotFound": "Переменная с именем \"%s\" не найдена",
     "ErrVendorMalfunction": "Компонент узла \"%s\" неисправен",
     "ExplodeGenericModel": "Подмодель \"%s\" развернута",
-    "Left": "Слева",
     "LogActivateNodeStart": "Активация узла \"%s\" GUID=%s",
     "LogActivateNodeSuccess": "Успешно активирован узел \"%s\" GUID=%s",
     "LogDeactivateNode": "Деактивирован узел \"%s\" GUID=%s",
@@ -3470,7 +3429,6 @@
     "RestoreBackupProcessCaption": "Восстановление конфигурации из резервной копии",
     "SynchronizationInputPort": "Порядок выполнения",
     "SynchronizationOutputPort": "Порядок выполнения",
-    "Top": "Сверху",
     "WarnLinkPortNotConnetedToNode": "Порт линка с идентификатором %s не подключен к узлу"
   },
   "Libraries/Model/ModelWorkflowSubModelComposer": {
@@ -3546,9 +3504,6 @@
     "InputVariables": "Входные переменные",
     "OutputVariables": "Выходные переменные"
   },
-  "Libraries/Model/Variables/VariablesOutputSocket": {
-    "Variables": "Переменные"
-  },
   "Libraries/Model/Views/ModelViewDataSource": {
     "InputDataSource": "Набор данных"
   },
@@ -3573,11 +3528,7 @@
     "ErrInputLinkAlreadyExists": "Ко входному порту \"%s\" узла \"%s\" уже подключена связь",
     "ErrUnableToRestoreLinkBetween": "Не удалось восстановить связь между узлами \"%s\" и \"%s\"",
     "ErrUnableToRestoreLinkTo": "Не удалось восстановить связь, подключенную ко входу узла \"%s\"",
-    "Links": "Связи",
     "Node": "Узел",
-    "Nodes": "Узлы",
-    "PortGuid": "Guid порта",
-    "PortNodeGuid": "Guid узла",
     "UnknownNodeDisplayName": "Неизвестный узел"
   },
   "Libraries/Normalization/DataSourceMultiOutputNormModelComponentEngine": {
@@ -3754,24 +3705,20 @@
     "ErrWrongModelOutput": "Выходной столбец не соответствует обученной ранее модели",
     "RegressionModelCoefficients": "Коэффициенты регрессионной модели",
     "RegressionOutputDataSet": "Выход регрессии",
-    "RegressionOutputVariables": "Сводка",
-    "RegressionParams": "Параметры регрессии",
-    "RegressionTrainingResults": "Результаты обучения"
+    "RegressionOutputVariables": "Сводка"
   },
   "Libraries/Regression/Regression": {
     "ErrWrongRegressionParamsConstructor": "Используется недопустимый конструктор параметров регрессии"
   },
+  "Libraries/Regression/RegressionBuilder": {
+    "ErrWrongProbability": "Значение порога доверительного интервала должно быть в пределах [0, 100]"
+  },
   "Libraries/Regression/RegressionModel": {
     "ApplyModelProcessCaption": "Применение модели",
-    "ErrApplyWrongFeatures": "Число колонок входного набора данных %d не равно числу регрессоров модели %d",
-    "RegressionStatistics": "Статистика регрессии"
+    "ErrApplyWrongFeatures": "Число колонок входного набора данных %d не равно числу регрессоров модели %d"
   },
   "Libraries/Regression/RegressionStatistics": {
-    "CoefficientsStats": "Статистика коэффициентов модели",
     "ErrWrongClassType": "Класс источника не соответствует "
-  },
-  "Libraries/Regression/RegressionTrainingResults": {
-    "RegressionModel": "Регрессионная модель"
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "ErrInvalidContentType": "Недопустимый формат значения Content-Type: %s",
@@ -3885,15 +3832,24 @@
   "Studio/Converters/Converter_202003302114_CubeView_Chart": {
     "WarnCannotConvert": "В настройках визуализатора %s не удалось сконвертировать отображаемый в диаграмме куба факт. Был выбран первый подходящий факт."
   },
+  "Studio/Converters/Converter_202111251332_ExecNode_DerivedVendor": {
+    "AddedPublishedNodeDerivedVendor": "Создан производный компонент по опубликованному узлу \"%s\"",
+    "PublicNodeDerivedVendorCaptionFormatString": "%s (открытый узел)",
+    "PublishedNodeDerivedVendorCaptionFormatString": "%s (опубликованный узел)"
+  },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Пакеты Loginom"
   },
   "Studio/DeductorServer": {
+    "AutoRefresh": "Автообновление",
+    "AutoSavePackageError": "Возникла ошибка при автосохранении пакета \"%s\"",
+    "AutoSavePackagesFailed": "Не удалось выполнить автосохранение пакетов",
     "ErrAccessDenied": "Отказано в доступе",
     "ErrCannotCreateDirectory": "Не удалось создать директорию \"%s\"",
     "ErrCannotDeleteBasePackage": "Невозможно удалить базовый пакет %s, не удаляя зависимый пакет %s, который на него ссылается",
     "ErrCannotGetPackageLinkRef": "Не удалось получить объектную ссылку на ссылку на пакет с именем %s",
     "ErrCannotGetPackageRef": "Не удалось получить объектную ссылку на пакет с именем %s",
+    "ErrCannotSaveEncryptedPackage": "Невозможно сохранить зашифрованный пакет с именем %s",
     "ErrCannotSaveReadOnlyPackage": "Невозможно сохранить пакет с именем %s, открытый только на чтение",
     "ErrCircularPackageLink": "Пакет \"%s\" содержит циклическую ссылку на самого себя",
     "ErrComparePackagesError": "Возникла ошибка при сравнении файла пакета \"%s\" с редактируемой копией в памяти",
@@ -3905,14 +3861,13 @@
     "ErrFileNameNotSpecified": "Не указано имя файла",
     "ErrInvalidModelLockCookieOwner": "Указан некорректный владелец Cookie блокировки узлов",
     "ErrInvalidPath": "Некорректный путь к файлу: \"%s\"",
+    "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается системой",
     "ErrModelNodeNotFound": "Узел %s не найден",
     "ErrMustRestoreReferencedPackage": "Невозможно восстановить зависимый пакет %s, не восстанавливая пакет %s, на который он ссылается",
     "ErrNoPublishedNodes": "Пакет не содержит ни одного опубликованного узла",
     "ErrPackageAlreadyEditing": "Пакет с именем %s уже используется другим процессом и не может быть открыт для редактирования",
     "ErrPackageBackupReferencesAlreadyRevived": "У резервной копии пакета %s уже восстановлены ссылки на другие пакеты",
     "ErrPackageDoesNotBelongToCurrentSession": "Пакет с именем %s не принадлежит текущей сессии",
-    "ErrPackageNotFound": "Не удалось найти пакет с именем %s и версией %s",
-    "ErrPackageNotFoundByFileName": "Не удалось найти пакет %s",
     "ErrPackageRestoreErrors": "При восстановлении пакета %s возникли ошибки",
     "ErrPublishedModelNodeMetadataNotFound": "Не удалось найти метаданные для опубликованного узла \"%s\"",
     "ErrPublishedModelNodeNotFound": "Не удалось найти опубликованный узел с идентификатором %s",
@@ -3924,20 +3879,19 @@
     "ErrSessionBackupAlreadyDeleted": "Данная резервная копия сессии уже была удалена другим клиентом из-под текущей учётной записи",
     "ErrSessionBackupAlreadyRestored": "Данная резервная копия сессии уже была восстановлена другим клиентом из-под текущей учётной записи",
     "ErrSessionBackupModified": "Данная резервная копия сессии была изменена другим клиентом из-под текущей учётной записи",
-    "FileNames": "Имена файлов",
+    "ErrUpdatePublishedPackageErrors": "При обновлении публикации пакета %s возникли ошибки",
+    "FileName": "Имя файла",
+    "Namespace": "Пространство имён",
     "PackageClosedLogMsg": "Закрыт пакет \"%s\"",
     "PackageOpenedEditLogMsg": "Открыт пакет \"%s\" в режиме редактирования",
     "PackageOpenedReadLogMsg": "Открыт пакет \"%s\" в режиме только для чтения",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s запущен",
-    "Session": "Сессия",
     "SessionBatch": "Пакетная обработка",
     "SessionCloseLogMsg": "Закрыта сессия для пользователя %s",
     "SessionInitializedLogMsg": "Инициализирована сессия для пользователя %s",
     "SessionIntegrator": "Запрос из интегратора",
     "SessionInteractive": "Интерактивная сессия",
-    "User": "Пользователь",
-    "UserName": "Имя пользователя",
     "WarnClosePackageFailed": "Не удалось закрыть пакет %s из диспетчера, возможно, сессия уже закрыта",
     "WarnCloseSessionFailed": "Не удалось закрыть сессию из диспетчера, возможно, она уже закрыта",
     "WarnSessionStopTimeout": "Не удалось остановить сессию пользователя %s в течение %d миллисекунд. Количество не завершённых процессов: %d. Список активных подпроцессов: %s. Список не запущенных подпроцессов: %s.",
@@ -3946,10 +3900,6 @@
   },
   "Studio/DeductorServerConnector": {
     "ErrCannotConfigureActiveConnection": "Невозможно изменить настройки активного подключения"
-  },
-  "Studio/DeductorServerSettings": {
-    "SessionBackupDirectory": "Резервные копии сессий",
-    "UserStorageDirectory": "Личные данные пользователей"
   },
   "Studio/DeductorSessionsManager": {
     "ErrCloseSessionRestriction": "Запрещено закрывать сессию %s",
@@ -3968,9 +3918,12 @@
   },
   "Studio/DeductorUsers": {
     "AllowedApplicationModes": "Разрешённые режимы работы приложения",
+    "AllowPublish": "Разрешить публикацию пакетов",
     "Blocked": "Заблокирован",
     "ErrAccessDenied": "Отказано в доступе",
     "ErrApplicationModeNotAllowed": "Не разрешено подключение в режиме \"%s\"",
+    "ErrCannotDeleteStandartUserGroup": "Нельзя удалить стандартную группу",
+    "ErrFileStorageNotReadyYet": "Файловое хранилище пользователя пока не подготовлено",
     "ErrInvalidPasswordHashInConfig": "Файл конфигурации содержит некорректный хеш пароля",
     "ErrInvalidUserNameOrPassword": "Неверное имя пользователя или пароль",
     "ErrLastAdminChangeDenied": "Невозможно удалить или изменить единственную учетную запись администратора %s с локальной аутентификацией",
@@ -3984,6 +3937,7 @@
     "ErrUserNameConflictsWithSharedDirectory": "Имя пользователя не может совпадать с именем общей директории %s",
     "ErrUserNameIsReserved": "Идентификатор %s зарезервирован и не может быть использован в качестве имени пользователя",
     "ErrUserNameMustBeValid": "Имя пользователя может состоять из латинских букв, цифр, символов _ - . и пробела,\nно не может заканчиваться точкой или пробелом.",
+    "GroupEveryone": "Все",
     "IsAdmin": "Администратор",
     "IsDesigner": "Проектирование сценариев",
     "IsViewer": "Просмотр отчетов",
@@ -3993,7 +3947,6 @@
     "LogDeleteUser": "Удален пользователь %s",
     "LogUserPropertySet": "Изменение учетной записи %s: %s=%s",
     "UseGlobalFileStorage": "Использование глобального файлового хранилища",
-    "User": "Пользователь",
     "UserMetaDesc": "Пользователь"
   },
   "Studio/Server/BatchLauncher/BatchLauncher": {
@@ -4076,24 +4029,24 @@
     "VendorCaption": "Таблица",
     "VendorDesc": "Отображение данных в виде таблицы"
   },
-  "Viewers/Chart/ChartViewVendor": {
-    "VendorCaption": "Диаграмма",
-    "VendorDesc": "Отображение данных в виде диаграммы"
-  },
-  "Viewers/Chart/Server/ChartColumnInfo": {
+  "Viewers/Chart/ChartColumnInfo": {
     "ChartExtremesProgress": "Поиск минимумов и максимумов",
     "ChartSortingProgress": "Сортировка данных",
     "ChartTotalsProgress": "Нахождение суммы ряда"
   },
-  "Viewers/Chart/Server/ChartParametres": {
+  "Viewers/Chart/ChartParametres": {
     "DefaultSerieName": "Серия",
     "ErrAxisNotFound": "Ось с данной позицией не найдена",
     "ErrAxisPositionNotTrue": "Неверная позиция оси",
     "ErrLinkedColumnDataType": "Неверный тип данных",
     "ErrLinkedColumnInfoNotFound": "Столбец не найден"
   },
-  "Viewers/Chart/Server/ChartViewCacheServer": {
+  "Viewers/Chart/ChartViewCacheServer": {
     "DataSourceIsInActive": "Источник данных находится в неактивном состоянии"
+  },
+  "Viewers/Chart/ChartViewVendor": {
+    "VendorCaption": "Диаграмма",
+    "VendorDesc": "Отображение данных в виде диаграммы"
   },
   "Viewers/ClusterProfiles/ClusterProfilesView": {
     "ClusterProfilesProcess": "Профили кластеров",
@@ -4135,17 +4088,10 @@
     "ErrParseExpression": "При разборе выражения, соответствующего вычисляемому факту \"%s\" возникла ошибка",
     "ErrRecursiveCall": "Обнаружена циклическая зависимость между вычисляемыми фактами: %s"
   },
-  "Viewers/Cube/CubeCaseSort": {
-    "DimDataTypeDesc": "Тип данных измерения",
-    "DimNameDesc": "Имя измерения",
-    "DimValueDesc": "Значение заголовка"
-  },
   "Viewers/Cube/CubeChart": {
-    "DimDataTypeDesc": "Тип данных измерения",
-    "DimNameDesc": "Имя измерения",
-    "DimValueDesc": "Уникальное значение, принадлежащее измерению",
     "ErrAlreadyExists": "Факт с индексом отображения %d уже присутствует в диаграмме куба",
     "ErrDataType": "Нельзя использовать отображение факта с нечисловым типом данных в диаграмме куба",
+    "ErrHeadersNotCached": "Нельзя запросить данные до запроса имен заголовков",
     "ErrNotExists": "Факт с индексом отображения %d отсутствует в диаграмме куба",
     "MaxDotsCountDesc": "Максимальное количество точек",
     "MaxSeriesCountDesc": "Максимальное количество серий"
@@ -4198,6 +4144,42 @@
   "Viewers/Cube/CubeViewVendor": {
     "VendorCaption": "Куб",
     "VendorDesc": "Многомерное отображение (кросс-таблица и кросс-диаграмма)"
+  },
+  "Viewers/DataQuality/QualityView": {
+    "DataSetQualityCalculation": "Расчет показателей качества набора данных",
+    "ErrAlreadyExporting": "Нельзя экспортировать таблицы, пока не будет завершен текущий экспорт",
+    "ErrExportQualityClosed": "Нельзя экспортировать таблицы, когда показатели не рассчитаны",
+    "HistogramsCalculation": "Расчет гистограмм полей данных",
+    "LogColumnNotFoundFmt": "Во входном наборе данных не найдено поле с именем %s. Поле удалено из отображаемых полей.",
+    "LogNewColumnFmt": "Во входном наборе данных появилось новое поле с именем %s. Поле добавлено к отображаемым полям.",
+    "MoreStatisticsCalculation": "Расчет дополнительных статистических показателей",
+    "PrepareViewData": "Статистика",
+    "QualityStatisticsCalculation": "Расчет показателей качества полей данных",
+    "QualityViewProcess": "Качество данных",
+    "SimpleStatisticsCalculation": "Расчет простейших статистических показателей"
+  },
+  "Viewers/DataQuality/QualityViewBuilder": {
+    "UsefulColumns": "%s из %s"
+  },
+  "Viewers/DataQuality/QualityViewCalculation": {
+    "ErrRequiredColumnNotFound": "Входной источник данных не содержит столбцы с заданными номерами"
+  },
+  "Viewers/DataQuality/QualityViewDetailing": {
+    "DetailingProcessCaptionSuffix": " по ячейке [%d, %d]"
+  },
+  "Viewers/DataQuality/QualityViewExport": {
+    "HTMLContinueStatsTitle": "Качество данных (Непрерывные поля)",
+    "HTMLDiscreteStatsTitle": "Качество данных (Дискретные поля)",
+    "HTMLOverviewTitle": "Качество данных (Сводка)",
+    "NotAvailable": "Недоступно",
+    "NotCalculated": "Не вычислено"
+  },
+  "Viewers/DataQuality/QualityViewHistogram": {
+    "ResidueValue": "Прочие"
+  },
+  "Viewers/DataQuality/QualityViewVendor": {
+    "VendorCaption": "Качество данных",
+    "VendorDesc": "Отображение показателей качества данных"
   },
   "Viewers/DataTree/DataTreeView": {
     "ErrNotDefinedInputDataTree": "Не определено входное дерево данных",
@@ -4369,6 +4351,7 @@
   "Warehouse2/DBMDEngine": {
     "ErrDimensionFKIsNull": "Ссылка на измерение \"%s\" не найдена.\nНе указано значение внешнего ключа.",
     "ErrDimensionFKNotFound": "Ссылка на измерение \"%s\" не найдена.\nИзмерение с первичным ключом \"%s\" в списке измерений не найдено.",
+    "ErrExecSQL": "Ошибка при выполнении запроса к БД.",
     "ErrNotFoundVersionInfo": "Не удалось считать информацию о версии Deductor Warehouse.",
     "ErrProcessFKIsNull": "Ссылка на процесс \"%s\" не найдена.\nНе указано значение внешнего ключа.",
     "ErrProcessFKNotFound": "Ссылка на процесс \"%s\" не найдена.\nПроцесс с первичным ключом \"%s\" в списке процессов не найден.",
@@ -4379,10 +4362,12 @@
     "DWConnectionVendorDesc": "Подключение к Хранилищу данных Deductor"
   },
   "Warehouse2/Deductor/DDWEngine": {
-    "ErrDimensionValueIsNull": "В строке \"%d\" значение измерения \"%s\" пустое.",
-    "ErrDimensionValueNotFound": "Значение \"%s\" измерения \"%s\" не найдено в ХД (строке \"%d\").",
-    "ErrDropTable": "В процессе выполнения удаления таблицы связанной с объектом [%s] \"%s\" возникла ошибка.\n%s",
-    "ErrEmptyData": "В процессе выполнения очистки данных объекта [%s] \"%s\" возникла ошибка.",
+    "ErrDimensionValueIsNull": "В строке \"%d\" значение измерения \"%s\" [%s] пустое.",
+    "ErrDimensionValueNotFound": "Значение \"%s\" не найдено среди значений измерения \"%s\" [%s].",
+    "ErrEmptyData": "В процессе выполнения очистки данных объекта \"%s\" [%s] возникла ошибка.",
+    "ErrLoadDataDimension": "В процессе выполнения загрузки данных в измерение \"%s\" [%s] возникла ошибка.",
+    "ErrLoadDataProcess": "В процессе выполнения загрузки данных в процесс \"%s\" [%s] возникла ошибка.",
+    "ErrLoadDataProcessCanceled": "Процесс выполнения загрузки данных в процесс \"%s\" [%s] был отменен пользователем. Данные в ХД не загружены. Восстановление ограничений и индексов не выполнено.",
     "MsgDeleteDataProcess": "Удаление по измерению данных Процесса из Хранилища данных",
     "MsgDisableConstraint": "Отключить индексы и ограничения.",
     "MsgEnableConstraint": "Восстановить индексы и ограничения.",
@@ -4390,7 +4375,7 @@
     "MsgGroupDeleteDim": "Подготовка к удалению. Группировка данных по измерению.",
     "MsgLoadDataDimension": "Загрузка данных Измерения в Хранилище данных",
     "MsgLoadDataProcess": "Загрузка данных Процесса в Хранилище данных",
-    "MsgRecordSkipDimValueIsNull": "Данные строки \"%d\" не добавлены в ХД. Значение измерения \"%s\" пустое.",
+    "MsgRecordSkipDimValueIsNull": "Данные строки \"%d\" не добавлены в ХД. Значение измерения \"%s\" [%s] пустое.",
     "MsgStatisticsGathering": "Сбор статистики"
   },
   "Warehouse2/Deductor/DDWExportVendor": {
@@ -4402,14 +4387,11 @@
     "VendorDesc": "Извлечение данных из Хранилища данных Deductor"
   },
   "Warehouse2/Deductor/Ver6/DW6Engine": {
-    "ErrCheckProcess": "Процесс [%s] \"%s\" должен состоять хотя бы из двух измерений.",
-    "ErrDataCube": "Не удалось считать информацию о Кубе [%s] \"%s\" .\n%s",
     "ErrDataNotLoad": "Данные в ХД не загружены.\nВозможные причины:\nFirebird - пробелы в конце строковых измерений;\nMS SQL - не учитывает регистр букв строковых измерений.\nЕсли было выставлено удаление данных по измерению - эти данные удалены из ХД.\nВозникла ошибка при восстановлении ограничений и индексов",
-    "ErrRebuildCube": "В процессе выполнения обновления Куба [%s] \"%s\" возникла ошибка.",
+    "ErrRebuildCube": "В процессе выполнения обновления куба \"%s\" [%s] возникла ошибка.",
     "MsgMoreLengthName": "Слишком длинное имя поля \"%s\".\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД.",
     "MsgMoreLengthPrefix": "Слишком длинное значение префикса \"%s\".\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД.",
     "MsgRebuildCube": "Обновить Кубы в Хранилище данных",
-    "MsgRelationTableList": "Есть связанные таблицы:\n%s",
     "MsgReservedName": "Имя поля \"%s\" совпадает с зарезервированными словами.\nМогут возникнуть ошибки при выполнении SQL-запросов к ХД."
   },
   "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {
@@ -4431,7 +4413,6 @@
   "Warehouse2/DWDataEngine": {
     "ErrDimNotSourceName": "Для измерения \"%s\" не указано поле из источника данных.",
     "ErrDimSourceNameNotFound": "Поле \"%s\" указанное для измерения \"%s\" в источнике данных не найдено.",
-    "ErrExecSQL": "Ошибка при выполнении запроса к БД.",
     "ErrSourceNameNotFound": "Поле \"%s\" указанное для \"%s\" в источнике данных не найдено."
   },
   "Warehouse2/DWExport": {

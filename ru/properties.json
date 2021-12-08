@@ -116,7 +116,8 @@
       "Description": "Описание",
       "DisplayName": "Метка",
       "Expression": "Выражение",
-      "Intermediate": "Промежуточное выражение"
+      "Intermediate": "Промежуточное выражение",
+      "Name": "Имя"
     }
   },
   "components/clope": {
@@ -190,7 +191,6 @@
   },
   "components/crosstab": {
     "CrossTabEngine": {
-      "AllowInvalidName": "Разрешить невалидные имена",
       "DisplayNameSeparator": "Разделитель частей меток полей",
       "SlidingUniqueValues": "Скользящие уникальные значения",
       "SlidingUniqueValuesLimit": "Ограничение количества значений",
@@ -511,7 +511,8 @@
   },
   "exports/native": {
     "ExportNative": {
-      "Compression": "Сжатие"
+      "Compression": "Сжатие",
+      "StringCacheMaxSize": "Размер кэша строк"
     }
   },
   "exports/tableau": {
@@ -572,13 +573,14 @@
       "DecimalSeparator": "Десятичный разделитель",
       "DelimiterChar": "Разделитель столбцов",
       "FirstLineAsTitle": "Заголовок в первой строке",
-      "MultipleDelimiters": "Принимать несколько подряд разделителей за один",
+      "MultipleDelimiters": "Считать последовательные разделители одним",
       "RowsToSkip": "Пропустить строк",
       "TextQualifier": "Ограничитель строк",
       "TimeSeparator": "Разделитель времени",
       "ValueFalse": "Ложь",
       "ValueNull": "Пусто",
-      "ValueTrue": "Истина"
+      "ValueTrue": "Истина",
+      "VariantAsGeneralType": "Переменный тип"
     }
   },
   "imports/xml": {
@@ -688,6 +690,9 @@
       "ID": "Идентификатор",
       "Name": "Имя"
     },
+    "LocaleSettingsConfigurator": {
+      "LocaleName": "Имя локали"
+    },
     "NamedItem": {
       "Name": "Имя элемента"
     }
@@ -781,6 +786,7 @@
       "Account": "Учетная запись",
       "BaseDN": "Базовый домен",
       "ConnectionSecurity": "Безопасность соединения",
+      "DefaultUserRole": "Роль нового пользователя",
       "Filter": "Фильтр LDAP",
       "FullNameAttribute": "Атрибут полного имени",
       "Host": "Хост",
@@ -831,9 +837,7 @@
       "QualitySpeed": "Приоритет точность/скорость"
     },
     "RegressionStatisticsParams": {
-      "PredictionIntervalLevel": "% доверительного интервала",
-      "PredictionIntervalNeeded": "Рассчитать доверительный интервал",
-      "StatisticsMode": "Режим расчета статистики"
+      "PredictionIntervalLevel": "% доверительного интервала"
     },
     "RegularizationParams": {
       "LambdaLasso": "Коэффициент L1-регуляризации",
@@ -897,13 +901,21 @@
       "WSSPort": "WebSocket SSL/TLS порт"
     }
   },
-  "Viewers/Chart/Bridge/ChartColumnInfo": {
-    "ChartColumnInfo": {
-      "DisplayName": "Отображаемое имя колонки",
-      "Name": "Имя колонки"
+  "Warehouse2/DWImportTree": {
+    "DWImportTreeNode": {
+      "FilterParams": "Параметры фильтрации"
+    }
+  },
+  "Warehouse2/MDFilterParams": {
+    "MDCustomFilterParams": {
+      "MaxValue": "Верхняя граница",
+      "MinValue": "Нижняя граница",
+      "TheValue": "Значение для сравнения"
     },
-    "ChartColumnLink": {
-      "LinkKind": "Тип колонки"
+    "MDDateFilterParams": {
+      "CustomPointDate": "Пользовательская дата отсчета",
+      "IntervalType": "Тип временного промежутка",
+      "UseIntervalCount": "Значение временного промежутка"
     }
   }
 }

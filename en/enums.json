@@ -1322,6 +1322,10 @@
       "Simple": "Simple connection",
       "SSL": "SSL/TLS",
       "StartTLS": "STARTTLS"
+    },
+    "LDAPUserRole": {
+      "Designer": "Workflows design",
+      "Viewer": "View reports"
     }
   },
   "Libraries/Model/DataSet/ImportModelComponentEngine": {
@@ -1446,7 +1450,7 @@
     },
     "RegressionStatType": {
       "$Caption": "Statistical Parameters of the Regression Model",
-      "LL": "-2 Logarithm of the likelihood function",
+      "LL": "-2 Log-likelihood",
       "R2": "Coefficient of determination",
       "R2adj": "Adjusted coefficient of determination",
       "AIC": "Akaike information criterion",
@@ -1530,6 +1534,9 @@
       "YColorData": "Color field",
       "BubbleData": "Bubble size",
       "Labels": "Caption field"
+    },
+    "ChartMarkerSymbol": {
+      "Default": "Default"
     },
     "ChartStacking": {
       "$Caption": "Stacking Type",
@@ -1742,6 +1749,21 @@
       "CompareWithPrevByCol": "Difference from previous by column",
       "CumulativeSumByRow": "Cumulative sum by row",
       "CumulativeSumByCol": "Cumulative sum by column"
+    }
+  },
+  "Viewers/DataQuality/QualityViewHistogram": {
+    "QualityViewHistogramColumn": {
+      "Percent": "%"
+    }
+  },
+  "Viewers/DataQuality/QualityViewTypes": {
+    "QualityViewCommonColumnType": {
+      "Index": "No",
+      "DataType": "Type"
+    },
+    "QualityViewIndicatorType": {
+      "Min": "Minimum",
+      "Max": "Maximum"
     }
   },
   "Viewers/Detailing/Detailing": {

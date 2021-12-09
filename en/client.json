@@ -111,7 +111,9 @@
     "RemoveVendorConfirm": "Do you want to delete \"{0}\" component?"
   },
   "app/ConfigureDerivedVendorForm": {
-    "AddBtnText": "Add"
+    "AddBtnText": "Add",
+    "EditVendor": "Derived Component Setting",
+    "SaveBtnText": "Save"
   },
   "app/FindNodeForm": {
     "ErrorInvalidGUIDFormat": "GUID value not in {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX} format",
@@ -277,6 +279,7 @@
     "ErrNoRefModelNodeTreeNode": "No reference to IBGModelNodeTreeNode"
   },
   "app/PackageForm": {
+    "Cancel": "Cancel",
     "Confirm": "Apply",
     "ErrIncorrectVersionFormat": "Invalid version format",
     "ErrInvalidPackageName": "\"{0}\" is invalid package name"
@@ -329,6 +332,10 @@
   "app/PublishedPackagesAddForm": {
     "DisNamespace": "http://schemas.loginom.com/integration",
     "ErrPathNotSpecified": "Path to the package file is not specified"
+  },
+  "app/PublishedPackagesListForm": {
+    "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
+    "ErrPathNotFound": "The specified path was not found \"{0}\"."
   },
   "app/ReferencesListForm": {
     "AddLink": "Add",
@@ -475,6 +482,10 @@
     "RE_AZaz": "[]",
     "SearchDef": "Filter"
   },
+  "components/calcdata/CalcPreviewForm": {
+    "Value": "Value",
+    "Variable": "Variable"
+  },
   "components/calcdata/CodeMirrorController": {
     "ExprPlaceholder": "Enter expression code"
   },
@@ -597,7 +608,9 @@
     "CmdPlaceholder": "Enter command text"
   },
   "components/execnode/ExecNodeComponentWizard": {
-    "ExecNodeWizardTitle": "Node Execution"
+    "Description": "Description",
+    "ExecNodeWizardTitle": "Node Execution",
+    "Vendors": "Components"
   },
   "components/filterdata/FilterColumnItem": {
     "EndingWith": "ending with",
@@ -1180,7 +1193,7 @@
     "CantSaveDownLoadedFile": "Failed to save the downloaded file"
   },
   "filestorage/FileSenderManager": {
-    "FileAlreayLoading": "{0} file download is already in progress. Wait until the completion or cancel the download process."
+    "FileAlreayLoading": "\"{0}\" file download is already in progress. Wait until the completion or cancel the download process."
   },
   "filestorage/FileStorageForm": {
     "CantCreateFolder": "Failed to create folder",
@@ -1248,6 +1261,10 @@
   "highcharts/Localization": {
     "Loading": "Loading..."
   },
+  "highcharts/Themes": {
+    "Default": "Standard",
+    "Grid": "Table"
+  },
   "homepage/Banner": {
     "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
@@ -1291,7 +1308,8 @@
     "MetaDataNodeTypeFact": "Fact",
     "MetaDataNodeTypeItem": "Item",
     "MetaDataNodeTypeLevel": "Level",
-    "MetaDataNodeTypeProc": "Process"
+    "MetaDataNodeTypeProc": "Process",
+    "TriggerTip": "Edit..."
   },
   "imports/dwh/DWObjectWizard": {
     "ErrNoSelectedObject": "Specify Data Warehouse object",
@@ -1315,6 +1333,9 @@
     "NoConnection": "No connection",
     "NotConnectedError": "No connection with database"
   },
+  "imports/textfile/DateFormatStore": {
+    "Default": "Default"
+  },
   "imports/textfile/DateSeparatorStore": {
     "BackSlash": "Backslash (\\)",
     "Default": "Default",
@@ -1337,6 +1358,8 @@
     "Encoding2": "West European (1252)"
   },
   "imports/textfile/ImportTextFileParamsWizard": {
+    "CollapseColumnDefsTuning": "Collapse",
+    "ExpandColumnDefsTuning": "Expand",
     "FormatTypeChangedInfo": "When saving, data format was changed to separator format"
   },
   "imports/textfile/TextQualifierStore": {
@@ -1344,6 +1367,9 @@
     "Default": "Default",
     "DoubleQuote": "Double quote (\")",
     "Quote": "Single quote (')"
+  },
+  "imports/textfile/TimeFormatStore": {
+    "Default": "Default"
   },
   "imports/textfile/TimeSeparatorStore": {
     "Colon": "Colon (:)",
@@ -1532,6 +1558,7 @@
     "NegativePostfix": "not",
     "OtherFirstPostfix": "first",
     "OtherLastPostfix": "last",
+    "PluralRuleLang": "en",
     "QuarterFirstPostfix": "first",
     "QuarterLastPostfix": "last",
     "QuarterPeriodNameFew": "quarter",
@@ -1684,6 +1711,11 @@
     "Spectrum": "Spectrum",
     "Warm": "Warm",
     "WarmContrast": "Warm contrast"
+  },
+  "plotly/Theme": {
+    "Ggplot2": "Ggplot2",
+    "PlotlyClassic": "Standard",
+    "Seaborn": "Seaborn"
   },
   "progress/ProgressForm": {
     "ErrorInfoText": "{0} {1}: {2}.",
@@ -1842,10 +1874,18 @@
     "DefaultColor": "Default"
   },
   "viewers/chart/ChartView": {
-    "ExportTo": "Export to "
+    "AddSerieButtonText": "Add",
+    "AxesEditorTitle": "Configure Axes",
+    "ExportTo": "Export to ",
+    "ParametresEditorTitle": "General Settings",
+    "SerieCreatorTitle": "Add Series",
+    "SeriesEditorTitle": "Series Editor"
   },
   "viewers/chart/LinkEditor": {
     "FieldWasRemoved": "{0} field has been deleted or has invalid data type"
+  },
+  "viewers/chart/SeriesEditor": {
+    "DefaultSerieName": "Series"
   },
   "viewers/clusterprofiles/CachedState": {
     "TotalClusterDisplayName": "Total"
@@ -2036,9 +2076,10 @@
     "ModelInfoConstant": "Intercept",
     "ModelInfoConstantExc": "Excluded",
     "ModelInfoConstantInc": "Included",
-    "ModelInfoDFE": "Number of degrees of freedom (errors)",
+    "ModelInfoDF": "Degrees of freedom for model",
+    "ModelInfoDFE": "Degrees of freedom for error",
     "ModelInfoHQC": "HQC",
-    "ModelInfoPValue": "P-value (model)"
+    "ModelInfoPValue": "Model P-value"
   },
   "viewers/reports/ReportsForm": {
     "CantDeactivateBefore": "Error: Failed to deactivate the chain of previous nodes to update data",
@@ -2363,6 +2404,9 @@
   },
   "wizards/variables/DerivedVariablesOutputSocketWizard": {
     "frmColumnsMappingTitle": "Configure Output Variables"
+  },
+  "wizards/variables/EditTuneVariableForm": {
+    "UsageType": "Usage type"
   },
   "wizards/variables/EditVariableForm": {
     "AddBtnText": "Add",

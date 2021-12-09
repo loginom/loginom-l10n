@@ -468,6 +468,9 @@
     "btnFindNode": {
       "tooltip": "Find node..."
     },
+    "btnPublishPackage": {
+      "tooltip": "Publish..."
+    },
     "btnRemoveNode": {
       "tooltip": "Delete node..."
     },
@@ -479,6 +482,9 @@
     },
     "btnShowViews": {
       "tooltip": "Show visualizers"
+    },
+    "colNavigation": {
+      "text": "Navigation"
     },
     "pnlMapTree": {
       "title": "Navigation"
@@ -648,6 +654,14 @@
       "title": "Reference to Package"
     }
   },
+  "app/PackagesAutoSavePanel": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    }
+  },
   "app/PackagesListForm": {
     "btnClose": {
       "text": "Close",
@@ -781,11 +795,29 @@
   "app/PreviewForm": {
     "btnClose": {
       "tooltip": "Close"
+    },
+    "btnDown": {
+      "tooltip": "Move down"
+    },
+    "btnHide": {
+      "tooltip": "Hide"
+    },
+    "btnMaximize": {
+      "tooltip": "Maximize"
+    },
+    "btnMinimize": {
+      "tooltip": "Minimize"
     }
   },
   "app/PublishedPackagesAddForm": {
+    "btnClose": {
+      "text": "Cancel"
+    },
     "btnPublish": {
       "text": "Publish"
+    },
+    "cbxPackage": {
+      "fieldLabel": "Package"
     },
     "fsNamespace": {
       "title": "Namespace"
@@ -801,6 +833,27 @@
     },
     "rdoUseDisNamespace": {
       "boxLabel": "Use Loginom integrator namespace"
+    }
+  },
+  "app/PublishedPackagesListForm": {
+    "btnAdd": {
+      "text": "Add"
+    },
+    "btnEdit": {
+      "text": "Edit",
+      "tooltip": "Edit..."
+    },
+    "colComment": {
+      "text": "Comment"
+    },
+    "colDate": {
+      "text": "Change Date"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colVersion": {
+      "text": "Version"
     }
   },
   "app/SelectBaseVendorForm": {
@@ -1104,6 +1157,10 @@
       "text": "OR",
       "tooltip": "Logical \"OR\""
     },
+    "btnPreview": {
+      "text": "Preview...",
+      "tooltip": "Preview..."
+    },
     "btnString": {
       "tooltip": "String"
     },
@@ -1147,6 +1204,14 @@
     },
     "lblFuncs": {
       "text": "Functions list"
+    }
+  },
+  "components/calcdata/CalcPreviewForm": {
+    "frmCalcPreviewForm": {
+      "title": "Preview"
+    },
+    "grdVars": {
+      "title": "Variables"
     }
   },
   "components/calcdata/ExprEditForm": {
@@ -1770,6 +1835,15 @@
     "edtUpperBoundSimple": {
       "fieldLabel": "Upper bound"
     },
+    "mniCopy": {
+      "text": "Copy"
+    },
+    "mniCut": {
+      "text": "Cut"
+    },
+    "mniPaste": {
+      "text": "Paste"
+    },
     "pnlBaseDate": {
       "title": "Base Date"
     },
@@ -1777,7 +1851,7 @@
       "boxLabel": "Current date"
     },
     "rbCustom": {
-      "boxLabel": "From date"
+      "boxLabel": "Date"
     },
     "rbData": {
       "boxLabel": "Available data"
@@ -2879,6 +2953,10 @@
       "text": "Paste",
       "tooltip": "Paste"
     },
+    "btnPublish": {
+      "text": "Publish",
+      "tooltip": "Publish"
+    },
     "btnRefresh": {
       "tooltip": "Refresh list"
     },
@@ -2942,7 +3020,7 @@
       "boxLabel": "Current date"
     },
     "rbCustom": {
-      "boxLabel": "From date"
+      "boxLabel": "Date"
     },
     "rbData": {
       "boxLabel": "Available data"
@@ -3121,6 +3199,17 @@
       "title": "Interval Boundaries"
     }
   },
+  "imports/dwh/CompareValuesDialog": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
+    },
+    "frmCompareValuesDialog": {
+      "title": "Compare value"
+    }
+  },
   "imports/dwh/DateValuesDialog": {
     "btnApply": {
       "text": "Apply"
@@ -3138,7 +3227,7 @@
       "boxLabel": "Current date"
     },
     "rbCustom": {
-      "boxLabel": "From date"
+      "boxLabel": "Date"
     },
     "rbData": {
       "boxLabel": "Available data"
@@ -3711,6 +3800,12 @@
     "mniDelete": {
       "text": "Delete"
     },
+    "mniOnBackGround": {
+      "text": "Send to back"
+    },
+    "mniOnTop": {
+      "text": "Bring to front"
+    },
     "mniSerieAxisPosition": {
       "text": "Axis"
     },
@@ -3731,6 +3826,14 @@
     },
     "mniUndoDelete": {
       "text": "Cancel delete"
+    },
+    "txtFilterFields": {
+      "emptyText": "Filter"
+    }
+  },
+  "viewers/chart/LinkEditor": {
+    "cbxColumn": {
+      "emptyText": "Add field"
     }
   },
   "viewers/chart/ParametresEditor": {
@@ -3781,11 +3884,23 @@
     }
   },
   "viewers/chart/SerieOptions": {
+    "cbxSerieType": {
+      "fieldLabel": "Type"
+    },
     "edtSerieTitle": {
       "fieldLabel": "Title"
     }
   },
   "viewers/chart/SerieOptionsAdvanced": {
+    "cbxSerieAxis": {
+      "fieldLabel": "Axis"
+    },
+    "cbxSerieLabelsStyle": {
+      "fieldLabel": "Caption type"
+    },
+    "cbxSerieTooltipStyle": {
+      "fieldLabel": "Tooltip style"
+    },
     "clrSerie": {
       "fieldLabel": "Color"
     },
@@ -3808,7 +3923,7 @@
       "tooltip": "Move up"
     },
     "colRowNumberer": {
-      "text": "No"
+      "text": "#"
     },
     "colSerieName": {
       "text": "Series name"
@@ -4322,6 +4437,9 @@
     "btnCheckAll": {
       "tooltip": "Check all"
     },
+    "btnCopy": {
+      "tooltip": "Copy"
+    },
     "btnExclusive": {
       "tooltip": "Inclusive/exclusive filter"
     },
@@ -4330,6 +4448,9 @@
     },
     "btnGroupCheck": {
       "tooltip": "Check by pattern..."
+    },
+    "btnPaste": {
+      "tooltip": "Paste"
     },
     "btnReverseCheck": {
       "tooltip": "Invert selection"
@@ -4341,6 +4462,57 @@
   "viewers/cube/EmbeddedBrowseForm": {
     "mniGoToLine": {
       "tooltip": "Go to row..."
+    }
+  },
+  "viewers/dataquality/QualityView": {
+    "btnCancelProcess": {
+      "tooltip": "Cancel"
+    },
+    "btnShowPreview": {
+      "tooltip": "Detailing"
+    },
+    "colContinueDataType": {
+      "text": "Type"
+    },
+    "colContinueIndex": {
+      "text": "No"
+    },
+    "colDataSetValue": {
+      "text": "Value"
+    },
+    "colDiscreteBoxUnique": {
+      "text": "Values"
+    },
+    "colDiscreteDataType": {
+      "text": "Type"
+    },
+    "colDiscreteIndex": {
+      "text": "No"
+    },
+    "colOverviewDataType": {
+      "text": "Type"
+    },
+    "colOverviewIndex": {
+      "text": "No"
+    },
+    "colOverviewSelected": {
+      "text": " "
+    }
+  },
+  "viewers/dataquality/QualityViewHistogram": {
+    "colIndex": {
+      "text": "No"
+    },
+    "colPercentage": {
+      "text": "%"
+    }
+  },
+  "viewers/dataquality/QualityViewSettings": {
+    "btnApply": {
+      "text": "Apply"
+    },
+    "btnCancel": {
+      "text": "Cancel"
     }
   },
   "viewers/detailing/EmbeddedBrowseForm": {
@@ -4541,7 +4713,7 @@
       "text": "Standard error"
     },
     "colRepWaldStat": {
-      "text": "Wald coefficient"
+      "text": "Wald statistic"
     },
     "colStatParam": {
       "text": "Parameter"

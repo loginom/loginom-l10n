@@ -894,5 +894,16 @@
       "WSPort": "WebSocket port",
       "WSSPort": "WebSocket SSL/TLS port"
     }
+  },
+  "Warehouse2/MDFilterParams": {
+    "MDCustomFilterParams": {
+      "MaxValue": "Upper bound",
+      "MinValue": "Lower bound",
+      "TheValue": "Compare value"
+    },
+    "MDDateFilterParams": {
+      "IntervalType": "Time span unit",
+      "UseIntervalCount": "Time span value"
+    }
   }
 }

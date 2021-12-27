@@ -190,6 +190,9 @@
     "chkAdmin": {
       "boxLabel": "Administration"
     },
+    "chkAllowPublish": {
+      "boxLabel": "Allow packages publishing"
+    },
     "chkBlocked": {
       "boxLabel": "Block account"
     },
@@ -280,11 +283,20 @@
     "btnCancel": {
       "text": "Cancel"
     },
+    "chbAllowDerivedNode": {
+      "boxLabel": "Derived nodes"
+    },
+    "chbAllowExecNode": {
+      "boxLabel": "Node execution and Loop"
+    },
     "fldDisplayName": {
       "fieldLabel": "Caption"
     },
     "frmConfigureDerivedVendorForm": {
       "title": "Derived Component Setting"
+    },
+    "fstTargets": {
+      "title": "Target Node Types"
     },
     "fstVisibility": {
       "title": "Visibility"
@@ -480,6 +492,9 @@
     "btnShow": {
       "tooltip": "Open"
     },
+    "btnShowInPublished": {
+      "tooltip": "Show in web services"
+    },
     "btnShowViews": {
       "tooltip": "Show visualizers"
     },
@@ -571,6 +586,9 @@
     "btnToggleActivateCurrent": {
       "tooltip": "Run node"
     },
+    "btnTogglePreview": {
+      "tooltip": "Show/hide quick view"
+    },
     "btnTogglePropInspector": {
       "tooltip": "Show/hide property inspector"
     },
@@ -621,6 +639,9 @@
     "btnCancel": {
       "text": "Cancel"
     },
+    "cbxLocale": {
+      "fieldLabel": "Locale"
+    },
     "chbUseBasePackageFileStorage": {
       "boxLabel": "Use relative paths of base package"
     },
@@ -631,7 +652,7 @@
       "fieldLabel": "Version"
     },
     "frmPackageForm": {
-      "title": "Package"
+      "title": "Package Properties"
     }
   },
   "app/PackageLinkForm": {
@@ -651,7 +672,7 @@
       "fieldLabel": "Version"
     },
     "frmPackageLinkForm": {
-      "title": "Reference to Package"
+      "title": "Properties of Reference to Package"
     }
   },
   "app/PackagesAutoSavePanel": {
@@ -660,9 +681,22 @@
     },
     "btnCancel": {
       "text": "Cancel"
+    },
+    "chbEnableAutoSave": {
+      "fieldLabel": "Enable auto save"
+    },
+    "edtAutoSavePeriod": {
+      "fieldLabel": "Save every (minutes)"
+    },
+    "lblDescription": {
+      "text": "Packages are saved with the set range to the files with .autosave extension near .lgp files. .lgp files as such are not rewritten in this case."
     }
   },
   "app/PackagesListForm": {
+    "btnAutoSave": {
+      "text": "Auto save",
+      "tooltip": "Configure packages auto save..."
+    },
     "btnClose": {
       "text": "Close",
       "tooltip": "Close package..."
@@ -685,7 +719,7 @@
     },
     "btnPublish": {
       "text": "Publish",
-      "tooltip": "Publish packages..."
+      "tooltip": "Publish"
     },
     "btnSave": {
       "text": "Save",
@@ -694,6 +728,13 @@
     "btnSaveAll": {
       "text": "Save all",
       "tooltip": "Save all packages"
+    },
+    "btnShowInPublished": {
+      "text": "Show in web services",
+      "tooltip": "Show in web services"
+    },
+    "colLocale": {
+      "text": "Locale"
     },
     "colName": {
       "text": "Name"
@@ -746,6 +787,9 @@
   "app/PackageVariablesForm": {
     "btnAdd": {
       "tooltip": "Add..."
+    },
+    "btnClone": {
+      "tooltip": "Clone..."
     },
     "btnDelete": {
       "tooltip": "Delete"
@@ -803,10 +847,19 @@
       "tooltip": "Hide"
     },
     "btnMaximize": {
-      "tooltip": "Maximize"
+      "tooltip": "Expand"
     },
     "btnMinimize": {
-      "tooltip": "Minimize"
+      "tooltip": "Collapse"
+    },
+    "btnPin": {
+      "tooltip": "Pin"
+    },
+    "btnRight": {
+      "tooltip": "Move right"
+    },
+    "btnUnpin": {
+      "tooltip": "Unpin"
     }
   },
   "app/PublishedPackagesAddForm": {
@@ -818,6 +871,12 @@
     },
     "cbxPackage": {
       "fieldLabel": "Package"
+    },
+    "chbRefreshOnSave": {
+      "boxLabel": "Update publication while package saving"
+    },
+    "frmPublishedPackagesAddForm": {
+      "title": "Add web service"
     },
     "fsNamespace": {
       "title": "Namespace"
@@ -837,23 +896,51 @@
   },
   "app/PublishedPackagesListForm": {
     "btnAdd": {
-      "text": "Add"
+      "text": "Add",
+      "tooltip": "Add web service..."
     },
     "btnEdit": {
       "text": "Edit",
       "tooltip": "Edit..."
     },
+    "btnFinish": {
+      "text": "Finish",
+      "tooltip": "Finish..."
+    },
+    "btnRefresh": {
+      "text": "Refresh list",
+      "tooltip": "Refresh list"
+    },
+    "btnUpdatePublication": {
+      "text": "Update publication",
+      "tooltip": "Update publication"
+    },
     "colComment": {
       "text": "Comment"
     },
     "colDate": {
-      "text": "Change Date"
+      "text": "Change date"
+    },
+    "colLabel": {
+      "text": "Path / Caption"
     },
     "colName": {
       "text": "Name"
     },
     "colVersion": {
       "text": "Version"
+    },
+    "pmiOpenNode": {
+      "text": "Open node in package",
+      "tooltip": "Open node in package"
+    },
+    "pmiOpenPackage": {
+      "text": "Open package",
+      "tooltip": "Open package"
+    },
+    "pmiRevealInExplorer": {
+      "text": "Show package in folder",
+      "tooltip": "Show package in folder"
     }
   },
   "app/SelectBaseVendorForm": {
@@ -2721,6 +2808,12 @@
     "edtDDFSystem": {
       "fieldLabel": "Bitness"
     },
+    "edtStringCacheMaxSize.valueConfig": {
+      "regexText": "Invalid string cache size"
+    },
+    "edtStringCacheMemoryUsage": {
+      "fieldLabel": "Size in memory"
+    },
     "frmExportSettings": {
       "title": "Export to Loginom Data File"
     }
@@ -2963,6 +3056,10 @@
     "btnRename": {
       "text": "Rename",
       "tooltip": "Rename..."
+    },
+    "btnShowInPublished": {
+      "text": "Show in web services",
+      "tooltip": "Show in web services"
     },
     "btnUpload": {
       "text": "Upload",
@@ -3405,6 +3502,10 @@
     }
   },
   "imports/textfile/ImportTextFileParamsWizard": {
+    "btnSuggestFormat": {
+      "text": "Auto detect",
+      "tooltip": "Auto detect all separators and calculate fields structure"
+    },
     "frmFixedColumns": {
       "title": "Import Parameters with Fixed-Width Columns"
     },
@@ -3750,6 +3851,9 @@
     "chbShowGrid": {
       "fieldLabel": "Show grid"
     },
+    "chbUserRange": {
+      "fieldLabel": "Set range"
+    },
     "edtAxisTitle": {
       "fieldLabel": "Title"
     }
@@ -3791,11 +3895,23 @@
     "btnZoomOut": {
       "tooltip": "Zoom out"
     },
+    "btnZoomReset": {
+      "tooltip": "Reset zoom"
+    },
+    "btnZoomYReset": {
+      "tooltip": "Reset zoom Y"
+    },
+    "cntChartInvite": {
+      "html": "Move fields to the chart area by dragging from the left list of available fields"
+    },
     "colFieldName": {
       "text": "Fields"
     },
     "lblChartStatus": {
       "text": "Inactive node"
+    },
+    "mniAddSerie": {
+      "text": "Create series..."
     },
     "mniDelete": {
       "text": "Delete"
@@ -3823,6 +3939,12 @@
     },
     "mniSetXField": {
       "text": "Use as abscissa field"
+    },
+    "mniShowOptions": {
+      "text": "Settings: Main..."
+    },
+    "mniShowOptionsAdvanced": {
+      "text": "Settings: Additional..."
     },
     "mniUndoDelete": {
       "text": "Cancel delete"
@@ -4291,6 +4413,9 @@
     "btnChartRestrictions": {
       "tooltip": "Restrictions..."
     },
+    "btnChartShowSubLevels": {
+      "tooltip": "Level of headers"
+    },
     "btnChartShowTotal": {
       "tooltip": "Show total"
     },
@@ -4345,6 +4470,12 @@
     },
     "mniAddCalcCase": {
       "text": "Add calculated measure..."
+    },
+    "mniChartHideSubLevels": {
+      "text": "First level"
+    },
+    "mniChartShowSubLevels": {
+      "text": "All levels"
     },
     "mniChartShowTotalAll": {
       "text": "Show"
@@ -4465,17 +4596,55 @@
     }
   },
   "viewers/dataquality/QualityView": {
+    "btnCalculateQualityStatistics": {
+      "text": "Calculate statistics"
+    },
     "btnCancelProcess": {
       "tooltip": "Cancel"
+    },
+    "btnContinueFields": {
+      "text": "Continuous",
+      "tooltip": "Continuous fields"
+    },
+    "btnDiscreteFields": {
+      "text": "Discrete",
+      "tooltip": "Discrete fields"
+    },
+    "btnIndicatorsSettings": {
+      "text": "Parameters",
+      "tooltip": "Configure parameters..."
+    },
+    "btnOverview": {
+      "text": "Summary",
+      "tooltip": "Data set overview"
+    },
+    "btnPercentAbsolute": {
+      "tooltip": "Absolute or relative values"
+    },
+    "btnShowHistogram": {
+      "text": "Histogram"
     },
     "btnShowPreview": {
       "tooltip": "Detailing"
     },
+    "colContinueBoxPlot": {
+      "text": "Box plot"
+    },
     "colContinueDataType": {
       "text": "Type"
     },
+    "colContinueHistogram": {
+      "text": "Histogram"
+    },
     "colContinueIndex": {
       "text": "No"
+    },
+    "colContinueName": {
+      "text": "Caption"
+    },
+    "colDataSetParam": {
+      "text": "Data set characteristics",
+      "tooltip": "Data set characteristics"
     },
     "colDataSetValue": {
       "text": "Value"
@@ -4486,25 +4655,67 @@
     "colDiscreteDataType": {
       "text": "Type"
     },
+    "colDiscreteHistogram": {
+      "text": "Histogram"
+    },
     "colDiscreteIndex": {
       "text": "No"
+    },
+    "colDiscreteName": {
+      "text": "Caption"
+    },
+    "colOverviewCount": {
+      "text": "Problems"
+    },
+    "colOverviewDataKind": {
+      "text": "Kind"
     },
     "colOverviewDataType": {
       "text": "Type"
     },
+    "colOverviewField": {
+      "text": "Caption"
+    },
     "colOverviewIndex": {
       "text": "No"
     },
+    "colOverviewProblems": {
+      "text": "Kinds of problems"
+    },
     "colOverviewSelected": {
       "text": " "
+    },
+    "lblCalculateQualityStatistics": {
+      "text": "Select fields for statistics calculation and press button:"
+    },
+    "lblProgress": {
+      "text": "Indicators calculation is in progress"
     }
   },
   "viewers/dataquality/QualityViewHistogram": {
+    "btnHistogramDisplayType": {
+      "text": "Display type"
+    },
+    "colCount": {
+      "text": "Count"
+    },
     "colIndex": {
       "text": "No"
     },
+    "colMark": {
+      "text": "Caption"
+    },
     "colPercentage": {
       "text": "%"
+    },
+    "colWeight": {
+      "text": "Weight"
+    },
+    "lblHistogram": {
+      "text": "Histogram"
+    },
+    "lblStub": {
+      "text": "Select the cell to visualise histogram"
     }
   },
   "viewers/dataquality/QualityViewSettings": {
@@ -4513,6 +4724,51 @@
     },
     "btnCancel": {
       "text": "Cancel"
+    },
+    "chbIndicatorSwitch": {
+      "boxLabel": "Quality indicator"
+    },
+    "cntQuartileWidth": {
+      "title": "Interquartile Width"
+    },
+    "cntStandartDeviation": {
+      "title": "Standard Deviation"
+    },
+    "fldMaxNullsPercent": {
+      "fieldLabel": "Maximum percentage of null data"
+    },
+    "fldQualitySettings": {
+      "title": "Outliers and Extreme Values"
+    },
+    "fldQuartileExtremalValue": {
+      "fieldLabel": "Extremes"
+    },
+    "fldQuartileOutValue": {
+      "fieldLabel": "Outliers"
+    },
+    "fldStdExtremalValue": {
+      "fieldLabel": "Extremes"
+    },
+    "fldStdOutValue": {
+      "fieldLabel": "Outliers"
+    },
+    "frmQualityViewSettings": {
+      "title": "Parameters"
+    },
+    "pnlIndicators": {
+      "title": "Selection of Indicators"
+    },
+    "pnlQualitySettings": {
+      "title": "Configure Parameters"
+    },
+    "rbDetectQuartile": {
+      "boxLabel": "Interquartile Width"
+    },
+    "rbDetectSko": {
+      "boxLabel": "Standard deviation"
+    },
+    "rbgDetectOE": {
+      "fieldLabel": "Identification method"
     }
   },
   "viewers/detailing/EmbeddedBrowseForm": {
@@ -4974,10 +5230,12 @@
       "text": "Raw data"
     },
     "btnRefreshAll": {
-      "text": "Refresh All"
+      "text": "Refresh All",
+      "tooltip": "Calculate all names, captions, types and kinds of fields data"
     },
     "btnRefreshData": {
-      "text": "Refresh Data"
+      "text": "Define data types",
+      "tooltip": "Calculate again only data types and kinds"
     },
     "btnResultView": {
       "text": "Result"
@@ -5009,6 +5267,9 @@
     },
     "btnClearLinks": {
       "text": "Delete All Links"
+    },
+    "btnCloneMappingColumn": {
+      "tooltip": "Clone..."
     },
     "btnCreateMapping": {
       "tooltip": "Create output"

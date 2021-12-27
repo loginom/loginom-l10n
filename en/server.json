@@ -1,7 +1,12 @@
 {
   "Common/1Cv8/1Cv8Query": {
+    "ErrConnect": "1C connection error",
     "ErrEofArrived": "Data set end reached",
-    "ErrQueryNotActive": "Query is not active"
+    "ErrExecuteQuery": "Error executing 1C request",
+    "ErrPrepareFields": "Error preparing 1C request fields",
+    "ErrPrepareQuery": "Error preparing 1C request",
+    "ErrQueryNotActive": "Query is not active",
+    "ErrUnloadResults": "Error of 1C request results loading"
   },
   "Common/1Cv8/1Cv8SessionManager": {
     "ErrEmptyConnectionString": "Empty connection string"
@@ -116,6 +121,10 @@
   },
   "Common/HTTP/HTTPNetRequest": {
     "ErrHTTPNetRequest": "Request to \"%s\" URL failed"
+  },
+  "Common/HTTP/SynapseHTTPSend": {
+    "ErrFailedToMakeHTTPRequest": "Error executing HTTP request. TCP/IP Socket error %d: %s",
+    "ErrMaximumRedirectReached": "Maximum number of redirects exceeded: %s"
   },
   "Common/JavaScript/JavaScriptModuleLoader": {
     "ErrModuleFileTooBig": "%s module file cannot be loaded: the permissible file size limit is exceeded (%d > %d bytes)",
@@ -293,6 +302,7 @@
     "ErrParseStreamNoXML": "Error parsing stream in row %d, position %d: the source is not XML file or has incorrect syntax",
     "ErrParseStreamUnhandledException": "Unhandled exception parsing stream:\n  %s",
     "ErrParseStreamUnrecognizedEncoding": "Stream parsing error: unrecognized %s encoding",
+    "ErrParseStreamUnrecognizedEncodingDefault": "Stream parsing error: unrecognized encoding",
     "ErrParseURL": "Error in row %d, position %d when executing request to URL '%s':\n  %s",
     "ErrParseURLNoXML": "Error in row %d, position %d when executing request to URL '%s': server response is not XML file",
     "ErrParseURLUnhandledException": "Unhandled exception parsing request to URL '%s':\n  %s",
@@ -476,7 +486,9 @@
     "ErrGetVarArrayUnsupported": "The arrays related to the variant type can return only intermediate expressions (\"%s\" expression, %d row)",
     "ErrVarExprAmbiguity": "\"%0:s\" can be input variable or intermediate expression. To allow nonuniqueness, use \"%1:s%0:s\" to access the variable or rename \"%0:s\" expression.",
     "InputVariables": "Input variables",
-    "NameNotExists": "No field, variable or expression with \"%s\" name exists"
+    "NameNotExists": "No field, variable or expression with \"%s\" name exists",
+    "PreviewProcess": "Calculations preview",
+    "WarnPreviewRunning": "Preview already running"
   },
   "components/calcdata/CalcDataVendor": {
     "VendorCaption": "Calculator",
@@ -826,12 +838,18 @@
     "VendorDesc": "External program execution"
   },
   "components/execnode/ExecNodeComponent": {
-    "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" node for which inheritance is forbidden",
+    "ErrExecNodeNotAllowed": "Execution of %s component is not allowed",
+    "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" component for which inheritance is forbidden",
     "ErrPortNotConfigurable": "Port configuration not supported",
+    "ErrReferencedVendorMalfunction": "\"%s\" source component is malfunctioned",
+    "ErrReferencedVendorNotAvailable": "Source component not available",
+    "ErrReferencedVendorNotFound": "Source component not found",
+    "ErrReferencedVendorNotSpecified": "Source component not set",
     "ErrUnableToLoadComponentConfig": "Failed to load the internal component configuration"
   },
   "components/execnode/ExecNodeComponentVendor": {
     "InputBaseNode": "Base node",
+    "NodeDisplayNameFormatString": "%s (execution)",
     "VendorCaption": "Node Execution",
     "VendorDesc": "Apply model to new data"
   },
@@ -882,6 +900,8 @@
     "DayLastPostfix": "last",
     "ErrColumnNotFound": "Field is specified incorrectly",
     "ErrCompareValueIsNull": "The compared value not defined",
+    "ErrDatePeriodUndefined": "Failed to define time span",
+    "ErrDateSourceTypeDataNotSupported": "Use date from data set is not supported to define time span",
     "ErrEmptyCompareValueList": "No list of values specified",
     "ErrIncorrectCompareLowerBound": "The entered lower bound value does not match the filtered column type",
     "ErrIncorrectCompareUpperBound": "The entered upper bound value does not match the filtered column type",
@@ -1010,12 +1030,12 @@
     "ForecastOutputVariables": "Summary",
     "LagColumn": "Lag",
     "LBoundColumn": "%s|Lower bound",
-    "ModelDF": "Model degrees of freedom",
+    "ModelDF": "Number of model degrees of freedom",
     "ParameterNameColumn": "Parameter",
     "PredictedColumn": "%s|Prediction",
     "PValueColumn": "P-value",
     "R2": "Coefficient of determination",
-    "ResDF": "Residual degrees of freedom",
+    "ResDF": "Number of residues degrees of freedom",
     "ResidualColumn": "%s|Approximation error",
     "SEColumn": "Standard deviation",
     "TrainAvgError": "The mean absolute error of the training set",
@@ -1085,7 +1105,7 @@
     "ColumnDisplayName": "Input field captions",
     "ColumnName": "Input field names",
     "ColumnUniqueValues": "Unique values",
-    "DFE": "Degrees of freedom for error",
+    "DFE": "Number of error degrees of freedom",
     "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrMultipleOutputFields": "Only one output data field allowed",
     "ErrNoLearnData": "The training data set must contain at least two rows",
@@ -1098,7 +1118,7 @@
     "Intercept": "<Intercept>",
     "LinRegTrainProcessName": "Model training",
     "LogLikelihood": "Log-likelihood",
-    "ModelDF": "Degrees of freedom for model",
+    "ModelDF": "Number of model degrees of freedom",
     "ModelPValue": "Model P-value",
     "RegressionCoefsNamePostfix": "|Coefficients",
     "RegressionColumn": "%s|Regression",
@@ -1158,7 +1178,7 @@
     "CVAvgCE": "Average cross-entropy in cross validation",
     "CVClsErrorPercentage": "Cross validation error percentage",
     "CVRMSError": "Root-mean-square error in cross validation",
-    "DFE": "Degrees of freedom for error",
+    "DFE": "Number of error degrees of freedom",
     "ErrClassifierMultipleOutputs": "Only one output field is allowed for the classification task, %d is currently specified",
     "ErrEmptyTestSet": "Empty test set cannot be used for introduction of event weight correction",
     "ErrInvalidFieldsSettings": "Invalid input data set field settings",
@@ -1175,17 +1195,17 @@
     "Intercept": "<Intercept>",
     "LogRegStoreStatProcessName": "Quality indicators calculating",
     "LogRegTrainProcessName": "Model training",
-    "ModelDF": "Degrees of freedom for model",
+    "ModelDF": "Number of model degrees of freedom",
     "ModelPValue": "Model P-value",
-    "NullMinusTwoLogL": "-2 Log-likelihood from null model",
+    "NullMinusTwoLogL": "-2 Log-likelihood of null model",
     "OutputUniqueValuesNotCalculated": "Unique values of \"%s\" output column not calculated",
     "PredictedValue": "%s|Prediction",
     "PredictionEvent": "Event|Prediction",
     "PredictionProbability": "Event probabillity|Prediction",
     "PredictionScore": "Score|Prediction",
     "PrepareSetsProportionsProcessCaption": "Preparing sets",
-    "R2": "McFadden's pseudo-R^2",
-    "R2Adj": "McFadden's pseudo-R^2 (adj.)",
+    "R2": "McFadden Pseudo R^2",
+    "R2Adj": "McFadden Pseudo R^2 (adj.)",
     "RegressionCoefsNamePostfix": "|Coefficients",
     "RegressionLBoundNamePostfix": "|CI lower bound of odds ratio",
     "RegressionOddsRatioPostfix": "|Odds ratio",
@@ -1265,13 +1285,14 @@
     "IterationIdFieldDisplayName": "Iteration identifier",
     "IterationStatusSocketName": "Iteration execution status",
     "IterationSuccessFlagFieldDisplayName": "Success flag field",
-    "ProcessActivate": "Activating \"%s\" node",
+    "ProcessActivate": "Activating \"%s\" component",
     "ProcessAppendDataSet": "Output data set appending",
     "ProcessGroupProcessing": "Group processing",
     "ProcessInputDataSourceGrouping": "Defining groups in the source data set",
     "WarningTeachCriticalIterationCount": "Node training started with iterations count %d. Training with many iterations can cause memory overflow error."
   },
   "components/loop/LoopComponentVendor": {
+    "NodeDisplayNameFormatString": "%s (loop)",
     "VendorCaption": "Loop",
     "VendorDesc": "Multiple model execution based on new data"
   },
@@ -1464,6 +1485,9 @@
   "components/quality/QualityVendor": {
     "VendorCaption": "Data Quality",
     "VendorDesc": "Data quality assessment"
+  },
+  "components/reformcolumns/ReformColumns": {
+    "ErrExcludeAllColumnsFromProcessing": "Failed to exclude all columns from the further processing"
   },
   "components/reformcolumns/ReformColumnsVendor": {
     "VendorCaption": "Field Features",
@@ -1986,8 +2010,9 @@
     "ErrLocalDBForbidden": "Connections to local databases on server are forbidden"
   },
   "Libraries/1CConnection/1Cv8Connection": {
+    "ErrConnect": "1C connection error",
     "ErrConnectionString": "Error in connection string",
-    "ErrTestConnection": "Connection test failed",
+    "ErrTestConnection": "1C connection test error",
     "NotConnected": "Not connected to infobase"
   },
   "Libraries/1CConnection/1Cv8ConnectionVendor": {
@@ -2167,6 +2192,11 @@
     "ErrObjectNotFound": "%s does not exist in %s identifier list",
     "ObjMetaDesc": "object"
   },
+  "Libraries/bgrtl/ClipboardAdapter": {
+    "ErrHTMLFormatNotImplemented": "Invalid clipboard format. Only text/plain is supported",
+    "ErrReadForbidden": "It is forbidden to read values",
+    "ErrWriteForbidden": "It is forbidden to write values"
+  },
   "Libraries/bgrtl/ColumnDefs": {
     "ColumnMetaDesc": "Column",
     "ErrColumnByUsageNotFound": "Column with usage type \"%s\" not found",
@@ -2238,23 +2268,23 @@
   "Libraries/bgrtl/DateUtils": {
     "AvailableData": "available data",
     "CurrentData": "current date",
-    "DayPeriodNameFew": "day",
+    "DayPeriodNameFew": "days",
     "DayPeriodNameMany": "days",
     "DayPeriodNameOne": "day",
     "FirstLastDateFmt": "%s %s %s from %s",
-    "MonthPeriodNameFew": "month",
+    "MonthPeriodNameFew": "months",
     "MonthPeriodNameMany": "months",
     "MonthPeriodNameOne": "month",
-    "QuarterPeriodNameFew": "quarter",
+    "QuarterPeriodNameFew": "quarters",
     "QuarterPeriodNameMany": "quarters",
     "QuarterPeriodNameOne": "quarter",
-    "WeekPeriodNameFew": "week",
+    "WeekPeriodNameFew": "weeks",
     "WeekPeriodNameMany": "weeks",
     "WeekPeriodNameOne": "week",
-    "WrongPeriodNameFew": "period",
+    "WrongPeriodNameFew": "periods",
     "WrongPeriodNameMany": "periods",
     "WrongPeriodNameOne": "period",
-    "YearPeriodNameFew": "year",
+    "YearPeriodNameFew": "years",
     "YearPeriodNameMany": "years",
     "YearPeriodNameOne": "year"
   },
@@ -2481,6 +2511,9 @@
     "LockError": "UnLock method was called without Lock method",
     "UpdateError": "EndUpdate method was called without BeginUpdate method"
   },
+  "Libraries/bgrtl/LocaleUtils": {
+    "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system"
+  },
   "Libraries/bgrtl/LoggerConfigurator": {
     "ErrCannotConfigureLogger": "Failed to use logging parameters"
   },
@@ -2563,6 +2596,8 @@
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value",
     "ErrInvalidDateTime": "\"%s\" string cannot be converted to the date/time value",
     "ErrInvalidFloat": "\"%s\" string cannot be converted to the real type value",
+    "LocaleInvariant": "Invariant",
+    "NotSet": "Explicitly not set",
     "NullValue": "<Null>"
   },
   "Libraries/bgrtl/SyncObjs": {
@@ -2692,6 +2727,11 @@
     "ErrUpdateCookieInvalidOwner": "The updated object cookie belongs to another object",
     "ErrUpdateCookieIsNil": "Attempt to complete the operation with null reference to the updated object Cookie"
   },
+  "Libraries/bgrtl/URIUtils": {
+    "ErrInvalidDomainName": "Invalid domain name",
+    "ErrPunycodeOverflow": "Overflow in Punycode algorithm",
+    "MalformedUTF8PercentEncodedSequence": "Invalid percent-encoded UTF8 sequence"
+  },
   "Libraries/bgrtl/Utils": {
     "DaysNick": "days",
     "ErrContainerAlreadyIncludeClass": "Container already includes %s class",
@@ -2761,12 +2801,15 @@
   "Libraries/ChakraCore/ChakraClasses": {
     "ErrDefineProperty": "Failed to set \"%s\" property",
     "ErrDisposeRuntime": "Error while disposing JavaScript runtime environment",
+    "ErrHandlingPromiseRejection": "Error while uncaught Promise errors processing",
     "ErrOriginalDll": "Operation is not supported. Inncompatible version of ChakraCore library is used.",
     "ErrPromiseContinuation": "Unhandled exception when queuing JavaScript events",
     "ErrRaiseException": "Unhandled exception inside JavaScript built-in function: \"%s\"",
     "ErrRaiseModuleException": "Unhandled exception when loading JavaScript module",
     "ErrTooFewArgs": "Few arguments supplied to %s function (%d whereas %d is minimum number)",
     "ErrTooManyArgs": "Many arguments supplied to %s function (%d whereas %d is maximum number)",
+    "ErrUnhandledPromiseRejection": "Unhandled Promise error",
+    "ErrUnhandledPromiseRejections": "Unhandled Promise errors",
     "ErrUntrackedPromiseRejection": "Unhandled exception when tracking rejected Promise"
   },
   "Libraries/ChakraCore/ChakraRunRes": {
@@ -3125,8 +3168,11 @@
     "ErrBaseComponentAlreadyExists": "Base component already exists",
     "ErrBaseComponentNotInitialized": "The node base component not initialized",
     "ErrBaseComponentVendorNotSpecified": "No vendor defined for the base node component",
+    "ErrBaseNodeConfigNotFound": "Base node configuration not found",
     "ErrBaseNodeNotFound": "Base node not found",
     "ErrCircularInheritanceForbidden": "Circular inheritance of components forbidden",
+    "ErrDerivedComponentVendorGuidNotFound": "No GUID of derived component found",
+    "ErrDerivedNodesNotAllowed": "Creation of derived nodes by %s component is not allowed",
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
@@ -3255,7 +3301,9 @@
   },
   "Libraries/Model/ModelPackage": {
     "ErrAlienModelUnit": "Node does not belong to the current package",
+    "ErrCannotRevivePackageLink": "Failed to restore the reference to the package with %s name and %s version",
     "ErrCircularPackageLinksNotAllowed": "Circular links between packages are not allowed",
+    "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system",
     "ErrPackageLinkAlreadyExists": "Reference to \"%s\" package already exists",
     "ErrPackageLinkToSelfNotAllowed": "Package cannot have a self-reference",
     "ErrPackageNameCannotBeEmpty": "Package name cannot be empty",
@@ -3274,6 +3322,7 @@
   },
   "Libraries/Model/ModelPackageManager": {
     "BackupRestored": "Error occurred while saving \"%s\" package. File restored from backup.",
+    "CompatConvertMessages": "Messages while converting \"%s\" package",
     "CompatConvertRequired": "While opening \"%s\" package of %s version, converting will be performed.",
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
     "ErrCannotOpenFile": "Failed to open file: \"%s\"",
@@ -3661,6 +3710,9 @@
   "Libraries/Regression/Regression": {
     "ErrWrongRegressionParamsConstructor": "Invalid regression parameter constructor used"
   },
+  "Libraries/Regression/RegressionBuilder": {
+    "ErrWrongProbability": "Value of confidence interval must be within [0, 100] range"
+  },
   "Libraries/Regression/RegressionModel": {
     "ApplyModelProcessCaption": "Model applying",
     "ErrApplyWrongFeatures": "The column count of the input data set %d not equal to the regressors count of model %d"
@@ -3780,15 +3832,24 @@
   "Studio/Converters/Converter_202003302114_CubeView_Chart": {
     "WarnCannotConvert": "Failed to convert the measure displayed in the cube chart in %s visualizer settings. The first suitable measure was selected."
   },
+  "Studio/Converters/Converter_202111251332_ExecNode_DerivedVendor": {
+    "AddedPublishedNodeDerivedVendor": "Derived component created by the published \"%s\" node",
+    "PublicNodeDerivedVendorCaptionFormatString": "%s (opened node)",
+    "PublishedNodeDerivedVendorCaptionFormatString": "%s (published node)"
+  },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"
   },
   "Studio/DeductorServer": {
+    "AutoRefresh": "Auto update",
+    "AutoSavePackageError": "Error occurred while auto saving \"%s\" package",
+    "AutoSavePackagesFailed": "Packages auto save failed",
     "ErrAccessDenied": "Access denied",
     "ErrCannotCreateDirectory": "Failed to create \"%s\" folder",
     "ErrCannotDeleteBasePackage": "Failed to delete %s base package without deleting %s dependent package that references it",
     "ErrCannotGetPackageLinkRef": "Failed to get the object reference to the package link with %s name",
     "ErrCannotGetPackageRef": "Failed to get the object reference to the package with %s name",
+    "ErrCannotSaveEncryptedPackage": "Failed to save encrypted package with %s name",
     "ErrCannotSaveReadOnlyPackage": "Failed to save %s read-only package",
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
     "ErrComparePackagesError": "Error occurred while comparing \"%s\" package file with edited copy in the memory",
@@ -3800,6 +3861,7 @@
     "ErrFileNameNotSpecified": "No file name specified",
     "ErrInvalidModelLockCookieOwner": "Invalid node lock Cookie owner specified",
     "ErrInvalidPath": "Invalid file path: \"%s\"",
+    "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system",
     "ErrModelNodeNotFound": "Node %s not found",
     "ErrMustRestoreReferencedPackage": "Failed to restore dependent package %s without restoring %s package to which it refers",
     "ErrNoPublishedNodes": "The package contains no published nodes",
@@ -3817,7 +3879,9 @@
     "ErrSessionBackupAlreadyDeleted": "This session backup has already been deleted by another client from the current account",
     "ErrSessionBackupAlreadyRestored": "This session backup has already been restored by another client from the current account",
     "ErrSessionBackupModified": "This session backup has already been changed by another client from the current account",
+    "ErrUpdatePublishedPackageErrors": "Errors occurred while updating %s package publishing",
     "FileName": "File name",
+    "Namespace": "Namespace",
     "PackageClosedLogMsg": "\"%s\" package closed",
     "PackageOpenedEditLogMsg": "\"%s\" package opened in the edit mode",
     "PackageOpenedReadLogMsg": "\"%s\" package opened in the read-only mode",
@@ -3854,9 +3918,12 @@
   },
   "Studio/DeductorUsers": {
     "AllowedApplicationModes": "Allowed application modes",
+    "AllowPublish": "Allow packages publishing",
     "Blocked": "Blocked",
     "ErrAccessDenied": "Access denied",
     "ErrApplicationModeNotAllowed": "Connection in \"%s\" mode not allowed",
+    "ErrCannotDeleteStandartUserGroup": "Failed to delete the standard group",
+    "ErrFileStorageNotReadyYet": "User file storage still not prepared",
     "ErrInvalidPasswordHashInConfig": "Configuration file contains invalid password hash",
     "ErrInvalidUserNameOrPassword": "Invalid username or password",
     "ErrLastAdminChangeDenied": "Failed to delete or change the single %s admin account with local authentication",
@@ -3870,6 +3937,7 @@
     "ErrUserNameConflictsWithSharedDirectory": "Username conflicts with %s shared directory name",
     "ErrUserNameIsReserved": "%s identifier has already been reserved and it cannot be used as a username",
     "ErrUserNameMustBeValid": "Username can consist of Latin letters, digits, _ - . characters and space,\nbut it cannot end with a dot or space.",
+    "GroupEveryone": "All",
     "IsAdmin": "Admin",
     "IsDesigner": "Workflows design",
     "IsViewer": "View reports",
@@ -4022,6 +4090,7 @@
   "Viewers/Cube/CubeChart": {
     "ErrAlreadyExists": "The measure display with index %d already exists in the cube chart",
     "ErrDataType": "Failed to use the measure display with nonnumeric data type in the cube chart",
+    "ErrHeadersNotCached": "Failed to query the data before requesting headers names",
     "ErrNotExists": "The measure display with index %d does not exist in the cube chart",
     "MaxDotsCountDesc": "Maximum dots count",
     "MaxSeriesCountDesc": "Maximum series count"
@@ -4075,8 +4144,41 @@
     "VendorCaption": "Cube",
     "VendorDesc": "Multidimensional data view (Cross Table and Cross Chart)"
   },
+  "Viewers/DataQuality/QualityView": {
+    "DataSetQualityCalculation": "Data set quality indicators calculating",
+    "ErrAlreadyExporting": "Failed to export tables until the current export is finished",
+    "ErrExportQualityClosed": "Failed to export tables when indicators are not calculated",
+    "HistogramsCalculation": "Calculating histograms of data fields",
+    "LogColumnNotFoundFmt": "No %s field found in the input data set. The field has been deleted from the displayed fields.",
+    "LogNewColumnFmt": "New %s field appeared in the input data set. The field has been added to the displayed fields.",
+    "MoreStatisticsCalculation": "Additional statistics calculation",
+    "PrepareViewData": "Statistics",
+    "QualityStatisticsCalculation": "Data fields quality indicators calculating",
+    "QualityViewProcess": "Data quality",
+    "SimpleStatisticsCalculation": "Simple statistics calculation"
+  },
+  "Viewers/DataQuality/QualityViewBuilder": {
+    "UsefulColumns": "%s from %s"
+  },
   "Viewers/DataQuality/QualityViewCalculation": {
     "ErrRequiredColumnNotFound": "No columns with the specified indexes in the input data source"
+  },
+  "Viewers/DataQuality/QualityViewDetailing": {
+    "DetailingProcessCaptionSuffix": " by cell [%d, %d]"
+  },
+  "Viewers/DataQuality/QualityViewExport": {
+    "HTMLContinueStatsTitle": "Data quality (Continuous fields)",
+    "HTMLDiscreteStatsTitle": "Data quality (Discrete fields)",
+    "HTMLOverviewTitle": "Data quality (Summary)",
+    "NotAvailable": "Not available",
+    "NotCalculated": "Not calculated"
+  },
+  "Viewers/DataQuality/QualityViewHistogram": {
+    "ResidueValue": "Other"
+  },
+  "Viewers/DataQuality/QualityViewVendor": {
+    "VendorCaption": "Data Quality",
+    "VendorDesc": "Data quality indicators view"
   },
   "Viewers/DataTree/DataTreeView": {
     "ErrNotDefinedInputDataTree": "No input data tree defined",
@@ -4259,9 +4361,12 @@
     "DWConnectionVendorDesc": "Connect to the Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/DDWEngine": {
-    "ErrDimensionValueIsNull": "Value of \"%1:s\" dimension in \"%0:d\" row is null.",
-    "ErrDimensionValueNotFound": "\"%s\" value of \"%s\" dimension not found in DW (row \"%d\").",
-    "ErrEmptyData": "Error occurred while data cleansing of [%s] \"%s\" object.",
+    "ErrDimensionValueIsNull": "Value of \"%1:s\" [%2:s] dimension in \"%0:d\" row is null.",
+    "ErrDimensionValueNotFound": "\"%s\" value was not found in \"%s\" [%s] dimension values.",
+    "ErrEmptyData": "Error occurred while data cleansing of \"%s\" [%s] object.",
+    "ErrLoadDataDimension": "Error occurred while loading data to \"%s\" [%s] dimension.",
+    "ErrLoadDataProcess": "Error occurred while loading data to \"%s\" [%s] process",
+    "ErrLoadDataProcessCanceled": "The process of data loading to \"%s\" [%s] process has been cancelled by a user. Data is not loaded to DW. Indexes and constraints are not restored.",
     "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension",
     "MsgDisableConstraint": "Disable indexes and constraints.",
     "MsgEnableConstraint": "Restore indexes and constraints.",
@@ -4269,7 +4374,7 @@
     "MsgGroupDeleteDim": "Preparing to delete. Data grouping by dimension.",
     "MsgLoadDataDimension": "Loading the Dimension data into the Data Warehouse",
     "MsgLoadDataProcess": "Loading the Process data into the Data Warehouse",
-    "MsgRecordSkipDimValueIsNull": "Data of string \"%d\" was not added to DW. \"%s\" dimension value is null.",
+    "MsgRecordSkipDimValueIsNull": "Data of \"%d\" row was not added to DW. \"%s\" [%s] dimension value is null.",
     "MsgStatisticsGathering": "Collect statistics"
   },
   "Warehouse2/Deductor/DDWExportVendor": {
@@ -4282,7 +4387,7 @@
   },
   "Warehouse2/Deductor/Ver6/DW6Engine": {
     "ErrDataNotLoad": "Data is not loaded to DW.\nPossible reasons:\nFirebird - spaces at the end of string dimensions;\nMS SQL - case-insensitive letters of string dimensions.\nIf data deletion is set by dimension, this data has been deleted from DW.\nError occurred while restoring constraints and indexes",
-    "ErrRebuildCube": "Error occurred while the Cube updating [%s] \"%s\".",
+    "ErrRebuildCube": "Error occurred while \"%s\" [%s] Cube updating.",
     "MsgMoreLengthName": "Name of \"%s\" field is too long.\nErrors may occur when executing SQL queries to DW.",
     "MsgMoreLengthPrefix": "Too long value of \"%s\" prefix.\nErrors may occur when executing SQL queries to DW.",
     "MsgRebuildCube": "Update the Cubes in the Data Warehouse",

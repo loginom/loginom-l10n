@@ -123,7 +123,7 @@
       "Output": "Function returns the value of the Damerau–Levenshtein distance for String1, String2. The Damerau–Levenshtein distance is also called the edit distance with reference to transpositions that is the similarity of measurement of the two strings. Its result is the minimum number of the character deletion, insertion, substitution and transposition operations that must be performed in order to transform one string into another."
     },
     "Data": {
-      "Arguments": "FieldName - return value field name\nRowNumber - return value row number",
+      "Arguments": "FieldName - name of the field data of which is to be received\nRowNumber - number of the row value of which is to be received. Row numbering starts from 0.",
       "Description": "Data(\"FieldName\",RowNumber)",
       "Output": "Function returns the FieldName field value taken from the RowNumber row.\nIn case of the recursive usage of this function it is required to set the \"Cache the calculated expression values\" flag in the \"Expression parameters\" window.\nNote: FieldName - the string value, namely, the explicitly given FieldName must be specified in quotation marks.\nFor example, Data(\"COL1\", 2)"
     },
@@ -385,7 +385,7 @@
     "RowNum": {
       "Arguments": "Arguments are absent.",
       "Description": "RowNum()",
-      "Output": "Function returns the current record number of the data source."
+      "Output": "Function returns the current row number of the data source. Row numbering starts from 0."
     },
     "Second": {
       "Arguments": "DateTime - the date/time type field.",
@@ -420,7 +420,7 @@
     "Stat": {
       "Arguments": "FieldName - the field by which receipt of the indicator value is required\nType - the statistics indicator that is required to receive",
       "Description": "Stat(\"FieldName\", \"Type\")",
-      "Output": "Function returns one of the statistical indicators.\nThe type can adopt one of the following values:\n       Min - minimum value\n       Max - maximum value\n       Avg - average value\n       StdDev - standard deviation\n       Sum - sum of values\n       SumSq - sum of square values\n       Count - count of values\n       UniqueCount - count of unique values\n       NullCount - count of null values\nNote: FieldName and Type - string values, namely, explicitly given FieldName and Type must be in quotation marks.\nFor example: Stat(\"COL1\", \"Min\")"
+      "Output": "Function returns the value of one of the statistical indicators.\nThe type can adopt one of the following values:\n       Min - minimum value\n       Max - maximum value\n       Avg - average value\n       StdDev - standard deviation\n       Sum - sum of values\n       SumSq - sum of square values\n       Count - count of values\n       UniqueCount - count of unique values\n       NullCount - count of null values\n       Mode - most frequently occurring value\nNote: FieldName and Type - string values, namely, explicitly given FieldName and Type must be in quotation marks.\nFor example: Stat(\"COL1\", \"Min\")"
     },
     "StdDev": {
       "Arguments": "Arguments - any numeric expressions.",

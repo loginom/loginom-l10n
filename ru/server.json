@@ -500,7 +500,7 @@
   },
   "components/calcdata/CalcItemChakra": {
     "ErrExprParse": "Ошибка разбора выражения \"%s\"",
-    "ErrExprUsesUndefinedVariable": "В выражении \"%s\" используется неопределенная переменная %s",
+    "ErrExprUsesUndefinedVariable": "В выражении \"%0:s\" используется неопределенная переменная %1:s",
     "ExprCalculateError": "Ошибка вычисления выражения \"%s\", строка %d входного набора"
   },
   "components/calcdata/ExprColumns": {
@@ -901,7 +901,7 @@
     "ErrColumnNotFound": "Поле указано не верно",
     "ErrCompareValueIsNull": "Сравниваемое значение не определено",
     "ErrDatePeriodUndefined": "Не удалось определить временной промежуток",
-    "ErrDateSourceTypeDataNotSupported": "Использование дата из набора данных, для определении интервала времени не поддерживается",
+    "ErrDateSourceTypeDataNotSupported": "Использование даты из набора данных, для определении интервала времени не поддерживается",
     "ErrEmptyCompareValueList": "Не указан список значений",
     "ErrIncorrectCompareLowerBound": "Введенное значение нижней границы не соответствует типу фильтруемого столбца",
     "ErrIncorrectCompareUpperBound": "Введенное значение верхней границы не соответствует типу фильтруемого столбца",
@@ -1668,13 +1668,13 @@
     "ErrWrongTimeseriesKeyDatatype": "Неверный тип ключа временного ряда"
   },
   "components/ungroupdata/UngroupDataTimeseriesModel": {
-    "ErrBadlyConditionedMatrix": "На итерации %d матрица (%d x %d) сингулярна или плохо обусловлена: U[%d;%d] = 0",
+    "ErrBadlyConditionedMatrix": "На итерации %0:d матрица (%1:d x %2:d) сингулярна или плохо обусловлена: U[%3:d;%4:d] = 0",
     "ErrDFNotConsistent": "Не удается обеспечить нужное число степеней свободы",
     "ErrEngineUnassigned": "Для модели разгруппировки не установлен Engine",
     "ErrOptimGradientVerificationFailed": "Проверка аналитического градиента завершилась неудачно",
     "ErrOptimIntegrityFailed": "Обнаружено бесконечное значение оптимизируемой функции или ее градиента",
-    "ErrSingularMatrixCol": "На итерации %d матрица (%d x %d) содержит нулевой столбец №%d",
-    "ErrSingularMatrixRow": "На итерации %d матрица (%d x %d) содержит нулевую строку №%d",
+    "ErrSingularMatrixCol": "На итерации %0:d матрица (%1:d x %2:d) содержит нулевой столбец №%3:d",
+    "ErrSingularMatrixRow": "На итерации %0:d матрица (%1:d x %2:d) содержит нулевую строку №%3:d",
     "ErrSLECalcPrepare": "Ошибка при подготовке системы уравнений",
     "ErrSLEStructPrepare": "Ошибка при подготовке структур данных системы уравнений",
     "ErrSolver": "Ошибка %d при решении системы уравнений на итерации %d",
@@ -2581,7 +2581,7 @@
     "ErrNullsNotAllowed": "Пропущенные значения запрещены (пропущенное значение в колонке \"%s\")",
     "ErrProcessKeptStatistics": "При расчете списка уникальных значений возникли ошибки",
     "ErrProcessKeptStatisticsNonExistentNull": "В поле \"%s\" обнаружено ранее отсутствовавшее пустое значение",
-    "ErrProcessKeptStatisticsNonExistentValue": "В поле \"%s\" обнаружено ранее отсутствовавшее значение \"%s\"",
+    "ErrProcessKeptStatisticsNonExistentValue": "В поле \"%0:s\" обнаружено ранее отсутствовавшее значение \"%1:s\"",
     "ErrStatisticsBuildCookieInvalidOwner": "Cookie построителя статистики принадлежит другому объекту",
     "ErrStatisticsBuildCookieIsNil": "Попытка выполнить операцию завершения расчета с пустой ссылкой на Cookie построителя статистики"
   },
@@ -3538,7 +3538,7 @@
   "Libraries/Normalization/FixedNormalData": {
     "ErrArrayExpceted": "Невозможно денормализировать один элемент. На входе должен быть массив из %d элементов.",
     "ErrUnbalancedSync": "Вызов EndSynchronize без соответствующего BeginSynchronize",
-    "ErrWrongArraySize": "Размер массива '%s' %d не равен ожидаемому размеру массива %d"
+    "ErrWrongArraySize": "Размер массива '%0:s' %1:d не равен ожидаемому размеру массива %2:d"
   },
   "Libraries/Normalization/NormalColumns": {
     "ErrExcludeOutOfRange": "Удаляемый диапазон выходит за допустимые пределы. Заданы: начальный индекс %d, длина диапазона %d. Индекс последней удаляемой колонки %d больше индекса последней доступной для удаления колонки %d."
@@ -3553,13 +3553,13 @@
   },
   "Libraries/Normalization/NormalData": {
     "CalculateCacheProcessCaption": "Кэширование набора данных",
-    "ErrArrayExpected": "Невозможно денормализировать один элемент. Для колонки \"%s\" должен денормализироваться массив из %d элементов.",
+    "ErrArrayExpected": "Невозможно денормализировать один элемент. Для колонки \"%0:s\" должен денормализироваться массив из %1:d элементов.",
     "ErrImpossibleToAllocate": "Невозможно выделить память для кэшированного нормализированного источника данных",
     "ErrNotEnoughCache": "Размер кэша недостаточен для хранения строки нормализированных данных",
     "ErrUnbalancedSync": "Вызов EndSynchronize без соответствующего BeginSynchronize",
     "ErrUnexpectedEndUpdate": "Вызов EndUpdate без соответствующего BeginUpdate",
     "ErrUnexpectedUnlockedState": "Во время вызова вложенного BeginUpdate кэш нормализированного набора данных должен быть заблокирован",
-    "ErrWrongArraySize": "Размер массива %s %d не равен ожидаемому %d",
+    "ErrWrongArraySize": "Размер массива %0:s %1:d не равен ожидаемому %2:d",
     "ErrWrongNormalizerParams": "Ошибка при добавлении фактора \"%s\": число выходных колонок нормализатора %d не соответствует ожидаемому %d",
     "InterceptDisplayName": "Константа",
     "NormDSTypeNotSupported": "Неподдерживаемый тип запрашиваемого нормализированного набора данных",
@@ -3680,18 +3680,18 @@
     "ErrGuidNotFound": "Интерфейс \"%s\" не найден в метаданных",
     "ErrIncorrectIndexDataType": "Свойство \"%s\" имеет недопустимый тип индексатора",
     "ErrIndexerCountIncorrect": "Для индексируемого свойства \"%s.%s.%s\", свойство, содержащее количество элементов \"%s\", некорректно",
-    "ErrIndexerCountNotFound": "В метаданных интерфейса \"%s.%s\" отсутствует свойство \"%s\"",
+    "ErrIndexerCountNotFound": "В метаданных интерфейса \"%0:s.%1:s\" отсутствует свойство \"%2:s\"",
     "ErrInterfaceNameNotFound": "Интерфейс с именем \"%s\" не зарегистрирован",
     "ErrInterfaceParentNotFound": "Не найден родительский интерфейс \"%s\"",
     "ErrInvalidMetadataResource": "Ошибка чтения метаданных из ресурса \"%s\"",
     "ErrInvalidUTFInt": "Ошибка чтения целого упакованного числа",
     "ErrParentNotInitialized": "У интерфейса \"%s.%s\" не проинициализирован родитель",
-    "ErrPropAccessorNotFound": "В метаданных для свойства \"%s.%s\" не удалось найти акцессор \"%s\"",
+    "ErrPropAccessorNotFound": "В метаданных для свойства \"%0:s.%1:s\" не удалось найти акцессор \"%2:s\"",
     "ErrReferenceIsNil": "Интерфейсная ссылка не инициализирована",
     "ErrReferenceNotFound": "Не удалось найти реализуемый интерфейс",
     "ErrSetValueOutOfBounds": "Устанавливаемое значение \"%d\" свойства \"%s\" не принадлежит диапазону допустимых значений",
-    "ErrVaiantTypeIncorrect": "Для вариантного свойства \"%s.%s.%s\", свойство, содержащее тип значения \"%s\", некорректно",
-    "ErrVaiantTypeNotFound": "В метаданных интерфейса \"%s.%s\" отсутствует свойство \"%s\"",
+    "ErrVaiantTypeIncorrect": "Для вариантного свойства \"%0:s.%1:s.%2:s\", свойство, содержащее тип значения \"%3:s\", некорректно",
+    "ErrVaiantTypeNotFound": "В метаданных интерфейса \"%0:s.%1:s\" отсутствует свойство \"%2:s\"",
     "ErrValueOutOfRange": "Значение \"%d\" не принадлежит диапазону допустимых значений типа \"%s\"",
     "ErrVisibilityMismatch": "Видимость интерфейса \"%s\" не совпадает с требуемой"
   },
@@ -3841,7 +3841,7 @@
     "LgpFilesDesc": "Пакеты Loginom"
   },
   "Studio/DeductorServer": {
-    "AutoRefresh": "Автообновление",
+    "AutoRefresh": "Автообновление публикации",
     "AutoSavePackageError": "Возникла ошибка при автосохранении пакета \"%s\"",
     "AutoSavePackagesFailed": "Не удалось выполнить автосохранение пакетов",
     "ErrAccessDenied": "Отказано в доступе",
@@ -4008,7 +4008,7 @@
     "PrepareViewData": "Таблица"
   },
   "Viewers/Browse/BrowseViewExport": {
-    "DisplayNameColumnDisplayName": "Название",
+    "DisplayNameColumnDisplayName": "Метка",
     "Form": "Форма",
     "NameColumnDisplayName": "Имя",
     "NullValue": "<null>",
@@ -4362,7 +4362,7 @@
     "DWConnectionVendorDesc": "Подключение к Хранилищу данных Deductor"
   },
   "Warehouse2/Deductor/DDWEngine": {
-    "ErrDimensionValueIsNull": "В строке \"%d\" значение измерения \"%s\" [%s] пустое.",
+    "ErrDimensionValueIsNull": "В строке \"%0:d\" значение измерения \"%1:s\" [%2:s] пустое.",
     "ErrDimensionValueNotFound": "Значение \"%s\" не найдено среди значений измерения \"%s\" [%s].",
     "ErrEmptyData": "В процессе выполнения очистки данных объекта \"%s\" [%s] возникла ошибка.",
     "ErrLoadDataDimension": "В процессе выполнения загрузки данных в измерение \"%s\" [%s] возникла ошибка.",

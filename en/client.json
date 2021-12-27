@@ -3,10 +3,11 @@
     "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": "Version {0} is available"
+    "NewVersionIsAvaliableFmt": "{0} version is available"
   },
   "admin/LDAPSettings": {
     "ConnectionSecurity": "Connection security",
+    "DefaultUserRole": "New user role",
     "LDAPAccount": "Account",
     "LDAPBaseDN": "Base domain name",
     "LDAPFilter": "LDAP filter",
@@ -22,14 +23,19 @@
     "Bind": "IP address",
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection parameters",
+    "CurrentLocale": "Current \"{0}\" locale.",
+    "DefaultLocaleModified": "changed",
     "DirectorySettings": "Folders",
     "LDAPSettings": "LDAP parameters",
+    "Locale": "Locale",
     "LogFileMaxIndex": "Number of backup files",
     "LogFileMaxSize": "Maximum file size",
     "LogFileName": "File name",
     "LogFileRewrite": "Rewrite file",
     "LoggerSettings": "Logging parameters",
     "MinLogLevel": "Logging level",
+    "MsgNewLocaleAfterRestart": "New locale will be applied after restart",
+    "NotSet": "Not set ({0})",
     "NullAsDefault": "Default",
     "NullAsDisabled": "Off",
     "PackagePoolSize": "Package pool size",
@@ -77,6 +83,7 @@
     "SaveBtnText": "Save"
   },
   "admin/UserListForm": {
+    "AllowPublish": "Publish packages",
     "AuthMode": "Authentification",
     "Blocked": "Blocked",
     "DeleteUserConfirm": "Do you want to delete user folder from the file system?",
@@ -94,7 +101,7 @@
   },
   "app/AddPackageLinkForm": {
     "ErrAddPackageLinkErrors": "Errors occurred while adding reference to package.",
-    "ErrPathNotSpecified": "Package not specified (path to package file).",
+    "ErrPathNotSpecified": "Path to the package file is not specified",
     "PackageNotSaved": "Package not saved",
     "ReadOnlyPackageNamePostfix": " (read-only)"
   },
@@ -113,6 +120,8 @@
   "app/ConfigureDerivedVendorForm": {
     "AddBtnText": "Add",
     "EditVendor": "Derived Component Setting",
+    "ErrMustSelectTargets": "It is required to select at least one checkbox: \"{0}\" or \"{1}\"",
+    "NewVendor": "New derived component",
     "SaveBtnText": "Save"
   },
   "app/FindNodeForm": {
@@ -155,7 +164,8 @@
     "MsgTransportError": "Server connection lost",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
     "PackageCopyOpened": "Changes in the open link \"{0}\" package will be reflected in the current package upon its reload",
-    "ServerDisplayName": "Server"
+    "ServerDisplayName": "Server",
+    "WarnAutoSavePackagesUnsaved": "Failed to save packages while auto saving:\n{0}"
   },
   "app/MainMenuForm": {
     "EmptyPackageName": "Package not selected",
@@ -185,6 +195,7 @@
     "PackagesParent": "Packages",
     "PackageVariables": "Variables",
     "Properties": "Parameters",
+    "PublishedPackagesParentParent": "Web services",
     "ReadOnlyPackageNamePostfix": " (read-only)",
     "References": "References",
     "Reports": "Reports",
@@ -200,11 +211,15 @@
   "app/MapTreeForm": {
     "ConfirmRemovingReference": "Do you want to delete \"{0}\" reference?",
     "DisplayName": "Caption",
+    "DraftPublishFailed": "Failed to publish \"{0}\" draft",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
     "mnuPortsShowAll": "Show all ports",
     "ModelUnitRenameTitle": "Rename Module",
     "VendorRenameTitle": "Rename Component"
+  },
+  "app/ModelComponentVendorTreeNodeProxy": {
+    "ErrNoRefModelComponentVendorTreeNode": "No reference to IBGModelComponentVendorTreeNode"
   },
   "app/ModelForm": {
     "ActivateCurrent": "Run node",
@@ -212,6 +227,9 @@
     "AddComment": "Add comment",
     "AddNewConnectionInheritedNode": "Add connection node to workflow",
     "AddNewConnectionReferenceNode": "Add reference to connection into workflow",
+    "AddNewDerivedNode": "Add derived node to workflow",
+    "AddNewExecNode": "Add Node Execution node to workflow",
+    "AddNewLoop": "Add Loop node to workflow",
     "AddNewNode": "Add node to workflow",
     "CancelOperation": "Cancel operation",
     "CantFindGenericModelNode": "Supernode node not found",
@@ -219,7 +237,9 @@
     "CloneNode": "Clone node",
     "ComposeExpandNode": "Collapse nodes into supernode / expand supernode",
     "ComposeNodes": "Collapse nodes to supernode",
+    "ComposeSingleNode": "Collapse node to supernode",
     "ConfigurePort": "Configure port...",
+    "ConfirmCreatingAnotherDerivedVendor": "Derived \"{0}\" component already exists for this node.\nDo you really want to create one more component?",
     "ConfirmRemovingDerivedVendor": "Do you really want to delete the derived component?",
     "CopyNode": "Copy node",
     "CutNode": "Cut node",
@@ -228,6 +248,7 @@
     "DeleteLink": "Delete link...",
     "DeleteNode": "Delete node...",
     "DeletePort": "Delete port",
+    "DerivedNodeAllowed": "Derived node creation is allowed",
     "DeriveNode": "Create derived component ...",
     "EditPortDisplayName": "Edit port caption...",
     "EditPortDisplayNameWindowTitle": "Edit port caption",
@@ -243,7 +264,10 @@
     "ForceRetry": "Force retry",
     "GoToConnection": "Go to connection",
     "GoToConnections": "Go to connections",
+    "GoToDerivedVendor": "Go to derived component",
+    "GoToDerivedVendors": "Go to derived components",
     "HideControlVariablesPorts": "Hide control variables port",
+    "Inspector": "Inspector",
     "LockedIconTooltip": "Node locked during runtime or setup",
     "NodeBatchMode": "Configure node activation mode...",
     "NodeVisibility": "Configure visibility...",
@@ -254,6 +278,10 @@
     "NodeVisibilityPublic": "Visibility inside all packages",
     "NodeVisibilityPublished": "Visibility inside all packages and as web service",
     "NodeVisibilityTitle": "Node Visibility",
+    "NotFoundBaseNode": "Failed to find base node in the opened packages",
+    "NotFoundConnection": "Failed to find connection in the opened packages",
+    "NotFoundDerivedVendor": "Failed to find derived component in the opened packages",
+    "Preview": "View",
     "PropertyInspectorLocale": "en",
     "RecreateBaseNodeForDerivedVendor": "Recreate base node",
     "RemoveComment": "Delete comment",
@@ -266,6 +294,7 @@
     "SetupConnection": "Configure connection...",
     "SetupNode": "Configure node...",
     "ShowControlVariablesPort": "Show control variables port",
+    "ShowEnlargedDataPreview": "Enlarged Quick View",
     "TeachNode": "Retrain node",
     "TuneDerivedVendor": "Configure...",
     "UndoableDeleteNode": "Delete (forced)...",
@@ -279,10 +308,18 @@
     "ErrNoRefModelNodeTreeNode": "No reference to IBGModelNodeTreeNode"
   },
   "app/PackageForm": {
+    "ApplyLocaleTitle": "Apply new locale",
     "Cancel": "Cancel",
     "Confirm": "Apply",
+    "ConfirmLocaleChangeMsg": "After locale change strings can be compared in a different way.\nDo you really want to change locale?",
+    "CurrentLocale": "Current locale of \"{0}\" package .",
+    "DefaultLocaleModified": "modified",
     "ErrIncorrectVersionFormat": "Invalid version format",
-    "ErrInvalidPackageName": "\"{0}\" is invalid package name"
+    "ErrInvalidPackageName": "\"{0}\" is invalid package name",
+    "Later": "Later",
+    "NotSet": "Not set ({0})",
+    "QuestionSaveAndReopenPackage": "New locale will be applied when packages and all opened packages that depend on it are closed.\nDo you want to save the package and reopen it now?",
+    "Reopen": "Reopen"
   },
   "app/PackageLinkForm": {
     "ErrIncorrectVersionFormat": "Invalid version format"
@@ -304,9 +341,16 @@
     "VisibilityHeader": "Visibility",
     "VisibilityTooltip": "Configure visibility..."
   },
+  "app/PackagesAutoSavePanel": {
+    "ErrPackagesAutoSaveNotSpecified": "Packages auto save period is not specified"
+  },
   "app/PackagesListForm": {
+    "CurrentLocale": "Current \"{0}\" locale.",
+    "DefaultLocaleModified": "modified",
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
-    "ErrPathNotFound": "The specified path was not found \"{0}\"."
+    "ErrPathNotFound": "The specified path was not found \"{0}\".",
+    "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed",
+    "NotSet": "Not set ({0})"
   },
   "app/PackageVariableEditForm": {
     "AddBtnText": "Add",
@@ -329,11 +373,25 @@
     "MsgAddedVariableCanNotSelected": "Variable has been added, but it is not selected because it does not match the filter",
     "MsgEditedVariableCanNotSelected": "Variable has been renamed, but it is not selected because it does not match the filter"
   },
+  "app/PreviewForm": {
+    "EmptyTabMsg": "Select the active node to show its data",
+    "FastPreviewEmptyTabTitle": "Quick View",
+    "NodeIsNotActive": "Node not activated",
+    "NoPreviewForSocketType": "Quick View does not exist for port",
+    "PortIsNotActive": "Port not activated"
+  },
   "app/PublishedPackagesAddForm": {
     "DisNamespace": "http://schemas.loginom.com/integration",
-    "ErrPathNotSpecified": "Path to the package file is not specified"
+    "ErrNamespaceIsBlank": "Namespace cannot be empty",
+    "ErrPathNotSpecified": "Path to the package file is not specified",
+    "ErrPublishPackage": "Failed to publish package: \"{0}\"",
+    "PackageAlreadyPublished": "\"{0}\" package already published",
+    "PackageNameAlreadyPublished": "Package with \"{0}\" name already published",
+    "UpdateButtonText": "Update",
+    "UpdateFormTitle": "Edit web service"
   },
   "app/PublishedPackagesListForm": {
+    "ConfirmFinish": "Do you want to finish publication of {0} package?",
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
     "ErrPathNotFound": "The specified path was not found \"{0}\"."
   },
@@ -362,6 +420,8 @@
     "CopiedHint": "Copied"
   },
   "app/TabForm": {
+    "DeactivateNodeConfirmationMsg": "Node configuration will cause its deactivation.\nDo you really want to start node configuration?",
+    "DeactivateNodeForPortConfirmationMsg": "Port configuration will cause node deactivation.\nDo you really want to start port configuration?",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrPrepareContainer": "When switching to \"{0}.{1}\" error occurred.\n{2}",
     "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
@@ -379,8 +439,10 @@
     "BaseNodeTooltip": "Reference to base node",
     "Delete": "Delete",
     "DeleteTooltip": "Delete...",
+    "DerivedNodeAllowed": "Derived node creation is allowed",
     "DescriptionHeader": "Description",
     "DisplayNameHeader": "Caption",
+    "ExecuteNodeAllowed": "Creation of Execution and Loop nodes is allowed",
     "GoToBaseNode": "Go to base node",
     "Setup": "Configure",
     "SetupTooltip": "Configure...",
@@ -608,11 +670,21 @@
     "CmdPlaceholder": "Enter command text"
   },
   "components/execnode/ExecNodeComponentWizard": {
+    "CurrentModelUnitNodes": "Nodes in the current module",
     "Description": "Description",
+    "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"{0}\" node for which inheritance is forbidden",
+    "ErrVendorDeleted": "Target component deleted.",
+    "ErrVendorDeletedFmt": "\"{0}\" target component deleted.",
+    "ErrVendorNotFound": "Target component was not found, it may have been deleted or became unavailable.",
+    "ErrVendorNotFoundFmt": "\"{0}\" target component was not found, it may have been deleted or became unavailable.",
     "ExecNodeWizardTitle": "Node Execution",
-    "Vendors": "Components"
+    "NotifyVendorNotSelected": "No target component selected.",
+    "Vendors": "Components",
+    "WarnNodeLoadLimitExceeded": "\"{0}\" target component is not selected.\n {1} limit of loaded node levels ha s been exceeded."
   },
   "components/filterdata/FilterColumnItem": {
+    "BadBrowserMsg": "This operation is not supported in our browser.",
+    "CopyError": "Error while copying to clipboard:",
     "EndingWith": "ending with",
     "Equal": "=",
     "GetValueList": "Get list",
@@ -627,12 +699,18 @@
     "Less": "<",
     "LessOrEqual": "<=",
     "Like": "contains",
+    "NoHTTPSMsg": "Connection via HTTPS protocol is required for this operation.",
+    "NoMenuCopyWarn": "To copy data, use hotkeys",
+    "NoMenuCutWarn": "To cut data, use hotkeys",
+    "NoMenuPasteWarn": "To paste data, use hotkeys",
     "NotEndingWith": "not ending with",
     "NotEqual": "<>",
     "NotIn": "not listed",
     "NotLike": "does not contain",
     "NotSelectedValieItem": "No values",
     "NotStartingWith": "not starting with",
+    "PasteError": "Error while pasting from clipboard:",
+    "PermissionReq": "Grant Loginom access to clipboard",
     "SetLabel": "List",
     "StartingWith": "starting with",
     "ValueListIsEmpty": "No values"
@@ -703,6 +781,7 @@
     "MaxThreadCountMinPrefix": "Value cannot be lower",
     "NoSocketError": "No data source input port for batch processing",
     "NullReferenceVendor": "Not defined",
+    "NullReferenceVendorError": "No source component",
     "VariableNotFoundErrorFormat": "No \"{0}\" variable"
   },
   "components/neuralnet/NeuralNetParamsWizard": {
@@ -724,10 +803,12 @@
     "OutputStdOutSymbolsSkipped": "stdout characters omitted"
   },
   "components/reformcolumns/EditReformColumnDefForm": {
-    "CachingMethod": "Caching"
+    "CachingMethod": "Caching",
+    "Excluded": "Exclude"
   },
   "components/reformcolumns/ReformColumnsWizard": {
     "ColumnCachingMethodText": "Caching",
+    "ColumnExcludedText": "Exclude",
     "ReformColumnsWizardTitle": "Configure fields features"
   },
   "components/replace/ReplaceVariablesWizard": {
@@ -1132,6 +1213,8 @@
     "SysFilesDesc": "Configuration files",
     "TdeFileDesc": "Tableau Extract",
     "TdeFilesDesc": "Tableau Extracts",
+    "TsvFileDesc": "TSV file",
+    "TsvFilesDesc": "TSV files",
     "TxtFileDesc": "Text file",
     "TxtFilesDesc": "Text files",
     "VideoFileDesc": "Video file",
@@ -1193,6 +1276,7 @@
     "CantSaveDownLoadedFile": "Failed to save the downloaded file"
   },
   "filestorage/FileSenderManager": {
+    "FileAlreadyOpenForWriting": "\"{0}\" file to be loaded is simultaneously opened by someone for record. It is probable that the received file will not contain all latest changes.",
     "FileAlreayLoading": "\"{0}\" file download is already in progress. Wait until the completion or cancel the download process."
   },
   "filestorage/FileStorageForm": {
@@ -1262,14 +1346,21 @@
     "Loading": "Loading..."
   },
   "highcharts/Themes": {
+    "Dark": "Dark",
+    "DarkBlue": "Navy",
+    "DarkGreen": "Dark green",
     "Default": "Standard",
-    "Grid": "Table"
+    "Gray": "Grey",
+    "Grid": "Table",
+    "GridLight": "Light table",
+    "NoThemeFmt": "Theme with \"{0}\" name not found. Default theme will be used.",
+    "SandSignica": "Sand"
   },
   "homepage/Banner": {
     "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": "Version {0} is available"
+    "NewVersionIsAvaliableFmt": "{0} version is available"
   },
   "homepage/HomePage": {
     "CleanConfirm": "Do you want to clean the list of recently opened packages?",
@@ -1339,6 +1430,7 @@
   "imports/textfile/DateSeparatorStore": {
     "BackSlash": "Backslash (\\)",
     "Default": "Default",
+    "Hyphen": "Hyphen (-)",
     "Point": "Dot (.)",
     "Slash": "Slash (/)"
   },
@@ -1545,14 +1637,14 @@
     "CurrentData": "current date",
     "DayFirstPostfix": "first",
     "DayLastPostfix": "last",
-    "DayPeriodNameFew": "day",
+    "DayPeriodNameFew": "days",
     "DayPeriodNameMany": "days",
     "DayPeriodNameOne": "day",
     "ManyFirstPostfix": "first",
     "ManyLastPostfix": "last",
     "MonthFirstPostfix": "first",
     "MonthLastPostfix": "last",
-    "MonthPeriodNameFew": "month",
+    "MonthPeriodNameFew": "months",
     "MonthPeriodNameMany": "months",
     "MonthPeriodNameOne": "month",
     "NegativePostfix": "not",
@@ -1561,27 +1653,28 @@
     "PluralRuleLang": "en",
     "QuarterFirstPostfix": "first",
     "QuarterLastPostfix": "last",
-    "QuarterPeriodNameFew": "quarter",
+    "QuarterPeriodNameFew": "quarters",
     "QuarterPeriodNameMany": "quarters",
     "QuarterPeriodNameOne": "quarter",
     "WeekFirstPostfix": "first",
     "WeekLastPostfix": "last",
-    "WeekPeriodNameFew": "week",
+    "WeekPeriodNameFew": "weeks",
     "WeekPeriodNameMany": "weeks",
     "WeekPeriodNameOne": "week",
-    "WrongPeriodNameFew": "period",
+    "WrongPeriodNameFew": "periods",
     "WrongPeriodNameMany": "periods",
     "WrongPeriodNameOne": "period",
     "YearFirstPostfix": "first",
     "YearLastPostfix": "last",
-    "YearPeriodNameFew": "year",
+    "YearPeriodNameFew": "years",
     "YearPeriodNameMany": "years",
     "YearPeriodNameOne": "year"
   },
   "lib/Exceptions": {
     "Error": "Error occurred while the program was running.\n{0}",
     "ErrWindowFull": "Error occurred while the program was running.\nError: \"{0}\"\nUrl: \"{1}\"\nString: {2} Symbol: {3}",
-    "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2} Symbol: {3}"
+    "ErrWindowUrl": "Error occurred while the program was running.\nUrl: \"{1}\"\nString: {2} Symbol: {3}",
+    "UndefinedError": "Unknown error"
   },
   "lib/Loader": {
     "ErrClassName": "Invalid \"{0}\" class name.",
@@ -1712,9 +1805,15 @@
     "Warm": "Warm",
     "WarmContrast": "Warm contrast"
   },
+  "plotly/PlotlyLoader": {
+    "PlotlyLanguage": "en"
+  },
   "plotly/Theme": {
     "Ggplot2": "Ggplot2",
     "PlotlyClassic": "Standard",
+    "PlotlyDark": "Dark",
+    "PlotlyGray": "Grey",
+    "PlotlyWhite": "White",
     "Seaborn": "Seaborn"
   },
   "progress/ProgressForm": {
@@ -1871,7 +1970,8 @@
   },
   "viewers/chart/ChartUtils": {
     "ApplyDefaultColor": "Apply default color",
-    "DefaultColor": "Default"
+    "DefaultColor": "Default",
+    "InvalidColorFmt": "\"{0}\" is not color"
   },
   "viewers/chart/ChartView": {
     "AddSerieButtonText": "Add",
@@ -1885,6 +1985,7 @@
     "FieldWasRemoved": "{0} field has been deleted or has invalid data type"
   },
   "viewers/chart/SeriesEditor": {
+    "AddMenuItemToolTipTemplate": "Add series for \"{0}\" field",
     "DefaultSerieName": "Series"
   },
   "viewers/clusterprofiles/CachedState": {
@@ -2004,7 +2105,15 @@
     "DimensionFilterSelectionPanelTitle": "Check by pattern"
   },
   "viewers/cube/DimensionsFilterPanel": {
+    "AndMore": "and also {0} values.",
+    "BadBrowserMsg": "This operation is not supported in our browser.",
     "CheckAllTooltip": "Check all",
+    "ClipbordReadDenied": "Grant Loginom access to clipboard",
+    "MsgMaxClipboardSizeReached": "Maximum clipboard size reached",
+    "MsgRejectedClipboardValues": "The values that are not included into the dimension values:\n",
+    "MsgUnrecognizedClipboardValues": "Unrecognized values:\n",
+    "NoAsyncClipboardPasteWarn": "To paste, use hotkeys in the entry field",
+    "NoHTTPSMsg": "Connection via HTTPS protocol is required for this operation.",
     "UncheckAllTooltip": "Uncheck all"
   },
   "viewers/cube/PivotDataSource": {
@@ -2028,6 +2137,35 @@
     "DescSortCaption": "Sort Descending",
     "ForwardSortNavButton": "Go to Previous Sorted Header",
     "NestedSortCaption": "Sorted headers among nested headers"
+  },
+  "viewers/dataquality/QualityView": {
+    "ErrExportFailed": "Failed to export Data Quality Tables:\n{0}",
+    "ExportToastTitle": "Export from Data Quality",
+    "NotAvailable": "Not available",
+    "NotCalculated": "Not calculated"
+  },
+  "viewers/dataquality/QualityViewHistogram": {
+    "ColumnTitleInterval": "Bin",
+    "ColumnTitleMark": "Caption",
+    "EmptyValueMark": "Null",
+    "WhiteSpacesValueMark": "Spaces",
+    "WhiteSpaceValueMark": "Space"
+  },
+  "viewers/dataquality/QualityViewWidgets": {
+    "EmptyValueMark": "Null",
+    "LeftOutlier": "Minimum outlier: ",
+    "LeftWhisker": "Sample minimum: ",
+    "LowerQuartile": "Lower quartile: ",
+    "Median": "Median: ",
+    "NonUniqueCount": "Unique (not single): ",
+    "NullCount": "Null count: ",
+    "RepeatCount": "Duplicative: ",
+    "RightOutlier": "Maximum outlier: ",
+    "RightWhisker": "Sample maximum: ",
+    "UniqueCount": "Unique (single): ",
+    "UpperQuartile": "Upper quartile: ",
+    "WhiteSpacesValueMark": "Spaces",
+    "WhiteSpaceValueMark": "Space"
   },
   "viewers/detailing/Detailing": {
     "ErrNullEngine": "Visualizer initialization error",
@@ -2058,6 +2196,7 @@
   },
   "viewers/regression/LinRegressReportView": {
     "ModelInfoFValue": "F-statistic",
+    "ModelInfoLogLikelihood": "Log-likelihood",
     "ModelInfoR2": "R^2",
     "ModelInfoR2adj": "R^2 adj.",
     "ModelInfoStdDev": "Standard deviation",
@@ -2067,7 +2206,10 @@
     "IsEvent": "Event",
     "IsNotEvent": "Non-event",
     "ModelInfoChi2": "Chi-square",
-    "ModelInfoDeviance": "Deviance"
+    "ModelInfoDeviance": "Deviance",
+    "ModelInfoNullDeviance": "Deviance of zero model",
+    "ModelInfoR2": "McFadden Pseudo R²",
+    "ModelInfoR2adj": "McFadden Pseudo R² (adj.)"
   },
   "viewers/regression/RegressionReportView": {
     "ModelInfoAIC": "AIC",
@@ -2076,8 +2218,8 @@
     "ModelInfoConstant": "Intercept",
     "ModelInfoConstantExc": "Excluded",
     "ModelInfoConstantInc": "Included",
-    "ModelInfoDF": "Degrees of freedom for model",
-    "ModelInfoDFE": "Degrees of freedom for error",
+    "ModelInfoDF": "Number of model degrees of freedom",
+    "ModelInfoDFE": "Number of error degrees of freedom",
     "ModelInfoHQC": "HQC",
     "ModelInfoPValue": "Model P-value"
   },

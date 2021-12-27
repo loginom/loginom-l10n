@@ -511,7 +511,8 @@
   },
   "exports/native": {
     "ExportNative": {
-      "Compression": "Compression"
+      "Compression": "Compression",
+      "StringCacheMaxSize": "String cache size"
     }
   },
   "exports/tableau": {
@@ -578,7 +579,8 @@
       "TimeSeparator": "Time separator",
       "ValueFalse": "False",
       "ValueNull": "Null",
-      "ValueTrue": "True"
+      "ValueTrue": "True",
+      "VariantAsGeneralType": "Variable type"
     }
   },
   "imports/xml": {
@@ -688,6 +690,9 @@
       "ID": "Identifier",
       "Name": "Name"
     },
+    "LocaleSettingsConfigurator": {
+      "LocaleName": "Locale name"
+    },
     "NamedItem": {
       "Name": "Item name"
     }
@@ -781,6 +786,7 @@
       "Account": "Account",
       "BaseDN": "Base domain name",
       "ConnectionSecurity": "Connection security",
+      "DefaultUserRole": "New user role",
       "Filter": "LDAP filter",
       "FullNameAttribute": "Full name attribute",
       "Host": "Host",
@@ -895,6 +901,11 @@
       "WSSPort": "WebSocket SSL/TLS port"
     }
   },
+  "Warehouse2/DWImportTree": {
+    "DWImportTreeNode": {
+      "FilterParams": "Filtration parameters"
+    }
+  },
   "Warehouse2/MDFilterParams": {
     "MDCustomFilterParams": {
       "MaxValue": "Upper bound",
@@ -902,6 +913,7 @@
       "TheValue": "Compare value"
     },
     "MDDateFilterParams": {
+      "CustomPointDate": "User lag date",
       "IntervalType": "Time span unit",
       "UseIntervalCount": "Time span value"
     }

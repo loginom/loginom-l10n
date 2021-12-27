@@ -40,6 +40,8 @@
     "StoppingService": "Service shutdown, application domain name: \"{0}\", identifier: {1}"
   },
   "DeductorIntegrationServerCore/JsonDispatchFormatter": {
+    "ErrInputBodyIsEmpty": "The request body must not be empty",
+    "ErrInputMustContainJsonObject": "Request must contain json object",
     "ErrInvalidCharsetQualityFormat": "Invalid format of the list item in Accept-Charset header: {0}",
     "ErrInvalidContentType": "Invalid value of the Content-Type header: {0}",
     "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",
@@ -81,6 +83,7 @@
     "UrlFormat": "Url format: "
   },
   "DeductorIntegrationServerCore/ServiceHelper": {
+    "CalledUrl": "Url of called method: {0}",
     "ErrInvalidColumnCount": "Invalid column count in the matrix of values: {0}; required: {1}",
     "ErrInvalidElementCount": "Invalid element count in the data set: {0}; required: {1}",
     "ErrInvalidRowCount": "Invalid row count in the variable value matrix: {0}",
@@ -93,7 +96,7 @@
     "ErrRootElementCannotBeNull": "Root element must not be null",
     "ErrRootElementMustBeSingle": "Matrix of values must contain only one root element",
     "ErrUnsupportedFieldType": "\"{0}\" field contains the value of the invalid {1} type",
-    "ExecutePackageInfo": "Processing of \"{0}\" package of {1} version, execution of \"{2}\" node with {{{3}}} identifier",
+    "ExecutePackageInfo": "Processing of \"{0}\" package of {1} version, execution of \"{2}\" node with \"{3}\" name and {{{4}}} identifier",
     "ReceivedRequest": "Request for processing received",
     "SendingResponse": "Response sending"
   },

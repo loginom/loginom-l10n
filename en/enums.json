@@ -1324,6 +1324,8 @@
       "StartTLS": "STARTTLS"
     },
     "LDAPUserRole": {
+      "$Caption": "New User Role",
+      "None": "None",
       "Designer": "Workflows design",
       "Viewer": "View reports"
     }
@@ -1334,6 +1336,13 @@
       "Off": "Disable",
       "Manual": "Custom",
       "Auto": "Auto"
+    }
+  },
+  "Libraries/Model/DerivedModelComponent": {
+    "DerivedModelComponentTarget": {
+      "$Caption": "Target node types",
+      "ExecNode": "Node execution and Loop",
+      "DerivedNode": "Derived nodes"
     }
   },
   "Libraries/Model/ModelWorkFlow": {
@@ -1536,7 +1545,12 @@
       "Labels": "Caption field"
     },
     "ChartMarkerSymbol": {
-      "Default": "Default"
+      "$Caption": "Series marker form",
+      "Default": "Default",
+      "Circle": "Circle",
+      "Diamond": "Diamond",
+      "TriangleUp": "Triangle up",
+      "TriangleDown": "Triangle down"
     },
     "ChartStacking": {
       "$Caption": "Stacking Type",
@@ -1753,17 +1767,117 @@
   },
   "Viewers/DataQuality/QualityViewHistogram": {
     "QualityViewHistogramColumn": {
+      "$Caption": "Histogram Column",
+      "Number": "Number",
+      "Mark": "Caption",
+      "BarChart": "Rate",
+      "Count": "Count",
       "Percent": "%"
+    },
+    "QualityViewHistogramDisplayType": {
+      "$Caption": "Histogram Display Type",
+      "All": "All values",
+      "Frequent": "Frequent values",
+      "Rare": "Rare values",
+      "FrequentAndRare": "Frequent and rare"
+    },
+    "QualityViewHistogramValueType": {
+      "$Caption": "Histogram Element Type",
+      "Common": "Common value",
+      "Null": "Null value",
+      "Infinity": "Positive infinity",
+      "NegInfinity": "Negative infinity",
+      "Residue": "Residual values",
+      "Empty": "Null value",
+      "WhiteSpace": "Space value",
+      "WhiteSpaces": "Several space values"
     }
   },
   "Viewers/DataQuality/QualityViewTypes": {
+    "DataSetQuality": {
+      "$Caption": "Data set quality",
+      "DetectOE": "Non-standard values determination method",
+      "ColCount": "Columns",
+      "RowCount": "Rows",
+      "FullColumns": "Filled fields",
+      "FullRecords": "Full records",
+      "UsefulColumns": "Suitable columns",
+      "IndexEPV": "EPV index"
+    },
     "QualityViewCommonColumnType": {
+      "$Caption": "Type of common column",
       "Index": "No",
-      "DataType": "Type"
+      "Selected": "Selected fields",
+      "DataType": "Type",
+      "Name": "Caption",
+      "DataKind": "Kind"
+    },
+    "QualityViewDetectOE": {
+      "$Caption": "Outliers and Extremes Identification Method",
+      "SKO": "Standard deviation",
+      "Quartile": "Interquartile width"
     },
     "QualityViewIndicatorType": {
+      "$Caption": "Data quality indicator",
+      "QualityIndex": "Quality indicator",
+      "NullCount": "Null count",
+      "Histogram": "Histogram",
+      "BoxUnique": "Chart of unique",
+      "ExtrCount": "Extreme",
+      "OutCount": "Outliers",
+      "EmptyCount": "Null",
+      "SpaceCount": "Space",
+      "SpaceEnding": "Spaces at the end",
+      "StrLen": "String lengths",
+      "ValuesRange": "Range of values",
+      "NegativeCount": "Negative",
+      "ZeroCount": "Zero",
+      "InfinityCount": "Infinities",
+      "BoxPlot": "Box plot",
+      "UniqueCount": "Unique",
       "Min": "Minimum",
-      "Max": "Maximum"
+      "Max": "Maximum",
+      "Mean": "Mean",
+      "Median": "Median",
+      "Moda": "Mode",
+      "Monotonique": "Monotony"
+    },
+    "QualityViewModaType": {
+      "$Caption": "Modality Type",
+      "Unknown": "Undefined",
+      "Single": "Unimodal",
+      "Multi": "Multimodal",
+      "NoModa": "Without mode"
+    },
+    "QualityViewMonotonique": {
+      "$Caption": "Monotony of Values Series",
+      "None": "Not monotonic",
+      "Increasing": "Ascending",
+      "Descending": "Descending"
+    },
+    "QualityViewOverviewColumnType": {
+      "$Caption": "Type of Summary Column",
+      "Count": "Count of problems",
+      "Problems": "Problems"
+    },
+    "QualityViewProblemType": {
+      "$Caption": "Problem in Data Field",
+      "Missing": "Null count",
+      "Empty": "Null",
+      "Zero": "Zeros",
+      "Space": "Spaces",
+      "Infinity": "Infinities",
+      "Constant": "Constant",
+      "Unique": "Unique",
+      "ConvertError": "Conversion error",
+      "NotCalculated": "Not calculated",
+      "NoData": "No data"
+    },
+    "QualityViewSheet": {
+      "$Caption": "Page of Data Quality Visualizer",
+      "Overview": "Summary",
+      "DiscreteStats": "Detailing of discrete",
+      "ContinueStats": "Detailing of continuous"
     }
   },
   "Viewers/Detailing/Detailing": {

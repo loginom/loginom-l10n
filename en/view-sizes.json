@@ -43,5 +43,18 @@
       "maxWidth": 55,
       "width": 42
     }
+  },
+  "viewers/statistics/StatView": {
+    "colDataKind": {
+      "minWidth": 55,
+      "width": 55
+    },
+    "colHistogramIndex": {
+      "width": 42
+    },
+    "colIndex": {
+      "maxWidth": 55,
+      "width": 42
+    }
   }
 }

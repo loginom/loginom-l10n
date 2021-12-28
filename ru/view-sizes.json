@@ -13,5 +13,35 @@
     "colCaseSensitive": {
       "width": 80
     }
+  },
+  "viewers/dataquality/QualityView": {
+    "colContinueDataType": {
+      "minWidth": 50,
+      "width": 50
+    },
+    "colContinueIndex": {
+      "maxWidth": 50,
+      "width": 40
+    },
+    "colDiscreteDataType": {
+      "minWidth": 50,
+      "width": 50
+    },
+    "colDiscreteIndex": {
+      "maxWidth": 50,
+      "width": 40
+    },
+    "colOverviewDataKind": {
+      "minWidth": 50,
+      "width": 50
+    },
+    "colOverviewDataType": {
+      "minWidth": 50,
+      "width": 50
+    },
+    "colOverviewIndex": {
+      "maxWidth": 50,
+      "width": 40
+    }
   }
 }

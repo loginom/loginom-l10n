@@ -3,7 +3,7 @@
     "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": "{0} version is available"
+    "NewVersionIsAvaliableFmt": "Current {0} version"
   },
   "admin/LDAPSettings": {
     "ConnectionSecurity": "Connection security",
@@ -228,7 +228,7 @@
     "AddNewConnectionInheritedNode": "Add connection node to workflow",
     "AddNewConnectionReferenceNode": "Add reference to connection into workflow",
     "AddNewDerivedNode": "Add derived node to workflow",
-    "AddNewExecNode": "Add Node Execution node to workflow",
+    "AddNewExecNode": "Add Execution node to workflow",
     "AddNewLoop": "Add Loop node to workflow",
     "AddNewNode": "Add node to workflow",
     "CancelOperation": "Cancel operation",
@@ -317,6 +317,7 @@
     "ErrIncorrectVersionFormat": "Invalid version format",
     "ErrInvalidPackageName": "\"{0}\" is invalid package name",
     "Later": "Later",
+    "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed",
     "NotSet": "Not set ({0})",
     "QuestionSaveAndReopenPackage": "New locale will be applied when packages and all opened packages that depend on it are closed.\nDo you want to save the package and reopen it now?",
     "Reopen": "Reopen"
@@ -1276,7 +1277,7 @@
     "CantSaveDownLoadedFile": "Failed to save the downloaded file"
   },
   "filestorage/FileSenderManager": {
-    "FileAlreadyOpenForWriting": "\"{0}\" file to be loaded is simultaneously opened by someone for record. It is probable that the received file will not contain all latest changes.",
+    "FileAlreadyOpenForWriting": "\"{0}\" file to be loaded is simultaneously opened by someone to be written. The downloaded file may not contain the latest changes.",
     "FileAlreayLoading": "\"{0}\" file download is already in progress. Wait until the completion or cancel the download process."
   },
   "filestorage/FileStorageForm": {
@@ -1360,7 +1361,7 @@
     "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": "{0} version is available"
+    "NewVersionIsAvaliableFmt": "Current {0} version is available"
   },
   "homepage/HomePage": {
     "CleanConfirm": "Do you want to clean the list of recently opened packages?",
@@ -1683,6 +1684,7 @@
     "ErrScriptLoadingAsync": "\"{0}\" script has already been asynchronously loading"
   },
   "lib/Message": {
+    "AlwaysYes": "Yes, never ask",
     "ErrorTitle": "Error",
     "GoToNotifySource": "Go to",
     "InfoTitle": "Info",
@@ -1810,6 +1812,7 @@
   },
   "plotly/Theme": {
     "Ggplot2": "Ggplot2",
+    "NoThemeFmt": "Theme with \"{0}\" name not found. Default theme will be used.",
     "PlotlyClassic": "Standard",
     "PlotlyDark": "Dark",
     "PlotlyGray": "Grey",
@@ -2147,12 +2150,12 @@
   "viewers/dataquality/QualityViewHistogram": {
     "ColumnTitleInterval": "Bin",
     "ColumnTitleMark": "Caption",
-    "EmptyValueMark": "Null",
+    "EmptyValueMark": "Empty",
     "WhiteSpacesValueMark": "Spaces",
     "WhiteSpaceValueMark": "Space"
   },
   "viewers/dataquality/QualityViewWidgets": {
-    "EmptyValueMark": "Null",
+    "EmptyValueMark": "Empty",
     "LeftOutlier": "Minimum outlier: ",
     "LeftWhisker": "Sample minimum: ",
     "LowerQuartile": "Lower quartile: ",

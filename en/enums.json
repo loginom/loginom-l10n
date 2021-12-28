@@ -1545,7 +1545,7 @@
       "Labels": "Caption field"
     },
     "ChartMarkerSymbol": {
-      "$Caption": "Series marker form",
+      "$Caption": "Series Marker Symbol",
       "Default": "Default",
       "Circle": "Circle",
       "Diamond": "Diamond",
@@ -1825,7 +1825,7 @@
       "BoxUnique": "Chart of unique",
       "ExtrCount": "Extreme",
       "OutCount": "Outliers",
-      "EmptyCount": "Null",
+      "EmptyCount": "Empty",
       "SpaceCount": "Space",
       "SpaceEnding": "Spaces at the end",
       "StrLen": "String lengths",
@@ -1851,7 +1851,7 @@
     },
     "QualityViewMonotonique": {
       "$Caption": "Monotony of Values Series",
-      "None": "Not monotonic",
+      "None": "Non-monotonic",
       "Increasing": "Ascending",
       "Descending": "Descending"
     },
@@ -1863,7 +1863,7 @@
     "QualityViewProblemType": {
       "$Caption": "Problem in Data Field",
       "Missing": "Null count",
-      "Empty": "Null",
+      "Empty": "Empty",
       "Zero": "Zeros",
       "Space": "Spaces",
       "Infinity": "Infinities",

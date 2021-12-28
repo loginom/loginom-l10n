@@ -283,7 +283,7 @@
       "AutoStructure": "Auto detect structure",
       "CalcConfidenceInterval": "Calculate confidence interval",
       "CalcResiduals": "Calculate the approximation error",
-      "ConfidenceInterval": "Confidence forecast interval in %",
+      "ConfidenceInterval": "Forecast confidence level, %",
       "D": "Integration order",
       "DS": "Seasonal integration order",
       "ForecastHorizon": "Forecast horizon",
@@ -837,7 +837,7 @@
       "QualitySpeed": "Accuracy/speed priority"
     },
     "RegressionStatisticsParams": {
-      "PredictionIntervalLevel": "% confidence interval"
+      "PredictionIntervalLevel": "Confidence level, %"
     },
     "RegularizationParams": {
       "LambdaLasso": "L1-regularization coefficient",

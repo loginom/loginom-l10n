@@ -283,7 +283,7 @@
       "AutoStructure": "Определить структуру автоматически",
       "CalcConfidenceInterval": "Рассчитать доверительный интервал",
       "CalcResiduals": "Рассчитать ошибку аппроксимации",
-      "ConfidenceInterval": "Доверительный интервал прогноза в %",
+      "ConfidenceInterval": "Уровень доверия прогноза, %",
       "D": "Порядок интегрирования",
       "DS": "Порядок сезонного интегрирования",
       "ForecastHorizon": "Горизонт прогноза",
@@ -837,7 +837,7 @@
       "QualitySpeed": "Приоритет точность/скорость"
     },
     "RegressionStatisticsParams": {
-      "PredictionIntervalLevel": "% доверительного интервала"
+      "PredictionIntervalLevel": "Уровень доверия, %"
     },
     "RegularizationParams": {
       "LambdaLasso": "Коэффициент L1-регуляризации",

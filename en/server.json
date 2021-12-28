@@ -3711,7 +3711,7 @@
     "ErrWrongRegressionParamsConstructor": "Invalid regression parameter constructor used"
   },
   "Libraries/Regression/RegressionBuilder": {
-    "ErrWrongProbability": "Value of confidence interval must be within [0, 100] range"
+    "ErrWrongProbability": "Confidence level must be in the range [0, 100]"
   },
   "Libraries/Regression/RegressionModel": {
     "ApplyModelProcessCaption": "Model applying",
@@ -4364,9 +4364,9 @@
     "ErrDimensionValueIsNull": "Value of \"%1:s\" [%2:s] dimension in \"%0:d\" row is null.",
     "ErrDimensionValueNotFound": "\"%s\" value was not found in \"%s\" [%s] dimension values.",
     "ErrEmptyData": "Error occurred while data cleansing of \"%s\" [%s] object.",
-    "ErrLoadDataDimension": "Error occurred while loading data to \"%s\" [%s] dimension.",
+    "ErrLoadDataDimension": "Error occurred while loading data into \"%s\" [%s] dimension.",
     "ErrLoadDataProcess": "Error occurred while loading data to \"%s\" [%s] process",
-    "ErrLoadDataProcessCanceled": "The process of data loading to \"%s\" [%s] process has been cancelled by a user. Data is not loaded to DW. Indexes and constraints are not restored.",
+    "ErrLoadDataProcessCanceled": "The process of data loading into \"%s\" [%s] process has been cancelled by a user. Data is not loaded into DW. Indexes and constraints are not restored.",
     "MsgDeleteDataProcess": "Delete the Process from the Data Warehouse by data dimension",
     "MsgDisableConstraint": "Disable indexes and constraints.",
     "MsgEnableConstraint": "Restore indexes and constraints.",

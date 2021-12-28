@@ -3711,7 +3711,7 @@
     "ErrWrongRegressionParamsConstructor": "Используется недопустимый конструктор параметров регрессии"
   },
   "Libraries/Regression/RegressionBuilder": {
-    "ErrWrongProbability": "Значение порога доверительного интервала должно быть в пределах [0, 100]"
+    "ErrWrongProbability": "Уровень доверия должен быть в пределах [0, 100]"
   },
   "Libraries/Regression/RegressionModel": {
     "ApplyModelProcessCaption": "Применение модели",

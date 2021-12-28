@@ -21,7 +21,7 @@
       "title": "About"
     },
     "lblActualVersion": {
-      "text": "Latest version installed"
+      "text": "Current version installed"
     },
     "lblCheckingVersion": {
       "text": "Check for updates..."
@@ -689,7 +689,7 @@
       "fieldLabel": "Save every (minutes)"
     },
     "lblDescription": {
-      "text": "Packages are saved with the set range to the files with .autosave extension near .lgp files. .lgp files as such are not rewritten in this case."
+      "text": "Packages are saved with the set period to the files with .autosave extension near .lgp files. .lgp files as such are not rewritten in this case."
     }
   },
   "app/PackagesListForm": {
@@ -873,7 +873,7 @@
       "fieldLabel": "Package"
     },
     "chbRefreshOnSave": {
-      "boxLabel": "Update publication while package saving"
+      "boxLabel": "Update publication on package saving"
     },
     "frmPublishedPackagesAddForm": {
       "title": "Add web service"
@@ -2812,7 +2812,7 @@
       "regexText": "Invalid string cache size"
     },
     "edtStringCacheMemoryUsage": {
-      "fieldLabel": "Size in memory"
+      "fieldLabel": "Memory size"
     },
     "frmExportSettings": {
       "title": "Export to Loginom Data File"

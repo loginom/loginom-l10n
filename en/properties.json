@@ -913,7 +913,7 @@
       "TheValue": "Compare value"
     },
     "MDDateFilterParams": {
-      "CustomPointDate": "User lag date",
+      "CustomPointDate": "User defined date",
       "IntervalType": "Time span unit",
       "UseIntervalCount": "Time span value"
     }

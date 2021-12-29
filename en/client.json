@@ -3,7 +3,7 @@
     "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": "Current {0} version"
+    "NewVersionIsAvaliableFmt": "Latest stable version {0}"
   },
   "admin/LDAPSettings": {
     "ConnectionSecurity": "Connection security",
@@ -91,7 +91,7 @@
     "GlobalFileStorage": "Access to all files",
     "Name": "Login",
     "Roles": "Roles",
-    "Update": "Update"
+    "Update": "Refresh"
   },
   "admin/UserModel": {
     "Admin": "Administration",
@@ -337,7 +337,7 @@
     "Links": "References",
     "PackageVariables": "Variables",
     "Reports": "Reports",
-    "Update": "Update",
+    "Update": "Refresh",
     "Visibility": "Visibility",
     "VisibilityHeader": "Visibility",
     "VisibilityTooltip": "Configure visibility..."
@@ -407,7 +407,7 @@
     "Name": "Name",
     "Setup": "Configure",
     "SetupToolstip": "Configure...",
-    "Update": "Update",
+    "Update": "Refresh",
     "VersionMask": "Version"
   },
   "app/SelectBaseVendorForm": {
@@ -447,7 +447,7 @@
     "GoToBaseNode": "Go to base node",
     "Setup": "Configure",
     "SetupTooltip": "Configure...",
-    "Update": "Update",
+    "Update": "Refresh",
     "VisibilityHeader": "Visibility"
   },
   "app/Version": {
@@ -1361,7 +1361,7 @@
     "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
-    "NewVersionIsAvaliableFmt": "Current {0} version is available"
+    "NewVersionIsAvaliableFmt": "Latest stable version {0} is available"
   },
   "homepage/HomePage": {
     "CleanConfirm": "Do you want to clean the list of recently opened packages?",
@@ -2221,8 +2221,8 @@
     "ModelInfoConstant": "Intercept",
     "ModelInfoConstantExc": "Excluded",
     "ModelInfoConstantInc": "Included",
-    "ModelInfoDF": "Number of model degrees of freedom",
-    "ModelInfoDFE": "Number of error degrees of freedom",
+    "ModelInfoDF": "Degrees of freedom for model",
+    "ModelInfoDFE": "Degrees of freedom for error",
     "ModelInfoHQC": "HQC",
     "ModelInfoPValue": "Model P-value"
   },

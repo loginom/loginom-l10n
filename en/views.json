@@ -21,7 +21,7 @@
       "title": "About"
     },
     "lblActualVersion": {
-      "text": "Current version installed"
+      "text": "Latest stable version installed"
     },
     "lblCheckingVersion": {
       "text": "Check for updates..."
@@ -4643,8 +4643,8 @@
       "text": "Caption"
     },
     "colDataSetParam": {
-      "text": "Data set characteristics",
-      "tooltip": "Data set characteristics"
+      "text": "Data set statistics",
+      "tooltip": "Data set statistics"
     },
     "colDataSetValue": {
       "text": "Value"

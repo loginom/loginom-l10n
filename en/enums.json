@@ -765,7 +765,7 @@
     "DBExportType": {
       "$Caption": "Export Mode",
       "Append": "Append data to table",
-      "Overload": "Clear table and fill in data",
+      "Overload": "Clear table and append data",
       "Delete": "Delete records by key fields",
       "Refresh": "Delete records by key fields and insert data into table",
       "Update": "Update existing table records"

@@ -23,8 +23,8 @@
     "Bind": "IP address",
     "ComponentSettings": "Component parameters",
     "ConnectionSettings": "Connection parameters",
-    "CurrentLocale": "Current \"{0}\" locale.",
-    "DefaultLocaleModified": "changed",
+    "CurrentLocale": "Current locale is \"{0}\".",
+    "DefaultLocaleModified": "modified",
     "DirectorySettings": "Folders",
     "LDAPSettings": "LDAP parameters",
     "Locale": "Locale",
@@ -34,8 +34,8 @@
     "LogFileRewrite": "Rewrite file",
     "LoggerSettings": "Logging parameters",
     "MinLogLevel": "Logging level",
-    "MsgNewLocaleAfterRestart": "New locale will be applied after restart",
-    "NotSet": "Not set ({0})",
+    "MsgNewLocaleAfterRestart": "New locale will be applied after restart.",
+    "NotSet": "Unspecified ({0})",
     "NullAsDefault": "Default",
     "NullAsDisabled": "Off",
     "PackagePoolSize": "Package pool size",
@@ -312,13 +312,13 @@
     "Cancel": "Cancel",
     "Confirm": "Apply",
     "ConfirmLocaleChangeMsg": "After locale change strings can be compared in a different way.\nDo you really want to change locale?",
-    "CurrentLocale": "Current locale of \"{0}\" package .",
+    "CurrentLocale": "Current locale of package is \"{0}\".",
     "DefaultLocaleModified": "modified",
     "ErrIncorrectVersionFormat": "Invalid version format",
     "ErrInvalidPackageName": "\"{0}\" is invalid package name",
     "Later": "Later",
     "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed",
-    "NotSet": "Not set ({0})",
+    "NotSet": "Unspecified ({0})",
     "QuestionSaveAndReopenPackage": "New locale will be applied when packages and all opened packages that depend on it are closed.\nDo you want to save the package and reopen it now?",
     "Reopen": "Reopen"
   },
@@ -346,12 +346,12 @@
     "ErrPackagesAutoSaveNotSpecified": "Packages auto save period is not specified"
   },
   "app/PackagesListForm": {
-    "CurrentLocale": "Current \"{0}\" locale.",
+    "CurrentLocale": "Current locale is \"{0}\".",
     "DefaultLocaleModified": "modified",
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
     "ErrPathNotFound": "The specified path was not found \"{0}\".",
     "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed",
-    "NotSet": "Not set ({0})"
+    "NotSet": "Unspecified ({0})"
   },
   "app/PackageVariableEditForm": {
     "AddBtnText": "Add",
@@ -392,7 +392,7 @@
     "UpdateFormTitle": "Edit web service"
   },
   "app/PublishedPackagesListForm": {
-    "ConfirmFinish": "Do you want to finish publication of {0} package?",
+    "ConfirmFinish": "Do you want to stop publication of {0} package?",
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
     "ErrPathNotFound": "The specified path was not found \"{0}\"."
   },
@@ -1684,7 +1684,7 @@
     "ErrScriptLoadingAsync": "\"{0}\" script has already been asynchronously loading"
   },
   "lib/Message": {
-    "AlwaysYes": "Yes, never ask",
+    "AlwaysYes": "Yes, don't ask again",
     "ErrorTitle": "Error",
     "GoToNotifySource": "Go to",
     "InfoTitle": "Info",
@@ -2111,7 +2111,7 @@
     "AndMore": "and also {0} values.",
     "BadBrowserMsg": "This operation is not supported in our browser.",
     "CheckAllTooltip": "Check all",
-    "ClipbordReadDenied": "Grant Loginom access to clipboard",
+    "ClipbordReadDenied": "Grant Loginom access to clipboard.",
     "MsgMaxClipboardSizeReached": "Maximum clipboard size reached",
     "MsgRejectedClipboardValues": "The values that are not included into the dimension values:\n",
     "MsgUnrecognizedClipboardValues": "Unrecognized values:\n",
@@ -2211,8 +2211,8 @@
     "ModelInfoChi2": "Chi-square",
     "ModelInfoDeviance": "Deviance",
     "ModelInfoNullDeviance": "Deviance of zero model",
-    "ModelInfoR2": "McFadden Pseudo R²",
-    "ModelInfoR2adj": "McFadden Pseudo R² (adj.)"
+    "ModelInfoR2": "McFadden pseudo-R²",
+    "ModelInfoR2adj": "McFadden pseudo-R² (adj.)"
   },
   "viewers/regression/RegressionReportView": {
     "ModelInfoAIC": "AIC",

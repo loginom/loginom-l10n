@@ -1341,7 +1341,7 @@
   "Libraries/Model/DerivedModelComponent": {
     "DerivedModelComponentTarget": {
       "$Caption": "Target node types",
-      "ExecNode": "Node execution and Loop",
+      "ExecNode": "Node Execution and Loop",
       "DerivedNode": "Derived nodes"
     }
   },
@@ -1800,7 +1800,7 @@
       "ColCount": "Columns",
       "RowCount": "Rows",
       "FullColumns": "Filled fields",
-      "FullRecords": "Full records",
+      "FullRecords": "Filled records",
       "UsefulColumns": "Suitable columns",
       "IndexEPV": "EPV index"
     },
@@ -1820,7 +1820,7 @@
     "QualityViewIndicatorType": {
       "$Caption": "Data quality indicator",
       "QualityIndex": "Quality indicator",
-      "NullCount": "Null count",
+      "NullCount": "Nulls",
       "Histogram": "Histogram",
       "BoxUnique": "Chart of unique",
       "ExtrCount": "Extreme",
@@ -1831,7 +1831,7 @@
       "StrLen": "String lengths",
       "ValuesRange": "Range of values",
       "NegativeCount": "Negative",
-      "ZeroCount": "Zero",
+      "ZeroCount": "Zeros",
       "InfinityCount": "Infinities",
       "BoxPlot": "Box plot",
       "UniqueCount": "Unique",
@@ -1847,12 +1847,12 @@
       "Unknown": "Undefined",
       "Single": "Unimodal",
       "Multi": "Multimodal",
-      "NoModa": "Without mode"
+      "NoModa": "No mode"
     },
     "QualityViewMonotonique": {
       "$Caption": "Monotony of Values Series",
       "None": "Non-monotonic",
-      "Increasing": "Ascending",
+      "Increasing": "Increasing",
       "Descending": "Descending"
     },
     "QualityViewOverviewColumnType": {
@@ -1862,7 +1862,7 @@
     },
     "QualityViewProblemType": {
       "$Caption": "Problem in Data Field",
-      "Missing": "Null count",
+      "Missing": "Nulls",
       "Empty": "Empty",
       "Zero": "Zeros",
       "Space": "Spaces",

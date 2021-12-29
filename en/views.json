@@ -287,7 +287,7 @@
       "boxLabel": "Derived nodes"
     },
     "chbAllowExecNode": {
-      "boxLabel": "Node execution and Loop"
+      "boxLabel": "Node Execution and Loop"
     },
     "fldDisplayName": {
       "fieldLabel": "Caption"
@@ -847,10 +847,10 @@
       "tooltip": "Hide"
     },
     "btnMaximize": {
-      "tooltip": "Expand"
+      "tooltip": "Maximize"
     },
     "btnMinimize": {
-      "tooltip": "Collapse"
+      "tooltip": "Minimize"
     },
     "btnPin": {
       "tooltip": "Pin"
@@ -904,8 +904,8 @@
       "tooltip": "Edit..."
     },
     "btnFinish": {
-      "text": "Finish",
-      "tooltip": "Finish..."
+      "text": "Unpublish",
+      "tooltip": "Unpublish..."
     },
     "btnRefresh": {
       "text": "Refresh list",
@@ -1932,7 +1932,7 @@
       "text": "Paste"
     },
     "pnlBaseDate": {
-      "title": "Base Date"
+      "title": "Reference Date"
     },
     "rbCurrent": {
       "boxLabel": "Current date"
@@ -3111,7 +3111,7 @@
       "fieldLabel": "Relation"
     },
     "pnlBaseDate": {
-      "title": "Base Date"
+      "title": "Reference Date"
     },
     "rbCurrent": {
       "boxLabel": "Current date"
@@ -3318,7 +3318,7 @@
       "title": "Select Time Span"
     },
     "pnlBaseDate": {
-      "title": "Base Date"
+      "title": "Reference Date"
     },
     "rbCurrent": {
       "boxLabel": "Current date"

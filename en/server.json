@@ -1030,7 +1030,7 @@
     "ForecastOutputVariables": "Summary",
     "LagColumn": "Lag",
     "LBoundColumn": "%s|Lower bound",
-    "ModelDF": "Model degrees of freedom",
+    "ModelDF": "Degrees of freedom for model",
     "ParameterNameColumn": "Parameter",
     "PredictedColumn": "%s|Prediction",
     "PValueColumn": "P-value",
@@ -1204,8 +1204,8 @@
     "PredictionProbability": "Event probabillity|Prediction",
     "PredictionScore": "Score|Prediction",
     "PrepareSetsProportionsProcessCaption": "Preparing sets",
-    "R2": "McFadden Pseudo R^2",
-    "R2Adj": "McFadden Pseudo R^2 (adj.)",
+    "R2": "McFadden pseudo-R^2",
+    "R2Adj": "McFadden pseudo-R^2 (adj.)",
     "RegressionCoefsNamePostfix": "|Coefficients",
     "RegressionLBoundNamePostfix": "|CI lower bound of odds ratio",
     "RegressionOddsRatioPostfix": "|Odds ratio",
@@ -3834,7 +3834,7 @@
   },
   "Studio/Converters/Converter_202111251332_ExecNode_DerivedVendor": {
     "AddedPublishedNodeDerivedVendor": "Derived component created by the published \"%s\" node",
-    "PublicNodeDerivedVendorCaptionFormatString": "%s (opened node)",
+    "PublicNodeDerivedVendorCaptionFormatString": "%s (public node)",
     "PublishedNodeDerivedVendorCaptionFormatString": "%s (published node)"
   },
   "Studio/DeductorConsts": {

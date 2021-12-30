@@ -1932,7 +1932,7 @@
       "text": "Paste"
     },
     "pnlBaseDate": {
-      "title": "Reference Date"
+      "title": "Reference date"
     },
     "rbCurrent": {
       "boxLabel": "Current date"
@@ -1941,7 +1941,7 @@
       "boxLabel": "Date"
     },
     "rbData": {
-      "boxLabel": "Available data"
+      "boxLabel": "From data set"
     },
     "tagValueList": {
       "fieldLabel": "List"
@@ -3111,7 +3111,7 @@
       "fieldLabel": "Relation"
     },
     "pnlBaseDate": {
-      "title": "Reference Date"
+      "title": "Reference date"
     },
     "rbCurrent": {
       "boxLabel": "Current date"
@@ -3120,7 +3120,7 @@
       "boxLabel": "Date"
     },
     "rbData": {
-      "boxLabel": "Available data"
+      "boxLabel": "From data set"
     },
     "tagValueList": {
       "fieldLabel": "List"
@@ -3318,7 +3318,7 @@
       "title": "Select Time Span"
     },
     "pnlBaseDate": {
-      "title": "Reference Date"
+      "title": "Reference date"
     },
     "rbCurrent": {
       "boxLabel": "Current date"
@@ -3327,7 +3327,7 @@
       "boxLabel": "Date"
     },
     "rbData": {
-      "boxLabel": "Available data"
+      "boxLabel": "From data set"
     }
   },
   "imports/dwh/DWImportWizard": {

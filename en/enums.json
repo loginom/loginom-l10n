@@ -987,7 +987,7 @@
       "Or": "OR"
     },
     "ContextUsageType": {
-      "$Caption": "Usage type",
+      "$Caption": "Usage Type",
       "Unspecified": "Unspecified",
       "Useless": "Useless",
       "Excluded": "Excluded",
@@ -1055,7 +1055,7 @@
     "DateSourceType": {
       "$Caption": "Date Source",
       "Current": "Current date",
-      "Data": "Available data",
+      "Data": "From data set",
       "Custom": "Absolute date"
     },
     "DateTimePart": {
@@ -1101,7 +1101,7 @@
       "DataKind": "Data kind",
       "Size": "Data size",
       "DefaultUsageType": "Default usage type",
-      "UsageType": "Usage Type",
+      "UsageType": "Usage type",
       "Index": "No",
       "ID": "ID",
       "Data": "Data"
@@ -1799,8 +1799,8 @@
       "DetectOE": "Non-standard values determination method",
       "ColCount": "Columns",
       "RowCount": "Rows",
-      "FullColumns": "Filled fields",
-      "FullRecords": "Filled records",
+      "FullColumns": "Fully filled fields",
+      "FullRecords": "Fully filled records",
       "UsefulColumns": "Suitable columns",
       "IndexEPV": "EPV index"
     },
@@ -1826,7 +1826,7 @@
       "ExtrCount": "Extreme",
       "OutCount": "Outliers",
       "EmptyCount": "Empty",
-      "SpaceCount": "Space",
+      "SpaceCount": "Whitespaces",
       "SpaceEnding": "Spaces at the end",
       "StrLen": "String lengths",
       "ValuesRange": "Range of values",
@@ -1865,7 +1865,7 @@
       "Missing": "Nulls",
       "Empty": "Empty",
       "Zero": "Zeros",
-      "Space": "Spaces",
+      "Space": "Whitespaces",
       "Infinity": "Infinities",
       "Constant": "Constant",
       "Unique": "Unique",

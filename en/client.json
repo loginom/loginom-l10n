@@ -101,7 +101,7 @@
   },
   "app/AddPackageLinkForm": {
     "ErrAddPackageLinkErrors": "Errors occurred while adding reference to package.",
-    "ErrPathNotSpecified": "Path to the package file is not specified",
+    "ErrPathNotSpecified": "Path to the package file is not specified.",
     "PackageNotSaved": "Package not saved",
     "ReadOnlyPackageNamePostfix": " (read-only)"
   },
@@ -317,7 +317,7 @@
     "ErrIncorrectVersionFormat": "Invalid version format",
     "ErrInvalidPackageName": "\"{0}\" is invalid package name",
     "Later": "Later",
-    "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed",
+    "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed.",
     "NotSet": "Unspecified ({0})",
     "QuestionSaveAndReopenPackage": "New locale will be applied when packages and all opened packages that depend on it are closed.\nDo you want to save the package and reopen it now?",
     "Reopen": "Reopen"
@@ -350,7 +350,7 @@
     "DefaultLocaleModified": "modified",
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
     "ErrPathNotFound": "The specified path was not found \"{0}\".",
-    "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed",
+    "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed.",
     "NotSet": "Unspecified ({0})"
   },
   "app/PackageVariableEditForm": {
@@ -1354,7 +1354,7 @@
     "Gray": "Grey",
     "Grid": "Table",
     "GridLight": "Light table",
-    "NoThemeFmt": "Theme with \"{0}\" name not found. Default theme will be used.",
+    "NoThemeFmt": "Theme with \"{0}\" name not found. Default theme will be used",
     "SandSignica": "Sand"
   },
   "homepage/Banner": {
@@ -1633,7 +1633,7 @@
   },
   "lib/DateUtils": {
     "After": "from",
-    "AvailableData": "available data",
+    "AvailableData": "data set",
     "Before": "to",
     "CurrentData": "current date",
     "DayFirstPostfix": "first",
@@ -1812,7 +1812,7 @@
   },
   "plotly/Theme": {
     "Ggplot2": "Ggplot2",
-    "NoThemeFmt": "Theme with \"{0}\" name not found. Default theme will be used.",
+    "NoThemeFmt": "Theme with \"{0}\" name not found. Default theme will be used",
     "PlotlyClassic": "Standard",
     "PlotlyDark": "Dark",
     "PlotlyGray": "Grey",
@@ -2112,7 +2112,7 @@
     "BadBrowserMsg": "This operation is not supported in our browser.",
     "CheckAllTooltip": "Check all",
     "ClipbordReadDenied": "Grant Loginom access to clipboard.",
-    "MsgMaxClipboardSizeReached": "Maximum clipboard size reached",
+    "MsgMaxClipboardSizeReached": "Maximum clipboard size reached.",
     "MsgRejectedClipboardValues": "The values that are not included into the dimension values:\n",
     "MsgUnrecognizedClipboardValues": "Unrecognized values:\n",
     "NoAsyncClipboardPasteWarn": "To paste, use hotkeys in the entry field",

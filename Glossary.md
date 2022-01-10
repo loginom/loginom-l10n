@@ -310,7 +310,7 @@ OPR (Усредненная точность прогноза) | OPR (Overall Pr
 Средняя абсолютная ошибка | Mean absolute error | |
 Среднеквадратическая ошибка | Root-mean-square error | |
 Нейросеть | Neural network | |
-Нейросеть | Neural net | | Компонент Нейросеть
+Нейросеть | Neural net | Компонент Нейросеть
 Средняя относительная ошибка | Mean relative error | |
 Признак контейнера | Container indicator | |
 Функциональность IF - THEN - ELSE | IF - THEN - ELSE feature | |

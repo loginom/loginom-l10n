@@ -500,7 +500,7 @@
   },
   "components/calcdata/CalcItemChakra": {
     "ErrExprParse": "Ошибка разбора выражения \"%s\"",
-    "ErrExprUsesUndefinedVariable": "В выражении \"%0:s\" используется неопределенная переменная %1:s",
+    "ErrExprUsesUndefinedVariable": "В выражении \"%s\" используется неопределенная переменная %s",
     "ExprCalculateError": "Ошибка вычисления выражения \"%s\", строка %d входного набора"
   },
   "components/calcdata/ExprColumns": {
@@ -639,6 +639,8 @@
     "ErrColumnNullDataFmt": "Невозможно сформировать начальные классы для поля \"%s\": все значения пропущенные",
     "ErrDataTypesNotMatch": "Заданный тип данных столбца не соответствует типу данных конечных классов",
     "ErrNotPositiveIntervalsCount": "Количество интервалов должно быть больше 0",
+    "ErrProcessKeptStatisticsExistentValue": "В процессе построения начальных классов в поле \"%s\" отсутствует ранее присутствующее значение \"%s\"",
+    "ErrProcessKeptStatisticsNonExistentValue": "В процессе построения начальных классов в поле \"%s\" появилось ранее отсутствовавшее значение",
     "From": "от ",
     "NullClass": "Класс пропусков",
     "To": "до "
@@ -839,7 +841,7 @@
   },
   "components/execnode/ExecNodeComponent": {
     "ErrExecNodeNotAllowed": "Выполнение компонента %s не разрешено",
-    "ErrNodeComponentVendorIsSealed": "Невозможно задать ссылку на компонент \"%s\", для которого запрещено наследование",
+    "ErrNodeComponentVendorIsSealed": "Нельзя задать ссылку на компонент \"%s\", для которого невозможно наследование",
     "ErrPortNotConfigurable": "Настройка порта не поддерживается",
     "ErrReferencedVendorMalfunction": "Исходный компонент \"%s\" неисправен",
     "ErrReferencedVendorNotAvailable": "Исходный компонент не доступен",
@@ -901,7 +903,7 @@
     "ErrColumnNotFound": "Поле указано не верно",
     "ErrCompareValueIsNull": "Сравниваемое значение не определено",
     "ErrDatePeriodUndefined": "Не удалось определить временной промежуток",
-    "ErrDateSourceTypeDataNotSupported": "Использование даты из набора данных, для определении интервала времени не поддерживается",
+    "ErrDateSourceTypeDataNotSupported": "Использование даты из набора данных для определении интервала времени не поддерживается",
     "ErrEmptyCompareValueList": "Не указан список значений",
     "ErrIncorrectCompareLowerBound": "Введенное значение нижней границы не соответствует типу фильтруемого столбца",
     "ErrIncorrectCompareUpperBound": "Введенное значение верхней границы не соответствует типу фильтруемого столбца",
@@ -915,8 +917,8 @@
     "ManyLastPostfix": "последние",
     "MonthFirstPostfix": "первый",
     "MonthLastPostfix": "последний",
-    "OtherFirstPostfix": "первое",
-    "OtherLastPostfix": "последнее",
+    "OtherFirstPostfix": "первый",
+    "OtherLastPostfix": "последний",
     "QuarterFirstPostfix": "первый",
     "QuarterLastPostfix": "последний",
     "WeekFirstPostfix": "первая",
@@ -1095,8 +1097,11 @@
     "ErrWrongPreNormLength": "Размер пренормализированный строки %d отличается от номинального %d"
   },
   "components/linregression/LinRegressionBuilder": {
+    "ErrTooLessRowsCount": "Количество строк (%d) в обучающем наборе не должно быть меньше количества коэффициентов (%d) модели",
     "ErrWrongLinRegContext": "Неправильный контекст построителя модели линейной регрессии",
-    "ErrWrongLinRegModel": "Обучаемая модель не является моделью линейной регрессии"
+    "ErrWrongLinRegModel": "Обучаемая модель не является моделью линейной регрессии",
+    "ErrWrongProbability": "Значение порога доверительного интервала должно быть в пределах (0, 100)",
+    "WarnMaxDepthForForwardSelection": "Количество коэффициентов модели было ограничено размером обучающей выборки. Для лучшего результата увеличьте количество наблюдений в обучающей выборке"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "Контекст построителя модели линейной регрессии не может быть создан для пустого набора данных"
@@ -1109,6 +1114,8 @@
     "ErrInvalidFieldsSettings": "Недопустимые настройки полей входного набора",
     "ErrMultipleOutputFields": "Допускается только одно поле выходных данных",
     "ErrNoLearnData": "В обучающем наборе данных должно быть как минимум две строки",
+    "ErrNoValidationData": "В валидационном наборе данных должна быть как минимум одна строка",
+    "ErrNoValidationSet": "Для автоматического подбора коэффициента регуляризации необходимо включить валидационное разбиение",
     "ErrOutputColumnNotValid": "Заданная выходная колонка не валидная",
     "ErrTeachNoOutputField": "Поле выходных данных не задано",
     "ErrWrongInputField": "Недопустимые свойства входного поля \"%s\", вид данных \"%s\", тип данных \"%s\"",
@@ -1184,6 +1191,8 @@
     "ErrInvalidFieldsSettings": "Недопустимые настройки полей входного набора",
     "ErrNoLearnData": "В обучающем наборе данных должно быть как минимум две строки",
     "ErrNotImplemented": "Функционал не реализован",
+    "ErrNoValidationData": "В валидационном наборе данных должна быть как минимум одна строка",
+    "ErrNoValidationSet": "Для автоматического подбора коэффициента регуляризации необходимо включить валидационное разбиение",
     "ErrOutputColumnNotValid": "Заданная выходная колонка не валидная",
     "ErrTeachNoOutputField": "Поле выходных данных не задано",
     "ErrWrongInputField": "Недопустимые свойства входного поля \"%s\", вид данных \"%s\", тип данных \"%s\"",
@@ -1258,7 +1267,7 @@
     "ErrColumnCountChanged": "Количество столбцов в наборе данных отличается от предыдущей итерации",
     "ErrColumnDataTypesChanged": "Типы данных столбцов в наборе данных отличаются от предыдущей итерации",
     "ErrCompareValueUnassigned": "Не задано сравниваемое значение в условии завершения цикла",
-    "ErrConditionComponentInLoopNotAllowed": "Выполнение компонента Условие в цикле запрещено",
+    "ErrConditionComponentInLoopNotAllowed": "Выполнение компонента Условие в цикле невозможно",
     "ErrGroupColumnNotFound": "Не найден столбец \"%s\", используемый для группировки данных",
     "ErrGroupCountMustBePositive": "Количество групп должно быть положительным",
     "ErrGroupDataSourceSocketNotFound": "Не найден порт с идентификатором \"%s\", содержащий столбцы для группировки",
@@ -1305,6 +1314,8 @@
     "CalcModelErrorsProcessCaption": "Расчет показателей качества",
     "CVPassProcessCaption": "Итерация %d",
     "CVProcessCaption": "Кросс-валидация",
+    "CVTrainSetPrepareProcessCaption": "Подготовка обучающего множества",
+    "CVValidationSetPrepareProcessCaption": "Подготовка валидационного множества",
     "DecayDegree": "Степень регуляризации",
     "ErrCannotContinueTraining": "Невозможно продолжить обучение, так как структура обученной нейросети не соответствует новым параметрам обучения",
     "ErrClassifierUnknownClass": "В выходном столбце классификатора присутствует неизвестный класс",
@@ -1352,6 +1363,8 @@
     "ErrMultipleOutputs": "Допускается только одно поле выходных данных",
     "ErrNetworkUntrained": "Нейросеть не обучена",
     "ErrNoInputFields": "Не задано ни одного поля входных данных",
+    "ErrNoLearnData": "В обучающем наборе данных должно быть как минимум две строки",
+    "ErrNoValidationData": "В валидационном наборе данных должна быть как минимум одна строка",
     "ErrTeachNoOutputFields": "В режиме обучения не задано ни одного поля выходных данных",
     "ErrUnbalancedEndUpdateNeuralNetParameters": "Вызов EndUpdateNeuralNetParameters без соответствующего BeginUpdateNeuralNetParameters",
     "ErrWrongModelInput": "Входные столбцы не соответствуют обученной ранее модели",
@@ -1668,13 +1681,13 @@
     "ErrWrongTimeseriesKeyDatatype": "Неверный тип ключа временного ряда"
   },
   "components/ungroupdata/UngroupDataTimeseriesModel": {
-    "ErrBadlyConditionedMatrix": "На итерации %0:d матрица (%1:d x %2:d) сингулярна или плохо обусловлена: U[%3:d;%4:d] = 0",
+    "ErrBadlyConditionedMatrix": "На итерации %d матрица (%d x %d) сингулярна или плохо обусловлена: U[%d;%d] = 0",
     "ErrDFNotConsistent": "Не удается обеспечить нужное число степеней свободы",
     "ErrEngineUnassigned": "Для модели разгруппировки не установлен Engine",
     "ErrOptimGradientVerificationFailed": "Проверка аналитического градиента завершилась неудачно",
     "ErrOptimIntegrityFailed": "Обнаружено бесконечное значение оптимизируемой функции или ее градиента",
-    "ErrSingularMatrixCol": "На итерации %0:d матрица (%1:d x %2:d) содержит нулевой столбец №%3:d",
-    "ErrSingularMatrixRow": "На итерации %0:d матрица (%1:d x %2:d) содержит нулевую строку №%3:d",
+    "ErrSingularMatrixCol": "На итерации %d матрица (%d x %d) содержит нулевой столбец №%d",
+    "ErrSingularMatrixRow": "На итерации %d матрица (%d x %d) содержит нулевую строку №%d",
     "ErrSLECalcPrepare": "Ошибка при подготовке системы уравнений",
     "ErrSLEStructPrepare": "Ошибка при подготовке структур данных системы уравнений",
     "ErrSolver": "Ошибка %d при решении системы уравнений на итерации %d",
@@ -1812,7 +1825,7 @@
   "exports/tableau/ExportTableau": {
     "AddToTableNotify": "Добавление записей в таблицу",
     "ErrAPIInit": "Ошибка инициализации Tableau API",
-    "ErrAppendOverwriteForbidden": "Одновременное добавление и перезаписывание записей запрещено",
+    "ErrAppendOverwriteForbidden": "Одновременное добавление и перезаписывание записей невозможно",
     "ErrCantCreateEmptyTable": "Невозможно создать пустую таблицу",
     "ErrColumnNotFound": "В источнике данных не найдено поле \"%s\"",
     "ErrColumnTypesMismatch": "Тип поля \"%s\" не совместим с типом исходного поля \"%s\"",
@@ -1980,7 +1993,7 @@
     "ErrDateTimeTypeCast": "В колонке \"%s\" значение \"%s\" не удалось преобразовать к дате/времени.",
     "ErrFloatTypeCast": "В колонке \"%s\" значение \"%s\" не удалось преобразовать к вещественному числу.",
     "ErrIntegerTypeCast": "В колонке \"%s\" значение \"%s\" не удалось преобразовать к целому числу.",
-    "ErrNoData": "Ошибка при разборе текстового файла",
+    "ErrMaxBytesCountReaded": "При разборе текстового файла достигнут предел %d чтения максимального количества байт",
     "ErrParseFmt": "При разборе строки %d возникла ошибка: %s",
     "ErrUnsupportedCodePage": "Кодовая страница %d не поддерживается",
     "ErrUsedColumnDefsNotSpecified": "Импортируемые поля не определены",
@@ -2195,6 +2208,7 @@
   "Libraries/bgrtl/ClipboardAdapter": {
     "ErrHTMLFormatNotImplemented": "Некорректный формат буфера обмена. Поддерживатся только text/plain",
     "ErrReadForbidden": "Чтение значений запрещено",
+    "ErrUnsupportedDelimiter": "Поддерживаются только переводы строки CR+LF и LF",
     "ErrWriteForbidden": "Запись значений запрещена"
   },
   "Libraries/bgrtl/ColumnDefs": {
@@ -2299,10 +2313,10 @@
     "ErrSingleConnectionPointSinkIsNil": "У точки соединения отсутствует подключение"
   },
   "Libraries/bgrtl/DerivedCollectionItemAspects": {
-    "ErrCannotChangeDerivedCollectionItemName": "Запрещено изменять имя производных элементов коллекции",
-    "ErrCannotChangeDerivedFieldDataType": "Запрещено изменять тип данных производных полей",
-    "ErrCannotDeleteDerivedCollectionItem": "Удаление производных элементов коллекции запрещено",
-    "ErrCannotMoveDerivedCollectionItem": "Изменение позиции производных элементов коллекции запрещено"
+    "ErrCannotChangeDerivedCollectionItemName": "Невозможно изменять имя производных элементов коллекции",
+    "ErrCannotChangeDerivedFieldDataType": "Невозможно изменять тип данных производных полей",
+    "ErrCannotDeleteDerivedCollectionItem": "Удаление производных элементов коллекции невозможно",
+    "ErrCannotMoveDerivedCollectionItem": "Изменение позиции производных элементов коллекции невозможно"
   },
   "Libraries/bgrtl/DerivedDataSet": {
     "ErrColumnTypesMismatch": "Тип столбца %s не совместим с типом исходного столбца %s",
@@ -2581,7 +2595,7 @@
     "ErrNullsNotAllowed": "Пропущенные значения запрещены (пропущенное значение в колонке \"%s\")",
     "ErrProcessKeptStatistics": "При расчете списка уникальных значений возникли ошибки",
     "ErrProcessKeptStatisticsNonExistentNull": "В поле \"%s\" обнаружено ранее отсутствовавшее пустое значение",
-    "ErrProcessKeptStatisticsNonExistentValue": "В поле \"%0:s\" обнаружено ранее отсутствовавшее значение \"%1:s\"",
+    "ErrProcessKeptStatisticsNonExistentValue": "В поле \"%s\" обнаружено ранее отсутствовавшее значение \"%s\"",
     "ErrStatisticsBuildCookieInvalidOwner": "Cookie построителя статистики принадлежит другому объекту",
     "ErrStatisticsBuildCookieIsNil": "Попытка выполнить операцию завершения расчета с пустой ссылкой на Cookie построителя статистики"
   },
@@ -3170,7 +3184,7 @@
     "ErrBaseComponentVendorNotSpecified": "У базового компонента узла не задан вендор",
     "ErrBaseNodeConfigNotFound": "Не найдена конфигурация базового узла",
     "ErrBaseNodeNotFound": "Базовый узел не найден",
-    "ErrCircularInheritanceForbidden": "Циклическое наследование компонентов запрещено",
+    "ErrCircularInheritanceForbidden": "Циклическое наследование компонентов невозможно",
     "ErrDerivedComponentVendorGuidNotFound": "Не найден GUID производного компонента",
     "ErrDerivedNodesNotAllowed": "Создание производных узлов по компоненту %s не разрешено",
     "ErrIncompatibleBaseComponentVendor": "Базовый и производный компоненты не совместимы",
@@ -3179,11 +3193,11 @@
     "ErrUnknownCouplerDefType": "Неизвестный тип описателя соединения"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
-    "ErrCannotChangeDerivedName": "Запрещено изменять имя производных портов",
-    "ErrCannotChangeDerivedSocketType": "Запрещено изменять тип данных производных портов",
-    "ErrCannotDeleteDerivedConnections": "Удаление производных подключений запрещено",
-    "ErrCannotDeleteDerivedSocket": "Удаление производных портов запрещено",
-    "ErrCannotDeleteDerivedVendors": "Удаление производных компонентов запрещено"
+    "ErrCannotChangeDerivedName": "Невозможно изменять имя производных портов",
+    "ErrCannotChangeDerivedSocketType": "Невозможно изменять тип данных производных портов",
+    "ErrCannotDeleteDerivedConnections": "Удаление производных подключений невозможно",
+    "ErrCannotDeleteDerivedSocket": "Удаление производных портов невозможно",
+    "ErrCannotDeleteDerivedVendors": "Удаление производных компонентов невозможно"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
     "ErrInputSocketDefsEmptyName": "Не задано имя следующих входов: ",
@@ -3291,8 +3305,9 @@
     "ErrNoTargetModelUnit": "Не найден целевой модуль",
     "ErrSomeNodeDisposed": "Один или несколько исходных узлов были удалены или перемещены",
     "ErrUnableToRestoreLinkBetween": "Не удалось восстановить связь между узлами \"%s\" и \"%s\"",
-    "ErrVendorNotFound": "Компонент \"%s\" не найден",
+    "ErrVendorNotFound": "Не найден производный компонент \"%s\". Возможно, этот компонент был удалён.",
     "ErrVendorUnavailableForMovedNode": "Производный компонент %s недоступен для перемещённого узла %s.",
+    "ErrVendorWithDependentNodeNotFound": "Не найден производный компонент \"%s\", на который ссылается узел \"%s\". Возможно, этот компонент был удалён.",
     "ForceRepeatMovingForbidden": "Операция принудительного повторного перемещения запрещена",
     "MoveNodesCaption": "Перемещены узлы",
     "OperationCanceled": "Операция была отменена",
@@ -3302,7 +3317,8 @@
   "Libraries/Model/ModelPackage": {
     "ErrAlienModelUnit": "Модуль не принадлежит текущему пакету",
     "ErrCannotRevivePackageLink": "Не удалось восстановить ссылку на пакет с именем %s и версией %s",
-    "ErrCircularPackageLinksNotAllowed": "Циклические ссылки между пакетами запрещены",
+    "ErrCannotRevivePackageLinkAlternativeHintPath": "Не удалось восстановить ссылку на пакет с именем файла \"%s\" и версией %s. Вместо этого найден файл \"%s\". Возможно, в настройках ссылки на пакет неверно указан путь к файлу.",
+    "ErrCircularPackageLinksNotAllowed": "Невозможно создать циклические ссылки между пакетами \"%s\" и \"%s\"",
     "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается системой",
     "ErrPackageLinkAlreadyExists": "Ссылка на пакет \"%s\" уже существует",
     "ErrPackageLinkToSelfNotAllowed": "В пакете нельзя добавить ссылку на самого себя",
@@ -3326,7 +3342,6 @@
     "CompatConvertRequired": "При открытии пакета \"%s\" версии %s будет произведено конвертирование.",
     "ErrCannotLoadPackageElement": "Ошибка загрузки пакета: не удалось загрузить элемент \"%s\"",
     "ErrCannotOpenFile": "Не удалось открыть файл \"%s\"",
-    "LogPackageSaved": "Сохранён пакет \"%s\"",
     "WarnPackageCreatedInNewerVersion": "Пакет \"%s\" был создан в более новой версии Loginom %s. В текущей версии часть функционала может работать некорректно."
   },
   "Libraries/Model/ModelReports": {
@@ -3373,7 +3388,7 @@
     "DeleteReferringVendorCaption": "Удаление производного компонента \"%s\"",
     "ErrAlienExcludedNode": "Узел \"%s\" не принадлежит текущему модулю",
     "ErrAlienSubModel": "Подмодель не принадлежит текущему сценарию",
-    "ErrComponentVendorIsSealed": "Создание производного компонента по данному узлу запрещено",
+    "ErrComponentVendorIsSealed": "Создание производного компонента по данному узлу невозможно",
     "ErrNodeNotInitialized": "Узел не проинициализирован",
     "LocalModelComponentVendorMetaDesc": "локальный компонент",
     "ModelComponentVendorMetaDesc": "компонент"
@@ -3524,7 +3539,7 @@
     "ErrRootElementMustBeSingle": "Матрица значений должна содержать только один корневой элемент"
   },
   "Libraries/Model/WorkFlow": {
-    "ErrCircularLink": "Циклические связи между узлами запрещены",
+    "ErrCircularLink": "Невозможно создать циклическую связь между узлами",
     "ErrInputLinkAlreadyExists": "Ко входному порту \"%s\" узла \"%s\" уже подключена связь",
     "ErrUnableToRestoreLinkBetween": "Не удалось восстановить связь между узлами \"%s\" и \"%s\"",
     "ErrUnableToRestoreLinkTo": "Не удалось восстановить связь, подключенную ко входу узла \"%s\"",
@@ -3538,7 +3553,7 @@
   "Libraries/Normalization/FixedNormalData": {
     "ErrArrayExpceted": "Невозможно денормализировать один элемент. На входе должен быть массив из %d элементов.",
     "ErrUnbalancedSync": "Вызов EndSynchronize без соответствующего BeginSynchronize",
-    "ErrWrongArraySize": "Размер массива '%0:s' %1:d не равен ожидаемому размеру массива %2:d"
+    "ErrWrongArraySize": "Размер массива '%s' %d не равен ожидаемому размеру массива %d"
   },
   "Libraries/Normalization/NormalColumns": {
     "ErrExcludeOutOfRange": "Удаляемый диапазон выходит за допустимые пределы. Заданы: начальный индекс %d, длина диапазона %d. Индекс последней удаляемой колонки %d больше индекса последней доступной для удаления колонки %d."
@@ -3553,13 +3568,13 @@
   },
   "Libraries/Normalization/NormalData": {
     "CalculateCacheProcessCaption": "Кэширование набора данных",
-    "ErrArrayExpected": "Невозможно денормализировать один элемент. Для колонки \"%0:s\" должен денормализироваться массив из %1:d элементов.",
+    "ErrArrayExpected": "Невозможно денормализировать один элемент. Для колонки \"%s\" должен денормализироваться массив из %d элементов.",
     "ErrImpossibleToAllocate": "Невозможно выделить память для кэшированного нормализированного источника данных",
     "ErrNotEnoughCache": "Размер кэша недостаточен для хранения строки нормализированных данных",
     "ErrUnbalancedSync": "Вызов EndSynchronize без соответствующего BeginSynchronize",
     "ErrUnexpectedEndUpdate": "Вызов EndUpdate без соответствующего BeginUpdate",
     "ErrUnexpectedUnlockedState": "Во время вызова вложенного BeginUpdate кэш нормализированного набора данных должен быть заблокирован",
-    "ErrWrongArraySize": "Размер массива %0:s %1:d не равен ожидаемому %2:d",
+    "ErrWrongArraySize": "Размер массива %s %d не равен ожидаемому %d",
     "ErrWrongNormalizerParams": "Ошибка при добавлении фактора \"%s\": число выходных колонок нормализатора %d не соответствует ожидаемому %d",
     "InterceptDisplayName": "Константа",
     "NormDSTypeNotSupported": "Неподдерживаемый тип запрашиваемого нормализированного набора данных",
@@ -3680,18 +3695,18 @@
     "ErrGuidNotFound": "Интерфейс \"%s\" не найден в метаданных",
     "ErrIncorrectIndexDataType": "Свойство \"%s\" имеет недопустимый тип индексатора",
     "ErrIndexerCountIncorrect": "Для индексируемого свойства \"%s.%s.%s\", свойство, содержащее количество элементов \"%s\", некорректно",
-    "ErrIndexerCountNotFound": "В метаданных интерфейса \"%0:s.%1:s\" отсутствует свойство \"%2:s\"",
+    "ErrIndexerCountNotFound": "В метаданных интерфейса \"%s.%s\" отсутствует свойство \"%s\"",
     "ErrInterfaceNameNotFound": "Интерфейс с именем \"%s\" не зарегистрирован",
     "ErrInterfaceParentNotFound": "Не найден родительский интерфейс \"%s\"",
     "ErrInvalidMetadataResource": "Ошибка чтения метаданных из ресурса \"%s\"",
     "ErrInvalidUTFInt": "Ошибка чтения целого упакованного числа",
     "ErrParentNotInitialized": "У интерфейса \"%s.%s\" не проинициализирован родитель",
-    "ErrPropAccessorNotFound": "В метаданных для свойства \"%0:s.%1:s\" не удалось найти акцессор \"%2:s\"",
+    "ErrPropAccessorNotFound": "В метаданных для свойства \"%s.%s\" не удалось найти акцессор \"%s\"",
     "ErrReferenceIsNil": "Интерфейсная ссылка не инициализирована",
     "ErrReferenceNotFound": "Не удалось найти реализуемый интерфейс",
     "ErrSetValueOutOfBounds": "Устанавливаемое значение \"%d\" свойства \"%s\" не принадлежит диапазону допустимых значений",
-    "ErrVaiantTypeIncorrect": "Для вариантного свойства \"%0:s.%1:s.%2:s\", свойство, содержащее тип значения \"%3:s\", некорректно",
-    "ErrVaiantTypeNotFound": "В метаданных интерфейса \"%0:s.%1:s\" отсутствует свойство \"%2:s\"",
+    "ErrVaiantTypeIncorrect": "Для вариантного свойства \"%s.%s.%s\", свойство, содержащее тип значения \"%s\", некорректно",
+    "ErrVaiantTypeNotFound": "В метаданных интерфейса \"%s.%s\" отсутствует свойство \"%s\"",
     "ErrValueOutOfRange": "Значение \"%d\" не принадлежит диапазону допустимых значений типа \"%s\"",
     "ErrVisibilityMismatch": "Видимость интерфейса \"%s\" не совпадает с требуемой"
   },
@@ -3854,7 +3869,7 @@
     "ErrCircularPackageLink": "Пакет \"%s\" содержит циклическую ссылку на самого себя",
     "ErrComparePackagesError": "Возникла ошибка при сравнении файла пакета \"%s\" с редактируемой копией в памяти",
     "ErrDeductorServerSessionNotInitialized": "Сессия Loginom Server не инициализирована",
-    "ErrDuplicatePublishedNodeName": "Пакет содержит более одного опубликованного узел с именем \"%s\"",
+    "ErrDuplicatePublishedNodeName": "Пакет содержит более одного опубликованного узла с именем \"%s\"",
     "ErrEncryptedPackage": "Зашифрованный пакет \"%s\" не может быть открыт для просмотра и редактирования",
     "ErrFailedToRestorePackage": "Не удалось восстановить пакет %s",
     "ErrFileAlreadyEditing": "Невозможно сохранить пакет в файл \"%s\". Этот файл уже используется другим процессом",
@@ -3885,6 +3900,7 @@
     "PackageClosedLogMsg": "Закрыт пакет \"%s\"",
     "PackageOpenedEditLogMsg": "Открыт пакет \"%s\" в режиме редактирования",
     "PackageOpenedReadLogMsg": "Открыт пакет \"%s\" в режиме только для чтения",
+    "PackageSavedLogMsg": "Сохранён пакет \"%s\"",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s запущен",
     "SessionBatch": "Пакетная обработка",
@@ -4097,7 +4113,7 @@
     "MaxSeriesCountDesc": "Максимальное количество серий"
   },
   "Viewers/Cube/CubeDimensions": {
-    "CubeEmptyDimValue": "<...>",
+    "ErrClipboardAdapterOpened": "Нельзя начать операцию с буфером обмена, пока не завершена текущая операция.",
     "MsgMissingDimensionInColumn": "В наборе данных не найдено поле \"%s\" соответствующее измерению в колонке \"%s\".",
     "MsgMissingDimensionInRow": "В наборе данных не найдено поле \"%s\" соответствующее измерению в строке \"%s\".",
     "MsgNoValues": "Нет значений"
@@ -4362,7 +4378,7 @@
     "DWConnectionVendorDesc": "Подключение к Хранилищу данных Deductor"
   },
   "Warehouse2/Deductor/DDWEngine": {
-    "ErrDimensionValueIsNull": "В строке \"%0:d\" значение измерения \"%1:s\" [%2:s] пустое.",
+    "ErrDimensionValueIsNull": "В строке \"%d\" значение измерения \"%s\" [%s] пустое.",
     "ErrDimensionValueNotFound": "Значение \"%s\" не найдено среди значений измерения \"%s\" [%s].",
     "ErrEmptyData": "В процессе выполнения очистки данных объекта \"%s\" [%s] возникла ошибка.",
     "ErrLoadDataDimension": "В процессе выполнения загрузки данных в измерение \"%s\" [%s] возникла ошибка.",

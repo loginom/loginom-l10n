@@ -109,13 +109,15 @@
     "MsgAppClose": "Приложение закрывается. Текущий сеанс работы и все несохраненные данные будут потеряны."
   },
   "app/AppUtils": {
+    "ConfirmRemovingDerivedVendor": "{0}\nВы действительно хотите удалить компонент \"{1}\"?",
     "ConfirmRemovingNode": "Вы действительно хотите удалить узел \"{0}\"?",
     "ConfirmRemovingUnit": "Вы действительно хотите удалить модуль \"{0}\"?",
+    "DerivedVendorIsNotUsed": "На данный компонент не ссылается ни одного узла.",
+    "DerivedVendorIsPublic": "Данный компонент имеет модификатор доступа Открытый и может использоваться в других пакетах.",
+    "DerivedVendorUsedByNodes": "В открытых пакетах найдено {0} узлов, которые ссылаются на данный компонент.",
     "ErrCannotDeleteNode": "Невозможно удалить заблокированный узел \"{0}\".",
     "ErrCannotDeleteUnit": "Невозможно удалить модуль \"{0}\". Некоторые из узлов в данный момент заблокированы.",
-    "ErrSelectedVendorLocked": "Невозможно удалить компонент \"{0}\". Некоторые из производных узлов в данный момент заблокированы.",
-    "RemoveSelectedVendorConfirmLinked": "Вы действительно хотите удалить компонент \"{0}\"? Узлы, созданные по нему, будут недоступны.",
-    "RemoveVendorConfirm": "Удалить компонент \"{0}\"?"
+    "ErrSelectedVendorLocked": "Невозможно удалить компонент \"{0}\". Некоторые из производных узлов в данный момент заблокированы."
   },
   "app/ConfigureDerivedVendorForm": {
     "AddBtnText": "Добавить",
@@ -241,7 +243,6 @@
     "ComposeSingleNode": "Свернуть узел в подмодель",
     "ConfigurePort": "Настроить порт...",
     "ConfirmCreatingAnotherDerivedVendor": "У данного узла уже существует производный компонент \"{0}\".\nВы действительно хотите создать ещё один компонент?",
-    "ConfirmRemovingDerivedVendor": "Вы действительно хотите удалить производный компонент?",
     "CopyNode": "Копировать узел",
     "CutNode": "Вырезать узел",
     "DeactivateCurrent": "Деактивировать узел",
@@ -268,7 +269,6 @@
     "GoToDerivedVendor": "Перейти к производному компоненту",
     "GoToDerivedVendors": "Перейти к производным компонентам",
     "HideControlVariablesPorts": "Скрыть порт управляющих переменных",
-    "Inspector": "Инспектор",
     "LockedIconTooltip": "Узел блокируется во время выполнения или настройки",
     "NodeBatchMode": "Настроить режим активации узла...",
     "NodeVisibility": "Настроить модификатор доступа...",
@@ -279,10 +279,10 @@
     "NodeVisibilityPublic": "видимость во всех пакетах",
     "NodeVisibilityPublished": "видимость во всех пакетах и в виде веб-сервиса",
     "NodeVisibilityTitle": "Видимость узла",
-    "NotFoundBaseNode": "Не удалось найти базовый узел в открытых пакетах",
+    "NotFoundBaseNode": "Не удалось найти базовый узел {0} в открытых пакетах",
     "NotFoundConnection": "Не удалось найти подключение в открытых пакетах",
     "NotFoundDerivedVendor": "Не удалось найти производный компонент в открытых пакетах",
-    "Preview": "Просмотр",
+    "PackageNamePrefix": "Пакет=",
     "PropertyInspectorLocale": "ru",
     "RecreateBaseNodeForDerivedVendor": "Пересоздать базовый узел",
     "RemoveComment": "Удалить комментарий",
@@ -295,7 +295,7 @@
     "SetupConnection": "Настроить подключение...",
     "SetupNode": "Настроить узел...",
     "ShowControlVariablesPort": "Показать порт управляющих переменных",
-    "ShowEnlargedDataPreview": "Увеличенный быстрый просмотр",
+    "ShowDataPreview": "Быстрый просмотр",
     "TeachNode": "Переобучить узел",
     "TuneDerivedVendor": "Настроить...",
     "UndoableDeleteNode": "Удаление (принудительно)...",
@@ -344,6 +344,7 @@
     "VisibilityTooltip": "Настроить область видимости..."
   },
   "app/PackagesAutoSavePanel": {
+    "ErrPackagesAutoSaveInvalidPeriod": "Указано недопустимое значение периода автосохранения пакетов",
     "ErrPackagesAutoSaveNotSpecified": "Не указан период автосохранения пакетов"
   },
   "app/PackagesListForm": {
@@ -377,8 +378,9 @@
   },
   "app/PreviewForm": {
     "EmptyTabMsg": "Выберите активный узел, чтобы увидеть его данные",
-    "FastPreviewEmptyTabTitle": "Быстрый просмотр",
+    "FastPreview": "Быстрый просмотр",
     "NodeIsNotActive": "Узел не активирован",
+    "NoPortsTabMsg": "У этого узла нет выходных портов",
     "NoPreviewForSocketType": "Для порта не существует Быстрого просмотра",
     "PortIsNotActive": "Порт не активирован"
   },
@@ -674,7 +676,7 @@
   "components/execnode/ExecNodeComponentWizard": {
     "CurrentModelUnitNodes": "Узлы в текущем модуле",
     "Description": "Описание",
-    "ErrNodeComponentVendorIsSealed": "Невозможно задать ссылку на узел \"{0}\", для которого запрещено наследование",
+    "ErrNodeComponentVendorIsSealed": "Нельзя задать ссылку на узел \"{0}\", для которого невозможно наследование",
     "ErrVendorDeleted": "Целевой компонент удален.",
     "ErrVendorDeletedFmt": "Целевой компонент \"{0}\" удален.",
     "ErrVendorNotFound": "Целевой компонент не найден, возможно, он был удален или стал недоступен.",
@@ -1458,8 +1460,8 @@
   },
   "imports/textfile/TextQualifierStore": {
     "BackQuote": "Обратная кавычка (`)",
-    "Default": "По умолчанию",
     "DoubleQuote": "Двойная кавычка (\")",
+    "Empty": "Нет",
     "Quote": "Одинарная кавычка (')"
   },
   "imports/textfile/TimeFormatStore": {
@@ -1650,8 +1652,8 @@
     "MonthPeriodNameMany": "месяцев",
     "MonthPeriodNameOne": "месяц",
     "NegativePostfix": "не",
-    "OtherFirstPostfix": "первое",
-    "OtherLastPostfix": "последнее",
+    "OtherFirstPostfix": "первый",
+    "OtherLastPostfix": "последний",
     "PluralRuleLang": "ru",
     "QuarterFirstPostfix": "первый",
     "QuarterLastPostfix": "последний",
@@ -1718,7 +1720,7 @@
     "LeaveSubmodel": "Выйти из подмодели"
   },
   "mxgraph/handler/PortConnectionAbstract": {
-    "CycleLinksForbiden": "Циклические связи запрещены"
+    "CycleLinksForbiden": "Невозможно создать циклическую связь"
   },
   "mxgraph/node/comment/Comment": {
     "CommentBtn": "Показать/скрыть комментарий"
@@ -2110,15 +2112,15 @@
     "DimensionFilterSelectionPanelTitle": "Отметить по маске"
   },
   "viewers/cube/DimensionsFilterPanel": {
-    "AndMore": "и еще {0} значений.",
-    "BadBrowserMsg": "Данная операция не поддерживается в вашем браузере.",
+    "AndMore": "\nи еще {0} значений.",
     "CheckAllTooltip": "Отметить все",
-    "ClipbordReadDenied": "Предоставьте Loginom разрешение на доступ к буферу обмена.",
-    "MsgMaxClipboardSizeReached": "Достигнут предельный размер буфера обмена.",
-    "MsgRejectedClipboardValues": "Значения, которых нет среди значений измерения:\n",
-    "MsgUnrecognizedClipboardValues": "Нераспознанные значения:\n",
-    "NoAsyncClipboardPasteWarn": "Для вставки используйте горячие клавиши в поле ввода",
-    "NoHTTPSMsg": "Для данной операции необходимо соединение по протоколу HTTPS.",
+    "MsgClipboardMaxSizeReached": "Достигнут предельный размер буфера обмена.\n Были скопированы не все значения.",
+    "MsgClipboardNoHTTPS": "Для данной операции необходимо соединение по протоколу HTTPS.",
+    "MsgClipboardReadDenied": "Предоставьте Loginom разрешение на доступ к буферу обмена.",
+    "MsgClipboardRejectedValues": "Значения, которых нет в текущем списке:\n",
+    "MsgClipboardUnrecognizedValues": "Нераспознанные значения:\n",
+    "MsgClipboardUnsupported": "Данная операция не поддерживается в вашем браузере.",
+    "MsgClipboardUseHotkey": "\nДля вставки данных используйте горячие клавиши ({0}).",
     "UncheckAllTooltip": "Снять все"
   },
   "viewers/cube/PivotDataSource": {

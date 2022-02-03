@@ -586,9 +586,6 @@
     "btnToggleActivateCurrent": {
       "tooltip": "Выполнить узел"
     },
-    "btnTogglePreview": {
-      "tooltip": "Показать/скрыть быстрый просмотр"
-    },
     "btnTogglePropInspector": {
       "tooltip": "Показать/скрыть инспектор свойств"
     },
@@ -840,26 +837,19 @@
     "btnClose": {
       "tooltip": "Закрыть"
     },
+    "btnMaximize": {
+      "tooltip": "Развернуть в окне"
+    },
+    "btnRestore": {
+      "tooltip": "Отобразить в окне"
+    }
+  },
+  "app/PreviewWindow": {
     "btnDown": {
-      "tooltip": "Переместить вниз"
+      "tooltip": "Закрепить внизу"
     },
     "btnHide": {
       "tooltip": "Скрыть"
-    },
-    "btnMaximize": {
-      "tooltip": "Развернуть"
-    },
-    "btnMinimize": {
-      "tooltip": "Свернуть"
-    },
-    "btnPin": {
-      "tooltip": "Закрепить"
-    },
-    "btnRight": {
-      "tooltip": "Переместить вправо"
-    },
-    "btnUnpin": {
-      "tooltip": "Открепить"
     }
   },
   "app/PublishedPackagesAddForm": {
@@ -3167,7 +3157,7 @@
       "href": "https://facebook.com/lg.platform/"
     },
     "btnFastStart": {
-      "href": "https://help.loginom.ru/userguide/quick-start/",
+      "href": "https://loginom.ru/platform/quick-start/",
       "text": "Быстрый старт"
     },
     "btnInstagram": {
@@ -3579,7 +3569,7 @@
   },
   "login/Login": {
     "btnFastStart": {
-      "href": "https://help.loginom.ru/userguide/quick-start/",
+      "href": "https://loginom.ru/platform/quick-start/",
       "text": "Быстрый старт"
     },
     "btnHelp": {
@@ -3872,7 +3862,7 @@
       "tooltip": "Режим перетаскивания"
     },
     "btnInvert": {
-      "tooltip": "Повернуть график"
+      "tooltip": "Горизонтальная ориентация"
     },
     "btnPointer": {
       "tooltip": "Режим приближения"
@@ -3984,7 +3974,7 @@
       "boxLabel": "Группировать колонки"
     },
     "chbInverted": {
-      "boxLabel": "Повернуть на 90°"
+      "boxLabel": "Горизонтальная ориентация"
     },
     "chbNavigator": {
       "boxLabel": "Навигатор"
@@ -4569,7 +4559,7 @@
       "tooltip": "Выбрать все"
     },
     "btnCopy": {
-      "tooltip": "Копировать"
+      "tooltip": "Копировать отмеченные"
     },
     "btnExclusive": {
       "tooltip": "Режим включенных/исключенных значений"
@@ -4581,7 +4571,7 @@
       "tooltip": "Отметить по маске..."
     },
     "btnPaste": {
-      "tooltip": "Вставить"
+      "tooltip": "Добавить к отмеченным"
     },
     "btnReverseCheck": {
       "tooltip": "Инвертировать выбор"

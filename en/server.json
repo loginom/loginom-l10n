@@ -2146,7 +2146,7 @@
   },
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Bit index is out of range",
-    "ErrStringIsNotSet": "\"%s\" string is not a valid set view",
+    "ErrStringIsNotSet": "\"%s\" string is not a valid set representation",
     "ErrSubSetPowerIsZerro": "Attempt to extract all subsets with the power less than 0 or more than the set power as such"
   },
   "Libraries/bgrtl/CachedDataSet": {
@@ -3854,7 +3854,7 @@
     "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
     "ErrComparePackagesError": "Error occurred while comparing \"%s\" package file with edited copy in the memory",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
-    "ErrDuplicatePublishedNodeName": "The package already contains more than one published node with \"%s\" name",
+    "ErrDuplicatePublishedNodeName": "The package contains more than one published node with \"%s\" name",
     "ErrEncryptedPackage": "Encrypted package \"%s\" cannot be opened to be viewed and edited",
     "ErrFailedToRestorePackage": "Failed to restore %s package",
     "ErrFileAlreadyEditing": "Failed to save package in \"%s\" file. This file has already been used by another process",
@@ -4125,7 +4125,7 @@
     "DefExprDisplayName": "Expression",
     "ErrCaseClassNotDynamic": "Measure is not calculated",
     "ErrCaseFuncNotExist": "No \"%s\" aggregation for \"%s\" measure",
-    "ErrCaseSubFuncNotExist": "\"%s\" measure with \"%s\" aggregation does not have \"%s\" display",
+    "ErrCaseSubFuncNotExist": "\"%s\" measure with \"%s\" aggregation does not have \"%s\" display mode",
     "ErrIIDNotRegistered": "\"%s\" identifier not registered",
     "MsgMissingCase": "\"%s\" field matching \"%s\" measure not found in the data set."
   },

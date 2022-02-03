@@ -392,7 +392,7 @@
     "UpdateFormTitle": "Edit web service"
   },
   "app/PublishedPackagesListForm": {
-    "ConfirmFinish": "Do you want to stop publication of {0} package?",
+    "ConfirmFinish": "Do you want to unpublish {0} package?",
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
     "ErrPathNotFound": "The specified path was not found \"{0}\"."
   },
@@ -2129,7 +2129,7 @@
     "RecordCountDesc": "Filtered row count",
     "SourceRecordCountDesc": "Source row count",
     "SubFunctionCountDesc": "Number of displayed measures",
-    "SubFunctionDisplayName": "Display",
+    "SubFunctionDisplayName": "Display mode",
     "WarnCubeSortedColLimit": "Count of sorted headers cannot exceed {0}",
     "Yes": "Yes"
   },

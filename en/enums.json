@@ -1753,7 +1753,7 @@
       "Rows": "In rows"
     },
     "CubeSubFunctionType": {
-      "$Caption": "Value Representation",
+      "$Caption": "Display Mode",
       "Value": "Value",
       "PercentByRow": "Percent by row",
       "PercentByCol": "Percent by column",

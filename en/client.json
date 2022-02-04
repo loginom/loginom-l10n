@@ -113,9 +113,7 @@
     "ConfirmRemovingUnit": "Do you really want to delete \"{0}\" module?",
     "ErrCannotDeleteNode": "Failed to delete the locked \"{0}\" node.",
     "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently locked.",
-    "ErrSelectedVendorLocked": "Failed to delete \"{0}\" component. Some of the derived nodes are currently locked.",
-    "RemoveSelectedVendorConfirmLinked": "Do you really want to delete \"{0}\" component? The nodes created on its basis will be unavailable.",
-    "RemoveVendorConfirm": "Do you want to delete \"{0}\" component?"
+    "ErrSelectedVendorLocked": "Failed to delete \"{0}\" component. Some of the derived nodes are currently locked."
   },
   "app/ConfigureDerivedVendorForm": {
     "AddBtnText": "Add",
@@ -240,7 +238,6 @@
     "ComposeSingleNode": "Collapse node to supernode",
     "ConfigurePort": "Configure port...",
     "ConfirmCreatingAnotherDerivedVendor": "Derived \"{0}\" component already exists for this node.\nDo you really want to create one more component?",
-    "ConfirmRemovingDerivedVendor": "Do you really want to delete the derived component?",
     "CopyNode": "Copy node",
     "CutNode": "Cut node",
     "DeactivateCurrent": "Deactivate node",
@@ -267,7 +264,6 @@
     "GoToDerivedVendor": "Go to derived component",
     "GoToDerivedVendors": "Go to derived components",
     "HideControlVariablesPorts": "Hide control variables port",
-    "Inspector": "Inspector",
     "LockedIconTooltip": "Node locked during runtime or setup",
     "NodeBatchMode": "Configure node activation mode...",
     "NodeVisibility": "Configure visibility...",
@@ -281,7 +277,6 @@
     "NotFoundBaseNode": "Failed to find base node in the opened packages",
     "NotFoundConnection": "Failed to find connection in the opened packages",
     "NotFoundDerivedVendor": "Failed to find derived component in the opened packages",
-    "Preview": "View",
     "PropertyInspectorLocale": "en",
     "RecreateBaseNodeForDerivedVendor": "Recreate base node",
     "RemoveComment": "Delete comment",
@@ -294,7 +289,7 @@
     "SetupConnection": "Configure connection...",
     "SetupNode": "Configure node...",
     "ShowControlVariablesPort": "Show control variables port",
-    "ShowEnlargedDataPreview": "Enlarged Quick View",
+    "ShowDataPreview": "Quick view",
     "TeachNode": "Retrain node",
     "TuneDerivedVendor": "Configure...",
     "UndoableDeleteNode": "Delete (forced)...",
@@ -376,7 +371,7 @@
   },
   "app/PreviewForm": {
     "EmptyTabMsg": "Select the active node to show its data",
-    "FastPreviewEmptyTabTitle": "Quick View",
+    "FastPreview": "Quick View",
     "NodeIsNotActive": "Node not activated",
     "NoPreviewForSocketType": "Quick View does not exist for port",
     "PortIsNotActive": "Port not activated"
@@ -1457,7 +1452,6 @@
   },
   "imports/textfile/TextQualifierStore": {
     "BackQuote": "Back quote (`)",
-    "Default": "Default",
     "DoubleQuote": "Double quote (\")",
     "Quote": "Single quote (')"
   },
@@ -2108,15 +2102,12 @@
     "DimensionFilterSelectionPanelTitle": "Check by pattern"
   },
   "viewers/cube/DimensionsFilterPanel": {
-    "AndMore": "and also {0} values.",
-    "BadBrowserMsg": "This operation is not supported in our browser.",
+    "AndMore": "\nand also {0} values.",
     "CheckAllTooltip": "Check all",
-    "ClipbordReadDenied": "Grant Loginom access to clipboard.",
-    "MsgMaxClipboardSizeReached": "Maximum clipboard size reached.",
-    "MsgRejectedClipboardValues": "The values that are not included into the dimension values:\n",
-    "MsgUnrecognizedClipboardValues": "Unrecognized values:\n",
-    "NoAsyncClipboardPasteWarn": "To paste, use hotkeys in the entry field",
-    "NoHTTPSMsg": "Connection via HTTPS protocol is required for this operation.",
+    "MsgClipboardNoHTTPS": "Connection via HTTPS protocol is required for this operation.",
+    "MsgClipboardReadDenied": "Grant Loginom access to clipboard.",
+    "MsgClipboardUnrecognizedValues": "Unrecognized values:\n",
+    "MsgClipboardUnsupported": "This operation is not supported in our browser.",
     "UncheckAllTooltip": "Uncheck all"
   },
   "viewers/cube/PivotDataSource": {

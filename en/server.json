@@ -1096,7 +1096,8 @@
   },
   "components/linregression/LinRegressionBuilder": {
     "ErrWrongLinRegContext": "Invalid linear regression model builder context",
-    "ErrWrongLinRegModel": "The trained model is not linear regression model"
+    "ErrWrongLinRegModel": "The trained model is not linear regression model",
+    "ErrWrongProbability": "Confidence interval threshold must be within (0, 100)"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "The linear regression model builder context cannot be created for empty data set"
@@ -1980,7 +1981,6 @@
     "ErrDateTimeTypeCast": "Failed to convert \"%s\" value in \"%s\" column to date/time.",
     "ErrFloatTypeCast": "Failed to convert \"%s\" value in \"%s\" column to real number.",
     "ErrIntegerTypeCast": "Failed to convert \"%s\" value in \"%s\" column to integer.",
-    "ErrNoData": "Error parsing text file",
     "ErrParseFmt": "Error occurred while parsing line %d: %s",
     "ErrUnsupportedCodePage": "Codepage %d not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
@@ -3326,7 +3326,6 @@
     "CompatConvertRequired": "While opening \"%s\" package of %s version, converting will be performed.",
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
     "ErrCannotOpenFile": "Failed to open file: \"%s\"",
-    "LogPackageSaved": "\"%s\" package saved",
     "WarnPackageCreatedInNewerVersion": "\"%s\" package was created in a newer version of Loginom %s. In the current version, a part of the functionality may not work correctly."
   },
   "Libraries/Model/ModelReports": {
@@ -3885,6 +3884,7 @@
     "PackageClosedLogMsg": "\"%s\" package closed",
     "PackageOpenedEditLogMsg": "\"%s\" package opened in the edit mode",
     "PackageOpenedReadLogMsg": "\"%s\" package opened in the read-only mode",
+    "PackageSavedLogMsg": "\"%s\" package saved",
     "ProcessCaptionFormat": "%s. %s",
     "ServerStartLogMsg": "%s started",
     "SessionBatch": "Batch processing",
@@ -4096,7 +4096,6 @@
     "MaxSeriesCountDesc": "Maximum series count"
   },
   "Viewers/Cube/CubeDimensions": {
-    "CubeEmptyDimValue": "<...>",
     "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
     "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"

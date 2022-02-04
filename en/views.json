@@ -586,9 +586,6 @@
     "btnToggleActivateCurrent": {
       "tooltip": "Run node"
     },
-    "btnTogglePreview": {
-      "tooltip": "Show/hide quick view"
-    },
     "btnTogglePropInspector": {
       "tooltip": "Show/hide property inspector"
     },
@@ -840,26 +837,13 @@
     "btnClose": {
       "tooltip": "Close"
     },
-    "btnDown": {
-      "tooltip": "Move down"
-    },
-    "btnHide": {
-      "tooltip": "Hide"
-    },
     "btnMaximize": {
       "tooltip": "Maximize"
-    },
-    "btnMinimize": {
-      "tooltip": "Minimize"
-    },
-    "btnPin": {
-      "tooltip": "Pin"
-    },
-    "btnRight": {
-      "tooltip": "Move right"
-    },
-    "btnUnpin": {
-      "tooltip": "Unpin"
+    }
+  },
+  "app/PreviewWindow": {
+    "btnHide": {
+      "tooltip": "Hide"
     }
   },
   "app/PublishedPackagesAddForm": {
@@ -3167,7 +3151,7 @@
       "href": "https://facebook.com/lg.platform/"
     },
     "btnFastStart": {
-      "href": "https://help.loginom.com/userguide/quick-start/",
+      "href": "https://loginom.com/platform/quick-start/",
       "text": "Quick Start"
     },
     "btnInstagram": {
@@ -3579,7 +3563,7 @@
   },
   "login/Login": {
     "btnFastStart": {
-      "href": "https://help.loginom.com/userguide/quick-start/",
+      "href": "https://loginom.com/platform/quick-start/",
       "text": "Quick Start"
     },
     "btnHelp": {

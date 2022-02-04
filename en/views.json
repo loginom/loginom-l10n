@@ -4530,7 +4530,7 @@
       "boxLabel": "Case-sensitive"
     },
     "rbAdd": {
-      "boxLabel": "Add to checked"
+      "boxLabel": "Add to marked"
     },
     "rbDeselect": {
       "boxLabel": "Uncheck"
@@ -4553,7 +4553,7 @@
       "tooltip": "Check all"
     },
     "btnCopy": {
-      "tooltip": "Copy"
+      "tooltip": "Copy marked"
     },
     "btnExclusive": {
       "tooltip": "Inclusive/exclusive filter"
@@ -4565,7 +4565,7 @@
       "tooltip": "Check by pattern..."
     },
     "btnPaste": {
-      "tooltip": "Paste"
+      "tooltip": "Add to marked"
     },
     "btnReverseCheck": {
       "tooltip": "Invert selection"

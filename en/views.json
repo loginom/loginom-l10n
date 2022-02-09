@@ -3856,7 +3856,7 @@
       "tooltip": "Drag mode"
     },
     "btnInvert": {
-      "tooltip": "Rotate chart"
+      "tooltip": "Horizontal orientation"
     },
     "btnPointer": {
       "tooltip": "Pointer mode"
@@ -3968,7 +3968,7 @@
       "boxLabel": "Group columns"
     },
     "chbInverted": {
-      "boxLabel": "Rotate 90°"
+      "boxLabel": "Horizontal orientation"
     },
     "chbNavigator": {
       "boxLabel": "Navigator"

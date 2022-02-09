@@ -109,6 +109,7 @@
     "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost."
   },
   "app/AppUtils": {
+    "ConfirmRemovingDerivedVendor": "{0}\nDo you really want to delete \"{1}\" component?",
     "ConfirmRemovingNode": "Do you really want to delete \"{0}\" node?",
     "ConfirmRemovingUnit": "Do you really want to delete \"{0}\" module?",
     "ErrCannotDeleteNode": "Failed to delete the locked \"{0}\" node.",
@@ -274,9 +275,10 @@
     "NodeVisibilityPublic": "Visibility inside all packages",
     "NodeVisibilityPublished": "Visibility inside all packages and as web service",
     "NodeVisibilityTitle": "Node Visibility",
-    "NotFoundBaseNode": "Failed to find base node in the opened packages",
+    "NotFoundBaseNode": "Failed to find base {0} node in the opened packages",
     "NotFoundConnection": "Failed to find connection in the opened packages",
     "NotFoundDerivedVendor": "Failed to find derived component in the opened packages",
+    "PackageNamePrefix": "Package=",
     "PropertyInspectorLocale": "en",
     "RecreateBaseNodeForDerivedVendor": "Recreate base node",
     "RemoveComment": "Delete comment",
@@ -1453,6 +1455,7 @@
   "imports/textfile/TextQualifierStore": {
     "BackQuote": "Back quote (`)",
     "DoubleQuote": "Double quote (\")",
+    "Empty": "None",
     "Quote": "Single quote (')"
   },
   "imports/textfile/TimeFormatStore": {

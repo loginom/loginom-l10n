@@ -1,6 +1,6 @@
 {
   "about/About": {
-    "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
+    "ErrVersionWrongServiceResponse": "Bad service response for the latest version request",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Latest stable version {0}"
@@ -106,14 +106,14 @@
     "ReadOnlyPackageNamePostfix": " (read-only)"
   },
   "app/Application": {
-    "MsgAppClose": "The application is closing. The current session and all unsaved data will be lost."
+    "MsgAppClose": "The application is closing. The current session and all unsaved changes will be lost."
   },
   "app/AppUtils": {
     "ConfirmRemovingDerivedVendor": "{0}\nDo you really want to delete \"{1}\" component?",
     "ConfirmRemovingNode": "Do you really want to delete \"{0}\" node?",
     "ConfirmRemovingUnit": "Do you really want to delete \"{0}\" module?",
     "DerivedVendorIsNotUsed": "No node refers to this component.",
-    "DerivedVendorIsPublic": "This component has the Open access modifier and it can be used in other packages.",
+    "DerivedVendorIsPublic": "This component has the Public visibility and it can be used in other packages.",
     "DerivedVendorUsedByNodes": "{0} nodes that refer to this component found in the opened packages.",
     "ErrCannotDeleteNode": "Failed to delete the locked \"{0}\" node.",
     "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently locked.",
@@ -213,9 +213,9 @@
   "app/MapTreeForm": {
     "ConfirmRemovingReference": "Do you want to delete \"{0}\" reference?",
     "DisplayName": "Caption",
-    "DraftPublishFailed": "Failed to publish \"{0}\" draft",
+    "DraftPublishFailed": "It is not possible to publish \"{0}\" draft",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
-    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
+    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioning",
     "mnuPortsShowAll": "Show all ports",
     "ModelUnitRenameTitle": "Rename Module",
     "VendorRenameTitle": "Rename Component"
@@ -260,7 +260,7 @@
     "ErrPortNotCreated": "Failed to create new port",
     "ErrRetryPasteConfirm": "Errors occurred while pasting. Do you want to repeat forcedly?\n{0}",
     "ErrRunQueueFunctions": "Errors when performing deferred update of the Worlflow objects",
-    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
+    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioning",
     "ExpandNode": "Expand supernode",
     "ForceRetry": "Force retry",
     "GoToConnection": "Go to connection",
@@ -427,7 +427,7 @@
     "DeactivateNodeForPortConfirmationMsg": "Port configuration will cause node deactivation.\nDo you really want to start port configuration?",
     "ErrNodeNotInitialized": "No component specified for \"{0}\" node",
     "ErrPrepareContainer": "When switching to \"{0}.{1}\" error occurred.\n{2}",
-    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioned",
+    "ErrVendorMalfunction": "\"{0}\" node component is malfunctioning",
     "MsgNodeConfigurationChanged": "Node configuration changed",
     "MsgNodeLoading": "The node is temporarily unavailable for configuring. Try to repeat this action later.",
     "MsgNodeLocked": "\"{0}\" node is locked",
@@ -675,7 +675,7 @@
   "components/execnode/ExecNodeComponentWizard": {
     "CurrentModelUnitNodes": "Nodes in the current module",
     "Description": "Description",
-    "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"{0}\" node for which inheritance is forbidden",
+    "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"{0}\" node for which inheritance is not possible",
     "ErrVendorDeleted": "Target component deleted.",
     "ErrVendorDeletedFmt": "\"{0}\" target component deleted.",
     "ErrVendorNotFound": "Target component was not found, it may have been deleted or became unavailable.",
@@ -1719,7 +1719,7 @@
     "LeaveSubmodel": "Move out"
   },
   "mxgraph/handler/PortConnectionAbstract": {
-    "CycleLinksForbiden": "Cyclic references are forbidden"
+    "CycleLinksForbiden": "Cyclic references are not possible"
   },
   "mxgraph/node/comment/Comment": {
     "CommentBtn": "Show/Hide Comment"
@@ -2449,7 +2449,7 @@
     "RemoveInvalidRelationsConfirm": "Links with non-existent objects were found. Do you want to delete all lost links and continue?",
     "RemoveNodeWithChildsConfirm": "Do you really want to delete \"{0}\" node with child nodes?",
     "RemoveRequiredMappingNodeDefConfirm": "\"{0}\" node is used. Do you really want to delete it?",
-    "WarnCannotDeleteRootNode": "Failed to delete root node"
+    "WarnCannotDeleteRootNode": "It is not possible to delete root node"
   },
   "wizards/datatree/DataTreeOutputSocketWizard": {
     "colTargetNodeText": "Output tree",

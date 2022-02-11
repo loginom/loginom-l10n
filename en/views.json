@@ -2728,10 +2728,10 @@
       "text": "Show Lost Links"
     },
     "ckbAddDimensionData": {
-      "boxLabel": "Add values of dimensions<br><br> automatically. When data loading into the process, add missing dimension values to the data warehouse automatically."
+      "boxLabel": "Add values of dimensions<br><br> automatically. Add missing dimension values to the data warehouse on data loading into the process automatically."
     },
     "ckbDisableConstraint": {
-      "boxLabel": "Disable/enable constraints and indexes<br><br>Disable before data loading into warehouse, and to restore indexes and constraints after loading."
+      "boxLabel": "Disable/enable indexes<br><br> and constraints before data loading into warehouse, and restore them after loading"
     },
     "ckbRebuildCube": {
       "boxLabel": "Update cubes<br><br>After data loading, rebuild all cubes with enabled \"Dynamic update\" option and inherited from the loaded process."

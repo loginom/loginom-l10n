@@ -1827,7 +1827,7 @@
       "OutCount": "Outliers",
       "EmptyCount": "Empty",
       "SpaceCount": "Whitespaces",
-      "SpaceEnding": "Spaces at the end",
+      "SpaceEnding": "Trailing spaces",
       "StrLen": "String lengths",
       "ValuesRange": "Range of values",
       "NegativeCount": "Negative",

@@ -841,9 +841,9 @@
   },
   "components/execnode/ExecNodeComponent": {
     "ErrExecNodeNotAllowed": "Execution of %s component is not allowed",
-    "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" component for which inheritance is forbidden",
+    "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" component for which inheritance is not possible",
     "ErrPortNotConfigurable": "Port configuration not supported",
-    "ErrReferencedVendorMalfunction": "\"%s\" source component is malfunctioned",
+    "ErrReferencedVendorMalfunction": "\"%s\" source component is malfunctioning",
     "ErrReferencedVendorNotAvailable": "Source component not available",
     "ErrReferencedVendorNotFound": "Source component not found",
     "ErrReferencedVendorNotSpecified": "Source component not set",
@@ -1100,7 +1100,7 @@
     "ErrTooLessRowsCount": "Row number (%d) in the training set must not be less than the number of model coefficients (%d)",
     "ErrWrongLinRegContext": "Invalid linear regression model builder context",
     "ErrWrongLinRegModel": "The trained model is not linear regression model",
-    "ErrWrongProbability": "Confidence interval threshold must be within (0, 100)",
+    "ErrWrongProbability": "Confidence level must be in the range [0, 100]",
     "WarnMaxDepthForForwardSelection": "The model coefficients number must be limited by the training sample size. For best results, increase the observations number in the training sample"
   },
   "components/linregression/LinRegressionBuilderContext": {
@@ -1267,7 +1267,7 @@
     "ErrColumnCountChanged": "The column count in the data set differs from the previous iteration",
     "ErrColumnDataTypesChanged": "The column data types in the data set differ from the previous iteration",
     "ErrCompareValueUnassigned": "No comparison value specified for the loop termination condition",
-    "ErrConditionComponentInLoopNotAllowed": "Execution of the Condition in the loop component forbidden",
+    "ErrConditionComponentInLoopNotAllowed": "Execution of the Condition in the loop component is not possible",
     "ErrGroupColumnNotFound": "\"%s\" column used for data grouping not found",
     "ErrGroupCountMustBePositive": "Group count must be positive",
     "ErrGroupDataSourceSocketNotFound": "No port with \"%s\" identifier containing columns to group found",
@@ -1280,7 +1280,7 @@
     "ErrIterationCountOverflow": "Maximum allowable number of iterations exceeded: %d",
     "ErrLoopVariableCannotBeMapped": "The loop variable cannot receive at the inlet the output variable value",
     "ErrMappedVariableDuplicate": "The linked variables list contains duplicate links to \"%s\" variable",
-    "ErrMappedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch",
+    "ErrMappedVariableTypesMismatch": "Type mismatch between linked variables \"%s\" and \"%s\"",
     "ErrNoConditionVariable": "No variable to check the loop termination condition",
     "ErrParallelProcessingError": "Error occurred while parallel loop processing",
     "ErrParallelProcessingNotSupportedInRepeatLoop": "Posttested loop does not support parallel processing",
@@ -1431,17 +1431,17 @@
     "ConfigureOutputTable": "Preparing output columns",
     "CreateDateFrameFromInputTable": "Create pd.DataFrame by input data set No1",
     "ErrCurrentDirectory": "Failed to get current directory",
-    "ErrDisallowedExecution": "Python execution forbidden by security settings",
-    "ErrGetNativePath": "Failed to calculate the file system path using \"%s\" file storage path",
+    "ErrDisallowedExecution": "Python execution forbidden in security settings",
+    "ErrGetNativePath": "Failed to resolve the file system path using \"%s\" file storage path",
     "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
     "ErrVerifyPythonIsBusy": "Python is busy. Failed to start syntax check",
-    "ErrWaitTimeoutElapsed": "Failed to capture Python during the given timeout as the Python script is still being executed in another node.",
+    "ErrWaitTimeoutElapsed": "Failed to acquire Python during the given timeout as the Python script is still being executed in another node.",
     "InputPortOptional": "Optional input port",
     "OutputDataFrameExample": "Received output pd.DataFrame",
     "PrepareCompatibleComment": "If \"Allow creating output columns in script\" option is enabled, the output data set structure can be prepared by pd.DataFrame"
   },
   "components/python/PythonExecutor": {
-    "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nGet the path in the file system by the path of the file storage\nArguments:\n  path: str\n    Path in the file storage.\nResult:\n  Path in the file system.",
+    "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nResolve the path in the file system by the path of the file storage\nArguments:\n  path: str\n    Path in the file storage.\nResult:\n  Path in the file system.",
     "ErrResNotFound": "%s resource not found",
     "ErrTCLFinalize": "Error occurred during TCL finalization",
     "ErrUnloadExtension": "Error occurred while \"%s\" extension unloading",
@@ -1825,7 +1825,7 @@
   "exports/tableau/ExportTableau": {
     "AddToTableNotify": "Addition of records to table",
     "ErrAPIInit": "Tableau API initialization error",
-    "ErrAppendOverwriteForbidden": "Simultaneous records addition and overwriting are forbidden",
+    "ErrAppendOverwriteForbidden": "Simultaneous records addition and overwriting are not possible",
     "ErrCantCreateEmptyTable": "Failed to create empty table",
     "ErrColumnNotFound": "\"%s\" field not found in the data source",
     "ErrColumnTypesMismatch": "\"%s\" field type is not compatible with \"%s\" source field type",
@@ -2231,7 +2231,7 @@
     "ErrCannotDeleteNotDynamicLink": "Failed to delete non-dynamic link",
     "ErrCannotLinkColumnsFromSameTable": "Failed to link \"%s\" and \"%s\" columns from the same table",
     "ErrColumnCanBeIncludedInOnlyOneLink": "\"%s\" column of table %d can only be part of a \"single\" link",
-    "ErrLinkedColumnTypesMismatch": "\"%s\" and \"%s\" types of linked columns mismatch",
+    "ErrLinkedColumnTypesMismatch": "Type mismatch between linked columns \"%s\" and \"%s\"",
     "ErrLinkMustContainMainTableColumn": "The main table field must be provided while link is created",
     "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached"
   },
@@ -2313,10 +2313,10 @@
     "ErrSingleConnectionPointSinkIsNil": "Connection point has no connection"
   },
   "Libraries/bgrtl/DerivedCollectionItemAspects": {
-    "ErrCannotChangeDerivedCollectionItemName": "It is forbidden to change the derived collection item name",
-    "ErrCannotChangeDerivedFieldDataType": "It is forbidden to change the derived field data type",
-    "ErrCannotDeleteDerivedCollectionItem": "It is forbidden to delete the derived collection item name",
-    "ErrCannotMoveDerivedCollectionItem": "It is forbidden to change position of the derived collection items"
+    "ErrCannotChangeDerivedCollectionItemName": "It is not possible to change the derived collection item name",
+    "ErrCannotChangeDerivedFieldDataType": "It is not possible to change the derived field data type",
+    "ErrCannotDeleteDerivedCollectionItem": "It is not possible to delete the derived collection item name",
+    "ErrCannotMoveDerivedCollectionItem": "It is not possible to change position of the derived collection items"
   },
   "Libraries/bgrtl/DerivedDataSet": {
     "ErrColumnTypesMismatch": "%s column type is not compatible with %s source column type",
@@ -2772,7 +2772,7 @@
     "ErrAlienLinkedVariable": "\"%s\" variable does not belong to any variable list being used",
     "ErrCannotDeleteNotDynamicLink": "Failed to delete non-dynamic link",
     "ErrCannotLinkVariablesFromSameTable": "Failed to link \"%s\" and \"%s\" variables from the same table",
-    "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch",
+    "ErrLinkedVariableTypesMismatch": "Type mismatch between linked variables \"%s\" and \"%s\"",
     "ErrLinkMustContainMainTableVariable": "When creating link, the main table variable must be provided",
     "ErrMaxOccursOfMultiLinksIsReached": "Maximum multiple links count reached",
     "ErrVariableCanBeIncludedInOnlyOneLink": "\"%s\" variable of table %d can only be part of a \"single\" link"
@@ -3092,7 +3092,7 @@
   },
   "Libraries/Model/ComponentSettings": {
     "Disabled": "Execution forbidden",
-    "ErrSettingIncompatibleType": "Incompatible value transferred to provide \"%s\" setting",
+    "ErrSettingIncompatibleType": "Value of incompatible type was passed to \"%s\" setting",
     "ErrSettingNotExists": "\"%s\" setting does not exist",
     "ErrSettingsAlreadyInitialized": "Settings already initialized"
   },
@@ -3184,7 +3184,7 @@
     "ErrBaseComponentVendorNotSpecified": "No vendor defined for the base node component",
     "ErrBaseNodeConfigNotFound": "Base node configuration not found",
     "ErrBaseNodeNotFound": "Base node not found",
-    "ErrCircularInheritanceForbidden": "Circular inheritance of components forbidden",
+    "ErrCircularInheritanceForbidden": "Circular inheritance of components is not possible",
     "ErrDerivedComponentVendorGuidNotFound": "No GUID of derived component found",
     "ErrDerivedNodesNotAllowed": "Creation of derived nodes by %s component is not allowed",
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
@@ -3193,11 +3193,11 @@
     "ErrUnknownCouplerDefType": "Unknown type of the coupler definition"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
-    "ErrCannotChangeDerivedName": "It is forbidden to change the derived ports name",
-    "ErrCannotChangeDerivedSocketType": "It is forbidden to change the derived ports data type",
-    "ErrCannotDeleteDerivedConnections": "Failed to delete the derived connections",
-    "ErrCannotDeleteDerivedSocket": "It is forbidden to delete the derived ports",
-    "ErrCannotDeleteDerivedVendors": "It is forbidden to delete the derived components"
+    "ErrCannotChangeDerivedName": "It is not possible to change the derived ports name",
+    "ErrCannotChangeDerivedSocketType": "It is not possible to change the derived ports data type",
+    "ErrCannotDeleteDerivedConnections": "It is not possible to delete the derived connections",
+    "ErrCannotDeleteDerivedSocket": "It is not possible to delete the derived ports",
+    "ErrCannotDeleteDerivedVendors": "It is not possible to delete the derived components"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
     "ErrInputSocketDefsEmptyName": "No name of the following inputs specified: ",
@@ -3318,7 +3318,7 @@
     "ErrAlienModelUnit": "Node does not belong to the current package",
     "ErrCannotRevivePackageLink": "Failed to restore the reference to the package with %s name and %s version",
     "ErrCannotRevivePackageLinkAlternativeHintPath": "Failed to restore reference to the package with \"%s\" file name and %s version. Instead \"%s\" file was found. Perhaps, invalid path to the file was specified in the package reference settings.",
-    "ErrCircularPackageLinksNotAllowed": "Circular references between packages \"%s\" and \"%s\" are not allowed",
+    "ErrCircularPackageLinksNotAllowed": "Circular references between packages \"%s\" and \"%s\" are not possible",
     "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system",
     "ErrPackageLinkAlreadyExists": "Reference to \"%s\" package already exists",
     "ErrPackageLinkToSelfNotAllowed": "Package cannot have a self-reference",
@@ -3388,7 +3388,7 @@
     "DeleteReferringVendorCaption": "Delete \"%s\" Derived Component",
     "ErrAlienExcludedNode": "\"%s\" node does not belong to the current module",
     "ErrAlienSubModel": "Supernode does not belong to the current workflow",
-    "ErrComponentVendorIsSealed": "Creation of derived component for this node is forbidden",
+    "ErrComponentVendorIsSealed": "Creation of derived component for this node is not possible",
     "ErrNodeNotInitialized": "Node not initialized",
     "LocalModelComponentVendorMetaDesc": "local component",
     "ModelComponentVendorMetaDesc": "component"
@@ -3433,7 +3433,7 @@
     "ErrVariableDataTypeChanged": "\"%s\" variable data type changed",
     "ErrVariableNamesAndValuesCountMustBeEqual": "Number of names and variables values must be the same",
     "ErrVariableNotFound": "Variable with \"%s\" name not found",
-    "ErrVendorMalfunction": "\"%s\" node component is malfunctioned",
+    "ErrVendorMalfunction": "\"%s\" node component is malfunctioning",
     "ExplodeGenericModel": "Expanded \"%s\" supernode",
     "LogActivateNodeStart": "Activating \"%s\" GUID=%s node",
     "LogActivateNodeSuccess": "Successfully activated \"%s\" GUID=%s node",
@@ -3506,7 +3506,7 @@
   "Libraries/Model/Variables/SocketVariablesMultiLinks": {
     "ErrAlienLinkedVariable": "\"%s\" variable does not belong to any variable list being used",
     "ErrCannotLinkVariablesFromSameTable": "Failed to link \"%s\" and \"%s\" variables from the same table",
-    "ErrLinkedVariableTypesMismatch": "\"%s\" and \"%s\" types of linked variables mismatch"
+    "ErrLinkedVariableTypesMismatch": "Type mismatch between linked variables \"%s\" and \"%s\""
   },
   "Libraries/Model/Variables/TuneVariablesSocketConstraint": {
     "ErrValueNotAllowed": "\"%s\" value of the input variable \"%s\" does not match the specified constraints"
@@ -3539,7 +3539,7 @@
     "ErrRootElementMustBeSingle": "Matrix of values must contain only one root element"
   },
   "Libraries/Model/WorkFlow": {
-    "ErrCircularLink": "Circular links between nodes are not allowed",
+    "ErrCircularLink": "Circular link between nodes is not possible",
     "ErrInputLinkAlreadyExists": "Link to the input port \"%s\" of \"%s\" node already exists",
     "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
     "ErrUnableToRestoreLinkTo": "Failed to restore link to the input of \"%s\" node",

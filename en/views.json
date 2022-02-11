@@ -839,9 +839,15 @@
     },
     "btnMaximize": {
       "tooltip": "Maximize"
+    },
+    "btnRestore": {
+      "tooltip": "Show in the window"
     }
   },
   "app/PreviewWindow": {
+    "btnDown": {
+      "tooltip": "Dock to the bottom"
+    },
     "btnHide": {
       "tooltip": "Hide"
     }
@@ -2731,7 +2737,7 @@
       "boxLabel": "Update cubes<br><br>After data loading, rebuild all cubes with enabled \"Dynamic update\" option and inherited from the loaded process."
     },
     "ckbStatisticsGathering": {
-      "boxLabel": "Gather statistics<br><br>Refresh statistics in the data warehouse after data loading. It will enable to speed up operations of data retrieval from the warehouse."
+      "boxLabel": "Gather statistics<br><br>Refresh statistics in the data warehouse after data loading. It will speed up operations of data retrieval from the warehouse."
     },
     "colAggregation": {
       "text": "Aggregation method"
@@ -4670,7 +4676,7 @@
       "text": " "
     },
     "lblCalculateQualityStatistics": {
-      "text": "Select fields for statistics calculation and press button:"
+      "text": "Select fields for statistics calculation and press the button:"
     },
     "lblProgress": {
       "text": "Indicators calculation is in progress"

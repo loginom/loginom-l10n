@@ -112,6 +112,9 @@
     "ConfirmRemovingDerivedVendor": "{0}\nDo you really want to delete \"{1}\" component?",
     "ConfirmRemovingNode": "Do you really want to delete \"{0}\" node?",
     "ConfirmRemovingUnit": "Do you really want to delete \"{0}\" module?",
+    "DerivedVendorIsNotUsed": "No node refers to this component.",
+    "DerivedVendorIsPublic": "This component has the Open access modifier and it can be used in other packages.",
+    "DerivedVendorUsedByNodes": "{0} nodes that refer to this component found in the opened packages.",
     "ErrCannotDeleteNode": "Failed to delete the locked \"{0}\" node.",
     "ErrCannotDeleteUnit": "Failed to delete \"{0}\" module. Some of the nodes are currently locked.",
     "ErrSelectedVendorLocked": "Failed to delete \"{0}\" component. Some of the derived nodes are currently locked."
@@ -158,7 +161,7 @@
     "ErrPackageNotSaved": "Current package not saved",
     "ErrUrlPathNotFound": "\"{0}\" path not found",
     "FavoritesTitle": "Favorites",
-    "MsgManagedPackageClosed": "{0} package closed from Session Manager",
+    "MsgManagedPackageClosed": "{0} package was closed via Session Manager",
     "MsgNodeNotFound": "The specified node was not found. Transition is not possible.",
     "MsgTransportError": "Server connection lost",
     "PackageCloseFormat": "Do you want to close \"{0}\" package also?",
@@ -308,13 +311,13 @@
     "ApplyLocaleTitle": "Apply new locale",
     "Cancel": "Cancel",
     "Confirm": "Apply",
-    "ConfirmLocaleChangeMsg": "After locale change strings can be compared in a different way.\nDo you really want to change locale?",
+    "ConfirmLocaleChangeMsg": "After locale change strings may be compared in a different way.\nDo you really want to change locale?",
     "CurrentLocale": "Current locale of package is \"{0}\".",
     "DefaultLocaleModified": "modified",
     "ErrIncorrectVersionFormat": "Invalid version format",
     "ErrInvalidPackageName": "\"{0}\" is invalid package name",
     "Later": "Later",
-    "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed.",
+    "MsgNewLocaleAfterReopen": "New locale will be applied when the package and all opened packages that depend on it are closed.",
     "NotSet": "Unspecified ({0})",
     "QuestionSaveAndReopenPackage": "New locale will be applied when packages and all opened packages that depend on it are closed.\nDo you want to save the package and reopen it now?",
     "Reopen": "Reopen"
@@ -340,6 +343,7 @@
     "VisibilityTooltip": "Configure visibility..."
   },
   "app/PackagesAutoSavePanel": {
+    "ErrPackagesAutoSaveInvalidPeriod": "Invalid packages auto save period is specified",
     "ErrPackagesAutoSaveNotSpecified": "Packages auto save period is not specified"
   },
   "app/PackagesListForm": {
@@ -375,6 +379,7 @@
     "EmptyTabMsg": "Select the active node to show its data",
     "FastPreview": "Quick View",
     "NodeIsNotActive": "Node not activated",
+    "NoPortsTabMsg": "There are no output ports for this node",
     "NoPreviewForSocketType": "Quick View does not exist for port",
     "PortIsNotActive": "Port not activated"
   },
@@ -698,9 +703,9 @@
     "LessOrEqual": "<=",
     "Like": "contains",
     "NoHTTPSMsg": "Connection via HTTPS protocol is required for this operation.",
-    "NoMenuCopyWarn": "To copy data, use hotkeys",
-    "NoMenuCutWarn": "To cut data, use hotkeys",
-    "NoMenuPasteWarn": "To paste data, use hotkeys",
+    "NoMenuCopyWarn": "To copy data, use hotkey",
+    "NoMenuCutWarn": "To cut data, use hotkey",
+    "NoMenuPasteWarn": "To paste data, use hotkey",
     "NotEndingWith": "not ending with",
     "NotEqual": "<>",
     "NotIn": "not listed",
@@ -1714,7 +1719,7 @@
     "LeaveSubmodel": "Move out"
   },
   "mxgraph/handler/PortConnectionAbstract": {
-    "CycleLinksForbiden": "Cyclic links are forbidden"
+    "CycleLinksForbiden": "Cyclic references are forbidden"
   },
   "mxgraph/node/comment/Comment": {
     "CommentBtn": "Show/Hide Comment"
@@ -2094,7 +2099,7 @@
     "ExportToastTitle": "Export from the Cube",
     "HideAllSeries": "Hide all series",
     "HideSingleCase": "Hide single measure",
-    "InvertSeries": "Invert series",
+    "InvertSeries": "Invert series visibility",
     "ResetSerieColor": "Reset color",
     "SeriesOutOfBoundsMsg": "Chart limits exceeded.\nCurrent number of series: {0}.\nMaximum number of series: {1}",
     "ShowAllSeries": "Show all series",
@@ -2107,10 +2112,13 @@
   "viewers/cube/DimensionsFilterPanel": {
     "AndMore": "\nand also {0} values.",
     "CheckAllTooltip": "Check all",
+    "MsgClipboardMaxSizeReached": "Maximum clipboard size limit reached.\n Not all values were copied.",
     "MsgClipboardNoHTTPS": "Connection via HTTPS protocol is required for this operation.",
     "MsgClipboardReadDenied": "Grant Loginom access to clipboard.",
+    "MsgClipboardRejectedValues": "The values that are not present in the current list:\n",
     "MsgClipboardUnrecognizedValues": "Unrecognized values:\n",
     "MsgClipboardUnsupported": "This operation is not supported in our browser.",
+    "MsgClipboardUseHotkey": "\nTo paste data, use hotkey ({0}).",
     "UncheckAllTooltip": "Uncheck all"
   },
   "viewers/cube/PivotDataSource": {

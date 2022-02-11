@@ -1477,7 +1477,7 @@
     "ManagedSessionType": {
       "$Caption": "Session Type of Session Manager",
       "Client": "Remote session",
-      "Self": "Session Manager sesssion",
+      "Self": "Session Manager",
       "Shared": "Shared packages",
       "Pool": "Pool of packages",
       "Backup": "Backup session"
@@ -1788,7 +1788,7 @@
       "Infinity": "Positive infinity",
       "NegInfinity": "Negative infinity",
       "Residue": "Residual values",
-      "Empty": "Null value",
+      "Empty": "Empty",
       "WhiteSpace": "Space value",
       "WhiteSpaces": "Several space values"
     }
@@ -1822,8 +1822,8 @@
       "QualityIndex": "Quality indicator",
       "NullCount": "Nulls",
       "Histogram": "Histogram",
-      "BoxUnique": "Chart of unique",
-      "ExtrCount": "Extreme",
+      "BoxUnique": "Chart of uniques",
+      "ExtrCount": "Extremes",
       "OutCount": "Outliers",
       "EmptyCount": "Empty",
       "SpaceCount": "Whitespaces",

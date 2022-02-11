@@ -639,6 +639,8 @@
     "ErrColumnNullDataFmt": "Failed to generate fine classes for \"%s\" field: all values are null",
     "ErrDataTypesNotMatch": "The specified column data type does not match the data type of the coarse classes",
     "ErrNotPositiveIntervalsCount": "Bin count must be more than 0",
+    "ErrProcessKeptStatisticsExistentValue": "There is no previously present \"%s\" value in \"%s\" field while fine classes building",
+    "ErrProcessKeptStatisticsNonExistentValue": "Previously missing value appeared in \"%s\" field while fine classes building",
     "From": "from ",
     "NullClass": "Null class",
     "To": "to "
@@ -1095,9 +1097,11 @@
     "ErrWrongPreNormLength": "The normalized string size %d differs from nominal %d"
   },
   "components/linregression/LinRegressionBuilder": {
+    "ErrTooLessRowsCount": "Row number (%d) in the training set must not be less than the number of model coefficients (%d)",
     "ErrWrongLinRegContext": "Invalid linear regression model builder context",
     "ErrWrongLinRegModel": "The trained model is not linear regression model",
-    "ErrWrongProbability": "Confidence interval threshold must be within (0, 100)"
+    "ErrWrongProbability": "Confidence interval threshold must be within (0, 100)",
+    "WarnMaxDepthForForwardSelection": "The model coefficients number must be limited by the training sample size. For best results, increase the observations number in the training sample"
   },
   "components/linregression/LinRegressionBuilderContext": {
     "ErrContextCreateNoRows": "The linear regression model builder context cannot be created for empty data set"
@@ -1110,6 +1114,8 @@
     "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrMultipleOutputFields": "Only one output data field allowed",
     "ErrNoLearnData": "The training data set must contain at least two rows",
+    "ErrNoValidationData": "The validation data set must contain at least one row",
+    "ErrNoValidationSet": "Validation partition must be enabled for the automatic selection of regularization coefficient",
     "ErrOutputColumnNotValid": "Invalid specified output column",
     "ErrTeachNoOutputField": "No output data field specified",
     "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data kind, \"%s\" data type",
@@ -1185,6 +1191,8 @@
     "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrNotImplemented": "Functionality not implemented",
+    "ErrNoValidationData": "The validation data set must contain at least one row",
+    "ErrNoValidationSet": "Validation partition must be enabled for the automatic search of regularization coefficient",
     "ErrOutputColumnNotValid": "Invalid specified output column",
     "ErrTeachNoOutputField": "No output data field specified",
     "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data kind, \"%s\" data type",
@@ -1259,7 +1267,7 @@
     "ErrColumnCountChanged": "The column count in the data set differs from the previous iteration",
     "ErrColumnDataTypesChanged": "The column data types in the data set differ from the previous iteration",
     "ErrCompareValueUnassigned": "No comparison value specified for the loop termination condition",
-    "ErrConditionComponentInLoopNotAllowed": "Execution of the Loop component forbidden",
+    "ErrConditionComponentInLoopNotAllowed": "Execution of the Condition in the loop component forbidden",
     "ErrGroupColumnNotFound": "\"%s\" column used for data grouping not found",
     "ErrGroupCountMustBePositive": "Group count must be positive",
     "ErrGroupDataSourceSocketNotFound": "No port with \"%s\" identifier containing columns to group found",
@@ -1306,6 +1314,8 @@
     "CalcModelErrorsProcessCaption": "Quality indicators calculating",
     "CVPassProcessCaption": "Iteration %d",
     "CVProcessCaption": "Cross validation",
+    "CVTrainSetPrepareProcessCaption": "Preparing training set",
+    "CVValidationSetPrepareProcessCaption": "Preparing validation set",
     "DecayDegree": "Decay degree",
     "ErrCannotContinueTraining": "Failed to continue training since the structure of the trained neural network does not correspond to the new training parameters",
     "ErrClassifierUnknownClass": "Unknown class is present in the output classifier column",
@@ -1353,6 +1363,8 @@
     "ErrMultipleOutputs": "Only one output data field allowed",
     "ErrNetworkUntrained": "Neural network is untrained",
     "ErrNoInputFields": "No input data fields specified",
+    "ErrNoLearnData": "The training data set must contain at least two rows",
+    "ErrNoValidationData": "The validation data set must contain at least one row",
     "ErrTeachNoOutputFields": "No output data fields specified In the training mode",
     "ErrUnbalancedEndUpdateNeuralNetParameters": "Call of EndUpdateNeuralNetParameters without corresponding BeginUpdateNeuralNetParameters",
     "ErrWrongModelInput": "Input columns do not match previously trained model",
@@ -1420,7 +1432,7 @@
     "CreateDateFrameFromInputTable": "Create pd.DataFrame by input data set No1",
     "ErrCurrentDirectory": "Failed to get current directory",
     "ErrDisallowedExecution": "Python execution forbidden by security settings",
-    "ErrGetNativePath": "Failed to resolve filesystem path for \"%s\" local storage path",
+    "ErrGetNativePath": "Failed to calculate the file system path using \"%s\" file storage path",
     "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
     "ErrVerifyPythonIsBusy": "Python is busy. Failed to start syntax check",
     "ErrWaitTimeoutElapsed": "Failed to capture Python during the given timeout as the Python script is still being executed in another node.",
@@ -1461,8 +1473,8 @@
   },
   "components/python/PythonUtils": {
     "ErrLoadedExtensionRegistrationFailed": "Error in service script for Python extensions loading registration",
-    "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object to the value related to the variant type is not supported",
-    "ErrPyObjectFromVariantUnsupported": "Transformation of the passed value related to the variant type to the Python object is not supported"
+    "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object into variant type value is not supported",
+    "ErrPyObjectFromVariantUnsupported": "Transformation of the passed variant type value into Python object is not supported"
   },
   "components/python/PythonVendor": {
     "VendorCaption": "Python",
@@ -1813,7 +1825,7 @@
   "exports/tableau/ExportTableau": {
     "AddToTableNotify": "Addition of records to table",
     "ErrAPIInit": "Tableau API initialization error",
-    "ErrAppendOverwriteForbidden": "Simultaneous records addition and overwrite are forbidden",
+    "ErrAppendOverwriteForbidden": "Simultaneous records addition and overwriting are forbidden",
     "ErrCantCreateEmptyTable": "Failed to create empty table",
     "ErrColumnNotFound": "\"%s\" field not found in the data source",
     "ErrColumnTypesMismatch": "\"%s\" field type is not compatible with \"%s\" source field type",
@@ -1828,7 +1840,7 @@
     "ErrHyperExtractSDKNotFound": "Tableau Extract API 2.0 SDK not installed",
     "ErrHyperNotSupportedInWin32": "\"*.hyper\" data format suported only in 64-bit software version",
     "ErrMissingServerConnection": "No connection with Tableau server",
-    "ErrNoColumnDefs": "No column definitions",
+    "ErrNoColumnDefs": "Column definitions missing",
     "ErrNoFileStorage": "No file storage found",
     "ErrProjectNameNotSelected": "No project name specified",
     "ErrServerFileNameNotSelected": "No source name specified on server",
@@ -1938,7 +1950,7 @@
   },
   "imports/native/DDFTupleCompatibilityReader": {
     "BadNativeStringData": "Invalid string data",
-    "BadNativeVariantData": "Invalid Variant data type",
+    "BadNativeVariantData": "Invalid Variant data",
     "CanNotConvert": "Failed to convert data to 32-bit format"
   },
   "imports/native/DDFTupleOldRowCachedConverter": {
@@ -1951,7 +1963,7 @@
   },
   "imports/native/DDFTupleReader": {
     "BadNativeStringData": "Invalid string data",
-    "BadNativeVariantData": "Invalid Variant data type",
+    "BadNativeVariantData": "Invalid Variant data",
     "DifferentMetaData": "Metadata does not comply with the previously declared metadata",
     "NegativeRowsCount": "Invalid rows count %d is specified in the file header",
     "OutOfMaximumRows": "File contains too many rows"
@@ -1981,6 +1993,7 @@
     "ErrDateTimeTypeCast": "Failed to convert \"%s\" value in \"%s\" column to date/time.",
     "ErrFloatTypeCast": "Failed to convert \"%s\" value in \"%s\" column to real number.",
     "ErrIntegerTypeCast": "Failed to convert \"%s\" value in \"%s\" column to integer.",
+    "ErrMaxBytesCountReaded": "While parsing the text file %d limit of %d reading of maximum number of bytes reached",
     "ErrParseFmt": "Error occurred while parsing line %d: %s",
     "ErrUnsupportedCodePage": "Codepage %d not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
@@ -2195,6 +2208,7 @@
   "Libraries/bgrtl/ClipboardAdapter": {
     "ErrHTMLFormatNotImplemented": "Invalid clipboard format. Only text/plain is supported",
     "ErrReadForbidden": "It is forbidden to read values",
+    "ErrUnsupportedDelimiter": "Only CR+LF and LF line breaks are supported",
     "ErrWriteForbidden": "It is forbidden to write values"
   },
   "Libraries/bgrtl/ColumnDefs": {
@@ -2597,7 +2611,7 @@
     "ErrInvalidDateTime": "\"%s\" string cannot be converted to the date/time value",
     "ErrInvalidFloat": "\"%s\" string cannot be converted to the real type value",
     "LocaleInvariant": "Invariant",
-    "NotSet": "Explicitly not set",
+    "NotSet": "Unspecified",
     "NullValue": "<Null>"
   },
   "Libraries/bgrtl/SyncObjs": {
@@ -2703,7 +2717,7 @@
   "Libraries/bgrtl/TupleVarUtils": {
     "BadNativeArrayStringData": "Invalid Variant array string data",
     "BadVariantArrayData": "Invalid Variant array data",
-    "BadVariantData": "Invalid Variant data type",
+    "BadVariantData": "Invalid Variant data",
     "BadVariantType": "Unsupported Variant subtype",
     "CanNotConvert": "Failed to convert data to 32-bit format"
   },
@@ -2821,7 +2835,7 @@
     "ErrLibraryVersionNotFound": "%s ^%d.%d library not found"
   },
   "Libraries/ChakraCore/ChakraValue": {
-    "ErrJsValuetAsVariantUnsupported": "Transformation of the passed JavaScript object to the value related to the variant type is not supported"
+    "ErrJsValuetAsVariantUnsupported": "Transformation of the passed JavaScript object to variant type value is not supported"
   },
   "Libraries/Config/Config": {
     "ErrAttributeNotExist": "%s attribute does not exist.",
@@ -3181,9 +3195,9 @@
   "Libraries/Model/DerivedModelUnitAspects": {
     "ErrCannotChangeDerivedName": "It is forbidden to change the derived ports name",
     "ErrCannotChangeDerivedSocketType": "It is forbidden to change the derived ports data type",
-    "ErrCannotDeleteDerivedConnections": "Failed to delete derived connections",
+    "ErrCannotDeleteDerivedConnections": "Failed to delete the derived connections",
     "ErrCannotDeleteDerivedSocket": "It is forbidden to delete the derived ports",
-    "ErrCannotDeleteDerivedVendors": "It is forbidden to delete derived components"
+    "ErrCannotDeleteDerivedVendors": "It is forbidden to delete the derived components"
   },
   "Libraries/Model/Generic/ModelGenericComponent": {
     "ErrInputSocketDefsEmptyName": "No name of the following inputs specified: ",
@@ -3281,7 +3295,7 @@
     "ErrCantPasteDerivedInsideBase": "Failed to move \"%s\" derived node inside \"%s\" base node",
     "ErrCantPasteInsideSelf": "Failed to move \"%s\" node inside itself",
     "ErrCantRestoreReferenceNode": "Failed to restore link from \"%s\" node. \"%s\" source node is not available at the required destination.",
-    "ErrCycleFound": "Circular reference between nodes detected!",
+    "ErrCycleFound": "Circular link between nodes detected!",
     "ErrDuringMove": "Errors occurred while nodes moving",
     "ErrLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node",
     "ErrMovedVendorUnavailableForNode": "Moved %s derived component is unavailable for %s node.",
@@ -3291,8 +3305,9 @@
     "ErrNoTargetModelUnit": "Target module not found",
     "ErrSomeNodeDisposed": "One or several source nodes have been deleted or moved",
     "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
-    "ErrVendorNotFound": "\"%s\" component not found",
+    "ErrVendorNotFound": "Derived \"%s\" component not found. Perhaps, this component could be deleted.",
     "ErrVendorUnavailableForMovedNode": "%s derived component is unavailable for moved %s node.",
+    "ErrVendorWithDependentNodeNotFound": "Derived \"%s\" component referenced by \"%s\" node not found. Perhaps, this component could be deleted.",
     "ForceRepeatMovingForbidden": "Repeated forced move operation is forbidden",
     "MoveNodesCaption": "Nodes Moved",
     "OperationCanceled": "Operation canceled",
@@ -3302,7 +3317,8 @@
   "Libraries/Model/ModelPackage": {
     "ErrAlienModelUnit": "Node does not belong to the current package",
     "ErrCannotRevivePackageLink": "Failed to restore the reference to the package with %s name and %s version",
-    "ErrCircularPackageLinksNotAllowed": "Circular links between packages are not allowed",
+    "ErrCannotRevivePackageLinkAlternativeHintPath": "Failed to restore reference to the package with \"%s\" file name and %s version. Instead \"%s\" file was found. Perhaps, invalid path to the file was specified in the package reference settings.",
+    "ErrCircularPackageLinksNotAllowed": "Circular references between packages \"%s\" and \"%s\" are not allowed",
     "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system",
     "ErrPackageLinkAlreadyExists": "Reference to \"%s\" package already exists",
     "ErrPackageLinkToSelfNotAllowed": "Package cannot have a self-reference",
@@ -3850,7 +3866,7 @@
     "ErrCannotGetPackageRef": "Failed to get the object reference to the package with %s name",
     "ErrCannotSaveEncryptedPackage": "Failed to save encrypted package with %s name",
     "ErrCannotSaveReadOnlyPackage": "Failed to save %s read-only package",
-    "ErrCircularPackageLink": "\"%s\" package contains circular link to itself",
+    "ErrCircularPackageLink": "\"%s\" package contains circular reference to itself",
     "ErrComparePackagesError": "Error occurred while comparing \"%s\" package file with edited copy in the memory",
     "ErrDeductorServerSessionNotInitialized": "Loginom server session not initialized",
     "ErrDuplicatePublishedNodeName": "The package contains more than one published node with \"%s\" name",
@@ -3923,7 +3939,7 @@
     "ErrAccessDenied": "Access denied",
     "ErrApplicationModeNotAllowed": "Connection in \"%s\" mode not allowed",
     "ErrCannotDeleteStandartUserGroup": "Failed to delete the standard group",
-    "ErrFileStorageNotReadyYet": "User file storage still not prepared",
+    "ErrFileStorageNotReadyYet": "User file storage is still being prepared",
     "ErrInvalidPasswordHashInConfig": "Configuration file contains invalid password hash",
     "ErrInvalidUserNameOrPassword": "Invalid username or password",
     "ErrLastAdminChangeDenied": "Failed to delete or change the single %s admin account with local authentication",
@@ -4085,17 +4101,18 @@
     "ErrCalculationExpression": "Error occurred while calculating the expression corresponding to calculated measure \"%s\"",
     "ErrExprResultIsString": "The expression result is of string type",
     "ErrParseExpression": "Error occurred while parsing the expression corresponding to calculated measure \"%s\"",
-    "ErrRecursiveCall": "Circular reference between calculated measures detected: %s"
+    "ErrRecursiveCall": "Circular dependency between calculated measures detected: %s"
   },
   "Viewers/Cube/CubeChart": {
-    "ErrAlreadyExists": "The measure display with index %d already exists in the cube chart",
-    "ErrDataType": "Failed to use the measure display with nonnumeric data type in the cube chart",
-    "ErrHeadersNotCached": "Failed to query the data before requesting headers names",
-    "ErrNotExists": "The measure display with index %d does not exist in the cube chart",
+    "ErrAlreadyExists": "The measure display with index %d already present in the cube chart",
+    "ErrDataType": "Failed to use the measure display of nonnumeric data type in the cube chart",
+    "ErrHeadersNotCached": "Failed to query data before requesting headers names",
+    "ErrNotExists": "The measure display with index %d is not present in the cube chart",
     "MaxDotsCountDesc": "Maximum dots count",
     "MaxSeriesCountDesc": "Maximum series count"
   },
   "Viewers/Cube/CubeDimensions": {
+    "ErrClipboardAdapterOpened": "It is forbidden to start the clipboard operation until the current operation is finished.",
     "MsgMissingDimensionInColumn": "\"%s\" field matching the dimension in \"%s\" column not found in the data set.",
     "MsgMissingDimensionInRow": "\"%s\" field matching the dimension in \"%s\" row not found in the data set.",
     "MsgNoValues": "No values"

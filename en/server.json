@@ -2315,7 +2315,7 @@
   "Libraries/bgrtl/DerivedCollectionItemAspects": {
     "ErrCannotChangeDerivedCollectionItemName": "It is not possible to change the derived collection item name",
     "ErrCannotChangeDerivedFieldDataType": "It is not possible to change the derived field data type",
-    "ErrCannotDeleteDerivedCollectionItem": "It is not possible to delete the derived collection item name",
+    "ErrCannotDeleteDerivedCollectionItem": "It is not possible to delete the derived collection item",
     "ErrCannotMoveDerivedCollectionItem": "It is not possible to change position of the derived collection items"
   },
   "Libraries/bgrtl/DerivedDataSet": {

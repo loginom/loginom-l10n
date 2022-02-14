@@ -1893,22 +1893,6 @@
     "ErrInvalidUInt32": "\"{0}\" is not valid unsigned integer value",
     "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value"
   },
-  "test/Instruments": {
-    "DragAndDropOffset": "Смещение координат при Drag'n'Drop: X: {0}, Y: {1}",
-    "FailedFetchingTestId": "Не удалось найти элемент с тестовым идентификатором в этом месте",
-    "FailedGettinScrolledElement": "Не удалось найти элемент с позицией скроллов (отличной от нуля) в этом месте",
-    "NoClipboardAPI": "API браузера для сохранения текста в буфер обмена работает только через HTTPS протокол, начиная с 66 версии Chrome и 63 Firefox",
-    "ScrollPosition": "Позиция скролла: ",
-    "TestIdSavedInClipBoard": "Идентификатор \"{0}\" сохранен в буфер обмена",
-    "WorkaroundClipboardCopy": "Альтернативный вариант копирования в буфер обмена работает только в Chrome, FireFox, Opera и Safari"
-  },
-  "test/Main": {
-    "ShouldBeUniqTestId": "Тестовый идентификатор '{0}' не уникален в рамках текущего DOM. Это не критичная ситуация (т.к. сейчас видим только один элемент с таким идентификатором), но по возможности этого стоит избегать.",
-    "ShouldBeUniqTestIdAmongVisible": "Тестовый идентификатор '{0}' не уникален в рамках текущего DOM среди видимых элементов"
-  },
-  "test/TestIdentifier": {
-    "TableCellWithoutTestId": "Ячейка таблицы без тестового идентификатора"
-  },
   "viewers/BaseView": {
     "ErrViewIsPanel": "Визуализатор должен быть наследником Ext.panel.Panel",
     "WarnViewerObjectDeleted": "Обработка события изменения статуса визуализатора \"{0}\" отменена, так как визуализатор был асинхронно удалён"

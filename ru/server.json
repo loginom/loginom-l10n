@@ -2623,12 +2623,6 @@
     "ErrSlimReadWriteLockDebugTryUpgradeToWriteSameThread": "Некорректный вызов метода увеличения уровня блокировки синхронизатора %p с блокировки на чтение до блокировки на запись",
     "ErrSlimReadWriteLockDebugUnLockRead": "Нельзя снять блокировку на чтение с синхронизатора %p, предварительно не заблокировав его на чтение",
     "ErrSlimReadWriteLockDebugUnLockWrite": "Нельзя снять блокировку на запись с синхронизатора %p, предварительно не заблокировав его на запись",
-    "ErrSlimReadWriteLockDowngradeToRead": "Ошибка понижения уровня у синхронизатора %p с блокировки на запись до блокировки на чтение",
-    "ErrSlimReadWriteLockFinalize": "Синхронизатор %p не может быть удален, т.к. он еще используется",
-    "ErrSlimReadWriteLockLockRead": "Невозможно заблокировать синхронизатор %p на чтение",
-    "ErrSlimReadWriteLockLockWrite": "Невозможно заблокировать синхронизатор %p на запись",
-    "ErrSlimReadWriteLockUnLockRead": "Ошибка снятия с синхронизатора %p блокировки на чтение",
-    "ErrSlimReadWriteLockUnLockWrite": "Ошибка снятия с синхронизатора %p блокировки на запись",
     "ErrSpinLockFinalize": "Синхронизатор %p не может быть использован, т.к. он уже финализирован",
     "ErrWaitCount": "Недопустимое кол-во объектов %d для выполнения операции ожидания"
   },
@@ -2748,7 +2742,6 @@
   },
   "Libraries/bgrtl/Utils": {
     "DaysNick": "дн.",
-    "ErrContainerAlreadyIncludeClass": "Контейнер уже содержит класс %s",
     "ErrInvalidHexStr": "Строка \"%s\" не является правильным представлением шестнадцатеричного числа",
     "ErrIsNotValidSet": "Строка \"%s\" не является правильным представлением множества"
   },

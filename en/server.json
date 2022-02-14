@@ -1993,7 +1993,7 @@
     "ErrDateTimeTypeCast": "Failed to convert \"%s\" value in \"%s\" column to date/time.",
     "ErrFloatTypeCast": "Failed to convert \"%s\" value in \"%s\" column to real number.",
     "ErrIntegerTypeCast": "Failed to convert \"%s\" value in \"%s\" column to integer.",
-    "ErrMaxBytesCountReaded": "While parsing the text file %d limit of %d reading of maximum number of bytes reached",
+    "ErrMaxBytesCountReaded": "While parsing the text file %d limit of reading of maximum number of bytes reached",
     "ErrParseFmt": "Error occurred while parsing line %d: %s",
     "ErrUnsupportedCodePage": "Codepage %d not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",

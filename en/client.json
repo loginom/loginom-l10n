@@ -1892,22 +1892,6 @@
     "ErrInvalidUInt32": "\"{0}\" is not valid unsigned integer value",
     "ErrInvalidUInt64": "\"{0}\" is not valid unsigned long integer value"
   },
-  "test/Instruments": {
-    "DragAndDropOffset": "Coordinates offset when using Drag'n'Drop: X: {0}, Y: {1}",
-    "FailedFetchingTestId": "Failed to find item with text identifier in this place",
-    "FailedGettinScrolledElement": "Failed to find the item with scroll position (different from zero) in this place",
-    "NoClipboardAPI": "Browser API to save text to clipboard is available only via HTTPS protocol starting from Chrome 66 and Firefox 63",
-    "ScrollPosition": "Scroll position: ",
-    "TestIdSavedInClipBoard": "\"{0}\" identifier saved to clipboard",
-    "WorkaroundClipboardCopy": "Alternative option of copying to clipboard is available only in Chrome, FireFox, Opera and Safari"
-  },
-  "test/Main": {
-    "ShouldBeUniqTestId": "'{0}'  test identifier is not unique within the frames of the current DOM. It is no a critical situation (as only one item with such identifier is visible now). But it is recommended to avoid such situation when possible.",
-    "ShouldBeUniqTestIdAmongVisible": "'{0}'  test identifier is not unique within the frames of the current DOM among visible items"
-  },
-  "test/TestIdentifier": {
-    "TableCellWithoutTestId": "Table cell without test identifier"
-  },
   "viewers/BaseView": {
     "ErrViewIsPanel": "Visualizer must be Ext.panel.Panel descendant",
     "WarnViewerObjectDeleted": "Processing of \"{0}\" visualizer status change event was canceled because the visualizer was asynchronously deleted"

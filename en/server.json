@@ -2623,12 +2623,6 @@
     "ErrSlimReadWriteLockDebugTryUpgradeToWriteSameThread": "Incorrect call of the method required to increase the synchronizer lock level %p from read lock to write lock",
     "ErrSlimReadWriteLockDebugUnLockRead": "Failed to release read lock from synchronizer %p without first blocking it for reading",
     "ErrSlimReadWriteLockDebugUnLockWrite": "Failed to release write lock from synchronizer %p without first blocking it for writing",
-    "ErrSlimReadWriteLockDowngradeToRead": "Synchronizer %p downgrade error from write lock to read lock",
-    "ErrSlimReadWriteLockFinalize": "Synchronizer %p cannot be deleted as it has been still being used",
-    "ErrSlimReadWriteLockLockRead": "Failed to lock synchronizer %p for reading",
-    "ErrSlimReadWriteLockLockWrite": "Failed to lock synchronizer %p for writing",
-    "ErrSlimReadWriteLockUnLockRead": "Error releasing read locks of synchronizer %p",
-    "ErrSlimReadWriteLockUnLockWrite": "Error releasing write locks of synchronizer %p",
     "ErrSpinLockFinalize": "Synchronizer %p cannot be used as it has already been finalized",
     "ErrWaitCount": "Invalid count of %d objects for waiting operation"
   },
@@ -2748,7 +2742,6 @@
   },
   "Libraries/bgrtl/Utils": {
     "DaysNick": "days",
-    "ErrContainerAlreadyIncludeClass": "Container already includes %s class",
     "ErrInvalidHexStr": "\"%s\" string is not a valid view of the sexadecimal number",
     "ErrIsNotValidSet": "\"%s\" string is not a valid set representation"
   },

@@ -893,9 +893,6 @@
     "VendorCaption": "Факторный анализ",
     "VendorDesc": "Определение значимых факторов"
   },
-  "components/filterdata/CheckedCollection": {
-    "Checked": "Отмеченный"
-  },
   "components/filterdata/FilterColumns": {
     "CompareTipFmt": "%s и %s",
     "DayFirstPostfix": "первый",
@@ -1551,19 +1548,6 @@
   "components/sampling/SamplingVendor": {
     "VendorCaption": "Сэмплинг",
     "VendorDesc": "Формирование репрезентативного подмножества"
-  },
-  "components/search/Search": {
-    "ErrDataSourceIsNil": "Ссылка на источник данных не проинициализирована",
-    "ErrDataSourceNotActive": "Невозможно начать поиск. Источник данных не подключен",
-    "ErrNoDataSource": "Невозможно начать поиск. Нет источника данных",
-    "ErrNotFound": "Строка %s = \"%s\" не найдена",
-    "ErrZeroCount": "Невозможно начать поиск, нет записей"
-  },
-  "components/search/TreeViewSearch": {
-    "NodeCaption": "Описание",
-    "NodeDisplayName": "Метка узла",
-    "NodeIndex": "Индекс узла",
-    "NodeName": "Имя узла"
   },
   "components/slidingwindow/SlidingWindow": {
     "ErrOutputColCountOverflow": "Указаны слишком большие значения Глубина истории и/или Горизонт прогноза"
@@ -2517,13 +2501,6 @@
     "ErrStreamWriteBuffer": "При записи байтов в поток данных вместо %d было записано %d",
     "ErrStreamWriteBufferInvalidParams": "Не допустимые значения параметров при записи в поток данных: Length = %d; Count = %d; Offset = %d",
     "ErrStreamWriteBufferLength": "При записи в поток данных размер исходного буфера %d меньше чем число байт необходимое для записи %d"
-  },
-  "Libraries/bgrtl/LinkClnt": {
-    "ErrUnLock": "Метод UnLock был вызван без метода Lock"
-  },
-  "Libraries/bgrtl/LinkSrvr": {
-    "LockError": "Метод UnLock был вызван без метода Lock",
-    "UpdateError": "Метод EndUpdate был вызван без метода BeginUpdate"
   },
   "Libraries/bgrtl/LocaleUtils": {
     "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается системой"
@@ -3988,24 +3965,6 @@
     "LogAddDirectory": "Создана общая директория %s",
     "LogDeleteDirectory": "Удалена общая директория %s",
     "SharedDirectoryMetaDesc": "Общая директория"
-  },
-  "Studio/SolutionTree": {
-    "Connection": "Подключение",
-    "Connections": "Подключения",
-    "ErrInstanceAlreadyExist": "Идентификатору уже сопоставлен визуальный узел",
-    "ErrInstanceNotFound": "Для идентификатора не существует сопоставленного визуального узла",
-    "InputPorts": "Входные порты",
-    "ModelNodes": "Узлы",
-    "ModelUnit": "Модуль",
-    "ModelViews": "Визуализаторы",
-    "OutputPorts": "Выходные порты",
-    "References": "Ссылки",
-    "Reports": "Отчеты",
-    "ServiceInputPorts": "Служебные входные порты",
-    "ServiceOutputPorts": "Служебные выходные порты",
-    "Variables": "Переменные",
-    "Vendors": "Компоненты",
-    "WorkFlow": "Сценарий"
   },
   "Viewers/Browse/BrowseView": {
     "ErrExportBusy": "Нельзя экспортировать таблицу во время изменения данных",

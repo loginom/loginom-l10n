@@ -1184,7 +1184,7 @@
     "CVRMSError": "Root-mean-square error in cross validation",
     "DFE": "Degrees of freedom for error",
     "ErrClassifierMultipleOutputs": "Only one output field is allowed for the classification task, %d is currently specified",
-    "ErrEmptyTestSet": "Empty test set cannot be used for introduction of event weight correction",
+    "ErrEmptyTestSet": "Empty test set cannot be used for event weight correction",
     "ErrInvalidFieldsSettings": "Invalid input data set field settings",
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrNotImplemented": "Functionality not implemented",
@@ -2026,8 +2026,8 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
     "ErrColNotNullable": "\"%s\" column (%s type) cannot have Null values",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
-    "ErrColValueOutOfRange": "Value %g is out of range of the allowed \"%s\" column range (%s type)",
-    "ErrColValueOutOfRangeInt": "Value %d is out of range of the allowed \"%s\" column range (%s type)",
+    "ErrColValueOutOfRange": "Value %g is out of range for column \"%s\" (type %s)",
+    "ErrColValueOutOfRangeInt": "Value %d is out of range for column \"%s\" (type %s)",
     "ErrColValueOutOfRangeString": "\"%s\" string length exceeds the length allowed for \"%s\" column (%s type)",
     "ErrConvertFloatToDecimal": "Failed to convert the real value %g to the Decimal value (\"%s\" column)",
     "ErrUnsupportedDataType": "Column data type \"%s\" not supported"

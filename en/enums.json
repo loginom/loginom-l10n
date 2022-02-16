@@ -1796,7 +1796,7 @@
   "Viewers/DataQuality/QualityViewTypes": {
     "DataSetQuality": {
       "$Caption": "Data set quality",
-      "DetectOE": "Non-standard values determination method",
+      "DetectOE": "Determination of outliers and extreme values",
       "ColCount": "Columns",
       "RowCount": "Rows",
       "FullColumns": "Fully filled fields",

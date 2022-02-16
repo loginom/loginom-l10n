@@ -893,9 +893,6 @@
     "VendorCaption": "Factor Analysis",
     "VendorDesc": "Identification of significant factors"
   },
-  "components/filterdata/CheckedCollection": {
-    "Checked": "Checked"
-  },
   "components/filterdata/FilterColumns": {
     "CompareTipFmt": "%s and %s",
     "DayFirstPostfix": "first",
@@ -1551,19 +1548,6 @@
   "components/sampling/SamplingVendor": {
     "VendorCaption": "Sampling",
     "VendorDesc": "Selection of representative subset"
-  },
-  "components/search/Search": {
-    "ErrDataSourceIsNil": "Reference to data source not initialized",
-    "ErrDataSourceNotActive": "Failed to start search. No data source connected",
-    "ErrNoDataSource": "Failed to start search. No data source",
-    "ErrNotFound": "%s = \"%s\" string not found",
-    "ErrZeroCount": "Failed to start search, no records"
-  },
-  "components/search/TreeViewSearch": {
-    "NodeCaption": "Description",
-    "NodeDisplayName": "Node caption",
-    "NodeIndex": "Node index",
-    "NodeName": "Node name"
   },
   "components/slidingwindow/SlidingWindow": {
     "ErrOutputColCountOverflow": "Too high values are specified for Depth period and/or Forecast horizon"
@@ -2517,13 +2501,6 @@
     "ErrStreamWriteBuffer": "When writing bytes to the data stream, %d was written instead of %d",
     "ErrStreamWriteBufferInvalidParams": "Invalid parameter values when writing to the data stream: Length = %d; Count = %d; Offset = %d",
     "ErrStreamWriteBufferLength": "When writing to the data stream, the size of the initial buffer %d is less than the number of bytes required for writing %d"
-  },
-  "Libraries/bgrtl/LinkClnt": {
-    "ErrUnLock": "UnLock method was called without Lock method"
-  },
-  "Libraries/bgrtl/LinkSrvr": {
-    "LockError": "UnLock method was called without Lock method",
-    "UpdateError": "EndUpdate method was called without BeginUpdate method"
   },
   "Libraries/bgrtl/LocaleUtils": {
     "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system"
@@ -3988,24 +3965,6 @@
     "LogAddDirectory": "%s shared directory created",
     "LogDeleteDirectory": "%s shared directory deleted",
     "SharedDirectoryMetaDesc": "Shared directory"
-  },
-  "Studio/SolutionTree": {
-    "Connection": "Connection",
-    "Connections": "Connections",
-    "ErrInstanceAlreadyExist": "ID already mapped to visual node",
-    "ErrInstanceNotFound": "There is no associated visual node for ID",
-    "InputPorts": "Input ports",
-    "ModelNodes": "Nodes",
-    "ModelUnit": "Module",
-    "ModelViews": "Visualizers",
-    "OutputPorts": "Output ports",
-    "References": "References",
-    "Reports": "Reports",
-    "ServiceInputPorts": "Service input ports",
-    "ServiceOutputPorts": "Service output ports",
-    "Variables": "Variables",
-    "Vendors": "Components",
-    "WorkFlow": "Workflow"
   },
   "Viewers/Browse/BrowseView": {
     "ErrExportBusy": "Failed to export table in the process of data modification",

@@ -42,9 +42,6 @@
     "colOverviewIndex": {
       "maxWidth": 55,
       "width": 42
-    },
-    "colDataSetParam": {
-      "width": 280
     }
   },
   "viewers/statistics/StatView": {

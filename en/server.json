@@ -1112,7 +1112,7 @@
     "ErrMultipleOutputFields": "Only one output data field allowed",
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrNoValidationData": "The validation data set must contain at least one row",
-    "ErrNoValidationSet": "Validation partition must be enabled for the automatic selection of regularization coefficient",
+    "ErrNoValidationSet": "Validation partition must be enabled for the automatic search for regularization coefficient",
     "ErrOutputColumnNotValid": "Invalid specified output column",
     "ErrTeachNoOutputField": "No output data field specified",
     "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data kind, \"%s\" data type",
@@ -1189,7 +1189,7 @@
     "ErrNoLearnData": "The training data set must contain at least two rows",
     "ErrNotImplemented": "Functionality not implemented",
     "ErrNoValidationData": "The validation data set must contain at least one row",
-    "ErrNoValidationSet": "Validation partition must be enabled for the automatic search of regularization coefficient",
+    "ErrNoValidationSet": "Validation partition must be enabled for the automatic search for regularization coefficient",
     "ErrOutputColumnNotValid": "Invalid specified output column",
     "ErrTeachNoOutputField": "No output data field specified",
     "ErrWrongInputField": "Invalid \"%s\" input field properties, \"%s\" data kind, \"%s\" data type",
@@ -1470,8 +1470,8 @@
   },
   "components/python/PythonUtils": {
     "ErrLoadedExtensionRegistrationFailed": "Error in service script for Python extensions loading registration",
-    "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object into variant type value is not supported",
-    "ErrPyObjectFromVariantUnsupported": "Transformation of the passed variant type value into Python object is not supported"
+    "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object into the variant type value is not supported",
+    "ErrPyObjectFromVariantUnsupported": "Transformation of the passed variant type value into the Python object is not supported"
   },
   "components/python/PythonVendor": {
     "VendorCaption": "Python",
@@ -2026,8 +2026,8 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
     "ErrColNotNullable": "\"%s\" column (%s type) cannot have Null values",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
-    "ErrColValueOutOfRange": "Value %g is out of range for column \"%s\" (type %s)",
-    "ErrColValueOutOfRangeInt": "Value %d is out of range for column \"%s\" (type %s)",
+    "ErrColValueOutOfRange": "Value %g is out of allowed range for column \"%s\" (type %s)",
+    "ErrColValueOutOfRangeInt": "Value %d is out of allowed range for column \"%s\" (type %s)",
     "ErrColValueOutOfRangeString": "\"%s\" string length exceeds the length allowed for \"%s\" column (%s type)",
     "ErrConvertFloatToDecimal": "Failed to convert the real value %g to the Decimal value (\"%s\" column)",
     "ErrUnsupportedDataType": "Column data type \"%s\" not supported"
@@ -2805,7 +2805,7 @@
     "ErrLibraryVersionNotFound": "%s ^%d.%d library not found"
   },
   "Libraries/ChakraCore/ChakraValue": {
-    "ErrJsValuetAsVariantUnsupported": "Transformation of the passed JavaScript object to variant type value is not supported"
+    "ErrJsValuetAsVariantUnsupported": "Transformation of the passed JavaScript object into the variant type value is not supported"
   },
   "Libraries/Config/Config": {
     "ErrAttributeNotExist": "%s attribute does not exist.",
@@ -4053,13 +4053,13 @@
     "ErrCalculationExpression": "Error occurred while calculating the expression corresponding to calculated measure \"%s\"",
     "ErrExprResultIsString": "The expression result is of string type",
     "ErrParseExpression": "Error occurred while parsing the expression corresponding to calculated measure \"%s\"",
-    "ErrRecursiveCall": "Circular dependency between calculated measures detected: %s"
+    "ErrRecursiveCall": "Circular dependence between calculated measures detected: %s"
   },
   "Viewers/Cube/CubeChart": {
-    "ErrAlreadyExists": "The measure display with index %d already present in the cube chart",
+    "ErrAlreadyExists": "The measure with display index %d is already present in the cube chart",
     "ErrDataType": "Failed to use the measure display of nonnumeric data type in the cube chart",
     "ErrHeadersNotCached": "Failed to query data before requesting headers names",
-    "ErrNotExists": "The measure display with index %d is not present in the cube chart",
+    "ErrNotExists": "The measure with display index %d is not present in the cube chart",
     "MaxDotsCountDesc": "Maximum dots count",
     "MaxSeriesCountDesc": "Maximum series count"
   },

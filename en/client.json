@@ -317,7 +317,7 @@
     "ErrIncorrectVersionFormat": "Invalid version format",
     "ErrInvalidPackageName": "\"{0}\" is invalid package name",
     "Later": "Later",
-    "MsgNewLocaleAfterReopen": "New locale will be applied when the package and all opened packages that depend on it are closed.",
+    "MsgNewLocaleAfterReopen": "New locale will be applied when the package and all opened dependent packages are closed.",
     "NotSet": "Unspecified ({0})",
     "QuestionSaveAndReopenPackage": "New locale will be applied when packages and all opened packages that depend on it are closed.\nDo you want to save the package and reopen it now?",
     "Reopen": "Reopen"
@@ -646,7 +646,7 @@
     "NotLink": "not linked",
     "RemoveAllDataTreeNodesConfirm": "Do you really want to delete all nodes?",
     "RemoveNodeWithChildsConfirm": "Do you really want to delete \"{0}\" node with child nodes?",
-    "WarnCannotDeleteRootNode": "Failed to delete root node"
+    "WarnCannotDeleteRootNode": "It is not possible to delete root node"
   },
   "components/datatovariables/DataToVariablesWizard": {
     "DataToVariablesTitle": "Table into Variables",

@@ -123,8 +123,11 @@
     "ErrHTTPNetRequest": "Запрос к URL \"%s\" завершился с ошибкой"
   },
   "Common/HTTP/SynapseHTTPSend": {
-    "ErrFailedToMakeHTTPRequest": "Ошибка при выполнениии HTTP запроса. TCP/IP Socket error %d: %s",
-    "ErrMaximumRedirectReached": "Превышено максимальное число переадресаций на: %s"
+    "ErrHTTPResult": "Ошибка при выполнениии HTTP запроса. Status code %d: %s",
+    "ErrHTTPSocket": "Ошибка при выполнениии HTTP запроса. TCP/IP Socket error %d: %s",
+    "ErrMaximumRedirectReached": "Превышено максимальное число переадресаций на: %s",
+    "ErrStreamIsDirectReadOnly": "Случайный доступ к данным потока невозможен",
+    "ErrStreamSizeUnspecified": "Размер даных потока не определен"
   },
   "Common/JavaScript/JavaScriptModuleLoader": {
     "ErrModuleFileTooBig": "Файл модуля %s не может быть загружен: превышено ограничение на допустимый размер файла (%d > %d байт)",
@@ -1059,6 +1062,7 @@
     "VendorDesc": "Группировка данных"
   },
   "components/javascript/JavaScriptEngine": {
+    "ErrInvalidPath": "Некорректный путь \"%s\"",
     "InputDataSource": "Входной источник данных",
     "JavaScriptConfigureOutputTable": "Подготовка выходных столбцов",
     "OutputDataSet": "Выходной набор данных"
@@ -1097,7 +1101,6 @@
     "ErrTooLessRowsCount": "Количество строк (%d) в обучающем наборе не должно быть меньше количества коэффициентов (%d) модели",
     "ErrWrongLinRegContext": "Неправильный контекст построителя модели линейной регрессии",
     "ErrWrongLinRegModel": "Обучаемая модель не является моделью линейной регрессии",
-    "ErrWrongProbability": "Значение порога доверительного интервала должно быть в пределах (0, 100)",
     "WarnMaxDepthForForwardSelection": "Количество коэффициентов модели было ограничено размером обучающей выборки. Для лучшего результата увеличьте количество наблюдений в обучающей выборке"
   },
   "components/linregression/LinRegressionBuilderContext": {
@@ -1469,9 +1472,10 @@
     "TableSet": "Set($self, col, value, /)\n--\n\nУстановить значение в ячейку добавленной строки\nАргументы:\n  col: Union[int, str]\n    Индекс или имя столбца таблицы\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    Значение совместимого со столбцом типа (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time и их наследники) или None\nРезультат:\n  None"
   },
   "components/python/PythonUtils": {
-    "ErrLoadedExtensionRegistrationFailed": "Ошибка в служебном коде для регистрации загрузки расширений Python",
+    "ErrLoadedExtensionRegistrationFailed": "Ошибка при выполнении служебного кода регистрации загрузки расширений Python",
     "ErrPyObjectAsVariantUnsupported": "Преобразование переданного объекта Python в значение переменного типа не поддерживается",
-    "ErrPyObjectFromVariantUnsupported": "Преобразование переданного значения переменного типа в объект Python не поддерживается"
+    "ErrPyObjectFromVariantUnsupported": "Преобразование переданного значения переменного типа в объект Python не поддерживается",
+    "ErrServiceCodeFailed": "Ошибка при выполнении служебного кода интеграции с Python"
   },
   "components/python/PythonVendor": {
     "VendorCaption": "Python",
@@ -1798,6 +1802,26 @@
     "VendorCaption": "Excel файл",
     "VendorDesc": "Экспорт данных в файл Excel"
   },
+  "exports/kafka/KafkaExport": {
+    "ErrKafkaFlushErrorFmt": "Ошибка отправки сообщений Kafka \"%s\"",
+    "ErrKeyFieldDataType": "Поле ключей должно быть строкового или целого типа",
+    "ErrKeyFieldNotFound": "Поле ключей с именем \"%s\" не найдено",
+    "ErrMessageFieldDataType": "Поле сообщений должно быть строкового типа",
+    "ErrMessageFieldNotFound": "Поле сообщений с именем \"%s\" не найдено",
+    "ExportProcess": "Отправка сообщений в Kafka",
+    "FlushProcess": "Завершение отправки сообщений",
+    "LogKafkaConfDone": "Конфигурация Kafka подготовлена",
+    "LogProduceInfoFmt": "В очередь добавлено %d сообщений для пачки из %d",
+    "LogProducerCreated": "Producer создан",
+    "LogRowSkipedFmt": "ДЛя строки %d, сообщение не создано. В строке  пропущенное значение",
+    "PropErrBatchMessagesCount": "Количество сообщений в пачке не может быть меньше 1",
+    "PropErrMessageField": "Не задано поле с сообщениями",
+    "PropErrTopic": "Не задана тема"
+  },
+  "exports/kafka/KafkaExportVendor": {
+    "VendorCaption": "Kafka",
+    "VendorDesc": "Экспорт в очередь Kafka"
+  },
   "exports/native/ExportNative": {
     "ErrLZ4NotAvailable": "Сжатие LZ4 недоступно",
     "ErrLZONotAvailable": "Сжатие LZO недоступно"
@@ -1917,13 +1941,42 @@
     "ErrPropSheetNumber": "Индекс листа Excel задан некорректно",
     "ErrSheet": "Не удалось найти лист Excel",
     "ErrSuggestRange": "Файл excel не открыт. По текущим настройкам невозможно определить количество столбцов для импорта",
-    "ProcessCaptionOpenExcelFile": "Открыть файл %s",
+    "ProcessCaptionOpenExcelFile": "Открытие файла",
     "ProcessCaptionReadData": "Чтение данных",
-    "ProcessCaptionReadMetadataFmt": "Чтение метаданных файла %s"
+    "ProcessCaptionReadMetadata": "Чтение метаданных файла"
   },
   "imports/excelfile/ImportExcelFileVendor": {
     "VendorCaption": "Excel файл",
     "VendorDesc": "Импорт данных из файла Excel"
+  },
+  "imports/kafka/KafkaImport": {
+    "ErrPollErrorFmt": "Ошибка при получении сообщения Kafka \"%s\"",
+    "ImportDataProcess": "Чтение сообщений из очереди Kafka",
+    "KeyDisplayName": "Ключ",
+    "LogConsumerClosed": "Consumer закрыт",
+    "LogConsumerConfDone": "Конфигурация Consumer подготовлена",
+    "LogConsumerConfigured": "Consumer сконфигурирован",
+    "LogConsumerCreated": "Consumer создан",
+    "LogConsumerDestroyed": "Consumer уничтожен",
+    "LogKafkaConfDone": "Конфигурация Kafka подготовлена",
+    "LogLimitReachedFmt": "Получено максимальное количество сообщений %d. Импорт остановлен",
+    "LogMsgDestroyedFmt": "Сообщение со смещением %d уничтожено",
+    "LogMsgPolledFmt": "Получено сообщение со смещением %d",
+    "LogTopicConfDone": "Конфигурация Топика подготовлена",
+    "MessageDisplayName": "Сообщение",
+    "OffsetDisplayName": "Смещение",
+    "PartitionDisplayName": "Раздел",
+    "PropErrNoGroupID": "Не задан идентификатор группы",
+    "PropErrTopic": "Не задана тема"
+  },
+  "imports/kafka/KafkaImportVendor": {
+    "VendorCaption": "Kafka",
+    "VendorDesc": "Импорт очереди Kafka"
+  },
+  "imports/kafka/KafkaUtils": {
+    "ErrBrokersCouldNotBe": "Не удалось добавить брокеров",
+    "ErrUnableToCreateConsumer": "Не удалось создать Consumer - %s",
+    "ErrUnableToCreateProducer": "Не удалось создать Producer - %s"
   },
   "imports/native/DDFCommonReader": {
     "ErrHeaderReadError": "Произошла ошибка при чтении заголовка"
@@ -1988,7 +2041,6 @@
     "VendorDesc": "Импорт данных из текстового файла"
   },
   "imports/xml/ImportXML": {
-    "ErrFileNotSelected": "Не выбран XML-файл для импорта",
     "ErrImportNotConfigured": "Дерево импорта не настроено",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика.",
     "ErrNothingSelected": "Не выбрано ни одного узла для импорта",
@@ -2081,7 +2133,8 @@
     "SSLOptions": "Настройки SSL"
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
-    "DatabaseTypeName": "MS Access (ODBC)"
+    "DatabaseTypeName": "MS Access (ODBC)",
+    "ErrODBCAccessNotExists": "ODBC-драйвер для подключения к базам данных MS Access не установлен"
   },
   "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
     "DatabaseTypeName": "BigQuery (ODBC)",
@@ -2582,6 +2635,9 @@
     "ErrOrderIndexesLength": "Длина массива индексов не соответствует количеству уникальных значений",
     "ErrWrongSyncClass": "Некорректный класс источника синхронизации. Ожидается экземпляр класса %s, фактически %s"
   },
+  "Libraries/bgrtl/Streams": {
+    "ErrCachedStreamSeek0AfterLargeRead": "Переход в начало потока не возможен, т.к. уже прочитано %d байт, что больше чем размер кэша %d"
+  },
   "Libraries/bgrtl/StrUtils": {
     "ErrCodePageNotExist": "Кодовая страница с номером %d не существует",
     "ErrInvalidBoolean": "Строка \"%s\" не может быть преобразована в значение логического типа",
@@ -3019,6 +3075,13 @@
   "Libraries/FileConnection/ImportFileModelComponentEngine": {
     "ErrFileNameEmpty": "Имя файла не может быть пустым",
     "ErrFileNotFound": "Файл \"%s\" не найден"
+  },
+  "Libraries/KafkaConnection/KafkaConnection": {
+    "PropErrNoServer": "Не указан адрес сервера Kafka"
+  },
+  "Libraries/KafkaConnection/KafkaConnectionVendor": {
+    "KafkaConnectionVendorCaption": "Kafka",
+    "KafkaConnectionVendorDesc": "Подключение к Kafka"
   },
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Данные содержат пустые значения"

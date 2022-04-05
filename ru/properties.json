@@ -509,6 +509,14 @@
       "HeadersRow": "Строка заголовков"
     }
   },
+  "exports/kafka": {
+    "KafkaExport": {
+      "BatchMessagesCount": "Количество сообщений в пачке при отправке",
+      "ClientID": "ID клиента",
+      "FlushTimeout": "Время ожидания завершения отправки пачки",
+      "Topic": "Топик"
+    }
+  },
   "exports/native": {
     "ExportNative": {
       "Compression": "Сжатие",
@@ -563,6 +571,16 @@
       "TableNamingMethod": "Выбор объекта",
       "TitleRowCount": "Количество строк заголовка",
       "UsedRange": "Весь лист"
+    }
+  },
+  "imports/kafka": {
+    "KafkaImport": {
+      "ClientID": "ID клиента",
+      "GroupID": "ID группы",
+      "MaxNumberPollMessages": "Максимальное количество сообщений",
+      "Partition": "Раздел",
+      "PollTimeout": "Время ожидания сообщения (мс)",
+      "Topic": "Топик"
     }
   },
   "imports/textfile": {
@@ -779,6 +797,11 @@
       "RepeatUniqueValues": "Дублировать единичные значения",
       "StrictValidation": "Проверять на строгое соответствие XSD",
       "TimeZone": "Временная зона по умолчанию"
+    }
+  },
+  "Libraries/KafkaConnection/KafkaConnection": {
+    "KafkaConnectionConfigurator": {
+      "Server": "Список серверов"
     }
   },
   "Libraries/LDAP/LDAP": {

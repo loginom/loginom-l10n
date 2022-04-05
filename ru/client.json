@@ -978,6 +978,9 @@
   "exports/excelfile/ExportExcelFilePreviewWizard": {
     "DefaultSheetName": "Лист1"
   },
+  "exports/kafka/KafkaExportWizard": {
+    "InvalidMessageFieldFmt": "Поле с сообщениями \"{0}\" не найдено"
+  },
   "exports/tableau/ExportTableauMappingWizard": {
     "colDisplayNameTitle": "Поля таблицы Tableau",
     "colSourceNameTitle": "Исходные столбцы",
@@ -1420,6 +1423,10 @@
     "NullSheetID": "Лист не определен",
     "SheetNotFoundByNameFmt": "Лист \"{0}\" не найден в книге Excel",
     "SheetNotFoundByNumberFmt": "Лист №{0} не найден в книге Excel"
+  },
+  "imports/kafka/ParametersList": {
+    "DeleteAllParamsPrompt": "Вы действительно хотите удалить все параметры?",
+    "DublicateGetMethodParamNameFmt": "Параметр с именем \"{0}\" уже существует"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Введите текст запроса"

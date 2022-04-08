@@ -1813,7 +1813,7 @@
     "LogKafkaConfDone": "Конфигурация Kafka подготовлена",
     "LogProduceInfoFmt": "В очередь добавлено %d сообщений для пачки из %d",
     "LogProducerCreated": "Producer создан",
-    "LogRowSkipedFmt": "ДЛя строки %d, сообщение не создано. В строке  пропущенное значение",
+    "LogRowSkipedFmt": "Для строки %d, сообщение не создано. В строке пропущенное значение",
     "PropErrBatchMessagesCount": "Количество сообщений в пачке не может быть меньше 1",
     "PropErrMessageField": "Не задано поле с сообщениями",
     "PropErrTopic": "Не задана тема"

@@ -977,6 +977,9 @@
   "exports/excelfile/ExportExcelFilePreviewWizard": {
     "DefaultSheetName": "Sheet1"
   },
+  "exports/kafka/KafkaExportWizard": {
+    "InvalidMessageFieldFmt": "Поле с сообщениями \"{0}\" не найдено"
+  },
   "exports/tableau/ExportTableauMappingWizard": {
     "colDisplayNameTitle": "Tableau Table Fields",
     "colSourceNameTitle": "Source Columns",
@@ -1419,6 +1422,10 @@
     "NullSheetID": "Sheet undefined",
     "SheetNotFoundByNameFmt": "\"{0}\" sheet not found in Excel workbook",
     "SheetNotFoundByNumberFmt": "Sheet #{0} not found in Excel workbook"
+  },
+  "imports/kafka/ParametersList": {
+    "DeleteAllParamsPrompt": "Вы действительно хотите удалить все параметры?",
+    "DublicateGetMethodParamNameFmt": "Параметр с именем \"{0}\" уже существует"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Enter query text"

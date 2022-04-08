@@ -2482,6 +2482,14 @@
       "text": "Select replacement source"
     }
   },
+  "connections/kafka/KafkaConnectionParams": {
+    "edtServer.valueConfig": {
+      "emptyText": "host1:port1,host2:port2,..."
+    },
+    "fldKafkaConnectionParams": {
+      "title": "Параметры Kafka"
+    }
+  },
   "connections/onec8/OneC8ConnectionParams": {
     "btnTestConnection": {
       "text": "Test"
@@ -2786,6 +2794,26 @@
     },
     "frmExportFromFile": {
       "title": "Export to Excel File"
+    }
+  },
+  "exports/kafka/KafkaExportWizard": {
+    "btnConnect": {
+      "text": "Подключить"
+    },
+    "cbbKeyField": {
+      "fieldLabel": "Поле с ключами"
+    },
+    "cbbMessageField": {
+      "fieldLabel": "Поле с сообщениями"
+    },
+    "cntConnection": {
+      "fieldLabel": "Подключение"
+    },
+    "frmKafkaExport": {
+      "title": "Экспорт в очередь Kafka"
+    },
+    "pnlProducerConfig": {
+      "title": "Дополнительная конфигурация Producer"
     }
   },
   "exports/native/ExportNativeParamsWizard": {
@@ -3458,6 +3486,52 @@
     },
     "pnlTaleSetings": {
       "title": "Data Source"
+    }
+  },
+  "imports/kafka/KafkaImportWizard": {
+    "btnConnect": {
+      "text": "Подключить"
+    },
+    "cntConnection1": {
+      "fieldLabel": "Подключение"
+    },
+    "frmKafkaImport": {
+      "title": "Импорт очереди Kafka"
+    },
+    "pnlConsumerConfig": {
+      "title": "Дополнительная конфигурация Consumer"
+    },
+    "pnlKafkaConfiguration": {
+      "title": "Дополнительная конфигурация Kafka"
+    }
+  },
+  "imports/kafka/ParametersList": {
+    "btnAdd": {
+      "tooltip": "Добавить"
+    },
+    "btnDelete": {
+      "tooltip": "Удалить выбранные"
+    },
+    "btnDeleteAll": {
+      "tooltip": "Удалить все..."
+    },
+    "btnMoveDown": {
+      "tooltip": "Переместить вниз"
+    },
+    "btnMoveUp": {
+      "tooltip": "Переместить вверх"
+    },
+    "colDelete": {
+      "tooltip": "Удалить все..."
+    },
+    "colDelete.0": {
+      "tooltip": "Удалить"
+    },
+    "colName": {
+      "text": "Имя"
+    },
+    "colValue": {
+      "text": "Значение"
     }
   },
   "imports/native/ImportNativePreviewWizard": {

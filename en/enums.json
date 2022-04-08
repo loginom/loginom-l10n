@@ -851,7 +851,7 @@
       "LZ4": "LZ4"
     },
     "DDFSystem": {
-      "$Caption": "DDF File Platform",
+      "$Caption": "Bitness",
       "Undefined": "Not defined",
       "X32": "32-bit system",
       "X64": "64-bit system"

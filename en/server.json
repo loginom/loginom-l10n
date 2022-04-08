@@ -1818,7 +1818,7 @@
     "LogRowSkipedFmt": "Для строки %d, сообщение не создано. В строке пропущенное значение",
     "PropErrBatchMessagesCount": "Количество сообщений в пачке не может быть меньше 1",
     "PropErrMessageField": "Не задано поле с сообщениями",
-    "PropErrTopic": "Не задана тема"
+    "PropErrTopic": "Не задан топик"
   },
   "exports/kafka/KafkaExportVendor": {
     "VendorCaption": "Kafka",
@@ -1966,12 +1966,12 @@
     "LogLimitReachedFmt": "Получено максимальное количество сообщений %d. Импорт остановлен",
     "LogMsgDestroyedFmt": "Сообщение со смещением %d уничтожено",
     "LogMsgPolledFmt": "Получено сообщение со смещением %d",
-    "LogTopicConfDone": "Конфигурация Топика подготовлена",
+    "LogTopicConfDone": "Конфигурация топика подготовлена",
     "MessageDisplayName": "Сообщение",
     "OffsetDisplayName": "Смещение",
     "PartitionDisplayName": "Раздел",
     "PropErrNoGroupID": "Не задан идентификатор группы",
-    "PropErrTopic": "Не задана тема"
+    "PropErrTopic": "Не задан топик"
   },
   "imports/kafka/KafkaImportVendor": {
     "VendorCaption": "Kafka",

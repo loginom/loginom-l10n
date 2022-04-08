@@ -514,7 +514,7 @@
       "BatchMessagesCount": "Количество сообщений в пачке при отправке",
       "ClientID": "ID клиента",
       "FlushTimeout": "Время ожидания завершения отправки пачки",
-      "Topic": "Топик"
+      "Topic": "Topic"
     }
   },
   "exports/native": {
@@ -580,7 +580,7 @@
       "MaxNumberPollMessages": "Максимальное количество сообщений",
       "Partition": "Раздел",
       "PollTimeout": "Время ожидания сообщения (мс)",
-      "Topic": "Топик"
+      "Topic": "Topic"
     }
   },
   "imports/textfile": {

@@ -3490,48 +3490,48 @@
   },
   "imports/kafka/KafkaImportWizard": {
     "btnConnect": {
-      "text": "Подключить"
+      "text": "Connect"
     },
     "cntConnection1": {
-      "fieldLabel": "Подключение"
+      "fieldLabel": "Connection"
     },
     "frmKafkaImport": {
-      "title": "Импорт очереди Kafka"
+      "title": "Import of Kafka queue"
     },
     "pnlConsumerConfig": {
-      "title": "Дополнительная конфигурация Consumer"
+      "title": "Additional Consumer configuration"
     },
     "pnlKafkaConfiguration": {
-      "title": "Дополнительная конфигурация Kafka"
+      "title": "Additional Kafka configuration"
     }
   },
   "imports/kafka/ParametersList": {
     "btnAdd": {
-      "tooltip": "Добавить"
+      "tooltip": "Add"
     },
     "btnDelete": {
-      "tooltip": "Удалить выбранные"
+      "tooltip": "Delete selected"
     },
     "btnDeleteAll": {
-      "tooltip": "Удалить все..."
+      "tooltip": "Delete all..."
     },
     "btnMoveDown": {
-      "tooltip": "Переместить вниз"
+      "tooltip": "Move down"
     },
     "btnMoveUp": {
-      "tooltip": "Переместить вверх"
+      "tooltip": "Move up"
     },
     "colDelete": {
-      "tooltip": "Удалить все..."
+      "tooltip": "Delete all..."
     },
     "colDelete.0": {
-      "tooltip": "Удалить"
+      "tooltip": "Delete"
     },
     "colName": {
-      "text": "Имя"
+      "text": "Name"
     },
     "colValue": {
-      "text": "Значение"
+      "text": "Value"
     }
   },
   "imports/native/ImportNativePreviewWizard": {

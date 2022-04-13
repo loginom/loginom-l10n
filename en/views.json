@@ -2487,7 +2487,7 @@
       "emptyText": "host1:port1,host2:port2,..."
     },
     "fldKafkaConnectionParams": {
-      "title": "Параметры Kafka"
+      "title": "Kafka parameters"
     }
   },
   "connections/onec8/OneC8ConnectionParams": {

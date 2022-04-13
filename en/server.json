@@ -3081,11 +3081,11 @@
     "ErrFileNotFound": "\"%s\" file not found"
   },
   "Libraries/KafkaConnection/KafkaConnection": {
-    "PropErrNoServer": "Не указан адрес сервера Kafka"
+    "PropErrNoServer": "No Kafka server address specified"
   },
   "Libraries/KafkaConnection/KafkaConnectionVendor": {
     "KafkaConnectionVendorCaption": "Kafka",
-    "KafkaConnectionVendorDesc": "Подключение к Kafka"
+    "KafkaConnectionVendorDesc": "Connection of Kafka"
   },
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Data contains null values"

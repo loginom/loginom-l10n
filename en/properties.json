@@ -512,7 +512,7 @@
   "exports/kafka": {
     "KafkaExport": {
       "BatchMessagesCount": "Count of batch messages while sending",
-      "ClientID": "ID клиента",
+      "ClientID": "Client ID",
       "FlushTimeout": "Timeout of batch sending termination",
       "Topic": "Topic"
     }

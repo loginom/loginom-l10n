@@ -1474,10 +1474,10 @@
   "components/python/PythonUtils": {
     "ErrLoadedExtensionRegistrationFailed": "Ошибка в служебном коде для регистрации загрузки расширений Python",
     "ErrLoadedExtensionRegistrationFailed": "Error in service script for Python extensions loading registration",
-    "ErrLoadedExtensionRegistrationFailed": "Ошибка при выполнении служебного кода регистрации загрузки расширений Python",
+    "ErrLoadedExtensionRegistrationFailed": "Error executing service code of Python extensions loading registration",
     "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object into the variant type value is not supported",
     "ErrPyObjectFromVariantUnsupported": "Transformation of the passed variant type value into the Python object is not supported",
-    "ErrServiceCodeFailed": "Ошибка при выполнении служебного кода интеграции с Python"
+    "ErrServiceCodeFailed": "Error executing service code for integration with Python"
   },
   "components/python/PythonVendor": {
     "VendorCaption": "Python",

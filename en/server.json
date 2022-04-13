@@ -1062,7 +1062,7 @@
     "VendorDesc": "Group data"
   },
   "components/javascript/JavaScriptEngine": {
-    "ErrInvalidPath": "Некорректный путь \"%s\"",
+    "ErrInvalidPath": "Incorrect path \"%s\"",
     "InputDataSource": "Input data source",
     "JavaScriptConfigureOutputTable": "Preparing output columns",
     "OutputDataSet": "Output data set"

@@ -3085,7 +3085,7 @@
   },
   "Libraries/KafkaConnection/KafkaConnectionVendor": {
     "KafkaConnectionVendorCaption": "Kafka",
-    "KafkaConnectionVendorDesc": "Connection of Kafka"
+    "KafkaConnectionVendorDesc": "Connection to Kafka"
   },
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Data contains null values"

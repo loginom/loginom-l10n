@@ -1805,24 +1805,24 @@
     "VendorDesc": "Export data to Excel file"
   },
   "exports/kafka/KafkaExport": {
-    "ErrKafkaFlushErrorFmt": "Ошибка отправки сообщений Kafka \"%s\"",
-    "ErrKeyFieldDataType": "Поле ключей должно быть строкового или целого типа",
-    "ErrKeyFieldNotFound": "Поле ключей с именем \"%s\" не найдено",
-    "ErrMessageFieldDataType": "Поле сообщений должно быть строкового типа",
-    "ErrMessageFieldNotFound": "Поле сообщений с именем \"%s\" не найдено",
-    "ExportProcess": "Отправка сообщений в Kafka",
-    "FlushProcess": "Завершение отправки сообщений",
-    "LogKafkaConfDone": "Конфигурация Kafka подготовлена",
-    "LogProduceInfoFmt": "В очередь добавлено %d сообщений для пачки из %d",
-    "LogProducerCreated": "Producer создан",
-    "LogRowSkipedFmt": "Для строки %d, сообщение не создано. В строке пропущенное значение",
-    "PropErrBatchMessagesCount": "Количество сообщений в пачке не может быть меньше 1",
-    "PropErrMessageField": "Не задано поле с сообщениями",
-    "PropErrTopic": "Не задан топик"
+    "ErrKafkaFlushErrorFmt": "Error when sending Kafka messages \"%s\"",
+    "ErrKeyFieldDataType": "Key field must be related to the string or integer type",
+    "ErrKeyFieldNotFound": "Key field with \"%s\" name not found",
+    "ErrMessageFieldDataType": "Message field must be related to the string type",
+    "ErrMessageFieldNotFound": "Message field with \"%s\" name not found",
+    "ExportProcess": "Sending messages to Kafka",
+    "FlushProcess": "Messages sending finished",
+    "LogKafkaConfDone": "Kafka configuration prepared",
+    "LogProduceInfoFmt": "%d messages for batch from %d added to queue",
+    "LogProducerCreated": "Producer created",
+    "LogRowSkipedFmt": "No message created for %d line. There is a null value in the string",
+    "PropErrBatchMessagesCount": "Messages count in the batch must not be less than 1",
+    "PropErrMessageField": "No field with messages set",
+    "PropErrTopic": "No topic set"
   },
   "exports/kafka/KafkaExportVendor": {
     "VendorCaption": "Kafka",
-    "VendorDesc": "Экспорт в очередь Kafka"
+    "VendorDesc": "Export to Kafka queue"
   },
   "exports/native/ExportNative": {
     "ErrLZ4NotAvailable": "LZ4 compression not available",
@@ -1945,7 +1945,7 @@
     "ErrSuggestRange": "Excel file is not open. According to the current settings it is impossible to determine the column count for import",
     "ProcessCaptionOpenExcelFile": "Открыть файл %s",
     "ProcessCaptionOpenExcelFile": "%s file opening",
-    "ProcessCaptionOpenExcelFile": "Открытие файла",
+    "ProcessCaptionOpenExcelFile": "File opening",
     "ProcessCaptionReadData": "Data reading",
     "ProcessCaptionReadMetadata": "Read file metadata"
   },
@@ -1954,33 +1954,33 @@
     "VendorDesc": "Import data from Excel file"
   },
   "imports/kafka/KafkaImport": {
-    "ErrPollErrorFmt": "Ошибка при получении сообщения Kafka \"%s\"",
-    "ImportDataProcess": "Чтение сообщений из очереди Kafka",
-    "KeyDisplayName": "Ключ",
-    "LogConsumerClosed": "Consumer закрыт",
-    "LogConsumerConfDone": "Конфигурация Consumer подготовлена",
-    "LogConsumerConfigured": "Consumer сконфигурирован",
-    "LogConsumerCreated": "Consumer создан",
-    "LogConsumerDestroyed": "Consumer уничтожен",
-    "LogKafkaConfDone": "Конфигурация Kafka подготовлена",
-    "LogLimitReachedFmt": "Получено максимальное количество сообщений %d. Импорт остановлен",
-    "LogMsgDestroyedFmt": "Сообщение со смещением %d уничтожено",
-    "LogMsgPolledFmt": "Получено сообщение со смещением %d",
-    "LogTopicConfDone": "Конфигурация топика подготовлена",
-    "MessageDisplayName": "Сообщение",
-    "OffsetDisplayName": "Смещение",
-    "PartitionDisplayName": "Раздел",
-    "PropErrNoGroupID": "Не задан идентификатор группы",
-    "PropErrTopic": "Не задан топик"
+    "ErrPollErrorFmt": "Error when receiving Kafka messages \"%s\"",
+    "ImportDataProcess": "Read messages from Kafka queue",
+    "KeyDisplayName": "Key",
+    "LogConsumerClosed": "Consumer closed",
+    "LogConsumerConfDone": "Consumer configuration prepared",
+    "LogConsumerConfigured": "Consumer configured",
+    "LogConsumerCreated": "Consumer created",
+    "LogConsumerDestroyed": "Consumer destroyed",
+    "LogKafkaConfDone": "Kafka configuratio prepared",
+    "LogLimitReachedFmt": "Maximum number of %d messages reached. Import stopped",
+    "LogMsgDestroyedFmt": "Message with %d bias destroyed",
+    "LogMsgPolledFmt": "Message with %d bias received",
+    "LogTopicConfDone": "Topic configuration prepared",
+    "MessageDisplayName": "Message",
+    "OffsetDisplayName": "Bias",
+    "PartitionDisplayName": "Partition",
+    "PropErrNoGroupID": "Group identifier not set",
+    "PropErrTopic": "Topic not set"
   },
   "imports/kafka/KafkaImportVendor": {
     "VendorCaption": "Kafka",
-    "VendorDesc": "Импорт очереди Kafka"
+    "VendorDesc": "Import of Kafka queue"
   },
   "imports/kafka/KafkaUtils": {
-    "ErrBrokersCouldNotBe": "Не удалось добавить брокеров",
-    "ErrUnableToCreateConsumer": "Не удалось создать Consumer - %s",
-    "ErrUnableToCreateProducer": "Не удалось создать Producer - %s"
+    "ErrBrokersCouldNotBe": "Failed to add brokers",
+    "ErrUnableToCreateConsumer": "Failed to create Consumer - %s",
+    "ErrUnableToCreateProducer": "Failed to create Producer - %s"
   },
   "imports/native/DDFCommonReader": {
     "ErrHeaderReadError": "Header reading error"
@@ -2138,7 +2138,7 @@
   },
   "Libraries/bgdbrtl/UniDAC/AccessODBCUniDACDB": {
     "DatabaseTypeName": "MS Access (ODBC)",
-    "ErrODBCAccessNotExists": "ODBC-драйвер для подключения к базам данных MS Access не установлен"
+    "ErrODBCAccessNotExists": "ODBC driver for connection to MS Access databases not installed"
   },
   "Libraries/bgdbrtl/UniDAC/BigQueryODBCUniDACDB": {
     "DatabaseTypeName": "BigQuery (ODBC)",
@@ -2640,7 +2640,7 @@
     "ErrWrongSyncClass": "Invalid synchronization source class. Expected instance of %s class, actually %s"
   },
   "Libraries/bgrtl/Streams": {
-    "ErrCachedStreamSeek0AfterLargeRead": "Переход в начало потока не возможен, т.к. уже прочитано %d байт, что больше чем размер кэша %d"
+    "ErrCachedStreamSeek0AfterLargeRead": "It is not possible to move to the stream start as %d bytes already are read and it exceeds %d cache size"
   },
   "Libraries/bgrtl/StrUtils": {
     "ErrCodePageNotExist": "Codepage number %d does not exist",

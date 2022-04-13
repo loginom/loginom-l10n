@@ -123,11 +123,11 @@
     "ErrHTTPNetRequest": "Request to \"%s\" URL failed"
   },
   "Common/HTTP/SynapseHTTPSend": {
-    "ErrHTTPResult": "Ошибка при выполнениии HTTP запроса. Status code %d: %s",
+    "ErrHTTPResult": "Error executing HTTP request. Status code %d: %s",
     "ErrHTTPSocket": "Error executing HTTP request. TCP/IP Socket error %d: %s",
     "ErrMaximumRedirectReached": "Maximum number of redirects exceeded: %s",
-    "ErrStreamIsDirectReadOnly": "Случайный доступ к данным потока невозможен",
-    "ErrStreamSizeUnspecified": "Размер даных потока не определен"
+    "ErrStreamIsDirectReadOnly": "Random access to stream data is not possible",
+    "ErrStreamSizeUnspecified": "Unspesified stream data size"
   },
   "Common/JavaScript/JavaScriptModuleLoader": {
     "ErrModuleFileTooBig": "%s module file cannot be loaded: the permissible file size limit is exceeded (%d > %d bytes)",

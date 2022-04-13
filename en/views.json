@@ -2798,22 +2798,22 @@
   },
   "exports/kafka/KafkaExportWizard": {
     "btnConnect": {
-      "text": "Подключить"
+      "text": "Connect"
     },
     "cbbKeyField": {
-      "fieldLabel": "Поле с ключами"
+      "fieldLabel": "Field with keys"
     },
     "cbbMessageField": {
-      "fieldLabel": "Поле с сообщениями"
+      "fieldLabel": "Field with messages"
     },
     "cntConnection": {
-      "fieldLabel": "Подключение"
+      "fieldLabel": "Connection"
     },
     "frmKafkaExport": {
-      "title": "Экспорт в очередь Kafka"
+      "title": "Export to Kafka queue"
     },
     "pnlProducerConfig": {
-      "title": "Дополнительная конфигурация Producer"
+      "title": "Additional Producer configuration"
     }
   },
   "exports/native/ExportNativeParamsWizard": {

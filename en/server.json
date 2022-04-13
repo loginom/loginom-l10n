@@ -127,7 +127,7 @@
     "ErrHTTPSocket": "Error executing HTTP request. TCP/IP Socket error %d: %s",
     "ErrMaximumRedirectReached": "Maximum number of redirects exceeded: %s",
     "ErrStreamIsDirectReadOnly": "Random access to stream data is not possible",
-    "ErrStreamSizeUnspecified": "Unspesified stream data size"
+    "ErrStreamSizeUnspecified": "Unspecified stream data size"
   },
   "Common/JavaScript/JavaScriptModuleLoader": {
     "ErrModuleFileTooBig": "%s module file cannot be loaded: the permissible file size limit is exceeded (%d > %d bytes)",

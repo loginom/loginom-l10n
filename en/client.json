@@ -978,7 +978,7 @@
     "DefaultSheetName": "Sheet1"
   },
   "exports/kafka/KafkaExportWizard": {
-    "InvalidMessageFieldFmt": "Поле с сообщениями \"{0}\" не найдено"
+    "InvalidMessageFieldFmt": "Field with \"{0}\" messages not found"
   },
   "exports/tableau/ExportTableauMappingWizard": {
     "colDisplayNameTitle": "Tableau Table Fields",

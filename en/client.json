@@ -1424,8 +1424,8 @@
     "SheetNotFoundByNumberFmt": "Sheet #{0} not found in Excel workbook"
   },
   "imports/kafka/ParametersList": {
-    "DeleteAllParamsPrompt": "Вы действительно хотите удалить все параметры?",
-    "DublicateGetMethodParamNameFmt": "Параметр с именем \"{0}\" уже существует"
+    "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
+    "DublicateGetMethodParamNameFmt": "Parameter with \"{0}\" name already exists"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Enter query text"

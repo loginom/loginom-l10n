@@ -3081,7 +3081,7 @@
     "ErrFileNotFound": "\"%s\" file not found"
   },
   "Libraries/KafkaConnection/KafkaConnection": {
-    "PropErrNoServer": "No Kafka server address specified"
+    "PropErrNoServer": "No Kafka cluster specified"
   },
   "Libraries/KafkaConnection/KafkaConnectionVendor": {
     "KafkaConnectionVendorCaption": "Kafka",

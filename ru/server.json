@@ -3077,7 +3077,7 @@
     "ErrFileNotFound": "Файл \"%s\" не найден"
   },
   "Libraries/KafkaConnection/KafkaConnection": {
-    "PropErrNoServer": "Не указан адрес сервера Kafka"
+    "PropErrNoServer": "Не указан кластер Kafka"
   },
   "Libraries/KafkaConnection/KafkaConnectionVendor": {
     "KafkaConnectionVendorCaption": "Kafka",

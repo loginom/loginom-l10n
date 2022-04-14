@@ -801,7 +801,7 @@
   },
   "Libraries/KafkaConnection/KafkaConnection": {
     "KafkaConnectionConfigurator": {
-      "Server": "List of servers"
+      "Server": "Kafka cluster"
     }
   },
   "Libraries/LDAP/LDAP": {

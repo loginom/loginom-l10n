@@ -1472,8 +1472,6 @@
     "TableSet": "Set($self, col, value, /)\n--\n\nSet value in the cell of the appended row\nArguments:\n  col: Union[int, str]\n    Index or name of table column\n  value: Union[bool, int, str, float, datetime.datetime, None]\n    The value of the type compatible with column (bool, int, str, float, datetime.datetime, datetime.date, datetime.time, time.struct_time and their descendants) or None\nResult:\n  None"
   },
   "components/python/PythonUtils": {
-    "ErrLoadedExtensionRegistrationFailed": "Ошибка в служебном коде для регистрации загрузки расширений Python",
-    "ErrLoadedExtensionRegistrationFailed": "Error in service script for Python extensions loading registration",
     "ErrLoadedExtensionRegistrationFailed": "Error executing service code of Python extensions loading registration",
     "ErrPyObjectAsVariantUnsupported": "Transformation of the passed Python object into the variant type value is not supported",
     "ErrPyObjectFromVariantUnsupported": "Transformation of the passed variant type value into the Python object is not supported",
@@ -1943,8 +1941,6 @@
     "ErrPropSheetNumber": "Incorrect Excel worksheet index",
     "ErrSheet": "Failed to find Excel sheet",
     "ErrSuggestRange": "Excel file is not open. According to the current settings it is impossible to determine the column count for import",
-    "ProcessCaptionOpenExcelFile": "Открыть файл %s",
-    "ProcessCaptionOpenExcelFile": "%s file opening",
     "ProcessCaptionOpenExcelFile": "File opening",
     "ProcessCaptionReadData": "Data reading",
     "ProcessCaptionReadMetadata": "Read file metadata"

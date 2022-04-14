@@ -1962,7 +1962,7 @@
     "LogConsumerConfigured": "Consumer configured",
     "LogConsumerCreated": "Consumer created",
     "LogConsumerDestroyed": "Consumer destroyed",
-    "LogKafkaConfDone": "Kafka configuratio prepared",
+    "LogKafkaConfDone": "Kafka configuration prepared",
     "LogLimitReachedFmt": "Maximum number of %d messages reached. Import stopped",
     "LogMsgDestroyedFmt": "Message with %d bias destroyed",
     "LogMsgPolledFmt": "Message with %d bias received",

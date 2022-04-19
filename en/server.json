@@ -1813,7 +1813,7 @@
     "LogKafkaConfDone": "Kafka configuration prepared",
     "LogProduceInfoFmt": "%d messages for batch from %d added to queue",
     "LogProducerCreated": "Producer created",
-    "LogRowSkipedFmt": "Для строки %d, сообщение не создано. Поле сообщения или ключа содержит пропущенное значение",
+    "LogRowSkipedFmt": "Message was not created for row %d. The message or key field contains the null value",
     "PropErrBatchMessagesCount": "Messages count in the batch must not be less than 1",
     "PropErrMessageField": "No field with messages set",
     "PropErrTopic": "No topic set"

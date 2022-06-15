@@ -934,7 +934,7 @@
   },
   "connections/kafka/ParametersList": {
     "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
-    "DublicateGetMethodParamNameFmt": "Parameter with \"{0}\" name already exists"
+    "DublicateGetMethodParamNameFmt": "\"{0}\" parameter already exists"
   },
   "connections/restservice/ConnectionWizard": {
     "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",

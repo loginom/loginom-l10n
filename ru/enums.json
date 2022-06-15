@@ -1318,6 +1318,21 @@
       "Fixed": "Фиксированной ширины"
     }
   },
+  "Libraries/KafkaConnection/KafkaAuth": {
+    "KafkaSaslMechanism": {
+      "$Caption": "SASL механизм",
+      "Plain": "PLAIN",
+      "SCRAMSHA256": "SCRAM-SHA-256",
+      "SCRAMSHA512": "SCRAM-SHA-512"
+    },
+    "KafkaSecurityProtocol": {
+      "$Caption": "Протокол безопасности",
+      "Plaintext": "PLAINTEXT",
+      "SaslPlaintext": "SASL_PLAINTEXT",
+      "Ssl": "SSL",
+      "SaslSsl": "SASL_SSL"
+    }
+  },
   "Libraries/LDAP/LDAP": {
     "LDAPConnectionSecurity": {
       "$Caption": "Безопасность соединения",
@@ -1865,9 +1880,13 @@
     "QualityViewProblemType": {
       "$Caption": "Проблема в поле данных",
       "Missing": "Пропуски",
+      "Extremal": "Экстремальные",
+      "Out": "Выбросы",
       "Empty": "Пустые",
+      "Negative": "Отрицательные",
       "Zero": "Нули",
       "Space": "Пробелы",
+      "SpaceEnding": "Пробелы в конце",
       "Infinity": "Бесконечности",
       "Constant": "Константа",
       "Unique": "Уникальное",

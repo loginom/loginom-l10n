@@ -2483,11 +2483,43 @@
     }
   },
   "connections/kafka/KafkaConnectionParams": {
+    "btnTestConnection": {
+      "text": "Тестировать"
+    },
     "edtServer.valueConfig": {
       "emptyText": "host1:port1,host2:port2,..."
     },
-    "fldKafkaConnectionParams": {
-      "title": "Параметры Kafka"
+    "pnlConnectionConfig": {
+      "title": "Дополнительная конфигурация подключения"
+    }
+  },
+  "connections/kafka/ParametersList": {
+    "btnAdd": {
+      "tooltip": "Добавить"
+    },
+    "btnDelete": {
+      "tooltip": "Удалить выбранные"
+    },
+    "btnDeleteAll": {
+      "tooltip": "Удалить все..."
+    },
+    "btnMoveDown": {
+      "tooltip": "Переместить вниз"
+    },
+    "btnMoveUp": {
+      "tooltip": "Переместить вверх"
+    },
+    "colDelete": {
+      "tooltip": "Удалить все..."
+    },
+    "colDelete.0": {
+      "tooltip": "Удалить"
+    },
+    "colName": {
+      "text": "Имя"
+    },
+    "colValue": {
+      "text": "Значение"
     }
   },
   "connections/onec8/OneC8ConnectionParams": {
@@ -3217,6 +3249,9 @@
       "href": "https://loginom.ru/company/support/",
       "text": "Поддержка"
     },
+    "btnTelegram": {
+      "href": "https://t.me/loginom/"
+    },
     "btnTwitter": {
       "href": "https://twitter.com/loginom_company/"
     },
@@ -3500,38 +3535,6 @@
     },
     "pnlConsumerConfig": {
       "title": "Дополнительная конфигурация Consumer"
-    },
-    "pnlKafkaConfiguration": {
-      "title": "Дополнительная конфигурация Kafka"
-    }
-  },
-  "imports/kafka/ParametersList": {
-    "btnAdd": {
-      "tooltip": "Добавить"
-    },
-    "btnDelete": {
-      "tooltip": "Удалить выбранные"
-    },
-    "btnDeleteAll": {
-      "tooltip": "Удалить все..."
-    },
-    "btnMoveDown": {
-      "tooltip": "Переместить вниз"
-    },
-    "btnMoveUp": {
-      "tooltip": "Переместить вверх"
-    },
-    "colDelete": {
-      "tooltip": "Удалить все..."
-    },
-    "colDelete.0": {
-      "tooltip": "Удалить"
-    },
-    "colName": {
-      "text": "Имя"
-    },
-    "colValue": {
-      "text": "Значение"
     }
   },
   "imports/native/ImportNativePreviewWizard": {

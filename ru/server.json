@@ -846,9 +846,9 @@
     "ErrExecNodeNotAllowed": "Выполнение компонента %s не разрешено",
     "ErrNodeComponentVendorIsSealed": "Нельзя задать ссылку на компонент \"%s\", для которого невозможно наследование",
     "ErrPortNotConfigurable": "Настройка порта не поддерживается",
-    "ErrReferencedVendorMalfunction": "Исходный компонент \"%s\" неисправен",
-    "ErrReferencedVendorNotAvailable": "Исходный компонент не доступен",
-    "ErrReferencedVendorNotFound": "Исходный компонент не найден",
+    "ErrReferencedVendorMalfunction": "Неисправен исходный компонент \"%s\" GUID=%s",
+    "ErrReferencedVendorNotAvailable": "Не доступен исходный компонент \"%s\" GUID=%s",
+    "ErrReferencedVendorNotFound": "Не найден исходный компонент GUID=%s",
     "ErrReferencedVendorNotSpecified": "Не задан исходный компонент",
     "ErrUnableToLoadComponentConfig": "Не удалось загрузить конфигурацию внутреннего компонента"
   },
@@ -1424,6 +1424,7 @@
     "VendorDesc": "Формирование тестового и обучающего множеств"
   },
   "components/python/PythonComponentSettings": {
+    "PythonExe": "Путь интерпретатора",
     "PythonLib": "Путь библиотеки"
   },
   "components/python/PythonEngine": {
@@ -1434,11 +1435,14 @@
     "ErrDisallowedExecution": "Выполнение Python запрещено параметрами безопасности",
     "ErrGetNativePath": "Не удалось получить путь в файловой системе по пути файлового хранилища \"%s\"",
     "ErrPreviewPythonIsBusy": "Python занят. Невозможно запустить предпросмотр",
-    "ErrVerifyPythonIsBusy": "Python занят. Невозможно запустить проверку синтаксиса",
-    "ErrWaitTimeoutElapsed": "Не удалось захватить Python в течении установленного тайм-аута, т.к. код Python все ещё выполняется в другом узле.",
+    "ErrPreviewSeparateProcessNotSupported": "Предпросмотр при запуске интерпретатора в отдельном процессе не поддерживается",
     "InputPortOptional": "Входной порт необязательный",
     "OutputDataFrameExample": "Полученный выходной pd.DataFrame",
     "PrepareCompatibleComment": "Если включена опция \"Разрешить формировать выходные столбцы из кода\", структуру выходного набора можно подготовить по pd.DataFrame"
+  },
+  "components/python/PythonEngineImpl": {
+    "ErrVerifyPythonIsBusy": "Python занят. Невозможно запустить проверку синтаксиса",
+    "ErrWaitTimeoutElapsed": "Не удалось захватить Python в течении установленного тайм-аута, т.к. код Python все ещё выполняется в другом узле."
   },
   "components/python/PythonExecutor": {
     "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nПолучить путь в файловой системе по пути файлового хранилища\nАргументы:\n  path: str\n    Путь в файловом хранилище.\nРезультат:\n  Путь в файловой системе.",
@@ -1446,6 +1450,18 @@
     "ErrTCLFinalize": "Ошибка при финализации TCL",
     "ErrUnloadExtension": "Ошибка при выгрузке расширения \"%s\"",
     "WarnExecuting": "Python уже выполняется"
+  },
+  "components/python/PythonExeEngineImpl": {
+    "ErrInt32Overflow": "Значение %d выходит за границы допустимых значений 32-битного целого",
+    "ErrPythonExeNotFound": "Путь интерпретатора Python, указанный в настройках приложения, не существует",
+    "ErrRowLimitExceeded": "Превышено ограничение на максимальное количество строк в таблице",
+    "PythonDumpData": "Запись входных данных",
+    "PythonDumpInputTableData": "Запись данных входной таблицы",
+    "PythonDumpInputTableDataN": "Запись данных входной таблицы #%d",
+    "PythonDumpInputTablesData": "Запись данных входных таблиц",
+    "PythonExeFailed": "Выполнение интерпретатора Python завершилось с кодом ошибки %d",
+    "PythonLoadOutputTable": "Чтение выходной таблицы",
+    "PythonScriptExecution": "Выполнение скрипта"
   },
   "components/python/PythonInterface": {
     "ErrPythonLibraryIncompatibleVersion": "Версия Python %d.%d не поддерживается. Минимальная поддерживаемая версия %d.%d.",
@@ -1803,6 +1819,7 @@
     "VendorDesc": "Экспорт данных в файл Excel"
   },
   "exports/kafka/KafkaExport": {
+    "ErrDeliveryReportFmt": "Не удалось экспортировать сообщение: %s",
     "ErrKafkaFlushErrorFmt": "Ошибка отправки сообщений Kafka \"%s\"",
     "ErrKeyFieldDataType": "Поле ключей должно быть строкового или целого типа",
     "ErrKeyFieldNotFound": "Поле ключей с именем \"%s\" не найдено",
@@ -1810,9 +1827,7 @@
     "ErrMessageFieldNotFound": "Поле сообщений с именем \"%s\" не найдено",
     "ExportProcess": "Отправка сообщений в Kafka",
     "FlushProcess": "Завершение отправки сообщений",
-    "LogKafkaConfDone": "Конфигурация Kafka подготовлена",
     "LogProduceInfoFmt": "В очередь добавлено %d сообщений для пачки из %d",
-    "LogProducerCreated": "Producer создан",
     "LogRowSkipedFmt": "Для строки %d, сообщение не создано. Поле сообщения или ключа содержит пропущенное значение",
     "PropErrBatchMessagesCount": "Количество сообщений в пачке не может быть меньше 1",
     "PropErrMessageField": "Не задано поле с сообщениями",
@@ -1909,6 +1924,7 @@
   "imports/database/DBImport": {
     "ErrExecQuery": "Ошибка при выполнении запроса к базе данных.",
     "ErrNotConnectedToDatabase": "Не установлено соединение с базой данных",
+    "ErrSQLNotSpecified": "Не указан текст SQL-запроса",
     "ErrTableNotSpecified": "Не указана таблица базы данных",
     "ExecQueryProcess": "Выполнение запроса",
     "ImportDataProcess": "Импортирование данных",
@@ -1953,16 +1969,8 @@
     "ErrPollErrorFmt": "Ошибка при получении сообщения Kafka \"%s\"",
     "ImportDataProcess": "Чтение сообщений из очереди Kafka",
     "KeyDisplayName": "Ключ",
-    "LogConsumerClosed": "Consumer закрыт",
-    "LogConsumerConfDone": "Конфигурация Consumer подготовлена",
-    "LogConsumerConfigured": "Consumer сконфигурирован",
-    "LogConsumerCreated": "Consumer создан",
-    "LogConsumerDestroyed": "Consumer уничтожен",
-    "LogKafkaConfDone": "Конфигурация Kafka подготовлена",
     "LogLimitReachedFmt": "Получено максимальное количество сообщений %d. Импорт остановлен",
-    "LogMsgDestroyedFmt": "Сообщение со смещением %d уничтожено",
     "LogMsgPolledFmt": "Получено сообщение со смещением %d",
-    "LogTopicConfDone": "Конфигурация топика подготовлена",
     "MessageDisplayName": "Сообщение",
     "OffsetDisplayName": "Смещение",
     "PartitionDisplayName": "Раздел",
@@ -1972,11 +1980,6 @@
   "imports/kafka/KafkaImportVendor": {
     "VendorCaption": "Kafka",
     "VendorDesc": "Импорт очереди Kafka"
-  },
-  "imports/kafka/KafkaUtils": {
-    "ErrBrokersCouldNotBe": "Не удалось добавить брокеров",
-    "ErrUnableToCreateConsumer": "Не удалось создать Consumer - %s",
-    "ErrUnableToCreateProducer": "Не удалось создать Producer - %s"
   },
   "imports/native/DDFCommonReader": {
     "ErrHeaderReadError": "Произошла ошибка при чтении заголовка"
@@ -2558,6 +2561,9 @@
   "Libraries/bgrtl/LocaleUtils": {
     "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается системой"
   },
+  "Libraries/bgrtl/Logger": {
+    "LogAnsiCodePage": "1251"
+  },
   "Libraries/bgrtl/LoggerConfigurator": {
     "ErrCannotConfigureLogger": "Не удалось применить параметры логирования"
   },
@@ -3076,12 +3082,26 @@
     "ErrFileNameEmpty": "Имя файла не может быть пустым",
     "ErrFileNotFound": "Файл \"%s\" не найден"
   },
+  "Libraries/KafkaConnection/KafkaAuth": {
+    "ErrFileNoAccess": "Файл \"%s\" недоступен",
+    "ErrFileNotFound": "Файл \"%s\" не найден",
+    "ErrGetFileStorage": "Отсутствует ссылка на файловое хранилище",
+    "PropErrNoPassword": "Не указан пароль",
+    "PropErrNoUsername": "Не указано имя пользователя"
+  },
   "Libraries/KafkaConnection/KafkaConnection": {
+    "ErrKafkaConnectFmt": "Не удалось подключится к кластеру Kafka %s: %s",
     "PropErrNoServer": "Не указан кластер Kafka"
   },
   "Libraries/KafkaConnection/KafkaConnectionVendor": {
     "KafkaConnectionVendorCaption": "Kafka",
     "KafkaConnectionVendorDesc": "Подключение к Kafka"
+  },
+  "Libraries/KafkaConnection/KafkaUtils": {
+    "DebugCallBackMsgFmt": "%s|%s| %s",
+    "ErrUnableToCreateConsumer": "Не удалось создать Consumer: %s",
+    "ErrUnableToCreateProducer": "Не удалось создать Producer: %s",
+    "LogErrKafkaCallBackFmt": "Ошибка Kafka: \"%s\", причина: \"%s\""
   },
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Данные содержат пустые значения"
@@ -3223,7 +3243,8 @@
     "ErrIncompatibleBaseComponentVendor": "Базовый и производный компоненты не совместимы",
     "ErrParentVendorIsDeleted": "Базовый компонент удален",
     "ErrParentVendorNotFound": "Базовый компонент не найден",
-    "ErrUnknownCouplerDefType": "Неизвестный тип описателя соединения"
+    "ErrUnknownCouplerDefType": "Неизвестный тип описателя соединения",
+    "UpdateBaseConfigNodeLocked": "Не удалось обновить конфигурацию производного компонента \"%s\": базовый узел заблокирован"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
     "ErrCannotChangeDerivedName": "Невозможно изменять имя производных портов",
@@ -3493,9 +3514,9 @@
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "Узел \"%s\" заблокирован",
     "ErrNodeNotInitialized": "Узел \"%s\" не проинициализирован",
-    "ErrReferencedNodeNotActive": "Исходный узел не активен",
-    "ErrReferencedNodeNotAvailable": "Исходный узел не доступен",
-    "ErrReferencedNodeNotFound": "Исходный узел не найден",
+    "ErrReferencedNodeNotActive": "Не активен исходный узел \"%s\" GUID=%s",
+    "ErrReferencedNodeNotAvailable": "Не доступен исходный узел \"%s\" GUID=%s",
+    "ErrReferencedNodeNotFound": "Не найден исходный узел GUID=%s",
     "ErrReferencedNodeNotSpecified": "Не задана ссылка на узел"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngineVendor": {

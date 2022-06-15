@@ -933,6 +933,10 @@
   "connections/dwh/DWConnectionWizard": {
     "ErrSchemaNameIsTooLongFmt": "Имя схемы не может содержать более {0} символов."
   },
+  "connections/kafka/ParametersList": {
+    "DeleteAllParamsPrompt": "Вы действительно хотите удалить все параметры?",
+    "DublicateGetMethodParamNameFmt": "Параметр с именем \"{0}\" уже существует"
+  },
   "connections/restservice/ConnectionWizard": {
     "DeleteAllParamsPrompt": "Вы действительно хотите удалить все параметры?",
     "DublicateGetMethodParamNameFmt": "Параметр с именем \"{0}\" уже существует",
@@ -1423,10 +1427,6 @@
     "NullSheetID": "Лист не определен",
     "SheetNotFoundByNameFmt": "Лист \"{0}\" не найден в книге Excel",
     "SheetNotFoundByNumberFmt": "Лист №{0} не найден в книге Excel"
-  },
-  "imports/kafka/ParametersList": {
-    "DeleteAllParamsPrompt": "Вы действительно хотите удалить все параметры?",
-    "DublicateGetMethodParamNameFmt": "Параметр с именем \"{0}\" уже существует"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Введите текст запроса"

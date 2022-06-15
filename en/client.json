@@ -351,7 +351,7 @@
     "DefaultLocaleModified": "modified",
     "ErrOpenPath": "Failed to open \"{0}\" path.\nError: \"{1}\".",
     "ErrPathNotFound": "The specified path was not found \"{0}\".",
-    "MsgNewLocaleAfterReopen": "New locale will be applied when packages and all opened packages that depend on it are closed.",
+    "MsgNewLocaleAfterReopen": "New locale will be applied when the package and all opened dependent packages are closed.",
     "NotSet": "Unspecified ({0})"
   },
   "app/PackageVariableEditForm": {

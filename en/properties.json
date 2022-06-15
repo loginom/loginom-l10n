@@ -397,6 +397,7 @@
   },
   "components/python": {
     "PythonEngine": {
+      "UseSeparateProcess": "Запускать в отдельном процессе",
       "WaitTimeout": "Start wait timeout (ms)"
     }
   },
@@ -799,8 +800,21 @@
       "TimeZone": "Default time zone"
     }
   },
+  "Libraries/KafkaConnection/KafkaAuth": {
+    "KafkaAuth": {
+      "Password": "Password",
+      "SaslMechanism": "SASL механизм",
+      "SecurityProtocol": "Протокол безопасности",
+      "SSLCA": "CA certificate",
+      "SSLCert": "User certificate",
+      "SSLKey": "Private key",
+      "SSLKeyPassword": "Private key password",
+      "Username": "Username"
+    }
+  },
   "Libraries/KafkaConnection/KafkaConnection": {
     "KafkaConnectionConfigurator": {
+      "KafkaAuth": "Authentification",
       "Server": "Kafka cluster"
     }
   },

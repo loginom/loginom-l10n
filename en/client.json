@@ -932,6 +932,10 @@
   "connections/dwh/DWConnectionWizard": {
     "ErrSchemaNameIsTooLongFmt": "Schema name cannot contain more than {0} characters."
   },
+  "connections/kafka/ParametersList": {
+    "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
+    "DublicateGetMethodParamNameFmt": "Parameter with \"{0}\" name already exists"
+  },
   "connections/restservice/ConnectionWizard": {
     "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
     "DublicateGetMethodParamNameFmt": "\"{0}\" parameter already exists",
@@ -1422,10 +1426,6 @@
     "NullSheetID": "Sheet undefined",
     "SheetNotFoundByNameFmt": "\"{0}\" sheet not found in Excel workbook",
     "SheetNotFoundByNumberFmt": "Sheet #{0} not found in Excel workbook"
-  },
-  "imports/kafka/ParametersList": {
-    "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
-    "DublicateGetMethodParamNameFmt": "Parameter with \"{0}\" name already exists"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Enter query text"

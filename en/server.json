@@ -846,9 +846,15 @@
     "ErrExecNodeNotAllowed": "Execution of %s component is not allowed",
     "ErrNodeComponentVendorIsSealed": "Failed to set reference to \"%s\" component for which inheritance is not possible",
     "ErrPortNotConfigurable": "Port configuration not supported",
+    "ErrReferencedVendorMalfunction": "Исходный компонент \"%s\" неисправен",
     "ErrReferencedVendorMalfunction": "\"%s\" source component is malfunctioning",
+    "ErrReferencedVendorMalfunction": "Неисправен исходный компонент \"%s\" GUID=%s",
+    "ErrReferencedVendorNotAvailable": "Исходный компонент не доступен",
     "ErrReferencedVendorNotAvailable": "Source component not available",
+    "ErrReferencedVendorNotAvailable": "Не доступен исходный компонент \"%s\" GUID=%s",
+    "ErrReferencedVendorNotFound": "Исходный компонент не найден",
     "ErrReferencedVendorNotFound": "Source component not found",
+    "ErrReferencedVendorNotFound": "Не найден исходный компонент GUID=%s",
     "ErrReferencedVendorNotSpecified": "Source component not set",
     "ErrUnableToLoadComponentConfig": "Failed to load the internal component configuration"
   },
@@ -1424,6 +1430,7 @@
     "VendorDesc": "Selection of test and training sets"
   },
   "components/python/PythonComponentSettings": {
+    "PythonExe": "Путь интерпретатора",
     "PythonLib": "Library path"
   },
   "components/python/PythonEngine": {
@@ -1434,11 +1441,14 @@
     "ErrDisallowedExecution": "Python execution forbidden in security settings",
     "ErrGetNativePath": "Failed to resolve the file system path by the \"%s\" path of the file storage",
     "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
-    "ErrVerifyPythonIsBusy": "Python is busy. Failed to start syntax check",
-    "ErrWaitTimeoutElapsed": "Failed to acquire Python during the given timeout as the Python script is still being executed in another node.",
+    "ErrPreviewSeparateProcessNotSupported": "Предпросмотр при запуске интерпретатора в отдельном процессе не поддерживается",
     "InputPortOptional": "Optional input port",
     "OutputDataFrameExample": "Received output pd.DataFrame",
     "PrepareCompatibleComment": "If \"Allow creating output columns in script\" option is enabled, the output data set structure can be prepared by pd.DataFrame"
+  },
+  "components/python/PythonEngineImpl": {
+    "ErrVerifyPythonIsBusy": "Python занят. Невозможно запустить проверку синтаксиса",
+    "ErrWaitTimeoutElapsed": "Не удалось захватить Python в течении установленного тайм-аута, т.к. код Python все ещё выполняется в другом узле."
   },
   "components/python/PythonExecutor": {
     "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nResolve the path in the file system by the path of the file storage\nArguments:\n  path: str\n    Path in the file storage.\nResult:\n  Path in the file system.",
@@ -1446,6 +1456,18 @@
     "ErrTCLFinalize": "Error occurred during TCL finalization",
     "ErrUnloadExtension": "Error occurred while \"%s\" extension unloading",
     "WarnExecuting": "Python already executing"
+  },
+  "components/python/PythonExeEngineImpl": {
+    "ErrInt32Overflow": "Значение %d выходит за границы допустимых значений 32-битного целого",
+    "ErrPythonExeNotFound": "Путь интерпретатора Python, указанный в настройках приложения, не существует",
+    "ErrRowLimitExceeded": "Превышено ограничение на максимальное количество строк в таблице",
+    "PythonDumpData": "Запись входных данных",
+    "PythonDumpInputTableData": "Запись данных входной таблицы",
+    "PythonDumpInputTableDataN": "Запись данных входной таблицы #%d",
+    "PythonDumpInputTablesData": "Запись данных входных таблиц",
+    "PythonExeFailed": "Выполнение интерпретатора Python завершилось с кодом ошибки %d",
+    "PythonLoadOutputTable": "Чтение выходной таблицы",
+    "PythonScriptExecution": "Выполнение скрипта"
   },
   "components/python/PythonInterface": {
     "ErrPythonLibraryIncompatibleVersion": "Python version %d.%d is not supported. %d.%d is minimum supported version.",
@@ -1803,6 +1825,7 @@
     "VendorDesc": "Export data to Excel file"
   },
   "exports/kafka/KafkaExport": {
+    "ErrDeliveryReportFmt": "Не удалось экспортировать сообщение: %s",
     "ErrKafkaFlushErrorFmt": "Error when sending Kafka messages \"%s\"",
     "ErrKeyFieldDataType": "Key field must be related to the string or integer type",
     "ErrKeyFieldNotFound": "Key field with \"%s\" name not found",
@@ -1810,9 +1833,7 @@
     "ErrMessageFieldNotFound": "Message field with \"%s\" name not found",
     "ExportProcess": "Sending messages to Kafka",
     "FlushProcess": "Messages sending finished",
-    "LogKafkaConfDone": "Kafka configuration prepared",
     "LogProduceInfoFmt": "%d messages for batch from %d added to queue",
-    "LogProducerCreated": "Producer created",
     "LogRowSkipedFmt": "Message was not created for row %d. The message or key field contains the null value",
     "PropErrBatchMessagesCount": "Messages count in the batch must not be less than 1",
     "PropErrMessageField": "No field with messages set",
@@ -1909,6 +1930,7 @@
   "imports/database/DBImport": {
     "ErrExecQuery": "Error executing DB query.",
     "ErrNotConnectedToDatabase": "No connection with database",
+    "ErrSQLNotSpecified": "Не указан текст SQL-запроса",
     "ErrTableNotSpecified": "Database table not specified",
     "ExecQueryProcess": "Query executing",
     "ImportDataProcess": "Data importing",
@@ -1953,16 +1975,8 @@
     "ErrPollErrorFmt": "Error when receiving Kafka messages \"%s\"",
     "ImportDataProcess": "Read messages from Kafka queue",
     "KeyDisplayName": "Key",
-    "LogConsumerClosed": "Consumer closed",
-    "LogConsumerConfDone": "Consumer configuration prepared",
-    "LogConsumerConfigured": "Consumer configured",
-    "LogConsumerCreated": "Consumer created",
-    "LogConsumerDestroyed": "Consumer destroyed",
-    "LogKafkaConfDone": "Kafka configuration prepared",
     "LogLimitReachedFmt": "Maximum number of %d messages reached. Import stopped",
-    "LogMsgDestroyedFmt": "Message with %d offset destroyed",
     "LogMsgPolledFmt": "Message with %d offset received",
-    "LogTopicConfDone": "Topic configuration prepared",
     "MessageDisplayName": "Message",
     "OffsetDisplayName": "Offset",
     "PartitionDisplayName": "Partition",
@@ -1972,11 +1986,6 @@
   "imports/kafka/KafkaImportVendor": {
     "VendorCaption": "Kafka",
     "VendorDesc": "Import of Kafka queue"
-  },
-  "imports/kafka/KafkaUtils": {
-    "ErrBrokersCouldNotBe": "Failed to add brokers",
-    "ErrUnableToCreateConsumer": "Failed to create Consumer - %s",
-    "ErrUnableToCreateProducer": "Failed to create Producer - %s"
   },
   "imports/native/DDFCommonReader": {
     "ErrHeaderReadError": "Header reading error"
@@ -2558,6 +2567,9 @@
   "Libraries/bgrtl/LocaleUtils": {
     "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system"
   },
+  "Libraries/bgrtl/Logger": {
+    "LogAnsiCodePage": "1251"
+  },
   "Libraries/bgrtl/LoggerConfigurator": {
     "ErrCannotConfigureLogger": "Failed to use logging parameters"
   },
@@ -3076,12 +3088,26 @@
     "ErrFileNameEmpty": "File name cannot be empty",
     "ErrFileNotFound": "\"%s\" file not found"
   },
+  "Libraries/KafkaConnection/KafkaAuth": {
+    "ErrFileNoAccess": "\"%s\" file unavailable",
+    "ErrFileNotFound": "\"%s\" file not found",
+    "ErrGetFileStorage": "No reference to file storage",
+    "PropErrNoPassword": "Не указан пароль",
+    "PropErrNoUsername": "Не указано имя пользователя"
+  },
   "Libraries/KafkaConnection/KafkaConnection": {
+    "ErrKafkaConnectFmt": "Не удалось подключится к кластеру Kafka %s: %s",
     "PropErrNoServer": "No Kafka cluster specified"
   },
   "Libraries/KafkaConnection/KafkaConnectionVendor": {
     "KafkaConnectionVendorCaption": "Kafka",
     "KafkaConnectionVendorDesc": "Connection to Kafka"
+  },
+  "Libraries/KafkaConnection/KafkaUtils": {
+    "DebugCallBackMsgFmt": "%s|%s| %s",
+    "ErrUnableToCreateConsumer": "Failed to create Consumer - %s",
+    "ErrUnableToCreateProducer": "Failed to create Producer - %s",
+    "LogErrKafkaCallBackFmt": "Ошибка Kafka: \"%s\", причина: \"%s\""
   },
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Data contains null values"
@@ -3223,7 +3249,8 @@
     "ErrIncompatibleBaseComponentVendor": "Base and derived components are incompatible",
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
-    "ErrUnknownCouplerDefType": "Unknown type of the coupler definition"
+    "ErrUnknownCouplerDefType": "Unknown type of the coupler definition",
+    "UpdateBaseConfigNodeLocked": "Не удалось обновить конфигурацию производного компонента \"%s\": базовый узел заблокирован"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
     "ErrCannotChangeDerivedName": "It is not possible to change the derived ports name",
@@ -3493,9 +3520,15 @@
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
+    "ErrReferencedNodeNotActive": "Исходный узел не активен",
     "ErrReferencedNodeNotActive": "Source node is not active",
+    "ErrReferencedNodeNotActive": "Не активен исходный узел \"%s\" GUID=%s",
+    "ErrReferencedNodeNotAvailable": "Исходный узел не доступен",
     "ErrReferencedNodeNotAvailable": "Source node not available",
+    "ErrReferencedNodeNotAvailable": "Не доступен исходный узел \"%s\" GUID=%s",
+    "ErrReferencedNodeNotFound": "Исходный узел не найден",
     "ErrReferencedNodeNotFound": "Source node not found",
+    "ErrReferencedNodeNotFound": "Не найден исходный узел GUID=%s",
     "ErrReferencedNodeNotSpecified": "No reference to node specified"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngineVendor": {

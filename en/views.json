@@ -2483,11 +2483,43 @@
     }
   },
   "connections/kafka/KafkaConnectionParams": {
+    "btnTestConnection": {
+      "text": "Test"
+    },
     "edtServer.valueConfig": {
       "emptyText": "host1:port1,host2:port2,..."
     },
-    "fldKafkaConnectionParams": {
-      "title": "Kafka parameters"
+    "pnlConnectionConfig": {
+      "title": "Дополнительная конфигурация подключения"
+    }
+  },
+  "connections/kafka/ParametersList": {
+    "btnAdd": {
+      "tooltip": "Add"
+    },
+    "btnDelete": {
+      "tooltip": "Delete selected"
+    },
+    "btnDeleteAll": {
+      "tooltip": "Delete all..."
+    },
+    "btnMoveDown": {
+      "tooltip": "Move down"
+    },
+    "btnMoveUp": {
+      "tooltip": "Move up"
+    },
+    "colDelete": {
+      "tooltip": "Delete all..."
+    },
+    "colDelete.0": {
+      "tooltip": "Delete"
+    },
+    "colName": {
+      "text": "Name"
+    },
+    "colValue": {
+      "text": "Value"
     }
   },
   "connections/onec8/OneC8ConnectionParams": {
@@ -3217,6 +3249,9 @@
       "href": "https://loginom.com/company/support/",
       "text": "Support"
     },
+    "btnTelegram": {
+      "href": "https://t.me/loginom/"
+    },
     "btnTwitter": {
       "href": "https://twitter.com/loginom_company/"
     },
@@ -3500,38 +3535,6 @@
     },
     "pnlConsumerConfig": {
       "title": "Additional Consumer configuration"
-    },
-    "pnlKafkaConfiguration": {
-      "title": "Additional Kafka configuration"
-    }
-  },
-  "imports/kafka/ParametersList": {
-    "btnAdd": {
-      "tooltip": "Add"
-    },
-    "btnDelete": {
-      "tooltip": "Delete selected"
-    },
-    "btnDeleteAll": {
-      "tooltip": "Delete all..."
-    },
-    "btnMoveDown": {
-      "tooltip": "Move down"
-    },
-    "btnMoveUp": {
-      "tooltip": "Move up"
-    },
-    "colDelete": {
-      "tooltip": "Delete all..."
-    },
-    "colDelete.0": {
-      "tooltip": "Delete"
-    },
-    "colName": {
-      "text": "Name"
-    },
-    "colValue": {
-      "text": "Value"
     }
   },
   "imports/native/ImportNativePreviewWizard": {

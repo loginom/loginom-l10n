@@ -2568,7 +2568,7 @@
     "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system"
   },
   "Libraries/bgrtl/Logger": {
-    "LogAnsiCodePage": "1251"
+    "LogAnsiCodePage": "0"
   },
   "Libraries/bgrtl/LoggerConfigurator": {
     "ErrCannotConfigureLogger": "Failed to use logging parameters"

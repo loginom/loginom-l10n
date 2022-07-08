@@ -1324,7 +1324,7 @@
       "SCRAMSHA512": "SCRAM-SHA-512"
     },
     "KafkaSecurityProtocol": {
-      "$Caption": "Протокол безопасности",
+      "$Caption": "security Protocol",
       "Plaintext": "PLAINTEXT",
       "SaslPlaintext": "SASL_PLAINTEXT",
       "Ssl": "SSL",

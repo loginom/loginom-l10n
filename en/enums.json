@@ -1878,10 +1878,10 @@
     "QualityViewProblemType": {
       "$Caption": "Problem in Data Field",
       "Missing": "Nulls",
-      "Extremal": "Экстремальные",
-      "Out": "Выбросы",
+      "Extremal": "Extreme",
+      "Out": "Outliers",
       "Empty": "Empty",
-      "Negative": "Отрицательные",
+      "Negative": "Negative",
       "Zero": "Zeros",
       "Space": "Whitespaces",
       "SpaceEnding": "Trailing spaces",

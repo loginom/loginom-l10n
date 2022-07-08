@@ -397,7 +397,7 @@
   },
   "components/python": {
     "PythonEngine": {
-      "UseSeparateProcess": "Запускать в отдельном процессе",
+      "UseSeparateProcess": "Start in separate process",
       "WaitTimeout": "Start wait timeout (ms)"
     }
   },

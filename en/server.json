@@ -1441,7 +1441,7 @@
     "ErrDisallowedExecution": "Python execution forbidden in security settings",
     "ErrGetNativePath": "Failed to resolve the file system path by the \"%s\" path of the file storage",
     "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
-    "ErrPreviewSeparateProcessNotSupported": "Предпросмотр при запуске интерпретатора в отдельном процессе не поддерживается",
+    "ErrPreviewSeparateProcessNotSupported": "Preview is not supported when starting interpreter in separate process",
     "InputPortOptional": "Optional input port",
     "OutputDataFrameExample": "Received output pd.DataFrame",
     "PrepareCompatibleComment": "If \"Allow creating output columns in script\" option is enabled, the output data set structure can be prepared by pd.DataFrame"

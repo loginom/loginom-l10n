@@ -3520,15 +3520,15 @@
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngine": {
     "ErrNodeLocked": "\"%s\" node is locked",
     "ErrNodeNotInitialized": "\"%s\" node not initialized",
-    "ErrReferencedNodeNotActive": "Исходный узел не активен",
     "ErrReferencedNodeNotActive": "Source node is not active",
-    "ErrReferencedNodeNotActive": "Не активен исходный узел \"%s\" GUID=%s",
-    "ErrReferencedNodeNotAvailable": "Исходный узел не доступен",
+    "ErrReferencedNodeNotActive": "Source node is not active",
+    "ErrReferencedNodeNotActive": "Source \"%s\" GUID=%s node is not active",
     "ErrReferencedNodeNotAvailable": "Source node not available",
-    "ErrReferencedNodeNotAvailable": "Не доступен исходный узел \"%s\" GUID=%s",
-    "ErrReferencedNodeNotFound": "Исходный узел не найден",
+    "ErrReferencedNodeNotAvailable": "Source node not available",
+    "ErrReferencedNodeNotAvailable": "Source \"%s\" GUID=%s node not available",
     "ErrReferencedNodeNotFound": "Source node not found",
-    "ErrReferencedNodeNotFound": "Не найден исходный узел GUID=%s",
+    "ErrReferencedNodeNotFound": "Source node not found",
+    "ErrReferencedNodeNotFound": "Source GUID=%s node not found",
     "ErrReferencedNodeNotSpecified": "No reference to node specified"
   },
   "Libraries/Model/ReferenceNode/ReferenceNodeComponentEngineVendor": {

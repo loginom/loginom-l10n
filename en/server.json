@@ -1430,7 +1430,7 @@
     "VendorDesc": "Selection of test and training sets"
   },
   "components/python/PythonComponentSettings": {
-    "PythonExe": "Путь интерпретатора",
+    "PythonExe": "Interpreter path",
     "PythonLib": "Library path"
   },
   "components/python/PythonEngine": {

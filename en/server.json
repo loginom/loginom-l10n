@@ -1930,7 +1930,7 @@
   "imports/database/DBImport": {
     "ErrExecQuery": "Error executing DB query.",
     "ErrNotConnectedToDatabase": "No connection with database",
-    "ErrSQLNotSpecified": "Не указан текст SQL-запроса",
+    "ErrSQLNotSpecified": "SQL request text not specified",
     "ErrTableNotSpecified": "Database table not specified",
     "ExecQueryProcess": "Query executing",
     "ImportDataProcess": "Data importing",

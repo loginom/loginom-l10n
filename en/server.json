@@ -1458,16 +1458,16 @@
     "WarnExecuting": "Python already executing"
   },
   "components/python/PythonExeEngineImpl": {
-    "ErrInt32Overflow": "Значение %d выходит за границы допустимых значений 32-битного целого",
-    "ErrPythonExeNotFound": "Путь интерпретатора Python, указанный в настройках приложения, не существует",
-    "ErrRowLimitExceeded": "Превышено ограничение на максимальное количество строк в таблице",
-    "PythonDumpData": "Запись входных данных",
-    "PythonDumpInputTableData": "Запись данных входной таблицы",
-    "PythonDumpInputTableDataN": "Запись данных входной таблицы #%d",
-    "PythonDumpInputTablesData": "Запись данных входных таблиц",
-    "PythonExeFailed": "Выполнение интерпретатора Python завершилось с кодом ошибки %d",
-    "PythonLoadOutputTable": "Чтение выходной таблицы",
-    "PythonScriptExecution": "Выполнение скрипта"
+    "ErrInt32Overflow": "%d value exceeds allowable values of 32 bit integer",
+    "ErrPythonExeNotFound": "Python interpreter path specified in application settings does not exist",
+    "ErrRowLimitExceeded": "Maximum table row limit exceeded",
+    "PythonDumpData": "Write input data",
+    "PythonDumpInputTableData": "Write input table data",
+    "PythonDumpInputTableDataN": "Write input #%d table data",
+    "PythonDumpInputTablesData": "Write iput tables data",
+    "PythonExeFailed": "Python interpreter execution finished with %d error code",
+    "PythonLoadOutputTable": "Read output table",
+    "PythonScriptExecution": "Workflow execution"
   },
   "components/python/PythonInterface": {
     "ErrPythonLibraryIncompatibleVersion": "Python version %d.%d is not supported. %d.%d is minimum supported version.",

@@ -3250,7 +3250,7 @@
     "ErrParentVendorIsDeleted": "Base component deleted",
     "ErrParentVendorNotFound": "Base component not found",
     "ErrUnknownCouplerDefType": "Unknown type of the coupler definition",
-    "UpdateBaseConfigNodeLocked": "Не удалось обновить конфигурацию производного компонента \"%s\": базовый узел заблокирован"
+    "UpdateBaseConfigNodeLocked": "Failed to update configuration of derived \"%s\" component: base node locked"
   },
   "Libraries/Model/DerivedModelUnitAspects": {
     "ErrCannotChangeDerivedName": "It is not possible to change the derived ports name",

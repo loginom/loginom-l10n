@@ -803,8 +803,8 @@
   "Libraries/KafkaConnection/KafkaAuth": {
     "KafkaAuth": {
       "Password": "Password",
-      "SaslMechanism": "SASL механизм",
-      "SecurityProtocol": "Протокол безопасности",
+      "SaslMechanism": "SASL Mechanism",
+      "SecurityProtocol": "Security Protocol",
       "SSLCA": "CA certificate",
       "SSLCert": "User certificate",
       "SSLKey": "Private key",

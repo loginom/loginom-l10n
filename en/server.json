@@ -3092,11 +3092,11 @@
     "ErrFileNoAccess": "\"%s\" file unavailable",
     "ErrFileNotFound": "\"%s\" file not found",
     "ErrGetFileStorage": "No reference to file storage",
-    "PropErrNoPassword": "Не указан пароль",
-    "PropErrNoUsername": "Не указано имя пользователя"
+    "PropErrNoPassword": "Password not specified",
+    "PropErrNoUsername": "Username not specified"
   },
   "Libraries/KafkaConnection/KafkaConnection": {
-    "ErrKafkaConnectFmt": "Не удалось подключится к кластеру Kafka %s: %s",
+    "ErrKafkaConnectFmt": "Failed to connect to Kafka %s cluster: %s",
     "PropErrNoServer": "No Kafka cluster specified"
   },
   "Libraries/KafkaConnection/KafkaConnectionVendor": {
@@ -3107,7 +3107,7 @@
     "DebugCallBackMsgFmt": "%s|%s| %s",
     "ErrUnableToCreateConsumer": "Failed to create Consumer - %s",
     "ErrUnableToCreateProducer": "Failed to create Producer - %s",
-    "LogErrKafkaCallBackFmt": "Ошибка Kafka: \"%s\", причина: \"%s\""
+    "LogErrKafkaCallBackFmt": "Kafka error: \"%s\", reason: \"%s\""
   },
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Data contains null values"

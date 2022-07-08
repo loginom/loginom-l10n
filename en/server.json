@@ -1825,7 +1825,7 @@
     "VendorDesc": "Export data to Excel file"
   },
   "exports/kafka/KafkaExport": {
-    "ErrDeliveryReportFmt": "Не удалось экспортировать сообщение: %s",
+    "ErrDeliveryReportFmt": "Failed to export message: %s",
     "ErrKafkaFlushErrorFmt": "Error when sending Kafka messages \"%s\"",
     "ErrKeyFieldDataType": "Key field must be related to the string or integer type",
     "ErrKeyFieldNotFound": "Key field with \"%s\" name not found",

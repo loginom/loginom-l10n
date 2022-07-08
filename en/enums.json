@@ -1318,7 +1318,7 @@
   },
   "Libraries/KafkaConnection/KafkaAuth": {
     "KafkaSaslMechanism": {
-      "$Caption": "SASL механизм",
+      "$Caption": "SASL Mechanism",
       "Plain": "PLAIN",
       "SCRAMSHA256": "SCRAM-SHA-256",
       "SCRAMSHA512": "SCRAM-SHA-512"

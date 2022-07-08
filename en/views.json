@@ -2490,7 +2490,7 @@
       "emptyText": "host1:port1,host2:port2,..."
     },
     "pnlConnectionConfig": {
-      "title": "Дополнительная конфигурация подключения"
+      "title": "Additional connection configuration"
     }
   },
   "connections/kafka/ParametersList": {

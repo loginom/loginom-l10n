@@ -1447,8 +1447,8 @@
     "PrepareCompatibleComment": "If \"Allow creating output columns in script\" option is enabled, the output data set structure can be prepared by pd.DataFrame"
   },
   "components/python/PythonEngineImpl": {
-    "ErrVerifyPythonIsBusy": "Python занят. Невозможно запустить проверку синтаксиса",
-    "ErrWaitTimeoutElapsed": "Не удалось захватить Python в течении установленного тайм-аута, т.к. код Python все ещё выполняется в другом узле."
+    "ErrVerifyPythonIsBusy": "Python is busy. Failed to start syntax checking",
+    "ErrWaitTimeoutElapsed": "Failed to capture Python during the set timeout as Python code is still executing in another node."
   },
   "components/python/PythonExecutor": {
     "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nResolve the path in the file system by the path of the file storage\nArguments:\n  path: str\n    Path in the file storage.\nResult:\n  Path in the file system.",

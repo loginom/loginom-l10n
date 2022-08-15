@@ -1458,7 +1458,7 @@
     "PythonDumpData": "Write input data",
     "PythonDumpInputTableData": "Write input table data",
     "PythonDumpInputTableDataN": "Write input #%d table data",
-    "PythonDumpInputTablesData": "Write iput tables data",
+    "PythonDumpInputTablesData": "Write input tables data",
     "PythonExeFailed": "Python interpreter execution finished with %d error code",
     "PythonLoadOutputTable": "Read output table",
     "PythonScriptExecution": "Workflow execution"

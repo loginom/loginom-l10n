@@ -1442,7 +1442,7 @@
   },
   "components/python/PythonEngineImpl": {
     "ErrVerifyPythonIsBusy": "Python занят. Невозможно запустить проверку синтаксиса",
-    "ErrWaitTimeoutElapsed": "Не удалось захватить Python в течении установленного тайм-аута, т.к. код Python все ещё выполняется в другом узле."
+    "ErrWaitTimeoutElapsed": "Не удалось захватить Python в течении установленного тайм-аута, т.к. код Python всё ещё выполняется в другом узле."
   },
   "components/python/PythonExecutor": {
     "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nПолучить путь в файловой системе по пути файлового хранилища\nАргументы:\n  path: str\n    Путь в файловом хранилище.\nРезультат:\n  Путь в файловой системе.",

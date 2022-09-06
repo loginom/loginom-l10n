@@ -1062,7 +1062,6 @@
     "VendorDesc": "Группировка данных"
   },
   "components/javascript/JavaScriptEngine": {
-    "ErrInvalidPath": "Некорректный путь \"%s\"",
     "InputDataSource": "Входной источник данных",
     "JavaScriptConfigureOutputTable": "Подготовка выходных столбцов",
     "OutputDataSet": "Выходной набор данных"
@@ -1446,6 +1445,7 @@
   },
   "components/python/PythonExecutor": {
     "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nПолучить путь в файловой системе по пути файлового хранилища\nАргументы:\n  path: str\n    Путь в файловом хранилище.\nРезультат:\n  Путь в файловой системе.",
+    "ErrNumExprFinalize": "Не удалось финализировать модуль numexpr",
     "ErrResNotFound": "Ресурс %s не найден",
     "ErrTCLFinalize": "Ошибка при финализации TCL",
     "ErrUnloadExtension": "Ошибка при выгрузке расширения \"%s\"",
@@ -1464,6 +1464,8 @@
     "PythonScriptExecution": "Выполнение скрипта"
   },
   "components/python/PythonInterface": {
+    "ErrPythonDllNotUnloaded": "Не удалось выгрузить библиотеку \"%s\" из памяти процесса",
+    "ErrPythonDllStillLoaded": "Библиотека \"%s\" не выгружена из памяти процесса.Это может являться следствием использования модуля, неподдерживаемого в режиме выполнения Python внутри процесса приложения.Для работы Python требуется перезапуск приложения.",
     "ErrPythonLibraryIncompatibleVersion": "Версия Python %d.%d не поддерживается. Минимальная поддерживаемая версия %d.%d.",
     "ErrPythonLibraryNotFound": "Не найдена библиотека python"
   },
@@ -2189,6 +2191,7 @@
     "DatabaseTypeName": "SQLite",
     "ErrBlankConnectionString": "Не указана строка подключения",
     "ErrNotCursor": "Последняя команда в SQL-скрипте не возвращает курсор",
+    "ErrUnsupportedConnectionString": "Указанный формат строки подключения не поддерживается",
     "SQLiteError": "Ошибка SQLite: ",
     "SQLiteFuncOverridingNotSupported": "Переопределение функций для версий SQLite ниже 3.7.3 не поддерживается"
   },

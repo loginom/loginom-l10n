@@ -1445,7 +1445,7 @@
   },
   "components/python/PythonExecutor": {
     "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nResolve the path in the file system by the path of the file storage\nArguments:\n  path: str\n    Path in the file storage.\nResult:\n  Path in the file system.",
-    "ErrNumExprFinalize": "Не удалось финализировать модуль numexpr",
+    "ErrNumExprFinalize": "Failed to finalize numexpr module",
     "ErrResNotFound": "%s resource not found",
     "ErrTCLFinalize": "Error occurred during TCL finalization",
     "ErrUnloadExtension": "Error occurred while \"%s\" extension unloading",
@@ -1464,8 +1464,8 @@
     "PythonScriptExecution": "Workflow execution"
   },
   "components/python/PythonInterface": {
-    "ErrPythonDllNotUnloaded": "Не удалось выгрузить библиотеку \"%s\" из памяти процесса",
-    "ErrPythonDllStillLoaded": "Библиотека \"%s\" не выгружена из памяти процесса.Это может являться следствием использования модуля, неподдерживаемого в режиме выполнения Python внутри процесса приложения.Для работы Python требуется перезапуск приложения.",
+    "ErrPythonDllNotUnloaded": "Failed to unload \"%s\" library from the process memory",
+    "ErrPythonDllStillLoaded": "\"%s\" library was not unloaded from the process memory. It can be caused by use of the module unsupported in the Python execution mode inside the application process. Application restart is required for Python operation.",
     "ErrPythonLibraryIncompatibleVersion": "Python version %d.%d is not supported. %d.%d is minimum supported version.",
     "ErrPythonLibraryNotFound": "Python library not found"
   },
@@ -2191,7 +2191,7 @@
     "DatabaseTypeName": "SQLite",
     "ErrBlankConnectionString": "Empty connection string",
     "ErrNotCursor": "The last command in SQL script does not return the cursor",
-    "ErrUnsupportedConnectionString": "Указанный формат строки подключения не поддерживается",
+    "ErrUnsupportedConnectionString": "The specified connection string format is not supported",
     "SQLiteError": "SQLite error: ",
     "SQLiteFuncOverridingNotSupported": "Function override for SQLite versions below 3.7.3 not supported"
   },

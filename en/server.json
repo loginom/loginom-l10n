@@ -1968,16 +1968,25 @@
     "VendorDesc": "Import data from Excel file"
   },
   "imports/kafka/KafkaImport": {
+    "ErrFailedCloseConsumerFmt": "Ошибка закрытия Consumer: %s",
     "ErrPollErrorFmt": "Error when receiving Kafka messages \"%s\"",
+    "FailedFmt": "не удалось: %s",
+    "GroupRebalancedFmt": "Группа %s перебалансирована (id участника %s)",
     "ImportDataProcess": "Read messages from Kafka queue",
+    "IncrementalAssignmentRebalancedFmt": "Перебалансировка группы %s: поэтапное назначение %d партиций (идентификатор участника %s, присвоение потеряно %d, протокол перебалансировки %s)",
+    "IncrementalRevokeRebalancedFmt": "Перебалансировка группы %s: поэтапный отзыв %d партиций (идентификатор участника %s, присвоение потеряно %d, протокол перебалансировки %s)",
     "KeyDisplayName": "Key",
     "LogLimitReachedFmt": "Maximum number of %d messages reached. Import stopped",
-    "LogMsgPolledFmt": "Message with %d offset received",
     "MessageDisplayName": "Message",
     "OffsetDisplayName": "Offset",
     "PartitionDisplayName": "Partition",
     "PropErrNoGroupID": "Group identifier not set",
-    "PropErrTopic": "Topic not set"
+    "PropErrOffsetInvalid": "Смещение должно быть больше или равно 0",
+    "PropErrTopic": "Topic not set",
+    "RebalanceAssignErrFmt": "Не удалось назначить перебалансировку %d партиций: %s",
+    "RebalanceUnassignErrFmt": "Не удалось отменить назначение перебалансировки %d партиций: %s",
+    "SubscribeErrFmt": "Не удалось подписаться на %d топиков: %s",
+    "WaitingGroupRebalanceProcess": "Ожидание ребаланса группы"
   },
   "imports/kafka/KafkaImportVendor": {
     "VendorCaption": "Kafka",

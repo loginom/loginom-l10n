@@ -843,6 +843,17 @@
       "ExplicitRange": "Set"
     }
   },
+  "imports/kafka": {
+    "KafkaOffsetMode": {
+      "$Caption": "Тип смещения",
+      "None": "Без указания смещения",
+      "Beginning": "С начала очереди партиций",
+      "End": "С конца очереди партиций",
+      "Stored": "С текущего смещения",
+      "Absolute": "Номер смещения",
+      "RelativeFromEnd": "Смещение относительно конца"
+    }
+  },
   "imports/native": {
     "DDFCompression": {
       "$Caption": "Compression Algorithm",

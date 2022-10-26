@@ -579,7 +579,8 @@
       "ClientID": "ID клиента",
       "GroupID": "ID группы",
       "MaxNumberPollMessages": "Максимальное количество сообщений",
-      "Partition": "Раздел",
+      "Offset": "Смещение",
+      "OffsetMode": "Тип смещения",
       "PollTimeout": "Время ожидания сообщения (мс)",
       "Topic": "Топик"
     }

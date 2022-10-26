@@ -1970,11 +1970,11 @@
   "imports/kafka/KafkaImport": {
     "ErrFailedCloseConsumerFmt": "Ошибка закрытия Consumer: %s",
     "ErrPollErrorFmt": "Error when receiving Kafka messages \"%s\"",
-    "FailedFmt": "не удалось: %s",
-    "GroupRebalancedFmt": "Группа %s перебалансирована (id участника %s)",
+    "FailedFmt": "Failed: %s",
+    "GroupRebalancedFmt": "Group %s rebalanced (memberid %s)",
     "ImportDataProcess": "Read messages from Kafka queue",
-    "IncrementalAssignmentRebalancedFmt": "Перебалансировка группы %s: поэтапное назначение %d партиций (идентификатор участника %s, присвоение потеряно %d, протокол перебалансировки %s)",
-    "IncrementalRevokeRebalancedFmt": "Перебалансировка группы %s: поэтапный отзыв %d партиций (идентификатор участника %s, присвоение потеряно %d, протокол перебалансировки %s)",
+    "IncrementalAssignmentRebalancedFmt": "Group %s rebalanced: incremental assignment of %d partition(s) (memberid %s, assignment lost %d, %s rebalance protocol)",
+    "IncrementalRevokeRebalancedFmt": "Group %s rebalanced: incremental revoke of %d partition(s) (memberid %s, assignment lost %d, %s rebalance protocol)",
     "KeyDisplayName": "Key",
     "LogLimitReachedFmt": "Maximum number of %d messages reached. Import stopped",
     "MessageDisplayName": "Message",
@@ -1983,10 +1983,10 @@
     "PropErrNoGroupID": "Group identifier not set",
     "PropErrOffsetInvalid": "Смещение должно быть больше или равно 0",
     "PropErrTopic": "Topic not set",
-    "RebalanceAssignErrFmt": "Не удалось назначить перебалансировку %d партиций: %s",
-    "RebalanceUnassignErrFmt": "Не удалось отменить назначение перебалансировки %d партиций: %s",
-    "SubscribeErrFmt": "Не удалось подписаться на %d топиков: %s",
-    "WaitingGroupRebalanceProcess": "Ожидание ребаланса группы"
+    "RebalanceAssignErrFmt": "Rebalance assign of %d partition(s) failed: %s",
+    "RebalanceUnassignErrFmt": "Rebalance unassign of %d partition(s) failed: %s",
+    "SubscribeErrFmt": "Failed to subscribe to %d topics: %s",
+    "WaitingGroupRebalanceProcess": "Waiting for group rebalance"
   },
   "imports/kafka/KafkaImportVendor": {
     "VendorCaption": "Kafka",

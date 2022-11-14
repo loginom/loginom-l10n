@@ -845,13 +845,13 @@
   },
   "imports/kafka": {
     "KafkaOffsetMode": {
-      "$Caption": "Тип смещения",
-      "None": "Без указания смещения",
-      "Beginning": "С начала очереди партиций",
-      "End": "С конца очереди партиций",
-      "Stored": "С текущего смещения",
-      "Absolute": "Номер смещения",
-      "RelativeFromEnd": "Смещение относительно конца"
+      "$Caption": "Bias Type",
+      "None": "No bias specified",
+      "Beginning": "From the start of partition queue",
+      "End": "From the end of partition queue",
+      "Stored": "From the current bias",
+      "Absolute": "Bias number",
+      "RelativeFromEnd": "Bias relative to end"
     }
   },
   "imports/native": {

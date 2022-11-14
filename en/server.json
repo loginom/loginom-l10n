@@ -1968,7 +1968,7 @@
     "VendorDesc": "Import data from Excel file"
   },
   "imports/kafka/KafkaImport": {
-    "ErrFailedCloseConsumerFmt": "Ошибка закрытия Consumer: %s",
+    "ErrFailedCloseConsumerFmt": "Error when closing Consumer: %s",
     "ErrPollErrorFmt": "Error when receiving Kafka messages \"%s\"",
     "FailedFmt": "Failed: %s",
     "GroupRebalancedFmt": "Group %s rebalanced (memberid %s)",
@@ -1981,7 +1981,7 @@
     "OffsetDisplayName": "Offset",
     "PartitionDisplayName": "Partition",
     "PropErrNoGroupID": "Group identifier not set",
-    "PropErrOffsetInvalid": "Смещение должно быть больше или равно 0",
+    "PropErrOffsetInvalid": "Offset must be equal or more than 0",
     "PropErrTopic": "Topic not set",
     "RebalanceAssignErrFmt": "Rebalance assign of %d partition(s) failed: %s",
     "RebalanceUnassignErrFmt": "Rebalance unassign of %d partition(s) failed: %s",

@@ -847,10 +847,10 @@
     "KafkaOffsetMode": {
       "$Caption": "Offset Type",
       "None": "No offset specified",
-      "Beginning": "From the start of partition queue",
+      "Beginning": "From the beginning of partition queue",
       "End": "From the end of partition queue",
-      "Stored": "From the current offset",
-      "Absolute": "Offset number",
+      "Stored": "From the stored offset",
+      "Absolute": "Absolute offset",
       "RelativeFromEnd": "Offset relative to end"
     }
   },

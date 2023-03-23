@@ -509,6 +509,9 @@
     "btnActivateAll": {
       "tooltip": "Выполнить все"
     },
+    "btnAddAnnotation": {
+      "tooltip": "Создать заметку"
+    },
     "btnBatchMode": {
       "tooltip": "Настроить режим активации узла..."
     },
@@ -577,6 +580,69 @@
     "btnShowVendors": {
       "tooltip": "Показать/скрыть панель компонентов"
     },
+    "btnStyle0": {
+      "text": "Абв"
+    },
+    "btnStyle1": {
+      "text": "Абв"
+    },
+    "btnStyle10": {
+      "text": "Абв"
+    },
+    "btnStyle11": {
+      "text": "Абв"
+    },
+    "btnStyle12": {
+      "text": "Абв"
+    },
+    "btnStyle13": {
+      "text": "Абв"
+    },
+    "btnStyle14": {
+      "text": "Абв"
+    },
+    "btnStyle15": {
+      "text": "Абв"
+    },
+    "btnStyle16": {
+      "text": "Абв"
+    },
+    "btnStyle17": {
+      "text": "Абв"
+    },
+    "btnStyle18": {
+      "text": "Абв"
+    },
+    "btnStyle19": {
+      "text": "Абв"
+    },
+    "btnStyle2": {
+      "text": "Абв"
+    },
+    "btnStyle20": {
+      "text": "Абв"
+    },
+    "btnStyle3": {
+      "text": "Абв"
+    },
+    "btnStyle4": {
+      "text": "Абв"
+    },
+    "btnStyle5": {
+      "text": "Абв"
+    },
+    "btnStyle6": {
+      "text": "Абв"
+    },
+    "btnStyle7": {
+      "text": "Абв"
+    },
+    "btnStyle8": {
+      "text": "Абв"
+    },
+    "btnStyle9": {
+      "text": "Абв"
+    },
     "btnTable": {
       "tooltip": "Показать в виде таблицы"
     },
@@ -592,6 +658,18 @@
     "btnWorkFlow": {
       "tooltip": "Показать в виде сценария"
     },
+    "mniAnnotationCopy": {
+      "text": "Копировать"
+    },
+    "mniAnnotationCut": {
+      "text": "Вырезать"
+    },
+    "mniAnnotationDelete": {
+      "text": "Удалить"
+    },
+    "mniAnnotationPaste": {
+      "text": "Вставить"
+    },
     "mniHorizontalAlignBottom": {
       "text": "По нижнему краю",
       "tooltip": "Горизонтальное выравнивание по нижнему краю"
@@ -603,6 +681,9 @@
     "mniHorizontalAlignTop": {
       "text": "По верхнему краю",
       "tooltip": "Горизонтальное выравнивание по верхнему краю"
+    },
+    "mniStyle": {
+      "text": "Стиль"
     },
     "mniVerticalAlighCenter": {
       "text": "По середине",
@@ -638,6 +719,9 @@
     },
     "cbxLocale": {
       "fieldLabel": "Локаль"
+    },
+    "chbBinaryCmpUniqValues": {
+      "boxLabel": "Сравнивать строковые уникальные значения бинарно"
     },
     "chbUseBasePackageFileStorage": {
       "boxLabel": "Использовать относительные пути базового пакета"
@@ -1578,7 +1662,7 @@
       "tooltip": "Удалить"
     },
     "frmConditionParamsWizard": {
-      "title": "Условие. Настройка списка условий."
+      "title": "Настройка списка условий"
     }
   },
   "components/condition/ConditionSocketsWizard": {
@@ -1613,7 +1697,7 @@
       "text": "Тип"
     },
     "frmConditionSocketsWizard": {
-      "title": "Условие. Настройка портов узла."
+      "title": "Настройка списка портов"
     }
   },
   "components/corranalysis/CorrAnalysisWizard": {
@@ -1852,7 +1936,7 @@
       "title": "Идентификация XML-документа"
     },
     "frmExtractXmlProperties": {
-      "title": "Параметры извлечения XML"
+      "title": "Параметры разбора XML"
     },
     "rbFull": {
       "boxLabel": "Один запрос на весь набор данных"
@@ -2176,12 +2260,48 @@
       "title": "Дополнительные параметры"
     }
   },
-  "components/restclient/RequestConnectionForm": {
+  "components/restclient/MessageBody": {
+    "edtMessageBodyColumn": {
+      "fieldLabel": "Поле с телом сообщения"
+    }
+  },
+  "components/restclient/ParamLinks": {
+    "btnAutoLink": {
+      "text": "Связать все автоматически",
+      "tooltip": "Связать все автоматически..."
+    },
+    "btnLinksDel": {
+      "text": "Удалить все связи",
+      "tooltip": "Удалить все связи..."
+    },
+    "colColumnName": {
+      "text": "Поле"
+    },
+    "colParam": {
+      "text": "Параметры запроса"
+    },
+    "mniFieldAutoLink": {
+      "text": "Связать автоматически"
+    },
+    "mniFieldRemoveLink": {
+      "text": "Удалить связь"
+    },
+    "mniParamAutoLink": {
+      "text": "Связать автоматически"
+    },
+    "mniParamRemoveLink": {
+      "text": "Удалить связь"
+    }
+  },
+  "components/restclient/RESTRequestWizard": {
     "btnConnect": {
       "text": "Не подключено"
     },
-    "edtConnection": {
+    "cntConnection": {
       "fieldLabel": "Подключение"
+    },
+    "frmRequest": {
+      "title": "Настройка запроса"
     }
   },
   "components/slidingwindow/SlidingWindowWizard": {
@@ -2561,11 +2681,6 @@
       "fieldLabel": "Кластер серверов"
     }
   },
-  "connections/restservice/AuthorizationWizard": {
-    "frmAuthorization": {
-      "title": "Авторизация для выполнения запроса"
-    }
-  },
   "connections/restservice/ConnectionWizard": {
     "btnAdd": {
       "tooltip": "Добавить"
@@ -2584,6 +2699,9 @@
     },
     "btnURLTest": {
       "text": "Тестировать"
+    },
+    "cntAuth": {
+      "title": "Аутентификация для выполнения запроса"
     },
     "colDataType": {
       "text": "Тип данных"
@@ -2643,7 +2761,7 @@
   },
   "connections/webservice/AuthorizationWizard": {
     "frmAuthorization": {
-      "title": "Авторизация для выполнения запроса"
+      "title": "Аутентификация для выполнения запроса"
     }
   },
   "connections/webservice/ConnectionWizard": {
@@ -2654,7 +2772,7 @@
       "text": "Тестировать"
     },
     "cntAuthorization": {
-      "title": "Авторизация для получения WSDL-файла"
+      "title": "Аутентификация для получения WSDL-файла"
     },
     "frmConnection": {
       "title": "Параметры подключения"
@@ -3076,6 +3194,10 @@
       "text": "Копировать",
       "tooltip": "Копировать"
     },
+    "btnCopyFullPath": {
+      "text": "Копировать полный путь",
+      "tooltip": "Копировать полный путь"
+    },
     "btnCreateDirectory": {
       "text": "Создать каталог",
       "tooltip": "Создать каталог..."
@@ -3302,35 +3424,74 @@
     "btnConnect": {
       "text": "Подключить"
     },
-    "btnFieldsFilter": {
-      "tooltip": "Фильтрация полей"
-    },
-    "btnObjectsFilter": {
-      "tooltip": "Фильтрация объектов базы данных"
+    "btnExtractAll": {
+      "text": "Извлекать всё"
     },
     "btnPreview": {
-      "text": "Предпросмотр..."
-    },
-    "chbFieldsStar": {
-      "boxLabel": "Извлекать все поля <b>(*)</b>"
+      "text": "Предпросмотр"
     },
     "cntConnection": {
       "fieldLabel": "Подключение"
     },
-    "colName": {
-      "text": "Поля"
+    "colDataType": {
+      "text": "Тип в базе"
+    },
+    "colDisplayText": {
+      "text": "Метка"
+    },
+    "colFieldName": {
+      "text": "Поле"
+    },
+    "colValue": {
+      "text": "Значение"
+    },
+    "colVariableName": {
+      "text": "Имя"
     },
     "frmSqlImport": {
       "title": "Импорт из базы данных"
     },
+    "grdVariables": {
+      "title": "Переменные"
+    },
+    "lblAllFields": {
+      "text": "Выбрано извлечение всех полей"
+    },
+    "lblNoDBConnection": {
+      "text": "Нет подключения к базе данных"
+    },
     "lblObjectsTree": {
       "text": "Таблицы/представления"
     },
-    "pnlExtractBySQL": {
-      "title": "SQL запрос"
+    "lblSelectFields": {
+      "text": "Подключитесь к базе и выберите поля"
     },
-    "pnlExtractByTable": {
-      "title": "Таблица/представление"
+    "lblVariables": {
+      "text": "Переменные"
+    },
+    "mniInsertFullName": {
+      "text": "Вставить полное имя в редактор SQL кода"
+    },
+    "mniParameter": {
+      "text": ":VAR"
+    },
+    "mniSelect": {
+      "text": "Выбрать таблицу"
+    },
+    "mniSubstitution": {
+      "text": "%VAR%"
+    },
+    "pedTableName.valueConfig": {
+      "emptyText": "Выберите таблицу в списке или введите имя"
+    },
+    "rbSQL": {
+      "boxLabel": "SQL запрос"
+    },
+    "rbTable": {
+      "boxLabel": "Выбор таблицы"
+    },
+    "txtFieldsFilterField": {
+      "fieldLabel": "Label"
     }
   },
   "imports/dbimport/SQLPreviewForm": {
@@ -3516,6 +3677,9 @@
     "cntConnection": {
       "fieldLabel": "Хранилище файлов"
     },
+    "edtFileName": {
+      "propDisplayName": "Имя файла / URL"
+    },
     "frmImportFromFile": {
       "title": "Импорт из Excel файла"
     },
@@ -3590,6 +3754,9 @@
     "edtCodePage.valueConfig": {
       "regexText": "Недопустимая кодовая страница"
     },
+    "edtFileName": {
+      "propDisplayName": "Имя файла / URL"
+    },
     "frmImportFromFile": {
       "title": "Импорт из текстового файла"
     }
@@ -3622,6 +3789,9 @@
     },
     "edtConnection": {
       "fieldLabel": "Хранилище файлов"
+    },
+    "edtFileName": {
+      "propDisplayName": "Имя файла / URL"
     },
     "frmImportXmlFile": {
       "title": "Импорт из XML файла"
@@ -3800,6 +3970,11 @@
     },
     "rgpSearchMode": {
       "fieldLabel": "Режим"
+    }
+  },
+  "viewers/browse/BrowseSorting": {
+    "chkBufferWhole": {
+      "fieldLabel": "Кэшировать все данные"
     }
   },
   "viewers/browse/BrowseView": {
@@ -4366,7 +4541,7 @@
       "fieldLabel": "Значение"
     },
     "frmCasesFilterPanel": {
-      "title": "Фильтровать факты"
+      "title": "Фильтр по фактам"
     }
   },
   "viewers/cube/CasesTunePanel": {
@@ -4407,7 +4582,7 @@
       "tooltip": "Переместить вверх"
     },
     "frmCasesTunePanel": {
-      "title": "Настроить факты"
+      "title": "Настройка фактов"
     },
     "pnlCases": {
       "title": "Доступные факты"
@@ -4532,6 +4707,9 @@
     "btnTuneCase": {
       "tooltip": "Настроить факты..."
     },
+    "btnTuneDims": {
+      "tooltip": "Настроить измерения..."
+    },
     "colDisplayName": {
       "text": "Поля"
     },
@@ -4650,11 +4828,28 @@
     "btnPaste": {
       "tooltip": "Добавить к отмеченным"
     },
+    "btnPrepare": {
+      "text": "Загрузить"
+    },
+    "btnPrepareAbort": {
+      "text": "Отмена"
+    },
     "btnReverseCheck": {
       "tooltip": "Инвертировать выбор"
     },
     "btnRollable": {
       "tooltip": "Зациклить значения при перелистывании"
+    }
+  },
+  "viewers/cube/DimensionsTunePanel": {
+    "btnApply": {
+      "text": "Применить"
+    },
+    "btnCancel": {
+      "text": "Отменить"
+    },
+    "frmDimensionsTunePanel": {
+      "title": "Настройка измерений"
     }
   },
   "viewers/cube/EmbeddedBrowseForm": {
@@ -5050,6 +5245,9 @@
       "text": "Добавить группу",
       "tooltip": "Добавить группу отчетов..."
     },
+    "btnCubeView": {
+      "tooltip": "Плитка"
+    },
     "btnDelete": {
       "text": "Удалить",
       "tooltip": "Удалить ..."
@@ -5058,12 +5256,26 @@
       "text": "Удалить все",
       "tooltip": "Удалить все ..."
     },
+    "btnGrouping": {
+      "text": "Сгруппировать",
+      "tooltip": "Сгруппировать"
+    },
+    "btnListView": {
+      "tooltip": "Таблица"
+    },
+    "btnMoveData": {
+      "text": "Переместить",
+      "tooltip": "Переместить"
+    },
     "btnReloadViewData": {
       "text": "Перечитать данные"
     },
     "btnRename": {
       "text": "Переименовать",
       "tooltip": "Переименовать"
+    },
+    "mniCreateGroup": {
+      "text": "Перенести в отчеты"
     },
     "pnlReportsForm": {
       "title": "Отчеты"
@@ -5462,7 +5674,7 @@
       "title": "Добавить столбец"
     }
   },
-  "wizards/columnsdisposition/ColumnsDispositionWizard": {
+  "wizards/columnsdisposition/ColumnsDisposition": {
     "btnDown": {
       "tooltip": "Переместить вниз"
     },
@@ -5484,14 +5696,16 @@
     "colUsedFieldsDelete.0": {
       "tooltip": "Удалить"
     },
-    "frmColumnsDispositionWizard": {
-      "title": "Диспозиция"
-    },
     "mniDeleteSelected": {
       "tooltip": "Удалить выбранные"
     },
     "txtFilterField": {
       "emptyText": "Фильтрация/Поиск"
+    }
+  },
+  "wizards/columnsdisposition/ColumnsDispositionWizard": {
+    "frmColumnsDispositionWizard": {
+      "title": "Диспозиция"
     }
   },
   "wizards/connection/BigQueryConnectionParams": {
@@ -5913,6 +6127,9 @@
     "colName": {
       "text": "Имя"
     },
+    "colOptional": {
+      "text": "Необязательный"
+    },
     "colType": {
       "text": "Тип"
     },
@@ -6074,6 +6291,17 @@
     },
     "lblEmpty": {
       "text": "Нет данных для просмотра"
+    }
+  },
+  "wizards/random/RandSeedEdit": {
+    "mniAlwaysRandomize": {
+      "text": "Всегда случайно"
+    },
+    "mniCopy": {
+      "text": "Копировать"
+    },
+    "mniGenerate": {
+      "text": "Генерировать"
     }
   },
   "wizards/referencenode/ReferenceNodeComponentWizard": {

@@ -27,23 +27,6 @@
     "ErrTooFewArgs": "В функцию %s передано недостаточно аргументов (%d, когда минимум %d)",
     "ErrTooManyArgs": "В функцию %s передано много аргументов (%d, когда максимум %d)"
   },
-  "Common/CertList/CertList": {
-    "ErrCertListImplementationNotRegistered": "Не зарегистрирована реализация списка сертификатов"
-  },
-  "Common/CertList/CertList_Win": {
-    "AddressBook": "Другие пользователи",
-    "AuthRoot": "Сторонние корневые центры сертификации",
-    "CA": "Промежуточные центры сертификации",
-    "Disallowed": "Сертификаты, к которым нет доверия",
-    "My": "Личное",
-    "Root": "Доверенные корневые центры сертификации",
-    "SmartCardRoot": "Доверенные корневые сертификаты смарт-карты",
-    "Trust": "Доверительные отношения в предприятии",
-    "TrustedDevices": "Доверенные устройства",
-    "TrustedPeople": "Доверенные лица",
-    "TrustedPublisher": "Доверенные издатели",
-    "UserDS": "Объект пользователя Active Directory"
-  },
   "Common/CodeExec/CodeAPI": {
     "ArgColumn": "Индекс или имя столбца",
     "ArgColumnIndex": "Индекс столбца",
@@ -110,8 +93,12 @@
     "PreviewProcess": "Предварительный просмотр данных",
     "WarnPreviewRunning": "Предпросмотр уже запущен"
   },
-  "Common/HTTP/CachedHttpStream": {
-    "ErrCachedHttpStreamClassUnassigned": "Класс кэшируемого HTTP-потока не зарегистрирован"
+  "Common/HTTP/CachedHttpStream_Synapse": {
+    "ErrCodePageNotSupported": "Кодовая страница \"%s\" не поддерживается",
+    "ErrHttpOutputStreamRequired": "Не удалось создать экземпляр класса %s, нет ответа после HTTP запроса",
+    "ErrHttpResponseWriteDisallowed": "Запись в поток HTTP-ответа запрещена",
+    "ErrInconsistentContentLength": "Фактический размер принятых данных %d не совпадает со значением заголовка Content-Length %d",
+    "ErrReadStreamBufferLength": "Размер предоставленного буфера %d недостаточен для чтения %d байт"
   },
   "Common/HTTP/CachedHttpStream_Win": {
     "ErrHttpResponseExRequired": "Не удалось создать экземпляр класса %s, необходима поддержка ответом HTTP-клиента интерфейса IHTTPResponseEx",
@@ -119,15 +106,52 @@
     "ErrInconsistentContentLength": "Фактический размер принятых данных %d не совпадает со значением заголовка Content-Length %d",
     "ErrReadStreamBufferLength": "Размер предоставленного буфера %d недостаточен для чтения %d байт"
   },
+  "Common/HTTP/HTTPContext_Synapse": {
+    "ErrUnsupportedAuthModeCert": "Аутентификация с помощью клиентского сертификата из хранилища не поддерживается"
+  },
   "Common/HTTP/HTTPNetRequest": {
     "ErrHTTPNetRequest": "Запрос к URL \"%s\" завершился с ошибкой"
   },
   "Common/HTTP/SynapseHTTPSend": {
-    "ErrHTTPResult": "Ошибка при выполнениии HTTP запроса. Status code %d: %s",
-    "ErrHTTPSocket": "Ошибка при выполнениии HTTP запроса. TCP/IP Socket error %d: %s",
+    "ErrHTTPResult": "Ошибка при выполнении HTTP запроса. Status code %d: %s",
+    "ErrHTTPSocket": "Ошибка при выполнении HTTP запроса. TCP/IP Socket error %d: %s",
     "ErrMaximumRedirectReached": "Превышено максимальное число переадресаций на: %s",
     "ErrStreamIsDirectReadOnly": "Случайный доступ к данным потока невозможен",
-    "ErrStreamSizeUnspecified": "Размер даных потока не определен"
+    "ErrStreamSizeUnspecified": "Размер данных потока не определен"
+  },
+  "Common/HTTPClient/CertList": {
+    "ErrCertListImplementationNotRegistered": "Не зарегистрирована реализация списка сертификатов"
+  },
+  "Common/HTTPClient/CertList_Win": {
+    "AddressBook": "Другие пользователи",
+    "AuthRoot": "Сторонние корневые центры сертификации",
+    "CA": "Промежуточные центры сертификации",
+    "Disallowed": "Сертификаты, к которым нет доверия",
+    "My": "Личное",
+    "Root": "Доверенные корневые центры сертификации",
+    "SmartCardRoot": "Доверенные корневые сертификаты смарт-карты",
+    "Trust": "Доверительные отношения в предприятии",
+    "TrustedDevices": "Доверенные устройства",
+    "TrustedPeople": "Доверенные лица",
+    "TrustedPublisher": "Доверенные издатели",
+    "UserDS": "Объект пользователя Active Directory"
+  },
+  "Common/HTTPClient/HTTPClientBase": {
+    "AdditionalDataSet": "Дополнительные данные",
+    "ErrorCodeColumn": "Код завершения",
+    "ErrorDescColumn": "Описание ошибки",
+    "RequestDataSource": "Источник данных запроса"
+  },
+  "Common/HTTPClient/HTTPClientTypes": {
+    "ErrHttpVerbNotSupported": "HTTP метод \"%s\" в настоящее время не поддерживается"
+  },
+  "Common/HTTPClient/HTTPHeaders": {
+    "ErrInvalidHeaderName": "Недопустимое имя заголовка %s"
+  },
+  "Common/HTTPClient/WSDLClientAuth": {
+    "ErrFileNoAccess": "Файл \"%s\" недоступен",
+    "ErrFileNotFound": "Файл \"%s\" не найден",
+    "ErrGetFileStorage": "Отсутствует ссылка на файловое хранилище"
   },
   "Common/JavaScript/JavaScriptModuleLoader": {
     "ErrModuleFileTooBig": "Файл модуля %s не может быть загружен: превышено ограничение на допустимый размер файла (%d > %d байт)",
@@ -135,9 +159,6 @@
     "ErrModulePath": "Не удалось разрешить имя модуля \"%s\"",
     "ErrModuleSourceRead": "Ошибка при чтении файла модуля \"%s\"",
     "ErrModuleSpecifierEmpty": "Не указано имя модуля"
-  },
-  "Common/WSDL/HTTPHeaders": {
-    "ErrInvalidHeaderName": "Недопустимое имя заголовка %s"
   },
   "Common/WSDL/Processor/MIMECommon": {
     "ErrInvalidContentType": "Недопустимый формат значения Content-Type: %s"
@@ -171,11 +192,10 @@
     "ErrExportWSDLHttpRequestData": "Ошибка при формировании HTTP-запроса из строки #%d входного набора: %s",
     "ErrHTTPHeaderRedefined": "Заголовок \"%s: %s\" уже присутствует в запросе",
     "ErrHTTPHeaders": "Ошибка при формировании HTTP-заголовков",
+    "ErrParseURLUnrecognizedContentType": "Ошибка при выполнении запроса к URL '%s': ответ сервера не обработан, так как Content-Type: %s не зарегистрирован",
     "ErrXMLExportNoContext": "Не задан контекст экспорта",
-    "FailedRequestFileNameFormat": "\"Request_\"yyyy\"-\"mm\"-\"dd\"_\"hh\"-\"nn\"-\"ss\".\"zzz\"_failed\"",
-    "RequestFileNameFormat": "\"Request_\"yyyy\"-\"mm\"-\"dd\"_\"hh\"-\"nn\"-\"ss\".\"zzz",
-    "RequestFileNameFormatEx": "%s_%d",
-    "RequestFileNameFormatFull": "%s.%s"
+    "HTTPClientInitFailed": "Ошибка при создании HTTP-клиента",
+    "HTTPClientRetrieveDataFailed": "Ошибка при получении данных HTTP-клиентом: %s"
   },
   "Common/WSDL/SOAP": {
     "ErrCantSetupSOAPEnvelopeMsg": "Невозможно создать SOAP-конверт на основе сообщения %s",
@@ -188,8 +208,53 @@
     "WarnBOMNotRecommended": "Добавление BOM (Byte order mark) в начало SOAP-конверта может привести к неспособности некоторых серверов (например, Apache Xerces или Java-служб) обработать запрос"
   },
   "Common/WSDL/WSDL": {
-    "ErrHttpVerbNotSupported": "HTTP метод \"%s\" в настоящее время не поддерживается",
     "ErrUnrecognizedSOAPNamespaceURI": "Пространство имен SOAP \"%s\" не опознано"
+  },
+  "Common/WSDL/WSDL_LIBXML2": {
+    "ErrBindingMustSpecifyExactlyOneExtensionType": "Привязка \"%s\" должна ссылаться в точности на один тип расширения",
+    "ErrBindingMustSpecifyExtension": "Расширение связывания порта \"%s\" не указано или не поддерживается",
+    "ErrBindingNotFound": "Привязка \"%s\" для конечной точки (порта) \"%s\" не найдена",
+    "ErrBindingOperationExtensionCollision": "Типы расширений связывания \"%s\" и операции \"%s\" не совпадают",
+    "ErrCantDefineTransmissionPrimitive": "Невозможно определить примитив обмена данными для операции %s, тип порта %s",
+    "ErrFaultMustHaveExactlyOnePart": "Ошибка в определении операции %s, тип порта %s: сообщение fault должно содержать в точности одну часть",
+    "ErrHTTPOperationExtensionMissing": "В объявлении HTTP связывания \"%s\" для операции \"%s\" отсутствует обязательный элемент расширения \"<http:operation/>\" ",
+    "ErrHttpPartReferencesComplexElement": "Часть \"%s\", входящая в сообщение \"%s\" типа \"%s\" (операция \"%s\"), ссылается на элемент XSD-схемы %s{%s}, имеющий сложный тип",
+    "ErrHttpPartReferencesComplexType": "Часть \"%s\", входящая в сообщение \"%s\" типа \"%s\" (операция \"%s\"), ссылается на сложный тип XSD-схемы %s{%s}",
+    "ErrInputMimeTypeContainsWildcard": "Содержимое входящего сообщения сервиса должно иметь конкретный MIME-тип (фактически - %s)",
+    "ErrInvalidMimeType": "Недопустимый MIME-тип: %s",
+    "ErrItemTypeNotFound": "Тип элемента массива \"%s\" не найден в схеме",
+    "ErrMessageDefHasNoSuchPart": "Определение сообщения \"%s\" не содержит части с именем \"%s\"",
+    "ErrMessageDefinitionNotFound": "Определение сообщения \"%s\" не найдено в документе",
+    "ErrMessageDefNotFound": "Сообщение \"%s\", на которое ссылается операция \"%s\" связывания \"%s\", не найдено",
+    "ErrMessageMustSpecifyExtension": "Расширение сообщения \"%s\" (операция \"%s\" связывания \"%s\") не указано или не поддерживается",
+    "ErrMessageSoapVersionConflict": "Версия SOAP сообщения %s конфликтует с версией операции %s",
+    "ErrMimeContentMessageDefHasMultipleOrNoParts": "Элемент \"<%s/>\" без атрибута \"part\" ссылается на определение сообщения \"%s\", которое содержит более одной части либо не содержит ни одной",
+    "ErrMimeContentReferencesComplexElement": "Элементу расширения mime:content в сообщении \"%s\" (операция \"%s\") сопоставлена часть \"%s\", которая ссылается на элемент XSD-схемы %s{%s}, имеющий сложный тип",
+    "ErrMimeContentReferencesComplexType": "Элементу расширения mime:content в сообщении \"%s\" (операция \"%s\") сопоставлена часть \"%s\", которая ссылается на сложный тип XSD-схемы %s{%s}",
+    "ErrNoDefinitionsElement": "Элемент <definitions/> WSDL-описания отсутствует или не принадлежит пространству имен WSDL",
+    "ErrNotArrayType": "\"%s\" не является описанием типа массива",
+    "ErrOpDefNotFoundInPortType": "Операция \"%s\", на которую ссылается связывание \"%s\", не найдена в определении типа порта \"%s\"",
+    "ErrOperationMustSpecifyExtension": "Расширение операции \"%s\" связывания порта \"%s\" не указано или не поддерживается",
+    "ErrPartContentsNotDefined": "Часть \"%s\" не ссылается на определения схемы",
+    "ErrPartIsReferencedByElement": "Часть \"%s\" определена элементом, а не типом XSD-схемы",
+    "ErrPartIsReferencedByType": "Часть \"%s\" определена типом, а не элементом XSD-схемы",
+    "ErrPortBindingExtensionCollision": "Типы расширений порта \"%s\" и связывания \"%s\" не совпадают",
+    "ErrPortMustSpecifyExtension": "Расширение конечной точки (порта) \"%s\" не указано или не поддерживается",
+    "ErrPortTypeNotFound": "Тип порта \"%s\" для связывания \"%s\" не найден",
+    "ErrSchemaDoesNotContainPartElement": "Часть \"%s\" ссылается на элемент \"%s\"{\"%s\"}, который не найден в XSD-схеме",
+    "ErrSchemaDoesNotContainPartType": "Часть \"%s\" ссылается на тип \"%s\"{\"%s\"}, который не найден в XSD-схеме",
+    "ErrSeveralElementsNotAllowed": "В WSDL-описании не допускается более одного элемента <%s/>",
+    "ErrSoapActionRequiredForHTTP": "Для SOAP операции с транспортом HTTP обязательно указание элемента расширения \"<soap:operation/>\" с атрибутом soapAction",
+    "ErrSoapBodyInNonSoapMessage": "Сообщение \"%s\", на которое ссылается операция \"%s\" связывания \"%s\", не является SOAP-сообщением, однако содержит тело SOAP",
+    "ErrSoapDocumentEncoded": "SOAP-сообщения в стиле \"document\" с типом использования \"encoded\" не поддерживаются",
+    "ErrSoapDocumentLiteralPartRefersToType": "Неподдерживаемая комбинация параметров: часть \"%s\", определенная ссылкой на тип XSD-схемы, назначается сообщению SOAP в стиле document с типом использования literal",
+    "ErrSoapMessageMultipleExtensions": "Для SOAP-сообщения \"%s\", на которое ссылается операция \"%s\" связывания \"%s\", указано более одного типа расширения",
+    "ErrSoapOperationVersionConflict": "Версия SOAP операции %s конфликтует с версией связывания %s",
+    "ErrSoapRPCPartRefersToElement": "Неподдерживаемая комбинация параметров: часть \"%s\", определенная ссылкой на элемент XSD-схемы, назначается сообщению SOAP в стиле RPC",
+    "ErrSoapTransportNotSupported": "SOAP транспорты, кроме HTTP, в настоящее время не поддерживаются",
+    "ErrUrlReplacementNotAllowed": "Ошибка в определении input-сообщения операции \"%s\" связывания \"%s\": сообщение типа \"%s\" не разрешено для метода запроса \"%s\"",
+    "ErrWsdlExtractedSchemaParseError": "Ошибка XML при разборе схемы вложенной в WSDL-файл",
+    "ErrWsdlImportNoAccess": "Нет доступа к импортируемому документу %s"
   },
   "Common/WSDL/WSDL_MSXML": {
     "ErrBindingMustSpecifyExactlyOneExtensionType": "Привязка \"%s\" должна ссылаться в точности на один тип расширения",
@@ -295,8 +360,24 @@
     "Group_Idx": "Индекс (%s)"
   },
   "Common/XML/SAX/XMLSAX": {
+    "ErrParserCantOpenFile": "Не получилось открыть файл",
+    "ErrParserCantURLResponse": "Не получили ответ по URL",
     "ErrParserIsActive": "Нельзя изменять свойства парсера в процессе разбора",
     "ErrSAXParserImplementationNotRegistered": "Не зарегистрирована реализация SAX-парсера для интерфейса %s"
+  },
+  "Common/XML/SAX/XMLSAX_LIBXML2": {
+    "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n  %s",
+    "ErrParseFileUnhandledException": "Необработанное исключение при разборе файла '%s':\n%s",
+    "ErrParseStream": "Ошибка при разборе потока в строке %d, позиция %d:\n  %s",
+    "ErrParseStreamUnhandledException": "Необработанное исключение при разборе потока:\n  %s",
+    "ErrParseStreamUnrecognizedEncoding": "Ошибка при разборе потока: неизвестная кодировка %s",
+    "ErrParseStreamUnrecognizedEncodingDefault": "Ошибка при разборе потока: неизвестная кодировка",
+    "ErrParseUnknownEncoding": "Задана неизвестная кодировка %s",
+    "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n  %s",
+    "ErrParseURLNoXML": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s': ответ сервера не является XML-файлом",
+    "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n  %s",
+    "ErrSaxParserNotCreated": "Контекст SAX-парсера libxml2 не создан",
+    "UnbalancedPop": "Несбалансированная операция извлечения"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
     "ErrParseFile": "Ошибка в строке %d, позиция %d при разборе файла '%s':\n  %s",
@@ -309,7 +390,6 @@
     "ErrParseURL": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s':\n  %s",
     "ErrParseURLNoXML": "Ошибка в строке %d, позиция %d при выполнении запроса к URL '%s': ответ сервера не является XML-файлом",
     "ErrParseURLUnhandledException": "Необработанное исключение при разборе запроса к URL '%s':\n  %s",
-    "ErrParseURLUnrecognizedContentType": "Ошибка при выполнении запроса к URL '%s': ответ сервера не обработан, так как Content-Type: %s не зарегистрирован",
     "ErrSaxDocumentHasNoRootElements": "В документе отсутствует корневой элемент",
     "ErrSaxParserFeatureInvalidArg": "Неправильный тип аргумента при установке опции '%s' SAX-парсера MSXML",
     "ErrSaxParserFeatureUnknownError": "Неизвестная ошибка при установке опции '%s' SAX-парсера MSXML",
@@ -321,14 +401,14 @@
     "ErrSaxParserPutFeature": "Ошибка при установке опции '%s' SAX-парсера MSXML",
     "ErrSaxParserPutHandler": "Ошибка при установке обработчика SAX-парсера MSXML: %s",
     "ErrSaxParserPutProperty": "Ошибка при установке свойства '%s' SAX-парсера MSXML",
-    "ErrUnsupportedXSDImplementation": "Данная реализация интерфейса IBGXSD не поддерживается",
-    "HTTPClientInitFailed": "Ошибка при создании HTTP-клиента",
-    "HTTPClientRetrieveDataFailed": "Ошибка при получении данных HTTP-клиентом: %s",
     "UnbalancedPop": "Несбалансированная операция извлечения"
   },
   "Common/XML/XML": {
     "ErrGenerateNamespacePrefixOverflow": "Переполнение счетчика во время генерации префикса пространства имен",
     "ErrStrToValueIntBadTypeRefinement": "Уточнение типа \"%s\" не допускается при преобразовании из строки в целое"
+  },
+  "Common/XML/XML_LIBXML2": {
+    "ErrElementMustHaveAttribute": "Атрибут \"%s\" обязателен для элемента \"%s\""
   },
   "Common/XML/XML_MSXML": {
     "ErrElementMustHaveAttribute": "Атрибут \"%s\" обязателен для элемента \"%s\"",
@@ -339,11 +419,22 @@
     "ErrAddNodeOperationNotAllowed": "Операция добавления узла типа '%s' не разрешена на узле типа '%s'",
     "ErrDocumentHasNoRootElement": "В XML-документе отсутствует корневой элемент",
     "ErrInvalidNodeID": "Неизвестный ID узла: %d",
-    "ErrInvalidXMLNameChar": "Идентификатор XML не может содержать символ \"%s\"",
-    "ErrInvalidXMLNameStartChar": "Идентификатор XML не может начинаться с символа \"%s\"",
+    "ErrInvalidXMLNameChar": "Идентификатор XML \"%s\" не может содержать символ \"%s\"",
+    "ErrInvalidXMLNameStartChar": "Идентификатор XML \"%s\" не может начинаться с символа \"%s\"",
     "ErrOnlyOneRootElementAllowed": "Корневой элемент документа уже существует",
     "ErrPITargetXMLIsReserved": "Имя инструкции парсера \"xml\" зарезервировано",
     "ErrSetSinkWrongNodeType": "Приемником XML может быть только узел типа 'документ' или 'элемент'"
+  },
+  "Common/XML/XSD": {
+    "ErrXSDNoAccess": "Нет доступа к документу %s"
+  },
+  "Common/XML/XSD_LIBXML2": {
+    "Any": "Любой элемент",
+    "ErrCantCreateXMLDOMDocument": "Ошибка при создании дерева XML-документа",
+    "ErrXSDElementExistsWithAnotherType": "Добавляемый элемент %s из пространства имен %s уже существует в схеме и имеет другой тип",
+    "ErrXSDNoAccess": "Нет доступа к документу %s",
+    "NotImplementedContinueParseURIFunc": "Библиотека libxml2 не содержит функционал поддержки не ASCII символов в URI",
+    "WarnXSDLocationSkipped": "Загрузка %s в документ %s не произведена, так как не может быть проверена через файловое хранилище"
   },
   "Common/XML/XSD_MSXML": {
     "Any": "Любой элемент",
@@ -464,15 +555,15 @@
     "ErrNoValuesFmt": "Поле %s не содержит данных, получить интервалы невозможно",
     "ErrSumFmt": "Не удаётся получить сумму значений поля %s",
     "ErrZeroTileCount": "Количество интервалов (плиток) должно быть > 0",
-    "NegativValueForTileSumm": "Отрицательные значения не допустимы при формировании интервалов по сумме признака",
+    "NegativValueForTileSumm": "Отрицательные значения недопустимы при формировании интервалов по сумме признака",
     "SortProcessFmt": "Сортировка поля %s",
-    "WarnNoRound": "При оптимальном плиточном квантовании, границы интервалов не округляются"
+    "WarnNoRound": "Опция \"Округлять границы\" проигнорирована, т.к. параметр \"Совпадающие наблюдения\" равен \"Одинаковые плитки\""
   },
   "components/binning/BinningQuantizers": {
     "ErrNoBins": "Для квантователя не определены интервалы"
   },
   "components/binning/BinningUtils": {
-    "ErrInvalidTypecast": "Не корректное приведение типов"
+    "ErrInvalidTypecast": "Некорректное приведение типов"
   },
   "components/binning/BinningValue": {
     "ErrContinuousType": "Тип данных не относится к непрерывным значениям",
@@ -511,7 +602,7 @@
     "DefaultExprDisplayName": "Выражение",
     "ItemDisplayNamePrefix": "Выражение"
   },
-  "components/calcdata/FloatCLineParser": {
+  "components/calcdata/LineParser": {
     "ErrBracket": "Неправильно расставлены скобки",
     "ErrIllegalCharacter": "Некорректный символ \"%s\"",
     "ErrInvalidExpression": "Неправильное выражение: \"%s\"",
@@ -725,6 +816,16 @@
     "VendorCaption": "Кросс-таблица",
     "VendorDesc": "Создание сводной таблицы из плоской"
   },
+  "components/datarecovery/DataRecovery": {
+    "DataRecovery": "Заполнение пропусков",
+    "PaymentAdditionalFeatures": "Расчет дополнительных характеристик",
+    "QualityEngine": "Качество данных",
+    "ScanningInputData": "Сканирование входных данных"
+  },
+  "components/datarecovery/DataRecoveryVendor": {
+    "VendorCaption": "Заполнение пропусков",
+    "VendorDesc": "Заполнение пропущенных данных"
+  },
   "components/datatotree/DataToTreeEngine": {
     "ErrCannotSetSourceColumnForContainer": "Невозможно задать исходный столбец для узла-контейнера %s",
     "ErrCanOnlySetIndexColumnForArray": "Невозможно задать столбец с индексом для узла %s, который не является массивом",
@@ -799,6 +900,21 @@
     "VendorCaption": "Дубликаты и противоречия",
     "VendorDesc": "Выявление дубликатов и противоречий"
   },
+  "components/elimoutlier/ElimOutlier": {
+    "ErrOutDataSetIndexOutOfRange": "Индекс выходного набора %d вне диапазона [%d; %d]",
+    "ErrSetValueRestricted": "Запрещена замена заданным значением в упорядоченном наборе данных для колонки \"%s\" с непрерывным видом данных",
+    "GenerationOutputSets": "Формирование выходных наборов",
+    "OutData": "Выходной набор",
+    "OutDataExtr": "Экстремальные значения",
+    "OutDataOut": "Выбросы",
+    "PaymentAdditionalFeatures": "Расчет дополнительных характеристик",
+    "QualityEngine": "Качество данных",
+    "ScanningInputData": "Сканирование входных данных"
+  },
+  "components/elimoutlier/ElimOutlierVendor": {
+    "VendorCaption": "Редактирование выбросов",
+    "VendorDesc": "Редактирование выбросов и экстремальных значений"
+  },
   "components/em/EMEngine": {
     "ColumnNameCluster": "Номер кластера",
     "ColumnNameProbability": "Вероятность принадлежности",
@@ -860,9 +976,8 @@
   },
   "components/extractxml/ExtractXML": {
     "DocIDColumn": "Идентификатор документа",
-    "ErrCharsetForCodePageNotFound": "Не найден поддерживаемый набор символов XML для кодовой страницы %d",
-    "ErrExtractXML": "Ошибка при извлечении XML из строки %d входного набора:\n  Код ошибки: %d\n  Сообщение: %s",
-    "ErrExtractXMLInitError": "Ошибка инициализации Извлечения XML:\n  %s",
+    "ErrExtractXML": "Ошибка разбора XML из строки %d входного набора:\n  Код ошибки: %d\n  Сообщение: %s",
+    "ErrExtractXMLInitError": "Ошибка инициализации Разбора XML:\n  %s",
     "ErrImportNotConfigured": "Дерево импорта не настроено",
     "ErrInputFieldNotSelected": "Необходимо задать поле, содержащее XML",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика.",
@@ -876,8 +991,8 @@
     "XSDConnection": "Подключение к источнику XSD-схемы"
   },
   "components/extractxml/ExtractXMLVendor": {
-    "VendorCaption": "Извлечение XML",
-    "VendorDescription": "Извлекает XML-документ из строкового поля набора данных и импортирует его в выходной набор в соответствии с заданной схемой"
+    "VendorCaption": "Разбор XML",
+    "VendorDescription": "Разбирает строковое поле набора данных как XML и импортирует его в выходной набор в соответствии с заданной схемой"
   },
   "components/factoranalysis/FactorAnalysis": {
     "ErrFactorMatrixAfterRot": "Плохо обусловленная матрица факторного отображения",
@@ -937,30 +1052,6 @@
   "components/filterdata/FilterDataVendor": {
     "VendorCaption": "Фильтр строк",
     "VendorDesc": "Выбор строк по условию"
-  },
-  "components/filtration/DataRecovery": {
-    "DataRecovery": "Заполнение пропусков",
-    "PaymentAdditionalFeatures": "Расчет дополнительных характеристик",
-    "QualityEngine": "Качество данных",
-    "ScanningInputData": "Сканирование входных данных"
-  },
-  "components/filtration/DataRecoveryVendor": {
-    "VendorCaption": "Заполнение пропусков",
-    "VendorDesc": "Заполнение пропущенных данных"
-  },
-  "components/filtration/ELimOutlier": {
-    "ErrOutDataSetIndexOutOfRange": "Индекс выходного набора %d вне диапазона [%d; %d]",
-    "GenerationOutputSets": "Формирование выходных наборов",
-    "OutData": "Выходной набор",
-    "OutDataExtr": "Экстремальные значения",
-    "OutDataOut": "Выбросы",
-    "PaymentAdditionalFeatures": "Расчет дополнительных характеристик",
-    "QualityEngine": "Качество данных",
-    "ScanningInputData": "Сканирование входных данных"
-  },
-  "components/filtration/ElimOutlierVendor": {
-    "VendorCaption": "Редактирование выбросов",
-    "VendorDesc": "Редактирование выбросов и экстремальных значений"
   },
   "components/forecast/ARIMAXBuilder": {
     "ErrIncorrectData": "В процедуру %s переданы некорректные данные",
@@ -1433,13 +1524,13 @@
     "ErrCurrentDirectory": "Не удалось определить текущую директорию",
     "ErrDisallowedExecution": "Выполнение Python запрещено параметрами безопасности",
     "ErrGetNativePath": "Не удалось получить путь в файловой системе по пути файлового хранилища \"%s\"",
-    "ErrPreviewPythonIsBusy": "Python занят. Невозможно запустить предпросмотр",
-    "ErrPreviewSeparateProcessNotSupported": "Предпросмотр при запуске интерпретатора в отдельном процессе не поддерживается",
+    "ErrPythonInProcessNotSupported": "Выполнение Python внутри процесса не поддерживается, Python запущен в отдельном процессе.",
     "InputPortOptional": "Входной порт необязательный",
     "OutputDataFrameExample": "Полученный выходной pd.DataFrame",
     "PrepareCompatibleComment": "Если включена опция \"Разрешить формировать выходные столбцы из кода\", структуру выходного набора можно подготовить по pd.DataFrame"
   },
   "components/python/PythonEngineImpl": {
+    "ErrPreviewPythonIsBusy": "Python занят. Невозможно запустить предпросмотр",
     "ErrVerifyPythonIsBusy": "Python занят. Невозможно запустить проверку синтаксиса",
     "ErrWaitTimeoutElapsed": "Не удалось захватить Python в течении установленного тайм-аута, т.к. код Python всё ещё выполняется в другом узле."
   },
@@ -1452,16 +1543,19 @@
     "WarnExecuting": "Python уже выполняется"
   },
   "components/python/PythonExeEngineImpl": {
+    "ErrCannotCreateProcess": "Не удалось запустить \"%s\"",
     "ErrInt32Overflow": "Значение %d выходит за границы допустимых значений 32-битного целого",
     "ErrPythonExeNotFound": "Путь интерпретатора Python, указанный в настройках приложения, не существует",
     "ErrRowLimitExceeded": "Превышено ограничение на максимальное количество строк в таблице",
+    "PreviewProcess": "Предварительный просмотр данных",
     "PythonDumpData": "Запись входных данных",
     "PythonDumpInputTableData": "Запись данных входной таблицы",
     "PythonDumpInputTableDataN": "Запись данных входной таблицы #%d",
     "PythonDumpInputTablesData": "Запись данных входных таблиц",
     "PythonExeFailed": "Выполнение интерпретатора Python завершилось с кодом ошибки %d",
     "PythonLoadOutputTable": "Чтение выходной таблицы",
-    "PythonScriptExecution": "Выполнение скрипта"
+    "PythonScriptExecution": "Выполнение скрипта",
+    "WarnPreviewRunning": "Предпросмотр уже запущен"
   },
   "components/python/PythonInterface": {
     "ErrPythonDllNotUnloaded": "Не удалось выгрузить библиотеку \"%s\" из памяти процесса",
@@ -1553,15 +1647,21 @@
     "VendorDesc": "Замена значений переменных"
   },
   "components/restclient/RESTClient": {
-    "ErrorCodeColumn": "Код завершения",
-    "ErrorDescColumn": "Описание ошибки",
+    "ErrNoInputLink": "Ко входному порту \"%s\" не подключена связь, порт содержит обязательные поля",
+    "ErrNoParamFmt": "Поле входного набора \"%s\" назначено несуществующему параметру \"%s\"",
+    "ErrNotCompatibleMessageBodyFmt": "Тип данных поля входного набора \"%s\" несовместим с телом запроса",
+    "ErrNotCompatibleParamDataTypeFmt": "Тип данных поля входного набора \"%s\" несовместим с параметром \"%s\"",
     "HttpStatusCodeColumn": "Код состояния HTTP",
     "OutputDataSet": "Ответ сервиса",
     "RequestIDOutputColumn": "Идентификатор запроса",
     "ResponseColumn": "Ответ сервера",
     "RESTClientConnection": "Подключение к REST-сервису",
-    "RESTClientErrorNoID": "Ошибка при выполнении запроса:\n%s",
     "RESTClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки %d входного набора:\n%s"
+  },
+  "components/restclient/RESTClientSend": {
+    "ErrCodePageNotSupported": "Кодовая страница \"%s\" не поддерживается",
+    "ErrHTTPHeaderRedefined": "Заголовок \"%s\" уже присутствует в запросе",
+    "ErrNotAcceptableResponseContentType": "Получен недопустимый Content-Type: \"%s\", ожидается: \"%s\""
   },
   "components/restclient/RESTClientVendor": {
     "VendorCaption": "REST-запрос",
@@ -1614,7 +1714,8 @@
     "VendorCaption": "Самоорганизующаяся сеть",
     "VendorDesc": "Кластеризация данных самоорганизующимися нейронными сетями"
   },
-  "components/sorting/SortingEngine": {
+  "components/sorting/Sorting": {
+    "CacheNotify": "Кэширование",
     "SortingNotify": "Сортировка"
   },
   "components/sorting/SortingVendor": {
@@ -1741,10 +1842,9 @@
     "VendorDesc": "Формирование таблицы данных из набора переменных"
   },
   "components/wsdlclient/WSDLClient": {
-    "ErrorCodeColumn": "Код завершения",
-    "ErrorDescColumn": "Описание ошибки",
     "FaultNameOutputColumn": "Имя исключения",
     "FaultsDataSet": "Исключения (WSDL fault)",
+    "FileNotAccessible": "Файл \"%s\" не доступен",
     "ImportIDOutputColumn": "Идентификатор части",
     "OutputDataSet": "Ответ сервиса",
     "RawOutputColumn": "Сырой ответ",
@@ -1755,7 +1855,6 @@
     "WSDLClientErrorRowID": "Ошибка при выполнении запроса, сформированного из строки №%d входного набора:\n%s"
   },
   "components/wsdlclient/WSDLClientBase": {
-    "AdditionalDataSet": "Дополнительные данные",
     "ErrIncorrectWSDLClientRequestConfiguration": "Конфигурация запроса к веб-сервису содержит ошибки",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика.",
     "ErrMapInputNodeTypesMismatch": "Тип данных столбца %s не совместим с типом данных узла дерева %s",
@@ -1767,8 +1866,7 @@
     "ErrPortNotSelected": "Не выбрана конечная точка сервиса WSDL для осуществления запроса",
     "ErrResponseNotConfigured": "Ответ сервиса не настроен",
     "ErrTransmissionPrimitiveNotSupported": "Операции с примитивом обмена \"%s\" не поддерживаются",
-    "ErrUnmappedNodeNotOwnedByRequestTree": "Узел %s, для которого запрошен сброс связи, не входит в дерево запроса",
-    "RequestDataSource": "Источник данных запроса"
+    "ErrUnmappedNodeNotOwnedByRequestTree": "Узел %s, для которого запрошен сброс связи, не входит в дерево запроса"
   },
   "components/wsdlclient/WSDLClientVendor": {
     "VendorCaption": "SOAP-запрос",
@@ -1777,8 +1875,7 @@
   "Embedded/EmbeddedMain": {
     "ErrOpenURL": "Невозможно перейти по адресу: %s",
     "LocalStorageLoadFailed": "Local Storage не прочитано",
-    "LocalStorageSaveFailed": "Local Storage не сохранено",
-    "UnknownException": "Unknown Exception"
+    "LocalStorageSaveFailed": "Local Storage не сохранено"
   },
   "Embedded/RelativeFileDialogs": {
     "AbsolutePath": "Абсолютный путь",
@@ -1951,7 +2048,7 @@
     "ErrNoUsedRange": "Ошибка книги Excel, диапазон листа задан некорректно",
     "ErrOpenExcelBook": "Не удалось открыть Excel файл %s",
     "ErrParseFmt": "При разборе строки %d возникла ошибка: %s",
-    "ErrPropInvalidNamedRange": "Не корректно задан именованный диапазон",
+    "ErrPropInvalidNamedRange": "Некорректно задан именованный диапазон",
     "ErrPropInvalidSheetName": "Имя листа excel не может содержать символы: ? * / [ ]",
     "ErrPropNamedRange": "Не задано название именованного диапазона",
     "ErrPropNamedRangeNotFound": "Именованный диапазон \"%s\" не найден в файле \"%s\"",
@@ -2024,15 +2121,20 @@
     "BadVariantType": "Неподдерживаемый подтип типа Variant",
     "CanNotConvert": "Невозможно конвертировать данные в 32-битный формат",
     "UnknownOperation": "Неизвестная операция конвертера строки",
+    "UnsupportedOperation": "Операция не поддерживается",
     "VariantArrayNotSupported": "Массивы в переменных типа Variant не поддерживаются",
     "VariantByRefNotSupported": "Переменные типа Variant byRef не поддерживаются",
     "VariantTypeNotSupported": "Неподдерживаемая маска типа Variant"
+  },
+  "imports/native/DDFTupleVersion2x64Reader": {
+    "BadNativeStringData": "Строковые данные некорректны",
+    "BadNativeVariantData": "Данные типа Variant некорректны"
   },
   "imports/native/ImportNative": {
     "ErrFileFormat": "Файл не является Loginom Data файлом",
     "ErrSignature": "Несоответствие сигнатуры",
     "ErrSystemUnsupported": "Разрядность не поддерживается",
-    "ErrVersion": "Не корректная версия",
+    "ErrVersion": "Некорректная версия",
     "WarnCompatibilityMode": "Файл был открыт в режиме совместимости"
   },
   "imports/native/ImportNativeVendor": {
@@ -2045,6 +2147,8 @@
     "ErrFloatTypeCast": "В колонке \"%s\" значение \"%s\" не удалось преобразовать к вещественному числу.",
     "ErrIntegerTypeCast": "В колонке \"%s\" значение \"%s\" не удалось преобразовать к целому числу.",
     "ErrMaxBytesCountReaded": "При разборе текстового файла достигнут предел %d чтения максимального количества байт",
+    "ErrMaxMultilineLengthReaded": "При разборе текстового файла мультистрока превысила максимальную длину %d символа раньше, чем был найден закрывающий ограничитель строк. Номер строки файла с началом мультистроки: %d. Последняя строка файла, вошедшая в мультистроку: %d.",
+    "ErrMultilineEofAchieved": "Конец текстового файла достигнут раньше, чем найден закрывающий ограничитель строк. Номер строки файла с началом мультистроки: %d.",
     "ErrParseFmt": "При разборе строки %d возникла ошибка: %s",
     "ErrUnsupportedCodePage": "Кодовая страница %d не поддерживается",
     "ErrUsedColumnDefsNotSpecified": "Импортируемые поля не определены",
@@ -2092,9 +2196,9 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
     "ErrColNotNullable": "Столбец \"%s\" (тип %s) не может принимать значения Null",
     "ErrColOutOfRange": "Номер столбца %d вне диапазона [%d; %d]",
+    "ErrColValueLenOutOfRangeString": "Длина строки %d превышает допустимую для столбца \"%s\" (тип %s)",
     "ErrColValueOutOfRange": "Значение %g выходит за границы допустимого диапазона столбца \"%s\" (тип %s)",
     "ErrColValueOutOfRangeInt": "Значение %d выходит за границы допустимого диапазона столбца \"%s\" (тип %s)",
-    "ErrColValueOutOfRangeString": "Длина строки \"%s\" превышает допустимую для столбца \"%s\" (тип %s)",
     "ErrConvertFloatToDecimal": "Невозможно преобразовать значение вещественного типа %g к значению Decimal (столбец \"%s\")",
     "ErrUnsupportedDataType": "Тип данных столбца \"%s\" не поддерживается"
   },
@@ -2157,7 +2261,7 @@
     "ErrIncorrectProject": "Название проекта указано неверно",
     "ErrKeyFilePathIsEmpty": "Не указан путь к файлу секретного ключа",
     "ErrKeyFilePathNotExists": "Файл ключа \"%s\" не найден",
-    "ErrODBCBigQueryNotExists": "ODBC-драйвер для подключения к BigQuery не установлен. Установочные пакеты и краткое описание драйвера можно найти по адресу:",
+    "ErrODBCBigQueryNotExists": "ODBC-драйвер \"%s\" для подключения к BigQuery не установлен. Установочные пакеты и краткое описание драйвера можно найти по адресу:",
     "ErrRefreshTokenIsEmpty": "Не указан токен для аутентификации",
     "SSLCANotExists": "Файл сертификата \"%s\" не найден"
   },
@@ -2175,13 +2279,14 @@
     "DatabaseTypeName": "MS SQL (OLE DB)"
   },
   "Libraries/bgdbrtl/UniDAC/MyUniDACDB": {
-    "DatabaseTypeName": "MySQL"
+    "DatabaseTypeName": "MySQL",
+    "ErrLibraryNotFound": "Не удалось загрузить библиотеку клиента MySQL (%s)"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCDriverDescs": {
     "ErrIncorrectRegEx": "Ошибка при разборе шаблона имени драйвера: %s"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCStringBuilder": {
-    "ErrInvalidODBCDriverName": "Драйвер \"%s\" не зарегистрирован",
+    "ErrInvalidODBCDriverName": "Драйвер \"%s\" не зарегистрирован в Loginom",
     "ErrODBCDriverName": "В строке подключения не указан драйвер ODBC"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
@@ -2198,9 +2303,10 @@
   },
   "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
     "DatabaseTypeName": "SQLite",
-    "ErrBlankConnectionString": "Не указана строка подключения",
+    "ErrBlankConnectionString": "Не указано имя файла",
+    "ErrFileNoAccess": "Файл \"%s\" недоступен",
+    "ErrIncorrectFileName": "Имя файла указано неверно, запрещены символы: %s",
     "ErrNotCursor": "Последняя команда в SQL-скрипте не возвращает курсор",
-    "ErrUnsupportedConnectionString": "Указанный формат строки подключения не поддерживается",
     "SQLiteError": "Ошибка SQLite: ",
     "SQLiteFuncOverridingNotSupported": "Переопределение функций для версий SQLite ниже 3.7.3 не поддерживается"
   },
@@ -2258,7 +2364,7 @@
     "ObjMetaDesc": "объект"
   },
   "Libraries/bgrtl/ClipboardAdapter": {
-    "ErrHTMLFormatNotImplemented": "Некорректный формат буфера обмена. Поддерживатся только text/plain",
+    "ErrHTMLFormatNotImplemented": "Некорректный формат буфера обмена. Поддерживается только text/plain",
     "ErrReadForbidden": "Чтение значений запрещено",
     "ErrUnsupportedDelimiter": "Поддерживаются только переводы строки CR+LF и LF",
     "ErrWriteForbidden": "Запись значений запрещена"
@@ -2389,9 +2495,8 @@
     "ErrVariableTypesMismatch": "Тип переменной %s не совместим с типом исходной переменной %s"
   },
   "Libraries/bgrtl/Encoding": {
-    "ErrConvertToASCII": "Строка \"%s\" не может быть преобразована в строку с кодировкой ASCII",
-    "ErrUTF8ToWideCharOverflow": "Кодовая единица %.2x не является началом UTF8 символа из не более чем 3 кодовых единиц",
-    "ErrUTF8ToWideCharWrongOffset": "Кодовая единица %.2x не является началом UTF8 символа"
+    "ErrCodePageNotExist": "Кодовая страница с номером %d не поддерживается",
+    "ErrConvertToASCII": "Строка \"%s\" не может быть преобразована в строку с кодировкой ASCII"
   },
   "Libraries/bgrtl/EnumTypInfo": {
     "ErrEnumNotRegistered": "Перечисление \"%s\" не зарегистрировано"
@@ -2563,26 +2668,24 @@
   "Libraries/bgrtl/IntfStream": {
     "ErrStreamIsReadOnly": "Поток данных открыт в режиме только на чтение",
     "ErrStreamReadBuffer": "При чтении байтов из потока данных вместо %d было прочитано %d",
-    "ErrStreamReadBufferInvalidParams": "Не допустимые значения параметров при чтении из потока данных: Length = %d; Count = %d; Offset = %d",
+    "ErrStreamReadBufferInvalidParams": "Недопустимые значения параметров при чтении из потока данных: Length = %d; Count = %d; Offset = %d",
     "ErrStreamReadBufferLength": "При чтении из потока данных размер результирующего буфера %d меньше чем число байт необходимое для чтения %d",
     "ErrStreamSeekOutOf2GbRange": "При перемещении курсор потока данных вышел за пределы 2 Гб, необходимо использовать 64-й аналог функции",
     "ErrStreamWriteBuffer": "При записи байтов в поток данных вместо %d было записано %d",
-    "ErrStreamWriteBufferInvalidParams": "Не допустимые значения параметров при записи в поток данных: Length = %d; Count = %d; Offset = %d",
+    "ErrStreamWriteBufferInvalidParams": "Недопустимые значения параметров при записи в поток данных: Length = %d; Count = %d; Offset = %d",
     "ErrStreamWriteBufferLength": "При записи в поток данных размер исходного буфера %d меньше чем число байт необходимое для записи %d"
   },
   "Libraries/bgrtl/LocaleUtils": {
-    "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается системой"
-  },
-  "Libraries/bgrtl/Logger": {
-    "LogAnsiCodePage": "1251"
-  },
-  "Libraries/bgrtl/LoggerConfigurator": {
-    "ErrCannotConfigureLogger": "Не удалось применить параметры логирования"
+    "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается"
   },
   "Libraries/bgrtl/MathUtils": {
     "ErrBadMatrix": "Двумерный динамический массив не является прямоугольной матрицей",
     "ErrDeterminantIsZero": "Невозможно вычислить обратную матрицу: определитель равен нулю.",
     "ErrQuickSelectLeftRight": "В функции QuickSelect левая граница %d задана больше правой %d"
+  },
+  "Libraries/bgrtl/MSequence": {
+    "ErrMSequenceCountOutOfBounds": "Необходимая длина M-последовательности должна быть больше 0",
+    "ErrMSequenceSetValueErr": "Значение сдвигового регистра не может равняться нулю или превышать длину последовательности."
   },
   "Libraries/bgrtl/OpenArray": {
     "ErrVariantToVarRec": "Невозможно преобразовать переменную типа Variant в значение типа TVarRec из-за неподдерживаемого типа данных %d переменной типа Variant",
@@ -2601,13 +2704,6 @@
   "Libraries/bgrtl/QueueException": {
     "ErrAggregateExceptionMessage": "В процессе обработки возникли исключения",
     "ErrQueueExceptionEndUnexpected": "Попытка завершить блок отложенной обработки исключений, предварительно не начав его"
-  },
-  "Libraries/bgrtl/Random": {
-    "ErrBuildMSequenceErr": "Необходимая длина массива не должна быть больше верхней границы случайных чисел.",
-    "ErrMSequenceCountOutOfBounds": "Необходимая длина M-последовательности должна быть больше 0",
-    "ErrMSequenceSetValueErr": "Значение сдвигового регистра не может равняться нулю или превышать длину последовательности.",
-    "ErrParamMustLessOrEqualThanParam": "Значение %g параметра \"%s\" должно быть меньше или равно значения %g параметра \"%s\"",
-    "RandSeed": "Начальное значение случайного числа"
   },
   "Libraries/bgrtl/ScalarUtils": {
     "ErrScalarToValue": "Ошибка преобразования значения из скалярного типа данных",
@@ -2653,13 +2749,14 @@
     "ErrOrderIndexesLength": "Длина массива индексов не соответствует количеству уникальных значений",
     "ErrWrongSyncClass": "Некорректный класс источника синхронизации. Ожидается экземпляр класса %s, фактически %s"
   },
+  "Libraries/bgrtl/StrDateUtils": {
+    "ErrInvalidDateTime": "Строка \"%s\" не может быть преобразована в значение типа дата/время"
+  },
   "Libraries/bgrtl/Streams": {
     "ErrCachedStreamSeek0AfterLargeRead": "Переход в начало потока не возможен, т.к. уже прочитано %d байт, что больше чем размер кэша %d"
   },
   "Libraries/bgrtl/StrUtils": {
-    "ErrCodePageNotExist": "Кодовая страница с номером %d не существует",
     "ErrInvalidBoolean": "Строка \"%s\" не может быть преобразована в значение логического типа",
-    "ErrInvalidDateTime": "Строка \"%s\" не может быть преобразована в значение типа дата/время",
     "ErrInvalidFloat": "Строка \"%s\" не может быть преобразована в значение вещественного типа",
     "LocaleInvariant": "Инвариантная",
     "NotSet": "Явно не задана",
@@ -2681,7 +2778,6 @@
     "ErrObjectDeleteRefCount": "Невозможно удалить объект класса %s из-за наличия на него интерфейсных ссылок: %d"
   },
   "Libraries/bgrtl/System": {
-    "ErrConvertCharToAnsiChar": "Невозможно преобразовать Unicode символ %s с кодом %d к Ansi символу",
     "ErrConvertDateTimeToBool": "Невозможно преобразовать значение типа Дата/время %g к значению логического типа",
     "ErrConvertDateTimeToInt": "Невозможно преобразовать значение типа Дата/время %g к целому числу",
     "ErrConvertFloatToBool": "Невозможно преобразовать значение вещественного типа %g к значению логического типа",
@@ -2705,11 +2801,11 @@
     "ErrCopyPasteRecursive": "Папка \"%s\" не может быть скопирована сама в себя",
     "ErrCutPasteRecursive": "Папка \"%s\" не может быть перемещена сама в себя",
     "ErrDirectoryNotExists": "Папка \"%s\" не существует",
-    "ErrFileMapping": "Ошибка мэппинга файла \"%s\"",
-    "ErrFileNotExists": "Файл \"%s\" не существует"
+    "ErrFileMapping": "Ошибка мэппинга файла \"%s\""
   },
   "Libraries/bgrtl/TextStream": {
     "ErrBadUnicodeStream": "Исходный поток данных имеет неправильный Unicode формат",
+    "ErrCodePageNotSupported": "Кодовая страница с номером %d не поддерживается",
     "ErrReadAfterEnd": "Попытка чтения за пределами файла",
     "ErrStreamNotAssigned": "Исходный поток данных не проинициализирован"
   },
@@ -2749,6 +2845,7 @@
     "BadNativeArrayStringData": "Некорректный формат относительной строковой ссылки",
     "BadNativeData": "Данные некорректны",
     "BadNativeStringData": "Строковые данные некорректны",
+    "BadVariantData": "Данные типа Variant некорректны",
     "BadVariantStringData": "Некорректный формат строковых данных переменной типа Variant",
     "BadVariantType": "Неподдерживаемый подтип типа Variant",
     "IncompatibleTuples": "Структуры кортежей несовместимы",
@@ -2827,7 +2924,7 @@
   },
   "Libraries/bgrtl/VarUtils": {
     "ErrConvertStrToType": "Ошибка преобразования строки \"%s\" к значению типа %s",
-    "ErrConvertToOpenArrayInvalidParams": "Не допустимые значения параметров при преобразовании вектора Variant-ов к открытому массиву: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
+    "ErrConvertToOpenArrayInvalidParams": "Недопустимые значения параметров при преобразовании вектора Variant-ов к открытому массиву: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
     "ErrInvalidBoolean": "Строка \"%s\" не может быть преобразована в значение логического типа"
   },
   "Libraries/bgrtl/Vendors": {
@@ -2842,7 +2939,7 @@
     "ErrCompressStream": "Ошибка сжатого потока данных",
     "ErrCreateReadStream": "Нельзя создать поток чтения пока не закончен поток записи",
     "ErrCreateWriteStream": "Не удалось создать поток для записи",
-    "ErrDeleteFilr": "Не удалось обновить заголовки файлов",
+    "ErrDeleteFile": "Не удалось обновить заголовки файлов",
     "ErrDirectoryEndRecordx64": "Не удалось найти директории в архиве",
     "ErrFileExists": "Файл %s уже существует в архиве",
     "ErrIdentName": "Файл с именем %s уже есть в архиве",
@@ -2892,6 +2989,7 @@
     "ErrWrongElementsClass": "Неверный класс списка узлов конфигурации"
   },
   "Libraries/Config/ConfigBackupManagers": {
+    "AddAnnotationCaptionDef": "Добавлена заметка",
     "AddConnectionCaption": "Добавлено подключение \"%s\"",
     "AddConnectionCaptionDef": "Добавлено подключение",
     "AddLinkCaption": "Добавлена связь \"%s.%s\" - \"%s.%s\"",
@@ -2908,6 +3006,7 @@
     "ConfigureNodeCaptionDef": "Настроен узел",
     "ConfigureNodePortCaption": "Настроен порт \"%s\" узла \"%s\"",
     "ConfigureNodePortCaptionDef": "Настроен порт узла",
+    "DeleteAnnotationCaptionDef": "Удалена заметка",
     "DeleteConnectionCaption": "Удалено подключение \"%s\"",
     "DeleteConnectionCaptionDef": "Удалено подключение",
     "DeleteLinkCaption": "Удалена связь \"%s.%s\" - \"%s.%s\"",
@@ -2946,8 +3045,7 @@
     "ErrAttrTypeMismatch": "Несоответствие типа данных атрибута \"%s\"",
     "ErrInvalidUTFInt": "Ошибка чтения целого упакованного числа",
     "ErrUnknownConfigBinaryStream": "Неподдерживаемый поток данных конфигурации",
-    "ErrUnsupportedConfigBinaryStreamVersion": "Неподдерживаемая версия %d потока данных конфигурации",
-    "ErrUnsupportedDataType": "Неподдерживаемый тип данных атрибута конфигурации"
+    "ErrUnsupportedConfigBinaryStreamVersion": "Неподдерживаемая версия %d потока данных конфигурации"
   },
   "Libraries/Config/ConfigFile": {
     "ErrLoadConfigFile": "Ошибка загрузки файла конфигурации: %s",
@@ -2991,7 +3089,6 @@
     "ErrInvalidBoolean": "Строка \"%s\" не может быть преобразована в значение логического типа",
     "ErrInvalidChar": "Строка \"%s\" не может быть преобразована в значение типа \"символ\"",
     "ErrInvalidFloat": "Строка \"%s\" не может быть преобразована в значение вещественного типа",
-    "ErrUnsupportedDataType": "Неподдерживаемый тип данных атрибута конфигурации",
     "ErrXmlParseError": "Ошибка разбора xml: описание \"%s\", строка %d, столбец %d"
   },
   "Libraries/Config/DelphiConfigScheme": {
@@ -3114,6 +3211,24 @@
     "ErrUnableToCreateConsumer": "Не удалось создать Consumer: %s",
     "ErrUnableToCreateProducer": "Не удалось создать Producer: %s",
     "LogErrKafkaCallBackFmt": "Ошибка Kafka: \"%s\", причина: \"%s\""
+  },
+  "Libraries/libxml2/LibXml2": {
+    "ErrLibXml2Common": "Ошибка libxml2 (код %d): %s",
+    "ErrLibXml2Unknown": "Нераспознанная ошибка libxml2",
+    "ErrXMLParse": "Ошибка при разборе XML (строка %d, позиция %d): %s",
+    "ErrXMLParseUrl": "Ошибка при разборе XML по адресу \"%s\" (строка %d, позиция %d): %s"
+  },
+  "Libraries/libxml2/LibXslt": {
+    "LibXsltNotLoaded": "Библиотека %s не найдена"
+  },
+  "Libraries/Log/Logger_Journald": {
+    "LibSystemdNotLoaded": "Не найдена библиотека libsystemd.so"
+  },
+  "Libraries/Log/Logger_Log4D": {
+    "LogAnsiCodePage": "1251"
+  },
+  "Libraries/Log/LoggerConfigurator": {
+    "ErrCannotConfigureLogger": "Не удалось применить параметры логирования"
   },
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Данные содержат пустые значения"
@@ -3281,6 +3396,9 @@
   "Libraries/Model/Generic/ModelGenericComponentVendor": {
     "GenericVendorCaption": "Подмодель"
   },
+  "Libraries/Model/Generic/ModelGenericSocketItems": {
+    "ErrOptionalChangeNotSupported": "Порт данного типа не поддерживает изменение флага необязательности"
+  },
   "Libraries/Model/Generic/ModelInnerComponent": {
     "ErrAlreadyConfiguringInnerSocket": "Внешний порт компонента уже настраивается"
   },
@@ -3357,6 +3475,7 @@
   },
   "Libraries/Model/ModelNodesCopyUtils": {
     "CopyNodesCaption": "Скопированы узлы",
+    "ErrAnnotationNotConfigurable": "Не удалось создать копию заметки с GUID: %s",
     "ErrCantPasteBaseInsideDerived": "Невозможно переместить базовый компонент \"%s\" внутрь производного узла \"%s\".",
     "ErrCantPasteDerivedInsideBase": "Невозможно переместить производный узел \"%s\" внутрь базового узла \"%s\"",
     "ErrCantPasteInsideSelf": "Невозможно переместить узел \"%s\" внутрь самого себя",
@@ -3366,9 +3485,10 @@
     "ErrLinkPortNotConnetedToNode": "Порт линка с идентификатором %s не подключен к узлу",
     "ErrMovedVendorUnavailableForNode": "Перемещённый производный компонент %s недоступен для узла %s.",
     "ErrNodeNotConfigurable": "Не удалось создать копию узла с названием: \"%s\" и GUID: %s",
-    "ErrNoNodesSpecified": "Не задан набор узлов",
+    "ErrNoNodesSpecified": "Не задан набор узлов и заметок",
     "ErrNoSourceModelUnit": "Не найден исходный модуль",
     "ErrNoTargetModelUnit": "Не найден целевой модуль",
+    "ErrSomeAnnotationDisposed": "Одна или несколько исходных заметок были удалены или перемещены",
     "ErrSomeNodeDisposed": "Один или несколько исходных узлов были удалены или перемещены",
     "ErrUnableToRestoreLinkBetween": "Не удалось восстановить связь между узлами \"%s\" и \"%s\"",
     "ErrVendorNotFound": "Не найден производный компонент \"%s\". Возможно, этот компонент был удалён.",
@@ -3408,6 +3528,7 @@
     "CompatConvertRequired": "При открытии пакета \"%s\" версии %s будет произведено конвертирование.",
     "ErrCannotLoadPackageElement": "Ошибка загрузки пакета: не удалось загрузить элемент \"%s\"",
     "ErrCannotOpenFile": "Не удалось открыть файл \"%s\"",
+    "ErrDecryptPackage": "Текущая версия приложения не может расшифровать пакет \"%s\": неподдерживаемый способ шифрования пакета",
     "WarnPackageCreatedInNewerVersion": "Пакет \"%s\" был создан в более новой версии Loginom %s. В текущей версии часть функционала может работать некорректно."
   },
   "Libraries/Model/ModelReports": {
@@ -3767,10 +3888,9 @@
     "ErrIndexerCountNotFound": "В метаданных интерфейса \"%s.%s\" отсутствует свойство \"%s\"",
     "ErrInterfaceNameNotFound": "Интерфейс с именем \"%s\" не зарегистрирован",
     "ErrInterfaceParentNotFound": "Не найден родительский интерфейс \"%s\"",
-    "ErrInvalidMetadataResource": "Ошибка чтения метаданных из ресурса \"%s\"",
+    "ErrInvalidMetadata": "Ошибка чтения метаданных",
     "ErrInvalidUTFInt": "Ошибка чтения целого упакованного числа",
     "ErrParentNotInitialized": "У интерфейса \"%s.%s\" не проинициализирован родитель",
-    "ErrPropAccessorNotFound": "В метаданных для свойства \"%s.%s\" не удалось найти акцессор \"%s\"",
     "ErrReferenceIsNil": "Интерфейсная ссылка не инициализирована",
     "ErrReferenceNotFound": "Не удалось найти реализуемый интерфейс",
     "ErrSetValueOutOfBounds": "Устанавливаемое значение \"%d\" свойства \"%s\" не принадлежит диапазону допустимых значений",
@@ -3811,13 +3931,16 @@
     "ErrInvalidURL": "Неверный формат URL сервиса",
     "ErrMustExplicitRequestContentType": "Content-Type данных запроса должен быть явно задан",
     "ErrNoServiceURL": "Не указан URL сервиса",
-    "ErrWSDLGenerate": "Ошибка при генерации WSDL-описания"
+    "ErrNotConnectedDefaultFmt": "Не удалось установить соединение. Причина: %s",
+    "ErrNotConnectedTimeoutFmt": "Не удалось установить соединение в течении %d мс. Причина: %s",
+    "ErrNotSecureConnectedFmt": "Не удалось установить защищенное соединение. Причина: %s",
+    "ErrUnsupportedAuthModeCert": "Аутентификация с помощью клиентского сертификата из хранилища не поддерживается"
   },
   "Libraries/RESTClientConnection/RESTClientConnectionVendor": {
     "RESTClientConnectionVendorCaption": "REST-сервис",
     "RESTClientConnectionVendorDesc": "Подключение к веб-сервису GET/POST"
   },
-  "Libraries/rpc/BaseTCPBlockSocketMessageTransport": {
+  "Libraries/rpc/BaseSocketMessageTransport": {
     "ErrCouldNotConnectToServer": "Не удалось установить соединение: %s",
     "ErrIncorrectServerResponse": "Получен некорректный ответ от сервера"
   },
@@ -3836,6 +3959,7 @@
   },
   "Libraries/rpc/RemoteMessageData": {
     "ErrArrayLevelNotSupported": "Уровень вложенности массивов более %d не поддерживается",
+    "ErrCodePageNotSupported": "Cтрока имеет неподдерживаемую кодовую страницу %d. Поддерживается только UTF-8 и UTF-16.",
     "ErrInvalidMessageSignature": "Неверная сигнатура сообщения",
     "ErrMessageSizeCannotBeNegative": "Размер сообщения не должен быть отрицательным",
     "ErrMessageSizeIncrementCannotBeNegative": "Инкремент размера сообщения не должен быть отрицательным",
@@ -3843,7 +3967,6 @@
     "ErrUnknownInterfaceGUID": "Интерфейс с идентификатором %s не зарегистрирован",
     "ErrUnknownInterfaceID": "Неизвестный идентификатор интерфейса: %d",
     "ErrUnknownInterfaceName": "Интерфейс %s не зарегистрирован",
-    "ErrUnknownMethodID": "Неизвестный идентификатор метода: %d",
     "ErrUnsupportedParameterType": "Не поддерживаемый тип аргумента"
   },
   "Libraries/rpc/RemotingConvertUtils": {
@@ -3863,9 +3986,6 @@
     "ErrInvalidRangeBounds": "Левая граница диапазона [%d; %d] больше правой",
     "ErrMainServerObjectNotRegistered": "Главный серверный объект не зарегистрирован",
     "ErrMaxObjectIdReached": "Достигнут предел в %d значений идентификаторов объектов",
-    "ErrMethodHasNoReturnValue": "Метод %s не имеет возвращаемого значения",
-    "ErrMethodHasOutputParameters": "Метод %s содержит выходные параметры",
-    "ErrMethodReturnValueIsNotInterface": "Возвращаемое значение метода %s не является интерфейсной ссылкой на объект",
     "ErrNegativeRangeBounds": "Границы диапазона [%d; %d] отрицательные",
     "ErrRangeLengthOutOfRange": "Границы диапазона [%d; %d] не принадлежит допустимому диапазону значений [%d; %d]",
     "ErrRpcVersionMismatch": "Клиент версии %s не может подключиться к серверу версии %s",
@@ -3900,6 +4020,9 @@
     "XSDFilesConnectionVendorCaption": "Набор XSD-схем",
     "XSDFilesConnectionVendorDesc": "Подключение к набору XSD-схем, расположенных в файловом хранилище"
   },
+  "Server/ServiceConsts": {
+    "ServiceDisplayName": "LoginomServer"
+  },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Сводка"
   },
@@ -3920,6 +4043,9 @@
     "AddedPublishedNodeDerivedVendor": "Создан производный компонент по опубликованному узлу \"%s\"",
     "PublicNodeDerivedVendorCaptionFormatString": "%s (открытый узел)",
     "PublishedNodeDerivedVendorCaptionFormatString": "%s (опубликованный узел)"
+  },
+  "Studio/Converters/Converter_202210131413_ModelNode_RemoveWrapWebServiceResult": {
+    "NodeSoapResponseFormatChanged": "Узел %s был опубликован в Loginom версии 6.2.5 или более ранней. Для данного узла изменится формат ответных сообщений при вызове через SOAP сервис."
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Пакеты Loginom"
@@ -3965,6 +4091,7 @@
     "ErrSessionBackupModified": "Данная резервная копия сессии была изменена другим клиентом из-под текущей учётной записи",
     "ErrUpdatePublishedPackageErrors": "При обновлении публикации пакета %s возникли ошибки",
     "FileName": "Имя файла",
+    "LicSessionCountExceeded": "Превышено количество сессий, допустимых по вашей лицензии",
     "Namespace": "Пространство имён",
     "PackageClosedLogMsg": "Закрыт пакет \"%s\"",
     "PackageOpenedEditLogMsg": "Открыт пакет \"%s\" в режиме редактирования",
@@ -4034,27 +4161,24 @@
     "UseGlobalFileStorage": "Использование глобального файлового хранилища",
     "UserMetaDesc": "Пользователь"
   },
-  "Studio/Server/BatchLauncher/BatchLauncher": {
-    "CommandLineFmt": "Использование: %s <ключи>",
-    "ErrConnectionError": "Ошибка подключения к серверу",
-    "ErrExecutionError": "Ошибка пакетного выполнения",
-    "ErrInvalidCommandLineParameters": "Неверно указаны параметры командной строки",
-    "ErrLostConnectionToServer": "Потеряно соединение с сервером",
-    "ErrUnknownCommandLineParameter": "Неизвестный параметр командной строки: %s",
-    "ExampleTitle": "Пример:",
-    "OptionAddressDesc": "IP адрес или имя хоста (по умолчанию: %s)",
-    "OptionNodeNameDesc": "Имя или GUID узла",
-    "OptionPackageFileNameDesc": "Путь и имя файла пакета (обязательный параметр)",
-    "OptionPasswordDesc": "Пароль",
-    "OptionPortDesc": "Порт (по умолчанию: %s)",
-    "OptionSavePackageDesc": "Сохранять пакет после выполнения",
-    "OptionTeachDesc": "Режим переобучения",
-    "OptionUserNameDesc": "Имя пользователя",
-    "Switches": "<Ключи>",
-    "VariableSwitchesInfo": "Любые другие ключи интерпретируются как имена переменных.\nФормат: <Имя_переменной>=<Значение_переменной>"
-  },
-  "Studio/Server/ServiceConsts": {
-    "ServiceDisplayName": "LoginomServer"
+  "Studio/RegistrationEditionDependentComponents": {
+    "1Cv8Connection": "Подключение к 1С:Предприятие 8",
+    "1Cv8QueryImport": "1С Запрос",
+    "AccessODBCUniDACDatabase": "Подключение к MS Access",
+    "DataToXMLEngine": "Формирование XML",
+    "ErrComponentNotAvailable": "Компонент \"%s\" недоступен в текущей редакции Loginom",
+    "ExcelODBCUniDACDatabase": "Подключение к MS Excel",
+    "ExecCmdEngine": "Выполнение программы",
+    "ExportTableau": "Экспорт в Tableau файл",
+    "ExtractXMLEngine": "Разбор XML",
+    "KafkaConnection": "Подключение к Kafka",
+    "KafkaExport": "Экспорт в Kafka",
+    "KafkaImport": "Импорт из Kafka",
+    "MSSQLDDWConnection": "Подключение к Deductor Warehouse [MS SQL]",
+    "OraDDWConnection": "Подключение к Deductor Warehouse [Oracle]",
+    "TableauRestConnection": "Подключение к Tableau серверу",
+    "WSDLClient": "SOAP-запрос",
+    "WSDLClientConnection": "Подключение к SOAP-сервису"
   },
   "Studio/SharedDirectories": {
     "ErrSharedDirectoryAlreadyDeleted": "Общая директория уже удалена",
@@ -4105,8 +4229,7 @@
     "DefaultSerieName": "Серия",
     "ErrAxisNotFound": "Ось с данной позицией не найдена",
     "ErrAxisPositionNotTrue": "Неверная позиция оси",
-    "ErrLinkedColumnDataType": "Неверный тип данных",
-    "ErrLinkedColumnInfoNotFound": "Столбец не найден"
+    "ErrLinkedColumnDataType": "Неверный тип данных"
   },
   "Viewers/Chart/ChartViewCacheServer": {
     "DataSourceIsInActive": "Источник данных находится в неактивном состоянии"
@@ -4116,9 +4239,8 @@
     "VendorDesc": "Отображение данных в виде диаграммы"
   },
   "Viewers/ClusterProfiles/ClusterProfilesView": {
-    "ClusterProfilesProcess": "Профили кластеров",
     "Component": "Компонент",
-    "DetailingProcessCaptionSuffix": " по кластерам %s",
+    "DetailingProcessCaption": "Профили кластеров. %s по кластерам %s",
     "ErrNotDefinedComponent": "Не определен компонент кластеризации",
     "ErrTableRowState": "Произошло недопустимое изменение статуса синхронизации у поля данных",
     "HistogramProcess": "Построение гистограмм",
@@ -4199,7 +4321,7 @@
   },
   "Viewers/Cube/CubeView": {
     "CubeViewProcess": "Куб",
-    "DetailingProcessCaptionSuffix": " по ячейке [%d, %d]",
+    "DetailingProcessCaption": "Куб. %s по ячейке [%d, %d]",
     "ErrAlreadyExporting": "Нельзя экспортировать кросс-таблицу, пока не будет завершен текущий экспорт",
     "ErrExportCubeClosed": "Нельзя экспортировать кросс-таблицу, когда Куб не активен",
     "ErrExportDeactivate": "Экспорт прерван из-за деактивации узла",
@@ -4222,7 +4344,6 @@
     "MoreStatisticsCalculation": "Расчет дополнительных статистических показателей",
     "PrepareViewData": "Статистика",
     "QualityStatisticsCalculation": "Расчет показателей качества полей данных",
-    "QualityViewProcess": "Качество данных",
     "SimpleStatisticsCalculation": "Расчет простейших статистических показателей"
   },
   "Viewers/DataQuality/QualityViewBuilder": {
@@ -4232,7 +4353,7 @@
     "ErrRequiredColumnNotFound": "Входной источник данных не содержит столбцы с заданными номерами"
   },
   "Viewers/DataQuality/QualityViewDetailing": {
-    "DetailingProcessCaptionSuffix": " по ячейке [%d, %d]"
+    "DetailingProcessCaption": "Качество данных. %s по ячейке [%d, %d]"
   },
   "Viewers/DataQuality/QualityViewExport": {
     "HTMLContinueStatsTitle": "Качество данных (Непрерывные поля)",
@@ -4264,7 +4385,8 @@
     "GenericDetailingProcessCaption": "Детализация \"%s\"",
     "ManagerBrowse": "Таблица",
     "ManagerStatistics": "Статистика",
-    "MsgEmbeddedViewLoadFailed": "Не удалось загрузить конфигурацию детализации \"%s\""
+    "MsgEmbeddedViewLoadFailed": "Не удалось загрузить конфигурацию детализации \"%s\"",
+    "UpdateDataProcessCaption": "Подготовка данных"
   },
   "Viewers/Duplicates/DuplicatesView": {
     "Component": "Компонент",

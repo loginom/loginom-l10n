@@ -1,58 +1,18 @@
 {
-  "DeductorClient/DeductorConnector": {
-    "ErrAlreadyConnected": "Подключение уже выполнено",
-    "ErrNotConnected": "Подключение не было выполнено"
+  "Integrator/Program": {
+    "ErrInitializationException": "При инициализации сервиса возникло исключение",
+    "StartingService": "Запуск сервиса, версия: {0}",
+    "StoppingService": "Остановка сервиса"
   },
-  "DeductorIntegrationServerCore/ConfigurationSections": {
+  "IntegratorCore/ConfigurationSections": {
     "ErrNoColumnsSpecified": "Не задано ни одного столбца для логирования",
     "ErrSqlCommandAndTableBothSpecified": "Недопустимо одновременно задавать атрибуты sqlCommand и table",
     "ErrSqlCommandOrTableNotSpecified": "Элемент database должен содержать атрибут sqlCommand или table"
   },
-  "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
-    "AddedPublishedPackage": "На сервере {0} добавлен опубликованный пакет \"{1}\" версии \"{2}\"",
-    "ChangedPublishedPackage": "На сервере {0} изменен опубликованный пакет \"{1}\" версии \"{2}\"",
-    "ChangedPublishedPackages": "На сервере {0} изменен список опубликованных пакетов",
-    "ConnectedToServer": "Выполнено подключение к серверу {0}",
-    "DeletedPublishedPackage": "На сервере {0} удален опубликованный пакет \"{1}\" версии \"{2}\"",
-    "ErrCannotAddPublishedPackage": "Пакет \"{1}\" версии \"{2}\", принадлежащий серверу {0}, не может быть опубликован: {3}",
-    "ErrCannotConnectToServer": "Не удалось подключиться к серверу {0}",
-    "ErrConnectionFailure": "Потеряно соединение с сервером {0}",
-    "ErrDifferentPackagesWithSameNameAndVersion": "пакет отличается от уже опубликованного пакета с тем же именем и версией",
-    "ErrDuplicateNodeNames": "пакет содержит более одного узла с именем \"{0}\"",
-    "ErrEmptyNodeName": "не задано имя узла с меткой \"{0}\" и идентификатором {{{1}}}",
-    "ErrExecuteNodeConnectionFailure": "Во время обработки запроса было потеряно соединение с сервером {0}",
-    "ErrInvalidPackageNamespace": "\"{0}\" не является допустимым пространством имён",
-    "ErrLoadPackageDefsError": "Ошибка загрузки пакетов для сервера {0}",
-    "ErrNoApplicableDeductorServers": "Не найдено ни одного сервера, на котором доступен пакет \"{0}\" версии \"{1}\"",
-    "ErrNodeNameAlreadyExistsInDifferentPackage": "узел с именем \"{0}\" уже существует в пакете \"{1}\" версии \"{2}\"",
-    "ErrNoWorkingApplicableDeductorServers": "Нет ни одного работающего сервера, на котором доступен пакет \"{0}\" версии \"{1}\"",
-    "ErrOnlySingleInputPortCanHaveEmptyName": "у входного порта узла {0} не задано имя, при этом порт не является единственным",
-    "ErrOnlySingleOutputPortCanHaveEmptyName": "у выходного порта узла {0} не задано имя, при этом порт не является единственным",
-    "ErrPackageHasNoPublishedNodes": "пакет не содержит ни одного опубликованного узла",
-    "ErrSavePackageDefsError": "Ошибка сохранения пакетов для сервера {0}",
-    "ErrServerDisconnectError": "Ошибка отключения от сервера {0}",
-    "ErrUpdatePackageDefsError": "Ошибка обновления пакетов для сервера {0}",
-    "PendingUnloadAppDomain": "Запланирована остановка сервиса, имя домена приложения: \"{0}\", идентификатор: {1}"
-  },
-  "DeductorIntegrationServerCore/DisServiceHostFactory": {
-    "ErrInitializationException": "При инициализации сервиса возникло исключение",
-    "StartingService": "Запуск сервиса, версия: {0}, имя домена приложения: \"{1}\", идентификатор: {2}",
-    "StoppingService": "Остановка сервиса, имя домена приложения: \"{0}\", идентификатор: {1}"
-  },
-  "DeductorIntegrationServerCore/JsonDispatchFormatter": {
-    "ErrInputBodyIsEmpty": "Тело запроса не должно быть пустым",
-    "ErrInputMustContainJsonObject": "Запрос должен содержать объект json",
-    "ErrInvalidCharsetQualityFormat": "Недопустимый формат элемента списка в заголовке Accept-Charset: {0}",
-    "ErrInvalidContentType": "Недопустимое значение заголовка Content-Type: {0}",
-    "ErrInvalidWebBodyFormatMessageProperty": "Свойство WebBodyFormatMessageProperty должно иметь значение Raw",
-    "ErrWebBodyFormatMessagePropertyNotSpecified": "Не задано свойство WebBodyFormatMessageProperty",
-    "WarnDuplicateRequestParameter": "Запрос содержит более одного параметра с именем {0}",
-    "WarnUnknownRequestParameter": "Запрос содержит параметр с неизвестным именем {0}"
-  },
-  "DeductorIntegrationServerCore/LoggerManager": {
+  "IntegratorCore/LoggerManager": {
     "ErrUnknownLogLevel": "Неизвестный уровень логирования: {0}"
   },
-  "DeductorIntegrationServerCore/RestHelpPageGenerator": {
+  "IntegratorCore/RestHelpPageGenerator": {
     "Body": "Текст сообщения",
     "Description": "Описание",
     "ErrInvalidParameterType": "Параметр имеет недопустимый тип данных: {0}",
@@ -71,19 +31,47 @@
     "NotAvailable": "Н/Д",
     "OperationDesc": "Служба в {0}",
     "OperationPageTitle": "Ссылка на {0}",
+    "PackagePageDesc": "Данная страница описывает операции службы в этой конечной точке.",
+    "PackagePageTitle": "Операции в {0}",
     "Request": "Запрос",
     "RequestBodyIsEmpty": "Тело запроса - пустое.",
     "Response": "Ответ",
     "Schema": "Схема",
-    "SericeContractPageDesc": "Данная страница описывает операции службы в этой конечной точке.",
-    "SericeContractPageTitle": "Операции в {0}",
-    "Uri": "Uri",
-    "Url": "Url: ",
-    "UrlExample": "Пример Url: ",
-    "UrlFormat": "Формат Url: "
+    "Uri": "URI",
+    "Url": "URL: ",
+    "UrlExample": "Пример URL: ",
+    "UrlFormat": "Формат URL: "
   },
-  "DeductorIntegrationServerCore/ServiceHelper": {
+  "IntegratorCore/ServerConnectionManager": {
+    "AddedPublishedPackage": "На сервере {0} добавлен опубликованный пакет \"{1}\" версии \"{2}\"",
+    "ChangedPublishedPackage": "На сервере {0} изменен опубликованный пакет \"{1}\" версии \"{2}\"",
+    "ChangedPublishedPackages": "На сервере {0} изменен список опубликованных пакетов",
+    "ConnectedToServer": "Выполнено подключение к серверу {0}",
+    "DeletedPublishedPackage": "На сервере {0} удален опубликованный пакет \"{1}\" версии \"{2}\"",
+    "ErrAddressOrUnixSocketIsRequired": "Атрибут address или unixsocket должен быть определен",
+    "ErrCannotAddPublishedPackage": "Пакет \"{1}\" версии \"{2}\", принадлежащий серверу {0}, не может быть опубликован: {3}",
+    "ErrCannotConnectToServer": "Не удалось подключиться к серверу {0}",
+    "ErrConnectionFailure": "Потеряно соединение с сервером {0}",
+    "ErrDifferentPackagesWithSameNameAndVersion": "пакет отличается от уже опубликованного пакета с тем же именем и версией",
+    "ErrDuplicateNodeNames": "пакет содержит более одного узла с именем \"{0}\"",
+    "ErrEmptyNodeName": "не задано имя узла с меткой \"{0}\" и идентификатором {{{1}}}",
+    "ErrExecuteNodeConnectionFailure": "Во время обработки запроса было потеряно соединение с сервером {0}",
+    "ErrInvalidPackageNamespace": "\"{0}\" не является допустимым пространством имён",
+    "ErrLoadPackageDefsError": "Ошибка загрузки пакетов для сервера {0}",
+    "ErrNoApplicableServers": "Не найдено ни одного сервера, на котором доступен пакет \"{0}\" версии \"{1}\"",
+    "ErrNodeNameAlreadyExistsInDifferentPackage": "узел с именем \"{0}\" уже существует в пакете \"{1}\" версии \"{2}\"",
+    "ErrNoWorkingApplicableServers": "Нет ни одного работающего сервера, на котором доступен пакет \"{0}\" версии \"{1}\"",
+    "ErrOnlySingleInputPortCanHaveEmptyName": "у входного порта узла {0} не задано имя, при этом порт не является единственным",
+    "ErrOnlySingleOutputPortCanHaveEmptyName": "у выходного порта узла {0} не задано имя, при этом порт не является единственным",
+    "ErrPackageHasNoPublishedNodes": "пакет не содержит ни одного опубликованного узла",
+    "ErrSavePackageDefsError": "Ошибка сохранения пакетов для сервера {0}",
+    "ErrServerDisconnectError": "Ошибка отключения от сервера {0}",
+    "ErrUnixSocketIsRequired": "Атрибут unixsocket должен быть определен",
+    "ErrUpdatePackageDefsError": "Ошибка обновления пакетов для сервера {0}"
+  },
+  "IntegratorCore/ServiceHelper": {
     "CalledUrl": "Url вызываемого метода: {0}",
+    "ErrDataSetRowCannotBeNull": "Строка набора данных не должна быть равна null",
     "ErrInvalidColumnCount": "Недопустимое количество столбцов в матрице значений: {0}; необходимо: {1}",
     "ErrInvalidElementCount": "Недопустимое количество элементов в наборе данных: {0}; необходимо: {1}",
     "ErrInvalidRowCount": "Недопустимое количество строк в матрице значений переменных: {0}",
@@ -100,10 +88,18 @@
     "ReceivedRequest": "Получен запрос на обработку",
     "SendingResponse": "Отправка ответа"
   },
-  "DeductorIntegrationServerCore/ServiceTypeBuilder": {
+  "IntegratorCore/ServiceTypeBuilder": {
     "ErrNoPublishedPackages": "Не опубликовано ни одного пакета",
     "ErrRootNodeNotFound": "Не найден корневой узел дерева",
     "ErrTreeMustHaveSingleRootNode": "Дерево не может содержать более одного корневого узла",
     "NoPublishedPackagesServiceDocumentation": "В настоящий момент не опубликовано ни одного пакета. Для использования пакетов в качестве веб-сервиса необходимо предварительно опубликовать их в Loginom Server."
+  },
+  "IntegratorCore/UriQueryParamsModelBinder": {
+    "WarnDuplicateRequestParameter": "Запрос содержит более одного параметра с именем {0}",
+    "WarnUnknownRequestParameter": "Запрос содержит параметр с неизвестным именем {0}"
+  },
+  "ServerConnector/LoginomConnector": {
+    "ErrAlreadyConnected": "Подключение уже выполнено",
+    "ErrNotConnected": "Подключение не было выполнено"
   }
 }

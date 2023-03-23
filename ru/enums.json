@@ -12,12 +12,32 @@
       "Model": "Модели"
     }
   },
-  "Common/CertList/CertList": {
+  "Common/HTTPClient/CertList": {
     "CertStoreCollection": {
       "$Caption": "Коллекции хранилищ сертификатов",
       "CurrentUser": "Текущий пользователь",
       "LocalMachine": "Локальная машина",
       "Services": "Служба"
+    }
+  },
+  "Common/HTTPClient/HTTPClientTypes": {
+    "HTTPVerb": {
+      "$Caption": "Метод HTTP",
+      "GET": "GET",
+      "POST": "POST",
+      "PUT": "PUT",
+      "DELETE": "DELETE",
+      "PATCH": "PATCH"
+    }
+  },
+  "Common/HTTPClient/WSDLClientAuth": {
+    "WSDLAuthorizationMode": {
+      "$Caption": "Тип аутентификации",
+      "Absent": "Не требуется",
+      "NamePass": "Имя пользователя и пароль",
+      "OAuth": "Токен OAuth",
+      "Cert": "Клиентский сертификат из хранилища",
+      "FileCert": "Файлы сертификата клиента"
     }
   },
   "Common/WSDL/Processor/WSDLRequestProcessor": {
@@ -47,14 +67,6 @@
     }
   },
   "Common/WSDL/WSDL": {
-    "HTTPVerb": {
-      "$Caption": "Метод HTTP",
-      "GET": "GET",
-      "POST": "POST",
-      "PUT": "PUT",
-      "DELETE": "DELETE",
-      "PATCH": "PATCH"
-    },
     "SoapStyle": {
       "$Caption": "Стиль SOAP-запроса",
       "RPC": "RPC",
@@ -88,16 +100,6 @@
       "RequestResponse": "Запрос-ответ",
       "SolicitResponse": "Требование-ответ",
       "Notification": "Уведомление"
-    }
-  },
-  "Common/WSDL/WSDLClientAuth": {
-    "WSDLAuthorizationMode": {
-      "$Caption": "Тип авторизации",
-      "Absent": "Не требуется",
-      "NamePass": "Имя пользователя и пароль",
-      "OAuth": "Токен OAuth",
-      "Cert": "Предоставить сертификат клиента",
-      "Oasis": "OASIS WS-Security"
     }
   },
   "Common/XML/Processor/XMLRequestProcessor": {
@@ -716,7 +718,7 @@
   "components/sorting": {
     "SortingBufferingType": {
       "$Caption": "Тип буфера данных",
-      "AutoSelect": "Автоматический",
+      "Default": "По умолчанию",
       "Whole": "Все данные",
       "Minimal": "Минимальный",
       "UserDefined": "Заданный"
@@ -805,6 +807,13 @@
       "ForceCreateSheet": "Заменить существующий лист",
       "AddBelow": "Добавлять данные ниже",
       "Merge": "Не удалять существующие данные на листе"
+    }
+  },
+  "exports/textfile": {
+    "TextFileLineEnding": {
+      "$Caption": "Перевод строк",
+      "LF": "Unix (LF)",
+      "CRLF": "Windows (CRLF)"
     }
   },
   "imports/database": {
@@ -1206,22 +1215,6 @@
       "Center": "По центру"
     }
   },
-  "Libraries/bgrtl/Logger": {
-    "LogLevel": {
-      "$Caption": "Уровень логирования",
-      "Trace": "Трассировка",
-      "Debug": "Отладка",
-      "Info": "Информация",
-      "Hint": "Событие",
-      "Warn": "Предупреждение",
-      "Error": "Ошибка",
-      "Fatal": "Авария"
-    },
-    "LogType": {
-      "$Caption": "Варианты логирования",
-      "File": "Логирование в файл"
-    }
-  },
   "Libraries/bgrtl/ProgressTracker": {
     "ProgressTrackerProcessStatus": {
       "$Caption": "Состояние процесса",
@@ -1251,6 +1244,25 @@
       "None": "Не указывать",
       "AllButDate": "Не указывать для Даты",
       "All": "Указывать всегда"
+    }
+  },
+  "Libraries/bgrtl/UITypes": {
+    "ChartType": {
+      "$Caption": "Тип диаграммы",
+      "Lines": "Линии",
+      "Area": "Области",
+      "Spline": "Сплайны",
+      "Columns": "Столбчатая",
+      "AreaRange": "Области с интервалами",
+      "AreaSpline": "Сглаженные области",
+      "AreaSplineRange": "Сглаженные области с интервалами",
+      "Bubble": "Пузырьковая",
+      "Scatter": "Разброс",
+      "Waterfall": "Водопад",
+      "ErrorBar": "Ошибки",
+      "Polygon": "Полигон",
+      "ColumnRange": "Столбчатая с интервалами",
+      "HeatMap": "Тепловая карта"
     }
   },
   "Libraries/DataPartition/LearnPartition": {
@@ -1356,6 +1368,23 @@
       "None": "Отсутствует",
       "Designer": "Проектирование сценариев",
       "Viewer": "Просмотр отчетов"
+    }
+  },
+  "Libraries/Log/LoggerConfigurator": {
+    "LogLevel": {
+      "$Caption": "Уровень логирования",
+      "Trace": "Трассировка",
+      "Debug": "Отладка",
+      "Info": "Информация",
+      "Hint": "Событие",
+      "Warn": "Предупреждение",
+      "Error": "Ошибка",
+      "Fatal": "Авария"
+    },
+    "LogType": {
+      "$Caption": "Варианты логирования",
+      "File": "Файл",
+      "Journald": "journald"
     }
   },
   "Libraries/Model/DataSet/ImportModelComponentEngine": {
@@ -1585,23 +1614,6 @@
       "None": "Нет",
       "Normal": "Обычное",
       "Percent": "Процент"
-    },
-    "ChartType": {
-      "$Caption": "Тип диаграммы",
-      "Lines": "Линии",
-      "Area": "Области",
-      "Spline": "Сплайны",
-      "Columns": "Столбчатая",
-      "AreaRange": "Области с интервалами",
-      "AreaSpline": "Сглаженные области",
-      "AreaSplineRange": "Сглаженные области с интервалами",
-      "Bubble": "Пузырьковая",
-      "Scatter": "Разброс",
-      "Waterfall": "Водопад",
-      "ErrorBar": "Ошибки",
-      "Polygon": "Полигон",
-      "ColumnRange": "Столбчатая с интервалами",
-      "HeatMap": "Тепловая карта"
     },
     "DecimationType": {
       "$Caption": "Фильтрация точек",

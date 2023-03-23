@@ -4,7 +4,14 @@
       "CodeConfigurableColumns": "Allow creating output columns in script"
     }
   },
-  "Common/WSDL/HTTPHeaders": {
+  "Common/HTTPClient/HTTPClientEngine": {
+    "HTTPClientEngine": {
+      "CustomHeadersConfigurator": "Custom header settings",
+      "ProduceErrorDescs": "Provide description of error codes",
+      "RequestDebug": "Request debug settings"
+    }
+  },
+  "Common/HTTPClient/HTTPHeaders": {
     "CustomHeadersConfigurator": {
       "CustomHeaders": "HTTP Headers"
     },
@@ -13,26 +20,32 @@
       "Name": "Name"
     }
   },
-  "Common/WSDL/Processor/WSDLRequestDebug": {
-    "WSDLRequestDebug": {
-      "DumpRequest": "Save Request Text to Disk",
-      "DumpRequestFolder": "Folder to save requests",
-      "ResponseStub": "File name supplied as response",
-      "UseResponseStub": "Simulate request with response in a file"
-    }
-  },
-  "Common/WSDL/WSDLClientAuth": {
+  "Common/HTTPClient/WSDLClientAuth": {
     "WSDLAuthorization": {
-      "Mode": "Authorization Type",
-      "NamePassCredentials": "Username and Password Authorization Credentials",
-      "OAuthCredentials": "OAuth Token Authorization Credentials"
+      "CertFileCredentials": "Реквизиты аутентификации пользовательским сертификатом",
+      "Mode": "Тип аутентификации",
+      "NamePassCredentials": "Реквизиты аутентификации по имени пользователя и паролю",
+      "OAuthCredentials": "Реквизиты аутентификации по токену OAuth"
+    },
+    "WSDLCertFileAuthCredentials": {
+      "SSLCert": "User certificate",
+      "SSLKey": "Private key",
+      "SSLKeyPassword": "Private key password"
     },
     "WSDLNamePassAuthCredentials": {
       "Password": "Password",
       "UserName": "Username"
     },
     "WSDLOAuthCredentials": {
-      "Token": "OAuth Token"
+      "Token": "Токен OAuth"
+    }
+  },
+  "Common/HTTPClient/WSDLRequestDebug": {
+    "WSDLRequestDebug": {
+      "DumpRequest": "Сохранять текст запроса в папку",
+      "DumpRequestFolder": "Folder to save requests",
+      "ResponseStub": "File name supplied as response",
+      "UseResponseStub": "Simulate request with response in a file"
     }
   },
   "components/assnrules": {
@@ -197,6 +210,12 @@
       "UniqueValueNames": "Unique values as field names"
     }
   },
+  "components/datarecovery": {
+    "DataRecoveryEngine": {
+      "MaxNullsPercent": "Allowable percentage of nulls",
+      "OrderedSample": "Source data ordered"
+    }
+  },
   "components/datatoxml": {
     "DataToXMLEngine": {
       "Configurator": "Configure export",
@@ -205,6 +224,22 @@
       "EscapeTabCRLFInAttr": "Escape tabs and line breaks in attributes",
       "Prettify": "Add indents and line breaks",
       "RowsDocIdenti": "Document Identification"
+    }
+  },
+  "components/elimoutlier": {
+    "ElimOutlierColumnDefExtension": {
+      "ActionExtr": "Метод обработки экстремальных",
+      "ActionOut": "Метод обработки выбросов",
+      "DetectEKvartil": "For extreme",
+      "DetectESko": "For extreme",
+      "DetectOKvartil": "For outlier",
+      "DetectOSko": "For outlier",
+      "ModeOE": "Detection method",
+      "SettedValueExtr": "Replace with",
+      "SettedValueOut": "Replace with"
+    },
+    "ElimOutlierEngine": {
+      "OrderedSample": "Source data ordered"
     }
   },
   "components/em": {
@@ -256,26 +291,6 @@
       "DataType": "Data type",
       "Name": "Name",
       "RelationType": "Relation type"
-    }
-  },
-  "components/filtration": {
-    "DataRecoveryEngine": {
-      "MaxNullsPercent": "Allowable percentage of nulls",
-      "OrderedSample": "Source data ordered"
-    },
-    "ElimOutlierColumnDefExtension": {
-      "ActionExtr": "Extremes processing method",
-      "ActionOut": "Outliers elimination method",
-      "DetectEKvartil": "For extreme",
-      "DetectESko": "For extreme",
-      "DetectOKvartil": "For outlier",
-      "DetectOSko": "For outlier",
-      "ModeOE": "Detection method",
-      "SettedValueExtr": "Replace with",
-      "SettedValueOut": "Replace with"
-    },
-    "ElimOutlierEngine": {
-      "OrderedSample": "Source data ordered"
     }
   },
   "components/forecast": {
@@ -406,13 +421,9 @@
       "CachingMethod": "Caching"
     }
   },
-  "components/restclient": {
-    "RESTClient": {
-      "CheckHttpStatusCode": "Check HTTP status code",
-      "CustomHeadersConfigurator": "Custom header settings",
-      "ProduceErrorDescs": "Provide description of error codes",
-      "RequestConfigurator": "Configure request data export",
-      "RequestDebug": "Request debug settings"
+  "components/replace": {
+    "ReplaceTable": {
+      "Items": "Варианты замены"
     }
   },
   "components/sampling": {
@@ -449,6 +460,11 @@
       "SONNType": "Self-organizing network type"
     }
   },
+  "components/sorting": {
+    "SortingEngine": {
+      "BufferWhole": "Кэшировать все данные"
+    }
+  },
   "components/treetodata": {
     "TreeToDataEngine": {
       "CompositeColumnNames": "Generate composite field captions",
@@ -482,13 +498,10 @@
   "components/wsdlclient": {
     "WSDLClient": {
       "CompositeColumnNames": "Generate composite field captions",
-      "CustomHeadersConfigurator": "Custom header settings",
       "IgnoreAbsentValues": "Allow required fields skipping",
-      "ProduceErrorDescs": "Provide description of error codes",
       "ProduceRawOutput": "Produce \"raw\" server response",
       "RepeatUniqueValues": "Repeat single values",
       "RequestConfigurator": "Configure request data export",
-      "RequestDebug": "Request debug settings",
       "StrictValidation": "Check for strict XSD validation",
       "TimeZone": "Default time zone"
     }
@@ -545,12 +558,14 @@
       "DecimalSeparator": "Decimal separator",
       "DelimiterChar": "Column delimiter",
       "FormatType": "Data format",
+      "LineEnding": "Перевод строк",
       "TextQualifier": "Text qualifier",
       "TimeFormat": "Time format",
       "TimeSeparator": "Time separator",
       "ValueFalse": "False",
       "ValueNull": "Null",
-      "ValueTrue": "True"
+      "ValueTrue": "True",
+      "WriteBOM": "Добавить BOM"
     }
   },
   "exports/xml": {
@@ -560,6 +575,11 @@
       "EscapeTabCRLFInAttr": "Escape tabs and line breaks in attributes",
       "Prettify": "Add indents and line breaks",
       "WriteBOM": "Write Byte Order Mark"
+    }
+  },
+  "imports/database": {
+    "DBImport": {
+      "CommandText": "Таблица/Представление"
     }
   },
   "imports/excelfile": {
@@ -672,7 +692,9 @@
     "SQLiteFunctionDefs": {
       "CaseChangeUnicode": "lower, upper for UNICODE",
       "LikeMode": "LIKE mode",
-      "NoCaseUnicode": "Regard NOCASE as UNICODE"
+      "NoCaseUnicode.1": "Трактовать NOCASE как UNICODE",
+      "NoCaseUnicode.2": "Regard NOCASE as UNICODE",
+      "NoCaseUnicode": "NOCASE в режиме UNICODE"
     },
     "SQLitePragmas": {
       "CacheSize": "Cache size",
@@ -681,7 +703,8 @@
     },
     "SQLiteUniDACDatabaseConfigurator": {
       "CreateDBIfNotExists": "Create DB if it doesn't exist",
-      "Encrypted": "Encrypted DB"
+      "Encrypted": "Encrypted DB",
+      "InMemoryDBMode": "База данных в памяти"
     }
   },
   "Libraries/bgrtl/ColumnInfoLinks": {
@@ -717,13 +740,9 @@
       "Name": "Item name"
     }
   },
-  "Libraries/bgrtl/Logger": {
-    "LoggerConfigurator": {
-      "LogFileMaxIndex": "Number of backup files",
-      "LogFileMaxSize": "Maximum file size",
-      "LogFileName": "File name",
-      "LogFileRewrite": "Rewrite file",
-      "MinLogLevel": "Logging level"
+  "Libraries/bgrtl/RandomConfigurator": {
+    "RandomConfigurator": {
+      "RandSeed": "Random seed"
     }
   },
   "Libraries/bgrtl/Statistics": {
@@ -806,7 +825,6 @@
       "Password": "Password",
       "SaslMechanism": "SASL Mechanism",
       "SecurityProtocol": "Security Protocol",
-      "SSLCA": "CA certificate",
       "SSLCert": "User certificate",
       "SSLKey": "Private key",
       "SSLKeyPassword": "Private key password",
@@ -831,7 +849,23 @@
       "NameAttribute": "Name attribute",
       "Password": "Password",
       "Port": "Port",
-      "UseSASL": "Use SASL authorisation"
+      "UseSASL.1": "Использовать SASL авторизацию",
+      "UseSASL.2": "Use SASL authorisation",
+      "UseSASL": "Использовать SASL"
+    }
+  },
+  "Libraries/Log/LoggerConfigurator": {
+    "CustomLoggerConfigurator": {
+      "MinLogLevel": "Уровень логирования"
+    },
+    "LoggerConfigurator": {
+      "LoggerType": "Тип логирования"
+    },
+    "LoggerConfiguratorFile": {
+      "LogFileMaxIndex": "Number of backup files",
+      "LogFileMaxSize": "Maximum file size",
+      "LogFileName": "File name",
+      "LogFileRewrite": "Rewrite file"
     }
   },
   "Libraries/Model/Connections/ModelConnectionComponentEngine": {
@@ -886,7 +920,9 @@
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "RESTClientConnectionConfigurator": {
-      "ClientAuth": "Authorization to execute request",
+      "ClientAuth.1": "Авторизация для выполнения запроса",
+      "ClientAuth.2": "Authorization to execute request",
+      "ClientAuth": "Аутентификация для выполнения запроса",
       "ExchangeTimeOut": "Data exchange timeout (ms)",
       "IgnoreCertificateErrors": "Ignore SSL certificate errors",
       "RequestContentType": "Request Content-Type",
@@ -907,14 +943,20 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "WSDLClientConnectionConfigurator": {
-      "ClientAuth": "Authorization to execute request",
-      "ClientUsesWSDLAuth": "Authorization is the same as for WSDL",
+      "ClientAuth.1": "Авторизация для выполнения запроса",
+      "ClientAuth.2": "Authorization to execute request",
+      "ClientAuth": "Аутентификация для выполнения запроса",
+      "ClientUsesWSDLAuth.1": "Авторизация та же, что и для получения WSDL",
+      "ClientUsesWSDLAuth.2": "Authorization is the same as for WSDL",
+      "ClientUsesWSDLAuth": "Аутентификация та же, что и для получения WSDL",
       "ExchangeTimeOut": "Data exchange timeout (ms)",
       "IgnoreCertificateErrors": "Ignore SSL certificate errors",
       "ReserveWSDLSource": "Reserve WSDL source",
       "ReserveWSDLSourceOn": "Enable reserve WSDL source",
       "TimeOut": "Connection timeout (ms)",
-      "WSDLAuth": "Authorization to get WSDL file",
+      "WSDLAuth.1": "Авторизация для получения WSDL-файла",
+      "WSDLAuth.2": "Authorization to get WSDL file",
+      "WSDLAuth": "Аутентификация для получения WSDL-файла",
       "WSDLSource": "WSDL source",
       "XSLT": "XSLT path",
       "XSLTOn": "Transform WSDL description using XSLT"
@@ -935,6 +977,7 @@
       "Port": "TCP port",
       "SSLCertificateFile": "Certificate file name",
       "SSLPrivateKeyFile": "Private key file name",
+      "UnixSocket": "Unix socket",
       "WSPort": "WebSocket port",
       "WSSPort": "WebSocket SSL/TLS port"
     }

@@ -1,58 +1,18 @@
 {
-  "DeductorClient/DeductorConnector": {
-    "ErrAlreadyConnected": "Already connected",
-    "ErrNotConnected": "Not connected"
+  "Integrator/Program": {
+    "ErrInitializationException": "Exception occurred during the service initialization",
+    "StartingService": "Запуск сервиса, версия: {0}",
+    "StoppingService": "Остановка сервиса"
   },
-  "DeductorIntegrationServerCore/ConfigurationSections": {
+  "IntegratorCore/ConfigurationSections": {
     "ErrNoColumnsSpecified": "No column was specified for log-in",
     "ErrSqlCommandAndTableBothSpecified": "It is forbidden to specify sqlCommand and table attributes simultaneously",
     "ErrSqlCommandOrTableNotSpecified": "Database element must contain sqlCommand or table attribute"
   },
-  "DeductorIntegrationServerCore/DeductorServerConnectionManager": {
-    "AddedPublishedPackage": "The published package \"{1}\" of the version \"{2}\" has been added on the server {0}",
-    "ChangedPublishedPackage": "The published package \"{1}\" of version \"{2}\" has been changed on server {0}",
-    "ChangedPublishedPackages": "The published packages list changed on {0} server",
-    "ConnectedToServer": "Connected to server {0}",
-    "DeletedPublishedPackage": "The published package \"{1}\" of version \"{2}\" was deleted on server {0}",
-    "ErrCannotAddPublishedPackage": "\"{1}\" package of \"{2}\" version related to {0} server cannot be published: {3}",
-    "ErrCannotConnectToServer": "{0} server connection failed",
-    "ErrConnectionFailure": "{0} server connection lost",
-    "ErrDifferentPackagesWithSameNameAndVersion": "the package does not match the previously published package with the same name and version",
-    "ErrDuplicateNodeNames": "the package contains more than one node with \"{0}\" name",
-    "ErrEmptyNodeName": "no node name with \"{0}\" caption and {{{1}}} identifier specified",
-    "ErrExecuteNodeConnectionFailure": "{0} server connection lost during request processing",
-    "ErrInvalidPackageNamespace": "\"{0}\" is an invalid namespace",
-    "ErrLoadPackageDefsError": "Error in loading of packages for {0} server",
-    "ErrNoApplicableDeductorServers": "No server found on which \"{0}\" package of \"{1}\" version is available.",
-    "ErrNodeNameAlreadyExistsInDifferentPackage": "node with \"{0}\" name already exists in \"{1}\" package of \"{2}\" version",
-    "ErrNoWorkingApplicableDeductorServers": "No functioning server found on which \"{0}\" package of \"{1}\" version is available.",
-    "ErrOnlySingleInputPortCanHaveEmptyName": "the input port node {0} has unspecified name and the port is not single",
-    "ErrOnlySingleOutputPortCanHaveEmptyName": "no name specified for {0} output node and the port is not single",
-    "ErrPackageHasNoPublishedNodes": "The package contains no published nodes",
-    "ErrSavePackageDefsError": "Error of saving of packages for {0} server",
-    "ErrServerDisconnectError": "Error of disconnection from {0} server",
-    "ErrUpdatePackageDefsError": "Error of package update for {0} server",
-    "PendingUnloadAppDomain": "Service shutdown is planned, application domain name: \"{0}\", identifier: {1}"
-  },
-  "DeductorIntegrationServerCore/DisServiceHostFactory": {
-    "ErrInitializationException": "Exception occurred during the service initialization",
-    "StartingService": "Service start, version: {0}, application domain name: \"{1}\", identifier: {2}",
-    "StoppingService": "Service shutdown, application domain name: \"{0}\", identifier: {1}"
-  },
-  "DeductorIntegrationServerCore/JsonDispatchFormatter": {
-    "ErrInputBodyIsEmpty": "The request body must not be empty",
-    "ErrInputMustContainJsonObject": "Request must contain json object",
-    "ErrInvalidCharsetQualityFormat": "Invalid format of the list item in Accept-Charset header: {0}",
-    "ErrInvalidContentType": "Invalid value of the Content-Type header: {0}",
-    "ErrInvalidWebBodyFormatMessageProperty": "WebBodyFormatMessageProperty property must have Raw value",
-    "ErrWebBodyFormatMessagePropertyNotSpecified": "No property specified WebBodyFormatMessageProperty",
-    "WarnDuplicateRequestParameter": "The request contains more than one parameter with {0} name",
-    "WarnUnknownRequestParameter": "The request contains parameter with unknown {0} name"
-  },
-  "DeductorIntegrationServerCore/LoggerManager": {
+  "IntegratorCore/LoggerManager": {
     "ErrUnknownLogLevel": "Unknown logging level: {0}"
   },
-  "DeductorIntegrationServerCore/RestHelpPageGenerator": {
+  "IntegratorCore/RestHelpPageGenerator": {
     "Body": "Message body",
     "Description": "Description",
     "ErrInvalidParameterType": "The parameter has an invalid data type: {0}",
@@ -71,19 +31,47 @@
     "NotAvailable": "No data available",
     "OperationDesc": "Service at {0}",
     "OperationPageTitle": "Reference for {0}",
+    "PackagePageDesc": "This page describes the service operations at this endpoint.",
+    "PackagePageTitle": "Operations at {0}",
     "Request": "Request",
     "RequestBodyIsEmpty": "The request body is empty.",
     "Response": "Response",
     "Schema": "Schema",
-    "SericeContractPageDesc": "This page describes the service operations at this endpoint.",
-    "SericeContractPageTitle": "Operations at {0}",
-    "Uri": "Uri",
-    "Url": "Url: ",
-    "UrlExample": "Url example: ",
-    "UrlFormat": "Url format: "
+    "Uri": "URI",
+    "Url": "URL: ",
+    "UrlExample": "Пример URL: ",
+    "UrlFormat": "Формат URL: "
   },
-  "DeductorIntegrationServerCore/ServiceHelper": {
+  "IntegratorCore/ServerConnectionManager": {
+    "AddedPublishedPackage": "The published package \"{1}\" of the version \"{2}\" has been added on the server {0}",
+    "ChangedPublishedPackage": "The published package \"{1}\" of version \"{2}\" has been changed on server {0}",
+    "ChangedPublishedPackages": "The published packages list changed on {0} server",
+    "ConnectedToServer": "Connected to server {0}",
+    "DeletedPublishedPackage": "The published package \"{1}\" of version \"{2}\" was deleted on server {0}",
+    "ErrAddressOrUnixSocketIsRequired": "Атрибут address или unixsocket должен быть определен",
+    "ErrCannotAddPublishedPackage": "\"{1}\" package of \"{2}\" version related to {0} server cannot be published: {3}",
+    "ErrCannotConnectToServer": "{0} server connection failed",
+    "ErrConnectionFailure": "{0} server connection lost",
+    "ErrDifferentPackagesWithSameNameAndVersion": "the package does not match the previously published package with the same name and version",
+    "ErrDuplicateNodeNames": "the package contains more than one node with \"{0}\" name",
+    "ErrEmptyNodeName": "no node name with \"{0}\" caption and {{{1}}} identifier specified",
+    "ErrExecuteNodeConnectionFailure": "{0} server connection lost during request processing",
+    "ErrInvalidPackageNamespace": "\"{0}\" is an invalid namespace",
+    "ErrLoadPackageDefsError": "Error in loading of packages for {0} server",
+    "ErrNoApplicableServers": "No server found on which \"{0}\" package of \"{1}\" version is available.",
+    "ErrNodeNameAlreadyExistsInDifferentPackage": "node with \"{0}\" name already exists in \"{1}\" package of \"{2}\" version",
+    "ErrNoWorkingApplicableServers": "No functioning server found on which \"{0}\" package of \"{1}\" version is available.",
+    "ErrOnlySingleInputPortCanHaveEmptyName": "the input port node {0} has unspecified name and the port is not single",
+    "ErrOnlySingleOutputPortCanHaveEmptyName": "no name specified for {0} output node and the port is not single",
+    "ErrPackageHasNoPublishedNodes": "The package contains no published nodes",
+    "ErrSavePackageDefsError": "Error of saving of packages for {0} server",
+    "ErrServerDisconnectError": "Error of disconnection from {0} server",
+    "ErrUnixSocketIsRequired": "Атрибут unixsocket должен быть определен",
+    "ErrUpdatePackageDefsError": "Error of package update for {0} server"
+  },
+  "IntegratorCore/ServiceHelper": {
     "CalledUrl": "Url of called method: {0}",
+    "ErrDataSetRowCannotBeNull": "Строка набора данных не должна быть равна null",
     "ErrInvalidColumnCount": "Invalid column count in the matrix of values: {0}; required: {1}",
     "ErrInvalidElementCount": "Invalid element count in the data set: {0}; required: {1}",
     "ErrInvalidRowCount": "Invalid row count in the variable value matrix: {0}",
@@ -100,10 +88,18 @@
     "ReceivedRequest": "Request for processing received",
     "SendingResponse": "Response sending"
   },
-  "DeductorIntegrationServerCore/ServiceTypeBuilder": {
+  "IntegratorCore/ServiceTypeBuilder": {
     "ErrNoPublishedPackages": "No published packages",
     "ErrRootNodeNotFound": "Root tree node not found",
     "ErrTreeMustHaveSingleRootNode": "Tree cannot contain more than one root node",
     "NoPublishedPackagesServiceDocumentation": "No packages have been published for now. To use packages as a web service, you must first publish them to Loginom Server."
+  },
+  "IntegratorCore/UriQueryParamsModelBinder": {
+    "WarnDuplicateRequestParameter": "The request contains more than one parameter with {0} name",
+    "WarnUnknownRequestParameter": "The request contains parameter with unknown {0} name"
+  },
+  "ServerConnector/LoginomConnector": {
+    "ErrAlreadyConnected": "Already connected",
+    "ErrNotConnected": "Not connected"
   }
 }

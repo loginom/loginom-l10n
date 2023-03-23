@@ -12,12 +12,32 @@
       "Model": "Models"
     }
   },
-  "Common/CertList/CertList": {
+  "Common/HTTPClient/CertList": {
     "CertStoreCollection": {
       "$Caption": "Certificate Store Collections",
       "CurrentUser": "Current user",
       "LocalMachine": "Local machine",
       "Services": "Service"
+    }
+  },
+  "Common/HTTPClient/HTTPClientTypes": {
+    "HTTPVerb": {
+      "$Caption": "HTTP Method",
+      "GET": "GET",
+      "POST": "POST",
+      "PUT": "PUT",
+      "DELETE": "DELETE",
+      "PATCH": "PATCH"
+    }
+  },
+  "Common/HTTPClient/WSDLClientAuth": {
+    "WSDLAuthorizationMode": {
+      "$Caption": "Тип аутентификации",
+      "Absent": "Not required",
+      "NamePass": "Username and password",
+      "OAuth": "Токен OAuth",
+      "Cert": "Клиентский сертификат из хранилища",
+      "FileCert": "Файлы сертификата клиента"
     }
   },
   "Common/WSDL/Processor/WSDLRequestProcessor": {
@@ -47,14 +67,6 @@
     }
   },
   "Common/WSDL/WSDL": {
-    "HTTPVerb": {
-      "$Caption": "HTTP Method",
-      "GET": "GET",
-      "POST": "POST",
-      "PUT": "PUT",
-      "DELETE": "DELETE",
-      "PATCH": "PATCH"
-    },
     "SoapStyle": {
       "$Caption": "SOAP Request Style",
       "RPC": "RPC",
@@ -88,16 +100,6 @@
       "RequestResponse": "Request-response",
       "SolicitResponse": "Solicit-response",
       "Notification": "Notification"
-    }
-  },
-  "Common/WSDL/WSDLClientAuth": {
-    "WSDLAuthorizationMode": {
-      "$Caption": "Authorization Type",
-      "Absent": "Not required",
-      "NamePass": "Username and password",
-      "OAuth": "OAuth token",
-      "Cert": "Provide client certificate",
-      "Oasis": "OASIS WS-Security"
     }
   },
   "Common/XML/Processor/XMLRequestProcessor": {
@@ -716,7 +718,7 @@
   "components/sorting": {
     "SortingBufferingType": {
       "$Caption": "Data Buffer Type",
-      "AutoSelect": "Auto",
+      "Default": "Default",
       "Whole": "All data",
       "Minimal": "Minimum",
       "UserDefined": "Set"
@@ -805,6 +807,13 @@
       "ForceCreateSheet": "Replace existing sheet",
       "AddBelow": "Add data below",
       "Merge": "Do not delete existing data in the worksheet"
+    }
+  },
+  "exports/textfile": {
+    "TextFileLineEnding": {
+      "$Caption": "Перевод строк",
+      "LF": "Unix (LF)",
+      "CRLF": "Windows (CRLF)"
     }
   },
   "imports/database": {
@@ -1206,22 +1215,6 @@
       "Center": "Align center"
     }
   },
-  "Libraries/bgrtl/Logger": {
-    "LogLevel": {
-      "$Caption": "Logging Level",
-      "Trace": "Trace",
-      "Debug": "Debug",
-      "Info": "Info",
-      "Hint": "Event",
-      "Warn": "Warning",
-      "Error": "Error",
-      "Fatal": "Fatal"
-    },
-    "LogType": {
-      "$Caption": "Logging Options",
-      "File": "Logging to file"
-    }
-  },
   "Libraries/bgrtl/ProgressTracker": {
     "ProgressTrackerProcessStatus": {
       "$Caption": "Process status",
@@ -1251,6 +1244,25 @@
       "None": "Do not specify",
       "AllButDate": "Do not specify for Date",
       "All": "Specify always"
+    }
+  },
+  "Libraries/bgrtl/UITypes": {
+    "ChartType": {
+      "$Caption": "Тип диаграммы",
+      "Lines": "Lines",
+      "Area": "Areas",
+      "Spline": "Splines",
+      "Columns": "Columns",
+      "AreaRange": "Interval areas",
+      "AreaSpline": "Smoothed areas",
+      "AreaSplineRange": "Smoothed areas with intervals",
+      "Bubble": "Bubble",
+      "Scatter": "Scatter",
+      "Waterfall": "Waterfall",
+      "ErrorBar": "Errors",
+      "Polygon": "Polygon",
+      "ColumnRange": "Columns with ranges",
+      "HeatMap": "Heatmap"
     }
   },
   "Libraries/DataPartition/LearnPartition": {
@@ -1356,6 +1368,23 @@
       "None": "None",
       "Designer": "Workflows design",
       "Viewer": "View reports"
+    }
+  },
+  "Libraries/Log/LoggerConfigurator": {
+    "LogLevel": {
+      "$Caption": "Уровень логирования",
+      "Trace": "Trace",
+      "Debug": "Debug",
+      "Info": "Info",
+      "Hint": "Event",
+      "Warn": "Warning",
+      "Error": "Error",
+      "Fatal": "Fatal"
+    },
+    "LogType": {
+      "$Caption": "Logging Options",
+      "File": "Файл",
+      "Journald": "journald"
     }
   },
   "Libraries/Model/DataSet/ImportModelComponentEngine": {
@@ -1585,23 +1614,6 @@
       "None": "No",
       "Normal": "Normal",
       "Percent": "Percent"
-    },
-    "ChartType": {
-      "$Caption": "Chart Type",
-      "Lines": "Lines",
-      "Area": "Areas",
-      "Spline": "Splines",
-      "Columns": "Columns",
-      "AreaRange": "Interval areas",
-      "AreaSpline": "Smoothed areas",
-      "AreaSplineRange": "Smoothed areas with intervals",
-      "Bubble": "Bubble",
-      "Scatter": "Scatter",
-      "Waterfall": "Waterfall",
-      "ErrorBar": "Errors",
-      "Polygon": "Polygon",
-      "ColumnRange": "Columns with ranges",
-      "HeatMap": "Heatmap"
     },
     "DecimationType": {
       "$Caption": "Point Filter",

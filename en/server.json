@@ -27,23 +27,6 @@
     "ErrTooFewArgs": "Few arguments supplied to %s function (%d whereas %d is minimum number)",
     "ErrTooManyArgs": "Many arguments supplied to %s function (%d whereas %d is maximum number)"
   },
-  "Common/CertList/CertList": {
-    "ErrCertListImplementationNotRegistered": "Certificate list implementation not registered"
-  },
-  "Common/CertList/CertList_Win": {
-    "AddressBook": "Other People",
-    "AuthRoot": "Third-Party Root Certification Authorities",
-    "CA": "Intermediate Certification Authorities",
-    "Disallowed": "Untrusted Certificates",
-    "My": "Personal",
-    "Root": "Trusted Root Certification Authorities",
-    "SmartCardRoot": "Smart Card Trusted Roots",
-    "Trust": "Enterprise Trust",
-    "TrustedDevices": "Trusted Devices",
-    "TrustedPeople": "Trusted People",
-    "TrustedPublisher": "Trusted Publishers",
-    "UserDS": "Active Directory User Object"
-  },
   "Common/CodeExec/CodeAPI": {
     "ArgColumn": "Column Index or name",
     "ArgColumnIndex": "Column index",
@@ -110,8 +93,12 @@
     "PreviewProcess": "Data preview",
     "WarnPreviewRunning": "Preview already running"
   },
-  "Common/HTTP/CachedHttpStream": {
-    "ErrCachedHttpStreamClassUnassigned": "Cached HTTP stream class not registered"
+  "Common/HTTP/CachedHttpStream_Synapse": {
+    "ErrCodePageNotSupported": "\"%s\" codepage not supported",
+    "ErrHttpOutputStreamRequired": "Не удалось создать экземпляр класса %s, нет ответа после HTTP запроса",
+    "ErrHttpResponseWriteDisallowed": "Writing to HTTP response stream disallowed",
+    "ErrInconsistentContentLength": "Actual received data size %d inconsistent with Content-Length %d header value",
+    "ErrReadStreamBufferLength": "The provided buffer size %d is too small to read %d bytes"
   },
   "Common/HTTP/CachedHttpStream_Win": {
     "ErrHttpResponseExRequired": "Failed to create %s class instance, HTTP client response must support IHTTPResponseEx interface",
@@ -119,15 +106,58 @@
     "ErrInconsistentContentLength": "Actual received data size %d inconsistent with Content-Length %d header value",
     "ErrReadStreamBufferLength": "The provided buffer size %d is too small to read %d bytes"
   },
+  "Common/HTTP/HTTPContext_Synapse": {
+    "ErrUnsupportedAuthModeCert": "Аутентификация с помощью клиентского сертификата из хранилища не поддерживается"
+  },
   "Common/HTTP/HTTPNetRequest": {
     "ErrHTTPNetRequest": "Request to \"%s\" URL failed"
   },
   "Common/HTTP/SynapseHTTPSend": {
-    "ErrHTTPResult": "Error executing HTTP request. Status code %d: %s",
-    "ErrHTTPSocket": "Error executing HTTP request. TCP/IP Socket error %d: %s",
+    "ErrHTTPResult.1": "Ошибка при выполнениии HTTP запроса. Status code %d: %s",
+    "ErrHTTPResult.2": "Error executing HTTP request. Status code %d: %s",
+    "ErrHTTPResult": "Ошибка при выполнении HTTP запроса. Status code %d: %s",
+    "ErrHTTPSocket.1": "Ошибка при выполнениии HTTP запроса. TCP/IP Socket error %d: %s",
+    "ErrHTTPSocket.2": "Error executing HTTP request. TCP/IP Socket error %d: %s",
+    "ErrHTTPSocket": "Ошибка при выполнении HTTP запроса. TCP/IP Socket error %d: %s",
     "ErrMaximumRedirectReached": "Maximum number of redirects exceeded: %s",
     "ErrStreamIsDirectReadOnly": "Random access to stream data is not possible",
-    "ErrStreamSizeUnspecified": "Unspecified stream data size"
+    "ErrStreamSizeUnspecified.1": "Размер даных потока не определен",
+    "ErrStreamSizeUnspecified.2": "Unspecified stream data size",
+    "ErrStreamSizeUnspecified": "Размер данных потока не определен"
+  },
+  "Common/HTTPClient/CertList": {
+    "ErrCertListImplementationNotRegistered": "Certificate list implementation not registered"
+  },
+  "Common/HTTPClient/CertList_Win": {
+    "AddressBook": "Other People",
+    "AuthRoot": "Third-Party Root Certification Authorities",
+    "CA": "Intermediate Certification Authorities",
+    "Disallowed": "Untrusted Certificates",
+    "My": "Personal",
+    "Root": "Trusted Root Certification Authorities",
+    "SmartCardRoot": "Smart Card Trusted Roots",
+    "Trust": "Enterprise Trust",
+    "TrustedDevices": "Trusted Devices",
+    "TrustedPeople": "Trusted People",
+    "TrustedPublisher": "Trusted Publishers",
+    "UserDS": "Active Directory User Object"
+  },
+  "Common/HTTPClient/HTTPClientBase": {
+    "AdditionalDataSet": "Additional data",
+    "ErrorCodeColumn": "Error Code",
+    "ErrorDescColumn": "Error Description",
+    "RequestDataSource": "Request data source"
+  },
+  "Common/HTTPClient/HTTPClientTypes": {
+    "ErrHttpVerbNotSupported": "\"%s\" HTTP method not currently supported"
+  },
+  "Common/HTTPClient/HTTPHeaders": {
+    "ErrInvalidHeaderName": "Invalid %s header name"
+  },
+  "Common/HTTPClient/WSDLClientAuth": {
+    "ErrFileNoAccess": "\"%s\" file unavailable",
+    "ErrFileNotFound": "\"%s\" file not found",
+    "ErrGetFileStorage": "No reference to file storage"
   },
   "Common/JavaScript/JavaScriptModuleLoader": {
     "ErrModuleFileTooBig": "%s module file cannot be loaded: the permissible file size limit is exceeded (%d > %d bytes)",
@@ -135,9 +165,6 @@
     "ErrModulePath": "Failed to resolve \"%s\" module name",
     "ErrModuleSourceRead": "Error reading \"%s\" module file",
     "ErrModuleSpecifierEmpty": "No module name specified"
-  },
-  "Common/WSDL/HTTPHeaders": {
-    "ErrInvalidHeaderName": "Invalid %s header name"
   },
   "Common/WSDL/Processor/MIMECommon": {
     "ErrInvalidContentType": "Invalid Content-Type value format: %s"
@@ -171,11 +198,10 @@
     "ErrExportWSDLHttpRequestData": "Error occurred while HTTP request generating from row #%d of the input data set: %s",
     "ErrHTTPHeaderRedefined": "\"%s: %s\" header already defined in the request",
     "ErrHTTPHeaders": "Error while generating HTTP headers",
+    "ErrParseURLUnrecognizedContentType": "Error executing request to URL '%s': server response was not processed because Content-Type: %s had not been registered",
     "ErrXMLExportNoContext": "No export context specified",
-    "FailedRequestFileNameFormat": "\"Request_\" yyyy \"-\" mm \"-\" dd \"_\" hh \"-\" nn \"-\" ss \".\" Zzz \"_failed\"",
-    "RequestFileNameFormat": "\"Request_\"yyyy\"-\"mm\"-\"dd\"_\"hh\"-\"nn\"-\"ss\".\"Zzz",
-    "RequestFileNameFormatEx": "%s_%d",
-    "RequestFileNameFormatFull": "%s.%s"
+    "HTTPClientInitFailed": "Error creating HTTP client",
+    "HTTPClientRetrieveDataFailed": "Error retrieving data by HTTP client: %s"
   },
   "Common/WSDL/SOAP": {
     "ErrCantSetupSOAPEnvelopeMsg": "Failed to create SOAP envelope based on %s message",
@@ -188,8 +214,53 @@
     "WarnBOMNotRecommended": "BOM (Byte order mark) addition to SOAP envelope top may cause failure of some servers (for example, Apache Xerces or Java services) to process the request"
   },
   "Common/WSDL/WSDL": {
-    "ErrHttpVerbNotSupported": "\"%s\" HTTP method not currently supported",
     "ErrUnrecognizedSOAPNamespaceURI": "\"%s\" SOAP namespace not recognized"
+  },
+  "Common/WSDL/WSDL_LIBXML2": {
+    "ErrBindingMustSpecifyExactlyOneExtensionType": "\"%s\" binding must specify exactly one extension type",
+    "ErrBindingMustSpecifyExtension": "\"%s\" port binding extension not specified or not supported",
+    "ErrBindingNotFound": "\"%s\" binding for \"%s\" endpoint (port) not found",
+    "ErrBindingOperationExtensionCollision": "Types of \"%s\" binding extensions and \"%s\" operations do not match",
+    "ErrCantDefineTransmissionPrimitive": "Failed to define data exchange primitive for %s operation, %s port type",
+    "ErrFaultMustHaveExactlyOnePart": "Error defining %s operation, %s port type: fault message must contain exactly one part",
+    "ErrHTTPOperationExtensionMissing": "No required extension element \"<http:operation/>\" in \"%s\" binding HTTP declaration for \"%s\" operation ",
+    "ErrHttpPartReferencesComplexElement": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to %s{%s} XSD schema element related to the complex type",
+    "ErrHttpPartReferencesComplexType": "\"%s\" part included into \"%s\" message of \"%s\" type (\"%s\" operation) refers to the complex type of %s{%s} XSD schema",
+    "ErrInputMimeTypeContainsWildcard": "The incoming service message content must relate to the specific MIME type (actually - %s)",
+    "ErrInvalidMimeType": "Invalid MIME type: %s",
+    "ErrItemTypeNotFound": "\"%s\" array item type not found in schema",
+    "ErrMessageDefHasNoSuchPart": "\"%s\" message definition does not contain the part with\"%s\" name",
+    "ErrMessageDefinitionNotFound": "\"%s\" message definition not found in the document",
+    "ErrMessageDefNotFound": "\"%s\" message referenced by \"%s\" operation of \"%s\" binding not found",
+    "ErrMessageMustSpecifyExtension": "\"%s\" message extension (\"%s\" operation of \"%s\" binding) not specified or not supported",
+    "ErrMessageSoapVersionConflict": "SOAP version of %s message conflicts with %s operation version",
+    "ErrMimeContentMessageDefHasMultipleOrNoParts": "\"<%s/>\" element without \"part\" attribute refers to \"%s\" message definition, which contains more than one part or does not contain any",
+    "ErrMimeContentReferencesComplexElement": "mime:content extension element in \"%s\" message (\"%s\" operation) is associated with \"%s\" part that refers to %s{%s} XSD schema element related to the complex type",
+    "ErrMimeContentReferencesComplexType": "mime:content extension element in \"%s\" message (\"%s\" operation) is associated with \"%s\" part that refers to the complex type of %s{%s} XSD schema",
+    "ErrNoDefinitionsElement": "<definitions/> element of WSDL description is missing or does not belong to the WSDL namespace",
+    "ErrNotArrayType": "\"%s\" is not an array type description",
+    "ErrOpDefNotFoundInPortType": "\"%s\" operation referenced by \"%s\" binding not found in \"%s\" port type definition",
+    "ErrOperationMustSpecifyExtension": "\"%s\" operation extension of \"%s\" port binding not specified or not supported",
+    "ErrPartContentsNotDefined": "\"%s\" part does not reference schema definitions",
+    "ErrPartIsReferencedByElement": "\"%s\" part defined by element and not by XSD schema type",
+    "ErrPartIsReferencedByType": "\"%s\" part defined by type and not by XSD schema element",
+    "ErrPortBindingExtensionCollision": "\"%s\" port and \"%s\" binding extensions do not match",
+    "ErrPortMustSpecifyExtension": "\"%s\" endpoint (port) extension not specified or not supported",
+    "ErrPortTypeNotFound": "\"%s\" port type for \"%s\" binding not found",
+    "ErrSchemaDoesNotContainPartElement": "\"%s\" part references \"%s\"{\"%s\"} element not found in XSD schema",
+    "ErrSchemaDoesNotContainPartType": "\"%s\" part references \"%s\"{\"%s\"} type not found in XSD schema",
+    "ErrSeveralElementsNotAllowed": "More than one <%s/> element not allowed in WSDL description",
+    "ErrSoapActionRequiredForHTTP": "It is required to specify \"<soap:operation/>\" extension element with soapAction attribute for SOAP HTTP transport operations",
+    "ErrSoapBodyInNonSoapMessage": "\"%s\" message referenced by \"%s\" operation of \"%s\" binding is not SOAP message, but it contains SOAP body",
+    "ErrSoapDocumentEncoded": "\"Document\" style SOAP messages with \"encoded\" usage type are not supported",
+    "ErrSoapDocumentLiteralPartRefersToType": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema type is assigned to document style SOAP message with literal usage type",
+    "ErrSoapMessageMultipleExtensions": "For \"%s\" SOAP message referenced by \"%s\" operation of \"%s\" binding, more than one extension type is specified",
+    "ErrSoapOperationVersionConflict": "SOAP version of %s operation conflicts with %s binding version",
+    "ErrSoapRPCPartRefersToElement": "Unsupported combination of parameters: \"%s\" part referenced as XSD schema element is assigned to RPC style SOAP message",
+    "ErrSoapTransportNotSupported": "SOAP transports except for HTTP are currently not supported",
+    "ErrUrlReplacementNotAllowed": "Error defining input message of \"%s\" operation of \"%s\" binding: message of \"%s\" type is not allowed for \"%s\" request method",
+    "ErrWsdlExtractedSchemaParseError": "Ошибка XML при разборе схемы вложенной в WSDL-файл",
+    "ErrWsdlImportNoAccess": "No access to the imported %s document"
   },
   "Common/WSDL/WSDL_MSXML": {
     "ErrBindingMustSpecifyExactlyOneExtensionType": "\"%s\" binding must specify exactly one extension type",
@@ -295,8 +366,24 @@
     "Group_Idx": "(%s) index"
   },
   "Common/XML/SAX/XMLSAX": {
+    "ErrParserCantOpenFile": "Не получилось открыть файл",
+    "ErrParserCantURLResponse": "Не получили ответ по URL",
     "ErrParserIsActive": "Failed to change parser properties during parsing",
     "ErrSAXParserImplementationNotRegistered": "SAX parser implementation for %s interface not registered"
+  },
+  "Common/XML/SAX/XMLSAX_LIBXML2": {
+    "ErrParseFile": "Error in row %d, position %d while parsing '%s' file:\n  %s",
+    "ErrParseFileUnhandledException": "Unhandled exception parsing '%s' file:\n%s",
+    "ErrParseStream": "Error parsing stream in row %d, position %d:\n  %s",
+    "ErrParseStreamUnhandledException": "Unhandled exception parsing stream:\n  %s",
+    "ErrParseStreamUnrecognizedEncoding": "Stream parsing error: unrecognized %s encoding",
+    "ErrParseStreamUnrecognizedEncodingDefault": "Stream parsing error: unrecognized encoding",
+    "ErrParseUnknownEncoding": "Задана неизвестная кодировка %s",
+    "ErrParseURL": "Error in row %d, position %d when executing request to URL '%s':\n  %s",
+    "ErrParseURLNoXML": "Error in row %d, position %d when executing request to URL '%s': server response is not XML file",
+    "ErrParseURLUnhandledException": "Unhandled exception parsing request to URL '%s':\n  %s",
+    "ErrSaxParserNotCreated": "Контекст SAX-парсера libxml2 не создан",
+    "UnbalancedPop": "Unbalanced extraction operation"
   },
   "Common/XML/SAX/XMLSAX_MSXML": {
     "ErrParseFile": "Error in row %d, position %d while parsing '%s' file:\n  %s",
@@ -309,7 +396,6 @@
     "ErrParseURL": "Error in row %d, position %d when executing request to URL '%s':\n  %s",
     "ErrParseURLNoXML": "Error in row %d, position %d when executing request to URL '%s': server response is not XML file",
     "ErrParseURLUnhandledException": "Unhandled exception parsing request to URL '%s':\n  %s",
-    "ErrParseURLUnrecognizedContentType": "Error executing request to URL '%s': server response was not processed because Content-Type: %s had not been registered",
     "ErrSaxDocumentHasNoRootElements": "No root element in the document",
     "ErrSaxParserFeatureInvalidArg": "Invalid argument type when setting '%s' feature of MSXML SAX parser",
     "ErrSaxParserFeatureUnknownError": "Unknown error setting '%s' feature of MSXML SAX parser",
@@ -321,14 +407,14 @@
     "ErrSaxParserPutFeature": "Error when setting '%s' option of MSXML SAX parser",
     "ErrSaxParserPutHandler": "Error when setting handler of MSXML SAX parser: %s",
     "ErrSaxParserPutProperty": "Error setting '%s' property of MSXML SAX parser",
-    "ErrUnsupportedXSDImplementation": "This implementation of IBGXSD interface is not supported",
-    "HTTPClientInitFailed": "Error creating HTTP client",
-    "HTTPClientRetrieveDataFailed": "Error retrieving data by HTTP client: %s",
     "UnbalancedPop": "Unbalanced extraction operation"
   },
   "Common/XML/XML": {
     "ErrGenerateNamespacePrefixOverflow": "Counter overflow during namespace prefix generation",
     "ErrStrToValueIntBadTypeRefinement": "\"%s\" type of refinement is not allowed when converting from string to integer"
+  },
+  "Common/XML/XML_LIBXML2": {
+    "ErrElementMustHaveAttribute": "\"%s\" attribute required for \"%s\" element"
   },
   "Common/XML/XML_MSXML": {
     "ErrElementMustHaveAttribute": "\"%s\" attribute required for \"%s\" element",
@@ -339,11 +425,26 @@
     "ErrAddNodeOperationNotAllowed": "The operation of node addition of '%s' type is not allowed on the node of '%s' type",
     "ErrDocumentHasNoRootElement": "No root element in XML document",
     "ErrInvalidNodeID": "Unknown node ID: %d",
-    "ErrInvalidXMLNameChar": "XML ID cannot contain \"%s\" character",
-    "ErrInvalidXMLNameStartChar": "XML identifier cannot start with \"%s\" character",
+    "ErrInvalidXMLNameChar.1": "Идентификатор XML не может содержать символ \"%s\"",
+    "ErrInvalidXMLNameChar.2": "XML ID cannot contain \"%s\" character",
+    "ErrInvalidXMLNameChar": "Идентификатор XML \"%s\" не может содержать символ \"%s\"",
+    "ErrInvalidXMLNameStartChar.1": "Идентификатор XML не может начинаться с символа \"%s\"",
+    "ErrInvalidXMLNameStartChar.2": "XML identifier cannot start with \"%s\" character",
+    "ErrInvalidXMLNameStartChar": "Идентификатор XML \"%s\" не может начинаться с символа \"%s\"",
     "ErrOnlyOneRootElementAllowed": "Document root element already exists",
     "ErrPITargetXMLIsReserved": "\"xml\" parser instruction name reserved",
     "ErrSetSinkWrongNodeType": "XML recipient can only be the 'document' or 'element' node type"
+  },
+  "Common/XML/XSD": {
+    "ErrXSDNoAccess": "No access to %s document"
+  },
+  "Common/XML/XSD_LIBXML2": {
+    "Any": "Any item",
+    "ErrCantCreateXMLDOMDocument": "Ошибка при создании дерева XML-документа",
+    "ErrXSDElementExistsWithAnotherType": "%s item to be added from %s namespace already exists in the schema and has a different type",
+    "ErrXSDNoAccess": "No access to %s document",
+    "NotImplementedContinueParseURIFunc": "Библиотека libxml2 не содержит функционал поддержки не ASCII символов в URI",
+    "WarnXSDLocationSkipped": "Загрузка %s в документ %s не произведена, так как не может быть проверена через файловое хранилище"
   },
   "Common/XML/XSD_MSXML": {
     "Any": "Any item",
@@ -464,15 +565,21 @@
     "ErrNoValuesFmt": "%s field contains no data, it is impossible to generate bins",
     "ErrSumFmt": "Failed to get sum of values for %s field",
     "ErrZeroTileCount": "Bin (tile) count must be > 0",
-    "NegativValueForTileSumm": "Negative values are not allowed when creating bins by sum of value",
+    "NegativValueForTileSumm.1": "Отрицательные значения не допустимы при формировании интервалов по сумме признака",
+    "NegativValueForTileSumm.2": "Negative values are not allowed when creating bins by sum of value",
+    "NegativValueForTileSumm": "Отрицательные значения недопустимы при формировании интервалов по сумме признака",
     "SortProcessFmt": "%s field sorting",
-    "WarnNoRound": "In case of optimal tile binning range bounds are not rounded"
+    "WarnNoRound.1": "При оптимальном плиточном квантовании, границы интервалов не округляются",
+    "WarnNoRound.2": "In case of optimal tile binning range bounds are not rounded",
+    "WarnNoRound": "Опция \"Округлять границы\" проигнорирована, т.к. параметр \"Совпадающие наблюдения\" равен \"Одинаковые плитки\""
   },
   "components/binning/BinningQuantizers": {
     "ErrNoBins": "No bins defined for quantizer"
   },
   "components/binning/BinningUtils": {
-    "ErrInvalidTypecast": "Invalid typecasts"
+    "ErrInvalidTypecast.1": "Не корректное приведение типов",
+    "ErrInvalidTypecast.2": "Invalid typecasts",
+    "ErrInvalidTypecast": "Некорректное приведение типов"
   },
   "components/binning/BinningValue": {
     "ErrContinuousType": "Data type does not comply with continuous values",
@@ -511,7 +618,7 @@
     "DefaultExprDisplayName": "Expression",
     "ItemDisplayNamePrefix": "Expression"
   },
-  "components/calcdata/FloatCLineParser": {
+  "components/calcdata/LineParser": {
     "ErrBracket": "Invalid bracket order",
     "ErrIllegalCharacter": "Invalid \"%s\" character",
     "ErrInvalidExpression": "Invalid expression: \"%s\"",
@@ -725,6 +832,16 @@
     "VendorCaption": "Cross Table",
     "VendorDesc": "Create pivot table from flat table"
   },
+  "components/datarecovery/DataRecovery": {
+    "DataRecovery": "Imputation",
+    "PaymentAdditionalFeatures": "Calculation of the additional features",
+    "QualityEngine": "Качество данных",
+    "ScanningInputData": "Input data scanning"
+  },
+  "components/datarecovery/DataRecoveryVendor": {
+    "VendorCaption": "Imputation",
+    "VendorDesc": "Fill in missing data"
+  },
   "components/datatotree/DataToTreeEngine": {
     "ErrCannotSetSourceColumnForContainer": "Failed to set the source column for %s node-container",
     "ErrCanOnlySetIndexColumnForArray": "Failed to set the column with index for %s node that is not an array",
@@ -799,6 +916,21 @@
     "VendorCaption": "Duplicates Detection",
     "VendorDesc": "Detection of duplicates and contradictions"
   },
+  "components/elimoutlier/ElimOutlier": {
+    "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
+    "ErrSetValueRestricted": "Запрещена замена заданным значением в упорядоченном наборе данных для колонки \"%s\" с непрерывным видом данных",
+    "GenerationOutputSets": "Output data sets generation",
+    "OutData": "Output data set",
+    "OutDataExtr": "Extremes",
+    "OutDataOut": "Outliers",
+    "PaymentAdditionalFeatures": "Calculation of the additional features",
+    "QualityEngine": "Качество данных",
+    "ScanningInputData": "Input data scanning"
+  },
+  "components/elimoutlier/ElimOutlierVendor": {
+    "VendorCaption": "Eliminate Outliers",
+    "VendorDesc": "Eliminate outliers and extremes"
+  },
   "components/em/EMEngine": {
     "ColumnNameCluster": "Cluster number",
     "ColumnNameProbability": "Ownership probability",
@@ -860,9 +992,12 @@
   },
   "components/extractxml/ExtractXML": {
     "DocIDColumn": "Document ID",
-    "ErrCharsetForCodePageNotFound": "No supported XML character set found for code page %d",
-    "ErrExtractXML": "Error extracting XML from row %d of the input data set:\n  Error code: %d\n  Message: %s",
-    "ErrExtractXMLInitError": "Error initializing Extract XML:\n  %s",
+    "ErrExtractXML.1": "Ошибка при извлечении XML из строки %d входного набора:\n  Код ошибки: %d\n  Сообщение: %s",
+    "ErrExtractXML.2": "Error extracting XML from row %d of the input data set:\n  Error code: %d\n  Message: %s",
+    "ErrExtractXML": "Ошибка разбора XML из строки %d входного набора:\n  Код ошибки: %d\n  Сообщение: %s",
+    "ErrExtractXMLInitError.1": "Ошибка инициализации Извлечения XML:\n  %s",
+    "ErrExtractXMLInitError.2": "Error initializing Extract XML:\n  %s",
+    "ErrExtractXMLInitError": "Ошибка инициализации Разбора XML:\n  %s",
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputFieldNotSelected": "It is required to specify XML containing field",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
@@ -876,8 +1011,12 @@
     "XSDConnection": "Connect to XSD schema source"
   },
   "components/extractxml/ExtractXMLVendor": {
-    "VendorCaption": "XML Extraction",
-    "VendorDescription": "Extracts XML document from the string field of the data set and imports it into the output data set, according to the specified schema"
+    "VendorCaption.1": "Извлечение XML",
+    "VendorCaption.2": "XML Extraction",
+    "VendorCaption": "Разбор XML",
+    "VendorDescription.1": "Извлекает XML-документ из строкового поля набора данных и импортирует его в выходной набор в соответствии с заданной схемой",
+    "VendorDescription.2": "Extracts XML document from the string field of the data set and imports it into the output data set, according to the specified schema",
+    "VendorDescription": "Разбирает строковое поле набора данных как XML и импортирует его в выходной набор в соответствии с заданной схемой"
   },
   "components/factoranalysis/FactorAnalysis": {
     "ErrFactorMatrixAfterRot": "Ill-conditioned factor mapping matrix",
@@ -937,30 +1076,6 @@
   "components/filterdata/FilterDataVendor": {
     "VendorCaption": "Row Filter",
     "VendorDesc": "Row filtering by criteria"
-  },
-  "components/filtration/DataRecovery": {
-    "DataRecovery": "Imputation",
-    "PaymentAdditionalFeatures": "Calculation of the additional features",
-    "QualityEngine": "Data quality",
-    "ScanningInputData": "Input data scanning"
-  },
-  "components/filtration/DataRecoveryVendor": {
-    "VendorCaption": "Imputation",
-    "VendorDesc": "Fill in missing data"
-  },
-  "components/filtration/ELimOutlier": {
-    "ErrOutDataSetIndexOutOfRange": "The output data set index %d is out of [%d; %d] range",
-    "GenerationOutputSets": "Output data sets generation",
-    "OutData": "Output data set",
-    "OutDataExtr": "Extremes",
-    "OutDataOut": "Outliers",
-    "PaymentAdditionalFeatures": "Calculation of the additional features",
-    "QualityEngine": "Data quality",
-    "ScanningInputData": "Input data scanning"
-  },
-  "components/filtration/ElimOutlierVendor": {
-    "VendorCaption": "Eliminate Outliers",
-    "VendorDesc": "Eliminate outliers and extremes"
   },
   "components/forecast/ARIMAXBuilder": {
     "ErrIncorrectData": "Incorrect data passed to %s procedure",
@@ -1433,13 +1548,13 @@
     "ErrCurrentDirectory": "Failed to get current directory",
     "ErrDisallowedExecution": "Python execution forbidden in security settings",
     "ErrGetNativePath": "Failed to resolve the file system path by the \"%s\" path of the file storage",
-    "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
-    "ErrPreviewSeparateProcessNotSupported": "Preview is not supported when starting interpreter in separate process",
+    "ErrPythonInProcessNotSupported": "Выполнение Python внутри процесса не поддерживается, Python запущен в отдельном процессе.",
     "InputPortOptional": "Optional input port",
     "OutputDataFrameExample": "Received output pd.DataFrame",
     "PrepareCompatibleComment": "If \"Allow creating output columns in script\" option is enabled, the output data set structure can be prepared by pd.DataFrame"
   },
   "components/python/PythonEngineImpl": {
+    "ErrPreviewPythonIsBusy": "Python is busy. Failed to start preview",
     "ErrVerifyPythonIsBusy": "Python is busy. Failed to start syntax checking",
     "ErrWaitTimeoutElapsed": "Failed to capture Python during the set timeout as Python code is still executing in another node."
   },
@@ -1452,16 +1567,19 @@
     "WarnExecuting": "Python already executing"
   },
   "components/python/PythonExeEngineImpl": {
+    "ErrCannotCreateProcess": "Не удалось запустить \"%s\"",
     "ErrInt32Overflow": "%d value exceeds allowable values of 32 bit integer",
     "ErrPythonExeNotFound": "Python interpreter path specified in application settings does not exist",
     "ErrRowLimitExceeded": "Maximum table row limit exceeded",
+    "PreviewProcess": "Data preview",
     "PythonDumpData": "Write input data",
     "PythonDumpInputTableData": "Write input table data",
     "PythonDumpInputTableDataN": "Write input #%d table data",
     "PythonDumpInputTablesData": "Write input tables data",
     "PythonExeFailed": "Python interpreter execution finished with %d error code",
     "PythonLoadOutputTable": "Read output table",
-    "PythonScriptExecution": "Workflow execution"
+    "PythonScriptExecution": "Workflow execution",
+    "WarnPreviewRunning": "Preview already running"
   },
   "components/python/PythonInterface": {
     "ErrPythonDllNotUnloaded": "Failed to unload \"%s\" library from the process memory",
@@ -1553,15 +1671,21 @@
     "VendorDesc": "Replace variable values"
   },
   "components/restclient/RESTClient": {
-    "ErrorCodeColumn": "Error Code",
-    "ErrorDescColumn": "Error Description",
+    "ErrNoInputLink": "Ко входному порту \"%s\" не подключена связь, порт содержит обязательные поля",
+    "ErrNoParamFmt": "Поле входного набора \"%s\" назначено несуществующему параметру \"%s\"",
+    "ErrNotCompatibleMessageBodyFmt": "Тип данных поля входного набора \"%s\" несовместим с телом запроса",
+    "ErrNotCompatibleParamDataTypeFmt": "Тип данных поля входного набора \"%s\" несовместим с параметром \"%s\"",
     "HttpStatusCodeColumn": "HTTP Status Code",
     "OutputDataSet": "Service Response",
     "RequestIDOutputColumn": "Request identifier",
     "ResponseColumn": "Server response",
     "RESTClientConnection": "Connect to REST service",
-    "RESTClientErrorNoID": "Error executing request:\n%s",
     "RESTClientErrorRowID": "Error executing request generated from %d row of the input data set:\n%s"
+  },
+  "components/restclient/RESTClientSend": {
+    "ErrCodePageNotSupported": "\"%s\" codepage not supported",
+    "ErrHTTPHeaderRedefined": "Заголовок \"%s\" уже присутствует в запросе",
+    "ErrNotAcceptableResponseContentType": "Получен недопустимый Content-Type: \"%s\", ожидается: \"%s\""
   },
   "components/restclient/RESTClientVendor": {
     "VendorCaption": "REST Request",
@@ -1614,8 +1738,9 @@
     "VendorCaption": "Self-Organizing Network",
     "VendorDesc": "Data clustering by self-organizing neural networks"
   },
-  "components/sorting/SortingEngine": {
-    "SortingNotify": "Data sorting"
+  "components/sorting/Sorting": {
+    "CacheNotify": "Caching",
+    "SortingNotify": "Сортировка"
   },
   "components/sorting/SortingVendor": {
     "VendorCaption": "Sort",
@@ -1741,10 +1866,9 @@
     "VendorDesc": "Create data set from variables set"
   },
   "components/wsdlclient/WSDLClient": {
-    "ErrorCodeColumn": "Error Code",
-    "ErrorDescColumn": "Error Description",
     "FaultNameOutputColumn": "Exception name",
     "FaultsDataSet": "Exceptions (WSDL fault)",
+    "FileNotAccessible": "Файл \"%s\" не доступен",
     "ImportIDOutputColumn": "Part identifier",
     "OutputDataSet": "Service Response",
     "RawOutputColumn": "Raw Response",
@@ -1755,7 +1879,6 @@
     "WSDLClientErrorRowID": "Error executing request generated from row #%d of the input data set:\n%s"
   },
   "components/wsdlclient/WSDLClientBase": {
-    "AdditionalDataSet": "Additional data",
     "ErrIncorrectWSDLClientRequestConfiguration": "Web service request configuration contains errors",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
     "ErrMapInputNodeTypesMismatch": "The data type of %s column does not match the data type of %s tree node",
@@ -1767,8 +1890,7 @@
     "ErrPortNotSelected": "No WSDL service endpoint for the request execution selected",
     "ErrResponseNotConfigured": "Service response not configured",
     "ErrTransmissionPrimitiveNotSupported": "Operations with \"%s\" exchange primitive are not supported",
-    "ErrUnmappedNodeNotOwnedByRequestTree": "%s node for which link reset is requested is not included in the request tree",
-    "RequestDataSource": "Request data source"
+    "ErrUnmappedNodeNotOwnedByRequestTree": "%s node for which link reset is requested is not included in the request tree"
   },
   "components/wsdlclient/WSDLClientVendor": {
     "VendorCaption": "SOAP Request",
@@ -1777,8 +1899,7 @@
   "Embedded/EmbeddedMain": {
     "ErrOpenURL": "Failed to go to the following address: %s",
     "LocalStorageLoadFailed": "Local Storage load failed",
-    "LocalStorageSaveFailed": "Local Storage save failed",
-    "UnknownException": "Unknown Exception"
+    "LocalStorageSaveFailed": "Local Storage save failed"
   },
   "Embedded/RelativeFileDialogs": {
     "AbsolutePath": "Absolute path",
@@ -1951,7 +2072,9 @@
     "ErrNoUsedRange": "Excel workbook error, incorrect sheet range",
     "ErrOpenExcelBook": "Failed to open %s Excel file",
     "ErrParseFmt": "Error occurred while parsing line %d: %s",
-    "ErrPropInvalidNamedRange": "Invalid named range",
+    "ErrPropInvalidNamedRange.1": "Не корректно задан именованный диапазон",
+    "ErrPropInvalidNamedRange.2": "Invalid named range",
+    "ErrPropInvalidNamedRange": "Некорректно задан именованный диапазон",
     "ErrPropInvalidSheetName": "The excel sheet name cannot contain the following characters: ? * / [ ]",
     "ErrPropNamedRange": "Named range name not specified",
     "ErrPropNamedRangeNotFound": "\"%s\" named range not found in \"%s\" file",
@@ -2024,15 +2147,22 @@
     "BadVariantType": "Unsupported Variant subtype",
     "CanNotConvert": "Failed to convert data to 32-bit format",
     "UnknownOperation": "Unknown string converter operation",
+    "UnsupportedOperation": "Операция не поддерживается",
     "VariantArrayNotSupported": "Unsupported arrays in Variant variables",
     "VariantByRefNotSupported": "Unsupported Variant byRef type",
     "VariantTypeNotSupported": "Unsupported Variant type mask"
+  },
+  "imports/native/DDFTupleVersion2x64Reader": {
+    "BadNativeStringData": "Invalid string data",
+    "BadNativeVariantData": "Invalid Variant data"
   },
   "imports/native/ImportNative": {
     "ErrFileFormat": "Not Loginom Data file",
     "ErrSignature": "Signature mismatch",
     "ErrSystemUnsupported": "Bitness not supported",
-    "ErrVersion": "Invalid version",
+    "ErrVersion.1": "Не корректная версия",
+    "ErrVersion.2": "Invalid version",
+    "ErrVersion": "Некорректная версия",
     "WarnCompatibilityMode": "File was opened in compatibility mode"
   },
   "imports/native/ImportNativeVendor": {
@@ -2045,6 +2175,8 @@
     "ErrFloatTypeCast": "Failed to convert \"%1:s\" value in \"%0:s\" column to real number.",
     "ErrIntegerTypeCast": "Failed to convert \"%1:s\" value in \"%0:s\" column to integer.",
     "ErrMaxBytesCountReaded": "While parsing the text file %d limit of reading of maximum number of bytes reached",
+    "ErrMaxMultilineLengthReaded": "При разборе текстового файла мультистрока превысила максимальную длину %d символа раньше, чем был найден закрывающий ограничитель строк. Номер строки файла с началом мультистроки: %d. Последняя строка файла, вошедшая в мультистроку: %d.",
+    "ErrMultilineEofAchieved": "Конец текстового файла достигнут раньше, чем найден закрывающий ограничитель строк. Номер строки файла с началом мультистроки: %d.",
     "ErrParseFmt": "Error occurred while parsing line %d: %s",
     "ErrUnsupportedCodePage": "Codepage %d not supported",
     "ErrUsedColumnDefsNotSpecified": "Imported fields not specified",
@@ -2092,9 +2224,9 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
     "ErrColNotNullable": "\"%s\" column (%s type) cannot have Null values",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
+    "ErrColValueLenOutOfRangeString": "Длина строки %d превышает допустимую для столбца \"%s\" (тип %s)",
     "ErrColValueOutOfRange": "Value %g is out of allowed range for column \"%s\" (type %s)",
     "ErrColValueOutOfRangeInt": "Value %d is out of allowed range for column \"%s\" (type %s)",
-    "ErrColValueOutOfRangeString": "\"%s\" string length exceeds the length allowed for \"%s\" column (%s type)",
     "ErrConvertFloatToDecimal": "Failed to convert the real value %g to the Decimal value (\"%s\" column)",
     "ErrUnsupportedDataType": "Column data type \"%s\" not supported"
   },
@@ -2157,7 +2289,9 @@
     "ErrIncorrectProject": "Invalid project name",
     "ErrKeyFilePathIsEmpty": "Path to the private key file is not specified",
     "ErrKeyFilePathNotExists": "\"%s\" key file not found",
-    "ErrODBCBigQueryNotExists": "ODBC-driver for connection to BigQuery has not been installed. Installation packages and brief driver description can be found at:",
+    "ErrODBCBigQueryNotExists.1": "ODBC-драйвер для подключения к BigQuery не установлен. Установочные пакеты и краткое описание драйвера можно найти по адресу:",
+    "ErrODBCBigQueryNotExists.2": "ODBC-driver for connection to BigQuery has not been installed. Installation packages and brief driver description can be found at:",
+    "ErrODBCBigQueryNotExists": "ODBC-драйвер \"%s\" для подключения к BigQuery не установлен. Установочные пакеты и краткое описание драйвера можно найти по адресу:",
     "ErrRefreshTokenIsEmpty": "No token specified for authentication",
     "SSLCANotExists": "\"%s\" certificate file not found"
   },
@@ -2175,13 +2309,16 @@
     "DatabaseTypeName": "MS SQL (OLE DB)"
   },
   "Libraries/bgdbrtl/UniDAC/MyUniDACDB": {
-    "DatabaseTypeName": "MySQL"
+    "DatabaseTypeName": "MySQL",
+    "ErrLibraryNotFound": "Не удалось загрузить библиотеку клиента MySQL (%s)"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCDriverDescs": {
     "ErrIncorrectRegEx": "Error parsing driver name template: %s"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCStringBuilder": {
-    "ErrInvalidODBCDriverName": "\"%s\" driver not registered",
+    "ErrInvalidODBCDriverName.1": "Драйвер \"%s\" не зарегистрирован",
+    "ErrInvalidODBCDriverName.2": "\"%s\" driver not registered",
+    "ErrInvalidODBCDriverName": "Драйвер \"%s\" не зарегистрирован в Loginom",
     "ErrODBCDriverName": "No ODBC driver specified in connection string"
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
@@ -2198,9 +2335,12 @@
   },
   "Libraries/bgdbrtl/UniDAC/SQLiteUniDACDB": {
     "DatabaseTypeName": "SQLite",
-    "ErrBlankConnectionString": "Empty connection string",
+    "ErrBlankConnectionString.1": "Не указана строка подключения",
+    "ErrBlankConnectionString.2": "Empty connection string",
+    "ErrBlankConnectionString": "Не указано имя файла",
+    "ErrFileNoAccess": "\"%s\" file unavailable",
+    "ErrIncorrectFileName": "Имя файла указано неверно, запрещены символы: %s",
     "ErrNotCursor": "The last command in SQL script does not return the cursor",
-    "ErrUnsupportedConnectionString": "The specified connection string format is not supported",
     "SQLiteError": "SQLite error: ",
     "SQLiteFuncOverridingNotSupported": "Function override for SQLite versions below 3.7.3 not supported"
   },
@@ -2258,7 +2398,9 @@
     "ObjMetaDesc": "object"
   },
   "Libraries/bgrtl/ClipboardAdapter": {
-    "ErrHTMLFormatNotImplemented": "Invalid clipboard format. Only text/plain is supported",
+    "ErrHTMLFormatNotImplemented.1": "Некорректный формат буфера обмена. Поддерживатся только text/plain",
+    "ErrHTMLFormatNotImplemented.2": "Invalid clipboard format. Only text/plain is supported",
+    "ErrHTMLFormatNotImplemented": "Некорректный формат буфера обмена. Поддерживается только text/plain",
     "ErrReadForbidden": "It is forbidden to read values",
     "ErrUnsupportedDelimiter": "Only CR+LF and LF line breaks are supported",
     "ErrWriteForbidden": "It is forbidden to write values"
@@ -2389,9 +2531,8 @@
     "ErrVariableTypesMismatch": "%s variable type is not compatible with %s source variable type"
   },
   "Libraries/bgrtl/Encoding": {
-    "ErrConvertToASCII": "\"%s\" string cannot be converted to ASCII encoded string",
-    "ErrUTF8ToWideCharOverflow": "Code unit %.2x is not the start of UTF8 character that consists of not more than 3 code units",
-    "ErrUTF8ToWideCharWrongOffset": "Code unit %.2x is not the start of UTF8 character"
+    "ErrCodePageNotExist": "Кодовая страница с номером %d не поддерживается",
+    "ErrConvertToASCII": "\"%s\" string cannot be converted to ASCII encoded string"
   },
   "Libraries/bgrtl/EnumTypInfo": {
     "ErrEnumNotRegistered": "\"%s\" enumeration not registered"
@@ -2571,18 +2712,18 @@
     "ErrStreamWriteBufferLength": "When writing to the data stream, the size of the initial buffer %d is less than the number of bytes required for writing %d"
   },
   "Libraries/bgrtl/LocaleUtils": {
-    "ErrLocaleNotSupported": "\"%s\" locale is not supported by the system"
-  },
-  "Libraries/bgrtl/Logger": {
-    "LogAnsiCodePage": "0"
-  },
-  "Libraries/bgrtl/LoggerConfigurator": {
-    "ErrCannotConfigureLogger": "Failed to use logging parameters"
+    "ErrLocaleNotSupported.1": "Локаль \"%s\" не поддерживается системой",
+    "ErrLocaleNotSupported.2": "\"%s\" locale is not supported by the system",
+    "ErrLocaleNotSupported": "Локаль \"%s\" не поддерживается"
   },
   "Libraries/bgrtl/MathUtils": {
     "ErrBadMatrix": "Two-dimensional dynamic array is not rectangular matrix",
     "ErrDeterminantIsZero": "It is impossible to calculate the inverse matrix: determinant is zero.",
     "ErrQuickSelectLeftRight": "The left bound %d has been set higher than the right one %d in QuickSelect function"
+  },
+  "Libraries/bgrtl/MSequence": {
+    "ErrMSequenceCountOutOfBounds": "The required M-sequence length must be more than 0",
+    "ErrMSequenceSetValueErr": "The shift register value cannot be equal to zero or exceed the sequence length."
   },
   "Libraries/bgrtl/OpenArray": {
     "ErrVariantToVarRec": "Failed to convert the Variant variable to the TVarRec value due to the unsupported data type %d of the Variant variable",
@@ -2601,13 +2742,6 @@
   "Libraries/bgrtl/QueueException": {
     "ErrAggregateExceptionMessage": "Exceptions occurred while processing",
     "ErrQueueExceptionEndUnexpected": "Attempt to end the queued exception block handling without its start"
-  },
-  "Libraries/bgrtl/Random": {
-    "ErrBuildMSequenceErr": "The required array length must not exceed the upper bound of the random numbers.",
-    "ErrMSequenceCountOutOfBounds": "The required M-sequence length must be more than 0",
-    "ErrMSequenceSetValueErr": "The shift register value cannot be equal to zero or exceed the sequence length.",
-    "ErrParamMustLessOrEqualThanParam": "Value %g of \"%s\" parameter must be less than or equal to value %g of \"%s\" parameter",
-    "RandSeed": "Initial value of random number"
   },
   "Libraries/bgrtl/ScalarUtils": {
     "ErrScalarToValue": "Error converting value from the scalar data type",
@@ -2653,13 +2787,14 @@
     "ErrOrderIndexesLength": "The index array length does not match the unique values count",
     "ErrWrongSyncClass": "Invalid synchronization source class. Expected instance of %s class, actually %s"
   },
+  "Libraries/bgrtl/StrDateUtils": {
+    "ErrInvalidDateTime": "\"%s\" string cannot be converted to the date/time value"
+  },
   "Libraries/bgrtl/Streams": {
     "ErrCachedStreamSeek0AfterLargeRead": "It is not possible to move to the stream start as %d bytes already are read and it exceeds %d cache size"
   },
   "Libraries/bgrtl/StrUtils": {
-    "ErrCodePageNotExist": "Codepage number %d does not exist",
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value",
-    "ErrInvalidDateTime": "\"%s\" string cannot be converted to the date/time value",
     "ErrInvalidFloat": "\"%s\" string cannot be converted to the real type value",
     "LocaleInvariant": "Invariant",
     "NotSet": "Unspecified",
@@ -2681,7 +2816,6 @@
     "ErrObjectDeleteRefCount": "Failed to delete the object of %s class due to interface references to it: %d"
   },
   "Libraries/bgrtl/System": {
-    "ErrConvertCharToAnsiChar": "Failed to convert %s Unicode character with code %d to Ansi character",
     "ErrConvertDateTimeToBool": "Failed to convert the Date/time value %g to the boolean value",
     "ErrConvertDateTimeToInt": "Failed to convert the Date/time value %g to integer",
     "ErrConvertFloatToBool": "Failed to convert the real value %g to the boolean value",
@@ -2705,11 +2839,11 @@
     "ErrCopyPasteRecursive": "\"%s\" folder cannot be copied into itself",
     "ErrCutPasteRecursive": "\"%s\" folder cannot be moved into itself",
     "ErrDirectoryNotExists": "\"%s\" folder does not exist",
-    "ErrFileMapping": "\"%s\" file mapping error",
-    "ErrFileNotExists": "\"%s\" file does not exist"
+    "ErrFileMapping": "\"%s\" file mapping error"
   },
   "Libraries/bgrtl/TextStream": {
     "ErrBadUnicodeStream": "Source data stream has invalid Unicode format",
+    "ErrCodePageNotSupported": "Кодовая страница с номером %d не поддерживается",
     "ErrReadAfterEnd": "Attempted to read outside the file",
     "ErrStreamNotAssigned": "Source data stream not initialized"
   },
@@ -2749,6 +2883,7 @@
     "BadNativeArrayStringData": "Invalid relative string reference format",
     "BadNativeData": "Invalid data",
     "BadNativeStringData": "Invalid string data",
+    "BadVariantData": "Invalid Variant data",
     "BadVariantStringData": "Invalid format of Variant variable string data",
     "BadVariantType": "Unsupported Variant subtype",
     "IncompatibleTuples": "Tuple structures are incompatible",
@@ -2827,7 +2962,9 @@
   },
   "Libraries/bgrtl/VarUtils": {
     "ErrConvertStrToType": "Error converting \"%s\" string to %s value",
-    "ErrConvertToOpenArrayInvalidParams": "Invalid parameter values when converting the Variant vector to the open array: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
+    "ErrConvertToOpenArrayInvalidParams.1": "Не допустимые значения параметров при преобразовании вектора Variant-ов к открытому массиву: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
+    "ErrConvertToOpenArrayInvalidParams.2": "Invalid parameter values when converting the Variant vector to the open array: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
+    "ErrConvertToOpenArrayInvalidParams": "Недопустимые значения параметров при преобразовании вектора Variant-ов к открытому массиву: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value"
   },
   "Libraries/bgrtl/Vendors": {
@@ -2842,7 +2979,7 @@
     "ErrCompressStream": "Compressed data stream error",
     "ErrCreateReadStream": "Failed to create a read stream until the write stream is finished",
     "ErrCreateWriteStream": "Failed to create the write stream",
-    "ErrDeleteFilr": "Failed to update file headers",
+    "ErrDeleteFile": "Failed to update file headers",
     "ErrDirectoryEndRecordx64": "Failed to find directories in archive",
     "ErrFileExists": "%s file already exists in the archive",
     "ErrIdentName": "File with %s name already exists in the archive",
@@ -2892,6 +3029,7 @@
     "ErrWrongElementsClass": "Invalid configuration node list class"
   },
   "Libraries/Config/ConfigBackupManagers": {
+    "AddAnnotationCaptionDef": "Добавлена заметка",
     "AddConnectionCaption": "\"%s\" Connection Added",
     "AddConnectionCaptionDef": "Connection Added",
     "AddLinkCaption": "\"%s.%s\" - \"%s.%s\" Link Added",
@@ -2908,6 +3046,7 @@
     "ConfigureNodeCaptionDef": "Node Configured",
     "ConfigureNodePortCaption": "Configured \"%s\" port of \"%s\" node",
     "ConfigureNodePortCaptionDef": "Node Port Configured",
+    "DeleteAnnotationCaptionDef": "Удалена заметка",
     "DeleteConnectionCaption": "Delete \"%s\" connection",
     "DeleteConnectionCaptionDef": "Delete Connection",
     "DeleteLinkCaption": "\"%s.%s\" - \"%s.%s\" Link Deleted",
@@ -2946,8 +3085,7 @@
     "ErrAttrTypeMismatch": "\"%s\" attribute data type mismatch",
     "ErrInvalidUTFInt": "Error reading packed integer number",
     "ErrUnknownConfigBinaryStream": "Unsupported configuration data stream",
-    "ErrUnsupportedConfigBinaryStreamVersion": "Unsupported version of configuration data stream %d",
-    "ErrUnsupportedDataType": "Unsupported configuration attribute data type"
+    "ErrUnsupportedConfigBinaryStreamVersion": "Unsupported version of configuration data stream %d"
   },
   "Libraries/Config/ConfigFile": {
     "ErrLoadConfigFile": "Configuration file loading error: %s",
@@ -2991,7 +3129,6 @@
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value",
     "ErrInvalidChar": "\"%s\" string cannot be converted to the \"character\" value",
     "ErrInvalidFloat": "\"%s\" string cannot be converted to the real type value",
-    "ErrUnsupportedDataType": "Unsupported configuration attribute data type",
     "ErrXmlParseError": "Xml parsing error: \"%s\" description, string %d, column %d"
   },
   "Libraries/Config/DelphiConfigScheme": {
@@ -3114,6 +3251,24 @@
     "ErrUnableToCreateConsumer": "Failed to create Consumer - %s",
     "ErrUnableToCreateProducer": "Failed to create Producer - %s",
     "LogErrKafkaCallBackFmt": "Kafka error: \"%s\", reason: \"%s\""
+  },
+  "Libraries/libxml2/LibXml2": {
+    "ErrLibXml2Common": "Ошибка libxml2 (код %d): %s",
+    "ErrLibXml2Unknown": "Нераспознанная ошибка libxml2",
+    "ErrXMLParse": "Ошибка при разборе XML (строка %d, позиция %d): %s",
+    "ErrXMLParseUrl": "Ошибка при разборе XML по адресу \"%s\" (строка %d, позиция %d): %s"
+  },
+  "Libraries/libxml2/LibXslt": {
+    "LibXsltNotLoaded": "Библиотека %s не найдена"
+  },
+  "Libraries/Log/Logger_Journald": {
+    "LibSystemdNotLoaded": "Не найдена библиотека libsystemd.so"
+  },
+  "Libraries/Log/Logger_Log4D": {
+    "LogAnsiCodePage": "0"
+  },
+  "Libraries/Log/LoggerConfigurator": {
+    "ErrCannotConfigureLogger": "Failed to use logging parameters"
   },
   "Libraries/Math/AutoCorrelation": {
     "ErrNullData": "Data contains null values"
@@ -3281,6 +3436,9 @@
   "Libraries/Model/Generic/ModelGenericComponentVendor": {
     "GenericVendorCaption": "Supernode"
   },
+  "Libraries/Model/Generic/ModelGenericSocketItems": {
+    "ErrOptionalChangeNotSupported": "Порт данного типа не поддерживает изменение флага необязательности"
+  },
   "Libraries/Model/Generic/ModelInnerComponent": {
     "ErrAlreadyConfiguringInnerSocket": "The external port component has already been configuring"
   },
@@ -3357,6 +3515,7 @@
   },
   "Libraries/Model/ModelNodesCopyUtils": {
     "CopyNodesCaption": "Nodes Copied",
+    "ErrAnnotationNotConfigurable": "Не удалось создать копию заметки с GUID: %s",
     "ErrCantPasteBaseInsideDerived": "Failed to move \"%s\" base component inside \"%s\" derived node.",
     "ErrCantPasteDerivedInsideBase": "Failed to move \"%s\" derived node inside \"%s\" base node",
     "ErrCantPasteInsideSelf": "Failed to move \"%s\" node inside itself",
@@ -3366,9 +3525,12 @@
     "ErrLinkPortNotConnetedToNode": "Link port with %s identifier not connected to node",
     "ErrMovedVendorUnavailableForNode": "Moved %s derived component is unavailable for %s node.",
     "ErrNodeNotConfigurable": "Failed to create the node copy with the following name: \"%s\" and GUID: %s",
-    "ErrNoNodesSpecified": "No node set specified",
+    "ErrNoNodesSpecified.1": "Не задан набор узлов",
+    "ErrNoNodesSpecified.2": "No node set specified",
+    "ErrNoNodesSpecified": "Не задан набор узлов и заметок",
     "ErrNoSourceModelUnit": "Source module not found",
     "ErrNoTargetModelUnit": "Target module not found",
+    "ErrSomeAnnotationDisposed": "Одна или несколько исходных заметок были удалены или перемещены",
     "ErrSomeNodeDisposed": "One or several source nodes have been deleted or moved",
     "ErrUnableToRestoreLinkBetween": "Failed to restore link between \"%s\" and \"%s\" nodes",
     "ErrVendorNotFound": "Derived \"%s\" component not found. Perhaps, this component could be deleted.",
@@ -3408,6 +3570,7 @@
     "CompatConvertRequired": "While opening \"%s\" package of %s version, converting will be performed.",
     "ErrCannotLoadPackageElement": "Package load error: failed to load \"%s\" element",
     "ErrCannotOpenFile": "Failed to open file: \"%s\"",
+    "ErrDecryptPackage": "Текущая версия приложения не может расшифровать пакет \"%s\": неподдерживаемый способ шифрования пакета",
     "WarnPackageCreatedInNewerVersion": "\"%s\" package was created in a newer version of Loginom %s. In the current version, a part of the functionality may not work correctly."
   },
   "Libraries/Model/ModelReports": {
@@ -3767,10 +3930,9 @@
     "ErrIndexerCountNotFound": "No \"%2:s\" property in metadata for \"%0:s.%1:s\" interface",
     "ErrInterfaceNameNotFound": "Interface with \"%s\" name not registered",
     "ErrInterfaceParentNotFound": "Parent interface \"%s\" not found",
-    "ErrInvalidMetadataResource": "Error reading metadata from \"%s\" resource",
+    "ErrInvalidMetadata": "Ошибка чтения метаданных",
     "ErrInvalidUTFInt": "Error reading packed integer number",
     "ErrParentNotInitialized": "Not initialized parent of \"%s.%s\" interface",
-    "ErrPropAccessorNotFound": "Failed to find \"%2:s\" accessor in metadata for \"%0:s.%1:s\" property",
     "ErrReferenceIsNil": "Interface reference not initialized",
     "ErrReferenceNotFound": "Failed to find the implemented interface",
     "ErrSetValueOutOfBounds": "Set value \"%d\" of \"%s\" property is not in the range of allowable values",
@@ -3811,13 +3973,16 @@
     "ErrInvalidURL": "Invalid service URL format",
     "ErrMustExplicitRequestContentType": "Data request Content-Type must be explicitly set",
     "ErrNoServiceURL": "Service URL not specified",
-    "ErrWSDLGenerate": "Error while generating WSDL description"
+    "ErrNotConnectedDefaultFmt": "Не удалось установить соединение. Причина: %s",
+    "ErrNotConnectedTimeoutFmt": "Не удалось установить соединение в течении %d мс. Причина: %s",
+    "ErrNotSecureConnectedFmt": "Не удалось установить защищенное соединение. Причина: %s",
+    "ErrUnsupportedAuthModeCert": "Аутентификация с помощью клиентского сертификата из хранилища не поддерживается"
   },
   "Libraries/RESTClientConnection/RESTClientConnectionVendor": {
     "RESTClientConnectionVendorCaption": "REST Service",
     "RESTClientConnectionVendorDesc": "Connection to GET/POST web service"
   },
-  "Libraries/rpc/BaseTCPBlockSocketMessageTransport": {
+  "Libraries/rpc/BaseSocketMessageTransport": {
     "ErrCouldNotConnectToServer": "Failed to establish connection: %s",
     "ErrIncorrectServerResponse": "Bad server response received"
   },
@@ -3836,6 +4001,7 @@
   },
   "Libraries/rpc/RemoteMessageData": {
     "ErrArrayLevelNotSupported": "Arrays nesting level above %d is not supported",
+    "ErrCodePageNotSupported": "Cтрока имеет неподдерживаемую кодовую страницу %d. Поддерживается только UTF-8 и UTF-16.",
     "ErrInvalidMessageSignature": "Invalid message signature",
     "ErrMessageSizeCannotBeNegative": "Message size cannot be negative",
     "ErrMessageSizeIncrementCannotBeNegative": "Message size increment cannot be negative",
@@ -3843,7 +4009,6 @@
     "ErrUnknownInterfaceGUID": "Interface with %s identifier not registered",
     "ErrUnknownInterfaceID": "Unknown interface identifier: %d",
     "ErrUnknownInterfaceName": "%s interface not registered",
-    "ErrUnknownMethodID": "Unknown method identifier: %d",
     "ErrUnsupportedParameterType": "Unsupported argument type"
   },
   "Libraries/rpc/RemotingConvertUtils": {
@@ -3863,9 +4028,6 @@
     "ErrInvalidRangeBounds": "The left bound of range [%d; %d] has been set higher than the right one",
     "ErrMainServerObjectNotRegistered": "The main server object is not registered",
     "ErrMaxObjectIdReached": "Object identifiers limit of %d values reached",
-    "ErrMethodHasNoReturnValue": "%s method has no return value",
-    "ErrMethodHasOutputParameters": "%s method contains output parameters",
-    "ErrMethodReturnValueIsNotInterface": "The return value of %s method is not an interface object reference",
     "ErrNegativeRangeBounds": "Range bounds [%d; %d] are negative",
     "ErrRangeLengthOutOfRange": "Range bounds [%d; %d] are not in the range of allowable values [%d; %d]",
     "ErrRpcVersionMismatch": "Client of %s version cannot get connected to the server of %s version",
@@ -3900,6 +4062,9 @@
     "XSDFilesConnectionVendorCaption": "Set of XSD Schemas",
     "XSDFilesConnectionVendorDesc": "Connection to the set of XSD schemas located in the file storage"
   },
+  "Server/ServiceConsts": {
+    "ServiceDisplayName": "LoginomServer"
+  },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Summary"
   },
@@ -3920,6 +4085,9 @@
     "AddedPublishedNodeDerivedVendor": "Derived component created by the published \"%s\" node",
     "PublicNodeDerivedVendorCaptionFormatString": "%s (public node)",
     "PublishedNodeDerivedVendorCaptionFormatString": "%s (published node)"
+  },
+  "Studio/Converters/Converter_202210131413_ModelNode_RemoveWrapWebServiceResult": {
+    "NodeSoapResponseFormatChanged": "Узел %s был опубликован в Loginom версии 6.2.5 или более ранней. Для данного узла изменится формат ответных сообщений при вызове через SOAP сервис."
   },
   "Studio/DeductorConsts": {
     "LgpFilesDesc": "Loginom packages"
@@ -3965,6 +4133,7 @@
     "ErrSessionBackupModified": "This session backup has already been changed by another client from the current account",
     "ErrUpdatePublishedPackageErrors": "Errors occurred while updating %s package publishing",
     "FileName": "File name",
+    "LicSessionCountExceeded": "Превышено количество сессий, допустимых по вашей лицензии",
     "Namespace": "Namespace",
     "PackageClosedLogMsg": "\"%s\" package closed",
     "PackageOpenedEditLogMsg": "\"%s\" package opened in the edit mode",
@@ -4034,27 +4203,24 @@
     "UseGlobalFileStorage": "Use global file storage",
     "UserMetaDesc": "User"
   },
-  "Studio/Server/BatchLauncher/BatchLauncher": {
-    "CommandLineFmt": "Usage: %s <keys>",
-    "ErrConnectionError": "Server connection error",
-    "ErrExecutionError": "Batch execution error",
-    "ErrInvalidCommandLineParameters": "Invalid command line parameters",
-    "ErrLostConnectionToServer": "Server connection lost",
-    "ErrUnknownCommandLineParameter": "Unknown command line parameter: %s",
-    "ExampleTitle": "Example:",
-    "OptionAddressDesc": "IP address or hostname (default: %s)",
-    "OptionNodeNameDesc": "Name or GUID of node",
-    "OptionPackageFileNameDesc": "Package path and file name (required parameter)",
-    "OptionPasswordDesc": "Password",
-    "OptionPortDesc": "Port (default: %s)",
-    "OptionSavePackageDesc": "Save package after execution",
-    "OptionTeachDesc": "Retraining mode",
-    "OptionUserNameDesc": "Username",
-    "Switches": "<Keys>",
-    "VariableSwitchesInfo": "Any other keys are interpreted as variable names.\nFormat: <Variable_name>=<Variable_value>"
-  },
-  "Studio/Server/ServiceConsts": {
-    "ServiceDisplayName": "LoginomServer"
+  "Studio/RegistrationEditionDependentComponents": {
+    "1Cv8Connection": "Подключение к 1С:Предприятие 8",
+    "1Cv8QueryImport": "1C Query",
+    "AccessODBCUniDACDatabase": "Подключение к MS Access",
+    "DataToXMLEngine": "XML Generation",
+    "ErrComponentNotAvailable": "Компонент \"%s\" недоступен в текущей редакции Loginom",
+    "ExcelODBCUniDACDatabase": "Подключение к MS Excel",
+    "ExecCmdEngine": "Program Execution",
+    "ExportTableau": "Экспорт в Tableau файл",
+    "ExtractXMLEngine": "Разбор XML",
+    "KafkaConnection": "Connection to Kafka",
+    "KafkaExport": "Экспорт в Kafka",
+    "KafkaImport": "Импорт из Kafka",
+    "MSSQLDDWConnection": "Подключение к Deductor Warehouse [MS SQL]",
+    "OraDDWConnection": "Подключение к Deductor Warehouse [Oracle]",
+    "TableauRestConnection": "Подключение к Tableau серверу",
+    "WSDLClient": "SOAP Request",
+    "WSDLClientConnection": "Connection to SOAP service"
   },
   "Studio/SharedDirectories": {
     "ErrSharedDirectoryAlreadyDeleted": "Shared directory already deleted",
@@ -4105,8 +4271,7 @@
     "DefaultSerieName": "Series",
     "ErrAxisNotFound": "No axis with this position found",
     "ErrAxisPositionNotTrue": "Invalid axis position",
-    "ErrLinkedColumnDataType": "Invalid data type",
-    "ErrLinkedColumnInfoNotFound": "Column not found"
+    "ErrLinkedColumnDataType": "Invalid data type"
   },
   "Viewers/Chart/ChartViewCacheServer": {
     "DataSourceIsInActive": "Data source is inactive"
@@ -4116,9 +4281,8 @@
     "VendorDesc": "Chart data view"
   },
   "Viewers/ClusterProfiles/ClusterProfilesView": {
-    "ClusterProfilesProcess": "Cluster profiles",
     "Component": "Component",
-    "DetailingProcessCaptionSuffix": " by %s clusters",
+    "DetailingProcessCaption": "Профили кластеров. %s по кластерам %s",
     "ErrNotDefinedComponent": "Undefined Clustering component",
     "ErrTableRowState": "Invalid change of the data field synchronization status occurred",
     "HistogramProcess": "Histogram building",
@@ -4199,7 +4363,7 @@
   },
   "Viewers/Cube/CubeView": {
     "CubeViewProcess": "Cube",
-    "DetailingProcessCaptionSuffix": " by cell [%d, %d]",
+    "DetailingProcessCaption": "Куб. %s по ячейке [%d, %d]",
     "ErrAlreadyExporting": "Failed to export a crosstab until the current export is finished",
     "ErrExportCubeClosed": "Failed to export a crosstab when the Cube is inactive",
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
@@ -4222,7 +4386,6 @@
     "MoreStatisticsCalculation": "Additional statistics calculation",
     "PrepareViewData": "Statistics",
     "QualityStatisticsCalculation": "Data fields quality indicators calculating",
-    "QualityViewProcess": "Data quality",
     "SimpleStatisticsCalculation": "Simple statistics calculation"
   },
   "Viewers/DataQuality/QualityViewBuilder": {
@@ -4232,7 +4395,7 @@
     "ErrRequiredColumnNotFound": "No columns with the specified indexes in the input data source"
   },
   "Viewers/DataQuality/QualityViewDetailing": {
-    "DetailingProcessCaptionSuffix": " by cell [%d, %d]"
+    "DetailingProcessCaption": "Качество данных. %s по ячейке [%d, %d]"
   },
   "Viewers/DataQuality/QualityViewExport": {
     "HTMLContinueStatsTitle": "Data quality (Continuous fields)",
@@ -4264,7 +4427,8 @@
     "GenericDetailingProcessCaption": "\"%s\" detailing",
     "ManagerBrowse": "Table",
     "ManagerStatistics": "Statistics",
-    "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" detailing configuration"
+    "MsgEmbeddedViewLoadFailed": "Failed to load \"%s\" detailing configuration",
+    "UpdateDataProcessCaption": "Data preparing"
   },
   "Viewers/Duplicates/DuplicatesView": {
     "Component": "Component",

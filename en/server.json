@@ -4071,6 +4071,7 @@
     "ErrExportDeactivate": "Export deactivated due to node deactivation",
     "LogColumnNotFoundFmt": "No %s field found in the input data set. The field has been deleted from the displayed fields.",
     "LogNewColumnFmt": "New %s field appeared in the input data set. The field has been added to the displayed fields.",
+    "NullText": "",
     "PrepareViewData": "Table"
   },
   "Viewers/Browse/BrowseViewExport": {

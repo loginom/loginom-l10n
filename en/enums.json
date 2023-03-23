@@ -1028,6 +1028,8 @@
     },
     "DataSourceTypeEx": {
       "$Caption": "Extended Set of Data Type",
+      "Teach": "",
+      "Test": "",
       "All": "All"
     },
     "DataStatus": {

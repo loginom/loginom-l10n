@@ -141,6 +141,7 @@
     "ThirdPartyModalTitle": "Third Party Open Source Software"
   },
   "app/ListViewForm": {
+    "NotObjects": "",
     "NumberObjects": "{0} objects"
   },
   "app/LoginomMenuForm": {
@@ -1962,6 +1963,7 @@
     "SetSelectedPage": "Selected page",
     "SortingButtonText": "Sort",
     "SortingTitle": "Sort",
+    "UndefinedCellValue": "",
     "WarnExportTableSizeWarning": "The current Table size is {0} cells.\nThe exported file size is estimated to be at least {1} Mb.\nDo you really want to start exporting?"
   },
   "viewers/chart/ChartUtils": {

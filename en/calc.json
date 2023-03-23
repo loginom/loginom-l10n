@@ -88,9 +88,7 @@
       "Output": "Returns the arithmetic mean of arguments."
     },
     "Chr": {
-      "Arguments.1": "Аргумент - числовой код символа Unicode в диапазоне [0, 65535].",
-      "Arguments.2": "Argument - numerical code of Unicode character in the range [0, 65535].",
-      "Arguments": "Аргумент - числовой код символа Unicode.",
+      "Arguments": "Argument - numerical code of Unicode character",
       "Description": "Chr(Argument)",
       "Output": "Returns Unicode character according to its code."
     },

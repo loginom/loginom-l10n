@@ -835,7 +835,7 @@
   "components/datarecovery/DataRecovery": {
     "DataRecovery": "Imputation",
     "PaymentAdditionalFeatures": "Calculation of the additional features",
-    "QualityEngine": "Качество данных",
+    "QualityEngine": "Data quality",
     "ScanningInputData": "Input data scanning"
   },
   "components/datarecovery/DataRecoveryVendor": {
@@ -924,7 +924,7 @@
     "OutDataExtr": "Extremes",
     "OutDataOut": "Outliers",
     "PaymentAdditionalFeatures": "Calculation of the additional features",
-    "QualityEngine": "Качество данных",
+    "QualityEngine": "Data quality",
     "ScanningInputData": "Input data scanning"
   },
   "components/elimoutlier/ElimOutlierVendor": {
@@ -1740,7 +1740,7 @@
   },
   "components/sorting/Sorting": {
     "CacheNotify": "Caching",
-    "SortingNotify": "Сортировка"
+    "SortingNotify": "Data sorting"
   },
   "components/sorting/SortingVendor": {
     "VendorCaption": "Sort",
@@ -2072,9 +2072,7 @@
     "ErrNoUsedRange": "Excel workbook error, incorrect sheet range",
     "ErrOpenExcelBook": "Failed to open %s Excel file",
     "ErrParseFmt": "Error occurred while parsing line %d: %s",
-    "ErrPropInvalidNamedRange.1": "Не корректно задан именованный диапазон",
-    "ErrPropInvalidNamedRange.2": "Invalid named range",
-    "ErrPropInvalidNamedRange": "Некорректно задан именованный диапазон",
+    "ErrPropInvalidNamedRange": "Invalid named range",
     "ErrPropInvalidSheetName": "The excel sheet name cannot contain the following characters: ? * / [ ]",
     "ErrPropNamedRange": "Named range name not specified",
     "ErrPropNamedRangeNotFound": "\"%s\" named range not found in \"%s\" file",
@@ -2160,9 +2158,7 @@
     "ErrFileFormat": "Not Loginom Data file",
     "ErrSignature": "Signature mismatch",
     "ErrSystemUnsupported": "Bitness not supported",
-    "ErrVersion.1": "Не корректная версия",
-    "ErrVersion.2": "Invalid version",
-    "ErrVersion": "Некорректная версия",
+    "ErrVersion": "Invalid version",
     "WarnCompatibilityMode": "File was opened in compatibility mode"
   },
   "imports/native/ImportNativeVendor": {
@@ -2224,7 +2220,7 @@
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
     "ErrColNotNullable": "\"%s\" column (%s type) cannot have Null values",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
-    "ErrColValueLenOutOfRangeString": "Длина строки %d превышает допустимую для столбца \"%s\" (тип %s)",
+    "ErrColValueLenOutOfRangeString": "%d string length exceeds the length allowed for \"%s\" column (%s type)",
     "ErrColValueOutOfRange": "Value %g is out of allowed range for column \"%s\" (type %s)",
     "ErrColValueOutOfRangeInt": "Value %d is out of allowed range for column \"%s\" (type %s)",
     "ErrConvertFloatToDecimal": "Failed to convert the real value %g to the Decimal value (\"%s\" column)",
@@ -2398,9 +2394,7 @@
     "ObjMetaDesc": "object"
   },
   "Libraries/bgrtl/ClipboardAdapter": {
-    "ErrHTMLFormatNotImplemented.1": "Некорректный формат буфера обмена. Поддерживатся только text/plain",
-    "ErrHTMLFormatNotImplemented.2": "Invalid clipboard format. Only text/plain is supported",
-    "ErrHTMLFormatNotImplemented": "Некорректный формат буфера обмена. Поддерживается только text/plain",
+    "ErrHTMLFormatNotImplemented": "Invalid clipboard format. Only text/plain is supported",
     "ErrReadForbidden": "It is forbidden to read values",
     "ErrUnsupportedDelimiter": "Only CR+LF and LF line breaks are supported",
     "ErrWriteForbidden": "It is forbidden to write values"
@@ -2962,9 +2956,7 @@
   },
   "Libraries/bgrtl/VarUtils": {
     "ErrConvertStrToType": "Error converting \"%s\" string to %s value",
-    "ErrConvertToOpenArrayInvalidParams.1": "Не допустимые значения параметров при преобразовании вектора Variant-ов к открытому массиву: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
-    "ErrConvertToOpenArrayInvalidParams.2": "Invalid parameter values when converting the Variant vector to the open array: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
-    "ErrConvertToOpenArrayInvalidParams": "Недопустимые значения параметров при преобразовании вектора Variant-ов к открытому массиву: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
+    "ErrConvertToOpenArrayInvalidParams": "Invalid parameter values when converting the Variant vector to the open array: Length(Result) = %d; Length(Value) = %d; Count = %d; Offset = %d",
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value"
   },
   "Libraries/bgrtl/Vendors": {

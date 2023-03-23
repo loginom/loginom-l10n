@@ -24,7 +24,11 @@
     "WSDLAuthorization": {
       "CertFileCredentials": "Реквизиты аутентификации пользовательским сертификатом",
       "Mode": "Тип аутентификации",
+      "NamePassCredentials.1": "Реквизиты авторизации по имени пользователя и паролю",
+      "NamePassCredentials.2": "Username and Password Authorization Credentials",
       "NamePassCredentials": "Реквизиты аутентификации по имени пользователя и паролю",
+      "OAuthCredentials.1": "Реквизиты авторизации по токену OAuth",
+      "OAuthCredentials.2": "OAuth Token Authorization Credentials",
       "OAuthCredentials": "Реквизиты аутентификации по токену OAuth"
     },
     "WSDLCertFileAuthCredentials": {
@@ -37,11 +41,13 @@
       "UserName": "Username"
     },
     "WSDLOAuthCredentials": {
-      "Token": "Токен OAuth"
+      "Token": "OAuth Token"
     }
   },
   "Common/HTTPClient/WSDLRequestDebug": {
     "WSDLRequestDebug": {
+      "DumpRequest.1": "Сохранять текст запроса на диск",
+      "DumpRequest.2": "Save Request Text to Disk",
       "DumpRequest": "Сохранять текст запроса в папку",
       "DumpRequestFolder": "Folder to save requests",
       "ResponseStub": "File name supplied as response",
@@ -228,8 +234,8 @@
   },
   "components/elimoutlier": {
     "ElimOutlierColumnDefExtension": {
-      "ActionExtr": "Метод обработки экстремальных",
-      "ActionOut": "Метод обработки выбросов",
+      "ActionExtr": "Extremes processing method",
+      "ActionOut": "Outliers elimination method",
       "DetectEKvartil": "For extreme",
       "DetectESko": "For extreme",
       "DetectOKvartil": "For outlier",
@@ -856,7 +862,7 @@
   },
   "Libraries/Log/LoggerConfigurator": {
     "CustomLoggerConfigurator": {
-      "MinLogLevel": "Уровень логирования"
+      "MinLogLevel": "Logging level"
     },
     "LoggerConfigurator": {
       "LoggerType": "Тип логирования"

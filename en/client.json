@@ -942,12 +942,8 @@
     "NotLink": "not linked"
   },
   "components/wsdlclient/DebugParamsController": {
-    "ErrDumpRequestDirectoryDoesNotExist.1": "Папка {0}, указанная в качестве расположения для сохранения запросов, не существует",
-    "ErrDumpRequestDirectoryDoesNotExist.2": "{0} folder selected to save requests does not exist",
-    "ErrDumpRequestDirectoryDoesNotExist": "Папка \"{0}\", указанная в качестве расположения для сохранения запросов, не существует",
-    "ErrResponseFileDoesNotExist.1": "Файл {0}, указанный в качестве источника ответа, не существует",
-    "ErrResponseFileDoesNotExist.2": "{0} file selected as response source does not exist",
-    "ErrResponseFileDoesNotExist": "Файл \"{0}\", указанный в качестве источника ответа, не существует"
+    "ErrDumpRequestDirectoryDoesNotExist": "\"{0}\" folder selected to save requests does not exist",
+    "ErrResponseFileDoesNotExist": "\"{0}\" file selected as response source does not exist"
   },
   "components/wsdlclient/OperationFaultsWizard": {
     "FaultsMessagePrefix": "Handled exception: ",
@@ -1931,9 +1927,7 @@
   "propedit/PropEditUtils": {
     "ErrControlIsNil": "No editor specified",
     "ErrPropertyOwnerIsNil": "No interface specified",
-    "ErrPropertyPathIsNil.1": "На задано имя свойства",
-    "ErrPropertyPathIsNil.2": "No property name specified",
-    "ErrPropertyPathIsNil": "Не задано имя свойства"
+    "ErrPropertyPathIsNil": "No property name specified"
   },
   "rpc/CustomClient": {
     "ErrConnectToServerEx": "Failed to connect to server.\nError: {0}.",

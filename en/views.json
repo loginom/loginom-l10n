@@ -581,67 +581,67 @@
       "tooltip": "Show/hide component panel"
     },
     "btnStyle0": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle1": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle10": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle11": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle12": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle13": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle14": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle15": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle16": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle17": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle18": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle19": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle2": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle20": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle3": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle4": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle5": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle6": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle7": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle8": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnStyle9": {
-      "text": "Абв"
+      "text": "Abc"
     },
     "btnTable": {
       "tooltip": "Show as table"
@@ -1662,9 +1662,7 @@
       "tooltip": "Delete"
     },
     "frmConditionParamsWizard": {
-      "title.1": "Условие. Настройка списка условий.",
-      "title.2": "Condition. Configure list of conditions.",
-      "title": "Настройка списка условий"
+      "title": "Configure list of conditions"
     }
   },
   "components/condition/ConditionSocketsWizard": {
@@ -2287,21 +2285,21 @@
       "text": "Request Parameters"
     },
     "mniFieldAutoLink": {
-      "text": "Связать автоматически"
+      "text": "Auto Link"
     },
     "mniFieldRemoveLink": {
-      "text": "Delete link"
+      "text": "Delete Link"
     },
     "mniParamAutoLink": {
-      "text": "Связать автоматически"
+      "text": "Auto Link"
     },
     "mniParamRemoveLink": {
-      "text": "Delete link"
+      "text": "Delete Link"
     }
   },
   "components/restclient/RESTRequestWizard": {
     "btnConnect": {
-      "text": "Не подключено"
+      "text": "Not Connected"
     },
     "cntConnection": {
       "fieldLabel": "Connection"
@@ -3438,9 +3436,7 @@
       "text": "Извлекать всё"
     },
     "btnPreview": {
-      "text.1": "Предпросмотр...",
-      "text.2": "Preview...",
-      "text": "Предпросмотр"
+      "text": "Preview"
     },
     "cntConnection": {
       "fieldLabel": "Connection"
@@ -3449,7 +3445,7 @@
       "text": "Тип в базе"
     },
     "colDisplayText": {
-      "text": "Метка"
+      "text": "Caption"
     },
     "colFieldName": {
       "text": "Field"
@@ -4845,7 +4841,7 @@
       "tooltip": "Add to marked"
     },
     "btnPrepare": {
-      "text": "Загрузить"
+      "text": "Load"
     },
     "btnPrepareAbort": {
       "text": "Cancel"
@@ -5692,13 +5688,13 @@
   },
   "wizards/columnsdisposition/ColumnsDisposition": {
     "btnDown": {
-      "tooltip": "Переместить вниз"
+      "tooltip": "Move down"
     },
     "btnMove": {
       "tooltip": "Move field to measurement area"
     },
     "btnUp": {
-      "tooltip": "Переместить вверх"
+      "tooltip": "Move up"
     },
     "colDisplayName": {
       "text": "Available fields"
@@ -5707,7 +5703,7 @@
       "text": "Selected fields"
     },
     "colUsedFieldsDelete": {
-      "tooltip": "Удалить все"
+      "tooltip": "Delete all"
     },
     "colUsedFieldsDelete.0": {
       "tooltip": "Delete"

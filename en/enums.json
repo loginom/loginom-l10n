@@ -35,7 +35,7 @@
       "$Caption": "Тип аутентификации",
       "Absent": "Not required",
       "NamePass": "Username and password",
-      "OAuth": "Токен OAuth",
+      "OAuth": "OAuth token",
       "Cert": "Клиентский сертификат из хранилища",
       "FileCert": "Файлы сертификата клиента"
     }
@@ -1248,7 +1248,7 @@
   },
   "Libraries/bgrtl/UITypes": {
     "ChartType": {
-      "$Caption": "Тип диаграммы",
+      "$Caption": "Chart Type",
       "Lines": "Lines",
       "Area": "Areas",
       "Spline": "Splines",
@@ -1372,7 +1372,7 @@
   },
   "Libraries/Log/LoggerConfigurator": {
     "LogLevel": {
-      "$Caption": "Уровень логирования",
+      "$Caption": "Logging Level",
       "Trace": "Trace",
       "Debug": "Debug",
       "Info": "Info",

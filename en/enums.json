@@ -32,7 +32,7 @@
   },
   "Common/HTTPClient/WSDLClientAuth": {
     "WSDLAuthorizationMode": {
-      "$Caption": "Тип аутентификации",
+      "$Caption": "Authentication Type",
       "Absent": "Not required",
       "NamePass": "Username and password",
       "OAuth": "OAuth token",

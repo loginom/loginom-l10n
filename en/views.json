@@ -2705,7 +2705,7 @@
       "text": "Test"
     },
     "cntAuth": {
-      "title": "Аутентификация для выполнения запроса"
+      "title": "Authentication to Execute Request"
     },
     "colDataType": {
       "text": "Data type"
@@ -2765,9 +2765,7 @@
   },
   "connections/webservice/AuthorizationWizard": {
     "frmAuthorization": {
-      "title.1": "Авторизация для выполнения запроса",
-      "title.2": "Authorization to Execute Request",
-      "title": "Аутентификация для выполнения запроса"
+      "title": "Authentication to Execute Request"
     }
   },
   "connections/webservice/ConnectionWizard": {
@@ -2778,9 +2776,7 @@
       "text": "Test"
     },
     "cntAuthorization": {
-      "title.1": "Авторизация для получения WSDL-файла",
-      "title.2": "Authorization to Get WSDL File",
-      "title": "Аутентификация для получения WSDL-файла"
+      "title": "Authentication to Get WSDL File"
     },
     "frmConnection": {
       "title": "Connection Parameters"

@@ -23,13 +23,9 @@
   "Common/HTTPClient/WSDLClientAuth": {
     "WSDLAuthorization": {
       "CertFileCredentials": "Реквизиты аутентификации пользовательским сертификатом",
-      "Mode": "Тип аутентификации",
-      "NamePassCredentials.1": "Реквизиты авторизации по имени пользователя и паролю",
-      "NamePassCredentials.2": "Username and Password Authorization Credentials",
-      "NamePassCredentials": "Реквизиты аутентификации по имени пользователя и паролю",
-      "OAuthCredentials.1": "Реквизиты авторизации по токену OAuth",
-      "OAuthCredentials.2": "OAuth Token Authorization Credentials",
-      "OAuthCredentials": "Реквизиты аутентификации по токену OAuth"
+      "Mode": "Authentication Type",
+      "NamePassCredentials": "Username and Password Authentication Credentials",
+      "OAuthCredentials": "OAuth Token Authentication Credentials"
     },
     "WSDLCertFileAuthCredentials": {
       "SSLCert": "User certificate",
@@ -855,9 +851,7 @@
       "NameAttribute": "Name attribute",
       "Password": "Password",
       "Port": "Port",
-      "UseSASL.1": "Использовать SASL авторизацию",
-      "UseSASL.2": "Use SASL authorisation",
-      "UseSASL": "Использовать SASL"
+      "UseSASL": "Use SASL"
     }
   },
   "Libraries/Log/LoggerConfigurator": {
@@ -926,9 +920,7 @@
   },
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "RESTClientConnectionConfigurator": {
-      "ClientAuth.1": "Авторизация для выполнения запроса",
-      "ClientAuth.2": "Authorization to execute request",
-      "ClientAuth": "Аутентификация для выполнения запроса",
+      "ClientAuth": "Authentication to execute request",
       "ExchangeTimeOut": "Data exchange timeout (ms)",
       "IgnoreCertificateErrors": "Ignore SSL certificate errors",
       "RequestContentType": "Request Content-Type",
@@ -949,20 +941,14 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "WSDLClientConnectionConfigurator": {
-      "ClientAuth.1": "Авторизация для выполнения запроса",
-      "ClientAuth.2": "Authorization to execute request",
-      "ClientAuth": "Аутентификация для выполнения запроса",
-      "ClientUsesWSDLAuth.1": "Авторизация та же, что и для получения WSDL",
-      "ClientUsesWSDLAuth.2": "Authorization is the same as for WSDL",
-      "ClientUsesWSDLAuth": "Аутентификация та же, что и для получения WSDL",
+      "ClientAuth": "Authentication to execute request",
+      "ClientUsesWSDLAuth": "Authentication is the same as for WSDL",
       "ExchangeTimeOut": "Data exchange timeout (ms)",
       "IgnoreCertificateErrors": "Ignore SSL certificate errors",
       "ReserveWSDLSource": "Reserve WSDL source",
       "ReserveWSDLSourceOn": "Enable reserve WSDL source",
       "TimeOut": "Connection timeout (ms)",
-      "WSDLAuth.1": "Авторизация для получения WSDL-файла",
-      "WSDLAuth.2": "Authorization to get WSDL file",
-      "WSDLAuth": "Аутентификация для получения WSDL-файла",
+      "WSDLAuth": "Authentication to get WSDL file",
       "WSDLSource": "WSDL source",
       "XSLT": "XSLT path",
       "XSLTOn": "Transform WSDL description using XSLT"

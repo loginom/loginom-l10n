@@ -917,11 +917,11 @@
   "Libraries/RESTClientConnection/RESTClientConnection": {
     "RESTClientConnectionConfigurator": {
       "ClientAuth": "Аутентификация для выполнения запроса",
-      "ExchangeTimeOut": "Таймаут обмена данными (мс)",
+      "ExchangeTimeOut": "Тайм-аут обмена данными (мс)",
       "IgnoreCertificateErrors": "Игнорировать ошибки SSL сертификата",
       "RequestContentType": "Content-Type запроса",
       "ResponseContentType": "Допустимый Content-Type ответа",
-      "TimeOut": "Таймаут подключения (мс)",
+      "TimeOut": "Тайм-аут подключения (мс)",
       "URL": "URL сервиса",
       "Verb": "Метод"
     }
@@ -939,11 +939,11 @@
     "WSDLClientConnectionConfigurator": {
       "ClientAuth": "Аутентификация для выполнения запроса",
       "ClientUsesWSDLAuth": "Аутентификация та же, что и для получения WSDL",
-      "ExchangeTimeOut": "Таймаут обмена данными (мс)",
+      "ExchangeTimeOut": "Тайм-аут обмена данными (мс)",
       "IgnoreCertificateErrors": "Игнорировать ошибки SSL сертификата",
       "ReserveWSDLSource": "Резервный источник WSDL",
       "ReserveWSDLSourceOn": "Включить резервный источник WSDL",
-      "TimeOut": "Таймаут подключения (мс)",
+      "TimeOut": "Тайм-аут подключения (мс)",
       "WSDLAuth": "Аутентификация для получения WSDL-файла",
       "WSDLSource": "Источник WSDL",
       "XSLT": "Расположение XSLT",
@@ -954,7 +954,7 @@
     "DeductorServerSettings": {
       "PackagePoolSize": "Размер пула пакетов",
       "SessionBackupDirectory": "Директория, содержащая резервные копии сессий",
-      "StopTimeout": "Таймаут остановки сервера",
+      "StopTimeout": "Тайм-аут остановки сервера",
       "ThreadPoolSize": "Размер пула потоков",
       "TraceExceptions": "Трассировка исключений",
       "UserStorageDirectory": "Директория, содержащая личные папки пользователей"

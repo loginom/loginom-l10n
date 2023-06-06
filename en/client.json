@@ -1,6 +1,8 @@
 {
   "about/About": {
+    "AppLersionAPI": "/api/v1/loginom-version",
     "ErrVersionWrongServiceResponse": "Bad service response for the latest version request",
+    "LoginomVersionKey": "loginom_version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Latest stable version {0}"
@@ -110,6 +112,12 @@
   "app/Application": {
     "MsgAppClose": "The application is closing. The current session and all unsaved changes will be lost."
   },
+  "app/AppMenuForm": {
+    "ConfirmQuit": "There are not saved packages. Do you want to exit without saving?",
+    "ErrCannotCloseApplication": "Failed to close application due to the active processes that have not been finished while timeout.",
+    "Menu": "Menu",
+    "QAHref": "https://qa.loginom.com/questions/"
+  },
   "app/AppUtils": {
     "ConfirmRemovingDerivedVendor": "{0}\nDo you really want to delete \"{1}\" component?",
     "ConfirmRemovingNode": "Do you really want to delete \"{0}\" node?",
@@ -145,12 +153,6 @@
   "app/ListViewForm": {
     "NotObjects": "",
     "NumberObjects": "{0} objects"
-  },
-  "app/LoginomMenuForm": {
-    "ConfirmQuit": "There are not saved packages. Do you want to exit without saving?",
-    "ErrCannotCloseApplication": "Failed to close application due to the active processes that have not been finished while timeout.",
-    "Menu": "Menu",
-    "QAHref": "https://qa.loginom.com/questions/"
   },
   "app/MainForm": {
     "AskIfOpenPackageByLink": "The open package will be locked by you until it is closed. Do you want to open it?",
@@ -464,7 +466,8 @@
   },
   "app/Version": {
     "CompanyWebsite": "https://loginom.com",
-    "LegalCopyright": "© OOO ANALITICHESKIE TEHNOLOGII 2017"
+    "LegalCopyright": "© OOO ANALITICHESKIE TEHNOLOGII 2017",
+    "ProductName": "Loginom"
   },
   "app/WindowTitle": {
     "Close": "Close",
@@ -1011,7 +1014,8 @@
     "DefaultSheetName": "Sheet1"
   },
   "exports/kafka/KafkaExportWizard": {
-    "InvalidMessageFieldFmt": "Field with \"{0}\" messages not found"
+    "InvalidMessageFieldFmt": "Field with \"{0}\" messages not found",
+    "NoConnection": "No connection"
   },
   "exports/tableau/ExportTableauMappingWizard": {
     "colDisplayNameTitle": "Tableau Table Fields",
@@ -1226,6 +1230,9 @@
     "LGPFilesReservedCopyDesc": "Backup Loginom packages",
     "LogFileDesc": "Registration Log file",
     "LogFilesDesc": "Registration Log files",
+    "MASK_LGD_FILES": "*.lgd",
+    "MASK_LGP_FILES": "*.lgp",
+    "MASK_LGP_RESERVED_COPY_FILES": "*.~lgp",
     "MdbFileDesc": "MS Access database",
     "MdbFilesDesc": "MS Access databases",
     "MhtFileDesc": "Web archive, one file",
@@ -1402,7 +1409,9 @@
     "SandSignica": "Sand"
   },
   "homepage/Banner": {
+    "AppLersionAPI": "/api/v1/loginom-version",
     "ErrVersionWrongServiceResponse": "Bad service response with the information on the latest version",
+    "LoginomVersionKey": "loginom_version",
     "NewVersionCommunityHref": "https://loginom.com/downloads/",
     "NewVersionHref": "https://loginom.com/tags/release-notes/",
     "NewVersionIsAvaliableFmt": "Latest stable version {0} is available"
@@ -1476,6 +1485,9 @@
     "NullSheetID": "Sheet undefined",
     "SheetNotFoundByNameFmt": "\"{0}\" sheet not found in Excel workbook",
     "SheetNotFoundByNumberFmt": "Sheet #{0} not found in Excel workbook"
+  },
+  "imports/kafka/KafkaImportWizard": {
+    "NoConnection": "No connection"
   },
   "imports/onec8query/CodeMirrorOneCv8Controller": {
     "QueryPlaceholder": "Enter query text"

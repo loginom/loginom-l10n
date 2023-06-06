@@ -119,6 +119,9 @@
     "ErrStreamIsDirectReadOnly": "Random access to stream data is not possible",
     "ErrStreamSizeUnspecified": "Data stream size not defined"
   },
+  "Common/HTTP/UserAgent": {
+    "APP_NAME": "Loginom"
+  },
   "Common/HTTPClient/CertList": {
     "ErrCertListImplementationNotRegistered": "Certificate list implementation not registered"
   },
@@ -404,6 +407,8 @@
     "UnbalancedPop": "Unbalanced extraction operation"
   },
   "Common/XML/XML": {
+    "AppNamespacePrefix": "lgn",
+    "AppNamespaceUriPrefix": "loginom.",
     "ErrGenerateNamespacePrefixOverflow": "Counter overflow during namespace prefix generation",
     "ErrStrToValueIntBadTypeRefinement": "\"%s\" type of refinement is not allowed when converting from string to integer"
   },
@@ -1555,6 +1560,7 @@
     "PythonExeFailed": "Python interpreter execution finished with %d error code",
     "PythonLoadOutputTable": "Read output table",
     "PythonScriptExecution": "Workflow execution",
+    "ShmBaseDir": "/dev/shm/loginom",
     "WarnPreviewRunning": "Preview already running"
   },
   "components/python/PythonInterface": {
@@ -2315,6 +2321,9 @@
     "ErrNotOwnSession": "Session does not belong to the database",
     "ServerListInaccessible": "List of DBMS servers unavailable"
   },
+  "Libraries/bgrtl/BetaTestingService": {
+    "BetaTestingNameStarting": "LOGINOM_BETA_"
+  },
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Bit index is out of range",
     "ErrStringIsNotSet": "\"%s\" string is not a valid set representation",
@@ -2603,6 +2612,8 @@
     "KeyFilesDesc": "Private key",
     "LgdFilesDesc": "Loginom Data file",
     "LogFilesDesc": "Registration log files",
+    "MASK_LGD_FILES": "*.lgd",
+    "MASK_LGP_FILES": "*.lgp",
     "MdbFilesDesc": "MS Access database",
     "MhtFilesDesc": "Web archive, one file",
     "ODSFilesDesc": "OpenDocument spreadsheet",
@@ -4021,7 +4032,8 @@
     "XSDFilesConnectionVendorDesc": "Connection to the set of XSD schemas located in the file storage"
   },
   "Server/ServiceConsts": {
-    "ServiceDisplayName": "LoginomServer"
+    "ServiceDisplayName": "LoginomServer",
+    "ServiceName": "loginom"
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Summary"
@@ -4048,7 +4060,11 @@
     "NodeSoapResponseFormatChanged": "%s node was published in Loginom 6.2.5 or earlier version. Format of reply messages will be changed for this node when calling via SOAP service."
   },
   "Studio/DeductorConsts": {
-    "LgpFilesDesc": "Loginom packages"
+    "CompanyShortNameLinux": "loginom",
+    "CompanyShortNameWindows": "Loginom",
+    "LgpFilesDesc": "Loginom packages",
+    "MASK_LGP_FILES": "*.lgp",
+    "ProductShortName": "Loginom"
   },
   "Studio/DeductorServer": {
     "AutoRefresh": "Auto update publication",
@@ -4158,6 +4174,7 @@
     "LogDeleteGroup": "%s group deleted",
     "LogDeleteUser": "%s user deleted",
     "LogUserPropertySet": "%s account change: %s=%s",
+    "ReservedUserName": "loginom",
     "UseGlobalFileStorage": "Use global file storage",
     "UserMetaDesc": "User"
   },
@@ -4188,6 +4205,9 @@
     "LogAddDirectory": "%s shared directory created",
     "LogDeleteDirectory": "%s shared directory deleted",
     "SharedDirectoryMetaDesc": "Shared directory"
+  },
+  "Studio/SocketDeductorServerSettings": {
+    "UnixSocketFileName": "loginomd"
   },
   "Viewers/Browse/BrowseView": {
     "ErrExportBusy": "Failed to export table in the process of data modification",

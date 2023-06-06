@@ -244,6 +244,26 @@
       "title": "Add Reference to Package"
     }
   },
+  "app/AppMenuForm": {
+    "btnAbout": {
+      "text": "About"
+    },
+    "btnHelp": {
+      "text": "Справка"
+    },
+    "btnHomePage": {
+      "text": "Начало"
+    },
+    "btnLogOut": {
+      "text": "Log Out"
+    },
+    "btnQA": {
+      "text": "Ask a question"
+    },
+    "btnQuit": {
+      "text": "Close"
+    }
+  },
   "app/ConfigureBatchProcModesForm": {
     "btnApply": {
       "text": "Apply"
@@ -378,26 +398,6 @@
     },
     "cntDescription": {
       "title": "Description"
-    }
-  },
-  "app/LoginomMenuForm": {
-    "btnAbout": {
-      "text": "About"
-    },
-    "btnHelp": {
-      "text": "Help"
-    },
-    "btnHomePage": {
-      "text": "Home"
-    },
-    "btnLogOut": {
-      "text": "Log Out"
-    },
-    "btnQA": {
-      "text": "Ask a question"
-    },
-    "btnQuit": {
-      "text": "Close"
     }
   },
   "app/MainForm": {
@@ -768,9 +768,6 @@
     },
     "edtAutoSavePeriod": {
       "fieldLabel": "Save every (minutes)"
-    },
-    "lblDescription": {
-      "text": "Packages are saved with the set period to the files with .autosave extension near .lgp files. .lgp files as such are not rewritten in this case."
     }
   },
   "app/PackagesListForm": {

@@ -986,12 +986,14 @@
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputFieldNotSelected": "It is required to specify XML containing field",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
+    "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
     "ErrNoInputDataSource": "No input data source connected",
     "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrorCodeColumn": "Error Code",
     "ErrorDataSet": "Errors and exit codes",
     "ErrorDescColumn": "Error Description",
+    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
     "InputDataSource": "Input data source",
     "XSDConnection": "Connect to XSD schema source"
   },
@@ -1848,6 +1850,8 @@
     "VendorDesc": "Create data set from variables set"
   },
   "components/wsdlclient/WSDLClient": {
+    "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
+    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
     "FaultNameOutputColumn": "Exception name",
     "FaultsDataSet": "Exceptions (WSDL fault)",
     "FileNotAccessible": "\"%s\" file not available",
@@ -2167,8 +2171,10 @@
   "imports/xml/ImportXML": {
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
+    "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
     "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
+    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
     "ErrXMLImport": "Error importing XML:\n  Error code: %d\n  %s",
     "FileConnection": "Connect to file storage",
     "XSDConnection": "Connect to XSD schema source"

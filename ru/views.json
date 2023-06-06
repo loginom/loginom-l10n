@@ -244,6 +244,26 @@
       "title": "Добавление ссылки на пакет"
     }
   },
+  "app/AppMenuForm": {
+    "btnAbout": {
+      "text": "О программе"
+    },
+    "btnHelp": {
+      "text": "Справка"
+    },
+    "btnHomePage": {
+      "text": "Начало"
+    },
+    "btnLogOut": {
+      "text": "Выход"
+    },
+    "btnQA": {
+      "text": "Задать вопрос"
+    },
+    "btnQuit": {
+      "text": "Закрыть"
+    }
+  },
   "app/ConfigureBatchProcModesForm": {
     "btnApply": {
       "text": "Применить"
@@ -378,26 +398,6 @@
     },
     "cntDescription": {
       "title": "Описание"
-    }
-  },
-  "app/LoginomMenuForm": {
-    "btnAbout": {
-      "text": "О программе"
-    },
-    "btnHelp": {
-      "text": "Справка"
-    },
-    "btnHomePage": {
-      "text": "Начало"
-    },
-    "btnLogOut": {
-      "text": "Выход"
-    },
-    "btnQA": {
-      "text": "Задать вопрос"
-    },
-    "btnQuit": {
-      "text": "Закрыть"
     }
   },
   "app/MainForm": {
@@ -768,9 +768,6 @@
     },
     "edtAutoSavePeriod": {
       "fieldLabel": "Сохранять каждые (минут)"
-    },
-    "lblDescription": {
-      "text": "Пакеты сохраняются с заданным интервалом в файлы с расширением .autosave рядом с .lgp файлами. Сами .lgp файлы при этом не перезаписываются."
     }
   },
   "app/PackagesListForm": {

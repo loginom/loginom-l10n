@@ -119,6 +119,9 @@
     "ErrStreamIsDirectReadOnly": "Случайный доступ к данным потока невозможен",
     "ErrStreamSizeUnspecified": "Размер данных потока не определен"
   },
+  "Common/HTTP/UserAgent": {
+    "APP_NAME": "Loginom"
+  },
   "Common/HTTPClient/CertList": {
     "ErrCertListImplementationNotRegistered": "Не зарегистрирована реализация списка сертификатов"
   },
@@ -404,6 +407,8 @@
     "UnbalancedPop": "Несбалансированная операция извлечения"
   },
   "Common/XML/XML": {
+    "AppNamespacePrefix": "lgn",
+    "AppNamespaceUriPrefix": "loginom.",
     "ErrGenerateNamespacePrefixOverflow": "Переполнение счетчика во время генерации префикса пространства имен",
     "ErrStrToValueIntBadTypeRefinement": "Уточнение типа \"%s\" не допускается при преобразовании из строки в целое"
   },
@@ -981,12 +986,14 @@
     "ErrImportNotConfigured": "Дерево импорта не настроено",
     "ErrInputFieldNotSelected": "Необходимо задать поле, содержащее XML",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика.",
+    "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
     "ErrNoInputDataSource": "Не подключен входной источник данных",
     "ErrNothingSelected": "Не выбрано ни одного узла для импорта",
     "ErrNoXSDInput": "На входе компонента отсутствует XSD-схема",
     "ErrorCodeColumn": "Код завершения",
     "ErrorDataSet": "Ошибки и коды завершения",
     "ErrorDescColumn": "Описание ошибки",
+    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
     "InputDataSource": "Входной источник данных",
     "XSDConnection": "Подключение к источнику XSD-схемы"
   },
@@ -1555,6 +1562,7 @@
     "PythonExeFailed": "Выполнение интерпретатора Python завершилось с кодом ошибки %d",
     "PythonLoadOutputTable": "Чтение выходной таблицы",
     "PythonScriptExecution": "Выполнение скрипта",
+    "ShmBaseDir": "/dev/shm/loginom",
     "WarnPreviewRunning": "Предпросмотр уже запущен"
   },
   "components/python/PythonInterface": {
@@ -1842,6 +1850,8 @@
     "VendorDesc": "Формирование таблицы данных из набора переменных"
   },
   "components/wsdlclient/WSDLClient": {
+    "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
+    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
     "FaultNameOutputColumn": "Имя исключения",
     "FaultsDataSet": "Исключения (WSDL fault)",
     "FileNotAccessible": "Файл \"%s\" не доступен",
@@ -2161,8 +2171,10 @@
   "imports/xml/ImportXML": {
     "ErrImportNotConfigured": "Дерево импорта не настроено",
     "ErrInputSchemaHasChanged": "XSD-схема на входе не соответствует настройкам обработчика.",
+    "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
     "ErrNothingSelected": "Не выбрано ни одного узла для импорта",
     "ErrNoXSDInput": "На входе компонента отсутствует XSD-схема",
+    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
     "ErrXMLImport": "Ошибка при выполнении импорта XML:\n  Код ошибки: %d\n  %s",
     "FileConnection": "Подключение к файловому хранилищу",
     "XSDConnection": "Подключение к источнику XSD-схемы"
@@ -2314,6 +2326,9 @@
     "Direct": "Не использовать клиент СУБД",
     "ErrNotOwnSession": "Сессия не принадлежит базе данных",
     "ServerListInaccessible": "Список серверов СУБД недоступен"
+  },
+  "Libraries/bgrtl/BetaTestingService": {
+    "BetaTestingNameStarting": "LOGINOM_BETA_"
   },
   "Libraries/bgrtl/BigSet": {
     "ErrBitsIndex": "Индекс бита вне диапазона",
@@ -2603,6 +2618,8 @@
     "KeyFilesDesc": "Закрытый ключ",
     "LgdFilesDesc": "Loginom Data файл",
     "LogFilesDesc": "Файлы журналов регистрации",
+    "MASK_LGD_FILES": "*.lgd",
+    "MASK_LGP_FILES": "*.lgp",
     "MdbFilesDesc": "База данных MS Access",
     "MhtFilesDesc": "Веб-архив, один файл",
     "ODSFilesDesc": "Электронная таблица OpenDocument",
@@ -4021,7 +4038,8 @@
     "XSDFilesConnectionVendorDesc": "Подключение к набору XSD-схем, расположенных в файловом хранилище"
   },
   "Server/ServiceConsts": {
-    "ServiceDisplayName": "LoginomServer"
+    "ServiceDisplayName": "LoginomServer",
+    "ServiceName": "loginom"
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Сводка"
@@ -4048,7 +4066,11 @@
     "NodeSoapResponseFormatChanged": "Узел %s был опубликован в Loginom версии 6.2.5 или более ранней. Для данного узла изменится формат ответных сообщений при вызове через SOAP сервис."
   },
   "Studio/DeductorConsts": {
-    "LgpFilesDesc": "Пакеты Loginom"
+    "CompanyShortNameLinux": "loginom",
+    "CompanyShortNameWindows": "Loginom",
+    "LgpFilesDesc": "Пакеты Loginom",
+    "MASK_LGP_FILES": "*.lgp",
+    "ProductShortName": "Loginom"
   },
   "Studio/DeductorServer": {
     "AutoRefresh": "Автообновление публикации",
@@ -4158,6 +4180,7 @@
     "LogDeleteGroup": "Удалена группа %s",
     "LogDeleteUser": "Удален пользователь %s",
     "LogUserPropertySet": "Изменение учетной записи %s: %s=%s",
+    "ReservedUserName": "loginom",
     "UseGlobalFileStorage": "Использование глобального файлового хранилища",
     "UserMetaDesc": "Пользователь"
   },
@@ -4188,6 +4211,9 @@
     "LogAddDirectory": "Создана общая директория %s",
     "LogDeleteDirectory": "Удалена общая директория %s",
     "SharedDirectoryMetaDesc": "Общая директория"
+  },
+  "Studio/SocketDeductorServerSettings": {
+    "UnixSocketFileName": "loginomd"
   },
   "Viewers/Browse/BrowseView": {
     "ErrExportBusy": "Нельзя экспортировать таблицу во время изменения данных",

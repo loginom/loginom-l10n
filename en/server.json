@@ -2174,7 +2174,7 @@
     "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
     "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",
-    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
+    "ErrWindowsTimeZoneNotSupported": "\"%s\" time zone is not supported",
     "ErrXMLImport": "Error importing XML:\n  Error code: %d\n  %s",
     "FileConnection": "Connect to file storage",
     "XSDConnection": "Connect to XSD schema source"

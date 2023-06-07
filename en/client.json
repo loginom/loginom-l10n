@@ -355,7 +355,7 @@
     "VisibilityTooltip": "Configure visibility..."
   },
   "app/PackagesAutoSavePanel": {
-    "AutoSavePeriodDescriptionFmt": "Пакеты сохраняются с заданным интервалом в файлы с расширением .autosave рядом с {0} файлами. Сами {0} файлы при этом не перезаписываются.",
+    "AutoSavePeriodDescriptionFmt": "Packages are saved with the set interval in the files with the following extension: .autosave near {0} files. In this case, {0} files are not rerecorded.",
     "ErrPackagesAutoSaveInvalidPeriod": "Invalid packages auto save period is specified",
     "ErrPackagesAutoSaveNotSpecified": "Packages auto save period is not specified"
   },

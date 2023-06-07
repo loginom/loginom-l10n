@@ -986,7 +986,7 @@
     "ErrImportNotConfigured": "Import tree not configured",
     "ErrInputFieldNotSelected": "It is required to specify XML containing field",
     "ErrInputSchemaHasChanged": "Input XSD schema does not comply with the node settings.",
-    "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
+    "ErrLinuxTimeZoneNotSupported": "\"Default time zone\" configuration is not supported in the Linux application version (\"%s\" time zone is specified)",
     "ErrNoInputDataSource": "No input data source connected",
     "ErrNothingSelected": "No nodes selected for import",
     "ErrNoXSDInput": "There is no XSD schema at the component input",

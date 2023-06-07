@@ -1851,7 +1851,7 @@
   },
   "components/wsdlclient/WSDLClient": {
     "ErrLinuxTimeZoneNotSupported": "\"Default time zone\" configuration is not supported in the Linux application version (\"%s\" time zone is specified)",
-    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
+    "ErrWindowsTimeZoneNotSupported": "\"%s\" time zone is not supported",
     "FaultNameOutputColumn": "Exception name",
     "FaultsDataSet": "Exceptions (WSDL fault)",
     "FileNotAccessible": "\"%s\" file not available",

@@ -993,7 +993,7 @@
     "ErrorCodeColumn": "Error Code",
     "ErrorDataSet": "Errors and exit codes",
     "ErrorDescColumn": "Error Description",
-    "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
+    "ErrWindowsTimeZoneNotSupported": "\"%s\" time zone is not supported",
     "InputDataSource": "Input data source",
     "XSDConnection": "Connect to XSD schema source"
   },

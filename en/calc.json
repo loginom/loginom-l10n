@@ -435,8 +435,6 @@
     "StrToDate": {
       "Arguments": "Argument - the string expression containing date/time\nFormat - optional parameter date/time format in terms of D, M, Y, H, N, S, Z",
       "Description": "StrToDate(Argument [, Format])",
-      "Output.1": "Функция конвертирует строку, содержащую дату в формат типа \"Дата/Время\".\nПримеры формата:\n  \"DD.MM.YY\" - говорит, что Аргумент содержит строки вида \"25.12.04\";\n  \"DD/MM/YY/HH:NN:SS\" - говорит, что Аргумент содержит строки вида \"25/12/04/12:44:54\";",
-      "Output.2": "Function converts the string containing the date into the \"Date/Time\" format.\nThe format examples:\n  \"DD.MM.YY\" - means that the Argument contains strings of the following type: \"25.12.04\";\n  \"DD/MM/YY/HH:NN:SS\" - means that the Argument contains strings of the following type: \"25/12/04/12:44:54\";",
       "Output": "Function converts the string containing the date into the \"Date/Time\" format.\nThe format examples:\n  \"DD.MM.YY\" - defines that the Argument contains strings of the following type: \"25.12.04\";\n  \"DD/MM/YY HH:NN:SS\" - defines that the Argument contains strings of the following type: \"25/12/04 12:44:54\";"
     },
     "StrZero": {

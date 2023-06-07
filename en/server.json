@@ -1850,7 +1850,7 @@
     "VendorDesc": "Create data set from variables set"
   },
   "components/wsdlclient/WSDLClient": {
-    "ErrLinuxTimeZoneNotSupported": "Поддержка настройки \"Временная зона по умолчанию\" не реализована в версии приложения под Linux (указана временная зона \"%s\")",
+    "ErrLinuxTimeZoneNotSupported": "\"Default time zone\" configuration is not supported in the Linux application version (\"%s\" time zone is specified)",
     "ErrWindowsTimeZoneNotSupported": "Временная зона \"%s\" не поддерживается",
     "FaultNameOutputColumn": "Exception name",
     "FaultsDataSet": "Exceptions (WSDL fault)",

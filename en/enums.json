@@ -622,7 +622,7 @@
       "Mean": "Replace with average",
       "Median": "Replace with median",
       "MostFreq": "Replace with most frequent",
-      "SetValue": "Replace with \"Not defined\"",
+      "SetValue": "Replace with \"Unspecified\"",
       "RandomValue": "Replace with random values",
       "LinearInterp": "Linear interpolation",
       "CubicInterp": "Cubic interpolation",

@@ -2188,6 +2188,9 @@
     "ErrEmptyConnectionString": "Empty connection string",
     "ErrLocalDBForbidden": "Connections to local databases on server are forbidden"
   },
+  "Libraries/1CConnection/1CLibraryUtils": {
+    "1Cv8Lang": "en"
+  },
   "Libraries/1CConnection/1Cv8Connection": {
     "ErrConnect": "1C connection error",
     "ErrConnectionString": "Error in connection string",

@@ -2188,6 +2188,9 @@
     "ErrEmptyConnectionString": "Не указана строка подключения",
     "ErrLocalDBForbidden": "Подключения к локальным БД сервера запрещены"
   },
+  "Libraries/1CConnection/1CLibraryUtils": {
+    "1Cv8Lang": "ru"
+  },
   "Libraries/1CConnection/1Cv8Connection": {
     "ErrConnect": "Ошибка подключения к 1C",
     "ErrConnectionString": "Ошибка в строке подключения",

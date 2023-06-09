@@ -749,7 +749,7 @@
     "DataTypesColumnDisplayName": "Data types",
     "DisplayNamesColumnDisplayName": "Captions",
     "ErrRowCountExceedMaxValue": "Row count of the result data set exceeded maximum value",
-    "NamesColumnDisplayName": "Captions",
+    "NamesColumnDisplayName": "Names",
     "ValuesColumnDisplayName": "Values"
   },
   "components/columnflipping/ColumnFlippingVendor": {

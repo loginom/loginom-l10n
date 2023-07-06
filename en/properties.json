@@ -970,6 +970,11 @@
       "WSSPort": "WebSocket SSL/TLS port"
     }
   },
+  "Warehouse2/DWConnection": {
+    "DWConnectionConfigurator": {
+      "SchemaName": "Имя схемы в базе данных"
+    }
+  },
   "Warehouse2/DWImportTree": {
     "DWImportTreeNode": {
       "FilterParams": "Filtration parameters"

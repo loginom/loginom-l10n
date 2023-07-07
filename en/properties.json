@@ -972,7 +972,7 @@
   },
   "Warehouse2/DWConnection": {
     "DWConnectionConfigurator": {
-      "SchemaName": "Имя схемы в базе данных"
+      "SchemaName": "Schema name in database"
     }
   },
   "Warehouse2/DWImportTree": {

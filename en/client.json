@@ -2486,7 +2486,7 @@
   },
   "wizards/connection/ConnectionsViewWizard": {
     "AccessModification": "Configure visibility...",
-    "BtnShowVendorsEdit": "Show/Hide Connection Class Tree",
+    "BtnShowVendorsEdit": "Show/Hide Connectors Class Tree",
     "BtnTextTest": "Test",
     "BtnTooltipConnect": "Activate connection",
     "BtnTooltipDelete": "Delete connection...",
@@ -2511,7 +2511,7 @@
     "PropertyInspectorLocale": "en",
     "TestConnectionsError": "Multiple connections test error",
     "TestConnectionSuccess": "Connection successful",
-    "VendorTreeCaption": "Connections",
+    "VendorTreeCaption": "Connectors",
     "VendorTreeConnections": "Data sources"
   },
   "wizards/connection/DBConnectionWizard": {

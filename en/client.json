@@ -991,16 +991,16 @@
   "connections/restservice/ConnectionWizard": {
     "DeleteAllParamsPrompt": "Do you really want to delete all parameters?",
     "DublicateGetMethodParamNameFmt": "\"{0}\" parameter already exists",
-    "TestConnectionSuccess": "Successful connection test",
-    "TestConnectionTitle": "Test Connection"
+    "TestConnectionSuccess": "Connection successful",
+    "TestConnectionTitle": "Connection test"
   },
   "connections/webservice/AuthorizationForm": {
     "ErrUnsupportedAuthModeFmt": "Authentication mode \"{0}\" not supported",
     "ExpireCertDateError": "Expired certificate expiration date"
   },
   "connections/webservice/ConnectionWizard": {
-    "TestConnectionSuccess": "Successful connection test",
-    "TestConnectionTitle": "Test Connection"
+    "TestConnectionSuccess": "Connection successful",
+    "TestConnectionTitle": "Connection test"
   },
   "connections/xsdfiles/XSDFilesConnectionWizard": {
     "ErrFileNameAdd": "{0} file cannot be added to the list. Perhaps, it has already been added."
@@ -2476,8 +2476,8 @@
     "MoveButtonTooltip": "Move to {0}"
   },
   "wizards/connection/ConnectionConfigWizard": {
-    "TestConnectionSuccess": "Successful connection test",
-    "TestConnectionTitle": "Test Connection",
+    "TestConnectionSuccess": "Connection successful",
+    "TestConnectionTitle": "Connection test ",
     "WizardTitle": "connection parameters"
   },
   "wizards/connection/ConnectionReferenceComponentWizard": {
@@ -2510,7 +2510,7 @@
     "NoConnections": "Available extended connections",
     "PropertyInspectorLocale": "en",
     "TestConnectionsError": "Multiple connections test error",
-    "TestConnectionSuccess": "Successful connection test",
+    "TestConnectionSuccess": "Connection successful",
     "VendorTreeCaption": "Connections",
     "VendorTreeConnections": "Data sources"
   },

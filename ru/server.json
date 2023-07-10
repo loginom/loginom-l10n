@@ -1934,6 +1934,7 @@
     "ErrKeyFieldNotFound": "Поле ключей с именем \"%s\" не найдено",
     "ErrMessageFieldDataType": "Поле сообщений должно быть строкового типа",
     "ErrMessageFieldNotFound": "Поле сообщений с именем \"%s\" не найдено",
+    "ErrProduceBatchFmt": "За %d итераций не отправлено ни одного сообщения",
     "ExportProcess": "Отправка сообщений в Kafka",
     "FlushProcess": "Завершение отправки сообщений",
     "LogProduceInfoFmt": "В очередь добавлено %d сообщений для пачки из %d",

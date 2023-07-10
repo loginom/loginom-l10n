@@ -1,7 +1,7 @@
 {
   "imports/dwh/DWImportWizard": {
     "colMDType": {
-      "width": 50
+      "width": 55
     }
   },
   "components/datereform/DateReformWizard": {

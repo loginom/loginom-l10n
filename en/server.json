@@ -1934,7 +1934,7 @@
     "ErrKeyFieldNotFound": "Key field with \"%s\" name not found",
     "ErrMessageFieldDataType": "Message field must be related to the string type",
     "ErrMessageFieldNotFound": "Message field with \"%s\" name not found",
-    "ErrProduceBatchFmt": "За %d итераций не отправлено ни одного сообщения",
+    "ErrProduceBatchFmt": "No one message sent in %d iterations",
     "ExportProcess": "Sending messages to Kafka",
     "FlushProcess": "Messages sending finished",
     "LogProduceInfoFmt": "%d messages for batch from %d added to queue",

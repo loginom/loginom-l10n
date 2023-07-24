@@ -881,7 +881,7 @@
     "IDName": "ID",
     "WriteXMLFileProcessCaption": "XML document generation",
     "XMLName": "XML",
-    "XSDConnection": "Connect to XSD schema source"
+    "XSDConnection": "Connection to XSD schema source"
   },
   "components/datatoxml/DataToXMLVendor": {
     "VendorCaption": "XML Generation",
@@ -998,7 +998,7 @@
     "ErrorDescColumn": "Error Description",
     "ErrWindowsTimeZoneNotSupported": "\"%s\" time zone is not supported",
     "InputDataSource": "Input data source",
-    "XSDConnection": "Connect to XSD schema source"
+    "XSDConnection": "Connection to XSD schema source"
   },
   "components/extractxml/ExtractXMLVendor": {
     "VendorCaption": "XML Parsing",
@@ -1667,7 +1667,7 @@
     "OutputDataSet": "Service Response",
     "RequestIDOutputColumn": "Request identifier",
     "ResponseColumn": "Server response",
-    "RESTClientConnection": "Connect to REST service",
+    "RESTClientConnection": "Connection to REST service",
     "RESTClientErrorRowID": "Error executing request generated from %d row of the input data set:\n%s"
   },
   "components/restclient/RESTClientSend": {
@@ -1999,9 +1999,9 @@
     "ErrTableAlreadyExists": "\"%s\" table already exists",
     "ErrTableNameNotSelected": "No table name specified",
     "ErrTableNotFound": "No \"%s\" table found",
-    "FileConnection": "Connect to file storage",
+    "FileConnection": "Connection to file storage",
     "PublishToServerNotify": "Publish file on server",
-    "TableauRestConnection": "Connect to Tableau server"
+    "TableauRestConnection": "Connection to Tableau server"
   },
   "exports/tableau/ExportTableauVendor": {
     "VendorCaption": "Tableau file",
@@ -2030,9 +2030,9 @@
     "ErrUnmappedNodeNotOwnedByExportTree": "%s node for which link reset is requested is not included into the export tree",
     "ErrXMLExport": "Error exporting XML:\n  Error code: %d\n  %s",
     "ExportDataSetProcessCaption": "Data set exporting",
-    "FileConnection": "Connect to file storage",
+    "FileConnection": "Connection to file storage",
     "WriteXMLFileProcessCaption": "XML file writing",
-    "XSDConnection": "Connect to XSD schema source"
+    "XSDConnection": "Connection to XSD schema source"
   },
   "exports/xml/ExportXMLVendor": {
     "VendorCaption": "XML File",
@@ -2210,8 +2210,8 @@
     "ErrNoXSDInput": "There is no XSD schema at the component input",
     "ErrWindowsTimeZoneNotSupported": "\"%s\" time zone is not supported",
     "ErrXMLImport": "Error importing XML:\n  Error code: %d\n  %s",
-    "FileConnection": "Connect to file storage",
-    "XSDConnection": "Connect to XSD schema source"
+    "FileConnection": "Connection to file storage",
+    "XSDConnection": "Connection to XSD schema source"
   },
   "imports/xml/ImportXMLVendor": {
     "VendorCaption": "XML File",
@@ -4073,7 +4073,7 @@
   },
   "Libraries/TableauRestConnection/TableauRestConnectionVendor": {
     "TableauRestConnectionVendorCaption": "Tableau Server",
-    "TableauRestConnectionVendorDesc": "Connect to Tableau server by REST API"
+    "TableauRestConnectionVendorDesc": "Connection to Tableau server by REST API"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrNoWSDLSource": "No WSDL source specified",
@@ -4637,7 +4637,7 @@
   },
   "Warehouse2/Deductor/DDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse",
-    "DWConnectionVendorDesc": "Connect to the Deductor Data Warehouse"
+    "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/DDWEngine": {
     "ErrDimensionValueIsNull": "Value of \"%1:s\" [%2:s] dimension in \"%0:d\" row is null.",
@@ -4686,7 +4686,7 @@
   },
   "Warehouse2/DWConnectionVendor": {
     "DWConnectionVendorCaption": "Data Warehouse",
-    "DWConnectionVendorDesc": "Connect to Data Warehouse"
+    "DWConnectionVendorDesc": "Connection to Data Warehouse"
   },
   "Warehouse2/DWDataEngine": {
     "ErrDimNotSourceName": "No field from the data source specified for \"%s\" dimension.",

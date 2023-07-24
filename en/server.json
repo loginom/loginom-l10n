@@ -4248,23 +4248,23 @@
     "UserMetaDesc": "User"
   },
   "Studio/RegistrationEditionDependentComponents": {
-    "1Cv8Connection": "Connection to 1C:Enterprise 8",
+    "1Cv8Connection": "1C:Enterprise 8 connector",
     "1Cv8QueryImport": "1C Query",
-    "AccessODBCUniDACDatabase": "Connection to MS Access",
+    "AccessODBCUniDACDatabase": "MS Access connector",
     "DataToXMLEngine": "XML Generation",
     "ErrComponentNotAvailable": "\"%s\" component is unavailable in the current Loginom version",
-    "ExcelODBCUniDACDatabase": "Connection to MS Excel",
+    "ExcelODBCUniDACDatabase": "MS Excel connector",
     "ExecCmdEngine": "Program Execution",
     "ExportTableau": "Export to Tableau file",
     "ExtractXMLEngine": "XML parsing",
-    "KafkaConnection": "Connection to Kafka",
+    "KafkaConnection": "Kafka connector",
     "KafkaExport": "Export to Kafka",
     "KafkaImport": "Import from Kafka",
-    "MSSQLDDWConnection": "Connection to Deductor Warehouse [MS SQL]",
-    "OraDDWConnection": "Connection to Deductor Warehouse [Oracle]",
-    "TableauRestConnection": "Connection to Tableau server",
+    "MSSQLDDWConnection": "Deductor Warehouse [MS SQL] connector",
+    "OraDDWConnection": "Deductor Warehouse [Oracle] connector",
+    "TableauRestConnection": "Tableau server connector",
     "WSDLClient": "SOAP Request",
-    "WSDLClientConnection": "Connection to SOAP service"
+    "WSDLClientConnection": "SOAP service connector"
   },
   "Studio/SharedDirectories": {
     "ErrSharedDirectoryAlreadyDeleted": "Shared directory already deleted",

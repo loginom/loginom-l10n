@@ -255,7 +255,7 @@
       "text": "Home"
     },
     "btnLock": {
-      "text": "Заблокировать (Ctrl+Alt+L)"
+      "text": "Lock (Ctrl+Alt+L)"
     },
     "btnLogOut": {
       "text": "Log Out"
@@ -410,8 +410,6 @@
     },
     "btnAvatar": {
       "text": "Loginom",
-      "tooltip.1": "Меню",
-      "tooltip.2": "Menu",
       "tooltip": "Loginom"
     },
     "btnFavorites": {
@@ -1379,9 +1377,7 @@
       "text": "Expressions"
     },
     "lblFieldsTitle": {
-      "text.1": "Поля/переменные",
-      "text.2": "Fields/Variables",
-      "text": "Переменные"
+      "text": "Variables"
     },
     "lblFuncs": {
       "text": "Functions list"
@@ -3226,7 +3222,7 @@
       "tooltip": "New folder..."
     },
     "btnCreatePackage": {
-      "text": "Создать пакет",
+      "text": "New Package",
       "tooltip": "New Package..."
     },
     "btnCut": {
@@ -4668,7 +4664,7 @@
     },
     "btnChartType": {
       "text": "Type",
-      "tooltip": "Тип диаграммы"
+      "tooltip": "Chart type"
     },
     "btnExport": {
       "tooltip": "Export"
@@ -4677,7 +4673,7 @@
       "tooltip": "Restrictions..."
     },
     "btnSeriesPosition": {
-      "tooltip": "Расположение серий"
+      "tooltip": "Series position"
     },
     "btnShowSubLevels": {
       "tooltip": "Level of headers"

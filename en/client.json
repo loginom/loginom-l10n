@@ -1350,7 +1350,7 @@
     "FileConflictTitle": "Conflict of Files with the Same Names",
     "FileModifiedDate": "Change date: {0}",
     "FileSize": "Size: {0}",
-    "NotSupportedDescriptor": "The passed \"{0}\" object is neither file, nor directory."
+    "NotSupportedDescriptor": "The passed \"{0}\" entry is neither file, nor directory."
   },
   "filestorage/FileStorageForm": {
     "BadBrowserMsg": "This operation is not supported in our browser.",

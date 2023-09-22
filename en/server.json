@@ -1525,7 +1525,7 @@
   },
   "components/python/PythonComponentSettings": {
     "PythonExe": "Interpreter path",
-    "PythonExePassEnv": "Pass variable node environment",
+    "PythonExePassEnv": "Pass node environment variables",
     "PythonLib": "Library path"
   },
   "components/python/PythonEngine": {
@@ -1566,7 +1566,7 @@
     "PythonExeFailed": "Python interpreter execution finished with %d error code",
     "PythonExeTerminatedBySignal": "Python interpreter execution was interrupted by %d signal",
     "PythonLoadOutputTable": "Read output table",
-    "PythonScriptExecution": "Workflow execution",
+    "PythonScriptExecution": "Script execution",
     "ShmBaseDir": "/dev/shm/loginom",
     "WarnPreviewRunning": "Preview already running"
   },

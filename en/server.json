@@ -1566,7 +1566,7 @@
     "PythonExeFailed": "Python interpreter execution finished with %d error code",
     "PythonExeTerminatedBySignal": "Python interpreter execution was interrupted by %d signal",
     "PythonLoadOutputTable": "Reading output table",
-    "PythonScriptExecution": "Script execution",
+    "PythonScriptExecution": "Executing script",
     "ShmBaseDir": "/dev/shm/loginom",
     "WarnPreviewRunning": "Preview already running"
   },

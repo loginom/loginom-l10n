@@ -1561,7 +1561,7 @@
     "PreviewProcess": "Data preview",
     "PythonDumpData": "Writing input data",
     "PythonDumpInputTableData": "Writing input table data",
-    "PythonDumpInputTableDataN": "Writing input #%d table data",
+    "PythonDumpInputTableDataN": "Writing input table #%d data",
     "PythonDumpInputTablesData": "Writing input tables data",
     "PythonExeFailed": "Python interpreter execution finished with %d error code",
     "PythonExeTerminatedBySignal": "Python interpreter execution was interrupted by %d signal",

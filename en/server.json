@@ -3830,7 +3830,7 @@
     "UnsupportedPrenormInDataType": "Unsupported type of the normalizer data of the normalized string"
   },
   "Libraries/Normalization/NormalDataArray": {
-    "ErrWrongBufferSize": "String size of results %d is less than the size of the normalized string %d"
+    "ErrWrongBufferSize": "The size of the results string %d is less than the size of the normalized string %d"
   },
   "Libraries/Normalization/NormalDataFactory": {
     "ErrFactoryAlreadyRegistered": "Factory for this normalized data set format has already been registered",

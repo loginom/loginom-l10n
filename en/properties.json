@@ -53,7 +53,7 @@
       "Params": "Algorithm parameters"
     },
     "AssnRulesParams": {
-      "ExcludeLargeSupportItems": "Exclude items with support greater than maximume",
+      "ExcludeLargeSupportItems": "Exclude items with support greater than maximum",
       "ExcludeSingleItems": "Exclude single sets",
       "MaxSupport": "Maximum support, %",
       "MinConfidence": "Minimum rule confidence, %",

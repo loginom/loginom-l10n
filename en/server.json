@@ -1555,7 +1555,7 @@
   },
   "components/python/PythonExeEngineImpl": {
     "ErrCannotCreateProcess": "Failed to start \"%s\"",
-    "ErrInt32Overflow": "Value %d exceeds allowable values of 32 bit integer",
+    "ErrInt32Overflow": "Value %d exceeds the allowable range of 32-bit integer",
     "ErrPythonExeNotFound": "Python interpreter path specified in application settings does not exist",
     "ErrRowLimitExceeded": "Maximum table row limit exceeded",
     "PreviewProcess": "Data preview",

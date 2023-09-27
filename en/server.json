@@ -1425,7 +1425,7 @@
     "ErrMissingOrInfiniteValue": "Only non-empty final values are allowed in the data",
     "ErrMustSetEqualLayerSizes": "Before requesting the coarse size of the neural network, the setting of the same number of neurons in the hidden layers is required",
     "ErrNetworkUntrained": "Failed to perform the requested operation using the untrained neural network",
-    "ErrNeuronWeightsCountMismatch": "The specified count of input neuron weights %d mismatches the required %d value",
+    "ErrNeuronWeightsCountMismatch": "The specified count of input neuron weights %d mismatches the required value %d",
     "ErrNoInputColumns": "Neural network input data columns not set",
     "ErrNoOutputColumns": "Neural network output data columns not set",
     "ErrNotEnoughClasses": "Representatives of at least 2 classes (currently %d) must be present in the training set",
@@ -1668,7 +1668,7 @@
     "RequestIDOutputColumn": "Request identifier",
     "ResponseColumn": "Server response",
     "RESTClientConnection": "Connection to REST service",
-    "RESTClientErrorRowID": "Error executing request generated from %d row of the input data set:\n%s"
+    "RESTClientErrorRowID": "Error executing request generated from row %d of the input data set:\n%s"
   },
   "components/restclient/RESTClientSend": {
     "ErrCodePageNotSupported": "\"%s\" codepage not supported",
@@ -2231,9 +2231,9 @@
     "ErrRowOutOfRange": "Row number %d is out of [%d; %d] range"
   },
   "Libraries/bgdbrtl/ClickHouse/ClickHouseBlockWriter": {
-    "ErrColNotNullable": "\"%s\" column (%s type) cannot have Null values",
+    "ErrColNotNullable": "Column \"%s\" (type %s) cannot have Null values",
     "ErrColOutOfRange": "Column number %d is out of [%d; %d] range",
-    "ErrColValueLenOutOfRangeString": "%d string length exceeds the length allowed for \"%s\" column (%s type)",
+    "ErrColValueLenOutOfRangeString": "String length %d exceeds the length allowed for column \"%s\" (type %s)",
     "ErrColValueOutOfRange": "Value %g is out of allowed range for column \"%s\" (type %s)",
     "ErrColValueOutOfRangeInt": "Value %d is out of allowed range for column \"%s\" (type %s)",
     "ErrConvertFloatToDecimal": "Failed to convert the real value %g to the Decimal value (\"%s\" column)",
@@ -2374,11 +2374,11 @@
     "ErrRowCountLimitReached": "Maximum row count limit reached"
   },
   "Libraries/bgrtl/CachedDataTree": {
-    "ErrCannotGetForeignKey": "Failed to get the foreign key for the node with %d identifier: the node is not an array",
-    "ErrCannotGetNodeExistFlag": "Failed to get the node exist flag with %d identifier: the node is not a simple container",
-    "ErrCannotGetNodeValue": "Failed to get the node value with %d identifier: the node is a container",
-    "ErrCannotGetRowCount": "Failed to get the row count for the node with %d identifier: the node is not an array",
-    "ErrCannotGetRowRange": "Failed to get the row range for the node with %d identifier: the node is not an array",
+    "ErrCannotGetForeignKey": "Failed to get the foreign key for the node with identifier %d: the node is not an array",
+    "ErrCannotGetNodeExistFlag": "Failed to get the node exist flag with identifier %d: the node is not a simple container",
+    "ErrCannotGetNodeValue": "Failed to get the node value with identifier %d: the node is a container",
+    "ErrCannotGetRowCount": "Failed to get the row count for the node with identifier %d: the node is not an array",
+    "ErrCannotGetRowRange": "Failed to get the row range for the node with identifier %d: the node is not an array",
     "ErrColumnIndexOutOfRange": "Column number %d is out of [%d; %d] range",
     "ErrInvalidNodeInfo": "Invalid node description: %s",
     "ErrInvalidNodeInfoID": "Invalid node identifier: %d",
@@ -2592,11 +2592,11 @@
     "ErrUninstallFromParallelThreadNotSupported": "The execution context deletion from the parallel thread is not supported while the thread in which it has been created exists"
   },
   "Libraries/bgrtl/ExportHTMLTable": {
-    "ErrTableCellsOverflow": "Number of cells in the exported table exceeds the allowable maximum of %d cells",
-    "ErrTableColsOverflow": "Number of columns in the exported table exceeds the allowable maximum of %d columns",
-    "ErrTableRowsOverflow": "Number of rows in the exported table exceeds the allowable maximum of %d rows",
-    "ErrTableTooManyCols": "Number of columns in the exported %d table exceeds the allowable maximum of %d columns",
-    "ErrTableTooManyRows": "Number of rows in the exported %d table exceeds the allowable maximum of %d rows",
+    "ErrTableCellsOverflow": "Number of cells in the exported table exceeds the allowable maximum of %d",
+    "ErrTableColsOverflow": "Number of columns in the exported table exceeds the allowable maximum of %d",
+    "ErrTableRowsOverflow": "Number of rows in the exported table exceeds the allowable maximum of %d",
+    "ErrTableTooManyCols": "Number of columns %d in the exported table exceeds the allowable maximum of %d",
+    "ErrTableTooManyRows": "Number of rows %d in the exported table exceeds the allowable maximum of %d",
     "ExcelSheetDefaultName": "Sheet1"
   },
   "Libraries/bgrtl/ExportStream": {
@@ -2721,11 +2721,11 @@
     "ErrStreamIsReadOnly": "The data stream is open in the read-only mode",
     "ErrStreamReadBuffer": "When reading bytes from the data stream, %1:d was read instead of %0:d",
     "ErrStreamReadBufferInvalidParams": "Invalid parameter values when reading from the data stream: Length = %d; Count = %d; Offset = %d",
-    "ErrStreamReadBufferLength": "When reading from the data stream, the size of the resulting buffer %d is less than the number of bytes required for reading %d",
+    "ErrStreamReadBufferLength": "When reading from the data stream, the resulting buffer size of %d is less than the number of bytes %d required for reading",
     "ErrStreamSeekOutOf2GbRange": "When moving, the cursor of the data stream went beyond 2 GB, it is required to use the 64-bit version of the function",
     "ErrStreamWriteBuffer": "When writing bytes to the data stream, %1:d was written instead of %0:d",
     "ErrStreamWriteBufferInvalidParams": "Invalid parameter values when writing to the data stream: Length = %d; Count = %d; Offset = %d",
-    "ErrStreamWriteBufferLength": "When writing to the data stream, the size of the initial buffer %d is less than the number of bytes required for writing %d"
+    "ErrStreamWriteBufferLength": "When writing to the data stream, the initial buffer size of %d is less than the number of bytes %d required for writing"
   },
   "Libraries/bgrtl/LocaleUtils": {
     "ErrLocaleNotSupported": "\"%s\" locale not supported"
@@ -3776,7 +3776,7 @@
     "TableDataVendorGroupCaption": "Table View"
   },
   "Libraries/Model/WebServiceInputNode/WebServiceInputNodeComponent": {
-    "ErrDataRowNotFound": "The string with %d index not found in the matrix of values",
+    "ErrDataRowNotFound": "The string with index %d is not found in the matrix of values",
     "ErrInvalidInputColumnCount": "Invalid column count in the input matrix of values: %d; required: %d",
     "ErrInvalidInputElementCount": "Invalid element count in the input array: %d; required: %d",
     "ErrInvalidInputRowCount": "Invalid row count in the variable value matrix: %d",

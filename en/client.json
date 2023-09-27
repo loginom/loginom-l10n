@@ -717,7 +717,7 @@
     "ExecNodeWizardTitle": "Node Execution",
     "NotifyVendorNotSelected": "No target component selected.",
     "Vendors": "Components",
-    "WarnNodeLoadLimitExceeded": "\"{0}\" target component is not selected.\n {1} limit of loaded node levels ha s been exceeded."
+    "WarnNodeLoadLimitExceeded": "\"{0}\" target component is not selected.\n The limit {1} of loaded node levels has been exceeded."
   },
   "components/filterdata/FilterColumnItem": {
     "BadBrowserMsg": "This operation is not supported in our browser.",
@@ -2031,8 +2031,8 @@
     "ErrMaxPage": "There is no page with the index larger than the last index",
     "ErrMinPage": "There is no page with index smaller than the starting index",
     "ErrOverRowLimitFmt": "Failed to set row index more than {0}",
-    "ErrPageIndexOutOfRangeFmt": "Invalid {0} page index",
-    "ErrRowIndexOutOfRangeFmt": "Invalid {0} row index",
+    "ErrPageIndexOutOfRangeFmt": "Invalid page index {0}",
+    "ErrRowIndexOutOfRangeFmt": "Invalid row index {0}",
     "ExportFileTitle": "Table",
     "ExportFormFileTitle": "Form",
     "ExportFormToastTitle": "Export from Form",

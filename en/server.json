@@ -3137,11 +3137,11 @@
     "HintConvertAtomicConfigElement": "When reading the atomic element of %s configuration converting will be performed"
   },
   "Libraries/Config/ConfigXML": {
-    "ErrErrorReadingAttribute": "Failed to read the value of \"%s\"attribute",
+    "ErrErrorReadingAttribute": "Failed to read the value of attribute \"%s\"",
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value",
     "ErrInvalidChar": "\"%s\" string cannot be converted to the \"character\" value",
     "ErrInvalidFloat": "\"%s\" string cannot be converted to the real type value",
-    "ErrXmlParseError": "Xml parsing error: \"%s\" description, string %d, column %d"
+    "ErrXmlParseError": "Xml parsing error: description \"%s\", row %d, column %d"
   },
   "Libraries/Config/DelphiConfigScheme": {
     "ErrBindedConfigSchemeTypeNotFound": "Binded configuration schema type for %s type not found",

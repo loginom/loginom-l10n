@@ -3265,7 +3265,7 @@
   },
   "Libraries/KafkaConnection/KafkaConnectionVendor": {
     "KafkaConnectionVendorCaption": "Kafka",
-    "KafkaConnectionVendorDesc": "Connection to Kafka"
+    "KafkaConnectionVendorDesc": "Kafka connector"
   },
   "Libraries/KafkaConnection/KafkaUtils": {
     "DebugCallBackMsgFmt": "%s|%s| %s",
@@ -4006,7 +4006,7 @@
   },
   "Libraries/RESTClientConnection/RESTClientConnectionVendor": {
     "RESTClientConnectionVendorCaption": "REST Service",
-    "RESTClientConnectionVendorDesc": "Connection to GET/POST web service"
+    "RESTClientConnectionVendorDesc": "Connector to GET/POST web service"
   },
   "Libraries/rpc/BaseSocketMessageTransport": {
     "ErrCouldNotConnectToServer": "Failed to establish connection: %s",
@@ -4073,7 +4073,7 @@
   },
   "Libraries/TableauRestConnection/TableauRestConnectionVendor": {
     "TableauRestConnectionVendorCaption": "Tableau Server",
-    "TableauRestConnectionVendorDesc": "Connection to Tableau server by REST API"
+    "TableauRestConnectionVendorDesc": "Connector to Tableau server by REST API"
   },
   "Libraries/WSDLClientConnection/WSDLClientConnection": {
     "ErrNoWSDLSource": "No WSDL source specified",
@@ -4083,14 +4083,14 @@
   },
   "Libraries/WSDLClientConnection/WSDLClientConnectionVendor": {
     "WSDLClientConnectionVendorCaption": "SOAP Service",
-    "WSDLClientConnectionVendorDesc": "Connection to SOAP service specified by WSDL document"
+    "WSDLClientConnectionVendorDesc": "Connector to SOAP service specified by WSDL document"
   },
   "Libraries/XSDFilesConnection/XSDFilesConnection": {
     "ErrLoadXSD": "Error loading XSD files"
   },
   "Libraries/XSDFilesConnection/XSDFilesConnectionVendor": {
     "XSDFilesConnectionVendorCaption": "Set of XSD Schemas",
-    "XSDFilesConnectionVendorDesc": "Connection to the set of XSD schemas located in the file storage"
+    "XSDFilesConnectionVendorDesc": "Connector to the set of XSD schemas located in the file storage"
   },
   "Server/ServiceConsts": {
     "ServiceDisplayName": "LoginomServer",
@@ -4637,7 +4637,7 @@
   },
   "Warehouse2/Deductor/DDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse",
-    "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse"
+    "DWConnectionVendorDesc": "Connector to the Deductor Data Warehouse"
   },
   "Warehouse2/Deductor/DDWEngine": {
     "ErrDimensionValueIsNull": "Value of \"%1:s\" [%2:s] dimension in \"%0:d\" row is null.",
@@ -4674,19 +4674,19 @@
   },
   "Warehouse2/Deductor/Ver6/FBDDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse [Firebird]",
-    "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on Firebird DBMS"
+    "DWConnectionVendorDesc": "Connector to the Deductor Data Warehouse on Firebird DBMS"
   },
   "Warehouse2/Deductor/Ver6/MSSQLDDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse [MS SQL]",
-    "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on MS SQL DBMS"
+    "DWConnectionVendorDesc": "Connector to the Deductor Data Warehouse on MS SQL DBMS"
   },
   "Warehouse2/Deductor/Ver6/OraDDWConnectionVendor": {
     "DWConnectionVendorCaption": "Deductor Warehouse [Oracle]",
-    "DWConnectionVendorDesc": "Connection to the Deductor Data Warehouse on Oracle DBMS"
+    "DWConnectionVendorDesc": "Connector to the Deductor Data Warehouse on Oracle DBMS"
   },
   "Warehouse2/DWConnectionVendor": {
     "DWConnectionVendorCaption": "Data Warehouse",
-    "DWConnectionVendorDesc": "Connection to Data Warehouse"
+    "DWConnectionVendorDesc": "Connector to Data Warehouse"
   },
   "Warehouse2/DWDataEngine": {
     "ErrDimNotSourceName": "No field from the data source specified for \"%s\" dimension.",

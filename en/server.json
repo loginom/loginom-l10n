@@ -1425,7 +1425,7 @@
     "ErrMissingOrInfiniteValue": "Only non-empty final values are allowed in the data",
     "ErrMustSetEqualLayerSizes": "Before requesting the coarse size of the neural network, the setting of the same number of neurons in the hidden layers is required",
     "ErrNetworkUntrained": "Failed to perform the requested operation using the untrained neural network",
-    "ErrNeuronWeightsCountMismatch": "The specified count of input neuron weights %d mismatches the required value %d",
+    "ErrNeuronWeightsCountMismatch": "The specified number of the input neuron weights %d mismatches the required number %d",
     "ErrNoInputColumns": "Neural network input data columns not set",
     "ErrNoOutputColumns": "Neural network output data columns not set",
     "ErrNotEnoughClasses": "Representatives of at least 2 classes (currently %d) must be present in the training set",

@@ -3141,7 +3141,7 @@
     "ErrInvalidBoolean": "\"%s\" string cannot be converted to the boolean value",
     "ErrInvalidChar": "\"%s\" string cannot be converted to the \"character\" value",
     "ErrInvalidFloat": "\"%s\" string cannot be converted to the real type value",
-    "ErrXmlParseError": "Xml parsing error: description \"%s\", row %d, column %d"
+    "ErrXmlParseError": "XML parsing error: message \"%s\", row %d, column %d"
   },
   "Libraries/Config/DelphiConfigScheme": {
     "ErrBindedConfigSchemeTypeNotFound": "Binded configuration schema type for %s type not found",

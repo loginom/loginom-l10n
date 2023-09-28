@@ -2,11 +2,11 @@
   "Common/1Cv8/1Cv8Query": {
     "ErrConnect": "1C connection error",
     "ErrEofArrived": "Data set end reached",
-    "ErrExecuteQuery": "Error executing 1C request",
-    "ErrPrepareFields": "Error preparing 1C request fields",
-    "ErrPrepareQuery": "Error preparing 1C request",
+    "ErrExecuteQuery": "Error executing 1C query",
+    "ErrPrepareFields": "Error preparing 1C query fields",
+    "ErrPrepareQuery": "Error preparing 1C query",
     "ErrQueryNotActive": "Query is not active",
-    "ErrUnloadResults": "Error unloading 1C request results"
+    "ErrUnloadResults": "Error unloading 1C query results"
   },
   "Common/1Cv8/1Cv8SessionManager": {
     "ErrEmptyConnectionString": "Empty connection string"

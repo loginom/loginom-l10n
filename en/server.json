@@ -6,7 +6,7 @@
     "ErrPrepareFields": "Error preparing 1C query fields",
     "ErrPrepareQuery": "Error preparing 1C query",
     "ErrQueryNotActive": "Query is not active",
-    "ErrUnloadResults": "Error unloading 1C query results"
+    "ErrUnloadResults": "Error loading 1C query results"
   },
   "Common/1Cv8/1Cv8SessionManager": {
     "ErrEmptyConnectionString": "Empty connection string"

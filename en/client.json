@@ -2486,7 +2486,7 @@
   },
   "wizards/connection/ConnectionsViewWizard": {
     "AccessModification": "Configure visibility...",
-    "BtnShowVendorsEdit": "Show/Hide Connectors Class Tree",
+    "BtnShowVendorsEdit": "Show/Hide Connectors Tree",
     "BtnTextTest": "Test",
     "BtnTooltipConnect": "Activate connection",
     "BtnTooltipDelete": "Delete connection...",

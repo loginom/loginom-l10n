@@ -2486,7 +2486,7 @@
   },
   "wizards/connection/ConnectionsViewWizard": {
     "AccessModification": "Настроить модификатор доступа...",
-    "BtnShowVendorsEdit": "Показать/скрыть дерево классов подключений",
+    "BtnShowVendorsEdit": "Показать/скрыть дерево коннекторов",
     "BtnTextTest": "Тестировать",
     "BtnTooltipConnect": "Активировать подключение",
     "BtnTooltipDelete": "Удалить подключение...",

@@ -2047,7 +2047,7 @@
     "ErrExecQuery": "Error executing DB query.",
     "ErrMsgDisplayName": "Error message",
     "ErrNotConnectedToDatabase": "No connection with database",
-    "ErrSQLNotSpecified": "SQL request text not specified",
+    "ErrSQLNotSpecified": "SQL query text not specified",
     "ErrTableNotSpecified": "Database table not specified",
     "ExecQueryProcess": "Query executing",
     "ExecTimeoutExpired": "Execution time expired",

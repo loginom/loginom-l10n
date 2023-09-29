@@ -1534,7 +1534,7 @@
     "CreateDateFrameFromInputTable": "Create pd.DataFrame by input data set No1",
     "ErrCurrentDirectory": "Failed to get current directory",
     "ErrDisallowedExecution": "Python execution forbidden in security settings",
-    "ErrGetNativePath": "Failed to resolve the file system path by the \"%s\" path of the file storage",
+    "ErrGetNativePath": "Failed to resolve the file system path by the \"%s\" path in the file storage",
     "ErrPythonInProcessNotSupported": "Python execution inside the process is not supported, Python is started in the separate process.",
     "InputPortOptional": "Optional input port",
     "OutputDataFrameExample": "Received output pd.DataFrame",
@@ -1546,7 +1546,7 @@
     "ErrWaitTimeoutElapsed": "Failed to capture Python during the set timeout as Python code is still executing in another node."
   },
   "components/python/PythonExecutor": {
-    "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nResolve the path in the file system by the path of the file storage\nArguments:\n  path: str\n    Path in the file storage.\nResult:\n  Path in the file system.",
+    "DocFileStoragePathFunc": "filestoragepath(path)\n--\n\nResolve the path in the file system by the path in the file storage\nArguments:\n  path: str\n    Path in the file storage.\nResult:\n  Path in the file system.",
     "ErrNumExprFinalize": "Failed to finalize numexpr module",
     "ErrResNotFound": "%s resource not found",
     "ErrTCLFinalize": "Error occurred during TCL finalization",

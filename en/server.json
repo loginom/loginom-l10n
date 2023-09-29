@@ -1536,8 +1536,8 @@
     "ErrDisallowedExecution": "Python execution forbidden in security settings",
     "ErrGetNativePath": "Failed to resolve the file system path from the \"%s\" path in the file storage",
     "ErrPythonInProcessNotSupported": "Python execution inside the process is not supported, Python is started in the separate process.",
-    "InputPortOptional": "Optional input port",
-    "OutputDataFrameExample": "Received output pd.DataFrame",
+    "InputPortOptional": "Input port is optional",
+    "OutputDataFrameExample": "Resulting output pd.DataFrame",
     "PrepareCompatibleComment": "If \"Allow creating output columns in script\" option is enabled, the output data set structure can be prepared from pd.DataFrame"
   },
   "components/python/PythonEngineImpl": {

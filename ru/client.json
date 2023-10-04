@@ -1811,7 +1811,6 @@
     "VersionLabelFmt": "Версия: {0}"
   },
   "mxgraph/annotation/Annotation": {
-    "ErrAnnotationNotSaved": "Не удалось сохранить заметку",
     "ErrAnnotationSizeNotSaved": "Не удалось сохранить размеры заметки",
     "ErrParseItemID": "Не удается получить номер стиля из itemID элемента меню",
     "ErrStyleNum": "Номер стиля выходит за границы диапазона"
@@ -1857,7 +1856,6 @@
     "GenericEnterLabel": "Войти"
   },
   "mxgraph/node/label/Label": {
-    "ErrLabelNotSaved": "Не удалось сохранить метку",
     "NodeIsLocked": "Узел заблокирован, изменить метку нельзя",
     "NodeLabel": "Метка узла",
     "WrongLabelValue": "Неверное значение метки"
@@ -1893,6 +1891,9 @@
     "REFERENCE": "Ссылка",
     "TYPE_UNDEFINED": "Тип порта не известен",
     "VARIABLES": "Переменные"
+  },
+  "mxgraph/vertex/LabelAbstract": {
+    "ErrLabelNotSaved": "Не удалось сохранить редактируемое значение"
   },
   "navigation/NavigationPanel": {
     "PathBeforeText": "Путь:",

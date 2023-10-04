@@ -1889,19 +1889,10 @@
   "Embedded/EmbeddedMain": {
     "ErrOpenURL": "Невозможно перейти по адресу: %s",
     "LocalStorageLoadFailed": "Local Storage не прочитано",
-    "LocalStorageSaveFailed": "Local Storage не сохранено",
-    "OpenDialogTitle": "Открытие",
-    "SaveDialogTitle": "Сохранение"
+    "LocalStorageSaveFailed": "Local Storage не сохранено"
   },
-  "Embedded/GtkFileDialogs": {
-    "FileMustExist": "File must exist",
-    "FileNotExist": "The file \"%s\" does not exist.",
-    "FileReadOnly": "The file \"%s\" is not writable.",
-    "FileReadOnlyTitle": "File is not writable"
-  },
-  "Embedded/RelativeFileDialogs": {
-    "AbsolutePath": "Абсолютный путь",
-    "RelativePath": "Относительный путь"
+  "Embedded/EmbeddedTiny": {
+    "EnvVarKDEFileDialog": "NO_LOGINOM_KDE_FILE_DIALOG"
   },
   "exports/database/DBExport": {
     "AddToTableNotify": "Добавление записей в таблицу",

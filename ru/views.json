@@ -2992,9 +2992,6 @@
     "cntConnection": {
       "fieldLabel": "Хранилище файлов"
     },
-    "edtDDFSystem": {
-      "fieldLabel": "Разрядность"
-    },
     "edtStringCacheMaxSize.valueConfig": {
       "regexText": "Недопустимый размер кэша строк"
     },

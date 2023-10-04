@@ -2478,7 +2478,7 @@
   },
   "wizards/connection/ConnectionConfigWizard": {
     "TestConnectionSuccess": "Connection successful",
-    "TestConnectionTitle": "Connection test ",
+    "TestConnectionTitle": "Connection test",
     "WizardTitle": "connection parameters"
   },
   "wizards/connection/ConnectionReferenceComponentWizard": {

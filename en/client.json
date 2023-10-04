@@ -1893,7 +1893,7 @@
     "VARIABLES": "Variables"
   },
   "mxgraph/vertex/LabelAbstract": {
-    "ErrLabelNotSaved": "Не удалось сохранить редактируемое значение"
+    "ErrLabelNotSaved": "Failed to save the editable value"
   },
   "navigation/NavigationPanel": {
     "PathBeforeText": "Path:",

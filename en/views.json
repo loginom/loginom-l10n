@@ -2992,9 +2992,6 @@
     "cntConnection": {
       "fieldLabel": "File storage"
     },
-    "edtDDFSystem": {
-      "fieldLabel": "Bitness"
-    },
     "edtStringCacheMaxSize.valueConfig": {
       "regexText": "Invalid string cache size"
     },

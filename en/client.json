@@ -1811,7 +1811,6 @@
     "VersionLabelFmt": "Version: {0}"
   },
   "mxgraph/annotation/Annotation": {
-    "ErrAnnotationNotSaved": "Failed to save annotation",
     "ErrAnnotationSizeNotSaved": "Failed to save annotation sizes",
     "ErrParseItemID": "Failed to get style number from itemID menu item",
     "ErrStyleNum": "Style number is out of range"
@@ -1857,7 +1856,6 @@
     "GenericEnterLabel": "Enter"
   },
   "mxgraph/node/label/Label": {
-    "ErrLabelNotSaved": "Failed to save caption",
     "NodeIsLocked": "Caption edit forbidden: node is locked",
     "NodeLabel": "Node caption",
     "WrongLabelValue": "Invalid caption value"
@@ -1893,6 +1891,9 @@
     "REFERENCE": "Reference",
     "TYPE_UNDEFINED": "Undefined port type",
     "VARIABLES": "Variables"
+  },
+  "mxgraph/vertex/LabelAbstract": {
+    "ErrLabelNotSaved": "Не удалось сохранить редактируемое значение"
   },
   "navigation/NavigationPanel": {
     "PathBeforeText": "Path:",

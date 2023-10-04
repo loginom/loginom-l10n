@@ -1889,19 +1889,10 @@
   "Embedded/EmbeddedMain": {
     "ErrOpenURL": "Failed to go to the following address: %s",
     "LocalStorageLoadFailed": "Local Storage load failed",
-    "LocalStorageSaveFailed": "Local Storage save failed",
-    "OpenDialogTitle": "Open",
-    "SaveDialogTitle": "Save"
+    "LocalStorageSaveFailed": "Local Storage save failed"
   },
-  "Embedded/GtkFileDialogs": {
-    "FileMustExist": "File must exist",
-    "FileNotExist": "The file \"%s\" does not exist.",
-    "FileReadOnly": "The file \"%s\" is not writable.",
-    "FileReadOnlyTitle": "File is not writable"
-  },
-  "Embedded/RelativeFileDialogs": {
-    "AbsolutePath": "Absolute path",
-    "RelativePath": "Relative path"
+  "Embedded/EmbeddedTiny": {
+    "EnvVarKDEFileDialog": "NO_LOGINOM_KDE_FILE_DIALOG"
   },
   "exports/database/DBExport": {
     "AddToTableNotify": "Addition of records to table",

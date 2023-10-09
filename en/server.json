@@ -859,7 +859,7 @@
     "FindMedianNotify": "Median calculating"
   },
   "components/datatovariables/DataToVariablesVendor": {
-    "VendorCaption": "Table into Variables",
+    "VendorCaption": "Table to Variables",
     "VendorDesc": "Aggregate data into variables"
   },
   "components/datatoxml/DataToXML": {

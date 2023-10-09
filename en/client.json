@@ -683,7 +683,7 @@
     "WarnCannotDeleteRootNode": "It is not possible to delete root node"
   },
   "components/datatovariables/DataToVariablesWizard": {
-    "DataToVariablesTitle": "Table into Variables",
+    "DataToVariablesTitle": "Table to Variables",
     "GroupDataFactor": "Variables"
   },
   "components/datatoxml/DataToXmlRequestWizard": {

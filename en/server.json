@@ -2332,13 +2332,13 @@
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
-    "ErrDriverDoesNotSupportQuotes": "Источник данных не поддерживает экранирование идентификаторов, драйвер \"%s\"",
+    "ErrDriverDoesNotSupportQuotes": "Data source does not support identifier escaping, \"%s\" driver",
     "ErrFileDSNForbidden": "Connections through file DSN are forbidden",
-    "ErrInvalidTableNameRedundantDot": "Избыточное число разделителей \".\" в имени таблицы \"%s\""
+    "ErrInvalidTableNameRedundantDot": "Redundant number of \".\" delimiters in \"%s\" table name"
   },
   "Libraries/bgdbrtl/UniDAC/OracleUniDACDB": {
     "DatabaseTypeName": "Oracle",
-    "ErrInvalidTableNameRedundantDot": "Избыточное число разделителей \".\" в имени таблицы \"%s\""
+    "ErrInvalidTableNameRedundantDot": "Redundant number of \".\" delimiters in \"%s\" table name"
   },
   "Libraries/bgdbrtl/UniDAC/PostgresUniDACDB": {
     "DatabaseTypeName": "PostgreSQL"
@@ -3667,9 +3667,7 @@
     "ErrNodeNotInitialized": "No component specified for \"%s\" node",
     "ErrNodeOutputPortCountChanged": "Number of output ports was changed for \"%s\" node",
     "ErrNodeOutputPortTypeChanged": "Type of output \"%1:s\" port was changed for \"%0:s\" node",
-    "ErrNodeParametersChanged.1": "Изменились параметры узла \"%s\"",
-    "ErrNodeParametersChanged.2": "\"%s\" node parameters changed",
-    "ErrNodeParametersChanged": "Изменились параметры узла дерева \"%s\"",
+    "ErrNodeParametersChanged": "\"%s\" tree node parameters changed",
     "ErrParentProcessError": "Error in parent process",
     "ErrPortMismatch": "Incompatible component: node port list does not match",
     "ErrPortParentIsNil": "Reference to the node port is not included into list",
@@ -3785,11 +3783,11 @@
     "ErrInvalidInputRowCount": "Invalid row count in the variable value matrix: %d",
     "ErrInvalidTreeDataRowLength": "Invalid element count in the array of %s node values: %d; required: %d",
     "ErrNodeInputPortCountChanged": "Number of input ports was changed for \"%s\" node",
-    "ErrNodeInputPortTypeChanged": "У узла \"%s\" изменился тип входного порта \"%s\"",
-    "ErrNodeParametersChanged": "Изменились параметры узла дерева \"%s\"",
+    "ErrNodeInputPortTypeChanged": "Type of \"%s\" input port was changed for \"%s\" node",
+    "ErrNodeParametersChanged": "Parameters of \"%s\" tree node were changed",
     "ErrRootElementMustBeSingle": "Matrix of values must contain only one root element",
-    "ErrUnexpectedColumn": "В наборе данных обнаружен столбец \"%s\", которого не существовало на момент публикации",
-    "ErrUnexpectedNode": "В дереве данных обнаружен узел \"%s\", которого не существовало на момент публикации",
+    "ErrUnexpectedColumn": "\"%s\" column nonexisting at the moment of publication was detected in data set",
+    "ErrUnexpectedNode": "\"%s\" node nonexisting at the moment of publication was detected in data tree",
     "ErrVariableDataTypeChanged": "\"%s\" variable data type changed"
   },
   "Libraries/Model/WorkFlow": {
@@ -4097,8 +4095,8 @@
     "ServiceName": "loginom"
   },
   "Server/SocketRemoteDeductorServer": {
-    "LogUserLockedSession": "Пользователь заблокировал сессию",
-    "LogUserUnlockedSession": "Пользователь разблокировал сессию"
+    "LogUserLockedSession": "User locked session",
+    "LogUserUnlockedSession": "User unlocked session"
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Summary"

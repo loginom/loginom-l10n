@@ -2332,12 +2332,13 @@
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
+    "ErrDriverDoesNotSupportQuotes": "Источник данных не поддерживает экранирование идентификаторов, драйвер \"%s\"",
     "ErrFileDSNForbidden": "Подключения через файловые DSN запрещены",
-    "ErrInvalidTableName": "Неверно указано имя таблицы"
+    "ErrInvalidTableNameRedundantDot": "Избыточное число разделителей \".\" в имени таблицы \"%s\""
   },
   "Libraries/bgdbrtl/UniDAC/OracleUniDACDB": {
     "DatabaseTypeName": "Oracle",
-    "ErrInvalidTableName": "Неверно указано имя таблицы"
+    "ErrInvalidTableNameRedundantDot": "Избыточное число разделителей \".\" в имени таблицы \"%s\""
   },
   "Libraries/bgdbrtl/UniDAC/PostgresUniDACDB": {
     "DatabaseTypeName": "PostgreSQL"
@@ -3660,14 +3661,13 @@
     "ErrModelNodeAlreadyInitialized": "Узел уже проинициализирован",
     "ErrMultipleVariablesFound": "Обнаружено несколько переменных с именем \"%s\"",
     "ErrNodeConfigNotInitialized": "Конфигурация узла не проинициализирована",
-    "ErrNodeInputPortCountChanged": "У узла \"%s\" изменилось количество входных портов",
     "ErrNodeIsNoMemberOfModel": "Узел не принадлежит сценарию",
     "ErrNodeLocked": "Узел \"%s\" заблокирован",
     "ErrNodeNotFoundInModel": "Запрашиваемый узел не принадлежит сценарию",
     "ErrNodeNotInitialized": "У узла \"%s\" не задан компонент",
     "ErrNodeOutputPortCountChanged": "У узла \"%s\" изменилось количество выходных портов",
     "ErrNodeOutputPortTypeChanged": "У узла \"%s\" изменился тип выходного порта \"%s\"",
-    "ErrNodeParametersChanged": "Изменились параметры узла \"%s\"",
+    "ErrNodeParametersChanged": "Изменились параметры узла дерева \"%s\"",
     "ErrParentProcessError": "Ошибка в родительском процессе",
     "ErrPortMismatch": "Несовместимый компонент: не совпадает список портов узла",
     "ErrPortParentIsNil": "Ссылка на порт узла не входит в какой-либо список",
@@ -3776,12 +3776,19 @@
     "TableDataVendorGroupCaption": "Табличное представление"
   },
   "Libraries/Model/WebServiceInputNode/WebServiceInputNodeComponent": {
+    "ErrColumnDataTypeChanged": "Изменился тип данных столбца \"%s\"",
     "ErrDataRowNotFound": "В матрице значений не найдена строка с индексом %d",
     "ErrInvalidInputColumnCount": "Недопустимое количество столбцов во входной матрице значений: %d; необходимо: %d",
     "ErrInvalidInputElementCount": "Недопустимое количество элементов во входном массиве: %d; необходимо: %d",
     "ErrInvalidInputRowCount": "Недопустимое количество строк в матрице значений переменных: %d",
     "ErrInvalidTreeDataRowLength": "Недопустимое количество элементов в массиве значений узла %s: %d; необходимо: %d",
-    "ErrRootElementMustBeSingle": "Матрица значений должна содержать только один корневой элемент"
+    "ErrNodeInputPortCountChanged": "У узла \"%s\" изменилось количество входных портов",
+    "ErrNodeInputPortTypeChanged": "У узла \"%s\" изменился тип входного порта \"%s\"",
+    "ErrNodeParametersChanged": "Изменились параметры узла дерева \"%s\"",
+    "ErrRootElementMustBeSingle": "Матрица значений должна содержать только один корневой элемент",
+    "ErrUnexpectedColumn": "В наборе данных обнаружен столбец \"%s\", которого не существовало на момент публикации",
+    "ErrUnexpectedNode": "В дереве данных обнаружен узел \"%s\", которого не существовало на момент публикации",
+    "ErrVariableDataTypeChanged": "Изменился тип данных переменной \"%s\""
   },
   "Libraries/Model/WorkFlow": {
     "ErrCircularLink": "Невозможно создать циклическую связь между узлами",
@@ -4086,6 +4093,10 @@
   "Server/ServiceConsts": {
     "ServiceDisplayName": "LoginomServer",
     "ServiceName": "loginom"
+  },
+  "Server/SocketRemoteDeductorServer": {
+    "LogUserLockedSession": "Пользователь заблокировал сессию",
+    "LogUserUnlockedSession": "Пользователь разблокировал сессию"
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Сводка"

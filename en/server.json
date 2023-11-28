@@ -2332,7 +2332,7 @@
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
-    "ErrDriverDoesNotSupportQuotes": "Data source does not support identifier escaping, \"%s\" driver",
+    "ErrDriverDoesNotSupportQuotes": "Data source does not support quoted identifiers, \"%s\" driver",
     "ErrFileDSNForbidden": "Connections through file DSN are forbidden",
     "ErrInvalidTableNameRedundantDot": "Redundant number of \".\" delimiters in \"%s\" table name"
   },

@@ -2332,7 +2332,7 @@
   },
   "Libraries/bgdbrtl/UniDAC/ODBCUniDACDB": {
     "DatabaseTypeName": "ODBC",
-    "ErrDriverDoesNotSupportQuotes": "Источник данных не поддерживает экранирование идентификаторов, драйвер \"%s\"",
+    "ErrDriverDoesNotSupportQuotes": "Источник данных не поддерживает идентификаторы в кавычках, драйвер \"%s\"",
     "ErrFileDSNForbidden": "Подключения через файловые DSN запрещены",
     "ErrInvalidTableNameRedundantDot": "Избыточное число разделителей \".\" в имени таблицы \"%s\""
   },

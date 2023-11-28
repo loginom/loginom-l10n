@@ -3783,7 +3783,7 @@
     "ErrInvalidInputRowCount": "Invalid row count in the variable value matrix: %d",
     "ErrInvalidTreeDataRowLength": "Invalid element count in the array of %s node values: %d; required: %d",
     "ErrNodeInputPortCountChanged": "Number of input ports was changed for \"%s\" node",
-    "ErrNodeInputPortTypeChanged": "Type of \"%s\" input port was changed for \"%s\" node",
+    "ErrNodeInputPortTypeChanged": "Type of \"%1:s\" input port was changed for \"%0:s\" node",
     "ErrNodeParametersChanged": "Parameters of \"%s\" tree node were changed",
     "ErrRootElementMustBeSingle": "Matrix of values must contain only one root element",
     "ErrUnexpectedColumn": "\"%s\" column nonexisting at the moment of publication was detected in data set",

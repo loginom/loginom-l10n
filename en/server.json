@@ -4095,8 +4095,8 @@
     "ServiceName": "loginom"
   },
   "Server/SocketRemoteDeductorServer": {
-    "LogUserLockedSession": "User locked session",
-    "LogUserUnlockedSession": "User unlocked session"
+    "LogUserLockedSession": "Session was locked by user",
+    "LogUserUnlockedSession": "Session was unlocked by user"
   },
   "Studio/Converters/Converter_201805281036_NeuralNet_SummarySocket": {
     "SummarySocketDisplayName": "Summary"
